@@ -1,14 +1,14 @@
-﻿# Archived project materials
+# Archived project materials
 
-These files are superseded by the current study materials at the project root:
+These are superseded by the current study materials at the project root:
 
-- `research-study-blueprint-and-specification.md` — current framework.
-- `lebanon-student-burnout-survey-questions.md` — current questionnaire.
+- `research-study-blueprint-and-specification.md` ? active study plan.
+- `lebanon-student-burnout-survey-questions.md` is the active 69-item survey.
 
 ## Archived questionnaire files
 
-The documents in `questionaire/` are legacy survey instruments and are retained for reference only.
+`questionaire/` contains the legacy survey and the English student BAT questionnaire used as the source for the full BAT item set in the active survey. The latter remains a source/reference copy.
 
 ## Archived data files
 
-The files in `data/` are legacy exports (`data.csv` and `data.xlsx`). They have not been designated as data for the current study. Review their provenance and compatibility before any reuse.
+`data/` contains the prior `data.csv` and `data.xlsx` exports. They are legacy data and do not contain responses to the active 69-item questionnaire. Review provenance before reuse.

@@ -1,30 +1,24 @@
-﻿# Research Project Handoff
+# Research Project Handoff
 
 ## Current source of truth
 
-The active study is the Lebanon student burnout study described in these documents:
+- [Research study blueprint](research-study-blueprint-and-specification.md) defines the cross-sectional study, student BAT/BAT-C scoring, analysis plan, and project status.
+- [Lebanon student burnout questionnaire](lebanon-student-burnout-survey-questions.md) is the active 69-item questionnaire and includes the Google Forms script.
 
-- [Research study blueprint](research-study-blueprint-and-specification.md) — research questions, design, analysis plan, validation strategy, and project status.
-- [Lebanon student burnout questionnaire](lebanon-student-burnout-survey-questions.md) — the current 44-item survey instrument.
+The questionnaire contains 33 v2 study/context questions, two v2 persistence/motivation questions, one Lebanon enrollment eligibility item, and all 33 items from the supplied student BAT questionnaire. The BAT includes 23 core items and 10 secondary complaint items. Use the 23-item core mean as the continuous primary outcome; report its four dimensions and the two secondary complaint dimensions separately. External published thresholds do not validate cutoffs for Lebanese students; neither the earlier 2.50/3.60 nor v2 2.25/3.40 bands should be presented as published BAT thresholds.
 
-Use these two files as the main framework and questionnaire. The previous framework and instruments have been retained under [`old framework`](old%20framework/README.md) for reference; they are archived and are not the active study materials.
+## Data and status
 
-## Study at a glance
+- `old framework/data/data.csv` and `data.xlsx` are legacy exports from the prior questionnaire; they do not contain responses to the active BAT-S instrument.
+- `PaperMetadata.csv` and `PaperMetadataDblp.xlsx` are the literature reference files.
+- The active questionnaire has not yet been deployed as this 69-item version. The official BAT site permits free use without author permission; retain its wording and response scale, cite the development paper, and review ethics requirements, consent/privacy wording, eligibility handling, and pilot completion time before launch.
+- The form records eligibility, but the provided script does not automatically end the survey for ineligible responses; filter those responses during cleaning.
+- Treat continuation intention as a concurrent secondary outcome. The study cannot claim to predict future burnout or actual dropout without later follow-up data.
 
-The study examines academic burnout among university students in Lebanon, including Generative AI reliance, cognitive offloading, and local socioeconomic and infrastructure stressors. The planned analysis combines survey-based burnout measurement, statistical analysis, and explainable machine learning. The study blueprint is the authority for the detailed methodology and any unresolved design decisions.
+## Next steps
 
-## Data and project status
-
-- The old `data.csv` and `data.xlsx` have been moved to [`old framework/data`](old%20framework/data/README.md). Treat them as legacy data unless they are reviewed and explicitly approved for use in the current study.
-- `PaperMetadata.csv` and `dblp_predicting_student_burnout.xlsx` remain at the project root as literature reference files.
-- The current questionnaire is a proposed instrument. Confirm its measures, consent language, and survey timing before deployment, then collect/export data for the current study.
-- Do not report model performance or study findings until the current study data have been analyzed.
-
-## Immediate next steps
-
-1. Reconcile the measures and item scoring in the questionnaire with the blueprint, especially the burnout outcome definition and predictor set.
-2. Review ethics/consent requirements and verify the questionnaire's stated anonymity and completion-time claims before publishing it.
-3. Finalize and deploy the questionnaire.
-4. Collect responses, document the data dictionary, and preserve a clean raw export.
-5. Conduct exploratory and statistical analyses, then train and evaluate the planned models using leakage-safe validation.
-6. Record actual results, limitations, and decisions in the study report.
+1. Cite the BAT development paper and preserve the complete instrument wording and response scale. Check institutional ethics and deployment requirements.
+2. Pilot the form with Lebanese university students, review comprehension and completion time, and refine only the study-created items; keep BAT-S item wording and response anchors as supplied.
+3. Deploy the final form and preserve an untouched raw export with a data dictionary.
+4. Assess item distributions and reliability, then analyze the continuous BAT-C core score and its dimensions.
+5. If sample size and outcome variation support it, fit a small pre-specified set of regression models with leakage-safe validation and report uncertainty.
