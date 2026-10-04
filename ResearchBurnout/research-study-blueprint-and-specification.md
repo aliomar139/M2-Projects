@@ -24,7 +24,7 @@ This study draws on relevant theories, measures, and methods in recent peer-revi
 | Literature Source & Author | Key Findings & Methodological Contribution | How Our Study Integrates & Expands Upon It |
 | :--- | :--- | :--- |
 | **Tu et al. (2026)** | Applied the **I-PACE model** to demonstrate how AI dependence and addiction trigger learning burnout in college students. | Provides the theoretical framework linking GenAI usage frequency, cognitive reliance, and task offloading to academic burnout. |
-| **Omarbekova et al. (2026)** | Demonstrated a comparative stress classification framework using **SMOTE**, **ablation analysis**, and **Friedman/Nemenyi statistical tests**. | Uses this work as methodological context only; this study will model a continuous BAT-C core score and will not use synthetic oversampling. |
+| **Omarbekova et al. (2026)** | Demonstrated a comparative stress classification framework using **SMOTE**, **ablation analysis**, and **Friedman/Nemenyi statistical tests**. | Uses this work as methodological context only; this study will use the continuous 12-item BAT-S index as its primary outcome; tier classification and any resampling are exploratory and conditional on observed sample support. |
 | **Jeyachidra (2026)** | Achieved high accuracy predicting academic burnout using **XGBoost** and **Explainable Boosting Machines (EBM)**. | Uses this work as a prior model comparison; this study will begin with parsimonious regression and only add a nonlinear comparison if the sample supports it. |
 | **Rahmadani & Sriani (2026)** | Utilized the **Maslach Burnout Inventory-Student Survey (MBI-SS)** and C5.0 algorithm to stratify student burnout risk. | Uses the paper as a prior burnout-prediction example; the current instrument uses the student BAT core dimensions instead of the MBI-SS. |
 | **Yeskuatov et al. (2025)** | Highlighted that institutional administrative records fail to capture internal psychological constructs like exhaustion and cynicism. | Uses a primary survey instrument capturing psychological constructs alongside study behaviors and environmental stressors. |
@@ -37,9 +37,9 @@ The GenAI hypothesis is that cognitive offloading may covary with BAT cognitive 
 ## 3. Key Scientific Novelties & Contributions
 
 1. **GenAI Reliance and Current Burnout Symptoms:** Tests whether GenAI use and cognitive offloading are associated with the BAT core score, particularly cognitive impairment and mental distance. This is a cross-sectional association, not a causal pathway.
-2. **Contextual Uniqueness (Lebanon Infrastructure):** Integrates regional infrastructure variables-daily power outage hours, internet disconnection rates, financial inflation strain, and commute friction-into student mental health modeling.
-3. **Broader Study Context:** Includes GPA, employment status, academic screen time and digital fatigue, AI use cases and trust, verification behavior, study routines, coping, and institutional, peer, and family support.
-4. **Measurement and Validation:** Uses the full student BAT instrument, reports its core dimensions separately, and evaluates a parsimonious model with leakage-safe validation. The cross-sectional design supports estimates of concurrent symptoms, not forecasts of later burnout.
+2. **Contextual Uniqueness (Lebanon Infrastructure):** Includes Lebanon study-condition variables for electricity disruptions, internet reliability, and financial strain.
+3. **Broader Study Context:** Includes academic level, major, GPA, study conditions, GenAI use and reliance, verification, study routines, stress, coping, and institutional support.
+4. **Measurement and Validation:** Uses the marked 12-item BAT-S short form as the primary outcome and the full 23-item core as a secondary score, and evaluates a parsimonious model with leakage-safe validation. The cross-sectional design supports estimates of concurrent symptoms, not forecasts of later burnout.
 5. **Interpretation:** Treats model explanations as associations in this sample, not as causal explanations or individual diagnoses.
 
 ---
@@ -48,9 +48,9 @@ The GenAI hypothesis is that cognitive offloading may covary with BAT cognitive 
 
 ### Phase 1: Instrument preparation and data collection
 
-- The active instrument has 69 items: 35 non-BAT study/context and persistence questions, one Lebanon enrollment eligibility question, and the complete 33-item student BAT questionnaire.
-- Non-BAT domains include academic level, major, GPA, local infrastructure, commute, employment, screen time and digital fatigue; GenAI frequency, uses, reliance, offloading, verification, exam use, trust, efficiency, and anxiety; study hours, attendance, submission timing, workload, sleep, stress, coping, and social support; plus intrinsic interest and continuation intention.
-- The 23 BAT core items form the primary outcome measure. The 10 secondary complaint items are scored separately.
+- The active instrument has 43 questions: 20 non-BAT items (including one eligibility item and continuation intention) plus the 23 core student BAT items. The 10 secondary complaint items are omitted.
+- Retained non-BAT domains cover academic profile, electricity/internet/financial study conditions, GenAI frequency/use/reliance/verification/anxiety, study hours/workload/sleep/stress, avoidance coping, institutional support, and continuation intention. Redundant trust, efficiency, and routine items were pruned.
+- The 12 items marked for the BAT-S short form form the primary outcome, scored as the equal-weight mean of four dimension means. The administered 23-item core score is secondary; no secondary complaint score is collected.
 - Pilot the survey with students enrolled at Lebanese universities. Review comprehension, eligibility handling, privacy settings, citation, and actual completion time before deployment. Keep BAT item wording and response scale unchanged.
 - The earlier target of 300 to 500 respondents is provisional. Reassess sample size against the intended analysis and desired precision.
 
@@ -59,15 +59,15 @@ The GenAI hypothesis is that cognitive offloading may covary with BAT cognitive 
 - Preserve the original export and document a data dictionary.
 - Apply pre-specified eligibility and data-quality rules.
 - Describe response distributions, missingness, and floor or ceiling effects.
-- Estimate internal consistency for each BAT-C core dimension and report uncertainty. Reliability alone does not establish that the instrument works equivalently in Lebanon.
+- Estimate internal consistency for each 3-item short-form dimension and the 12-item total; report uncertainty. Reliability alone does not establish that the instrument works equivalently in Lebanon.
 
 ### Phase 3: Descriptive and association analyses
 
-Analyze the continuous BAT-C core score and its four dimensions. Treat the two secondary complaint scores and continuation intention as separate outcomes. Report effect sizes and uncertainty; do not invent burnout categories or thresholds.
+Analyze the continuous 12-item BAT-S short-form index and its four dimensions. Analyze continuation intention as a concurrent secondary outcome. Report effect sizes and uncertainty. The requested risk tiers are secondary exploratory categories only.
 
 ### Phase 4: Exploratory regression and interpretation
 
-- Consider a pre-specified, reduced set of predictors from the non-BAT questions. Exclude eligibility, all 33 student BAT items, and continuation intention from the primary burnout predictor matrix. Treat intrinsic interest as a candidate predictor only if justified in the analysis plan; report its overlap with motivation-related BAT content.
+- Consider a pre-specified, reduced set of predictors from the non-BAT questions. Exclude eligibility, all 23 student BAT items, and continuation intention from the primary burnout predictor matrix. Keep all preprocessing and feature selection within validation folds.
 - Compare a regularized linear model with at most one low-complexity alternative if the sample supports it.
 - Keep preprocessing and any feature selection inside the validation folds. Report cross-validated MAE and RMSE with fold-to-fold variation.
 - Treat model explanations as associations in this sample. Do not make causal, diagnostic, or individual intervention claims.
@@ -80,41 +80,68 @@ Report the instrument, recruitment and sample limitations, scoring, uncertainty,
 
 ## 5. BAT-S Scoring and Modeling Plan
 
-### Primary outcome
+### Primary target: 12-item BAT-S short form
 
-Use the complete 23-item BAT-C core set of the student BAT version as the primary measure of current self-reported student burnout symptoms. Responses range from 1 (Never) to 5 (Always). Compute the overall core score as the mean of those 23 items and report the four dimension means separately:
+The survey administers all 23 core BAT-S items, but the supplied source marks a validated 12-item short form with three items per dimension. Use those 12 starred items for the primary target; do not call this a 12-item questionnaire because the deployed form still contains 43 questions. Responses are scored 1 (Never) to 5 (Always), with no reverse-scored BAT-S items in this instrument.
 
-- Exhaustion: 8 items.
-- Mental distance: 5 items.
-- Cognitive impairment: 5 items.
-- Emotional impairment: 5 items.
+| Dimension | Active survey item codes | Mean |
+|---|---|---|
+| Academic Exhaustion (EX) | Q21, Q23, Q24 | `EX_Mean = (Q21 + Q23 + Q24) / 3` |
+| Mental Distance (MD) | Q29, Q31, Q33 | `MD_Mean = (Q29 + Q31 + Q33) / 3` |
+| Cognitive Impairment (CI) | Q34, Q37, Q38 | `CI_Mean = (Q34 + Q37 + Q38) / 3` |
+| Emotional Impairment (EI) | Q39, Q40, Q43 | `EI_Mean = (Q39 + Q40 + Q43) / 3` |
 
-The additional 10 BAT-S secondary symptom items measure psychological distress and psychosomatic complaints. Compute psychological distress and psychosomatic complaint means separately; exclude these items from the 23-item core score. Published thresholds do exist, but their reference samples and exact BAT version matter. The 2023 BAT-23/BAT-12 cutoffs were developed using employee samples in the Netherlands, Flanders, and Finland, including clinically identified burnout groups ([Schaufeli et al., 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10713992/)); they are not Lebanese student norms. A 2026 Serbian study proposed thresholds for its Serbian BAT version in fifth-year medical students using the Copenhagen Burnout Inventory as a comparator, not a clinical diagnosis ([study record](https://pubmed.ncbi.nlm.nih.gov/41682166/)). These can be cited as external reference points or explored in sensitivity analyses, with those limits stated. Do not present them as validated Lebanese student thresholds, and do not reuse the earlier 2.50/3.60 bands as published BAT cutoffs.
+**Primary continuous outcome:** `BAT_Burnout_Index = (EX_Mean + MD_Mean + CI_Mean + EI_Mean) / 4`. Each dimension receives equal weight. Keep the four component means and composite continuous for descriptive and association analyses.
 
-### Candidate predictors and secondary outcomes
+**Risk-tier target (exploratory):** Class 0 / Low when index <2.25; Class 1 / Moderate when 2.25 <= index <= 3.40; Class 2 / High when index >3.40. These are the project's prespecified bands, not established published BAT-S non-clinical norms, empirical tertiles, validated Lebanese student cutoffs, or diagnostic thresholds. Fixed cut points are not sample tertiles. Report the continuous score and dimension means alongside tier results; conduct sensitivity analysis if defensible alternative cut points become available. The published BAT-23/BAT-12 cutoff study used employee samples and does not establish Lebanese student thresholds ([Schaufeli et al., 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10713992/)). A Chilean undergraduate study evaluated the 12-item, three-per-dimension BAT-S structure, but that evidence does not itself validate the requested tier cutoffs for Lebanon ([Chilean BAT-S validation](https://pmc.ncbi.nlm.nih.gov/articles/PMC11688192/)).
 
-The 69-item active questionnaire combines all 33 non-BAT items in questionnaire v2, the two persistence/motivation items from v2, one eligibility item, and all 33 items from the supplied student BAT questionnaire. The non-BAT predictors cover academic standing and GPA; infrastructure, commute, and employment; digital fatigue and academic screen exposure; multiple GenAI behaviors; study routines, stress, coping, and social support. Use eligible respondents only. Exclude the eligibility item and all BAT responses from the predictor matrix. Analyze continuation intention separately as a concurrent secondary outcome; it does not measure later enrollment or dropout.
+### Secondary 23-item core score
 
-Keep predictors as individual fields initially. Only create composite indices when their construction has a clear theoretical and measurement basis. Do not infer that AI reliance or infrastructure strain causes burnout from cross-sectional self-report data.
+The survey also includes the other 11 core items. As a secondary analysis, calculate the four full-core means (Exhaustion: 8 items; Mental Distance: 5; Cognitive Impairment: 5; Emotional Impairment: 5) and their equal-weight average. Do not mix this 23-item score with the primary 12-item index or apply the 12-item tier rules without a separately justified analysis. The 10 secondary psychosomatic and psychological complaint items are omitted from the survey.
 
-## 6. Active 69-Item Questionnaire
+### Psychometric assessment
 
-The active questionnaire and its Google Forms script live in [`lebanon-student-burnout-survey-questions.md`](lebanon-student-burnout-survey-questions.md). It contains 35 non-BAT study/context and persistence questions, one eligibility question, and the full 33-item student BAT set (23 core items plus 10 secondary complaint items). The supplied instrument source is retained in [`Burnout_Assessment_Tool_English_Questionnaire.md`](Burnout_Assessment_Tool_English_Questionnaire.md).
+Estimate Cronbach's alpha and McDonald's omega for each 3-item short-form dimension and for the 12-item total, with confidence intervals and the estimator/model specified. The conventional alpha formula is `alpha = [K/(K-1)] * [1 - sum(Var(item_i))/Var(total_score)]`, where K is the item count. For ordinal 1-to-5 responses, consider ordinal estimates based on polychoric correlations when sample size and response distributions support them; label conventional Pearson-based estimates clearly. Estimate omega total from a defensible factor model; estimate omega hierarchical (`omega_h`) only if a higher-order/bifactor model supports a general factor. Because the total score is multidimensional, interpret total-scale alpha cautiously and do not treat alpha as proof of unidimensionality. Treat alpha >= .75 per dimension and >= .85 for the total as planning heuristics, not pass/fail validity criteria. Reliability does not establish validity or measurement equivalence in Lebanese students.
+
+### Candidate engineered predictors
+
+Use only non-BAT items in X; exclude eligibility and continuation intention from the burnout predictor matrix. Keep component variables available, document coding before deriving composites, and fit all learned preprocessing inside each training fold.
+
+- **GenAI dependence proxy (exploratory):** AI_DEL and AI_EXAM were removed from the 43-question survey, so the proposed four-item dependence formula is unavailable. An available-item proxy can be defined as `((AI_COG + AI_CRIT) / 2) * (AI_FREQ / 5)`, using the active 1-to-5 questions. Label it a study-created proxy, assess its distribution, and do not imply validation.
+- **Verification deficit:** `AI_Verif_Deficit = 6 - AI_VERIF`, where AI_VERIF is the active 1-to-5 verification item.
+- **Coping disparity:** The proposed formula requires COP_AVOID_1, COP_AVOID_2, COP_ACT_1, and COP_ACT_2. Only COP_AVOID_1 remains in the survey, so this ratio cannot be calculated; use the retained item alone or revise the instrument before collection if the ratio is essential.
+- **Infrastructure disruption:** INF_ELEC is a four-category ordered response, INF_NET and INF_FIN are 1-to-5. The proposed sum is not directly reproducible until an explicit electricity coding rule is specified. Prefer the three components individually; if a composite is preregistered, orient all items consistently, state the recoding/standardization, and evaluate it as exploratory.
+
+Do not include any BAT item or a feature derived from BAT responses in X. Consider continuation intention only as its own concurrent secondary outcome, not as a predictor for the primary burnout model.
+
+### Model evaluation
+
+For continuous-score regression, report cross-validated mean absolute error `MAE = (1/n) * sum(|y_i - yhat_i|)` and root mean squared error `RMSE = sqrt[(1/n) * sum((y_i - yhat_i)^2)]` as primary error metrics; report `R^2 = 1 - sum((y_i-yhat_i)^2)/sum((y_i-y_mean)^2)` as secondary. Keep all imputation, scaling, encoding, feature selection, and tuning within training folds. Do not apply SMOTE to a continuous target.
+
+For exploratory three-class tier prediction, use stratified cross-validation where each class has enough observations per fold. Use macro F1 as the primary model-selection metric: `Macro-F1 = (1/C) * sum_c F1_c`, with `F1_c = 2 * Precision_c * Recall_c / (Precision_c + Recall_c)`. Report balanced accuracy `= (1/C) * sum_c TP_c/(TP_c+FN_c)`, per-class precision/recall/F1, confusion matrix, and one-vs-rest multiclass ROC-AUC (report the averaging convention) when estimable. Report class counts and prevalence; do not assume that the high tier is 15-20% or that classes are imbalanced before observing the data. Accuracy may be included as a secondary metric with a majority-class baseline. Include uncertainty across resampling and avoid claims of clinical screening utility.
+
+If resampling or class weighting is justified by observed training-fold imbalance, perform it only inside each training fold (and inside inner folds during tuning); never resample a validation/test fold. Compare against an unresampled baseline. SMOTE-NC is an option only for a mixed numeric/categorical feature matrix when the training data support it; it is not a default.
+
+Do not use a Friedman/Nemenyi test on the five folds of a single cross-validation run as if the folds were independent datasets, and do not claim a significant winner from that procedure. The Friedman statistic `Q = [12/(N*k*(k+1))] * sum_j(R_j^2) - 3*N*(k+1)` and Nemenyi critical difference `CD = q_alpha * sqrt[k*(k+1)/(6*N)]` are designed for blocks such as independent benchmark datasets; the study has one dataset, so these tests are not part of this analysis plan. Prefer prespecified model comparisons, nested/repeated validation with uncertainty, and external validation when available. Statistical superiority tests require a design with independent datasets/replications or a method whose assumptions match the resampling design.
+
+## 6. Active 43-Question Questionnaire
+
+The active questionnaire and its Google Forms script live in [`lebanon-student-burnout-survey-questions.md`](lebanon-student-burnout-survey-questions.md). It contains 20 non-BAT items (including eligibility and continuation intention) and 23 BAT core items. The 10 secondary complaint items are excluded. The supplied instrument source is retained in [`Burnout_Assessment_Tool_English_Questionnaire.md`](Burnout_Assessment_Tool_English_Questionnaire.md).
 
 The current survey records whether a respondent is enrolled at a Lebanese university, but the form script does not automatically terminate for an ineligible answer. Exclude ineligible responses during cleaning. Cite the BAT development paper, retain the instrument wording and response scale, and review ethics requirements, privacy wording, and completion time before deployment.
 
 ## 7. Google Forms Deployment
 
-Use the script embedded in the active questionnaire file as the deployment source. It creates the 69-item form; participant-facing titles do not display internal question codes. The form records eligibility but does not automatically terminate for a No answer; exclude ineligible responses during cleaning.
+Use the script embedded in the active questionnaire file as the deployment source. It creates the 43-question form; participant-facing titles do not display internal question codes. The form records eligibility but does not automatically terminate for a No answer; exclude ineligible responses during cleaning.
 
 ## 8. Analysis Workflow
 
 1. Preserve the untouched form export and document its data dictionary.
 2. Exclude ineligible or unusable responses under pre-written rules; retain the raw export.
-3. Calculate the 23-item BAT-C core score and four core dimension scores; calculate the two secondary complaint scores separately.
+3. Calculate the marked 12-item BAT-S short-form dimension means and equal-weight index as the primary target; calculate the 23-item core score as secondary. Apply the requested tiers only as an exploratory secondary target.
 4. Describe sample composition, item distributions, missingness, floor/ceiling effects, and internal consistency before modeling.
-5. Fit a small set of pre-specified models for the continuous core score. Keep all transformations and any feature selection inside the validation folds. Do not use SMOTE for a continuous outcome.
-6. Report cross-validated MAE and RMSE, uncertainty, and limitations. Do not describe concurrent estimates as future prediction. A future-outcome prediction claim requires follow-up data.
+5. Fit a small prespecified regression analysis for the continuous 12-item index. If sample size and per-class counts allow, evaluate tier classification as an exploratory secondary task. Keep all transformations and feature selection inside validation folds.
+6. Report MAE/RMSE for regression; macro F1, balanced accuracy, per-class results and multiclass ROC-AUC when estimable for classification, with uncertainty and limitations. Do not describe concurrent estimates as future prediction. A future-outcome prediction claim requires follow-up data.
 
 The proposed 300 to 500 respondents remains a planning target, not a guarantee of adequate power or stable model performance. Revisit it using the intended predictor count, outcome variability, recruitment plan, and desired precision before collection.
 
@@ -122,5 +149,5 @@ The proposed 300 to 500 respondents remains a planning target, not a guarantee o
 
 ## 9. Conclusion & Execution Summary
 
-This blueprint describes a cross-sectional study of current student-reported burnout symptoms and their associations with GenAI use and study conditions in Lebanon. The 23-item BAT-C core score will remain continuous in the primary analysis. Published thresholds may support clearly labeled exploratory comparisons, but current evidence does not establish Lebanese student cutoffs. Model results will be presented as exploratory unless sample size, measurement evidence, and external validation support stronger claims. The study cannot establish future burnout or dropout prediction without follow-up outcomes.
+This blueprint describes a cross-sectional study of current student-reported burnout symptoms and their associations with GenAI use and study conditions in Lebanon. The four-dimension 12-item BAT-S short-form index will remain continuous in primary analyses; the administered 23-item core score is secondary. The requested 2.25 and 3.40 tiers are provisional exploratory bands; current evidence does not establish Lebanese student cutoffs. Model results will be presented as exploratory unless sample size, measurement evidence, and external validation support stronger claims. The study cannot establish future burnout or dropout prediction without follow-up outcomes.
 
