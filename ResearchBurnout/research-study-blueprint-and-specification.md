@@ -51,7 +51,7 @@ The GenAI hypothesis is that cognitive offloading may covary with BAT cognitive 
 - The active instrument has 43 questions: 20 non-BAT items (including one eligibility item and continuation intention) plus the 23 core student BAT items. The 10 secondary complaint items are omitted.
 - Retained non-BAT domains cover academic profile, electricity/internet/financial study conditions, GenAI frequency/use/reliance/verification/anxiety, study hours/workload/sleep/stress, avoidance coping, institutional support, and continuation intention. Redundant trust, efficiency, and routine items were pruned.
 - The 12 items marked for the BAT-S short form form the primary outcome, scored as the equal-weight mean of four dimension means. The administered 23-item core score is secondary; no secondary complaint score is collected.
-- Pilot the survey with students enrolled at Lebanese universities. Review comprehension, eligibility handling, privacy settings, citation, and actual completion time before deployment. Keep BAT item wording and response scale unchanged.
+- The form has been generated; the researcher reports that it works. One fast pilot completion took about 3 minutes, so the estimated average is about 5 minutes. Continue checking comprehension and eligibility during recruitment and verify the live form settings. Keep the original BAT-S item stems and response anchors; brief parenthetical glosses are appended to selected terms for comprehension and should be documented as wording clarifications.
 - The earlier target of 300 to 500 respondents is provisional. Reassess sample size against the intended analysis and desired precision.
 
 ### Phase 2: Data quality and measurement review
@@ -128,11 +128,11 @@ Do not use a Friedman/Nemenyi test on the five folds of a single cross-validatio
 
 The active questionnaire and its Google Forms script live in [`lebanon-student-burnout-survey-questions.md`](lebanon-student-burnout-survey-questions.md). It contains 20 non-BAT items (including eligibility and continuation intention) and 23 BAT core items. The 10 secondary complaint items are excluded. The supplied instrument source is retained in [`Burnout_Assessment_Tool_English_Questionnaire.md`](Burnout_Assessment_Tool_English_Questionnaire.md).
 
-The current survey records whether a respondent is enrolled at a Lebanese university, but the form script does not automatically terminate for an ineligible answer. Exclude ineligible responses during cleaning. Cite the BAT development paper, retain the instrument wording and response scale, and review ethics requirements, privacy wording, and completion time before deployment.
+The active survey records whether a respondent is enrolled at a Lebanese university, but it does not automatically terminate after a No answer. Exclude ineligible responses during cleaning. The questionnaire includes participant information, states that only the researcher developing the model will access responses, and explains that submitted responses cannot be individually withdrawn because direct identifiers are not collected. It does not request direct identifiers, though Google Forms may process technical or submission metadata. The researcher and ethics committee contact fields were omitted by project preference; confirm any course or institutional review requirements before recruitment. The data-retention period has not yet been specified. The estimated completion time is about 5 minutes, based on one fast 3-minute pilot completion.
 
 ## 7. Google Forms Deployment
 
-Use the script embedded in the active questionnaire file as the deployment source. It creates the 43-question form; participant-facing titles do not display internal question codes. The form records eligibility but does not automatically terminate for a No answer; exclude ineligible responses during cleaning.
+The 43-question form has been generated and the researcher reports that it works: [open the live survey](https://docs.google.com/forms/d/e/1FAIpQLSdsdMvfQbvm2ZosBR7LbEGYFOx7o_d2kO3tYsoN6CmSoaG07A/viewform?usp=dialog). The embedded Apps Script is retained as the generation source; participant-facing titles omit internal analysis codes. The script disables email collection and the one-response-per-user limit. Confirm those settings in the live form before recruitment because the live form could not be independently inspected in this workspace. Eligibility responses are recorded for exclusion during cleaning.
 
 ## 8. Analysis Workflow
 
@@ -143,7 +143,7 @@ Use the script embedded in the active questionnaire file as the deployment sourc
 5. Fit a small prespecified regression analysis for the continuous 12-item index. If sample size and per-class counts allow, evaluate tier classification as an exploratory secondary task. Keep all transformations and feature selection inside validation folds.
 6. Report MAE/RMSE for regression; macro F1, balanced accuracy, per-class results and multiclass ROC-AUC when estimable for classification, with uncertainty and limitations. Do not describe concurrent estimates as future prediction. A future-outcome prediction claim requires follow-up data.
 
-The proposed 300 to 500 respondents remains a planning target, not a guarantee of adequate power or stable model performance. Revisit it using the intended predictor count, outcome variability, recruitment plan, and desired precision before collection.
+The proposed 300 to 500 respondents remains a planning target, not a guarantee of adequate power or stable model performance. Reassess it using the intended predictor count, outcome variability, recruitment plan, and desired precision; monitor response eligibility and class counts during collection.
 
 ---
 

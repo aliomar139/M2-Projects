@@ -2,23 +2,23 @@
 
 **Current instrument:** 43 questions: 20 non-BAT eligibility, context, GenAI, routine, and continuation items, plus the 23-item BAT-S core. The 10 secondary complaint items are omitted from this streamlined version.
 
+**Live Google Form:** [Open the published survey](https://docs.google.com/forms/d/e/1FAIpQLSdsdMvfQbvm2ZosBR7LbEGYFOx7o_d2kO3tYsoN6CmSoaG07A/viewform?usp=dialog). The researcher reports that the generated form works.
+
 **Target cohort:** Undergraduate and graduate students enrolled at universities in Lebanon.
 
-**Estimated completion time:** To be established in a pilot.
+**Estimated completion time:** About 5 minutes for an average respondent (one fast pilot completion took about 3 minutes).
 
-**Instrument note:** All 23 supplied BAT-S core items are retained verbatim with the original 1-to-5 frequency scale. Internal codes are shown in this document for analysis and are omitted from participant-facing form titles.
+**Instrument note:** The 23 supplied BAT-S core item stems and original 1-to-5 frequency scale are retained. Brief parenthetical explanations are appended to selected terms to support respondents with less English proficiency. Internal codes are shown here for analysis and omitted from participant-facing form titles.
 
 ## Participant information and consent
 
-> You are invited to take part in a study of student burnout, generative AI use, study habits, and study conditions in Lebanon. Participation is voluntary. The survey is designed not to request names or email addresses; the form platform may collect technical or submission metadata depending on its settings. You may stop before submitting. Data will be analyzed for academic research. For questions about the study or your rights as a participant, use the contact information supplied by the research team.
+> You are invited to take part in a study of student burnout, generative AI use, study habits, and study conditions in Lebanon. Participation is voluntary and takes about 5 minutes. The survey will not ask for your name, email address, or other direct identifying details. Only the researcher developing the study model will access the submitted responses. Google Forms may process technical or submission metadata under its platform settings. You may stop at any time before submitting. Because the survey does not collect direct identifiers, an individual response cannot be located and removed after submission. Responses will be used for academic research and reported in summary form.
 
 **Consent:** By choosing to continue, you confirm that you have read the information above and agree to participate. If you do not consent, do not submit the survey.
 
-## Section A: Eligibility
-
 ### Question 1 (ELIGIBLE_LEBANON)
 
-**Are you currently enrolled as a student at a university in Lebanon?**
+**Are you currently a student enrolled at a university in Lebanon?**
 
 *Response type: Required single choice*
 
@@ -167,7 +167,7 @@
 
 ### Question 18 (COP_AVOID_1)
 
-**When academic pressure gets too high, I procrastinate or avoid thinking about my schoolwork.**
+**When academic pressure gets too high, I procrastinate or avoid thinking about my schoolwork (procrastinate means delay doing something or start it late).**
 
 *Response type: Required 1-to-5 scale. 1 = Strongly disagree; 5 = Strongly agree.*
 
@@ -245,7 +245,7 @@ I feel indifferent about my studies.
 
 ### Question 33 (Q33_BAT_MD_05)
 
-I’m cynical about the importance of my studies.
+I’m cynical about the importance of my studies (cynical means you doubt that your studies are important).
 
 ### Cognitive Impairment
 
@@ -310,12 +310,12 @@ The BAT may be used without author permission; preserve the supplied item wordin
 
 ## Google Forms creation script
 
-Creates the streamlined 43-question form. Eligibility responses are recorded for exclusion during data cleaning; the form does not automatically end for a No response. Review participant information, form privacy settings, and ethics requirements before deployment.
+Creates the streamlined 43-question form. Eligibility responses are recorded for exclusion during data cleaning; the form does not automatically end for a No response. The live form link is listed above. Review course or institutional requirements and the actual form settings before recruitment.
 
 ```javascript
 function createLebanonStudentBurnoutSurvey() {
   var form = FormApp.create("Lebanon Student Burnout and GenAI Survey");
-  form.setDescription("Voluntary academic study of student burnout, generative AI use, study habits, and study conditions in Lebanon. This form does not request names or email addresses; platform settings may collect technical or submission metadata. Review participant information before deployment.");
+  form.setDescription("Voluntary academic study of student burnout, generative AI use, study habits, and study conditions in Lebanon. It takes about 5 minutes. The survey does not request direct identifying details. Only the researcher developing the study model will access submitted responses. Google Forms may process technical or submission metadata under its platform settings. You may stop before submitting. Because direct identifiers are not collected, an individual response cannot be located and removed after submission. Responses will be used for academic research and reported in summary form.");
   form.setCollectEmail(false);
   form.setLimitOneResponsePerUser(false);
 
@@ -329,10 +329,12 @@ function createLebanonStudentBurnoutSurvey() {
   function addScale(prompt, low, high) {
     form.addScaleItem().setTitle(prompt).setBounds(1, 5).setLabels(low, high).setRequired(true);
   }
-  function addSection(title) { form.addPageBreakItem().setTitle(title); }
+  function addSection(title, helpText) {
+    var section = form.addPageBreakItem().setTitle(title);
+    if (helpText) section.setHelpText(helpText);
+  }
 
-  addSection("Section A: Eligibility");
-  addChoice("Are you currently enrolled as a student at a university in Lebanon?", ["Yes", "No"]);
+  addChoice("Are you currently a student enrolled at a university in Lebanon?", ["Yes", "No"]);
   addSection("Section B: Student profile and Lebanon study conditions");
   addChoice("What is your current university academic standing / level?", ["Freshman / First Year", "Sophomore / Second Year", "Junior / Third Year", "Senior / Fourth Year +", "Master's / Postgraduate"]);
   addChoice("What is your primary major / field of study?", ["STEM (Engineering, Computer Science, Math, Physical Sciences)", "Health Sciences / Medicine / Nursing / Pharmacy", "Business / Economics / Finance", "Humanities, Social Sciences, or Law", "Arts & Design"]);
@@ -352,12 +354,11 @@ function createLebanonStudentBurnoutSurvey() {
   addScale("My current academic workload feels heavy and overwhelming.", "Strongly disagree", "Strongly agree");
   addChoice("What is your average nightly sleep duration during the university semester?", ["Less than 5 hours", "5 to 6 hours", "7 to 8 hours", "More than 8 hours"]);
   addScale("In recent weeks, I have felt overwhelmed, irritable, or panicked due to academic demands.", "Strongly disagree", "Strongly agree");
-  addScale("When academic pressure gets too high, I procrastinate or avoid thinking about my schoolwork.", "Strongly disagree", "Strongly agree");
+  addScale("When academic pressure gets too high, I procrastinate or avoid thinking about my schoolwork (procrastinate means delay doing something or start it late).", "Strongly disagree", "Strongly agree");
   addScale("I feel supported by my university administration and instructors when facing academic difficulties.", "Strongly disagree", "Strongly agree");
   addSection("Section E: Continuation intention");
   addScale("I have seriously considered taking a leave of absence, switching majors, or dropping out due to academic stress.", "Strongly disagree", "Strongly agree");
-  addSection("Section F: Burnout Assessment Tool for Students (BAT-S core)");
-  addSection("For each statement, select how often it applies to you. 1 = Never; 5 = Always.");
+  addSection("Section F: Burnout Assessment Tool for Students (BAT-S core)", "For each statement, select how often it applies to you. 1 = Never; 5 = Always.");
   addScale("Due to my studies, I feel mentally exhausted.", "Never", "Always");
   addScale("Everything I do for my studies requires a great deal of effort.", "Never", "Always");
   addScale("After a day working on my study, I find it hard to recover my energy.", "Never", "Always");
@@ -370,7 +371,7 @@ function createLebanonStudentBurnoutSurvey() {
   addScale("When I am working on my studies, I do not think much about what I am doing, and I function on autopilot.", "Never", "Always");
   addScale("I feel a strong aversion towards my studies.", "Never", "Always");
   addScale("I feel indifferent about my studies.", "Never", "Always");
-  addScale("I’m cynical about the importance of my studies.", "Never", "Always");
+  addScale("I’m cynical about the importance of my studies (cynical means you doubt that your studies are important).", "Never", "Always");
   addScale("When I am working on my studies, I have trouble staying focused.", "Never", "Always");
   addScale("When I am working on my studies, I struggle to think clearly.", "Never", "Always");
   addScale("I am forgetful and distracted when I am working on my studies.", "Never", "Always");

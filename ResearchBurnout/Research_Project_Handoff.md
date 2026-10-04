@@ -1,24 +1,33 @@
 # Research Project Handoff
 
-## Current source of truth
+## Project status
 
-- [Research study blueprint](research-study-blueprint-and-specification.md) defines the cross-sectional study, student BAT-S scoring, analysis plan, and project status.
-- [Lebanon student burnout questionnaire](lebanon-student-burnout-survey-questions.md) is the active 43-item questionnaire and includes the Google Forms script.
+The 43-question Google Form has been generated, and the researcher reports that it works. Recruitment status has not been confirmed. Live survey: [open the live survey](https://docs.google.com/forms/d/e/1FAIpQLSdsdMvfQbvm2ZosBR7LbEGYFOx7o_d2kO3tYsoN6CmSoaG07A/viewform?usp=dialog). The web/browser tools in the prior chat could not inspect the live Google Form, so its live settings were not independently verified.
 
-The questionnaire contains 20 non-BAT items and all 23 BAT-S core items; 10 secondary complaint items are omitted. The primary target uses the 12 starred short-form items (three per dimension), scored as an equal-weight mean of four subscale means. The 23-item core index is secondary. Requested tiers (<2.25, 2.25 to 3.40, >3.40) are project-defined exploratory bands, not published norms, empirical tertiles, validated Lebanese cutoffs, or diagnostic thresholds.
+The [active questionnaire](lebanon-student-burnout-survey-questions.md) is the source of truth for the questions and Apps Script generator. The [study blueprint](research-study-blueprint-and-specification.md) records the methodology, score definitions, psychometric plan, feature constraints, and modeling metrics.
 
-## Data and status
+## Instrument and scoring
 
-- `old framework/data/data.csv` and `data.xlsx` are legacy exports from the prior questionnaire; they do not contain responses to the active BAT-S instrument.
-- `PaperMetadata.csv` and `PaperMetadataDblp.xlsx` are the literature reference files.
-- The active questionnaire has not yet been deployed as this 43-question version. The supplied BAT source permits free use without author permission; retain its wording and response scale, cite the development paper, and review ethics requirements, consent/privacy wording, eligibility handling, and pilot completion time before launch.
-- The form records eligibility, but the provided script does not automatically end the survey for ineligible responses; filter those responses during cleaning.
-- Treat continuation intention as a concurrent secondary outcome. The study cannot claim to predict future burnout or actual dropout without later follow-up data.
+- 43 questions total: 20 non-BAT items plus all 23 core BAT-S items. The 10 secondary complaint items are omitted.
+- Primary outcome: marked 12-item BAT-S short form, with three items per dimension and an equal-weight mean of the four dimension means.
+- The 23-item core score is secondary. Risk tiers (<2.25, 2.25 to 3.40, >3.40) are project-defined exploratory bands, not published norms, empirical tertiles, validated Lebanese student cutoffs, or diagnostic thresholds.
+- Estimated completion time: about 5 minutes; one fast pilot completion took about 3 minutes.
+- Simple parenthetical definitions were added after ?procrastinate? and ?cynical?; response anchors remain 1 (Never) to 5 (Always).
+
+## Consent, privacy, and deployment
+
+- The consent text says participation is voluntary, takes about 5 minutes, requests no direct identifiers, and response access is limited to the researcher developing the model. Google Forms may process technical/submission metadata. Individual submissions cannot be located for withdrawal after submission.
+- The Apps Script disables email collection and the one-response-per-user limit. This should allow responses without sign-in but may allow repeat submissions. Confirm both settings in the live form.
+- Researcher/ethics contact fields were omitted at the user's request. No ethics approval status was provided; any applicable course or institutional requirements remain to be confirmed.
+- Data-retention period has not been specified.
+- Live form was not inspectable in the prior session. Confirm the participant-facing description and response settings directly in Google Forms before recruitment. Editing the embedded Apps Script does not update an already-created form; make any needed wording changes directly in Google Forms.
 
 ## Next steps
 
-1. Cite the BAT development paper and preserve the complete instrument wording and response scale. Check institutional ethics and deployment requirements.
-2. Pilot the form with Lebanese university students, review comprehension and completion time, and refine only the study-created items; keep BAT-S item wording and response anchors as supplied.
-3. Deploy the final form and preserve an untouched raw export with a data dictionary.
-4. Assess item distributions and reliability, then analyze the continuous 12-item BAT-S index (with 23-item core as secondary) and its dimensions.
-5. If sample size and outcome variation support it, fit a small pre-specified set of regression models with leakage-safe validation and report uncertainty.
+1. Confirm live form settings, participant-facing description, and any applicable course/institution requirements. Set a data-retention period.
+2. Confirm whether recruitment has started. Do not change survey items after responses are collected.
+3. Preserve an untouched response export and create a data dictionary. The form does not automatically end for an ineligible response; exclude No responses during cleaning.
+4. Score the marked 12 BAT-S short-form items as the primary continuous outcome; calculate the 23-item core score as secondary. Treat risk tiers as exploratory.
+5. Assess response distributions and reliability, then run leakage-safe regression. Evaluate classification only if class counts support it. These cross-sectional responses measure concurrent associations, not future burnout or dropout.
+
+Legacy files in `old framework/data/` predate this instrument and contain no responses to the active BAT-S survey. Literature files are `PaperMetadata.csv` and `PaperMetadataDblp.xlsx`.
