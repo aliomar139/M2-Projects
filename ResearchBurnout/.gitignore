@@ -1,0 +1,8 @@
+﻿# Local survey response data: keep participant-level records out of Git
+/Responses2 - Form Responses 1.csv
+/data.csv
+/data.xlsx
+/.vscode/
+/BAT-English.pdf
+/tmp/
+/BAT-S_ENG.pdf
