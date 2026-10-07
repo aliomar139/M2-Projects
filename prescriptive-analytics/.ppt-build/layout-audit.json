@@ -1,0 +1,2516 @@
+[
+  {
+    "slide": 1,
+    "title": "Prescriptive analytics",
+    "text": [
+      {
+        "id": 3,
+        "text": "Prescriptive analytics",
+        "box": [
+          52,
+          511,
+          290,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 4,
+        "text": "Template artwork: Slidesgo",
+        "box": [
+          570,
+          511,
+          250,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 5,
+        "text": "01 / 15",
+        "box": [
+          845,
+          511,
+          63,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 6,
+        "text": "Prescriptive\nanalytics",
+        "box": [
+          52,
+          78,
+          455,
+          166
+        ],
+        "lines": 2,
+        "fontPx": 72
+      },
+      {
+        "id": 7,
+        "text": "Decision-making in the\ndata science life cycle",
+        "box": [
+          54,
+          272,
+          440,
+          70
+        ],
+        "lines": 2,
+        "fontPx": 26
+      },
+      {
+        "id": 8,
+        "text": "Uses data, goals, and limits\nto suggest what to do.",
+        "box": [
+          54,
+          380,
+          440,
+          66
+        ],
+        "lines": 2,
+        "fontPx": 24
+      },
+      {
+        "id": 18,
+        "text": "Data",
+        "box": [
+          600,
+          134,
+          76,
+          45
+        ],
+        "lines": 1,
+        "fontPx": 23
+      },
+      {
+        "id": 25,
+        "text": "Goals",
+        "box": [
+          600,
+          239,
+          76,
+          45
+        ],
+        "lines": 1,
+        "fontPx": 23
+      },
+      {
+        "id": 34,
+        "text": "Limits",
+        "box": [
+          600,
+          344,
+          76,
+          45
+        ],
+        "lines": 1,
+        "fontPx": 23
+      },
+      {
+        "id": 42,
+        "text": "Suggested\naction",
+        "box": [
+          784,
+          321,
+          132,
+          79.5
+        ],
+        "lines": 2,
+        "fontPx": 31
+      }
+    ]
+  },
+  {
+    "slide": 2,
+    "title": "The data science life cycle",
+    "text": [
+      {
+        "id": 2,
+        "text": "The data science life cycle",
+        "box": [
+          52,
+          38,
+          858,
+          58
+        ],
+        "lines": 1,
+        "fontPx": 42
+      },
+      {
+        "id": 4,
+        "text": "Prescriptive analytics",
+        "box": [
+          52,
+          511,
+          290,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 5,
+        "text": "Template artwork: Slidesgo",
+        "box": [
+          570,
+          511,
+          250,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 6,
+        "text": "02 / 15",
+        "box": [
+          845,
+          511,
+          63,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 20,
+        "text": "Understand\nthe problem",
+        "box": [
+          52,
+          250,
+          216,
+          67.0
+        ],
+        "lines": 2,
+        "fontPx": 26
+      },
+      {
+        "id": 30,
+        "text": "Prepare\nthe data",
+        "box": [
+          367,
+          250,
+          216,
+          67.0
+        ],
+        "lines": 2,
+        "fontPx": 26
+      },
+      {
+        "id": 35,
+        "text": "Build\na model",
+        "box": [
+          682,
+          250,
+          216,
+          67.0
+        ],
+        "lines": 2,
+        "fontPx": 26
+      },
+      {
+        "id": 40,
+        "text": "Check\nthe results",
+        "box": [
+          522,
+          368,
+          216,
+          67.0
+        ],
+        "lines": 2,
+        "fontPx": 26
+      },
+      {
+        "id": 45,
+        "text": "Use results\nin practice",
+        "box": [
+          212,
+          368,
+          216,
+          67.0
+        ],
+        "lines": 2,
+        "fontPx": 26
+      },
+      {
+        "id": 47,
+        "text": "Teams can return to earlier stages when data, goals, or results change.",
+        "box": [
+          70,
+          451,
+          820,
+          31
+        ],
+        "lines": 1,
+        "fontPx": 18
+      }
+    ]
+  },
+  {
+    "slide": 3,
+    "title": "Four types of analytics",
+    "text": [
+      {
+        "id": 2,
+        "text": "Four types of analytics",
+        "box": [
+          52,
+          38,
+          858,
+          58
+        ],
+        "lines": 1,
+        "fontPx": 42
+      },
+      {
+        "id": 4,
+        "text": "Prescriptive analytics",
+        "box": [
+          52,
+          511,
+          290,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 5,
+        "text": "Template artwork: Slidesgo",
+        "box": [
+          570,
+          511,
+          250,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 6,
+        "text": "03 / 15",
+        "box": [
+          845,
+          511,
+          63,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 10,
+        "text": "Descriptive",
+        "box": [
+          129,
+          116,
+          196,
+          42
+        ],
+        "lines": 1,
+        "fontPx": 29
+      },
+      {
+        "id": 11,
+        "text": "What happened?",
+        "box": [
+          325,
+          117,
+          232,
+          39
+        ],
+        "lines": 1,
+        "fontPx": 22
+      },
+      {
+        "id": 12,
+        "text": "Show last month's sales for each store.",
+        "box": [
+          568,
+          116,
+          322,
+          59
+        ],
+        "lines": 1,
+        "fontPx": 18
+      },
+      {
+        "id": 19,
+        "text": "Diagnostic",
+        "box": [
+          129,
+          195,
+          196,
+          42
+        ],
+        "lines": 1,
+        "fontPx": 29
+      },
+      {
+        "id": 20,
+        "text": "Why did it happen?",
+        "box": [
+          325,
+          196,
+          232,
+          39
+        ],
+        "lines": 1,
+        "fontPx": 22
+      },
+      {
+        "id": 21,
+        "text": "Check if missing products caused lower sales.",
+        "box": [
+          568,
+          195,
+          322,
+          59
+        ],
+        "lines": 2,
+        "fontPx": 18
+      },
+      {
+        "id": 26,
+        "text": "Predictive",
+        "box": [
+          129,
+          274,
+          196,
+          42
+        ],
+        "lines": 1,
+        "fontPx": 29
+      },
+      {
+        "id": 27,
+        "text": "What may happen?",
+        "box": [
+          325,
+          275,
+          232,
+          39
+        ],
+        "lines": 1,
+        "fontPx": 22
+      },
+      {
+        "id": 28,
+        "text": "Predict next month's demand.",
+        "box": [
+          568,
+          274,
+          322,
+          59
+        ],
+        "lines": 1,
+        "fontPx": 18
+      },
+      {
+        "id": 35,
+        "text": "Prescriptive",
+        "box": [
+          129,
+          353,
+          196,
+          42
+        ],
+        "lines": 1,
+        "fontPx": 29
+      },
+      {
+        "id": 36,
+        "text": "What should we do?",
+        "box": [
+          325,
+          354,
+          232,
+          39
+        ],
+        "lines": 1,
+        "fontPx": 22
+      },
+      {
+        "id": 37,
+        "text": "Decide how much stock to send to each store.",
+        "box": [
+          568,
+          353,
+          322,
+          59
+        ],
+        "lines": 2,
+        "fontPx": 18
+      },
+      {
+        "id": 38,
+        "text": "Stock = products available. Demand = how much customers want to buy.",
+        "box": [
+          52,
+          451,
+          856,
+          34
+        ],
+        "lines": 1,
+        "fontPx": 17
+      }
+    ]
+  },
+  {
+    "slide": 4,
+    "title": "The role of prescriptive analytics",
+    "text": [
+      {
+        "id": 2,
+        "text": "The role of prescriptive analytics",
+        "box": [
+          52,
+          38,
+          858,
+          58
+        ],
+        "lines": 1,
+        "fontPx": 42
+      },
+      {
+        "id": 4,
+        "text": "Prescriptive analytics",
+        "box": [
+          52,
+          511,
+          290,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 5,
+        "text": "Template artwork: Slidesgo",
+        "box": [
+          570,
+          511,
+          250,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 6,
+        "text": "04 / 15",
+        "box": [
+          845,
+          511,
+          63,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 11,
+        "text": "Prediction",
+        "box": [
+          145,
+          145,
+          236,
+          49
+        ],
+        "lines": 1,
+        "fontPx": 32
+      },
+      {
+        "id": 12,
+        "text": "Estimates what may happen.",
+        "box": [
+          78,
+          207,
+          307,
+          38
+        ],
+        "lines": 1,
+        "fontPx": 21
+      },
+      {
+        "id": 19,
+        "text": "Recommendation",
+        "box": [
+          624,
+          145,
+          259,
+          49
+        ],
+        "lines": 1,
+        "fontPx": 32
+      },
+      {
+        "id": 20,
+        "text": "Suggests what to do.",
+        "box": [
+          555,
+          207,
+          321,
+          38
+        ],
+        "lines": 1,
+        "fontPx": 21
+      },
+      {
+        "id": 21,
+        "text": "Stores",
+        "box": [
+          52,
+          302,
+          382,
+          42
+        ],
+        "lines": 1,
+        "fontPx": 29
+      },
+      {
+        "id": 22,
+        "text": "Use expected demand to decide\nhow much stock to send.",
+        "box": [
+          52,
+          352,
+          388,
+          74
+        ],
+        "lines": 2,
+        "fontPx": 22
+      },
+      {
+        "id": 23,
+        "text": "Delivery",
+        "box": [
+          530,
+          302,
+          378,
+          42
+        ],
+        "lines": 1,
+        "fontPx": 29
+      },
+      {
+        "id": 24,
+        "text": "Use predicted travel times to\nchoose roads for on-time delivery.",
+        "box": [
+          530,
+          352,
+          378,
+          74
+        ],
+        "lines": 2,
+        "fontPx": 22
+      },
+      {
+        "id": 26,
+        "text": "Show the action, the expected result, and the limits behind the choice.",
+        "box": [
+          70,
+          451,
+          820,
+          31
+        ],
+        "lines": 1,
+        "fontPx": 18
+      }
+    ]
+  },
+  {
+    "slide": 5,
+    "title": "The decision model",
+    "text": [
+      {
+        "id": 2,
+        "text": "The decision model",
+        "box": [
+          52,
+          38,
+          858,
+          58
+        ],
+        "lines": 1,
+        "fontPx": 42
+      },
+      {
+        "id": 4,
+        "text": "Prescriptive analytics",
+        "box": [
+          52,
+          511,
+          290,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 5,
+        "text": "Template artwork: Slidesgo",
+        "box": [
+          570,
+          511,
+          250,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 6,
+        "text": "05 / 15",
+        "box": [
+          845,
+          511,
+          63,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 15,
+        "text": "Decision variables",
+        "box": [
+          115,
+          125,
+          337,
+          50
+        ],
+        "lines": 1,
+        "fontPx": 31
+      },
+      {
+        "id": 16,
+        "text": "What can change?",
+        "box": [
+          115,
+          177,
+          337,
+          36
+        ],
+        "lines": 1,
+        "fontPx": 21
+      },
+      {
+        "id": 17,
+        "text": "Products sent to each store",
+        "box": [
+          115,
+          219,
+          337,
+          40
+        ],
+        "lines": 1,
+        "fontPx": 19
+      },
+      {
+        "id": 22,
+        "text": "Objective",
+        "box": [
+          568,
+          125,
+          337,
+          50
+        ],
+        "lines": 1,
+        "fontPx": 31
+      },
+      {
+        "id": 23,
+        "text": "What should improve?",
+        "box": [
+          568,
+          177,
+          337,
+          36
+        ],
+        "lines": 1,
+        "fontPx": 21
+      },
+      {
+        "id": 24,
+        "text": "Meet as much demand as possible",
+        "box": [
+          568,
+          219,
+          337,
+          40
+        ],
+        "lines": 1,
+        "fontPx": 19
+      },
+      {
+        "id": 31,
+        "text": "Constraints",
+        "box": [
+          115,
+          287,
+          337,
+          50
+        ],
+        "lines": 1,
+        "fontPx": 31
+      },
+      {
+        "id": 32,
+        "text": "What rules must we follow?",
+        "box": [
+          115,
+          339,
+          337,
+          36
+        ],
+        "lines": 1,
+        "fontPx": 21
+      },
+      {
+        "id": 33,
+        "text": "Available stock and store limits",
+        "box": [
+          115,
+          381,
+          337,
+          40
+        ],
+        "lines": 1,
+        "fontPx": 19
+      },
+      {
+        "id": 37,
+        "text": "Inputs",
+        "box": [
+          568,
+          287,
+          337,
+          50
+        ],
+        "lines": 1,
+        "fontPx": 31
+      },
+      {
+        "id": 38,
+        "text": "What information is available?",
+        "box": [
+          568,
+          339,
+          337,
+          36
+        ],
+        "lines": 1,
+        "fontPx": 21
+      },
+      {
+        "id": 39,
+        "text": "Expected demand and current stock",
+        "box": [
+          568,
+          381,
+          337,
+          40
+        ],
+        "lines": 1,
+        "fontPx": 19
+      },
+      {
+        "id": 43,
+        "text": "Feasible = follows the rules. Optimal = best result within the model.",
+        "box": [
+          70,
+          451,
+          820,
+          31
+        ],
+        "lines": 1,
+        "fontPx": 18
+      }
+    ]
+  },
+  {
+    "slide": 6,
+    "title": "The recommendation process",
+    "text": [
+      {
+        "id": 2,
+        "text": "The recommendation process",
+        "box": [
+          52,
+          38,
+          858,
+          58
+        ],
+        "lines": 1,
+        "fontPx": 42
+      },
+      {
+        "id": 4,
+        "text": "Prescriptive analytics",
+        "box": [
+          52,
+          511,
+          290,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 5,
+        "text": "Template artwork: Slidesgo",
+        "box": [
+          570,
+          511,
+          250,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 6,
+        "text": "06 / 15",
+        "box": [
+          845,
+          511,
+          63,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 13,
+        "text": "01  Define",
+        "box": [
+          52,
+          250,
+          160,
+          47
+        ],
+        "lines": 1,
+        "fontPx": 30
+      },
+      {
+        "id": 14,
+        "text": "Agree on the decision,\ngoal, and rules.",
+        "box": [
+          53,
+          315,
+          158,
+          91
+        ],
+        "lines": 3,
+        "fontPx": 18
+      },
+      {
+        "id": 25,
+        "text": "02  Prepare",
+        "box": [
+          226,
+          250,
+          160,
+          47
+        ],
+        "lines": 1,
+        "fontPx": 30
+      },
+      {
+        "id": 26,
+        "text": "Prepare data and\nestimate future conditions.",
+        "box": [
+          227,
+          315,
+          158,
+          91
+        ],
+        "lines": 3,
+        "fontPx": 18
+      },
+      {
+        "id": 32,
+        "text": "03  Model",
+        "box": [
+          400,
+          250,
+          160,
+          47
+        ],
+        "lines": 1,
+        "fontPx": 30
+      },
+      {
+        "id": 33,
+        "text": "Connect choices,\nresults, and limits.",
+        "box": [
+          401,
+          315,
+          158,
+          91
+        ],
+        "lines": 2,
+        "fontPx": 18
+      },
+      {
+        "id": 39,
+        "text": "04  Compare",
+        "box": [
+          574,
+          250,
+          160,
+          47
+        ],
+        "lines": 1,
+        "fontPx": 30
+      },
+      {
+        "id": 40,
+        "text": "Check plans and\nwhat the model assumes.",
+        "box": [
+          575,
+          315,
+          158,
+          91
+        ],
+        "lines": 3,
+        "fontPx": 18
+      },
+      {
+        "id": 46,
+        "text": "05  Act",
+        "box": [
+          748,
+          250,
+          160,
+          47
+        ],
+        "lines": 1,
+        "fontPx": 30
+      },
+      {
+        "id": 47,
+        "text": "Use the plan and\nmeasure the result.",
+        "box": [
+          749,
+          315,
+          158,
+          91
+        ],
+        "lines": 2,
+        "fontPx": 18
+      },
+      {
+        "id": 51,
+        "text": "Use results to improve the next decision.",
+        "box": [
+          312,
+          440,
+          340,
+          31
+        ],
+        "lines": 1,
+        "fontPx": 17
+      }
+    ]
+  },
+  {
+    "slide": 7,
+    "title": "Methods used in prescriptive analytics",
+    "text": [
+      {
+        "id": 2,
+        "text": "Methods used in prescriptive analytics",
+        "box": [
+          52,
+          38,
+          858,
+          58
+        ],
+        "lines": 1,
+        "fontPx": 42
+      },
+      {
+        "id": 4,
+        "text": "Prescriptive analytics",
+        "box": [
+          52,
+          511,
+          290,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 5,
+        "text": "Template artwork: Slidesgo",
+        "box": [
+          570,
+          511,
+          250,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 6,
+        "text": "07 / 15",
+        "box": [
+          845,
+          511,
+          63,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 7,
+        "text": "01",
+        "box": [
+          52,
+          125,
+          55,
+          55
+        ],
+        "lines": 1,
+        "fontPx": 42
+      },
+      {
+        "id": 12,
+        "text": "Mathematical\noptimization",
+        "box": [
+          52,
+          190,
+          260,
+          74.5
+        ],
+        "lines": 2,
+        "fontPx": 29
+      },
+      {
+        "id": 13,
+        "text": "Finds the best result for a goal\nwhile following the rules.",
+        "box": [
+          52,
+          285,
+          260,
+          85
+        ],
+        "lines": 2,
+        "fontPx": 19
+      },
+      {
+        "id": 14,
+        "text": "02",
+        "box": [
+          355,
+          125,
+          55,
+          55
+        ],
+        "lines": 1,
+        "fontPx": 42
+      },
+      {
+        "id": 21,
+        "text": "Constraint\nprogramming",
+        "box": [
+          355,
+          190,
+          260,
+          74.5
+        ],
+        "lines": 2,
+        "fontPx": 29
+      },
+      {
+        "id": 22,
+        "text": "Finds a plan that follows\ndetailed rules.",
+        "box": [
+          355,
+          285,
+          260,
+          85
+        ],
+        "lines": 2,
+        "fontPx": 19
+      },
+      {
+        "id": 23,
+        "text": "03",
+        "box": [
+          658,
+          125,
+          55,
+          55
+        ],
+        "lines": 1,
+        "fontPx": 42
+      },
+      {
+        "id": 27,
+        "text": "Simulation",
+        "box": [
+          658,
+          190,
+          250,
+          55
+        ],
+        "lines": 1,
+        "fontPx": 29
+      },
+      {
+        "id": 28,
+        "text": "Tests possible results when\nconditions change.",
+        "box": [
+          658,
+          285,
+          250,
+          85
+        ],
+        "lines": 2,
+        "fontPx": 19
+      },
+      {
+        "id": 31,
+        "text": "Share limited stock",
+        "box": [
+          52,
+          360,
+          260,
+          54
+        ],
+        "lines": 1,
+        "fontPx": 20
+      },
+      {
+        "id": 32,
+        "text": "Plan working hours",
+        "box": [
+          355,
+          360,
+          260,
+          54
+        ],
+        "lines": 1,
+        "fontPx": 20
+      },
+      {
+        "id": 33,
+        "text": "Compare staff plans",
+        "box": [
+          658,
+          360,
+          250,
+          54
+        ],
+        "lines": 1,
+        "fontPx": 20
+      },
+      {
+        "id": 35,
+        "text": "Simulation tests plans; a rule or optimization method selects a plan.",
+        "box": [
+          70,
+          451,
+          820,
+          31
+        ],
+        "lines": 1,
+        "fontPx": 18
+      }
+    ]
+  },
+  {
+    "slide": 8,
+    "title": "What does the model produce?",
+    "text": [
+      {
+        "id": 2,
+        "text": "What does the model produce?",
+        "box": [
+          52,
+          38,
+          858,
+          58
+        ],
+        "lines": 1,
+        "fontPx": 42
+      },
+      {
+        "id": 4,
+        "text": "Prescriptive analytics",
+        "box": [
+          52,
+          511,
+          290,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 5,
+        "text": "Template artwork: Slidesgo",
+        "box": [
+          570,
+          511,
+          250,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 6,
+        "text": "08 / 15",
+        "box": [
+          845,
+          511,
+          63,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 7,
+        "text": "An action the team can use",
+        "box": [
+          52,
+          112,
+          856,
+          49
+        ],
+        "lines": 1,
+        "fontPx": 31
+      },
+      {
+        "id": 11,
+        "text": "Work plan",
+        "box": [
+          127,
+          196,
+          325,
+          43
+        ],
+        "lines": 1,
+        "fontPx": 30
+      },
+      {
+        "id": 12,
+        "text": "Who works and when",
+        "box": [
+          127,
+          251,
+          325,
+          62
+        ],
+        "lines": 1,
+        "fontPx": 21
+      },
+      {
+        "id": 21,
+        "text": "Order plan",
+        "box": [
+          577,
+          196,
+          325,
+          43
+        ],
+        "lines": 1,
+        "fontPx": 30
+      },
+      {
+        "id": 22,
+        "text": "What to buy and how much",
+        "box": [
+          577,
+          251,
+          325,
+          62
+        ],
+        "lines": 1,
+        "fontPx": 21
+      },
+      {
+        "id": 26,
+        "text": "Request list",
+        "box": [
+          127,
+          330,
+          325,
+          43
+        ],
+        "lines": 1,
+        "fontPx": 30
+      },
+      {
+        "id": 27,
+        "text": "Which requests to answer first",
+        "box": [
+          127,
+          385,
+          325,
+          62
+        ],
+        "lines": 1,
+        "fontPx": 21
+      },
+      {
+        "id": 31,
+        "text": "Plan options",
+        "box": [
+          577,
+          330,
+          325,
+          43
+        ],
+        "lines": 1,
+        "fontPx": 30
+      },
+      {
+        "id": 32,
+        "text": "Several plans and expected results",
+        "box": [
+          577,
+          385,
+          325,
+          62
+        ],
+        "lines": 2,
+        "fontPx": 21
+      },
+      {
+        "id": 34,
+        "text": "The team should also see the main reasons behind the suggestion.",
+        "box": [
+          70,
+          455,
+          820,
+          31
+        ],
+        "lines": 1,
+        "fontPx": 18
+      }
+    ]
+  },
+  {
+    "slide": 9,
+    "title": "Decisions prescriptive analytics can support",
+    "text": [
+      {
+        "id": 2,
+        "text": "Decisions prescriptive analytics can support",
+        "box": [
+          52,
+          38,
+          858,
+          58
+        ],
+        "lines": 1,
+        "fontPx": 42
+      },
+      {
+        "id": 4,
+        "text": "Prescriptive analytics",
+        "box": [
+          52,
+          511,
+          290,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 5,
+        "text": "Template artwork: Slidesgo",
+        "box": [
+          570,
+          511,
+          250,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 6,
+        "text": "09 / 15",
+        "box": [
+          845,
+          511,
+          63,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 15,
+        "text": "What should we buy?",
+        "box": [
+          129,
+          120,
+          360,
+          47
+        ],
+        "lines": 1,
+        "fontPx": 27
+      },
+      {
+        "id": 17,
+        "text": "Choose products and order amounts.",
+        "box": [
+          588,
+          121,
+          320,
+          66
+        ],
+        "lines": 2,
+        "fontPx": 20
+      },
+      {
+        "id": 22,
+        "text": "When should work happen?",
+        "box": [
+          129,
+          203,
+          360,
+          47
+        ],
+        "lines": 1,
+        "fontPx": 27
+      },
+      {
+        "id": 24,
+        "text": "Choose times for tasks or repairs.",
+        "box": [
+          588,
+          204,
+          320,
+          66
+        ],
+        "lines": 1,
+        "fontPx": 20
+      },
+      {
+        "id": 29,
+        "text": "Where should products go?",
+        "box": [
+          129,
+          286,
+          360,
+          47
+        ],
+        "lines": 1,
+        "fontPx": 27
+      },
+      {
+        "id": 31,
+        "text": "Decide how much each store receives.",
+        "box": [
+          588,
+          287,
+          320,
+          66
+        ],
+        "lines": 2,
+        "fontPx": 20
+      },
+      {
+        "id": 36,
+        "text": "Which request should come first?",
+        "box": [
+          129,
+          369,
+          360,
+          47
+        ],
+        "lines": 1,
+        "fontPx": 27
+      },
+      {
+        "id": 38,
+        "text": "Choose the order for answering requests.",
+        "box": [
+          588,
+          370,
+          320,
+          66
+        ],
+        "lines": 2,
+        "fontPx": 20
+      },
+      {
+        "id": 39,
+        "text": "Each answer leads to a choice the team can act on.",
+        "box": [
+          52,
+          461,
+          856,
+          32
+        ],
+        "lines": 1,
+        "fontPx": 19
+      }
+    ]
+  },
+  {
+    "slide": 10,
+    "title": "The meaning of the best choice",
+    "text": [
+      {
+        "id": 2,
+        "text": "The meaning of the best choice",
+        "box": [
+          52,
+          38,
+          858,
+          58
+        ],
+        "lines": 1,
+        "fontPx": 42
+      },
+      {
+        "id": 4,
+        "text": "Prescriptive analytics",
+        "box": [
+          52,
+          511,
+          290,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 5,
+        "text": "Template artwork: Slidesgo",
+        "box": [
+          570,
+          511,
+          250,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 6,
+        "text": "10 / 15",
+        "box": [
+          845,
+          511,
+          63,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 7,
+        "text": "The best choice depends on the goal.",
+        "box": [
+          52,
+          110,
+          856,
+          45
+        ],
+        "lines": 1,
+        "fontPx": 28
+      },
+      {
+        "id": 11,
+        "text": "Lower cost",
+        "box": [
+          119,
+          192,
+          334,
+          45
+        ],
+        "lines": 1,
+        "fontPx": 30
+      },
+      {
+        "id": 12,
+        "text": "Spend less money",
+        "box": [
+          119,
+          244,
+          334,
+          55
+        ],
+        "lines": 1,
+        "fontPx": 21
+      },
+      {
+        "id": 16,
+        "text": "Faster service",
+        "box": [
+          572,
+          192,
+          334,
+          45
+        ],
+        "lines": 1,
+        "fontPx": 30
+      },
+      {
+        "id": 17,
+        "text": "Reduce waiting time",
+        "box": [
+          572,
+          244,
+          334,
+          55
+        ],
+        "lines": 1,
+        "fontPx": 21
+      },
+      {
+        "id": 26,
+        "text": "Less waste",
+        "box": [
+          119,
+          315,
+          334,
+          45
+        ],
+        "lines": 1,
+        "fontPx": 30
+      },
+      {
+        "id": 27,
+        "text": "Avoid unnecessary materials",
+        "box": [
+          119,
+          367,
+          334,
+          55
+        ],
+        "lines": 1,
+        "fontPx": 21
+      },
+      {
+        "id": 33,
+        "text": "Better service",
+        "box": [
+          572,
+          315,
+          334,
+          45
+        ],
+        "lines": 1,
+        "fontPx": 30
+      },
+      {
+        "id": 34,
+        "text": "Meet more customer needs",
+        "box": [
+          572,
+          367,
+          334,
+          55
+        ],
+        "lines": 1,
+        "fontPx": 21
+      },
+      {
+        "id": 37,
+        "text": "The business balances its goals and keeps the rules the plan must follow.",
+        "box": [
+          70,
+          457,
+          820,
+          31
+        ],
+        "lines": 1,
+        "fontPx": 18
+      }
+    ]
+  },
+  {
+    "slide": 11,
+    "title": "Short-term and long-term decisions",
+    "text": [
+      {
+        "id": 2,
+        "text": "Short-term and long-term decisions",
+        "box": [
+          52,
+          38,
+          858,
+          58
+        ],
+        "lines": 1,
+        "fontPx": 42
+      },
+      {
+        "id": 4,
+        "text": "Prescriptive analytics",
+        "box": [
+          52,
+          511,
+          290,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 5,
+        "text": "Template artwork: Slidesgo",
+        "box": [
+          570,
+          511,
+          250,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 6,
+        "text": "11 / 15",
+        "box": [
+          845,
+          511,
+          63,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 12,
+        "text": "Today",
+        "box": [
+          37,
+          194,
+          156,
+          43
+        ],
+        "lines": 1,
+        "fontPx": 29
+      },
+      {
+        "id": 13,
+        "text": "Choose which tasks\nto complete first.",
+        "box": [
+          32,
+          290,
+          184,
+          92
+        ],
+        "lines": 2,
+        "fontPx": 20
+      },
+      {
+        "id": 18,
+        "text": "Next week",
+        "box": [
+          280,
+          194,
+          156,
+          43
+        ],
+        "lines": 1,
+        "fontPx": 29
+      },
+      {
+        "id": 19,
+        "text": "Plan working\nhours.",
+        "box": [
+          275,
+          290,
+          184,
+          92
+        ],
+        "lines": 2,
+        "fontPx": 20
+      },
+      {
+        "id": 29,
+        "text": "Next month",
+        "box": [
+          523,
+          194,
+          156,
+          43
+        ],
+        "lines": 1,
+        "fontPx": 29
+      },
+      {
+        "id": 30,
+        "text": "Decide how much stock\neach store receives.",
+        "box": [
+          518,
+          290,
+          184,
+          92
+        ],
+        "lines": 3,
+        "fontPx": 20
+      },
+      {
+        "id": 35,
+        "text": "Next year",
+        "box": [
+          766,
+          194,
+          156,
+          43
+        ],
+        "lines": 1,
+        "fontPx": 29
+      },
+      {
+        "id": 36,
+        "text": "Choose where to add\nstorage space.",
+        "box": [
+          761,
+          290,
+          184,
+          92
+        ],
+        "lines": 3,
+        "fontPx": 20
+      },
+      {
+        "id": 38,
+        "text": "Long-term decisions need estimates about conditions further in the future.",
+        "box": [
+          70,
+          451,
+          820,
+          31
+        ],
+        "lines": 1,
+        "fontPx": 18
+      }
+    ]
+  },
+  {
+    "slide": 12,
+    "title": "Connected decisions",
+    "text": [
+      {
+        "id": 2,
+        "text": "Connected decisions",
+        "box": [
+          52,
+          38,
+          858,
+          58
+        ],
+        "lines": 1,
+        "fontPx": 42
+      },
+      {
+        "id": 4,
+        "text": "Prescriptive analytics",
+        "box": [
+          52,
+          511,
+          290,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 5,
+        "text": "Template artwork: Slidesgo",
+        "box": [
+          570,
+          511,
+          250,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 6,
+        "text": "12 / 15",
+        "box": [
+          845,
+          511,
+          63,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 7,
+        "text": "One decision can affect another.",
+        "box": [
+          52,
+          110,
+          856,
+          40
+        ],
+        "lines": 1,
+        "fontPx": 28
+      },
+      {
+        "id": 16,
+        "text": "More products",
+        "box": [
+          142,
+          177,
+          306,
+          45
+        ],
+        "lines": 1,
+        "fontPx": 27
+      },
+      {
+        "id": 18,
+        "text": "More storage space",
+        "box": [
+          550,
+          177,
+          356,
+          45
+        ],
+        "lines": 1,
+        "fontPx": 27
+      },
+      {
+        "id": 25,
+        "text": "More sales",
+        "box": [
+          142,
+          257,
+          306,
+          45
+        ],
+        "lines": 1,
+        "fontPx": 27
+      },
+      {
+        "id": 27,
+        "text": "More workers",
+        "box": [
+          550,
+          257,
+          356,
+          45
+        ],
+        "lines": 1,
+        "fontPx": 27
+      },
+      {
+        "id": 32,
+        "text": "Faster delivery",
+        "box": [
+          142,
+          337,
+          306,
+          45
+        ],
+        "lines": 1,
+        "fontPx": 27
+      },
+      {
+        "id": 34,
+        "text": "Possibly higher cost",
+        "box": [
+          550,
+          337,
+          356,
+          45
+        ],
+        "lines": 1,
+        "fontPx": 27
+      },
+      {
+        "id": 36,
+        "text": "Considering the connections helps avoid creating a new problem.",
+        "box": [
+          70,
+          451,
+          820,
+          31
+        ],
+        "lines": 1,
+        "fontPx": 18
+      }
+    ]
+  },
+  {
+    "slide": 13,
+    "title": "How machine learning helps",
+    "text": [
+      {
+        "id": 2,
+        "text": "How machine learning helps",
+        "box": [
+          52,
+          38,
+          858,
+          58
+        ],
+        "lines": 1,
+        "fontPx": 42
+      },
+      {
+        "id": 4,
+        "text": "Prescriptive analytics",
+        "box": [
+          52,
+          511,
+          290,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 5,
+        "text": "Template artwork: Slidesgo",
+        "box": [
+          570,
+          511,
+          250,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 6,
+        "text": "13 / 15",
+        "box": [
+          845,
+          511,
+          63,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 8,
+        "text": "Machine learning estimates",
+        "box": [
+          72,
+          127,
+          355,
+          39
+        ],
+        "lines": 1,
+        "fontPx": 29
+      },
+      {
+        "id": 10,
+        "text": "Prescriptive model suggests",
+        "box": [
+          530,
+          127,
+          355,
+          39
+        ],
+        "lines": 1,
+        "fontPx": 29
+      },
+      {
+        "id": 19,
+        "text": "How much customers will buy",
+        "box": [
+          120,
+          199,
+          316,
+          62
+        ],
+        "lines": 1,
+        "fontPx": 20
+      },
+      {
+        "id": 21,
+        "text": "How much stock to order",
+        "box": [
+          531,
+          199,
+          355,
+          62
+        ],
+        "lines": 1,
+        "fontPx": 20
+      },
+      {
+        "id": 25,
+        "text": "When a machine may fail",
+        "box": [
+          120,
+          274,
+          316,
+          62
+        ],
+        "lines": 1,
+        "fontPx": 20
+      },
+      {
+        "id": 27,
+        "text": "When to plan a repair",
+        "box": [
+          531,
+          274,
+          355,
+          62
+        ],
+        "lines": 1,
+        "fontPx": 20
+      },
+      {
+        "id": 33,
+        "text": "How many requests may arrive",
+        "box": [
+          120,
+          349,
+          316,
+          62
+        ],
+        "lines": 1,
+        "fontPx": 20
+      },
+      {
+        "id": 35,
+        "text": "How many workers to assign",
+        "box": [
+          531,
+          349,
+          355,
+          62
+        ],
+        "lines": 1,
+        "fontPx": 20
+      },
+      {
+        "id": 37,
+        "text": "Predictions are inputs. Estimates can also come from people or other methods.",
+        "box": [
+          70,
+          451,
+          820,
+          31
+        ],
+        "lines": 1,
+        "fontPx": 17.5
+      }
+    ]
+  },
+  {
+    "slide": 14,
+    "title": "Levels of automation",
+    "text": [
+      {
+        "id": 2,
+        "text": "Levels of automation",
+        "box": [
+          52,
+          38,
+          858,
+          58
+        ],
+        "lines": 1,
+        "fontPx": 42
+      },
+      {
+        "id": 4,
+        "text": "Prescriptive analytics",
+        "box": [
+          52,
+          511,
+          290,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 5,
+        "text": "Template artwork: Slidesgo",
+        "box": [
+          570,
+          511,
+          250,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 6,
+        "text": "14 / 15",
+        "box": [
+          845,
+          511,
+          63,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 7,
+        "text": "Automation = allowing a computer to do an action.",
+        "box": [
+          52,
+          107,
+          856,
+          40
+        ],
+        "lines": 1,
+        "fontPx": 23
+      },
+      {
+        "id": 14,
+        "text": "Suggestion only",
+        "box": [
+          52,
+          282,
+          253,
+          49
+        ],
+        "lines": 1,
+        "fontPx": 31
+      },
+      {
+        "id": 15,
+        "text": "System gives options.\nA person chooses and acts.",
+        "box": [
+          52,
+          351,
+          253,
+          72
+        ],
+        "lines": 2,
+        "fontPx": 19
+      },
+      {
+        "id": 21,
+        "text": "Approval needed",
+        "box": [
+          354,
+          282,
+          253,
+          49
+        ],
+        "lines": 1,
+        "fontPx": 31
+      },
+      {
+        "id": 22,
+        "text": "System prepares a plan.\nA person approves it.",
+        "box": [
+          354,
+          351,
+          253,
+          72
+        ],
+        "lines": 2,
+        "fontPx": 19
+      },
+      {
+        "id": 28,
+        "text": "Automatic action",
+        "box": [
+          656,
+          282,
+          253,
+          49
+        ],
+        "lines": 1,
+        "fontPx": 31
+      },
+      {
+        "id": 29,
+        "text": "System acts within agreed rules\nand records its actions.",
+        "box": [
+          656,
+          351,
+          253,
+          72
+        ],
+        "lines": 3,
+        "fontPx": 19
+      },
+      {
+        "id": 31,
+        "text": "Choose the level carefully and provide a way to stop automatic actions.",
+        "box": [
+          70,
+          451,
+          820,
+          31
+        ],
+        "lines": 1,
+        "fontPx": 18
+      }
+    ]
+  },
+  {
+    "slide": 15,
+    "title": "Fairness in decision-making",
+    "text": [
+      {
+        "id": 2,
+        "text": "Fairness in decision-making",
+        "box": [
+          52,
+          38,
+          858,
+          58
+        ],
+        "lines": 1,
+        "fontPx": 42
+      },
+      {
+        "id": 4,
+        "text": "Prescriptive analytics",
+        "box": [
+          52,
+          511,
+          290,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 5,
+        "text": "Template artwork: Slidesgo",
+        "box": [
+          570,
+          511,
+          250,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 6,
+        "text": "15 / 15",
+        "box": [
+          845,
+          511,
+          63,
+          18
+        ],
+        "lines": 1,
+        "fontPx": 11
+      },
+      {
+        "id": 7,
+        "text": "A plan can meet a business goal\nand still affect people unfairly.",
+        "box": [
+          52,
+          120,
+          470,
+          78
+        ],
+        "lines": 2,
+        "fontPx": 30
+      },
+      {
+        "id": 8,
+        "text": "A work plan might give the same workers\nthe busiest hours every week.",
+        "box": [
+          52,
+          238,
+          460,
+          81
+        ],
+        "lines": 2,
+        "fontPx": 23
+      },
+      {
+        "id": 9,
+        "text": "Include fairness in the goals or rules.",
+        "box": [
+          52,
+          365,
+          467,
+          61
+        ],
+        "lines": 1,
+        "fontPx": 25
+      },
+      {
+        "id": 15,
+        "text": "Breaks",
+        "box": [
+          624,
+          232,
+          262,
+          67
+        ],
+        "lines": 1,
+        "fontPx": 22
+      },
+      {
+        "id": 17,
+        "text": "Reasonable working hours",
+        "box": [
+          624,
+          291,
+          262,
+          67
+        ],
+        "lines": 1,
+        "fontPx": 22
+      },
+      {
+        "id": 19,
+        "text": "Sharing difficult tasks fairly",
+        "box": [
+          624,
+          350,
+          262,
+          67
+        ],
+        "lines": 2,
+        "fontPx": 22
+      },
+      {
+        "id": 20,
+        "text": "Thank you",
+        "box": [
+          52,
+          456,
+          300,
+          34
+        ],
+        "lines": 1,
+        "fontPx": 24
+      },
+      {
+        "id": 21,
+        "text": "Design and vector artwork by Slidesgo",
+        "box": [
+          535,
+          459,
+          373,
+          27
+        ],
+        "lines": 1,
+        "fontPx": 14
+      }
+    ]
+  }
+]

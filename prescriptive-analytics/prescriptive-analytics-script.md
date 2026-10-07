@@ -1,108 +1,104 @@
 # Prescriptive analytics: spoken script
 
-This script follows the 16 slides in `prescriptive-analytics-presentation.md`. Use the slide headings to follow the order, and speak at a steady pace.
+This script follows the 15 slides in `prescriptive-analytics-presentation.md`. Use the slide headings to follow the order, and speak slowly and clearly.
 
 ## Slide 1: Prescriptive analytics
 
-Hello everyone, and thank you for being here. The data science life cycle goes through several stages: understanding the problem, preparing data, building models, evaluating results, and putting them into use. Within this process, prescriptive analytics helps turn analysis into a decision.
+Hello everyone, and thank you for being here. The data science life cycle has several stages: understanding the problem, preparing data, building models, checking results, and using them in practice. Prescriptive analytics helps us use this work to make a decision.
 
 
 ## Slide 2: The data science life cycle
 
-The cycle begins with the business problem. We need to know what decision matters and how we will measure success. We then explore and prepare the data, build suitable models, and evaluate whether the results meet the goal. Deployment puts the results into use.
+The cycle starts with the business problem. We need to know what decision to make and how we will tell if it worked. We then study and prepare the data, build models, and check whether the results meet the goal. Deployment means using the results in practice.
 
-Prescriptive analytics can support the modeling and decision-making work within this cycle. The process is iterative: if results reveal a problem, we may return to the data, the model, or even the original goal.
+Prescriptive analytics helps with modeling and decision-making during this cycle. We can go back to earlier stages: if the results show a problem, we may need to change the data, the model, or even the goal.
 
 Source: [IBM CRISP-DM guide](https://www.ibm.com/docs/en/SS3RA7_18.5.0/pdf/ModelerCRISPDM.pdf).
 
 ## Slide 3: Four types of analytics
 
-Descriptive analytics represents the summary of the data. It tells us what happened; for example, how much each store sold last month.
+Descriptive analytics gives a summary of the data. It tells us what happened, such as how much each store sold last month.
 
-Diagnostic analytics investigates why a result occurred. If sales fell, we might examine whether stock shortages explain the decrease. A possible explanation still needs evidence.
+Diagnostic analytics looks for reasons behind a result. If stores sold fewer products, we might check whether they had enough products available. We need evidence to show whether this explains the lower sales.
 
-Predictive analytics estimates future conditions. For example, it can forecast demand for each store next month.
+Predictive analytics estimates what may happen next. For example, it can predict how much each store may sell next month. Demand means how much customers want to buy.
 
-Prescriptive analytics supports the choice of action. It can recommend how much stock to send to each store, using demand estimates and available supply. These four types can work together within the same data science project.
+Prescriptive analytics suggests what to do. Stock means the products available. The model can use expected demand and available stock to suggest how much to send to each store. All four types can work together in the same data science project.
 
 Source: [IBM Think: prescriptive analytics](https://www.ibm.com/think/topics/prescriptive-analytics).
 
 ## Slide 4: The role of prescriptive analytics
 
-Let us focus on prescriptive analytics. A forecast gives us an estimate of demand; the prescriptive model helps choose a response. In retail, that response may be an allocation of stock. In delivery planning, travel-time estimates can help choose routes that meet deadlines.
+Let us focus on prescriptive analytics. A forecast is a prediction, such as how much people may buy. A prescriptive model helps us choose an action using that information. For stores, it may suggest how much stock to send. For deliveries, it can use predicted travel times to choose roads that allow delivery at the agreed time.
 
-The recommendation should show what to do, what result to expect, and which limits shaped the plan. That makes it easier for the decision owner to review.
+The suggestion should show what to do, what result to expect, and which limits affected the choice. This helps the person responsible check the plan.
 
 ## Slide 5: The decision model
 
-A decision model has four main elements. Decision variables describe what we can change, such as the number of units sent to each store. The objective states what we want to improve. Constraints describe the limits we must respect, and inputs supply the information used in the calculation.
+A decision model has four main parts. Decision variables are what we can change, such as the number of products sent to each store. The objective is the goal we want to improve. Constraints are the rules and limits we must follow. Inputs are the information the model uses.
 
-A feasible plan follows the constraints. An optimal plan achieves the best objective value among the feasible choices in that model. Neither term guarantees that every assumption matches reality.
+A feasible plan follows all the rules. An optimal plan gives the best result for the goal among the choices allowed by the model. Assumptions are things the model treats as true, such as the available working hours. We still need to check whether these match the real situation.
 
 ## Slide 6: The recommendation process
 
-Begin by defining the decision with the person who owns it. Prepare the data and estimate the future conditions that matter. Then build a model connecting possible actions to their expected outcomes and limits.
+First, agree on the decision with the person responsible. Prepare the data and estimate what may happen next. Then build a model that connects possible choices to their expected results and limits.
 
-Compare the feasible plans and test important assumptions before presenting a recommendation. After the team acts, measure the actual result. This feedback helps improve later decisions.
+Compare the plans that follow the rules, and check what the model assumes before suggesting a plan. After the team uses the plan, measure what happened. Use these results to improve the next decision.
 
 ## Slide 7: Methods used in prescriptive analytics
 
-Different decisions need different methods. Mathematical optimization searches for the best value of a goal while respecting constraints. It can be useful for allocating stock. Constraint programming works with detailed assignment rules, such as staff skills and availability.
+Different decisions need different methods. Mathematical optimization finds the best result for a goal while following the rules. It can help decide how to share stock. Constraint programming finds plans that follow detailed rules, such as choosing working hours based on workers' skills and availability.
 
-Simulation helps estimate how plans perform under changing conditions, such as different levels of demand. To choose a recommendation, those simulated results still need a selection rule or an optimization step. Teams may combine methods when the problem requires it.
+Simulation estimates how plans may work when conditions change, such as when demand rises or falls. We still need a rule or an optimization step to choose which plan to suggest. Teams can use these methods together when needed.
 
 Sources: [Google OR-Tools](https://developers.google.com/optimization/introduction/cpp), [IBM: Monte Carlo simulation](https://www.ibm.com/think/topics/monte-carlo-simulation).
 
-## Slide 8: Worked example: allocating limited stock
+## Slide 8: What does the model produce?
 
-Consider a retailer with 100 units to allocate between two stores. Store A has an expected contribution of 12 dollars per unit and can receive up to 60 units. Store B contributes 9 dollars per unit and can receive up to 80. Contribution means the amount a sale adds after variable costs.
+The result should be something the team can use. It might be a work plan showing who works and when, an order plan showing what to buy, or a list showing which customer requests to answer first.
 
-Our decision variables are the units allocated to A and B. The objective is to maximize their total expected contribution, subject to the available supply and each store's limit. These are illustrative figures with simplified assumptions.
+Sometimes the model gives several possible plans and their expected results. The team should also see the main reasons behind the suggestion, so people can understand and check it.
 
-## Slide 9: Comparing the allocation plans
+## Slide 9: Decisions prescriptive analytics can support
 
-An equal allocation sends 50 units to each store and produces an expected contribution of 1,050 dollars. The optimized plan sends 60 to A and 40 to B, giving 1,080 dollars. Both plans meet the constraints, but the second adds 30 dollars by allocating more units to the higher-value store.
+Prescriptive analytics can help answer practical questions. What should we buy? When should work happen? Where should products go? Which request should come first?
 
-That result follows the model's assumptions about contribution and sales. We still need to compare actual results with expectations.
+Each question leads to an action. For example, deciding when work should happen can produce a plan for tasks or repairs. The important point is that the team can use the answer to do something.
 
-## Slide 10: Business rules change the recommendation
+## Slide 10: The meaning of the best choice
 
-Now add a service commitment: Store B must receive at least 60 units. With only 100 units available, the new optimal plan sends 40 to A and 60 to B. Expected contribution becomes 1,020 dollars.
+The best choice depends on the goal. If we want lower costs, we compare how much each plan costs. If we want faster service, we compare waiting times. Other goals may include less waste or meeting more customer needs.
 
-The business gives up 60 dollars of expected contribution to meet that commitment. Prescriptive analytics shows the cost of the rule; the business decides whether the commitment belongs in the model.
+A business can have several goals at once. People must decide how to balance them. The model then compares plans using those priorities and the rules it must follow.
 
-## Slide 11: Decisions under uncertainty
+## Slide 11: Short-term and long-term decisions
 
-The conditions behind a plan can change. Scenario analysis compares outcomes under different demand levels. Sensitivity analysis checks how a recommendation changes when an input or limit changes.
+Prescriptive analytics can support decisions for today, next week, or further into the future. A daily decision might be choosing which tasks to complete first. A weekly decision might be planning working hours. A longer-term decision might be choosing where to add storage space.
 
-We can also include risk limits, such as a service target or a stock reserve. The best plan on average may perform poorly in a difficult situation, so we should examine the downside as well as the average result.
+The time period changes the information we need. For a decision about next year, we need estimates about conditions further into the future.
 
-## Slide 12: Applications across industries
+## Slide 12: Connected decisions
 
-The same decision structure appears in many industries. Supply chain teams allocate stock, delivery teams assign vehicles and routes, and manufacturers schedule production. Hospital operations teams allocate staff and rooms, while customer service teams prioritize requests.
+Decisions often affect each other. If a store orders more products, it needs space to keep them. If it expects more sales, it may need more workers. Faster delivery may also cost more money.
 
-Each case needs a specific action, a measurable goal, and clear constraints. The model should reflect the actual work rather than a generic target.
+A decision model can consider these connections together. This helps the team avoid solving one problem in a way that creates another.
 
-## Slide 13: Benefits and limitations
+## Slide 13: How machine learning helps
 
-Prescriptive analytics can make resource choices more systematic and help explain why one plan is preferable to another. However, the result depends on the way we define the problem.
+Machine learning uses patterns in data to make predictions. It may estimate how much customers will buy, when a machine may fail, or how many customer requests will arrive.
 
-A cost-only objective may harm service. Incomplete data may distort expected outcomes, while missing constraints may produce an unusable plan. Conditions can also change after the recommendation. People need to review these issues before relying on the result.
+A prescriptive model can use those predictions to suggest how much stock to order, when to plan a repair, or how many workers to assign. It can also use estimates from people or other methods. Machine learning is one possible source of information for the decision model.
 
-## Slide 14: Putting the model into use
+## Slide 14: Levels of automation
 
-Start with a limited pilot and compare the recommendations with the current approach. Show the decision owner the proposed action, expected result, assumptions, and important limits.
+Automation means allowing a computer to do an action. At one level, the system only gives suggestions, and a person chooses and acts. At another level, the system prepares a plan but waits for approval. With automatic action, the system acts within agreed rules and records what it does.
 
-Define who can approve the recommendation and what to do if no feasible plan exists. Once the model is in use, monitor actual results and update it when the data or operating conditions change.
+The team chooses the level based on the decision and its possible effects. It should also be able to stop automatic actions if a problem occurs.
 
-## Slide 15: Evaluating a recommendation
+## Slide 15: Fairness in decision-making
 
-Evaluate the recommendation through the decision it supports. Did cost, contribution, waiting time, or service improve? Did the team follow the required limits? Was the plan stable when inputs changed slightly, and could people carry it out?
+A plan may meet the business goal but still affect people unfairly. For example, a work plan might give the same workers the busiest hours every week.
 
-Compare these results with a relevant baseline. For a pilot, consider whether other changes affected the outcome before attributing an improvement to the model.
+The team can include rules for breaks, reasonable working hours, and sharing difficult tasks fairly. People must decide what fairness means in that situation and include it in the model's goals or rules.
 
-## Slide 16: Prescriptive analytics in data science
 
-Descriptive analytics summarizes results, diagnostic analytics investigates causes, and predictive analytics estimates future conditions. Prescriptive analytics uses this evidence to recommend an action that meets a goal within constraints.
-
-Its usefulness depends on sound data, a clear decision model, and feedback from actual outcomes. Thank you for your attention. I am happy to take your questions.
