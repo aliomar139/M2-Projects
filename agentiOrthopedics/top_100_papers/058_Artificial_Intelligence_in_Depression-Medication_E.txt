@@ -1,0 +1,38 @@
+================================================================================
+TITLE: Artificial Intelligence in Depression-Medication Enhancement (AID-ME): A Cluster Randomized Trial of a Deep-Learning-Enabled Clinical Decision Support System for Personalized Depression Treatment Selection and Management.
+RANK: #58 (in Top 100 Orthopedic AI Papers)
+RELEVANCE SCORE: 45
+YEAR: 2025.0
+JOURNAL: The Journal of clinical psychiatry (SJR Quartile: 1.0)
+AUTHORS: D. Benrimoh, Kate Whitmore, Maud Richard, Grace Golden, Kelly Perlman, Sara Jalali, Timothy Friesen, Y. Barkat, J. Mehltretter, Robert Fratila, Caitrin Armstrong, Sonia Israel, Christina Popescu, Jordan F. Karp, Sagar V. Parikh, Shirin Golchi, Erica E. M. Moodie, Jun-Wei Shen, Anthony J. Gifuni, Manuela Ferrari, Mamta Sapra, S. Kloiber, Georges-F. Pinard, B. W. Dunlop, Karl Looper, Mohini Ranganathan, M. Enault, Serge Beaulieu, S. Rej, F. Hersson-Edery, Warren Steiner, A. Anacleto, S. Qassim, R. McGuire-Snieckus, H. Margolese
+STUDY TYPE: rct
+CITATIONS: 9
+DOI: https://doi.org/10.4088/jcp.24m15634
+CONSENSUS PAGE: https://consensus.app/papers/artificial-intelligence-in-depressionmedication-benrimoh-whitmore/33d6d55c8a77524cad9e04d584445fcc/
+ACCESS STATUS: Subscription / Paywalled (Full-text content extracted from academic repository)
+================================================================================
+
+--- KEY TAKEAWAY & SYNTHESIS ---
+AI-enabled clinical decision support systems can potentially improve outcomes in moderate and greater severity major depressive disorder by personalizing treatment selection and management.
+
+--- FULL ABSTRACT ---
+Background: There has been increasing interest in the use of artificial intelligence (AI)-enabled clinical decision support systems (CDSS) for the personalization of major depressive disorder (MDD) treatment selection and management, but clinical studies are lacking. We tested whether a CDSS that combines an AI which predicts remission probabilities for individual antidepressants and a clinical algorithm based on treatment can improve MDD outcomes.
+
+Methods: This was a multicenter, cluster randomized, patient-and-rater blinded and clinician-partially-blinded, active-controlled trial that recruited outpatient adults with moderate or greater severity MDD. All patients had access to a patient portal to complete questionnaires. Clinicians in the active group had access to the CDSS; clinicians in the active-control group received patient questionnaires; both groups received guideline training. Primary outcome was remission (<11 points on the Montgomery-Asberg Depression Rating Scale [MADRS]) at study exit.
+
+Results: Forty-seven clinicians were recruited at 9 sites. Of 74 eligible patients, 61 patients completed a postbaseline MADRS and were analyzed. There were no differences in baseline MADRS (P = .153). There were more remitters in the active (n = 12, 28.6%) than in the active-control (0%) group (P = .012, Fisher's exact). Of 3 serious adverse events, none were caused by the CDSS. Speed of improvement was higher in the active than the control group (1.26 vs 0.37, P = .03).
+
+Conclusions: While limited by sample size and the lack of primary care clinicians, these results demonstrate preliminary evidence that longitudinal use of an AI-CDSS can improve outcomes in moderate and greater severity MDD.
+
+Trial Registration: ClinicalTrials.gov identifier: NCT04655924.
+
+© Copyright 2025 Physicians Postgraduate Press, Inc.
+
+--- REPOSITORY & PUBLISHER WEB METADATA ---
+Affiliations: Aifred Health Inc, Montreal, Quebec, Canada.
+
+Extended Abstract from Repository:
+Background: There has been increasing interest in the use of artificial intelligence (AI)-enabled clinical decision support systems (CDSS) for the personalization of major depressive disorder (MDD) treatment selection and management, but clinical studies are lacking. We tested whether a CDSS that combines an AI which predicts remission probabilities for individual antidepressants and a clinical algorithm based on treatment can improve MDD outcomes. Methods: This was a multicenter, cluster randomized, patient-and-rater blinded and clinician-partially-blinded, active-controlled trial that recruited outpatient adults with moderate or greater severity MDD. All patients had access to a patient portal to complete questionnaires. Clinicians in the active group had access to the CDSS; clinicians in the active-control group received patient questionnaires; both groups received guideline training. Primary outcome was remission (<11 points on the Montgomery-Asberg Depression Rating Scale [MADRS]) at study exit. Results: Forty-seven clinicians were recruited at 9 sites. Of 74 eligible patients, 61 patients completed a postbaseline MADRS and were analyzed. There were no differences in baseline MADRS ( P = .153). There were more remitters in the active (n = 12, 28.6%) than in the active-control (0%) group ( P = .012, Fisher's exact). Of 3 serious adverse events, none were caused by the CDSS. Speed of improvement was higher in the active than the control group (1.26 vs 0.37, P = .03). Conclusions: While limited by sample size and the lack of primary care clinicians, these results demonstrate preliminary evidence that longitudinal use of an AI-CDSS can improve outcomes in moderate and greater severity MDD. Trial Registration: ClinicalTrials.gov identifier: NCT04655924.
+
+--- SUMMARY & CITATION ---
+How to cite: D. Benrimoh, Kate Whitmore, Maud Richard, Grace Golden, Kelly Perlman, Sara Jalali, Timothy Friesen, Y. Barkat, J. Mehltretter, Robert Fratila, Caitrin Armstrong, Sonia Israel, Christina Popescu, Jordan F. Karp, Sagar V. Parikh, Shirin Golchi, Erica E. M. Moodie, Jun-Wei Shen, Anthony J. Gifuni, Manuela Ferrari, Mamta Sapra, S. Kloiber, Georges-F. Pinard, B. W. Dunlop, Karl Looper, Mohini Ranganathan, M. Enault, Serge Beaulieu, S. Rej, F. Hersson-Edery, Warren Steiner, A. Anacleto, S. Qassim, R. McGuire-Snieckus, H. Margolese (2025.0). Artificial Intelligence in Depression-Medication Enhancement (AID-ME): A Cluster Randomized Trial of a Deep-Learning-Enabled Clinical Decision Support System for Personalized Depression Treatment Selection and Management.. The Journal of clinical psychiatry.

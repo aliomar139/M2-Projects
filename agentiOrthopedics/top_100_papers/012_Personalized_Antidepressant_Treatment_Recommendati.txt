@@ -1,0 +1,22 @@
+================================================================================
+TITLE: Personalized Antidepressant Treatment Recommendation Using Reinforcement Learning and Predictive Modelling on Synthetic Patient Data
+RANK: #12 (in Top 100 Orthopedic AI Papers)
+RELEVANCE SCORE: 80
+YEAR: 2025.0
+JOURNAL: OALib (SJR Quartile: )
+AUTHORS: R. de Filippis, Abdullah Al Foysal
+STUDY TYPE: 
+CITATIONS: 0
+DOI: https://doi.org/10.4236/oalib.1113957
+CONSENSUS PAGE: https://consensus.app/papers/personalized-antidepressant-treatment-recommendation-filippis-foysal/300781caf22a571891d5feb3f8306cd5/
+ACCESS STATUS: Subscription / Paywalled (Full-text content extracted from academic repository)
+================================================================================
+
+--- KEY TAKEAWAY & SYNTHESIS ---
+This study developed a clinical decision support system that personalizes antidepressant treatment selection using synthetic patient data, predictive modeling, and reinforcement learning, aiming to reduce patient suffering and improve treatment success.
+
+--- FULL ABSTRACT ---
+This study presents a comprehensive clinical decision support system aimed at personalizing antidepressant treatment selection using synthetic patient data, predictive modelling, and reinforcement learning.Traditional antidepressant prescribing often relies on trial-and-error methods, which can result in prolonged patient suffering and delayed treatment success, particularly in treatment-resistant depression.To address the limitations posed by data scarcity and privacy constraints in psychiatric research, we developed a robust synthetic patient data generator that simulates realistic clinical, genetic, and treatment response profiles.These synthetic datasets capture essential features such as age, gender, baseline depression severity, genetic markers (5HTTLPR, BDNF, COMT, FKBP5), treatment history, and comorbidities including anxiety and chronic pain.We employed Gradient Boosting and Neural Network classifiers to predict treatment response probabilities based on individual patient profiles.These models achieved moderate classification accuracy, with a tendency to predict responders more reliably than non-responders.To further optimize treatment strategies, we integrated a Dueling DQN Reinforcement Learning agent trained within a custom-designed environment that simulates multi-step treatment processes, side effect profiles, and severity progression.While the reinforcement learning agent successfully optimized sequential treatment selections and reduced symptom severity, it did not achieve remission under the current reward configuration, suggesting the need for further reward function tuning.An enhanced clinical decision support system was developed to generate top treatment recommendations with natural language explanations, facilitating transparent and interpretable clinical guidance.This research demonstrates the po-How to cite this paper: de
+
+--- SUMMARY & CITATION ---
+How to cite: R. de Filippis, Abdullah Al Foysal (2025.0). Personalized Antidepressant Treatment Recommendation Using Reinforcement Learning and Predictive Modelling on Synthetic Patient Data. OALib.

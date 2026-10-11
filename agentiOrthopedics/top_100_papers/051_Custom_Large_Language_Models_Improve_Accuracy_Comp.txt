@@ -1,0 +1,28 @@
+================================================================================
+TITLE: Custom Large Language Models Improve Accuracy: Comparing Retrieval Augmented Generation and Artificial Intelligence Agents to Non-Custom Models for Evidence-Based Medicine.
+RANK: #51 (in Top 100 Orthopedic AI Papers)
+RELEVANCE SCORE: 58
+YEAR: 2024.0
+JOURNAL: Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association (SJR Quartile: 1.0)
+AUTHORS: Joshua J. Woo, Andrew J Yang, Reena J. Olsen, Sayyida S. Hasan, D. Nawabi, Benedict U. Nwachukwu, Riley J. Williams, Prem N. Ramkumar
+STUDY TYPE: theoretical, modeling, or simulation study
+CITATIONS: 55
+DOI: https://doi.org/10.1016/j.arthro.2024.10.042
+CONSENSUS PAGE: https://consensus.app/papers/custom-large-language-models-improve-accuracy-comparing-woo-yang/08801f63c7f45c33ad7be27b2bbd565e/
+ACCESS STATUS: Subscription / Paywalled (Full-text content extracted from academic repository)
+================================================================================
+
+--- KEY TAKEAWAY & SYNTHESIS ---
+Custom Large Language Models (LLMs) using Retrieval Augmented Generation (RAG) and Agentic Augmentation improve accuracy in delivering accurate information in orthopaedic care.
+
+--- FULL ABSTRACT ---
+
+
+--- REPOSITORY & PUBLISHER WEB METADATA ---
+Affiliations: Brown University/The Warren Alpert School of Brown University, Providence, Rhode Island, U.S.A.
+
+Extended Abstract from Repository:
+Purpose To show the value of custom methods, namely Retrieval Augmented Generation (RAG)-based Large Language Models (LLMs) and Agentic Augmentation, over standard LLMs in delivering accurate information using an anterior cruciate ligament (ACL) injury case. Methods A set of 100 questions and answers based on the 2022 AAOS ACL guidelines were curated. Closed-source (open AI GPT4/GPT 3.5 and Anthropic's Claude3) and open-source models (LLama3 8b/70b and Mistral 8×7b) were asked questions in base form and again with AAOS guidelines embedded into a RAG system. The top-performing models were further augmented with artificial intelligence (AI) agents and reevaluated. Two fellowship-trained surgeons blindly evaluated the accuracy of the responses of each cohort. Recall-Oriented Understudy of Gisting Evaluation and Metric for Evaluation of Translation with Explicit Ordering scores were calculated to assess semantic similarity in the response. Results All noncustom LLM models started below 60% accuracy. Applying RAG improved the accuracy of every model by an average 39.7%. The highest performing model with just RAG was Meta's open-source Llama3 70b (94%). The highest performing model with RAG and AI agents was Open AI's GPT4 (95%). Conclusions RAG improved accuracy by an average of 39.7%, with the highest accuracy rate of 94% in the Meta Llama3 70b. Incorporating AI agents into a previously RAG-augmented LLM improved ChatGPT4 accuracy rate to 95%. Thus, Agentic and RAG augmented LLMs can be accurate liaisons of information, supporting our hypothesis. Clinical relevance Despite literature surrounding the use of LLM in medicine, there has been considerable and appropriate skepticism given the variably accurate response rates. This study establishes the groundwork to identify whether custom modifications to LLMs using RAG and agentic augmentation can better deliver accurate information in orthopaedic care. With this knowledge, online medical information commonly sought in popular LLMs, such as ChatGPT, can be standardized and provide relevant online medical information to better support shared decision making between surgeon and patient.
+
+--- SUMMARY & CITATION ---
+How to cite: Joshua J. Woo, Andrew J Yang, Reena J. Olsen, Sayyida S. Hasan, D. Nawabi, Benedict U. Nwachukwu, Riley J. Williams, Prem N. Ramkumar (2024.0). Custom Large Language Models Improve Accuracy: Comparing Retrieval Augmented Generation and Artificial Intelligence Agents to Non-Custom Models for Evidence-Based Medicine.. Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association.

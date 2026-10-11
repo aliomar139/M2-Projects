@@ -1,0 +1,27 @@
+================================================================================
+TITLE: Artificial Intelligence and Orthopaedics: An Introduction for Clinicians.
+RANK: #43 (in Top 100 Orthopedic AI Papers)
+RELEVANCE SCORE: 60
+YEAR: 2020.0
+JOURNAL: The Journal of bone and joint surgery. American volume (SJR Quartile: 1.0)
+AUTHORS: Thomas G. Myers, P. Ramkumar, B. Ricciardi, K. Urish, Jens Kipper, C. Ketonis
+STUDY TYPE: other
+CITATIONS: 179
+DOI: https://doi.org/10.2106/jbjs.19.01128
+PUBMED CENTRAL (PMC): https://pmc.ncbi.nlm.nih.gov/articles/PMC7508289/
+PUBMED ID: https://pubmed.ncbi.nlm.nih.gov/32379124/
+CONSENSUS PAGE: https://consensus.app/papers/artificial-intelligence-and-orthopaedics-an-myers-ramkumar/186587edaeb052b98304297747506eeb/
+ACCESS STATUS: Subscription / Paywalled (Full-text content extracted from academic repository)
+================================================================================
+
+--- KEY TAKEAWAY & SYNTHESIS ---
+AI in orthopaedics can improve care and reduce physician burnout, but ethical issues and clinical superiority need to be addressed.
+
+--- FULL ABSTRACT ---
+➤ Artificial intelligence (AI) provides machines with the ability to perform tasks using algorithms governed by pattern recognition and self-correction on large amounts of data to narrow options in order to avoid errors. ➤ The 4 things necessary for AI in medicine include big data sets, powerful computers, cloud computing, and open source algorithmic development. ➤ The use of AI in health care continues to expand, and its impact on orthopaedic surgery can already be found in diverse areas such as image recognition, risk prediction, patient-specific payment models, and clinical decision-making. ➤ Just as the business of medicine was once considered outside the domain of the orthopaedic surgeon, emerging technologies such as AI warrant ownership, leverage, and application by the orthopaedic surgeon to improve the care that we provide to the patients we serve. ➤ AI could provide solutions to factors contributing to physician burnout and medical mistakes. However, challenges regarding the ethical deployment, regulation, and the clinical superiority of AI over traditional statistics and decision-making remain to be resolved.
+
+--- REPOSITORY & PUBLISHER WEB METADATA ---
+Affiliations: Divisions of Adult Reconstruction (T.G.M. and B.F.R.) and Hand and Upper Extremity Surgery (C.K.), Department of Orthopaedics and Rehabilitation, University of Rochester Medical Center, Rochester, New York.
+
+--- SUMMARY & CITATION ---
+How to cite: Thomas G. Myers, P. Ramkumar, B. Ricciardi, K. Urish, Jens Kipper, C. Ketonis (2020.0). Artificial Intelligence and Orthopaedics: An Introduction for Clinicians.. The Journal of bone and joint surgery. American volume.

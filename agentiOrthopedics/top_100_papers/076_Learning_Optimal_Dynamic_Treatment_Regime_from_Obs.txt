@@ -1,0 +1,25 @@
+================================================================================
+TITLE: Learning Optimal Dynamic Treatment Regime from Observational Clinical Data through Reinforcement Learning
+RANK: #76 (in Top 100 Orthopedic AI Papers)
+RELEVANCE SCORE: 43
+YEAR: 2024.0
+JOURNAL: Mach. Learn. Knowl. Extr. (SJR Quartile: 1.0)
+AUTHORS: S. Abebe, Irene Poli, Roger D. Jones, Debora Slanzi
+STUDY TYPE: theoretical, modeling, or simulation study
+CITATIONS: 4
+DOI: https://doi.org/10.3390/make6030088
+CONSENSUS PAGE: https://consensus.app/papers/learning-optimal-dynamic-treatment-regime-from-abebe-poli/35306f28ec905e0baea4c0961930cc99/
+ACCESS STATUS: Subscription / Paywalled (Full-text content extracted from academic repository)
+================================================================================
+
+--- KEY TAKEAWAY & SYNTHESIS ---
+Decision tree-based reinforcement learning algorithms show potential in determining optimal dynamic treatment regimes for personalized medicine, offering nuanced and effective treatment recommendations.
+
+--- FULL ABSTRACT ---
+In medicine, dynamic treatment regimes (DTRs) have emerged to guide personalized treatment decisions for patients, accounting for their unique characteristics. However, existing methods for determining optimal DTRs face limitations, often due to reliance on linear models unsuitable for complex disease analysis and a focus on outcome prediction over treatment effect estimation. To overcome these challenges, decision tree-based reinforcement learning approaches have been proposed. Our study aims to evaluate the performance and feasibility of such algorithms: tree-based reinforcement learning (T-RL), DTR-Causal Tree (DTR-CT), DTR-Causal Forest (DTR-CF), stochastic tree-based reinforcement learning (SL-RL), and Q-learning with Random Forest. Using real-world clinical data, we conducted experiments to compare algorithm performances. Evaluation metrics included the proportion of correctly assigned patients to recommended treatments and the empirical mean with standard deviation of expected counterfactual outcomes based on estimated optimal treatment strategies. This research not only highlights the potential of decision tree-based reinforcement learning for dynamic treatment regimes but also contributes to advancing personalized medicine by offering nuanced and effective treatment recommendations.
+
+--- REPOSITORY & PUBLISHER WEB METADATA ---
+Funding: European Union’s Horizon 2020 research and innovation program
+
+--- SUMMARY & CITATION ---
+How to cite: S. Abebe, Irene Poli, Roger D. Jones, Debora Slanzi (2024.0). Learning Optimal Dynamic Treatment Regime from Observational Clinical Data through Reinforcement Learning. Mach. Learn. Knowl. Extr..

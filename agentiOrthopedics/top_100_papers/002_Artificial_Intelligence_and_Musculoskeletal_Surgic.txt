@@ -1,0 +1,33 @@
+================================================================================
+TITLE: Artificial Intelligence and Musculoskeletal Surgical Applications
+RANK: #2 (in Top 100 Orthopedic AI Papers)
+RELEVANCE SCORE: 100
+YEAR: 2025.0
+JOURNAL: HSS Journal® (SJR Quartile: 1.0)
+AUTHORS: F. Oettl, Bálint Zsidai, Jacob F. Oeding, K. Samuelsson
+STUDY TYPE: 
+CITATIONS: 19
+DOI: https://doi.org/10.1177/15563316251339596
+PUBMED CENTRAL (PMC): https://pmc.ncbi.nlm.nih.gov/articles/PMC12092413/
+PUBMED ID: https://pubmed.ncbi.nlm.nih.gov/40405922/
+CONSENSUS PAGE: https://consensus.app/papers/artificial-intelligence-and-musculoskeletal-surgical-oettl-zsidai/b710ae2742d4574ca049b9647b070dc5/
+ACCESS STATUS: Subscription / Paywalled (Full-text content extracted from academic repository)
+================================================================================
+
+--- KEY TAKEAWAY & SYNTHESIS ---
+AI-assisted procedures in orthopedic surgery improve precision, efficiency, and patient outcomes while maintaining human clinical expertise.
+
+--- FULL ABSTRACT ---
+Artificial intelligence (AI) has emerged as a transformative force in orthopedic surgery. Potentially encompassing pre-, intra-, and postoperative processes, it can process complex medical imaging, provide real-time surgical guidance, and analyze large datasets for outcome prediction and optimization. AI has shown improvements in surgical precision, efficiency, and patient outcomes across orthopedic subspecialties, and large language models and agentic AI systems are expanding AI utility beyond surgical applications into areas such as clinical documentation, patient education, and autonomous decision support. The successful implementation of AI in orthopedic surgery requires careful attention to validation, regulatory compliance, and healthcare system integration. As these technologies continue to advance, maintaining the balance between innovation and patient safety remains crucial, with the ultimate goal of achieving more personalized, efficient, and equitable healthcare delivery while preserving the essential role of human clinical judgment. This review examines the current landscape and future trajectory of AI applications in orthopedic surgery, highlighting both technological advances and their clinical impact. Studies have suggested that AI-assisted procedures achieve higher accuracy and better functional outcomes compared to conventional methods, while reducing operative times and complications. However, these technologies are designed to augment rather than replace clinical expertise, serving as sophisticated tools to enhance surgeons' capabilities and improve patient care.
+
+© The Author(s) 2025.
+
+--- REPOSITORY & PUBLISHER WEB METADATA ---
+Affiliations: Department of Orthopedic Surgery, Balgrist University Hospital, University of Zürich, Zurich, Switzerland.
+Keywords: Artificial intelligence, Spine, Knee, Hip, Machine Learning, Large Language Models, Agentic Ai
+
+Extended Abstract from Repository:
+Artificial intelligence (AI) has emerged as a transformative force in orthopedic surgery. Potentially encompassing pre-, intra-, and postoperative processes, it can process complex medical imaging, provide real-time surgical guidance, and analyze large datasets for outcome prediction and optimization. AI has shown improvements in surgical precision, efficiency, and patient outcomes across orthopedic subspecialties, and large language models and agentic AI systems are expanding AI utility beyond surgical applications into areas such as clinical documentation, patient education, and autonomous decision support. The successful implementation of AI in orthopedic surgery requires careful attention to validation, regulatory compliance, and healthcare system integration. As these technologies continue to advance, maintaining the balance between innovation and patient safety remains crucial, with the ultimate goal of achieving more personalized, efficient, and equitable healthcare delivery while preserving the essential role of human clinical judgment. This review examines the current landscape and future trajectory of AI applications in orthopedic surgery, highlighting both technological advances and their clinical impact. Studies have suggested that AI-assisted procedures achieve higher accuracy and better functional outcomes compared to conventional methods, while reducing operative times and complications. However, these technologies are designed to augment rather than replace clinical expertise, serving as sophisticated tools to enhance surgeons' capabilities and improve patient care.
+
+--- SUMMARY & CITATION ---
+How to cite: F. Oettl, Bálint Zsidai, Jacob F. Oeding, K. Samuelsson (2025.0). Artificial Intelligence and Musculoskeletal Surgical Applications. HSS Journal®.

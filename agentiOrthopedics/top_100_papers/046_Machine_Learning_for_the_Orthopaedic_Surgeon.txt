@@ -1,0 +1,34 @@
+================================================================================
+TITLE: Machine Learning for the Orthopaedic Surgeon
+RANK: #46 (in Top 100 Orthopedic AI Papers)
+RELEVANCE SCORE: 60
+YEAR: 2022.0
+JOURNAL: The Journal of Bone and Joint Surgery (SJR Quartile: 1.0)
+AUTHORS: D. Alsoof, Christopher L. Mcdonald, Eren O. Kuris, Alan H. Daniels
+STUDY TYPE: literature review
+CITATIONS: 35
+DOI: https://doi.org/10.2106/jbjs.21.01305
+CONSENSUS PAGE: https://consensus.app/papers/machine-learning-for-the-orthopaedic-surgeon-alsoof-mcdonald/2548c3490ad657998acaa170998ed8eb/
+ACCESS STATUS: Subscription / Paywalled (Full-text content extracted from academic repository)
+================================================================================
+
+--- KEY TAKEAWAY & SYNTHESIS ---
+Machine learning has potential applications in orthopaedics, including radiographic diagnosis, gait analysis, implant identification, and patient outcome prediction, but limitations hinder widespread use in daily clinical environments.
+
+--- FULL ABSTRACT ---
+➤: Machine learning is a subset of artificial intelligence in which computer algorithms are trained to make classifications and predictions based on patterns in data. The utilization of these techniques is rapidly expanding in the field of orthopaedic research.
+
+➤: There are several domains in which machine learning has application to orthopaedics, including radiographic diagnosis, gait analysis, implant identification, and patient outcome prediction.
+
+➤: Several limitations prevent the widespread use of machine learning in the daily clinical environment. However, future work can overcome these issues and enable machine learning tools to be a useful adjunct for orthopaedic surgeons in their clinical decision-making.
+
+Copyright © 2022 by The Journal of Bone and Joint Surgery, Incorporated.
+
+--- REPOSITORY & PUBLISHER WEB METADATA ---
+Affiliations: Department of Orthopedic Surgery, Warren Alpert Medical School of Brown University, Providence, Rhode Island.
+
+Extended Abstract from Repository:
+➤ Machine learning is a subset of artificial intelligence in which computer algorithms are trained to make classifications and predictions based on patterns in data. The utilization of these techniques is rapidly expanding in the field of orthopaedic research. ➤ There are several domains in which machine learning has application to orthopaedics, including radiographic diagnosis, gait analysis, implant identification, and patient outcome prediction. ➤ Several limitations prevent the widespread use of machine learning in the daily clinical environment. However, future work can overcome these issues and enable machine learning tools to be a useful adjunct for orthopaedic surgeons in their clinical decision-making.
+
+--- SUMMARY & CITATION ---
+How to cite: D. Alsoof, Christopher L. Mcdonald, Eren O. Kuris, Alan H. Daniels (2022.0). Machine Learning for the Orthopaedic Surgeon. The Journal of Bone and Joint Surgery.

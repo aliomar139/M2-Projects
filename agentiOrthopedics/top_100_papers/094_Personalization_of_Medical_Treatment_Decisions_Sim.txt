@@ -1,0 +1,39 @@
+================================================================================
+TITLE: Personalization of Medical Treatment Decisions: Simplifying Complex Models while Maintaining Patient Health Outcomes
+RANK: #94 (in Top 100 Orthopedic AI Papers)
+RELEVANCE SCORE: 40
+YEAR: 2021.0
+JOURNAL: Medical decision making : an international journal of the Society for Medical Decision Making (SJR Quartile: 1.0)
+AUTHORS: C. Weyant, M. Brandeau
+STUDY TYPE: theoretical, modeling, or simulation study
+CITATIONS: 12
+DOI: https://doi.org/10.1177/0272989x211037921
+PUBMED CENTRAL (PMC): https://pmc.ncbi.nlm.nih.gov/articles/PMC8858337/
+PUBMED ID: https://pubmed.ncbi.nlm.nih.gov/34416832/
+CONSENSUS PAGE: https://consensus.app/papers/personalization-of-medical-treatment-decisions-weyant-brandeau/8b389a3b786f5042a2d4909766a6412f/
+ACCESS STATUS: Subscription / Paywalled (Full-text content extracted from academic repository)
+================================================================================
+
+--- KEY TAKEAWAY & SYNTHESIS ---
+Our machine learning method simplifies complex medical treatment decision models while maintaining patient health outcomes, making them more adoptable and improving equity in patient outcomes.
+
+--- FULL ABSTRACT ---
+Background: Personalizing medical treatments based on patient-specific risks and preferences can improve patient health. However, models to support personalized treatment decisions are often complex and difficult to interpret, limiting their clinical application.
+
+Methods: We present a new method, using machine learning to create meta-models, for simplifying complex models for personalizing medical treatment decisions. We consider simple interpretable models, interpretable ensemble models, and noninterpretable ensemble models. We use variable selection with a penalty for patient-specific risks and/or preferences that are difficult, risky, or costly to obtain. We interpret the meta-models to the extent permitted by their model architectures. We illustrate our method by applying it to simplify a previously developed model for personalized selection of antipsychotic drugs for patients with schizophrenia.
+
+Results: The best simplified interpretable, interpretable ensemble, and noninterpretable ensemble models contained at most half the number of patient-specific risks and preferences compared with the original model. The simplified models achieved 60.5% (95% credible interval [crI]: 55.2-65.4), 60.8% (95% crI: 55.5-65.7), and 83.8% (95% crI: 80.8-86.6), respectively, of the net health benefit of the original model (quality-adjusted life-years gained). Important variables in all models were similar and made intuitive sense. Computation time for the meta-models was orders of magnitude less than for the original model.
+
+Limitations: The simplified models share the limitations of the original model (e.g., potential biases).
+
+Conclusions: Our meta-modeling method is disease- and model- agnostic and can be used to simplify complex models for personalization, allowing for variable selection in addition to improved model interpretability and computational performance. Simplified models may be more likely to be adopted in clinical settings and can help improve equity in patient outcomes.
+
+--- REPOSITORY & PUBLISHER WEB METADATA ---
+Affiliations: Department of Management Science and Engineering, Stanford University, Stanford, CA, USA.
+Keywords: Schizophrenia, Personalized Medicine, Medical Decision Making, Meta-model
+
+Extended Abstract from Repository:
+Background Personalizing medical treatments based on patient-specific risks and preferences can improve patient health. However, models to support personalized treatment decisions are often complex and difficult to interpret, limiting their clinical application. Methods We present a new method, using machine learning to create meta-models, for simplifying complex models for personalizing medical treatment decisions. We consider simple interpretable models, interpretable ensemble models, and noninterpretable ensemble models. We use variable selection with a penalty for patient-specific risks and/or preferences that are difficult, risky, or costly to obtain. We interpret the meta-models to the extent permitted by their model architectures. We illustrate our method by applying it to simplify a previously developed model for personalized selection of antipsychotic drugs for patients with schizophrenia. Results The best simplified interpretable, interpretable ensemble, and noninterpretable ensemble models contained at most half the number of patient-specific risks and preferences compared with the original model. The simplified models achieved 60.5% (95% credible interval [crI]: 55.2-65.4), 60.8% (95% crI: 55.5-65.7), and 83.8% (95% crI: 80.8-86.6), respectively, of the net health benefit of the original model (quality-adjusted life-years gained). Important variables in all models were similar and made intuitive sense. Computation time for the meta-models was orders of magnitude less than for the original model. Limitations The simplified models share the limitations of the original model (e.g., potential biases). Conclusions Our meta-modeling method is disease- and model- agnostic and can be used to simplify complex models for personalization, allowing for variable selection in addition to improved model interpretability and computational performance. Simplified models may be more likely to be adopted in clinical settings and can help improve equity in patient outcomes.
+
+--- SUMMARY & CITATION ---
+How to cite: C. Weyant, M. Brandeau (2021.0). Personalization of Medical Treatment Decisions: Simplifying Complex Models while Maintaining Patient Health Outcomes. Medical decision making : an international journal of the Society for Medical Decision Making.

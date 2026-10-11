@@ -1,0 +1,31 @@
+================================================================================
+TITLE: Artificial Intelligence and its Current Role in Clinical Outcome Prediction, Musculoskeletal Imaging, and Economic and Ethical Considerations within Orthopedics and Sports Medicine.
+RANK: #96 (in Top 100 Orthopedic AI Papers)
+RELEVANCE SCORE: 40
+YEAR: 2026.0
+JOURNAL: Current reviews in musculoskeletal medicine (SJR Quartile: 1.0)
+AUTHORS: Emmett O'Malley, Brian M. Soth, Alex Capitano, A. Bensa, Joshua R. Eskew, Malik E. Dancy, Benedict U. Nwachukwu
+STUDY TYPE: literature review
+CITATIONS: 1
+DOI: https://doi.org/10.1007/s12178-026-10019-w
+PUBMED CENTRAL (PMC): https://pmc.ncbi.nlm.nih.gov/articles/PMC13076830/
+PUBMED ID: https://pubmed.ncbi.nlm.nih.gov/41973309/
+CONSENSUS PAGE: https://consensus.app/papers/artificial-intelligence-and-its-current-role-in-clinical-omalley-soth/8d20467fd61e5cf6b6f19e733f19297f/
+ACCESS STATUS: Subscription / Paywalled (Full-text content extracted from academic repository)
+================================================================================
+
+--- KEY TAKEAWAY & SYNTHESIS ---
+AI models show promise in predicting patient outcomes, surgical complications, and healthcare utilization in orthopedics and sports medicine, but challenges in validation, accessibility, and ethical considerations remain.
+
+--- FULL ABSTRACT ---
+PURPOSE OF REVIEW: Artificial intelligence (AI) has emerged as a useful tool across the field of orthopedic surgery. This review highlights recent literature on AI’s role in surgical outcome prediction, musculoskeletal imaging, economic and ethical considerations, with a focus on its integration in sports medicine workflow and procedures. RECENT FINDINGS: Machine learning AI models have demonstrated superior accuracy in predicting orthopedic related patient-reported outcomes, surgical complications, and the utilization of healthcare compared to traditional, non-AI methods. Within imaging, AI applications now produce automated measurements for clinical and presurgical planning with precision equivalent to expert-level measurements. Large language AI models are increasingly used for clinical documentation, research workflows, and administrative support for healthcare delivery and effectiveness. Despite increasing integration of AI into orthopedics and its subspecialties, challenges in validation, accessibility due to cost, and ethical considerations remain. Orthopedic surgery and sports medicine are particularly well suited for AI applications due to their well-defined, measurable clinical outcomes. Emerging AI tools and models show promise in enhancing patient outcomes, surgical planning, and healthcare efficiency. Continued AI research must prioritize external validation, ethical implementation, and educational integration to ensure responsible, effective, and reproducible use.
+
+--- REPOSITORY & PUBLISHER WEB METADATA ---
+Affiliations: Sports Medicine Institute, Hospital for Special Surgery, New York, NY, USA.
+Keywords: Artificial intelligence, Imaging, Sports Medicine, Orthopedic Surgery, Machine Learning, Clinical Outcome Prediction
+
+Extended Abstract from Repository:
+PURPOSE OF REVIEW: Artificial intelligence (AI) has emerged as a useful tool across the field of orthopedic surgery. This review highlights recent literature on AI’s role in surgical outcome prediction, musculoskeletal imaging, economic and ethical considerations, with a focus on its integration in sports medicine workflow and procedures. RECENT FINDINGS: Machine learning AI models have demonstrated superior accuracy in predicting orthopedic related patient-reported outcomes, surgical complications, and the utilization of healthcare compared to traditional, non-AI methods. Within imaging, AI applications now produce automated measurements for clinical and presurgical planning with precision equivalent to expert-level measurements. Large language AI models are increasingly used for clinical documentation, research workflows, and administrative support for healthcare delivery and effectiveness. Despite increasing integration of AI into orthopedics and its subspecialties, challenges in validation, accessibility due to cost, and ethical considerations remain. Orthopedic surgery and sports medicine are particularly well suited for AI applications due to their well-defined, measurable clinical outcomes. Emerging AI tools and models show promise in enhancing patient outcomes, surgical planning, and healthcare efficiency. Continued AI research must prioritize external validation, ethical implementation, and educational integration to ensure responsible, effective, and reproducible use.
+
+--- SUMMARY & CITATION ---
+How to cite: Emmett O'Malley, Brian M. Soth, Alex Capitano, A. Bensa, Joshua R. Eskew, Malik E. Dancy, Benedict U. Nwachukwu (2026.0). Artificial Intelligence and its Current Role in Clinical Outcome Prediction, Musculoskeletal Imaging, and Economic and Ethical Considerations within Orthopedics and Sports Medicine.. Current reviews in musculoskeletal medicine.

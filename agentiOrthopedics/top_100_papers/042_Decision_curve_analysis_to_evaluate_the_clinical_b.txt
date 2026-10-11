@@ -1,0 +1,31 @@
+================================================================================
+TITLE: Decision curve analysis to evaluate the clinical benefit of prediction models
+RANK: #42 (in Top 100 Orthopedic AI Papers)
+RELEVANCE SCORE: 60
+YEAR: 2021.0
+JOURNAL: The spine journal : official journal of the North American Spine Society (SJR Quartile: 1.0)
+AUTHORS: A. Vickers, F. Holland
+STUDY TYPE: literature review
+CITATIONS: 330
+DOI: https://doi.org/10.1016/j.spinee.2021.02.024
+PUBMED CENTRAL (PMC): https://pmc.ncbi.nlm.nih.gov/articles/PMC8413398/
+PUBMED ID: https://pubmed.ncbi.nlm.nih.gov/33676020/
+CONSENSUS PAGE: https://consensus.app/papers/decision-curve-analysis-to-evaluate-the-clinical-benefit-vickers-holland/cbb13a43f3d05e0697ea7b6705760771/
+ACCESS STATUS: Subscription / Paywalled (Full-text content extracted from academic repository)
+================================================================================
+
+--- KEY TAKEAWAY & SYNTHESIS ---
+Decision curve analysis is a useful method to determine the clinical benefit of prediction models in orthopedic decision-making, aiding in informed decision-making.
+
+--- FULL ABSTRACT ---
+
+
+--- REPOSITORY & PUBLISHER WEB METADATA ---
+Affiliations: Department of Epidemiology and Biostatistics, Memorial Sloan Kettering Cancer Center, 485 Lexington Ave, New York, NY, USA. Electronic address: vickersa@mskcc.org.
+Keywords: Predictive modeling, net benefit, Clinical Benefit, Decision Curve Analysis
+
+Extended Abstract from Repository:
+There is increased interest in the use of prediction models to guide clinical decision-making in orthopedics. Prediction models are typically evaluated in terms of their accuracy: discrimination (area-under-the-curve [AUC] or concordance index) and calibration (a plot of predicted vs. observed risk). But it can be hard to know how high an AUC has to be in order to be "high enough" to warrant use of a prediction model, or how much miscalibration would be disqualifying. Decision curve analysis was developed as a method to determine whether use of a prediction model in the clinic to inform decision-making would do more good than harm. Here we give a brief introduction to decision curve analysis, explaining the critical concepts of net benefit and threshold probability. We briefly review some prediction models reported in the orthopedic literature, demonstrating how use of decision curves has allowed conclusions as to the clinical value of a prediction model. Conversely, papers without decision curves were unable to address questions of clinical value. We recommend increased use of decision curve analysis to evaluate prediction models in the orthopedics literature.
+
+--- SUMMARY & CITATION ---
+How to cite: A. Vickers, F. Holland (2021.0). Decision curve analysis to evaluate the clinical benefit of prediction models. The spine journal : official journal of the North American Spine Society.

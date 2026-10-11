@@ -1,0 +1,22 @@
+================================================================================
+TITLE: Artificial intelligence in orthopaedics: Clinical decision support, medical imaging, surgical planning, and outcome prediction
+RANK: #19 (in Top 100 Orthopedic AI Papers)
+RELEVANCE SCORE: 70
+YEAR: 2026.0
+JOURNAL: World Journal of Clinical Cases (SJR Quartile: )
+AUTHORS: Anirudh Dwajan, Dr. Manas Ranjan Patro, Amber Agarwal, Mary Lalhmingmawii
+STUDY TYPE: literature review
+CITATIONS: 1
+DOI: https://doi.org/10.12998/wjcc.v14.i17.120192
+CONSENSUS PAGE: https://consensus.app/papers/artificial-intelligence-in-orthopaedics-clinical-dwajan-patro/06455aa630665a8e8e04229cf21cbc0f/
+ACCESS STATUS: Subscription / Paywalled (Full-text content extracted from academic repository)
+================================================================================
+
+--- KEY TAKEAWAY & SYNTHESIS ---
+AI is revolutionizing orthopaedic practice by improving diagnostic accuracy, clinical decision-making, surgical planning, and postoperative monitoring, but its widespread adoption faces challenges.
+
+--- FULL ABSTRACT ---
+Artificial intelligence (AI) is increasingly transforming orthopaedic practice by enhancing diagnostic accuracy, clinical decision-making, surgical planning, and postoperative monitoring. Advances in computational modelling, imaging analysis, and predictive analytics now enable clinicians to process complex multimodal datasets derived from radiological imaging, clinical records, biomechanical parameters, and patient-reported outcomes. These technologies are being applied across multiple orthopaedic subspecialties, including trauma, spine surgery, arthroplasty, sports medicine, oncology, infection, and rehabilitation. AI-driven systems have demonstrated strong performance in fracture detection, implant assessment, tumour characterisation, infection diagnosis, and prediction of surgical outcomes, often matching or exceeding conventional analytical approaches. In operative settings, integration with robotics, navigation platforms, and augmented visualisation systems improves procedural precision, reproducibility, and intraoperative decision support. Predictive models also assist clinicians in risk stratification, patient selection, complication forecasting, and personalised rehabilitation planning. Despite these promising developments, widespread clinical implementation remains limited by challenges related to dataset variability, algorithm transparency, regulatory oversight, cost, and concerns regarding bias and data privacy. Ongoing multicentre validation studies, development of explainable computational frameworks, and global collaboration will be essential for safe and equitable adoption. AI is unlikely to replace orthopaedic clinicians but is expected to function as a powerful adjunct that enhances clinical judgement and supports precision-based musculoskeletal care. Continued technological refinement and responsible integration into clinical workflows will determine its long-term impact on patient outcomes and healthcare delivery.
+
+--- SUMMARY & CITATION ---
+How to cite: Anirudh Dwajan, Dr. Manas Ranjan Patro, Amber Agarwal, Mary Lalhmingmawii (2026.0). Artificial intelligence in orthopaedics: Clinical decision support, medical imaging, surgical planning, and outcome prediction. World Journal of Clinical Cases.

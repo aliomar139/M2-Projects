@@ -1,0 +1,21 @@
+================================================================================
+TITLE: Medicine & Treatment Recommendation System using Deep Learning
+RANK: #100 (in Top 100 Orthopedic AI Papers)
+RELEVANCE SCORE: 40
+YEAR: 
+JOURNAL:  (SJR Quartile: )
+AUTHORS: Chetana Shashikant, P. Mahajan, Shimpi
+STUDY TYPE: theoretical, modeling, or simulation study
+CITATIONS: 0
+CONSENSUS PAGE: https://consensus.app/papers/medicine-treatment-recommendation-system-using-deep-shashikant-mahajan/354b43dce4c754d89a4f184369a4febf/
+ACCESS STATUS: Subscription / Paywalled (Full-text content extracted from academic repository)
+================================================================================
+
+--- KEY TAKEAWAY & SYNTHESIS ---
+The Medicine & Treatment Recommendation System, using deep learning algorithms, effectively recommends personalized treatments based on patient data, medical history, symptoms, and diagnosis, reducing human error and improving patient outcomes.
+
+--- FULL ABSTRACT ---
+— The growing demand for personalized healthcare solutions has led to the development of intelligent systems that assist in medical decision-making. This project focuses on creating a Medicine Recommendation System that utilizes machine learning techniques to recommend suitable medicines based on user inputs such as symptoms or medical conditions. The system leverages a well-structured medical dataset to train a machine learning The integration of deep learning techniques into the healthcare domain has shown significant potential in improving decision-making processes for medical diagnoses and treatment planning. This paper presents a Medicine & Treatment Recommendation System leveraging deep learning algorithms to provide personalized treatment recommendations based on patient data, medical history, symptoms, and diagnosis. By utilizing advanced neural network architectures, such as convolutional neural networks (CNNs) for image-based diagnosis and recurrent neural networks (RNNs) for sequential data analysis, the system efficiently learns complex patterns from diverse healthcare datasets. These include patient demographics, lab test results, medical records, and clinical notes. The system aims to predict the most effective medicines or treatments tailored to individual patients, reducing human error, enhancing clinical decision support, and improving patient outcomes. By continuously updating and training on new datasets, the system ensures scalability and adaptability in evolving medical scenarios. A case study using a publicly available dataset demonstrates the efficacy of the proposed system, showing its capability to recommend accurate treatment plans for various medical conditions.
+
+--- SUMMARY & CITATION ---
+How to cite: Chetana Shashikant, P. Mahajan, Shimpi (). Medicine & Treatment Recommendation System using Deep Learning. .
