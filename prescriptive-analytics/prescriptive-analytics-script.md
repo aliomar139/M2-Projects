@@ -85,19 +85,7 @@ Decisions often affect each other. If a store orders more products, it needs spa
 
 A decision model can consider these connections together. This helps the team avoid solving one problem in a way that creates another.
 
-## Slide 13: How machine learning helps — Ali Omar
-
-Machine learning uses patterns in data to make predictions. It may estimate how much customers will buy, when a machine may fail, or how many customer requests will arrive.
-
-A prescriptive model can use those predictions to suggest how much stock to order, when to plan a repair, or how many workers to assign. It can also use estimates from people or other methods. Machine learning is one possible source of information for the decision model.
-
-## Slide 14: Levels of automation — Ali Omar
-
-Automation means allowing a computer to do an action. At one level, the system only gives suggestions, and a person chooses and acts. At another level, the system prepares a plan but waits for approval. With automatic action, the system acts within agreed rules and records what it does.
-
-The team chooses the level based on the decision and its possible effects. It should also be able to stop automatic actions if a problem occurs.
-
-## Slide 15: Fairness in decision-making — Ali Omar
+## Slide 13: Fairness in decision-making — Ali Omar
 
 A plan may meet the business goal but still affect people unfairly. For example, a work plan might give the same workers the busiest hours every week.
 
