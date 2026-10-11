@@ -25,7 +25,7 @@ Diagnostic analytics looks for reasons behind a result. If stores sold fewer pro
 
 Predictive analytics estimates what may happen next. For example, it can predict how much each store may sell next month. Demand means how much customers want to buy.
 
-Prescriptive analytics suggests what to do. Stock means the products available. The model can use expected demand and available stock to suggest how much to send to each store. In short, descriptive tells us what happened, diagnostic explores why, predictive estimates what may happen, and prescriptive helps us choose what to do. All four types can work together in the same data science project. Now let us take a closer look at prescriptive analytics.
+Prescriptive analytics uses data and predictions to recommend an action that meets a goal while respecting limits. For example, if a store expects to sell 100 units and has 30 in stock, the model may recommend ordering 70 more. Now let us take a closer look at prescriptive analytics.
 
 Source: [IBM Think: prescriptive analytics](https://www.ibm.com/think/topics/prescriptive-analytics).
 
@@ -85,10 +85,14 @@ Decisions often affect each other. If a store orders more products, it needs spa
 
 A decision model can consider these connections together. This helps the team avoid solving one problem in a way that creates another.
 
-## Slide 13: Fairness in decision-making — Ali Omar
+## Slide 13: Fairness in decision-making — Abdallah Mestrah
 
 A plan may meet the business goal but still affect people unfairly. For example, a work plan might give the same workers the busiest hours every week.
 
 The team can include rules for breaks, reasonable working hours, and sharing difficult tasks fairly. People must decide what fairness means in that situation and include it in the model's goals or rules.
+
+## Thank you slide: Ali Omar and Abdallah Mestrah
+
+Thank you for listening. We welcome your questions and remarks.
 
 
