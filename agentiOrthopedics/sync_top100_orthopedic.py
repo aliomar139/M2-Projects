@@ -76,8 +76,9 @@ def fetch_extra_web_content(doi, pmid=None):
     return "\n".join(extra_text)
 
 def main():
-    target_csv = 'top_100_orthopedic_ai_papers.csv'
-    output_dir = os.path.join(os.getcwd(), 'top_100_papers')
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    target_csv = os.path.join(base_dir, 'top_100_orthopedic_ai_papers.csv')
+    output_dir = os.path.join(base_dir, 'top_100_papers')
     os.makedirs(output_dir, exist_ok=True)
 
     print(f"Loading target papers from {target_csv}...")
@@ -91,6 +92,7 @@ def main():
     # Find existing PDFs and map them by DOI or normalized title
     old_pdf_map = {}  # doi_lower -> filepath
     old_title_map = {} # norm_title -> filepath
+    old_source_map = {} # filename -> original source_api
 
     for fname in existing_files:
         if fname.lower().endswith('.pdf'):
@@ -104,8 +106,11 @@ def main():
         try:
             old_manifest = pd.read_csv(os.path.join(output_dir, 'manifest.csv'))
             for _, r in old_manifest.iterrows():
+                f_name = r.get('file_name')
+                src = r.get('source_api', 'Existing Target File')
+                if f_name:
+                    old_source_map[f_name] = src
                 if r.get('status') == 'Downloaded (PDF)':
-                    f_name = r.get('file_name')
                     f_doi = str(r.get('doi', '')).lower().strip()
                     f_title = str(r.get('title', '')).lower().strip()
                     if f_name:
@@ -165,8 +170,8 @@ def main():
         # Check if target PDF already exists with exact name
         if is_valid_pdf_file(target_pdf_path):
             downloaded = True
-            source_api = "Existing Target File"
-            print(f"  -> Already present: {target_pdf_name}")
+            source_api = old_source_map.get(target_pdf_name, "Existing Target File")
+            print(f"  -> Already present: {target_pdf_name} ({source_api})")
         else:
             # Check if this paper was already downloaded under an old rank/name
             matched_old_path = None
