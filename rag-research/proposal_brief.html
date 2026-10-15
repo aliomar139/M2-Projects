@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cascaded Adaptive Blended RAG: Research Proposal</title>
+<!-- Google Fonts: Plus Jakarta Sans (Comfortable Humanist Sans) & Newsreader (Warm Editorial Serif) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Design Principles:
+ * - Fonts: Newsreader (warm readable display) + Plus Jakarta Sans (comfortable, open-counter humanist sans)
+ * - Zero headers, zero footers (clean full-bleed reading surface)
+ * - Simple, direct language (humanizer + i-have-adhd)
+ * - No em dashes (—) or en dashes (–)
+ * - Palette: Warm paper #FCFBF9, charcoal text #181A20, soft hairline #E4E3DC, cobalt #1D4ED8 (<3%)
+ * - Page geometry: Exactly 8.5in x 11in per page (US Letter)
+ */
+
+@page {
+  size: letter;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-paper: #FCFBF9;
+  --color-surface: #F5F4EE;
+  --color-surface-subtle: #FAF9F4;
+  --color-surface-card: #FFFFFF;
+  --color-ink: #181A20;
+  --color-ink-secondary: #363B47;
+  --color-muted: #5E6473;
+  --color-hairline: #E3E2DA;
+  --color-hairline-dark: #C8C7BD;
+  
+  --color-accent: #1D4ED8;          /* Clean Cobalt */
+  --color-accent-subtle: #EFF6FF;
+  --color-accent-border: #BFDBFE;
+  
+  --color-emerald: #047857;
+  --color-emerald-bg: #ECFDF5;
+  --color-emerald-border: #A7F3D0;
+  
+  --color-amber: #B45309;
+  --color-amber-bg: #FFFBEB;
+  --color-amber-border: #FDE68A;
+
+  --font-display: 'Newsreader', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: #E5E5E5;
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 8.7pt;
+  line-height: 1.44;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  width: 8.5in;
+  height: 11in;
+  max-height: 11in;
+  overflow: hidden;
+  background-color: var(--color-paper);
+  position: relative;
+  page-break-after: always;
+  padding: 0.44in 0.52in;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+@media screen {
+  .page {
+    margin: 20px auto;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  }
+}
+
+/* Title Block */
+.title-block {
+  border-bottom: 1.5px solid var(--color-ink);
+  padding-bottom: 9px;
+  margin-bottom: 2px;
+}
+
+.title-tag {
+  font-family: var(--font-mono);
+  font-size: 7.2pt;
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.main-title {
+  font-family: var(--font-display);
+  font-size: 21pt;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--color-ink);
+  letter-spacing: -0.015em;
+  margin-bottom: 7px;
+}
+
+.meta-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 7.7pt;
+  color: var(--color-ink-secondary);
+}
+
+.meta-item strong {
+  font-family: var(--font-mono);
+  font-size: 6.8pt;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+  font-weight: 700;
+}
+
+/* Section Headings */
+.section-heading {
+  font-family: var(--font-mono);
+  font-size: 7.6pt;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.section-heading::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-hairline);
+}
+
+.section-num {
+  color: var(--color-accent);
+}
+
+/* Text Callout Card */
+.callout-box {
+  background: var(--color-surface);
+  border: 1px solid var(--color-hairline-dark);
+  border-left: 3.5px solid var(--color-accent);
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+.callout-title {
+  font-family: var(--font-mono);
+  font-size: 7.1pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.callout-text {
+  font-size: 8.2pt;
+  line-height: 1.4;
+  color: var(--color-ink);
+}
+
+/* Two Column Objective / Metric Cards */
+.card-grid-2 {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 10px;
+}
+
+.info-card {
+  background: var(--color-surface-subtle);
+  border: 1px solid var(--color-hairline);
+  border-radius: 4px;
+  padding: 9px 12px;
+}
+
+.info-card-title {
+  font-family: var(--font-mono);
+  font-size: 6.9pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ink);
+  margin-bottom: 4px;
+}
+
+.big-metric {
+  font-family: var(--font-display);
+  font-size: 14pt;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1.15;
+  margin-bottom: 3px;
+}
+
+/* Four Pillars Grid */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+}
+
+.pillar-card {
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface-card);
+  border-radius: 4px;
+  padding: 8px 11px;
+}
+
+.pillar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.pillar-tag {
+  font-family: var(--font-mono);
+  font-size: 6.3pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1.5px 5px;
+  border-radius: 2px;
+}
+
+.tag-t0 { background: #F3F4F6; color: #374151; }
+.tag-t1 { background: var(--color-emerald-bg); color: var(--color-emerald); border: 1px solid var(--color-emerald-border); }
+.tag-t2 { background: var(--color-accent-subtle); color: var(--color-accent); border: 1px solid var(--color-accent-border); }
+.tag-tf { background: var(--color-amber-bg); color: var(--color-amber); border: 1px solid var(--color-amber-border); }
+
+.pillar-cost {
+  font-family: var(--font-mono);
+  font-size: 6.3pt;
+  color: var(--color-muted);
+  font-weight: 600;
+}
+
+.pillar-title {
+  font-size: 8.3pt;
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-bottom: 3px;
+}
+
+.pillar-desc {
+  font-size: 7.7pt;
+  line-height: 1.36;
+  color: var(--color-ink-secondary);
+}
+
+/* Gating Rule Box */
+.formula-box {
+  background: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  border-radius: 4px;
+  padding: 7px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.formula-label {
+  font-family: var(--font-mono);
+  font-size: 6.7pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.formula-code {
+  font-family: var(--font-mono);
+  font-size: 7.2pt;
+  color: var(--color-ink);
+  background: #FFFFFF;
+  padding: 3px 8px;
+  border: 1px solid var(--color-hairline);
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+/* Comparison Table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 7.4pt;
+  margin-top: 2px;
+}
+
+.data-table th {
+  background: var(--color-surface);
+  font-family: var(--font-mono);
+  font-size: 6.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ink);
+  text-align: left;
+  padding: 5px 7px;
+  border-top: 1px solid var(--color-hairline-dark);
+  border-bottom: 1px solid var(--color-hairline-dark);
+}
+
+.data-table td {
+  padding: 4.2px 7px;
+  border-bottom: 1px solid var(--color-hairline);
+  color: var(--color-ink-secondary);
+  line-height: 1.28;
+}
+
+.data-table tr.highlight-row {
+  background: #F0F4FF;
+  font-weight: 600;
+}
+
+.data-table tr.highlight-row td {
+  color: var(--color-ink);
+  border-bottom: 1px solid #BFDBFE;
+}
+
+.badge-yes {
+  color: var(--color-emerald);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 6.6pt;
+}
+
+.badge-no {
+  color: #991B1B;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 6.6pt;
+}
+
+.badge-partial {
+  color: #B45309;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 6.6pt;
+}
+
+/* Flowchart Visual */
+.flow-diagram {
+  background: #FFFFFF;
+  border: 1px solid var(--color-hairline);
+  border-radius: 4px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+}
+
+.flow-step {
+  flex: 1;
+  text-align: center;
+  background: var(--color-surface-subtle);
+  border: 1px solid var(--color-hairline);
+  border-radius: 3px;
+  padding: 5px 6px;
+}
+
+.flow-step.active {
+  border-color: var(--color-accent-border);
+  background: var(--color-accent-subtle);
+}
+
+.flow-step.exit {
+  border-color: var(--color-emerald-border);
+  background: var(--color-emerald-bg);
+}
+
+.flow-label {
+  font-family: var(--font-mono);
+  font-size: 5.9pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.flow-title {
+  font-size: 7.4pt;
+  font-weight: 600;
+  color: var(--color-ink);
+  margin: 1.5px 0;
+}
+
+.flow-meta {
+  font-family: var(--font-mono);
+  font-size: 5.9pt;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.flow-arrow {
+  font-family: var(--font-mono);
+  font-size: 9.5pt;
+  color: var(--color-hairline-dark);
+  font-weight: 700;
+}
+
+/* Two Column Bottom Grid */
+.two-col {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 10px;
+}
+
+.col-card {
+  background: #FFFFFF;
+  border: 1px solid var(--color-hairline);
+  border-radius: 4px;
+  padding: 8px 11px;
+}
+
+.col-card-title {
+  font-family: var(--font-mono);
+  font-size: 6.8pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ink);
+  border-bottom: 1px solid var(--color-hairline);
+  padding-bottom: 4px;
+  margin-bottom: 6px;
+}
+
+.bullet-list {
+  list-style: none;
+  font-size: 7.5pt;
+  line-height: 1.36;
+  color: var(--color-ink-secondary);
+}
+
+.bullet-list li {
+  position: relative;
+  padding-left: 11px;
+  margin-bottom: 4px;
+}
+
+.bullet-list li::before {
+  content: "•";
+  position: absolute;
+  left: 1px;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+/* Clean Reference Box */
+.ref-box {
+  background: var(--color-surface-subtle);
+  border: 1px solid var(--color-hairline);
+  border-radius: 4px;
+  padding: 6px 11px;
+}
+
+.ref-box-title {
+  font-family: var(--font-mono);
+  font-size: 6.4pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ink);
+  margin-bottom: 3px;
+}
+
+.ref-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 12px;
+  font-size: 6.6pt;
+  line-height: 1.28;
+  color: var(--color-muted);
+}
+
+.ref-item strong {
+  color: var(--color-ink-secondary);
+}
+</style>
+</head>
+<body>
+
+<!-- ==========================================
+     PAGE 1: MOTIVATION, GAP & ARCHITECTURE
+     ========================================== -->
+<div class="page">
+  <!-- Title Block (No header masthead above it) -->
+  <div class="title-block">
+    <div class="title-tag">Master's Research Proposal : Systems and Retrieval Efficiency</div>
+    <h1 class="main-title">Cascaded Adaptive Blended RAG: A Systems Extension for Efficient Multi-Field Hybrid Retrieval</h1>
+    <div class="meta-strip">
+      <div class="meta-item"><strong>Base Paper:</strong> Sawarkar et al. (IEEE MIPR 2024)</div>
+      <div class="meta-item"><strong>Core Focus:</strong> Pre-Retrieval Early Exit for Hybrid RAG</div>
+      <div class="meta-item"><strong>Target Hardware:</strong> Laptop and CPU Reproducible</div>
+    </div>
+  </div>
+
+  <!-- Section 1: Foundation and The Problem -->
+  <div class="section-heading"><span class="section-num">01</span> Base Paper Foundation and the Latency Bottleneck</div>
+  
+  <div style="font-size: 8.2pt; line-height: 1.4; color: var(--color-ink-secondary);">
+    <strong>What Blended RAG showed:</strong> Sawarkar et al. (IBM Research, 2024) proved that blending dense vector embeddings, learned sparse representations (SPLADE), and BM25 across document fields (title, abstract, text) significantly beats single-retriever systems. On standard benchmarks, it achieved <strong>68% F1 on SQuAD</strong>, <strong>42% Exact Match on NQ</strong>, and <strong>88.8% retrieval accuracy on NQ</strong> without task-specific fine-tuning.
+  </div>
+
+  <div class="callout-box">
+    <div class="callout-title">
+      <span>The Static Hybrid Penalty</span>
+      <span style="font-weight: 600; font-size: 6.2pt;">RESEARCH PROBLEM</span>
+    </div>
+    <div class="callout-text">
+      Blended RAG runs all three retrieval models (Dense vector index, Sparse SPLADE model, and BM25 lexical index) for 100% of incoming queries. For simple factual queries where keywords already identify the right passage, running expensive neural vector search is redundant compute. Easy queries pay the exact same 30 to 80 ms latency penalty as complex multi-hop queries.
+    </div>
+  </div>
+
+  <!-- Section 2: Proposed Extension and Target Metrics -->
+  <div class="section-heading"><span class="section-num">02</span> Proposed Systems Extension: Cascaded Blended RAG</div>
+
+  <div class="card-grid-2">
+    <div class="info-card">
+      <div class="info-card-title">Defensible Systems Positioning</div>
+      <div style="font-size: 7.8pt; line-height: 1.36; color: var(--color-ink-secondary);">
+        We frame this work directly as <strong>the first adaptive systems extension of Blended RAG</strong>. We do not claim to invent adaptive RAG as a general concept. Instead, we remove Blended RAG's static execution bottleneck using a fast sequential cascade while preserving its multi-field metadata design.
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-title">Concrete Efficiency Targets</div>
+      <div class="big-metric">35–50% Faster · ≥ 96% Acc.</div>
+      <div style="font-size: 7.8pt; line-height: 1.34; color: var(--color-muted);">
+        Bypasses neural vector search on <strong>40% to 60% of queries</strong> via BM25 early exit, while maintaining ≥ 96% of static Blended RAG Recall@10, MRR, and downstream QA generation scores.
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3: The Four Pillars -->
+  <div class="section-heading"><span class="section-num">03</span> Architectural Specification: The Four Technical Pillars</div>
+
+  <div class="pillars-grid">
+    <div class="pillar-card">
+      <div class="pillar-top">
+        <span class="pillar-tag tag-t0">Tier 0: Feature Check</span>
+        <span class="pillar-cost">&lt; 1 ms (CPU)</span>
+      </div>
+      <div class="pillar-title">Pre-Retrieval Specificity Check</div>
+      <div class="pillar-desc">
+        Extracts lexical specificity directly from query text before index lookup: query length, maximum inverse document frequency (MaxIDF), and rare token ratio.
+      </div>
+    </div>
+
+    <div class="pillar-card">
+      <div class="pillar-top">
+        <span class="pillar-tag tag-t1">Tier 1: BM25 Fast-Pass</span>
+        <span class="pillar-cost">2 to 5 ms (CPU)</span>
+      </div>
+      <div class="pillar-title">Confidence Margin Early Exit</div>
+      <div class="pillar-desc">
+        Runs fast lexical search. If top score <span style="font-family: var(--font-mono);">s₁ ≥ τ_high</span> or score margin <span style="font-family: var(--font-mono);">Δ = s₁ − s₂ ≥ τ_gap</span>, halts and returns candidates immediately. <strong>Skips 100% of neural vector compute.</strong>
+      </div>
+    </div>
+
+    <div class="pillar-card">
+      <div class="pillar-top">
+        <span class="pillar-tag tag-t2">Tier 2: Blended Fallback</span>
+        <span class="pillar-cost">30 to 80 ms</span>
+      </div>
+      <div class="pillar-title">3-Way Hybrid Fusion (RRF)</div>
+      <div class="pillar-desc">
+        When lexical confidence is low (<span style="font-family: var(--font-mono);">Δ &lt; τ_gap</span>), escalates to full Blended RAG: Dense MiniLM-L6 + SPLADE sparse term expansion + BM25, merged via Reciprocal Rank Fusion.
+      </div>
+    </div>
+
+    <div class="pillar-card">
+      <div class="pillar-top">
+        <span class="pillar-tag tag-tf">Cross-Tier: Metadata</span>
+        <span class="pillar-cost">Zero Extra Overhead</span>
+      </div>
+      <div class="pillar-title">Best Fields Matching</div>
+      <div class="pillar-desc">
+        Applies Blended RAG's core method: searching across structured fields (title, abstract, text) so scientific corpora like SciFact retain high precision across both tiers.
+      </div>
+    </div>
+  </div>
+
+  <!-- Mathematical Gating Rule Banner -->
+  <div class="formula-box">
+    <span class="formula-label">Sequential Decision Rule</span>
+    <span class="formula-code">Route(Q) = BM25_Exit IF [s₁ ≥ τ_high] OR [Δ ≥ τ_gap AND MaxIDF(Q) ≥ τ_idf], ELSE Tier2_BlendedRAG</span>
+  </div>
+</div>
+
+
+<!-- ==========================================
+     PAGE 2: PRIOR ART, EVALUATION & DEFENSE
+     ========================================== -->
+<div class="page">
+  <!-- Section 4: Prior Art Comparison (No header masthead above it) -->
+  <div class="section-heading" style="margin-top: 0;"><span class="section-num">04</span> Literature Positioning and Prior-Art Differentiation (2024–2026)</div>
+  
+  <div style="font-size: 8pt; line-height: 1.36; color: var(--color-ink-secondary);">
+    Recent literature adapts different parts of RAG (query complexity, fusion weights, or passage depth). Our system is distinguished by <strong>exiting early before heavy neural search</strong> while preserving multi-field hybrid fusion:
+  </div>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Approach / Paper</th>
+        <th>What Adapts</th>
+        <th>Decision Point</th>
+        <th>Saves Neural Compute?</th>
+        <th>Multi-Field RRF?</th>
+        <th>Key Differentiation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Blended RAG</strong> <em>(Sawarkar 2024)</em></td>
+        <td>None (Static)</td>
+        <td>Static (100% queries)</td>
+        <td><span class="badge-no">No (0% saved)</span></td>
+        <td><span class="badge-yes">Yes</span></td>
+        <td>Target base paper; heavy static execution penalty</td>
+      </tr>
+      <tr>
+        <td><strong>Adaptive-RAG</strong> <em>(Jeong 2024)</em></td>
+        <td>Retrieval strategy</td>
+        <td>Query complexity</td>
+        <td><span class="badge-partial">Partial</span></td>
+        <td><span class="badge-no">No</span></td>
+        <td>Routes single vs multi-step; not hybrid early exit</td>
+      </tr>
+      <tr>
+        <td><strong>DAT</strong> <em>(Hsu & Tzeng 2025)</em></td>
+        <td>Sparse-dense weight (α)</td>
+        <td>Per-query predictor</td>
+        <td><span class="badge-no">No (Runs all first)</span></td>
+        <td><span class="badge-no">No</span></td>
+        <td>Reweights scores; saves zero retrieval latency</td>
+      </tr>
+      <tr>
+        <td><strong>Query-Adaptive</strong> <em>(Posokhov 2026)</em></td>
+        <td>Sparse-dense weight</td>
+        <td>Latency predictor</td>
+        <td><span class="badge-no">No (Runs both)</span></td>
+        <td><span class="badge-no">No</span></td>
+        <td>Continuous α-tuning; cannot early-exit lexical path</td>
+      </tr>
+      <tr>
+        <td><strong>SAGE</strong> <em>(Raza et al. 2026)</em></td>
+        <td>Passage budget k</td>
+        <td>Lightweight probe</td>
+        <td><span class="badge-partial">Depth only</span></td>
+        <td><span class="badge-no">No</span></td>
+        <td>Adapts retrieved depth, not retriever modalities</td>
+      </tr>
+      <tr class="highlight-row">
+        <td><strong>Our Cascaded Blended RAG</strong></td>
+        <td><strong>Sequential Early Exit</strong></td>
+        <td><strong>Pre-Retrieval + BM25</strong></td>
+        <td><span class="badge-yes">Yes (40–60% skipped)</span></td>
+        <td><span class="badge-yes">Yes</span></td>
+        <td><strong>First adaptive systems extension of Blended RAG</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Visual Architecture Pipeline -->
+  <div class="flow-diagram">
+    <div class="flow-step">
+      <div class="flow-label">Step 1 (&lt;1 ms)</div>
+      <div class="flow-title">Tier 0 Check</div>
+      <div class="flow-meta">Length, MaxIDF, Rare%</div>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">
+      <div class="flow-label">Step 2 (2–5 ms)</div>
+      <div class="flow-title">BM25 Fast-Pass</div>
+      <div class="flow-meta">Margin Δ = s₁ − s₂</div>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step exit">
+      <div class="flow-label">Gate: Δ ≥ τ_gap?</div>
+      <div class="flow-title">Early Exit (BM25)</div>
+      <div class="flow-meta" style="color: var(--color-emerald); font-weight:700;">100% Neural Saved</div>
+    </div>
+    <div class="flow-arrow">↳</div>
+    <div class="flow-step active">
+      <div class="flow-label">Fallback (Δ &lt; τ_gap)</div>
+      <div class="flow-title">Tier 2 Blended RAG</div>
+      <div class="flow-meta">SPLADE + Dense + RRF</div>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">
+      <div class="flow-label">Step 4</div>
+      <div class="flow-title">Local 3B LLM</div>
+      <div class="flow-meta">Exact Match / F1 QA</div>
+    </div>
+  </div>
+
+  <!-- Section 5: Experimental Setup & Contingency Strategy (Two Columns) -->
+  <div class="two-col">
+    <!-- Col 1: Experimental Protocol -->
+    <div class="col-card">
+      <div class="col-card-title">Experimental Protocol and Baselines</div>
+      <ul class="bullet-list">
+        <li><strong>Datasets:</strong> BEIR SciFact (5,183 scientific papers, 300 test queries) and Natural Questions (NQ) subset for direct comparison with Sawarkar et al.</li>
+        <li><strong>Baselines:</strong> (1) Pure BM25, (2) Dense MiniLM-L6, (3) Sparse SPLADE, (4) Static Blended RAG, (5) Adaptive Baselines (Adaptive-RAG and DAT).</li>
+        <li><strong>System Metrics:</strong> Mean and tail latency (P50, P90, P99 ms), and percentage of neural vector searches avoided.</li>
+        <li><strong>Quality Metrics:</strong> Recall@5, Recall@10, MRR@10, nDCG@10, plus Exact Match and F1 using a local 3B generator.</li>
+      </ul>
+    </div>
+
+    <!-- Col 2: Risk Mitigation & Contingency Strategy -->
+    <div class="col-card">
+      <div class="col-card-title">Risk Management and Backup Plan</div>
+      <ul class="bullet-list">
+        <li><strong>Handling router errors (Wu & You, 2026):</strong> Adaptive routers can misclassify ambiguous queries. We calibrate conservative thresholds (<span style="font-family: var(--font-mono);">τ_gap, τ_high</span>) via 5-fold cross-validation.</li>
+        <li><strong>Backup plan 1:</strong> If early exit drops recall by over 2%, pivot the router to dynamic alpha weighting for 3-way Blended RRF.</li>
+        <li><strong>Backup plan 2:</strong> Shift to adaptive top-k depth truncation for Blended RAG (following SAGE and CAR).</li>
+        <li><strong>Defense value:</strong> Mapping the exact boundary where lexical confidence works provides direct systems value for production RAG.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Section 6: Key References Box -->
+  <div class="ref-box">
+    <div class="ref-box-title">Key Academic References (2024–2026)</div>
+    <div class="ref-grid">
+      <div class="ref-item"><strong>Sawarkar, Mangal, & Solanki (2024).</strong> Blended RAG: Improving RAG with Semantic Search and Hybrid Retrievers. <em>IEEE MIPR</em>.</div>
+      <div class="ref-item"><strong>Jeong et al. (2024).</strong> Adaptive-RAG: Learning to Adapt Retrieval-Augmented LLMs through Question Complexity. <em>NAACL 2024</em>.</div>
+      <div class="ref-item"><strong>Hsu & Tzeng (2025).</strong> DAT: Dynamic Alpha Tuning for Hybrid Retrieval in RAG. <em>arXiv:2503.23013</em>.</div>
+      <div class="ref-item"><strong>Raza, Yang, & Srinivasan (2026).</strong> SAGE: SLO-Aware Adaptive Retrieval for Production RAG Systems. <em>IEEE CoDIT 2026</em>.</div>
+      <div class="ref-item"><strong>Wu & You (2026).</strong> Evidence-Unit Fairness and Limits of Query-Adaptive Fusion. <em>arXiv:2608.00183</em>.</div>
+      <div class="ref-item"><strong>Posokhov et al. (2026).</strong> Query-Adaptive Hybrid Search. <em>Mach. Learn. Knowl. Extr.</em>, MDPI.</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
