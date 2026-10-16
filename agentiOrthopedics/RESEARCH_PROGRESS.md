@@ -79,7 +79,30 @@ The initial literature investigation identified four core methodological anchors
 
 ---
 
-## 5. Milestone Progress Tracker
+## 5. Repository Markdown Documentation Map
+
+| File Path | Document Type | Core Contents |
+| :--- | :--- | :--- |
+| **[`README.md`](./README.md)** | Project Overview | High-level repository guide, architecture pillars, and quick links. |
+| **[`RESEARCH_PROGRESS.md`](./RESEARCH_PROGRESS.md)** | Research Progress | Thesis framing, causal ITR formulation, anchor papers, and milestone tracking. |
+| **[`agentic_orthopedic_ai_review.md`](./agentic_orthopedic_ai_review.md)** | System Architecture | Literature synthesis on agentic AI, LLM orchestration, and 5-agent clinical CDSS design. |
+| **[`archive/README.md`](./archive/README.md)** | Archival Context | Data provenance for exploratory datasets (`AgenticAi.csv`, `CrossDomain.csv`). |
+| **[`top_100_papers/README.md`](./top_100_papers/README.md)** | PDF Index | Master table linking all 100 verified full-text PDFs with author and year metadata. |
+| **[`top_100_papers/orthopedic_ai_papers_summary.md`](./top_100_papers/orthopedic_ai_papers_summary.md)** | Literature Dossier | Technical summary of models, clinical tasks, and validation metrics across the 100 papers. |
+| **[`Orthopedic_AI_Literature_Review/Paper_Processing_Status.md`](./Orthopedic_AI_Literature_Review/Paper_Processing_Status.md)** | Corpus Verification | Audit log confirming 100% full-text PDF retrieval, DOI mapping, and extraction status. |
+| **[`Orthopedic_AI_Literature_Review/Literature_Review_Abstract.md`](./Orthopedic_AI_Literature_Review/Literature_Review_Abstract.md)** | Academic Abstract | Formal conference/journal abstract summarizing findings across the 100-paper corpus. |
+| **[`Orthopedic_AI_Literature_Review/State_of_the_Art_Review.md`](./Orthopedic_AI_Literature_Review/State_of_the_Art_Review.md)** | Evidence Synthesis | In-depth review of diagnostic, prognostic, and therapeutic algorithms in musculoskeletal care. |
+| **[`Orthopedic_AI_Literature_Review/Research_Gaps.md`](./Orthopedic_AI_Literature_Review/Research_Gaps.md)** | Gap Analysis | Detailed audit of 5 methodological gaps and 5 clinical translation barriers. |
+| **[`Orthopedic_AI_Literature_Review/Top_30_Core_Literature.md`](./Orthopedic_AI_Literature_Review/Top_30_Core_Literature.md)** | Core Literature Dossier | Deep-dive critical analysis of the 30 highest-ranked papers in the corpus. |
+| **[`Orthopedic_AI_Literature_Review/Top_30_Core_Papers.md`](./Orthopedic_AI_Literature_Review/Top_30_Core_Papers.md)** | Core Quick Reference | Compact listing and clinical focus categorization of the top 30 papers. |
+| **[`Orthopedic_AI_Literature_Review/Complete_Paper_Analysis.md`](./Orthopedic_AI_Literature_Review/Complete_Paper_Analysis.md)** | Granular Analysis | Individual paper breakdown covering clinical setting, sample size, and core takeaway. |
+| **[`Orthopedic_AI_Literature_Review/Complete_Paper_Feature_Extraction.md`](./Orthopedic_AI_Literature_Review/Complete_Paper_Feature_Extraction.md)** | Feature Matrix | Tabular extraction of patient features, inputs, algorithms, and target outcomes per paper. |
+| **[`Orthopedic_AI_Literature_Review/Feature_Level_Synthesis.md`](./Orthopedic_AI_Literature_Review/Feature_Level_Synthesis.md)** | Cross-Study Synthesis | Thematic aggregation of input variables, ML model families, and clinical outcome metrics. |
+| **[`Orthopedic_AI_Literature_Review/Quick_Read_Analysis.md`](./Orthopedic_AI_Literature_Review/Quick_Read_Analysis.md)** | Executive Briefing | High-impact takeaways and condensed patterns for rapid clinical and technical reference. |
+
+---
+
+## 6. Milestone Progress Tracker
 
 ### Completed
 - [x] Curated and verified 100-paper full-text corpus (100% PDFs on disk with metadata manifest).
