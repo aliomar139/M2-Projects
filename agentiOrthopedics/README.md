@@ -1,17 +1,15 @@
 # Agentic Orthopedics: AI/ML in Orthopedic Treatment Recommendation
 
-Research exploration and literature curation on the application of **Artificial Intelligence (AI), Machine Learning (ML), and Agentic Decision Systems** to orthopedic surgical decision-making and individualized treatment recommendation.
+Research exploration and literature review evaluating whether historical clinical records and Patient-Reported Outcome Measures (PROMs) can guide individualized orthopedic treatment decisions (conservative vs. operative, surgical technique selection, and recovery tracking).
 
 ---
 
-## Project Overview
+## Quick Navigation
 
-This repository hosts the data, synthesis documents, and full-text literature corpus examining whether and how historical clinical and patient-reported outcome data can support individualized orthopedic treatment choices (operative vs. non-operative management, surgical technique selection, and recovery pathway optimization).
-
-### Key Themes
-- **Clinical Decision Support Systems (CDSS)**: Predictive models for preoperative risk assessment, complication avoidance, and intervention selection.
-- **Individualized Treatment Recommendation (ITR)**: Causal and outcome-weighted machine learning models estimating patient-specific treatment benefit.
-- **Agentic AI & LLMs in Surgery**: Autonomous and semi-autonomous multi-agent workflows, large language models (ChatGPT-4, Claude, local models) predicting surgeon recommendations, and automated evidence synthesis.
+- [Research Progress & Thesis Direction](./RESEARCH_PROGRESS.md)
+- [100-Paper PDF Corpus & Table Index](./top_100_papers/README.md)
+- [Evidence Synthesis & Research Gaps](./Orthopedic_AI_Literature_Review/Research_Gaps.md)
+- [Agentic AI Architecture Review](./agentic_orthopedic_ai_review.md)
 
 ---
 
@@ -19,64 +17,35 @@ This repository hosts the data, synthesis documents, and full-text literature co
 
 ```text
 agentiOrthopedics/
-├── README.md                            # Main project overview and directory index
-├── top_100_orthopedic_ai_papers.csv     # Master dataset of 100 curated papers (metadata, citations, abstracts)
+├── README.md                                # Project overview and repository navigation
+├── RESEARCH_PROGRESS.md                     # Thesis focus, methodological anchors, and milestone tracking
+├── Orthopedic_AI_Literature_Review_Master.xlsx # Master workbook of all 100 reviewed papers
+├── agentic_orthopedic_ai_review.md          # Multi-agent systems and LLM orchestration review
 │
-├── top_100_papers/                      # Complete collection of 100 full-text PDFs
-│   ├── 001_Closed-Loop_digital_...pdf   # Ranked research papers (PDF format)
-│   ├── ...
-│   ├── 100_Medicine_&_Treatment_...pdf
-│   ├── manifest.csv                     # Detailed manifest with download sources, file sizes, and DOIs
-│   └── README.md                        # Complete table index of all 100 papers with direct file links
+├── top_100_papers/                          # Complete full-text PDF collection (100 papers)
+│   ├── 001_Closed-Loop_digital_...pdf       # Standardized indexed PDFs (001 to 100)
+│   ├── manifest.csv                         # DOIs, download sources, file sizes, verification flags
+│   ├── orthopedic_ai_papers_summary.md      # Summary of clinical findings and models
+│   └── README.md                            # Table index with direct PDF links
 │
-├── archive/                             # Archived exploratory datasets
-│   ├── AgenticAi.csv                    # Initial search results on agentic AI in healthcare
-│   ├── CrossDomain.csv                  # Initial search results on cross-domain treatment recommendation
-│   └── README.md                        # Provenance and archival context
+├── Orthopedic_AI_Literature_Review/         # In-depth synthesis and gap analyses
+│   ├── Paper_Processing_Status.md           # Full corpus verification registry
+│   ├── Research_Gaps.md                     # Methodological and clinical translation gap analysis
+│   ├── State_of_the_Art_Review.md           # Benchmark performance and clinical evidence
+│   ├── Complete_Paper_Analysis.md           # Detailed analysis per paper
+│   ├── Feature_Level_Synthesis.md           # Inputs, algorithms, and outcome metrics
+│   └── Top_30_Core_Literature.md            # In-depth dossier of top 30 ranked papers
 │
-├── RESEARCH_PROGRESS.md                 # Methodological progress record and paper deep-dives
-├── agentic_orthopedic_ai_review.md      # Literature review on agentic AI architectures in orthopedics
-├── orthopedic_ai_papers_summary.md      # Comprehensive thematic summary across the 100 papers
-│
-├── sync_top100_orthopedic.py            # Automated synchronization and retrieval script
-└── downloader_helpers.py                # Multi-API academic scraper and open-access PDF resolver
+└── archive/                                 # Historical search datasets
+    ├── top_100_orthopedic_ai_papers.csv     # Scored and ranked dataset
+    ├── AgenticAi.csv                        # Initial search on agentic healthcare systems
+    └── CrossDomain.csv                      # Initial search on cross-domain treatment recommendation
 ```
 
 ---
 
-## Datasets & Curated Corpus
+## Core Focus Areas
 
-1. **Active Master Dataset ([`top_100_orthopedic_ai_papers.csv`](./top_100_orthopedic_ai_papers.csv))**:
-   - Contains 100 carefully ranked papers based on citation velocity, journal quartile (SJR Q1–Q4), clinical relevance score, and methodology.
-   - Fields: `Rank`, `Relevance Score`, `Title`, `Authors`, `Year`, `Journal`, `Journal SJR Quartile`, `Study Type`, `Citations`, `Takeaway`, `Abstract`, `DOI`, `Consensus Link`.
-
-2. **Full-Text Paper Collection ([`top_100_papers/`](./top_100_papers/))**:
-   - 100 full-text PDFs successfully indexed and organized with standardized filenames (`001_...pdf` through `100_...pdf`).
-   - Accompanied by [`manifest.csv`](./top_100_papers/manifest.csv) and [`top_100_papers/README.md`](./top_100_papers/README.md).
-
-3. **Archived Scoping Datasets ([`archive/`](./archive/))**:
-   - Historical CSV files from preliminary exploratory queries (`AgenticAi.csv` and `CrossDomain.csv`) stored for traceability and provenance.
-
----
-
-## Research Documents & Reviews
-
-- **[`RESEARCH_PROGRESS.md`](./RESEARCH_PROGRESS.md)**: Conceptual investigation analyzing the boundary between predicting historical clinician decisions versus counterfactual, outcome-optimal treatment recommendations.
-- **[`agentic_orthopedic_ai_review.md`](./agentic_orthopedic_ai_review.md)**: Synthesis of multi-agent architectures, reinforcement learning from clinical feedback, and LLM orchestration in musculoskeletal medicine.
-- **[`orthopedic_ai_papers_summary.md`](./orthopedic_ai_papers_summary.md)**: Comprehensive dossier summarizing clinical findings, model families (XGBoost, deep survival, RL, transformers), and clinical validation metrics across all 100 papers.
-
----
-
-## Automation Scripts
-
-The repository includes a Python pipeline to verify, download, and index academic papers:
-
-- **[`sync_top100_orthopedic.py`](./sync_top100_orthopedic.py)**: Iterates through [`top_100_orthopedic_ai_papers.csv`](./top_100_orthopedic_ai_papers.csv), maps DOIs to PubMed Central IDs via NCBI's ID converter, verifies existing PDF files, downloads open-access articles across academic APIs, and updates the manifest.
-- **[`downloader_helpers.py`](./downloader_helpers.py)**: Modular functions supporting PubMed Central AWS Open Data, Unpaywall, OpenAlex, Semantic Scholar, Europe PMC, and arXiv APIs.
-
-### Running the Sync Pipeline
-```bash
-python sync_top100_orthopedic.py
-```
-*(Dependencies: `pandas`, `requests`, `beautifulsoup4`)*
-
+1. **Individualized Treatment Recommendation (ITR)**: Moving past predicting historical surgeon choices (imitation) to estimate counterfactual, patient-specific treatment benefit (optimization).
+2. **Clinical Decision Support Systems (CDSS)**: Preoperative risk assessment, complication avoidance, and surgical triage using tabular clinical registries and PROMs.
+3. **Agentic Workflows & LLMs**: Evaluating autonomous clinical agents, Retrieval-Augmented Generation (RAG) for clinical guidelines, and automated note extraction.
