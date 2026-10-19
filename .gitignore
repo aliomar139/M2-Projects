@@ -74,3 +74,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# --- Downloaded Research Papers & Large Paper Caches ---
+**/downloaded_papers/
+**/Similar-Papers/downloaded_papers/
+*.pkl
+
+

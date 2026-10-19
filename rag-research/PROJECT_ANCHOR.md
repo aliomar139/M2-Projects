@@ -1,4 +1,6 @@
 # PROJECT STATE & NEXT STEPS ANCHOR
+
+> **Status note (October 19, 2026):** The results below describe the original exploratory runs and are not all valid held-out or live-latency evidence. In particular, the Kaggle NQ cascade run uses a qrels-filtered corpus pool and simulated branch skipping; the earlier SciFact CV uses single-field BM25 cache and estimated latency. See `docs/results_ledger.md` and run `cascaded-blended-rag/experiments/08_evaluate_cascade_heldout.py` for the corrected SciFact train/test evaluation. Do not repeat the earlier “100% Verified” or “zero data leakage” claims as final conclusions.
 ## Cascaded Adaptive Blended RAG: Systems Extension for Efficient Multi-Field Hybrid Retrieval
 
 **Last Updated:** October 18, 2026  

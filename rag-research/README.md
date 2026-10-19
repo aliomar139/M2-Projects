@@ -37,7 +37,8 @@ rag-research/
 │   │   ├── 04_baseline_blended_rag.py         # 3-Way Reciprocal Rank Fusion on SciFact
 │   │   ├── 05_replicate_squad.py              # SQuAD v1.1 Top-10 retrieval evaluation
 │   │   ├── 06_replicate_trec_covid.py         # TREC-COVID NDCG@10 evaluation
-│   │   └── 07_tune_cascade_cv.py              # 5-Fold Cross-Validation threshold grid search
+│   │   ├── 07_tune_cascade_cv.py              # Legacy cache-based exploratory analysis
+│   │   └── 08_evaluate_cascade_heldout.py     # Train/test evaluation with conditional execution
 │   ├── data_loader.py                         # BEIR SciFact data loading utility
 │   ├── squad_loader.py                        # SQuAD v1.1 data extraction utility
 │   ├── trec_covid_fast_loader.py              # Fast TREC-COVID loader with caching
@@ -83,8 +84,8 @@ Activate the environment from the repository root:
 # Activate Python Virtual Environment
 .\cascaded-blended-rag\venv\Scripts\Activate.ps1
 
-# Run 5-Fold Cross-Validation on SciFact
-python cascaded-blended-rag/experiments/07_tune_cascade_cv.py
+# Calibrate on SciFact train qrels and evaluate conditional cascade on test qrels
+python cascaded-blended-rag/experiments/08_evaluate_cascade_heldout.py
 
 # Run Multi-Field BM25 Baseline
 python cascaded-blended-rag/experiments/01_baseline_bm25.py
@@ -93,5 +94,5 @@ python cascaded-blended-rag/experiments/01_baseline_bm25.py
 python cascaded-blended-rag/experiments/04_baseline_blended_rag.py
 ```
 
-For GPU end-to-end question answering and full NQ Pareto sweeps, run [notebooks/reproduction.ipynb](file:///c:/Users/user/Desktop/M2-Porjects/rag-research/notebooks/reproduction.ipynb) on Kaggle with dual T4 GPUs.
+The executed [Kaggle notebook](notebooks/reproduction.ipynb) contains the original NQ ablation, cascade simulation, threshold sweep, and SQuAD generation run. Its cascade timings are fixed assumptions and it evaluates a qrels-filtered NQ corpus pool; treat those results as exploratory. Run the new SciFact held-out evaluation on Kaggle (GPU recommended) to collect directly measured conditional latency and test retrieval metrics. The notebook remains preserved as the original executed run.
 

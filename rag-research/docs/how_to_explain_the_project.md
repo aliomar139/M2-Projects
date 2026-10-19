@@ -1,4 +1,6 @@
 # How to Explain the Project: Pitch and Defense Guide
+
+> **Superseded defense notes:** Several performance and novelty claims below do not match the current evidence audit. Use `docs/results_ledger.md` for existing-run provenance and `docs/improvement_plan.md` for the corrected evaluation sequence. Rewrite these notes after the held-out run.
 ## Cascaded Adaptive Blended RAG
 
 ---

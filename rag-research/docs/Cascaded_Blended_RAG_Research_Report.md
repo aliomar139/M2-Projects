@@ -1,5 +1,7 @@
 # Cascaded Adaptive Blended RAG: Empirical Reproduction, Systems Analysis, and Sequential Routing Extension
 
+> **Superseded draft:** This report contains exploratory results whose protocols are now under correction. Consult `results_ledger.md` for provenance and limitations; use `improvement_plan.md` as the current evaluation plan. Do not cite earlier latency or accuracy-preservation claims as final results.
+
 **Comprehensive Research Report — Master 2 Research Project**  
 **Author:** Research Engineering Candidate  
 **Date:** October 2026  

@@ -3,6 +3,7 @@ import numpy as np
 import faiss
 from typing import Dict, List, Tuple
 from sentence_transformers import SentenceTransformer
+from src.cache_utils import corpus_fingerprint, cache_matches, write_cache_metadata
 
 class DenseRetriever:
     def __init__(self, corpus: Dict[str, dict], model_name: str = "sentence-transformers/all-MiniLM-L6-v2", cache_dir: str = "data/processed"):
@@ -14,16 +15,21 @@ class DenseRetriever:
         os.makedirs(cache_dir, exist_ok=True)
         
         doc_emb_path = os.path.join(cache_dir, "dense_doc_embeddings.npy")
+        metadata_path = doc_emb_path + ".json"
+        fingerprint = corpus_fingerprint(corpus)
         
-        if os.path.exists(doc_emb_path):
+        if cache_matches(doc_emb_path, metadata_path, fingerprint, model_name):
             print(f"Loading cached dense embeddings from {doc_emb_path}...")
             embeddings = np.load(doc_emb_path)
+            if embeddings.shape[0] != len(self.doc_ids):
+                raise ValueError("Dense cache row count does not match the current corpus ordering.")
         else:
             print("Encoding corpus documents (title + abstract) with MiniLM...")
             texts = [f"{corpus[did]['title']} {corpus[did]['abstract']}".strip() for did in self.doc_ids]
             embeddings = self.model.encode(texts, batch_size=64, show_progress_bar=True, normalize_embeddings=True)
             embeddings = np.array(embeddings, dtype="float32")
             np.save(doc_emb_path, embeddings)
+            write_cache_metadata(metadata_path, fingerprint, model_name)
             print(f"Saved corpus embeddings to {doc_emb_path}.")
             
         dim = embeddings.shape[1]

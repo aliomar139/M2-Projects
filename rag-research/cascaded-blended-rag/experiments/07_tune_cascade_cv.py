@@ -1,3 +1,12 @@
+"""Legacy exploratory analysis on cached SciFact test-query rankings.
+
+This script uses the test query set for both threshold selection and reported
+fold scores, reads the single-field BM25 cache, and reconstructs latency from
+cached component timings. Do not treat its outputs as the held-out evaluation.
+Use 08_evaluate_cascade_heldout.py for train-qrels calibration and conditional
+test-time execution.
+"""
+
 import os
 import sys
 import json

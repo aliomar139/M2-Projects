@@ -8,13 +8,21 @@ from typing import Dict, Tuple
 
 SCIFACT_URL = "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/scifact.zip"
 
-def download_and_load_scifact(data_dir: str = "data/raw") -> Tuple[Dict[str, dict], Dict[str, str], Dict[str, Dict[str, int]]]:
+def download_and_load_scifact(
+    data_dir: str = "data/raw",
+    split: str = "test",
+) -> Tuple[Dict[str, dict], Dict[str, str], Dict[str, Dict[str, int]]]:
     """
     Downloads BEIR SciFact and loads:
       - corpus: {doc_id: {"title": str, "abstract": str}}
-      - queries: {query_id: query_text} (only queries present in test qrels)
+      - queries: {query_id: query_text} (only queries present in the selected split qrels)
       - qrels: {query_id: {doc_id: relevance_score}}
+
+    `split` may be "train" or "test". The default remains "test" for
+    compatibility with the existing baseline scripts.
     """
+    if split not in {"train", "test"}:
+        raise ValueError("split must be either 'train' or 'test'")
     os.makedirs(data_dir, exist_ok=True)
     scifact_dir = os.path.join(data_dir, "scifact")
     zip_path = os.path.join(data_dir, "scifact.zip")
@@ -46,7 +54,7 @@ def download_and_load_scifact(data_dir: str = "data/raw") -> Tuple[Dict[str, dic
 
     # 2. Load Test Qrels (Ground Truth)
     qrels = {}
-    qrels_path = os.path.join(scifact_dir, "qrels", "test.tsv")
+    qrels_path = os.path.join(scifact_dir, "qrels", f"{split}.tsv")
     with open(qrels_path, "r", encoding="utf-8") as f:
         reader = csv.reader(f, delimiter="\t")
         next(reader, None)  # Skip header (query-id, corpus-id, score)
@@ -67,7 +75,7 @@ def download_and_load_scifact(data_dir: str = "data/raw") -> Tuple[Dict[str, dic
             if qid in qrels:
                 queries[qid] = item["text"].strip()
 
-    print(f"Loaded SciFact: {len(corpus)} docs | {len(queries)} test queries.")
+    print(f"Loaded SciFact: {len(corpus)} docs | {len(queries)} {split} queries.")
     return corpus, queries, qrels
 
 if __name__ == "__main__":

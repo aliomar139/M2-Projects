@@ -5,6 +5,7 @@ import scipy.sparse as sp
 from typing import Dict, List, Tuple
 from transformers import AutoTokenizer, AutoModelForMaskedLM
 from tqdm import tqdm
+from src.cache_utils import corpus_fingerprint, cache_matches, write_cache_metadata
 
 class SPLADERetriever:
     def __init__(
@@ -28,16 +29,21 @@ class SPLADERetriever:
 
         os.makedirs(cache_dir, exist_ok=True)
         index_path = os.path.join(cache_dir, "scifact_splade_index.npz")
+        metadata_path = index_path + ".json"
+        fingerprint = corpus_fingerprint(corpus)
 
-        if os.path.exists(index_path):
+        if cache_matches(index_path, metadata_path, fingerprint, model_name):
             print(f"Loading cached SPLADE sparse matrix from {index_path}...")
             self.doc_matrix = sp.load_npz(index_path)
+            if self.doc_matrix.shape[0] != len(self.doc_ids):
+                raise ValueError("SPLADE cache row count does not match the current corpus ordering.")
             print(f"Loaded SPLADE index: shape {self.doc_matrix.shape}.")
         else:
             print("Encoding corpus documents with SPLADE (this takes a few minutes on CPU)...")
             texts = [f"{corpus[did]['title']} {corpus[did]['abstract']}".strip() for did in self.doc_ids]
             self.doc_matrix = self._encode_documents(texts, batch_size=batch_size)
             sp.save_npz(index_path, self.doc_matrix)
+            write_cache_metadata(metadata_path, fingerprint, model_name)
             print(f"Saved SPLADE sparse matrix to {index_path}.")
 
     def _encode_documents(self, texts: List[str], batch_size: int = 16) -> sp.csr_matrix:
