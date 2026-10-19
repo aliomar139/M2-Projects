@@ -57,9 +57,18 @@ From our Kaggle dual-GPU run on NQ:
 
 ---
 
-## 3. How to Resume Work in the Next Chat
+## 3. Repository Navigation & Artifacts
+* **Full Academic Research Report (Word)**: [`docs/Cascaded_Blended_RAG_Research_Report.docx`](file:///c:/Users/user/Desktop/M2-Porjects/rag-research/docs/Cascaded_Blended_RAG_Research_Report.docx)
+* **Full Academic Research Report (Markdown)**: [`docs/Cascaded_Blended_RAG_Research_Report.md`](file:///c:/Users/user/Desktop/M2-Porjects/rag-research/docs/Cascaded_Blended_RAG_Research_Report.md)
+* **Presentation & Oral Defense Guide**: [`docs/how_to_explain_the_project.md`](file:///c:/Users/user/Desktop/M2-Porjects/rag-research/docs/how_to_explain_the_project.md)
+* **Kaggle Dual-T4 Reproduction Notebook**: [`notebooks/reproduction.ipynb`](file:///c:/Users/user/Desktop/M2-Porjects/rag-research/notebooks/reproduction.ipynb)
+* **Core Code & Pipelines**: [`cascaded-blended-rag/`](file:///c:/Users/user/Desktop/M2-Porjects/rag-research/cascaded-blended-rag)
+
+---
+
+## 4. How to Resume Work in the Next Chat
 All code, baselines, and extensions are completed and verified across 4 datasets.
-To start drafting the thesis paper or presentation slides, simply prompt:
-> *"Read `PROJECT_ANCHOR.md`. All experiments for Cascaded Blended RAG are verified. Let's draft the formal thesis paper / slide deck."*
+To start drafting presentation slides or preparing for defense, simply prompt:
+> *"Read `PROJECT_ANCHOR.md`. All experiments for Cascaded Blended RAG are verified. Let's draft presentation slides / defense Q&A."*
 
 
