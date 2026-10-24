@@ -1,0 +1,335 @@
+--- PDF PAGE 1 ---
+HSS JOURNAL® • 2025.0 Top 100 Orthopedic AI • Rank #2
+Artificial Intelligence and Musculoskeletal Surgical
+Applications
+F. Oettl, Bálint Zsidai, Jacob F. Oeding, K. Samuelsson
+Department of Orthopedic Surgery, Balgrist University Hospital, University of Zürich, Zurich, Switzerland.
+Journal:
+HSS Journal®
+Publication Year:
+2025.0
+Citations:
+19
+DOI:
+10.1177/15563316251339596
+CLINICAL & AGENTIC AI TAKEAWAY
+AI-assisted procedures in orthopedic surgery improve precision, efficiency, and patient outcomes while
+maintaining human clinical expertise.
+ABSTRACT
+Artificial intelligence (AI) has emerged as a transformative force in orthopedic surgery. Potentially encompassing pre-,
+intra-, and postoperative processes, it can process complex medical imaging, provide real-time surgical guidance, and
+analyze large datasets for outcome prediction and optimization. AI has shown improvements in surgical precision,
+efficiency, and patient outcomes across orthopedic subspecialties, and large language models and agentic AI systems are
+expanding AI utility beyond surgical applications into areas such as clinical documentation, patient education, and
+autonomous decision support. The successful implementation of AI in orthopedic surgery requires careful attention to
+validation, regulatory compliance, and healthcare system integration. As these technologies continue to advance,
+maintaining the balance between innovation and patient safety remains crucial, with the ultimate goal of achieving more
+personalized, efficient, and equitable healthcare delivery while preserving the essential role of human clinical judgment.
+This review examines the current landscape and future trajectory of AI applications in orthopedic surgery, highlighting
+both technological advances and their clinical impact. Studies have suggested that AI-assisted procedures achieve higher
+accuracy and better functional outcomes compared to conventional methods, while reducing operative times and
+complications. However, these technologies are designed to augment rather than replace clinical expertise, serving as
+sophisticated tools to enhance surgeons' capabilities and improve patient care. © The Author(s) 2025.
+Keywords: Artificial intelligence, Spine, Knee, Hip, Machine Learning, Large Language Models, Agentic Ai
+Felix C Oettl,MD
+Bálint Zsidai,MD
+Jacob F Oeding,MS
+Kristian Samuelsson,MD
+Felix C. Oettl, MD, Department of Orthopedic Surgery, Balgrist University Hospital, University of Zürich, Forchstrasse
+340, Zurich 8008, Switzerland. Email:felix.oettl@balgrist.ch
+
+--- PDF PAGE 2 ---
+Received 2025 Jan 24; Accepted 2025 Jan 27; Collection date 2025 Aug.
+Abstract
+Artificial intelligence (AI) has emerged as a transformative force in orthopedic surgery. Potentially encompassing pre-,
+intra-, and postoperative processes, it can process complex medical imaging, provide real-time surgical guidance, and
+analyze large datasets for outcome prediction and optimization. AI has shown improvements in surgical precision,
+efficiency, and patient outcomes across orthopedic subspecialties, and large language models and agentic AI systems are
+expanding AI utility beyond surgical applications into areas such as clinical documentation, patient education, and
+autonomous decision support. The successful implementation of AI in orthopedic surgery requires careful attention to
+validation, regulatory compliance, and healthcare system integration. As these technologies continue to advance,
+maintaining the balance between innovation and patient safety remains crucial, with the ultimate goal of achieving more
+personalized, efficient, and equitable healthcare delivery while preserving the essential role of human clinical judgment.
+This review examines the current landscape and future trajectory of AI applications in orthopedic surgery, highlighting
+both technological advances and their clinical impact. Studies have suggested that AI-assisted procedures achieve higher
+accuracy and better functional outcomes compared to conventional methods, while reducing operative times and
+complications. However, these technologies are designed to augment rather than replace clinical expertise, serving as
+sophisticated tools to enhance surgeons’ capabilities and improve patient care.
+Keywords:artificial intelligence, machine learning, large language models, agentic AI, hip, knee, spine
+Introduction
+Artificial intelligence (AI) has emerged as a transformative force in healthcare, with considerable implications for
+orthopedic surgery. It has the potential to provide support at every phase of an increasingly complex surgical process, from
+preoperative planning to postoperative monitoring. The integration of machine learning (ML), computer vision, and
+advanced robotics is reshaping how orthopedic surgeons approach patient care, potentially leading to improved outcomes
+and enhanced surgical precision.
+In total knee arthroplasty (TKA), AI-powered systems can enable automatic segmentation and 3-dimensional (3D)
+reconstruction of anatomical structures [28], while in total hip arthroplasty (THA), ML algorithms can aid in selecting
+patients and predicting outcomes [23,24]. Particular promise has been shown in reducing complications and improving
+surgical accuracy, for example, in enhancing component positioning and patient outcomes [18,45]. The emergence of large
+language models (LLMs) has further expanded AI utility in orthopedic surgery, facilitating ambient clinical documentation
+and patient education [3,10]. Meanwhile, agentic AI systems are advancing surgical autonomy and decision-making
+capabilities, while maintaining essential human oversight and ethical considerations [4,11,43].
+This review explores the current state and future potential of AI applications in orthopedic surgery, including surgical
+planning, intraoperative navigation, and postoperative monitoring. We analyze the technical foundations of these advances,
+including innovative algorithms like U-Net architecture for surgical tool tracking [1] and you only look once (YOLO)
+implementations for real-time surgical phase recognition [14]. In addition, we examine the clinical evidence supporting
+these technologies and discuss the emerging roles of LLMs and agentic AI in advancing orthopedic surgical care.
+Technical Foundations
+“AI” is not one technology but rather is an umbrella term describing systems that display intelligent behavior by analyzing
+their environment to achieve predefined goals. These behaviors are defined by models, which result from an algorithm and
+its training environment. This section introduces some commonly utilized algorithms and their potential clinical use.
+
+--- PDF PAGE 3 ---
+The U-Net architecture has emerged as a tool for surgical tool tracking during arthroscopic procedures. It is a fully
+convolutional neural network (CNN), known for its effectiveness in medical image segmentation tasks, which has been
+adapted for real-time instrument detection and segmentation in arthroscopic videos. U-Net’s encoder-decoder structure
+with skip connections allows it to capture both fine-grained details and broader contextual information, making it
+particularly suitable for identifying surgical tools during knee surgery [1,15]. Recent studies have demonstrated U-Net’s
+superior performance in segmenting visually challenging arthroscopic images, even with limited datasets, which is a
+common constraint in medical imaging research [1]. Modifications to the original U-Net architecture, such as
+incorporating pretrained encoders and replacing transposed convolutions with nearest-neighbor interpolation in the
+decoder, have further improved its accuracy and reduced artifacts in tool segmentation [16]. These enhancements have led
+to significant improvements in segmentation accuracy and computational efficiency, making U-Net-based approaches
+increasingly viable for real-time surgical tool tracking in arthroscopic procedures [16,21].
+YOLO implementations have shown promising results in real-time surgical phase recognition, offering significant
+improvements in speed and accuracy compared to traditional methods. For instance, a modified YOLOv7 model, called
+YOLOv7-RepFPN, achieved an impressive 88.2% mean average precision at 62.9 frames per second on an embedded
+device, significantly outperforming the original YOLOv7 in terms of speed while maintaining comparable accuracy [22].
+This enhancement in inference speed is crucial for real-time applications in the operating room. Similarly, an improved
+YOLOv5 algorithm has been proposed for surgical instrument recognition, incorporating advanced techniques such as the
+squeeze-and-excitation attention mechanism and distribution shifting convolution to enhance detection performance [14].
+These YOLO implementations excel in speed and accuracy, and they demonstrate good generalization capabilities, making
+them suitable for the dynamic and complex environment of surgical procedures.
+ResNet systems are deep learning (DL) models that have demonstrated remarkable efficacy in identifying and classifying
+various fracture types in orthopedic imaging. For ankle fractures, an adapted ResNet50 model enhanced with squeeze-and-
+excitation network capabilities achieved 93% accuracy, 95% area under the curve, and 92% recall [42]. In pelvic fracture
+classification, a combination of attention U-Net for segmentation and Inception-ResNet V2 for fracture categorization has
+shown significant improvements over traditional methods [19]. ResNet50 has also outperformed other neural networks in
+distinguishing atypical femoral fractures from normal femoral shaft fractures, achieving a mean accuracy of 91% in an
+automated pathway and 94% with manual intervention [48]. For identifying proximal humerus fractures, a ResNet152
+model has achieved an outstanding accuracy of 96%, highlighting its effectiveness in emergency settings [17]. These
+results suggest ResNet systems’ potential to enhance the accuracy and efficiency of fracture diagnosis in clinical practice.
+Clinical Applications
+With advancements in computational power and imaging technologies, AI applications are transforming preoperative
+planning, intraoperative guidance, and postoperative outcomes.
+Surgical Planning
+The use of AI for analyzing computed tomography (CT) and magnetic resonance imaging (MRI) has enabled automatic
+segmentation and precise 3D reconstruction of anatomical structures in TKA [20]. Traditional methods rely heavily on
+manual segmentation, which is labor-intensive and subject to inter-observer variability. AI algorithms, particularly those
+employing CNNs, have demonstrated high accuracy in segmenting bone and soft tissue structures, reducing the time
+required for preoperative planning. This improved efficiency allows for enhanced surgical precision by facilitating patient-
+specific implant design and alignment strategies. Studies have shown that automated segmentation tools can achieve
+comparable or superior accuracy to manual techniques while significantly reducing processing time [37].
+In addition, ML has shown significant promise in optimizing various aspects of THA. Recent studies have demonstrated
+the potential of AI and ML models to aid in patient selection, predict postoperative outcomes, and analyze imaging data.
+
+--- PDF PAGE 4 ---
+For instance, researchers have developed ML models to predict short lengths of stay and same-day discharge after THA,
+which could help optimize patient selection for outpatient procedures [23]. In addition, AI applications have shown the
+potential to accurately predict postoperative complications, pain, and patient-reported outcomes for THA [24]. AI using
+ML has been able to distinguish the final rasping hammering sound from prior hammering sounds during THA, which
+could help reduce complications by informing the surgeon that the cup or stem is fully seated [12]. Furthermore, ML
+methods have been explored for the surveillance of primary THA components and the early identification of outliers [9].
+These advancements highlight the growing role of ML in enhancing various aspects of THA, from preoperative planning
+to postoperative monitoring.
+AI-powered tools are advancing the evaluation of spinal alignment parameters critical for deformity correction surgery.
+Accurate assessment of sagittal and coronal alignment, pelvic tilt, and lumbar lordosis is essential for developing
+corrective strategies. DL algorithms trained on radiographic datasets can automatically identify key anatomical landmarks
+and calculate alignment parameters with high accuracy. Furthermore, predictive analytics assist surgeons in simulating
+postoperative outcomes and selecting optimal surgical interventions. Research indicates that these AI systems reduce
+variability and improve the reliability of spinal alignment assessments [29,50].
+Intraoperative Navigation
+Real-time AI processing of fluoroscopic images for pedicle screw placement has shown significant promise in enhancing
+surgical accuracy and efficiency. A novel AI-based fluoroscopy reconstruction technique called X23D generates a 3D
+anatomical model of the spine from only 4 fluoroscopy images, enabling real-time visualization of the spine anatomy and
+surgical drill position during pedicle screw placement [25]. This technology has demonstrated improved accuracy
+compared to traditional fluoroscopy-aided freehand instrumentation, with reduced radiation exposure and execution time.
+AI-enhanced visualization of critical structures during minimally invasive spine surgery pushes the field by providing
+surgeons with detailed 3D visualizations of the surgical field without the need for large incisions. Studies have shown that
+the use of augmented reality (AR) technologies in minimally invasive spinal surgery has led to an average of 20%
+reduction in operative time, a 15% decrease in intraoperative blood loss, and faster recovery times compared to
+conventional methods [47]. These advancements have enhanced surgeons’ ability to navigate small, complex anatomical
+spaces with greater accuracy, reducing the need for intraoperative fluoroscopy and exposure to radiation [47]. Furthermore,
+AR-assisted pedicle screw placement has significantly reduced the rate of misplaced screws, even when performed by less
+experienced surgeons, indicating a shorter learning curve for this complex procedure [47].
+Postoperative Monitoring
+Computer vision systems have emerged as promising tools for analyzing patient gait patterns after TKA. These systems
+utilize AI and image recognition techniques to provide objective and quantitative assessments of gait characteristics [8,51].
+By capturing and analyzing video footage of patients walking, computer vision can detect subtle changes in gait
+parameters such as stride length, gait speed, and knee flexion angles [8]. This noninvasive approach offers several
+advantages over traditional gait analysis methods, including reduced setup time, increased patient comfort, and the ability
+to collect data in more natural settings. Recent studies have demonstrated the effectiveness of computer vision in
+identifying gait improvements following TKA, with patients showing significant enhancements in mobility and reduced
+pain within weeks of surgery [51]. Furthermore, these systems can aid in personalizing rehabilitation programs and
+monitoring patient progress over time, potentially leading to better long-term outcomes for TKA patients [8,51].
+AI has also emerged as a tool for processing wearable sensor data to track rehabilitation progress. Algorithms can analyze
+complex data streams from various sensors, including accelerometers, gyroscopes, and force sensors, to provide
+comprehensive insights into patients’ movement patterns and functional improvements [33,35]. ML techniques, such as
+supervised learning and DL models such as CNNs and long short-term memory, are particularly effective in automatically
+extracting features and recognizing temporal patterns in sensor data [35]. This allows for real-time monitoring of patients’
+
+--- PDF PAGE 5 ---
+gait characteristics, joint mobility, and overall activity levels, enabling healthcare providers to make data-driven decisions
+about treatment plans. For instance, AI algorithms can detect subtle changes in gait parameters or upper limb function that
+may not be apparent through traditional clinical assessments. By continuously analyzing sensor data, these algorithms can
+also identify potential issues early on, allowing for timely interventions and personalized adjustments to rehabilitation
+programs [44]. The integration of AI and wearable sensors thus offers a promising approach to enhance the precision and
+effectiveness of rehabilitation monitoring, potentially leading to improved patient outcomes and more efficient healthcare
+delivery.
+Automated detection of postoperative complications through imaging and clinical data analysis can enhance patient care
+and improve surgical outcomes. Advanced ML techniques, particularly DL models, have demonstrated significant potential
+in analyzing medical imaging data to predict surgical complexity and identify potential complications [7]. These models
+can process preoperative CT images to forecast surgical complexity with greater accuracy than expert surgeon judgment
+[7]. In addition, natural language processing algorithms have shown superior performance in identifying postoperative
+complications from electronic medical records compared to traditional patient safety indicators based on discharge coding
+[30]. These automated systems can detect a range of complications, including acute renal failure, deep vein thrombosis,
+pulmonary embolism, sepsis, pneumonia, and myocardial infarction, with higher sensitivity than conventional methods
+[30]. Furthermore, CNNs have been applied to analyze imaging data for bone and joint infection complications, offering
+improved resolution and more accurate lesion area recognition compared to traditional approaches [27]. The integration of
+these automated detection methods into clinical practice has the potential to significantly advance perioperative
+management and improve patient outcomes.
+Clinical Examples
+Several studies have explored advanced versus conventional surgical planning, focusing on outcomes and component
+positioning accuracy. One notable study with 60 patients compared AI-based 3D planning to traditional 2-dimensional
+(2D) X-ray planning for TKA; the AI group achieved significantly higher accuracy in predicting prosthesis size, valgus
+correction angle, and hip-knee-ankle angle [18]. In addition, patients in the AI group demonstrated better functional
+outcomes, as measured by the Western Ontario and McMaster Universities Osteoarthritis Index (WOMAC) and the
+American Knee Society knee function scores at 3-, 6-, and 12-month post-surgery. Another study compared 60 TKAs
+performed using computer-assisted techniques with those using conventional methods [28]. The findings highlighted that
+computer-assisted TKA exhibited a significantly smaller range of alignment deviation in the frontal plane, specifically
+between 2.9° valgus to 3.1° varus, compared to the conventional approach, which ranged from 4.8° valgus to 6.6° varus.
+Moreover, the mean deviation from the mechanical axis was notably lower in the computer-assisted group at 1.4° ± 0.9°,
+compared to 2.0° ± 1.7° in the conventional group.
+In spine surgery, studies have demonstrated that AI models can optimize screw trajectories and dimensions based on
+preoperative imaging data, leading to improved accuracy compared to traditional freehand techniques. For instance, a
+study involving 208 pedicle screw placements showed that AI-assisted planning achieved an 85.1% classification as
+Gertzbein Grade A (no cortical breach), significantly outperforming the 64.9% accuracy of freehand placements [13].
+Another innovative system, called Bone’s Trajectory, utilized AI-based finite element analysis to identify optimal screw
+paths with maximal bone mineral density and pullout force, particularly beneficial for elderly osteoporotic patients [26].
+Furthermore, robotic-assisted systems have demonstrated an impressive accuracy rate of approximately 95%, with studies
+indicating that the integration of AI in surgical navigation can reduce the learning curve for less experienced surgeons [2].
+The use of AR in conjunction with AI has also shown promise, providing real-time visualization of anatomical structures,
+which may further enhance the safety and efficacy of pedicle screw placements [39]. Collectively, these advancements
+underscore the potential of AI-powered technologies in spinal surgery, paving the way for more standardized and safer
+surgical practices across diverse clinical settings.
+
+--- PDF PAGE 6 ---
+AI-assisted THA has shown advantages over conventional methods in multiple studies. AI-assisted preoperative planning
+consistently outperforms traditional 2D X-ray template planning in prosthesis size prediction accuracy, with acetabular and
+femoral prosthesis prediction rates exceeding those of the traditional method across diverse patient populations [45,49].
+Moreover, AI-assisted approaches result in more precise acetabular cup positioning, with higher percentages of placements
+within safe zones such as those defined by Lewinnek and Callanan [45,49]. AI techniques also significantly reduce lower-
+limb length discrepancies compared to traditional methods, enhancing postoperative limb symmetry [46]. Studies highlight
+improved operative efficiency with shorter surgical times and reduced intraoperative model testing in AI-assisted THA
+[49]. In terms of functional outcomes, patients receiving AI-guided procedures exhibit superior early postoperative Harris
+hip scores and faster recovery of hip function [49]. These findings collectively underscore AI potential in optimizing THA
+planning and execution, offering improved precision, efficiency, and patient outcomes.
+Emerging Technologies: LLMs
+LLMs have begun to make significant contributions to orthopedic surgery, in clinical practice and research. These
+advanced AI systems, built on transformer architectures, excel in natural language processing and are particularly suited
+for managing and interpreting the vast amounts of text-based data generated in medical practice [34]. Their ability to
+understand and generate coherent, contextually appropriate language makes them valuable tools in orthopedic surgery,
+where precise communication and documentation are essential.
+In clinical settings, LLMs have shown utility in automating routine documentation tasks, such as generating clinical notes
+and patient letters [3]. By leveraging ambient documentation systems, LLMs can create standardized notes directly from
+patient-physician interactions, saving time and reducing the administrative burden on orthopedic surgeons [41]. This
+allows clinicians to focus more on patient care while ensuring that the documentation adheres to professional standards. In
+addition, LLMs are proving useful in-patient education, where AI-based chatbots can deliver clear explanations of complex
+orthopedic procedures, provide pre- and postoperative instructions, and answer frequently asked questions [10]. These
+tools enhance patient understanding and engagement, promoting better adherence to treatment plans. In research, LLMs
+are valuable assistants for orthopedic surgeons working on literature reviews and manuscript preparation. They can
+efficiently synthesize findings from large volumes of medical literature, identifying relevant studies and highlighting key
+insights [5]. Furthermore, their ability to generate concise, well-structured text aids researchers in articulating their
+findings and producing high-quality publications. Some models, like Llama, have even been fine-tuned with medical
+datasets, enabling more targeted applications in orthopedics [40].
+The potential of multimodal LLMs, such as Google’s Gemini, extends further into areas requiring the integration of text
+and image data, such as the interpretation of radiographs or MRI scans [38]. Such capabilities could complement the
+expertise of orthopedic surgeons in diagnosing and planning treatments. Similarly, Claude’s analytical strengths could be
+harnessed for complex medical reasoning tasks in orthopedics, including treatment planning and case analysis [36].
+Despite these advances, the limitations of LLMs must be carefully considered. They lack genuine medical understanding
+and are prone to hallucinations, the generation of plausible but incorrect information [6]. This necessitates rigorous
+verification of AI-generated outputs by qualified clinicians. Ethical considerations, such as maintaining transparency with
+patients about the use of AI, ensuring data privacy, and addressing biases in AI outputs, are paramount. While LLMs
+cannot replace the expertise and judgment of orthopedic surgeons, their integration into the field offers promising
+opportunities to enhance efficiency, patient education, and research productivity.
+Emerging Technologies: Agentic AI
+Agentic AI represents an advancement in orthopedic surgery, offering systems with the capability to perceive their
+environment, make decisions, and execute actions autonomously within predefined parameters [4,11,43]. These systems
+
+--- PDF PAGE 7 ---
+leverage advanced technologies, such as reinforcement learning and neural networks, to interpret complex data and interact
+dynamically with clinical scenarios, making them valuable tools in modern surgical practice.
+One of the most promising orthopedic applications of agentic AI is its potential integration into robotic-assisted surgery.
+These systems could analyze real-time intraoperative feedback, imaging data, and surgical plans to enhance precision and
+adaptability during procedures. For example, an agentic AI could adjust robotic movements during a total joint
+replacement to account for unexpected anatomical variations, improving outcomes and minimizing surgical errors.
+Similarly, these systems could play a pivotal role in preoperative planning by synthesizing imaging and patient-specific
+data to create optimized surgical blueprints. Agentic AI is also poised to revolutionize postoperative care. Autonomous
+systems could monitor patient recovery using wearable sensors and imaging, providing early detection of complications
+such as infection or prosthetic loosening. By continuously analyzing patient data, these systems can provide timely alerts
+and actionable recommendations to clinicians, ensuring proactive management and better long-term outcomes.
+Furthermore, agentic AI could support rehabilitation by tailoring physical therapy regimens based on real-time patient
+performance data, promoting faster recovery and personalized care.
+However, the autonomy of these systems necessitates careful consideration of safety and accountability. In orthopedic
+surgery, where precision and trust are paramount, rigorous validation and robust error detection mechanisms are essential.
+Explainable AI techniques are critical to ensure transparency in decision-making, allowing surgeons to understand and
+validate AI recommendations before acting on them [31,32]. This is particularly important in high-stakes environments
+where patient safety is directly affected by AI-driven decisions. Ethical considerations are equally significant. Agentic AI
+systems must be designed to provide unbiased care across diverse patient populations. In orthopedics, this means
+accounting for variations in anatomy, demographics, and comorbidities to deliver equitable and effective solutions.
+Continuous monitoring, iterative updates, and recalibrations are vital to maintaining performance and adapting to new
+clinical challenges.
+By combining situational awareness, precision, and adaptability, agentic AI has the potential to enhance but not replace the
+capabilities of orthopedic surgeons, potentially serving as valuable collaborators in care delivery. As technology evolves,
+orthopedic surgery stands to benefit significantly from the thoughtful integration of agentic AI, provided safety,
+transparency, and ethical standards are rigorously upheld.
+Conclusion
+AI is rapidly transforming orthopedic surgery through diverse applications spanning diagnostic assistance, surgical
+planning, and clinical documentation. While ML, DL, and LLMs demonstrate remarkable potential in enhancing surgical
+precision and efficiency, these technologies are designed to augment rather than replace clinical expertise. The successful
+implementation of AI requires careful attention to validation, regulatory compliance, and healthcare system integration
+while addressing challenges in data quality and standardization. As emerging technologies such as agentic AI and
+autonomous systems continue to evolve, maintaining the balance between innovation and patient safety remains crucial,
+with successful outcomes dependent on proper validation, risk management, and sustained human oversight in clinical
+decision-making. The future of AI in orthopedics points toward increasingly personalized treatment approaches and
+streamlined workflows, provided these advances continue to prioritize patient care and healthcare equity.
+Supplemental Material
+Supplemental material, sj-docx-1-hss-10.1177_15563316251339596 for Artificial Intelligence and Musculoskeletal
+Surgical Applications by Felix C. Oettl, Bálint Zsidai, Jacob F. Oeding and Kristian Samuelsson in HSS Journal®
+Supplemental material, sj-docx-2-hss-10.1177_15563316251339596 for Artificial Intelligence and Musculoskeletal
+Surgical Applications by Felix C. Oettl, Bálint Zsidai, Jacob F. Oeding and Kristian Samuelsson in HSS Journal®
+
+--- PDF PAGE 8 ---
+Supplemental material, sj-docx-3-hss-10.1177_15563316251339596 for Artificial Intelligence and Musculoskeletal
+Surgical Applications by Felix C. Oettl, Bálint Zsidai, Jacob F. Oeding and Kristian Samuelsson in HSS Journal®
+Supplemental material, sj-docx-4-hss-10.1177_15563316251339596 for Artificial Intelligence and Musculoskeletal
+Surgical Applications by Felix C. Oettl, Bálint Zsidai, Jacob F. Oeding and Kristian Samuelsson in HSS Journal®
+Footnotes
+The author(s) declared the following potential conflicts of interest with respect to the research, authorship, and/or
+publication of this article: Kristian Samuelsson, MD, reports relationships with Getinge AB, Carl Bennet AB, University of
+Gothenburg and has a patent pending for Solution for Determination of Supraphysiological Body Joint Movements. The
+other authors declare no potential conflicts of interest.
+Funding:The author(s) received no financial support for the research, authorship, and/or publication of this article.
+Human/Animal Rights:All procedures followed were in accordance with the ethical standards of the responsible committee
+on human experimentation (institutional and national) and with the Helsinki Declaration of 1975.
+Informed Consent:Informed consent was not required for this review article.
+Required Author Forms:Disclosure forms provided by the authors are available with the online version of this article as
+supplemental material.
+ORCID iDs:Felix C. Oettlhttps://orcid.org/0000-0001-9721-685X
+Jacob F. Oedinghttps://orcid.org/0000-0002-4562-4373
+References
+Associated Data
+This section collects any data citations, data availability statements, or supplementary materials included in this article.
+Supplementary Materials
+Supplemental material, sj-docx-1-hss-10.1177_15563316251339596 for Artificial Intelligence and Musculoskeletal
+Surgical Applications by Felix C. Oettl, Bálint Zsidai, Jacob F. Oeding and Kristian Samuelsson in HSS Journal®
+Supplemental material, sj-docx-2-hss-10.1177_15563316251339596 for Artificial Intelligence and Musculoskeletal
+Surgical Applications by Felix C. Oettl, Bálint Zsidai, Jacob F. Oeding and Kristian Samuelsson in HSS Journal®
+Supplemental material, sj-docx-3-hss-10.1177_15563316251339596 for Artificial Intelligence and Musculoskeletal
+Surgical Applications by Felix C. Oettl, Bálint Zsidai, Jacob F. Oeding and Kristian Samuelsson in HSS Journal®
+Supplemental material, sj-docx-4-hss-10.1177_15563316251339596 for Artificial Intelligence and Musculoskeletal
+Surgical Applications by Felix C. Oettl, Bálint Zsidai, Jacob F. Oeding and Kristian Samuelsson in HSS Journal®
+Articles from HSS Journal are provided here courtesy ofHospital for Special Surgery
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1177/15563316251339596 •
+Consensus Page: https://consensus.app/papers/artificial-intelligence-and-musculoskeletal-surgical-oettl-
+zsidai/b710ae2742d4574ca049b9647b070dc5/ • Verified and rendered via Deep Search & Academic Repositories.

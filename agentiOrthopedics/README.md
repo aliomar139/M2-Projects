@@ -19,6 +19,7 @@ Master's thesis research on AI-supported orthopedic treatment decisions, patient
 ## Files you will probably use most
 
 - [Review dimensions](LR/Surveys/dimensions.md)
+- [Ten detailed review analyses and their matching records](LR/Surveys/review_dimensions/README.md)
 - [Candidate new dimensions](LR/new_dimensions.md)
 - [PRISMA analysis and diagram](LR/prisma.md)
 - [Paper writing worksheet](LR/paper.md)

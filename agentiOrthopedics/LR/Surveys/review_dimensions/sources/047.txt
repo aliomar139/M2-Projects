@@ -1,0 +1,107 @@
+--- PDF PAGE 1 ---
+THE JOURNAL OF ARTHROPLASTY • 2020.0 Top 100 Orthopedic AI • Rank #47
+Clinical Decision Support Tools for Predicting Outcomes
+in Patients Undergoing Total Knee Arthroplasty: A
+Systematic Review.
+Jodie A. Cochrane, Traci Flynn, A. Wills, F. Walker, M. Nilsson, Sarah Johnson
+School of Engineering, The University of Newcastle, Callaghan, New South Wales, Australia; Centre for Rehab Innovations, The
+University of Newcastle, Callaghan, New South Wales, Australia; Hunter Medical Research Institute, New Lambton Heights, New South
+Wales, Australia.
+Journal:
+The Journal of arthroplasty
+Publication Year:
+2020.0
+Citations:
+16
+DOI:
+10.1016/j.arth.2020.10.053
+CLINICAL & AGENTIC AI TAKEAWAY
+Clinical decision support tools show promise in predicting total knee arthroplasty outcomes, but more research
+is needed to confirm their clinical applicability and interpretation.
+ABSTRACT
+--- REPOSITORY & PUBLISHER WEB METADATA --- Affiliations: School of Engineering, The University of
+Newcastle, Callaghan, New South Wales, Australia; Centre for Rehab Innovations, The University of Newcastle,
+Callaghan, New South Wales, Australia; Hunter Medical Research Institute, New Lambton Heights, New South Wales,
+Australia. Keywords: Predictive model, Total Knee Replacement, Total Knee Arthroplasty, Patient-reported Outcomes,
+Functional Outcomes, Clinical Decision Tool Extended Abstract from Repository: Background Total knee arthroplasty is
+the standard surgical treatment for end-stage osteoarthritis. Although widely accepted as a successful procedure,
+approximately 30% of patients are not satisfied due to non-optimal postoperative outcomes. Clinical decision support tools
+that are able to accurately predict post-surgery outcomes would assist in providing individualized advice or services to help
+alleviate possible issues, resulting in significant benefits to both the healthcare system and individuals. Methods Five
+databases (Ovid Medline, Ovid EMBASE, CINAHL complete, Cochrane Library, and Scopus) were searched for the key
+phrases "knee replacement" or "knee arthroplasty" and "decision support tool," "decision tool," "predict ∗  tool," "predict ∗
+model," "algorithm" or "nomogram." Searches were limited to peer-reviewed journal articles published between January
+2000 and June 2019. Reference lists of included articles were examined. Authors came to a consensus on the final list of
+included articles. Results Eighteen articles were included for review. Most models reported low predictive success and
+inability to externally validate. Both candidate and final predictor variables were inconsistent between studies. Only 1
+model was considered strongly predictive (AUROC >0.8), and only 2 studies were able to externally validate their
+developed model. In general, models that performed well used large patient numbers, were tested on similar demographics,
+and used either nonlinear input transformations or a completely nonlinear model. Conclusion Some models do show
+promise; however, there remains the question of whether the reported predictive success can continue to be replicated.
+Furthermore, clinical applicability and interpretation of predictive tools should be considered during development.
+Keywords: Predictive model, Total Knee Replacement, Total Knee Arthroplasty, Patient-reported Outcomes, Functional Outcomes,
+Clinical Decision Tool
+
+--- PDF PAGE 2 ---
+Study Overview & Background
+--- REPOSITORY & PUBLISHER WEB METADATA --- Affiliations: School of Engineering, The University of
+Newcastle, Callaghan, New South Wales, Australia; Centre for Rehab Innovations, The University of Newcastle,
+Callaghan, New South Wales, Australia; Hunter Medical Research Institute, New Lambton Heights, New South Wales,
+Australia. Keywords: Predictive model, Total Knee Replacement, Total Knee Arthroplasty, Patient-reported Outcomes,
+Functional Outcomes, Clinical Decision Tool Extended Abstract from Repository: Background Total knee arthroplasty is
+the standard surgical treatment for end-stage osteoarthritis. Although widely accepted as a successful procedure,
+approximately 30% of patients are not satisfied due to non-optimal postoperative outcomes. Clinical decision support tools
+that are able to accurately predict post-surgery outcomes would assist in providing individualized advice or services to help
+alleviate possible issues, resulting in significant benefits to both the healthcare system and individuals. Methods Five
+databases (Ovid Medline, Ovid EMBASE, CINAHL complete, Cochrane Library, and Scopus) were searched for the key
+phrases "knee replacement" or "knee arthroplasty" and "decision support tool," "decision tool," "predict ∗  tool," "predict ∗
+model," "algorithm" or "nomogram." Searches were limited to peer-reviewed journal articles published between January
+2000 and June 2019. Reference lists of included articles were examined. Authors came to a consensus on the final list of
+included articles. Results Eighteen articles were included for review. Most models reported low predictive success and
+inability to externally validate. Both candidate and final predictor variables were inconsistent between studies. Only 1
+model was considered strongly predictive (AUROC >0.8), and only 2 studies were able to externally validate their
+developed model. In general, models that performed well used large patient numbers, were tested on similar demographics,
+and used either nonlinear input transformations or a completely nonlinear model. Conclusion Some models do show
+promise; however, there remains the question of whether the reported predictive success can continue to be replicated.
+Furthermore, clinical applicability and interpretation of predictive tools should be considered during development.
+Methodology & Clinical Focus
+Study Classification: systematic review. Evaluated under orthopedic machine learning and artificial intelligence decision
+frameworks.
+Key Findings & Analysis
+Clinical decision support tools show promise in predicting total knee arthroplasty outcomes, but more research is needed to
+confirm their clinical applicability and interpretation.
+Extended Repository Abstract
+Background Total knee arthroplasty is the standard surgical treatment for end-stage osteoarthritis. Although widely
+accepted as a successful procedure, approximately 30% of patients are not satisfied due to non-optimal postoperative
+outcomes. Clinical decision support tools that are able to accurately predict post-surgery outcomes would assist in
+providing individualized advice or services to help alleviate possible issues, resulting in significant benefits to both the
+healthcare system and individuals. Methods Five databases (Ovid Medline, Ovid EMBASE, CINAHL complete, Cochrane
+Library, and Scopus) were searched for the key phrases "knee replacement" or "knee arthroplasty" and "decision support
+tool," "decision tool," "predict ∗  tool," "predict ∗  model," "algorithm" or "nomogram." Searches were limited to peer-
+reviewed journal articles published between January 2000 and June 2019. Reference lists of included articles were
+examined. Authors came to a consensus on the final list of included articles. Results Eighteen articles were included for
+review. Most models reported low predictive success and inability to externally validate. Both candidate and final predictor
+variables were inconsistent between studies. Only 1 model was considered strongly predictive (AUROC >0.8), and only 2
+studies were able to externally validate their developed model. In general, models that performed well used large patient
+
+--- PDF PAGE 3 ---
+numbers, were tested on similar demographics, and used either nonlinear input transformations or a completely nonlinear
+model. Conclusion Some models do show promise; however, there remains the question of whether the reported predictive
+success can continue to be replicated. Furthermore, clinical applicability and interpretation of predictive tools should be
+considered during development.
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+Bibliographic Details & Indexing
+Authors: Jodie A. Cochrane, Traci Flynn, A. Wills, F. Walker, M. Nilsson, Sarah Johnson
+Journal / Venue: The Journal of arthroplasty (2020.0)
+SJR Metric: Quartile 1.0
+Citation Count: 16 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.1016/j.arth.2020.10.053
+Consensus Evidence Link: https://consensus.app/papers/clinical-decision-support-tools-for-predicting-outcomes-
+cochrane-flynn/cb3389740d445a68919520b30eac9092/
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1016/j.arth.2020.10.053 • Consensus
+Page: https://consensus.app/papers/clinical-decision-support-tools-for-predicting-outcomes-cochrane-
+flynn/cb3389740d445a68919520b30eac9092/ • Verified and rendered via Deep Search & Academic Repositories.

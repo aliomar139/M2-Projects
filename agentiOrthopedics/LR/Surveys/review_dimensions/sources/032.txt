@@ -1,0 +1,958 @@
+--- PDF PAGE 1 ---
+Kim et al. Knee Surgery & Related Research           (2026) 38:14  
+https://doi.org/10.1186/s43019-026-00317-5
+REVIEW
+Artificial intelligence in orthopedics: current 
+applications, challenges, and future directions
+Sang Yoon Kim1, Byung Sun Choi1, Hyuk‑Soo Han1,4 and Du Hyun Ro1,2,3,4,5* 
+Abstract 
+Background Artificial intelligence research in orthopedics has grown rapidly, yet a substantial gap remains 
+between technical development and clinical translation. This narrative review summarizes current applications of arti‑
+ficial intelligence in orthopedic practice and highlights barriers to implementation.
+Main body Current work converges on three domains: machine learning for structured perioperative risk prediction, 
+deep learning for standardized musculoskeletal imaging, and large language models for workflow and decision sup‑
+port. Applications such as automated fracture detection, Kellgren–Lawrence grading for osteoarthritis, and transfusion 
+risk modeling are approaching clinical maturity. However, routine adoption is limited by algorithmic opacity, per‑
+formance degradation in new clinical environments, and poor fit within existing workflows. We argue that progress 
+should shift from increasing model complexity toward rigorous evaluation, including external validation on inde‑
+pendent cohorts. In addition, probability calibration and uncertainty estimation are important for trustworthy risk 
+communication. Future directions may include multimodal “digital twin” approaches that integrate electronic medical 
+records, imaging phenotypes, and intraoperative data into patient‑specific trajectories.
+Conclusions The clinical impact of artificial intelligence in orthopedics will depend on life‑cycle governance 
+and demonstrated net benefit, prioritizing reliability and implementation science over retrospective benchmark 
+performance.
+Keywords Artificial intelligence, Orthopedics, Machine learning, Deep learning, Large language models, 
+Musculoskeletal imaging, External validation, Workflow integration, Clinical translation
+Background
+Artificial intelligence (AI) has transitioned from a com -
+putational curiosity to a ubiquitous presence in modern 
+society, reshaping industries from finance to autonomous 
+transportation. In medicine, this expansion is equally 
+profound, with active research spanning radiology, inter -
+nal medicine, surgery, and pathology [1]. Orthopedic 
+surgery sits at a compelling intersection of acute clini -
+cal need and vast data availability. Population aging and 
+the rising global burden of musculoskeletal disease have 
+driven unprecedented demand for joint-preserving and 
+reconstructive procedures, while regional disparities 
+in specialist availability and personnel shortages strain 
+existing systems. Against this backdrop, AI is positioned 
+Open Access
+© The Author(s) 2026. Open Access  This article is licensed under a Creative Commons Attribution 4.0 International License, which 
+permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the 
+original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or 
+other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line 
+to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory 
+regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this 
+licence, visit http:// creat iveco mmons. org/ licen ses/ by/4. 0/. The Creative Commons Public Domain Dedication waiver (http:// creat iveco 
+mmons. org/ publi cdoma in/ zero/1. 0/) applies to the data made available in this article, unless otherwise stated in a credit line to the data.
+Knee Surgery 
+& Related Research
+*Correspondence:
+Du Hyun Ro
+duhyunro@gmail.com
+1 Department of Orthopaedics, Seoul National University Hospital, Seoul, 
+Korea, Republic of
+2 CONNECTEVE Co., Ltd, Seoul, South Korea
+3 Institute of Convergence Medicine With Innovative Technology, Seoul 
+National University Hospital, Seoul, South Korea
+4 Department of Orthopaedic Surgery, Seoul National University College 
+of Medicine, Seoul, South Korea
+5 Healthcare AI Research Institute, Seoul National University Hospital, 
+Seoul, South Korea
+
+--- PDF PAGE 2 ---
+Page 2 of 12Kim et al. Knee Surgery & Related Research           (2026) 38:14 
+not merely as a tool for automation, but as a means to 
+enhance diagnostic precision, standardize complex meas-
+urements, and streamline perioperative planning without 
+proportionally increasing clinician workload.
+The exponential trajectory of orthopedic AI research is 
+quantifiable. In a bibliometric analysis focused on AI in 
+arthroplasty, Li and colleagues identified 867 articles and 
+reviews published between 2000 and 2021 and reported 
+exponential growth in annual output over the past two 
+decades [2].
+However, this research surge has not translated uni -
+formly to the bedside. While certain models—such as 
+perioperative risk scores or automated radiographic 
+measurements—are nearing routine use, others, includ -
+ing multimodal systems and large language models 
+(LLMs), remain experimental [3]. For many surgeons, 
+the field can feel simultaneously overhyped and opaque, 
+characterized by impressive metrics but uncertain clini -
+cal value.
+To provide a pragmatic roadmap for clinicians, we 
+organize orthopedic AI into three converging strands—
+machine learning (ML) for structured risk prediction, 
+deep learning (DL) for standardized image analysis, and 
+large language models (LLMs) for workflow and decision 
+augmentation—each constrained by shared bottlenecks, 
+including domain shift, algorithmic opacity, and incom -
+plete workflow integration. This review takes the position 
+that the next phase of orthopedic AI will depend less on 
+inventing ever more complex models and more on how 
+we design, evaluate, and embed them. From this perspec-
+tive, three questions become central: which orthopedic 
+tasks are sufficiently mature for staged clinical deploy -
+ment; how shared bottlenecks—data, generalizability, 
+and explainability—can be overcome; and which design 
+principles distinguish tools that provide net clinical ben -
+efit from those that remain academic prototypes. This 
+article is a narrative review intended for orthopedic sur -
+geons and trainees, designed to provide a clinician-facing 
+framework for translation rather than an exhaustive cata-
+log of algorithms.
+Data ecosystems and methods in orthopedic AI
+Orthopedic AI has emerged at the intersection of three 
+enabling trends: the digitization of clinical and imag -
+ing data, dramatic increases in computing power, and 
+advances in machine learning algorithms [4]. In practice, 
+orthopedic AI is built on heterogeneous data streams 
+generated during routine care, processed by different 
+modeling paradigms—ML, DL, and LLMs—that must 
+be chosen and evaluated with attention to task, data, and 
+deployment context.
+Literature scope and selection approach. This narrative 
+review used a purposive selection strategy rather than a 
+systematic evidence synthesis. Studies were prioritized if 
+they met at least one of the following: (1) publication pri -
+marily between 2020 and 2025 with external validation 
+across independent cohorts or institutions; (2) demon -
+stration of clinical workflow integration and/or prospec -
+tive evaluation (including silent-mode deployment); or 
+(3) methodological relevance to emerging multimodal or 
+implementation-focused orthopedic AI [5]. Earlier land -
+mark studies were selectively included when necessary 
+to provide historical or conceptual context and to avoid 
+over-reliance on single-institution experiences. Large 
+language model assistance was used for language edit -
+ing and clarity only; all content was written, verified, and 
+approved by the authors.
+Clinical and imaging data sources for orthopedic AI
+The “fuel” for orthopedic AI consists of several broad 
+classes of data already embedded in daily practice. A first 
+pillar is structured clinical information captured in elec -
+tronic medical records (EMRs) and administrative data -
+bases. Demographics, comorbidities, laboratory values, 
+medications, and procedure codes can be encoded as 
+tabular variables and have become the backbone of peri -
+operative and longitudinal outcome prediction models, 
+such as those targeting transfusion or 30-day readmission 
+after arthroplasty [6, 7]. These data are routinely avail -
+able, relatively standardized, and well-suited to conven -
+tional ML approaches.
+A second pillar is imaging data archived in Picture 
+Archiving and Communication Systems (PACS). Plain 
+radiographs, computed tomography (CT), and magnetic 
+resonance imaging (MRI) are indispensable in ortho -
+pedics: radiographs underpin fracture diagnosis and 
+alignment analysis, while MRI provides high-resolution 
+visualization of cartilage, menisci, and ligaments [8, 9]. 
+PACS facilitates large-scale curation of anonymized Digi-
+tal Imaging and Communications in Medicine (DICOM) 
+files, enabling convolutional neural network (CNN)-
+based models for fracture classification, osteoarthritis 
+(OA) grading, and automated measurement of alignment 
+and morphology [10–12]. Representative applications 
+include deep learning systems for hip-fracture detection 
+and classification and automated radiographic knee OA 
+grading [12–15].
+Textual documents form a third, historically underused 
+source. Operative notes, radiology reports, clinic letters, 
+and discharge summaries encode nuanced clinical rea -
+soning and patient preferences but have been difficult to 
+exploit because they are unstructured. Recent advances 
+in LLMs now offer practical methods to extract struc -
+tured information from these narratives and generate 
+drafts of clinician-facing documentation under supervi -
+sion [16–18].
+
+--- PDF PAGE 3 ---
+Page 3 of 12
+Kim et al. Knee Surgery & Related Research           (2026) 38:14 
+ 
+Beyond EMR tables, images, and text, registry and 
+claims data contribute longitudinal perspective. National 
+joint registries, hospital-based arthroplasty databases, 
+and insurance claims track implant survival, complica -
+tions, revision procedures, and resource utilization over 
+years to decades. When linked with EMR and imaging 
+data, these sources enable long-term risk prediction and 
+health-economic analyses beyond individual institutions 
+and single episodes of care [19].
+Finally, newer data streams are beginning to enter 
+orthopedic AI. High-resolution physiologic and anes -
+thetic monitoring data, continuous telemetry, operat -
+ing-room video, and wearable-device outputs are being 
+captured more systematically and offer opportunities for 
+finer-grained perioperative risk modeling and objective 
+monitoring of rehabilitation trajectories [4, 20].
+The intensive-care dataset Medical Information Mart 
+for Intensive Care IV (MIMIC-IV), developed at Beth 
+Israel Deaconess Medical Center, illustrates the power of 
+curated, deidentified EMR data for AI research at scale 
+[21]. Inspired by this paradigm, multi-hospital consortia 
+have begun building large-scale datasets that incorpo -
+rate imaging and high-resolution biosignals. Although 
+not orthopedic-specific, these initiatives exemplify the 
+infrastructure, standardization, and governance mod -
+els needed for large, multicenter clinical AI efforts [20]. 
+In musculoskeletal care, analogous efforts include OA 
+cohorts, arthroplasty registries, and multicenter imaging 
+initiatives, creating a data ecosystem that supports the 
+applications described in Patient outcome prediction–
+Large language models (LLMs) section. The typical work-
+flow for integrating heterogeneous clinical data streams 
+into a validated AI model is illustrated in Fig. 1.
+Choosing the right modeling paradigm: ML, DL, and LLMs
+Although AI is often used as a single umbrella term, dif -
+ferent modeling paradigms are better suited to different 
+orthopedic tasks. ML, in its classical sense, refers to algo -
+rithms that learn patterns from structured data to make 
+predictions or classifications. Common methods include 
+regularized logistic regression, decision trees, random 
+forests, and gradient-boosted machines. These models 
+are well matched to tabular EMR and registry variables 
+and have been widely applied to perioperative risk strati -
+fication and longitudinal prediction—such as transfusion, 
+NSAID-related complications, or 30-day readmission 
+after arthroplasty—because they can be parsimonious, 
+easier to calibrate, and amenable to feature-importance 
+analysis [7, 22].
+DL encompasses multilayer neural networks capable 
+of learning complex, hierarchical representations from 
+high-dimensional inputs such as images, waveforms, 
+or sequences [4, 9]. CNNs dominate image-based tasks 
+and have become the standard for fracture detection, 
+Fig. 1 Structure and content of the MIMIC‑IV database and typical AI development workflow. The diagram summarizes linked data domains—
+electronic medical records (EMR), intensive‑care waveforms and vital signs, laboratory values, medications and procedures, and imaging (e.g., 
+chest radiographs)—and illustrates how deidentified records flow into cohort curation, feature/label definition, model training/validation, 
+and prospective evaluation. EMR indicates electronic medical record; ICU, intensive care unit. This workflow underscores the implementation 
+science and governance required for clinical translation.  Adapted from Johnson et al. [21] under the Creative Commons Attribution 4.0 
+International License (CC BY 4.0); changes were made
+
+--- PDF PAGE 4 ---
+Page 4 of 12Kim et al. Knee Surgery & Related Research           (2026) 38:14 
+OA grading, and automated alignment measurement in 
+musculoskeletal imaging [10, 13]. When trained on suf -
+ficient data, CNNs consistently outperform traditional 
+handcrafted-feature approaches in both accuracy and 
+robustness. Techniques such as transfer learning, con -
+trastive/self-supervised pretraining, and data augmenta -
+tion are frequently employed to address limited labeled 
+datasets and to improve generalization across scanners 
+and patient populations [23–25]. Key technical and oper -
+ational distinctions between ML and DL are summarized 
+in Table 1.
+Core transformer approaches (including Bidirectional 
+Encoder Representations from Transformers [BERT]-
+style pretraining) established the basis for modern clini -
+cal natural language processing (NLP) and downstream 
+instruction-tuned systems [26, 27]. When adapted to 
+biomedical corpora and local clinical documentation, 
+LLMs are particularly well-suited to tasks involving free 
+text: extracting structured data from operative notes and 
+radiology reports, summarizing multi-year EMR histo -
+ries into problem-oriented notes, and generating patient-
+friendly explanations or discharge documentation at 
+appropriate reading levels [16–18].
+In orthopedics, the choice among these paradigms 
+is largely dictated by input modality, data scale, and 
+translational constraints. For tasks such as predicting 
+transfusion, medication-related complications, or early 
+readmission after arthroplasty, inputs are primarily 
+structured (eg, age, body mass index (BMI), hemoglobin, 
+comorbidities, and medications) [6, 7]. In this setting, 
+ML models can be easier to calibrate and interpret for 
+clinical use [7, 22]. By contrast, image-centric tasks are 
+DL by design: fracture detection, OA grading, alignment 
+measurement, and segmentation of cartilage or menisci 
+require algorithms operating directly on pixel data [10, 
+13, 15]. Text and dialogue tasks are inherently linguistic, 
+making LLMs the natural tool for supervised documenta-
+tion and communication support [16–18].
+Many clinically important problems are multimodal. 
+A surgeon may want to combine preoperative EMR 
+data with radiographs to predict revision risk, or inte -
+grate MRI-derived cartilage and meniscal features with 
+patient-reported outcomes to forecast OA progression. 
+Emerging approaches therefore fuse structured data, 
+images, and text in unified architectures or orchestrate 
+multiple specialized models. In practice, it is often wiser 
+to begin with robust unimodal models (validated ML for 
+structured data, well-validated CNNs for imaging, and 
+constrained LLMs for text) and then integrate modalities 
+iteratively.
+Study design and validation principles in orthopedic AI
+Regardless of modeling paradigm, robust study design 
+and validation are essential for trustworthy orthopedic 
+Table 1 Machine learning versus deep learning in orthopedic research
+Choosing the appropriate paradigm is essential for ensuring operational reliability and interpretability in surgical decision support
+Dimension Machine learning (ML) Deep learning (DL)
+Core objective Predict or classify using explicitly defined, structured clinical 
+features
+Learn hierarchical representations directly from high‑dimen‑
+sional raw data
+Typical inputs Structured EMR data (age, body mass index (BMI), comor‑
+bidities), lab values, and registry variables
+Radiographs, CT, MRI, ultrasound, and high‑frequency sensor/
+wearable data
+Feature engineering Manual: requires expert‑driven feature selection and clinical 
+preprocessing
+Automated: CNN or Transformer architectures learn optimal 
+features end‑to‑end
+Data scale requirements Adequate performance achievable with modest, institu‑
+tional‑sized cohorts
+Requires large‑scale labeled datasets; often mitigated 
+by transfer learning
+Computational resources Low‑to‑moderate; typically executable on standard central 
+processing unit (CPU)–based systems
+High; necessitates dedicated graphics processing unit (GPU) 
+/ tensor processing unit (TPU) resources and significant 
+memory
+Interpretability Inherent: clearer logic via Shapley additive explanations 
+(SHAP), feature importance, or decision rules
+Mediated: perceived as “black‑box”; requires explainable AI 
+(XAI) methods (e.g., gradient‑weighted class activation map‑
+ping [Grad‑CAM], attention maps)
+Generalization Sensitive to feature‑level shifts; stabilized via regularization/
+selection
+Vulnerable to domain shift (scanners/sites); requires robust 
+external validation
+Representative algorithms Logistic regression, Random Forest, extreme gradient 
+boosting (XGBoost), Support Vector Machines
+CNNs (ResNet, EfficientNet), U‑shaped network (U‑Net), Vision 
+Transformers (ViT)
+Strengths Fast development; high transparency; straightforward risk 
+calibration
+State‑of‑the‑art performance on vision tasks; captures subtle 
+spatial patterns
+Orthopedic exemplars Transfusion prediction (AUROC≈0.84); Postoperative read‑
+mission risk modeling
+Hip fracture classification (> 95% accuracy); Automated KL 
+grading; hip–knee–ankle angle (HKAA)/medial proximal tibial 
+angle (MPTA) measurement
+
+--- PDF PAGE 5 ---
+Page 5 of 12
+Kim et al. Knee Surgery & Related Research           (2026) 38:14 
+ 
+AI. The starting point is a clear problem definition and 
+clinically meaningful endpoint (eg, “Will this patient 
+require transfusion within 72  h after total knee arthro -
+plasty?” or “Is there a displaced femoral neck fracture on 
+this radiograph?”) [6, 7].
+Data handling and internal validation come next. At a 
+minimum, datasets should be partitioned into training, 
+validation, and test sets with separation at the patient 
+level to prevent information leakage. Cross-validation 
+can provide more stable performance estimates in mod -
+est-sized cohorts, but even strong internal metrics are 
+insufficient to justify deployment.
+Because practice patterns, imaging protocols, and 
+patient populations vary across sites, external validation 
+on independent institutions or time periods is widely 
+regarded as a minimum requirement for translation [28, 
+29]. Prespecified out-of-distribution test sets (different 
+hospitals, scanner vendors, or demographic subgroups) 
+help reveal performance degradation under domain shift.
+Evaluation metrics should extend beyond discrimi -
+nation (how well a model separates patients with and 
+without an outcome). Measures such as area under the 
+receiver operating characteristic curve (AUROC), sensi -
+tivity, and specificity quantify separability but do not tell 
+whether predicted probabilities are numerically accurate. 
+Calibration addresses a practical clinical question: if the 
+model reports a 20% transfusion risk, do roughly 1 in 5 
+similar patients actually receive transfusion? Miscalibra -
+tion can lead to unnecessary preoperative crossmatching 
+or false reassurance. Calibration plots and proper scoring 
+rules (e.g., Brier score) summarize this agreement [30]. 
+Decision-curve analysis translates model predictions 
+into clinical value by estimating the “net benefit” of act -
+ing on predictions across plausible risk thresholds (e.g., 
+the threshold at which you would intensify postopera -
+tive monitoring) compared with default strategies [31]. 
+Reporting quality should also be transparent and stand -
+ardized for prediction models, including adherence to 
+established guidance where applicable [32].
+Ultimately, the impact of orthopedic AI can only be 
+established through prospective and pragmatic evalu -
+ation in real-world settings [28]. Designs comparing 
+clinician performance with and without AI assistance, 
+stepped-wedge rollouts, and carefully monitored pilot 
+deployments provide richer evidence than retrospective 
+validation alone. Evidence generation should include not 
+only performance but also workflow burden, reliance pat-
+terns, and safety outcomes [28, 33].
+Recent research advances in orthopedic AI
+Patient outcome prediction
+Predictive modeling in orthopedics has moved beyond 
+proof-of-concept and now addresses perioperative 
+problems with direct clinical relevance, particularly 
+transfusion risk, early complications, and readmission. 
+These models support preoperative planning, risk strati -
+fication, and shared decision-making when presented as 
+calibrated risk estimates rather than stand-alone deci -
+sions [28].
+For example, Jo et  al. developed a machine learning 
+model for postarthroplasty transfusion using Korean 
+national insurance and single-center EMR data. The 
+model achieved strong discrimination (internal AUROC 
+0.842, external AUROC 0.880) and outperformed con -
+ventional approaches, illustrating that routinely collected 
+variables can enable robust risk prediction (Fig.  2) [6]. 
+Similarly, outcome models have targeted postdischarge 
+utilization. Using Australian registry and administra -
+tive data, Gould et al. compared ML models with logistic 
+regression for 30-day readmission after primary arthro -
+plasty; discrimination was modest but calibration sup -
+ported pragmatic discharge planning when combined 
+with clinical judgment [7].
+Collectively, these studies suggest that ML-based out -
+come models are closest to translation where inputs are 
+structured, end points are clearly defined, and predic -
+tions tie directly to concrete perioperative decisions.
+Medical image analysis
+AI-powered image analysis is one of the most mature 
+domains in orthopedic AI, driven by PACS-scale imaging 
+availability and the performance of CNN-based methods 
+[4]. Deep learning systems have demonstrated strong 
+performance for fracture detection and classification, OA 
+grading, and automated measurement tasks [13–15].
+Zheng et  al. validated a CNN to classify hip fractures 
+on pelvic radiographs, achieving high diagnostic per -
+formance and demonstrating potential value for triage 
+and training [13]. Multicenter evaluation for fracture 
+detection at scale has also been demonstrated, including 
+studies assessing AI assistance in appendicular skeletal 
+fracture detection [34].
+Inter-reader variability remains a limitation in muscu -
+loskeletal radiology, particularly for Kellgren–Lawrence 
+(KL) grading in knee osteoarthritis [35]. Deep learn -
+ing classifiers have improved reproducibility and per -
+formance. External validation efforts for radiographic 
+OA phenotyping show clinically meaningful agreement 
+in independent datasets [36, 37]. Beyond composite KL 
+grades, feature-focused pipelines can improve interpret -
+ability and reproducibility by mapping structured radio -
+graphic findings to KL categories (Fig. 3) [38].
+As these imaging models approach potential deploy -
+ment, the central question is generalizability across insti -
+tutions and acquisition protocols. External validation is 
+therefore a practical requirement, as performance can 
+
+--- PDF PAGE 6 ---
+Page 6 of 12Kim et al. Knee Surgery & Related Research           (2026) 38:14 
+attenuate in independent settings under domain shift 
+[28, 29]. Consistent with this, deep learning tools for 
+posterior tibial slope measurement have demonstrated 
+validation and external performance on independent 
+radiographic cohorts [39, 40]. In Korea, AI pipelines have 
+also been used to support multi-cohort alignment phe -
+notyping, illustrating how standardized measurement 
+automation can scale across heterogeneous health sys -
+tems (Fig. 4) [41].
+Building upward, teams are increasingly exploit -
+ing foundation-model strategies—large neural net -
+works pretrained on broad, often unlabeled datasets 
+and then adapted to specific tasks—and self-supervised 
+learning to improve generalization while addressing 
+Fig. 2 Example clinical interface for transfusion‑risk prediction after total knee arthroplasty. The interface illustrates a patient‑specific risk profile 
+following total knee arthroplasty, integrating calibrated probability estimates with uncertainty indicators. Predictors (e.g., baseline hemoglobin, 
+anticoagulant use, and comorbidity burden) are ranked by their relative contribution to the model’s output. A dedicated explanation panel 
+provides a concise summary of the driving features to support transparent shared decision‑making at the point of care. Screenshot reproduced 
+with permission from Connecteve Inc. (SafeTKA web application) The underlying transfusion prediction model is described by Jo et al. [6]
+
+--- PDF PAGE 7 ---
+Page 7 of 12
+Kim et al. Knee Surgery & Related Research           (2026) 38:14 
+ 
+privacy constraints and label scarcity [24, 25]. Quan -
+titative MRI pipelines are also converging toward 
+“digital phenotype” representations by combining 
+multi-structure segmentation with standardized whole-
+joint scoring systems to summarize cartilage and menis -
+cal status for downstream prediction [11, 42].
+Fig. 3 OARSI‑feature‑based decision logic for radiographic KL grading. This framework integrates semi‑quantitative OARSI (Osteoarthritis Research 
+Society International) features, including medial/lateral osteophyte (OSP) scores and joint‑space narrowing (JSN) grades, into a reproducible 
+classification pipeline. The logic demonstrates how structured radiographic features are mapped to KL categories (0–4), ensuring clinical 
+interpretability and reducing inter‑reader variability through standardized thresholds. Figure created by the authors, based on the OARSI‑based KL 
+grade definition framework described by Ko et al. [38]
+Fig. 4 Distribution of coronal knee phenotypes across national cohorts using the CPAK framework. Utilizing the Coronal Plane Alignment 
+of the Knee (CPAK) framework, the diagram depicts the relative frequency of CPAK Types 1–9 in two representative populations (e.g., UAE and South 
+Korea). These cross‑regional variations highlight the phenotypic diversity that must be accounted for in surgical planning and implant selection 
+strategy. aHKA indicates arithmetic hip–knee–ankle angle; JLO, joint‑line obliquity.  Reproduced from Park et al. [41] under the Creative Commons 
+Attribution 4.0 International License (CC BY 4.0)
+
+--- PDF PAGE 8 ---
+Page 8 of 12Kim et al. Knee Surgery & Related Research           (2026) 38:14 
+Finally, there is growing interest in interpretable, 
+stepwise reasoning patterns (often described as chain-
+of-thought style) for imaging-driven decisions, where 
+intermediate findings are surfaced alongside final outputs 
+to mirror clinical logic (Fig. 5).
+Large language models (LLMs)
+LLMs are evolving from generic text assistants into clini -
+cally oriented systems capable of documentation support, 
+data extraction, and supervised dialogue-based clinical 
+assistance [16–18]. Foundational transformer pretraining 
+(eg, BERT-like paradigms) established the modern basis 
+for clinical NLP , while newer large-scale systems support 
+broader generation and summarization tasks [26, 27].
+Recent reports describe conversational diagnostic AI 
+systems that conduct structured history-taking and man -
+agement discussions, demonstrating improvements in 
+communication quality under blinded evaluation [16]. A 
+randomized clinical trial (RCT) evaluation also indicates 
+that LLM outputs can influence diagnostic reasoning in 
+clinically meaningful ways—highlighting both potential 
+benefit and the need for guardrails [17].
+Orthopedics-specific evaluations have shown that 
+high-performing general-purpose models can answer 
+board-style questions with moderate accuracy, but still 
+exhibit inconsistent and sometimes confident errors, 
+supporting a supervised “copilot” role rather than auton-
+omous clinical decision-making [43]. Related evidence 
+shows variable performance on free-response reasoning 
+exams and sensitivity to prompting, reinforcing the need 
+to evaluate reliability under realistic clinical inputs [44].
+Safety risks extend beyond hallucination to security 
+vulnerabilities. Medical LLM outputs can be suscepti -
+ble to prompt-injection-style attacks that distort advice 
+under realistic dialogue conditions, underscoring the 
+need for adversarial testing and deployment-time safe -
+guards [45]. Real-world EMR-based summarization 
+studies show promise but also emphasize monitoring, 
+auditability, and clear intended-use boundaries [46]. 
+Expert-level medical question-answering efforts fur -
+ther highlight the value of retrieval grounding and con -
+strained outputs for clinical reliability [47].
+Translational maturity across orthopedic AI domains: 
+where is it happening first?
+Across current applications, orthopedic AI appears 
+closest to routine clinical use in two areas: structured 
+outcome prediction and imaging-based measurement 
+automation. Risk models built from EMR and registry 
+variables can be integrated as calibrated risk calculators 
+when supported by appropriate evaluation frameworks 
+[28]. Imaging AI achieves reader-level reproducibility for 
+fracture detection, OA grading, and alignment measure -
+ments, enabling scalable phenotyping and workflow sup -
+port [14, 15]. By contrast, LLMs remain earlier-stage in 
+orthopedics and are currently best suited to supervised 
+copilot roles in low-risk tasks, where value is measured 
+by documentation efficiency, communication clarity, and 
+Fig. 5 Chain‑of‑thought (CoT) rationale for automated Kellgren–Lawrence (KL) grading. a Input anteroposterior weight‑bearing radiograph; b 
+Standard Grad‑CAM saliency showing nonspecific feature attribution; c Proposed model saliency localizing specific radiographic cues (e.g., medial 
+compartment osteophytes and joint‑space narrowing). The stepwise CoT rationale—mapping visual cues to intermediate findings and final KL ‑3 
+criteria—mirrors clinical reasoning to enhance user trust. The bottom panel illustrates the calibrated probability distribution across KL grades, 
+providing a measure of model confidence. Adapted in style from Tiulpin et al., Scientific Reports 2018;8:1727 (CC BY 4.0), with modifications [8]
+
+--- PDF PAGE 9 ---
+Page 9 of 12
+Kim et al. Knee Surgery & Related Research           (2026) 38:14 
+ 
+robust safety guardrails rather than benchmark accuracy 
+alone [16–18].
+Cross‑cutting challenges on the path to clinical 
+translation
+Data heterogeneity and generalizability
+Orthopedic AI models can be brittle because they are 
+trained on single-institution datasets with narrow demo -
+graphic and technical profiles, leading to attenuation 
+when evaluated outside the development setting. This 
+undermines reliability across different case-mix, work -
+flows, and acquisition environments and contributes to 
+overly optimistic claims when studies emphasize internal 
+validation without adequately characterizing heterogene-
+ity. Translation-oriented evaluation increasingly requires 
+multi-institutional cohorts and heterogeneous test envi -
+ronments that reflect real-world variation [28, 29].
+Beyond data volume, a persistent bottleneck is labeling 
+and outcome definition: high-fidelity annotations require 
+scarce expert time, and inconsistency in labels and 
+reporting practices can degrade generalizability. Large-
+scale datasets that explicitly encode uncertainty and label 
+provenance illustrate both the opportunity and the com -
+plexity of scalable labeling [48].
+Algorithmic opacity and explainability
+The “black box” nature of many deep learning systems 
+remains a barrier to adoption, particularly in orthopedics 
+where surgical decisions and implant choices are difficult 
+to reverse. Systematic evaluations in clinical AI highlight 
+that design, reporting, and claims often outpace deploy -
+ment-grade evidence, reinforcing the need for transpar -
+ency about limitations and failure modes [29].
+Equally important is uncertainty and reliability: mod -
+els should provide well-characterized performance with 
+appropriate confidence bounds and, when used for deci -
+sion support, should be assessed using frameworks that 
+go beyond discrimination to include calibration and 
+clinical usefulness [30, 31]. In deployment-facing con -
+texts, clear documentation of intended use, assumptions, 
+and boundaries is essential so clinicians recognize when 
+an algorithm is extrapolating beyond its familiar domain 
+[28].
+Legal, regulatory, and ethical governance
+Regulatory frameworks for AI in medicine are shift -
+ing toward life-cycle oversight, emphasizing real-world 
+evaluation, reporting rigor, and postdeployment risk 
+management [49, 50]. Governance frameworks for 
+enterprise-scale healthcare AI emphasize risk mitiga -
+tion, versioning, and monitoring to maintain safety over 
+time [20]. Reporting standards for AI interventions (e.g., 
+CONSORT-AI: Consolidated Standards of Reporting 
+Trials–Artificial Intelligence) and early-stage evaluation 
+guidance (e.g., DECIDE-AI: Developmental and Explora -
+tory Clinical Investigations of Decision support systems 
+driven by Artificial Intelligence) clarify what should be 
+documented—intended use, workflow context, human–
+AI interaction, and clinically meaningful outcomes—
+before claims of benefit are considered credible [28, 33].
+Ethical considerations are equally central. Models 
+trained on skewed datasets can encode and amplify dis -
+parities in access and outcomes; therefore, subgroup per -
+formance audits and fairness-aware evaluation should 
+be routine, with mitigation plans defined in advance [51, 
+52]. Accountability should be clearly delineated across 
+developers, vendors, and healthcare organizations, espe -
+cially when AI is embedded into clinical workflows where 
+responsibility might otherwise be ambiguously shifted to 
+end users [20].
+Workflow integration and implementation science
+Many accurate models fail at the point of use because 
+they do not fit real clinical workflows. Translation 
+depends on interoperability with EMR/PACS environ -
+ments, careful user-experience design, and minimizing 
+added cognitive load in clinic, ward, and operating-room 
+settings. Evidence frameworks for early-stage clinical 
+evaluation emphasize measuring not only accuracy but 
+also workflow impact, including time, edit burden, hand -
+off quality, reliance patterns, and safety signals [28].
+Accordingly, orthopedic AI should be evaluated in 
+staged, deployment-relevant designs (eg, silent-mode 
+runs and prospective usability-focused studies) where 
+outcomes include documentation/process metrics and 
+patient-centered outcomes when appropriate. Decision 
+support tools should be treated as sociotechnical systems 
+rather than standalone algorithms, aligning governance 
+and implementation with real-world risk mitigation [20, 
+28].
+Practical considerations and future directions 
+for orthopedic surgeons
+From the orthopedic surgeon’s perspective, the near-
+term opportunity is to treat AI as a supervised “copilot” 
+that improves consistency and efficiency in tasks already 
+embedded in daily care (e.g., standardized radiographic 
+measurements, triage-level fracture detection, and cali -
+brated perioperative risk calculators). Successful adop -
+tion will depend less on selecting the most complex 
+model and more on defining an intended use with clear 
+boundaries, training users to recognize failure modes, 
+and minimizing workflow friction within PACS/EMR 
+environments.
+Practically, we anticipate that surgeon-led imple -
+mentation will increasingly resemble other 
+
+--- PDF PAGE 10 ---
+Page 10 of 12Kim et al. Knee Surgery & Related Research           (2026) 38:14 
+quality-improvement initiatives: start with a silent-mode 
+pilot to quantify local performance and drift; agree on 
+actionable thresholds and escalation pathways; monitor 
+calibration and subgroup performance over time; and 
+document human–AI interaction to avoid automation 
+bias. Looking forward, multimodal “digital twin” con -
+cepts may enable patient-specific trajectories that com -
+bine imaging phenotypes, structured EMR variables, 
+and intraoperative data, but these systems will only be 
+credible if they demonstrate net benefit in prospective 
+evaluations and remain accountable through life-cycle 
+governance.
+Conclusion: from experimental benchmarks 
+to clinical accountability
+The evolution of orthopedic AI has reached an inflec -
+tion point at which emphasis must shift from retrospec -
+tive benchmark performance to clinical utility in practice. 
+Internal performance alone is insufficient when mod -
+els are poorly calibrated, do not quantify uncertainty, 
+or degrade under domain shift across scanners, proto -
+cols, and patient populations. External validation across 
+independent settings should be regarded as a minimum 
+requirement for clinical readiness, alongside calibration 
+assessment and prespecified reporting of failure modes 
+[28, 29].
+A second direction is the transition from isolated, 
+task-specific models toward multimodal convergence. 
+Specialty-adapted foundation strategies may enable 
+longitudinal patient representations by integrating 
+structured EMR variables, imaging phenotypes, and peri -
+operative data into unified trajectories [24, 25]. Realizing 
+this potential will depend as much on implementation as 
+on algorithmic development: decision support must be 
+delivered within native PACS/EMR workflows with mini-
+mal added burden and evaluated prospectively using out-
+comes that reflect net clinical benefit [28].
+Ultimately, orthopedic AI should be judged by trans -
+parency and accountability rather than technical nov -
+elty. This requires life-cycle governance—versioning and 
+change control, drift monitoring, and routine perfor -
+mance audits—to maintain safety over time. Prioritizing 
+reliability, governance, and workflow fit over retrospec -
+tive metrics provides the most direct path to meaningful 
+adoption of AI in orthopedic practice [20].
+Abbreviations
+aHKA  Arithmetic hip–knee–ankle angle
+AI  Artificial intelligence
+AUROC  Area under the receiver operating characteristic curve
+BERT  Bidirectional encoder representations from transformers
+BMI  Body mass index
+CC BY 4.0  Creative commons attribution 4.0 international license
+CNN  Convolutional neural network
+CONSORT‑AI  Consolidated standards of reporting trials–artificial 
+intelligence
+CoT  Chain of thought
+CPAK  Coronal plane alignment of the knee
+CPU  Central processing unit
+CT  Computed tomography
+DECIDE‑AI  Developmental and exploratory clinical investigations of deci‑
+sion support systems driven by artificial intelligence
+DICOM  Digital imaging and communications in medicine
+DL  Deep learning
+EMR  Electronic medical record
+GPU  Graphics processing unit
+Grad‑CAM  Gradient‑weighted class activation mapping
+HKAA  Hip–knee–ankle angle
+ICU  Intensive care unit
+JLO  Joint‑line obliquity
+JSN  Joint ‑space narrowing
+KHIDI  Korea Health Industry Development Institute
+KL  Kellgren–Lawrence
+LLM  Large language model
+MIMIC‑IV  Medical information mart for intensive care IV
+ML  Machine learning
+MPTA  Medial proximal tibial angle
+MRI  Magnetic resonance imaging
+NLP  Natural language processing
+OA  Osteoarthritis
+OARSI  Osteoarthritis Research Society International
+OSP  Osteophyte
+PACS  Picture archiving and communication system
+RCT   Randomized controlled trial
+SHAP  Shapley additive explanations
+TPU  Tensor processing unit
+U‑Net  U‑shaped network
+ViT  Vision transformer
+XAI  Explainable artificial intelligence
+XGBoost  EXtreme gradient boosting
+Author contributions
+Provided in the Title Page to maintain double‑blind peer review.
+Funding
+This research was supported by a grant of the Boston‑Korea Innovative 
+Research Project through the Korea Health Industry Development Institute 
+(KHIDI), funded by the Ministry of Health & Welfare, Republic of Korea (Grant 
+No. RS‑2024‑00403047).
+Availability of data and materials
+Data sharing is not applicable to this article as no datasets were generated or 
+analyzed during the current study.
+Declarations
+Competing interests
+The authors declare no competing interests.
+Received: 22 January 2026   Accepted: 20 March 2026
+References
+ 1. Stead WW (2018) Clinical implications and challenges of artificial intel‑
+ligence and deep learning. JAMA 320(11):1107–1108. https:// doi. org/ 10. 
+1001/ jama. 2018. 11029
+ 2. Li J, Maimaiti A, Fu J et al (2023) Global research landscape on artifi‑
+cial intelligence in arthroplasty: a bibliometric analysis. Digit Health 
+9:20552076231184048. https:// doi. org/ 10. 1177/ 20552 07623 11840 48
+ 3. McDuff D, Schaekermann M, Tu T et al (2025) Towards accurate differen‑
+tial diagnosis with large language models. Nature 642(8067):451–457. 
+https:// doi. org/ 10. 1038/ s41586‑ 025‑ 08869‑4
+
+--- PDF PAGE 11 ---
+Page 11 of 12
+Kim et al. Knee Surgery & Related Research           (2026) 38:14 
+ 
+ 4. Rajpurkar P , Chen E, Banerjee O et al (2022) AI in health and medicine. 
+Nat Med 28(1):31–38. https:// doi. org/ 10. 1038/ s41591‑ 021‑ 01614‑0
+ 5. Federer SJ, Jones GG (2021) Artificial intelligence in orthopaedics: a 
+scoping review. PLoS ONE 16(11):e0260471. https:// doi. org/ 10. 1371/ 
+journ al. pone. 02604 71
+ 6. Jo C, Ko S, Shin WC et al (2020) Transfusion after total knee arthroplasty 
+can be predicted using the machine learning algorithm. Knee Surg 
+Sports Traumatol Arthrosc 28(6):1757–1764. https:// doi. org/ 10. 1007/ 
+s00167‑ 019‑ 05602‑3
+ 7. Gould DJ, Bailey JA, Spelman T et al (2023) Predicting 30‑ day readmis‑
+sion following total knee arthroplasty using machine learning and 
+clinical expertise applied to clinical administrative and research regis‑
+try data in an Australian cohort. Arthroplasty 5(1):30. https:// doi. org/ 10.  
+1186/ s42836‑ 023‑ 00186‑3
+ 8. Tiulpin A, Thevenot J, Rahtu E et al (2018) Automatic knee osteoarthri‑
+tis diagnosis from plain radiographs: a deep learning‑based approach. 
+Sci Rep 8(1):1727. https:// doi. org/ 10. 1038/ s41598‑ 018‑ 20132‑7
+ 9. Lundervold AS, Lundervold A (2019) An overview of deep learning in 
+medical imaging focusing on MRI. Z Med Phys 29(2):102–127. https://  
+doi. org/ 10. 1016/j. zemedi. 2018. 11. 002
+ 10. Meng X, Wang Z, Ma X et al (2022) Fully automated measurement on 
+coronal alignment of lower limbs using deep convolutional neural net ‑
+works on radiographic images. BMC Musculoskelet Disord 23(1):869. 
+https:// doi. org/ 10. 1186/ s12891‑ 022‑ 05818‑4
+ 11. Norman B, Pedoia V, Majumdar S (2018) Use of 2D U‑net convolutional 
+neural networks for automated cartilage and meniscus segmentation 
+of knee MR imaging data to determine relaxometry and morphometry. 
+Radiology 288(1):177–185. https:// doi. org/ 10. 1148/ radiol. 20181 72322
+ 12. Pi SW, Lee BD, Lee MS et al (2023) Ensemble deep ‑learning networks 
+for automated osteoarthritis grading in knee X ‑ray images. Sci Rep 
+13:22887. https:// doi. org/ 10. 1038/ s41598‑ 023‑ 50210‑4
+ 13. Zheng Z, Ryu BY, Kim SE et al (2025) Deep learning for automated hip 
+fracture detection and classification: achieving superior accuracy. Bone 
+Joint J 107‑B(2):213–220. https:// doi. org/ 10. 1302/ 0301‑ 620X. 107B2. BJJ‑ 
+2024‑ 0791. R1
+ 14. Langerhuizen DWG, Janssen SJ, Mallee WH et al (2019) Applications 
+and limitations of artificial intelligence for fracture detection and 
+classification in orthopaedic trauma imaging: a systematic review. Clin 
+Orthop Relat Res 477(11):2482–2491. https:// doi. org/ 10. 1097/ CORR. 
+00000 00000 000848
+ 15. Kalmet PHS, Sanduleanu S, Primakov S et al (2020) Deep learning in 
+fracture detection: a narrative review. Acta Orthop 91(3):362. https://  
+doi. org/ 10. 1080/ 17453 674. 2020. 17232 92
+ 16. Tu T, Schaekermann M, Palepu A et al (2025) Towards conversational 
+diagnostic artificial intelligence. Nature 642(8067):442–450. https:// doi.  
+org/ 10. 1038/ s41586‑ 025‑ 08866‑7
+ 17. Goh E, Gallo R, Hom J et al (2024) Large language model influence on 
+diagnostic reasoning: a randomized clinical trial. JAMA Netw Open 
+7(10):e2440969. https:// doi. org/ 10. 1001/ jaman etwor kopen. 2024. 40969
+ 18. OpenAI (2024) GPT ‑4o system card. https:// openai. com/ index/ gpt‑ 4o‑ 
+system‑ card/. Accessed 20 Jan 2026
+ 19. Bates DW, Saria S, Ohno ‑Machado L et al (2014) Big data in health 
+care: Using analytics to identify and manage high‑risk and high‑ cost 
+patients. Health Aff (Millwood) 33(7):1123–1131. https:// doi. org/ 10.  
+1377/ hltha ff. 2014. 0041
+ 20. Bodnari A, Travis J (2025) Scaling enterprise AI in healthcare: the role of 
+governance in risk mitigation frameworks. NPJ Digit Med 8:272. https://  
+doi. org/ 10. 1038/ s41746‑ 025‑ 01700‑4
+ 21. Johnson AEW, Bulgarelli L, Shen L et al (2023) MIMIC‑IV, a freely acces‑
+sible electronic health record dataset. Sci Data 10(1):1. https:// doi. org/  
+10. 1038/ s41597‑ 022‑ 01899‑x
+ 22. Jeong J, Han H, Ro DH et al (2023) Development of prediction model 
+using machine ‑learning algorithms for nonsteroidal anti‑inflammatory 
+drug‑induced gastric ulcer in osteoarthritis patients: retrospective 
+cohort study of a nationwide South Korean cohort. Clin Orthop Surg 
+15(4):678–689. https:// doi. org/ 10. 4055/ cios2 2240
+ 23. Xie Q, Dai Z, Hovy E, et al (2019) Unsupervised data augmentation for 
+consistency training. arXiv. arXiv: 1904. 12848. https:// doi. org/ 10. 48550/ 
+arXiv. 1904. 12848
+ 24. Chen T, Kornblith S, Norouzi M, et al (2020) A simple framework for con‑
+trastive learning of visual representations. arXiv. arXiv: 2002. 05709. https:// 
+doi. org/ 10. 48550/ arXiv. 2002. 05709
+ 25. Zhang S, Metaxas D (2024) Challenges and perspectives of foundation 
+models for medical image analysis. Med Image Anal 91:102996. https:// 
+doi. org/ 10. 1016/j. media. 2023. 102996
+ 26. Devlin J, Chang MW, Lee K, et al (2018) BERT: pre‑training of deep bidirec‑
+tional transformers for language understanding. arXiv. arXiv: 1810. 04805. 
+https:// doi. org/ 10. 48550/ arXiv. 1810. 04805
+ 27. OpenAI (2023) GPT‑4 technical report. arXiv. arXiv: 2303. 08774. https:// doi. 
+org/ 10. 48550/ arXiv. 2303. 08774
+ 28. Vasey B, Nagendran M, Campbell B et al (2022) Reporting guideline for 
+the early‑stage clinical evaluation of decision support systems driven by 
+artificial intelligence: DECIDE‑AI. Nat Med 28(5):924–933. https:// doi. org/ 
+10. 1038/ s41591‑ 022‑ 01772‑9
+ 29. Nagendran M, Chen Y, Lovejoy CA et al (2020) Artificial intelligence versus 
+clinicians: systematic review of design, reporting standards, and claims of 
+deep learning studies. BMJ 368:m689. https:// doi. org/ 10. 1136/ bmj. m689
+ 30. Steyerberg EW, Vickers AJ, Cook NR et al (2010) Assessing the perfor‑
+mance of prediction models: a framework for traditional and novel 
+measures. Epidemiology 21(1):128–138. https:// doi. org/ 10. 1097/ EDE. 
+0b013 e3181 c30fb2
+ 31. Vickers AJ, Elkin EB (2006) Decision curve analysis: a novel method for 
+evaluating prediction models. Med Decis Making 26(6):565–574. https:// 
+doi. org/ 10. 1177/ 02729 89X06 295361
+ 32. Collins GS, Reitsma JB, Altman DG et al (2015) Transparent reporting of 
+a multivariable prediction model for individual prognosis or diagnosis 
+(TRIPOD): the TRIPOD statement. Ann Intern Med 162(1):55–63. https:// 
+doi. org/ 10. 7326/ M14‑ 0697
+ 33. Liu X, Cruz Rivera S, Moher D et al (2020) Reporting guidelines for 
+clinical trial reports for interventions involving artificial intelligence: the 
+CONSORT‑AI extension. Nat Med 26(9):1364–1374. https:// doi. org/ 10. 
+1038/ s41591‑ 020‑ 1034‑x
+ 34. Duron L, Ducarouge A, Gillibert A et al (2021) Assessment of an AI aid in 
+detection of adult appendicular skeletal fractures by emergency physi‑
+cians and radiologists: a multicenter cross‑sectional diagnostic study. 
+Radiology 300(1):120–129. https:// doi. org/ 10. 1148/ radiol. 20212 03886
+ 35. Schiphof D, Boers M, Bierma‑Zeinstra SMA (2008) Differences in descrip‑
+tions of Kellgren and Lawrence grades of knee osteoarthritis. Ann Rheum 
+Dis 67(7):1034–1036. https:// doi. org/ 10. 1136/ ard. 2007. 079020
+ 36. Brejnebøl MW, Hansen P , Nybing JU et al (2022) External validation of an 
+artificial intelligence tool for radiographic knee osteoarthritis severity 
+classification. Eur J Radiol 150:11024 9. https:// doi. org/ 10. 1016/j. ejrad. 
+2022. 110249
+ 37. Swiecicki A, Li N, O’Donnell J et al (2021) Deep learning‑based algorithm 
+for assessment of knee osteoarthritis severity in radiographs matches 
+performance of radiologists. Comput Biol Med 133:104334. https:// doi. 
+org/ 10. 1016/j. compb iomed. 2021. 104334
+ 38. Ko S, Choi Y, Han HS, Kim SH, Ro DH (2025) Association of radiographic 
+structure deformity phenotypes of knee OA to clinical symptoms and risk 
+for progression: proposing a modification of Kellgren–Lawrence grade—
+data from the osteoarthritis initiative and the MOST study. Osteoarth 
+Cartil Open 7(1):100566. https:// doi. org/ 10. 1016/j. ocarto. 2025. 100566
+ 39. Ryu BY, Nam JW, Ro DH et al (2025) Automated posterior tibial 
+slope measurement using lateral knee radiographs: a novel land‑
+mark‑based approach using deep learning. Orthop J Sports Med 
+13(4):23259671251331067. https:// doi. org/ 10. 1177/ 23259 67125 13310 67
+ 40. Martin RK, Haaland S, Persson A et al (2025) External validation of a novel 
+landmark‑based deep learning automated tibial slope measurement 
+algorithm applied on short radiographs obtained in patients with ACL 
+injuries. Orthop J Sports Med 13(5):23259671251333607. https:// doi. org/ 
+10. 1177/ 23259 67125 13336 07
+ 41. Park J, Chaar O, Narayanakurup J et al (2025) Do knee alignment patterns 
+differ between Middle Eastern and East Asian populations? A propen‑
+sity‑matched analysis using artificial intelligence. Knee Surg Relat Res 
+37(1):11. https:// doi. org/ 10. 1186/ s43019‑ 025‑ 00261‑w
+ 42. Hunter DJ, Guermazi A, Lo GH et al (2011) Evolution of semi‑quantitative 
+whole joint assessment of knee OA: MOAKS (MRI osteoarthritis knee 
+score). Osteoarth Cartil 19(8):990–1002. https:// doi. org/ 10. 1016/j. joca. 
+2011. 05. 004
+
+--- PDF PAGE 12 ---
+Page 12 of 12Kim et al. Knee Surgery & Related Research           (2026) 38:14 
+ 43. Hofmann HL, Guerra GA, Le JL et al (2024) Rapid development of artificial 
+intelligence: GPT‑4 performance on orthopedic surgery board questions. 
+Orthopedics 47(2):e85–e89. https:// doi. org/ 10. 3928/ 01477 447‑ 20230 
+922‑ 05
+ 44. Strong E, DiGiammarino A, Weng Y et al (2023) Chatbot versus medical 
+student performance on free‑response clinical reasoning examinations. 
+JAMA Intern Med 183(9):1028–1030. https:// doi. org/ 10. 1001/ jamai ntern 
+med. 2023. 2909
+ 45. Lee S, Jun S, Lee H et al (2025) Vulnerability of large language models 
+to prompt injection when providing medical advice. JAMA Netw Open 
+8(12):e2549963. https:// doi. org/ 10. 1001/ jaman etwor kopen. 2025. 49963
+ 46. Small CF, Austrian JS, O’Donnell L et al (2025) Evaluating hospital course 
+summarization by an electronic health record‑based large language 
+model. JAMA Netw Open 8(8):e2526339. https:// doi. org/ 10. 1001/ jaman 
+etwor kopen. 2025. 26339
+ 47. Singhal K, Tu T, Gottweis J, et al (2023) Towards expert‑level medical 
+question answering with large language models. arXiv. arXiv: 2305. 09617. 
+https:// doi. org/ 10. 48550/ arXiv. 2305. 09617
+ 48. Irvin J, Rajpurkar P , Ko M, et al (2019) CheXpert: a large chest radiograph 
+dataset with uncertainty labels and expert comparison. In: Proceedings 
+of the AAAI conference on artificial intelligence, vol 33. pp 590–597. 
+https:// doi. org/ 10. 1609/ aaai. v33i01. 33015 90
+ 49. US Food and Drug Administration (2021) Artificial intelligence/machine 
+learning (AI/ML)‑based software as a medical device (SaMD) action plan. 
+https:// www. fda. gov/ media/ 145022/ downl oad. Accessed 20 Jan 2026
+ 50. Ministry of Food and Drug Safety (2025) Guideline for approval review of 
+digital medical devices incorporating artificial intelligence technology. 
+https:// www. mfds. go. kr/ brd/m_ 1060/ view. do? seq= 15657. Accessed 20 
+Jan 2026
+ 51. MacIntyre MR, Cockerill RG, Mirza OF et al (2023) Ethical considerations 
+for the use of artificial intelligence in medical decision‑making capacity 
+assessments. Psychiatry Res 328:115466. https:// doi. org/ 10. 1016/j. psych 
+res. 2023. 115466
+ 52. Rajkomar A, Hardt M, Howell MD et al (2018) Ensuring fairness in machine 
+learning to advance health equity. Ann Intern Med 169(12):866–872. 
+https:// doi. org/ 10. 7326/ M18‑ 1990
+Publisher’s Note
+Springer Nature remains neutral with regard to jurisdictional claims in pub‑
+lished maps and institutional affiliations.

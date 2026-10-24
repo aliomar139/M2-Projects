@@ -1,5 +1,7 @@
 # Candidate new dimensions for the orthopedic treatment-support review
 
+**Current ten-review requirement (24 October 2026):** use [the five shared dimensions](Surveys/review_dimensions/Five_Shared_New_Dimensions.md), checked across all ten selected reviews. There are five in total. The seven candidates below belong to the separate broader-library research exploration and are not seven additional dimensions for that ten-review task.
+
 Prepared for the professor's 24 October 2026 tasks. Evidence checked through 23 October 2026.
 
 ## What can currently be claimed

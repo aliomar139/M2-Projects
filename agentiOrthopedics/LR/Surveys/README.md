@@ -6,6 +6,14 @@ This is a prioritized working library assembled from the legacy corpus and expan
 
 [Dimensions per paper](dimensions.md) | [Dimension table](dimensions.csv) | [Comparison matrix](dimension_coverage.csv) | [Full registry](survey_registry.csv) | [Missing originals](retrieval_queue.csv) | [RIS citations](surveys.ris)
 
+## Detailed ten-review analysis
+
+**Corrected requirement:** [five shared additions across all ten reviews](review_dimensions/Five_Shared_New_Dimensions.md), alongside the original ten covered dimensions per paper.
+
+[Ten-review package and matching records](review_dimensions/README.md) | [Individual paper notes](<review papers>) | [100 covered dimensions and five shared additions](review_dimensions/10_Review_Papers_Dimension_Analysis.md) | [Verification audit](review_dimensions/verification_audit.md)
+
+These previously separate folders are now grouped here with the review library. Eight of the ten papers overlap by DOI with existing records; two are additional reviews. The five shared proposals are checked against all ten reviews and retain their verification limits and do not change the 85-record registry, screening status, or aggregate dimension matrix.
+
 ## Source formats
 
 `sources/*.pdf` are original publisher/author article candidates with provenance recorded in the registry; locally generated legacy summary PDFs and known wrong files were not copied. Newly recovered publisher PDFs require a DOI match in the first two pages. `sources/*.xml` retains original article XML with a matching main-article DOI. The corresponding `.html` files provide readable text/tables; they may omit figures, mathematical layout or references. Use the original XML and publisher version for complete appraisal.

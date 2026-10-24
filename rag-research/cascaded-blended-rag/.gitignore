@@ -7,4 +7,4 @@
 /data/processed_trec_covid/
 
 # Generated retrieval caches
-/results/*_cache.json
+

@@ -1,0 +1,94 @@
+--- PDF PAGE 1 ---
+THE JOURNAL OF BONE AND JOINT SURGERY. AMERICAN VOLUME • 2026.0 Top 100 Orthopedic AI • Rank #3
+The Application of Agentic Artificial Intelligence in
+Orthopaedics.
+F. Billi, S. Bini
+Department of Orthopaedic Surgery, University of California Los Angeles, Los Angeles, California.
+Journal:
+The Journal of bone and joint
+surgery. American volume
+Publication Year:
+2026.0
+Citations:
+2
+DOI:
+10.2106/jbjs.25.01497
+CLINICAL & AGENTIC AI TAKEAWAY
+Agentic AI in orthopaedics is poised to transform the practice, but its success depends on human-machine
+collaboration and aligning computational precision with the enduring human art of restoring motion and health.
+ABSTRACT
+Background: Artificial intelligence (AI) in orthopaedics is shifting from passive interfaces in which a surgeon queries a
+large language model to an era of active participation in which a surgeon empowers a software platform to automate
+certain tasks on their behalf. The emerging new paradigm called agentic AI involves agents that move beyond decision
+support tools to becoming semi-autonomous collaborators in research, clinical, and rehabilitation tasks. Purpose: The
+purpose of this review is to summarize how recent advances (April 2022 to October 2025) in automation, prediction, and
+augmentation agents are poised to transform the practice of orthopaedics; and to outline the conceptual, technical, and
+ethical foundations of this transition. Recent findings: An agent is software that can process information and act
+independently to execute a set of defined tasks. It can seek knowledge, ask for help, deploy other software, and learn from
+its actions. Automation, prediction and augmentation agents can be leveraged in multi-agent and federated-learning
+architectures, working together to create coordinated ecosystems that can manage complex tasks and that improve with
+clinical use. Collectively, the output of such ecosystems is referred to as agentic AI. However, regulatory and ethical
+concerns underscore the need for transparency, equity, and the preservation of human agency within these frameworks.
+Summary: Agentic AI marks a transition from passive tools that merely assist clinicians to autonomous systems that act
+alongside them. The success of this technology in orthopaedics will depend on the depth of human-machine collaboration
+they enable and how well they align computational precision with the enduring human art of restoring motion and health.
+Copyright © 2026 by The Journal of Bone and Joint Surgery, Incorporated.
+Study Overview & Background
+Background: Artificial intelligence (AI) in orthopaedics is shifting from passive interfaces in which a surgeon queries a
+large language model to an era of active participation in which a surgeon empowers a software platform to automate
+certain tasks on their behalf. The emerging new paradigm called agentic AI involves agents that move beyond decision
+support tools to becoming semi-autonomous collaborators in research, clinical, and rehabilitation tasks. Purpose: The
+purpose of this review is to summarize how recent advances (April 2022 to October 2025) in automation, prediction, and
+augmentation agents are poised to transform the practice of orthopaedics; and to outline the conceptual, technical, and
+
+--- PDF PAGE 2 ---
+ethical foundations of this transition. Recent findings: An agent is software that can process information and act
+independently to execute a set of defined tasks. It can seek knowledge, ask for help, deploy other software, and learn from
+its actions. Automation, prediction and augmentation agents can be leveraged in multi-agent and federated-learning
+architectures, working together to create coordinated ecosystems that can manage complex tasks and that improve with
+clinical use. Collectively, the output of such ecosystems is referred to as agentic AI. However, regulatory and ethical
+concerns underscore the need for transparency, equity, and the preservation of human agency within these frameworks.
+Summary: Agentic AI marks a transition from passive tools that merely assist clinicians to autonomous systems that act
+alongside them. The success of this technology in orthopaedics will depend on the depth of human-machine collaboration
+they enable and how well they align computational precision with the enduring human art of restoring motion and health.
+Copyright © 2026 by The Journal of Bone and Joint Surgery, Incorporated.
+Methodology & Clinical Focus
+Study Classification: literature review. Evaluated under orthopedic machine learning and artificial intelligence decision
+frameworks.
+Key Findings & Analysis
+Agentic AI in orthopaedics is poised to transform the practice, but its success depends on human-machine collaboration
+and aligning computational precision with the enduring human art of restoring motion and health.
+Extended Repository Abstract
+Background Artificial intelligence (AI) in orthopaedics is shifting from passive interfaces in which a surgeon queries a
+large language model to an era of active participation in which a surgeon empowers a software platform to automate
+certain tasks on their behalf. The emerging new paradigm called agentic AI involves agents that move beyond decision
+support tools to becoming semi-autonomous collaborators in research, clinical, and rehabilitation tasks. Purpose The
+purpose of this review is to summarize how recent advances (April 2022 to October 2025) in automation, prediction, and
+augmentation agents are poised to transform the practice of orthopaedics; and to outline the conceptual, technical, and
+ethical foundations of this transition. Recent findings An agent is software that can process information and act
+independently to execute a set of defined tasks. It can seek knowledge, ask for help, deploy other software, and learn from
+its actions. Automation, prediction and augmentation agents can be leveraged in multi-agent and federated-learning
+architectures, working together to create coordinated ecosystems that can manage complex tasks and that improve with
+clinical use. Collectively, the output of such ecosystems is referred to as agentic AI. However, regulatory and ethical
+concerns underscore the need for transparency, equity, and the preservation of human agency within these frameworks.
+Summary Agentic AI marks a transition from passive tools that merely assist clinicians to autonomous systems that act
+alongside them. The success of this technology in orthopaedics will depend on the depth of human-machine collaboration
+they enable and how well they align computational precision with the enduring human art of restoring motion and health.
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+
+--- PDF PAGE 3 ---
+Bibliographic Details & Indexing
+Authors: F. Billi, S. Bini
+Journal / Venue: The Journal of bone and joint surgery. American volume (2026.0)
+SJR Metric: Quartile 1.0
+Citation Count: 2 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.2106/jbjs.25.01497
+Consensus Evidence Link: https://consensus.app/papers/the-application-of-agentic-artificial-intelligence-in-billi-
+bini/a9c2a35b7a0f5715b35d697d8863f420/
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.2106/jbjs.25.01497 • Consensus Page:
+https://consensus.app/papers/the-application-of-agentic-artificial-intelligence-in-billi-bini/a9c2a35b7a0f5715b35d697d8863f420/ • Verified
+and rendered via Deep Search & Academic Repositories.

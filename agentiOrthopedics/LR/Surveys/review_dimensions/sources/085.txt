@@ -1,0 +1,1089 @@
+--- PDF PAGE 1 ---
+Review
+State of the Art of Machine Learning–Enabled Clinical Decision
+Support in Intensive Care Units: Literature Review
+Na Hong1, PhD; Chun Liu1, PhD; Jianwei Gao1, PhD; Lin Han1, MSc, MD; Fengxiang Chang1, PhD; Mengchun
+Gong1, MD, PhD; Longxiang Su2, MD, PhD
+1Digital Health China Technologies Ltd Co, Beijing, China
+2Department of Critical Care Medicine, State Key Laboratory of Complex Severe and Rare Diseases, Peking Union Medical College Hospital, Chinese
+Academy of Medical Science and Peking Union Medical College, Beijing, China
+Corresponding Author:
+Longxiang Su, MD, PhD
+Department of Critical Care Medicine
+State Key Laboratory of Complex Severe and Rare Diseases, Peking Union Medical College Hospital
+Chinese Academy of Medical Science and Peking Union Medical College
+No.1 Shuaifuyuan Wangfujing Dongcheng District
+Beijing
+China
+Phone: 86 10 69152308
+Email: sulongxiang@vip.163.com
+Abstract
+Background: Modern clinical care in intensive care units is full of rich data, and machine learning has great potential to support
+clinical decision-making. The development of intelligent machine learning–based clinical decision support systems is facing great
+opportunities and challenges. Clinical decision support systems may directly help clinicians accurately diagnose, predict outcomes,
+identify risk events, or decide treatments at the point of care.
+Objective: We aimed to review the research and application of machine learning–enabled clinical decision support studies in
+intensive care units to help clinicians, researchers, developers, and policy makers better understand the advantages and limitations
+of machine learning–supported diagnosis, outcome prediction, risk event identification, and intensive care unit point-of-care
+recommendations.
+Methods: We searched papers published in the PubMed database between January 1980 and October 2020. We defined selection
+criteria to identify papers that focused on machine learning–enabled clinical decision support studies in intensive care units and
+reviewed the following aspects: research topics, study cohorts, machine learning models, analysis variables, and evaluation
+metrics.
+Results: A total of 643 papers were collected, and using our selection criteria, 97 studies were found. Studies were categorized
+into 4 topics—monitoring, detection, and diagnosis (13/97, 13.4%), early identification of clinical events (32/97, 33.0%), outcome
+prediction and prognosis assessment (46/97, 47.6%), and treatment decision (6/97, 6.2%). Of the 97 papers, 82 (84.5%) studies
+used data from adult patients, 9 (9.3%) studies used data from pediatric patients, and 6 (6.2%) studies used data from neonates.
+We found that 65 (67.0%) studies used data from a single center, and 32 (33.0%) studies used a multicenter data set; 88 (90.7%)
+studies used supervised learning, 3 (3.1%) studies used unsupervised learning, and 6 (6.2%) studies used reinforcement learning.
+Clinical variable categories, starting with the most frequently used, were demographic (n=74), laboratory values (n=59), vital
+signs (n=55), scores (n=48), ventilation parameters (n=43), comorbidities (n=27), medications (n=18), outcome (n=14), fluid
+balance (n=13), nonmedicine therapy (n=10), symptoms (n=7), and medical history (n=4). The most frequently adopted evaluation
+metrics for clinical data modeling studies included area under the receiver operating characteristic curve (n=61), sensitivity (n=51),
+specificity (n=41), accuracy (n=29), and positive predictive value (n=23).
+Conclusions: Early identification of clinical and outcome prediction and prognosis assessment contributed to approximately
+80% of studies included in this review. Using new algorithms to solve intensive care unit clinical problems by developing
+reinforcement learning, active learning, and time-series analysis methods for clinical decision support will be greater development
+prospects in the future.
+JMIR Med Inform 2022 | vol. 10 | iss. 3 | e28781 | p. 1https://medinform.jmir.org/2022/3/e28781
+(page number not for citation purposes)
+Hong et alJMIR MEDICAL INFORMATICS
+XSL•FO
+RenderX
+
+--- PDF PAGE 2 ---
+(JMIR Med Inform 2022;10(3):e28781) doi: 10.2196/28781
+KEYWORDS
+machine learning; intensive care units; clinical decision support; prediction model; artificial intelligence; electronic health records
+Introduction
+With the popularization of electronic health records, medical
+equipment, and the improvement of detection methods, patient
+data are generated in large amounts every day in intensive care
+units. In traditional clinical data analysis, models and tools can
+only make use of a limited number of variables in clean and
+well-organized data. Machine learning has enabled clinical
+decision support research and applications to generate actionable
+insights, by utilizing large amounts of intensive care unit patient
+data, that are useful in many clinical scenarios.
+Machine learning, sometimes called the data-driven method,
+uses statistical analysis models and computational technologies,
+allowing computer systems to learn from patient data and
+discover unknown clinical situations. Supervised learning,
+unsupervised learning, and reinforcement learning are the 3
+main types of machine learning [1] used to predict or guide the
+treatment of patients who are critically ill.
+In supervised machine learning tasks, a function maps an input
+to an output based on example input–output pairs. Functions
+are inferred from labeled training data. Classification and
+regression methods, which include but are not limited to linear
+regression, logistic regression, decision tree, random forest, and
+support vector machine, are common supervised learning
+methods.
+In unsupervised machine learning tasks, patterns are learned
+from untagged data. Models are designed to identify or partition
+large data sets into subsections or clusters that share similar
+characteristics. In intensive care unit–related tasks, unsupervised
+learning enables the discovery of latent structures or patient
+subgroups in specific cohorts [2]. Commonly used unsupervised
+learning models include clustering, auto-encoding, and principal
+component analysis.
+Reinforcement learning is concerned with how intelligent agents
+ought to take actions in an environment to maximize the notion
+of cumulative rewards. The environment is typically defined
+by a discrete-time stochastic control process called the Markov
+decision process. In an intensive care unit, clinicians often need
+to determine treatment plans and make clinical decisions.
+Reinforcement learning models have great potential for solving
+these types of problems by providing targeted treatment plans
+for each patient or patient status and assisting clinicians in
+making efficient decisions [3-8].
+Although there are still challenges when data from multiple
+sources must be combined, and the performance and ability of
+machine learning is limited by the volume and quality of data,
+a number of clinical decision support studies [9,10] have
+demonstrated the ability to use sophisticated machine learning
+models to solve certain intensive care unit–related tasks, and
+their performance has been shown to be comparable with human
+abilities, and for certain tasks, even it potentially exceeds human
+abilities [7,11].
+We sought to focus on machine learning research and
+applications adapted to clinical decision support in intensive
+care units, which may directly help clinicians diagnoses
+accurately, predict outcomes, identify risk events, or decide
+treatments at the intensive care unit point of care.
+Methods
+Search Strategy
+We searched for papers in the PubMed database that had been
+published prior to October 2020 using a query combination of
+MeSH terms (“intensive care unit,” “critical care,” “machine
+learning,” “artificial intelligence,” “decision support systems,
+clinical”) and keywords in the title or abstract keywords related
+to machine learning (“machine learning,” “artificial
+intelligence,” “prediction model,” “predictive model,”
+“predictive modeling,” “artificial learning,” “predictive
+analysis,” “machine intelligence,” “data driven,” “data-driven,”
+“statistical learning,” “neural network,” “deep learning,”
+“reinforcement learning,” “time series,” “time-series,”
+“algorithm”), decision-making (“clinical decision support
+system,” “medical decision,” “decision tool,” “support tool,”
+“clinical decision,” “physician decision,” “clinician decision,”
+“decision algorithm,” “CDSS,” “CDS,” “clinical management,”
+“decision making,” “decision-making“), and intensive care units
+(“intensive care,” “ICU,” “critical care,” “intensive care unit”).
+Selection Criteria
+We included English-language papers that reported studies (both
+prospective and retrospective studies) on clinical decision
+support, with machine learning methods that targeted a specific
+clinical scenario of intensive care units. We excluded papers
+that were systematic reviews and meta-analyses, studies of
+clinical decision support system implementations or clinical
+decision support system usability evaluations, studies that
+described rule-based clinical decision support system, studies
+that used data that were not from patients in intensive care units
+(eg, studies for intensive care unit admission prediction but
+using patient data from other departments, such as emergency
+or surgery departments), studies with outcomes irrelevant to
+regular intensive care unit clinical care (eg, studies about
+estimation of caffeine regimens), and studies that did not use
+machine learning methods (eg, studies using clinical scores or
+statistical analysis on small samples).
+Data Analysis
+We extracted the following information from selected papers
+for content analysis: study cohort, machine learning models,
+analysis variables, evaluation methods, and research topics.
+JMIR Med Inform 2022 | vol. 10 | iss. 3 | e28781 | p. 2https://medinform.jmir.org/2022/3/e28781
+(page number not for citation purposes)
+Hong et alJMIR MEDICAL INFORMATICS
+XSL•FO
+RenderX
+
+--- PDF PAGE 3 ---
+Study Cohort
+In general, the greater the number of data sets to which a
+machine learning model is applied, the stronger its generalization
+capabilities. Therefore, we investigated the inclusion cohorts
+and distribution centers of each study and classified these studies
+into single-site or multisite studies accordingly. We also
+classified studies by c, the sample size of studies: c<500,
+500<c<2000, 2000<c<5000, 5000<c<10,000, 10,000<c<50,000,
+and c>50,000.
+Machine Learning Models
+The model methods or algorithms used in each paper were
+reviewed for analysis, and model methods were categorized as
+supervised learning, unsupervised learning, or reinforcement
+learning.
+We reviewed variables or features used for modeling in each
+study. According to routine intensive care unit practices, we
+classified these variables into 12 groups: demographic variables,
+vital signs, symptoms, laboratory values, ventilation parameters,
+medications, nonmedicine therapy, comorbidities, fluid balance,
+scores, medical history, and outcome. Given the wide range of
+variable expressions in papers, such as formal medical terms,
+abbreviations, acronyms, and capitalizations, variable name
+normalization was implemented using text processing and
+manual annotation methods. As some studies used self-defined
+features or derived data for their special study purpose, variables
+used in only 1 study were excluded.
+Evaluation Methods
+To determine the applicability and potential impact of various
+machine learning models for clinicians and patients (ie, in
+applications), model evaluation methods are important
+components of model development. We reviewed evaluation
+metrics used for measuring model performance.
+Research Topics
+In addition to overall quantitative analysis, which included all
+studies, selected papers were divided into 4 topics for detailed
+analysis: detection and monitoring for diagnosis, early
+identification of clinical events, patient outcome prediction, and
+treatment decisions.
+Results
+General
+A total of 643 papers were found. The number of machine
+learning–enabled intensive care unit clinical decision support
+system research papers published in the PubMed database has
+been continuously increasing between January 1980 and October
+2020 (Figure 1).
+Among the 643 papers identified and assessed for eligibility,
+14 non–English language papers, 55 clinical decision support
+system implementations and clinical decision support system
+usability evaluations, 114 reviews and meta-analyses, 35 expert
+system clinical decision support system studies, 68 studies not
+about intensive care unit clinical questions, 76 studies using
+patient data from other clinical departments or with outcomes
+irrelevant to regular intensive care unit clinical care, 107 studies
+that used methods other than machine learning, and 77 studies
+for which full-text papers were unavailable were excluded
+(Figure 2); therefore, 97 papers remained (Table 1).
+Most studies used data from adult patients (n=82, 84.5%);
+however, 8 studies used data from pediatric patients (8.2%) and
+7 studies used data from neonates (7.2%). Two-thirds of the
+studies (65/97, 67.0%) were developed from single-center data
+sets, and 32 (33.0%) were developed from a multicenter data
+set; cohort sizes also varied (c<500: 35/97, 36%; 500<c<2000:
+19/97, 20%; 2000<c<5000: 12/97, 12%; 5000<c<10000: 10/97,
+10%; 10000<c<50000: 16/97, 16%; c>50,000: 7/97, 7%).
+The vast majority of studies used supervised learning (88/97,
+91%), and only a few used unsupervised learning (3/97, 3%) or
+reinforcement learning (6/97, 6%). In total, 849 variables for
+model analysis were extracted. The most frequent variable
+categories are shown in Table 1, and the top 20 most frequently
+used variables are shown in Figure 3.
+Most studies used more than 1 evaluation metric. The most
+frequently used were area under receiver operating characteristic
+curve (n=57), sensitivity (n=37), specificity (n=31), and
+accuracy (n=24).
+JMIR Med Inform 2022 | vol. 10 | iss. 3 | e28781 | p. 3https://medinform.jmir.org/2022/3/e28781
+(page number not for citation purposes)
+Hong et alJMIR MEDICAL INFORMATICS
+XSL•FO
+RenderX
+
+--- PDF PAGE 4 ---
+Figure 1. Growth in number of publications.
+Figure 2. Article review process. CDSS: clinical decision support system; ICU: intensive care unit.
+JMIR Med Inform 2022 | vol. 10 | iss. 3 | e28781 | p. 4https://medinform.jmir.org/2022/3/e28781
+(page number not for citation purposes)
+Hong et alJMIR MEDICAL INFORMATICS
+XSL•FO
+RenderX
+
+--- PDF PAGE 5 ---
+Table 1. General characteristics of the selected studies.
+Value (n=97), nCharacteristic
+Types of decision support
+13Detection, monitoring, and diagnosis
+32Early identification of clinical events
+46Outcome prediction and prognostic assessment
+6Treatment decisions
+Population
+82Adult
+8Pediatric patients
+7Neonates
+Medical setting
+65Single-center
+32Multicenter
+Type of machine learning
+88Supervised learning
+3Unsupervised learning
+6Reinforcement learning
+Type of variables
+74Demographic variables
+59Laboratory values
+55Vital signs
+48Scores
+43Ventilation parameters
+27Comorbidities
+18Medications
+14Outcome
+13Fluid balance
+10Nonmedicine therapy
+7Symptoms
+4Medical history
+Type of evaluation method, na
+57Area under the receiver operating characteristic curve
+37Sensitivity
+31Specificity
+24Accuracy
+11Positive predictive value
+aMore than 1 variable type could be used in each study.
+JMIR Med Inform 2022 | vol. 10 | iss. 3 | e28781 | p. 5https://medinform.jmir.org/2022/3/e28781
+(page number not for citation purposes)
+Hong et alJMIR MEDICAL INFORMATICS
+XSL•FO
+RenderX
+
+--- PDF PAGE 6 ---
+Figure 3. Top 20 most frequently used variables. DBP: diastolic blood pressure; FiO2: fractional inspired oxygen; GCS: Glasgow Coma Scale; HR:
+heart rate; MBP: mean blood pressure; MV: mechanical ventilation; PaO2-partial pressure of oxygen; RR: respiratory rate; SBP: systolic blood pressure;
+SCR: creatine; SpO2: peripheral capillary oxygen saturation; WBC: white blood cell count.
+Monitoring, Detection, and Diagnosis
+Overview
+Among 13 studies, 4 (30.8%) studies [12-15] focused on
+monitoring or detection of physiological indicators, 3 studies
+(23.1%) [16-18] focused on the of mechanical ventilation
+abnormalities (in particular, patient-ventilator asynchrony), 4
+studies (30.8%) [19-22] used electroencephalography (EEG) to
+diagnose brain diseases, and 2 studies (15.4%) [11,23] studies
+focused on infections. Variables used included demographic
+variables (n=5), vital signs (n=6), laboratory values (n=5),
+ventilation parameters (n=5), comorbidities (n=1), and outcome
+(n=1).
+Most data were obtained from a single center (11/13, 84.6%),
+and only 2 studies (2/13, 15.4%) used multicenter data sets.
+Some studies (3/13, 23.1%) used data from public databases,
+such as the MIMIC database, the public NIH Chest-XRay14,
+and PLCO data sets (Multimedia Appendix 1).
+The top 3 models used were neural network (n=4), tree (n=3),
+and random forest (n=3) models. Support vector machine models
+were used twice (n=2). Other models, such as logistic regression,
+and linear regression were only used in 1 study each.
+Model performance was mainly evaluated with sensitivity (n=7),
+specificity (n=8), area under the receiver operating characteristic
+curve (n=3), and accuracy (n=3), whereas other evaluation
+methods such as equal error rates, F1 score, recall, and κ
+coefficients were each used only once.
+Monitoring of Physiological Indicators
+Quinn et al [13] provided a general model for inferring hidden
+factors from clinical data and was successfully applied to the
+major task of monitoring premature infants in the intensive care
+unit. Eshelman et al [12] described an algorithm consisting of
+a set of rules for identifying intensive care unit patients who
+may become hemodynamically unstable. Taking into account
+the individual differences of intensive care unit patients, Zhang
+and Szolovits [15] developed an algorithm based on personalized
+vital signs data to improve the accuracy of alarms. Charbonnier
+[14] extracted online temporal episodes from the high-frequency
+physiological parameters of intensive care unit patients to
+visually support signal interpretation.
+Mechanical Ventilation
+Mechanical ventilation is widely used in intensive care units,
+during which a series of parameters need to be monitored. Kwok
+et al [16] established a nonlinear adaptive neuro-fuzzy inference
+system model for fractional inspired oxygen estimation, which
+reduced the need for invasive inspections. Two groups of
+researchers discussed the problem of patient-ventilator
+asynchrony, and developed a classifier based on machine
+learning to detect abnormal waveforms [17,18].
+Electroencephalography Monitoring
+EEG monitoring plays an important role in the detection of
+brain function and the diagnosis of brain disease. Koolen et al
+[19] developed a method for the automated classification of
+neonatal sleep states via EEG. Golmohammadi et al [21]
+presented a system that can achieve high-performance
+classification of EEG events that might correlate with epilepsy,
+metabolic encephalopathy, cerebral hypoxia, and ischemia.
+Farzaneh et al [20] developed a machine learning framework
+to automatically segment and assess the severity of patients
+with subdural hematoma during traumatic brain injuries [20].
+Diagnosis of Infection
+Infections are an important clinical issue in intensive care. Sepsis
+is a common and serious condition in the intensive care unit
+that results from an overreaction to infection that damages
+JMIR Med Inform 2022 | vol. 10 | iss. 3 | e28781 | p. 6https://medinform.jmir.org/2022/3/e28781
+(page number not for citation purposes)
+Hong et alJMIR MEDICAL INFORMATICS
+XSL•FO
+RenderX
+
+--- PDF PAGE 7 ---
+tissues and organs and can lead to complications, making it one
+of the leading causes of hospital-related deaths [24]. A
+high-performance algorithm, InSight, was demonstrated to be
+superior to the commonly used Modified Early Warning Score,
+Simplified Acute Physiology Score, and Systemic Inflammatory
+Response Syndrome score for the diagnosis of patients with
+alcohol use disorder combined with sepsis shock [23]. In
+addition, it is still challenging to explain lung opacity in
+radiography of the supine chest of patients with lung infection
+in the intensive care unit—Rueckel et al [11] evaluated a
+prototype artificial intelligence algorithm that could classify
+underlying lung opacity, which might suggest a diagnosis
+pneumonia.
+Early Identification or Prediction of Clinical Events
+Overview
+Clinical event prediction, the use of data from electronic health
+records to predict the occurrence of certain events or the best
+time to give treatment, is one of the most important aspects of
+intensive care unit clinical decision support system. Among 32
+clinical event prediction studies, 3 (9.4%) were related to acute
+kidney injury, 11 (34.4%) were related to infection prediction,
+8 (25%) were related to respiratory diseases, and 10 (31.3%)
+were related to other predictions and evaluations (Multimedia
+Appendix 1).
+In intensive care unit clinical prediction and evaluation studies,
+up to 87 variables were used in a single paper. Categories of
+variables, in order of frequency, were laboratory values (n=25),
+demographic variables (n=25), vital signs (n=20), scores (n=18),
+ventilation parameters (n=14), fluid balance (n=8), medications
+(n=7), comorbidities (n=7), outcome (n=4), nonmedicine therapy
+(n=3), symptoms (n=3), and medical history (n=1).
+More than three-quarters of the studies (25/32, 78%) were based
+on data from a single center, 10 of which were from the freely
+available public database Medical Information Mart for Intensive
+Care II or III. Multi-institutional data were used in the other
+studies (7/32, 22%).
+Logistic regression was the most commonly used method (11/32,
+34%), followed by neural networks (7/32, 21%), and random
+forest (6, 19%). Support vector machine and decision tree
+models were each used in 5 (15.6%) studies. Naive Bayes,
+gradient boosting tree model, extreme gradient boosting, fuzzy
+model, and Insight each appeared twice (6.3%).
+Sensitivity (n=16) and area under receiver operating
+characteristic curve (n=17) were the most commonly used
+evaluation metrics, followed by specificity (n=12) and accuracy
+(n=12). The following metrics appeared in fewer than 10 papers:
+positive predictive value (n=3), F1 score (n=4), and mean
+absolute error (n=2).
+Acute Kidney Injury Prediction
+Early prediction of acute kidney injury has a high value for the
+long-term survival and quality of life of critically ill patients.
+Acute kidney injury is often associated with high morbidity and
+mortality rates in intensive care units. The status of other vital
+organs, initiation of therapy, patient response, and preexisting
+comorbidities can all contribute to the development of acute
+kidney injury [25]. Multiple machine learning methods have
+been utilized and compared to analyze unstructured clinical
+records and structured physiological measurements to identify
+early episodes of acute kidney injury [26]. Soliman et al [25]
+studied the prognostic impact of early acute kidney injury
+predicted by data from the first day of admission. One study
+[27] focused on patients younger than 21 years, who are more
+likely to recover from disease.
+Prediction of Sepsis and Infection
+Early identification and treatment is the key to survival for many
+sepsis and infection patients [28], but it is difficult for clinicians
+to predict before it occurs, because it is extremely complex and
+each patient is different. Early prediction of sepsis using
+interpretable or uninterpretable machine learning models can
+help clinicians enhance the accuracy of fever workup [28] to
+identify and intervene in a timely manner [29-33]. One research
+aim is to make accurate predictions with as little electronic
+health record data as possible [34]. Mao et al achieved early
+prediction of sepsis using only vital signs validated in multiple
+centers [35]. The prediction of neonatal sepsis has also received
+substantial research attention in recent years [36,37]. One paper
+[38] focuses on predicting infections caused by a specific
+microorganism—invasive fungal disease due to Candida
+species—in intensive care unit patients.
+Prediction of Respiratory Disease and Mechanical
+Ventilation
+Respiratory management in the intensive care unit is an
+important aspect of critical care and treatment. Early diagnosis
+of respiratory critical illness has a significant impact on patient
+prognosis [39]. In addition, maintenance of cardiopulmonary
+function is required in patients admitted to the intensive care
+unit due to acute symptoms such as direct trauma, pulmonary
+infection, heart failure, and sepsis. Machine learning methods
+can help predict the onset of acute respiratory disease in patients,
+especially in pediatric patients. Sauthier et al [40] used random
+forest and logistic regression to predict the time of acute hypoxic
+respiratory failure in critically ill children with severe influenza.
+Messinger et al [39] applied a cascaded artificial neural network
+to design new respiratory scores for early identification of
+asthma in young children. In addition, early prediction of acute
+respiratory distress syndrome was studied because of its high
+morbidity and mortality [41].
+Furthermore, ventilator weaning and reintubation after weaning
+are currently well studied [42,43] in intensive care unit clinical
+decision support system literature, as well as the effect of drugs
+on intubation [44]. Moreover, predicting patient oxygen
+saturation after ventilation [45] and risk factors for failure of
+mechanical ventilation [46] can help health care professionals
+respond in a time manner.
+Other Predictions and Evaluations
+There were 10 papers that could not be classified; we simply
+put them into one class separately. There were forecasts for
+detection and monitoring indicators, such as urine output after
+fluid administration [47], glucose [48], lactic acid [49], and
+activated partial thromboplastin time [50]. Lin [47] established
+a gradient tree-based machine learning model implemented with
+JMIR Med Inform 2022 | vol. 10 | iss. 3 | e28781 | p. 7https://medinform.jmir.org/2022/3/e28781
+(page number not for citation purposes)
+Hong et alJMIR MEDICAL INFORMATICS
+XSL•FO
+RenderX
+
+--- PDF PAGE 8 ---
+extreme gradient boosting algorithms to predict urine output in
+sepsis patients after fluid resuscitation to prevent fluid
+overload-related complications. Pappada et al [48,49] developed
+a neural network–based model to obtain a complete trajectory
+of glucose values up to 135 minutes in advance. Mamandipoor
+et al [49] combined least absolute shrinkage and selection
+operator regression, random forest, and long short-term memory
+to predict blood lactate concentration in patients in the intensive
+care unit. Our previous study also compared multiple machine
+learning approaches to guide clinical heparin administration by
+predicting the range of activated partial thromboplastin time
+values [50]. There were also studies that aimed to reduce
+unnecessary laboratory tests to streamline the process and reduce
+the burden on patients [51,52]. Predicted clinical events also
+included acute traumatic coagulopathy [53], delirium [54],
+advanced anemia [55], and fluid resuscitation therapy [56].
+Outcome Evaluation and Prognostic Assessment
+Overview
+Of 46 papers that used machine learning for outcome evaluation
+for patients who were critically ill, 11 papers (23.9%) predicted
+overall mortality and survival, 23 papers (50%) predicted the
+outcomes of patients with certain diseases, and 12 papers
+(26.1%) included treatment prognosis, length of stay in the
+intensive care unit, and other outcome evaluations (Multimedia
+Appendix 1).
+Categories of variables, in order of frequency, were demographic
+variables (n=39), scores (n=24), laboratory values (n=23),
+ventilation parameters (n=20), vital signs (n=18), comorbidities
+(n=17), medications (n=10), outcome (n=8), nonmedicine
+therapy (n=7), fluid balance (n=4), symptoms (n=4), and medical
+history (n=3).
+Of the 46 outcome prediction studies, 25 (54.3%) were based
+on single-center data, 6 of which used data from MIMIC II and
+III, and the other 21 studies (45.7%) made use of multicenter
+data.
+Logistic regression was the most commonly used method (27/46,
+59%), followed by random forest (9/46, 20%), random forest
+(8/46, 17%), support vector machine (7/46, 15.2%) and decision
+tree model (5/46, 11%) studies. The gradient boosting tree model
+appeared in 4 (9%) studies, and adaptive boosting and linear
+regression each appeared twice (4.3%). Other models that
+appeared only once are not discussed here.
+Area under receiver operating characteristic curve (n=37) was
+the evaluation metric used most often, followed by sensitivity
+(n=14), specificity (n=11), positive predictive value (n=4),
+accuracy (n=8), negative predictive value (n=6),F1 score (n=2),
+Matthews correlation coefficient (n=2), and Brier score (n=2).
+Overall Intensive Care Unit Patient Outcomes
+Typical outcomes were overall mortality [57-62], survival [63],
+and long-term quality of life [64]. Mortality [65,66] and survival
+status at 1 year [67] in critically ill patients aged 80 years and
+older were also studied using machine learning methods.
+Outcomes of Patients With Specific Diseases
+Patients with sepsis and infection remain one of the most studied
+populations in terms of mortality (generally 28 days) [68-72],
+followed by acute kidney injury [72-75]. There is an increasing
+trend in outcome prediction studies in critically ill patients with
+liver disease—acute liver injury [76,77], cirrhosis [77], and
+advanced liver disease [78] have been studied using machine
+learning. In patients with severe cancer, 30- [79] and 120-day
+[80] survival rates were studied retrospectively with logistic
+regression models.
+For cardiac disease, Lee et al [81] used EEG data to predict the
+outcome of children with cardiac arrest and Murtuza et al [82]
+found that arterial blood lactate levels can be associated with
+mortality in children who have undergone cardiac surgery. For
+brain diseases, the outcomes of patients with subarachnoid
+hemorrhage [83] and severe traumatic brain injury [84] have
+been analyzed. Wildman et al [85] predicted the impact of
+chronic obstructive pulmonary disease and asthma on mortality
+in critically ill patients. Daly et al [86] used logistic regression
+to study the relationship between early discharge and mortality
+with the intention of reducing mortality in this group of intensive
+care unit patients. Other papers [87-89] examined patient
+outcomes and factors influencing them after deterioration.
+Ebadollahi et al [90] predicted the temporal trajectory of
+physiological data with patient similarity, with the aim to
+identify universal patterns of disease progression from a large
+amount of clinical practice data, to establish a generalized
+computer-aided clinical decision support framework for
+personalized treatment.
+Treatment Prognosis and Intensive Care Unit Stay Time
+Evaluation
+Evaluating the outcome of certain treatments through machine
+learning can help medical professionals refine their treatments
+to achieve better therapeutic effects. Evaluation of outcomes
+after extubation based on continuous vital sign information and
+static characteristics of children can help adjust the timing of
+extubation to reduce mortality [91-93]. Evaluation of prolonged
+mechanical ventilation [94] and 1-year and 5-year functional
+survival [95] after cardiac surgery was used to help adjust and
+optimize postsurgical care practices. Evaluating the length of
+stay in the intensive care unit [96,97] and the risk of readmission
+after discharge from the intensive care unit [98] to effectively
+forecast the trend of the disease could improve treatment and
+care. In addition, designing and improving critical illness scores
+to indicate disease severity [99-101] was studied. For example,
+McRae et al [102] designed a score to quickly determine the
+severity of COVID-19 and achieved optimistic results in 160
+individuals.
+Treatment Decisions
+Treatments, clinical determination, and decision-making in the
+intensive care unit were studied in 6 papers [3-8]. These papers
+focused on various clinical questions and mainly used a
+reinforcement learning model. Among them, 4 papers [3,5,7,8]
+(67%) addressed drug dosage, such as optimal vasopressin dose
+[3,7], heparin dosage [5], and morphine dosage [8]. The other
+JMIR Med Inform 2022 | vol. 10 | iss. 3 | e28781 | p. 8https://medinform.jmir.org/2022/3/e28781
+(page number not for citation purposes)
+Hong et alJMIR MEDICAL INFORMATICS
+XSL•FO
+RenderX
+
+--- PDF PAGE 9 ---
+2 papers [4,6] (33%) studied the timing of mechanical
+ventilation extubation.
+Categories of variables, in order of frequency, were vital signs
+(n=6), demographic variables (n=5), laboratory values (n=5),
+ventilation parameters (n=3), medications (n=4), fluid balance
+(n=2), scores (n=4), and comorbidities (n=1) (Multimedia
+Appendix 1).
+Reinforcement learning models can be divided into conventional
+reinforcement learning models (that is, wherein the reward
+function is known and we only need to find a policy to maximize
+the reward function) and inverse reinforcement learning models
+(that is, wherein the reward function is unknown, and we have
+to learn the most reasonable reward function through the
+decision-making examples of clinicians)—4 papers used typical
+reinforcement learning model, and 2 papers used inverse
+reinforcement learning models.
+All 6 papers used patient data from the intensive care units in
+US hospitals. Most papers used single-center data from MIMIC
+II (n=1) or MIMIC III (n=4), with c ranging from 707 to 96,156
+(mean 22,256; median 7852).
+Because the output of a reinforcement learning model is a policy
+that is not easy to evaluate, in these studies, the policy given by
+the model was compared with that actually given by the doctor;
+when the 2 policies differed, the effect of the reinforcement
+learning model was analyzed according to the actual clinical
+problem.
+Discussion
+From reviewed studies, we concluded that early identification
+of clinical outcome prediction and prognosis assessment
+contributed to approximately 80% of studies, and machine
+learning–based clinical decision support applications in intensive
+care unit could support timely bedside decision-making [15],
+transform data into more actionable insights or evidence-based
+clinical rules [101], assist disease diagnosis [30], predict adverse
+outcomes before they happen [76], enable continuous assessment
+of patient responses to critical care interventions [91], allow
+better management of highly complex situations and the best
+treatment decisions [3], ultimately reduce clinicians burden
+[52], and allow clinicians to have more time to deliver their
+knowledge, experience, and human care in practice [64].
+We found that 91% (88/97) of reviewed studies used supervised
+learning methods. Unsupervised learning is commonly used for
+phenotyping or patient subgrouping [2], usually to discover new
+knowledge; therefore, explaining and validating subgroups or
+patterns with reasonable clinical meaning is a challenge.
+Reinforcement learning models have great potential for solving
+medical decision problems; however, to the best of our
+knowledge, there is a lack of sophisticated reinforcement
+learning models to guide intensive care unit decision-making
+[5]. Data-driven decision support tools will permit clinicians to
+function more efficiently, caring for more patients more safely;
+however the selection of a model should be tailored to the
+clinical scenario [9,10]; therefore, we need a better
+understanding of which algorithms are a best fit for which
+clinical scenarios.
+We also found that many machine learning–based clinical
+prediction tasks are still challenging. First, not all the data
+collected from intensive care unit are good quality data or
+complete [7], particularly when data from different sources were
+included in one predictive model. Various data in the intensive
+care unit include general available data in the electronic health
+record, such as patient information, encounter information,
+diagnoses, intervention, routine laboratory data, imaging, natural
+language and physiologic data, as well as limited available
+information in the intensive care unit, such as social information,
+omics data, pathology, radiology, and wearable data [103]. This
+makes data preprocessing a difficult and time-consuming task.
+Second, parameter optimization was used to obtain the best
+parameter combination to improve model accuracy. Model
+parameters need to be determined and fitted using the training
+data set, and many adjustable hyperparameters must be tuned
+to obtain a model with optimal performance [104]. Generally,
+the more complex the model, the more parameters need to be
+adjusted, and the more difficult it is to adjust the parameters.
+For example, in logistic regression [74], usually only the
+regularization coefficient is adjusted; and in random forest
+models [53], the hyperparameters that need to be adjusted
+include the number of trees, the maximum depth of the tree,
+and the split criteria. Third, typically, the more complex the
+model, the higher the required sample size [105]. If the sample
+size is insufficient, overfitting occurs easily, which leads to
+instability or inaccuracy of the model. In some clinical scenarios,
+owing to the limited sample size, the use of complex models is
+limited [59]. Last, after developing the model, prospective
+evaluation using external data sets and clinical trials should be
+conducted before using the model in practice [106] to improve
+confidence in machine learning predictions [7]; however,
+performing strong validation of a machine learning model’s
+generalizability and interpretability is challenging; internal
+validation approaches, such as cross-validation and
+bootstrapping, cannot guarantee the quality of a machine
+learning model due to potentially biased training data and the
+complexity of the validation procedure itself [107]. Lack of
+technical and semantic interoperability makes harmonization
+of patient data from one center to another costly. As inconsistent
+model results may be derived when adapting to new data sets
+[108], retraining models using data from other sources would
+minimize the cost and allow models to incorporate new clinical
+settings.
+Future research should expand the innovation and exploration
+using new algorithms to solve intensive care unit clinical
+problems by developing reinforcement learning, active learning,
+and time-series analysis methods for clinical decision support.
+In addition, machine learning modeling requires recognition,
+understanding, and trust from intensive care unit clinicians.
+Model developers must provide full explanations of modeling
+methods, input, output, experimental and trial settings, clinical
+scenarios, and operation methods to clinicians. With the basis
+to understand, operate, and debug the outputs of a model,
+clinicians can have more confidence in accepting the model
+results and take action on the basis of that model’s
+recommendations.
+JMIR Med Inform 2022 | vol. 10 | iss. 3 | e28781 | p. 9https://medinform.jmir.org/2022/3/e28781
+(page number not for citation purposes)
+Hong et alJMIR MEDICAL INFORMATICS
+XSL•FO
+RenderX
+
+--- PDF PAGE 10 ---
+Acknowledgments
+This study was supported by the National Key Research and Development Program of China (2021YFC2500800) and Beijing
+Nova Program from Beijing Municipal Science and Technology Commission (Z201100006820126).
+Authors' Contributions
+LS and NH were responsible for study design and conception. NH and CL performed the search. NH, CL, JG, and LH were
+responsible for literature review and data analysis. NH, CL, JG, LH, MG and LS interpreted the results. FC supported data
+processing and analysis. All authors drafted and revised the manuscript for important intellectual content.
+Conflicts of Interest
+None declared.
+Multimedia Appendix 1
+Supplementary information.
+[DOCX File , 65 KB-Multimedia Appendix 1]
+References
+1. Pierre L. An introduction to machine learning. Language Technology Group (LTG). 2015. URL: https://studylib.net/doc/
+11539838/an-introduction-to-machine-learning-pierre-lison--languag [accessed 2022-02-03]
+2. Su L, Zhang Z, Zheng F, Pan P, Hong N, Liu C, et al. Five novel clinical phenotypes for critically ill patients with mechanical
+ventilation in intensive care units: a retrospective and multi database study. Respir Res 2020 Dec 10;21(1):325 [FREE Full
+text] [doi: 10.1186/s12931-020-01588-6] [Medline: 33302940]
+3. Srinivasan S, Doshi-Velez F. Interpretable batch IRL to extract clinician goals in ICU hypotension management. AMIA Jt
+Summits Transl Sci Proc 2020;2020:636-645 [FREE Full text] [Medline: 32477686]
+4. Yu C, Liu J, Zhao H. Inverse reinforcement learning for intelligent mechanical ventilation and sedative dosing in intensive
+care units. BMC Med Inform Decis Mak 2019 Apr 09;19(Suppl 2):57 [FREE Full text] [doi: 10.1186/s12911-019-0763-6]
+[Medline: 30961594]
+5. Nemati S, Ghassemi MM, Clifford GD. Optimal medication dosing from suboptimal clinical examples: a deep reinforcement
+learning approach. Annu Int Conf IEEE Eng Med Biol Soc 2016 Aug;2016:2978-2981. [doi: 10.1109/EMBC.2016.7591355]
+[Medline: 28268938]
+6. Yu C, Ren G, Dong Y. Supervised-actor-critic reinforcement learning for intelligent mechanical ventilation and sedative
+dosing in intensive care units. BMC Med Inform Decis Mak 2020 Jul 09;20(Suppl 3):124 [FREE Full text] [doi:
+10.1186/s12911-020-1120-5] [Medline: 32646412]
+7. Komorowski M, Celi LA, Badawi O, Gordon AC, Faisal AA. The Artificial Intelligence Clinician learns optimal treatment
+strategies for sepsis in intensive care. Nat Med 2018 Nov;24(11):1716-1720. [doi: 10.1038/s41591-018-0213-5] [Medline:
+30349085]
+8. Lopez-Martinez D, Eschenfeldt P, Ostvar S, Ingram M, Hur C, Picard R. Deep reinforcement learning for optimal critical
+care pain management with morphine using dueling double-deep Q networks. Annu Int Conf IEEE Eng Med Biol Soc 2019
+Jul;2019:3960-3963. [doi: 10.1109/EMBC.2019.8857295] [Medline: 31946739]
+9. Greco M, Caruso PF, Cecconi M. Artificial intelligence in the intensive care unit. Semin Respir Crit Care Med 2021
+Feb;42(1):2-9. [doi: 10.1055/s-0040-1719037] [Medline: 33152770]
+10. Hanson CW, Marshall BE. Artificial intelligence applications in the intensive care unit. Crit Care Med 2001
+Feb;29(2):427-435. [doi: 10.1097/00003246-200102000-00038] [Medline: 11269246]
+11. Rueckel J, Kunz WG, Hoppe BF, Patzig M, Notohamiprodjo M, Meinel FG, et al. Artificial intelligence algorithm detecting
+lung infection in supine chest radiographs of critically ill patients with a diagnostic accuracy similar to board-certified
+radiologists. Crit Care Med 2020 Jul;48(7):e574-e583. [doi: 10.1097/CCM.0000000000004397] [Medline: 32433121]
+12. Eshelman LJ, Lee KP, Frassica JJ, Zong W, Nielsen L, Saeed M. Development and evaluation of predictive alerts for
+hemodynamic instability in ICU patients. AMIA Annu Symp Proc 2008 Nov 06:379-383 [FREE Full text] [Medline:
+18999006]
+13. Quinn JA, Williams CKI, McIntosh N. Factorial switching linear dynamical systems applied to physiological condition
+monitoring. IEEE Trans Pattern Anal Mach Intell 2009 Sep;31(9):1537-1551. [doi: 10.1109/TPAMI.2008.191] [Medline:
+19574617]
+14. Charbonnier S. On line extraction of temporal episodes from ICU high-frequency data: a visual support for signal
+interpretation. Comput Methods Programs Biomed 2005 May;78(2):115-132. [doi: 10.1016/j.cmpb.2005.01.003] [Medline:
+15848267]
+JMIR Med Inform 2022 | vol. 10 | iss. 3 | e28781 | p. 10https://medinform.jmir.org/2022/3/e28781
+(page number not for citation purposes)
+Hong et alJMIR MEDICAL INFORMATICS
+XSL•FO
+RenderX
+
+--- PDF PAGE 11 ---
+15. Zhang Y, Szolovits P. Patient-specific learning in real time for adaptive monitoring in critical care. J Biomed Inform 2008
+Jun;41(3):452-460 [FREE Full text] [doi: 10.1016/j.jbi.2008.03.011] [Medline: 18463000]
+16. Kwok HF, Linkens DA, Mahfouf M, Mills GH. Adaptive ventilator FiO2 advisor: use of non-invasive estimations of shunt.
+Artif Intell Med 2004 Nov;32(3):157-169. [doi: 10.1016/j.artmed.2004.02.005] [Medline: 15531148]
+17. Rehm GB, Han J, Kuhn BT, Delplanque J, Anderson NR, Adams JY, et al. Creation of a robust and generalizable machine
+learning classifier for patient ventilator asynchrony. Methods Inf Med 2018 Sep;57(4):208-219. [doi: 10.3414/ME17-02-0012]
+[Medline: 30919393]
+18. Gholami B, Phan TS, Haddad WM, Cason A, Mullis J, Price L, et al. Replicating human expertise of mechanical ventilation
+waveform analysis in detecting patient-ventilator cycling asynchrony using machine learning. Comput Biol Med 2018 Jun
+01;97:137-144. [doi: 10.1016/j.compbiomed.2018.04.016] [Medline: 29729488]
+19. Koolen N, Oberdorfer L, Rona Z, Giordano V, Werther T, Klebermass-Schrehof K, et al. Automated classification of
+neonatal sleep states using EEG. Clin Neurophysiol 2017 Jun;128(6):1100-1108. [doi: 10.1016/j.clinph.2017.02.025]
+[Medline: 28359652]
+20. Farzaneh N, Williamson CA, Jiang C, Srinivasan A, Bapuraj JR, Gryak J, et al. Automated segmentation and severity
+analysis of subdural hematoma for patients with traumatic brain injuries. Diagnostics 2020;10(10):773 [FREE Full text]
+[doi: 10.3390/diagnostics10100773] [Medline: 33007929]
+21. Golmohammadi M, Harati Nejad Torbati AH, Lopez de Diego S, Obeid I, Picone J. Automatic analysis of EEGs using big
+data and hybrid deep learning architectures. Front Hum Neurosci 2019;13:76 [FREE Full text] [doi:
+10.3389/fnhum.2019.00076] [Medline: 30914936]
+22. Sorani MD, Hemphill JC, Morabito D, Rosenthal G, Manley GT. New approaches to physiological informatics in neurocritical
+care. Neurocrit Care 2007;7(1):45-52. [doi: 10.1007/s12028-007-0043-7] [Medline: 17565451]
+23. Calvert J, Desautels T, Chettipally U, Barton C, Hoffman J, Jay M, et al. High-performance detection and early prediction
+of septic shock for alcohol-use disorder patients. Ann Med Surg (Lond) 2016 Jun;8:50-55 [FREE Full text] [doi:
+10.1016/j.amsu.2016.04.023] [Medline: 27489621]
+24. Timsit J, Perner A. Sepsis: find me, manage me, and stop me!. Intensive Care Med 2016 Dec 24;42(12):1851-1853. [doi:
+10.1007/s00134-016-4603-1] [Medline: 27778045]
+25. Soliman IW, Frencken JF, Peelen LM, Slooter AJC, Cremer OL, van Delden JJ, et al. The predictive value of early acute
+kidney injury for long-term survival and quality of life of critically ill patients. Crit Care 2016 Aug 03;20(1):242 [FREE
+Full text] [doi: 10.1186/s13054-016-1416-0] [Medline: 27488839]
+26. Sun M, Baron J, Dighe A, Szolovits P, Wunderink RG, Isakova T, et al. Early prediction of acute kidney injury in critical
+care setting using clinical notes and structured multivariate physiological measurements. Stud Health Technol Inform 2019
+Aug 21;264:368-372. [doi: 10.3233/SHTI190245] [Medline: 31437947]
+27. Sanchez-Pinto LN, Khemani RG. Development of a prediction model of early acute kidney injury in critically ill children
+using electronic health record data. Pediatr Crit Care Med 2016 Jun;17(6):508-515. [doi: 10.1097/PCC.0000000000000750]
+[Medline: 27124567]
+28. Fadlalla AMA, Golob JF, Claridge JA. Enhancing the fever workup utilizing a multi-technique modeling approach to
+diagnose infections more accurately. Surg Infect (Larchmt) 2012 Apr;13(2):93-101 [FREE Full text] [doi:
+10.1089/sur.2008.057] [Medline: 20666579]
+29. Nemati S, Holder A, Razmi F, Stanley MD, Clifford GD, Buchman TG. An interpretable machine learning model for
+accurate prediction of sepsis in the ICU. Crit Care Med 2018 Apr;46(4):547-553. [doi: 10.1097/CCM.0000000000002936]
+[Medline: 29286945]
+30. Kam HJ, Kim HY. Learning representations for the early detection of sepsis with deep neural networks. Comput Biol Med
+2017 Dec 01;89:248-255. [doi: 10.1016/j.compbiomed.2017.08.015] [Medline: 28843829]
+31. Kaji DA, Zech JR, Kim JS, Cho SK, Dangayach NS, Costa AB, et al. An attention based deep learning model of clinical
+events in the intensive care unit. PLoS One 2019;14(2):e0211057 [FREE Full text] [doi: 10.1371/journal.pone.0211057]
+[Medline: 30759094]
+32. Scherpf M, Gräßer F, Malberg H, Zaunseder S. Predicting sepsis with a recurrent neural network using the MIMIC III
+database. Comput Biol Med 2019 Oct;113:103395. [doi: 10.1016/j.compbiomed.2019.103395] [Medline: 31480008]
+33. Wang S, Wu F, Wang B. Prediction of severe sepsis using SVM model. Adv Exp Med Biol 2010;680:75-81. [doi:
+10.1007/978-1-4419-5913-3_9] [Medline: 20865488]
+34. Desautels T, Calvert J, Hoffman J, Jay M, Kerem Y, Shieh L, et al. Prediction of sepsis in the intensive care unit with
+minimal electronic health record data: a machine learning approach. JMIR Med Inform 2016 Sep 30;4(3):e28 [FREE Full
+text] [doi: 10.2196/medinform.5909] [Medline: 27694098]
+35. Mao Q, Jay M, Hoffman JL, Calvert J, Barton C, Shimabukuro D, et al. Multicentre validation of a sepsis prediction
+algorithm using only vital sign data in the emergency department, general ward and ICU. BMJ Open 2018 Jan 26;8(1):e017833
+[FREE Full text] [doi: 10.1136/bmjopen-2017-017833] [Medline: 29374661]
+36. Metsvaht T, Pisarev H, Ilmoja M, Parm U, Maipuu L, Merila M, et al. Clinical parameters predicting failure of empirical
+antibacterial therapy in early onset neonatal sepsis, identified by classification and regression tree analysis. BMC Pediatr
+2009 Nov 24;9:72 [FREE Full text] [doi: 10.1186/1471-2431-9-72] [Medline: 19930706]
+JMIR Med Inform 2022 | vol. 10 | iss. 3 | e28781 | p. 11https://medinform.jmir.org/2022/3/e28781
+(page number not for citation purposes)
+Hong et alJMIR MEDICAL INFORMATICS
+XSL•FO
+RenderX
+
+--- PDF PAGE 12 ---
+37. Mani S, Ozdas A, Aliferis C, Varol HA, Chen Q, Carnevale R, et al. Medical decision support using machine learning for
+early detection of late-onset neonatal sepsis. J Am Med Inform Assoc 2014 Mar;21(2):326-336 [FREE Full text] [doi:
+10.1136/amiajnl-2013-001854] [Medline: 24043317]
+38. Shahin J, Allen EJ, Patel K, Muskett H, Harvey SE, Edgeworth J, FIRE Study Investigators. Predicting invasive fungal
+disease due to Candida species in non-neutropenic, critically ill, adult patients in United Kingdom critical care units. BMC
+Infect Dis 2016 Sep 09;16:480 [FREE Full text] [doi: 10.1186/s12879-016-1803-9] [Medline: 27612566]
+39. Messinger AI, Bui N, Wagner BD, Szefler SJ, Vu T, Deterding RR. Novel pediatric-automated respiratory score using
+physiologic data and machine learning in asthma. Pediatr Pulmonol 2019 Aug;54(8):1149-1155 [FREE Full text] [doi:
+10.1002/ppul.24342] [Medline: 31006993]
+40. Sauthier MS, Jouvet PA, Newhams MM, Randolph AG. Machine learning predicts prolonged acute hypoxemic respiratory
+failure in pediatric severe influenza. Crit Care Explor 2020 Aug;2(8):e0175 [FREE Full text] [doi:
+10.1097/CCE.0000000000000175] [Medline: 32832912]
+41. Le S, Pellegrini E, Green-Saxena A, Summers C, Hoffman J, Calvert J, et al. Supervised machine learning for the early
+prediction of acute respiratory distress syndrome (ARDS). J Crit Care 2020 Dec;60:96-102 [FREE Full text] [doi:
+10.1016/j.jcrc.2020.07.019] [Medline: 32777759]
+42. Hsu J, Chen Y, Chung W, Tan T, Chen T, Chiang JY. Clinical verification of a clinical decision support system for ventilator
+weaning. Biomed Eng Online 2013;12 Suppl 1:S4 [FREE Full text] [doi: 10.1186/1475-925X-12-S1-S4] [Medline: 24565021]
+43. Miu T, Joffe AM, Yanez ND, Khandelwal N, Dagal AH, Deem S, et al. Predictors of reintubation in critically ill patients.
+Respir Care 2014 Feb;59(2):178-185 [FREE Full text] [doi: 10.4187/respcare.02527] [Medline: 23882103]
+44. Isbister GK, Duffull SB. Quetiapine overdose: predicting intubation, duration of ventilation, cardiac monitoring and the
+effect of activated charcoal. Int Clin Psychopharmacol 2009 Jul;24(4):174-180. [doi: 10.1097/YIC.0b013e32832bb078]
+[Medline: 19494786]
+45. Ghazal S, Sauthier M, Brossier D, Bouachir W, Jouvet PA, Noumeir R. Using machine learning models to predict oxygen
+saturation following ventilator support adjustment in critically ill children: A single center pilot study. PLoS One
+2019;14(2):e0198921 [FREE Full text] [doi: 10.1371/journal.pone.0198921] [Medline: 30785881]
+46. Rodríguez A, Ferri C, Martin-Loeches I, Díaz E, Masclans JR, Gordo F, Grupo Español de Trabajo Gripe A Grave
+(GETGAG)/Sociedad Española de Medicina Intensiva‚ Crítica y Unidades Coronarias (SEMICYUC) Working Group,
+2009-2015 H1N1 SEMICYUC Working Group investigators. Risk factors for noninvasive ventilation failure in critically
+ill subjects with confirmed influenza infection. Respir Care 2017 Oct 11;62(10):1307-1315 [FREE Full text] [doi:
+10.4187/respcare.05481] [Medline: 28698265]
+47. Lin P, Huang H, Komorowski M, Lin W, Chang C, Chen K, et al. A machine learning approach for predicting urine output
+after fluid administration. Comput Methods Programs Biomed 2019 Aug;177:155-159. [doi: 10.1016/j.cmpb.2019.05.009]
+[Medline: 31319943]
+48. Pappada SM, Owais MH, Cameron BD, Jaume JC, Mavarez-Martinez A, Tripathi RS, et al. An artificial neural network-based
+predictive model to support optimization of inpatient glycemic control. Diabetes Technol Ther 2020 May;22(5):383-394.
+[doi: 10.1089/dia.2019.0252] [Medline: 31687844]
+49. Mamandipoor B, Majd M, Moz M, Osmani V. Blood lactate concentration prediction in critical care. Stud Health Technol
+Inform 2020 Jun 16;270:73-77. [doi: 10.3233/SHTI200125] [Medline: 32570349]
+50. Su L, Liu C, Li D, He J, Zheng F, Jiang H, et al. Toward optimal heparin dosing by comparing multiple machine learning
+methods: retrospective study. JMIR Med Inform 2020 Jun 22;8(6):e17648 [FREE Full text] [doi: 10.2196/17648] [Medline:
+32568089]
+51. Yu L, Zhang Q, Bernstam EV, Jiang X. Predict or draw blood: an integrated method to reduce lab tests. J Biomed Inform
+2020 Apr;104:103394. [doi: 10.1016/j.jbi.2020.103394] [Medline: 32113004]
+52. Cismondi F, Celi LA, Fialho AS, Vieira SM, Reti SR, Sousa JMC, et al. Reducing unnecessary lab testing in the ICU with
+artificial intelligence. Int J Med Inform 2013 May;82(5):345-358 [FREE Full text] [doi: 10.1016/j.ijmedinf.2012.11.017]
+[Medline: 23273628]
+53. Li K, Wu H, Pan F, Chen L, Feng C, Liu Y, et al. A machine learning-based model to predict acute traumatic coagulopathy
+in trauma patients upon emergency hospitalization. Clin Appl Thromb Hemost 2020;26:1076029619897827 [FREE Full
+text] [doi: 10.1177/1076029619897827] [Medline: 31908189]
+54. Oh S, Park E, Jin Y, Piao J, Lee S. Automatic delirium prediction system in a Korean surgical intensive care unit. Nurs
+Crit Care 2014 Nov;19(6):281-291. [doi: 10.1111/nicc.12048] [Medline: 24165109]
+55. Milbrandt EB, Clermont G, Martinez J, Kersten A, Rahim MT, Angus DC. Predicting late anemia in critical illness. Crit
+Care 2006 Feb;10(1):R39 [FREE Full text] [doi: 10.1186/cc4847] [Medline: 16507173]
+56. Fialho AS, Celi LA, Cismondi F, Vieira SM, Reti SR, Sousa JMC, et al. Disease-based modeling to predict fluid response
+in intensive care units. Methods Inf Med 2013;52(6):494-502 [FREE Full text] [doi: 10.3414/ME12-01-0093] [Medline:
+23986268]
+57. Ghose S, Mitra J, Khanna S, Dowling J. An improved patient-specific mortality risk prediction in ICU in a random forest
+classification framework. Stud Health Technol Inform 2015;214:56-61. [Medline: 26210418]
+JMIR Med Inform 2022 | vol. 10 | iss. 3 | e28781 | p. 12https://medinform.jmir.org/2022/3/e28781
+(page number not for citation purposes)
+Hong et alJMIR MEDICAL INFORMATICS
+XSL•FO
+RenderX
+
+--- PDF PAGE 13 ---
+58. Venugopalan J, Chanani N, Maher K, Wang MD. Combination of static and temporal data analysis to predict mortality and
+readmission in the intensive care. Annu Int Conf IEEE Eng Med Biol Soc 2017 Jul;2017:2570-2573 [FREE Full text] [doi:
+10.1109/EMBC.2017.8037382] [Medline: 29060424]
+59. Ting H, Chen M, Hsieh Y, Chan C. Good mortality prediction by Glasgow Coma Scale for neurosurgical patients. J Chin
+Med Assoc 2010 Mar;73(3):139-143 [FREE Full text] [doi: 10.1016/S1726-4901(10)70028-9] [Medline: 20230998]
+60. Sha Y, Wang MD. Interpretable predictions of clinical outcomes with an attention-based recurrent neural network. ACM
+BCB 2017 Aug;2017:233-240 [FREE Full text] [doi: 10.1145/3107411.3107445] [Medline: 32577628]
+61. Meiring C, Dixit A, Harris S, MacCallum NS, Brealey DA, Watkinson PJ, et al. Optimal intensive care outcome prediction
+over time using machine learning. PLoS One 2018;13(11):e0206862. [doi: 10.1371/journal.pone.0206862] [Medline:
+30427913]
+62. Bukan RI, Møller AM, Henning MAS, Mortensen KB, Klausen TW, Waldau T. Preadmission quality of life can predict
+mortality in intensive care unit--a prospective cohort study. J Crit Care 2014 Dec;29(6):942-947. [doi:
+10.1016/j.jcrc.2014.06.009] [Medline: 25060638]
+63. Hsieh Y, Su M, Wang C, Wang P. Prediction of survival of ICU patients using computational intelligence. Comput Biol
+Med 2014 Apr;47:13-19. [doi: 10.1016/j.compbiomed.2013.12.012] [Medline: 24508564]
+64. Oeyen S, Vermeulen K, Benoit D, Annemans L, Decruyenaere J. Development of a prediction model for long-term quality
+of life in critically ill patients. J Crit Care 2018 Feb;43:133-138. [doi: 10.1016/j.jcrc.2017.09.006] [Medline: 28892669]
+65. de Lange DW, Brinkman S, Flaatten H, Boumendil A, Morandi A, Andersen FH, VIP1 Study Group. Cumulative prognostic
+score predicting mortality in patients older than 80 years admitted to the ICU. J Am Geriatr Soc 2019 Jun;67(6):1263-1267
+[FREE Full text] [doi: 10.1111/jgs.15888] [Medline: 30977911]
+66. Guidet B, de Lange DW, Boumendil A, Leaver S, Watson X, Boulanger C, VIP2 study group. The contribution of frailty,
+cognition, activity of daily life and comorbidities on outcome in acutely admitted patients over 80 years in European ICUs:
+the VIP2 study. Intensive Care Med 2020 Jan;46(1):57-69 [FREE Full text] [doi: 10.1007/s00134-019-05853-1] [Medline:
+31784798]
+67. Heyland DK, Stelfox HT, Garland A, Cook D, Dodek P, Kutsogiannis J, Canadian Critical Care Trials Group and the
+Canadian Researchers at the End of Life Network. Predicting performance status 1 year after critical illness in patients 80
+years or older: development of a multivariable clinical prediction model. Crit Care Med 2016 Sep;44(9):1718-1726. [doi:
+10.1097/CCM.0000000000001762] [Medline: 27075141]
+68. Puskarich M. A decision tree incorporating biomarkers and patient characteristics estimates mortality risk for adults with
+septic shock. Evid Based Nurs 2015 Apr;18(2):42. [doi: 10.1136/eb-2014-101903] [Medline: 25163470]
+69. Wong HR, Lindsell CJ, Pettilä V, Meyer NJ, Thair SA, Karlsson S, et al. A multibiomarker-based outcome risk stratification
+model for adult septic shock*. Crit Care Med 2014 Apr;42(4):781-789 [FREE Full text] [doi:
+10.1097/CCM.0000000000000106] [Medline: 24335447]
+70. Jaimes F, Farbiarz J, Alvarez D, Martínez C. Comparison between logistic regression and neural networks to predict death
+in patients with suspected sepsis in the emergency room. Crit Care 2005 Apr;9(2):R150-R156 [FREE Full text] [doi:
+10.1186/cc3054] [Medline: 15774048]
+71. Ribas Ripoll VJ, Vellido A, Romero E, Ruiz-Rodríguez JC. Sepsis mortality prediction with the Quotient Basis Kernel.
+Artif Intell Med 2014 May;61(1):45-52. [doi: 10.1016/j.artmed.2014.03.004] [Medline: 24726036]
+72. Sha Y, Venugopalan J, Wang MD. A novel temporal similarity measure for patients based on irregularly measured data in
+electronic health records. ACM BCB 2016 Oct;2016:337-344 [FREE Full text] [doi: 10.1145/2975167.2975202] [Medline:
+32577627]
+73. Yang T, Sun S, Zhao Y, Liu Q, Han M, Lin L, et al. Biomarkers upon discontinuation of renal replacement therapy predict
+60-day survival and renal recovery in critically ill patients with acute kidney injury. Hemodial Int 2018 Jan;22(1):56-65.
+[doi: 10.1111/hdi.12532] [Medline: 28078828]
+74. Xu Z, Luo Y, Adekkanattu P, Ancker JS, Jiang G, Kiefer RC, et al. Stratified mortality prediction of patients with acute
+kidney injury in critical care. Stud Health Technol Inform 2019 Aug 21;264:462-466. [doi: 10.3233/SHTI190264] [Medline:
+31437966]
+75. Trongtrakul K, Patumanond J, Kongsayreepong S, Morakul S, Pipanmekaporn T, Akaraborworn O, et al. Acute kidney
+injury risk prediction score for critically-ill surgical patients. BMC Anesthesiol 2020 Jun 03;20(1):140 [FREE Full text]
+[doi: 10.1186/s12871-020-01046-2] [Medline: 32493268]
+76. Bernal W, Wang Y, Maggs J, Willars C, Sizer E, Auzinger G, et al. Development and validation of a dynamic outcome
+prediction model for paracetamol-induced acute liver failure: a cohort study. Lancet Gastroenterol Hepatol 2016
+Nov;1(3):217-225. [doi: 10.1016/S2468-1253(16)30007-3] [Medline: 28404094]
+77. Lindenmeyer CC, Flocco G, Sanghi V, Lopez R, Kim AJ, Niyazi F, et al. LIV-4: A novel model for predicting transplant-free
+survival in critically ill cirrhotics. World J Hepatol 2020 Jun 27;12(6):298-311 [FREE Full text] [doi: 10.4254/wjh.v12.i6.298]
+[Medline: 32742572]
+78. Balekian AA, Gould MK. Predicting in-hospital mortality among critically ill patients with end-stage liver disease. J Crit
+Care 2012 Dec;27(6):740.e1-740.e7 [FREE Full text] [doi: 10.1016/j.jcrc.2012.08.017] [Medline: 23059012]
+JMIR Med Inform 2022 | vol. 10 | iss. 3 | e28781 | p. 13https://medinform.jmir.org/2022/3/e28781
+(page number not for citation purposes)
+Hong et alJMIR MEDICAL INFORMATICS
+XSL•FO
+RenderX
+
+--- PDF PAGE 14 ---
+79. Santos HGD, Zampieri FG, Normilio-Silva K, Silva GTD, Lima ACPD, Cavalcanti AB, et al. Machine learning to predict
+30-day quality-adjusted survival in critically ill patients with cancer. J Crit Care 2020 Feb;55:73-78. [doi:
+10.1016/j.jcrc.2019.10.015] [Medline: 31715534]
+80. Vincent F, Soares M, Mokart D, Lemiale V, Bruneel F, Boubaya M, GrrrOH: Groupe de recherche respiratoire en réanimation
+en Onco-Hématologie (Group for respiratory research in intensive care in Onco-Hematology‚ http://www.grrroh.com/).
+In-hospital and day-120 survival of critically ill solid cancer patients after discharge of the intensive care units: results of
+a retrospective multicenter study-A Groupe de recherche respiratoire en réanimation en Onco-Hématologie (Grrr-OH)
+study. Ann Intensive Care 2018 Mar 27;8(1):40 [FREE Full text] [doi: 10.1186/s13613-018-0386-6] [Medline: 29582210]
+81. Lee S, Zhao X, Davis KA, Topjian AA, Litt B, Abend NS. Quantitative EEG predicts outcomes in children after cardiac
+arrest. Neurology 2019 May 14;92(20):e2329-e2338 [FREE Full text] [doi: 10.1212/WNL.0000000000007504] [Medline:
+30971485]
+82. Murtuza B, Wall D, Reinhardt Z, Stickley J, Stumper O, Jones TJ, et al. The importance of blood lactate clearance as a
+predictor of early mortality following the modified Norwood procedure. Eur J Cardiothorac Surg 2011 Nov;40(5):1207-1214.
+[doi: 10.1016/j.ejcts.2011.01.081] [Medline: 21450476]
+83. Gracia Arnillas MP, Alvarez-Lerma F, Masclans J, Roquer J, Soriano C, Manzano D, et al. Impact of adrenomedullin levels
+on clinical risk stratification and outcome in subarachnoid haemorrhage. Eur J Clin Invest 2020 Nov;50(11):e13318. [doi:
+10.1111/eci.13318] [Medline: 32535893]
+84. Haveman ME, Van Putten MJAM, Hom HW, Eertman-Meyer CJ, Beishuizen A, Tjepkema-Cloostermans MC. Predicting
+outcome in patients with moderate to severe traumatic brain injury using electroencephalography. Crit Care 2019 Dec
+11;23(1):401 [FREE Full text] [doi: 10.1186/s13054-019-2656-6] [Medline: 31829226]
+85. Wildman MJ, Sanderson C, Groves J, Reeves BC, Ayres J, Harrison D, et al. Predicting mortality for patients with
+exacerbations of COPD and asthma in the COPD and asthma outcome study (CAOS). QJM 2009 Jun;102(6):389-399. [doi:
+10.1093/qjmed/hcp036] [Medline: 19369483]
+86. Daly K, Beale R, Chang RW. Reduction in mortality after inappropriate early discharge from intensive care unit: logistic
+regression triage model. BMJ 2001 May 26;322(7297):1274-1276 [FREE Full text] [doi: 10.1136/bmj.322.7297.1274]
+[Medline: 11375229]
+87. Hernández-Tejedor A, Cabré-Pericas L, Martín-Delgado MC, Leal-Micharet AM, Algora-Weber A, EPIPUSE study group.
+Evolution and prognosis of long intensive care unit stay patients suffering a deterioration: a multicenter study. J Crit Care
+2015 Jun;30(3):654.e1-654.e7. [doi: 10.1016/j.jcrc.2015.01.011] [Medline: 25656920]
+88. Ji S, Smith R, Huynh T, Najarian K. A comparative analysis of multi-level computer-assisted decision making systems for
+traumatic injuries. BMC Med Inform Decis Mak 2009 Jan 14;9:2 [FREE Full text] [doi: 10.1186/1472-6947-9-2] [Medline:
+19144188]
+89. Che Z, Purushotham S, Khemani R, Liu Y. Interpretable deep models for ICU outcome prediction. AMIA Annu Symp
+Proc 2016;2016:371-380 [FREE Full text] [Medline: 28269832]
+90. Ebadollahi S, Sun J, Gotz D, Hu J, Sow D, Neti C. Predicting patient's trajectory of physiological data using temporal trends
+in similar patients: a system for near-term prognostics. AMIA Annu Symp Proc 2010 Nov 13;2010:192-196 [FREE Full
+text] [Medline: 21346967]
+91. Castiñeira D, Schlosser KR, Geva A, Rahmani AR, Fiore G, Walsh BK, et al. Adding continuous vital sign information to
+static clinical data improves the prediction of length of stay after intubation: a data-driven machine learning approach.
+Respir Care 2020 Sep;65(9):1367-1377. [doi: 10.4187/respcare.07561] [Medline: 32879034]
+92. Mueller M, Wagner CL, Annibale DJ, Knapp RG, Hulsey TC, Almeida JS. Parameter selection for and implementation of
+a web-based decision-support tool to predict extubation outcome in premature infants. BMC Med Inform Decis Mak 2006
+Mar 01;6:11 [FREE Full text] [doi: 10.1186/1472-6947-6-11] [Medline: 16509967]
+93. Mueller M, Wagner CL, Annibale DJ, Hulsey TC, Knapp RG, Almeida JS. Predicting extubation outcome in preterm
+newborns: a comparison of neural networks with clinical expertise and statistical modeling. Pediatr Res 2004 Jul;56(1):11-18.
+[doi: 10.1203/01.PDR.0000129658.55746.3C] [Medline: 15128922]
+94. Dunning J, Au J, Kalkat M, Levine A. A validated rule for predicting patients who require prolonged ventilation post cardiac
+surgery. Eur J Cardiothorac Surg 2003 Aug;24(2):270-276. [doi: 10.1016/s1010-7940(03)00269-0] [Medline: 12895619]
+95. Manji RA, Arora RC, Singal RK, Hiebert B, Moon MC, Freed DH, et al. Long-term outcome and predictors of
+noninstitutionalized survival subsequent to prolonged intensive care unit stay after cardiac surgical procedures. Ann Thorac
+Surg 2016 Jan;101(1):56-63; discussion 63. [doi: 10.1016/j.athoracsur.2015.07.004] [Medline: 26431924]
+96. Brandi S, Troster EJ, Cunha MLDR. Length of stay in pediatric intensive care unit: prediction model. Einstein (Sao Paulo)
+2020;18:eAO5476 [FREE Full text] [doi: 10.31744/einstein_journal/2020AO5476] [Medline: 33053018]
+97. McWilliams CJ, Lawson DJ, Santos-Rodriguez R, Gilchrist ID, Champneys A, Gould TH, et al. Towards a decision support
+tool for intensive care discharge: machine learning algorithm development using electronic healthcare data from MIMIC-III
+and Bristol, UK. BMJ Open 2019 Mar 07;9(3):e025925 [FREE Full text] [doi: 10.1136/bmjopen-2018-025925] [Medline:
+30850412]
+JMIR Med Inform 2022 | vol. 10 | iss. 3 | e28781 | p. 14https://medinform.jmir.org/2022/3/e28781
+(page number not for citation purposes)
+Hong et alJMIR MEDICAL INFORMATICS
+XSL•FO
+RenderX
+
+--- PDF PAGE 15 ---
+98. Lin Y, Zhou Y, Faghri F, Shaw MJ, Campbell RH. Analysis and prediction of unplanned intensive care unit readmission
+using recurrent neural networks with long short-term memory. PLoS One 2019;14(7):e0218942 [FREE Full text] [doi:
+10.1371/journal.pone.0218942] [Medline: 31283759]
+99. Czeiter E, Amrein K, Gravesteijn BY, Lecky F, Menon DK, Mondello S, CENTER-TBI Participants and Investigators.
+Blood biomarkers on admission in acute traumatic brain injury: relations to severity, CT findings and care path in the
+CENTER-TBI study. EBioMedicine 2020 Jun;56:102785 [FREE Full text] [doi: 10.1016/j.ebiom.2020.102785] [Medline:
+32464528]
+100. Yin W, Li Y, Zeng X, Qin Y, Wang D, Zou T, et al. The utilization of critical care ultrasound to assess hemodynamics and
+lung pathology on ICU admission and the potential for predicting outcome. PLoS One 2017;12(8):e0182881 [FREE Full
+text] [doi: 10.1371/journal.pone.0182881] [Medline: 28806783]
+101. Shickel B, Loftus TJ, Adhikari L, Ozrazgat-Baslanti T, Bihorac A, Rashidi P. DeepSOFA: a continuous acuity score for
+critically ill patients using clinically interpretable deep learning. Sci Rep 2019 Feb 12;9(1):1879 [FREE Full text] [doi:
+10.1038/s41598-019-38491-0] [Medline: 30755689]
+102. McRae MP, Simmons GW, Christodoulides NJ, Lu Z, Kang SK, Fenyo D, et al. Clinical decision support tool and rapid
+point-of-care platform for determining disease severity in patients with COVID-19. Lab Chip 2020 Jun 21;20(12):2075-2085.
+[doi: 10.1039/d0lc00373e] [Medline: 32490853]
+103. Sanchez-Pinto LN, Luo Y, Churpek MM. Big data and data science in critical care. Chest 2018 Nov;154(5):1239-1248.
+[doi: 10.1016/j.chest.2018.04.037]
+104. Liu Y, Chen PHC, Krause J, Peng L. How to read articles that use machine learning: users' guides to the medical literature.
+JAMA 2019 Nov 12;322(18):1806-1816. [doi: 10.1001/jama.2019.16489] [Medline: 31714992]
+105. Riley RD, Ensor J, Snell KIE, Harrell FE, Martin GP, Reitsma JB, et al. Calculating the sample size required for developing
+a clinical prediction model. BMJ 2020 Mar 18;368:m441. [doi: 10.1136/bmj.m441] [Medline: 32188600]
+106. Collins GS, Reitsma JB, Altman DG, Moons KGM. Transparent reporting of a multivariable prediction model for individual
+prognosis or diagnosis (TRIPOD): the TRIPOD statement. Br J Surg 2015 Feb;102(3):148-158. [doi: 10.1002/bjs.9736]
+[Medline: 25627261]
+107. Ho SY, Phua K, Wong L, Bin Goh WW. Extensions of the external validation for checking learned model interpretability
+and generalizability. Patterns 2020 Nov;1(8):100129. [doi: 10.1016/j.patter.2020.100129]
+108. Futoma J, Simons M, Panch T, Doshi-Velez F, Celi LA. The myth of generalisability in clinical research and machine
+learning in health care. Lancet Digit Health 2020 Sep;2(9):e489-e492 [FREE Full text] [doi: 10.1016/S2589-7500(20)30186-2]
+[Medline: 32864600]
+Abbreviations
+EEG: electroencephalography
+Edited by A Mavragani; submitted 15.03.21; peer-reviewed by J Wang, MC Lin, Y Wang, J Li; comments to author 12.04.21; revised
+version received 02.07.21; accepted 01.12.21; published 03.03.22
+Please cite as:
+Hong N, Liu C, Gao J, Han L, Chang F, Gong M, Su L
+State of the Art of Machine Learning–Enabled Clinical Decision Support in Intensive Care Units: Literature Review
+JMIR Med Inform 2022;10(3):e28781
+URL: https://medinform.jmir.org/2022/3/e28781
+doi: 10.2196/28781
+PMID:
+©Na Hong, Chun Liu, Jianwei Gao, Lin Han, Fengxiang Chang, Mengchun Gong, Longxiang Su. Originally published in JMIR
+Medical Informatics (https://medinform.jmir.org), 03.03.2022. This is an open-access article distributed under the terms of the
+Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution,
+and reproduction in any medium, provided the original work, first published in JMIR Medical Informatics, is properly cited. The
+complete bibliographic information, a link to the original publication on https://medinform.jmir.org/, as well as this copyright
+and license information must be included.
+JMIR Med Inform 2022 | vol. 10 | iss. 3 | e28781 | p. 15https://medinform.jmir.org/2022/3/e28781
+(page number not for citation purposes)
+Hong et alJMIR MEDICAL INFORMATICS
+XSL•FO
+RenderX
