@@ -1,0 +1,85 @@
+=== PDF PAGE 1 ===
+PSYCHOTHERAPY RESEARCH • 2020.0 Top 100 Orthopedic AI • Rank #83
+Personalized treatment selection in routine care:
+Integrating machine learning and statistical algorithms to
+recommend cognitive behavioral or psychodynamic
+therapy
+Brian Schwartz, Z. Cohen, Julian A. Rubel, Dirk Zimmermann, W. Wittmann, W. Lutz
+University of Trier, Germany.
+Journal:
+Psychotherapy Research
+Publication Year:
+2020.0
+Citations:
+82
+DOI:
+10.1080/10503307.2020.1769219
+CLINICAL & AGENTIC AI TAKEAWAY
+A treatment selection algorithm using machine learning and statistical inference may improve treatment
+outcomes for some outpatients, but not all, and support therapists' clinical decision-making.
+ABSTRACT
+Objective: This study aims at developing a treatment selection algorithm using a combination of machine learning and
+statistical inference to recommend patients' optimal treatment based on their pre-treatment characteristics. Methods: A
+disorder-heterogeneous, naturalistic sample of N = 1,379 outpatients treated with either cognitive behavioral therapy or
+psychodynamic therapy was analyzed. Based on a combination of random forest and linear regression, differential
+treatment response was modeled in the training data (n = 966) to indicate each individual's optimal treatment. A separate
+holdout dataset (n = 413) was used to evaluate personalized recommendations. Results: The difference in outcomes
+between patients treated with their optimal vs. non-optimal treatment was significant in the training data, but non-
+significant in the holdout data (b = -0.043, p = .280). However, for the 50% of patients with the largest predicted benefit of
+receiving their optimal treatment, the average percentage of change on the BSI in the holdout data was 52.6% for their
+optimal and 38.4% for their non-optimal treatment (p = .017; d = 0.33 [0.06, 0.61]). Conclusion: A treatment selection
+algorithm based on a combination of ML and statistical inference might improve treatment outcome for some, but not all
+outpatients and could support therapists' clinical decision-making.
+Keywords: Variable selection, Machine Learning, Random Forest, Outcome Prediction, Precision Medicine, Outpatient Psychotherapy
+Study Overview & Background
+Objective: This study aims at developing a treatment selection algorithm using a combination of machine learning and
+statistical inference to recommend patients' optimal treatment based on their pre-treatment characteristics. Methods: A
+disorder-heterogeneous, naturalistic sample of N = 1,379 outpatients treated with either cognitive behavioral therapy or
+psychodynamic therapy was analyzed. Based on a combination of random forest and linear regression, differential
+treatment response was modeled in the training data (n = 966) to indicate each individual's optimal treatment. A separate
+holdout dataset (n = 413) was used to evaluate personalized recommendations. Results: The difference in outcomes
+between patients treated with their optimal vs. non-optimal treatment was significant in the training data, but non-
+
+=== PDF PAGE 2 ===
+significant in the holdout data (b = -0.043, p = .280). However, for the 50% of patients with the largest predicted benefit of
+receiving their optimal treatment, the average percentage of change on the BSI in the holdout data was 52.6% for their
+optimal and 38.4% for their non-optimal treatment (p = .017; d = 0.33 [0.06, 0.61]). Conclusion: A treatment selection
+algorithm based on a combination of ML and statistical inference might improve treatment outcome for some, but not all
+outpatients and could support therapists' clinical decision-making.
+Methodology & Clinical Focus
+Study Classification: theoretical, modeling, or simulation study. Evaluated under orthopedic machine learning and
+artificial intelligence decision frameworks.
+Key Findings & Analysis
+A treatment selection algorithm using machine learning and statistical inference may improve treatment outcomes for some
+outpatients, but not all, and support therapists' clinical decision-making.
+Extended Repository Abstract
+Objective: This study aims at developing a treatment selection algorithm using a combination of machine learning and
+statistical inference to recommend patients' optimal treatment based on their pre-treatment characteristics. Methods: A
+disorder-heterogeneous, naturalistic sample of N = 1,379 outpatients treated with either cognitive behavioral therapy or
+psychodynamic therapy was analyzed. Based on a combination of random forest and linear regression, differential
+treatment response was modeled in the training data ( n = 966) to indicate each individual's optimal treatment. A separate
+holdout dataset ( n = 413) was used to evaluate personalized recommendations. Results: The difference in outcomes
+between patients treated with their optimal vs. non-optimal treatment was significant in the training data, but non-
+significant in the holdout data ( b = -0.043, p = .280). However, for the 50% of patients with the largest predicted benefit of
+receiving their optimal treatment, the average percentage of change on the BSI in the holdout data was 52.6% for their
+optimal and 38.4% for their non-optimal treatment ( p = .017; d = 0.33 [0.06, 0.61]). Conclusion: A treatment selection
+algorithm based on a combination of ML and statistical inference might improve treatment outcome for some, but not all
+outpatients and could support therapists' clinical decision-making.
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+Bibliographic Details & Indexing
+Authors: Brian Schwartz, Z. Cohen, Julian A. Rubel, Dirk Zimmermann, W. Wittmann, W. Lutz
+Journal / Venue: Psychotherapy Research (2020.0)
+SJR Metric: Quartile 1.0
+Citation Count: 82 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.1080/10503307.2020.1769219
+Consensus Evidence Link: https://consensus.app/papers/personalized-treatment-selection-in-routine-care-
+schwartz-cohen/e1ca21a2c4555ec29876a07b4e18415a/
+
+=== PDF PAGE 3 ===
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1080/10503307.2020.1769219 •
+Consensus Page: https://consensus.app/papers/personalized-treatment-selection-in-routine-care-schwartz-
+cohen/e1ca21a2c4555ec29876a07b4e18415a/ • Verified and rendered via Deep Search & Academic Repositories.

@@ -1,0 +1,818 @@
+=== PDF PAGE 1 ===
+Received: 25 November 2025 | Accepted: 27 January 2026
+DOI: 10.1002/ksa.70339
+ARTIFICIAL INTELLIGENCE
+Artiﬁcial intelligence in orthopaedics: Enhanced
+examinations, ambient intelligence and the future
+of clinical practice
+Alexander Bouterse 1 | James A. Pruneski 1 | Felix C. Oettl 2 |
+Balint Zsidai 3,4,5 | Thomas Tischer 6,7 | Umile Giuseppe Longo 8,9 |
+Romain Seil 10 | Michael T . Hirschmann11,12 | Kristian Samuelsson 3,4,13
+Correspondence
+Kristian Samuelsson, University of
+Gothenburg, Department for Orthopaedics,
+Göteborgsvägen 31, 431 80 Mölndal,
+Sweden.
+Email: kristian.samuelsson@gu.se
+Abstract
+Artiﬁcial intelligence (AI) continues to rapidly transform the practice of
+medicine, with clinicians increasingly adopting data ‐driven decision‐making
+aids and diagnostic support tools. Orthopaedic physicians are well poised to
+harness the capabilities of AI, with an abundance of quanti ﬁable imaging,
+biomechanical data, and structured clinical parameters lending themselves
+to algorithmic interpretation and automation. Namely, AI ‐augmented vision
+systems may increase the breadth of information readily available to clini-
+cians, whereas smart exam rooms and automated clinical summaries may
+soon streamline clinical work ﬂows to decrease administrative burden and
+allow more time for direct patient care. Personalised education materials
+and visual aids may improve patient understanding and compliance, with
+the aim of optimising patient outcomes. Generative medical and orthopae-
+dic event models may soon alter decision ‐making heuristics and improve
+patient counselling. While the widespread adaptation of AI into clinical
+practices is not without limitations, physicians will likely come to share an
+increasingly symbiotic relationship with these platforms throughout their
+continued evolution. Accordingly, it is imperative that current and future
+orthopaedic practitioners become well ‐versed in harnessing the capabilities
+of AI and continue to identify new avenues for such technologies to bene ﬁt
+clinicians and patients alike. As such, the current manuscript provides a
+narrative review of the potential future applications of AI within orthopaedic
+practices by exploring current and developing technologies and detailing
+how the continued integration of AI ‐powered systems may serve to re-
+volutionise the delivery of orthopaedic care.
+Level of Evidence: Level V.
+KEYWORDS
+artiﬁcial intelligence, deep learning, machine learning, orthopaedics
+Knee Surg Sports Traumatol Arthrosc . 2026;34:1901 – 1909. wileyonlinelibrary.com/journal/ksa | 1901
+This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium,
+provided the original work is properly cited.
+For af ﬁliations refer to page 1906.
+Abbreviations: AI, arti ﬁcial intelligence; AR, augmented reality; COMET, Cosmos Medical Event Transformer; DL, deep learning; EHR, electronic health record;
+LLM, large language models; ML, machine learning; NLP, natural language processing; RGB ‐D, red ‐green‐blue‐depth.
+© 2026 The Author(s). Knee Surgery, Sports Traumatology, Arthroscopy published by John Wiley & Sons Ltd on behalf of European Society of Sports Traumatology,
+Knee Surgery and Arthroscopy.
+
+=== PDF PAGE 2 ===
+INTRODUCTION
+The ongoing integration of arti ﬁcial intelligence (AI) into
+healthcare systems has rapidly transformed the prac-
+tice of medicine. As physicians increasingly trend
+toward the adoption of data ‐driven support tools,
+AI presents a promising aid to clinical decision ‐making,
+allowing for improved diagnostic accuracy, optimised
+treatment strategies, and individualised risk assess-
+ments [ 12, 21, 30, 42, 49, 55, 74 ]. Amongst clinicians,
+such tools are quickly becoming an essential part of
+clinical practice, with a recent large ‐scale survey con-
+ducted by the American Medical Association indicating
+that more than two ‐thirds of physicians have already
+integrated AI into aspects of patient care and that the
+majority of respondents see de ﬁnitive advantages
+stemming from the use of AI ‐powered tools [ 4]. Con-
+currently, a recent sample of more than 2,400 hospitals
+across the United States found that nearly 70% report
+active utilisation of AI to facilitate personalised risk
+stratiﬁcation, guide longitudinal follow ‐up, and manage
+administrative tasks [ 52].
+Within the last decade, the number of orthopaedic
+publications pertaining to the use of AI has increased
+drastically, with clinical applications spanning from
+image evaluation and surgical planning to outcome
+prediction and advanced decision ‐making [ 59, 60 ].
+Accordingly, more than half of orthopaedic surgeons
+anticipate that AI will substantially in ﬂuence their pre-
+operative planning and documentation practices over
+the next decade and nearly 95% of orthopaedic clini-
+cians report at least rudimentary skill in utilising AI [ 63].
+The purpose of the current work is to provide a narra-
+tive review of the potential applications of AI within
+orthopaedic practices, exploring current and develop-
+ing technologies and how the continued integration of
+AI‐powered systems may serve to revolutionise the
+delivery of orthopaedic care.
+AI‐supported vision systems
+One of the more accessible and imminent uses of AI
+within orthopaedic clinical practice is the incorporation of
+real‐time AI support into commercially available eyewear/
+vision technologies. While existing augmented reality
+(AR) platforms, such as Microsoft HoloLens (Microsoft
+Corporation, Redmond, WA) or Google Glass (Google
+LLC, Mountainview, CA) smart glasses, can follow simple
+commands and display clinically relevant imaging and
+documentation, the enhancement of these technologies
+with AI software has the potential to improve diagnostic
+accuracy and streamline integration into the electronic
+health record (EHR). For instance, equipping clinicians
+with AI ‐supported AR glasses during clinical examina-
+tions may allow for immediate quantitative measurements
+and recognition of common orthopaedic ailments,
+including abnormal gait patterns, deviations from
+anatomic limb alignment, and objective limitations in
+range of motion. While these assessments have not
+been speci ﬁcally validated using clinician ‐worn vision
+systems, machine learning (ML) and deep learning
+(DL) models have shown robust performance in
+independently performing assessments of gait, limb
+alignment, and joint motion, indicating that these
+functions are readily translatable to AI ‐enabled eye-
+wear platforms [ 41, 43 ].
+The utility of AI ‐powered vision technologies also
+extends into the operating room, with integration
+already occurring in an array of practice settings
+[14, 45 ]. The bene ﬁts of wearable surgical navigation
+aids are well ‐documented, however, with further en-
+hancement through AI software, critical intraoperative
+tasks, including real ‐time measurement of anatomic
+landmarks, analysis of radiographic imaging, and lo-
+calisation of surgical instrumentation, may become
+increasingly accurate and ef ﬁcient [ 18, 20 ]. Proprietary
+medical smart glasses, such as the Vuzix M400 (Vuzix
+Corporation, Rochester, NY) and NextAR (Medacta
+International, Castel San Pietro, Switzerland) plat-
+forms, employ ML and DL algorithms to guide in-
+traoperative workﬂows that may yield shorter operative
+times, reduce ﬂuoroscopic exposure, and improve
+alignment of implanted devices [ 19, 27, 61, 64 ]. As
+these modalities become more commonly utilised as
+surgical aids, ongoing advancements in AI algorithms
+and sensor technologies are likely to enhance their
+precision and adaptability, potentially facilitating their
+extension beyond the operating room into clinical ex-
+aminations, outpatient monitoring, and personalised
+treatment planning across orthopaedic subspecialties.
+Smart examination rooms and
+AI‐facilitated clinical encounters
+An extension of AI ‐supported vision systems is the
+concept of a “smart examination room. ” In this pro-
+posed environment, orthopaedic clinic rooms would be
+ﬁtted with pressure ‐ and motion‐sensitive technologies,
+Red‐Green‐Blue‐Depth (RGB ‐D)‐capable cameras,
+and haptic and proprioceptive sensors, all of which
+would document and analyse inputs generated by the
+patient during guided movements or examination
+manoeuvres (Figure 1). Using the cumulative data from
+these devices, physicians could leverage objective
+measurements to support a clinical diagnosis, track
+recovery after surgery, or receive prompts to perform
+further targeted exams to con ﬁrm a potential diagnosis.
+Of note, ML and DL analyses of RGB ‐D video record-
+ings have been used to accurately categorise altered
+gait patterns and quantify minute limitations to active
+1902 | ARTIFICIAL INTELLIGENCE IN ORTHOPAEDICS
+
+=== PDF PAGE 3 ===
+and passive range of motion [ 9, 38, 46 ]. Similarly, DL
+has been applied to data from pressure ‐sensitive mats
+to detect subtle postural asymmetry, allowing for tar-
+geted interventions and therapy to prevent worsening
+pain and deformity [ 6]. Combining these technologies
+into a single, all ‐purpose examination environment
+could greatly improve diagnostic ef ﬁciency by reducing
+the subjectivity inherent in many orthopaedic tests.
+While this concept is in its infancy, it presents an ex-
+citing opportunity to provide more accurate, objective,
+and reproducible assessments.
+A more radical use of these technologies could
+also allow clinicians to make clinical encounters
+and diagnosis entirely virtual, with patients carrying
+out instructed movements while utilising at ‐home
+devices equipped with the requisite diagnostic soft-
+ware. While this approach may never fully replace in ‐
+person visits, it could supplement virtual encounters
+with objective data, thereby markedly improving the
+accuracy and utility of evaluations for those with
+geographic, socioeconomic, or functional limitations
+that preclude an in ‐person examination. This strategy
+has already been enacted in a limited capacity, with
+o n ee x a m p l ei n c l u d i n gt h eu s eo fM Lt oa n a l y s e
+gait patterns in postoperative patients equipped
+with wearable devices during at ‐home ambulation
+[32, 75 ]. While undoubtedly there are ﬁnancial and
+logistic barriers to more widespread implementation
+of this proposed method, it certainly carries signi ﬁ-
+cant potential for future orthopaedic practices and
+may be a catalyst for reframing the way orthopaedic
+evaluations are performed.
+Ambient intelligence and multimodal
+electronic health records
+One of the more desired implementations of AI is the
+development of tools that assist with or optimise clinical
+documentation. With the advent of digitised medical
+records, the volume of data presented to physicians,
+and subsequently the amount of time devoted to
+accurately transcribing this information, has risen ex-
+ponentially [ 3, 8, 37, 58 ]. Accordingly, over 74% of
+surveyed physicians currently report clinical docu-
+mentation as a primary source of burnout and career
+dissatisfaction [ 13, 62 ].
+The most promising solution to this crisis is the
+introduction of AI ‐powered ambient intelligence
+platforms— discrete devices equipped with natural
+language processing (NLP) software to allow auto-
+mated transcription of clinical encounters into the EHR
+with minimal input from the physician. Early imple-
+mentation of this technology has already produced
+marked improvement in clinical ef ﬁciency with several
+platforms yielding reductions to note ‐writing time, after ‐
+hours documentation, and overall encounters times —
+all of which have correlated with improved job satis-
+faction, decreased mental demand, and declining
+metrics of burnout amongst clinicians [ 2, 7, 28, 68 ].
+Furthermore, incorporation of large language models
+(LLMs) into EHR systems has demonstrated the ability
+of AI to outperform physicians when tasked with sum-
+marising and transcribing clinical text [ 31, 71, 78 ].
+Within orthopaedics, the introduction of NLP and LLM
+platforms presents immense opportunity for increasing
+the speed and accuracy of clinical documentation.
+Particularly, AI tools could be leveraged to automati-
+cally generate detailed notes, templated physical ex-
+ams, and injury ‐speciﬁc documentation with minimal
+manual input, allowing orthopaedic clinicians to devote
+more time to patient care while ensuring standardised,
+high‐quality records across clinical settings. While the
+risk of inaccurate interpretation remains a risk with the
+utilisation of such platforms, particularly in the setting of
+multi‐lingual or cross ‐cultural encounters, continued
+reﬁnement and responsible integration of these tools
+promise to increase their utility and accuracy for current
+and future physicians.
+Additionally, the adaptation of AI ‐enabled EHRs
+would allow physicians to enhance clinical documenta-
+tion by providing a more intuitive and comprehensive
+description of patient encounters. In orthopaedics spe-
+ciﬁcally, clinicians may better characterise a patient's
+unique presentation in their notes through streamlined
+inclusion of detailed photographs, video analyses, and
+sensor array inputs (Figure 2). Furthermore, AI‐powered
+EHRs could act as an assistant to clinical decision ‐
+making, prompting appropriate diagnostic orders, inter-
+disciplinary referrals, and procedural interventions based
+on data recorded throughout the encounter.
+FIGURE 1 Conceptual design for a smart clinical examination
+room. Figure created with the assistance of OpenAI's DALL·E for
+illustrative purposes.
+ARTIFICIAL INTELLIGENCE IN ORTHOPAEDICS | 1903
+
+=== PDF PAGE 4 ===
+AI‐generated patient summaries and
+visual aids
+Beyond increasing physician ef ﬁciency with documen-
+tation, the integration of AI into the EHR may also
+improve patients' comprehension of their pathologies
+and treatment plans. Speci ﬁcally, AI ‐generated sum-
+maries of clinical encounters and diagnostic results
+have illustrated greater inclusion of patient ‐friendly
+language relative to those written by clinicians, while
+being less likely to omit important information and
+requiring a fraction of the time to create [ 23, 65 ]. The
+use of AI to assist with clinical summaries and patient
+education materials has been positively associated
+with enhanced longitudinal outcomes in orthopaedics,
+making AI a promising avenue for improving quality of
+care [ 24, 29, 40, 47, 70 ].
+Alongside clinical summaries, visual teaching aids
+and communication tools have become an increasingly
+important component of patients' understanding of their
+treatment plan [ 35]. Within orthopaedics, this approach
+has been broadly bene ﬁcial, with patients reporting
+reduced levels of periprocedural anxiety and enhanced
+treatment protocol compliance when supplied with visual
+education materials [ 11, 22, 67 ]. Through further en-
+hancement of these tools with AI, patients may bene ﬁt
+from more personalised, interactive, and comprehensi-
+ble explanations of their diagnosis and treatment. For
+instance, automatically constructed three ‐dimensional
+models of the structures involved in patients' pathology
+could assist in explaining surgical approaches or tech-
+niques, while detailed AI‐generated graphics and videos
+could translate clinical documentation into easily
+understandable educational materials. Additionally, the
+c o n c e p to fa“digital twin”— a digital replica of a patient
+created by AI through the collective inputs of clinical
+history, imaging studies, and wearable sensors — has
+enabled clinicians to tailor interventions with greater
+precision and assist patients in visualising their antici-
+pated care trajectory [ 5, 25, 26, 34, 50, 51, 69, 77 ].
+Through the manipulation of such models, physicians
+can educate patients on the pathophysiology of their
+condition and better illustrate the effect of proposed
+surgical treatment options. This was demonstrated in a
+recent randomised controlled trial where AI ‐enabled
+decision aids led to improved decision quality and
+patient reported outcomes in patients with knee arthritis
+considering arthoplasty [39]. This level of education can
+improve clinical outcomes by fostering deeper patient
+engagement, aligning expectations, and encouraging
+treatment adherence, ultimately empowering patients to
+make informed decisions about their care.
+Generative medical event models
+Rapid advancements in AI modelling may soon ac-
+tualise the long ‐standing goal of precise and persona-
+lised healthcare. Generative medical event models are
+an emerging form of individualised prognosis that
+incorporate spatiotemporal analysis of clinical data-
+points in order to provide a framework of a patient's risk
+of select medical occurrences [ 72, 76]. Speciﬁcally, the
+creation of these models entails scaled pretraining with
+large volumes of clinical data to generate simulated
+timelines of probable medical events, including emer-
+gency department visits, inpatient admissions, and
+procedural interventions (Figure 3)[ 76]. When trained
+with suf ﬁciently large datasets, these models can be
+applied to produce continually evolving predictions of a
+patient's likely disease course based on their unique
+medical history and contributing biopsychosocial fac-
+tors. Accordingly, generative medical event models
+carry the potential to produce highly personalised and
+evidence‐based decision ‐making frameworks that em-
+power physicians and patients to create informed
+treatment plans and improve patient outcomes.
+Early implementation of medical event models has
+proved promising, with training on expansive medical
+databases, such as EPIC's Cosmos dataset (EPIC
+Systems, Verona, WI), enabling exceptional predictive
+efﬁcacy when applied to complex clinical data [ 72].
+Namely, Cosmos Medical Event Transformer (CoMET)
+and Cosmos AI — a family of medical event models
+within EPIC's EHR platforms — have recently demon-
+strated their ability to produce accurate and ef ﬁcient
+predictions of clinical events when trained on the more
+than 115 billion medical events contained within the
+Cosmos dataset. Speci ﬁcally, utilisation of CoMET to
+predict anticipated medical encounters, disease‐speciﬁc
+outcomes, and plausible clinical diagnoses markedly
+outperformed similarly‐tasked models across an array of
+FIGURE 2 Future electronic health record (EHR) concept with
+embedded videos, graphic/tabular representations of clinical data
+(i.e., changes to ROM over time), and automatically generated
+comparisons of current and previous imaging studies. Figure created
+with the assistance of OpenAI's DALL·E for illustrative purposes.
+1904 | ARTIFICIAL INTELLIGENCE IN ORTHOPAEDICS
+
+=== PDF PAGE 5 ===
+distinct pathologies [ 72]. While the full potential of
+these models remains to be seen, these early ﬁndings
+suggest that similar models may soon revolutionise a
+physician's decision ‐making framework, and change
+how patients are counselled and monitored, thereby
+improving appropriate selection of surgical candidates
+and enabling preemptive interventions.
+Challenges and limitations
+Despite the potential bene ﬁts of AI to clinical practice,
+there are a number of limitations that currently restrict
+its large ‐scale implementation. Primary among these
+are concerns about patient safety and privacy, partic-
+ularly as large datasets used to train AI models remain
+vulnerable to re ‐identiﬁcation of anonymized patient
+data when cross ‐referenced with external sources
+[33, 44, 54 ]. Additionally, the integrity of AI models is
+dependent on the data they are trained on, allowing
+imbalanced or incomplete datasets to introduce algo-
+rithmic bias into decision ‐making models that in ﬂuence
+aspects of clinical care [ 15, 17, 36, 48, 53, 73 ]. These
+issues are compounded by questions surrounding
+accountability when adverse events occur, with uncer-
+tainty toward whether responsibility for AI ‐guided deci-
+sions lies with developers, deploying institutions, or
+clinicians [10, 16, 66]. Furthermore, the absence of clear
+regulatory frameworks and reimbursement models for
+AI‐enabled tools limits enthusiasm for widespread inte-
+gration [ 1, 56, 57 ]. Collectively, these challenges un-
+derscore the need for a transparent and responsible
+framework for AI advancement, one where physicians
+maintain clinical autonomy by using AI as a supportive,
+rather than a directive, tool (T able 1).
+Speciﬁc to the applications explored above, techni-
+cal, and ﬁnancial barriers currently limit meaningful
+incorporation into clinical practice. For example, adop-
+tion of comprehensive, AI ‐supported examinations
+rooms would require institutions to set aside or remodel
+existing spaces to allow for installation of an array of
+advanced diagnostic devices — each of which would
+incur considerable ﬁnancial investments and require
+specialised personnel and data storage facilities for
+ongoing maintenance and software optimisation. Simi-
+larly, many of the platforms examined in this text would
+require ongoing technical advancement and access to
+robust training data sets to be able to effectively
+accomplish accurate and generalisable clinical analysis
+across diverse patient populations. Additionally, as
+many of these proposed applications are in the early
+stages of their development, an extensive process for
+achieving clinical approval and establishing appropriate
+regulations would likely be required before they become
+readily available for use. Consequently, without sub-
+stantial institutional investment and coordinated over-
+sight, the widespread integration of these technologies
+into orthopaedic practices remains a distant goal.
+FIGURE 3 Example of an orthopaedic generative medical event model portraying a patient with a ﬁrst time anterior cruciate ligament (ACL)
+rupture and lateral meniscus tear. Generative medical event models characterise a patient and simulate future outcomes based on large
+amounts of training data.
+ARTIFICIAL INTELLIGENCE IN ORTHOPAEDICS | 1905
+
+=== PDF PAGE 6 ===
+CONCLUSIONS
+Collectively, AI‐enabled technologies present enormous
+potential for rede ﬁning the delivery of orthopaedic care.
+AI‐augmented vision systems will increase the breadth
+of information readily available to clinicians, whereas
+smart exam rooms and automated clinical summaries
+may soon streamline clinical work ﬂows to decrease
+administrative burden and allow more time for direct
+patient care. Personalised education materials and
+visual aids may improve patient understanding and
+compliance, with the aim of optimising patient outcomes.
+Generative medical/orthopaedic event models may soon
+alter decision ‐making heuristics and improve patient
+counselling. While the widespread adaptation of AI into
+clinical practices is not without limitations, physicians will
+likely come to share an increasingly symbiotic relation-
+ship with these platforms throughout their continued
+evolution. As such, it is imperative that current and
+future orthopaedic practitioners become well ‐versed in
+harnessing the capabilities of AI and continue to identify
+new avenues for such technologies to bene ﬁt clinicians
+and patients alike.
+AUTHOR CONTRIBUTIONS
+All listed authors have contributed substantially to this
+work: Alexander Bouterse, James A. Pruneski, Felix C.
+Oettl, and Balint Zsidai performed literature review, Alex-
+ander Bouterse performed primary manuscript prepara-
+tion. Editing and ﬁnal manuscript preparation was
+performed by James A. Pruneski, Felix C. Oettl, Balint
+Zsidai, Michael T . Hirschmann and Kristian Samuelsson.
+All authors read and approved the ﬁnal manuscript.
+AFFILIATIONS
+1Department of Orthopaedic Surgery, Tripler Army Medical Center, Honolulu,
+Hawaii, USA
+2Department of Orthopaedic Surgery, Balgrist University Hospital, University of
+Zürich, Zurich, Switzerland
+3Sahlgrenska Sports Medicine Center, Gothenburg, Sweden
+4Department of Orthopaedics, Institute of Clinical Sciences, Sahlgrenska
+Academy, University of Gothenburg, Gothenburg, Sweden
+5Department of Orthopedics, Skåne University Hospital, Malmö/Lund, Sweden
+6Department of Orthopaedic Surgery, Universitymedicine Rostock, Rostock,
+Germany
+7Department of Orthopaedic and Trauma Surgery, Malteser Waldkrankenhaus
+Erlangen, Erlangen, Germany
+8Fondazione Policlinico Universitario Campus Bio ‐Medico, Via Alvaro del
+Portillo, 200, Roma, Italy
+9Research Unit of Orthopaedic and Trauma Surgery, Department of Medicine
+and Surgery, Università Campus Bio ‐Medico di Roma, Via Alvaro del Portillo,
+21, Roma, Italy
+10Department of Orthopaedic Surgery, Centre Hospitalier de Luxembourg,
+Luxembourg City, Luxembourg
+11Kantonsspital Baselland, University Department of Orthopaedic Surgery and
+Traumatology, Bruderholz, Switzerland
+12University of Basel, Basel, Switzerland
+13Department for Orthopaedics, Sahlgrenska University Hospital, Mölndal, Sweden
+ETHICS STATEMENT
+None declared.
+CONFLICT OF INTEREST STATEMENT
+KS is member of the Board of Directors of Getinge AB
+(publ) and medtech advisor to Carl Bennet AB. MTH is
+the Editor ‐in‐Chief of KSSTA, and a consultant for
+Medacta, Symbios and Depuy Synthes.
+DATA AVAILABILITY STATEMENT
+Data sharing not applicable to this article as no data-
+sets were generated or analysed.
+ORCID
+Alexander Bouterse https://orcid.org/0000-0001-
+5068-6635
+Umile Giuseppe Longo https://orcid.org/0000-0003-
+4063-9821
+Kristian Samuelsson https://orcid.org/0000-0001-
+5383-3370
+REFERENCES
+1. Abramoff MD, Roehrenbeck C, Trujillo S, Goldstein J,
+Graves AS, Repka MX, et al. A reimbursement framework for
+artiﬁcial intelligence in healthcare. NPJ Digit Med. 2022;5:72.
+2. Albrecht M, Shanks D, Shah T, Hudson T, Thompson J,
+Filardi T,et al. Enhancing clinical documentation with ambient
+artiﬁcial intelligence: a quality improvement survey assessing
+clinician perspectives on work burden, burnout, and job satis-
+faction. JAMIA Open. 2025;8:ooaf013.
+TABLE 1 Fact box.
+Integration of arti ﬁcial intelligence (A)I ‐augmented vision systems
+may increase the breadth of information readily available to
+clinicians, allowing for objective assessments of gait patterns,
+deviations in limb alignment, and limitations to range of motion.
+Smart examination rooms equipped with pressure ‐ and motion ‐
+sensitive technologies could enable physicians to leverage
+objective measurements to diagnose orthopaedic ailments and
+may improve the accuracy and utility of virtual encounters.
+Clinical summaries and patient messaging generated by AI
+platforms may soon streamline clinical work ﬂows to decrease
+administrative burden and allow more time for direct
+patient care.
+Personalised education materials and visual aids, such as digital
+twin models, may improve patients' understanding of their unique
+pathology and enhance compliance with proposed treatment
+pathways.
+Generative event models may soon alter decision ‐making
+heuristics, provide anticipated medical trajectories, and improve
+individualised counselling in orthopaedic practices.
+Physicians will likely come to share an increasingly symbiotic
+relationship with AI platforms, making it imperative that current and
+future orthopaedic practitioners become well ‐versed in harnessing
+the capabilities of AI.
+1906 | ARTIFICIAL INTELLIGENCE IN ORTHOPAEDICS
+
+=== PDF PAGE 7 ===
+3. Arndt BG, Beasley JW, Watkinson MD, T emte JL, Tuan WJ,
+Sinsky CA,et al. T ethered to the EHR: primary care physician
+workload assessment using EHR event log data and time ‐
+motion observations. Ann Fam Med. 2017;15:419 – 26.
+4. American Medical Association. AMA Augmented Intelligence
+Research– Physician Sentiments Around the Use of AI in Health
+Care: Motivations, Opportunities, Risks, and Use Cases ‐Shifts
+from 2023 to 2024. American Medical Association; 2025.
+5. Aubert K, Germaneau A, Rochette M, Ye W, Severyns M, Billot M,
+et al. Development of digital twins to optimize trauma surgery and
+postoperative management. a case study focusing on tibial plateau
+fracture. Front Bioeng Biotechnol. 2021;9:722275.
+6. Azurmendi I, Gonzalez M, García G, Zulueta E, Martín E. Deep
+learning‐based postural asymmetry detection through pressure
+mat. Applied Sciences. 2024;14:12050.
+7. Balloch J, Sridharan S, Oldham G, Wray J, Gough P,
+Robinson R,et al. Corrigendum to ‘Use of an ambient arti ﬁcial
+intelligence tool to improve quality of clinical documentation ’
+Future Healthcare Journal Volume 11, Issue 3, September
+2024, 100157. Fut Healthcare J. 2025;12:100247.
+8. Baumann LA, Baker J, Elshaug AG. The impact of electronic
+health record systems on clinical documentation times: a sys-
+tematic review. Health Policy. 2018;122:827 – 36.
+9. Berhouet J, Samargandi R. Emerging innovations in pre-
+operative planning and motion analysis in orthopedic surgery.
+Diagnostics. 2024;14:1321.
+10. Bottomley D, Thaldar D. Liability for harm caused by AI in health-
+care: an overview of the core legal concepts. Front Pharmacol.
+2023;14:1297353.
+11. Bozic KJ, Chenok KE, Schindel J, Chan V, Huddleston JI,
+Braddock C, et al. Patient, surgeon, and healthcare purchaser
+views on the use of decision and communication aids in ortho-
+paedic surgery: a mixed methods study. BMC Health Serv Res.
+2014;14:366.
+12. Brennan M, Puri S, Ozrazgat ‐Baslanti T, Feng Z, Ruppert M,
+Hashemighouchani H,et al. Comparing clinical judgment with
+the MySurgeryRisk algorithm for preoperative risk assessment:
+a pilot usability study. Surgery. 2019;165:1035 – 45.
+13. Budd J. Burnout related to electronic health record use
+in primary care. J Primary Care Commun Health. 2023;
+14:21501319231166921.
+14. Casari FA, Navab N, Hruby LA, Kriechling P, Nakamura R,
+T ori R,et al. Augmented reality in orthopedic surgery is emer-
+ging from proof of concept towards clinical studies: a literature
+review explaining the technology and current state of the art.
+Curr Rev Musculoskelet Med. 2021;14:192 – 203.
+15. Celi LA, Cellini J, Charpignon ML, Dee EC, Dernoncourt F,
+Eber R,et al. Sources of bias in arti ﬁcial intelligence that per-
+petuate healthcare disparities ‐a global review. PLOS Digital
+Health. 2022;1:e0000022.
+16. Cestonaro C, Delicati A, Marcante B, Caenazzo L, T ozzo P.
+Deﬁning medical liability when arti ﬁcial intelligence is applied on
+diagnostic algorithms: a systematic review. Front Med. 2023;
+10:1305756.
+17. Chen F, Wang L, Hong J, Jiang J, Zhou L. Unmasking bias in
+artiﬁcial intelligence: a systematic review of bias detection and
+mitigation strategies in electronic health record ‐based models.
+J Am Med Inform Assoc. 2024;31:1172 – 83.
+18. Chen H. Application progress of arti ﬁcial intelligence and aug-
+mented reality in orthopaedic arthroscopy surgery. J Orthop
+Surg Res. 2023;18:775.
+19. Chimenti PC, Mitten DJ. Google glass as an alternative to
+standard ﬂuoroscopic visualization for percutaneous ﬁxation of
+hand fractures: a pilot study. Plast Reconstr Surg. 2015;136:
+328– 30.
+20. Chiou SY, Liu LS, Lee CW, Kim DH, Al ‐Masni MA, Liu HL,et al.
+Augmented reality surgical navigation system integrated with
+deep learning. Bioengineering. 2023;10:617.
+21. Chong PL, Vaigeshwari V, Mohammed Reyasudin BK,
+Noor Hidayah RA, T atchanaamoorti P, Yeow JA,et al. Integrat-
+ing arti ﬁcial intelligence in healthcare: applications, challenges,
+and future directions. Future Sci OA. 2025;11:2527505.
+22. Cohen SM, Baimas ‐George M, Ponce C, Chen N, Bain PA,
+Ganske IM,et al. Is a picture worth a thousand words? a scoping
+review of the impact of visual aids on patients undergoing sur-
+gery. J Surg Educ. 2024;81:1276 – 92.
+23. Cork SC, Hopcroft K. Evaluating ChatGPT for converting clinic
+letters into patient‐friendly language: a quantitative study. BJGP
+Open. 2025;9:BJGPO.2024.0300.
+24. Cosic F, Kimmel L, Edwards E. Health literacy in orthopaedic
+trauma patients. J Orthop Trauma. 2017;31:e90 – 5.
+25. Dean MC, Oeding JF, Diniz P, Seil R, Samuelsson K. Lever-
+aging digital twins for improved orthopaedic evaluation and
+treatment. J Exp Orthop. 2024;11:e70084.
+26. Diniz P, Grimm B, Garcia F, Fayad J, Ley C, Mouton C,et al.
+Digital twin systems for musculoskeletal applications: a current
+concepts review. Knee Surg Sports Traumatol Arthrosc. 2025;
+33:1892– 910.
+27. Fucentese SF, Koch PP. A novel augmented reality ‐based
+surgical guidance system for total knee arthroplasty. Arch
+Orthop Trauma Surg. 2021;141:2227 – 33.
+28. Galloway JL, Munroe D, Vohra ‐Khullar PD, Holland C,
+Solis MA, Moore MA,et al. Impact of an arti ﬁcial intelligence ‐
+based solution on clinicians' clinical documentation experience:
+initial ﬁndings using ambient listening technology. J Gen Intern
+Med. 2024;39:2625 – 7.
+29. Goff AJ, De Oliveira Silva D, Merolli M, Bell EC, Crossley KM,
+Barton CJ. Patient education improves pain and function in
+people with knee osteoarthritis with better effects when combined
+with exercise therapy: a systematic review. J Physiotherapy.
+2021;67:177– 89.
+30. Gomez ‐Cabello CA, Borna S, Pressman S, Haider SA,
+Haider CR, Forte AJ. Arti ﬁcial‐intelligence‐based clinical deci-
+sion support systems in primary care: a scoping review of cur-
+rent clinical implementations. Eur J Investig Health Psychol
+Educ. 2024;14:685 – 98.
+31. Guo YWJ, Zheng K, Perret D, Pandita D, T am S Ambient Lis-
+tening in Clinical Practice: Evaluating EPIC Signal Data Before
+and After Implementation and Its Impact on Physician Work-
+load. World Congress on Health and Biomedical Informatics;
+2025; T aipei, T aiwan.
+32. Gurchiek RD, Choquette RH, Beynnon BD, Slauterbeck JR,
+T ourville TW, T oth MJ,et al. Open ‐Source Remote Gait Analy-
+sis: A Post ‐Surgery Patient Monitoring Application. Sci Rep.
+2019;9:17966.
+33. Hauswaldt J, Demmer I, Heinemann S, Himmel W, Hummers E,
+Pung J,et al. Das Risiko von Re ‐Identiﬁzierung bei der Aus-
+wertung medizinischer Routinedaten – Kritische Bewertung und
+Lösungsansätze. Z Evid Fortbild Qual Gesundhwes. 2019;149:
+22– 31.
+34. Hein J, Giraud F, Calvet L, Schwarz A, Cavalcanti NA,
+Prokudin S, et al. Creating a digital twin of spinal surgery:
+A proof of concept. Paper presented at: Proceedings of
+the IEEE/CVF conference on co mputer vision and pattern
+recognition 2024.
+35. Hoonakker JD, Adeline ‐Duﬂot F, Orcel V, Grudzinski ML,
+Cognet M, Renard V. Use of visual aids in general practice
+consultations: A questionnaire ‐based survey. PEC Innovation.
+2023;2:100159.
+36. Hussain SA, Bresnahan M, Zhuang J. The bias algorithm: how
+AI in healthcare exacerbates ethnic and racial disparities ‐ a
+scoping review. Ethn Health. 2025;30:197 – 214.
+37. Iscoe MS, Venkatesh AK, Holland ML, Krumholz HM,
+Sheares KD, Melnick ER. Benchmarking Emergency Physician
+EHR Time per Encounter Based on Patient and Clinical Factors.
+JAMA Network Open. 2024;7:e2427389.
+ARTIFICIAL INTELLIGENCE IN ORTHOPAEDICS | 1907
+
+=== PDF PAGE 8 ===
+38. Iseki C, Hayasaka T, Yanagawa H, Komoriya Y, Kondo T, Hoshi M,
+et al. Arti ﬁcial Intelligence Distinguishes Pathological Gait: The
+Analysis of Markerless Motion Capture Gait Data Acquired by an
+iOS Application (TDPT‐GT). Sensors. 2023;23:6217.
+39. Jayakumar P, Rathouz PJ, Lin E, Trutner Z, Uhler LM,
+Andrawis J,et al. Shared decision making using digital twins in
+knee osteoarthritis care: a randomized clinical trial of an AI ‐
+enabled decision aid versus education alone on decision qual-
+ity, physical function, and user experience. EClinicalMedicine.
+2025;89:103545.
+40. Kadakia RJ, T sahakis JM, Issar NM, Archer KR, Jahangir AA,
+Sethi MK,et al. Health literacy in an orthopedic trauma patient
+population: a cross ‐sectional survey of patient comprehension.
+J Orthop Trauma. 2013;27:467 – 71.
+41. Khera P, Kumar N. Role of machine learning in gait analysis: a
+review. J Med Eng T echnol. 2020;44:441 – 67.
+42. Khosravi M, Zare Z, Mojtabaeian SM, Izadi R. Arti ﬁcial Intelli-
+gence and Decision ‐Making in Healthcare: A Thematic Analysis
+of a Systematic Review of Reviews. Health Serv Res Manag
+Epidemiol. 2024;11:23333928241234863.
+43. Kim SE, Nam JW, Kim JI, Kim JK, Ro DH. Enhanced deep
+learning model enables accurate alignment measurement
+across diverse institutional imaging protocols. Knee Surg Relat
+Res. 2024;36:4.
+44. Konnoth C. AI and data protection law in health. In: Solaiman B,
+Cohen IGResearch Handbook on Health, AI and the Law.
+Cheltenham, UK: ElgarOnline; 2024. p. 111 – 29.
+45. Lex JR, Koucheki R, T oor J, Backstein DJ. Clinical applications
+of augmented reality in orthopaedic surgery: a comprehensive
+narrative review. Int Orthop. 2023;47:375 – 91.
+46. Ma Y, Liu D, Cai L. Deep learning ‐based upper limb functional
+assessment using a single kinect v2 sensor. Sensors. 2020;20:
+1903.
+47. Majid N, Lee S, Plummer V. The effectiveness of orthopedic
+patient education in improving patient outcomes: a systematic
+review protocol. JBI Database Syst Rev Implement Reps. 2015;
+13:122– 33.
+48. McCradden MD, Joshi S, Anderson JA, Mazwi M, Goldenberg A,
+Zlotnik Shaul R. Patient safety and quality improvement: Ethical
+principles for a regulatory approach to bias in healthcare machine
+learning. J Am Med Inform Assoc. 2020;27:2024–7.
+49. McGenity C, Clarke EL, Jennings C, Matthews G, Cartlidge C,
+Freduah‐Agyemang H,et al. Arti ﬁcial intelligence in digital
+pathology: a systematic review and meta ‐analysis of diagnostic
+test accuracy. NPJ Digit Med. 2024;7:114.
+50. Michaud F, Luaces A, Mouzo F, Cuadrado J. Use of patellofe-
+moral digital twins for patellar tracking and treatment prediction:
+comparison of 3D models and contact detection algorithms.
+Front Bioeng Biotechnol. 2024;12:1347720.
+51. Montgomery L, Willing R, Lanting B. Virtual joint motion simu-
+lator accurately predicts effects of femoral component mala-
+lignment during TKA. Bioengineering. 2023;10:503.
+52. Nong P, Adler ‐Milstein J, Apathy NC, Holmgren AJ, Everson J.
+Current use and evaluation of arti ﬁcial intelligence and predic-
+tive models in US hospitals. Health Aff. 2025;44:90 – 8.
+53. Norori N, Hu Q, Aellen FM, Faraci FD, Tzovara A. Addressing
+bias in big data and AI for health care: a call for open science.
+Patterns. 2021;2:100347.
+54. Olatunji IE, Rauch J, Katzensteiner M, Khosla M. A review of
+anonymization for healthcare data. Big Data. 2024;12:538 – 55.
+55. Ouanes K, Farhah N. Effectiveness of arti ﬁcial intelligence (AI)
+in clinical decision support systems and care delivery. J Med
+Syst. 2024;48:74.
+56. Palaniappan K, Lin EYT, Vogel S. Global regulatory frameworks
+for the use of arti ﬁcial intelligence (AI) in the healthcare services
+sector. Healthcare. 2024;12:562.
+57. Parikh RB, Helmchen LA. Paying for arti ﬁcial intelligence in
+medicine. NPJ Digit Med. 2022;5:63.
+58. Poissant L. The impact of electronic health records on time
+efﬁciency of physicians and nurses: a systematic review. J Am
+Med Inform Assoc. 2005;12:505 – 16.
+59. Pruneski JA, Pareek A, Kunze KN, Martin RK, Karlsson J,
+Oeding JF,et al. Supervised machine learning and associated
+algorithms: applications in orthopedic surgery. Knee Surg
+Sports Traumatol Arthrosc. 2023;31:1196 – 202.
+60. Ramkumar PN, Pang M, Polisetty T, Helm JM, Karnuta JM.
+Meaningless applications and misguided methodologies in
+artiﬁcial intelligence ‐related orthopaedic research propagates
+hype over hope. Arthroscopy. 2022;38:2761 – 6.
+61. Rojas JT, Jost B, Zipeto C, Budassi P, Zumstein MA. Glenoid
+component placement in reverse shoulder arthroplasty assisted
+with augmented reality through a head ‐mounted display leads
+to low deviation between planned and postoperative parame-
+ters. J Shoulder Elbow Surg. 2023;32:e587 – 96.
+62. Rotenstein LS, T orre M, Ramos MA, Rosales RC, Guille C,
+Sen S,et al. Prevalence of burnout among physicians: a sys-
+tematic review. JAMA. 2018;320:1131 – 50.
+63. Rupp MC, Moser LB, Hess S, Angele P, Aurich M, Dyrna F,et al.
+Orthopaedic surgeons display a positive outlook towards artiﬁcial
+intelligence: a survey among members of the AGA Society for
+Arthroscopy and Joint Surgery. J Exp Orthop. 2024;11:e12080.
+64. Sabatini L, Ascani D, Vezza D, Massè A, Cacciola G. Novel
+surgical technique for total knee arthroplasty integrating kine-
+matic alignment and real ‐time elongation of the ligaments using
+the NextAR system. J Pers Med. 2024;14:794.
+65. Shemtob L, Nouri A, Harvey ‐Sullivan A, Qiu CS, Martin J,
+Martin M,et al. Comparing arti ﬁcial intelligence ‐ vs clinician ‐
+authored summaries of simulated primary care electronic health
+records. JAMIA Open. 2025;8:ooaf082.
+66. Smith H, Birchley G, Ives J. Arti ﬁcial intelligence in clinical
+decision‐making: Rethinking personal moral responsibility.
+Bioethics. 2024;38:78 – 86.
+67. Stewart JA, Wood L, Wiener J, Kennedy GD, Chu DI,
+Lancaster JR,et al. Visual teaching aids improve patient under-
+standing and reduce anxiety prior to a colectomy. Am J Surg. 2021;
+222:780–5.
+68. Stults CD, Deng S, Martinez MC, Wilcox J, Szwerinski N, Chen KH,
+et al. Evaluation of an ambient artiﬁcial intelligence documentation
+platform for clinicians. JAMA Netwk Open. 2025;8:e258614.
+69. Sun T, Wang J, Suo M, Liu X, Huang H, Zhang J,et al. The digital
+twin: a potential solution for the personalized diagnosis and
+treatment of musculoskeletal system diseases. Bioengineering.
+2023;10:627.
+70. T sahakis JM, Issar NM, Kadakia RJ, Archer KR, Barzyk T,
+Mir HR. Health literacy in an orthopaedic trauma patient popu-
+lation: improving patient comprehension with informational
+intervention. J Orthop Trauma. 2014;28:e75 – 9.
+71. Van Veen D, Van Uden C, Blankemeier L, Delbrouck JB, Aali A,
+Bluethgen C,et al. Adapted large language models can out-
+perform medical experts in clinical text summarization. Nature
+Med. 2024;30:1134– 42.
+72. Waxler S, Blazek P, White D, Sneider D, Chung K,
+Nagarathnam M, et al. Generative medical event models
+improve with scale. arXiv preprint arXiv. 2025;1:2508.12104.
+73. Winkler PW, Zsidai B, Hamrin Senorski E, Pruneski JA,
+Hirschmann MT, Ley C,et al. A practical guide to the imple-
+mentation of AI in orthopaedic research ‐Part 7: Risks, limita-
+tions, safety and veri ﬁcation of medical AI systems. J Exp
+Orthop. 2025;12:e70247.
+74. Younis HA, Eisa TAE, Nasser M, Sahib TM, Noor AA,
+Alyasiri OM,et al. A systematic review and meta ‐analysis of
+artiﬁcial intelligence tools in medicine and healthcare: applica-
+tions, considerations, limitations, motivation and challenges.
+Diagnostics. 2024;14:109.
+75. Youssef Y, De Wet D, Back DA, Scherer J. Digitalization in
+orthopaedics: a narrative review. Front Surg. 2024;10:1325423.
+1908 | ARTIFICIAL INTELLIGENCE IN ORTHOPAEDICS
+
+=== PDF PAGE 9 ===
+76. Zhang S, Liu Q, Usuyama N, Wong C, Naumann T, Poon H.
+Exploring scaling laws for EHR foundation models. arXiv
+preprint arXiv. 2025;1:2505.22964.
+77. Zsidai B, Hilkert AS, Kaarre J, Narup E, Senorski EH, Grassi A,
+et al. A practical guide to the implementation of AI in ortho-
+paedic research ‐ part 1: opportunities in clinical application and
+overcoming existing challenges. J Exp Orthop. 2023;10:117.
+78. Zsidai B, Kaarre J, Hilkert AS, Narup E, Senorski EH, Grassi A,
+et al. Accelerated evidence synthesis in orthopaedics ‐the roles
+of natural language processing, expert annotation and large
+language models. J Exp Orthop. 2023;10:99.
+How to cite this article: Bouterse A, Pruneski
+JA, Oettl FC, Zsidai B, Tischer T, Longo UG,
+et al. Arti ﬁcial intelligence in orthopaedics:
+enhanced examinations, ambient intelligence
+and the future of clinical practice. Knee Surg
+Sports Traumatol Arthrosc. 2026;34:1901 – 9.
+https://doi.org/10.1002/ksa.70339
+ARTIFICIAL INTELLIGENCE IN ORTHOPAEDICS | 1909

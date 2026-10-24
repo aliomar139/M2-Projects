@@ -1,0 +1,1037 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          17
+        ]
+      ],
+      "date-time": "2026-10-17T03:05:06Z",
+      "timestamp": 1792206306126,
+      "version": "4.4.0"
+    },
+    "reference-count": 85,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2018,
+              12,
+              6
+            ]
+          ],
+          "date-time": "2018-12-06T00:00:00Z",
+          "timestamp": 1544054400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nat Rev Rheumatol"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1038/s41584-018-0130-5",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          6
+        ]
+      ],
+      "date-time": "2018-12-06T10:54:55Z",
+      "timestamp": 1544093695000
+    },
+    "page": "49-60",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 177,
+    "title": [
+      "Machine-learning-based patient-specific prediction models for knee osteoarthritis"
+    ],
+    "prefix": "10.1038",
+    "volume": "15",
+    "author": [
+      {
+        "given": "Afshin",
+        "family": "Jamshidi",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jean-Pierre",
+        "family": "Pelletier",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Johanne",
+        "family": "Martel-Pelletier",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          6
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "130_CR1",
+        "unstructured": "Arden, N. & Cooper, C.in Osteoarthritis Handbook (Taylor & Francis, London, 2006)."
+      },
+      {
+        "key": "130_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "90",
+        "DOI": "10.1053/jars.2002.36511",
+        "volume": "18",
+        "author": "DA McGuire",
+        "year": "2002",
+        "unstructured": "McGuire, D. A., Carter, T. R. & Shelton, W. R. Complex knee reconstruction: osteotomies, ligament reconstruction, transplants, and cartilage treatment options. Arthroscopy 18, 90–103 (2002).",
+        "journal-title": "Arthroscopy"
+      },
+      {
+        "key": "130_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "d1407",
+        "DOI": "10.1136/bmj.d1407",
+        "volume": "342",
+        "author": "C Cooper",
+        "year": "2011",
+        "unstructured": "Cooper, C. & Arden, N. K. Excess mortality in osteoarthritis. BMJ 342, d1407 (2011).",
+        "journal-title": "BMJ"
+      },
+      {
+        "key": "130_CR4",
+        "first-page": "S120",
+        "volume": "26",
+        "author": "MC Hochberg",
+        "year": "2008",
+        "unstructured": "Hochberg, M. C. Mortality in osteoarthritis. Clin. Exp. Rheumatol 26, S120–S124 (2008).",
+        "journal-title": "Clin. Exp. Rheumatol"
+      },
+      {
+        "key": "130_CR5",
+        "first-page": "S230",
+        "volume": "15",
+        "author": "R Bitton",
+        "year": "2009",
+        "unstructured": "Bitton, R. The economic burden of osteoarthritis. Am. J. Manag. Care 15, S230–S235 (2009).",
+        "journal-title": "Am. J. Manag. Care"
+      },
+      {
+        "key": "130_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "1659",
+        "DOI": "10.1136/annrheumdis-2013-203355",
+        "volume": "73",
+        "author": "D Prieto-Alhambra",
+        "year": "2014",
+        "unstructured": "Prieto-Alhambra, D. et al. Incidence and risk factors for clinically diagnosed knee, hip and hand osteoarthritis: influences of age, gender and osteoarthritis affecting other joints. Ann. Rheum. Dis. 73, 1659–1664 (2014).",
+        "journal-title": "Ann. Rheum. Dis."
+      },
+      {
+        "key": "130_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "16072",
+        "DOI": "10.1038/nrdp.2016.72",
+        "volume": "2",
+        "author": "J Martel-Pelletier",
+        "year": "2016",
+        "unstructured": "Martel-Pelletier, J. et al. Osteoarthritis. Nat. Rev. Dis. Primers 2, 16072 (2016).",
+        "journal-title": "Nat. Rev. Dis. Primers"
+      },
+      {
+        "key": "130_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "24",
+        "DOI": "10.1016/j.joca.2009.08.010",
+        "volume": "18",
+        "author": "M Blagojevic",
+        "year": "2010",
+        "unstructured": "Blagojevic, M., Jinks, C., Jeffery, A. & Jordan, K. P. Risk factors for onset of osteoarthritis of the knee in older adults: a systematic review and meta-analysis. Osteoarthritis Cartilage 18, 24–33 (2010).",
+        "journal-title": "Osteoarthritis Cartilage"
+      },
+      {
+        "key": "130_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1016/j.joca.2009.07.013",
+        "volume": "18",
+        "author": "W Zhang",
+        "year": "2010",
+        "unstructured": "Zhang, W. Risk factors of knee osteoarthritis — excellent evidence but little has been done. Osteoarthritis Cartilage 18, 1–2 (2010).",
+        "journal-title": "Osteoarthritis Cartilage"
+      },
+      {
+        "key": "130_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "829",
+        "DOI": "10.1016/j.joca.2011.02.016",
+        "volume": "19",
+        "author": "DF McWilliams",
+        "year": "2011",
+        "unstructured": "McWilliams, D. F., Leeb, B. F., Muthuri, S. G., Doherty, M. & Zhang, W. Occupational risk factors for osteoarthritis of the knee: a meta-analysis. Osteoarthritis Cartilage 19, 829–839 (2011).",
+        "journal-title": "Osteoarthritis Cartilage"
+      },
+      {
+        "key": "130_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "R21",
+        "DOI": "10.1186/ar1875",
+        "volume": "8",
+        "author": "JP Raynauld",
+        "year": "2006",
+        "unstructured": "Raynauld, J. P. et al. Long term evaluation of disease progression through the quantitative magnetic resonance imaging of symptomatic knee osteoarthritis patients: correlation with clinical symptoms and radiographic changes. Arthritis Res. Ther. 8, R21 (2006).",
+        "journal-title": "Arthritis Res. Ther."
+      },
+      {
+        "key": "130_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "1968",
+        "DOI": "10.1001/archinternmed.2010.391",
+        "volume": "170",
+        "author": "DH Solomon",
+        "year": "2010",
+        "unstructured": "Solomon, D. H. et al. The comparative safety of analgesics in older adults with arthritis. Arch. Intern. Med. 170, 1968–1978 (2010).",
+        "journal-title": "Arch. Intern. Med."
+      },
+      {
+        "key": "130_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "255",
+        "DOI": "10.1038/498255a",
+        "volume": "498",
+        "author": "V Marx",
+        "year": "2013",
+        "unstructured": "Marx, V. Biology: the big challenges of big data. Nature 498, 255–260 (2013).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "130_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "2575",
+        "DOI": "10.1091/mbc.E13-12-0756",
+        "volume": "26",
+        "author": "K Dolinski",
+        "year": "2015",
+        "unstructured": "Dolinski, K. & Troyanskaya, O. G. Implications of big data for cell biology. Mol. Biol. Cell 26, 2575–2578 (2015).",
+        "journal-title": "Mol. Biol. Cell"
+      },
+      {
+        "key": "130_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "263",
+        "DOI": "10.1007/s10549-017-4247-z",
+        "volume": "164",
+        "author": "JA Cintolo-Gonzalez",
+        "year": "2017",
+        "unstructured": "Cintolo-Gonzalez, J. A. et al. Breast cancer risk models: a comprehensive overview of existing models, validation, and clinical applications. Breast Cancer Res. Treat. 164, 263–284 (2017).",
+        "journal-title": "Breast Cancer Res. Treat."
+      },
+      {
+        "key": "130_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1016/j.eswa.2016.11.006",
+        "volume": "70",
+        "author": "G Cosma",
+        "year": "2017",
+        "unstructured": "Cosma, G., Brown, D., Archer, M., Khan, M. & Pockley, A. G. A survey on computational intelligence approaches for predictive modeling in prostate cancer. Expert Syst. Appl. 70, 1–19 (2017).",
+        "journal-title": "Expert Syst. Appl."
+      },
+      {
+        "key": "130_CR17",
+        "unstructured": "Fast and Secure protocol — FASP (Aspera, Inc., Emeryville, CA, USA)."
+      },
+      {
+        "key": "130_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "1599",
+        "DOI": "10.1136/ard.2011.149807",
+        "volume": "70",
+        "author": "W Zhang",
+        "year": "2011",
+        "unstructured": "Zhang, W. et al. Nottingham knee osteoarthritis risk prediction models. Ann. Rheum. Dis. 70, 1599–1604 (2011).",
+        "journal-title": "Ann. Rheum. Dis."
+      },
+      {
+        "key": "130_CR19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12891-015-0771-3",
+        "volume": "16",
+        "author": "E Losina",
+        "year": "2015",
+        "unstructured": "Losina, E., Klara, K., Michl, G. L., Collins, J. E. & Katz, J. N. Development and feasibility of a personalized, interactive risk calculator for knee osteoarthritis. BMC Musculoskelet. Disord. 16, 312 (2015).",
+        "journal-title": "BMC Musculoskelet. Disord."
+      },
+      {
+        "key": "130_CR20",
+        "first-page": "788",
+        "volume": "2008",
+        "author": "EW Watt",
+        "year": "2008",
+        "unstructured": "Watt, E. W. & Bui, A. A. Evaluation of a dynamic Bayesian belief network to predict osteoarthritic knee pain using data from the osteoarthritis initiative. AMIA Annu. Symp. Proc. 2008, 788–792 (2008).",
+        "journal-title": "AMIA Annu. Symp. Proc."
+      },
+      {
+        "key": "130_CR21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0148724",
+        "volume": "11",
+        "author": "TK Yoo",
+        "year": "2016",
+        "unstructured": "Yoo, T. K., Kim, D. W., Choi, S. B., Oh, E. & Park, J. S. Simple scoring system and artificial neural network for knee osteoarthritis risk prediction: a cross-sectional study. PLoS ONE 11, e0148724 (2016).",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "key": "130_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "2014",
+        "DOI": "10.1016/j.joca.2017.09.001",
+        "volume": "25",
+        "author": "N Lazzarini",
+        "year": "2017",
+        "unstructured": "Lazzarini, N. et al. A machine learning approach for the identification of new biomarkers for knee osteoarthritis development in overweight and obese women. Osteoarthritis Cartilage 25, 2014–2021 (2017).",
+        "journal-title": "Osteoarthritis Cartilage"
+      },
+      {
+        "key": "130_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "2381",
+        "DOI": "10.1002/art.24757",
+        "volume": "60",
+        "author": "G Schett",
+        "year": "2009",
+        "unstructured": "Schett, G. et al. Vascular cell adhesion molecule 1 as a predictor of severe osteoarthritis of the hip and knee joints. Arthritis Rheum. 60, 2381–2389 (2009).",
+        "journal-title": "Arthritis Rheum."
+      },
+      {
+        "key": "130_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "1573",
+        "DOI": "10.1136/ard.2009.123661",
+        "volume": "69",
+        "author": "G Schett",
+        "year": "2010",
+        "unstructured": "Schett, G., Zwerina, J., Axmann, R., Willeit, J. & Stefan, K. Risk prediction for severe osteoarthritis. Ann. Rheum. Dis. 69, 1573–1574 (2010).",
+        "journal-title": "Ann. Rheum. Dis."
+      },
+      {
+        "key": "130_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "556",
+        "DOI": "10.1136/ard.2004.023796",
+        "volume": "64",
+        "author": "MJ Berthiaume",
+        "year": "2005",
+        "unstructured": "Berthiaume, M. J. et al. Meniscal tear and extrusion are strongly associated with the progression of knee osteoarthritis as assessed by quantitative magnetic resonance imaging. Ann. Rheum. Dis. 64, 556–563 (2005).",
+        "journal-title": "Ann. Rheum. Dis."
+      },
+      {
+        "key": "130_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "683",
+        "DOI": "10.1136/ard.2007.073023",
+        "volume": "67",
+        "author": "JP Raynauld",
+        "year": "2008",
+        "unstructured": "Raynauld, J. P. et al. Correlation between bone lesion changes and cartilage volume loss in patients with osteoarthritis of the knee as assessed by quantitative magnetic resonance imaging over a 24-month period. Ann. Rheum. Dis. 67, 683–688 (2008).",
+        "journal-title": "Ann. Rheum. Dis."
+      },
+      {
+        "key": "130_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "2413",
+        "DOI": "10.1093/rheumatology/keq286",
+        "volume": "49",
+        "author": "SK Tanamas",
+        "year": "2010",
+        "unstructured": "Tanamas, S. K. et al. Bone marrow lesions in people with knee osteoarthritis predict progression of disease and joint replacement: a longitudinal study. Rheumatology 49, 2413–2419 (2010).",
+        "journal-title": "Rheumatology"
+      },
+      {
+        "key": "130_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "1382",
+        "DOI": "10.1136/ard.2010.146407",
+        "volume": "70",
+        "author": "JP Raynauld",
+        "year": "2011",
+        "unstructured": "Raynauld, J. P. et al. Risk factors predictive of joint replacement in a 2-year multicentre clinical trial in knee osteoarthritis using MRI: results from over 6 years of observation. Ann. Rheum. Dis. 70, 1382–1388 (2011).",
+        "journal-title": "Ann. Rheum. Dis."
+      },
+      {
+        "key": "130_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "1594",
+        "DOI": "10.1136/annrheumdis-2013-203631",
+        "volume": "72",
+        "author": "JP Pelletier",
+        "year": "2013",
+        "unstructured": "Pelletier, J. P. et al. What is the predictive value of MRI for the occurrence of knee replacement surgery in knee osteoarthritis? Ann. Rheum. Dis. 72, 1594–1604 (2013).",
+        "journal-title": "Ann. Rheum. Dis."
+      },
+      {
+        "key": "130_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "2048",
+        "DOI": "10.1002/art.37987",
+        "volume": "65",
+        "author": "T Neogi",
+        "year": "2013",
+        "unstructured": "Neogi, T. et al. Magnetic resonance imaging-based three-dimensional bone shape of the knee predicts onset of knee osteoarthritis: data from the osteoarthritis initiative. Arthritis Rheum. 65, 2048–2058 (2013).",
+        "journal-title": "Arthritis Rheum."
+      },
+      {
+        "key": "130_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "989",
+        "DOI": "10.1093/rheumatology/kew504",
+        "volume": "56",
+        "author": "JP Raynauld",
+        "year": "2017",
+        "unstructured": "Raynauld, J. P. et al. Bone curvature changes can predict the impact of treatment on cartilage volume loss in knee osteoarthritis: data from a 2-year clinical trial. Rheumatology 56, 989–998 (2017).",
+        "journal-title": "Rheumatology"
+      },
+      {
+        "key": "130_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "293",
+        "DOI": "10.1093/nsr/nwt032",
+        "volume": "1",
+        "author": "J Fan",
+        "year": "2014",
+        "unstructured": "Fan, J., Han, F. & Liu, H. Challenges of big data analysis. Natl Sci. Rev. 1, 293–314 (2014).",
+        "journal-title": "Natl Sci. Rev."
+      },
+      {
+        "key": "130_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "220",
+        "DOI": "10.1016/j.eswa.2016.12.035",
+        "volume": "73",
+        "author": "G Haixiang",
+        "year": "2017",
+        "unstructured": "Haixiang, G. et al. Learning from class-imbalanced data: review of methods and applications. Expert Syst. Appl. 73, 220–239 (2017).",
+        "journal-title": "Expert Syst. Appl."
+      },
+      {
+        "key": "130_CR34",
+        "unstructured": "Fu, X., Wang, L., Chua, K. S. & Chu, F. Training RBF Neural Networks on Unbalanced Data. Proc. 9th Int. Conf. Neural Inform. Processing (ICONIP’02) 2, 1016–1020 (2002)."
+      },
+      {
+        "key": "130_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "1388",
+        "DOI": "10.1109/TKDE.2009.187",
+        "volume": "22",
+        "author": "M Wasikowski",
+        "year": "2010",
+        "unstructured": "Wasikowski, M. & Chen, X. W. Combating the small sample class imbalance problem using feature selection. IEEE Trans. Knowl. Data Eng. 22, 1388–1400 (2010).",
+        "journal-title": "IEEE Trans. Knowl. Data Eng."
+      },
+      {
+        "key": "130_CR36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1472-6947-11-51",
+        "volume": "11",
+        "author": "M Khalilia",
+        "year": "2011",
+        "unstructured": "Khalilia, M., Chakraborty, S. & Popescu, M. Predicting disease risks from highly imbalanced data using random forest. BMC Med. Inform. Decis. Mak. 11, 51 (2011).",
+        "journal-title": "BMC Med. Inform. Decis. Mak."
+      },
+      {
+        "key": "130_CR37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1472-6947-13-124",
+        "volume": "13",
+        "author": "KJ Wang",
+        "year": "2013",
+        "unstructured": "Wang, K. J., Makond, B. & Wang, K. M. An improved survivability prognosis of breast cancer by using sampling and feature selection technique to solve imbalanced patient classification data. BMC Med. Inform. Decis. Mak. 13, 124 (2013).",
+        "journal-title": "BMC Med. Inform. Decis. Mak."
+      },
+      {
+        "key": "130_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "265",
+        "DOI": "10.1016/j.compbiomed.2011.03.001",
+        "volume": "41",
+        "author": "A Ozcift",
+        "year": "2011",
+        "unstructured": "Ozcift, A. Random forests ensemble classifier trained with data resampling strategy to improve cardiac arrhythmia diagnosis. Comput. Biol. Med. 41, 265–271 (2011).",
+        "journal-title": "Comput. Biol. Med."
+      },
+      {
+        "key": "130_CR39",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.18637/jss.v045.i03",
+        "volume": "45",
+        "author": "S Buuren van",
+        "year": "2011",
+        "unstructured": "van Buuren, S. & Groothuis-Oudshoorn, K. MICE: multivariate imputation by chained equations in R. J. Stat. Softw. 45, 1–68 (2011).",
+        "journal-title": "J. Stat. Softw."
+      },
+      {
+        "key": "130_CR40",
+        "unstructured": "IBM SPSS Statistics for Windows, version 25.0, released 2017 (IBM Corp., Armonk, NY, USA)."
+      },
+      {
+        "key": "130_CR41",
+        "unstructured": "SAS/STAT® version 14.1 (SAS Institute Inc., Cary, NC, USA)."
+      },
+      {
+        "key": "130_CR42",
+        "unstructured": "STATA Statistical Software, release 15, 2017 (StataCorp LLC, College Station, TX, USA)."
+      },
+      {
+        "key": "130_CR43",
+        "unstructured": "Frank, E., Hall, M. A. & Witten, I. H. The WEKA workbench: online appendix for data mining: practical machine learning tools and techniques. UoW \n                    https://www.cs.waikato.ac.nz/ml/weka/Witten_et_al_2016_appendix.pdf\n                    \n                   (2016)."
+      },
+      {
+        "key": "130_CR44",
+        "doi-asserted-by": "publisher",
+        "first-page": "9",
+        "DOI": "10.21037/atm.2016.09.40",
+        "volume": "4",
+        "author": "Z Zhang",
+        "year": "2016",
+        "unstructured": "Zhang, Z. Missing data imputation: focusing on single imputation. Ann. Transl Med. 4, 9 (2016).",
+        "journal-title": "Ann. Transl Med."
+      },
+      {
+        "key": "130_CR45",
+        "unstructured": "Verborgh, R. & De Wilde, M. Using OpenRefine (Packt Publishing Ltd., Burmingham, UK, 2013)."
+      },
+      {
+        "key": "130_CR46",
+        "unstructured": "Trifacta. Data wrangling tools & software. Trifacta \n                    https://www.trifacta.com\n                    \n                   (2018)."
+      },
+      {
+        "key": "130_CR47",
+        "unstructured": "Paxata, Inc. Self-service data preparation for data analytics. Paxata \n                    https://www.paxata.com\n                    \n                   (2018)."
+      },
+      {
+        "key": "130_CR48",
+        "unstructured": "Baruti, R. (ed.) Learning Alteryx: A Beginner’s Guide to Using Alteryx for Self-Service Analytics and Business Intelligence (Packt Publishing Ltd., Birmingham, UK, 2017)."
+      },
+      {
+        "key": "130_CR49",
+        "unstructured": "McKinney, W. pandas: a foundational python library for data analysis and statistics. DLR \n                    http://www.dlr.de/sc/Portaldata/15/Resources/dokumente/pyhpc2011/submissions/pyhpc2011_submission_9.pdf\n                    \n                   (2011)."
+      },
+      {
+        "key": "130_CR50",
+        "unstructured": "OBiBa. Open source software for epidemiology. OBiBa \n                    http://www.obiba.org\n                    \n                   (2018)."
+      },
+      {
+        "key": "130_CR51",
+        "unstructured": "Optimus Company. Data cleansing and exploration made simple. Optimus \n                    https://hioptimus.com\n                    \n                   (2018)."
+      },
+      {
+        "key": "130_CR52",
+        "doi-asserted-by": "publisher",
+        "first-page": "154",
+        "DOI": "10.1016/j.jclinepi.2014.09.003",
+        "volume": "68",
+        "author": "LE Griffith",
+        "year": "2015",
+        "unstructured": "Griffith, L. E. et al. Statistical approaches to harmonize data on cognitive measures in systematic reviews are rarely reported. J. Clin. Epidemiol. 68, 154–162 (2015).",
+        "journal-title": "J. Clin. Epidemiol."
+      },
+      {
+        "key": "130_CR53",
+        "doi-asserted-by": "publisher",
+        "first-page": "907",
+        "DOI": "10.1002/sim.1691",
+        "volume": "23",
+        "author": "P Royston",
+        "year": "2004",
+        "unstructured": "Royston, P., Parmar, M. K. & Sylvester, R. Construction and validation of a prognostic model across several studies, with an application in superficial bladder cancer. Stat. Med. 23, 907–926 (2004).",
+        "journal-title": "Stat. Med."
+      },
+      {
+        "key": "130_CR54",
+        "doi-asserted-by": "publisher",
+        "first-page": "12",
+        "DOI": "10.1186/1742-7622-10-12",
+        "volume": "10",
+        "author": "D Doiron",
+        "year": "2013",
+        "unstructured": "Doiron, D. et al. Data harmonization and federated analysis of population-based studies: the BioSHaRE project. Emerg. Themes Epidemiol. 10, 12 (2013).",
+        "journal-title": "Emerg. Themes Epidemiol."
+      },
+      {
+        "key": "130_CR55",
+        "first-page": "221",
+        "volume": "21",
+        "author": "D Doiron",
+        "year": "2012",
+        "unstructured": "Doiron, D., Raina, P., Ferretti, V., L’Heureux, F. & Fortier, I. Facilitating collaborative research: implementing a platform supporting data harmonization and pooling. Nor. Epidemiol. 21, 221–224 (2012).",
+        "journal-title": "Nor. Epidemiol."
+      },
+      {
+        "key": "130_CR56",
+        "doi-asserted-by": "publisher",
+        "first-page": "1377",
+        "DOI": "10.1001/jama.2017.12126",
+        "volume": "318",
+        "author": "AC Alba",
+        "year": "2017",
+        "unstructured": "Alba, A. C. et al. Discrimination and calibration of clinical prediction models: users’ guides to the medical literature. JAMA 318, 1377–1384 (2017).",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "130_CR57",
+        "doi-asserted-by": "publisher",
+        "first-page": "245",
+        "DOI": "10.1016/j.jclinepi.2015.04.005",
+        "volume": "69",
+        "author": "EW Steyerberg",
+        "year": "2016",
+        "unstructured": "Steyerberg, E. W. & Harrell, F. E. Jr. Prediction models need appropriate internal, internal-external, and external validation. J. Clin. Epidemiol. 69, 245–247 (2016).",
+        "journal-title": "J. Clin. Epidemiol."
+      },
+      {
+        "key": "130_CR58",
+        "doi-asserted-by": "publisher",
+        "first-page": "25",
+        "DOI": "10.1016/j.jclinepi.2014.09.007",
+        "volume": "68",
+        "author": "GC Siontis",
+        "year": "2015",
+        "unstructured": "Siontis, G. C., Tzoulaki, I., Castaldi, P. J. & Ioannidis, J. P. External validation of new risk prediction models is infrequent and reveals worse prognostic discrimination. J. Clin. Epidemiol. 68, 25–34 (2015).",
+        "journal-title": "J. Clin. Epidemiol."
+      },
+      {
+        "key": "130_CR59",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1016/j.jclinepi.2014.11.020",
+        "volume": "68",
+        "author": "P Tugwell",
+        "year": "2015",
+        "unstructured": "Tugwell, P. & Knottnerus, J. A. Clinical prediction models are not being validated. J. Clin. Epidemiol. 68, 1–2 (2015).",
+        "journal-title": "J. Clin. Epidemiol."
+      },
+      {
+        "key": "130_CR60",
+        "doi-asserted-by": "publisher",
+        "first-page": "235",
+        "DOI": "10.1016/j.jclinepi.2015.01.007",
+        "volume": "68",
+        "author": "P Tugwell",
+        "year": "2015",
+        "unstructured": "Tugwell, P. & Knottnerus, J. A. Transferability/generalizability deserves more attention in ‘retest’ studies in diagnosis and prognosis. J. Clin. Epidemiol. 68, 235–236 (2015).",
+        "journal-title": "J. Clin. Epidemiol."
+      },
+      {
+        "key": "130_CR61",
+        "doi-asserted-by": "publisher",
+        "first-page": "3158",
+        "DOI": "10.1002/sim.5732",
+        "volume": "32",
+        "author": "TP Debray",
+        "year": "2013",
+        "unstructured": "Debray, T. P., Moons, K. G., Ahmed, I., Koffijberg, H. & Riley, R. D. A framework for developing, implementing, and evaluating clinical prediction models in an individual participant data meta-analysis. Stat. Med. 32, 3158–3180 (2013).",
+        "journal-title": "Stat. Med."
+      },
+      {
+        "key": "130_CR62",
+        "doi-asserted-by": "publisher",
+        "first-page": "279",
+        "DOI": "10.1016/j.jclinepi.2014.06.018",
+        "volume": "68",
+        "author": "TP Debray",
+        "year": "2015",
+        "unstructured": "Debray, T. P. et al. A new framework to enhance the interpretation of external validation studies of clinical prediction models. J. Clin. Epidemiol. 68, 279–289 (2015).",
+        "journal-title": "J. Clin. Epidemiol."
+      },
+      {
+        "key": "130_CR63",
+        "unstructured": "Steyerberg, E. Clinical Prediction Models: A Practical Approach to Development, Validation, and Updating (Springer New York, 2010)."
+      },
+      {
+        "key": "130_CR64",
+        "doi-asserted-by": "publisher",
+        "first-page": "123",
+        "DOI": "10.1016/j.cmpb.2015.07.003",
+        "volume": "122",
+        "author": "EI Papageorgiou",
+        "year": "2015",
+        "unstructured": "Papageorgiou, E. I., Subramanian, J., Karmegam, A. & Papandrianos, N. A risk management model for familial breast cancer: a new application using Fuzzy Cognitive Map method. Comput. Methods Programs Biomed. 122, 123–135 (2015).",
+        "journal-title": "Comput. Methods Programs Biomed."
+      },
+      {
+        "key": "130_CR65",
+        "doi-asserted-by": "publisher",
+        "first-page": "3810",
+        "DOI": "10.1016/j.asoc.2012.02.005",
+        "volume": "12",
+        "author": "W Froelich",
+        "year": "2012",
+        "unstructured": "Froelich, W., Papageorgiou, E. I., Samarinas, M. & Skriapas, K. Application of evolutionary fuzzy cognitive maps to the long-term prediction of prostate cancer. Appl. Soft Comput. 12, 3810–3817 (2012).",
+        "journal-title": "Appl. Soft Comput."
+      },
+      {
+        "key": "130_CR66",
+        "doi-asserted-by": "publisher",
+        "first-page": "R187",
+        "DOI": "10.1186/ar3157",
+        "volume": "12",
+        "author": "H Takahashi",
+        "year": "2010",
+        "unstructured": "Takahashi, H. et al. Prediction model for knee osteoarthritis based on genetic and clinical information. Arthritis Res. Ther. 12, R187 (2010).",
+        "journal-title": "Arthritis Res. Ther."
+      },
+      {
+        "key": "130_CR67",
+        "doi-asserted-by": "publisher",
+        "first-page": "2116",
+        "DOI": "10.1136/annrheumdis-2013-203620",
+        "volume": "73",
+        "author": "HJ Kerkhof",
+        "year": "2014",
+        "unstructured": "Kerkhof, H. J. et al. Prediction model for knee osteoarthritis incidence, including clinical, genetic and biochemical risk factors. Ann. Rheum. Dis. 73, 2116–2121 (2014).",
+        "journal-title": "Ann. Rheum. Dis."
+      },
+      {
+        "key": "130_CR68",
+        "doi-asserted-by": "publisher",
+        "first-page": "548",
+        "DOI": "10.1016/j.joca.2012.02.009",
+        "volume": "20",
+        "author": "MB Kinds",
+        "year": "2012",
+        "unstructured": "Kinds, M. B. et al. Evaluation of separate quantitative radiographic features adds to the prediction of incident radiographic osteoarthritis in individuals with recent onset of knee pain: 5-year follow-up in the CHECK cohort. Osteoarthritis Cartilage 20, 548–556 (2012).",
+        "journal-title": "Osteoarthritis Cartilage"
+      },
+      {
+        "key": "130_CR69",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1471-2164-16-S1-S2",
+        "volume": "16",
+        "author": "AL Swan",
+        "year": "2015",
+        "unstructured": "Swan, A. L. et al. A machine learning heuristic to identify biologically relevant and minimal biomarker panels from omics data. BMC Genomics 16, S2 (2015).",
+        "journal-title": "BMC Genomics"
+      },
+      {
+        "key": "130_CR70",
+        "doi-asserted-by": "publisher",
+        "first-page": "2243",
+        "DOI": "10.1002/jor.23519",
+        "volume": "35",
+        "author": "BG Ashinsky",
+        "year": "2017",
+        "unstructured": "Ashinsky, B. G. et al. Predicting early symptomatic osteoarthritis in the human knee using machine learning classification of magnetic resonance images from the osteoarthritis initiative. J. Orthop. Res. 35, 2243–2250 (2017).",
+        "journal-title": "J. Orthop. Res."
+      },
+      {
+        "key": "130_CR71",
+        "doi-asserted-by": "publisher",
+        "first-page": "87",
+        "DOI": "10.1016/j.clinbiomech.2017.06.001",
+        "volume": "47",
+        "author": "MJ Long",
+        "year": "2017",
+        "unstructured": "Long, M. J., Papi, E., Duffell, L. D. & McGregor, A. H. Predicting knee osteoarthritis risk in injured populations. Clin. Biomech. 47, 87–95 (2017).",
+        "journal-title": "Clin. Biomech."
+      },
+      {
+        "key": "130_CR72",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Minciullo, L., Bromiley, P. A., Felson, D. T. & Cootes, T. F. Indecisive trees for classification and prediction of knee osteoarthritis. 8th Int. Workshop MLMI 2017 MICCAI 2017\n                            Proc. 10541, 283–290 (2017).",
+        "DOI": "10.1007/978-3-319-67389-9_33"
+      },
+      {
+        "key": "130_CR73",
+        "doi-asserted-by": "publisher",
+        "first-page": "1070",
+        "DOI": "10.1080/00207543.2017.1370148",
+        "volume": "56",
+        "author": "A Jamshidi",
+        "year": "2017",
+        "unstructured": "Jamshidi, A., Ait-kadi, D., Ruiz, A. & Rebaiaia, M. L. Dynamic risk assessment of complex systems using FCM. Int. J. Prod. Res. 56, 1070–1088 (2017).",
+        "journal-title": "Int. J. Prod. Res."
+      },
+      {
+        "key": "130_CR74",
+        "doi-asserted-by": "publisher",
+        "first-page": "5662",
+        "DOI": "10.1016/j.asoc.2011.03.027",
+        "volume": "11",
+        "author": "SK Meher",
+        "year": "2011",
+        "unstructured": "Meher, S. K. & Pal, S. K. Rough-wavelet granular space and classification of multispectral remote sensing image. Appl. Soft Comput. 11, 5662–5673 (2011).",
+        "journal-title": "Appl. Soft Comput."
+      },
+      {
+        "key": "130_CR75",
+        "doi-asserted-by": "publisher",
+        "first-page": "2498",
+        "DOI": "10.1101/gr.1239303",
+        "volume": "13",
+        "author": "P Shannon",
+        "year": "2003",
+        "unstructured": "Shannon, P. et al. Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Res. 13, 2498–2504 (2003).",
+        "journal-title": "Genome Res."
+      },
+      {
+        "key": "130_CR76",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hastie, T., Tibshirani, R. & Wainwright, M. Statistical Learning with Sparsity: The Lasso and Generalizations (Chapman and Hall/CRC, 2015).",
+        "DOI": "10.1201/b18401"
+      },
+      {
+        "key": "130_CR77",
+        "doi-asserted-by": "publisher",
+        "first-page": "1436",
+        "DOI": "10.1214/009053606000000281",
+        "volume": "34",
+        "author": "N Meinshausen",
+        "year": "2006",
+        "unstructured": "Meinshausen, N. & Bühlmann, P. High-dimensional graphs and variable selection with the lasso. Ann. Stat. 34, 1436–1462 (2006).",
+        "journal-title": "Ann. Stat."
+      },
+      {
+        "key": "130_CR78",
+        "first-page": "1603",
+        "volume": "18",
+        "author": "J Huang",
+        "year": "2008",
+        "unstructured": "Huang, J., Ma, S. & Zhang, C. H. Adaptive Lasso for sparse high-dimensional regression models. Stat. Sin. 18, 1603–1618 (2008).",
+        "journal-title": "Stat. Sin."
+      },
+      {
+        "key": "130_CR79",
+        "doi-asserted-by": "publisher",
+        "first-page": "231",
+        "DOI": "10.1080/10618600.2012.681250",
+        "volume": "22",
+        "author": "N Simon",
+        "year": "2013",
+        "unstructured": "Simon, N., Friedman, J., Hastie, T. & Tibshirani, R. A. Sparse-group lasso. J. Comput. Graph. Stat. 22, 231–245 (2013).",
+        "journal-title": "J. Comput. Graph. Stat."
+      },
+      {
+        "key": "130_CR80",
+        "unstructured": "Friedman, J. et al. Package ‘glmnet’. The Comprehensive R Archive Network \n                    https://cran.r-project.org/web/packages/glmnet/glmnet.pdf\n                    \n                   (2018)."
+      },
+      {
+        "key": "130_CR81",
+        "doi-asserted-by": "publisher",
+        "first-page": "337",
+        "DOI": "10.1021/acs.jproteome.7b00595",
+        "volume": "17",
+        "author": "FM Alakwaa",
+        "year": "2018",
+        "unstructured": "Alakwaa, F. M., Chaudhary, K. & Garmire, L. X. Deep learning accurately predicts estrogen receptor status in breast cancer metabolomics data. J. Proteome Res. 17, 337–347 (2018).",
+        "journal-title": "J. Proteome Res."
+      },
+      {
+        "key": "130_CR82",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Nezhad, M. Z., Zhu, D., Li, X., Yang, K. & Levy, P. SAFS: a deep feature selection approach for precision medicine. Preprint at arXiv \n                    https://arxiv.org/abs/1704.05960\n                    \n                   (2017).",
+        "DOI": "10.1109/BIBM.2016.7822569"
+      },
+      {
+        "key": "130_CR83",
+        "doi-asserted-by": "publisher",
+        "first-page": "322",
+        "DOI": "10.1089/cmb.2015.0189",
+        "volume": "23",
+        "author": "Y Li",
+        "year": "2016",
+        "unstructured": "Li, Y., Chen, C. Y. & Wasserman, W. W. Deep feature selection: theory and application to identify enhancers and promoters. J. Comput. Biol. 23, 322–336 (2016).",
+        "journal-title": "J. Comput. Biol."
+      },
+      {
+        "key": "130_CR84",
+        "doi-asserted-by": "publisher",
+        "first-page": "72",
+        "DOI": "10.1016/j.neucom.2018.03.067",
+        "volume": "307",
+        "author": "M Christ",
+        "year": "2018",
+        "unstructured": "Christ, M., Braun, N., Neuffer, J. & Kempa-Liehr, W. A. Time series feature extraction on basis of scalable hypothesis tests (tsfresh — a Python package). Neurocomputing 307, 72–77 (2018).",
+        "journal-title": "Neurocomputing"
+      },
+      {
+        "key": "130_CR85",
+        "doi-asserted-by": "publisher",
+        "first-page": "527",
+        "DOI": "10.1016/j.cels.2017.10.001",
+        "volume": "5",
+        "author": "BD Fulcher",
+        "year": "2017",
+        "unstructured": "Fulcher, B. D. & Jones, N. S. hctsa: a computational framework for automated time-series phenotyping using massive feature extraction. Cell Syst. 5, 527–531 (2017).",
+        "journal-title": "Cell Syst."
+      }
+    ],
+    "container-title": [
+      "Nature Reviews Rheumatology"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://www.nature.com/articles/s41584-018-0130-5",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/s41584-018-0130-5.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/s41584-018-0130-5.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          5,
+          20
+        ]
+      ],
+      "date-time": "2023-05-20T22:18:27Z",
+      "timestamp": 1684621107000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/s41584-018-0130-5"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          6
+        ]
+      ]
+    },
+    "references-count": 85,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "130"
+    ],
+    "URL": "https://doi.org/10.1038/s41584-018-0130-5",
+    "relation": {},
+    "ISSN": [
+      "1759-4790",
+      "1759-4804"
+    ],
+    "issn-type": [
+      {
+        "value": "1759-4790",
+        "type": "print"
+      },
+      {
+        "value": "1759-4804",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          6
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "6 December 2018",
+        "order": 1,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ]
+  }
+}

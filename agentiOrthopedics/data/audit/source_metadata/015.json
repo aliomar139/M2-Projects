@@ -1,0 +1,2255 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          20
+        ]
+      ],
+      "date-time": "2026-10-20T07:10:41Z",
+      "timestamp": 1792480241199,
+      "version": "4.5.0"
+    },
+    "reference-count": 208,
+    "publisher": "MDPI AG",
+    "issue": "5",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              25
+            ]
+          ],
+          "date-time": "2026-02-25T00:00:00Z",
+          "timestamp": 1771977600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "JCM"
+    ],
+    "abstract": "<jats:p>Background/Objectives: Musculoskeletal disorders and their surgical treatment significantly affect global disability, healthcare utilization, and costs. Artificial intelligence (AI) is a key enabler of data-driven musculoskeletal care. Their applications include diagnostic imaging, surgical planning, risk prediction, rehabilitation, and digital health ecosystems. This narrative review synthesizes current evidence on the use of AI in orthopaedics and musculoskeletal care across five areas: diagnostic imaging, surgical planning and intraoperative augmentation, predictive analytics and patient-reported outcomes, rehabilitation intelligence and teleorthopaedics, and system-level management. An additional task is to identify translational gaps and priorities for safe, ethical, and equitable implementation of AI. Methods: A structured narrative review was conducted using targeted searches in PubMed, Scopus, and Web of Science supplemented by semantic and citation-based explorations in Semantic Scholar, OpenAlex, and Google Scholar. The main search period was January 2019 to December 2025. The retrieved peer-reviewed articles were analyzed for clinical relevance to human musculoskeletal care, quantitative outcomes, and the translational implications of the results. From the broader pool of eligible publications, 40 clinically relevant studies were selected for detailed synthesis covering imaging, surgical planning, predictive modeling, rehabilitation, and system-level applications. Owing to the significant heterogeneity in the model architectures, datasets, and endpoints, the results were organized into five predefined thematic areas. Results: The most mature evidence is for AI-assisted detection of bone fractures on radiographs, identification of implants, and use of sizing templates in preoperative planning for arthroplasty, where deep learning systems have achieved expert-level diagnostic performance (e.g., fracture detection sensitivity of approximately 90% and specificity of approximately 92% and implant identification accuracy of 97–99%) and improved the accuracy of preoperative planning compared to conventional templating. AI-based planning increases the likelihood of reducing intraoperative corrections, shortening surgery time, reducing blood loss, and improving the final functional outcomes. Predictive models can support the stratification of risk for complications, rehospitalizations, and patient-reported outcomes, although external validation remains limited and is often single-center at this stage of research. Emerging applications in rehabilitation and teleorthopaedics, including sensor-based monitoring and learning systems integrated with Patient-Reported Outcome Measures (PROMs), are conceptually promising, but are mainly limited to feasibility or pilot studies. Conclusions: AI is beginning to influence musculoskeletal care, moving beyond pattern recognition toward integrated, patient-centered decision support throughout the perioperative and rehabilitation periods. Its widespread use remains constrained by limited multicenter validation, dataset bias, algorithmic opacity, and immature regulatory and governance frameworks. Future work should prioritize prospective multicenter impact studies, repeatable revalidation of local models, integration of PROM and teleorthopedic data with health learning systems, and adaptation to changing regulatory requirements to enable safe, ethical, effective, and equitable implementation in routine orthopedic practice.</jats:p>",
+    "DOI": "10.3390/jcm15051751",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          26
+        ]
+      ],
+      "date-time": "2026-02-26T09:31:32Z",
+      "timestamp": 1772098292000
+    },
+    "page": "1751",
+    "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 9,
+    "title": [
+      "Artificial Intelligence in Orthopaedics: Clinical Performance, Limitations, and Translational Readiness—A Review"
+    ],
+    "prefix": "10.3390",
+    "volume": "15",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-2602-1128",
+        "authenticated-orcid": false,
+        "given": "Wojciech Michał",
+        "family": "Glinkowski",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Center of Excellence “TeleOrto” for Telediagnostics and Treatment of Disorders and Injuries of the Locomotor System, Department of Medical Informatics and Telemedicine, Medical University of Warsaw, 02-091 Warsaw, Poland"
+          },
+          {
+            "name": "The Polish Telemedicine and eHealth Society, Targowa 39A/5, 03-728 Warsaw, Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0324-0176",
+        "authenticated-orcid": false,
+        "given": "Antonina",
+        "family": "Spalińska",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Biostatistics and Research Methodology, Faculty of Medicine, Cardinal Stefan Wyszyński University, 01-938 Warsaw, Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Agnieszka",
+        "family": "Wołk",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "The Polish Telemedicine and eHealth Society, Targowa 39A/5, 03-728 Warsaw, Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5030-334X",
+        "authenticated-orcid": false,
+        "given": "Krzysztof",
+        "family": "Wołk",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "The Polish Telemedicine and eHealth Society, Targowa 39A/5, 03-728 Warsaw, Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1968",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          25
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "100707",
+        "DOI": "10.1016/j.lanhl.2025.100707",
+        "article-title": "Addressing the growing burden of musculoskeletal diseases in the ageing US population: Challenges and innovations",
+        "volume": "6",
+        "author": "Nguyen",
+        "year": "2025",
+        "journal-title": "Lancet Healthy Longev."
+      },
+      {
+        "key": "ref_2",
+        "first-page": "e85532",
+        "article-title": "Musculoskeletal Disorders a Universal Source of Pain and Disability Misunderstood and Mismanaged: A Critical Analysis Based on the U.S. Model of Care",
+        "volume": "8",
+        "author": "Malik",
+        "year": "2018",
+        "journal-title": "Anesth. Pain Med."
+      },
+      {
+        "key": "ref_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kumar, R., Marla, K., Sporn, K., Paladugu, P., Khanna, A., Gowda, C., Ngo, A., Waisberg, E., Jagadeesan, R., and Tavakkoli, A. (2025). Emerging Diagnostic Approaches for Musculoskeletal Disorders: Advances in Imaging, Biomarkers, and Clinical Assessment. Diagnostics, 15.",
+        "DOI": "10.20944/preprints202505.1597.v1"
+      },
+      {
+        "key": "ref_4",
+        "doi-asserted-by": "crossref",
+        "first-page": "e670",
+        "DOI": "10.1016/S2665-9913(23)00232-1",
+        "article-title": "Global, regional, and national burden of other musculoskeletal disorders, 1990–2020, and projections to 2050: A systematic analysis of the Global Burden of Disease Study 2021",
+        "volume": "5",
+        "author": "Gill",
+        "year": "2023",
+        "journal-title": "Lancet Rheumatol."
+      },
+      {
+        "key": "ref_5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lee, Y.K., Yoon, E.-J., Kim, T.H., Kim, J.-I., and Kim, J.-H. (2025). Musculoskeletal Digital Therapeutics and Digital Health Rehabilitation: A Global Paradigm Shift in Orthopedic Care. JCM, 14.",
+        "DOI": "10.20944/preprints202510.0510.v1"
+      },
+      {
+        "key": "ref_6",
+        "doi-asserted-by": "crossref",
+        "first-page": "569",
+        "DOI": "10.1016/S0140-6736(15)60160-X",
+        "article-title": "Global Surgery 2030: Evidence and solutions for achieving health, welfare, and economic development",
+        "volume": "386",
+        "author": "Meara",
+        "year": "2015",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "ref_7",
+        "doi-asserted-by": "crossref",
+        "first-page": "e3332",
+        "DOI": "10.31661/gmj.v13i.3332",
+        "article-title": "Role of Artificial Intelligence in Surgical Decision-Making: A Comprehensive Review: Role of AI in SDM",
+        "volume": "13",
+        "author": "Zarghami",
+        "year": "2024",
+        "journal-title": "Galen Med. J."
+      },
+      {
+        "key": "ref_8",
+        "doi-asserted-by": "crossref",
+        "first-page": "7196",
+        "DOI": "10.1007/s00330-022-08956-4",
+        "article-title": "Diagnostic accuracy and potential covariates of artificial intelligence for diagnosing orthopedic fractures: A systematic literature review and meta-analysis",
+        "volume": "32",
+        "author": "Zhang",
+        "year": "2022",
+        "journal-title": "Eur. Radiol."
+      },
+      {
+        "key": "ref_9",
+        "doi-asserted-by": "crossref",
+        "first-page": "2300268",
+        "DOI": "10.1002/aisy.202300268",
+        "article-title": "Evolution of Surgical Robot Systems Enhanced by Artificial Intelligence: A Review",
+        "volume": "6",
+        "author": "Liu",
+        "year": "2024",
+        "journal-title": "Adv. Intell. Syst."
+      },
+      {
+        "key": "ref_10",
+        "doi-asserted-by": "crossref",
+        "first-page": "202500070",
+        "DOI": "10.1002/aidi.202500070",
+        "article-title": "Artificial Intelligence for Bone: Theory, Methods, and Applications",
+        "volume": "3",
+        "author": "Yuan",
+        "year": "2025",
+        "journal-title": "Adv. Intell. Discov."
+      },
+      {
+        "key": "ref_11",
+        "doi-asserted-by": "crossref",
+        "first-page": "2823",
+        "DOI": "10.1111/os.70156",
+        "article-title": "Comparison of Artificial Intelligence and Traditional Methods in Preoperative Planning for Primary Total Hip Arthroplasty: A Systematic Review and Meta-Analysis",
+        "volume": "17",
+        "author": "Xue",
+        "year": "2025",
+        "journal-title": "Orthop. Surg."
+      },
+      {
+        "key": "ref_12",
+        "doi-asserted-by": "crossref",
+        "first-page": "100257",
+        "DOI": "10.1016/j.jham.2025.100257",
+        "article-title": "Integrating artificial intelligence into orthopedics: Opportunities, challenges, and future directions",
+        "volume": "17",
+        "author": "Vaishya",
+        "year": "2025",
+        "journal-title": "J. Hand Microsurg."
+      },
+      {
+        "key": "ref_13",
+        "doi-asserted-by": "crossref",
+        "first-page": "100020",
+        "DOI": "10.1016/j.engmed.2024.100020",
+        "article-title": "Artificial intelligence in orthopaedic trauma",
+        "volume": "1",
+        "author": "Tian",
+        "year": "2024",
+        "journal-title": "EngMedicine"
+      },
+      {
+        "key": "ref_14",
+        "first-page": "42",
+        "article-title": "Artificial intelligence in orthopedics: Fundamentals, current applications, and future perspectives",
+        "volume": "12",
+        "author": "Song",
+        "year": "2025",
+        "journal-title": "Mil. Med. Res."
+      },
+      {
+        "key": "ref_15",
+        "doi-asserted-by": "crossref",
+        "first-page": "21",
+        "DOI": "10.1051/sicotj/2023018",
+        "article-title": "Artificial intelligence for fracture diagnosis in orthopedic X-rays: Current developments and future potential",
+        "volume": "9",
+        "author": "Sharma",
+        "year": "2023",
+        "journal-title": "SICOT-J"
+      },
+      {
+        "key": "ref_16",
+        "doi-asserted-by": "crossref",
+        "first-page": "88811",
+        "DOI": "10.58624/SVOAOR.2023.03.035",
+        "article-title": "Application of Artificial Intelligence in Pediatric Orthopaedic",
+        "volume": "3",
+        "author": "Sharaf",
+        "year": "2023",
+        "journal-title": "SVOAOR"
+      },
+      {
+        "key": "ref_17",
+        "doi-asserted-by": "crossref",
+        "first-page": "581",
+        "DOI": "10.1080/17453674.2017.1344459",
+        "article-title": "Artificial intelligence for analyzing orthopedic trauma radiographs",
+        "volume": "88",
+        "author": "Olczak",
+        "year": "2017",
+        "journal-title": "Acta Orthop."
+      },
+      {
+        "key": "ref_18",
+        "doi-asserted-by": "crossref",
+        "first-page": "120",
+        "DOI": "10.18231/j.jchm.2024.022",
+        "article-title": "Revolutionizing orthopedic care: The impact of ai in predictive analysis, surgical precision, and personalized rehabilitation",
+        "volume": "11",
+        "author": "Lakhani",
+        "year": "2024",
+        "journal-title": "JCHM"
+      },
+      {
+        "key": "ref_19",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kumar, R., Sporn, K., Ong, J., Waisberg, E., Paladugu, P., Vaja, S., Hage, T., Sekhar, T.C., Vadhera, A.S., and Ngo, A. (2025). Integrating Artificial Intelligence in Orthopedic Care: Advancements in Bone Care and Future Directions. Bioengineering, 12.",
+        "DOI": "10.20944/preprints202504.0576.v1"
+      },
+      {
+        "key": "ref_20",
+        "first-page": "94",
+        "article-title": "Transforming Orthopedic Decision-Making and Patient Care Through Artificial Intelligence",
+        "volume": "94",
+        "year": "2025",
+        "journal-title": "JMS"
+      },
+      {
+        "key": "ref_21",
+        "doi-asserted-by": "crossref",
+        "first-page": "111399",
+        "DOI": "10.1016/j.ejrad.2024.111399",
+        "article-title": "Deep learning performance compared to healthcare experts in detecting wrist fractures from radiographs: A systematic review and meta-analysis",
+        "volume": "174",
+        "author": "Hansen",
+        "year": "2024",
+        "journal-title": "Eur. J. Radiol."
+      },
+      {
+        "key": "ref_22",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tieu, A., Kroen, E., Kadish, Y., Liu, Z., Patel, N., Zhou, A., Yilmaz, A., Lee, S., and Deyer, T. (2024). The Role of Artificial Intelligence in the Identification and Evaluation of Bone Fractures. Bioengineering, 11.",
+        "DOI": "10.3390/bioengineering11040338"
+      },
+      {
+        "key": "ref_23",
+        "doi-asserted-by": "crossref",
+        "first-page": "869",
+        "DOI": "10.2214/AJR.22.27873",
+        "article-title": "Artificial Intelligence (AI) for Fracture Diagnosis: An Overview of Current Products and Considerations for Clinical Adoption, From the AJR Special Series on AI Applications",
+        "volume": "219",
+        "author": "Zech",
+        "year": "2022",
+        "journal-title": "Am. J. Roentgenol."
+      },
+      {
+        "key": "ref_24",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Debs, P., and Fayad, L.M. (2023). The promise and limitations of artificial intelligence in musculoskeletal imaging. Front. Radiol., 3.",
+        "DOI": "10.3389/fradi.2023.1242902"
+      },
+      {
+        "key": "ref_25",
+        "first-page": "e97674",
+        "article-title": "Artificial Intelligence in Bone Fracture Detection: A Review of Evidence, Limitations, and Clinical Integration",
+        "volume": "17",
+        "author": "Elkohail",
+        "year": "2025",
+        "journal-title": "Cureus"
+      },
+      {
+        "key": "ref_26",
+        "first-page": "e99946",
+        "article-title": "Current Concepts in Artificial Intelligence-Assisted Arthroplasty: A Review of the Perioperative Pathway",
+        "volume": "17",
+        "author": "Sayed",
+        "year": "2025",
+        "journal-title": "Cureus"
+      },
+      {
+        "key": "ref_27",
+        "doi-asserted-by": "crossref",
+        "first-page": "633",
+        "DOI": "10.1016/j.jare.2025.03.039",
+        "article-title": "The Application of artificial intelligence in periprosthetic joint infection",
+        "volume": "79",
+        "author": "Li",
+        "year": "2026",
+        "journal-title": "J. Adv. Res."
+      },
+      {
+        "key": "ref_28",
+        "doi-asserted-by": "crossref",
+        "first-page": "102470",
+        "DOI": "10.1016/j.jcot.2024.102470",
+        "article-title": "Can machine learning predict the accuracy of preoperative planning for total hip arthroplasty, basing on patient-related factors? An explorative investigation on Supervised machine learning classification models",
+        "volume": "53",
+        "author": "Zampogna",
+        "year": "2024",
+        "journal-title": "J. Clin. Orthop. Trauma."
+      },
+      {
+        "key": "ref_29",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Min, M., Wang, X., Urba, R., Zhang, W., Gao, J., and Fan, L. (2025). Comparison of traditional template measurements and artificial intelligence preoperative planning in total knee arthroplasty. Front. Surg., 12.",
+        "DOI": "10.3389/fsurg.2025.1573148"
+      },
+      {
+        "key": "ref_30",
+        "doi-asserted-by": "crossref",
+        "first-page": "16971",
+        "DOI": "10.1038/s41598-024-67276-3",
+        "article-title": "Reliable prediction of implant size and axial alignment in AI-based 3D preoperative planning for total knee arthroplasty",
+        "volume": "14",
+        "author": "Lan",
+        "year": "2024",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "ref_31",
+        "doi-asserted-by": "crossref",
+        "first-page": "2999",
+        "DOI": "10.1016/j.asjsur.2024.01.133",
+        "article-title": "Artificial intelligence technology improves the accuracy of preoperative planning in primary total hip arthroplasty",
+        "volume": "47",
+        "author": "Anwar",
+        "year": "2024",
+        "journal-title": "Asian J. Surg."
+      },
+      {
+        "key": "ref_32",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wongsak, S., Janyawongchot, T., Sri-Utenchai, N., Owasirikul, D., Jaovisidha, S., Woratanarat, P., and Sa-Ngasoongsong, P. (2025). Development of a Deep Learning Model for Hip Arthroplasty Templating Using Anteroposterior Hip Radiograph. JCM, 14.",
+        "DOI": "10.3390/jcm14248689"
+      },
+      {
+        "key": "ref_33",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hu, Y., Fan, Y., Sun, Z., and Song, H. (2026). AI-assisted preoperative planning combined with robotic-assisted total knee arthroplasty vs. conventional surgery: A retrospective controlled study. BMC Musculoskelet. Disord., 27.",
+        "DOI": "10.1186/s12891-025-09455-5"
+      },
+      {
+        "key": "ref_34",
+        "doi-asserted-by": "crossref",
+        "first-page": "24630",
+        "DOI": "10.1038/s41598-025-09488-9",
+        "article-title": "Advantages and effectiveness of AI three-dimensional reconstruction technology in the preoperative planning of total hip arthroplasty",
+        "volume": "15",
+        "author": "Li",
+        "year": "2025",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "ref_35",
+        "doi-asserted-by": "crossref",
+        "first-page": "997",
+        "DOI": "10.1007/s00264-024-06088-6",
+        "article-title": "Artificial intelligence–based three-dimensional templating for total joint arthroplasty planning: A scoping review",
+        "volume": "48",
+        "author": "Bukowiec",
+        "year": "2024",
+        "journal-title": "Int. Orthop. (SICOT)"
+      },
+      {
+        "key": "ref_36",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gu, Y., Yang, Y., Gao, X., Wang, Y., Yang, L., and Wei, Y. (2025). Application of artificial intelligence in risk assessment and management of venous thromboembolism: Scoping review. Front. Physiol., 16.",
+        "DOI": "10.3389/fphys.2025.1664470"
+      },
+      {
+        "key": "ref_37",
+        "doi-asserted-by": "crossref",
+        "first-page": "1040",
+        "DOI": "10.1055/a-2299-4758",
+        "article-title": "Machine Learning-Based Predictive Models for Patients with Venous Thromboembolism: A Systematic Review",
+        "volume": "124",
+        "author": "Danilatou",
+        "year": "2024",
+        "journal-title": "Thromb. Haemost."
+      },
+      {
+        "key": "ref_38",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Naser, A.M., Vyas, R., Morgan, A.A., Kalaiger, A.M., Kharawala, A., Nagraj, S., Agarwal, R., Maliha, M., Mangeshkar, S., and Singh, N. (2025). Role of Artificial Intelligence in the Diagnosis and Management of Pulmonary Embolism: A Comprehensive Review. Diagnostics, 15.",
+        "DOI": "10.3390/diagnostics15070889"
+      },
+      {
+        "key": "ref_39",
+        "first-page": "303",
+        "article-title": "The future of multimodal artificial intelligence models for integrating imaging and clinical metadata: A narrative review",
+        "volume": "31",
+        "author": "Simon",
+        "year": "2025",
+        "journal-title": "Diagn. Interv. Radiol."
+      },
+      {
+        "key": "ref_40",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Federer, S.J., and Jones, G.G. (2021). Artificial intelligence in orthopaedics: A scoping review. PLoS ONE, 16.",
+        "DOI": "10.1371/journal.pone.0260471"
+      },
+      {
+        "key": "ref_41",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Luo, Z., Wang, Y., Zhang, T., and Wang, J. (2025). Effectiveness of AI-assisted rehabilitation for musculoskeletal disorders: A network meta-analysis of pain, range of motion, and functional outcomes. Front. Bioeng. Biotechnol., 13.",
+        "DOI": "10.3389/fbioe.2025.1660524"
+      },
+      {
+        "key": "ref_42",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Moldovan, F., and Moldovan, L. (2025). An Innovative Assessment Framework for Remote Care in Orthopedics. Healthcare, 13.",
+        "DOI": "10.3390/healthcare13070736"
+      },
+      {
+        "key": "ref_43",
+        "doi-asserted-by": "crossref",
+        "first-page": "61",
+        "DOI": "10.21037/atm-25-61",
+        "article-title": "Enhancing home rehabilitation through AI-driven virtual assistants: A narrative review",
+        "volume": "13",
+        "author": "Olawade",
+        "year": "2025",
+        "journal-title": "Ann. Transl. Med."
+      },
+      {
+        "key": "ref_44",
+        "doi-asserted-by": "crossref",
+        "first-page": "e70260",
+        "DOI": "10.1002/mco2.70260",
+        "article-title": "Artificial Intelligence in Orthopedic Surgery: Current Applications, Challenges, and Future Directions",
+        "volume": "6",
+        "author": "Han",
+        "year": "2025",
+        "journal-title": "MedComm"
+      },
+      {
+        "key": "ref_45",
+        "doi-asserted-by": "crossref",
+        "first-page": "102840",
+        "DOI": "10.1016/j.arr.2025.102840",
+        "article-title": "Advancements in deep learning-based image screening for orthopedic conditions: Emphasis on osteoporosis, osteoarthritis, and bone tumors",
+        "volume": "111",
+        "author": "Guo",
+        "year": "2025",
+        "journal-title": "Ageing Res. Rev."
+      },
+      {
+        "key": "ref_46",
+        "doi-asserted-by": "crossref",
+        "first-page": "102935",
+        "DOI": "10.1016/j.artmed.2024.102935",
+        "article-title": "Comprehensive review of deep learning in orthopaedics: Applications, challenges, trustworthiness, and fusion",
+        "volume": "155",
+        "author": "Alzubaidi",
+        "year": "2024",
+        "journal-title": "Artif. Intell. Med."
+      },
+      {
+        "key": "ref_47",
+        "doi-asserted-by": "crossref",
+        "first-page": "103189",
+        "DOI": "10.1016/j.radi.2025.103189",
+        "article-title": "Evaluation of commercial AI algorithms for the detection of fractures, effusions, and dislocations on real-world clinical data: A prospective registry study",
+        "volume": "31",
+        "author": "Luiken",
+        "year": "2025",
+        "journal-title": "Radiography"
+      },
+      {
+        "key": "ref_48",
+        "doi-asserted-by": "crossref",
+        "first-page": "1849",
+        "DOI": "10.1007/s00256-024-04684-6",
+        "article-title": "Artificial intelligence in musculoskeletal imaging: Realistic clinical applications in the next decade",
+        "volume": "53",
+        "author": "Ruitenbeek",
+        "year": "2024",
+        "journal-title": "Skelet. Radiol."
+      },
+      {
+        "key": "ref_49",
+        "doi-asserted-by": "crossref",
+        "first-page": "579",
+        "DOI": "10.1016/j.crad.2024.04.009",
+        "article-title": "Artificial intelligence diagnostic accuracy in fracture detection from plain radiographs and comparing it with clinicians: A systematic review and meta-analysis",
+        "volume": "79",
+        "author": "Nowroozi",
+        "year": "2024",
+        "journal-title": "Clin. Radiol."
+      },
+      {
+        "key": "ref_50",
+        "doi-asserted-by": "crossref",
+        "first-page": "2482",
+        "DOI": "10.1097/CORR.0000000000000848",
+        "article-title": "What Are the Applications and Limitations of Artificial Intelligence for Fracture Detection and Classification in Orthopaedic Trauma Imaging? A Systematic Review",
+        "volume": "477",
+        "author": "Langerhuizen",
+        "year": "2019",
+        "journal-title": "Clin. Orthop. Relat. Res."
+      },
+      {
+        "key": "ref_51",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kutbi, M. (2024). Artificial Intelligence-Based Applications for Bone Fracture Detection Using Medical Images: A Systematic Review. Diagnostics, 14.",
+        "DOI": "10.3390/diagnostics14171879"
+      },
+      {
+        "key": "ref_52",
+        "doi-asserted-by": "crossref",
+        "first-page": "50",
+        "DOI": "10.1148/radiol.211785",
+        "article-title": "Artificial Intelligence in Fracture Detection: A Systematic Review and Meta-Analysis",
+        "volume": "304",
+        "author": "Kuo",
+        "year": "2022",
+        "journal-title": "Radiology"
+      },
+      {
+        "key": "ref_53",
+        "doi-asserted-by": "crossref",
+        "first-page": "60",
+        "DOI": "10.1016/j.media.2017.07.005",
+        "article-title": "A survey on deep learning in medical image analysis",
+        "volume": "42",
+        "author": "Litjens",
+        "year": "2017",
+        "journal-title": "Med. Image Anal."
+      },
+      {
+        "key": "ref_54",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mienye, I.D., Swart, T.G., Obaido, G., Jordan, M., and Ilono, P. (2025). Deep Convolutional Neural Networks in Medical Image Analysis: A Review. Information, 16.",
+        "DOI": "10.3390/info16030195"
+      },
+      {
+        "key": "ref_55",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Al-Nafjan, A., Aljuhani, A., Alshebel, A., Alharbi, A., and Alshehri, A. (2025). Artificial Intelligence in Predictive Healthcare: A Systematic Review. JCM, 14.",
+        "DOI": "10.3390/jcm14196752"
+      },
+      {
+        "key": "ref_56",
+        "first-page": "200615",
+        "article-title": "A systematic review of vision transformer and explainable AI advances in multimodal facial expression recognition",
+        "volume": "29",
+        "author": "Kus",
+        "year": "2026",
+        "journal-title": "Intell. Syst. Appl."
+      },
+      {
+        "key": "ref_57",
+        "doi-asserted-by": "crossref",
+        "first-page": "12567",
+        "DOI": "10.1038/s41598-024-63094-9",
+        "article-title": "Implementing vision transformer for classifying 2D biomedical images",
+        "volume": "14",
+        "author": "Halder",
+        "year": "2024",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "ref_58",
+        "doi-asserted-by": "crossref",
+        "first-page": "105605",
+        "DOI": "10.1016/j.bspc.2023.105605",
+        "article-title": "HTC-Net: A hybrid CNN-transformer framework for medical image segmentation",
+        "volume": "88",
+        "author": "Tang",
+        "year": "2024",
+        "journal-title": "Biomed. Signal Process. Control"
+      },
+      {
+        "key": "ref_59",
+        "doi-asserted-by": "crossref",
+        "first-page": "3928",
+        "DOI": "10.1007/s10278-025-01481-y",
+        "article-title": "Vision Transformers in Medical Imaging: A Comprehensive Review of Advancements and Applications Across Multiple Diseases",
+        "volume": "38",
+        "author": "Aburass",
+        "year": "2025",
+        "journal-title": "J. Imaging Inform. Med."
+      },
+      {
+        "key": "ref_60",
+        "doi-asserted-by": "crossref",
+        "first-page": "1529",
+        "DOI": "10.1007/s10278-024-00981-7",
+        "article-title": "From CNN to Transformer: A Review of Medical Image Segmentation Models",
+        "volume": "37",
+        "author": "Yao",
+        "year": "2024",
+        "journal-title": "J. Imaging Inform. Med."
+      },
+      {
+        "key": "ref_61",
+        "doi-asserted-by": "crossref",
+        "first-page": "e18089",
+        "DOI": "10.2196/18089",
+        "article-title": "Assessment of the Robustness of Convolutional Neural Networks in Labeling Noise by Using Chest X-Ray Images From Multiple Centers",
+        "volume": "8",
+        "author": "Jang",
+        "year": "2020",
+        "journal-title": "JMIR Med. Inform."
+      },
+      {
+        "key": "ref_62",
+        "doi-asserted-by": "crossref",
+        "first-page": "12179",
+        "DOI": "10.1038/s41598-022-16534-3",
+        "article-title": "Automated identification of hip arthroplasty implants using artificial intelligence",
+        "volume": "12",
+        "author": "Gong",
+        "year": "2022",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "ref_63",
+        "doi-asserted-by": "crossref",
+        "first-page": "e200183",
+        "DOI": "10.1148/ryai.2021200183",
+        "article-title": "Automated Identification of Orthopedic Implants on Radiographs Using Deep Learning",
+        "volume": "3",
+        "author": "Patel",
+        "year": "2021",
+        "journal-title": "Radiol. Artif. Intell."
+      },
+      {
+        "key": "ref_64",
+        "doi-asserted-by": "crossref",
+        "first-page": "737",
+        "DOI": "10.1002/jor.25415",
+        "article-title": "Successful real-world application of an osteoarthritis classification deep-learning model using 9210 knees—An orthopedic surgeon’s view",
+        "volume": "41",
+        "author": "Wang",
+        "year": "2023",
+        "journal-title": "J. Orthop. Res."
+      },
+      {
+        "key": "ref_65",
+        "doi-asserted-by": "crossref",
+        "first-page": "22887",
+        "DOI": "10.1038/s41598-023-50210-4",
+        "article-title": "Ensemble deep-learning networks for automated osteoarthritis grading in knee X-ray images",
+        "volume": "13",
+        "author": "Pi",
+        "year": "2023",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "ref_66",
+        "doi-asserted-by": "crossref",
+        "first-page": "2225",
+        "DOI": "10.1007/s00256-023-04296-6",
+        "article-title": "Deep learning applications in osteoarthritis imaging",
+        "volume": "52",
+        "author": "Kijowski",
+        "year": "2023",
+        "journal-title": "Skelet. Radiol."
+      },
+      {
+        "key": "ref_67",
+        "doi-asserted-by": "crossref",
+        "first-page": "84",
+        "DOI": "10.1016/j.inffus.2021.11.011",
+        "article-title": "Tabular data: Deep learning is not all you need",
+        "volume": "81",
+        "author": "Armon",
+        "year": "2022",
+        "journal-title": "Inf. Fusion"
+      },
+      {
+        "key": "ref_68",
+        "doi-asserted-by": "crossref",
+        "first-page": "104482",
+        "DOI": "10.1016/j.jbi.2023.104482",
+        "article-title": "A scoping review on multimodal deep learning in biomedical images and texts",
+        "volume": "146",
+        "author": "Sun",
+        "year": "2023",
+        "journal-title": "J. Biomed. Inform."
+      },
+      {
+        "key": "ref_69",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Obuchowicz, R., Lasek, J., Wodziński, M., Piórkowski, A., Strzelecki, M., and Nurzynska, K. (2025). Artificial Intelligence-Empowered Radiology-Current Status and Critical Review. Diagnostics, 15.",
+        "DOI": "10.3390/diagnostics15030282"
+      },
+      {
+        "key": "ref_70",
+        "doi-asserted-by": "crossref",
+        "first-page": "712",
+        "DOI": "10.1046/j.1445-2197.2003.02748.x",
+        "article-title": "Methodological index for non-randomized studies (minors): Development and validation of a new instrument",
+        "volume": "73",
+        "author": "Slim",
+        "year": "2003",
+        "journal-title": "ANZ J. Surg."
+      },
+      {
+        "key": "ref_71",
+        "doi-asserted-by": "crossref",
+        "first-page": "2004",
+        "DOI": "10.1016/j.arth.2023.03.039",
+        "article-title": "Artificial Intelligence for Automated Implant Identification in Knee Arthroplasty: A Multicenter External Validation Study Exceeding 3.5 Million Plain Radiographs",
+        "volume": "38",
+        "author": "Karnuta",
+        "year": "2023",
+        "journal-title": "J. Arthroplast."
+      },
+      {
+        "key": "ref_72",
+        "doi-asserted-by": "crossref",
+        "first-page": "16",
+        "DOI": "10.1186/s42836-022-00118-7",
+        "article-title": "Artificial intelligence in diagnosis of knee osteoarthritis and prediction of arthroplasty outcomes: A review",
+        "volume": "4",
+        "author": "Lee",
+        "year": "2022",
+        "journal-title": "Arthroplasty"
+      },
+      {
+        "key": "ref_73",
+        "doi-asserted-by": "crossref",
+        "first-page": "407",
+        "DOI": "10.1007/s00256-021-03884-8",
+        "article-title": "Artificial intelligence in orthopedic implant model classification: A systematic review",
+        "volume": "51",
+        "author": "Ren",
+        "year": "2022",
+        "journal-title": "Skelet. Radiol."
+      },
+      {
+        "key": "ref_74",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lambrechts, A., Wirix-Speetjens, R., Maes, F., and Van Huffel, S. (2022). Artificial Intelligence Based Patient-Specific Preoperative Planning Algorithm for Total Knee Arthroplasty. Front. Robot. AI, 9.",
+        "DOI": "10.3389/frobt.2022.840282"
+      },
+      {
+        "key": "ref_75",
+        "doi-asserted-by": "crossref",
+        "first-page": "929",
+        "DOI": "10.1302/0301-620X.104B8.BJJ-2022-0120.R2",
+        "article-title": "Artificial intelligence for image analysis in total hip and total knee arthroplasty",
+        "volume": "104-B",
+        "author": "Gurung",
+        "year": "2022",
+        "journal-title": "Bone Jt. J."
+      },
+      {
+        "key": "ref_76",
+        "doi-asserted-by": "crossref",
+        "first-page": "557",
+        "DOI": "10.1007/s00264-022-05644-2",
+        "article-title": "Hip arthroplasty dislocation risk calculator: Evaluation of one million primary implants and twenty-five thousand dislocations with deep learning artificial intelligence in a systematic review of reviews",
+        "volume": "47",
+        "author": "Hernigou",
+        "year": "2023",
+        "journal-title": "Int. Orthop."
+      },
+      {
+        "key": "ref_77",
+        "first-page": "511",
+        "article-title": "An artificial intelligence based on a convolutional neural network allows a precise analysis of the alignment of the lower limb",
+        "volume": "47",
+        "author": "Jacquet",
+        "year": "2022",
+        "journal-title": "Int. Orthop. (SICOT)"
+      },
+      {
+        "key": "ref_78",
+        "doi-asserted-by": "crossref",
+        "first-page": "54",
+        "DOI": "10.1186/s42836-023-00209-z",
+        "article-title": "Understanding the use of artificial intelligence for implant analysis in total joint arthroplasty: A systematic review",
+        "volume": "5",
+        "author": "Shah",
+        "year": "2023",
+        "journal-title": "Arthroplasty"
+      },
+      {
+        "key": "ref_79",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Li, S., Liu, X., Chen, X., Xu, H., Zhang, Y., and Qian, W. (2023). Development and Validation of an Artificial Intelligence Preoperative Planning and Patient-Specific Instrumentation System for Total Knee Arthroplasty. Bioengineering, 10.",
+        "DOI": "10.3390/bioengineering10121417"
+      },
+      {
+        "key": "ref_80",
+        "doi-asserted-by": "crossref",
+        "first-page": "603",
+        "DOI": "10.5312/wjo.v13.i6.603",
+        "article-title": "Evaluation of artificial intelligence models for osteoarthritis of the knee using deep learning algorithms for orthopedic radiographs",
+        "volume": "13",
+        "author": "Tiwari",
+        "year": "2022",
+        "journal-title": "World J. Orthop."
+      },
+      {
+        "key": "ref_81",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chen, X., Liu, X., Wang, Y., Ma, R., Zhu, S., Li, S., Li, S., Dong, X., Li, H., and Wang, G. (2022). Development and Validation of an Artificial Intelligence Preoperative Planning System for Total Hip Arthroplasty. Front. Med., 9.",
+        "DOI": "10.3389/fmed.2022.841202"
+      },
+      {
+        "key": "ref_82",
+        "doi-asserted-by": "crossref",
+        "first-page": "S199",
+        "DOI": "10.1016/j.arth.2023.02.053",
+        "article-title": "Artificial Intelligence Radiographic Analysis Tool for Total Knee Arthroplasty",
+        "volume": "38",
+        "author": "Bonnin",
+        "year": "2023",
+        "journal-title": "J. Arthroplast."
+      },
+      {
+        "key": "ref_83",
+        "doi-asserted-by": "crossref",
+        "first-page": "935",
+        "DOI": "10.1016/j.arth.2020.10.021",
+        "article-title": "Artificial Intelligence to Identify Arthroplasty Implants From Radiographs of the Knee",
+        "volume": "36",
+        "author": "Karnuta",
+        "year": "2021",
+        "journal-title": "J. Arthroplast."
+      },
+      {
+        "key": "ref_84",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang, J., Zhao, Z., Liang, H., Zhang, R., Liu, X., Zhang, J., Singh, S., Guo, W., Yan, T., and Hoang, B.H. (2024). Artificial intelligence assisted preoperative planning and 3D-printing guiding frame for percutaneous screw reconstruction in periacetabular metastatic cancer patients. Front. Bioeng. Biotechnol., 12.",
+        "DOI": "10.3389/fbioe.2024.1404937"
+      },
+      {
+        "key": "ref_85",
+        "doi-asserted-by": "crossref",
+        "first-page": "e70195",
+        "DOI": "10.1002/jeo2.70195",
+        "article-title": "Revolutionizing total hip arthroplasty: The role of artificial intelligence and machine learning",
+        "volume": "12",
+        "author": "Longo",
+        "year": "2025",
+        "journal-title": "J. Exp. Orthop."
+      },
+      {
+        "key": "ref_86",
+        "first-page": "e79507",
+        "article-title": "Enhancing Pediatric Bone Age Assessment Using Artificial Intelligence: Implications for Orthopedic Surgery",
+        "volume": "17",
+        "author": "Zadoo",
+        "year": "2025",
+        "journal-title": "Cureus"
+      },
+      {
+        "key": "ref_87",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lind, A., Akbarian, E., Olsson, S., Nåsell, H., Sköldenberg, O., Razavian, A.S., and Gordon, M. (2021). Artificial intelligence for the classification of fractures around the knee in adults according to the 2018 AO/OTA classification system. PLoS ONE, 16.",
+        "DOI": "10.1371/journal.pone.0248809"
+      },
+      {
+        "key": "ref_88",
+        "doi-asserted-by": "crossref",
+        "first-page": "1158",
+        "DOI": "10.1007/s11596-021-2501-4",
+        "article-title": "Artificial Intelligence to Diagnose Tibial Plateau Fractures: An Intelligent Assistant for Orthopedic Physicians",
+        "volume": "41",
+        "author": "Liu",
+        "year": "2021",
+        "journal-title": "Curr. Med. Sci."
+      },
+      {
+        "key": "ref_89",
+        "doi-asserted-by": "crossref",
+        "first-page": "e70342",
+        "DOI": "10.1002/jeo2.70342",
+        "article-title": "Deep learning classification models demonstrate high accuracy and clinical potential in radiograph interpretation in the arthroplasty clinical pathway: A systematic review and meta-analysis",
+        "volume": "12",
+        "author": "Musbahi",
+        "year": "2025",
+        "journal-title": "J. Exp. Orthop."
+      },
+      {
+        "key": "ref_90",
+        "doi-asserted-by": "crossref",
+        "first-page": "1998",
+        "DOI": "10.1016/j.arth.2022.03.002",
+        "article-title": "Artificial Intelligence for Automated Implant Identification in Total Hip Arthroplasty: A Multicenter External Validation Study Exceeding Two Million Plain Radiographs",
+        "volume": "38",
+        "author": "Karnuta",
+        "year": "2023",
+        "journal-title": "J. Arthroplast."
+      },
+      {
+        "key": "ref_91",
+        "doi-asserted-by": "crossref",
+        "first-page": "1053",
+        "DOI": "10.1007/s00167-022-07220-y",
+        "article-title": "Artificial intelligence-based computer-aided system for knee osteoarthritis assessment increases experienced orthopaedic surgeons’ agreement rate and accuracy",
+        "volume": "31",
+        "author": "Smolle",
+        "year": "2022",
+        "journal-title": "Knee Surg. Sports Traumatol. Arthrosc."
+      },
+      {
+        "key": "ref_92",
+        "first-page": "1077",
+        "article-title": "Research and application of artificial intelligence based three-dimensional preoperative planning system for total hip arthroplasty",
+        "volume": "34",
+        "author": "Wu",
+        "year": "2020",
+        "journal-title": "Chin. J. Reparative Reconstr. Surg."
+      },
+      {
+        "key": "ref_93",
+        "first-page": "343",
+        "article-title": "Artificial intelligence-driven prescriptive model to optimize team efficiency in a high-volume primary arthroplasty practice",
+        "volume": "47",
+        "author": "Gold",
+        "year": "2022",
+        "journal-title": "Int. Orthop. (SICOT)"
+      },
+      {
+        "key": "ref_94",
+        "doi-asserted-by": "crossref",
+        "first-page": "2075",
+        "DOI": "10.1016/j.arth.2022.04.003",
+        "article-title": "The Viability of an Artificial Intelligence/Machine Learning Prediction Model to Determine Candidates for Knee Arthroplasty",
+        "volume": "38",
+        "author": "Houserman",
+        "year": "2023",
+        "journal-title": "J. Arthroplast."
+      },
+      {
+        "key": "ref_95",
+        "doi-asserted-by": "crossref",
+        "first-page": "101672",
+        "DOI": "10.1016/j.artd.2025.101672",
+        "article-title": "The Prediction of Venous Thromboembolism Using Artificial Intelligence and Machine Learning in Lower Extremity Arthroplasty: A Systematic Review",
+        "volume": "33",
+        "author": "Dalil",
+        "year": "2025",
+        "journal-title": "Arthroplast. Today"
+      },
+      {
+        "key": "ref_96",
+        "doi-asserted-by": "crossref",
+        "first-page": "588",
+        "DOI": "10.1302/2046-3758.1310.BJR-2023-0275.R3",
+        "article-title": "Artificial intelligence in traumatology",
+        "volume": "13",
+        "author": "Breu",
+        "year": "2024",
+        "journal-title": "Bone Jt. Res."
+      },
+      {
+        "key": "ref_97",
+        "doi-asserted-by": "crossref",
+        "first-page": "S74",
+        "DOI": "10.1016/j.spinee.2022.06.159",
+        "article-title": "141. Comparative analysis of utilization of artificial intelligence in minimally invasive adult spinal deformity surgery",
+        "volume": "22",
+        "author": "Passias",
+        "year": "2022",
+        "journal-title": "Spine J."
+      },
+      {
+        "key": "ref_98",
+        "doi-asserted-by": "crossref",
+        "first-page": "103652",
+        "DOI": "10.1016/j.otsr.2023.103652",
+        "article-title": "Can artificial intelligence help decision-making in arthroscopy? Part 2: The IA-RTRHO model—A decision-making aid for long head of the biceps diagnoses in small rotator cuff tears",
+        "volume": "109",
+        "author": "Benhenneda",
+        "year": "2023",
+        "journal-title": "Orthop. Traumatol. Surg. Res."
+      },
+      {
+        "key": "ref_99",
+        "doi-asserted-by": "crossref",
+        "first-page": "2060",
+        "DOI": "10.1016/j.arth.2022.12.017",
+        "article-title": "Artificially Intelligent Three-Dimensionally-Printed Patient-Specific Instrument Improves Total Hip Arthroplasty Accuracy",
+        "volume": "38",
+        "author": "Chen",
+        "year": "2023",
+        "journal-title": "J. Arthroplast."
+      },
+      {
+        "key": "ref_100",
+        "doi-asserted-by": "crossref",
+        "first-page": "102843",
+        "DOI": "10.1016/j.artmed.2024.102843",
+        "article-title": "Multicentric development and validation of a multi-scale and multi-task deep learning model for comprehensive lower extremity alignment analysis",
+        "volume": "150",
+        "author": "Wilhelm",
+        "year": "2024",
+        "journal-title": "Artif. Intell. Med."
+      },
+      {
+        "key": "ref_101",
+        "doi-asserted-by": "crossref",
+        "first-page": "S319",
+        "DOI": "10.1016/j.arth.2023.02.076",
+        "article-title": "Artificial Intelligence Autonomously Measures Cup Orientation, Corrects for Pelvis Orientation, and Identifies Retroversion From Antero-Posterior Pelvis Radiographs",
+        "volume": "38",
+        "author": "Murphy",
+        "year": "2023",
+        "journal-title": "J. Arthroplast."
+      },
+      {
+        "key": "ref_102",
+        "doi-asserted-by": "crossref",
+        "first-page": "e0111",
+        "DOI": "10.55374/jseamed.v6i0.111",
+        "article-title": "Application of Artificial Intelligence to Assist Hip Fracture Diagnosis Using Plain Radiographs",
+        "volume": "6",
+        "author": "Udombuathong",
+        "year": "2022",
+        "journal-title": "J. Southeast Asian Med. Res."
+      },
+      {
+        "key": "ref_103",
+        "doi-asserted-by": "crossref",
+        "first-page": "e39664",
+        "DOI": "10.1016/j.heliyon.2024.e39664",
+        "article-title": "The advantages of artificial intelligence-assisted total hip arthroplasty: A randomized controlled trial followed by 12 months",
+        "volume": "10",
+        "author": "Zhang",
+        "year": "2024",
+        "journal-title": "Heliyon"
+      },
+      {
+        "key": "ref_104",
+        "doi-asserted-by": "crossref",
+        "first-page": "e34113",
+        "DOI": "10.1097/MD.0000000000034113",
+        "article-title": "The role of 3-dimensional preoperative planning for primary total hip arthroplasty based on artificial intelligence technology to different surgeons: A retrospective cohort study",
+        "volume": "102",
+        "author": "Zhang",
+        "year": "2023",
+        "journal-title": "Medicine"
+      },
+      {
+        "key": "ref_105",
+        "doi-asserted-by": "crossref",
+        "first-page": "104327",
+        "DOI": "10.1016/j.knee.2026.104327",
+        "article-title": "Artificial intelligence in knee osteoarthritis imaging and total knee arthroplasty: Advances, challenges, and segmentation methods—A review",
+        "volume": "60",
+        "author": "Humayun",
+        "year": "2026",
+        "journal-title": "Knee"
+      },
+      {
+        "key": "ref_106",
+        "doi-asserted-by": "crossref",
+        "first-page": "48",
+        "DOI": "10.1038/s41413-025-00423-2",
+        "article-title": "Advancing osteoarthritis research: The role of AI in clinical, imaging and omics fields",
+        "volume": "13",
+        "author": "Ou",
+        "year": "2025",
+        "journal-title": "Bone Res."
+      },
+      {
+        "key": "ref_107",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/j.patrec.2025.01.034",
+        "article-title": "FracNet: An end-to-end deep learning framework for bone fracture detection",
+        "volume": "190",
+        "author": "Alwzwazy",
+        "year": "2025",
+        "journal-title": "Pattern Recognit. Lett."
+      },
+      {
+        "key": "ref_108",
+        "doi-asserted-by": "crossref",
+        "first-page": "1178",
+        "DOI": "10.1016/j.arth.2024.02.001",
+        "article-title": "Novel Technique for the Identification of Hip Implants Using Artificial Intelligence",
+        "volume": "39",
+        "author": "Antonson",
+        "year": "2024",
+        "journal-title": "J. Arthroplast."
+      },
+      {
+        "key": "ref_109",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Amjad, J., Sajid, M.Z., Amjad, A., Hamid, M.F., Youssef, A., and Sharif, M.I. (2025). Knee Osteoarthritis Detection and Classification Using Autoencoders and Extreme Learning Machines. AI, 6.",
+        "DOI": "10.3390/ai6070151"
+      },
+      {
+        "key": "ref_110",
+        "doi-asserted-by": "crossref",
+        "first-page": "103138",
+        "DOI": "10.1016/j.artmed.2025.103138",
+        "article-title": "An AI system for continuous knee osteoarthritis severity grading: An anomaly detection inspired approach with few labels",
+        "volume": "167",
+        "author": "Belton",
+        "year": "2025",
+        "journal-title": "Artif. Intell. Med."
+      },
+      {
+        "key": "ref_111",
+        "doi-asserted-by": "crossref",
+        "first-page": "108742",
+        "DOI": "10.1016/j.cmpb.2025.108742",
+        "article-title": "Automated determination of hip arthrosis on the Kellgren-Lawrence scale in pelvic digital radiographs scans using machine learning",
+        "volume": "266",
+        "author": "Nurzynska",
+        "year": "2025",
+        "journal-title": "Comput. Methods Programs Biomed."
+      },
+      {
+        "key": "ref_112",
+        "doi-asserted-by": "crossref",
+        "first-page": "1508",
+        "DOI": "10.1002/jor.26109",
+        "article-title": "AI in Orthopedic Research: A Comprehensive Review",
+        "volume": "43",
+        "author": "Misir",
+        "year": "2025",
+        "journal-title": "J. Orthop. Res."
+      },
+      {
+        "key": "ref_113",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ariateja, D., Ardiyanto, I., and Soesanti, I. (2018, January 7–8). A Review of Contrast Enhancement Techniques in Digital Image Processing. Proceedings of the 2018 4th International Conference on Science and Technology (ICST), Yogyakarta, Indonesia.",
+        "DOI": "10.1109/ICSTC.2018.8528579"
+      },
+      {
+        "key": "ref_114",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Smolikowska, A., Kamiński, P., Obuchowicz, R., and Piórkowski, A. (2021). Effect of Adaptive Histogram Equalization of Orthopedic Radiograph Images on the Accuracy of Implant Delineation Using Active Contours, Springer International Publishing.",
+        "DOI": "10.1007/978-3-030-80129-8_11"
+      },
+      {
+        "key": "ref_115",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mozafari, J.K., Moshtaghioon, S.A., Mahdavi, S.M., Ghaznavi, A., Behjat, M., and Yeganeh, A. (2024). The role of artificial intelligence in preoperative planning for Total Hip Arthroplasty: A systematic review. Front. Artif. Intell., 7.",
+        "DOI": "10.3389/frai.2024.1417729"
+      },
+      {
+        "key": "ref_116",
+        "first-page": "100006",
+        "article-title": "Artificial intelligence in orthopaedic surgery: A comprehensive review of current innovations and future directions",
+        "volume": "1",
+        "author": "Tafat",
+        "year": "2024",
+        "journal-title": "Comput. Struct. Biotechnol. Rep."
+      },
+      {
+        "key": "ref_117",
+        "first-page": "e100254",
+        "article-title": "Artificial Intelligence for Predicting Postoperative Complications in Orthopedics: A Review of Clinical Applications, Challenges, and Future Directions",
+        "volume": "17",
+        "author": "Sharma",
+        "year": "2025",
+        "journal-title": "Cureus"
+      },
+      {
+        "key": "ref_118",
+        "doi-asserted-by": "crossref",
+        "first-page": "91",
+        "DOI": "10.1007/s10916-024-02106-7",
+        "article-title": "Unveiling the Future of Postoperative Outcomes Prediction: The Role of Machine Learning and Trust in Healthcare",
+        "volume": "48",
+        "author": "Hofer",
+        "year": "2024",
+        "journal-title": "J. Med. Syst."
+      },
+      {
+        "key": "ref_119",
+        "doi-asserted-by": "crossref",
+        "first-page": "627",
+        "DOI": "10.1016/j.arth.2022.12.032",
+        "article-title": "How to Develop and Validate Prediction Models for Orthopedic Outcomes",
+        "volume": "38",
+        "author": "Zaniletti",
+        "year": "2023",
+        "journal-title": "J. Arthroplast."
+      },
+      {
+        "key": "ref_120",
+        "doi-asserted-by": "crossref",
+        "first-page": "951",
+        "DOI": "10.1111/ejh.14110",
+        "article-title": "Artificial intelligence in the prediction of venous thromboembolism: A systematic review and pooled analysis",
+        "volume": "111",
+        "author": "Chiasakul",
+        "year": "2023",
+        "journal-title": "Eur. J. Haematol."
+      },
+      {
+        "key": "ref_121",
+        "doi-asserted-by": "crossref",
+        "first-page": "2197",
+        "DOI": "10.1016/j.arth.2021.02.028",
+        "article-title": "Deep Learning Artificial Intelligence Model for Assessment of Hip Dislocation Risk Following Primary Total Hip Arthroplasty From Postoperative Radiographs",
+        "volume": "36",
+        "author": "Rouzrokh",
+        "year": "2021",
+        "journal-title": "J. Arthroplast."
+      },
+      {
+        "key": "ref_122",
+        "doi-asserted-by": "crossref",
+        "first-page": "177137",
+        "DOI": "10.1109/ACCESS.2019.2957579",
+        "article-title": "Research on Data Mining Application of Orthopedic Rehabilitation Information for Smart Medical",
+        "volume": "7",
+        "author": "Ye",
+        "year": "2019",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "ref_123",
+        "doi-asserted-by": "crossref",
+        "first-page": "100360",
+        "DOI": "10.1016/j.slast.2025.100360",
+        "article-title": "Applications of artificial intelligence in rehabilitation: Technological innovation and transformation of clinical practice",
+        "volume": "35",
+        "author": "Liu",
+        "year": "2025",
+        "journal-title": "SLAS Technol."
+      },
+      {
+        "key": "ref_124",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Han, X., Guffanti, D., and Brunete, A. (2025). A Comprehensive Review of Vision-Based Sensor Systems for Human Gait Analysis. Sensors, 25.",
+        "DOI": "10.3390/s25020498"
+      },
+      {
+        "key": "ref_125",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Shajari, S., Kuruvinashetti, K., Komeili, A., and Sundararaj, U. (2023). The Emergence of AI-Based Wearable Sensors for Digital Health Technology: A Review. Sensors, 23.",
+        "DOI": "10.3390/s23239498"
+      },
+      {
+        "key": "ref_126",
+        "doi-asserted-by": "crossref",
+        "first-page": "176",
+        "DOI": "10.1038/s41746-025-01554-w",
+        "article-title": "Wearable AI to enhance patient safety and clinical decision-making",
+        "volume": "8",
+        "author": "Mahajan",
+        "year": "2025",
+        "journal-title": "npj Digit. Med."
+      },
+      {
+        "key": "ref_127",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wei, S., and Wu, Z. (2023). The Application of Wearable Sensors and Machine Learning Algorithms in Rehabilitation Training: A Systematic Review. Sensors, 23.",
+        "DOI": "10.3390/s23187667"
+      },
+      {
+        "key": "ref_128",
+        "first-page": "e90829",
+        "article-title": "Integrating Artificial Intelligence Into Telemedicine: Evidence, Challenges, and Future Directions",
+        "volume": "17",
+        "author": "Rossi",
+        "year": "2025",
+        "journal-title": "Cureus"
+      },
+      {
+        "key": "ref_129",
+        "first-page": "323",
+        "article-title": "The impact of artificial intelligence on remote healthcare: Enhancing patient engagement, connectivity, and overcoming challenges",
+        "volume": "3",
+        "author": "Chaturvedi",
+        "year": "2025",
+        "journal-title": "Intell. Pharm."
+      },
+      {
+        "key": "ref_130",
+        "unstructured": "Eskandar, K. (Rev. Esp. Cir. Ortop. Traumatol., 2025). The role of artificial intelligence in orthopedic surgery: Current applications and future perspectives—A systematic review of the literature, Rev. Esp. Cir. Ortop. Traumatol., in press."
+      },
+      {
+        "key": "ref_131",
+        "doi-asserted-by": "crossref",
+        "first-page": "1858",
+        "DOI": "10.1007/s44411-025-00170-0",
+        "article-title": "Evaluating the Impact of AI in Orthopedics: A Quantitative Analysis of Advancements and Challenges",
+        "volume": "126",
+        "author": "Orhan",
+        "year": "2025",
+        "journal-title": "Bratisl. Med. J."
+      },
+      {
+        "key": "ref_132",
+        "doi-asserted-by": "crossref",
+        "first-page": "100191",
+        "DOI": "10.1016/j.mcpdig.2024.100191",
+        "article-title": "Global Harmonization of Artificial Intelligence-Enabled Software as a Medical Device Regulation: Addressing Challenges and Unifying Standards",
+        "volume": "3",
+        "author": "Reddy",
+        "year": "2025",
+        "journal-title": "Mayo Clin. Proc. Digit. Health"
+      },
+      {
+        "key": "ref_133",
+        "doi-asserted-by": "crossref",
+        "first-page": "035502",
+        "DOI": "10.1117/1.JMI.11.3.035502",
+        "article-title": "Interpretation time efficiency with radiographs: A comparison study between standard 6 and 12 MP high-resolution display monitors",
+        "volume": "11",
+        "author": "Abozeed",
+        "year": "2024",
+        "journal-title": "J. Med. Imaging"
+      },
+      {
+        "key": "ref_134",
+        "doi-asserted-by": "crossref",
+        "first-page": "453",
+        "DOI": "10.1016/j.acra.2005.12.014",
+        "article-title": "Radiologists’ Reading Times Using PACS and Using Films: One Practice’s Experience",
+        "volume": "13",
+        "author": "Fleishon",
+        "year": "2006",
+        "journal-title": "Acad. Radiol."
+      },
+      {
+        "key": "ref_135",
+        "doi-asserted-by": "crossref",
+        "first-page": "tzae011",
+        "DOI": "10.1093/bjro/tzae011",
+        "article-title": "Improving traumatic fracture detection on radiographs with artificial intelligence support: A multi-reader study",
+        "volume": "6",
+        "author": "Bachmann",
+        "year": "2024",
+        "journal-title": "BJR|Open"
+      },
+      {
+        "key": "ref_136",
+        "doi-asserted-by": "crossref",
+        "first-page": "2610079",
+        "DOI": "10.1080/07853890.2025.2610079",
+        "article-title": "Enhanced fracture detection on radiographs with AI assistance for clinicians: A systematic review and meta-analysis",
+        "volume": "58",
+        "author": "Qin",
+        "year": "2026",
+        "journal-title": "Ann. Med."
+      },
+      {
+        "key": "ref_137",
+        "doi-asserted-by": "crossref",
+        "first-page": "468",
+        "DOI": "10.1186/s13018-025-05888-9",
+        "article-title": "Artificial intelligence-guided distal radius fracture detection on plain radiographs in comparison with human raters",
+        "volume": "20",
+        "author": "Ramadanov",
+        "year": "2025",
+        "journal-title": "J. Orthop. Surg. Res."
+      },
+      {
+        "key": "ref_138",
+        "first-page": "e93124",
+        "article-title": "Artificial Intelligence in Fracture Diagnosis on Radiographs: Evidence, Pitfalls, and Pathways for Clinical Integration (2020–2025)",
+        "volume": "17",
+        "author": "Elbahi",
+        "year": "2025",
+        "journal-title": "Cureus"
+      },
+      {
+        "key": "ref_139",
+        "doi-asserted-by": "crossref",
+        "first-page": "679",
+        "DOI": "10.1007/s10278-022-00741-5",
+        "article-title": "Detecting Distal Radius Fractures Using a Segmentation-Based Deep Learning Model",
+        "volume": "36",
+        "author": "Anttila",
+        "year": "2023",
+        "journal-title": "J. Digit. Imaging"
+      },
+      {
+        "key": "ref_140",
+        "doi-asserted-by": "crossref",
+        "first-page": "e076954",
+        "DOI": "10.1136/bmjopen-2023-076954",
+        "article-title": "AI-based X-ray fracture analysis of the distal radius: Accuracy between representative classification, detection and segmentation deep learning models for clinical practice",
+        "volume": "14",
+        "author": "Russe",
+        "year": "2024",
+        "journal-title": "BMJ Open"
+      },
+      {
+        "key": "ref_141",
+        "doi-asserted-by": "crossref",
+        "first-page": "139",
+        "DOI": "10.1016/j.jor.2022.05.013",
+        "article-title": "Application of deep learning algorithm in automated identification of knee arthroplasty implants from plain radiographs using transfer learning models: Are algorithms better than humans?",
+        "volume": "32",
+        "author": "Tiwari",
+        "year": "2022",
+        "journal-title": "J. Orthop."
+      },
+      {
+        "key": "ref_142",
+        "doi-asserted-by": "crossref",
+        "first-page": "1295",
+        "DOI": "10.1007/s43465-021-00529-9",
+        "article-title": "Knee Implant Identification by Fine-Tuning Deep Learning Models",
+        "volume": "55",
+        "author": "Sharma",
+        "year": "2021",
+        "journal-title": "Indian J. Orthop."
+      },
+      {
+        "key": "ref_143",
+        "doi-asserted-by": "crossref",
+        "first-page": "156",
+        "DOI": "10.1186/s13018-021-02294-9",
+        "article-title": "Value of 3D preoperative planning for primary total hip arthroplasty based on artificial intelligence technology",
+        "volume": "16",
+        "author": "Huo",
+        "year": "2021",
+        "journal-title": "J. Orthop. Surg. Res."
+      },
+      {
+        "key": "ref_144",
+        "doi-asserted-by": "crossref",
+        "first-page": "03000605211058874",
+        "DOI": "10.1177/03000605211058874",
+        "article-title": "Value of preoperative three-dimensional planning software (AI-HIP) in primary total hip arthroplasty: A retrospective study",
+        "volume": "49",
+        "author": "Ding",
+        "year": "2021",
+        "journal-title": "J. Int. Med. Res."
+      },
+      {
+        "key": "ref_145",
+        "first-page": "e95328",
+        "article-title": "Accuracy of AI-Assisted Methods in Preoperative Templating Compared to the Standard X-Ray-Based Surgeon-Performed Templating in Total Hip Replacement Surgery: A Systematic Review and Meta-Analysis",
+        "volume": "17",
+        "author": "Alzuabidi",
+        "year": "2025",
+        "journal-title": "Cureus"
+      },
+      {
+        "key": "ref_146",
+        "first-page": "534",
+        "article-title": "Study on the accuracy of automatic segmentation of knee CT images based on deep learning",
+        "volume": "36",
+        "author": "Song",
+        "year": "2022",
+        "journal-title": "Chin. J. Reparative Reconstr. Surg."
+      },
+      {
+        "key": "ref_147",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Marsilio, L., Moglia, A., Rossi, M., Manzotti, A., Mainardi, L., and Cerveri, P. (2023). Combined Edge Loss UNet for Optimized Segmentation in Total Knee Arthroplasty Preoperative Planning. Bioengineering, 10.",
+        "DOI": "10.3390/bioengineering10121433"
+      },
+      {
+        "key": "ref_148",
+        "doi-asserted-by": "crossref",
+        "first-page": "e638",
+        "DOI": "10.5435/JAAOS-D-22-01207",
+        "article-title": "Computer-assisted Navigation in Lumbar Spine Instrumented Fusions: Comparison of In-hospital and 30-Day Postoperative Complications With Nonnavigated Fusions in a National Database",
+        "volume": "31",
+        "author": "Sing",
+        "year": "2023",
+        "journal-title": "J. Am. Acad. Orthop. Surg."
+      },
+      {
+        "key": "ref_149",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Orosz, L.D., Poulter, G.T., Haines, C.M., Lee, N.J., Rafiqzad, Y., Lerebo, W.T., Roy, R.T., Jazini, E., Gum, J.L., and Lehman, R.A. (2026). Comprehensive Outcomes Following Navigated Robotics in Thoracolumbar Spine Surgery: The PRoGRSS Final Analysis. Glob. Spine J., 21925682261421190.",
+        "DOI": "10.1177/21925682261421190"
+      },
+      {
+        "key": "ref_150",
+        "first-page": "e48078",
+        "article-title": "Machine Learning Applications in Spine Surgery",
+        "volume": "15",
+        "author": "Tragaris",
+        "year": "2023",
+        "journal-title": "Cureus"
+      },
+      {
+        "key": "ref_151",
+        "doi-asserted-by": "crossref",
+        "first-page": "e5147",
+        "DOI": "10.1097/GOX.0000000000005147",
+        "article-title": "Telerehabilitation Technology Used for Remote Wrist/Finger Range of Motion Evaluation: A Scoping Review",
+        "volume": "11",
+        "author": "Kuchtaruk",
+        "year": "2023",
+        "journal-title": "Plast. Reconstr. Surg. Glob. Open"
+      },
+      {
+        "key": "ref_152",
+        "doi-asserted-by": "crossref",
+        "first-page": "20552076251390575",
+        "DOI": "10.1177/20552076251390575",
+        "article-title": "Do teleconsultations increase patient access to orthopaedic care?",
+        "volume": "11",
+        "author": "Livingston",
+        "year": "2025",
+        "journal-title": "Digit. Health"
+      },
+      {
+        "key": "ref_153",
+        "doi-asserted-by": "crossref",
+        "first-page": "e088153",
+        "DOI": "10.1136/bmjopen-2024-088153",
+        "article-title": "Reducing outpatient wait times through telemedicine: A systematic review and quantitative analysis",
+        "volume": "15",
+        "author": "Capodici",
+        "year": "2025",
+        "journal-title": "BMJ Open"
+      },
+      {
+        "key": "ref_154",
+        "doi-asserted-by": "crossref",
+        "first-page": "778",
+        "DOI": "10.1089/tmj.2022.0217",
+        "article-title": "Telemedicine Orthopedic Consultations Duration and Timing in Outpatient Clinical Practice During the COVID-19 Pandemic",
+        "volume": "29",
+        "author": "Glinkowski",
+        "year": "2023",
+        "journal-title": "Telemed. e-Health"
+      },
+      {
+        "key": "ref_155",
+        "doi-asserted-by": "crossref",
+        "first-page": "22",
+        "DOI": "10.21037/jmai-24-58",
+        "article-title": "Evaluation of range of motion using vision artificial intelligence (AI) in musculoskeletal medicine",
+        "volume": "7",
+        "author": "Meng",
+        "year": "2024",
+        "journal-title": "J. Med. Artif. Intell."
+      },
+      {
+        "key": "ref_156",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Obuchowicz, R., Piórkowski, A., Nurzyńska, K., Obuchowicz, B., Strzelecki, M., and Bielecka, M. (2026). Will AI Replace Physicians in the Near Future? AI Adoption Barriers in Medicine. Diagnostics, 16.",
+        "DOI": "10.3390/diagnostics16030396"
+      },
+      {
+        "key": "ref_157",
+        "doi-asserted-by": "crossref",
+        "first-page": "14",
+        "DOI": "10.54254/2753-8818/2025.AU26493",
+        "article-title": "Progress and Future Direction of Artificial Intelligence-assisted 3D MRI Analysis in Orthopedics",
+        "volume": "128",
+        "author": "Yu",
+        "year": "2025",
+        "journal-title": "TNS"
+      },
+      {
+        "key": "ref_158",
+        "first-page": "152",
+        "article-title": "Deep learning applications in orthopaedics: A systematic review and future directions",
+        "volume": "39",
+        "year": "2025",
+        "journal-title": "Acta Ortop. Mex."
+      },
+      {
+        "key": "ref_159",
+        "doi-asserted-by": "crossref",
+        "first-page": "22",
+        "DOI": "10.1186/s41747-024-00422-8",
+        "article-title": "AI applications in musculoskeletal imaging: A narrative review",
+        "volume": "8",
+        "author": "Gitto",
+        "year": "2024",
+        "journal-title": "Eur. Radiol. Exp."
+      },
+      {
+        "key": "ref_160",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chen, K., Stotter, C., Klestil, T., and Nehrer, S. (2022). Artificial Intelligence in Orthopedic Radiography Analysis: A Narrative Review. Diagnostics, 12.",
+        "DOI": "10.3390/diagnostics12092235"
+      },
+      {
+        "key": "ref_161",
+        "doi-asserted-by": "crossref",
+        "first-page": "511",
+        "DOI": "10.1007/s11701-025-02561-5",
+        "article-title": "The revolutionary impact of artificial intelligence in orthopedics: Comprehensive review of current benefits and challenges",
+        "volume": "19",
+        "author": "Baghbani",
+        "year": "2025",
+        "journal-title": "J. Robot. Surg."
+      },
+      {
+        "key": "ref_162",
+        "doi-asserted-by": "crossref",
+        "first-page": "777",
+        "DOI": "10.1186/s13018-025-06208-x",
+        "article-title": "AI-assisted 3D versus conventional 2D preoperative planning in total hip arthroplasty for Crowe type II-IV high hip dislocation: A two-year retrospective study",
+        "volume": "20",
+        "author": "Lu",
+        "year": "2025",
+        "journal-title": "J. Orthop. Surg. Res."
+      },
+      {
+        "key": "ref_163",
+        "doi-asserted-by": "crossref",
+        "first-page": "242",
+        "DOI": "10.5397/cise.2025.00185",
+        "article-title": "An overview of artificial intelligence and machine learning in shoulder surgery",
+        "volume": "28",
+        "author": "Cho",
+        "year": "2025",
+        "journal-title": "Clin. Shoulder Elb."
+      },
+      {
+        "key": "ref_164",
+        "doi-asserted-by": "crossref",
+        "first-page": "4231",
+        "DOI": "10.12998/wjcc.v11.i18.4231",
+        "article-title": "Application of artificial intelligence in trauma orthopedics: Limitation and prospects",
+        "volume": "11",
+        "author": "Salimi",
+        "year": "2023",
+        "journal-title": "World J. Clin. Cases"
+      },
+      {
+        "key": "ref_165",
+        "doi-asserted-by": "crossref",
+        "first-page": "105493",
+        "DOI": "10.1016/j.jbspin.2022.105493",
+        "article-title": "Application of artificial intelligence to imaging interpretations in the musculoskeletal area: Where are we? Where are we going?",
+        "volume": "90",
+        "author": "Bousson",
+        "year": "2023",
+        "journal-title": "Jt. Bone Spine"
+      },
+      {
+        "key": "ref_166",
+        "first-page": "58364",
+        "article-title": "A Review on the Use of Artificial Intelligence in Fracture Detection",
+        "volume": "16",
+        "author": "Bhatnagar",
+        "year": "2024",
+        "journal-title": "Cureus"
+      },
+      {
+        "key": "ref_167",
+        "doi-asserted-by": "crossref",
+        "first-page": "305",
+        "DOI": "10.1007/s00256-021-03879-5",
+        "article-title": "AI MSK clinical applications: Orthopedic implants",
+        "volume": "51",
+        "author": "Yi",
+        "year": "2021",
+        "journal-title": "Skelet. Radiol."
+      },
+      {
+        "key": "ref_168",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mishra, A., Ramanathan, A., Batta, V., Malathy, C., Kundu, S.S., Gayathri, M., Vathana, D., and Kamineni, S. (2023). Harnessing the Potential of Deep Learning for Total Shoulder Implant Classification: A Comparative Study. Lecture Notes in Computer Science, Springer Nature.",
+        "DOI": "10.1007/978-3-031-48593-0_9"
+      },
+      {
+        "key": "ref_169",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ghose, S., Datta, S., Batta, V., Malathy, C., and M, G. (2020). Artificial Intelligence Based Identification of Total Knee Arthroplasty Implants, IEEE.",
+        "DOI": "10.1109/ICISS49785.2020.9315956"
+      },
+      {
+        "key": "ref_170",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Andriollo, L., Picchi, A., Iademarco, G., Fidanza, A., Perticarini, L., Rossi, S.M.P., Logroscino, G., and Benazzo, F. (2025). The Role of Artificial Intelligence and Emerging Technologies in Advancing Total Hip Arthroplasty. JPM, 15.",
+        "DOI": "10.3390/jpm15010021"
+      },
+      {
+        "key": "ref_171",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ali, S.M., Nara, S., Ramanathan, A., Malathy, C., Athilakshmi, R., Gayathri, M., and Batta, V. (2023). Automatic Identification of Make and Model of Ankle Implants Using Artificial Intelligence, IEEE.",
+        "DOI": "10.1109/ICECCT56650.2023.10179730"
+      },
+      {
+        "key": "ref_172",
+        "doi-asserted-by": "crossref",
+        "first-page": "5544",
+        "DOI": "10.21276/SSR-IIJLS.2024.10.3.21",
+        "article-title": "Intersection of Orthopaedics and Artificial Intelligence: A Review",
+        "volume": "10",
+        "author": "P",
+        "year": "2024",
+        "journal-title": "SSR-IIJLS"
+      },
+      {
+        "key": "ref_173",
+        "doi-asserted-by": "crossref",
+        "first-page": "103101",
+        "DOI": "10.1016/j.jcot.2025.103101",
+        "article-title": "From data to precision: The transformative role of AI and machine learning in modern orthopaedic practice",
+        "volume": "69",
+        "author": "Joshi",
+        "year": "2025",
+        "journal-title": "J. Clin. Orthop. Trauma"
+      },
+      {
+        "key": "ref_174",
+        "first-page": "22104917221082315",
+        "article-title": "Artificial intelligence reshapes current understanding and management of osteoarthritis: A narrative review",
+        "volume": "29",
+        "author": "Yick",
+        "year": "2022",
+        "journal-title": "J. Orthop. Trauma Rehabil."
+      },
+      {
+        "key": "ref_175",
+        "doi-asserted-by": "crossref",
+        "first-page": "447",
+        "DOI": "10.1302/2046-3758.127.BJR-2023-0111.R1",
+        "article-title": "Artificial intelligence in orthopaedic surgery",
+        "volume": "12",
+        "author": "Powling",
+        "year": "2023",
+        "journal-title": "Bone Jt. Res."
+      },
+      {
+        "key": "ref_176",
+        "doi-asserted-by": "crossref",
+        "first-page": "2054",
+        "DOI": "10.38124/ijisrt/IJISRT24MAY1495",
+        "article-title": "An Examination of the Use of Artificial Intelligence in Orthopaedic Surgery",
+        "volume": "9",
+        "author": "G",
+        "year": "2024",
+        "journal-title": "Int. J. Innov. Sci. Res. Technol. (IJISRT)"
+      },
+      {
+        "key": "ref_177",
+        "doi-asserted-by": "crossref",
+        "first-page": "257",
+        "DOI": "10.1007/s00256-021-03824-6",
+        "article-title": "Musculoskeletal trauma and artificial intelligence: Current trends and projections",
+        "volume": "51",
+        "author": "Laur",
+        "year": "2021",
+        "journal-title": "Skelet. Radiol."
+      },
+      {
+        "key": "ref_178",
+        "doi-asserted-by": "crossref",
+        "first-page": "e70084",
+        "DOI": "10.1002/jeo2.70084",
+        "article-title": "Leveraging digital twins for improved orthopaedic evaluation and treatment",
+        "volume": "11",
+        "author": "Dean",
+        "year": "2024",
+        "journal-title": "J. Exp. Orthop."
+      },
+      {
+        "key": "ref_179",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Liang, W., Zhou, C., Bai, J., Zhang, H., Jiang, B., Wang, J., Fu, L., Long, H., Huang, X., and Zhao, J. (2024). Current advancements in therapeutic approaches in orthopedic surgery: A review of recent trends. Front. Bioeng. Biotechnol., 12.",
+        "DOI": "10.3389/fbioe.2024.1328997"
+      },
+      {
+        "key": "ref_180",
+        "doi-asserted-by": "crossref",
+        "unstructured": "The European Federation Of Radiographer Societies (2020). Artificial Intelligence and the Radiographer/Radiological Technologist Profession: A joint statement of the International Society of Radiographers and Radiological Technologists and the European Federation of Radiographer Societies. Radiography, 26, 93–95.",
+        "DOI": "10.1016/j.radi.2020.03.007"
+      },
+      {
+        "key": "ref_181",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Dubey, A., Uldin, H., Khan, Z., Panchal, H., Iyengar, K.P., and Botchu, R. (2025). Role of Artificial Intelligence in Musculoskeletal Interventions. Cancers, 17.",
+        "DOI": "10.3390/cancers17101615"
+      },
+      {
+        "key": "ref_182",
+        "first-page": "17",
+        "article-title": "Artificial Intelligence and the State of the Art of Orthopedic Surgery",
+        "volume": "13",
+        "author": "Khojastehnezhad",
+        "year": "2025",
+        "journal-title": "Arch. Bone Jt. Surg."
+      },
+      {
+        "key": "ref_183",
+        "first-page": "100256",
+        "article-title": "Risk stratification in hip and knee replacement using Artificial Intelligence: A dual centre study to support the utility of high-volume low-complexity hubs and ambulatory surgery centres",
+        "volume": "12",
+        "author": "Woodward",
+        "year": "2025",
+        "journal-title": "Intell.-Based Med."
+      },
+      {
+        "key": "ref_184",
+        "doi-asserted-by": "crossref",
+        "first-page": "95",
+        "DOI": "10.25259/IJMS_205_2023",
+        "article-title": "Uses, benefits and future of artificial intelligence (AI) in orthopedics",
+        "volume": "76",
+        "author": "Nathan",
+        "year": "2024",
+        "journal-title": "Indian J. Med Sci."
+      },
+      {
+        "key": "ref_185",
+        "doi-asserted-by": "crossref",
+        "first-page": "2057",
+        "DOI": "10.1007/s00586-022-07176-0",
+        "article-title": "Artificial intelligence in spine care: Current applications and future utility",
+        "volume": "31",
+        "author": "Hornung",
+        "year": "2022",
+        "journal-title": "Eur. Spine J."
+      },
+      {
+        "key": "ref_186",
+        "doi-asserted-by": "crossref",
+        "first-page": "797",
+        "DOI": "10.1007/s12178-020-09680-6",
+        "article-title": "Telemedicine: Is It a Tool for Orthopedics?",
+        "volume": "13",
+        "author": "Foni",
+        "year": "2020",
+        "journal-title": "Curr. Rev. Musculoskelet. Med."
+      },
+      {
+        "key": "ref_187",
+        "doi-asserted-by": "crossref",
+        "first-page": "206",
+        "DOI": "10.1038/s42256-019-0048-x",
+        "article-title": "Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead",
+        "volume": "1",
+        "author": "Rudin",
+        "year": "2019",
+        "journal-title": "Nat. Mach. Intell."
+      },
+      {
+        "key": "ref_188",
+        "doi-asserted-by": "crossref",
+        "first-page": "e56715",
+        "DOI": "10.2196/56715",
+        "article-title": "Evaluation of a Musculoskeletal Digital Assessment Routing Tool (DART): Crossover Noninferiority Randomized Pilot Trial",
+        "volume": "8",
+        "author": "Lowe",
+        "year": "2024",
+        "journal-title": "JMIR Form. Res."
+      },
+      {
+        "key": "ref_189",
+        "doi-asserted-by": "crossref",
+        "first-page": "331",
+        "DOI": "10.1177/15563316251341321",
+        "article-title": "Advancing Musculoskeletal Care Using AI and Digital Health Applications: A Review of Commercial Solutions",
+        "volume": "21",
+        "author": "Pawelczyk",
+        "year": "2025",
+        "journal-title": "HSS J.® Musculoskelet. J. Hosp. Spec. Surg."
+      },
+      {
+        "key": "ref_190",
+        "doi-asserted-by": "crossref",
+        "first-page": "15563316251341229",
+        "DOI": "10.1177/15563316251341229",
+        "article-title": "The State of Telemedicine, Telerehabilitation, and Virtual Care in Musculoskeletal Health: A Narrative Review",
+        "volume": "21",
+        "author": "Johnson",
+        "year": "2025",
+        "journal-title": "Hss J."
+      },
+      {
+        "key": "ref_191",
+        "doi-asserted-by": "crossref",
+        "first-page": "522",
+        "DOI": "10.1038/s41746-025-01909-3",
+        "article-title": "Establishing organizational AI governance in healthcare: A case study in Canada",
+        "volume": "8",
+        "author": "Kim",
+        "year": "2025",
+        "journal-title": "npj Digit. Med."
+      },
+      {
+        "key": "ref_192",
+        "doi-asserted-by": "crossref",
+        "first-page": "272",
+        "DOI": "10.1038/s41746-025-01700-4",
+        "article-title": "Scaling enterprise AI in healthcare: The role of governance in risk mitigation frameworks",
+        "volume": "8",
+        "author": "Bodnari",
+        "year": "2025",
+        "journal-title": "npj Digit. Med."
+      },
+      {
+        "key": "ref_193",
+        "doi-asserted-by": "crossref",
+        "first-page": "11",
+        "DOI": "10.36922/aih.3278",
+        "article-title": "Emerging trends and future directions of machine learning in arthroplasty: A narrative review",
+        "volume": "2",
+        "author": "Simo",
+        "year": "2025",
+        "journal-title": "AIH"
+      },
+      {
+        "key": "ref_194",
+        "doi-asserted-by": "crossref",
+        "first-page": "103",
+        "DOI": "10.1016/j.artd.2021.07.012",
+        "article-title": "Artificial Learning and Machine Learning Decision Guidance Applications in Total Hip and Knee Arthroplasty: A Systematic Review",
+        "volume": "11",
+        "author": "Lopez",
+        "year": "2021",
+        "journal-title": "Arthroplast. Today"
+      },
+      {
+        "key": "ref_195",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Farhadi, F., Barnes, M.R., Sugito, H.R., Sin, J.M., Henderson, E.R., and Levy, J.J. (2022). Applications of artificial intelligence in orthopaedic surgery. Front. Med. Technol., 4.",
+        "DOI": "10.3389/fmedt.2022.995526"
+      },
+      {
+        "key": "ref_196",
+        "doi-asserted-by": "crossref",
+        "first-page": "267",
+        "DOI": "10.1177/15563316251339596",
+        "article-title": "Artificial Intelligence and Musculoskeletal Surgical Applications",
+        "volume": "21",
+        "author": "Oettl",
+        "year": "2025",
+        "journal-title": "HSS J.® Musculoskelet. J. Hosp. Spec. Surg."
+      },
+      {
+        "key": "ref_197",
+        "doi-asserted-by": "crossref",
+        "first-page": "233",
+        "DOI": "10.1007/s12178-017-9407-6",
+        "article-title": "Technology assessment and cost-effectiveness in orthopedics: How to measure outcomes and deliver value in a constantly changing healthcare environment",
+        "volume": "10",
+        "author": "Burnham",
+        "year": "2017",
+        "journal-title": "Curr. Rev. Musculoskelet. Med."
+      },
+      {
+        "key": "ref_198",
+        "doi-asserted-by": "crossref",
+        "first-page": "1777",
+        "DOI": "10.1097/CORR.0000000000000873",
+        "article-title": "Value-based Healthcare: Can Artificial Intelligence Provide Value in Orthopaedic Surgery?",
+        "volume": "477",
+        "author": "Jayakumar",
+        "year": "2019",
+        "journal-title": "Clin. Orthop. Relat. Res."
+      },
+      {
+        "key": "ref_199",
+        "doi-asserted-by": "crossref",
+        "first-page": "548",
+        "DOI": "10.1038/s41746-025-01722-y",
+        "article-title": "Systematic review of cost effectiveness and budget impact of artificial intelligence in healthcare",
+        "volume": "8",
+        "year": "2025",
+        "journal-title": "npj Digit. Med."
+      },
+      {
+        "key": "ref_200",
+        "doi-asserted-by": "crossref",
+        "first-page": "307",
+        "DOI": "10.1177/15563316251340074",
+        "article-title": "Artificial Intelligence in Value-Based Health Care",
+        "volume": "21",
+        "author": "Shah",
+        "year": "2025",
+        "journal-title": "HSS J.® Musculoskelet. J. Hosp. Spec. Surg."
+      },
+      {
+        "key": "ref_201",
+        "first-page": "tzaf029",
+        "article-title": "Artificial intelligence in musculoskeletal radiology: Practical aspects and latest perspectives",
+        "volume": "7",
+        "author": "Tordjman",
+        "year": "2025",
+        "journal-title": "BJR Open"
+      },
+      {
+        "key": "ref_202",
+        "doi-asserted-by": "crossref",
+        "first-page": "e230764",
+        "DOI": "10.1148/radiol.230764",
+        "article-title": "How AI May Transform Musculoskeletal Imaging",
+        "volume": "310",
+        "author": "Guermazi",
+        "year": "2024",
+        "journal-title": "Radiology"
+      },
+      {
+        "key": "ref_203",
+        "doi-asserted-by": "crossref",
+        "first-page": "20552076261418902",
+        "DOI": "10.1177/20552076261418902",
+        "article-title": "Auto-planning in preoperative shoulder arthroplasty software reduces implant planning time and number of actions",
+        "volume": "12",
+        "author": "Mahe",
+        "year": "2026",
+        "journal-title": "Digit. Health"
+      },
+      {
+        "key": "ref_204",
+        "doi-asserted-by": "crossref",
+        "first-page": "63",
+        "DOI": "10.1016/j.jacr.2025.07.033",
+        "article-title": "Impact of Artificial Intelligence Triage on Radiologist Report Turnaround Time: Real-World Time Savings and Insights From Model Predictions",
+        "volume": "23",
+        "author": "Thompson",
+        "year": "2026",
+        "journal-title": "J. Am. Coll. Radiol."
+      },
+      {
+        "key": "ref_205",
+        "doi-asserted-by": "crossref",
+        "first-page": "aipc2500871",
+        "DOI": "10.1056/AIpc2500871",
+        "article-title": "Catalyzing Health AI by Fixing Payment Systems",
+        "volume": "2",
+        "author": "Razavian",
+        "year": "2025",
+        "journal-title": "NEJM AI"
+      },
+      {
+        "key": "ref_206",
+        "first-page": "e86279",
+        "article-title": "The Impact of Artificial Intelligence on Financial Systems in Healthcare: A Systematic Review of Economic Evaluation Studies",
+        "volume": "17",
+        "author": "Gupta",
+        "year": "2025",
+        "journal-title": "Cureus"
+      },
+      {
+        "key": "ref_207",
+        "doi-asserted-by": "crossref",
+        "first-page": "141",
+        "DOI": "10.1038/s43856-023-00370-1",
+        "article-title": "The future landscape of large language models in medicine",
+        "volume": "3",
+        "author": "Clusmann",
+        "year": "2023",
+        "journal-title": "Commun. Med."
+      },
+      {
+        "key": "ref_208",
+        "doi-asserted-by": "crossref",
+        "first-page": "152",
+        "DOI": "10.2340/17453674.2024.40182",
+        "article-title": "ChatGPT-4 generates orthopedic discharge documents faster than humans maintaining comparable quality: A pilot study of 6 cases",
+        "volume": "95",
+        "author": "Barle",
+        "year": "2024",
+        "journal-title": "Acta Orthop."
+      }
+    ],
+    "container-title": [
+      "Journal of Clinical Medicine"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.mdpi.com/2077-0383/15/5/1751/pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          26
+        ]
+      ],
+      "date-time": "2026-02-26T10:03:20Z",
+      "timestamp": 1772100200000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.mdpi.com/2077-0383/15/5/1751"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          25
+        ]
+      ]
+    },
+    "references-count": 208,
+    "journal-issue": {
+      "issue": "5",
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            3
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "jcm15051751"
+    ],
+    "URL": "https://doi.org/10.3390/jcm15051751",
+    "relation": {},
+    "ISSN": [
+      "2077-0383"
+    ],
+    "issn-type": [
+      {
+        "value": "2077-0383",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          25
+        ]
+      ]
+    }
+  }
+}

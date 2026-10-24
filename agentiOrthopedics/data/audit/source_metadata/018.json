@@ -1,0 +1,183 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          25
+        ]
+      ],
+      "date-time": "2026-07-25T19:33:50Z",
+      "timestamp": 1785008030978,
+      "version": "3.55.0"
+    },
+    "reference-count": 0,
+    "publisher": "AME Publishing Company",
+    "content-domain": {
+      "domain": [
+        "amegroups.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Ann Joint"
+    ],
+    "DOI": "10.21037/aoj-25-38",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          27
+        ]
+      ],
+      "date-time": "2026-01-27T01:26:22Z",
+      "timestamp": 1769477182000
+    },
+    "page": "6-6",
+    "update-policy": "https://doi.org/10.21037/ame_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "Artificial intelligence models cannot yet replace experts in providing patient education for shoulder and elbow orthopaedic pathologies: a systematic review and meta-analysis"
+    ],
+    "prefix": "10.21037",
+    "volume": "11",
+    "author": [
+      {
+        "given": "Joshua",
+        "family": "Dworsky-Fried",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Matthew",
+        "family": "Mellon",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Preksha",
+        "family": "Rathod",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "James",
+        "family": "Yan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Moin",
+        "family": "Khan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "8611",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "container-title": [
+      "Annals of Joint"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://aoj.amegroups.com/article/download/9598/pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          27
+        ]
+      ],
+      "date-time": "2026-01-27T01:26:23Z",
+      "timestamp": 1769477183000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://aoj.amegroups.com/article/view/9598/html"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.21037/aoj-25-38",
+    "relation": {},
+    "ISSN": [
+      "2415-6809"
+    ],
+    "issn-type": [
+      {
+        "value": "2415-6809",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    }
+  }
+}

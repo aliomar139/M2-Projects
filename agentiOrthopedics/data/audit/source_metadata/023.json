@@ -1,0 +1,1117 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          18
+        ]
+      ],
+      "date-time": "2026-09-18T17:46:32Z",
+      "timestamp": 1789753592759,
+      "version": "4.0.1"
+    },
+    "reference-count": 87,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              1,
+              8
+            ]
+          ],
+          "date-time": "2019-01-08T00:00:00Z",
+          "timestamp": 1546905600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100002347",
+        "name": "Bundesministerium für Bildung und Forschung",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "01GY1603A"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "01GY1603A"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100002347",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "BMC Med Inform Decis Mak"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1186/s12911-018-0731-6",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          1,
+          8
+        ]
+      ],
+      "date-time": "2019-01-08T17:08:01Z",
+      "timestamp": 1546967281000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 109,
+    "title": [
+      "Predicting patient-reported outcomes following hip and knee replacement surgery using supervised machine learning"
+    ],
+    "prefix": "10.1186",
+    "volume": "19",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-0495-922X",
+        "authenticated-orcid": false,
+        "given": "Manuel",
+        "family": "Huber",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9498-8002",
+        "authenticated-orcid": false,
+        "given": "Christoph",
+        "family": "Kurz",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7115-7510",
+        "authenticated-orcid": false,
+        "given": "Reiner",
+        "family": "Leidl",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2019,
+          1,
+          8
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "731_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "1361",
+        "DOI": "10.1007/s11606-012-2077-6",
+        "volume": "27",
+        "author": "G Elwyn",
+        "year": "2012",
+        "unstructured": "Elwyn G, Frosch D, Thomson R, et al. Shared decision making: a model for clinical practice. J Gen Intern Med. 2012;27:1361–7.",
+        "journal-title": "J Gen Intern Med"
+      },
+      {
+        "key": "731_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "6",
+        "DOI": "10.1056/NEJMp1209500",
+        "volume": "368",
+        "author": "E Oshima Lee",
+        "year": "2013",
+        "unstructured": "Oshima Lee E, Emanuel EJ. Shared decision making to improve care and reduce costs. N Engl J Med. 2013;368:6–8.",
+        "journal-title": "N Engl J Med"
+      },
+      {
+        "key": "731_CR3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Stacey D, Légaré F, Lewis K, et al. Decision aids for people facing health treatment or screening decisions. Cochrane Database of Systematic Reviews. 2017.",
+        "DOI": "10.1002/14651858.CD001431.pub5"
+      },
+      {
+        "key": "731_CR4",
+        "unstructured": "Wagle NW. Care Redesign 2016: Implementing Patient-Reported Outcome Measures. NEJM Catalyst:2016."
+      },
+      {
+        "key": "731_CR5",
+        "volume-title": "Getting the most out of PROMS",
+        "author": "NJ Devlin",
+        "year": "2010",
+        "unstructured": "Devlin NJ, Appleby J. Getting the most out of PROMS. King's Fund, 2010."
+      },
+      {
+        "key": "731_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "141",
+        "DOI": "10.1111/joim.12409",
+        "volume": "279",
+        "author": "E Nilsson",
+        "year": "2016",
+        "unstructured": "Nilsson E, Orwelius L, Kristenson M. Patient-reported outcomes in the Swedish National Quality Registers. J Intern Med. 2016;279:141–53.",
+        "journal-title": "J Intern Med"
+      },
+      {
+        "key": "731_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "6",
+        "DOI": "10.1056/NEJMp1702978",
+        "volume": "377",
+        "author": "JF Baumhauer",
+        "year": "2017",
+        "unstructured": "Baumhauer JF. Patient-reported outcomes — are they living up to their potential? N Engl J Med. 2017;377:6–9.",
+        "journal-title": "N Engl J Med"
+      },
+      {
+        "key": "731_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "273",
+        "DOI": "10.1007/s00264-017-3711-z",
+        "volume": "42",
+        "author": "T Eneqvist",
+        "year": "2018",
+        "unstructured": "Eneqvist T, Nemes S, Bulow E, et al. Can patient-reported outcomes predict re-operations after total hip replacement? Int Orthop. 2018;42:273–9.",
+        "journal-title": "Int Orthop"
+      },
+      {
+        "key": "731_CR9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-13560-1_86",
+        "volume-title": "Predicting procedure duration to improve scheduling of elective surgery",
+        "author": "Z ShahabiKargar",
+        "year": "2014",
+        "unstructured": "ShahabiKargar Z, Khanna S, Good N, et al. Predicting procedure duration to improve scheduling of elective surgery. Cham: Springer International Publishing; 2014."
+      },
+      {
+        "key": "731_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "287",
+        "DOI": "10.4066/AMJ.2013.1652",
+        "volume": "6",
+        "author": "ZS Kargar",
+        "year": "2013",
+        "unstructured": "Kargar ZS, Khanna S, Sattar A. Using prediction to improve elective surgery scheduling. Australas Med J. 2013;6:287–9.",
+        "journal-title": "Australas Med J"
+      },
+      {
+        "key": "731_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "95",
+        "DOI": "10.1093/bja/aex117",
+        "volume": "119",
+        "author": "DJN Wong",
+        "year": "2017",
+        "unstructured": "Wong DJN, Oliver CM, Moonesinghe SR. Predicting postoperative morbidity in adult elective surgical patients using the surgical outcome risk tool (SORT). Br J Anaesth. 2017;119:95–105.",
+        "journal-title": "Br J Anaesth"
+      },
+      {
+        "key": "731_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "959",
+        "DOI": "10.1097/ALN.0b013e3182a4e94d",
+        "volume": "119",
+        "author": "SR Moonesinghe",
+        "year": "2013",
+        "unstructured": "Moonesinghe SR, Mythen MG, Das P, et al. Risk stratification tools for predicting morbidity and mortality in adult patients undergoing major SurgeryQualitative systematic review. Anesthesiology. 2013;119:959–81.",
+        "journal-title": "Anesthesiology"
+      },
+      {
+        "key": "731_CR13",
+        "unstructured": "National Joint Registry. Joint replacement statistics. 2017."
+      },
+      {
+        "key": "731_CR14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0165521",
+        "volume": "11",
+        "author": "O Miguel-Hurtado",
+        "year": "2016",
+        "unstructured": "Miguel-Hurtado O, Guest R, Stevenage SV, et al. Comparing machine learning classifiers and linear/logistic regression to explore the relationship between Hand dimensions and demographic characteristics. PLoS One. 2016;11:e0165521.",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "731_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "95",
+        "DOI": "10.1016/j.ssmph.2017.11.008",
+        "volume": "4",
+        "author": "B Seligman",
+        "year": "2018",
+        "unstructured": "Seligman B, Tuljapurkar S, Rehkopf D. Machine learning approaches to the social determinants of health in the health and retirement study. SSM - Population Health. 2018;4:95–9.",
+        "journal-title": "SSM - Population Health"
+      },
+      {
+        "key": "731_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "1723",
+        "DOI": "10.1038/ajg.2013.332",
+        "volume": "108",
+        "author": "AG Singal",
+        "year": "2013",
+        "unstructured": "Singal AG, Mukherjee A, Elmunzer BJ, et al. Machine learning algorithms outperform conventional regression models in predicting development of hepatocellular carcinoma. Am J Gastroenterol. 2013;108:1723–30.",
+        "journal-title": "Am J Gastroenterol"
+      },
+      {
+        "key": "731_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "A705",
+        "DOI": "10.1016/j.jval.2015.09.2646",
+        "volume": "18",
+        "author": "J Rigg",
+        "year": "2015",
+        "unstructured": "Rigg J, Lodhi H, Nasuti P. PRM130 - using machine learning to detect patients with undiagnosed rare diseases: an application of support vector machines to a rare oncology disease. Value Health. 2015;18:A705.",
+        "journal-title": "Value Health"
+      },
+      {
+        "key": "731_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "2507",
+        "DOI": "10.1056/NEJMp1702071",
+        "volume": "376",
+        "author": "JH Chen",
+        "year": "2017",
+        "unstructured": "Chen JH, Asch SM. Machine learning and prediction in medicine — beyond the peak of inflated expectations. N Engl J Med. 2017;376:2507–9.",
+        "journal-title": "N Engl J Med"
+      },
+      {
+        "key": "731_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "1341",
+        "DOI": "10.1162/neco.1996.8.7.1341",
+        "volume": "8",
+        "author": "DH Wolpert",
+        "year": "1996",
+        "unstructured": "Wolpert DH. The lack of a priori distinctions between learning algorithms. Neural Comput. 1996;8:1341–90.",
+        "journal-title": "Neural Comput"
+      },
+      {
+        "key": "731_CR20",
+        "volume-title": "Macready WG",
+        "author": "DH Wolpert",
+        "year": "1995",
+        "unstructured": "Wolpert DH. Macready WG. Santa Fe Institute: No Free Lunch Theorems for Search; 1995."
+      },
+      {
+        "key": "731_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "7776",
+        "DOI": "10.1109/ACCESS.2017.2696365",
+        "volume": "5",
+        "author": "A L’Heureux",
+        "year": "2017",
+        "unstructured": "L’Heureux A, Grolinger K, Elyamany HF, et al. Machine learning with big data: challenges and approaches. IEEE Access. 2017;5:7776–97.",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "731_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "5",
+        "DOI": "10.1186/s13755-016-0018-1",
+        "volume": "4",
+        "author": "G Luo",
+        "year": "2016",
+        "unstructured": "Luo G. PredicT-ML: a tool for automating machine learning model building with big clinical data. Health Inf Sci Syst. 2016;4:5.",
+        "journal-title": "Health Inf Sci Syst"
+      },
+      {
+        "key": "731_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "1920",
+        "DOI": "10.1161/CIRCULATIONAHA.115.001593",
+        "volume": "132",
+        "author": "RC Deo",
+        "year": "2015",
+        "unstructured": "Deo RC. Machine learning in medicine. Circulation. 2015;132:1920.",
+        "journal-title": "Circulation"
+      },
+      {
+        "key": "731_CR24",
+        "unstructured": "National Health Service. Patient Reported Outcome Measures (PROMs). 2018."
+      },
+      {
+        "key": "731_CR25",
+        "doi-asserted-by": "crossref",
+        "unstructured": "EuroQol--a new facility for the measurement of health-related quality of life. Health policy. 1990;16(3):199-208.",
+        "DOI": "10.1016/0168-8510(90)90421-9"
+      },
+      {
+        "key": "731_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "185",
+        "DOI": "10.1302/0301-620X.78B2.0780185",
+        "volume": "78",
+        "author": "J Dawson",
+        "year": "1996",
+        "unstructured": "Dawson J, Fitzpatrick R, Carr A, et al. Questionnaire on the perceptions of patients about total hip replacement. J Bone Joint Surg Br. 1996;78:185–90.",
+        "journal-title": "J Bone Joint Surg Br"
+      },
+      {
+        "key": "731_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "63",
+        "DOI": "10.1302/0301-620X.80B1.7859",
+        "volume": "80",
+        "author": "J Dawson",
+        "year": "1998",
+        "unstructured": "Dawson J, Fitzpatrick R, Murray D, et al. Questionnaire on the perceptions of patients about total knee replacement. J Bone Joint Surg Br. 1998;80:63–9.",
+        "journal-title": "J Bone Joint Surg Br."
+      },
+      {
+        "key": "731_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "321",
+        "DOI": "10.1613/jair.953",
+        "volume": "16",
+        "author": "NV Chawla",
+        "year": "2002",
+        "unstructured": "Chawla NV, Bowyer KW, Hall LO, et al. SMOTE: synthetic minority over-sampling technique. J Artif Intell Res. 2002;16:321–57.",
+        "journal-title": "J Artif Intell Res"
+      },
+      {
+        "key": "731_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "20",
+        "DOI": "10.1145/1007730.1007735",
+        "volume": "6",
+        "author": "GEAPA Batista",
+        "year": "2004",
+        "unstructured": "Batista GEAPA, Prati RC, Monard MC. A study of the behavior of several methods for balancing machine learning training data. SIGKDD Explor Newsl. 2004;6:20–9.",
+        "journal-title": "SIGKDD Explor Newsl"
+      },
+      {
+        "key": "731_CR30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2487575.2487629",
+        "volume-title": "Auto-WEKA: combined selection and hyperparameter optimization of classification algorithms. Proceedings of the 19th ACM SIGKDD international conference on knowledge discovery and data mining",
+        "author": "C Thornton",
+        "year": "2013",
+        "unstructured": "Thornton C, Hutter F, Hoos HH, et al. Auto-WEKA: combined selection and hyperparameter optimization of classification algorithms. Proceedings of the 19th ACM SIGKDD international conference on knowledge discovery and data mining. Chicago, Illinois, USA: ACM; 2013."
+      },
+      {
+        "key": "731_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.18637/jss.v028.i05",
+        "volume": "28",
+        "author": "M Kuhn",
+        "year": "2008",
+        "unstructured": "Kuhn M. Caret package. J Stat Softw. 2008;28:1–26.",
+        "journal-title": "J Stat Softw"
+      },
+      {
+        "key": "731_CR32",
+        "unstructured": "Ericson G, Rohm WA, et al. Machine learning algorithm cheat sheet for Azure Machine Learning Studio. Microsoft. 2017. https://docs.microsoft.com/en-us/azure/machine-learning/studio/algorithm-cheat-sheet . Accessed 30 Dec 2018."
+      },
+      {
+        "key": "731_CR33",
+        "unstructured": "Li H. Which machine learning algorithm should I use? The SAS Data Science Blog. 2017. https://blogs.sas.com/content/subconsciousmusings/2017/04/12/machine-learning-algorithm-use . Accessed 30 Dec 2018."
+      },
+      {
+        "key": "731_CR34",
+        "unstructured": "scikit-learn developers. Choosing the right estimator. scikit-learn. 2017. https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html . Accessed 30 Dec 2018."
+      },
+      {
+        "key": "731_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "6",
+        "DOI": "10.1027/1015-5759/a000312",
+        "volume": "34",
+        "author": "S Sauer",
+        "year": "2018",
+        "unstructured": "Sauer S, Buettner R, Heidenreich T, et al. Mindful machine learning. Eur J Psychol Assess. 2018;34:6–13.",
+        "journal-title": "Eur J Psychol Assess"
+      },
+      {
+        "key": "731_CR36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2939672.2939785",
+        "volume-title": "XGBoost: a scalable tree boosting system. Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining",
+        "author": "T Chen",
+        "year": "2016",
+        "unstructured": "Chen T, Guestrin C. XGBoost: a scalable tree boosting system. Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining. San Francisco, California, USA: ACM; 2016."
+      },
+      {
+        "key": "731_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "3755",
+        "DOI": "10.1080/00949655.2015.1016944",
+        "volume": "85",
+        "author": "N Xiao",
+        "year": "2015",
+        "unstructured": "Xiao N, Xu Q-S. Multi-step adaptive elastic-net: reducing false positives in high-dimensional variable selection. J Stat Comput Simul. 2015;85:3755–65.",
+        "journal-title": "J Stat Comput Simul"
+      },
+      {
+        "key": "731_CR38",
+        "volume-title": "Classification and regression by RandomForest",
+        "author": "A Liaw",
+        "year": "2001",
+        "unstructured": "Liaw A, Wiener M. Classification and regression by RandomForest; 2001."
+      },
+      {
+        "key": "731_CR39",
+        "unstructured": "Kleene SC. Representation of events in nerve nets and finite automata. Rand project air force Santa Monica CA. 1951. https://apps.dtic.mil/dtic/tr/fulltext/u2/a596138.pdf . Accessed 30 Dec 2018."
+      },
+      {
+        "key": "731_CR40",
+        "volume-title": "Neural networks: a Comprehensive Foundation",
+        "author": "S Haykin",
+        "year": "1998",
+        "unstructured": "Haykin S. Neural networks: a Comprehensive Foundation. Prentice Hall PTR, 1998."
+      },
+      {
+        "key": "731_CR41",
+        "unstructured": "Hand DJ, Yu K. Idiot's Bayes: not so stupid after all? International Statistical Review. 2001;69(3):385–98."
+      },
+      {
+        "key": "731_CR42",
+        "doi-asserted-by": "publisher",
+        "first-page": "21",
+        "DOI": "10.1109/TIT.1967.1053964",
+        "volume": "13",
+        "author": "T Cover",
+        "year": "1967",
+        "unstructured": "Cover T, Hart P. Nearest neighbor pattern classification. IEEE Trans Inf Theory. 1967;13:21–7.",
+        "journal-title": "IEEE Trans Inf Theory"
+      },
+      {
+        "key": "731_CR43",
+        "doi-asserted-by": "publisher",
+        "first-page": "337",
+        "DOI": "10.1214/aos/1016218223",
+        "volume": "28",
+        "author": "J Friedman",
+        "year": "2000",
+        "unstructured": "Friedman J, Hastie T, Tibshirani R. Additive logistic regression: a statistical view of boosting (with discussion and a rejoinder by the authors). Ann Stat. 2000;28:337–407.",
+        "journal-title": "Ann Stat"
+      },
+      {
+        "key": "731_CR44",
+        "volume-title": "Support vector machines",
+        "author": "I Steinwart",
+        "year": "2008",
+        "unstructured": "Steinwart I, Christmann A. Support vector machines. Incorporated: Springer Publishing Company; 2008."
+      },
+      {
+        "key": "731_CR45",
+        "doi-asserted-by": "publisher",
+        "first-page": "1145",
+        "DOI": "10.1016/S0031-3203(96)00142-2",
+        "volume": "30",
+        "author": "AP Bradley",
+        "year": "1997",
+        "unstructured": "Bradley AP. The use of the area under the ROC curve in the evaluation of machine learning algorithms. Pattern Recogn. 1997;30:1145–59.",
+        "journal-title": "Pattern Recogn"
+      },
+      {
+        "key": "731_CR46",
+        "doi-asserted-by": "publisher",
+        "first-page": "32",
+        "DOI": "10.1002/1097-0142(1950)3:1<32::AID-CNCR2820030106>3.0.CO;2-3",
+        "volume": "3",
+        "author": "WJ Youden",
+        "year": "1950",
+        "unstructured": "Youden WJ. Index for rating diagnostic tests. Cancer. 1950;3:32–5.",
+        "journal-title": "Cancer"
+      },
+      {
+        "key": "731_CR47",
+        "unstructured": "Kuhn M. Variable importance using the caret package."
+      },
+      {
+        "key": "731_CR48",
+        "unstructured": "NHS Digital. Patient reported outcome measures (PROMs) in England - a guide to PROMs methodology. NHS Digital. 2017. https://digital.nhs.uk/binaries/content/assets/legacy/pdf/g/t/proms_guide_v12.pdf . Accessed 30 Dec 2018."
+      },
+      {
+        "key": "731_CR49",
+        "doi-asserted-by": "publisher",
+        "first-page": "171",
+        "DOI": "10.1586/erp.11.9",
+        "volume": "11",
+        "author": "MT King",
+        "year": "2011",
+        "unstructured": "King MT. A point of minimal important difference (MID): a critique of terminology and methods. Expert Rev Pharmacoecon Outcomes Res. 2011;11:171–84.",
+        "journal-title": "Expert Rev Pharmacoecon Outcomes Res"
+      },
+      {
+        "key": "731_CR50",
+        "doi-asserted-by": "publisher",
+        "first-page": "102",
+        "DOI": "10.1016/j.jclinepi.2007.03.012",
+        "volume": "61",
+        "author": "D Revicki",
+        "year": "2008",
+        "unstructured": "Revicki D, Hays RD, Cella D, et al. Recommended methods for determining responsiveness and minimally important differences for patient-reported outcomes. J Clin Epidemiol. 2008;61:102–9.",
+        "journal-title": "J Clin Epidemiol"
+      },
+      {
+        "key": "731_CR51",
+        "first-page": "582",
+        "volume": "41",
+        "author": "GR Norman",
+        "year": "2003",
+        "unstructured": "Norman GR, Sloan JA, Wyrwich KW. Interpretation of changes in health-related quality of life: the remarkable universality of half a standard deviation. Med Care. 2003;41:582–92.",
+        "journal-title": "Med Care"
+      },
+      {
+        "key": "731_CR52",
+        "doi-asserted-by": "publisher",
+        "first-page": "39",
+        "DOI": "10.3109/17453674.2013.867782",
+        "volume": "85",
+        "author": "A Paulsen",
+        "year": "2014",
+        "unstructured": "Paulsen A, Roos EM, Pedersen AB, et al. Minimal clinically important improvement (MCII) and patient-acceptable symptom state (PASS) in total hip arthroplasty (THA) patients 1 year postoperatively. Acta Orthop. 2014;85:39–48.",
+        "journal-title": "Acta Orthop"
+      },
+      {
+        "key": "731_CR53",
+        "doi-asserted-by": "publisher",
+        "first-page": "73",
+        "DOI": "10.1016/j.jclinepi.2014.08.009",
+        "volume": "68",
+        "author": "DJ Beard",
+        "year": "2015",
+        "unstructured": "Beard DJ, Harris K, Dawson J, et al. Meaningful changes for the Oxford hip and knee scores after joint replacement surgery. J Clin Epidemiol. 2015;68:73–9.",
+        "journal-title": "J Clin Epidemiol"
+      },
+      {
+        "key": "731_CR54",
+        "unstructured": "Nielsen D. Tree Boosting With XGBoost-Why Does XGBoost Win\" Every\" Machine Learning Competition? Master's thesis, NTNU. 2016. https://brage.bibsys.no/xmlui/bitstream/handle/11250/2433761/16128_FULLTEXT.pdf . Accessed 30 Dec 2018."
+      },
+      {
+        "key": "731_CR55",
+        "doi-asserted-by": "publisher",
+        "first-page": "348",
+        "DOI": "10.1007/s00223-017-0238-7",
+        "volume": "100",
+        "author": "C Kruse",
+        "year": "2017",
+        "unstructured": "Kruse C, Eiken P, Vestergaard P. Machine learning principles can improve hip fracture prediction. Calcif Tissue Int. 2017;100:348–60.",
+        "journal-title": "Calcif Tissue Int"
+      },
+      {
+        "key": "731_CR56",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0194085",
+        "volume": "13",
+        "author": "RA Taylor",
+        "year": "2018",
+        "unstructured": "Taylor RA, Moore CL, Cheung KH, et al. Predicting urinary tract infections in the emergency department with machine learning. PLoS One. 2018;13:e0194085.",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "731_CR57",
+        "doi-asserted-by": "publisher",
+        "first-page": "912",
+        "DOI": "10.1161/STROKEAHA.117.019440",
+        "volume": "49",
+        "author": "M Livne",
+        "year": "2018",
+        "unstructured": "Livne M, Boldsen JK, Mikkelsen IK, et al. Boosted tree model reforms multimodal magnetic resonance imaging infarct prediction in acute stroke. Stroke. 2018;49:912–8.",
+        "journal-title": "Stroke"
+      },
+      {
+        "key": "731_CR58",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Babajide Mustapha I, Saeed F. Bioactive molecule prediction using extreme gradient boosting. Molecules. 2016;21.",
+        "DOI": "10.3390/molecules21080983"
+      },
+      {
+        "key": "731_CR59",
+        "doi-asserted-by": "publisher",
+        "first-page": "2353",
+        "DOI": "10.1021/acs.jcim.6b00591",
+        "volume": "56",
+        "author": "RP Sheridan",
+        "year": "2016",
+        "unstructured": "Sheridan RP, Wang WM, Liaw A, et al. Extreme gradient boosting as a method for quantitative structure-activity relationships. J Chem Inf Model. 2016;56:2353–60.",
+        "journal-title": "J Chem Inf Model"
+      },
+      {
+        "key": "731_CR60",
+        "doi-asserted-by": "publisher",
+        "first-page": "87",
+        "DOI": "10.1257/jep.31.2.87",
+        "volume": "31",
+        "author": "S Mullainathan",
+        "year": "2017",
+        "unstructured": "Mullainathan S, Spiess J. Machine learning: an applied econometric approach. J Econ Perspect. 2017;31:87–106.",
+        "journal-title": "J Econ Perspect"
+      },
+      {
+        "key": "731_CR61",
+        "doi-asserted-by": "publisher",
+        "first-page": "1216",
+        "DOI": "10.1056/NEJMp1606181",
+        "volume": "375",
+        "author": "Z Obermeyer",
+        "year": "2016",
+        "unstructured": "Obermeyer Z, Emanuel EJ. Predicting the future — big data, machine learning, and clinical medicine. N Engl J Med. 2016;375:1216–9.",
+        "journal-title": "N Engl J Med"
+      },
+      {
+        "key": "731_CR62",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bzdok D, Altman N, Krzywinski M. Points of significance: statistics versus machine learning. Nat Methods. 2018:1–7.",
+        "DOI": "10.1038/nmeth.4642"
+      },
+      {
+        "key": "731_CR63",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Rose S. Robust machine learning variable importance analyses of medical conditions for health care spending. Health Serv Res. 2018.",
+        "DOI": "10.1111/1475-6773.12848"
+      },
+      {
+        "key": "731_CR64",
+        "doi-asserted-by": "publisher",
+        "first-page": "2014",
+        "DOI": "10.1016/j.joca.2017.09.001",
+        "volume": "25",
+        "author": "N Lazzarini",
+        "year": "2017",
+        "unstructured": "Lazzarini N, Runhaar J, Bay-Jensen AC, et al. A machine learning approach for the identification of new biomarkers for knee osteoarthritis development in overweight and obese women. Osteoarthr Cartil. 2017;25:2014–21.",
+        "journal-title": "Osteoarthr Cartil"
+      },
+      {
+        "key": "731_CR65",
+        "doi-asserted-by": "publisher",
+        "first-page": "2249",
+        "DOI": "10.1016/j.csda.2007.08.015",
+        "volume": "52",
+        "author": "KJ Archer",
+        "year": "2008",
+        "unstructured": "Archer KJ, Kimes RV. Empirical characterization of random forest variable importance measures. Comput Stat Data Anal. 2008;52:2249–60.",
+        "journal-title": "Comput Stat Data Anal"
+      },
+      {
+        "key": "731_CR66",
+        "unstructured": "Yao J, Levy-Chapira M, Margaryan M. Checking account activity and credit default risk of enterprises: An application of statistical learning methods. arXiv. 2017. preprint arXiv:1707.00757."
+      },
+      {
+        "key": "731_CR67",
+        "doi-asserted-by": "publisher",
+        "first-page": "560",
+        "DOI": "10.1016/j.enbuild.2012.03.003",
+        "volume": "49",
+        "author": "A Tsanas",
+        "year": "2012",
+        "unstructured": "Tsanas A, Xifara A. Accurate quantitative estimation of energy performance of residential buildings using statistical machine learning tools. Energ Buildings. 2012;49:560–7.",
+        "journal-title": "Energ Buildings"
+      },
+      {
+        "key": "731_CR68",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1016/j.cageo.2015.04.007",
+        "volume": "81",
+        "author": "J Goetz",
+        "year": "2015",
+        "unstructured": "Goetz J, Brenning A, Petschko H, et al. Evaluating machine learning and statistical prediction techniques for landslide susceptibility modeling. Comput Geosci. 2015;81:1–11.",
+        "journal-title": "Comput Geosci"
+      },
+      {
+        "key": "731_CR69",
+        "doi-asserted-by": "publisher",
+        "first-page": "108",
+        "DOI": "10.1186/s12955-014-0108-1",
+        "volume": "12",
+        "author": "M Vogl",
+        "year": "2014",
+        "unstructured": "Vogl M, Wilkesmann R, Lausmann C, et al. The impact of preoperative patient characteristics on health states after total hip replacement and related satisfaction thresholds: a cohort study. Health Qual Life Outcomes. 2014;12:108.",
+        "journal-title": "Health Qual Life Outcomes"
+      },
+      {
+        "key": "731_CR70",
+        "doi-asserted-by": "publisher",
+        "first-page": "395",
+        "DOI": "10.1016/j.arth.2016.07.036",
+        "volume": "32",
+        "author": "CG Schilling",
+        "year": "2017",
+        "unstructured": "Schilling CG, Dowsey MM, Petrie DJ, et al. Predicting the Long-Term Gains in Health-Related Quality of Life After Total Knee Arthroplasty. J Arthroplasty. 2017;32:395–401 e2.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "731_CR71",
+        "doi-asserted-by": "publisher",
+        "first-page": "361",
+        "DOI": "10.1302/0301-620X.100B3.BJJ-2017-0853.R1",
+        "volume": "100-b",
+        "author": "S Sprague",
+        "year": "2018",
+        "unstructured": "Sprague S, Bhandari M, Heetveld MJ, et al. Factors associated with health-related quality of life, hip function, and health utility after operative management of femoral neck fractures. Bone Joint J. 2018;100-b:361–9.",
+        "journal-title": "Bone Joint J"
+      },
+      {
+        "key": "731_CR72",
+        "doi-asserted-by": "publisher",
+        "first-page": "2497",
+        "DOI": "10.1007/s11136-017-1599-0",
+        "volume": "26",
+        "author": "N Gutacker",
+        "year": "2017",
+        "unstructured": "Gutacker N, Street A. Use of large-scale HRQoL datasets to generate individualised predictions and inform patients about the likely benefit of surgery. Qual Life Res. 2017;26:2497–505.",
+        "journal-title": "Qual Life Res"
+      },
+      {
+        "key": "731_CR73",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Strobl C, Boulesteix A-L, Zeileis A, et al. Bias in random forest variable importance measures: illustrations, sources and a solution. BMC Bioinformatics. 2007;8:25–5.",
+        "DOI": "10.1186/1471-2105-8-25"
+      },
+      {
+        "key": "731_CR74",
+        "first-page": "18",
+        "volume": "2",
+        "author": "A Liaw",
+        "year": "2002",
+        "unstructured": "Liaw A, Wiener M. Classification and regression by randomForest. R news. 2002;2:18–22.",
+        "journal-title": "R news"
+      },
+      {
+        "key": "731_CR75",
+        "doi-asserted-by": "publisher",
+        "first-page": "102",
+        "DOI": "10.1016/j.ijotn.2014.07.001",
+        "volume": "19",
+        "author": "LL Mandzuk",
+        "year": "2015",
+        "unstructured": "Mandzuk LL, McMillan DE, Bohm ER. A longitudinal study of quality of life and functional status in total hip and total knee replacement patients. International journal of orthopaedic and trauma nursing. 2015;19:102–13.",
+        "journal-title": "International journal of orthopaedic and trauma nursing"
+      },
+      {
+        "key": "731_CR76",
+        "doi-asserted-by": "publisher",
+        "first-page": "691",
+        "DOI": "10.1016/j.apmr.2015.12.021",
+        "volume": "97",
+        "author": "TR Liebs",
+        "year": "2016",
+        "unstructured": "Liebs TR, Herzberg W, Ruther W, et al. Quality-adjusted life years gained by hip and knee replacement surgery and its aftercare. Arch Phys Med Rehabil. 2016;97:691–700.",
+        "journal-title": "Arch Phys Med Rehabil"
+      },
+      {
+        "key": "731_CR77",
+        "doi-asserted-by": "publisher",
+        "first-page": "271",
+        "DOI": "10.1093/rheumatology/kew409",
+        "volume": "56",
+        "author": "EM Selten",
+        "year": "2017",
+        "unstructured": "Selten EM, Geenen R, van der Laan WH, et al. Hierarchical structure and importance of patients' reasons for treatment choices in knee and hip osteoarthritis: a concept mapping study. Rheumatology (Oxford). 2017;56:271–8.",
+        "journal-title": "Rheumatology (Oxford)"
+      },
+      {
+        "key": "731_CR78",
+        "doi-asserted-by": "publisher",
+        "first-page": "977",
+        "DOI": "10.1007/s11136-013-0537-z",
+        "volume": "23",
+        "author": "Y Feng",
+        "year": "2014",
+        "unstructured": "Feng Y, Parkin D, Devlin NJ. Assessing the performance of the EQ-VAS in the NHS PROMs programme. Qual Life Res. 2014;23:977–89.",
+        "journal-title": "Qual Life Res"
+      },
+      {
+        "key": "731_CR79",
+        "doi-asserted-by": "publisher",
+        "first-page": "87",
+        "DOI": "10.1186/s12913-018-2898-z",
+        "volume": "18",
+        "author": "B Prodinger",
+        "year": "2018",
+        "unstructured": "Prodinger B, Taylor P. Improving quality of care through patient-reported outcome measures (PROMs): expert interviews using the NHS PROMs Programme and the Swedish quality registers for knee and hip arthroplasty as examples. BMC Health Serv Res. 2018;18:87.",
+        "journal-title": "BMC Health Serv Res"
+      },
+      {
+        "key": "731_CR80",
+        "doi-asserted-by": "publisher",
+        "first-page": "1419",
+        "DOI": "10.1007/s10067-009-1267-z",
+        "volume": "28",
+        "author": "JA Singh",
+        "year": "2009",
+        "unstructured": "Singh JA, Lewallen D. Age, gender, obesity, and depression are associated with patient-related pain and function outcome after revision total hip arthroplasty. Clin Rheumatol. 2009;28:1419–30.",
+        "journal-title": "Clin Rheumatol"
+      },
+      {
+        "key": "731_CR81",
+        "doi-asserted-by": "publisher",
+        "first-page": "2746",
+        "DOI": "10.1016/j.arth.2016.07.040",
+        "volume": "31",
+        "author": "JE Otero",
+        "year": "2016",
+        "unstructured": "Otero JE, Graves CM, Gao Y, et al. Patient-reported allergies predict worse outcomes after hip and knee arthroplasty: results from a prospective cohort study. J Arthroplast. 2016;31:2746–9.",
+        "journal-title": "J Arthroplast"
+      },
+      {
+        "key": "731_CR82",
+        "doi-asserted-by": "publisher",
+        "first-page": "579",
+        "DOI": "10.1302/0301-620X.100B5.BJJ-2017-1263.R1",
+        "volume": "100-b",
+        "author": "S Xu",
+        "year": "2018",
+        "unstructured": "Xu S, Chen JY, Lo NN, et al. The influence of obesity on functional outcome and quality of life after total knee arthroplasty. Bone Joint J. 2018;100-b:579–83.",
+        "journal-title": "Bone Joint J"
+      },
+      {
+        "key": "731_CR83",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Snell DL, Hipango J, Sinnott KA, et al. Rehabilitation after total joint replacement: a scoping study. Disabil Rehabil. 2018;40:1718–31.",
+        "DOI": "10.1080/09638288.2017.1300947"
+      },
+      {
+        "key": "731_CR84",
+        "doi-asserted-by": "crossref",
+        "first-page": "979",
+        "DOI": "10.1097/MLR.0000000000000802",
+        "volume": "55",
+        "author": "AS Pickard",
+        "year": "2017",
+        "unstructured": "Pickard AS, Hung YT, Lin FJ, et al. Patient experience-based value sets: are they stable? Med Care. 2017;55:979–84.",
+        "journal-title": "Med Care"
+      },
+      {
+        "key": "731_CR85",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Olomu AB, Corser WD, Stommel M, et al. Do self-report and medical record comorbidity data predict longitudinal functional capacity and quality of life health outcomes similarly? BMC Health Serv Res. 2012;12:398–8.",
+        "DOI": "10.1186/1472-6963-12-398"
+      },
+      {
+        "key": "731_CR86",
+        "doi-asserted-by": "publisher",
+        "first-page": "45",
+        "DOI": "10.3109/13814788.2014.907266",
+        "volume": "21",
+        "author": "M Akker van den",
+        "year": "2015",
+        "unstructured": "van den Akker M, van Steenkiste B, Krutwagen E, et al. Disease or no disease? Disagreement on diagnoses between self-reports and medical records of adult patients. Eur J Gen Pract. 2015;21:45–51.",
+        "journal-title": "Eur J Gen Pract"
+      },
+      {
+        "key": "731_CR87",
+        "doi-asserted-by": "publisher",
+        "first-page": "1035",
+        "DOI": "10.1001/jamaoncol.2016.6744",
+        "volume": "3",
+        "author": "F Ye",
+        "year": "2017",
+        "unstructured": "Ye F, Moon DH, Carpenter WR, et al. Comparison of patient report and medical records of comorbidities: results from a population-based cohort of patients with prostate cancer. JAMA Oncology. 2017;3:1035–42.",
+        "journal-title": "JAMA Oncology"
+      }
+    ],
+    "container-title": [
+      "BMC Medical Informatics and Decision Making"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1186/s12911-018-0731-6.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/article/10.1186/s12911-018-0731-6/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1186/s12911-018-0731-6.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          9,
+          12
+        ]
+      ],
+      "date-time": "2023-09-12T19:07:51Z",
+      "timestamp": 1694545671000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-018-0731-6"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          1,
+          8
+        ]
+      ]
+    },
+    "references-count": 87,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "731"
+    ],
+    "URL": "https://doi.org/10.1186/s12911-018-0731-6",
+    "relation": {},
+    "ISSN": [
+      "1472-6947"
+    ],
+    "issn-type": [
+      {
+        "value": "1472-6947",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          1,
+          8
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "27 July 2018",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "27 December 2018",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "8 January 2019",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "Not applicable.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethics approval and consent to participate"
+        }
+      },
+      {
+        "value": "Not applicable.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Consent for publication"
+        }
+      },
+      {
+        "value": "The authors declare that they have no competing interests.",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      },
+      {
+        "value": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
+        "order": 4,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Publisher’s Note"
+        }
+      }
+    ],
+    "article-number": "3"
+  }
+}

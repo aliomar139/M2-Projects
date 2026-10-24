@@ -1,0 +1,68 @@
+=== PDF PAGE 1 ===
+2026 9TH INTERNATIONAL CONFERENCE ON COMPUTATIONAL INTELLIGENCE IN DATA
+SCIENCE (ICCIDS) • 2026.0
+Top 100 Orthopedic AI •
+Rank #62
+Simulating Personalized Treatment Pathways in Chronic
+Disease Management Using Reinforcement Learning and
+Synthetic Patient Data
+Deepak Upadhyay, Nookala Venu, Deepak Suresh Asudani, Ansh Vadhera, Priyanshi Semwal, K. Sharma
+Journal:
+2026 9th International
+Conference on
+Computational Intelligence
+in Data Science (ICCIDS)
+Publication Year:
+2026.0
+Citations:
+1
+DOI:
+10.1109/iccids69108.2026.11407691
+CLINICAL & AGENTIC AI TAKEAWAY
+Reinforcement learning and synthetic patient data can improve personalized treatment plans for chronic disease
+management, reducing unsafe behavior and enhancing patient outcomes.
+ABSTRACT
+We have created a method for developing personalized treatment plans using synthetic patient data and reinforcement
+learning; these methods can improve physician clinical decisions based on a patient's symptoms, adherence to their
+prescribed treatments and safety concerns. Our results show that as our model learns, it selects progressively better
+treatment options than before, avoids unsafe behavior, and helps patients across all characteristics (or patient profiles).
+Ablation studies also confirm that tracking symptoms and the prescribed medication schedule were key elements in
+achieving positive patient outcomes compared to other methodologies that are based on rules. Our trained model
+outperformed other models based on rules regarding reward, safety and symptom improvement. While the data used in the
+simulation environment, the results provide a level of realism that should aid clinicians wishing to develop new and safer
+treatment options.
+Study Overview & Background
+We have created a method for developing personalized treatment plans using synthetic patient data and reinforcement
+learning; these methods can improve physician clinical decisions based on a patient's symptoms, adherence to their
+prescribed treatments and safety concerns. Our results show that as our model learns, it selects progressively better
+treatment options than before, avoids unsafe behavior, and helps patients across all characteristics (or patient profiles).
+Ablation studies also confirm that tracking symptoms and the prescribed medication schedule were key elements in
+achieving positive patient outcomes compared to other methodologies that are based on rules. Our trained model
+outperformed other models based on rules regarding reward, safety and symptom improvement. While the data used in the
+simulation environment, the results provide a level of realism that should aid clinicians wishing to develop new and safer
+treatment options.
+
+=== PDF PAGE 2 ===
+Methodology & Clinical Focus
+Investigation into artificial intelligence models, machine learning algorithms, and clinical predictive tools applied to
+orthopedic surgery and musculoskeletal medicine.
+Key Findings & Analysis
+Reinforcement learning and synthetic patient data can improve personalized treatment plans for chronic disease
+management, reducing unsafe behavior and enhancing patient outcomes.
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+Bibliographic Details & Indexing
+Authors: Deepak Upadhyay, Nookala Venu, Deepak Suresh Asudani, Ansh Vadhera, Priyanshi Semwal, K. Sharma
+Journal / Venue: 2026 9th International Conference on Computational Intelligence in Data Science (ICCIDS)
+(2026.0)
+SJR Metric: Quartile N/A
+Citation Count: 1 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.1109/iccids69108.2026.11407691
+Consensus Evidence Link: https://consensus.app/papers/simulating-personalized-treatment-pathways-in-chronic-
+upadhyay-venu/40d6a5c190fe51a3b2f0662242fac1a2/
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1109/iccids69108.2026.11407691 •
+Consensus Page: https://consensus.app/papers/simulating-personalized-treatment-pathways-in-chronic-upadhyay-
+venu/40d6a5c190fe51a3b2f0662242fac1a2/ • Verified and rendered via Deep Search & Academic Repositories.

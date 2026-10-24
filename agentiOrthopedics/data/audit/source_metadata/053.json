@@ -1,0 +1,812 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          17
+        ]
+      ],
+      "date-time": "2026-07-17T01:12:51Z",
+      "timestamp": 1784250771486,
+      "version": "3.55.0"
+    },
+    "reference-count": 78,
+    "publisher": "Wiley",
+    "issue": "5",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              18
+            ]
+          ],
+          "date-time": "2026-02-18T00:00:00Z",
+          "timestamp": 1771372800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              18
+            ]
+          ],
+          "date-time": "2026-02-18T00:00:00Z",
+          "timestamp": 1771372800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "esskajournals.onlinelibrary.wiley.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Knee surg. sports traumatol. arthrosc."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          5
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:label/>\n                    <jats:p>Artificial intelligence (AI) continues to rapidly transform the practice of medicine, with clinicians increasingly adopting data‐driven decision‐making aids and diagnostic support tools. Orthopaedic physicians are well poised to harness the capabilities of AI, with an abundance of quantifiable imaging, biomechanical data, and structured clinical parameters lending themselves to algorithmic interpretation and automation. Namely, AI‐augmented vision systems may increase the breadth of information readily available to clinicians, whereas smart exam rooms and automated clinical summaries may soon streamline clinical workflows to decrease administrative burden and allow more time for direct patient care. Personalised education materials and visual aids may improve patient understanding and compliance, with the aim of optimising patient outcomes. Generative medical and orthopaedic event models may soon alter decision‐making heuristics and improve patient counselling. While the widespread adaptation of AI into clinical practices is not without limitations, physicians will likely come to share an increasingly symbiotic relationship with these platforms throughout their continued evolution. Accordingly, it is imperative that current and future orthopaedic practitioners become well‐versed in harnessing the capabilities of AI and continue to identify new avenues for such technologies to benefit clinicians and patients alike. As such, the current manuscript provides a narrative review of the potential future applications of AI within orthopaedic practices by exploring current and developing technologies and detailing how the continued integration of AI‐powered systems may serve to revolutionise the delivery of orthopaedic care.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Level of Evidence</jats:title>\n                    <jats:p>Level V.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.1002/ksa.70339",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          18
+        ]
+      ],
+      "date-time": "2026-02-18T10:18:02Z",
+      "timestamp": 1771409882000
+    },
+    "page": "1901-1909",
+    "update-policy": "https://doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": [
+      "Artificial intelligence in orthopaedics: Enhanced examinations, ambient intelligence and the future of clinical practice"
+    ],
+    "prefix": "10.1002",
+    "volume": "34",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-5068-6635",
+        "authenticated-orcid": false,
+        "given": "Alexander",
+        "family": "Bouterse",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery Tripler Army Medical Center Honolulu Hawaii USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "James A.",
+        "family": "Pruneski",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery Tripler Army Medical Center Honolulu Hawaii USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Felix C.",
+        "family": "Oettl",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery, Balgrist University Hospital University of Zürich Zurich Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Balint",
+        "family": "Zsidai",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Sahlgrenska Sports Medicine Center Gothenburg Sweden"
+          },
+          {
+            "name": "Department of Orthopaedics, Institute of Clinical Sciences, Sahlgrenska Academy University of Gothenburg Gothenburg Sweden"
+          },
+          {
+            "name": "Department of Orthopedics Skåne University Hospital Malmö/Lund Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thomas",
+        "family": "Tischer",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery Universitymedicine Rostock Rostock Germany"
+          },
+          {
+            "name": "Department of Orthopaedic and Trauma Surgery Malteser Waldkrankenhaus Erlangen Erlangen Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4063-9821",
+        "authenticated-orcid": false,
+        "given": "Umile Giuseppe",
+        "family": "Longo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Fondazione Policlinico Universitario Campus Bio‐Medico, Via Alvaro del Portillo, 200 Roma Italy"
+          },
+          {
+            "name": "Research Unit of Orthopaedic and Trauma Surgery Department of Medicine and Surgery, Università Campus Bio‐Medico di Roma, Via Alvaro del Portillo, 21 Roma Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Romain",
+        "family": "Seil",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery Centre Hospitalier de Luxembourg Luxembourg City Luxembourg"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael T.",
+        "family": "Hirschmann",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Kantonsspital Baselland University Department of Orthopaedic Surgery and Traumatology Bruderholz Switzerland"
+          },
+          {
+            "name": "University of Basel Basel Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5383-3370",
+        "authenticated-orcid": false,
+        "given": "Kristian",
+        "family": "Samuelsson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Sahlgrenska Sports Medicine Center Gothenburg Sweden"
+          },
+          {
+            "name": "Department of Orthopaedics, Institute of Clinical Sciences, Sahlgrenska Academy University of Gothenburg Gothenburg Sweden"
+          },
+          {
+            "name": "Department for Orthopaedics Sahlgrenska University Hospital Mölndal Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          18
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_8_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-022-00621-w"
+      },
+      {
+        "key": "e_1_2_8_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/jamiaopen/ooaf013"
+      },
+      {
+        "key": "e_1_2_8_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1370/afm.2121"
+      },
+      {
+        "key": "e_1_2_8_5_1",
+        "volume-title": "AMA Augmented Intelligence Research–Physician Sentiments Around the Use of AI in Health Care: Motivations, Opportunities, Risks, and Use Cases‐Shifts from 2023 to 2024",
+        "author": "American Medical Association",
+        "year": "2025"
+      },
+      {
+        "key": "e_1_2_8_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fbioe.2021.722275"
+      },
+      {
+        "key": "e_1_2_8_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/app142412050"
+      },
+      {
+        "key": "e_1_2_8_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.fhj.2025.100247"
+      },
+      {
+        "key": "e_1_2_8_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.healthpol.2018.05.014"
+      },
+      {
+        "key": "e_1_2_8_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/diagnostics14131321"
+      },
+      {
+        "key": "e_1_2_8_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fphar.2023.1297353"
+      },
+      {
+        "key": "e_1_2_8_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1472-6963-14-366"
+      },
+      {
+        "key": "e_1_2_8_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.surg.2019.01.002"
+      },
+      {
+        "key": "e_1_2_8_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/21501319231166921"
+      },
+      {
+        "key": "e_1_2_8_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12178-021-09699-3"
+      },
+      {
+        "key": "e_1_2_8_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pdig.0000022"
+      },
+      {
+        "key": "e_1_2_8_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fmed.2023.1305756"
+      },
+      {
+        "key": "e_1_2_8_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/jamia/ocae060"
+      },
+      {
+        "key": "e_1_2_8_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13018-023-04280-9"
+      },
+      {
+        "key": "e_1_2_8_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/PRS.0000000000001453"
+      },
+      {
+        "key": "e_1_2_8_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/bioengineering10050617"
+      },
+      {
+        "key": "e_1_2_8_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/20565623.2025.2527505"
+      },
+      {
+        "key": "e_1_2_8_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jsurg.2024.06.002"
+      },
+      {
+        "key": "e_1_2_8_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3399/BJGPO.2024.0300"
+      },
+      {
+        "key": "e_1_2_8_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/BOT.0000000000000764"
+      },
+      {
+        "key": "e_1_2_8_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jeo2.70084"
+      },
+      {
+        "key": "e_1_2_8_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ksa.12627"
+      },
+      {
+        "key": "e_1_2_8_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00402-021-04204-4"
+      },
+      {
+        "key": "e_1_2_8_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11606-024-08924-2"
+      },
+      {
+        "key": "e_1_2_8_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jphys.2021.06.011"
+      },
+      {
+        "key": "e_1_2_8_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/ejihpe14030045"
+      },
+      {
+        "key": "e_1_2_8_32_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "GuoYWJ ZhengK PerretD PanditaD TamSAmbient Listening in Clinical Practice: Evaluating EPIC Signal Data Before and After Implementation and Its Impact on Physician Workload.World Congress on Health and Biomedical Informatics;2025;Taipei Taiwan.",
+        "DOI": "10.3233/SHTI250921"
+      },
+      {
+        "key": "e_1_2_8_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-019-54399-1"
+      },
+      {
+        "key": "e_1_2_8_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.zefq.2020.01.002"
+      },
+      {
+        "key": "e_1_2_8_35_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "HeinJ GiraudF CalvetL SchwarzA CavalcantiNA ProkudinS et al. Creating a digital twin of spinal surgery: A proof of concept. Paper presented at: Proceedings of the IEEE/CVF conference on computer vision and pattern recognition2024.",
+        "DOI": "10.1109/CVPRW63382.2024.00241"
+      },
+      {
+        "key": "e_1_2_8_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.pecinn.2023.100159"
+      },
+      {
+        "key": "e_1_2_8_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/13557858.2024.2422848"
+      },
+      {
+        "key": "e_1_2_8_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamanetworkopen.2024.27389"
+      },
+      {
+        "key": "e_1_2_8_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s23136217"
+      },
+      {
+        "key": "e_1_2_8_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.eclinm.2025.103545"
+      },
+      {
+        "key": "e_1_2_8_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/BOT.0b013e3182793338"
+      },
+      {
+        "key": "e_1_2_8_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/03091902.2020.1822940"
+      },
+      {
+        "key": "e_1_2_8_43_1",
+        "article-title": "Artificial Intelligence and Decision‐Making in Healthcare: A Thematic Analysis of a Systematic Review of Reviews",
+        "volume": "11",
+        "author": "Khosravi M",
+        "year": "2024",
+        "journal-title": "Health Serv Res Manag Epidemiol"
+      },
+      {
+        "key": "e_1_2_8_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s43019-023-00209-y"
+      },
+      {
+        "key": "e_1_2_8_45_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4337/9781802205657.ch07"
+      },
+      {
+        "key": "e_1_2_8_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00264-022-05507-w"
+      },
+      {
+        "key": "e_1_2_8_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s20071903"
+      },
+      {
+        "key": "e_1_2_8_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.11124/jbisrir-2015-1950"
+      },
+      {
+        "key": "e_1_2_8_49_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/jamia/ocaa085"
+      },
+      {
+        "key": "e_1_2_8_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-024-01106-8"
+      },
+      {
+        "key": "e_1_2_8_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fbioe.2024.1347720"
+      },
+      {
+        "key": "e_1_2_8_52_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/bioengineering10050503"
+      },
+      {
+        "key": "e_1_2_8_53_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1377/hlthaff.2024.00842"
+      },
+      {
+        "key": "e_1_2_8_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.patter.2021.100347"
+      },
+      {
+        "key": "e_1_2_8_55_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1089/big.2021.0169"
+      },
+      {
+        "key": "e_1_2_8_56_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10916-024-02098-4"
+      },
+      {
+        "key": "e_1_2_8_57_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/healthcare12050562"
+      },
+      {
+        "key": "e_1_2_8_58_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-022-00609-6"
+      },
+      {
+        "key": "e_1_2_8_59_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1197/jamia.M1700"
+      },
+      {
+        "key": "e_1_2_8_60_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-022-07181-2"
+      },
+      {
+        "key": "e_1_2_8_61_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2022.04.014"
+      },
+      {
+        "key": "e_1_2_8_62_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jse.2023.05.002"
+      },
+      {
+        "key": "e_1_2_8_63_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jama.2018.12777"
+      },
+      {
+        "key": "e_1_2_8_64_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jeo2.12080"
+      },
+      {
+        "key": "e_1_2_8_65_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/jpm14080794"
+      },
+      {
+        "key": "e_1_2_8_66_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/jamiaopen/ooaf082"
+      },
+      {
+        "key": "e_1_2_8_67_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/bioe.13222"
+      },
+      {
+        "key": "e_1_2_8_68_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.amjsurg.2021.01.029"
+      },
+      {
+        "key": "e_1_2_8_69_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamanetworkopen.2025.8614"
+      },
+      {
+        "key": "e_1_2_8_70_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/bioengineering10060627"
+      },
+      {
+        "key": "e_1_2_8_71_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/BOT.0b013e3182a66921"
+      },
+      {
+        "key": "e_1_2_8_72_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41591-024-02855-5"
+      },
+      {
+        "key": "e_1_2_8_73_1",
+        "article-title": "Generative medical event models improve with scale",
+        "volume": "1",
+        "author": "Waxler S",
+        "year": "2025",
+        "journal-title": "arXiv preprint arXiv"
+      },
+      {
+        "key": "e_1_2_8_74_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jeo2.70247"
+      },
+      {
+        "key": "e_1_2_8_75_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/diagnostics14010109"
+      },
+      {
+        "key": "e_1_2_8_76_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fsurg.2023.1325423"
+      },
+      {
+        "key": "e_1_2_8_77_1",
+        "article-title": "Exploring scaling laws for EHR foundation models",
+        "volume": "1",
+        "author": "Zhang S",
+        "year": "2025",
+        "journal-title": "arXiv preprint arXiv"
+      },
+      {
+        "key": "e_1_2_8_78_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s40634-023-00683-z"
+      },
+      {
+        "key": "e_1_2_8_79_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s40634-023-00662-4"
+      }
+    ],
+    "container-title": [
+      "Knee Surgery, Sports Traumatology, Arthroscopy"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ksa.70339",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/full-xml/10.1002/ksa.70339",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ksa.70339",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          28
+        ]
+      ],
+      "date-time": "2026-04-28T10:22:44Z",
+      "timestamp": 1777371764000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/10.1002/ksa.70339"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          18
+        ]
+      ]
+    },
+    "references-count": 78,
+    "journal-issue": {
+      "issue": "5",
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            5
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1002/ksa.70339"
+    ],
+    "URL": "https://doi.org/10.1002/ksa.70339",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "0942-2056",
+      "1433-7347"
+    ],
+    "issn-type": [
+      {
+        "value": "0942-2056",
+        "type": "print"
+      },
+      {
+        "value": "1433-7347",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          18
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2025-11-25",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2026-01-27",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2026-02-18",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

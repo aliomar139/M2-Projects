@@ -1,0 +1,738 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          16
+        ]
+      ],
+      "date-time": "2026-10-16T01:06:25Z",
+      "timestamp": 1792112785090,
+      "version": "4.4.0"
+    },
+    "reference-count": 46,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              2,
+              4
+            ]
+          ],
+          "date-time": "2021-02-04T00:00:00Z",
+          "timestamp": 1612396800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              2,
+              4
+            ]
+          ],
+          "date-time": "2021-02-04T00:00:00Z",
+          "timestamp": 1612396800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Transl Psychiatry"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Decision support systems embodying machine learning models offer the promise of an improved standard of care for major depressive disorder, but little is known about how clinicians’ treatment decisions will be influenced by machine learning recommendations and explanations. We used a within-subject factorial experiment to present 220 clinicians with patient vignettes, each with or without a machine-learning (ML) recommendation and one of the multiple forms of explanation. We found that interacting with ML recommendations did not significantly improve clinicians’ treatment selection accuracy, assessed as concordance with expert psychopharmacologist consensus, compared to baseline scenarios in which clinicians made treatment decisions independently. Interacting with <jats:italic>incorrect</jats:italic> recommendations paired with explanations that included limited but easily interpretable information did lead to a significant reduction in treatment selection accuracy compared to baseline questions. These results suggest that incorrect ML recommendations may adversely impact clinician treatment selections and that explanations are insufficient for addressing overreliance on imperfect ML algorithms. More generally, our findings challenge the common assumption that clinicians interacting with ML tools will perform better than either clinicians or ML algorithms individually.</jats:p>",
+    "DOI": "10.1038/s41398-021-01224-x",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          2,
+          4
+        ]
+      ],
+      "date-time": "2021-02-04T14:26:16Z",
+      "timestamp": 1612448776000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 237,
+    "title": [
+      "How machine-learning recommendations influence clinician treatment selections: the example of antidepressant selection"
+    ],
+    "prefix": "10.1038",
+    "volume": "11",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-8500-0277",
+        "authenticated-orcid": false,
+        "given": "Maia",
+        "family": "Jacobs",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Melanie F.",
+        "family": "Pradier",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "suffix": "Jr.",
+        "given": "Thomas H.",
+        "family": "McCoy",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Roy H.",
+        "family": "Perlis",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Finale",
+        "family": "Doshi-Velez",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1897-9048",
+        "authenticated-orcid": false,
+        "given": "Krzysztof Z.",
+        "family": "Gajos",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2021,
+          2,
+          4
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "1224_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "1583",
+        "DOI": "10.1038/s41380-019-0365-9",
+        "volume": "24",
+        "author": "D Durstewitz",
+        "year": "2019",
+        "unstructured": "Durstewitz, D., Koppe, G. & Meyer-Lindenberg, A. Deep neural networks in psychiatry. Mol. Psychiatry 24, 1583–1598 (2019).",
+        "journal-title": "Mol. Psychiatry"
+      },
+      {
+        "key": "1224_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "2019",
+        "DOI": "10.1002/mpr.1575",
+        "volume": "26",
+        "author": "RC Kessler",
+        "year": "2017",
+        "unstructured": "Kessler, R. C. et al. Developing a practical suicide risk prediction model for targeting high-risk patients in the Veterans Health Administration. Int. J. Methods Psychiatr. Res. 26, 2019–2020 (2017).",
+        "journal-title": "Int. J. Methods Psychiatr. Res."
+      },
+      {
+        "key": "1224_CR3",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Menke, A. Precision pharmacotherapy: psychiatry’s future direction in preventing, diagnosing, and treating mental disorders. Pharmacogenom. Pers. Med. https://doi.org/10.2147/PGPM.S146110 (2018).",
+        "DOI": "10.2147/PGPM.S146110"
+      },
+      {
+        "key": "1224_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "1280",
+        "DOI": "10.1001/jamapsychiatry.2018.2377",
+        "volume": "75",
+        "author": "P Fusar-Poli",
+        "year": "2018",
+        "unstructured": "Fusar-Poli, P., Hijazi, Z., Stahl, D. & Steyerberg, E. W. The science of prognosis in psychiatry: a review. JAMA Psychiatry 75, 1280–1288 (2018).",
+        "journal-title": "JAMA Psychiatry"
+      },
+      {
+        "key": "1224_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "24",
+        "DOI": "10.1038/mp.2017.227",
+        "volume": "23",
+        "author": "AM Chekroud",
+        "year": "2018",
+        "unstructured": "Chekroud, A. M. & Koutsouleris, N. The perilous path from publication to practice. Mol. Psychiatry 23, 24–25 (2018).",
+        "journal-title": "Mol. Psychiatry"
+      },
+      {
+        "key": "1224_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "1337",
+        "DOI": "10.1038/s41591-019-0548-6",
+        "volume": "25",
+        "author": "J Wiens",
+        "year": "2019",
+        "unstructured": "Wiens, J. et al. Do no harm: a roadmap for responsible machine learning for health care. Nat. Med. 25, 1337–1340 (2019).",
+        "journal-title": "Nat. Med."
+      },
+      {
+        "key": "1224_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "228",
+        "DOI": "10.1002/wps.20345",
+        "volume": "15",
+        "author": "RH Perlis",
+        "year": "2016",
+        "unstructured": "Perlis, R. H. Abandoning personalization to get to precision in the pharmacotherapy of depression. World Psychiatry 15, 228–235 (2016).",
+        "journal-title": "World Psychiatry"
+      },
+      {
+        "key": "1224_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "37",
+        "DOI": "10.1038/mp.2016.201",
+        "volume": "22",
+        "author": "T Hahn",
+        "year": "2017",
+        "unstructured": "Hahn, T., Nierenberg, A. A. & Whitfield-Gabrieli, S. Predictive analytics in mental health: applications, guidelines, challenges and perspectives. Mol. Psychiatry 22, 37–43 (2017).",
+        "journal-title": "Mol. Psychiatry"
+      },
+      {
+        "key": "1224_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "85",
+        "DOI": "10.1207/S15327108IJAP1001_5",
+        "volume": "10",
+        "author": "LJ Skitka",
+        "year": "2000",
+        "unstructured": "Skitka, L. J., Mosier, K. L., Burdick, M. & Rosenblatt, B. Automation bias and errors: are crews better than individuals. Int. J. Aviat. Psychol. 10, 85–97 (2000).",
+        "journal-title": "Int. J. Aviat. Psychol."
+      },
+      {
+        "key": "1224_CR10",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cummings, M. L. Automation bias in intelligent time critical decision support systems. in AIAA 1st Intelligent Systems Technical Conference 289–294 (2004).",
+        "DOI": "10.2514/6.2004-6313"
+      },
+      {
+        "key": "1224_CR11",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Green, B. & Chen, Y. The principles and limits of algorithm-in-the-loop decision making. in Proc. ACM Human-Computer Interaction 3 (2019).",
+        "DOI": "10.1145/3359152"
+      },
+      {
+        "key": "1224_CR12",
+        "unstructured": "Albright, A. If you give a judge a risk score: evidence from Kentucky bail decisions. John M. Olin Cent. Law, Econ. Bus. Fellows’ Discuss. Pap. Ser. 1–44 (2019)."
+      },
+      {
+        "key": "1224_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "40",
+        "DOI": "10.17351/ests2019.260",
+        "volume": "5",
+        "author": "MC Elish",
+        "year": "2019",
+        "unstructured": "Elish, M. C. Moral crumple zones: cautionary tales in human-robot interaction. Engag. Sci. Technol. Soc. 5, 40–60 (2019).",
+        "journal-title": "Engag. Sci. Technol. Soc."
+      },
+      {
+        "key": "1224_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "1426",
+        "DOI": "10.1017/S0033291719000151",
+        "volume": "49",
+        "author": "ABR Shatte",
+        "year": "2019",
+        "unstructured": "Shatte, A. B. R., Hutchinson, D. M. & Teague, S. J. Machine learning in mental health: a scoping review of methods and applications. Psychol. Med. 49, 1426–1448 (2019).",
+        "journal-title": "Psychol. Med."
+      },
+      {
+        "key": "1224_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "243",
+        "DOI": "10.1016/S2215-0366(15)00471-X",
+        "volume": "3",
+        "author": "AM Chekroud",
+        "year": "2016",
+        "unstructured": "Chekroud, A. M. et al. Cross-trial prediction of treatment outcome in depression: a machine learning approach. Lancet Psychiatry 3, 243–250 (2016).",
+        "journal-title": "Lancet Psychiatry"
+      },
+      {
+        "key": "1224_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "209",
+        "DOI": "10.1146/annurev-clinpsy-050817-084746",
+        "volume": "14",
+        "author": "ZD Cohen",
+        "year": "2018",
+        "unstructured": "Cohen, Z. D. & DeRubeis, R. J. Treatment selection in depression. Annu. Rev. Clin. Psychol. 14, 209–236 (2018).",
+        "journal-title": "Annu. Rev. Clin. Psychol."
+      },
+      {
+        "key": "1224_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "34",
+        "DOI": "10.1016/j.cobeha.2017.07.003",
+        "volume": "18",
+        "author": "CM Gillan",
+        "year": "2017",
+        "unstructured": "Gillan, C. M. & Whelan, R. What big data can do for treatment in psychiatry. Curr. Opin. Behav. Sci. 18, 34–42 (2017).",
+        "journal-title": "Curr. Opin. Behav. Sci."
+      },
+      {
+        "key": "1224_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "377",
+        "DOI": "10.31887/DCNS.2008.10.4/mhtrivedi",
+        "volume": "10",
+        "author": "MH Trivedi",
+        "year": "2008",
+        "unstructured": "Trivedi, M. H. & Daly, E. J. Treatment strategies to improve and sustain remission in major depressive disorder. Dialogues Clin. Neurosci. 10, 377–384 (2008).",
+        "journal-title": "Dialogues Clin. Neurosci."
+      },
+      {
+        "key": "1224_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "44",
+        "DOI": "10.1176/appi.ps.201200143",
+        "volume": "64",
+        "author": "F Dickerson",
+        "year": "2013",
+        "unstructured": "Dickerson, F. et al. Bigger data, Harder questions—opportunities throughout mental health care. Psychiatr. Serv. 64, 44–50 (2013).",
+        "journal-title": "Psychiatr. Serv."
+      },
+      {
+        "key": "1224_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "72",
+        "DOI": "10.1016/j.jad.2016.12.013",
+        "volume": "210",
+        "author": "S Kolovos",
+        "year": "2017",
+        "unstructured": "Kolovos, S. et al. The effect of treatment as usual on major depressive disorder: a meta-analysis. J. Affect. Disord. 210, 72–81 (2017).",
+        "journal-title": "J. Affect. Disord."
+      },
+      {
+        "key": "1224_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "7",
+        "DOI": "10.1016/j.biopsych.2012.12.007",
+        "volume": "74",
+        "author": "RH Perlis",
+        "year": "2013",
+        "unstructured": "Perlis, R. H. A clinical risk stratification tool for predicting treatment resistance in major depressive disorder. Biol. Psychiatry 74, 7–14 (2013).",
+        "journal-title": "Biol. Psychiatry"
+      },
+      {
+        "key": "1224_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "557",
+        "DOI": "10.1001/jamapsychiatry.2016.0316",
+        "volume": "73",
+        "author": "R Redlich",
+        "year": "2016",
+        "unstructured": "Redlich, R. et al. Prediction of individual response to electroconvulsive therapy via machine learning on structural magnetic resonance imaging data. JAMA Psychiatry 73, 557–564 (2016).",
+        "journal-title": "JAMA Psychiatry"
+      },
+      {
+        "key": "1224_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "370",
+        "DOI": "10.1001/jamapsychiatry.2017.0025",
+        "volume": "74",
+        "author": "AM Chekroud",
+        "year": "2017",
+        "unstructured": "Chekroud, A. M. et al. Reevaluating the efficacy and predictability of antidepressant treatments: a symptom clustering approach. JAMA Psychiatry 74, 370–378 (2017).",
+        "journal-title": "JAMA Psychiatry"
+      },
+      {
+        "key": "1224_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1038/s41398-020-0716-y",
+        "volume": "10",
+        "author": "MF Pradier",
+        "year": "2020",
+        "unstructured": "Pradier, M. F., McCoy, T. H., Hughes, M., Perlis, R. H. & Doshi-Velez, F. Predicting treatment dropout after antidepressant initiation. Transl. Psychiatry 10, 1–8 (2020).",
+        "journal-title": "Transl. Psychiatry"
+      },
+      {
+        "key": "1224_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "455",
+        "DOI": "10.1111/j.1741-3737.2006.00264.x",
+        "volume": "68",
+        "author": "LH Ganong",
+        "year": "2006",
+        "unstructured": "Ganong, L. H. & Coleman, M. Multiple segment factorial vignette designs. J. Marriage Fam. 68, 455–468 (2006).",
+        "journal-title": "J. Marriage Fam."
+      },
+      {
+        "key": "1224_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "S191",
+        "DOI": "10.1086/688488",
+        "volume": "45",
+        "author": "K Martin",
+        "year": "2016",
+        "unstructured": "Martin, K. Do privacy notices matter? Comparing the impact of violating formal privacy notices and informal privacy norms on consumer trust online. J. Leg. Stud. 45, S191–S215 (2016).",
+        "journal-title": "J. Leg. Stud."
+      },
+      {
+        "key": "1224_CR27",
+        "first-page": "52",
+        "volume": "7",
+        "author": "PM Steiner",
+        "year": "2017",
+        "unstructured": "Steiner, P. M., Atzmüller, C. & Su, D. Designing valid and reliable vignette experiments for survey research: a case study on the fair gender income gap. J. Methods Meas. Soc. Sci. 7, 52–94 (2017).",
+        "journal-title": "J. Methods Meas. Soc. Sci."
+      },
+      {
+        "key": "1224_CR28",
+        "unstructured": "Hughes, M. C. et al. Semi-supervised prediction-constrained topic models. in Proc. 21st International Conference on Artificial Intelligence and Statistics (AISTATS) 84 (2018)."
+      },
+      {
+        "key": "1224_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1145/3236009",
+        "volume": "51",
+        "author": "R Guidotti",
+        "year": "2018",
+        "unstructured": "Guidotti, R., Monreale, A. & Ruggieri, S. A survey of methods for explaining black box models. ACM Comput. Surv. 51, 1–42 (2018).",
+        "journal-title": "ACM Comput. Surv."
+      },
+      {
+        "key": "1224_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "11",
+        "DOI": "10.1177/0706743716664885",
+        "volume": "62",
+        "author": "G Macqueen",
+        "year": "2017",
+        "unstructured": "Macqueen, G. et al. Systematic review of clinical practice guidelines for failed antidepressant treatment response in major depressive disorder, dysthymia, and subthreshold depression in adults. Can. J. Psychiatry 62, 11–23 (2017).",
+        "journal-title": "Can. J. Psychiatry"
+      },
+      {
+        "key": "1224_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "540",
+        "DOI": "10.1177/0706743716659417",
+        "volume": "61",
+        "author": "SH Kennedy",
+        "year": "2016",
+        "unstructured": "Kennedy, S. H. et al. Canadian Network for Mood and Anxiety Treatments (CANMAT) 2016 clinical guidelines for the management of adults with major depressive disorder: section 3. Pharmacological Treatments. Can. J. Psychiatry 61, 540–560 (2016).",
+        "journal-title": "Can. J. Psychiatry"
+      },
+      {
+        "key": "1224_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1177/2150132718811692",
+        "volume": "9",
+        "author": "I Mohammadi",
+        "year": "2018",
+        "unstructured": "Mohammadi, I., Wu, H., Turkcan, A., Toscos, T. & Doebbeling, B. N. Data analytics and modeling for appointment no-show in community health centers. J. Prim. Care Community Health 9, 1–11 (2018).",
+        "journal-title": "J. Prim. Care Community Health"
+      },
+      {
+        "key": "1224_CR33",
+        "unstructured": "Peng, X. et al. Improving sepsis treatment strategies by combining deep and kernel-based reinforcement learning. in AMIA Annual Symposium Proceedings 887–896 (2018)."
+      },
+      {
+        "key": "1224_CR34",
+        "unstructured": "Kamar, E. Directions in hybrid intelligence: complementing AI systems with human intelligence. IJCAI Int. Jt. Conf. Artif. Intell. 4070–4073 (2016)."
+      },
+      {
+        "key": "1224_CR35",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Amershi, S. et al. Guidelines for Human-AI Interaction. in Proc. 2019 CHI Conference on Human Factors in Computing Systems 1–13 (2019).",
+        "DOI": "10.1145/3290605.3300233"
+      },
+      {
+        "key": "1224_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "30",
+        "DOI": "10.1038/s41591-018-0307-0",
+        "volume": "25",
+        "author": "J He",
+        "year": "2019",
+        "unstructured": "He, J. et al. The practical implementation of artificial intelligence technologies in medicine. Nat. Med. 25, 30–36 (2019).",
+        "journal-title": "Nat. Med."
+      },
+      {
+        "key": "1224_CR37",
+        "first-page": "100",
+        "volume": "176",
+        "author": "A Sitapi",
+        "year": "2016",
+        "unstructured": "Sitapi, A. et al. Integrated precision medicine: the role of electronic health records in delivering personalized treatment. Physiol. Behav. 176, 100–106 (2016).",
+        "journal-title": "Physiol. Behav."
+      },
+      {
+        "key": "1224_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "24",
+        "DOI": "10.1038/s41562-018-0470-9",
+        "volume": "3",
+        "author": "TC Russ",
+        "year": "2019",
+        "unstructured": "Russ, T. C. et al. How data science can advance mental health research. Nat. Hum. Behav. 3, 24–32 (2019).",
+        "journal-title": "Nat. Hum. Behav."
+      },
+      {
+        "key": "1224_CR39",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Yin, M., Wortman Vaughan, J. & Wallach, H. Understanding the effect of accuracy on trust in machine learning models. in Proc. 2019 CHI Conference on Human Factors in Computing Systems. https://doi.org/10.1145/3290605.3300509 (2019).",
+        "DOI": "10.1145/3290605.3300509"
+      },
+      {
+        "key": "1224_CR40",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Green, B. & Chen, Y. Disparate interactions: an algorithm-in-the-loop analysis of fairness in risk assessments. Proc. 2019 Conference on Fairness, Accountability and Transparency. https://doi.org/10.1145/3287560.3287563 (2019).",
+        "DOI": "10.1145/3287560.3287563"
+      },
+      {
+        "key": "1224_CR41",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Ribeiro, M. T., Singh, S. & Guestrin, C. ‘Why Should I Trust You?’: Explaining the Predictions of Any Classifier. in Proc. ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. https://doi.org/10.18653/v1/N16-3020 (2016).",
+        "DOI": "10.18653/v1/N16-3020"
+      },
+      {
+        "key": "1224_CR42",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Bussone, A., Stumpf, S. & O’Sullivan, D. The role of explanations on trust and reliance in clinical decision support systems. Proc. 2015 IEEE International Conference on Healthcare Informatics. https://doi.org/10.1109/ICHI.2015.26 (2015).",
+        "DOI": "10.1109/ICHI.2015.26"
+      },
+      {
+        "key": "1224_CR43",
+        "doi-asserted-by": "publisher",
+        "first-page": "232",
+        "DOI": "10.1016/j.cogpsych.2006.09.006",
+        "volume": "55",
+        "author": "T Lombrozo",
+        "year": "2007",
+        "unstructured": "Lombrozo, T. Simplicity and probability in causal explanation. Cogn. Psychol. 55, 232–257 (2007).",
+        "journal-title": "Cogn. Psychol."
+      },
+      {
+        "key": "1224_CR44",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Buçinca, Z., Lin, P., Gajos, K. Z. & Glassman, E. L. Proxy tasks and subjective measures can be misleading in evaluating explainable AI systems. in ACM Proceedings of the 25th Conference on Intelligent User Interfaces. https://doi.org/10.1145/3377325.3377498 (2020).",
+        "DOI": "10.1145/3377325.3377498"
+      },
+      {
+        "key": "1224_CR45",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Lakkaraju, H. & Bastani, O. ‘How do I fool you?’: Manipulating user trust via misleading black box explanations. in Proc. 2020 AAAI/ACMConference on AI, Ethics, and Society (AIES ’20). https://doi.org/10.1145/3375627.3375833 (2020).",
+        "DOI": "10.1145/3375627.3375833"
+      },
+      {
+        "key": "1224_CR46",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Cai, C. J. et al. Tools for coping with imperfect algorithms during medical decision-making. in Proc. 2019 CHI Conference on Human Factors in Computing Systems. https://doi.org/10.1145/3290605.3300234 (2019).",
+        "DOI": "10.1145/3290605.3300234"
+      }
+    ],
+    "container-title": [
+      "Translational Psychiatry"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.nature.com/articles/s41398-021-01224-x.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41398-021-01224-x",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41398-021-01224-x.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          30
+        ]
+      ],
+      "date-time": "2022-11-30T15:24:44Z",
+      "timestamp": 1669821884000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/s41398-021-01224-x"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          2,
+          4
+        ]
+      ]
+    },
+    "references-count": 46,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2021,
+            6
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "1224"
+    ],
+    "URL": "https://doi.org/10.1038/s41398-021-01224-x",
+    "relation": {},
+    "ISSN": [
+      "2158-3188"
+    ],
+    "issn-type": [
+      {
+        "value": "2158-3188",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          2,
+          4
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2 July 2020",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "11 January 2021",
+        "order": 2,
+        "name": "revised",
+        "label": "Revised",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "18 January 2021",
+        "order": 3,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "4 February 2021",
+        "order": 4,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "T.H.M. receives research funding from the Brain and Behavior Research Foundation (26489), National Institute of Mental Health (Supplement to R01MH104488), Telefonica Alfa, and the Stanley Center at the Broad Institute. R.H.P. holds equity in Psy Therapeutics and Outermost Therapeutics; serves on the scientific advisory boards of Genomind and Takeda; and consults to RID Ventures. R.H.P. receives research funding from NIMH, NHLBI, NHGRI, and Telefonica Alfa. R.H.P. is an associate editor for JAMA Network Open. F.D.V. consults with Davita Kidney Care and Google Health via Adecco. K.Z.G. receives research funding from Biogen.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Conflict of interest"
+        }
+      }
+    ],
+    "article-number": "108"
+  }
+}

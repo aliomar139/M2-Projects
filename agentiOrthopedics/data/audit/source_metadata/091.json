@@ -1,0 +1,487 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          30
+        ]
+      ],
+      "date-time": "2026-06-30T18:52:51Z",
+      "timestamp": 1782845571030,
+      "version": "3.54.5"
+    },
+    "reference-count": 36,
+    "publisher": "JMIR Publications Inc.",
+    "issue": "8",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J Med Internet Res"
+    ],
+    "DOI": "10.2196/10275",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          6,
+          16
+        ]
+      ],
+      "date-time": "2018-06-16T17:08:21Z",
+      "timestamp": 1529168901000
+    },
+    "page": "e10275",
+    "source": "Crossref",
+    "is-referenced-by-count": 38,
+    "title": [
+      "Predicting Therapy Success and Costs for Personalized Treatment Recommendations Using Baseline Characteristics: Data-Driven Analysis"
+    ],
+    "prefix": "10.2196",
+    "volume": "20",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-0304-5859",
+        "authenticated-orcid": false,
+        "given": "Vincent",
+        "family": "Bremer",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1437-6127",
+        "authenticated-orcid": false,
+        "given": "Dennis",
+        "family": "Becker",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3201-1743",
+        "authenticated-orcid": false,
+        "given": "Spyros",
+        "family": "Kolovos",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5855-2666",
+        "authenticated-orcid": false,
+        "given": "Burkhardt",
+        "family": "Funk",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7358-4444",
+        "authenticated-orcid": false,
+        "given": "Ward",
+        "family": "van Breda",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3356-3574",
+        "authenticated-orcid": false,
+        "given": "Mark",
+        "family": "Hoogendoorn",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8144-8901",
+        "authenticated-orcid": false,
+        "given": "Heleen",
+        "family": "Riper",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1010",
+    "published-online": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          21
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1053/j.semss.2009.08.003"
+      },
+      {
+        "issue": "4",
+        "key": "ref2",
+        "doi-asserted-by": "crossref",
+        "first-page": "163",
+        "DOI": "10.1002/(SICI)1099-176X(199912)2:4<163::AID-MHP64>3.0.CO;2-1",
+        "volume": "2",
+        "author": "Knapp, M",
+        "year": "1999",
+        "journal-title": "J Ment Health Policy Econ"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SSCI.2016.7849890"
+      },
+      {
+        "issue": "14",
+        "key": "ref4",
+        "doi-asserted-by": "crossref",
+        "first-page": "1172",
+        "DOI": "10.1001/jama.1996.03540140060028",
+        "volume": "276",
+        "author": "Russell, LB",
+        "year": "1996",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jval.2015.02.005"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pmed.1001058"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.0887-378X.2004.00327.x"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0033291706009676"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.invent.2017.08.003"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4088/JCP.16m11385"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.rpsm.2014.10.004"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1586/17512433.2015.1075390"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "crossref",
+        "first-page": "5",
+        "DOI": "10.1186/1471-2288-2-5",
+        "volume": "2",
+        "author": "O'Hagan, A",
+        "year": "2002",
+        "journal-title": "BMC Med Res Methodol"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13063-016-1511-1"
+      },
+      {
+        "issue": "5",
+        "key": "ref15",
+        "doi-asserted-by": "crossref",
+        "first-page": "573",
+        "DOI": "10.1016/S0006-3223(02)01866-8",
+        "volume": "54",
+        "author": "Rush, AJ",
+        "year": "2003",
+        "journal-title": "Biol Psychiatry"
+      },
+      {
+        "issue": "9",
+        "key": "ref16",
+        "doi-asserted-by": "crossref",
+        "first-page": "606",
+        "DOI": "10.1046/j.1525-1497.2001.016009606.x",
+        "volume": "16",
+        "author": "Kroenke, K",
+        "year": "2001",
+        "journal-title": "J Gen Intern Med"
+      },
+      {
+        "issue": "3",
+        "key": "ref17",
+        "doi-asserted-by": "crossref",
+        "first-page": "199",
+        "DOI": "10.1016/0168-8510(90)90421-9",
+        "volume": "16",
+        "author": "EuroQol, G",
+        "year": "1990",
+        "journal-title": "Health Policy"
+      },
+      {
+        "key": "ref18",
+        "author": "Hakkaart-van Roijen, L",
+        "year": "2002",
+        "journal-title": "Institute for Medical Technology Assessment, Erasmus University Rotterdam, Trimbos"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jval.2016.01.003"
+      },
+      {
+        "key": "ref20",
+        "author": "Hakkaart-van Roijen, L",
+        "year": "2015",
+        "journal-title": "In opdracht van Zorginstituut Nederland"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/da.22714"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev.publhealth.20.1.125"
+      },
+      {
+        "issue": "4",
+        "key": "ref23",
+        "doi-asserted-by": "crossref",
+        "first-page": "461",
+        "DOI": "10.1016/S0167-6296(01)00086-8",
+        "volume": "20",
+        "author": "Manning, WG",
+        "year": "2001",
+        "journal-title": "J Health Econ"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1009715923555"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.atmosenv.2008.10.005"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5194/gmd-7-1247-2014"
+      },
+      {
+        "issue": "1",
+        "key": "ref27",
+        "doi-asserted-by": "crossref",
+        "first-page": "267",
+        "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+        "volume": "58",
+        "author": "Tibshirani, R",
+        "year": "1996",
+        "journal-title": "Journal of the Royal Statistical Society Series B"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0272989X9001000308"
+      },
+      {
+        "key": "ref29",
+        "unstructured": "R Core TeamR: A Language and Environment for Statistical Computing20152018-07-21Vienna, Austriahttps://www.r-project.org/"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1586/14737167.4.6.599"
+      },
+      {
+        "key": "ref31",
+        "unstructured": "National Institute for Health and Care Excellence (NICE)Guide to the methods of technology appraisal20132018-07-21Process and methods guides https://www.ncbi.nlm.nih.gov/pubmed/27905712"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/hec.1083"
+      },
+      {
+        "issue": "6",
+        "key": "ref33",
+        "doi-asserted-by": "crossref",
+        "first-page": "527",
+        "DOI": "10.1136/jamia.2001.0080527",
+        "volume": "8",
+        "author": "Sim, I",
+        "year": "2001",
+        "journal-title": "J Am Med Inform Assoc"
+      },
+      {
+        "issue": "2-3",
+        "key": "ref34",
+        "doi-asserted-by": "crossref",
+        "first-page": "143",
+        "DOI": "10.1016/S1386-5056(01)00200-3",
+        "volume": "64",
+        "author": "Berg, M",
+        "year": "2001",
+        "journal-title": "Int J Med Inform"
+      },
+      {
+        "key": "ref35",
+        "unstructured": "HartswoodMProcterRRouncefieldMSharpeMBeing there and doing IT in the workplace: A case study of a co-development approach in healthcareProceedings of the participatory design conference20006th Biennial Participatory Design Conference28 Nov-1 DecNew York96105"
+      },
+      {
+        "issue": "3",
+        "key": "ref36",
+        "doi-asserted-by": "crossref",
+        "first-page": "285",
+        "DOI": "10.1055/s-0038-1634538",
+        "volume": "37",
+        "author": "Atkinson, CJ",
+        "year": "1998",
+        "journal-title": "Methods Inf Med"
+      }
+    ],
+    "container-title": [
+      "Journal of Medical Internet Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.jmir.org/2018/8/e10275",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          30
+        ]
+      ],
+      "date-time": "2026-06-30T17:52:04Z",
+      "timestamp": 1782841924000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://www.jmir.org/2018/8/e10275/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          21
+        ]
+      ]
+    },
+    "references-count": 36,
+    "journal-issue": {
+      "issue": "8",
+      "published-online": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.2196/10275",
+    "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.2196/preprints.10275",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "ISSN": [
+      "1438-8871"
+    ],
+    "issn-type": [
+      {
+        "value": "1438-8871",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          21
+        ]
+      ]
+    }
+  }
+}

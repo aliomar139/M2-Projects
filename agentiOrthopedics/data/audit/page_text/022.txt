@@ -1,0 +1,641 @@
+=== PDF PAGE 1 ===
+1 
+OVERVIEW OF CJR QUALITY MEASURES, COMPOSITE QUALITY SCORE, AND 
+PAY-FOR-PERFORMANCE METHODOLOGY 
+This document describes the two quality measures included in the Comprehensive Care for Joint 
+Replacement (CJR) model, the collection and submission of patient-reported outcomes (PRO) and 
+risk variable data for measure development, linking CJR participant hospitals’ performance on 
+quality measures to payment, and the public reporting of quality measure results for hospitals 
+participating in the CJR model. 
+QUALITY MEASURES 
+The two quality measures included in the CJR model are the total hip arthroplasty and/or total 
+knee arthroplasty (THA/TKA) Complications measure (NQF #1550) and the Hospital Consumer 
+Assessment of Healthcare Providers and Systems (HCAHPS) Survey measure (NQF #0166), both of 
+which are already collected under the Hospital Inpatient Quality Reporting (HIQR) program. 
+THA/TKA Complications Measure (NQF #1550) 
+The THA/TKA Complications measure (NQF #1550) is currently implemented in HIQR Program and 
+the Hospital Value-Based Purchasing (HVBP) Program and assesses a participant hospital’s facility-
+level risk-standardized complication rate (RSCR) in the 90-day period following THA and/or TKA 
+surgical procedures. The THA/TKA Complications measure includes only elective THA/TKA patients 
+and, therefore, excludes fractures, which are included in the CJR model. Please refer to section 
+III.D.2.a.(4) of the November 2015 CJR final rule for more information specific to the inclusion and 
+exclusion criteria for the THA/TKA Complications measure. 
+CMS assigns participant hospitals to a performance percentile for the THA/TKA Complications 
+measure based on the distribution of RSCR among subsection (d), of the November 2015 final rule, 
+hospitals that are eligible for payment under IPPS, report the measure, and meet the minimum of 
+at least 25 patient cases over a three-year measurement period. A participant hospital will not 
+have a value for the THA/TKA Complications measure if the hospital does not meet the minimum 
+case count of 25 cases in the three-year measurement period. 
+Hospitals can obtain their RSCR from their Hospital-Specific Report (HSR) available on QualityNet 
+or from the Hospital Compare site at: https://www.medicare.gov/care-
+compare/?providerType=Hospital&redirect=true. Once on this site, select the “Complications” 
+category, then the “Complications” dataset. Next, hospitals should filter this dataset by the 
+“Measure ID” column to only show “COMP_HIP_KNEE” data. 
+For more information, see the Hospital Quality Initiative Measure Methodology which can be 
+found here: https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-
+Instruments/HospitalQualityInits/Measure-Methodology.html. The THA/TKA Complications 
+measure specifications are located in the “Hip and Knee Arthroplasty Complications Updates” zip 
+folder. 
+
+=== PDF PAGE 2 ===
+2 
+Hospital Consumer Assessment of Healthcare Providers and Systems (HCAHPS) Survey Measure 
+NQF 0166 
+The CJR model also uses the HCAHPS Survey measure (NQF #0166), also known as the CAHPS 
+Hospital Survey, which is a national, standardized, publicly-reported survey of patients experience 
+of hospital care. 
+To summarize performance on the HCAHPS Survey measure, the CJR model uses the HCAHPS 
+Linear Mean Roll-up (HLMR) score. The HLMR score summarizes performance across the publicly-
+reported HCAHPS measures, with the exception of Pain Management.  The HLMR is the average of 
+the linear mean scores (LMS) of the HCAHPS measures, using a weight of 1.0 for each of the six 
+HCAHPS composite measures (excluding Pain Management), and a weight of 0.5 for each of the 
+single item measures (Cleanliness, Quietness, Overall Hospital Rating, and Recommend the 
+Hospital). 
+The patient population for the HCAHPS Survey measure includes adult patients admitted to the 
+medical, surgical, and maternity care service lines. The HCAHPS Survey measure summarizes 
+eligible patients’ perceptions of their entire hospital experience; it is not limited to patients with 
+Medical Severity Diagnosis-Related Groups (MS-DRGs) 469, 470, 521, and 522 alone. 
+CMS assigns participant hospitals to a performance percentile for the HCAHPS Survey measure 
+based on the distribution of measure results for all subsection (d) hospitals that are eligible for 
+payment under IPPS, report the measure, and meet the minimum of 100 completed surveys in a 
+four quarter period. A participant hospital will not have a reported value for the HCAHPS Survey 
+measure if it does not meet the minimum of 100 completed surveys in a four quarter period. 
+These are the same thresholds that are used in the HVBP and HIQR Programs. 
+Hospitals can calculate their HLMR score by using the HCAHPS linear mean scores (LMS) from their 
+Hospital Compare Preview Report for the requisite time period. The LMS summarizes all survey 
+responses for each of the 11 HCAHPS measures. 
+Using their LMS, hospitals can apply the formula for creating the HCAHPS Summary Star Rating, 
+available on pages 3-4 of the HCAHPS Star Rating Technical Notes 
+(https://hcahpsonline.org/en/hcahps-star-ratings/#TechNotes), to their LMS, with one 
+modification. For the CJR model, the HLMR will use a weight of 1.0 for six of the HCAHPS 
+composite measures, excluding Pain Management, and a weight of 0.5 for each of the single item 
+measures (Cleanliness, Quietness, Overall Hospital Rating, and Recommend the Hospital). A 
+detailed description of LMS can be found in HCAHPS Star Rating Technical Notes, at 
+https://hcahpsonline.org/en/hcahps-star-ratings/#TechNotes. 
+A detailed discussion of the HCAHPS Survey, and the protocols for sampling, data collection, 
+coding, and file submission can be found in the current HCAHPS Quality Assurance Guidelines 
+manual, available at: https://hcahpsonline.org/en/quality-assurance/. 
+  
+
+=== PDF PAGE 3 ===
+3 
+PATIENT REPORTED OUTCOMES (PRO) AND RISK VARIABLE DATA 
+The CJR model incentivizes the submission of THA/TKA patient-reported outcomes (PRO) and 
+limited risk variable data following eligible elective primary THA/TKA procedures. Integrating this 
+voluntary data submission initiative into the CJR model will provide an opportunity to collect data 
+from the patient's perspective, data that are necessary to finalize and test the specifications of a 
+hospital-level performance measure(s) of PRO following elective primary total hip and/or total 
+knee arthroplasty (THA/TKA PRO-PM). Submission of PRO and risk variable data is not required for 
+reconciliation payment eligibility. However, CJR participant hospitals that successfully submit PRO 
+data may increase their financial opportunity under the model, since CJR participant hospitals that 
+successfully submit PRO and risk variable data can receive two points toward their composite 
+quality score. 
+In order to meet the requirements for successful submission of PRO data, hospitals need to submit 
+the Veterans RAND 12 Item Health Survey (VR-12) or Patient-Reported Outcomes Measurement 
+Information System (PROMIS) Global-10 generic PRO survey; and the Hip disability and 
+Osteoarthritis Outcome Score (HOOS)/Knee injury and Osteoarthritis Outcome Score (KOOS) Jr. or 
+HOOS/KOOS subscales PRO survey for patients undergoing eligible elective primary THA/TKA 
+procedures. The PRO surveys must be collected during both the pre- and post-operative data 
+collection timeframes. The surveys that a given patient completes at the pre-operative data 
+collection timeframe must be the same surveys they complete at the post-operative data 
+collection period. In addition to the PRO surveys, hospitals should also submit identifiers so that 
+pre- and post-operative data can be linked. Finally, hospitals must submit additional risk variables 
+which are only collected at the pre-operative data collection period. Additional data elements such 
+as the Medicare Provider Number, Date of Data Collection, Mode of Collection, and Survey 
+Respondent are also requested to enhance PRO measure development data quality. 
+Performance on the PRO and risk variable data elements will not be taken into consideration when 
+assigning composite quality score points; only successful submission per the CJR model 
+requirements will determine whether or not composite quality points are awarded for data 
+submission. 
+Hospitals may collect PRO and risk variable data for Medicare patients who are aged 65 and older 
+and undergoing eligible elective primary THA/TKA procedure(s). 
+Participating hospitals must meet the minimum case requirements for eligible procedures in the 
+table below for each performance year in order to fulfill the successful data collection criteria set 
+forth in the November 2015 CJR final rule and the May 2021 CJR final rule. 
+  
+
+=== PDF PAGE 4 ===
+4 
+TABLE 1: MINIMUM CASE REQUIREMENTS FOR ELIGIBLE PROCEDURES IN EACH PERFORMANCE YEAR (PY) 
+FOR SU
+CCESSFUL DATA COLLECTION 
+PY Eligible THA/TKA Procedure Window Pre-operative PRO and Risk Variable 
+Submission Requirements 
+1 July 1, 2016 – August 31, 2016 ≥ 50% or ≥ 50 eligible procedures 
+2 Sep 1, 2016 – June 30, 2017 ≥ 60% or ≥ 75 eligible procedures 
+3 July 1, 2017 – June 30, 2018 ≥ 70% or ≥ 100 eligible procedures 
+4 July 1, 2018 – June 30, 2019 ≥ 80% or ≥ 200 eligible procedures 
+5 July 1, 2019 – June 30, 2020 ≥ 80% or ≥ 200 eligible procedures  
+6 July 1, 2021 – June 30, 2022 ≥ 80% or ≥ 300 eligible procedures  
+7 July 1, 2022 – June 30, 2023 ≥ 85% or ≥ 400 eligible procedures  
+8 July 1, 2023 – June 30, 2024 ≥ 90% or ≥ 500 eligible procedures 
+Timing of PRO and Risk Variable Data Collection and Submission 
+Hospitals should collect a patient’s pre-operative data 90 to 0 days (3 months) prior to the 
+patient’s procedure. In PY6 through PY8, the hospital will need to collect this patient’s post-
+operative data 270 to 427 days (9-14 months) after the patient’s procedure; post-operative data 
+on these patients are submitted in the next performance year following the performance year for 
+which pre-operative data were submitted on these patients. The eligible procedure timeframe and 
+data collection periods for each performance year are presented in the figure below. 
+Timeline for PRO and Risk Variable Data Collection by Performance Year 
+Figure 1 provides dates for the pre- and post-operative collection time periods for each 
+performance year (double barred and dashed lines, respectively). It also includes the defining 
+dates for the period of eligible elective primary THA/TKA procedures in each performance year 
+(solid lines). 
+ 
+
+=== PDF PAGE 5 ===
+5 
+FIGURE 1: ELIGIBLE PROCEDURE AND PRO AND RISK VARIABLE DATA COLLECTION PERIODS BY PERFORMANCE YEAR 
+PRO data submission must occur within 60 days of the end of the most recent data collection performance period. The data submission 
+deadlines for each performance year of the CJR model are shown in Table 2. 
+
+
+=== PDF PAGE 6 ===
+6 
+TABLE 2: DEADLINES FOR CJR PRO AND RISK VARIABLE DATA SU BMISSION BY PERFORMANCE YEAR 
+CJR Performance Year 
+blank Year 1 Year 2 Year 3 Year 4 Year 5 Year 6 Year 7 Year 8 
+Deadline October 31, 2016 October 31, 2017 August 31, 2018 August 31, 2019 August 31, 2020 August 31, 2022 September 30, 2023 September 30, 2024 
+Data to be 
+Submitted 
+Pre-Operative 
+Data on 
+Performance Year 
+1 Patients 
+Post-Operative 
+Data on 
+Performance Year 
+1 Patients 
+AND 
+Pre-Operative 
+Data on 
+Performance Year 
+2 Patients 
+Post-Operative 
+Data on 
+Performance Year 
+2 Patients 
+AND 
+Pre-Operative 
+Data on 
+Performance Year 
+3 Patients 
+Post-Operative 
+Data on 
+Performance Year 
+3 Patients 
+AND 
+Pre-Operative 
+Data on 
+Performance Year 
+4 Patients 
+Post-Operative 
+Data on 
+erformance YearP  
+4 Patients 
+AND 
+Pre-Operative 
+Data on 
+erformance YearP  
+5 Patients 
+Post-Operative Data 
+on Performance 
+Year 5 Patients 
+AND 
+Pre-Operative Data 
+on Performance 
+Year 6 Patients 
+Post-Operative Data 
+on Performance 
+Year 6 Patients 
+AND 
+Pre-Operative Data 
+on Performance 
+Year 7 Patients 
+Post-Operative Data 
+on Performance 
+Year 7 Patients 
+AND 
+Pre-Operative Data 
+on Performance 
+Year 8 Patients 
+ 
+
+=== PDF PAGE 7 ===
+7 
+Additional PRO and Risk Variable Resources 
+For more information on PRO and risk variable data, including resources such as the Data 
+Collection Template and Data Dictionary, please see the “Hip and Knee Arthroplasty Patient-
+Reported Outcomes” folder on the Hospital Quality Initiative Measure Methodology webpage, 
+which can be found here: https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-
+Instruments/HospitalQualityInits/Measure-Methodology.html. CJR participant hospitals can also 
+access these resources on the CJR Connect site. 
+COMPOSITE QUALITY SCORE METHODOLOGY 
+The CJR model uses a composite quality score methodology to link quality to payment. The 
+composite quality score for participant hospitals is determined by performance and improvement 
+on two quality measures (THA/TKA Complications measure and the HCAHPS Survey measure), as 
+well as successful submission of PRO and limited risk variable data. 
+CMS calculates a composite quality score for each participant hospital for each performance 
+period, which equals the sum of: 
+• the hospital’s quality performance points for the THA/TKA Complications measure; 
+• the hospital’s quality performance points for HCAHPS Survey measure; 
+• any additional quality improvement points the hospital may earn as a result of 
+demonstrating improvement on either or both of the quality measures; and, 
+• if applicable, 2 additional points for successful data submission of PRO and limited risk 
+variable data. 
+The sum of the components above constitutes the composite quality score, which is capped at 20 
+points. 
+Quality Performance Points for Each Quality Measure 
+CMS assigns quality performance points for the THA/TKA Complications measure and the HCAHPS 
+Survey measure to each participant hospital. 
+To determine quality performance points for the THA/TKA Complications and HCAHPS Survey 
+measures, CMS captures each participant hospital’s RSCR as reported in the HIQR Program and 
+calculates each participant hospital’s HLMR score for the CJR model using the method described in 
+the HCAHPS Survey Measure section, respectively. 
+Then, using these measure values, CMS compares each participant hospital’s measure 
+performance relative to a distribution of the performance of all subsection (d) hospitals that are 
+eligible for payment under IPPS, report the measure, and meet the minimum patient case or 
+survey count for that measure. CMS then assigns each participant hospital to a performance 
+percentile.  Finally, the hospital is assigned quality performance points based on where they fall on 
+the performance percentile scale. 
+  
+
+=== PDF PAGE 8 ===
+8 
+Performance on each of the quality measures is weighted, resulting in the maximum quality 
+performance points indicated in Table 3. 
+TABLE 3: QUALITY MEASURE WEIGHTS IN COMPOSITE QUALITY SCORE 
+Quality Measure Weight in Composite 
+Quality Score 
+Maximum Quality 
+Performance Points 
+THA/TKA Complications measure (NQF #1550) 50% 10.0 
+HCAHPS Survey measure (NQF #0166) 40% 8.0 
+PRO and Risk Variable Data Submission 10% 2.0 
+As shown in Table 4, the individual measure performance points that correspond to each 
+performance percentile have been set to reflect these weights, so they can be summed without 
+adjustment when calculating the total composite quality score. 
+TABLE 4: QUALITY PERFORMANCE POINTS BASED ON PERFORMANCE PERCENTILE 
+Performance Percentile 
+THA/TKA Complications 
+Measure Quality 
+Performance Points 
+HCAHPS Survey Measure 
+Quality Performance Points 
+≥ 90th 10.00 8.00 
+≥ 80th and <90th 9.25 7.40 
+≥ 70th and <80th 8.50 6.80 
+≥ 60th and <70th 7.75 6.20 
+≥ 50th and <60th 7.00 5.60 
+≥ 40th and <50th 6.25 5.00 
+≥ 30th and <50th 5.50 4.40 
+<30th 0.0 0.0 
+For example, if a participant hospital’s performance on the THA/TKA Complications measure falls 
+in the 85th percentile, then that hospital will receive a quality performance score of 9.25 for the 
+THA/TKA Complications measure. 
+CMS assigns any low volume participant hospitals to the 50th performance percentile for that 
+respective measure. A participant hospital will not have a measure value for the THA/TKA 
+Complications measure if the hospital does not meet the minimum 25 case count. A participant 
+hospital will not have a measure value for the HCAHPS Survey measure if the hospital does not 
+meet the minimum of 100 completed surveys and does not have four consecutive quarters of 
+HCAHPS data. 
+Calculate Quality Improvement Points for Each Quality Measure 
+CMS also assigns each participant hospital quality improvement points for the THA/TKA 
+Complications measure and the HCAHPS Survey measure. 
+
+=== PDF PAGE 9 ===
+9 
+Improvement points is awarded if a participant hospital's quality performance percentile on a 
+measure increases from the previous performance year by at least two deciles on the performance 
+percentile scale. If a participant hospital’s performance percentile on a given measure increases by 
+two deciles or more, CMS adds improvement points to the composite quality score equal to 10 
+percent of that measure’s maximum available quality performance points for the measure (see 
+Table 4). 
+This means that hospitals are eligible to earn quality improvement points as follows: 
+• 1 point towards their composite quality score for improvement of at least two deciles on 
+their THA/TKA Complications measure performance percentile; 
+• 0.8 points towards their composite quality score for improvement of at least two deciles on 
+their HCAHPS Survey measure performance percentile; or 
+• 1.8 points for improvement of at least two deciles on both the THA/TKA Complications 
+measure and the HCAHPS Survey measure performance percentiles. 
+In order to be eligible for quality improvement points, a participant hospital must have had a 
+reportable measure performance value for that measure in the prior year. 
+Successful Submission of Patient-Reported Outcomes (PRO) and Risk Variable Data 
+CMS assigns two points towards the composite quality score for participant hospitals that 
+successfully submit THA/TKA PRO and limited risk variable data and 0 points for participant 
+hospitals that do not successfully submit these data. Successful submission is described above.  
+For more information on PRO and risk variable data, see the “Hip and Knee Arthroplasty Patient-
+Reported Outcomes” folder on the Hospital Quality Initiative Measure Methodology webpage, 
+which can be found here: https://www.cms.gov/Medicare/Quality-Initiatives-Patient-
+Assessment-Instruments/HospitalQualityInits/Measure-Methodology.html. CJR participant 
+hospitals can also access these resources on the CJR Connect site. 
+Composite Quality Score Calculation 
+CMS calculates a composite quality score for each participant hospital for each performance 
+period, which equals the sum of: 
+• the hospital’s quality performance score for the THA/TKA Complications measure; 
+• the hospital’s quality performance score for HCAHPS Survey measure; 
+• any additional quality improvement points the hospital may earn as a result 
+of demonstrating improvement on either or both of the quality measures; 
+and, 
+• if applicable, 2 additional points for successful data submission of patient 
+reported outcomes and limited risk variable data. 
+The sum of the components above constitutes the composite quality score, which is capped at 
+20 points. 
+
+=== PDF PAGE 10 ===
+10 
+CJR participant hospitals receive their composite quality scores in the second quarter of the year, 
+following the conclusion of a performance year. The composite quality score is included on 
+hospitals’ reconciliation reports. Reconciliation reports also include the hospital’s measure results 
+and performance percentiles for the THA/TKA Complications measure and HCAHPS Survey 
+measure, and whether or not the hospital successfully submitted PRO and risk variable data. 
+PAY-FOR-PERFORMANCE METHODOLOGY 
+The composite quality score is incorporated into the pay-for-performance methodology, which 
+assigns a participant hospital to one of four quality categories at the time of reconciliation for a 
+performance year. While prospective quality-adjusted target prices will be provided before the 
+conclusion of a performance year (based on a hospital’s episode benchmark price incorporating a 
+3% discount), hospitals may experience a different effective discount percentage at reconciliation 
+due to their assigned quality category. 
+Depending on whether a hospital is eligible for a reconciliation amount or responsible for a 
+repayment to Medicare, the effective discount varies by performance year and the participant 
+hospital’s quality category, as summarized in Table 5.  For more information, please refer to 
+section III.C.5.b.(5)(c)(iii) of the November 2015 CJR final rule and section II.C.7 of CJR Three Year 
+Extension. 
+TABLE 5: EFFECTIVE DISCOUNT PERCENTAGES BY PERFORMANCE YEAR (PY) AND QUALITY CATEGORY 
+ Below 
+Acceptable 
+CQS <5 
+Acceptable 
+CQS >=5  
+and <6.9 
+Good 
+CQS >=6.9  
+and <=15 
+Excellent 
+CQS >15 
+PY Recon Repay Recon Repay Recon Repay Recon Repay 
+1 IN NA 3.0 NA 2.0 NA 1.5 NA 
+2 IN 2.0 3.0 2.0 2.0 1.0 1.5 0.5 
+3 IN 2.0 3.0 2.0 2.0 1.0 1.5 0.5 
+4 IN 3.0 3.0 3.0 2.0 2.0 1.5 1.5 
+5 IN 3.0 3.0 3.0 2.0 2.0 1.5 1.5 
+6 IN 3.0 3.0 3.0 1.5 1.5 0.0 0.0 
+7 IN 3.0 3.0 3.0 1.5 1.5 0.0 0.0 
+8 IN 3.0 3.0 3.0 1.5 1.5 0.0 0.0  
+CQS = Composite Quality Score 
+Recon = Effective discount percentage for reconciliation payment 
+Repay = Effective discount percentage for repayment amount 
+IN = Ineligible 
+Participant hospitals must have a composite quality score greater than or equal to 5.0 to be  
+
+=== PDF PAGE 11 ===
+11 
+eligible for a reconciliation payment. Participant hospitals with composite quality scores that place 
+them in the “Good” or “Excellent” quality categories will either receive a higher reconciliation 
+payment or have less repayment responsibility at reconciliation due to their quality performance. 
+In other words, the change in effective (or applicable) discount percentage experienced at 
+reconciliation will provide a potential benefit to hospitals. Participant hospitals were not 
+responsible for any repayment in PY1 of the CJR model. 
+Prospective Quality-Adjusted Target Prices 
+Before the beginning of a performance year, participant hospitals receive their prospective 
+quality-adjusted target prices.  CMS determines prospective quality-adjusted target prices using a 
+blend of each participant hospital’s hospital-specific and regional episode expenditures (i.e., 
+episode benchmark price) and a 3 percent discount percentage (i.e., discount factor) to reflect 
+Medicare’s portion of reduced expenditures from the CJR model. The discount percentage 
+included in the prospective quality-adjusted target price assumes that the participant hospital will 
+receive a composite quality score in the “Acceptable” quality category. 
+Episode Benchmark Price Blend of hospital-specific and regional historical 
+(EBP) = episode payments reflecting expected episode 
+spending 
+ 
+Discount Factor (DF) = 3% of EBP 
+(0.03EBP) 
+ 
+Prospective Quality-adjusted EBP – DF 
+Target Price (QTP)= (E BP – 0.03EBP) 
+At the end of a performance year, CMS calculates the composite quality score and uses the pay-
+for-performance methodology to assign each participant hospital to one of the four quality 
+categories.  Application of the effective (or applicable) discount percentage at reconciliation 
+results in a quality-adjusted target price at reconciliation. 
+QTP at reconciliation= (EBP – 0.03EBP) for “Acceptable” composite quality 
+category 
+(EBP – 0.015EBP) for “Good” composite quality 
+category 
+(EBP – 0.00EBP) for “Excellent” composite quality 
+category 
+The quality-adjusted target price at reconciliation is then used to determine the participant 
+hospital’s Net Payment Reconciliation Amount (NPRA). The NPRA is the difference between the 
+participant hospital’s quality-adjusted target price at reconciliation, aggregated across all 
+episodes, and the participant hospital’s actual episode spending for the performance year. 
+Adjustments for post-episode spending and financial loss limits are outside the scope of this 
+
+=== PDF PAGE 12 ===
+12 
+document. Please see section II.C.7. of the November 2015 CJR final rule and section II.C.3 of the 
+May 2021 CJR final rule for more information. 
+Actual Episode Spending Hospital episode expenditures during a performance 
+(AES) = year 
+ 
+NPRA = Aggregated Quality-adjusted Target Price at 
+Reconciliation – Actual Episode Spending 
+[(EBP – 0.03EBP)) – AES] for “Acceptable” quality 
+[(EBP – 0.015EBP)) – AES] for “Good” quality 
+[(EBP – 0.00EBP)) – AES] for “Excellent” quality 
+ 
+Participant hospitals with composite quality scores that place them in the “Good” or “Excellent” 
+quality categories will either receive a higher reconciliation payment or have less repayment 
+responsibility at reconciliation due to their quality performance, because they will qualify for a 
+smaller discount percentage. In other words, the change in effective (or applicable) discount 
+percentage experienced at reconciliation will be of benefit to hospitals with higher quality scores. 
+Note that hospitals that fail to achieve a “Good” or “Excellent” composite quality score will not 
+have any additional repayment responsibility. 
+Stop Loss and Stop Gain Limits 
+As mentioned earlier, the NPRA incorporates adjustments for limitations on loss (i.e., stop loss) 
+and limitation on gain (i.e., stop gain). The stop gain and stop loss limits vary by performance year, 
+and are determined as a percentage of the aggregated quality-adjusted target price, as 
+summarized in Table 6. 
+TABLE 6:  PERCENTAGES OF QUALITY-ADJUSTED TARGET PRICE BY PERFORMANCE YEAR (PY) 
+PY Stop Gain Limit Stop Loss Limit 
+1 5.0 NA 
+2 5.0 5.0 
+3 10.0 10.0 
+4 20.0 20.0 
+5 20.0 20.0 
+6 20.0 20.0 
+7 20.0 20.0 
+8 20.0 20.0 
+Note that stop gain and stop loss calculations are based on the quality-adjusted target price at 
+reconciliation, aggregated across all episodes. Please see section II.C.8. of the November 2015 CJR 
+final rule and section II.C.5 of the May 2021 CJR final rule for more details. 
+Stop Gain = (0.05 QTP) for PY1 and PY2 
+(0.10 QTP) for PY 3 
+
+=== PDF PAGE 13 ===
+13 
+(0.20 QTP) for PY4 and PY5 
+(0.20 QTP) for PY6, PY7 and PY8 
+ 
+Stop Loss = (0.05 QTP) for PY2 
+(0.10 QTP) for PY3 
+(0.20 QTP) for PY4 and PY5 
+(0.20 QTP) for PY6, PY7 and PY8 
+ 
+The concepts above are applied in the following examples. Please note that although 
+reconciliation will be performed in the aggregate across all episodes in a given hospital, in the 
+following examples the participant hospital has only one episode for simplicity. 
+EXAMPLE 1: Participant Hospital with CQS=8.25, “Good” Quality Category, PY 1 
+Episode Benchmark Price  
+(EBP) = $20,000 
+ 
+Discount Factor (DF) = (0.03EBP) 
+(0.03 * $20,000) 
+= $600 
+ 
+Prospective Quality-adjusted (EBP – DF) 
+Target Price (QTP) = $20,000 – (0.03 * $20,000) 
+$20,000 – $600 
+= $19,400 
+ 
+Quality-adjusted Target Price (EBP – 0.02EBP) 
+(QTP) at Reconciliation = $20,000 – (0.02 * $20,000) 
+$20,000 – $400 
+= $19,600 
+ 
+Actual Episode Spending  
+(AES) = $18,500 
+ 
+Raw NPRA = QTP – AES 
+[(EBP – 0.02EBP)) – AES] 
+($20,000 – (0.02 * $20,000)) – $18,500 
+$19,600 – $18,500 
+= $1,100 
+ 
+  
+
+=== PDF PAGE 14 ===
+14 
+Stop Gain = (0.05QTP) 
+(0.05 * $19,600) 
+= $980 
+ 
+NPRA = $980 
+EXAMPLE 2: Participant Hospital with CQS=16.00, “Excellent” Quality Category, PY 3 
+Episode Benchmark Price  
+(EBP) = $20,000 
+ 
+Discount Factor (DF) = (0.03EBP) 
+(0.03 * $20,000) 
+= $600 
+ 
+Prospective Quality-adjusted (EBP – DF) 
+Target Price (QTP) = $20,000 – (0.03 * $20,000) 
+$20,000 – $600 
+= $19,400 
+ 
+QTP at Reconciliation = (EBP – 0.005EBP) 
+$20,000 – (0.005 * $20,000) 
+$20,000 – $100 
+= $19,900 
+ 
+Actual Episode Spending (AES)  
+= $27,000 
+ 
+Raw NPRA = QT P – AES 
+[(EBP – 0.005EBP)) – AES] 
+($20,000 – (0.005 * $20,000)) – $27,000 
+$19,900 – $27,000 
+= -$7,100 
+ 
+Stop Loss = (0.1QTP) 
+(0.1 * $19,700) 
+= $1,970 
+ 
+NPRA = - $1,970 
+EXAMPLE 3: Participant Hospital with CQS=15.30, “Excellent” Quality Category, PY 4 
+  
+
+=== PDF PAGE 15 ===
+15 
+In rare instances, a participant hospital’s assigned quality category may change the effective (or 
+applicable) discount factor applied to the quality-adjusted target price at reconciliation in such a 
+way that it could change whether a hospital qualifies for a reconciliation payment or has to make a 
+repayment to Medicare. 
+For example, if the hospital's benchmark price is $20,000, their prospective quality-adjusted target 
+price at the beginning of the performance year would be $19,400. If the hospital reduced spending 
+to $19,600, but achieved a composite quality score in the “Excellent” category, then the hospital 
+would not owe Medicare a repayment of $200. Instead, the hospital in the “Excellent” category 
+would experience a quality-adjusted target price of $19,700 at reconciliation. Therefore, the 
+hospital is eligible to receive a reconciliation payment of $100, even though the actual spending 
+was more than the prospective quality-adjusted target price. 
+Episode Benchmark Price  
+(EBP) = $20,000 
+ 
+Discount Factor (DF) = (0.03EBP) 
+(0.03 * $20,000) 
+= $600 
+ 
+Prospective Quality-adjusted (EBP – DF) 
+Target Price (QTP) = $20,000 – (0.03 * $20,000) 
+$20,000 – $600 
+$19,400 
+=  
+QTP at Reconciliation= (EBP – 0.015EBP) 
+$20,000 – (0.015 * $20,000) 
+$20,000 – $300 
+= $19,700 
+ 
+Actual Spending (AS) = $19,600 
+ 
+NPRA = QTP – AS  
+[(EBP – 0.015EBP)) – AS] 
+($20,000 – (0.015 * $20,000)) – $19,600 
+$19,700 – $19,600 
+= $100 
+ 
+Stop Gain = (0.20QTP) 
+(0.20 * $19,700) 
+= $3,940 
+ 
+Final NPRA = $100 
+  
+
+=== PDF PAGE 16 ===
+16 
+PUBLIC REPORTING OF QUALITY DATA ON HOSPITAL COMPARE WEBSITE 
+CMS publicly reports each CJR participant hospital’s quality measure results on the 
+https://data.cms.gov/provider-data/search The reporting periods for the THA/TKA Complications 
+measure are consistent with HIQR Program performance periods. The public reporting of the 
+HCAHPS survey measure results for the CJR model will be based on a different set of quarters than 
+the HCAHPS scores concurrently reported for the HIQR Program. 
+TABLE 7: SUMMARY OF QUALITY MEASURES PERFORMANCE AND PUBLIC REPORTING PERIODS 
+CJR Model Timeline 
+THA/TKA Complications Measure HCAHPS Survey Measure 
+Performance 
+Year 
+Reporting 
+Year 
+Performance 
+Period 
+HIQR Public 
+Reporting 
+Performance 
+Period 
+HIQR Public 
+Reporting 
+1 2017 4/1/13 – 3/31/16 Annually - July 7/1/15 – 6/30/16 Quarterly – April 
+2 2018 4/1/14 – 3/31/17 Annually - July 7/1/16 – 6/30/17 Quarterly – April 
+3 2019 4/1/15 – 3/31/18 Annually - July 7/1/17 – 6/30/18 Quarterly – April 
+4 2020 4/1/16 – 3/31/19 Annually - July 7/1/18 – 6/30/19 Quarterly – April 
+5.1 2021 4/1/17 – 3/31/20 Annually - July 7/1/19 – 6/30/20 Quarterly – April 
+5.2 2023 4/1/18 – 3/31/21 Annually - July 7/1/20 – 6/30/21 Quarterly – April 
+6 2024 4/1/19 – 3/31/22 Annually - July 7/1/21 – 6/30/22 Quarterly – April 
+7 2025 4/1/20 – 3/31/23 Annually - July 7/1/22 – 6/30/23 Quarterly – April 
+8 2026 4/1/21 – 3/31/24 Annually - July 7/1/23 – 6/30/24 Quarterly – April 
+Note: Data from 1st and 2nd quarters of 2020 are not being reported due to the impact of the COVID-19 pandemic. 
+CMS posts the publicly-reported CJR model quality measure data for each participant hospital in a 
+downloadable format in a CJR model-specific section of the Hospital Compare website. The CJR 
+model quality measure data is posted at the same time as July public reporting for the HIQR 
+Program. 
+CMS publicly acknowledges hospitals that have successfully submitted PRO and limited risk 
+variable data submission by placing a symbol next to the hospital’s name on the CJR model-specific 
+section of the Hospital Compare website. 

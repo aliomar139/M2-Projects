@@ -1,0 +1,626 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          12
+        ]
+      ],
+      "date-time": "2026-09-12T06:25:37Z",
+      "timestamp": 1789194337187,
+      "version": "build-2803163510"
+    },
+    "reference-count": 60,
+    "publisher": "Wiley",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              31
+            ]
+          ],
+          "date-time": "2026-01-31T00:00:00Z",
+          "timestamp": 1769817600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              31
+            ]
+          ],
+          "date-time": "2026-01-31T00:00:00Z",
+          "timestamp": 1769817600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "esskajournals.onlinelibrary.wiley.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Knee surg. sports traumatol. arthrosc."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          3
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Purpose</jats:title>\n                    <jats:p>Machine learning (ML) algorithms are increasingly used to predict outcomes in orthopaedic surgery, but their utility in hip arthroscopy remains unclear. This study aimed to (1) evaluate ML models for predicting outcomes, complications, and resource use following hip arthroscopy, (2) compare ML performance to traditional statistical methods, and (3) critically appraise the quality of existing literature.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>A systematic search of PUBMED, MEDLINE, EMBASE and the Cochrane Central Register of Controlled Trials was conducted on 4 April 2023. Included studies used ML models for clinical prediction in hip arthroscopy. Data on study design, outcomes, model development, validation and adherence to TRIPOD guidelines were extracted.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>\n                      Seventeen studies involving 37,549 patients (52.8% female; mean age 34.4 ± 6.1 years) were included. ML was used to predict clinical outcomes (47.1%), adverse events (47.1%) and resource utilisation (5.9%). The median area under the curve was 0.66 (range 0.5–0.94) for clinical outcomes and 0.7 (range 0.6–0.9) for adverse events. Resource utilisation was reported with a root‐mean‐square error of $3800, a logarithmic error of 0.2, and\n                      <jats:italic>R</jats:italic>\n                      ² of 0.8. Only four studies compared ML to traditional regression; two found no difference, while two favoured ML. On average, studies met 12.3 of the 22 TRIPOD criteria, with only 29.4% meeting more than two‐thirds.\n                    </jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusion</jats:title>\n                    <jats:p>ML models in hip arthroscopy show variable performance in predicting outcomes and complications. Furthermore, most studies comparing ML models to traditional regression did not report any significant difference. Lastly, variability in adherence to TRIPOD guidelines highlights the need for future studies to improve transparency and reporting in the development of ML algorithms for hip arthroscopy. Given the potential of ML models in enhancing clinical decision‐making for hip arthroscopy, along with the findings of the current study, their application should be used with caution.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Level of Evidence</jats:title>\n                    <jats:p>Level IV, systematic review of level II–IV studies.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.1002/ksa.70304",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          31
+        ]
+      ],
+      "date-time": "2026-01-31T11:55:19Z",
+      "timestamp": 1769860519000
+    },
+    "page": "1046-1060",
+    "update-policy": "https://doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": [
+      "Machine learning for predicting outcomes, complications and resource utilisation after hip arthroscopy: A systematic review"
+    ],
+    "prefix": "10.1002",
+    "volume": "34",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0002-7662-8542",
+        "authenticated-orcid": false,
+        "given": "Madison",
+        "family": "Lee",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Rocky Vista University College of Osteopathic Medicine Ivins Utah USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Vera",
+        "family": "Zakhari",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Tufts University School of Medicine Boston Massachusetts USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ajaykumar",
+        "family": "Shanmugaraj",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Faculty of Medicine University of British Columbia Vancouver British Columbia Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lakshmanan",
+        "family": "Sivasundaram",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Ventura Orthopedics Thousand Oaks California USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nolan S.",
+        "family": "Horner",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Genesis Orthopedics and Sports Medicine Chicago Illinois USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          31
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_11_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/03635465211056082"
+      },
+      {
+        "key": "e_1_2_11_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12874-021-01469-6"
+      },
+      {
+        "key": "e_1_2_11_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11739-020-02475-0"
+      },
+      {
+        "key": "e_1_2_11_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00590-021-03059-0"
+      },
+      {
+        "key": "e_1_2_11_6_1",
+        "first-page": "121",
+        "article-title": "Hip arthroscopy for femoroacetabular impingement‐associated labral tears: current status and future prospects",
+        "volume": "14",
+        "author": "Buzin S",
+        "year": "2022",
+        "journal-title": "Orthop Res Rev"
+      },
+      {
+        "key": "e_1_2_11_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/2325967119S00268"
+      },
+      {
+        "key": "e_1_2_11_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2021.04.017"
+      },
+      {
+        "key": "e_1_2_11_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s42836-023-00195-2"
+      },
+      {
+        "key": "e_1_2_11_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7326/M14-0697"
+      },
+      {
+        "key": "e_1_2_11_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12859-018-2264-5"
+      },
+      {
+        "key": "e_1_2_11_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12874-022-01577-x"
+      },
+      {
+        "key": "e_1_2_11_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/03635465221091847"
+      },
+      {
+        "key": "e_1_2_11_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-022-07182-1"
+      },
+      {
+        "key": "e_1_2_11_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2021.08.009"
+      },
+      {
+        "key": "e_1_2_11_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/24730114221151079"
+      },
+      {
+        "key": "e_1_2_11_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/03635465211024964"
+      },
+      {
+        "key": "e_1_2_11_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2012.11.003"
+      },
+      {
+        "key": "e_1_2_11_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12178-020-09600-8"
+      },
+      {
+        "key": "e_1_2_11_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12916-018-1099-2"
+      },
+      {
+        "key": "e_1_2_11_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s41512-018-0029-2"
+      },
+      {
+        "key": "e_1_2_11_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11999-014-3943-9"
+      },
+      {
+        "key": "e_1_2_11_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2020.11.027"
+      },
+      {
+        "key": "e_1_2_11_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5435/JAAOSGlobal-D-21-00093"
+      },
+      {
+        "key": "e_1_2_11_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.asmr.2020.07.007"
+      },
+      {
+        "key": "e_1_2_11_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2021.01.005"
+      },
+      {
+        "key": "e_1_2_11_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/03635465211067546"
+      },
+      {
+        "key": "e_1_2_11_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.20.01640"
+      },
+      {
+        "key": "e_1_2_11_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/03635465221124275"
+      },
+      {
+        "key": "e_1_2_11_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2021.12.030"
+      },
+      {
+        "key": "e_1_2_11_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamanetworkopen.2023.3391"
+      },
+      {
+        "key": "e_1_2_11_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.artd.2021.07.012"
+      },
+      {
+        "key": "e_1_2_11_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/21925682211049164"
+      },
+      {
+        "key": "e_1_2_11_34_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "LuY Lavoie‐GagneO ForlenzaEM PareekA KunzeKN ForsytheB et al.Duration of care and operative time are the primary drivers of total charges after ambulatory hip arthroscopy: a machine learning analysis.Arthroscopy.2022;38(7):2204–2216.e3.",
+        "DOI": "10.1016/j.arthro.2021.12.012"
+      },
+      {
+        "key": "e_1_2_11_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/jmir.5870"
+      },
+      {
+        "key": "e_1_2_11_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5435/JAAOS-D-20-00846"
+      },
+      {
+        "key": "e_1_2_11_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-022-07054-8"
+      },
+      {
+        "key": "e_1_2_11_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/jhps/hnab005"
+      },
+      {
+        "key": "e_1_2_11_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7326/M14-0698"
+      },
+      {
+        "key": "e_1_2_11_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.19.01128"
+      },
+      {
+        "key": "e_1_2_11_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/JSA.0000000000000282"
+      },
+      {
+        "key": "e_1_2_11_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj.n71"
+      },
+      {
+        "key": "e_1_2_11_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2147/CLEP.S129785"
+      },
+      {
+        "key": "e_1_2_11_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1302/0301-620X.91B1.21329"
+      },
+      {
+        "key": "e_1_2_11_45_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.21.00717"
+      },
+      {
+        "key": "e_1_2_11_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-022-07181-2"
+      },
+      {
+        "key": "e_1_2_11_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/medicina56090455"
+      },
+      {
+        "key": "e_1_2_11_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/os.70097"
+      },
+      {
+        "key": "e_1_2_11_49_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1302/2633-1462.64.BJO-2024-0198.R1"
+      },
+      {
+        "key": "e_1_2_11_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0363546520950743"
+      },
+      {
+        "key": "e_1_2_11_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2020.08.009"
+      },
+      {
+        "key": "e_1_2_11_52_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0363546520980461"
+      },
+      {
+        "key": "e_1_2_11_53_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/JSA.0000000000000300"
+      },
+      {
+        "key": "e_1_2_11_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2015.03.039"
+      },
+      {
+        "key": "e_1_2_11_55_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1055/s-0041-1741512"
+      },
+      {
+        "key": "e_1_2_11_56_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.asmr.2021.10.001"
+      },
+      {
+        "key": "e_1_2_11_57_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/eurheartj/ehu207"
+      },
+      {
+        "key": "e_1_2_11_58_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/EDE.0b013e3181c30fb2"
+      },
+      {
+        "key": "e_1_2_11_59_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/ajg.2010.173"
+      },
+      {
+        "key": "e_1_2_11_60_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0234722"
+      },
+      {
+        "key": "e_1_2_11_61_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2021.04.049"
+      }
+    ],
+    "container-title": [
+      "Knee Surgery, Sports Traumatology, Arthroscopy"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ksa.70304",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/full-xml/10.1002/ksa.70304",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ksa.70304",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          18
+        ]
+      ],
+      "date-time": "2026-03-18T12:16:44Z",
+      "timestamp": 1773836204000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/10.1002/ksa.70304"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          31
+        ]
+      ]
+    },
+    "references-count": 60,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            3
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1002/ksa.70304"
+    ],
+    "URL": "https://doi.org/10.1002/ksa.70304",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "0942-2056",
+      "1433-7347"
+    ],
+    "issn-type": [
+      {
+        "value": "0942-2056",
+        "type": "print"
+      },
+      {
+        "value": "1433-7347",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          31
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2025-07-06",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2026-01-05",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2026-01-31",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1160 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          24
+        ]
+      ],
+      "date-time": "2026-08-24T10:36:50Z",
+      "timestamp": 1787567810288,
+      "version": "build-2736575974"
+    },
+    "reference-count": 83,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              7,
+              10
+            ]
+          ],
+          "date-time": "2026-07-10T00:00:00Z",
+          "timestamp": 1783641600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              24
+            ]
+          ],
+          "date-time": "2026-08-24T00:00:00Z",
+          "timestamp": 1787529600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 45,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Manipal Academy of Higher Education, Manipal"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Discov Artif Intell"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Personalized treatment is a paradigm shift in the medical field that provides individualized treatment strategies based on comprehensive patient data including habitat, genomic, and medical profile, etc. Integrating this into the conventional clinical process involves collaborative strategic planning with stakeholders from diverse sectors. The scope of this survey is limited to studies that apply reinforcement learning, deep reinforcement learning, and multi-objective deep reinforcement learning to sequential decision making in personalized treatment. The review addresses these main questions: Why are reinforcement learning and its variants suitable for personalized treatment?How are these algorithms applied in clinical settings of various domains? How are states, actions and rewards defined? What are the requirements, challenges at every stage of model development for deploying these models in safety-critical healthcare applications? Early studies primarily focused on reinforcement learning with single objective, while more works have increasingly adopted deep variants to manage high-dimensional state-action spaces, and a sparse literature exists with multi-objective approach to address conflicting treatment options. Most existing research is concentrated on using publicly available MIMIC- III /IV dataset in ICU settings, oncology related resources including, The Cancer Genome Atlas, Genomics of Drug Sensitivity in Cancer, The Catalogue of Somatic Mutations In Cancer. To the best of our knowledge, this is the first survey to emphasize: (i) the need for multi-objective optimization with sequential personalized treatment planning, (ii) the integration of non-clinical objectives such as patient preferences, hospital infrastructure, insurance coverage, etc., and stake-holders into decision framework, (iii) the theoretical and conceptual model of a multi-modal multi-objective deep reinforcement learning aiming at optimizing the treatment regimes using a newly introduced time-weighted reward integration block to balance multiple, potentially conflicting clinical as well as non-clinical objectives.</jats:p>",
+    "DOI": "10.1007/s44163-026-01733-y",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          10
+        ]
+      ],
+      "date-time": "2026-07-10T12:35:37Z",
+      "timestamp": 1783686937000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "A survey on deep reinforcement learning for personalized treatment featuring challenges and a theoretical framework"
+    ],
+    "prefix": "10.1007",
+    "volume": "6",
+    "author": [
+      {
+        "given": "Bipasha",
+        "family": "Kaul",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rashmi",
+        "family": "Naveen Raj",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Veena",
+        "family": "Mayya",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ramya D.",
+        "family": "Shetty",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          10
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "2",
+        "key": "1733_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1145/3643856",
+        "volume": "15",
+        "author": "S Job",
+        "year": "2024",
+        "unstructured": "Job S, Tao X, Li L, Xie H, Cai T, Yong J, et al. Optimal treatment strategies for critical patients with deep reinforcement learning. ACM Trans Intell Syst Technol. 2024;15(2):1–22. https://doi.org/10.1145/3643856.",
+        "journal-title": "ACM Trans Intell Syst Technol"
+      },
+      {
+        "issue": "6",
+        "key": "1733_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "952",
+        "DOI": "10.1016/j.fertnstert.2018.05.006",
+        "volume": "109",
+        "author": "LH Goetz",
+        "year": "2018",
+        "unstructured": "Goetz LH, Schork NJ. Personalized medicine: motivation, challenges, and progress. Fertil Steril. 2018;109(6):952–63. https://doi.org/10.1016/j.fertnstert.2018.05.006.",
+        "journal-title": "Fertil Steril"
+      },
+      {
+        "issue": "456",
+        "key": "1733_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "1410",
+        "DOI": "10.1198/016214501753382327",
+        "volume": "96",
+        "author": "S Murphy",
+        "year": "2001",
+        "unstructured": "Murphy S, Laan M, Robins J. CPPRG: marginal mean models for dynamic regimes. J Am Stat Assoc. 2001;96(456):1410–23. https://doi.org/10.1198/016214501753382327.",
+        "journal-title": "J Am Stat Assoc"
+      },
+      {
+        "issue": "1",
+        "key": "1733_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "5",
+        "DOI": "10.1186/s43094-023-00573-2",
+        "volume": "10",
+        "author": "DD Gadade",
+        "year": "2024",
+        "unstructured": "Gadade DD, Jha H, Kumar C, Khan F. Unlocking the power of precision medicine: exploring the role of biomarkers in cancer management. Futur J Pharm Sci. 2024;10(1):5. https://doi.org/10.1186/s43094-023-00573-2.",
+        "journal-title": "Futur J Pharm Sci"
+      },
+      {
+        "issue": "36",
+        "key": "1733_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "5350",
+        "DOI": "10.1016/j.vaccine.2017.07.062",
+        "volume": "36",
+        "author": "GA Poland",
+        "year": "2018",
+        "unstructured": "Poland GA, Ovsyannikova IG, Kennedy RB. Personalized vaccinology: a review. Vaccine. 2018;36(36):5350–7. https://doi.org/10.1016/j.vaccine.2017.07.062.",
+        "journal-title": "Vaccine"
+      },
+      {
+        "key": "1733_CR6",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Manju M, Sujataroy Anuratha T, Dhanasri S, Thirumalaivasan V. Integrative personalized oncology: leveraging multi-source data and drug solubility for optimal cancer treatment. In: Proceedings of 2025 3rd International Conference on Intelligent Systems, Advanced Computing, and Communication, ISACC 2025, 2025:37–42. https://doi.org/10.1109/ISACC65211.2025.10969289.",
+        "DOI": "10.1109/ISACC65211.2025.10969289"
+      },
+      {
+        "key": "1733_CR7",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Li L, Di H, Zhang Z, Tao Z. Chemotherapy optimization for personalized adaptive cancer treatment. In: 2025 10th International Conference on Cloud Computing and Big Data Analytics (ICCCBDA), 2025:1–8. https://doi.org/10.1109/ICCCBDA64898.2025.11030543.",
+        "DOI": "10.1109/ICCCBDA64898.2025.11030543"
+      },
+      {
+        "issue": "1",
+        "key": "1733_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "159",
+        "DOI": "10.1186/s12943-025-02369-9",
+        "volume": "24",
+        "author": "A Tiwari",
+        "year": "2025",
+        "unstructured": "Tiwari A, Mishra S, Kuo TR. Current ai technologies in cancer diagnostics and treatment. Mol Cancer. 2025;24(1):159. https://doi.org/10.1186/s12943-025-02369-9.",
+        "journal-title": "Mol Cancer"
+      },
+      {
+        "issue": "4",
+        "key": "1733_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "471",
+        "DOI": "10.1007/s40265-020-01435-4",
+        "volume": "81",
+        "author": "H Zheng",
+        "year": "2021",
+        "unstructured": "Zheng H, Ryzhov IO, Xie W, et al. Personalized multimorbidity management for patients with type 2 diabetes using reinforcement learning of electronic health records. Drugs. 2021;81(4):471–82. https://doi.org/10.1007/s40265-020-01435-4.",
+        "journal-title": "Drugs"
+      },
+      {
+        "key": "1733_CR10",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Pichon A, Urteaga IN, Mamykina L, Elhadad N. Informing the design of individualized self-management regimens from the human, data, and machine learning perspectives. ACM Trans Comput-Hum Interact. 2025; https://doi.org/10.1145/3717063.",
+        "DOI": "10.1145/3717063"
+      },
+      {
+        "key": "1733_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "350",
+        "DOI": "10.1038/s41576-022-00572-8",
+        "volume": "24",
+        "author": "M Pirmohamed",
+        "year": "2023",
+        "unstructured": "Pirmohamed M. Pharmacogenomics: current status and future perspectives. Nat Rev Genet. 2023;24:350–62.",
+        "journal-title": "Nat Rev Genet"
+      },
+      {
+        "key": "1733_CR12",
+        "unstructured": "Killian TW, Zhang H, Subramanian J, Fatemi M, Ghassemi M. An empirical study of representation learning for reinforcement learning in healthcare. In: Proceedings of the Machine Learning for Health NeurIPS Workshop. Proceedings of Machine Learning Research, 2020;136:139–160. PMLR, Virtual (NeurIPS 2020)."
+      },
+      {
+        "issue": "6",
+        "key": "1733_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "2273",
+        "DOI": "10.1109/JBHI.2020.3027443",
+        "volume": "25",
+        "author": "M Baucum",
+        "year": "2021",
+        "unstructured": "Baucum M, Khojandi A, Vasudevan R. Improving deep reinforcement learning with transitional variational autoencoders: a healthcare application. IEEE J Biomed Health Inform. 2021;25(6):2273–80. https://doi.org/10.1109/JBHI.2020.3027443.",
+        "journal-title": "IEEE J Biomed Health Inform"
+      },
+      {
+        "key": "1733_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "77709",
+        "DOI": "10.1109/ACCESS.2025.3564971",
+        "volume": "13",
+        "author": "R Gayathri",
+        "year": "2025",
+        "unstructured": "Gayathri R, Sangeetha SKB, Sangeetha R, Mary GLR, Mathivanan SK, Moorthy U. Dynamic ai-enhanced therapeutic framework for precision medicine using multi-modal data and patient-centric reinforcement learning. IEEE Access. 2025;13:77709–33. https://doi.org/10.1109/ACCESS.2025.3564971.",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "1733_CR15",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Zhou J, Zhu J. Reinforcement learning algorithm helps optimize personalized cognitive behavioral therapy for anxiety disorders. In: 2025 3rd International Conference on Data Science and Information System (ICDSIS), 2025:1–5. https://doi.org/10.1109/ICDSIS65355.2025.11070763.",
+        "DOI": "10.1109/ICDSIS65355.2025.11070763"
+      },
+      {
+        "issue": "7676",
+        "key": "1733_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "354",
+        "DOI": "10.1038/nature24270",
+        "volume": "550",
+        "author": "D Silver",
+        "year": "2017",
+        "unstructured": "Silver D, Schrittwieser J, Simonyan K, Antonoglou I, Huang A, Guez A, et al. Mastering the game of go without human knowledge. Nature. 2017;550(7676):354–9. https://doi.org/10.1038/nature24270.",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "1733_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "12246",
+        "DOI": "10.1007/s10489-024-05806-2",
+        "volume": "54",
+        "author": "X Cheng",
+        "year": "2024",
+        "unstructured": "Cheng X, Huang X, Huang Z, et al. An offline-to-online reinforcement learning approach based on multi-action evaluation with policy extension. Appl Intell. 2024;54:12246–71. https://doi.org/10.1007/s10489-024-05806-2.",
+        "journal-title": "Appl Intell"
+      },
+      {
+        "issue": "1",
+        "key": "1733_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "61",
+        "DOI": "10.1109/TAI.2022.3225251",
+        "volume": "5",
+        "author": "X Wang",
+        "year": "2024",
+        "unstructured": "Wang X, Hou D, Huang L, Cheng Y. Offline-online actor-critic. IEEE Trans Artif Intell. 2024;5(1):61–9. https://doi.org/10.1109/TAI.2022.3225251.",
+        "journal-title": "IEEE Trans Artif Intell"
+      },
+      {
+        "key": "1733_CR19",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Banumathi K, Venkatesan L, Benjamin LS, Vijayalakshmi K, Satchi NS. Reinforcement learning in personalized medicine: a comprehensive review of treatment optimization strategies. Cureus 2025;17(4): https://doi.org/10.7759/cureus.82756.",
+        "DOI": "10.7759/cureus.82756"
+      },
+      {
+        "issue": "14",
+        "key": "1733_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "1752",
+        "DOI": "10.3390/healthcare13141752",
+        "volume": "13",
+        "author": "TC Frommeyer",
+        "year": "2025",
+        "unstructured": "Frommeyer TC, Gilbert MM, Fursmidt RM, Park Y, Khouzam JP, Brittain GV, et al. Reinforcement learning and its clinical applications within healthcare: a systematic review of precision medicine and dynamic treatment regimes. Healthcare. 2025;13(14):1752. https://doi.org/10.3390/healthcare13141752.",
+        "journal-title": "Healthcare"
+      },
+      {
+        "key": "1733_CR21",
+        "volume-title": "Reinforcement Learning: An Introduction",
+        "author": "RS Sutton",
+        "year": "2018",
+        "unstructured": "Sutton RS, Barto AG. Reinforcement Learning: An Introduction. 2nd ed. Cambridge, MA: MIT Press; 2018.",
+        "edition": "2"
+      },
+      {
+        "key": "1733_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "337",
+        "DOI": "10.1038/s41746-024-01316-0",
+        "volume": "7",
+        "author": "P Jayaraman",
+        "year": "2024",
+        "unstructured": "Jayaraman P, Desman J, Sabounchil M, Nadkarni GN, Sakhuja A. A primer on reinforcement learning in medicine for clinicians. NPJ digital med. 2024;7:337. https://doi.org/10.1038/s41746-024-01316-0.",
+        "journal-title": "NPJ digital med"
+      },
+      {
+        "issue": "1",
+        "key": "1733_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "181",
+        "DOI": "10.1016/S0004-3702(99)00052-1",
+        "volume": "112",
+        "author": "RS Sutton",
+        "year": "1999",
+        "unstructured": "Sutton RS, Precup D, Singh S. Between mdps and semi-mdps: a framework for temporal abstraction in reinforcement learning. Artif Intell. 1999;112(1):181–211. https://doi.org/10.1016/S0004-3702(99)00052-1.",
+        "journal-title": "Artif Intell"
+      },
+      {
+        "issue": "7540",
+        "key": "1733_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "529",
+        "DOI": "10.1038/nature14236",
+        "volume": "518",
+        "author": "V Mnih",
+        "year": "2015",
+        "unstructured": "Mnih V, Kavukcuoglu K, Silver D, Rusu AA, Veness J, Bellemare MG, et al. Human-level control through deep reinforcement learning. Nature. 2015;518(7540):529–33. https://doi.org/10.1038/nature14236.",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "1733_CR25",
+        "unstructured": "Haarnoja T, Zhou A, Abbeel P, Levine S. Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor. In: Proceedings of the 35th International Conference on Machine Learning (ICML). Stockholm, Sweden: PMLR; 2018:1861–70."
+      },
+      {
+        "key": "1733_CR26",
+        "unstructured": "Schulman J, Wolski F, Dhariwal P, Radford A, Klimov O. Proximal policy optimization algorithms. 2017. arXiv:1707.06347 arXiv preprint."
+      },
+      {
+        "issue": "8",
+        "key": "1733_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "11850",
+        "DOI": "10.1109/TITS.2025.3573781",
+        "volume": "26",
+        "author": "C Xu",
+        "year": "2025",
+        "unstructured": "Xu C, Zhao H, Lu X, Sun K, Gao B, Chen H. A deep reinforcement learning method for autonomous driving integrating multi-modal fusion. IEEE Trans Intell Transp Syst. 2025;26(8):11850–63. https://doi.org/10.1109/TITS.2025.3573781.",
+        "journal-title": "IEEE Trans Intell Transp Syst"
+      },
+      {
+        "issue": "1",
+        "key": "1733_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "4",
+        "DOI": "10.1007/s44196-022-00179-1",
+        "volume": "16",
+        "author": "WD Yan-e Hou",
+        "year": "2023",
+        "unstructured": "Yan-e Hou WD, Wenbo G, Dang L. A deep reinforcement learning real-time recommendation model based on long and short-term preference. Int J Comput Intell Syst. 2023;16(1):4. https://doi.org/10.1007/s44196-022-00179-1.",
+        "journal-title": "Int J Comput Intell Syst"
+      },
+      {
+        "key": "1733_CR29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.knosys.2023.110335",
+        "volume": "264",
+        "author": "X Chen",
+        "year": "2023",
+        "unstructured": "Chen X, Yao L, McAuley J, Zhou G, Wang X. Deep reinforcement learning in recommender systems: a survey and new perspectives. Knowl-Based Syst. 2023;264:110335. https://doi.org/10.1016/j.knosys.2023.110335.",
+        "journal-title": "Knowl-Based Syst"
+      },
+      {
+        "issue": "6",
+        "key": "1733_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "165",
+        "DOI": "10.1007/s10462-025-11166-1",
+        "volume": "58",
+        "author": "Y Wang",
+        "year": "2025",
+        "unstructured": "Wang Y, Wang Y, Tian F, Ma J, Jin Q. Intelligent games meeting with multi-agent deep reinforcement learning: a comprehensive review. Artif Intell Rev. 2025;58(6):165. https://doi.org/10.1007/s10462-025-11166-1.",
+        "journal-title": "Artif Intell Rev"
+      },
+      {
+        "issue": "4",
+        "key": "1733_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "603",
+        "DOI": "10.1016/j.neuron.2020.06.014",
+        "volume": "107",
+        "author": "M Botvinick",
+        "year": "2020",
+        "unstructured": "Botvinick M, Wang JX, Dabney W, Miller KJ, Kurth-Nelson Z. Deep reinforcement learning and its neuroscientific implications. Neuron. 2020;107(4):603–16. https://doi.org/10.1016/j.neuron.2020.06.014.",
+        "journal-title": "Neuron"
+      },
+      {
+        "key": "1733_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "611",
+        "DOI": "10.1007/s13244-018-0639-9",
+        "volume": "9",
+        "author": "R Yamashita",
+        "year": "2018",
+        "unstructured": "Yamashita R, Nishio M, Do R, Togashi K. Convolutional neural networks: an overview and application in radiology. Insights Imaging. 2018;9:611–29. https://doi.org/10.1007/s13244-018-0639-9.",
+        "journal-title": "Insights Imaging"
+      },
+      {
+        "issue": "6",
+        "key": "1733_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "853",
+        "DOI": "10.1007/s00158-009-0460-7",
+        "volume": "41",
+        "author": "IY Kim",
+        "year": "2009",
+        "unstructured": "Kim IY, Weck OL. The weighted sum method for multi-objective optimization: new insights. Struct Multidiscip Optim. 2009;41(6):853–62. https://doi.org/10.1007/s00158-009-0460-7.",
+        "journal-title": "Struct Multidiscip Optim"
+      },
+      {
+        "key": "1733_CR34",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Mavrotas G. Effective implementation of the $$\\varepsilon $$-constraint method in multi-objective mathematical programming problems. Appl Math Comput. 2009;213(2):455–65. https://doi.org/10.1016/j.amc.2009.03.037.",
+        "DOI": "10.1016/j.amc.2009.03.037"
+      },
+      {
+        "issue": "5",
+        "key": "1733_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "55",
+        "DOI": "10.1109/MSP.2020.3003851",
+        "volume": "37",
+        "author": "M Razaviyayn",
+        "year": "2020",
+        "unstructured": "Razaviyayn M, Huang T, Lu S, Nouiehed M, Sanjabi M, Hong M. Nonconvex min-max optimization: Applications, challenges, and recent theoretical advances. IEEE Signal Process Mag. 2020;37(5):55–66. https://doi.org/10.1109/MSP.2020.3003851.",
+        "journal-title": "IEEE Signal Process Mag"
+      },
+      {
+        "key": "1733_CR36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.trc.2023.104352",
+        "volume": "156",
+        "author": "X He",
+        "year": "2023",
+        "unstructured": "He X, Lv C. Toward personalized decision making for autonomous vehicles: a constrained multi-objective reinforcement learning technique. Trans Res Part C Emerging Technol. 2023;156:104352. https://doi.org/10.1016/j.trc.2023.104352.",
+        "journal-title": "Trans Res Part C Emerging Technol"
+      },
+      {
+        "issue": "1",
+        "key": "1733_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "11",
+        "DOI": "10.2196/medinform.3445",
+        "volume": "3",
+        "author": "A Tsoukalas",
+        "year": "2015",
+        "unstructured": "Tsoukalas A, Albertson T, Tagkopoulos I. From data to optimal decision making: a data-driven, probabilistic machine learning approach to decision support for patients with sepsis. JMIR Med Inform. 2015;3(1):11. https://doi.org/10.2196/medinform.3445.",
+        "journal-title": "JMIR Med Inform"
+      },
+      {
+        "key": "1733_CR38",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Johnson AEW, Pollard TJ, Shen L, Lehman L-WH, Feng M, Ghassemi M, Moody B, Szolovits P, Celi LA, Mark RG. MIMIC-IV (version 2.2). PhysioNet (2023). https://doi.org/10.13026/s6n6-xd98.",
+        "DOI": "10.13026/s6n6-xd98"
+      },
+      {
+        "issue": "2",
+        "key": "1733_CR39",
+        "doi-asserted-by": "publisher",
+        "first-page": "609",
+        "DOI": "10.1038/s41591-024-03359-y",
+        "volume": "31",
+        "author": "J Wang",
+        "year": "2025",
+        "unstructured": "Wang J, Wang K, Yu Y, Lu Y, Xiao W, Sun Z, et al. Self-improving generative foundation model for synthetic medical image generation and clinical applications. Nat Med. 2025;31(2):609–17. https://doi.org/10.1038/s41591-024-03359-y.",
+        "journal-title": "Nat Med"
+      },
+      {
+        "key": "1733_CR40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.asoc.2026.115184",
+        "volume": "197",
+        "author": "H Quan",
+        "year": "2026",
+        "unstructured": "Quan H, Zhang Y, Li Q, Liu Y. An explainable feature selection method through statistical reinforcement learning. Appl Soft Comput. 2026;197:115184. https://doi.org/10.1016/j.asoc.2026.115184.",
+        "journal-title": "Appl Soft Comput"
+      },
+      {
+        "issue": "6",
+        "key": "1733_CR41",
+        "doi-asserted-by": "publisher",
+        "first-page": "1259",
+        "DOI": "10.1097/PRS.0000000000011340",
+        "volume": "154",
+        "author": "AP Yoon",
+        "year": "2024",
+        "unstructured": "Yoon AP, Song Y, Lin I-CF, Wang L, Chung KC. Tree-based reinforcement learning for identifying optimal personalized treatment decisions for hand deformity in rheumatoid arthritis. Plast Reconstr Surg. 2024;154(6):1259–66. https://doi.org/10.1097/PRS.0000000000011340.",
+        "journal-title": "Plast Reconstr Surg"
+      },
+      {
+        "issue": "3",
+        "key": "1733_CR42",
+        "doi-asserted-by": "publisher",
+        "first-page": "770",
+        "DOI": "10.1287/msom.2023.0548",
+        "volume": "27",
+        "author": "J Baek",
+        "year": "2025",
+        "unstructured": "Baek J, Boutilier JJ, Farias VF, Jónasson JO, Yoeli E. Policy optimization for personalized interventions in behavioral health. Manuf Serv Oper Manag. 2025;27(3):770–88. https://doi.org/10.1287/msom.2023.0548.",
+        "journal-title": "Manuf Serv Oper Manag"
+      },
+      {
+        "key": "1733_CR43",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Ayyalasomayajula MMT. Advanced machine learning algorithms for personalized diabetic foot ulcer treatment. In: Ayyalasomayajula, M.M.T. (ed.) AI and the Revival of Big Data, 2025:347–372. IGI Global Scientific Publishing, Hershey, PA. https://doi.org/10.4018/979-8-3693-8472-5.ch015.",
+        "DOI": "10.4018/979-8-3693-8472-5.ch015"
+      },
+      {
+        "key": "1733_CR44",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Mulani J, Heda S, Tumdi K, Patel J, Chhinkaniwala H, Patel J. In: Dash S, Acharya BR, Mittal M, Abraham A, Kelemen A (eds.) Deep Reinforcement Learning Based Personalized Health Recommendations, 2020:231–255. Springer, Cham. https://doi.org/10.1007/978-3-030-33966-1_12.",
+        "DOI": "10.1007/978-3-030-33966-1_12"
+      },
+      {
+        "key": "1733_CR45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.bspc.2021.102847",
+        "volume": "69",
+        "author": "C Sun",
+        "year": "2021",
+        "unstructured": "Sun C, Hong S, Song M, Shang J, Li H. Personalized vital signs control based on continuous action-space reinforcement learning with supervised experience. Biomed Signal Process Control. 2021;69:102847. https://doi.org/10.1016/j.bspc.2021.102847.",
+        "journal-title": "Biomed Signal Process Control"
+      },
+      {
+        "issue": "3",
+        "key": "1733_CR46",
+        "doi-asserted-by": "publisher",
+        "first-page": "3107",
+        "DOI": "10.1007/s11042-020-08896-5",
+        "volume": "81",
+        "author": "Y Dai",
+        "year": "2022",
+        "unstructured": "Dai Y, Wang G, Muhammad K, et al. A closed-loop healthcare processing approach based on deep reinforcement learning. Multimedia Tools Appl. 2022;81(3):3107–29. https://doi.org/10.1007/s11042-020-08896-5.",
+        "journal-title": "Multimedia Tools Appl"
+      },
+      {
+        "key": "1733_CR47",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.engappai.2025.111545",
+        "volume": "159",
+        "author": "L Huidong",
+        "year": "2025",
+        "unstructured": "Huidong L, Xiangfei Z, Hang Y, Qingchen Z. Dual-channel batch constrained deep q-learning for sepsis treatment. Eng Appl Artif Intell. 2025;159:111545. https://doi.org/10.1016/j.engappai.2025.111545.",
+        "journal-title": "Eng Appl Artif Intell"
+      },
+      {
+        "issue": "20",
+        "key": "1733_CR48",
+        "doi-asserted-by": "publisher",
+        "first-page": "4034",
+        "DOI": "10.1002/sim.9491",
+        "volume": "41",
+        "author": "M Liu",
+        "year": "2022",
+        "unstructured": "Liu M, Shen X, Pan W. Deep reinforcement learning for personalized treatment recommendation. Stat Med. 2022;41(20):4034–56. https://doi.org/10.1002/sim.9491.",
+        "journal-title": "Stat Med"
+      },
+      {
+        "issue": "7",
+        "key": "1733_CR49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1402-4896/ade572",
+        "volume": "100",
+        "author": "D Luo",
+        "year": "2025",
+        "unstructured": "Luo D, Xu L, Yang Y, Wu J, Li X. Simulating chemotherapy of tumor models via adopting an artificial intelligence approach. Phys Scr. 2025;100(7):075249. https://doi.org/10.1088/1402-4896/ade572.",
+        "journal-title": "Phys Scr"
+      },
+      {
+        "key": "1733_CR50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.radonc.2025.110833",
+        "volume": "207",
+        "author": "Y Yan",
+        "year": "2025",
+        "unstructured": "Yan Y, Sun X, Chen Y, Sun Z, Yan S, Lu Z, et al. Optimizing fractionation schedules for de-escalation radiotherapy in head and neck cancers using deep reinforcement learning. Radiother Oncol. 2025;207:110833. https://doi.org/10.1016/j.radonc.2025.110833.",
+        "journal-title": "Radiother Oncol"
+      },
+      {
+        "issue": "10",
+        "key": "1733_CR51",
+        "doi-asserted-by": "publisher",
+        "first-page": "1255",
+        "DOI": "10.3390/diagnostics15101255",
+        "volume": "15",
+        "author": "M Liu",
+        "year": "2025",
+        "unstructured": "Liu M, Wei Y, Xie T, Yang M, Cheng X, Xu L, et al. Deep reinforcement learning for ct-based non-invasive prediction of sox9 expression in hepatocellular carcinoma. Diagnostics. 2025;15(10):1255. https://doi.org/10.3390/diagnostics15101255.",
+        "journal-title": "Diagnostics"
+      },
+      {
+        "key": "1733_CR52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.eswa.2024.126154",
+        "volume": "267",
+        "author": "T Zhao",
+        "year": "2025",
+        "unstructured": "Zhao T, Faustino BL, Jagatheesaperumal SK, Rolim FDPS, Albuquerque VHC. Reinforcement learning-based adaptive deep brain stimulation computational model for the treatment of tremor in parkinson’s disease. Expert Syst Appl. 2025;267:126154. https://doi.org/10.1016/j.eswa.2024.126154.",
+        "journal-title": "Expert Syst Appl"
+      },
+      {
+        "key": "1733_CR53",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gorrepati LP, Potla RT. A reinforcement learning framework for real-time personalized treatment planning in clinical environments. Eng Technol Appl Sci Res, 2025, 15(4), pp. 24698–704. https://doi.org/10.48084/etasr.12390",
+        "DOI": "10.48084/etasr.12390"
+      },
+      {
+        "key": "1733_CR54",
+        "doi-asserted-by": "publisher",
+        "first-page": "103373",
+        "DOI": "10.1109/ACCESS.2025.3579198",
+        "volume": "13",
+        "author": "D Adamu Aliyu",
+        "year": "2025",
+        "unstructured": "Adamu Aliyu D, Akashah Patah Akhir E, Omar Abdullah Sawad M, Shehu Yalli J, Saidu Y. A reinforcement learning approach to personalized asthma exacerbation prediction using proximal policy optimization. IEEE Access. 2025;13:103373–84. https://doi.org/10.1109/ACCESS.2025.3579198.",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "1",
+        "key": "1733_CR55",
+        "doi-asserted-by": "publisher",
+        "first-page": "17882",
+        "DOI": "10.1038/s41598-021-97028-6",
+        "volume": "11",
+        "author": "B Eastman",
+        "year": "2021",
+        "unstructured": "Eastman B, Przedborski M, Kohandel M. Reinforcement learning derived chemotherapeutic schedules for robust patient-specific therapy. Sci Rep. 2021;11(1):17882. https://doi.org/10.1038/s41598-021-97028-6.",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "key": "1733_CR56",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Wu X, Li R, He Z, Yu T, Cheng C. A value-based deep reinforcement learning model with human expertise in optimal treatment of sepsis. npj Digital Med. 2023;6:15 https://doi.org/10.1038/s41746-023-00755-5.",
+        "DOI": "10.1038/s41746-023-00755-5"
+      },
+      {
+        "key": "1733_CR57",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.smhl.2024.100519",
+        "volume": "34",
+        "author": "Y Huang",
+        "year": "2024",
+        "unstructured": "Huang Y, Cao R, Hughes T, Rahmani A. Smart pain relief: harnessing conservative q learning for personalized and dynamic pain management. Smart Health. 2024;34:100519. https://doi.org/10.1016/j.smhl.2024.100519.",
+        "journal-title": "Smart Health"
+      },
+      {
+        "key": "1733_CR58",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Kaur A, Kukreja V, Aneja A. Dynamic treatment strategies: the rl-cnn model in personalized medicine. In: 2024 2nd International Conference on Self Sustainable Artificial Intelligence Systems (ICSSAS), 2024:223–226. https://doi.org/10.1109/ICSSAS64001.2024.10760342.",
+        "DOI": "10.1109/ICSSAS64001.2024.10760342"
+      },
+      {
+        "key": "1733_CR59",
+        "doi-asserted-by": "publisher",
+        "first-page": "2655",
+        "DOI": "10.1007/s10994-023-06481-z",
+        "volume": "113",
+        "author": "J Yang",
+        "year": "2024",
+        "unstructured": "Yang J, El-Bouri R, O’Donoghue O, et al. Deep reinforcement learning for multi-class imbalanced training: applications in healthcare. Mach Learn. 2024;113:2655–74. https://doi.org/10.1007/s10994-023-06481-z.",
+        "journal-title": "Mach Learn"
+      },
+      {
+        "key": "1733_CR60",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Roggeveen LF, Hassouni Ae, Grooth H et al. Reinforcement learning for intensive care medicine: actionable clinical insights from novel approaches to reward shaping and off-policy model evaluation. ICMx 2024;12(32): https://doi.org/10.1186/s40635-024-00614-x.",
+        "DOI": "10.1186/s40635-024-00614-x"
+      },
+      {
+        "key": "1733_CR61",
+        "doi-asserted-by": "publisher",
+        "first-page": "63",
+        "DOI": "10.1007/s44230-025-00093-7",
+        "volume": "5",
+        "author": "R Tu",
+        "year": "2025",
+        "unstructured": "Tu R, Luo Z, Pan C. Offline safe reinforcement learning for sepsis treatment: tackling variable-length episodes with sparse rewards. Human-Centric Intell Syst. 2025;5:63–76. https://doi.org/10.1007/s44230-025-00093-7.",
+        "journal-title": "Human-Centric Intell Syst"
+      },
+      {
+        "issue": "2",
+        "key": "1733_CR62",
+        "doi-asserted-by": "publisher",
+        "first-page": "5917",
+        "DOI": "10.1109/TCE.2025.3565900",
+        "volume": "71",
+        "author": "D Nimma",
+        "year": "2025",
+        "unstructured": "Nimma D, Rao PL, Ramesh JVN, Dahan F, Reddy DN, Selvakumar V, et al. Reinforcement learning-based integrated risk aware dynamic treatment strategy for consumer-centric next-gen healthcare. IEEE Trans Consum Electron. 2025;71(2):5917–25. https://doi.org/10.1109/TCE.2025.3565900.",
+        "journal-title": "IEEE Trans Consum Electron"
+      },
+      {
+        "key": "1733_CR63",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s41060-025-00857-1",
+        "author": "P Symeonidis",
+        "year": "2025",
+        "unstructured": "Symeonidis P, Rizos E, Andras C, Hairistanidis S, Manolopoulos Y, Zanker M. Deep reinforcement learning for personalized insulin dosing and glucose control of hospitalized in icu patients. Int J Data Sci Anal. 2025. https://doi.org/10.1007/s41060-025-00857-1.",
+        "journal-title": "Int J Data Sci Anal"
+      },
+      {
+        "issue": "1",
+        "key": "1733_CR64",
+        "doi-asserted-by": "publisher",
+        "first-page": "6472",
+        "DOI": "10.1038/s41467-025-61329-5",
+        "volume": "16",
+        "author": "K Higgins",
+        "year": "2025",
+        "unstructured": "Higgins K, Nyssen OP, Southern J, Laponogov I, Veselkov D, Gisbert JP, et al. The helicobacter pylori ai-clinician harnesses artificial intelligence to personalise h. pylori treatment recommendations. Nat Commun. 2025;16(1):6472. https://doi.org/10.1038/s41467-025-61329-5.",
+        "journal-title": "Nat Commun"
+      },
+      {
+        "issue": "1",
+        "key": "1733_CR65",
+        "doi-asserted-by": "publisher",
+        "first-page": "107",
+        "DOI": "10.1186/s12984-025-01609-9",
+        "volume": "22",
+        "author": "S Liu",
+        "year": "2025",
+        "unstructured": "Liu S, Luo J, He C. Optimizing the dynamic treatment regime of outpatient rehabilitation in patients with knee osteoarthritis using reinforcement learning. J Neuroeng Rehabil. 2025;22(1):107. https://doi.org/10.1186/s12984-025-01609-9.",
+        "journal-title": "J Neuroeng Rehabil"
+      },
+      {
+        "key": "1733_CR66",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Ghasemi P, Greenberg M, Southern DA, Li B, White JA, Lee J. Personalized decision making for coronary artery disease treatment using offline reinforcement learning. npj Digital Medicine 2025;8(1): 99https://doi.org/10.1038/s41746-025-01498-1.",
+        "DOI": "10.1038/s41746-025-01498-1"
+      },
+      {
+        "issue": "1",
+        "key": "1733_CR67",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1145/3477600",
+        "volume": "55",
+        "author": "C Yu",
+        "year": "2021",
+        "unstructured": "Yu C, Liu J, Nemati S, Yin G. Reinforcement learning in healthcare: a survey. ACM Comput Surv. 2021;55(1):1–36. https://doi.org/10.1145/3477600.",
+        "journal-title": "ACM Comput Surv"
+      },
+      {
+        "key": "1733_CR68",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.media.2021.102193",
+        "volume": "73",
+        "author": "SK Zhou",
+        "year": "2021",
+        "unstructured": "Zhou SK, Le HN, Luu K, Nguyen VH, Ayache N. Deep reinforcement learning in medical imaging: A literature review. Med Image Anal. 2021;73:102193. https://doi.org/10.1016/j.media.2021.102193.",
+        "journal-title": "Med Image Anal"
+      },
+      {
+        "issue": "4",
+        "key": "1733_CR69",
+        "doi-asserted-by": "publisher",
+        "first-page": "521",
+        "DOI": "10.2215/CJN.0000000000000084",
+        "volume": "18",
+        "author": "K Khezeli",
+        "year": "2023",
+        "unstructured": "Khezeli K, Siegel S, Shickel B, Ozrazgat-Baslanti T, Bihorac A, Rashidi P. Reinforcement learning for clinical applications. Clin J Am Soc Nephrol. 2023;18(4):521–3. https://doi.org/10.2215/CJN.0000000000000084.",
+        "journal-title": "Clin J Am Soc Nephrol"
+      },
+      {
+        "key": "1733_CR70",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.health.2024.100335",
+        "volume": "5",
+        "author": "I Abdulrashid",
+        "year": "2024",
+        "unstructured": "Abdulrashid I, Delen D, Usman B, Uzochukwu MI, Ahmed I. A multi-objective optimization framework for determining optimal chemotherapy dosing and treatment duration. Healthc Anal. 2024;5:100335. https://doi.org/10.1016/j.health.2024.100335.",
+        "journal-title": "Healthc Anal"
+      },
+      {
+        "issue": "4",
+        "key": "1733_CR71",
+        "doi-asserted-by": "publisher",
+        "first-page": "1857",
+        "DOI": "10.1007/s41939-023-00307-0",
+        "volume": "7",
+        "author": "L Chen",
+        "year": "2024",
+        "unstructured": "Chen L, Fan H, Zhu H. Multi-objective optimization of cancer treatment using the multi-objective gray wolf optimizer (mogwo). Multiscale Multidiscip Model Exp Design. 2024;7(4):1857–66.",
+        "journal-title": "Multiscale Multidiscip Model Exp Design"
+      },
+      {
+        "issue": "5",
+        "key": "1733_CR72",
+        "doi-asserted-by": "publisher",
+        "first-page": "1322",
+        "DOI": "10.1109/TEVC.2023.3303958",
+        "volume": "28",
+        "author": "J Liang",
+        "year": "2024",
+        "unstructured": "Liang J, Hu Z, Li Z-W, Qiao K, Guo W-F. Multiobjective optimization-based network control principles for identifying personalized drug targets with cancer. IEEE Trans Evol Comput. 2024;28(5):1322–35. https://doi.org/10.1109/TEVC.2023.3303958.",
+        "journal-title": "IEEE Trans Evol Comput"
+      },
+      {
+        "issue": "10",
+        "key": "1733_CR73",
+        "doi-asserted-by": "publisher",
+        "first-page": "1113",
+        "DOI": "10.1038/ng.2764",
+        "volume": "45",
+        "author": "The Cancer Genome Atlas Research Network",
+        "year": "2013",
+        "unstructured": "The Cancer Genome Atlas Research Network. The cancer genome atlas pan-cancer analysis project. Nat Genet. 2013;45(10):1113–20. https://doi.org/10.1038/ng.2764.",
+        "journal-title": "Nat Genet"
+      },
+      {
+        "issue": "1",
+        "key": "1733_CR74",
+        "first-page": "007",
+        "volume": "26",
+        "author": "J Liang",
+        "year": "2025",
+        "unstructured": "Liang J, Hu Z, Bi Y, Cheng H, Guo W-F. Multimodal multiobjective optimization with structural network control principles to optimize personalized drug targets for drug discovery of individual patients. Brief Bioinform. 2025;26(1):007.",
+        "journal-title": "Brief Bioinform"
+      },
+      {
+        "issue": "1",
+        "key": "1733_CR75",
+        "doi-asserted-by": "publisher",
+        "first-page": "017",
+        "DOI": "10.1093/biomtc/ujad017",
+        "volume": "80",
+        "author": "Y Song",
+        "year": "2024",
+        "unstructured": "Song Y, Wang L. Multiobjective tree-based reinforcement learning for estimating tolerant dynamic treatment regimes. Biometrics. 2024;80(1):017. https://doi.org/10.1093/biomtc/ujad017.",
+        "journal-title": "Biometrics"
+      },
+      {
+        "issue": "1",
+        "key": "1733_CR76",
+        "doi-asserted-by": "publisher",
+        "first-page": "325",
+        "DOI": "10.3390/app13010325",
+        "volume": "13",
+        "author": "L Huo",
+        "year": "2023",
+        "unstructured": "Huo L, Tang Y. Multi-objective deep reinforcement learning for personalized dose optimization based on multi-indicator experience replay. Appl Sci. 2023;13(1):325. https://doi.org/10.3390/app13010325.",
+        "journal-title": "Appl Sci"
+      },
+      {
+        "issue": "1",
+        "key": "1733_CR77",
+        "doi-asserted-by": "publisher",
+        "first-page": "292",
+        "DOI": "10.1016/j.mbs.2006.05.003",
+        "volume": "209",
+        "author": "LG de Pillis",
+        "year": "2007",
+        "unstructured": "de Pillis LG, Gu W, Fister KR, Head T, Maples K, Murugan A, et al. Chemotherapy for tumors: an analysis of the dynamics and a study of quadratic and linear optimal controls. Math Biosci. 2007;209(1):292–315. https://doi.org/10.1016/j.mbs.2006.05.003.",
+        "journal-title": "Math Biosci"
+      },
+      {
+        "issue": "1",
+        "key": "1733_CR78",
+        "doi-asserted-by": "publisher",
+        "first-page": "24502",
+        "DOI": "10.1038/s41598-025-09236-z",
+        "volume": "15",
+        "author": "Z Li",
+        "year": "2025",
+        "unstructured": "Li Z, Wang L. Multi-task reinforcement learning and explainable ai-driven platform for personalized planning and clinical decision support in orthodontic-orthognathic treatment. Sci Rep. 2025;15(1):24502. https://doi.org/10.1038/s41598-025-09236-z.",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "issue": "6",
+        "key": "1733_CR79",
+        "doi-asserted-by": "publisher",
+        "first-page": "1018",
+        "DOI": "10.1002/psp4.70012",
+        "volume": "14",
+        "author": "A De Carlo",
+        "year": "2025",
+        "unstructured": "De Carlo A, Tosca EM, Magni P. Precision dosing in presence of multiobjective therapies by integrating reinforcement learning and pk-pd models: application to givinostat treatment of polycythemia vera. CPT Pharmacometrics Syst Pharmacol. 2025;14(6):1018–31. https://doi.org/10.1002/psp4.70012.",
+        "journal-title": "CPT Pharmacometrics Syst Pharmacol"
+      },
+      {
+        "issue": "D1",
+        "key": "1733_CR80",
+        "doi-asserted-by": "publisher",
+        "first-page": "941",
+        "DOI": "10.1093/nar/gky1015",
+        "volume": "47",
+        "author": "JG Tate",
+        "year": "2019",
+        "unstructured": "Tate JG, Bamford S, Jubb HC, Sondka Z, Beare DM, Bindal N, et al. Cosmic: the catalogue of somatic mutations in cancer. Nucleic Acids Res. 2019;47(D1):941–7. https://doi.org/10.1093/nar/gky1015.",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "issue": "7391",
+        "key": "1733_CR81",
+        "doi-asserted-by": "publisher",
+        "first-page": "603",
+        "DOI": "10.1038/nature11003",
+        "volume": "483",
+        "author": "J Barretina",
+        "year": "2012",
+        "unstructured": "Barretina J, Caponigro G, Stransky N, et al. The cancer cell line encyclopedia enables predictive modelling of anticancer drug sensitivity. Nature. 2012;483(7391):603–7. https://doi.org/10.1038/nature11003.",
+        "journal-title": "Nature"
+      },
+      {
+        "issue": "3",
+        "key": "1733_CR82",
+        "doi-asserted-by": "publisher",
+        "first-page": "740",
+        "DOI": "10.1016/j.cell.2016.06.017",
+        "volume": "166",
+        "author": "I Fea",
+        "year": "2016",
+        "unstructured": "Fea I. A landscape of pharmacogenomic interactions in cancer. Cell. 2016;166(3):740–54. https://doi.org/10.1016/j.cell.2016.06.017.",
+        "journal-title": "Cell"
+      },
+      {
+        "key": "1733_CR83",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Spencer S, Ye W, Peng S, Zou D. Cost-effectiveness analysis of comprehensive genomic profiling in patients with advanced non-small-cell lung cancer using real-world data. J Mol Diagn. 2025. https://doi.org/10.1016/j.jmoldx.2025.05.011.",
+        "DOI": "10.1016/j.jmoldx.2025.05.011"
+      }
+    ],
+    "container-title": [
+      "Discover Artificial Intelligence"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/article/10.1007/s44163-026-01733-y",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s44163-026-01733-y.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s44163-026-01733-y.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          24
+        ]
+      ],
+      "date-time": "2026-08-24T09:45:49Z",
+      "timestamp": 1787564749000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.springer.com/10.1007/s44163-026-01733-y"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          10
+        ]
+      ]
+    },
+    "references-count": 83,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "1733"
+    ],
+    "URL": "https://doi.org/10.1007/s44163-026-01733-y",
+    "relation": {},
+    "ISSN": [
+      "2731-0809"
+    ],
+    "issn-type": [
+      {
+        "value": "2731-0809",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          10
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "14 November 2025",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "1 July 2026",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "10 July 2026",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "Not applicable",
+        "order": 1,
+        "name": "Ethics",
+        "label": "Ethics approval",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "Not applicable",
+        "order": 2,
+        "name": "Ethics",
+        "label": "Consent to participate",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "Not applicable",
+        "order": 3,
+        "name": "Ethics",
+        "label": "Consent for publication",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "The authors declare no Competing interest.",
+        "order": 4,
+        "name": "Ethics",
+        "label": "Competing interest",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      }
+    ],
+    "article-number": "895"
+  }
+}

@@ -1,0 +1,818 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          9
+        ]
+      ],
+      "date-time": "2026-10-09T11:44:29Z",
+      "timestamp": 1791546269984,
+      "version": "4.3.4"
+    },
+    "reference-count": 92,
+    "publisher": "Informa UK Limited",
+    "issue": "1",
+    "content-domain": {
+      "domain": [
+        "www.tandfonline.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Psychotherapy Research"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          1,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1080/10503307.2020.1769219",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          5,
+          28
+        ]
+      ],
+      "date-time": "2020-05-28T14:41:10Z",
+      "timestamp": 1590676870000
+    },
+    "page": "33-51",
+    "update-policy": "https://doi.org/10.1080/tandf_crossmark_01",
+    "source": "Crossref",
+    "is-referenced-by-count": 82,
+    "title": [
+      "Personalized treatment selection in routine care: Integrating machine learning and statistical algorithms to recommend cognitive behavioral or psychodynamic therapy"
+    ],
+    "prefix": "10.1080",
+    "volume": "31",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4695-4953",
+        "authenticated-orcid": false,
+        "given": "Brian",
+        "family": "Schwartz",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Trier, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4883-1028",
+        "authenticated-orcid": false,
+        "given": "Zachary D.",
+        "family": "Cohen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of California, Los Angeles, CA, United States"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9625-6611",
+        "authenticated-orcid": false,
+        "given": "Julian A.",
+        "family": "Rubel",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Justus-Liebig-University Giessen, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8764-6343",
+        "authenticated-orcid": false,
+        "given": "Dirk",
+        "family": "Zimmermann",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Trier, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Werner W.",
+        "family": "Wittmann",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Mannheim, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5141-3847",
+        "authenticated-orcid": false,
+        "given": "Wolfgang",
+        "family": "Lutz",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Trier, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "301",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          5,
+          28
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "CIT0001",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0011000005285875"
+      },
+      {
+        "key": "CIT0002",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmeth.4438"
+      },
+      {
+        "key": "CIT0003",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jama.2017.18391"
+      },
+      {
+        "key": "CIT0004",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1207/s15327752jpa6703_13"
+      },
+      {
+        "key": "CIT0005",
+        "volume-title": "Beck depression inventory-II (BDI-II)",
+        "author": "Beck A. T.",
+        "year": "1996"
+      },
+      {
+        "key": "CIT0006",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0272-7358(88)90050-5"
+      },
+      {
+        "key": "CIT0007",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1010933404324"
+      },
+      {
+        "key": "CIT0008",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cpr.2005.07.003"
+      },
+      {
+        "key": "CIT0009",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmeth.4642"
+      },
+      {
+        "key": "CIT0010",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmeth.4526"
+      },
+      {
+        "key": "CIT0011",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/da.22728"
+      },
+      {
+        "key": "CIT0012",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1143844.1143865"
+      },
+      {
+        "key": "CIT0013",
+        "first-page": "298183",
+        "volume": "2013",
+        "author": "Chen T.",
+        "year": "2013",
+        "journal-title": "Evidence-Based Complementary and Alternative Medicine"
+      },
+      {
+        "key": "CIT0014",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.scitotenv.2018.06.389"
+      },
+      {
+        "key": "CIT0015",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev-clinpsy-050817-084746"
+      },
+      {
+        "key": "CIT0016",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10503307.2018.1563312"
+      },
+      {
+        "key": "CIT0017",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/cap0000096"
+      },
+      {
+        "key": "CIT0018",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/a0013075"
+      },
+      {
+        "key": "CIT0019",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/da.22755"
+      },
+      {
+        "key": "CIT0020",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/ccp0000476"
+      },
+      {
+        "key": "CIT0021",
+        "volume-title": "SCL-90-R: Administration, scoring and procedures manual",
+        "author": "Derogatis L. R.",
+        "year": "1977"
+      },
+      {
+        "key": "CIT0022",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0083875"
+      },
+      {
+        "key": "CIT0023",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cpr.2009.08.010"
+      },
+      {
+        "key": "CIT0024",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1176/appi.ajp.2013.12070899"
+      },
+      {
+        "key": "CIT0025",
+        "volume-title": "Fragebogen zu körperbezogenen Ängsten, Kognitionen und Vermeidung: AKV",
+        "author": "Ehlers A.",
+        "year": "2001"
+      },
+      {
+        "key": "CIT0026",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/archpsyc.1976.01770060086012"
+      },
+      {
+        "key": "CIT0027",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/gut.2003.025080"
+      },
+      {
+        "key": "CIT0028",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.brat.2020.103596"
+      },
+      {
+        "key": "CIT0029",
+        "volume-title": "BSI. Brief Symptom Inventory - Deutsche version. Manual",
+        "author": "Franke G. H.",
+        "year": "2000"
+      },
+      {
+        "key": "CIT0030",
+        "unstructured": "Garge, N., Eggleston, B., Bobashev, G., Carper, B., Jones, K., Hothorn, T., Hornik, K., Strobl, C. & Zeileis, A. (2018). mobForest: Model based random forest analysis. R package version 1.3.0. https://CRAN.R-project.org/package=mobForest."
+      },
+      {
+        "key": "CIT0031",
+        "first-page": "1399",
+        "volume": "58",
+        "author": "Gemeinsamer Bundesausschuss",
+        "year": "2009",
+        "journal-title": "Bundesanzeiger"
+      },
+      {
+        "key": "CIT0032",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamapsychiatry.2016.1720"
+      },
+      {
+        "key": "CIT0033",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1027/1015-5759.22.2.98"
+      },
+      {
+        "key": "CIT0034",
+        "volume-title": "Propensity score analysis: Statistical methods and applications",
+        "author": "Guo S.",
+        "year": "2015",
+        "edition": "2"
+      },
+      {
+        "key": "CIT0035",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1056/NEJMp1006304"
+      },
+      {
+        "key": "CIT0036",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jclp.20108"
+      },
+      {
+        "key": "CIT0037",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18637/jss.v042.i08"
+      },
+      {
+        "key": "CIT0038",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10608-012-9476-1"
+      },
+      {
+        "key": "CIT0039",
+        "volume-title": "Das Inventar zur Erfassung interpersonaler Probleme (IIP-D). Handanweisung (2. Aufl.)",
+        "author": "Horowitz L. M.",
+        "year": "2000"
+      },
+      {
+        "key": "CIT0040",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0140771"
+      },
+      {
+        "key": "CIT0041",
+        "first-page": "CD008704",
+        "volume": "10",
+        "author": "Hunot V.",
+        "year": "2013",
+        "journal-title": "The Cochrane Database of Systematic Reviews"
+      },
+      {
+        "key": "CIT0042",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.aaa8415"
+      },
+      {
+        "key": "CIT0043",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0033291720000550"
+      },
+      {
+        "key": "CIT0044",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/da.22731"
+      },
+      {
+        "key": "CIT0045",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj.k4245"
+      },
+      {
+        "key": "CIT0046",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S2045796016000020"
+      },
+      {
+        "key": "CIT0047",
+        "volume-title": "Hamburger Zwangsinventar – Kurzform (HZI-K)",
+        "author": "Klepsch R.",
+        "year": "1993"
+      },
+      {
+        "key": "CIT0048",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/03009740701607067"
+      },
+      {
+        "key": "CIT0049",
+        "volume-title": "Bergin and Garfield’s handbook of psychotherapy and behavior change",
+        "author": "Lambert M. J.",
+        "year": "2013"
+      },
+      {
+        "key": "CIT0050",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0272-7358(99)00057-4"
+      },
+      {
+        "key": "CIT0051",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12916-015-0494-1"
+      },
+      {
+        "issue": "3",
+        "key": "CIT0052",
+        "first-page": "260",
+        "volume": "5",
+        "author": "Luborsky L.",
+        "year": "1996",
+        "journal-title": "The Journal of Psychotherapy Practice and Research"
+      },
+      {
+        "key": "CIT0053",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/2167702618815466"
+      },
+      {
+        "key": "CIT0054",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10503307.2015.1079661"
+      },
+      {
+        "key": "CIT0055",
+        "volume-title": "Bergin and Garfield`s handbook of psychotherapy and behavior change",
+        "author": "Lutz W.",
+        "year": "2020",
+        "edition": "7"
+      },
+      {
+        "key": "CIT0056",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/cpp.496"
+      },
+      {
+        "key": "CIT0057",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10503307.2015.1053553"
+      },
+      {
+        "key": "CIT0058",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.brat.2019.103438"
+      },
+      {
+        "key": "CIT0059",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/1040-3590.18.2.133"
+      },
+      {
+        "key": "CIT0060",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-018-25953-0"
+      },
+      {
+        "key": "CIT0061",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12888-017-1464-2"
+      },
+      {
+        "key": "CIT0062",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijforecast.2018.06.001"
+      },
+      {
+        "key": "CIT0063",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0194889"
+      },
+      {
+        "key": "CIT0064",
+        "author": "Meehl P. E.",
+        "year": "1954",
+        "journal-title": "MN: University of Minnesota Press"
+      },
+      {
+        "key": "CIT0065",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1471-2105-10-213"
+      },
+      {
+        "key": "CIT0066",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1056/NEJMp1606181"
+      },
+      {
+        "key": "CIT0067",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5721/EuJRS20124535"
+      },
+      {
+        "key": "CIT0068",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.brat.2007.12.005"
+      },
+      {
+        "key": "CIT0069",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10503307.2019.1662510"
+      },
+      {
+        "key": "CIT0070",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/wps.20345"
+      },
+      {
+        "key": "CIT0071",
+        "first-page": "204",
+        "volume": "23",
+        "author": "Petkovic D.",
+        "year": "2018",
+        "journal-title": "Pacific Symposium on Biocomputing"
+      },
+      {
+        "issue": "2",
+        "key": "CIT0072",
+        "first-page": "157",
+        "volume": "45",
+        "author": "Rathner G.",
+        "year": "1997",
+        "journal-title": "Zeitschrift für Klinische Psychologie, Psychiatrie und Psychotherapie"
+      },
+      {
+        "key": "CIT0073",
+        "volume-title": "R: A language and environment for statistical computing",
+        "author": "R Core Team",
+        "year": "2018"
+      },
+      {
+        "key": "CIT0074",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1159/000487893"
+      },
+      {
+        "key": "CIT0075",
+        "volume-title": "SOMS: Das Screening für somatoforme Störungen. Manual zum Fragebogen",
+        "author": "Rief W.",
+        "year": "1997"
+      },
+      {
+        "key": "CIT0076",
+        "unstructured": "Rizopoulos, D. (2009). bootStepAIC: Bootstrap stepAIC. R package version 1.2-0. https://CRAN.R-project.org/package=bootStepAIC."
+      },
+      {
+        "key": "CIT0077",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/biomet/70.1.41"
+      },
+      {
+        "key": "CIT0078",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1020363010465"
+      },
+      {
+        "key": "CIT0079",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.conb.2019.02.006"
+      },
+      {
+        "key": "CIT0080",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1055/s-0032-1321781"
+      },
+      {
+        "key": "CIT0081",
+        "first-page": "18",
+        "volume-title": "Der Beeinträchtigungs-Schwere-score (BSS). Ein instrument zur Bestimmung der Schwere einer psychogenen Erkrankung",
+        "author": "Schellberg D.",
+        "year": "1995"
+      },
+      {
+        "key": "CIT0082",
+        "volume-title": "Der Beeinträchtigungs-Schwere-Score (BSS). Ein Instrument zur Bestimmung der Schwere einer psychogenen Erkrankung",
+        "author": "Schepank H.",
+        "year": "1995"
+      },
+      {
+        "key": "CIT0083",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0011000006295149"
+      },
+      {
+        "key": "CIT0084",
+        "unstructured": "Stekhoven, D. J. (2013). missForest: Nonparametric Missing Value Imputation using Random Forest. R package version 1.4."
+      },
+      {
+        "key": "CIT0085",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btr597"
+      },
+      {
+        "key": "CIT0086",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10503307.2013.856046"
+      },
+      {
+        "key": "CIT0087",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.185.4157.1124"
+      },
+      {
+        "key": "CIT0088",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0033291719003192"
+      },
+      {
+        "key": "CIT0089",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4324/9780203582015"
+      },
+      {
+        "key": "CIT0090",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/00005650-199603000-00003"
+      },
+      {
+        "key": "CIT0091",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0033291718001708"
+      },
+      {
+        "issue": "3",
+        "key": "CIT0092",
+        "first-page": "6",
+        "volume": "3",
+        "author": "Wittmann W. W.",
+        "year": "2011",
+        "journal-title": "Psychotherapie Aktuell"
+      }
+    ],
+    "container-title": [
+      "Psychotherapy Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.tandfonline.com/doi/pdf/10.1080/10503307.2020.1769219",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          6,
+          4
+        ]
+      ],
+      "date-time": "2021-06-04T14:48:00Z",
+      "timestamp": 1622818080000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.tandfonline.com/doi/full/10.1080/10503307.2020.1769219"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          5,
+          28
+        ]
+      ]
+    },
+    "references-count": 92,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            2
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1080/10503307.2020.1769219"
+    ],
+    "URL": "https://doi.org/10.1080/10503307.2020.1769219",
+    "relation": {},
+    "ISSN": [
+      "1050-3307",
+      "1468-4381"
+    ],
+    "issn-type": [
+      {
+        "value": "1050-3307",
+        "type": "print"
+      },
+      {
+        "value": "1468-4381",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          5,
+          28
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+        "order": 1,
+        "name": "peerreview_statement",
+        "label": "Peer Review Statement"
+      },
+      {
+        "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=tpsr20",
+        "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=tpsr20",
+        "order": 2,
+        "name": "aims_and_scope_url",
+        "label": "Aim & Scope"
+      },
+      {
+        "value": "2019-12-22",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2020-05-08",
+        "order": 1,
+        "name": "revised",
+        "label": "Revised",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2020-05-09",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2020-05-28",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

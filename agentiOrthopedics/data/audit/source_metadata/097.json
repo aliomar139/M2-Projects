@@ -1,0 +1,730 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          19
+        ]
+      ],
+      "date-time": "2026-09-19T19:02:11Z",
+      "timestamp": 1789844531142,
+      "version": "4.0.1"
+    },
+    "reference-count": 47,
+    "publisher": "Wiley",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              31
+            ]
+          ],
+          "date-time": "2025-10-31T00:00:00Z",
+          "timestamp": 1761868800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 30,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2025-10-01T00:00:00Z",
+          "timestamp": 1759276800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "82172447"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "82172447"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "82472459"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "82472459"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "esskajournals.onlinelibrary.wiley.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "J. exp. orthop."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          10
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Purpose</jats:title>\n                    <jats:p>To construct a centre‐specific machine learning (ML) prediction model based on preoperative factors. It was hypothesised that the ML prediction model would accurately predict whether patient‐reported outcome scores (PROs) over at least 2 years would reach the minimal clinically important difference (MCID).</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>A retrospective analysis was performed on mixed‐type femoroacetabular impingement syndrome (FAIS) patients who had hip arthroscopy at our institution between 2016 and 2018. The primary outcome was the rate of achieving MCID in PROs assessed at least 2 years after surgery, PROs included the hip outcome score‐activities of daily living (HOS‐ADL), modified Harris Hip Score (mHHS), visual analogue scale (VAS) for pain and international hip outcome tool‐12 (iHOT‐12), assessed at a minimum of 2 years postoperatively. Preoperative patient features were selected using the least absolute shrinkage and selection operator (LASSO) algorithm. Three ML models were constructed using balanced sample data and optimal feature subsets: logistic regression (LR), support vector machine (SVM) and random forest (RF). Model performance was assessed using the area under the receiver operating characteristic curve (AUROC) and the concordance index (C‐index). Model interpretations were conducted using the SHapley Additive explanation (SHAP) method.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>A total of 210 patients (48.1% female) were included. The LR, SVM, RF models had AUROC 0.76 (0.61–0.83), 0.89 (0.80–0.94), 0.99 (0.98–1.00), respectively, and C‐index 0.74 (0.65–0.82), 0.86 (0.81–0.90), 0.95 (0.93–0.96), respectively. Preoperative symptom duration, preoperative HOS‐ADL, hip joint space and preoperative alpha angle were identified as the most important predictors.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusion</jats:title>\n                    <jats:p>Among the three ML prediction models, RF performed best in predicting whether PROs reached MCID, demonstrating excellent discriminative ability, calibration and robustness. This indicates that individualised and robust ML prediction models for outcome prediction based on preoperative factors are feasible even with limited amounts of centre‐specific data.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Level of Evidence</jats:title>\n                    <jats:p>Level III.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.1002/jeo2.70477",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          31
+        ]
+      ],
+      "date-time": "2025-10-31T08:22:09Z",
+      "timestamp": 1761898929000
+    },
+    "update-policy": "https://doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": [
+      "Evaluation of centre‐specific machine learning models in predicting 2‐year outcomes of hip arthroscopy for mixed femoracetabular impingement syndrome"
+    ],
+    "prefix": "10.1002",
+    "volume": "12",
+    "author": [
+      {
+        "given": "Gang",
+        "family": "Yang",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Beijing Key Laboratory of Sports Injuries, Department of Sports Medicine, Peking University Third Hospital Institute of Sports Medicine of Peking University Beijing Haidian China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jiali",
+        "family": "Kang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Epidemiology and Biostatistics, School of Public Health Peking University Health Science Centre Beijing China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fan",
+        "family": "Hu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beijing Key Laboratory of Sports Injuries, Department of Sports Medicine, Peking University Third Hospital Institute of Sports Medicine of Peking University Beijing Haidian China"
+          },
+          {
+            "name": "Tianjin University of Sport Tianjin China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yin",
+        "family": "Pei",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beijing Key Laboratory of Sports Injuries, Department of Sports Medicine, Peking University Third Hospital Institute of Sports Medicine of Peking University Beijing Haidian China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dingge",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beijing Key Laboratory of Sports Injuries, Department of Sports Medicine, Peking University Third Hospital Institute of Sports Medicine of Peking University Beijing Haidian China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhihua",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beijing Key Laboratory of Sports Injuries, Department of Sports Medicine, Peking University Third Hospital Institute of Sports Medicine of Peking University Beijing Haidian China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kaiping",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beijing Key Laboratory of Sports Injuries, Department of Sports Medicine, Peking University Third Hospital Institute of Sports Medicine of Peking University Beijing Haidian China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Langran",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beijing Key Laboratory of Sports Injuries, Department of Sports Medicine, Peking University Third Hospital Institute of Sports Medicine of Peking University Beijing Haidian China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xi",
+        "family": "Gong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beijing Key Laboratory of Sports Injuries, Department of Sports Medicine, Peking University Third Hospital Institute of Sports Medicine of Peking University Beijing Haidian China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Haijun",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beijing Key Laboratory of Sports Injuries, Department of Sports Medicine, Peking University Third Hospital Institute of Sports Medicine of Peking University Beijing Haidian China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shuangshuang",
+        "family": "Deng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beijing Key Laboratory of Sports Injuries, Department of Sports Medicine, Peking University Third Hospital Institute of Sports Medicine of Peking University Beijing Haidian China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ruijie",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beijing Key Laboratory of Sports Injuries, Department of Sports Medicine, Peking University Third Hospital Institute of Sports Medicine of Peking University Beijing Haidian China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0000-6975-4730",
+        "authenticated-orcid": false,
+        "given": "Xin",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Beijing Key Laboratory of Sports Injuries, Department of Sports Medicine, Peking University Third Hospital Institute of Sports Medicine of Peking University Beijing Haidian China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          31
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_12_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2019.09.028"
+      },
+      {
+        "key": "e_1_2_12_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1302/0301-620X.87B7.15203"
+      },
+      {
+        "key": "e_1_2_12_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1010933404324"
+      },
+      {
+        "key": "e_1_2_12_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.joca.2021.06.007"
+      },
+      {
+        "key": "e_1_2_12_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.H.00756"
+      },
+      {
+        "key": "e_1_2_12_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1022627411411"
+      },
+      {
+        "key": "e_1_2_12_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/01.blo.0000096804.78689.c2"
+      },
+      {
+        "key": "e_1_2_12_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2023.10.035"
+      },
+      {
+        "key": "e_1_2_12_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2021.02.032"
+      },
+      {
+        "key": "e_1_2_12_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.eclinm.2023.102409"
+      },
+      {
+        "key": "e_1_2_12_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2022.03.024"
+      },
+      {
+        "key": "e_1_2_12_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-007-0319-7"
+      },
+      {
+        "key": "e_1_2_12_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1302/0301-620X.88B12.18584"
+      },
+      {
+        "key": "e_1_2_12_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamasurg.2018.0072"
+      },
+      {
+        "key": "e_1_2_12_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/03635465211067546"
+      },
+      {
+        "key": "e_1_2_12_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0363546518780311"
+      },
+      {
+        "key": "e_1_2_12_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2016.05.014"
+      },
+      {
+        "key": "e_1_2_12_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/cid/ciaa1576"
+      },
+      {
+        "key": "e_1_2_12_20_1",
+        "unstructured": "LundbergSM LeeSI. A unified approach to interpreting model predictions.2017.ArXiv.https://arxiv.org/abs/1705.07874."
+      },
+      {
+        "key": "e_1_2_12_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/23259671221135218"
+      },
+      {
+        "key": "e_1_2_12_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-022-07054-8"
+      },
+      {
+        "key": "e_1_2_12_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0363546520906408"
+      },
+      {
+        "key": "e_1_2_12_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2012.04.059"
+      },
+      {
+        "key": "e_1_2_12_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ksa.12695"
+      },
+      {
+        "key": "e_1_2_12_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-023-07369-0"
+      },
+      {
+        "key": "e_1_2_12_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/CORR.0000000000001771"
+      },
+      {
+        "key": "e_1_2_12_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.eswa.2015.07.076"
+      },
+      {
+        "key": "e_1_2_12_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2344614"
+      },
+      {
+        "key": "e_1_2_12_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2012.03.005"
+      },
+      {
+        "key": "e_1_2_12_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11999-008-0616-6"
+      },
+      {
+        "key": "e_1_2_12_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ksa.12709"
+      },
+      {
+        "key": "e_1_2_12_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ksa.12511"
+      },
+      {
+        "key": "e_1_2_12_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0363546520902736"
+      },
+      {
+        "key": "e_1_2_12_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2023.09.023"
+      },
+      {
+        "key": "e_1_2_12_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IC2IE53219.2021.9649207"
+      },
+      {
+        "key": "e_1_2_12_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamanetworkopen.2023.8050"
+      },
+      {
+        "key": "e_1_2_12_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3899/jrheum.091186"
+      },
+      {
+        "key": "e_1_2_12_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compbiomed.2019.103375"
+      },
+      {
+        "key": "e_1_2_12_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/neuros/nyx384"
+      },
+      {
+        "key": "e_1_2_12_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2023.06.028"
+      },
+      {
+        "key": "e_1_2_12_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2019.05.022"
+      },
+      {
+        "key": "e_1_2_12_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/00004623-199912000-00014"
+      },
+      {
+        "key": "e_1_2_12_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ksa.12563"
+      },
+      {
+        "key": "e_1_2_12_45_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/03635465241227181"
+      },
+      {
+        "key": "e_1_2_12_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/NECO_a_00537"
+      },
+      {
+        "key": "e_1_2_12_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2020.10.049"
+      },
+      {
+        "key": "e_1_2_12_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0363546519896355"
+      }
+    ],
+    "container-title": [
+      "Journal of Experimental Orthopaedics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/jeo2.70477",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/full-xml/10.1002/jeo2.70477",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/jeo2.70477",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          19
+        ]
+      ],
+      "date-time": "2026-09-19T18:19:55Z",
+      "timestamp": 1789841995000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/10.1002/jeo2.70477"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          10
+        ]
+      ]
+    },
+    "references-count": 47,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1002/jeo2.70477"
+    ],
+    "URL": "https://doi.org/10.1002/jeo2.70477",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "2197-1153",
+      "2197-1153"
+    ],
+    "issn-type": [
+      {
+        "value": "2197-1153",
+        "type": "print"
+      },
+      {
+        "value": "2197-1153",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          10
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2025-07-02",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-08-15",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-10-31",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ],
+    "article-number": "e70477"
+  }
+}

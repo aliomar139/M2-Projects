@@ -1,0 +1,747 @@
+=== PDF PAGE 1 ===
+Jacobs et al. Translational Psychiatry          (2021) 11:108 
+https://doi.org/10.1038/s41398-021-01224-x Translational Psychiatry
+ARTICLE Open Access
+How machine-learning recommendations
+inﬂuence clinician treatment selections: the
+example of antidepressant selection
+Maia Jacobs 1, Melanie F. Pradier1, Thomas H. McCoy Jr.2,3, Roy H. Perlis2,3, Finale Doshi-Velez1 and
+Krzysztof Z. Gajos 1
+Abstract
+Decision support systems embodying machine learning models offer the promise of an improved standard of care for
+major depressive disorder, but little is known about how clinicians ’treatment decisions will be in ﬂuenced by machine
+learning recommendations and explanations. We used a within-subject factorial experiment to present 220 clinicians
+with patient vignettes, each with or without a machine-learning (ML) recommendation and one of the multiple forms
+of explanation. We found that interacting with ML recommendations did not signi ﬁcantly improve clinicians ’
+treatment selection accuracy, assessed as concordance with expert psychopharmacologist consensus, compared to
+baseline scenarios in which clinicians made treatment decisions independently. Interacting with incorrect
+recommendations paired with explanations that included limited but easily interpretable information did lead to a
+signiﬁcant reduction in treatment selection accuracy compared to baseline questions. These results suggest that
+incorrect ML recommendations may adversely impact clinician treatment selections and that explanations are
+insufﬁcient for addressing overreliance on imperfect ML algorithms. More generally, our ﬁndings challenge the
+common assumption that clinicians interacting with ML tools will perform better than either clinicians or ML
+algorithms individually.
+Introduction
+Researchers are rapidly demonstrating the potential
+beneﬁts of predictive analytics across mental health
+research, including neuroimaging 1, behavioral modeling 2,
+and pharmacotherapy3. However, despite the proliferation
+of machine-learning (ML) models for healthcare, these
+tools have not yet meaningfully in ﬂuenced real-world
+clinical care4– 7. A signi ﬁcant barrier to implementation is
+a lack of research assessing how ML recommendations
+may be used by clinicians and in ﬂuence their decision-
+making processes. Researchers have therefore called for
+model integration techniques that meaningfully engage
+with clinical stakeholders to understand real-world
+interpretability and utility 5,8.
+Toward the goal of translating ML to real-world deci-
+sion support tools, we explore to what extent clinical
+practice could be improved if clinicians were presented
+with recommendations produced by such models. Our
+work is motivated by a vast literature on intelligent
+decision support systems, which for example includes the
+design of cockpits and criminal risk assessments, which
+suggests that the way in which information is presented to
+decisionmakers can have a signi ﬁcant impact on their
+performance9– 13. Two key elements that emerge from this
+literature are the negative impact of incorrect information
+on performance (i.e., if a model recommends a wrong
+choice), and the ability for explanations about why a
+recommendation is made to encourage reliance on the
+© The Author(s) 2021
+Open AccessThis article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution andreproduction
+in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a lin kt ot h eC r e a t i v eCommons license,and indicate if
+changes were made. The images or other third party material in this article are included in the article’s Creative Commons license, unless indicatedotherwise in a credit line to the material. If
+material is not included in the article’s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain
+permission directly from the copyright holder. To view a copy of this license, visithttp://creativecommons.org/licenses/by/4.0/.
+Correspondence: Krzysztof Z. Gajos ( kgajos@g.harvard.edu)
+1Department of Computer Science, Harvard University, 29 Oxford Street,
+Cambridge, MA 02138, USA
+2Center for Quantitative Health, Massachusetts General Hospital, 185
+Cambridge Street, Boston, MA 02114, USA
+Full list of author information is available at the end of the article
+1234567890():,;1234567890():,;
+1234567890():,;
+1234567890():,;
+
+=== PDF PAGE 2 ===
+recommendation itself. More work is needed to under-
+stand how these elements will in ﬂuence clinical behaviors.
+To address this gap, we conducted an experiment with
+220 clinical-care providers to assess the impact of ML
+treatment recommendations on clinician treatment
+selection. The possibility of improving treatment out-
+comes in major depressive disorder (MDD) using ML has
+received increased attention in recent years 14– 17. Identi-
+fying optimal treatment in this context is particularly
+challenging because of heterogeneous symptoms, toler-
+ability concerns, and the prevalence of treatment-resistant
+depression, which can result in clinicians and patients
+using trial and error to ﬁnd an effective treatment 18,19.
+This process can be inef ﬁcient, with one-third of patients
+failing to reach remission after up to four antidepressant
+trials18,20. Multiple ML models have been proposed to aid
+in MDD treatment selection 21– 24.
+We evaluated two research questions: (1) How do cor-
+rect and incorrect ML recommendations in ﬂuence clin-
+icians’ antidepressant selection accuracy, decision
+conﬁdence, and perceived utility of the recommendation?
+(2) How do different types of supporting explanations for
+the recommendation in ﬂuence treatment selection accu-
+racy, decision con ﬁdence, and perceived utility of the
+recommendation? Our results highlight the importance of
+evaluating clinician-model collaborative behaviors and
+clinician responses to ML model errors.
+Materials and methods
+Experimental design
+We applied a within-subject factorial study design using
+patient vignettes. In the experiment, participants were
+presented with a series of questions, where each question
+included a random vignette paired with a treatment
+recommendation and a form of explanation for that
+recommendation. These independent variables were sys-
+tematically varied with each question so that participants
+saw all combinations. This method provides an ef ﬁcient
+means of investigating the in ﬂuence of multiple inde-
+pendent variables on multiple dependent variables 25 and
+has been useful for assessing judgments related to com-
+plex beliefs and behaviors 26,27. We elaborate on the vari-
+ables included in this study below.
+Independent variables
+Recommendation concordance with expert consensus .
+Conditions included no recommendation (baseline), cor-
+rect, or incorrect. Correct and incorrect recommenda-
+tions for each patient vignette were determined by ﬁve
+experts in psychopharmacology, as described in the
+“Treatment selection accuracy ” section. Correct recom-
+mendations included the top-scored antidepressant across
+the ﬁve psychopharmacologists (all with a mode score of
+1, denoting the best choice). Incorrect recommendations
+included the lowest-scored antidepressant (all with a
+mode score of 0, denoting a poor choice). While we
+highlighted a single recommendation for each vignette, we
+also showed a top-5 list of recommended treatment
+options, recognizing that there are often several reason-
+able options in a given context. Informed by recent work
+using medical record data to predict treatment suc-
+cess24,28, we presented treatment options with associated
+stability scores and dropout risk scores. Stability is de ﬁned
+as the predicted likelihood that a patient will continue to
+use the associated treatment for at least 3 months.
+Dropout is de ﬁned as the risk that the patient will dis-
+continue the associated treatment. For consistency, the
+top-recommended treatment was associated with a sta-
+bility score between 0.70 and 0.80 and a dropout risk
+score between 0.01 and 0.11.
+Explanation type . Conditions included none, placebo,
+feature-based, heuristic-based. With no explanation, a
+participant was only presented with the treatment
+recommendations. Placebo ’s explanations stated that
+“recommendations are based on patients ’ ICD-9 codes ”.
+We included placebo explanations to distinguish between
+effects caused by the visibility of an explanation and the
+content of an explanation. Clinical feature-based expla-
+nations highlighted four aspects of a patients ’ medical
+history that contributed to the machine learning predic-
+tion, as shown in Fig. 1. Finally, we included a heuristic-
+based explanation, which showed relevant prescription
+heuristics for relevant aspects of a patients ’history. These
+heuristics were curated by two expert academic psycho-
+pharmacologists with a mean of 12 years in clinical
+practice and they included indications and contra-
+indications based on a patient ’s symptoms or comorbid-
+ities. An example of such a heuristic would be favoring
+sedating drugs for patients experiencing insomnia. See
+Supplementary Table 1 for the full list of heuristics used
+in this study. Both the feature-based and heuristic-based
+explanations were selected as these approaches had pre-
+viously been investigated in other domains 29.
+Dependent variables
+Treatment selection accuracy . To determine accuracy
+scores, ﬁve experienced academic psychopharmacologists
+with a mean of 26 years in clinical practice scored 24
+antidepressant treatment options for each patient vign-
+ette. They used a 3-point rating scale: 0 = worst choice,
+0.5 = fair choice, 1 = best choice. We used the mode of
+their ratings to assign a value for each antidepressant for
+each vignette. For each vignette, the participant was
+assigned that value based on the antidepressant they
+selected. We removed from analysis any treatment
+selections not included in the 24 antidepressants scored
+by the psychopharmacologists. Supplementary Table 2
+shows the group sizes included in the analysis.
+Jacobs et al. Translational Psychiatry          (2021) 11:108 Page 2 of 9
+
+=== PDF PAGE 3 ===
+Treatment selection con ﬁdence. In each vignette, after
+selecting a treatment, participants were asked “How
+conﬁdent are you with this decision? ” using a 5-point
+Likert scale (1 = not at all con ﬁdent, 5 = extremely
+conﬁdent).
+Perceived utility . For each vignette, participants were
+asked to rate how helpful the ML recommendation was in
+making their decision, using a 5-point Likert scale (1 =
+not at all, 5 = a great deal).
+Random variable
+Patient vignette . We created ﬁve hypothetical patient
+descriptions. Each description included a patient’s name, age,
+and employment status (as a distractor). The description also
+included the length of time since depression symptoms
+began, one contraindication, one irrelevant contraindication,
+and one previously ineffective selective serotonin reuptake
+inhibitor trial. For each question, one of the ﬁve patient
+vignettes were randomly displayed. Due to the repeated use
+of vignettes, the patients’names and ages were changed each
+time the vignette was displayed. To reduce the risk of con-
+founding variables, we limited the age range to 33– 43 years.
+The full set of vignettes are listed in Supplementary Table 1.
+Figure 2 shows a complete sample question, including a
+patient vignette, machine l earning recommendation, and
+explanation. As shown in the ﬁgure, participants have pre-
+sented the top 5 options based on model output, all of which
+were considered reasonable options by expert consensus.
+The varying scores represent the algorithm con ﬁdence
+scores. For the incorrect condition, only the top recom-
+mendation was changed. In the example vignette shown in
+Fig. 2, for the incorrect condition, Venlafaxine was included
+in the list. In light of the patient ’s history of hypertensive
+heart disease, Venlafaxine is considered a less-preferred
+treatment option for the patient described in the vignette,
+consistent with published guidelines30,31.
+Task description
+We showed participants a total of 17 scenarios. This
+included ﬁve baseline scenarios, in which each patient
+Fig. 1 A sample study question. Each question includes a random patient vignette and may include a recommendation and an explanation. This
+example shows a patient vignette with a correct recommendation and a feature-important explanation.
+Jacobs et al. Translational Psychiatry          (2021) 11:108 Page 3 of 9
+
+=== PDF PAGE 4 ===
+vignette was displayed once without any ML recommen-
+dation. The 12 other scenarios included a patient vignette,
+a recommendation, and an explanation. The recommen-
+dations did not come directly from an ML algorithm.
+Instead, the ML outputs were simulated and were
+manipulated as part of the experiment to assess the risks
+of algorithmic errors. We included one incorrect recom-
+mendation for every two correct recommendations. To
+reduce the risk of participants creating general assump-
+tions about the model accuracy, we labeled each recom-
+mendation as being derived from a different ML model.
+Each participant saw the scenarios in random order. For
+each scenario, participants were asked to make an anti-
+depressant treatment selection for the patient, rate their
+decision con ﬁdence, and indicate to what extent the ML
+recommendation helped them to make their decision.
+Procedures
+The study received ethical approval from the Harvard
+University Institutional Review Board (protocol: IRB18-
+1603). The study was conducted online using the Qual-
+trics XM Platform. We recruited participants using social
+media and snowball sampling between August 17 – 18,
+2019, including an advertisement on a continuing medical
+education Facebook page. Participants ﬁrst provided
+online informed consent. Participants then completed a
+demographics questionnaire, followed by the experi-
+mental task. We provided each participant with a $20
+gift card.
+Statistical analysis
+Per protocol, we used a repeated-measures ANOVA
+for within-subjects analyses and a two-sided Student ’s t
+test for post hoc independent pairwise comparisons. We
+controlled for the patient vignette, display order, and
+participants ’ medical specialty, age, years of medical
+experience, and ML familiarity. To address the problem
+of multiple comparisons, we adopted a Bonferroni
+correction for all post hoc pairwise analyses, with an
+alpha value of 0.05. We include the adjusted p value for
+all post hoc pairwise comparisons, and report effect
+sizes using Cohen ’s d. Data were checked for normality
+(Shapiro – Wilk W = 0.992, p = 0.287). Power exceeds
+80% to detect an effect size (Cohen ’s d)o f0 . 2o rg r e a t e r
+with 200 participants and alpha = 0.05. All data analyses
+were conducted using JMP Pro v14.
+Results
+In total, 240 clinicians completed the web-based
+experiment, of which 20 were removed due to inelig-
+ibility, leaving 220 for analysis. Table 1 shows descriptive
+statistics of the 220 particip ants included in the analysis.
+Reasons for ineligibility included having <1 year of
+experience prescribing antidepressant treatments [6;
+2.5%] or not providing a medical specialty [3; 1.25%]. We
+also removed responses from outside of the United
+States [12; 5.0%] due to the small response rate and
+possible differences in training and treatment selection
+processes.
+Fig. 2 Changes in mean treatment selection accuracy by explanation type for the baseline, correct, and incorrect recommendation
+conditions. Error bars show standard error.
+Jacobs et al. Translational Psychiatry          (2021) 11:108 Page 4 of 9
+
+=== PDF PAGE 5 ===
+No change in overall accuracy between clinicians and
+clinician-ML collaboration
+We ﬁrst compared the overall performance of clinicians ’
+baseline decisions (with no ML recommendations), the
+simulated ML system, and the clinician – ML collaborative
+performance. Accuracy scores could range from 0 to 1,
+with 1 corresponding to making the optimal choice for
+every vignette based on expert psychopharmacologist
+consensus. The simulated ML system, if acting indepen-
+dently, was designed to have an overall accuracy score of
+0.667, calculated as the accuracy scores of the top-
+recommended treatment for each question that included
+an ML recommendation. This accuracy score was sig-
+niﬁcantly greater than clinicians ’ mean score of 0.357
+(95% CI: 0.333 – 0.381; t(3531) = −19.21; p < 0.0001, d =
+0.74), which we calculated by averaging participants ’
+scores across the baseline scenarios, which did not include
+an ML recommendation. The ML accuracy score was also
+signiﬁcantly greater than the clinician – ML collaborative
+performance ( M = 0.356, 95% CI: 0.340 – 0.371; t(4758) =
+−25.63; p < 0.0001, d = 0.75), which we calculated using
+the mean accuracy scores of participants ’responses to the
+scenarios that included an ML prediction. We did not
+observe a signi ﬁcant difference between clinician perfor-
+mance when acting independently compared with the
+clinician– ML collaborative performance ( t(3011) = 0.094;
+p = 0.925).
+Incorrect recommendations signi ﬁcantly lowered
+treatment selection accuracy
+We observed a main effect of recommendation con-
+cordance with experts on treatment selection accuracy
+(F2,2697 = 13.41, p < 0.0001). Table 2 summarizes the
+results of this analysis. Post hoc pairwise comparisons
+with Bonferroni correction showed that incorrect
+recommendations correlated with signi ﬁcantly lower
+accuracy scores ( M = 0.299, 95% CI: 0.275 – 0.322) com-
+pared to correct recommendations ( M = 0.384, 95% CI:
+0.365– 0.403; t(2118) = −5.19; p < 0.0001, d = 0.24), and
+compared to baseline conditions with no recommenda-
+tion (M = 0.357, 95% CI: 0.334 – 0.381; t(1601) = 3.44; p =
+0.0018, d = 0.16). We observed no signi ﬁcant difference in
+scores between correct recommendations and baseline
+conditions ( t(2301) = −1.54, p = 0.366).
+We also observed a main effect of recommendation
+concordance on the perceived utility of the ML system
+(F1,2315 = 11.72, p = 0.0006). Correct recommendations
+correlated with signi ﬁcantly higher utility scores ( M =
+3.52, 95% CI: 3.47 – 3.56) compared to incorrect recom-
+mendations ( M = 3.40, 95% CI: 3.32 – 3.47; t(2629) =
+−3.42; p = 0.0012, d = 0.11).
+We did not observe a main effect of recommendation
+concordance on clinicians ’treatment selection con ﬁdence
+between baseline conditions ( M = 3.67 95% CI:
+3.63– 3.72), correct recommendations ( M = 3.65, 95% CI:
+3.62– 3.69), or incorrect recommendations ( M = 3.62 95%
+CI: 3.57 – 3.67; F2,3379 = 2.02, p = 0.133).
+Inﬂuence of explanations on performance metrics
+To assess the impact of explanations on performance,
+we ﬁrst examined the effects of explanation type when
+paired with correct recommendations, followed by effects
+Table 1 Descriptive statistics of the 220 study
+participants, including age, medical specialty, and years of
+experience prescribing antidepressants, and machine-
+learning familiarity.
+Age (SD) 42.52 (9.28)
+Medical specialty (%)
+Psychiatry 195 (88.64)
+Primary Care 18 (8.18)
+Other 7 (3.18)
+Years of experience prescribing antidepressants (IQR) 10 (7 –15)
+Machine-learning familiarity (%)
+Extremely familiar 45 (20.45)
+Very familiar 51 (23.18)
+Moderately familiar 30 (13.64)
+Slightly familiar 54 (24.55)
+Not familiar at all 40 (18.18)
+Table 2 Accuracy, con ﬁdence, and utility scores strati ﬁed by recommendation correctness.
+Recommendation correctness Accuracy Con ﬁdence Perceived utility
+M (95% CI) M (95% CI) M (95% CI)
+Baseline 0.357 (0.333 –0.381) p < 0.0001* 3.67 (3.63 –3.72) p = 0.133 N/A p = 0.0006*
+Correct 0.384 (0.365 –0.403) 3.65 (3.62 –3.69) 3.52 (3.47 –3.56)
+Incorrect 0.299 (0.275 –0.322) 3.62 (3.57 –3.69) 3.40 (3.32 –3.47)
+p-values measured using repeated-measures ANOVA with a signi ﬁcance level of 0.05.
+Jacobs et al. Translational Psychiatry          (2021) 11:108 Page 5 of 9
+
+=== PDF PAGE 6 ===
+of explanation type when paired with incorrect recom-
+mendations. The results are summarized in Table 3.
+No signiﬁcant effects on dependent variables when explana-
+tions are paired with correct recommendation
+When clinicians were presented with no recommenda-
+tions (baseline) or correct recommendations, we observed
+no effect of explanation type on treatment selection
+accuracy ( F4,2017 = 1.38, p = 0.239), treatment selection
+conﬁdence ( F4,2526 = 1.38, p = 0.239), or perceived ML
+utility ( F3,1465 = 1.11, p = 0.343).
+Feature-based explanations lower treatment selection accu-
+racy when paired with incorrect recommendations
+When clinicians were presented with no recommenda-
+tions or incorrect recommendations, we observed a main
+effect of explanation type on accuracy ( F4,1350 = 3.86, p =
+0.004). Post hoc pairwise comparisons with Bonferroni
+correction showed that incorrect recommendations
+paired with feature-based explanations correlated with
+signiﬁcantly lower accuracy scores ( M = 0.262, 95% CI:
+0.214– 0.310) compared to the baseline condition ( M =
+0.357, 95% CI: 0.333 – 0.381; t(1426) = −3.57; p = 0.004, d
+= 0.28). Figure 2 shows the difference in treatment
+selection accuracy across the explanation types for the
+baseline, correct, and incorrect recommendation condi-
+tions. We did not observe a signi ﬁcant difference in
+accuracy scores across the other explanation types. We
+provide all post hoc pairwise comparisons in Supple-
+mentary Table 3. We also did not observe any effect of
+explanation type on treatment selection con ﬁdence
+(F4,1678 = 1.67, p = 0.155) or on perceived ML utility
+(F3,612.3 = 0.667, p = 0.573).
+Inﬂuence of ML familiarity on performance metrics
+We measured ML familiarity using a 5-point Likert
+scale (1 = Not at all familiar, 5 = Extremely familiar). We
+found that clinicians who rated their familiarity with ML
+as “Not at all familiar ” were seven times more likely to
+select a treatment that aligned with the ML recommen-
+dation (34% concordance) compared to clinicians who
+said they were “extremely familiar ” with ML (5% con-
+cordance). We used a Pearson correlation to examine the
+association between ML familiarity and the dependent
+variables. We observed a statistically signi ﬁcant associa-
+tion between ML familiarity and treatment selection
+accuracy ( r = −0.188, p < 0.0001), suggesting that with
+increased ML familiarity, treatment selection accuracy
+decreased. We also observed a statistically signi ﬁcant
+correlation between ML familiarity and con ﬁdence ( r =
+0.129, p < 0.0001), indicating that with increased ML
+familiarity, treatment selection con ﬁdence increased.
+Finally, we observed a signi ﬁcant association between ML
+familiarity and perceived utility of the ML recommenda-
+tion ( r = 0.317, p < 0.0001), suggesting that as ML famil-
+iarity increased, perceived ML utility also increased,
+despite the reduced use of the ML recommendation.
+Discussion
+In this study of 220 antidepressant prescribing clinicians,
+we found that interacting with ML recommendations did
+not improve treatment selection accuracy, where accuracy
+was assessed based on concordance with psychopharma-
+cology experts. In this experiment, the ML results were
+simulated and manipulated as part of the experiment to
+assess how clinicians respond to algorithmic errors. Inter-
+acting with incorrect recommendations did correlate with
+signiﬁcantly lower treatment selection accuracy scores
+compared to correct recommendations and questions with
+Table 3 Accuracy, con ﬁdence, and utility scores strati ﬁed by explanation type for correct and incorrect
+recommendations.
+Recommendation correctness Explanation type Accuracy Con ﬁdence Perceived utility
+Correct recommendations Baseline 0.357 (0.333 –0.381) p = 0.239 3.67 (3.63 –3.72) p = 0.239 N/A p = 0.343
+No explanation 0.394 (0.355 –0.433) 3.64 (3.57 –3.72) 3.45 (3.35 –3.55)
+Placebo 0.357 (0.318 –0.397) 3.66 (3.59 –3.74) 3.53 (3.43 –3.63)
+Feature based 0.397 (0.356 –0.437) 3.62 (3.54 –3.69) 3.54 (3.44 –3.64)
+Heuristic based 0.390 (0.352 –0.428) 3.70 (3.62 –3.77) 3.54 (3.44 –3.64)
+Incorrect recommendations Baseline 0.357 (0.333 –0.381) p = 0.004* 3.67 (3.63 –3.72) p = 0.155 N/A p = 0.573
+No explanation 0.298 (0.250 –0.345) 3.60 (3.50 –3.70) 3.38 (3.23 –3.53)
+Placebo 0.311 (0.262 –0.359) 3.65 (3.54 –3.76) 3.36 (3.21 –3.51)
+Feature based 0.262 (0.214 –0.310) 3.67 (3.56 –3.77) 3.48 (3.34 –3.63)
+Heuristic based 0.327 (0.277 –0.376) 3.57 (3.46 –3.68) 3.36 (3.20 –3.52)
+p-values measured using repeated-measures ANOVA with a signi ﬁcance level of 0.05.
+Jacobs et al. Translational Psychiatry          (2021) 11:108 Page 6 of 9
+
+=== PDF PAGE 7 ===
+no ML recommendation, though clinicians also scored the
+ML recommendations as less helpful when the recom-
+mendation was incorrect. We also observed an effect of
+explanation type on treatment selection accuracy. When
+paired with incorrect recommendations, interacting with
+feature-based explanations correlated with lower accuracy
+scores compared to the baseline condition. Through this
+study, we demonstrate the potential risks of ML applica-
+tions and demonstrate how ML errors may negatively
+inﬂuence clinical decisions. Our results show the impor-
+tance of human factors research and methods in designing
+ML for clinical decision-making.
+Several recent studies have evaluated ML models with
+the intended use of creating decision support systems 32,33,
+many of which focused on psychiatric care 2,22,24,28. One
+assumption from the broader ML community that moti-
+vates this research is that humans interacting with ML
+tools will perform better than either actor individually 34,35.
+Recent perspectives have also discussed the potential for
+ML tools to in ﬂuence health care decisions and out-
+comes36– 38. However, we found few studies that evaluate
+how medical experts change their behaviors when inter-
+acting with diagnostic recommendations. In an ideal set-
+ting, a clinician supported by an ML predictor would make
+fewer errors than a clinician or predictor alone. Our work
+challenges the validity of this assumption, aligning with
+recent studies in non-medical domains suggesting that
+humans interacting with ML tools may perform worse
+than the algorithm acting independently 39,40.
+Explanations are a common approach for encouraging
+appropriate trust in ML tools. Studies have suggested that
+ML explanations may increase trust in the technology 39,41,
+but in some cases, this can lead to an overreliance on the
+algorithms42. Our study helps to unpack the complicated
+inﬂuence of explanations on behavior, demonstrating how
+different explanation types in ﬂuence clinicians’ treatment
+selection. We identiﬁed a signi ﬁcant reduction in accuracy
+scores when comparing baseline conditions (no ML
+recommendation) to feature-based explanations with
+incorrect recommendations, indicating that explanations
+did not effectively address accuracy issues caused by
+incorrect recommendations and can exacerbate issues of
+overreliance. Prior research found that simple explanations,
+where simplicity was deﬁned as the number of causes, were
+considered more probable by participants 43. While this
+experiment did not differ on the number of causes included
+in the explanation, feature-based explanations included
+more limited information compared to heuristic-based
+explanations, which may help to explain the increased use
+of these explanations and reduced accuracy scores. While
+there is interest in developing clinical-facing technologies
+that are visually simple, our results suggest that less
+information within an explanation is not always better. The
+effect of explanation type on accuracy scores demonstrates
+that in addition to commonly discussed issues of technical
+readiness and data bias 6, the interface design of ML deci-
+sion support tools must be systematically evaluated. Design
+decisions, such as the type of explanation to display, can
+have signiﬁcant effects on clinicians’behavior. Future work
+needs to continue to consider the trade-off between
+effectiveness and usability in order to optimize for
+clinician– ML collaboration.
+Importantly, we found that t he subjective metrics (con-
+ﬁdence and ML utility) followed different trends compared
+to the metric of treatment selection accuracy. We identiﬁed
+no signi ﬁcant change in con ﬁdence between the baseline
+conditions, correct recommendations, or incorrect recom-
+mendations. The lack of change in con ﬁdence scores sug-
+gests that participants struggled to calibrate their own
+performance, which can lead to poor calibration of ML
+performance11. While utility scores were lower for incorrect
+recommendations, we found no effect of explanation type
+on perceived utility, despite explanation type having an
+effect on accuracy. These ﬁndings align with a small but
+growing body of work suggestin gt h a ts u b j e c t i v em e a s u r e s
+cannot be used to predict the success of decision support
+tools40,44,45.
+Finally, we found in secondary analyses that clinicians
+with higher familiarity with ML were less likely to use an
+ML recommendation compared to clinicians with lower
+ML familiarity. Our results point to a need for future
+research to consider how and why clinicians ’ experience
+with ML may in ﬂuence their engagement and trust in ML
+systems.
+Our results may have important implications as ML
+tools become increasingly prevalent in psychiatry work-
+ﬂows. While clinicians ’ acceptance of the technology and
+the performance of the algorithms are both crucial to
+adoption, our results indicate that these factors are not
+enough to be able to predict positive performance out-
+comes. Evaluation techniques using realistic tasks and
+settings with the target user are necessary for determining
+how ML recommendations in ﬂuence clinical decisions. As
+such models are examined, our results also suggest the
+importance of considering the impact of incorrect
+recommendations, and the extent to which explanation
+methods may reduce the negative impact of such recom-
+mendations. Finally, our results suggest that prior experi-
+ence with ML models may in ﬂuence clinicians’willingness
+to use ML recommendations in treatment selection deci-
+sions. Therefore, strategies for developing appropriate
+levels of trust with ML models ought to account for, and
+be tailored to, clinicians ’ familiarity with ML.
+We note multiple limitations i n these experiments. First,
+we did not include medication combinations or non-
+pharmacological treatments, and the extent to which our
+results generalize to these contexts will require further study.
+Second, although we focused on how recommendation
+Jacobs et al. Translational Psychiatry          (2021) 11:108 Page 7 of 9
+
+=== PDF PAGE 8 ===
+concordance and explanation style in ﬂuenced participant
+responses, other aspects of the ML recommendation merit
+consideration. For example, communicating the conﬁdence
+level of the recommendation may in ﬂuence the use of the
+recommendation itself. Additionally, the study was deployed
+as an online behavioral experiment using hypothetical
+patient scenarios. Next-step studies should also examine
+these models in real-world clinical work ﬂows. Finally, all
+psychopharmacology experts involved in this study came
+from the northeast United States. While these psycho-
+pharmacologists taught both national and international
+CME programs, future studies should consider how differ-
+ences in clinical training may in ﬂuence clinician– AI colla-
+boration and decisions.
+Few studies to date have assessed how ML recom-
+mendations will be used by experts to support mental
+health care. Antidepressant selection in MDD represents
+a decision point where personalization of treatment offers
+the possibility of improving patient outcomes. This
+experimental study demonstrates how algorithmic errors
+and different types of explanations may in ﬂuence clin-
+icians’ treatment selection. Our results demonstrate that
+the implementation of ML tools with high accuracy rates
+may be insuf ﬁcient to improve treatment selection accu-
+racy, while also demonstrating the risk of overreliance
+when clinicians are shown incorrect treatment recom-
+mendations. These results demonstrate that evaluating
+ML models ’ accuracy independently of their use by clin-
+icians is not enough to determine real-world effectiveness.
+We do not argue that clinicians should be solely
+responsible for identifying algorithmic errors or biases.
+However, coping with imperfect algorithms will be a
+necessary step when such tools are used in the real
+world46. Our work helps to demonstrate how the design
+of these tools will in ﬂuence this process.
+Acknowledgements
+This study was funded by the Harvard Data Science Initiative.
+Author details
+1Department of Computer Science, Harvard University, 29 Oxford Street,
+Cambridge, MA 02138, USA. 2Center for Quantitative Health, Massachusetts
+General Hospital, 185 Cambridge Street, Boston, MA 02114, USA. 3Harvard
+Medical School, 25 Shattuck Street, Boston, MA 02115, USA
+Data availability
+The data that support the ﬁndings of this study are available from the
+corresponding author M.J. upon reasonable request.
+Conﬂict of interest
+T.H.M. receives research funding from the Brain and Behavior Research
+Foundation (26489), National Institute of Mental Health (Supplement to
+R01MH104488), Telefonica Alfa, and the Stanley Center at the Broad Institute.
+R.H.P. holds equity in Psy Therapeutics and Outermost Therapeutics; serves on
+the scienti ﬁc advisory boards of Genomind and Takeda; and consults to RID
+Ventures. R.H.P. receives research funding from NIMH, NHLBI, NHGRI, and
+Telefonica Alfa. R.H.P. is an associate editor for JAMA Network Open. F.D.V.
+consults with Davita Kidney Care and Google Health via Adecco. K.Z.G. receives
+research funding from Biogen.
+Publisher’s note
+Springer Nature remains neutral with regard to jurisdictional claims in
+published maps and institutional af ﬁliations.
+Supplementary information The online version contains supplementary
+material available at https://doi.org/10.1038/s41398-021-01224-x.
+Received: 2 July 2020 Revised: 11 January 2021 Accepted: 18 January 2021
+References
+1. Durstewitz, D., Koppe, G. & Meyer-Lindenberg, A. Deep neural networks in
+psychiatry.Mol. Psychiatry 24,1 5 8 3–1598 (2019).
+2. Kessler, R. C. et al. Developing a practical suicide risk prediction model for
+targeting high-risk patients in th e Veterans Health Administration. Int. J.
+Methods Psychiatr. Res.26, 2019–2020 (2017).
+3. Menke, A. Precision pharm acotherapy: psychiatry’s future direction in pre-
+venting, diagnosing, and treating mental disorders. Pharmacogenom. Pers.
+Med. https://doi.org/10.2147/PGPM.S146110(2018).
+4. Fusar-Poli, P., Hijazi, Z., Stahl, D. & Steyerberg, E. W. The science of prognosis in
+psychiatry: a review. JAMA Psychiatry 75,1 2 8 0–1288 (2018).
+5 . C h e k r o u d ,A .M .&K o u t s o u l e r i s ,N .T h ep e r i l o u sp a t hf r o mp u b l i c a t i o nt o
+practice.Mol. Psychiatry 23,2 4–25 (2018).
+6. Wiens, J. et al. Do no harm: a roadmap for responsible machine learning for
+health care. Nat. Med. 25,1 3 3 7–1340 (2019).
+7. Perlis, R. H. Abandoning personalizat ion to get to precision in the pharma-
+cotherapy of depression.World Psychiatry15,2 2 8–235 (2016).
+8 . H a h n ,T . ,N i e r e n b e r g ,A .A .&W h i tﬁeld-Gabrieli, S. Predictive analytics in mental
+health: applications, guidelines, challenges and perspectives.Mol. Psychiatry
+22,3 7–43 (2017).
+9. Skitka, L. J., Mosier, K. L., Burdick, M. & Rosenblatt, B. Automation bias and
+errors: are crews better than individuals. Int. J. Aviat. Psychol. 10,8 5 –97
+(2000).
+10. Cummings, M. L. Automation bias in in telligent time critical decision support
+systems. in AIAA 1st Intelligent Systems Technical Conference289–294 (2004).
+1 1 . G r e e n ,B .&C h e n ,Y .T h ep r i n c i p l e sa n dlimits of algorithm-in-the-loop decision
+making. in Proc. ACM Human-Computer Interaction3 (2019).
+12. Albright, A. If you give a judge a risk score: evidence from Kentucky bail
+decisions. John M. Olin Cent. Law, Econ. Bus. Fellows ’ Discuss. Pap. Ser.1 –44
+(2019).
+13. Elish, M. C. Moral crumple zones: cautionary tales in human-robot interaction.
+E n g a g .S c i .T e c h n o l .S o c .5,4 0–60 (2019).
+14. Shatte, A. B. R., Hutchinson, D. M. & Teague, S. J. Machine learning in mental
+health: a scoping review of methods and applications. Psychol. Med. 49,
+1426–1448 (2019).
+15. Chekroud, A. M. et al. Cross-trial prediction of treatment outcome in
+depression: a machine learning approach.Lancet Psychiatry3,2 4 3–250 (2016).
+1 6 . C o h e n ,Z .D .&D e R u b e i s ,R .J .T r eatment selection in depression. Annu. Rev.
+Clin. Psychol. 14, 209–236 (2018).
+17. Gillan, C. M. & Whelan, R. What big dat a can do for treatment in psychiatry.
+Curr. Opin. Behav. Sci. 18,3 4–42 (2017).
+1 8 . T r i v e d i ,M .H .&D a l y ,E .J .T r e a t m e n ts t r a t e g i e st oi m p r o v ea n ds u s t a i n
+remission in major depressive disorder.Dialogues Clin. Neurosci.10,3 7 7–384
+(2008).
+1 9 . D i c k e r s o n ,F .e ta l .B i g g e rd a t a ,H a r d e rq u e s t i o n s— opportunities throughout
+mental health care. Psychiatr. Serv.64,4 4–50 (2013).
+20. Kolovos, S. et al. The effect of treatment as usual on major depressive disorder:
+a meta-analysis.J. Affect. Disord. 210,7 2–81 (2017).
+21. Perlis, R. H. A clinical risk strati ﬁcation tool for predicting treatment resistance in
+major depressive disorder.Biol. Psychiatry74,7 –14 (2013).
+22. Redlich, R. et al. Prediction of individu al response to electroconvulsive therapy
+via machine learning on structural magnetic resonance imaging data.JAMA
+Psychiatry73,5 5 7–564 (2016).
+23. Chekroud, A. M. et al. Reevaluating the ef ﬁcacy and predictability of anti-
+depressant treatments: a symptom clustering approach.JAMA Psychiatry 74,
+370–378 (2017).
+24. Pradier, M. F., McCoy, T. H., Hughes, M., Perlis, R. H. & Doshi-Velez, F. Predicting
+treatment dropout after antidepressant initiation. Transl. Psychiatry 10,1 –8
+(2020).
+Jacobs et al. Translational Psychiatry          (2021) 11:108 Page 8 of 9
+
+=== PDF PAGE 9 ===
+25. Ganong, L. H. & Coleman, M. Multiple segment factorial vignette designs. J.
+Marriage Fam. 68,4 5 5–468 (2006).
+26. Martin, K. Do privacy notices matte r? Comparing the impact of violating
+formal privacy notices and informal privacy norms on consumer trust online.J.
+Leg. Stud. 45, S191–S215 (2016).
+27. Steiner, P. M., Atzmüller, C. & Su, D. Designing valid and reliable vignette
+experiments for survey research: a case study on the fair gender income gap.
+J. Methods Meas. Soc. Sci. 7,5 2–94 (2017).
+28. Hughes, M. C. et al. Semi-supervised prediction-constrained topic models. in
+Proc. 21st International Conference on Arti ﬁcial Intelligence and Statistics
+(AISTATS)84 (2018).
+29. Guidotti, R., Monreale, A. & Ruggieri, S. A survey of methods for explaining
+black box models. ACM Comput. Surv. 51,1 –42 (2018).
+30. Macqueen, G. et al. Systematic review o f clinical practice guidelines for failed
+antidepressant treatment response in major depressive disorder, dysthymia,
+a n ds u b t h r e s h o l dd e p r e s s i o ni na d u l t s .Can. J. Psychiatry 62,1 1–23 (2017).
+31. Kennedy, S. H. et al. Canadian Network for Mood and Anxiety Treatments
+(CANMAT) 2016 clinical guidelines for the management of adults with major
+depressive disorder: section 3. Pharmacological Treatments.Can. J. Psychiatry
+61,5 4 0–560 (2016).
+3 2 . M o h a m m a d i ,I . ,W u ,H . ,T u r k c a n ,A . ,T o s c o s ,T .&D o e b b e l i n g ,B .N .D a t aa n a -
+lytics and modeling for appointment no-show in community health centers.J.
+Prim. Care Community Health 9,1 –11 (2018).
+33. Peng, X. et al. Improving sepsis treatment strategies by combining deep and
+kernel-based reinforcement learning. inAMIA Annual Symposium Proceedings
+887–896 (2018).
+34. Kamar, E. Directions in hybrid inte lligence: complementing AI systems with
+human intelligence.IJCAI Int. Jt. Conf. Artif. Intell.4 0 7 0–4073 (2016).
+35. Amershi, S. et al. Guidelines for Human-AI Interaction. in Proc. 2019 CHI Con-
+ference on Human Factors in Computing Systems 1–13 (2019).
+36. He, J. et al. The practical implementation of arti ﬁcial intelligence technologies
+in medicine. Nat. Med. 25,3 0–36 (2019).
+37. Sitapi, A. et al. Integrated precision medicine: the role of electronic health
+records in delivering personalized treatment. Physiol. Behav. 176,1 0 0–106
+(2016).
+38. Russ, T. C. et al. How data science can advance mental health research. Nat.
+Hum. Behav. 3,2 4–32 (2019).
+3 9 . Y i n ,M . ,W o r t m a nV a u g h a n ,J .&W a l l a c h ,H .U n d e r s t a n d i n gt h ee f f e c to f
+accuracy on trust in machine learning models. inProc. 2019 CHI Conference on
+Human Factors in Computing Systems . https://doi.org/10.1145/
+3290605.3300509(2019).
+4 0 . G r e e n ,B .&C h e n ,Y .D i s p a r a t ei n t e r a c t ions: an algorithm-in-the-loop analysis of
+fairness in risk assessments. Proc. 2019 Conference on Fairness, Accountability
+and Transparency. https://doi.org/10.1145/3287560.3287563(2019).
+41. Ribeiro, M. T., Singh, S. & Guestrin, C. ‘Why Should I Trust You?’: Explaining the
+Predictions of Any Classiﬁer. in Proc. ACM SIGKDD International Conference on
+Knowledge Discovery and Data Mining. https://doi.org/10.18653/v1/N16-3020
+(2016).
+42. Bussone, A., Stumpf, S. & O ’Sullivan, D. The role of explanations on trust and
+reliance in clinical decision support systems. Proc. 2015 IEEE International
+Conference on Healthcare Informatics . https://doi.org/10.1109/ICHI.2015.26
+(2015).
+43. Lombrozo, T. Simplicity and pr obability in causal explanation. Cogn. Psychol.
+55,2 3 2–257 (2007).
+4 4 . B u ç i n c a ,Z . ,L i n ,P . ,G a j o s ,K .Z .&G l a s s m a n ,E .L .P r o x yt a s k sa n ds u b j e c t i v e
+measures can be misleading in evalu ating explainable AI systems. in ACM
+Proceedings of the 25th Conference on Intelligent User Interfaces. https://doi.org/
+10.1145/3377325.3377498(2020).
+4 5 . L a k k a r a j u ,H .&B a s t a n i ,O .‘How do I fool you? ’: Manipulating user trust via
+misleading black box explanations. in Proc. 2020 AAAI/ACMConference on AI,
+Ethics, and Society (AIES ’20). https://doi.org/10.1145/3375627.3375833(2020).
+46. Cai, C. J. et al. Tools for coping with imperfect algorithms during medical
+decision-making. inProc. 2019 CHI Conference on Human Factors in Computing
+Systems. https://doi.org/10.1145/3290605.3300234(2019).
+Jacobs et al. Translational Psychiatry          (2021) 11:108 Page 9 of 9

@@ -1,0 +1,781 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          23
+        ]
+      ],
+      "date-time": "2026-09-23T03:10:32Z",
+      "timestamp": 1790133032141,
+      "version": "4.0.1"
+    },
+    "reference-count": 33,
+    "publisher": "Elsevier BV",
+    "issue": "11",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2024-11-01T00:00:00Z",
+          "timestamp": 1730419200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2024-11-01T00:00:00Z",
+          "timestamp": 1730419200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2024-11-01T00:00:00Z",
+          "timestamp": 1730419200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2024-11-01T00:00:00Z",
+          "timestamp": 1730419200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2024-11-01T00:00:00Z",
+          "timestamp": 1730419200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2024-11-01T00:00:00Z",
+          "timestamp": 1730419200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2024-11-01T00:00:00Z",
+          "timestamp": 1730419200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "82172065"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "82172065"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "clinicalkey.com",
+        "clinicalkey.com.au",
+        "clinicalkey.es",
+        "clinicalkey.fr",
+        "clinicalkey.jp",
+        "injuryjournal.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Injury"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          11
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.injury.2024.111830",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          8,
+          23
+        ]
+      ],
+      "date-time": "2024-08-23T08:16:05Z",
+      "timestamp": 1724400965000
+    },
+    "page": "111830",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 4,
+    "title": [
+      "Machine learning models to predict osteonecrosis in patients with femoral neck fractures undergoing internal fixation"
+    ],
+    "prefix": "10.1016",
+    "volume": "55",
+    "author": [
+      {
+        "given": "Bingchuan",
+        "family": "Liu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Guojin",
+        "family": "Hou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhongwei",
+        "family": "Yang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhishan",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fang",
+        "family": "Zhou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2310-6054",
+        "authenticated-orcid": false,
+        "given": "Yun",
+        "family": "Tian",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "6",
+        "key": "10.1016/j.injury.2024.111830_bib0001",
+        "first-page": "430",
+        "article-title": "Age is not the most important factor in the prognosis of femoral neck fracture: an analysis of long-term clinical follow-up",
+        "volume": "29",
+        "author": "Ju",
+        "year": "2023",
+        "journal-title": "Altern Ther Health Med"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.injury.2024.111830_bib0002",
+        "doi-asserted-by": "crossref",
+        "first-page": "108",
+        "DOI": "10.1186/s13018-022-03005-8",
+        "article-title": "Internal fixation using fully threaded cannulated compression screws for fresh femoral neck fractures in adults",
+        "volume": "17",
+        "author": "Yuan",
+        "year": "2022",
+        "journal-title": "J Orthop Surg Res"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.injury.2024.111830_bib0003",
+        "doi-asserted-by": "crossref",
+        "first-page": "285",
+        "DOI": "10.1186/s12891-023-06378-x",
+        "article-title": "Comparison of femoral neck system versus cannulated screws for treatment of femoral neck fractures: a systematic review and meta-analysis",
+        "volume": "24",
+        "author": "Jiang",
+        "year": "2023",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.injury.2024.111830_bib0004",
+        "doi-asserted-by": "crossref",
+        "first-page": "127",
+        "DOI": "10.1186/s13018-022-02914-y",
+        "article-title": "Curative efficacy of surgical procedures for older patients with femoral neck fracture: a network meta-analysis and systematic review",
+        "volume": "17",
+        "author": "Cui",
+        "year": "2022",
+        "journal-title": "J Orthop Surg Res"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.injury.2024.111830_bib0005",
+        "doi-asserted-by": "crossref",
+        "first-page": "625",
+        "DOI": "10.1186/s13018-023-04114-8",
+        "article-title": "Cannulated screws versus dynamic hip screw versus hemiarthroplasty versus total hip arthroplasty in patients with displaced and non-displaced femoral neck fractures: a systematic review and frequentist network meta-analysis of 5703 patients",
+        "volume": "18",
+        "author": "Ramadanov",
+        "year": "2023",
+        "journal-title": "J Orthop Surg Res"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.injury.2024.111830_bib0006",
+        "doi-asserted-by": "crossref",
+        "first-page": "28",
+        "DOI": "10.1186/s13018-017-0528-9",
+        "article-title": "A systematic review of undisplaced femoral neck fracture treatments for patients over 65 years of age, with a focus on union rates and avascular necrosis",
+        "volume": "12",
+        "author": "Xu",
+        "year": "2017",
+        "journal-title": "J Orthop Surg Res"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.injury.2024.111830_bib0007",
+        "doi-asserted-by": "crossref",
+        "first-page": "1676",
+        "DOI": "10.1016/j.injury.2016.03.014",
+        "article-title": "Fixation of displaced femoral neck fractures in young adults: fixed-angle devices or Pauwel screws?",
+        "volume": "47",
+        "author": "Hoshino",
+        "year": "2016",
+        "journal-title": "Injury"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.injury.2024.111830_bib0008",
+        "doi-asserted-by": "crossref",
+        "first-page": "823",
+        "DOI": "10.1186/s12891-023-06959-w",
+        "article-title": "Superior short-term outcomes of FNS in combination with a cannulated screw in treating femoral neck fractures",
+        "volume": "24",
+        "author": "Su",
+        "year": "2023",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.injury.2024.111830_bib0009",
+        "article-title": "Femoral neck fractures treated with cannulated screws: can surgeons predict functional outcomes and minimize the risk of necrosis?",
+        "volume": "94",
+        "author": "De Franco",
+        "year": "2023",
+        "journal-title": "Acta Biomed"
+      },
+      {
+        "key": "10.1016/j.injury.2024.111830_bib0010",
+        "doi-asserted-by": "crossref",
+        "first-page": "505",
+        "DOI": "10.2340/17453674.2023.20284",
+        "article-title": "The different strategies in treating displaced femoral neck fractures: mid-term surgical outcome in a register-based cohort of 1,283 patients aged 60-69 years",
+        "volume": "94",
+        "author": "Lagergren",
+        "year": "2023",
+        "journal-title": "Acta Orthop"
+      },
+      {
+        "issue": "14",
+        "key": "10.1016/j.injury.2024.111830_bib0011",
+        "doi-asserted-by": "crossref",
+        "first-page": "1196",
+        "DOI": "10.2106/JBJS.O.00229",
+        "article-title": "The American Academy of Orthopaedic Surgeons evidence-based guideline on management of hip fractures in the elderly",
+        "volume": "97",
+        "author": "Brox",
+        "year": "2015",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.injury.2024.111830_bib0012",
+        "doi-asserted-by": "crossref",
+        "first-page": "129",
+        "DOI": "10.1007/s00264-019-04429-4",
+        "article-title": "Initial displacement as a risk factor for avascular necrosis of the femoral head in pediatric femoral neck fractures: a review of one hundred eight cases",
+        "volume": "44",
+        "author": "Wang",
+        "year": "2020",
+        "journal-title": "Int Orthop"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.injury.2024.111830_bib0013",
+        "doi-asserted-by": "crossref",
+        "first-page": "238",
+        "DOI": "10.1186/s13018-020-01724-4",
+        "article-title": "Osteonecrosis of femoral head in young patients with femoral neck fracture: a retrospective study of 250 patients followed for average of 7.5 years",
+        "volume": "15",
+        "author": "Pei",
+        "year": "2020",
+        "journal-title": "J Orthop Surg Res"
+      },
+      {
+        "key": "10.1016/j.injury.2024.111830_bib0014",
+        "doi-asserted-by": "crossref",
+        "first-page": "5",
+        "DOI": "10.1016/j.amsu.2019.01.002",
+        "article-title": "The relationship between femoral neck fracture in adult and avascular necrosis and nonunion: a retrospective study",
+        "volume": "39",
+        "author": "Koaban",
+        "year": "2019",
+        "journal-title": "Ann Med Surg (Lond)"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.injury.2024.111830_bib0015",
+        "doi-asserted-by": "crossref",
+        "first-page": "4669",
+        "DOI": "10.1007/s00068-022-01981-4",
+        "article-title": "Development and internal validation of a clinical prediction model using machine learning algorithms for 90 day and 2 year mortality in femoral neck fracture patients aged 65 years or above",
+        "volume": "48",
+        "author": "Oosterhoff",
+        "year": "2022",
+        "journal-title": "Eur J Trauma Emerg Surg"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.injury.2024.111830_bib0016",
+        "doi-asserted-by": "crossref",
+        "first-page": "168",
+        "DOI": "10.1302/2633-1462.43.BJO-2022-0162.R1",
+        "article-title": "Machine Learning Consortium; HEALTH Investigators; and the FAITH Investigators. Development of machine-learning algorithms for 90-day and one-year mortality prediction in the elderly with femoral neck fractures based on the HEALTH and FAITH trials",
+        "volume": "4",
+        "author": "Dijkstra",
+        "year": "2023",
+        "journal-title": "Bone Jt Open."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.injury.2024.111830_bib0017",
+        "doi-asserted-by": "crossref",
+        "first-page": "912",
+        "DOI": "10.1186/s12877-022-03631-1",
+        "article-title": "Application of machine learning model to predict lacunar cerebral infarction in elderly patients with femoral neck fracture before surgery",
+        "volume": "22",
+        "author": "Huang",
+        "year": "2022",
+        "journal-title": "BMC Geriatr"
+      },
+      {
+        "key": "10.1016/j.injury.2024.111830_bib0018",
+        "article-title": "Prediction of acute kidney injury in patients with femoral neck fracture utilizing machine learning",
+        "volume": "9",
+        "author": "Liu",
+        "year": "2022",
+        "journal-title": "Front Surg"
+      },
+      {
+        "issue": "16",
+        "key": "10.1016/j.injury.2024.111830_bib0019",
+        "doi-asserted-by": "crossref",
+        "first-page": "10050",
+        "DOI": "10.3390/ijerph191610050",
+        "article-title": "The risk of avascular necrosis following the stabilization of femoral neck fractures: a systematic review and meta-analysis",
+        "volume": "19",
+        "author": "Konarski",
+        "year": "2022",
+        "journal-title": "Int J Environ Res Public Health"
+      },
+      {
+        "issue": "Suppl 1",
+        "key": "10.1016/j.injury.2024.111830_bib0020",
+        "first-page": "31",
+        "article-title": "The role of imaging in diagnosis and management of femoral head avascular necrosis",
+        "volume": "12",
+        "author": "Manenti",
+        "year": "2015",
+        "journal-title": "Clin Cases Miner Bone Metab"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.injury.2024.111830_bib0021",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "DOI": "10.1111/os.12302",
+        "article-title": "Chinese guideline for the diagnosis and treatment of osteonecrosis of the femoral head in adults",
+        "volume": "9",
+        "year": "2017",
+        "journal-title": "Orthop Surg"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.injury.2024.111830_bib0022",
+        "doi-asserted-by": "crossref",
+        "first-page": "112",
+        "DOI": "10.1093/bioinformatics/btr597",
+        "article-title": "MissForest–non-parametric missing value imputation for mixed-type data",
+        "volume": "28",
+        "author": "Stekhoven",
+        "year": "2012",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.injury.2024.111830_bib0023",
+        "doi-asserted-by": "crossref",
+        "first-page": "2350",
+        "DOI": "10.1097/CORR.0000000000002283",
+        "article-title": "Patients with femoral neck fractures are at risk for conversion to arthroplasty after internal fixation: a machine-learning algorithm",
+        "volume": "480",
+        "author": "van de Kuit",
+        "year": "2022",
+        "journal-title": "Clin Orthop Relat Res."
+      },
+      {
+        "issue": "11",
+        "key": "10.1016/j.injury.2024.111830_bib0024",
+        "doi-asserted-by": "crossref",
+        "first-page": "e30079",
+        "DOI": "10.2196/30079",
+        "article-title": "Prediction model of osteonecrosis of the femoral head after femoral neck fracture: machine learning-based development and validation study",
+        "volume": "9",
+        "author": "Wang",
+        "year": "2021",
+        "journal-title": "JMIR Med Inform"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.injury.2024.111830_bib0025",
+        "doi-asserted-by": "crossref",
+        "first-page": "318",
+        "DOI": "10.1111/os.12458",
+        "article-title": "Correlation between reduction quality of femoral neck fracture and femoral head necrosis based on biomechanics",
+        "volume": "11",
+        "author": "Wang",
+        "year": "2019",
+        "journal-title": "Orthop Surg"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.injury.2024.111830_bib0026",
+        "doi-asserted-by": "crossref",
+        "first-page": "346",
+        "DOI": "10.1186/s12891-022-05307-8",
+        "article-title": "Essential role of reliable reduction quality in internal fixation of femoral neck fractures in the non-elderly patients-a propensity score matching analysis",
+        "volume": "23",
+        "author": "Qiu",
+        "year": "2022",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.injury.2024.111830_bib0027",
+        "doi-asserted-by": "crossref",
+        "first-page": "e7",
+        "DOI": "10.1097/BPO.0000000000002523",
+        "article-title": "The duration of hardware retention after radiologic union of surgically treated femoral neck fractures in children may predict the aggravation or occurrence of avascular necrosis of the femoral head or neck after hardware removal",
+        "volume": "44",
+        "author": "Wang",
+        "year": "2024",
+        "journal-title": "J Pediatr Orthop"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.injury.2024.111830_bib0028",
+        "doi-asserted-by": "crossref",
+        "first-page": "2101",
+        "DOI": "10.1007/s00590-022-03407-8",
+        "article-title": "The use of the femoral neck system (FNS) leads to better outcomes in the surgical management of femoral neck fractures in adults compared to fixation with cannulated screws: a systematic review and meta-analysis",
+        "volume": "33",
+        "author": "Patel",
+        "year": "2023",
+        "journal-title": "Eur J Orthop Surg Traumatol"
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.injury.2024.111830_bib0029",
+        "doi-asserted-by": "crossref",
+        "first-page": "3115",
+        "DOI": "10.1016/j.injury.2022.08.038",
+        "article-title": "Biomechanical evaluation of different internal fixation methods based on finite element analysis for Pauwels type III femoral neck fracture",
+        "volume": "53",
+        "author": "Jiang",
+        "year": "2022",
+        "journal-title": "Injury"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.injury.2024.111830_bib0030",
+        "doi-asserted-by": "crossref",
+        "first-page": "1030",
+        "DOI": "10.1186/s12891-022-06003-3",
+        "article-title": "Finite element comparative analysis of three different internal fixation methods in the treatment of Pauwels type III femoral neck fractures",
+        "volume": "23",
+        "author": "Ma",
+        "year": "2022",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.injury.2024.111830_bib0031",
+        "doi-asserted-by": "crossref",
+        "first-page": "1186",
+        "DOI": "10.1111/os.13318",
+        "article-title": "Micro-computed tomography analysis of femoral head necrosis after long-term internal fixation for femoral neck fracture",
+        "volume": "14",
+        "author": "Liu",
+        "year": "2022",
+        "journal-title": "Orthop Surg"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.injury.2024.111830_bib0032",
+        "doi-asserted-by": "crossref",
+        "first-page": "2648",
+        "DOI": "10.1002/jor.25630",
+        "article-title": "Positive correlation between the proximal femur Hounsfield units from routine CT and DXA results",
+        "volume": "41",
+        "author": "Ye",
+        "year": "2023",
+        "journal-title": "J Orthop Res"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.injury.2024.111830_bib0033",
+        "doi-asserted-by": "crossref",
+        "first-page": "632",
+        "DOI": "10.1097/BOT.0000000000001843",
+        "article-title": "Association of perioperative computed tomography hounsfield units and failure of femoral neck fracture fixation",
+        "volume": "34",
+        "author": "Lund",
+        "year": "2020",
+        "journal-title": "J Orthop Trauma"
+      }
+    ],
+    "container-title": [
+      "Injury"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S002013832400559X?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S002013832400559X?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          29
+        ]
+      ],
+      "date-time": "2026-04-29T06:18:27Z",
+      "timestamp": 1777443507000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S002013832400559X"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          11
+        ]
+      ]
+    },
+    "references-count": 33,
+    "journal-issue": {
+      "issue": "11",
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            11
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S002013832400559X"
+    ],
+    "URL": "https://doi.org/10.1016/j.injury.2024.111830",
+    "relation": {},
+    "ISSN": [
+      "0020-1383"
+    ],
+    "issn-type": [
+      {
+        "value": "0020-1383",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          11
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Machine learning models to predict osteonecrosis in patients with femoral neck fractures undergoing internal fixation",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Injury",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.injury.2024.111830",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2024 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "111830"
+  }
+}

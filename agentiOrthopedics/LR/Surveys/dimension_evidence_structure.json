@@ -1,0 +1,2978 @@
+[
+  {
+    "paper_id": "LEGACY_019",
+    "source_basis": "metadata_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "LEGACY_026",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "LEGACY_034",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "LEGACY_044",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "LEGACY_046",
+    "source_basis": "metadata_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "LEGACY_052",
+    "source_basis": "metadata_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "LEGACY_064",
+    "source_basis": "fulltext_pdf_text",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "LEGACY_068",
+    "source_basis": "fulltext_pdf_text",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "LEGACY_069",
+    "source_basis": "fulltext_pdf_text",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "LEGACY_099",
+    "source_basis": "fulltext_pdf_text",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_21750352",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_26667939",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "Methods",
+      "Design",
+      "Identifying the Research Question",
+      "Identifying Relevant Studies",
+      "Selecting Studies for Analysis",
+      "Consultation with Knowledge Users",
+      "Data Analysis",
+      "Charting the Data",
+      "Collating, Summarizing and Reporting Results",
+      "Results",
+      "General Description of Articles",
+      "Computer-Based Tools/Questionnaires",
+      "Treatment Algorithms/Decision-Models",
+      "Clinical Prediction Rules/Classification Systems",
+      "Discussion",
+      "Computer-Based Tools or Questionnaires",
+      "Clinical Prediction Rules/Classification Systems",
+      "Treatment Algorithms/Decision-Models",
+      "Strengths and Limitations",
+      "Conclusions",
+      "Acknowledgments",
+      "Appendix 1",
+      "Appendix 2",
+      "Compliance with Ethical Standards",
+      "Conflict of interest",
+      "Contributor Information",
+      "References"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "",
+          "Number (%)"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Name of CDSS",
+          "Purpose",
+          "Description",
+          "Stage of Development",
+          "Hardware and Software",
+          "Data Input Requirements",
+          "Output(s)",
+          "TargetRecipient of Output",
+          "Limitations"
+        ]
+      },
+      {
+        "table": "Table 3",
+        "fields": [
+          "Authors (ID)",
+          "Year",
+          "Study design",
+          "Population",
+          "Body part",
+          "Context",
+          "Tool mentioned",
+          "Properties tested",
+          "Methods",
+          "Outcome",
+          "Results"
+        ]
+      },
+      {
+        "table": "Table 4",
+        "fields": [
+          "Tool",
+          "Internal consistency",
+          "Face validity",
+          "Content validity",
+          "Criterion validity*",
+          "Construct validity",
+          "Reproducibility (agreement/reliability)"
+        ]
+      },
+      {
+        "table": "Table 5",
+        "fields": [
+          "Authors (ID)",
+          "Year",
+          "Study design",
+          "Body part",
+          "Algorithm/model mentioned",
+          "Population",
+          "Methods",
+          "Outcome/conclusion",
+          "Results"
+        ]
+      },
+      {
+        "table": "Table 6",
+        "fields": [
+          "Condition",
+          "Purpose of rule/system",
+          "Evaluation status of the rule/system"
+        ]
+      },
+      {
+        "table": "Table 7",
+        "fields": [
+          "Searches",
+          "Results"
+        ]
+      },
+      {
+        "table": "Table 8",
+        "fields": [
+          "Psychometric property",
+          "Definition",
+          "Criteria for scoring the psychometric properties as accomplished (adapted from Terwee et al. [31])"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_31994752",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_32379124",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_32797983",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_33198106",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "1. Introduction",
+      "2. Methods",
+      "3. Results",
+      "4. Discussion",
+      "4.1. Limitations",
+      "4.2. Future Work",
+      "5. Conclusions",
+      "Appendix A",
+      "Appendix B",
+      "Appendix C",
+      "Author Contributions",
+      "Funding",
+      "Conflicts of Interest",
+      "Footnotes",
+      "References"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Joint Replacement"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Category",
+          "Examples"
+        ]
+      },
+      {
+        "table": "Table 3",
+        "fields": [
+          "Category",
+          "Examples"
+        ]
+      },
+      {
+        "table": "Table 4",
+        "fields": [
+          "Tool",
+          "Journal and (Year) of Publication [Ref]",
+          "Tool Development Study Type and Size",
+          "Demographic Input",
+          "Clinical Input",
+          "Patient Reported Input",
+          "Tool Output",
+          "Statistical Methods Used in Tool Development"
+        ]
+      },
+      {
+        "table": "Table A1",
+        "fields": [
+          "The Journal of Bone and Joint Surgery, American Volume"
+        ]
+      },
+      {
+        "table": "Table A2",
+        "fields": [
+          "Tool",
+          "URL",
+          "Additional Notes"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_33288388",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_33323681",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_33933587",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_34305383",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_34522738",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction and background",
+      "Material and methods",
+      "Search strategy",
+      "Eligibility criteria",
+      "Study selection",
+      "Data extraction and categorization",
+      "Data analysis",
+      "Results",
+      "Search results and study selection",
+      "Administrative and clinical decision support applications",
+      "Prediction and management of postoperative outcomes and complications",
+      "Comparison of AI/ML algorithms",
+      "Training data sets",
+      "Discussion",
+      "Conclusions",
+      "Conflicts of interest"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Author, year",
+          "Pathology/Surgery",
+          "ML algorithms",
+          "Prediction outputs",
+          "Patients in testing set (n)",
+          "Avg. age",
+          "%Female",
+          "Data source"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Administrative/clinical decision support applications",
+          "Applied ML algorithms",
+          "Prediction outputs"
+        ]
+      },
+      {
+        "table": "Table 3",
+        "fields": [
+          "Administrative/clinical decision support applications",
+          "Performance metrics: mean (SD, n)",
+          "AUC",
+          "Accuracy",
+          "Sensitivity",
+          "Specificity"
+        ]
+      },
+      {
+        "table": "Table 4",
+        "fields": [
+          "Author, year",
+          "Pathology/Surgery",
+          "ML algorithms",
+          "Prediction outputs",
+          "Patients in testing set (n)",
+          "Avg. age",
+          "%Female",
+          "Data source"
+        ]
+      },
+      {
+        "table": "Table 5",
+        "fields": [
+          "Postoperative prediction/management applications",
+          "Performance metrics: mean (SD, n)",
+          "AUC",
+          "Accuracy",
+          "Sensitivity",
+          "Specificity"
+        ]
+      },
+      {
+        "table": "Table 6",
+        "fields": [
+          "AI/ML algorithm",
+          "Performance metrics: Mean (SD, n)",
+          "AUC",
+          "Accuracy",
+          "Sensitivity",
+          "Specificity"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_35238790",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "Methods",
+      "Search Strategy",
+      "Selection Criteria",
+      "Data Analysis",
+      "Study Cohort",
+      "Machine Learning Models",
+      "Evaluation Methods",
+      "Research Topics",
+      "Results",
+      "General",
+      "Monitoring, Detection, and Diagnosis",
+      "Overview",
+      "Monitoring of Physiological Indicators",
+      "Mechanical Ventilation",
+      "Electroencephalography Monitoring",
+      "Diagnosis of Infection",
+      "Early Identification or Prediction of Clinical Events",
+      "Overview",
+      "Acute Kidney Injury Prediction",
+      "Prediction of Sepsis and Infection",
+      "Prediction of Respiratory Disease and Mechanical Ventilation",
+      "Other Predictions and Evaluations",
+      "Outcome Evaluation and Prognostic Assessment",
+      "Overview",
+      "Overall Intensive Care Unit Patient Outcomes",
+      "Outcomes of Patients With Specific Diseases",
+      "Treatment Prognosis and Intensive Care Unit Stay Time Evaluation",
+      "Treatment Decisions",
+      "Discussion"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Characteristic",
+          "Value (n=97), n"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_35455625",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "1. Introduction",
+      "2. Relevance of Digitalization in Spine Surgery",
+      "2.1. The Need for Structured Decision Making in Spine Surgery",
+      "2.2. Database Repositories for Machine Learning Applications in Spine Surgery",
+      "3. Hybrid Machine Learning Models for Classification and Prediction Tasks",
+      "3.1. Textual Data Conversion Methods for Deep Learning Approaches",
+      "3.2. Multi-Input Mixed Data Deep Learning Models",
+      "4. Available Artificial Intelligence-Based Models and Classical Statistical Prediction Models Utilized in Spine Surgery",
+      "5. Future Perspectives and Limitations",
+      "6. Conclusions",
+      "Acknowledgments",
+      "Author Contributions",
+      "Funding",
+      "Conflicts of Interest",
+      "Footnotes",
+      "References"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Author (Year)",
+          "Number of Datapoints",
+          "Algorithm",
+          "Intervention/Diagnosis",
+          "Outcome"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_35491420",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "Material and methods",
+      "Article identification and selection process",
+      "Definition and description of AI tools",
+      "Results",
+      "Review and discussion",
+      "AI used before knee arthroplasty",
+      "AI used during knee arthroplasty",
+      "AI used after knee arthroplasty",
+      "Limitations and future expectations",
+      "Conclusion"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Authors",
+          "Patients",
+          "Year",
+          "Type",
+          "Time",
+          "Assessment",
+          "Factors",
+          "Conclusion"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Authors",
+          "Patients",
+          "Year",
+          "Type",
+          "Assessment",
+          "Factors",
+          "Conclusion/Algorithms"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_36572235",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_37937083",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_37968370",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "How can medical research benefit from the implementation of AI systems?",
+      "A general overview of AI applications in medicine",
+      "Prediction of disease- or condition-specific outcomes",
+      "Medical image analysis",
+      "Decision support systems",
+      "Digital twin technology",
+      "Appraisal of quality and safety in medical AI research",
+      "Barriers to implementation – threats and ethical considerations",
+      "Conclusion",
+      "Acknowledgements",
+      "Informed consent",
+      "Authors’ contribution",
+      "Funding",
+      "Declarations",
+      "Ethics approval and consent to participate",
+      "Competing interests",
+      "Footnotes",
+      "References"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Task category",
+          "Routine (Repeatable and easy-to-define tasks)",
+          "Non-routine (Complex and difficult-to-define tasks)"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Term",
+          "Definition"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_38026475",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "Materials and methods",
+      "Results",
+      "Discussion",
+      "Exploring the diverse applications of ChatGPT in orthopedics: from diagnosis to treatment planning",
+      "Empowering patients with AI: assessing the role of ChatGPT in providing reliable health information",
+      "Challenging ChatGPT",
+      "ChatGPT in scientific literature: opportunities, challenges, and the imperative of ethical standards",
+      "Cautions and recommendations",
+      "Strengths and limitations",
+      "Conclusions"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Author",
+          "Year, month",
+          "Study design",
+          "Key findings"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_38466797",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_38712416",
+    "source_basis": "fulltext_pdf_text",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_38991098",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_39034416",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "Materials and methods",
+      "Study selection",
+      "Inclusion criteria",
+      "Exclusion criteria",
+      "Search",
+      "Data collection process",
+      "Data items",
+      "Risk of bias assessment",
+      "Results",
+      "Study selection",
+      "Study characteristics",
+      "AI and ML methods",
+      "Random forest",
+      "Gradient boosting machine",
+      "Artificial Neural Network (ANN) /Multilayer perceptron",
+      "Logistic regression",
+      "Support vector machine",
+      "Other AI models",
+      "Quality assessment by modified MINORS",
+      "Discussion",
+      "Limitations",
+      "Conclusion",
+      "Acknowledgements",
+      "Abbreviations",
+      "Authors’ contributions",
+      "Funding",
+      "Availability of data and materials",
+      "Declarations",
+      "Ethics approval and consent to participate",
+      "Consent for publication",
+      "Competing interests",
+      "Footnotes",
+      "References",
+      "Associated Data",
+      "Data Availability Statement"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Authors and year",
+          "Country",
+          "Study design",
+          "Level of evidence",
+          "Sample size",
+          "Average patient age",
+          "Percent female patients"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Authors and year",
+          "Data sources",
+          "AI/ML methods",
+          "AUC",
+          "Accuracy",
+          "Sensitivity",
+          "Specificity"
+        ]
+      },
+      {
+        "table": "Table 3",
+        "fields": [
+          "Authors and year",
+          "Input variables",
+          "Output variables (OV)"
+        ]
+      },
+      {
+        "table": "Table 4",
+        "fields": [
+          "Output",
+          "Authors and year",
+          "AI/ML",
+          "AUC"
+        ]
+      },
+      {
+        "table": "Table 5",
+        "fields": [
+          "Author, year",
+          "Disclosure",
+          "Study Aim",
+          "Input feature",
+          "Output feature",
+          "Validation method",
+          "Dataset distribution",
+          "Performance metric",
+          "AI model",
+          "Score"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_39199775",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "1. Introduction",
+      "2. The Lifecycle of Standard Orthopedic Treatments",
+      "3. Innovative Technologies Driving Personalization of Orthopedic Treatments",
+      "3.1. Artificial Intelligence (AI)",
+      "3.2. Innovative Biomaterials",
+      "3.3. Genomic and Proteomic Analysis Techniques",
+      "3.4. Lab-on-a-Chip",
+      "3.5. Medical Imaging Technologies",
+      "3.6. Image-Based Biomechanical Finite Element Modeling",
+      "3.7. Advances in Biomimicry",
+      "3.8. Three-Dimensional Printing and Bioprinting",
+      "3.9. Wearable and Implantable Sensors",
+      "4. Interdisciplinary Gaps and Bridging Strategies",
+      "4.1. Non-Invasive Quantitative Characterization of Bone Quality and Strength",
+      "4.2. Patient-Specific Biocompatibility",
+      "4.3. Personalized Design of Orthopedic Devices with Optimal Balance between Biological and Mechanical Requirements",
+      "4.4. Seamless Integration of Multidisciplinary Technologies and Full Automation of Personalized Orthopedic Treatment",
+      "5. Conclusions"
+    ],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_39204872",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "1. Introduction",
+      "2. FHIR",
+      "2.1. History",
+      "2.2. Adoption and Benefits",
+      "2.3. Resources",
+      "2.4. Other Standards and Approaches",
+      "3. Personalized MSD Health Data Collection and Management",
+      "3.1. Context and Novelty of the Approach",
+      "3.2. Data Collection",
+      "3.3. Citizen Hub",
+      "3.4. IoT Architecture",
+      "3.5. Continua Design Guidelines",
+      "4. MSD Health Data Resources",
+      "4.1. Heart Rate",
+      "4.2. Activity",
+      "4.3. Posture",
+      "4.4. Blood Pressure",
+      "4.5. Lumbar Extension Training",
+      "4.6. User Reports",
+      "4.7. Unique Device Identification",
+      "4.8. Validating Resources",
+      "5. Demonstration of Results in Real-World Settings",
+      "5.1. Health and Wellbeing Data Collection towards Back Pain Prevention and Rehabilitation",
+      "5.2. Data Collection for Personalized Healthcare for the Elderly",
+      "5.3. Wearable and Environmental Data Collection in ICU Settings",
+      "6. Discussion",
+      "Challenges and Future Developments",
+      "7. Conclusions",
+      "Author Contributions",
+      "Institutional Review Board Statement",
+      "Informed Consent Statement",
+      "Data Availability Statement",
+      "Conflicts of Interest",
+      "Funding Statement",
+      "Footnotes",
+      "References",
+      "Associated Data",
+      "Data Availability Statement"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Feature",
+          "HL7 v2",
+          "HL7 v3",
+          "HL7 CDA",
+          "FHIR"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Use Case",
+          "Description",
+          "Datasets 1"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_39502973",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction and background",
+      "Review",
+      "Conclusions"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Principle",
+          "Description",
+          "Applications in knee arthroscopy"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Approach",
+          "Description",
+          "Key benefits",
+          "Example technologies/techniques"
+        ]
+      },
+      {
+        "table": "Table 3",
+        "fields": [
+          "Technology",
+          "Description",
+          "Applications in knee arthroscopy",
+          "Key benefits"
+        ]
+      },
+      {
+        "table": "Table 4",
+        "fields": [
+          "Surgical technique",
+          "Description",
+          "Application in knee arthroscopy",
+          "Key benefits"
+        ]
+      },
+      {
+        "table": "Table 5",
+        "fields": [
+          "Challenge/limitation",
+          "Description",
+          "Impact on knee arthroscopy",
+          "Potential solutions"
+        ]
+      },
+      {
+        "table": "Table 6",
+        "fields": [
+          "Future direction/research area",
+          "Description",
+          "Potential impact on knee arthroscopy",
+          "Current challenges"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_39592855",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "RL – basic concepts",
+      "Delving deeper into RL concepts",
+      "Model-based RL",
+      "Model-free RL",
+      "Value-based RL",
+      "Policy-based RL",
+      "Hybrid RL",
+      "Applications of RL",
+      "Offline RL",
+      "Applications of RL in medicine",
+      "Challenges of RL in medicine",
+      "State space formulation challenges",
+      "Reward formulation challenges",
+      "Action formulation challenges",
+      "Evaluation and implementation challenges",
+      "Future directions",
+      "Conclusion",
+      "Supplementary information",
+      "Acknowledgements",
+      "Author contributions",
+      "Competing interests",
+      "Footnotes",
+      "Contributor Information",
+      "Supplementary information",
+      "References",
+      "Associated Data",
+      "Supplementary Materials"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Terms",
+          "Definitions",
+          "Examples in the context of “learning to ride a bike”"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Component name",
+          "Description"
+        ]
+      },
+      {
+        "table": "Table 3",
+        "fields": [
+          "Offline RL algorithm",
+          "Conceptual framework",
+          "Key limitations"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_40123682",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "INTRODUCTION",
+      "METHODS",
+      "Study selection",
+      "Eligibility criteria",
+      "Search",
+      "Data collection process",
+      "Data items",
+      "Data analysis",
+      "Risk of bias assessment",
+      "RESULTS",
+      "Search results",
+      "Study characteristics",
+      "OUTCOME VARIABLES",
+      "Risk of THA",
+      "Preoperative planning",
+      "Cost prediction",
+      "Length of stay (LOS)",
+      "Readmission",
+      "Revision",
+      "Other complications",
+      "Functional outcomes",
+      "Clinical outcome",
+      "MINORS RESULTS",
+      "DISCUSSION",
+      "Preoperative applications",
+      "Post‐operative applications",
+      "LIMITATIONS",
+      "CONCLUSIONS",
+      "AUTHOR CONTRIBUTIONS",
+      "CONFLICT OF INTEREST STATEMENT",
+      "ETHICS STATEMENT",
+      "DATA AVAILABILITY STATEMENT",
+      "REFERENCES",
+      "Associated Data",
+      "Data Availability Statement"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Authors and Year",
+          "Country",
+          "Study design",
+          "Level of evidence",
+          "Follow‐up",
+          "Sample size",
+          "Mean patient age",
+          "% Female patients"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Authors and Year",
+          "Input variables",
+          "OV",
+          "OV2",
+          "Authors and Year",
+          "Country",
+          "Study design",
+          "Level of evidence",
+          "Follow‐up",
+          "Sample size",
+          "Mean patient age",
+          "% Female patients"
+        ]
+      },
+      {
+        "table": "Table 3",
+        "fields": [
+          "Authors and Year",
+          "AI/ML methods",
+          "Data sources",
+          "AUC",
+          "Accuracy",
+          "Sensitivity",
+          "Specificity",
+          "Authors and Year",
+          "Input variables",
+          "Output variables (OV)",
+          "OV2",
+          "Authors and Year",
+          "Country",
+          "Study design",
+          "Level of evidence",
+          "Follow‐up",
+          "Sample size",
+          "Mean patient age",
+          "% Female patients"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_40405922",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_40838224",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "INTRODUCTION",
+      "METHODOLOGY AND SCOPE",
+      "SPINE ANATOMY AND BIOMECHANICS",
+      "PERSONALIZED SPINE CARE THROUGH MULTIMODAL DATA INTEGRATION",
+      "Clinical data integration",
+      "Imaging data integration",
+      "Integrating genetic data with predictive analytics",
+      "The future of multimodal AI systems in spine care",
+      "SPINE DISORDERS",
+      "THE ROLE OF AI AND ML IN SPINE CARE",
+      "Diagnosis",
+      "SURGICAL PLANNING AND NAVIGATION",
+      "ML-based preoperative planning",
+      "AI-enhanced intraoperative guidance",
+      "Broader implications for spine surgery",
+      "REHABILITATION AND POST-TREATMENT MONITORING",
+      "AI-driven rehabilitation programs",
+      "Remote monitoring and virtual rehabilitation",
+      "Predictive analytics for long-term monitoring",
+      "Enhancing patient engagement and outcomes",
+      "AI-powered wearable devices for real-time posture correction and rehabilitation monitoring",
+      "Remote patient monitoring systems using ml for post-surgical recovery and adherence tracking",
+      "Advanced imaging techniques and AI algorithms",
+      "Predictive and preventive spine care",
+      "PREVENTIVE AI AND WEARABLE DEVICES IN SPINE CARE",
+      "Real-time monitoring and early detection",
+      "Personalized preventive interventions",
+      "The role of predictive analytics in preventive spine care",
+      "Impact on healthcare efficiency and accessibility",
+      "Proactive uses of AI technology in spine care",
+      "BENEFITS AND IMPACT ON CLINICAL OUTCOMES",
+      "AI-based virtual physiotherapy",
+      "Enhanced diagnostic precision and reduced human error",
+      "Enhanced patient-specific treatment planning",
+      "AI in telemedicine and remote health care solutions for spine care",
+      "Challenges and limitations",
+      "Regulatory hurdles and ethical concerns",
+      "Integration challenges with existing healthcare infrastructure",
+      "CONCLUSION",
+      "Footnotes",
+      "Contributor Information",
+      "References"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Aspect",
+          "Conventional approach",
+          "AI/ML-enhanced approach",
+          "Advantages of AI/ML",
+          "Ref."
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Application area",
+          "AI/ML technique used",
+          "Example use case",
+          "Clinical benefits",
+          "Challenges",
+          "Ref."
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_40909853",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "INTRODUCTION",
+      "METHODS",
+      "Protocol and Registration",
+      "Data Sources and Searches",
+      "Study Selection",
+      "Data Extraction and Quality Assessment",
+      "Risk of Bias Assessment",
+      "Data Synthesis and Analysis",
+      "Results",
+      "Study Selection",
+      "Overview of the included studies",
+      "Risk of Bias",
+      "Performance Synthesis",
+      "Overall Performance Improvements",
+      "Single AI Agent Tool-Calling Performance",
+      "Multi Agents performance",
+      "Agent Number and Tool Scaling Effects",
+      "Multi agent Consensus Method",
+      "Base-LLM vs AI agent deployment and backbone suitability",
+      "Preprint AI agents’ frameworks",
+      "Discussion",
+      "Defining AI agents in Healthcare",
+      "Practical Considerations for Implementation",
+      "Choosing the Right Model Architecture",
+      "Optimal Team Size for Multi-Agent Systems",
+      "Tool Calling and Integration",
+      "Consensus Mechanisms: Matching Method to Task",
+      "Implementation Recommendations",
+      "Architecture-Task Alignment",
+      "Tier 1 - Ready for Clinical Pilot Programs:",
+      "Tier 2 - Supervised Clinical Research:",
+      "Tier 3 - Research Only:",
+      "Limitations",
+      "Future Directions-Emerging Evidence from non-peer review Literature",
+      "Conclusions",
+      "Supplementary Material",
+      "Funding.",
+      "Funding Statement",
+      "Footnotes",
+      "Reference",
+      "Associated Data",
+      "Supplementary Materials"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 2.",
+        "fields": [
+          "Study",
+          "AI Agent Base-LLM Model(s)*",
+          "Primary Outcome",
+          "Agent vs Baseline*",
+          "Baseline comparison",
+          "External validation",
+          "Synthetic Data"
+        ]
+      },
+      {
+        "table": "Table 3.",
+        "fields": [
+          "Architecture Type",
+          "When to Use (Decision Criteria)",
+          "Clinical Applications",
+          "Implementation Requirements",
+          "Key Considerations & Limitations"
+        ]
+      },
+      {
+        "table": "Table 1.",
+        "fields": [
+          "Study",
+          "Study design",
+          "Clinical Domain",
+          "Sample Size",
+          "Agent Architecture",
+          "Framework",
+          "Tools Integration",
+          "Multi agent Consensus Method"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41088452",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Background",
+      "Methods",
+      "Literature search strategy",
+      "Inclusion and exclusion criteria",
+      "Data extraction and synthesis",
+      "Artificial intelligence for patient selection and surgical indication decision",
+      "Artificial intelligence-assisted preoperative planning and simulation",
+      "Artificial intelligence for intraoperative decision support and sensing",
+      "Postoperative assessment and monitoring",
+      "Current limitations and future directions",
+      "Data quality and algorithmic bias",
+      "The “black box” problem and clinical trust",
+      "Ethical, regulatory, and governance challenges",
+      "Barriers to clinical implementation and equity",
+      "Future directions and limitations of this review",
+      "Conclusions",
+      "Acknowledgements",
+      "Abbreviations",
+      "Author contributions",
+      "Funding",
+      "Data availability",
+      "Declarations",
+      "Ethics approval and consent to participate",
+      "Consent for publication",
+      "Competing interests",
+      "Footnotes",
+      "References",
+      "Associated Data",
+      "Data Availability Statement"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "TKA phase",
+          "AI application",
+          "Key studies",
+          "Key findings/reported outcomes",
+          "Level of evidence/limitations"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41103258",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "INTRODUCTION",
+      "FUNDAMENTALS OF AGENTIC AI",
+      "CORE COMPONENTS OF AN AI AGENT",
+      "CLINICAL APPLICATIONS AND FUTURE DIRECTIONS OF AGENTIC AI IN ORTHOPAEDICS",
+      "Perioperative workflow optimisation",
+      "RESEARCH ACCELERATION",
+      "INTELLIGENT CLINICAL AND SURGICAL SUPPORT",
+      "THE CONTINUUM OF SOFTWARE AND ROBOTIC AGENTS",
+      "IMPLEMENTATION CONSIDERATIONS",
+      "ETHICAL AND LEGAL FRAMEWORK",
+      "CONCLUSION",
+      "AUTHOR CONTRIBUTIONS",
+      "CONFLICTS OF INTEREST STATEMENT",
+      "ETHICS STATEMENT"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Type of agent",
+          "Description",
+          "Examples"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41127763",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction and background",
+      "Review",
+      "Conclusions"
+    ],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41144723",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "INTRODUCTION",
+      "The new wave of AI in healthcare",
+      "Unique opportunities in orthopaedics",
+      "Scope and objectives of the review",
+      "BACKGROUND AND CONTEXT",
+      "The trajectory of AI in orthopaedics",
+      "The foundational distinction: Discriminative versus generative AI",
+      "UPCOMING APPLICATIONS OF GENERATIVE AI IN ORTHOPAEDICS",
+      "Surgical planning and simulation",
+      "Custom implant and prosthetic design",
+      "Clinical decision support systems",
+      "Patient communication and informed consent",
+      "TECHNICAL CONSIDERATIONS AND IMPLEMENTATION",
+      "CHALLENGES AND LIMITATIONS",
+      "FUTURE DIRECTIONS AND RESEARCH OPPORTUNITIES",
+      "CONCLUSION",
+      "AUTHOR CONTRIBUTIONS",
+      "CONFLICTS OF INTEREST STATEMENT",
+      "ETHICS STATEMENT",
+      "DATA AVAILABILITY STATEMENT",
+      "REFERENCES",
+      "Associated Data",
+      "Data Availability Statement"
+    ],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41174934",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "INTRODUCTION",
+      "Preoperative planning and diagnostics",
+      "Imaging, AI and diagnostic precision",
+      "Patient‐specific surgical planning",
+      "Intraoperative execution: Translating plans into precision",
+      "Robotic‐assisted surgery and navigation",
+      "PSI and custom implants",
+      "Augmented reality (AR) in orthopaedic surgery",
+      "Postoperative management and broader applications",
+      "Molecular diagnostics and biomarkers",
+      "Functional assessment and personalised rehabilitation",
+      "Adoption, barriers and future directions",
+      "CONCLUSION",
+      "AUTHOR CONTRIBUTIONS",
+      "CONFLICT OF INTEREST STATEMENT",
+      "ETHICS STATEMENT",
+      "ACKNOWLEDGEMENTS",
+      "DATA AVAILABILITY STATEMENT",
+      "REFERENCES",
+      "Associated Data",
+      "Data Availability Statement"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Technology",
+          "Principle",
+          "Key benefits",
+          "Key limitations",
+          "Primary clinical applications"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Category",
+          "Example Biomarkers",
+          "Clinical Application"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41180563",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "INTRODUCTION",
+      "CURRENT STATE OF AI IN ORTHOPAEDIC RESEARCH",
+      "Injury and outcome prediction",
+      "Imaging interpretation",
+      "Surgical planning",
+      "Administrative tasks",
+      "THE BENEFITS OF AI IN ORTHOPAEDIC RESEARCH",
+      "CHALLENGES AND REQUIREMENTS FOR HIGH QUALITY AI RESEARCH",
+      "PRACTICAL CONSIDERATIONS FOR AI‐DRIVEN RESEARCH",
+      "FUTURE DIRECTIONS",
+      "CONCLUSION",
+      "AUTHOR CONTRIBUTIONS",
+      "CONFLICT OF INTEREST STATEMENT",
+      "ETHICS STATEMENT",
+      "DATA AVAILABILITY STATEMENT",
+      "REFERENCES",
+      "Associated Data",
+      "Data Availability Statement"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Author",
+          "Topic/aim",
+          "Conclusion/findings"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Author",
+          "Topic/aim",
+          "Conclusion/findings"
+        ]
+      },
+      {
+        "table": "Table 3",
+        "fields": [
+          "Author",
+          "Topic/aim",
+          "Conclusion/findings"
+        ]
+      },
+      {
+        "table": "Table 4",
+        "fields": [
+          "Author",
+          "Topic/aim",
+          "Conclusion/findings"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41245704",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "INTRODUCTION",
+      "METHODS",
+      "Search strategy and study selection",
+      "Screening and data extraction",
+      "RESULTS",
+      "Decision making",
+      "Patient identification",
+      "Surgical approach",
+      "Radiograph reading",
+      "Management plans",
+      "Clinical knowledge",
+      "Quality control",
+      "Answering patient FAQs",
+      "DISCUSSION",
+      "LIMITATIONS",
+      "CONCLUSION",
+      "AUTHOR CONTRIBUTIONS",
+      "CONFLICT OF INTEREST STATEMENT",
+      "ETHICS STATEMENT",
+      "Supporting information",
+      "DATA AVAILABILITY STATEMENT",
+      "REFERENCES",
+      "Associated Data",
+      "Supplementary Materials",
+      "Data Availability Statement"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Category",
+          "Study",
+          "Continent",
+          "Evidence level",
+          "Clinical focus"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41245724",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "INTRODUCTION",
+      "METHODS",
+      "Research methodology",
+      "RESULTS",
+      "Key areas of AI",
+      "Machine learning (ML)",
+      "Deep learning (DL)",
+      "Neural networks (NN)",
+      "Natural language processing (NLP) and large language models (LLM)",
+      "Computer vision (CV) and image processing (IP)",
+      "Federated learning (FL)",
+      "Generative artificial intelligence (GAI)",
+      "Key AI approaches",
+      "Machine learning",
+      "Neural networks",
+      "Benefits of AI in orthopaedics",
+      "Improved diagnostic accuracy",
+      "Alleviates strain on clinicians and optimises resource use",
+      "Predictive analytics and early intervention",
+      "Risks of AI in orthopaedics",
+      "Bias",
+      "Transparency (black box phenomenon)",
+      "Privacy and autonomy",
+      "DISCUSSION",
+      "Limitations",
+      "Future research directions",
+      "CONCLUSION",
+      "AUTHOR CONTRIBUTIONS",
+      "CONFLICT OF INTEREST STATEMENT",
+      "ETHICS STATEMENT",
+      "Supporting information"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Algorithm",
+          "Type",
+          "Mechanism"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Algorithm",
+          "Type",
+          "Benefits",
+          "Risks"
+        ]
+      },
+      {
+        "table": "Table 3",
+        "fields": [
+          "Type of NN",
+          "Application in orthopaedics",
+          "Benefits",
+          "Risks"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41346991",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "Methods",
+      "Literature search strategy",
+      "Inclusion and exclusion criteria",
+      "Study selection",
+      "Quality and performance assessment",
+      "Data extraction and synthesis",
+      "Results",
+      "Characteristics of included studies",
+      "Methodological quality assessment",
+      "Performance analysis of LLMs",
+      "Discussion",
+      "Application tasks and model adaptability",
+      "Study quality and evaluation frameworks",
+      "Methodological quality assessment and risk of bias",
+      "LLM specific appraisal with the CLEAR-LLM framework",
+      "Performance evaluation",
+      "Limitations",
+      "Future research directions",
+      "Dialogue-based clinical management centered on KOA",
+      "Multi-task prompt template library for KOA applications",
+      "Personalized management of KOA in real-world settings",
+      "Trustworthy lLM-based clinical decision-making in KOA",
+      "Conclusion and future perspectives"
+    ],
+    "table_fields": [
+      {
+        "table": "TABLE 1",
+        "fields": [
+          "Application scenario",
+          "Specific task",
+          "Model",
+          "Evaluation metrics",
+          "Type",
+          "Sample",
+          "References"
+        ]
+      },
+      {
+        "table": "TABLE 2",
+        "fields": [
+          "References",
+          "Study type",
+          "Primary evaluation tool",
+          "Quality rating",
+          "CLEAR-LLM assessment",
+          "Limitations"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41407055",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41490410",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41536317",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Background",
+      "Methods",
+      "Search Strategy",
+      "Source Evidence Selection",
+      "Inclusion/Exclusion",
+      "Data Extraction",
+      "Data Analysis",
+      "Quality Assessment",
+      "Results",
+      "Quality Assessment Ratings",
+      "Discussion",
+      "Limitations",
+      "Conclusions",
+      "Funding",
+      "Disclaimer",
+      "Declaration of competing interest",
+      "Footnotes",
+      "Supplementary materials",
+      "References",
+      "Associated Data",
+      "Supplementary Materials"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Eligibility criteria and variable",
+          "Rationale",
+          "Exclusion criteria",
+          ""
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Domain",
+          "Criterion",
+          "Definition"
+        ]
+      },
+      {
+        "table": "Table 3",
+        "fields": [
+          "Author",
+          "Country",
+          "Study design",
+          "Population studied",
+          "Type of AI used",
+          "Category of AI",
+          "Operative or nonoperative",
+          "Patient treatment",
+          "Duration/ frequency"
+        ]
+      },
+      {
+        "table": "Table 4",
+        "fields": [
+          "Author",
+          "Patient reported outcomes",
+          "Treatment results",
+          "AI Accuracy/ Validation results",
+          "Clinician satisfaction/usability",
+          "Methodological rating (x/ 19)"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41568289",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Background",
+      "Methods",
+      "Eligibility criteria",
+      "Information sources and search strategy",
+      "Selection of sources of evidence",
+      "Data extraction and data items",
+      "Synthesis of results",
+      "Results",
+      "Selection of included studies",
+      "Characteristics of included studies",
+      "Study design and location",
+      "Decision aid features",
+      "Treatment options",
+      "Outcome measures",
+      "Predictive modelling",
+      "Discussion",
+      "Clinical utility of decision aids",
+      "Treatment options",
+      "Measures of intervention success",
+      "Transparency of reporting",
+      "Prediction methods",
+      "Limitations",
+      "Conclusion",
+      "Supplemental Material",
+      "Acknowledgments",
+      "Footnotes",
+      "Contributor Information",
+      "Declarations",
+      "References",
+      "Associated Data",
+      "Supplementary Materials"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1.",
+        "fields": [
+          "Study reference",
+          "Study type",
+          "Patient group",
+          "Setting/population",
+          "Mode of delivery",
+          "End user",
+          "Name of CDS tool"
+        ]
+      },
+      {
+        "table": "Table 2.",
+        "fields": [
+          "Related studies",
+          "Patient numbers",
+          "Treatment options presented",
+          "Information presented",
+          "Time points",
+          "Measured outcomes",
+          "Success of CDS implementation"
+        ]
+      },
+      {
+        "table": "Table 3.",
+        "fields": [
+          "Study reference(s)",
+          "Prediction model/method",
+          "Predicted patient outcome(s)",
+          "Patient input information",
+          "Dataset/registry used",
+          "Patient numbers",
+          "Time points",
+          "Model performance"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41607969",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction and background",
+      "Review",
+      "Conclusions"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Outcome",
+          "Traditional Models (e.g., Logistic/Cox Regression)",
+          "Typical AUC Range",
+          "AI/ML Models (e.g., RF, XGBoost, ANN)",
+          "Typical AUC Range",
+          "Key Limitations"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Reference",
+          "Study (Author, Year)",
+          "Outcome",
+          "Data source",
+          "Validation",
+          "Missing data handling",
+          "Class imbalance",
+          "Calibration/Utility",
+          "PROBAST domains flagged",
+          "Notes"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41614143",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "Methods",
+      "Design and research question",
+      "Eligibility criteria",
+      "Information sources and search strategy",
+      "Study selection",
+      "Date extraction",
+      "Results",
+      "Characteristics of the included studies",
+      "Types of AI technologies employed",
+      "Types of surgery in AI applications",
+      "Functions and effects of AI applications",
+      "Prediction of risks and complications",
+      "Rehabilitation training and movement recognition",
+      "Assessment of rehabilitation progress and dynamic monitoring",
+      "Recommendation of individualized rehabilitation regimens",
+      "Discussion",
+      "Emphasize the external validation and clinical calibration of models",
+      "Advance from predictive analysis to preventive intervention",
+      "Limited clinical translation and the need for higher-level evidence",
+      "Strengthen privacy security and protect patient rights",
+      "Transformation and collaboration of roles between healthcare professionals and patients",
+      "Conclusion",
+      "Funding Statement",
+      "Footnotes",
+      "Author contributions",
+      "Conflict of interest",
+      "Generative AI statement",
+      "Publisher's note",
+      "Supplementary material",
+      "References",
+      "Associated Data",
+      "Supplementary Materials"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Author year country",
+          "Study design",
+          "Types of surgery",
+          "Sample",
+          "AI technology",
+          "Application scenarios and functions",
+          "Key findings/results"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41657679",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Key findings",
+      "What is known and what is new?",
+      "What is the implication and what should change now?",
+      "Introduction",
+      "Methods",
+      "Search criteria",
+      "Screening",
+      "Assessment of agreement",
+      "Quality assessment",
+      "Data extraction",
+      "Outcome reporting and statistical analysis",
+      "Results",
+      "Literature search",
+      "Study quality",
+      "Study characteristics",
+      "Characteristics of topics and questions asked",
+      "Performance",
+      "Discussion",
+      "Conclusions",
+      "Supplementary",
+      "Acknowledgments",
+      "Footnotes",
+      "References"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Lead author (year of publication)",
+          "Level of evidence",
+          "Algorithm used",
+          "Number of patients",
+          "Females (%)",
+          "Mean age, years (SD)"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Lead author (year of publication)",
+          "Type of upper extremity procedure/pathology",
+          "Type of question",
+          "AI accuracy (%)",
+          "Expert accuracy (%)",
+          "AUC",
+          "Quality and validity of responses",
+          "Readability of responses"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41705361",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "INTRODUCTION",
+      "AI‐supported vision systems",
+      "Smart examination rooms and AI‐facilitated clinical encounters",
+      "Ambient intelligence and multimodal electronic health records",
+      "AI‐generated patient summaries and visual aids",
+      "Generative medical event models",
+      "Challenges and limitations",
+      "CONCLUSIONS",
+      "AUTHOR CONTRIBUTIONS",
+      "ETHICS STATEMENT",
+      "CONFLICT OF INTEREST STATEMENT",
+      "DATA AVAILABILITY STATEMENT",
+      "REFERENCES",
+      "Associated Data",
+      "Data Availability Statement"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Integration of artificial intelligence (A)I‐augmented vision systems may increase the breadth of information readily available to clinicians, allowing for objective assessments of gait patterns, deviations in limb alignment, and limitations to range of motion."
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41720113",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41738015",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "Method",
+      "Literature search strategy",
+      "Search queries",
+      "Study selection process",
+      "Inclusion and exclusion criteria",
+      "Data extraction and synthesis",
+      "Core technology analysis: From general models to domain-specific intelligence",
+      "Direct application of general-purpose LLMs: The “Out-of-the-box” model",
+      "Retrieval-Augmented Generation (RAG): Bridging the knowledge gap, ensuring factual accuracy",
+      "Fine-tuning: Model specialization and deep customization",
+      "Multimodal fusion: Comprehensive diagnostic and therapeutic capabilities beyond text",
+      "Clinical application scenarios and medical value analysis",
+      "Clinical decision support and diagnostic assistance",
+      "Case study 1: Extracting structured data from clinical narrative text",
+      "Case study 2: Automated standardized clinical scoring",
+      "Case study 3: Enhancing adherence to clinical guidelines",
+      "Surgical planning, risk stratification, and prognosis prediction",
+      "Clinical workflow optimization and automation",
+      "Patient communication and health education",
+      "Successful application: Simplifying professional medical terminology",
+      "The risk: Unreliability of direct Q&A",
+      "An Unexpected finding: The “empathy” of AI",
+      "Key challenges and ethical considerations",
+      "Information reliability: “Hallucination” and outdated knowledge",
+      "Data privacy and security",
+      "Algorithmic bias and fairness",
+      "The “Black Box Problem” and clinical trust",
+      "Conclusion",
+      "Authors contribution",
+      "Declaration of generative AI in scientific writing",
+      "Funding",
+      "Declaration of competing interest",
+      "Footnotes",
+      "Full Electronic Search Strategies",
+      "PubMed Search Strategy:",
+      "Embase Search Strategy:",
+      "Detailed Study Selection Protocol",
+      "References"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Technical Pathway",
+          "Core Mechanism"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Model Name",
+          "Developer",
+          "Type",
+          "Key Application/Finding in Spine-Related Research"
+        ]
+      },
+      {
+        "table": "Table 3",
+        "fields": [
+          "Application Scenario",
+          "Specific Task",
+          "Evaluated Model",
+          "Key Performance Metric",
+          "Result",
+          "Stage of Clinical Adoption"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41749766",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "1. Introduction",
+      "Aim and Methods",
+      "2. Medico-Legal Considerations Regarding AI’s Application in Orthopedic Surgery",
+      "2.1. Diagnostic Phase",
+      "2.2. Preoperative Risk Stratification and Prediction",
+      "2.3. Surgical Indication",
+      "2.4. Intraoperative Phase Decision-Making",
+      "3. Comprehensive Medico-Legal Discussion",
+      "3.1. Errors and Medico-Legal Perspectives",
+      "3.2. Legal References and Comparisons in Europe",
+      "3.3. Professionals’ Autonomy",
+      "4. Future Challenges",
+      "5. Conclusions"
+    ],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41827166",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "1. Introduction",
+      "Technical Foundations of AI in Orthopaedics",
+      "2. Materials and Methods",
+      "2.1. Study Design",
+      "2.2. Search Strategy",
+      "2.3. Eligibility Criteria and Study Selection",
+      "2.4. Data Extraction and Synthesis",
+      "2.5. Organization and Evaluation of Evidence",
+      "3. Results",
+      "3.1. Evidence-Based Review",
+      "3.2. Diagnostic Imaging Using AI",
+      "3.3. Surgical Planning and Intraoperative Augmentation",
+      "3.4. Predictive Analysis and Precise Stratification",
+      "3.5. Rehabilitation Intelligence and Teleorthopaedics",
+      "3.6. System-Level Governance, Ethics, and Future Trajectories",
+      "4. Discussion",
+      "4.1. Key Findings and Maturity of Evidence",
+      "4.2. Comparison with Previous Works",
+      "4.3. Technical Challenges in AI Implementation",
+      "4.4. Clinical and Healthcare System Implications",
+      "4.5. Economic and Implementation Considerations",
+      "4.6. Strengths and Limitations of This Review",
+      "4.7. Generative AI",
+      "4.8. Directions for the Future",
+      "5. Conclusions"
+    ],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41933417",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Background",
+      "Data ecosystems and methods in orthopedic AI",
+      "Clinical and imaging data sources for orthopedic AI",
+      "Choosing the right modeling paradigm: ML, DL, and LLMs",
+      "Study design and validation principles in orthopedic AI",
+      "Recent research advances in orthopedic AI",
+      "Patient outcome prediction",
+      "Medical image analysis",
+      "Large language models (LLMs)",
+      "Translational maturity across orthopedic AI domains: where is it happening first?",
+      "Cross-cutting challenges on the path to clinical translation",
+      "Data heterogeneity and generalizability",
+      "Algorithmic opacity and explainability",
+      "Legal, regulatory, and ethical governance",
+      "Workflow integration and implementation science",
+      "Practical considerations and future directions for orthopedic surgeons",
+      "Conclusion: from experimental benchmarks to clinical accountability"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Dimension",
+          "Machine learning (ML)",
+          "Deep learning (DL)"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41973309",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_41973342",
+    "source_basis": "fulltext_pdf_text",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42101555",
+    "source_basis": "fulltext_pdf_text",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42122313",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "1. Introduction",
+      "2. Methods",
+      "2.1. Search Query Design",
+      "2.2. Retrieval Scope and Parameters",
+      "2.3. Literature Screening Procedure",
+      "3. Key Models",
+      "3.1. Convolutional Neural Networks for Visual Representation Learning",
+      "3.2. RNNs and LSTMs for Temporal Sequence Modeling",
+      "3.3. Transformer for Global Context Modeling",
+      "3.4. Siamese Networks for Similarity Learning",
+      "3.5. U-Net and Variants for Semantic Segmentation",
+      "3.6. YOLO Family for Object Detection",
+      "3.7. Reinforcement Learning for Decision-Making",
+      "4. Perception Systems in AI-Assisted Orthopedic Surgery",
+      "4.1. Medical Image Segmentation",
+      "4.1.1. Bone Structure Segmentation",
+      "4.1.2. Soft Tissue Segmentation",
+      "4.2. Image Registration",
+      "4.3. Anatomical Landmark Detection and Localization",
+      "4.4. Surgical Instrument Recognition and Tracking",
+      "4.5. 3D Reconstruction and Visualization",
+      "4.6. Anomaly Detection and Disease Diagnosis",
+      "4.7. Image Quality Assessment",
+      "4.8. Tissue Identification and Classification",
+      "4.9. Surgical Phase Recognition",
+      "4.10. Summary: The Evolving Landscape of Surgical Perception",
+      "5. Decision Systems in AI-Assisted Orthopedic Surgery",
+      "5.1. Surgical Planning and Optimization",
+      "5.1.1. Path Planning",
+      "5.1.2. Implant Selection and Placement",
+      "5.2. Surgical Risk Prediction and Assessment",
+      "5.3. Prognostic Outcome Prediction",
+      "5.4. Surgical Decision Support",
+      "5.5. Clinical Risk Stratification",
+      "5.6. Patient Education and Communication",
+      "5.7. Telehealth and Remote Monitoring",
+      "5.8. Summary: From Data to Actionable Intelligence",
+      "6. Execution Systems in AI-Assisted Orthopedic Surgery",
+      "6.1. Surgical Robot Control",
+      "6.2. Augmented Reality Navigation and Guidance",
+      "6.3. Human–Robot Collaborative Control",
+      "6.4. Intraoperative Monitoring and Feedback",
+      "6.5. Surgical Phase Recognition for Context-Aware Assistance",
+      "6.6. Summary: Closing the Loop from Planning to Action",
+      "7. Persistent Challenges and Fundamental Limitations",
+      "7.1. Data Dilemmas",
+      "7.2. Generalization Gaps",
+      "7.3. Human Factors",
+      "7.4. Integration Challenges",
+      "7.5. Regulatory and Ethical Challenges",
+      "8. Future Directions: Toward Integrated, Adaptive, and Trustworthy Surgical AI",
+      "8.1. Foundational Advances: Next-Generation Algorithms and Frameworks",
+      "8.1.1. Foundation Models for Orthopedics",
+      "8.1.2. Causal Learning and Digital Twins",
+      "8.1.3. Uncertainty-Aware and Adaptive AI",
+      "8.2. Toward Seamless Integration: Closing the Perception–Decision–Action Loop",
+      "8.2.1. Collaborative Systems",
+      "8.2.2. Cognitive Robots",
+      "8.2.3. Unified Learning Frameworks",
+      "8.3. Human–AI Collaboration: Evolving Partnership Paradigms",
+      "8.3.1. Context-Aware Interfaces",
+      "8.3.2. Shared Autonomy",
+      "8.3.3. Continuous Learning and Personalization",
+      "9. Conclusions",
+      "Acknowledgments",
+      "Author Contributions",
+      "Institutional Review Board Statement",
+      "Informed Consent Statement",
+      "Data Availability Statement",
+      "Conflicts of Interest",
+      "Funding Statement",
+      "Footnotes",
+      "References",
+      "Associated Data",
+      "Data Availability Statement"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Authors",
+          "Tasks",
+          "Anatomy",
+          "Modality",
+          "Dataset Size",
+          "Validation Type",
+          "Evaluation Metrics",
+          "Clinical Readiness"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42245303",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "Methods",
+      "Search strategy and selection criteria",
+      "Study selection process",
+      "Quality assessment and data extraction",
+      "Results",
+      "Literature search and study characteristics",
+      "Prediction model performance by outcome category",
+      "Periprosthetic joint infection",
+      "Venous thromboembolism",
+      "Transfusion requirements",
+      "The paradox of model complexity",
+      "Robotic-Assisted TKA: technical outcomes and cost considerations",
+      "Sensor integration and intraoperative data",
+      "Algorithm interpretability and clinical implementation",
+      "Discussion",
+      "Clinical implications and the complexity-utility trade-off",
+      "Overcoming barriers to patient-reported outcome collection",
+      "Economic considerations: Can ML offset robotic costs?",
+      "Algorithmic bias and health equity",
+      "Limitations",
+      "Conclusion",
+      "Funding Statement",
+      "Footnotes",
+      "Author contributions",
+      "Conflict of interest",
+      "Generative AI statement",
+      "Publisher's note",
+      "Supplementary material",
+      "References",
+      "Associated Data",
+      "Supplementary Materials"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Outcome",
+          "Best Model",
+          "AUC",
+          "Key Predictors",
+          "Validation",
+          "Sample Size (n)"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42278988",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "1. Introduction",
+      "1.1. What Is (And Is Not) a Digital Twin in Orthopedics",
+      "1.2. Core Definition",
+      "1.3. Distinguishing Digital Twins from Patient-Specific Models",
+      "1.4. Functional Taxonomy of Digital Twins in Orthopedics",
+      "1.4.1. Simulation Twins",
+      "1.4.2. Monitoring Twins",
+      "1.4.3. Decision Twins",
+      "1.4.4. Hybrid or Closed-Loop Twins",
+      "1.5. Implications for Clinical Translation",
+      "2. Materials and Methods",
+      "2.1. Literature Identification and Search Strategy",
+      "2.2. Eligibility and Selection Approach",
+      "2.3. Analytical Framework",
+      "2.4. Assessment of Clinical Maturity",
+      "2.5. Scope and Limitations",
+      "3. Results",
+      "3.1. Current Landscape of Digital Twin Applications in Orthopedics",
+      "3.2. Arthroplasty and Joint Preservation",
+      "3.3. Spine",
+      "3.4. Orthopedic Trauma",
+      "3.5. Sports Medicine and Rehabilitation",
+      "3.6. Distribution of Evidence and Maturity Levels",
+      "4. Discussion",
+      "4.1. Conceptual Inflation and Definitional Drift",
+      "4.2. The Paradox of Sophistication Versus Clinical Value",
+      "4.3. Orthopedics Is a Uniquely Challenging Field",
+      "4.4. Barriers to Clinical Translation",
+      "4.5. Pathways Toward Meaningful Progress",
+      "4.6. Limitations",
+      "5. Conclusions"
+    ],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42287372",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "From orthopaedic clinical questions to target trials",
+      "Defining the clinical question before analysing observational data",
+      "Defining the causal estimand",
+      "Specifying the target trial protocol",
+      "What the framework can and cannot address",
+      "Core identifying assumptions",
+      "Design pitfalls in orthopaedic observational research",
+      "Ill-defined eligibility criteria, estimands, and lack of positivity",
+      "Imprecisely defined treatment strategies",
+      "Misalignment of eligibility assessment, treatment assignment, and the commencement of outcome follow-up (at time zero)",
+      "Post-baseline exclusions, incomplete follow-up, and competing events",
+      "How to specify and emulate a target trial in orthopaedic research",
+      "Eligibility criteria",
+      "Treatment strategies",
+      "Treatment assignment procedures",
+      "Follow-up commencement and cessation",
+      "Causal contrast of interest",
+      "Conclusion"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Protocol component",
+          "Target pragmatic trial specification",
+          "Target trial emulation"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Domain",
+          "General self-check question",
+          "Applied example: THA versus BHA after hip fracture"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42322047",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42343897",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "AI in regenerative design and fabrication",
+      "Predictive biomaterial design",
+      "Construct engineering for complex repair",
+      "AI-assisted biofabrication",
+      "AI in procedural guidance and repair evaluation",
+      "Intraoperative guidance and decision support",
+      "Postoperative monitoring and recovery evaluation",
+      "AI in clinical translation and implementation",
+      "Data heterogeneity and external validation",
+      "Model interpretability and clinical actionability",
+      "Data governance and implementation constraints",
+      "Conclusion",
+      "Acknowledgements",
+      "Funding Statement",
+      "Footnotes",
+      "Author contributions",
+      "Conflict of interest",
+      "Generative AI statement",
+      "Publisher’s note",
+      "References"
+    ],
+    "table_fields": [
+      {
+        "table": "TABLE 1",
+        "fields": [
+          "Clinical phase",
+          "Ref",
+          "Regenerative context",
+          "Clinical modality or tool",
+          "AI method and regenerative relevance"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42383711",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "Methods",
+      "Stage 1: identifying the research question",
+      "Stage 2: identifying relevant studies",
+      "Stage 3: study selection",
+      "Stage 4: charting the data",
+      "Stage 5: collating, summarizing, and reporting the results",
+      "Results",
+      "Study characteristics",
+      "Causal inference methods",
+      "Assessment of risk of bias",
+      "Discussion",
+      "Limitations",
+      "Conclusion",
+      "Supplementary materials",
+      "ICMJE Statement of Interest",
+      "Funding Statement",
+      "Author contribution statement"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Characteristics",
+          "Values"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "",
+          "n",
+          "Patient risk factors",
+          "Disease/injury factors",
+          "Treatment/procedure factors",
+          "Surgeon factors",
+          "Hospital/centre factors",
+          "Timing factors"
+        ]
+      },
+      {
+        "table": "Table 3",
+        "fields": [
+          "",
+          "Total",
+          "PSM",
+          "IPTW",
+          "PS strat",
+          "PS adj",
+          "IV",
+          "Others"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42506117",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "1. Introduction",
+      "2. Evidence Identification and Scope",
+      "3. Characteristics of the Included Literature",
+      "4. Commercial Wearable Technologies in Arthroplasty Rehabilitation",
+      "4.1. Consumer-Grade and Clinical-Grade Devices",
+      "4.2. Sensor Placement and Measurement Consequences",
+      "5. Digital Phenotyping and Recovery Trajectories",
+      "5.1. From Step Counts to Multidimensional Gait Biomarkers",
+      "5.2. Advanced Gait Signal Processing",
+      "5.3. Population-Level Recovery Curves and Predictive Models",
+      "6. From Monitoring to Personalization",
+      "6.1. Individual Baselines and Relative Recovery",
+      "6.2. Feedback, Behavior Change, and Remote Monitoring",
+      "6.3. Structured Digital Rehabilitation Platforms",
+      "7. Comparative Effectiveness and Clinical Integration",
+      "7.1. What Wearable-Supported Rehabilitation Improves",
+      "7.2. Accuracy, Adherence, and Workflow Barriers",
+      "8. Discussion",
+      "8.1. Why Step Counts and PROMs Diverge",
+      "8.2. Why THA and TKA Should Not Be Monitored Identically",
+      "8.3. Matching the Device to the Clinical Purpose",
+      "8.4. Evidence Quality and the Direction of the Field",
+      "8.5. Limitations of This Review",
+      "9. Conclusions",
+      "Author Contributions",
+      "Institutional Review Board Statement",
+      "Informed Consent Statement",
+      "Data Availability Statement",
+      "Conflicts of Interest",
+      "Funding Statement",
+      "Footnotes",
+      "References",
+      "Associated Data",
+      "Data Availability Statement"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Evidence Domain",
+          "Representative Citations",
+          "Main Contribution",
+          "Implication for Personalized Recovery"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42529139",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "Response heterogeneity in KOA regenerative medicine",
+      "Multimodal patient and product characterization",
+      "AI-enabled endotyping and responder prediction",
+      "Endotyping: from heterogeneous KOA to treatable subgroups",
+      "Radiomics and imaging-derived risk stratification",
+      "Responder prediction: direct evidence remains scarce",
+      "Clinical decision support and translational bottlenecks",
+      "CDSS design and clinically actionable outputs",
+      "Explainable AI and clinician trust",
+      "External validation and prospective testing",
+      "Regulatory oversight and workflow integration",
+      "Future directions"
+    ],
+    "table_fields": [
+      {
+        "table": "TABLE 1",
+        "fields": [
+          "Study",
+          "Evidence category",
+          "Data",
+          "Therapy relevance",
+          "Product-level data",
+          "Validation",
+          "Limitation"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42536128",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42597887",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "Material and Methods",
+      "Results",
+      "Heterogeneity of preparations",
+      "Outline of AI techniques applicable to orthobiologics",
+      "AI for phenotyping patients and prediction of responders",
+      "Characterization of the biologics using AI",
+      "Closed-loop dosing and image-guided delivery",
+      "Predictive models of outcomes, digital twins for joint-specific simulation, and continuous-learning systems",
+      "Ethical, regulatory, data-governance and explainability issues",
+      "Translational roadmap and the current clinical-trial landscape",
+      "Discussion",
+      "Conclusion",
+      "Conflict of Interest:",
+      "Source of Support:",
+      "Consent:",
+      "Acknowledgement:",
+      "Biography",
+      "References"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Domain",
+          "Conventional selection",
+          "AI-augmented precision selection",
+          "Clinical safeguard"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Risk",
+          "Example",
+          "Mitigation"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42686880",
+    "source_basis": "fulltext_pdf_text",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42739558",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "1. Introduction",
+      "2. Methods",
+      "2.1. Study Design",
+      "2.2. Literature Search Strategy",
+      "2.3. Study Selection and Data Extraction",
+      "2.4. Eligibility Criteria",
+      "2.5. Data Extraction",
+      "2.6. Qualitative Evidence Synthesis",
+      "3. Results",
+      "3.1. Characteristics of the Evidence Base",
+      "3.2. Applications of Artificial Intelligence Across the Orthopaedic Care Pathway",
+      "3.3. Evidence Landscape of Contemporary Orthopaedic AI",
+      "3.4. Clinical Readiness According to the ORION Framework",
+      "3.5. Barriers to Clinical Translation",
+      "3.6. Recommendations for Clinical Implementation",
+      "4. Discussion",
+      "4.1. The Translation Gap: Why Clinical Adoption Has Lagged Behind Technological Progress",
+      "4.2. Why Musculoskeletal Imaging Represents One of the Most Advanced Domains of AI Translation",
+      "4.3. Orthopaedic-Specific Risks and Limitations of Artificial Intelligence",
+      "4.4. Beyond Diagnostic Accuracy: The Need for Clinical Validation",
+      "4.5. Translating Artificial Intelligence into Routine Orthopaedic Practice",
+      "4.6. Toward Precision Orthopaedics",
+      "4.7. Clinical Implications",
+      "4.8. Strengths",
+      "4.9. Limitations",
+      "4.10. Future Directions",
+      "5. Conclusions"
+    ],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42757394",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "Methods",
+      "Search Strategy",
+      "Eligibility Criteria",
+      "Study Selection",
+      "Synthesis Approach",
+      "PROSPERO Registration",
+      "Protocol",
+      "Results",
+      "Patient Communication and Education",
+      "Accuracy and Clarity in Answering Patient FAQs",
+      "Educational Materials, Anxiety, and Satisfaction",
+      "Postoperative Communication and Citation Concerns",
+      "Clinical Documentation",
+      "Clinical Decision Support",
+      "Discussion",
+      "Conclusion",
+      "Funding",
+      "Author Contributions",
+      "Appendix"
+    ],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42791908",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "1. Introduction",
+      "2. Materials and Methods",
+      "2.1. Review Design, Evidence Mapping, and Conceptual Framework",
+      "2.2. Review Objectives",
+      "2.3. Literature Identification Strategy",
+      "2.4. Source Selection Framework",
+      "2.5. Included Evidence Set and Parallel Analytical Frameworks",
+      "2.6. Evidence Abstraction and Classification",
+      "2.7. Evidence Profile",
+      "2.8. Critical Narrative Synthesis",
+      "2.9. Methodological Boundaries of the Review",
+      "2.10. Assessment Procedure and Single-Author Limitation",
+      "3. Critical Synthesis",
+      "3.1. Evidence Set Composition and Verification Status",
+      "3.2. Clinical Prediction and Patient Outcomes",
+      "3.3. Imaging Classification, Measurement and Implant Identification",
+      "3.4. Templating, Sizing, Planning and Execution Support",
+      "3.5. Data Extraction, Registry and Documentation Infrastructure",
+      "3.6. Periprosthetic Joint Infection and the Reference-Standard Problem",
+      "3.7. Patient and Clinician Communication, Education and Consent",
+      "3.8. Utilization and Workflow Optimization",
+      "3.9. Evidence Distribution by Anatomical Scope",
+      "3.10. Cross-Domain Patterns in Translation and Deployment Evidence",
+      "4. Discussion",
+      "4.1. Principal Interpretation",
+      "4.2. Why Bounded Tasks Are Easier to Evaluate than to Deploy",
+      "4.3. Discrimination, Calibration and Decision Utility",
+      "4.4. Evaluation Outside the Development Setting",
+      "4.5. Local Accuracy and Demonstrated Portability",
+      "4.6. Language Models: What Was Evaluated and What Was Not",
+      "4.7. Engineering Controls and Failure-Mode Handling",
+      "4.8. Reporting Completeness and Methodological Appraisal",
+      "4.9. Implications for Future Research",
+      "4.10. Strengths and Limitations",
+      "5. Conclusions",
+      "Acknowledgments",
+      "Abbreviations",
+      "Supplementary Materials",
+      "Institutional Review Board Statement",
+      "Informed Consent Statement",
+      "Data Availability Statement",
+      "Conflicts of Interest",
+      "Funding Statement",
+      "Footnotes",
+      "References",
+      "Associated Data",
+      "Supplementary Materials",
+      "Data Availability Statement"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "Framework Domain",
+          "Operational Definition in This Review",
+          "Included Examples",
+          "Interpretation Rule"
+        ]
+      },
+      {
+        "table": "Table 2",
+        "fields": [
+          "Operational Category",
+          "Operational Definition",
+          "Terms Authors Commonly Use for It",
+          "Counts Toward the Strict Geographic Numerator",
+          "Sensitivity Analysis Treatment"
+        ]
+      },
+      {
+        "table": "Table 3",
+        "fields": [
+          "Clinical Engineering Layer",
+          "Representative AI Tasks",
+          "Current Bounded-Task or Workflow-Relevance Signal",
+          "Main Deployment Barrier",
+          "Near-Term Role"
+        ]
+      },
+      {
+        "table": "Table 4",
+        "fields": [
+          "Level",
+          "Implementation-Readiness Stage",
+          "Minimum Evidence Needed",
+          "Arthroplasty Example and Deployment Implication"
+        ]
+      },
+      {
+        "table": "Table 5",
+        "fields": [
+          "Evaluation Pattern",
+          "Terminology Reported in Representative Publications",
+          "Classification Used in This Review",
+          "Interpretation for Evidence Synthesis",
+          "Representative Publications"
+        ]
+      },
+      {
+        "table": "Table 6",
+        "fields": [
+          "AI Domain",
+          "Main Failure Mode",
+          "Why It Matters Clinically",
+          "Engineering Control",
+          "Deployment Endpoint"
+        ]
+      },
+      {
+        "table": "Table ordinal 7",
+        "fields": [
+          "ACS",
+          "American College of Surgeons"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42793474",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "1. Introduction",
+      "2. Materials and Methods",
+      "3. Rural Inequity in Spine Care",
+      "4. Current AI Landscape in Spinal Pain Disorders",
+      "4.1. Structured Prediction and Phenotyping",
+      "4.2. Imaging AI",
+      "4.3. NLP and LLM Applications",
+      "4.4. Remote Monitoring and Digital Rehabilitation",
+      "5. General Purpose and Clinician-Facing AI Tools",
+      "6. A Translational Model from Centers of Excellence to Rural Practice",
+      "6.1. Stages of Development of AI-Based Models",
+      "6.1.1. Building a High Quality Base of Knowledge",
+      "6.1.2. Harmonization Process",
+      "6.1.3. Development of a Constrained Prediction and Retrieval System",
+      "6.1.4. Validation",
+      "6.1.5. Deployment as a Clinician-Facing Decision Support Layer",
+      "7. Safety, Bias, Privacy, and Regulations",
+      "8. Future Directions",
+      "9. Conclusions"
+    ],
+    "table_fields": [
+      {
+        "table": "Table 1",
+        "fields": [
+          "AI-Technique",
+          "Sample Size (N)",
+          "Study Setting",
+          "Validation Method",
+          "External Validation",
+          "Clinical Domain",
+          "Spinal Pain Disorders",
+          "Performance Metrics (e.g., Accuracy, AUC, Others)",
+          "References"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42824522",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42851913",
+    "source_basis": "fulltext_xml",
+    "section_headings": [
+      "Introduction",
+      "Methods",
+      "Narrative review design and literature search",
+      "Study eligibility and selection process",
+      "Evidence synthesis and translational interpretation framework",
+      "Methodological quality and risk-of-bias considerations",
+      "Biomechanical basis of KOA",
+      "Multidimensional properties of mechanical loading",
+      "Static alignment and dynamic exposure",
+      "Muscle, pain and functional feedback",
+      "AI-enabled multimodal evidence pathways",
+      "Imaging AI, from grading to tissue phenotyping",
+      "Gait AI and wearable sensing",
+      "Computational simulation and digital twins",
+      "AI-enabled biomechanical phenotyping, risk phenotypes and candidate modifiable factors",
+      "Regional lesions and soft-tissue phenotypes",
+      "Biomechanical phenotypes and candidate modifiable factors",
+      "Treatment-response prediction and candidate treatment-response phenotypes",
+      "Diagnosis, prediction and patient outcomes",
+      "Early recognition and assisted image reading",
+      "Progression prediction and patient outcomes",
+      "Replacement decisions and recovery trajectories",
+      "Treatment, rehabilitation and perioperative management",
+      "Individualized allocation of conservative treatment",
+      "Load-targeted rehabilitation",
+      "Toward perioperative closed-loop management",
+      "Discussion: evidence requirements for clinical translation",
+      "External validation and reporting standards",
+      "Sources of heterogeneity and limits of cross-study comparison",
+      "Task-specific validation metrics",
+      "Interpretability oriented toward clinical action",
+      "Regulatory, economic and implementation requirements",
+      "Regulatory pathways",
+      "Cost-effectiveness and budget impact",
+      "Workforce training and competency",
+      "Patient acceptance and equity",
+      "Future directions",
+      "Limitations of this review",
+      "Conclusion"
+    ],
+    "table_fields": [
+      {
+        "table": "TABLE 1",
+        "fields": [
+          "References",
+          "AI aim and method",
+          "Main finding",
+          "Recommended use and evidence boundary"
+        ]
+      },
+      {
+        "table": "TABLE 2",
+        "fields": [
+          "References",
+          "Method/device",
+          "Main outcome",
+          "Performance, limitation or recommendation"
+        ]
+      },
+      {
+        "table": "TABLE 3",
+        "fields": [
+          "References",
+          "Design and data",
+          "Main finding",
+          "Interpretation and recommendation"
+        ]
+      },
+      {
+        "table": "TABLE 4",
+        "fields": [
+          "References",
+          "Evidence type/method and data",
+          "Main finding",
+          "Recommended use and evidence boundary"
+        ]
+      },
+      {
+        "table": "TABLE 5",
+        "fields": [
+          "References",
+          "Aim and method",
+          "Main finding",
+          "Translational meaning and evidence boundary"
+        ]
+      }
+    ],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42879167",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  },
+  {
+    "paper_id": "PMID_42896011",
+    "source_basis": "abstract_only",
+    "section_headings": [],
+    "table_fields": [],
+    "coverage_limit": "Structural extraction; supplementation and semantic adjudication pending"
+  }
+]

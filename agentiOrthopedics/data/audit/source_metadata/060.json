@@ -1,0 +1,316 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          24
+        ]
+      ],
+      "date-time": "2026-08-24T20:35:32Z",
+      "timestamp": 1787603732817,
+      "version": "build-2736575974"
+    },
+    "reference-count": 22,
+    "publisher": "Engineering, Technology & Applied Science Research",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              2
+            ]
+          ],
+          "date-time": "2025-08-02T00:00:00Z",
+          "timestamp": 1754092800000
+        },
+        "content-version": "unspecified",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Eng. Technol. Appl. Sci. Res."
+    ],
+    "abstract": "<jats:p>This paper presents a Reinforcement Learning (RL) framework for real-time, personalized healthcare, aiming to optimize the treatment strategies for individual patients using longitudinal clinical data. The system models the patient-treatment environment as a Partially Observable Markov Decision Process (POMDP), allowing decision-making under uncertainty while integrating multimodal patient information, including Electronic Health Records (EHRs), lab tests, and imaging data. A deep policy network, trained through Proximal Policy Optimization (PPO), dynamically chooses the optimal interventions by balancing the long-term clinical outcomes, risks, costs, and adherence to medical guidelines. The framework combines a model-based simulator for off-policy data augmentation, auxiliary risk predictors to enhance the safety-aware optimization, and interpretable mechanisms to facilitate the clinician trust. Evaluated on more than 50,000 patient records and simulated environments, the proposed model surpassed the existing methods in accuracy, F1-score, Receiver Operating Characteristic-Area Under the Curve (ROC-AUC), and treatment efficiency. Specifically, it achieved 93.6% accuracy and a 0.937 F1-score while reducing the treatment cycles and enhancing safety compliance. These findings highlight the potential of RL to offer adaptive and interpretable decision support in clinical settings, although more real-world testing is necessary to confirm this result.</jats:p>",
+    "DOI": "10.48084/etasr.12390",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          3
+        ]
+      ],
+      "date-time": "2025-08-03T06:57:45Z",
+      "timestamp": 1754204265000
+    },
+    "page": "24698-24704",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": [
+      "A Reinforcement Learning Framework for Real-Time Personalized Treatment Planning in Clinical Environments"
+    ],
+    "prefix": "10.48084",
+    "volume": "15",
+    "author": [
+      {
+        "given": "Leela Prasad",
+        "family": "Gorrepati",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ravi Teja",
+        "family": "Potla",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "28080",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          2
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "391061",
+        "doi-asserted-by": "crossref",
+        "unstructured": "C. Jiang, B. Hu, Y. Wang, and S. Wu, \"Reinforcement learning via nonparametric smoothing in a continuous-time stochastic setting with noisy data,\" Statistica Sinica, vol. 35, no. 2, pp. 831–852, 2025.",
+        "DOI": "10.5705/ss.202022.0407"
+      },
+      {
+        "key": "391062",
+        "unstructured": "J. Chai, E. Chen, and J. Fan, \"Deep Transfer $Q$-Learning for Offline Non-Stationary Reinforcement Learning.\" arXiv, Apr. 11, 2025."
+      },
+      {
+        "key": "391063",
+        "unstructured": "R. Zhang et al., \"Embodied AI-Enhanced Vehicular Networks: An Integrated Large Language Models and Reinforcement Learning Method.\" arXiv, Jan. 02."
+      },
+      {
+        "key": "391064",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M. A. Mubeen, F. Chen, and K. M. U. Rehman, \"Optimization of Silver Nanocluster Geometries: A Deep Reinforcement Learning Approach to Identifying the Most Stable Configurations in Ag15 Cluster,\" Journal of Chemistry and Environment, vol. 4, no. 1, pp. 1–17, Jun. 2025.",
+        "DOI": "10.56946/jce.v4i1.589"
+      },
+      {
+        "key": "391065",
+        "doi-asserted-by": "crossref",
+        "unstructured": "R. Al-Dmour, H. Al-Dmour, E. Basheer Amin, and A. Al-Dmour, \"Impact of AI and big data analytics on healthcare outcomes: An empirical study in Jordanian healthcare institutions,\" Digital Health, vol. 11, May 2025.",
+        "DOI": "10.1177/20552076241311051"
+      },
+      {
+        "key": "391066",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Z. Nicolaou, \"Perspective Chapter: Treating Facial Asymmetries – Significant Points to Take into Consideration for Optimal Results,\" in Orthodontics - Current Principles and Techniques, IntechOpen, 2025.",
+        "DOI": "10.5772/intechopen.113398"
+      },
+      {
+        "key": "391067",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M. Mazonakis, E. Tzanis, S. Kachris, E. Lyraraki, and J. Damilakis, \"A qualitative, quantitative and dosimetric evaluation of a machine learning-based automatic segmentation method in treatment planning for gastric cancer,\" Physica Medica: European Journal of Medical Physics, vol. 130, Feb. 2025.",
+        "DOI": "10.1016/j.ejmp.2025.104896"
+      },
+      {
+        "key": "391068",
+        "doi-asserted-by": "crossref",
+        "unstructured": "C. SaiTeja and J. B. Seventline, \"A hybrid learning framework for multi-modal facial prediction and recognition using improvised non-linear SVM classifier,\" AIP Advances, vol. 13, no. 2, Feb. 2023, Art. no. 025316.",
+        "DOI": "10.1063/5.0136623"
+      },
+      {
+        "key": "391069",
+        "doi-asserted-by": "crossref",
+        "unstructured": "S. J. Gershman and A. Lak, \"Policy Complexity Suppresses Dopamine Responses,\" Journal of Neuroscience, vol. 45, no. 9, Feb. 2025, Art. no. e1756242024.",
+        "DOI": "10.1523/JNEUROSCI.1756-24.2024"
+      },
+      {
+        "key": "391070",
+        "doi-asserted-by": "crossref",
+        "unstructured": "W. Zhang et al., \"A Proton Treatment Planning Method for Combining FLASH and Spatially Fractionated Radiation Therapy to Enhance Normal Tissue Protection.\" arXiv, May 09, 2025.",
+        "DOI": "10.2139/ssrn.5095563"
+      },
+      {
+        "key": "391071",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M. Al-Asali, A. Y. Alqutaibi, M. Al-Sarem, and F. Saeed, \"Deep learning-based approach for 3D bone segmentation and prediction of missing tooth region for dental implant planning,\" Scientific Reports, vol. 14, no. 1, Jun. 2024, Art. no. 13888.",
+        "DOI": "10.1038/s41598-024-64609-0"
+      },
+      {
+        "key": "391072",
+        "doi-asserted-by": "crossref",
+        "unstructured": "S. Chopparapu and B. S. Joseph, \"A hybrid facial features extraction-based classification framework for typhlotic people,\" Bulletin of Electrical Engineering and Informatics, vol. 13, no. 1, pp. 338–349, Feb. 2024.",
+        "DOI": "10.11591/eei.v13i1.5628"
+      },
+      {
+        "key": "391073",
+        "doi-asserted-by": "crossref",
+        "unstructured": "H. Du et al., \"Enhancing Deep Reinforcement Learning: A Tutorial on Generative Diffusion Models in Network Optimization,\" IEEE Communications Surveys & Tutorials, vol. 26, no. 4, pp. 2611–2646, 2024.",
+        "DOI": "10.1109/COMST.2024.3400011"
+      },
+      {
+        "key": "391074",
+        "doi-asserted-by": "crossref",
+        "unstructured": "F.-M. Luo, T. Xu, H. Lai, X.-H. Chen, W. Zhang, and Y. Yu, \"A survey on model-based reinforcement learning,\" Science China Information Sciences, vol. 67, no. 2, Jan. 2024, Art. no. 121101.",
+        "DOI": "10.1007/s11432-022-3696-5"
+      },
+      {
+        "key": "391075",
+        "doi-asserted-by": "crossref",
+        "unstructured": "A. Mirzaee Moghaddam Kasmaee et al., \"ELRL-MD: a deep learning approach for myocarditis diagnosis using cardiac magnetic resonance images with ensemble and reinforcement learning integration,\" Physiological Measurement, vol. 45, no. 5, Feb. 2024, Art. no. 055011.",
+        "DOI": "10.1088/1361-6579/ad46e2"
+      },
+      {
+        "key": "391076",
+        "doi-asserted-by": "crossref",
+        "unstructured": "P. Jayaraman, J. Desman, M. Sabounchi, G. N. Nadkarni, and A. Sakhuja, \"A Primer on Reinforcement Learning in Medicine for Clinicians,\" npj Digital Medicine, vol. 7, no. 1, Nov. 2024, Art. no. 337.",
+        "DOI": "10.1038/s41746-024-01316-0"
+      },
+      {
+        "key": "391077",
+        "doi-asserted-by": "crossref",
+        "unstructured": "C. Yu, J. Liu, and H. Zhao, \"Inverse reinforcement learning for intelligent mechanical ventilation and sedative dosing in intensive care units,\" BMC Medical Informatics and Decision Making, vol. 19, no. 2, Apr. 2019, Art. no. 57.",
+        "DOI": "10.1186/s12911-019-0763-6"
+      },
+      {
+        "key": "391078",
+        "unstructured": "C. Voloshin, H. M. Le, N. Jiang, and Y. Yue, \"Empirical Study of Off-Policy Policy Evaluation for Reinforcement Learning.\" arXiv, Nov. 27, 2021."
+      },
+      {
+        "key": "391079",
+        "doi-asserted-by": "crossref",
+        "unstructured": "A. M. Alghamdi, M. A. Al-Khasawneh, A. Alarood, and E. Alsolami, \"The Role of Machine Learning in Managing and Organizing Healthcare Records,\" Engineering, Technology & Applied Science Research, vol. 14, no. 2, pp. 13695–13701, Apr. 2024.",
+        "DOI": "10.48084/etasr.7027"
+      },
+      {
+        "key": "391080",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M. Rahardi, B. P. Asaddulloh, A. Aminuddin, F. F. Abdulloh, I. Saifudin, and F. P. Kusumawijaya, \"Optimizing Machine Learning Models for Class Imbalance in Heart Disease Prediction,\" Engineering, Technology & Applied Science Research, vol. 15, no. 3, pp. 23599–23604, Jun. 2025.",
+        "DOI": "10.48084/etasr.10407"
+      },
+      {
+        "key": "391081",
+        "doi-asserted-by": "crossref",
+        "unstructured": "S. Chopparapu, G. Chopparapu, and D. Vasagiri, \"Enhancing Visual Perception in Real-Time: A Deep Reinforcement Learning Approach to Image Quality Improvement,\" Engineering, Technology & Applied Science Research, vol. 14, no. 3, pp. 14725–14731, Jun. 2024.",
+        "DOI": "10.48084/etasr.7500"
+      },
+      {
+        "key": "391082",
+        "unstructured": "A. Johnson, T. Pollard, and R. Mark, \"MIMIC-III Clinical Database (version 1.4).\" PhysioNet, 2016."
+      }
+    ],
+    "container-title": [
+      "Engineering, Technology &amp; Applied Science Research"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://etasr.com/index.php/ETASR/article/download/12390/5387",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://etasr.com/index.php/ETASR/article/download/12390/5387",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          3
+        ]
+      ],
+      "date-time": "2025-08-03T06:57:50Z",
+      "timestamp": 1754204270000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://etasr.com/index.php/ETASR/article/view/12390"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          2
+        ]
+      ]
+    },
+    "references-count": 22,
+    "journal-issue": {
+      "issue": "4",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            2
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.48084/etasr.12390",
+    "relation": {},
+    "ISSN": [
+      "1792-8036",
+      "2241-4487"
+    ],
+    "issn-type": [
+      {
+        "value": "1792-8036",
+        "type": "electronic"
+      },
+      {
+        "value": "2241-4487",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          2
+        ]
+      ]
+    }
+  }
+}

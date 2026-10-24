@@ -1,0 +1,928 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          19
+        ]
+      ],
+      "date-time": "2026-09-19T19:02:55Z",
+      "timestamp": 1789844575736,
+      "version": "4.0.1"
+    },
+    "reference-count": 86,
+    "publisher": "Wiley",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              31
+            ]
+          ],
+          "date-time": "2025-10-31T00:00:00Z",
+          "timestamp": 1761868800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 30,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2025-10-01T00:00:00Z",
+          "timestamp": 1759276800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "esskajournals.onlinelibrary.wiley.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "J. exp. orthop."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          10
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:label/>\n                    <jats:p>Artificial intelligence (AI) encompasses the development of systems that can perform human‐like tasks, such as treatment guidance, decision‐making, pattern recognition and understanding language. Within AI, machine learning and deep learning play pivotal roles in diagnosis and outcome prediction, while natural language processing aids in synthesising large datasets from the electronic medical record. In orthopaedics, AI has demonstrated success in various areas, including image evaluation, surgical planning, outcome prediction, cohort identification and administrative tasks. The purpose of this manuscript was to provide an overview of the benefits of AI implementation within the field of orthopaedics. An additional goal was to address the challenges associated with producing high quality AI‐based research in a rapidly developing field.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Level of Evidence</jats:title>\n                    <jats:p>Level IV.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.1002/jeo2.70481",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          31
+        ]
+      ],
+      "date-time": "2025-10-31T08:12:02Z",
+      "timestamp": 1761898322000
+    },
+    "update-policy": "https://doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "A practical guide to the implementation of artificial intelligence in orthopaedic research—Part 3: How orthopaedic research benefits from the implementation of artificial intelligence"
+    ],
+    "prefix": "10.1002",
+    "volume": "12",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-8645-9386",
+        "authenticated-orcid": false,
+        "given": "James A.",
+        "family": "Pruneski",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery Tripler Army Medical Center Honolulu Hawaii USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ayoosh",
+        "family": "Pareek",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Sports Medicine and Shoulder Service, Hospital for Special Surgery New York New York USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bálint",
+        "family": "Zsidai",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedics, Institute of Clinical Sciences, Sahlgrenska Academy University of Gothenburg Gothenburg Sweden"
+          },
+          {
+            "name": "Sahlgrenska Sports Medicine Center Göteborg Sweden"
+          },
+          {
+            "name": "Department of Orthopedics Skåne University Hospital Malmö/Lund Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jacob F.",
+        "family": "Oeding",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedics, Institute of Clinical Sciences, Sahlgrenska Academy University of Gothenburg Gothenburg Sweden"
+          },
+          {
+            "name": "Mayo Clinic Alix School of Medicine, Mayo Clinic Rochester Minnesota USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jonathan D.",
+        "family": "Hughes",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery UPMC Freddie Fu Sports Medicine Center Pittsburgh Pennsylvania USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Felix C.",
+        "family": "Oettl",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Balgrist University Hospital Zurich Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Philipp W.",
+        "family": "Winkler",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department for Orthopaedics and Traumatology Kepler University Hospital GmbH, Johannes Kepler University Linz Linz Austria"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thomas",
+        "family": "Tischer",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery Universitymedicine Rostock Rostock Germany"
+          },
+          {
+            "name": "Department of Orthopaedic and Trauma Surgery Malteser Waldkrankenhaus Erlangen Erlangen Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Elmar",
+        "family": "Herbst",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Trauma, Hand and Reconstructive Surgery University Hospital Muenster Muenster Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alberto",
+        "family": "Grassi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "IIa Clinica Ortopedica e Traumatologica, IRCCS Istituto Ortopedico Rizzoli Bologna Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael T.",
+        "family": "Hirschmann",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery and Traumatology Kantonsspital Baselland Bruderholz Switzerland"
+          },
+          {
+            "name": "University of Basel Basel Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Christophe",
+        "family": "Ley",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Mathematics University of Luxembourg Esch‐sur‐Alzette Luxembourg"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yinan",
+        "family": "Yu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science and Engineering Chalmers University of Technology Gothenburg Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5383-3370",
+        "authenticated-orcid": false,
+        "given": "Kristian",
+        "family": "Samuelsson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedics, Institute of Clinical Sciences, Sahlgrenska Academy University of Gothenburg Gothenburg Sweden"
+          },
+          {
+            "name": "Sahlgrenska Sports Medicine Center Göteborg Sweden"
+          },
+          {
+            "name": "Department of Orthopaedics Sahlgrenska University Hospital Mölndal Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "name": "ESSKA Artificial Intelligence Working Group",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          31
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_13_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/BRS.0000000000002974"
+      },
+      {
+        "key": "e_1_2_13_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jama.2017.18391"
+      },
+      {
+        "key": "e_1_2_13_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pmed.1002699"
+      },
+      {
+        "key": "e_1_2_13_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.clinimag.2023.02.014"
+      },
+      {
+        "key": "e_1_2_13_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.16.01122"
+      },
+      {
+        "key": "e_1_2_13_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jhsa.2022.02.023"
+      },
+      {
+        "key": "e_1_2_13_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jama.2017.7797"
+      },
+      {
+        "key": "e_1_2_13_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2783258.2788613"
+      },
+      {
+        "key": "e_1_2_13_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamasurg.2018.4824"
+      },
+      {
+        "key": "e_1_2_13_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fmed.2022.841202"
+      },
+      {
+        "key": "e_1_2_13_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.RVW.21.00142"
+      },
+      {
+        "key": "e_1_2_13_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7861/futurehosp.6-2-94"
+      },
+      {
+        "key": "e_1_2_13_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/03635465221091847"
+      },
+      {
+        "key": "e_1_2_13_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-022-07233-7"
+      },
+      {
+        "key": "e_1_2_13_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00256-021-03830-8"
+      },
+      {
+        "key": "e_1_2_13_17_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "GillK CacciamaniG NabhaniJ CorbJ BuchananT ParkD et al. A novel artificial intelligence platform to automate clinical consultation notes and enhance diagnostic efficiency in the outpatient clinic: a multi‐center multi‐disciplinary prospective randomized controlled trial.medRxiv; 2023.https://doi.org/10.1101/2023.06.26.232918792023.2006.2026.23291879",
+        "DOI": "10.1101/2023.06.26.23291879"
+      },
+      {
+        "key": "e_1_2_13_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jor.2022.12.005"
+      },
+      {
+        "key": "e_1_2_13_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-022-06957-w"
+      },
+      {
+        "key": "e_1_2_13_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2023.03.006"
+      },
+      {
+        "key": "e_1_2_13_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/03635465221112095"
+      },
+      {
+        "key": "e_1_2_13_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/svn-2017-000101"
+      },
+      {
+        "key": "e_1_2_13_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-022-07117-w"
+      },
+      {
+        "key": "e_1_2_13_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2022.03.002"
+      },
+      {
+        "key": "e_1_2_13_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/BOT.0000000000001454"
+      },
+      {
+        "key": "e_1_2_13_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ksa.12014"
+      },
+      {
+        "key": "e_1_2_13_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1148/ryai.230085"
+      },
+      {
+        "key": "e_1_2_13_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1148/ryai.220067"
+      },
+      {
+        "key": "e_1_2_13_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2022.12.013"
+      },
+      {
+        "key": "e_1_2_13_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.medengphy.2017.02.004"
+      },
+      {
+        "key": "e_1_2_13_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1055/s-0038-1666844"
+      },
+      {
+        "key": "e_1_2_13_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jse.2023.03.028"
+      },
+      {
+        "key": "e_1_2_13_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/03635465221124275"
+      },
+      {
+        "key": "e_1_2_13_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1302/2633-1462.31.BJO-2021-0123.R1"
+      },
+      {
+        "key": "e_1_2_13_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/23259671211046575"
+      },
+      {
+        "key": "e_1_2_13_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2020.09.012"
+      },
+      {
+        "key": "e_1_2_13_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ksa.12018"
+      },
+      {
+        "key": "e_1_2_13_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1148/radiol.2017170236"
+      },
+      {
+        "key": "e_1_2_13_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10278-022-00671-2"
+      },
+      {
+        "key": "e_1_2_13_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-022-06896-6"
+      },
+      {
+        "key": "e_1_2_13_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jeo2.70080"
+      },
+      {
+        "key": "e_1_2_13_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/03635465231168139"
+      },
+      {
+        "key": "e_1_2_13_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/2325967120953404"
+      },
+      {
+        "key": "e_1_2_13_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jbiomech.2022.111136"
+      },
+      {
+        "key": "e_1_2_13_45_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aimag.v27i4.1904"
+      },
+      {
+        "key": "e_1_2_13_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.19.01128"
+      },
+      {
+        "key": "e_1_2_13_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jse.2023.03.001"
+      },
+      {
+        "key": "e_1_2_13_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2023.08.084"
+      },
+      {
+        "key": "e_1_2_13_49_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-022-07239-1"
+      },
+      {
+        "key": "e_1_2_13_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jeo2.12039"
+      },
+      {
+        "key": "e_1_2_13_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-023-07372-5"
+      },
+      {
+        "key": "e_1_2_13_52_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/BRS.0000000000003795"
+      },
+      {
+        "key": "e_1_2_13_53_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jse.2020.09.007"
+      },
+      {
+        "key": "e_1_2_13_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0272989X12465490"
+      },
+      {
+        "key": "e_1_2_13_55_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/03635465231205556"
+      },
+      {
+        "key": "e_1_2_13_56_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-022-07181-2"
+      },
+      {
+        "key": "e_1_2_13_57_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-022-07272-0"
+      },
+      {
+        "key": "e_1_2_13_58_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-022-07155-4"
+      },
+      {
+        "key": "e_1_2_13_59_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2019.05.034"
+      },
+      {
+        "key": "e_1_2_13_60_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2022.04.014"
+      },
+      {
+        "key": "e_1_2_13_61_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2020.06.063"
+      },
+      {
+        "key": "e_1_2_13_62_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-020-00323-1"
+      },
+      {
+        "key": "e_1_2_13_63_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2023.08.063"
+      },
+      {
+        "key": "e_1_2_13_64_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2020.09.029"
+      },
+      {
+        "key": "e_1_2_13_65_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-020-72357-0"
+      },
+      {
+        "key": "e_1_2_13_66_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.I.01649"
+      },
+      {
+        "key": "e_1_2_13_67_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10278-021-00519-1"
+      },
+      {
+        "key": "e_1_2_13_68_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.artmed.2024.102847"
+      },
+      {
+        "key": "e_1_2_13_69_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0298892"
+      },
+      {
+        "key": "e_1_2_13_70_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.19.00661"
+      },
+      {
+        "key": "e_1_2_13_71_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2019.07.025"
+      },
+      {
+        "key": "e_1_2_13_72_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1197/jamia.M1279"
+      },
+      {
+        "key": "e_1_2_13_73_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s40634-021-00346-x"
+      },
+      {
+        "key": "e_1_2_13_74_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00264-024-06088-6"
+      },
+      {
+        "key": "e_1_2_13_75_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41586-023-06221-2"
+      },
+      {
+        "key": "e_1_2_13_76_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0363546516643812"
+      },
+      {
+        "key": "e_1_2_13_77_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.19.00071"
+      },
+      {
+        "key": "e_1_2_13_78_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/17453674.2020.1803664"
+      },
+      {
+        "key": "e_1_2_13_79_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/03635465221129870"
+      },
+      {
+        "key": "e_1_2_13_80_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00402-022-04588-x"
+      },
+      {
+        "key": "e_1_2_13_81_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1115/1.4051524"
+      },
+      {
+        "key": "e_1_2_13_82_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41551-018-0305-z"
+      },
+      {
+        "key": "e_1_2_13_83_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2023.06.018"
+      },
+      {
+        "key": "e_1_2_13_84_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/tomography8020073"
+      },
+      {
+        "key": "e_1_2_13_85_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/diagnostics12020237"
+      },
+      {
+        "key": "e_1_2_13_86_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s40634-023-00683-z"
+      },
+      {
+        "key": "e_1_2_13_87_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jeo2.12025"
+      }
+    ],
+    "container-title": [
+      "Journal of Experimental Orthopaedics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/jeo2.70481",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/full-xml/10.1002/jeo2.70481",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/jeo2.70481",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          19
+        ]
+      ],
+      "date-time": "2026-09-19T18:24:02Z",
+      "timestamp": 1789842242000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/10.1002/jeo2.70481"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          10
+        ]
+      ]
+    },
+    "references-count": 86,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1002/jeo2.70481"
+    ],
+    "URL": "https://doi.org/10.1002/jeo2.70481",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "2197-1153",
+      "2197-1153"
+    ],
+    "issn-type": [
+      {
+        "value": "2197-1153",
+        "type": "print"
+      },
+      {
+        "value": "2197-1153",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          10
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2025-04-15",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-08-11",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-10-31",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ],
+    "article-number": "e70481"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "prior_occurrences": 814,
+  "prior_unique_pmids": 803,
+  "review_occurrences": 1196,
+  "review_unique_pmids": 1189,
+  "cross_pool_overlap": 153,
+  "combined_search_occurrences": 2010,
+  "combined_search_unique_pmids": 1839,
+  "duplicate_occurrences_removed": 171,
+  "extra_targeted_metadata_pmids": [
+    "34335111",
+    "38007205",
+    "39521391",
+    "41838559"
+  ],
+  "working_library_records": 85,
+  "final_included_studies": "not determined"
+}

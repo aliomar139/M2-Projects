@@ -1,0 +1,526 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          27
+        ]
+      ],
+      "date-time": "2026-08-27T15:31:49Z",
+      "timestamp": 1787844709517,
+      "version": "build-2784847793"
+    },
+    "reference-count": 29,
+    "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+    "issue": "4",
+    "content-domain": {
+      "domain": [
+        "lww.com",
+        "ovid.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          18
+        ]
+      ]
+    },
+    "abstract": "<jats:sec>\n                    <jats:title>Background:</jats:title>\n                    <jats:p>Artificial intelligence (AI) in orthopaedics is shifting from passive interfaces in which a surgeon queries a large language model to an era of active participation in which a surgeon empowers a software platform to automate certain tasks on their behalf. The emerging new paradigm called agentic AI involves agents that move beyond decision support tools to becoming semi-autonomous collaborators in research, clinical, and rehabilitation tasks.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Purpose:</jats:title>\n                    <jats:p>The purpose of this review is to summarize how recent advances (April 2022 to October 2025) in automation, prediction, and augmentation agents are poised to transform the practice of orthopaedics; and to outline the conceptual, technical, and ethical foundations of this transition.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Recent Findings:</jats:title>\n                    <jats:p>An agent is software that can process information and act independently to execute a set of defined tasks. It can seek knowledge, ask for help, deploy other software, and learn from its actions. Automation, prediction and augmentation agents can be leveraged in multi-agent and federated-learning architectures, working together to create coordinated ecosystems that can manage complex tasks and that improve with clinical use. Collectively, the output of such ecosystems is referred to as agentic AI. However, regulatory and ethical concerns underscore the need for transparency, equity, and the preservation of human agency within these frameworks.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Summary:</jats:title>\n                    <jats:p>Agentic AI marks a transition from passive tools that merely assist clinicians to autonomous systems that act alongside them. The success of this technology in orthopaedics will depend on the depth of human-machine collaboration they enable and how well they align computational precision with the enduring human art of restoring motion and health.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.2106/jbjs.25.01497",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          5
+        ]
+      ],
+      "date-time": "2026-01-05T19:00:58Z",
+      "timestamp": 1767639658000
+    },
+    "page": "278-282",
+    "update-policy": "https://doi.org/10.1097/lww.0000000000001000",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "The Application of Agentic Artificial Intelligence in Orthopaedics"
+    ],
+    "prefix": "10.2106",
+    "volume": "108",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-2217-7694",
+        "authenticated-orcid": false,
+        "given": "Fabrizio",
+        "family": "Billi",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery, University of California Los Angeles, Los Angeles, California"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9151-7643",
+        "authenticated-orcid": false,
+        "given": "Stefano A.",
+        "family": "Bini",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery, University of California San Francisco, San Francisco, California"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "276",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          5
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "bib1-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "101308",
+        "DOI": "10.1016/j.artd.2023.101308",
+        "article-title": "Machine Learning-Based Predictive Models for 90-Day Readmission of Total Joint Arthroplasty Using Comprehensive Electronic Health Records and Patient-Reported Outcome Measures",
+        "volume": "25",
+        "author": "Park",
+        "year": "2023",
+        "journal-title": "Arthroplast Today."
+      },
+      {
+        "issue": "1",
+        "key": "bib2-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "2357225",
+        "DOI": "10.1080/07853890.2024.2357225",
+        "article-title": "Development and validation of machine learning models to predict perioperative transfusion risk for hip fractures in the elderly",
+        "volume": "56",
+        "author": "Guo",
+        "year": "2024",
+        "journal-title": "Ann Med."
+      },
+      {
+        "issue": "2",
+        "key": "bib3-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "umaf015",
+        "DOI": "10.1093/radadv/umaf015",
+        "article-title": "Improving radiologist detection of meniscal abnormality on undersampled, deep learning reconstructed knee MRI",
+        "volume": "2",
+        "author": "Konovalova",
+        "year": "2025",
+        "journal-title": "Radiol Adv."
+      },
+      {
+        "issue": "1",
+        "key": "bib4-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "e2532878",
+        "DOI": "10.2214/AJR.25.32878",
+        "article-title": "Clinical Implementation of Sixfold-Accelerated Deep Learning Superresolution Knee MRI in Under 5 Minutes: Arthroscopy-Validated Diagnostic Performance",
+        "volume": "225",
+        "author": "Vosshenrich",
+        "year": "2025",
+        "journal-title": "AJR Am J Roentgenol."
+      },
+      {
+        "issue": "10",
+        "key": "bib5-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "3239",
+        "DOI": "10.1038/s41591-025-03841-1",
+        "article-title": "Overcoming regulatory barriers to the implementation of AI agents in healthcare",
+        "volume": "31",
+        "author": "Freyer",
+        "year": "2025",
+        "journal-title": "Nat Med."
+      },
+      {
+        "issue": "1",
+        "key": "bib6-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "893",
+        "DOI": "10.1186/s12891-024-08034-4",
+        "article-title": "Development and accuracy of an artificial intelligence model for predicting the progression of hip osteoarthritis using plain radiographs and clinical data: a retrospective study",
+        "volume": "25",
+        "author": "Hidaka",
+        "year": "2024",
+        "journal-title": "BMC Musculoskelet Disord."
+      },
+      {
+        "issue": "1",
+        "key": "bib7-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "516",
+        "DOI": "10.1186/s13018-024-05013-2",
+        "article-title": "Development of an artificial intelligence model for predicting implant size in total knee arthroplasty using simple X-ray images",
+        "volume": "19",
+        "author": "Yu",
+        "year": "2024",
+        "journal-title": "J Orthop Surg Res."
+      },
+      {
+        "issue": "18",
+        "key": "bib8-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "7667",
+        "DOI": "10.3390/s23187667",
+        "article-title": "The Application of Wearable Sensors and Machine Learning Algorithms in Rehabilitation Training: A Systematic Review",
+        "volume": "23",
+        "author": "Wei",
+        "year": "2023",
+        "journal-title": "Sensors (Basel)."
+      },
+      {
+        "issue": "2",
+        "key": "bib9-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "120",
+        "DOI": "10.15441/ceem.20.091",
+        "article-title": "Application of convolutional neural networks for distal radio-ulnar fracture detection on plain radiographs in the emergency room",
+        "volume": "8",
+        "author": "Kim",
+        "year": "2021",
+        "journal-title": "Clin Exp Emerg Med."
+      },
+      {
+        "issue": "2",
+        "key": "bib10-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "450",
+        "DOI": "10.1002/ksa.12369",
+        "article-title": "Achieving high accuracy in meniscus tear detection using advanced deep learning models with a relatively small data set",
+        "volume": "33",
+        "author": "Güngör",
+        "year": "2025",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc."
+      },
+      {
+        "key": "bib11-20260218",
+        "first-page": "1",
+        "article-title": "OsiriXGPT: An Innovative AI Co-pilot Plug-In for Seamless Deployment of Generative AI Models in Scan-to-Scan Reporting Workflows",
+        "volume": "16",
+        "author": "Candito",
+        "year": "2025",
+        "journal-title": "J Imaging Inform Med."
+      },
+      {
+        "issue": "1",
+        "key": "bib12-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "38",
+        "DOI": "10.1186/s43019-024-00240-7",
+        "article-title": "A deep learning based automatic two-dimensional digital templating model for total knee arthroplasty",
+        "volume": "36",
+        "author": "Park",
+        "year": "2024",
+        "journal-title": "Knee Surg Relat Res."
+      },
+      {
+        "issue": "12",
+        "key": "bib13-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "1417",
+        "DOI": "10.3390/bioengineering10121417",
+        "article-title": "Development and Validation of an Artificial Intelligence Preoperative Planning and Patient-Specific Instrumentation System for Total Knee Arthroplasty",
+        "volume": "10",
+        "author": "Li",
+        "year": "2023",
+        "journal-title": "Bioengineering (Basel)."
+      },
+      {
+        "issue": "17",
+        "key": "bib14-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "5180",
+        "DOI": "10.3390/jcm13175180",
+        "article-title": "Machine Learning Prediction Model to Predict Length of Stay of Patients Undergoing Hip or Knee Arthroplasties: Results from a High-Volume Single-Center Multivariate Analysis",
+        "volume": "13",
+        "author": "Di Matteo",
+        "year": "2024",
+        "journal-title": "J Clin Med."
+      },
+      {
+        "issue": "1",
+        "key": "bib15-20260218",
+        "first-page": "1",
+        "article-title": "Machine learning–based survival models for predicting rehospitalization of older hip fracture patients: a retrospective cohort study",
+        "volume": "26",
+        "author": "Oh",
+        "year": "2025",
+        "journal-title": "BMC Musculoskeletal Disorders."
+      },
+      {
+        "issue": "10S",
+        "key": "bib16-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "24",
+        "DOI": "10.52783/jns.v14.2754",
+        "article-title": "Autonomous Suturing in Robotic Surgery Using Reinforcement Learning and 3D Visual Feedback",
+        "volume": "14",
+        "author": "Gode",
+        "year": "2025",
+        "journal-title": "J Neonatal Surg."
+      },
+      {
+        "key": "bib17-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "1210713",
+        "DOI": "10.3389/fbioe.2023.1210713",
+        "article-title": "Intraoperative sensor technology quantifies inter-prosthesis pressure for predicting lower limb alignment after Oxford unicompartmental knee arthroplasty",
+        "volume": "11",
+        "author": "Ge",
+        "year": "2023",
+        "journal-title": "Front Bioeng Biotechnol."
+      },
+      {
+        "issue": "9",
+        "key": "bib18-20260218",
+        "first-page": "e92762",
+        "article-title": "AI-Enhanced Surgical Decision-Making in Orthopedics: From Preoperative Planning to Intraoperative Guidance and Real-Time Adaptation",
+        "volume": "17",
+        "author": "Elkohail",
+        "year": "2025",
+        "journal-title": "Cureus."
+      },
+      {
+        "issue": "2",
+        "key": "bib19-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "316",
+        "DOI": "10.13004/kjnt.2022.18.e25",
+        "article-title": "Exoskeleton-assisted Gait Training in Spinal Disease With Gait Disturbance",
+        "volume": "18",
+        "author": "Jang",
+        "year": "2022",
+        "journal-title": "Korean J Neurotrauma."
+      },
+      {
+        "issue": "1",
+        "key": "bib20-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1186/s12984-023-01287-5",
+        "article-title": "Optimizing exoskeleton assistance to improve walking speed and energy economy for older adults",
+        "volume": "21",
+        "author": "Lakmazaheri",
+        "year": "2024",
+        "journal-title": "J Neuroeng Rehabil."
+      },
+      {
+        "key": "bib22-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "103113",
+        "DOI": "10.1016/j.rcim.2025.103113",
+        "article-title": "Transformation of industrial robotics with natural language models: Recent progress and future prospects",
+        "volume": "97",
+        "author": "Yu",
+        "year": "2026",
+        "journal-title": "Robot Comput-Integr Manuf."
+      },
+      {
+        "issue": "14",
+        "key": "bib23-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "1649",
+        "DOI": "10.3390/healthcare13141649",
+        "article-title": "MedScrubCrew: A Medical Multi-Agent Framework for Automating Appointment Scheduling Based on Patient-Provider Profile Resource Matching",
+        "volume": "13",
+        "author": "Ruiz Mejia",
+        "year": "2025",
+        "journal-title": "Healthcare (Basel)."
+      },
+      {
+        "issue": "1",
+        "key": "bib25-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "e53207",
+        "DOI": "10.2196/53207",
+        "article-title": "How Explainable Artificial Intelligence Can Increase or Decrease Clinicians’ Trust in AI Applications in Health Care: Systematic Review",
+        "volume": "3",
+        "author": "Rosenbacke",
+        "year": "2024",
+        "journal-title": "JMIR AI."
+      },
+      {
+        "issue": "2",
+        "key": "bib27-20260218",
+        "first-page": "75",
+        "article-title": "Bias in artificial intelligence for medical imaging: fundamentals, detection, avoidance, mitigation, challenges, ethics, and prospects",
+        "volume": "31",
+        "author": "Koçak",
+        "year": "2025",
+        "journal-title": "Diagn Interv Radiol."
+      },
+      {
+        "issue": "2",
+        "key": "bib28-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "101419",
+        "DOI": "10.1016/j.xcrm.2024.101419",
+        "article-title": "Federated machine learning in healthcare: A systematic review on clinical applications and technical architecture",
+        "volume": "5",
+        "author": "Teo",
+        "year": "2024",
+        "journal-title": "Cell Rep Med."
+      },
+      {
+        "issue": "1",
+        "key": "bib29-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "16105",
+        "DOI": "10.1038/s41598-024-66873-6",
+        "article-title": "Fair AI-powered orthopedic image segmentation: addressing bias and promoting equitable healthcare",
+        "volume": "14",
+        "author": "Siddiqui",
+        "year": "2024",
+        "journal-title": "Sci Rep."
+      },
+      {
+        "issue": "10",
+        "key": "bib30-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "2838",
+        "DOI": "10.1038/s41591-024-03113-4",
+        "article-title": "The limits of fair medical imaging AI in real-world generalization",
+        "volume": "30",
+        "author": "Yang",
+        "year": "2024",
+        "journal-title": "Nat Med."
+      },
+      {
+        "issue": "1",
+        "key": "bib31-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "94",
+        "DOI": "10.1038/s41746-023-00837-4",
+        "article-title": "Solving the explainable AI conundrum by bridging clinicians’ needs and developers’ goals",
+        "volume": "6",
+        "author": "Bienefeld",
+        "year": "2023",
+        "journal-title": "NPJ Digit Med."
+      },
+      {
+        "issue": "12",
+        "key": "bib32-20260218",
+        "doi-asserted-by": "crossref",
+        "first-page": "2996",
+        "DOI": "10.1038/s41591-023-02562-7",
+        "article-title": "Clinical AI tools must convey predictive uncertainty for each individual patient",
+        "volume": "29",
+        "author": "Banerji",
+        "year": "2023",
+        "journal-title": "Nat Med."
+      }
+    ],
+    "container-title": [
+      "Journal of Bone and Joint Surgery"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.ovid.com/10.2106/JBJS.25.01497",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          26
+        ]
+      ],
+      "date-time": "2026-08-26T13:26:09Z",
+      "timestamp": 1787750769000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.ovid.com/10.2106/JBJS.25.01497"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          5
+        ]
+      ]
+    },
+    "references-count": 29,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.2106/jbjs.25.01497",
+    "relation": {},
+    "ISSN": [
+      "0021-9355",
+      "1535-1386"
+    ],
+    "issn-type": [
+      {
+        "value": "0021-9355",
+        "type": "print"
+      },
+      {
+        "value": "1535-1386",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          5
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,905 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          16
+        ]
+      ],
+      "date-time": "2026-10-16T08:30:43Z",
+      "timestamp": 1792139443257,
+      "version": "4.4.0"
+    },
+    "reference-count": 28,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              11,
+              17
+            ]
+          ],
+          "date-time": "2023-11-17T00:00:00Z",
+          "timestamp": 1700179200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              11,
+              17
+            ]
+          ],
+          "date-time": "2023-11-17T00:00:00Z",
+          "timestamp": 1700179200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "name": "European Union’s Horizon Europe programme",
+        "award": [
+          "ODELIA, 101057091"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "ODELIA, 101057091"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "European Union’s Horizon Europe programme",
+        "award": [
+          "COMFORT, 101079894"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "COMFORT, 101079894"
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "TR 1700/7-1"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "TR 1700/7-1"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001659",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "Deutsche Forschungsgemeinschaft",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "NE 2136/3-1"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "NE 2136/3-1"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001659",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100003107",
+        "name": "Bundesministerium für Gesundheit",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "DEEP LIVER, ZMVI1-2520DAT111"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "DEEP LIVER, ZMVI1-2520DAT111"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100003107",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "Max-Eder-Programme of the German Cancer Aid",
+        "award": [
+          "#70113864"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "#70113864"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "German Federal Ministry of Education and Research",
+        "award": [
+          "PEARL, 01KD2104C"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "PEARL, 01KD2104C"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "German Federal Ministry of Education and Research",
+        "award": [
+          "CAMINO, 01EO2101"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "CAMINO, 01EO2101"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "German Federal Ministry of Education and Research",
+        "award": [
+          "SWAG, 01KD2215A"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "SWAG, 01KD2215A"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "German Federal Ministry of Education and Research",
+        "award": [
+          "TRANSFORM LIVER, 031L0312A"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "TRANSFORM LIVER, 031L0312A"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "German Federal Ministry of Education and Research",
+        "award": [
+          "TANGERINE, 01KT2302 through ERA-NET Transcan"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "TANGERINE, 01KT2302 through ERA-NET Transcan"
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001655",
+        "name": "Deutscher Akademischer Austauschdienst",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "SECAI, 57616814"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "SECAI, 57616814"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001655",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "German Federal Joint Committee",
+        "award": [
+          "Transplant.KI, 01VSF21048"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "Transplant.KI, 01VSF21048"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "European Union’s Horizon Europe and innovation programme",
+        "award": [
+          "ODELIA, 101057091"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "ODELIA, 101057091"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "European Union’s Horizon Europe and innovation programme",
+        "award": [
+          "GENIAL, 101096312"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "GENIAL, 101096312"
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100000272",
+        "name": "National Institute for Health and Care Research",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "NIHR, NIHR213331"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "NIHR, NIHR213331"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100000272",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100007210",
+        "name": "RWTH Aachen University",
+        "doi-asserted-by": "crossref",
+        "id": [
+          {
+            "id": "10.13039/501100007210",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Sci Rep"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Large language models (LLMs) have shown potential in various applications, including clinical practice. However, their accuracy and utility in providing treatment recommendations for orthopedic conditions remain to be investigated. Thus, this pilot study aims to evaluate the validity of treatment recommendations generated by GPT-4 for common knee and shoulder orthopedic conditions using anonymized clinical MRI reports. A retrospective analysis was conducted using 20 anonymized clinical MRI reports, with varying severity and complexity. Treatment recommendations were elicited from GPT-4 and evaluated by two board-certified specialty-trained senior orthopedic surgeons. Their evaluation focused on semiquantitative gradings of accuracy and clinical utility and potential limitations of the LLM-generated recommendations. GPT-4 provided treatment recommendations for 20 patients (mean age, 50 years ± 19 [standard deviation]; 12 men) with acute and chronic knee and shoulder conditions. The LLM produced largely accurate and clinically useful recommendations. However, limited awareness of a patient’s overall situation, a tendency to incorrectly appreciate treatment urgency, and largely schematic and unspecific treatment recommendations were observed and may reduce its clinical usefulness. In conclusion, LLM-based treatment recommendations are largely adequate and not prone to ‘hallucinations’, yet inadequate in particular situations. Critical guidance by healthcare professionals is obligatory, and independent use by patients is discouraged, given the dependency on precise data input.</jats:p>",
+    "DOI": "10.1038/s41598-023-47500-2",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          17
+        ]
+      ],
+      "date-time": "2023-11-17T16:02:29Z",
+      "timestamp": 1700236949000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 79,
+    "title": [
+      "A pilot study on the efficacy of GPT-4 in providing orthopedic treatment recommendations from MRI reports"
+    ],
+    "prefix": "10.1038",
+    "volume": "13",
+    "author": [
+      {
+        "given": "Daniel",
+        "family": "Truhn",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Christian D.",
+        "family": "Weber",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Benedikt J.",
+        "family": "Braun",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Keno",
+        "family": "Bressem",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jakob N.",
+        "family": "Kather",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Christiane",
+        "family": "Kuhl",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sven",
+        "family": "Nebelung",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          17
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "47500_CR1",
+        "unstructured": "Ruby, D. ChatGPT Statistics for 2023 (New Data + GPT-4 Facts), <https://www.demandsage.com/chatgpt-statistics/> (2023)."
+      },
+      {
+        "key": "47500_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "837",
+        "DOI": "10.1016/j.jor.2018.08.006",
+        "volume": "15",
+        "author": "Q Naziri",
+        "year": "2018",
+        "unstructured": "Naziri, Q. et al. Knee dislocation with popliteal artery disruption: A nationwide analysis from 2005 to 2013. J. Orthop. 15, 837–841 (2018).",
+        "journal-title": "J. Orthop."
+      },
+      {
+        "key": "47500_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "e0000198",
+        "DOI": "10.1371/journal.pdig.0000198",
+        "volume": "2",
+        "author": "TH Kung",
+        "year": "2023",
+        "unstructured": "Kung, T. H. et al. Performance of ChatGPT on USMLE: Potential for AI-assisted medical education using large language models. PLoS Digit. Health 2, e0000198 (2023).",
+        "journal-title": "PLoS Digit. Health"
+      },
+      {
+        "key": "47500_CR4",
+        "unstructured": "Bubeck, S. et al. Sparks of artificial general intelligence: Early experiments with gpt-4. http://arxiv.org/abs/2303.12712 (2023)."
+      },
+      {
+        "key": "47500_CR5",
+        "unstructured": "Nori, H., King, N., McKinney, S. M., Carignan, D. & Horvitz, E. Capabilities of gpt-4 on medical challenge problems. http://arxiv.org/abs/2303.13375 (2023)."
+      },
+      {
+        "key": "47500_CR6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/2023.02.21.23285886",
+        "author": "AS Rao",
+        "year": "2023",
+        "unstructured": "Rao, A. S. et al. Assessing the utility of ChatGPT throughout the entire clinical workflow. medRxiv https://doi.org/10.1101/2023.02.21.23285886 (2023).",
+        "journal-title": "medRxiv"
+      },
+      {
+        "key": "47500_CR7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/2023.01.30.23285067",
+        "author": "DM Levine",
+        "year": "2023",
+        "unstructured": "Levine, D. M. et al. The diagnostic and triage accuracy of the GPT-3 artificial intelligence model. medRxiv https://doi.org/10.1101/2023.01.30.23285067 (2023).",
+        "journal-title": "medRxiv"
+      },
+      {
+        "key": "47500_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "e2325000",
+        "DOI": "10.1001/jamanetworkopen.2023.25000",
+        "volume": "6",
+        "author": "Y-F Shea",
+        "year": "2023",
+        "unstructured": "Shea, Y.-F., Lee, C. M. Y., Ip, W. C. T., Luk, D. W. A. & Wong, S. S. W. Use of GPT-4 to analyze medical records of patients with extensive investigations and delayed diagnosis. JAMA Netw. Open 6, e2325000–e2325000 (2023).",
+        "journal-title": "JAMA Netw. Open"
+      },
+      {
+        "key": "47500_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "842",
+        "DOI": "10.1001/jama.2023.1044",
+        "volume": "329",
+        "author": "A Sarraju",
+        "year": "2023",
+        "unstructured": "Sarraju, A. et al. Appropriateness of cardiovascular disease prevention recommendations obtained from a popular online chat-based artificial intelligence model. JAMA 329, 842–844 (2023).",
+        "journal-title": "JAMA"
+      },
+      {
+        "issue": "4",
+        "key": "47500_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "e230424",
+        "DOI": "10.1148/radiol.230424",
+        "volume": "307",
+        "author": "HL Haver",
+        "year": "2023",
+        "unstructured": "Haver, H. L. et al. Appropriateness of breast cancer prevention and screening recommendations provided by ChatGPT. Radiology 307(4), e230424 (2023).",
+        "journal-title": "Radiology"
+      },
+      {
+        "key": "47500_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "e230725",
+        "DOI": "10.1148/radiol.230725",
+        "volume": "307",
+        "author": "LC Adams",
+        "year": "2023",
+        "unstructured": "Adams, L. C. et al. Leveraging GPT-4 for post hoc transformation of free-text radiology reports into structured reporting: A multilingual feasibility study. Radiology 307, e230725. https://doi.org/10.1148/radiol.230725 (2023).",
+        "journal-title": "Radiology"
+      },
+      {
+        "key": "47500_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "e231259",
+        "DOI": "10.1148/radiol.231259",
+        "volume": "307",
+        "author": "Z Sun",
+        "year": "2023",
+        "unstructured": "Sun, Z. et al. Evaluating GPT-4 on impressions generation in radiology reports. Radiology 307, e231259 (2023).",
+        "journal-title": "Radiology"
+      },
+      {
+        "key": "47500_CR13",
+        "unstructured": "Stanzione, A. et al. Large language models in radiology: fundamentals, applications, ethical considerations, risks, and future directions. In Diagnostic and Interventional Radiology (Ankara, Turkey) (2023)."
+      },
+      {
+        "key": "47500_CR14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1067/j.cpradiol.2023.08.018",
+        "author": "C Tippareddy",
+        "year": "2023",
+        "unstructured": "Tippareddy, C., Jiang, S., Bera, K. & Ramaiya, N. Radiology reading room for the future: Harnessing the power of large language models like ChatGPT. Current Probl. Diagn. Radiol. https://doi.org/10.1067/j.cpradiol.2023.08.018 (2023).",
+        "journal-title": "Current Probl. Diagn. Radiol."
+      },
+      {
+        "key": "47500_CR15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1067/j.cpradiol.2023.10.013",
+        "author": "K Bera",
+        "year": "2023",
+        "unstructured": "Bera, K., O’Connor, G., Jiang, S., Tirumani, S. H. & Ramaiya, N. Analysis of ChatGPT publications in radiology: Literature so far. Current Probl. Diagn. Radiol. https://doi.org/10.1067/j.cpradiol.2023.10.013 (2023).",
+        "journal-title": "Current Probl. Diagn. Radiol."
+      },
+      {
+        "key": "47500_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "1233",
+        "DOI": "10.1056/NEJMsr2214184",
+        "volume": "388",
+        "author": "P Lee",
+        "year": "2023",
+        "unstructured": "Lee, P., Bubeck, S. & Petro, J. Benefits, limits, and risks of GPT-4 as an AI Chatbot for medicine. N. Engl. J. Med. 388, 1233–1239 (2023).",
+        "journal-title": "N. Engl. J. Med."
+      },
+      {
+        "key": "47500_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "140",
+        "DOI": "10.1038/s41746-021-00509-1",
+        "volume": "4",
+        "author": "JP Richardson",
+        "year": "2021",
+        "unstructured": "Richardson, J. P. et al. Patient apprehensions about the use of artificial intelligence in healthcare. NPJ. Digit. Med. 4, 140 (2021).",
+        "journal-title": "NPJ. Digit. Med."
+      },
+      {
+        "key": "47500_CR18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamainternmed.2023.1838",
+        "author": "JW Ayers",
+        "year": "2023",
+        "unstructured": "Ayers, J. W. et al. Comparing physician and artificial intelligence chatbot responses to patient questions posted to a public social media forum. JAMA Int. Med. https://doi.org/10.1001/jamainternmed.2023.1838 (2023).",
+        "journal-title": "JAMA Int. Med."
+      },
+      {
+        "key": "47500_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "543",
+        "DOI": "10.1097/BOT.0b013e31829efda1",
+        "volume": "27",
+        "author": "HA Vallier",
+        "year": "2013",
+        "unstructured": "Vallier, H. A., Wang, X., Moore, T. A., Wilber, J. H. & Como, J. J. Timing of orthopaedic surgery in multiple trauma patients: Development of a protocol for early appropriate care. J. Orthop. Trauma 27, 543–551 (2013).",
+        "journal-title": "J. Orthop. Trauma"
+      },
+      {
+        "key": "47500_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "156",
+        "DOI": "10.2106/JBJS.M.00372",
+        "volume": "97",
+        "author": "L Shan",
+        "year": "2015",
+        "unstructured": "Shan, L., Shan, B., Suzuki, A., Nouh, F. & Saxena, A. Intermediate and long-term quality of life after total knee replacement: A systematic review and meta-analysis. JBJS 97, 156–168 (2015).",
+        "journal-title": "JBJS"
+      },
+      {
+        "key": "47500_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "956",
+        "DOI": "10.1136/bjsports-2017-098106",
+        "volume": "52",
+        "author": "G Vuurberg",
+        "year": "2018",
+        "unstructured": "Vuurberg, G. et al. Diagnosis, treatment and prevention of ankle sprains: Update of an evidence-based clinical guideline. Br. J. Sports Med. 52, 956–956 (2018).",
+        "journal-title": "Br. J. Sports Med."
+      },
+      {
+        "key": "47500_CR22",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chillemi, C. & Franceschini, V. Shoulder osteoarthritis. Arthritis 2013 (2013).",
+        "DOI": "10.1155/2013/370231"
+      },
+      {
+        "key": "47500_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "1039",
+        "DOI": "10.1093/rheumatology/kel163a",
+        "volume": "45",
+        "author": "G Coakley",
+        "year": "2006",
+        "unstructured": "Coakley, G. et al. BSR & BHPR, BOA, RCGP and BSAC guidelines for management of the hot swollen joint in adults. Rheumatology 45, 1039–1041 (2006).",
+        "journal-title": "Rheumatology"
+      },
+      {
+        "key": "47500_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "884",
+        "DOI": "10.1002/art.1780400516",
+        "volume": "40",
+        "author": "CJ Kaandorp",
+        "year": "1997",
+        "unstructured": "Kaandorp, C. J., Krijnen, P., Moens, H. J., Habbema, J. D. & van Schaardenburg, D. The outcome of bacterial arthritis: A prospective community-based study. Arthritis Rheum 40, 884–892. https://doi.org/10.1002/art.1780400516 (1997).",
+        "journal-title": "Arthritis Rheum"
+      },
+      {
+        "key": "47500_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "604",
+        "DOI": "10.1016/j.semarthrit.2011.06.018",
+        "volume": "41",
+        "author": "M Fangtham",
+        "year": "2012",
+        "unstructured": "Fangtham, M. & Baer, A. N. Methicillin-resistant Staphylococcus aureus arthritis in adults: Case report and review of the literature. Semin Arthritis Rheum 41, 604–610. https://doi.org/10.1016/j.semarthrit.2011.06.018 (2012).",
+        "journal-title": "Semin Arthritis Rheum"
+      },
+      {
+        "key": "47500_CR26",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Olsen, A. S. & Shah, V. M. Surgical Approaches to Advanced Knee OA (TKA, UKA, Osteotomy). In Principles of Orthopedic Practice for Primary Care Providers, 425–435 (2021).",
+        "DOI": "10.1007/978-3-030-74625-4_25"
+      },
+      {
+        "key": "47500_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "e230806",
+        "DOI": "10.1148/radiol.230806",
+        "volume": "309",
+        "author": "F Khader",
+        "year": "2023",
+        "unstructured": "Khader, F. et al. Multimodal deep learning for integrating chest radiographs and clinical parameters: A case for transformers. Radiology 309, e230806 (2023).",
+        "journal-title": "Radiology"
+      },
+      {
+        "key": "47500_CR28",
+        "unstructured": "Jiao, W., Wang, W., Huang, J., Wang, X. & Tu, Z. Is ChatGPT a good translator? Yes with GPT-4 as the engine. http://arxiv.org/abs/2301.08745 (2023)"
+      }
+    ],
+    "updated-by": [
+      {
+        "DOI": "10.1038/s41598-024-56029-x",
+        "type": "correction",
+        "label": "Correction",
+        "source": "publisher",
+        "updated": {
+          "date-parts": [
+            [
+              2024,
+              3,
+              5
+            ]
+          ],
+          "date-time": "2024-03-05T00:00:00Z",
+          "timestamp": 1709596800000
+        }
+      }
+    ],
+    "container-title": [
+      "Scientific Reports"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.nature.com/articles/s41598-023-47500-2.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41598-023-47500-2",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41598-023-47500-2.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          8
+        ]
+      ],
+      "date-time": "2024-03-08T20:22:06Z",
+      "timestamp": 1709929326000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/s41598-023-47500-2"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          17
+        ]
+      ]
+    },
+    "references-count": 28,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "47500"
+    ],
+    "URL": "https://doi.org/10.1038/s41598-023-47500-2",
+    "relation": {
+      "correction": [
+        {
+          "id-type": "doi",
+          "id": "10.1038/s41598-024-56029-x",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "ISSN": [
+      "2045-2322"
+    ],
+    "issn-type": [
+      {
+        "value": "2045-2322",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          17
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "11 August 2023",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "14 November 2023",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "17 November 2023",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "5 March 2024",
+        "order": 4,
+        "name": "change_date",
+        "label": "Change Date",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "Correction",
+        "order": 5,
+        "name": "change_type",
+        "label": "Change Type",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "A Correction to this paper has been published:",
+        "order": 6,
+        "name": "change_details",
+        "label": "Change Details",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "https://doi.org/10.1038/s41598-024-56029-x",
+        "URL": "https://doi.org/10.1038/s41598-024-56029-x",
+        "order": 7,
+        "name": "change_details",
+        "label": "Change Details",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "JNK declares consulting services for Owkin, France; DoMore Diagnostics, Norway and Panakeia, UK and has received honoraria for lectures by Eisai, Roche, MSD and Fresenius. The other authors report no competing interests.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "20159"
+  }
+}

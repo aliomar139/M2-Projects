@@ -1,0 +1,1079 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          27
+        ]
+      ],
+      "date-time": "2025-12-27T08:46:16Z",
+      "timestamp": 1766825176906,
+      "version": "3.48.0"
+    },
+    "reference-count": 67,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              23
+            ]
+          ],
+          "date-time": "2025-12-23T00:00:00Z",
+          "timestamp": 1766448000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              27
+            ]
+          ],
+          "date-time": "2025-12-27T00:00:00Z",
+          "timestamp": 1766793600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 4,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Karlsruher Institut für Technologie (KIT)"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Arthritis Res Ther"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>This study aimed to identify subpopulations of patients with hip osteoarthritis who exhibit distinct adaptations in gait biomechanics, and to evaluate subpopulation-specific effects of total hip replacement on gait biomechanics. Three datasets were analyzed: (1) a cohort of 109 unilateral hip osteoarthritis patients before total hip replacement, (2) a subset of the first dataset of 63 patients re-evaluated after total hip replacement and (3) a control group of 56 healthy individuals. For all participants, three-dimensional joint angle and moment waveforms of the pelvis, ipsilateral hip and knee, as well as sagittal-plane ankle motion and the foot progression angle, were obtained. The analytical framework integrated k-means clustering, support vector machine classifiers, Shapley Additive exPlanations, and statistical waveform analyses. Clustering of the pre-operative dataset revealed three distinct subpopulations characterized by unique patterns in gait kinematics and joint moments. These subpopulations also differed in age, Kellgren-Lawrence score, and walking speed. Prior to total hip replacement, between 51.4% and 85.2% of hip osteoarthritis patients were classified as pathologic; following surgery, this proportion decreased to 27.8% − 51.8%. Hip flexion and rotation angles and moments were identified as the most important features for patient classification. The magnitude of gait improvement after total hip replacement varied across subpopulations, indicating subpopulation-specific responses to surgical intervention. In conclusion, patients with hip osteoarthritis demonstrate distinct subpopulation-specific gait adaptations, both before and after total hip replacement. Preoperative classification of patients into the identified subpopulations using machine learning approaches may facilitate the prediction of postoperative gait recovery and support the development of personalized treatment and rehabilitation strategies.</jats:p>",
+    "DOI": "10.1186/s13075-025-03709-2",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          23
+        ]
+      ],
+      "date-time": "2025-12-23T21:22:48Z",
+      "timestamp": 1766524968000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Explainable machine learning for orthopedic decision-making: predicting functional outcomes of total hip replacement from gait biomechanics"
+    ],
+    "prefix": "10.1186",
+    "volume": "27",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-5291-4299",
+        "authenticated-orcid": false,
+        "given": "Bernd J.",
+        "family": "Stetter",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6822-0697",
+        "authenticated-orcid": false,
+        "given": "Jonas",
+        "family": "Dully",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7088-3927",
+        "authenticated-orcid": false,
+        "given": "Felix",
+        "family": "Stief",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3687-6341",
+        "authenticated-orcid": false,
+        "given": "Jana",
+        "family": "Holder",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4568-6598",
+        "authenticated-orcid": false,
+        "given": "Hannah",
+        "family": "Steingrebe",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7680-9354",
+        "authenticated-orcid": false,
+        "given": "Frank",
+        "family": "Zaucke",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7478-2197",
+        "authenticated-orcid": false,
+        "given": "Stefan",
+        "family": "Sell",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5961-1015",
+        "authenticated-orcid": false,
+        "given": "Stefan",
+        "family": "van Drongelen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7885-7085",
+        "authenticated-orcid": false,
+        "given": "Thorsten",
+        "family": "Stein",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          23
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "3709_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "1745",
+        "DOI": "10.1016/S0140-6736(19)30417-9",
+        "volume": "393",
+        "author": "DJ Hunter",
+        "year": "2019",
+        "unstructured": "Hunter DJ, Bierma-Zeinstra S. Osteoarthritis. Lancet. 2019;393:1745–59. https://doi.org/10.1016/S0140-6736(19)30417-9.",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "3709_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "2006",
+        "DOI": "10.1016/S0140-6736(20)32340-0",
+        "volume": "396",
+        "author": "A Cieza",
+        "year": "2021",
+        "unstructured": "Cieza A, et al. Global estimates of the need for rehabilitation based on the global burden of disease study 2019: a systematic analysis for the global burden of disease study 2019. Lancet. 2021;396:2006–17. https://doi.org/10.1016/S0140-6736(20)32340-0.",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "3709_CR3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7812/TPP/17-084",
+        "author": "MJ Lespasio",
+        "year": "2018",
+        "unstructured": "Lespasio MJ, et al. Hip osteoarthritis: a primer. Perm J. 2018. https://doi.org/10.7812/TPP/17-084.",
+        "journal-title": "Perm J"
+      },
+      {
+        "key": "3709_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "1141",
+        "DOI": "10.1007/s11136-004-4599-9",
+        "volume": "14",
+        "author": "JM van der Waal",
+        "year": "2005",
+        "unstructured": "van der Waal JM, Terwee CB, van der Windt DAWM, Bouter LM, Dekker J. The impact of non-traumatic hip and knee disorders on health-related quality of life as measured with the SF-36 or SF-12. A systematic review. Qual Life Res. 2005;14:1141–55. https://doi.org/10.1007/s11136-004-4599-9.",
+        "journal-title": "Qual Life Res"
+      },
+      {
+        "key": "3709_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "353",
+        "DOI": "10.2147/PROM.S156279",
+        "volume": "9",
+        "author": "R Mercieca-Bebber",
+        "year": "2018",
+        "unstructured": "Mercieca-Bebber R, King MT, Calvert MJ, Stockler MR, Friedlander M. The importance of patient-reported outcomes in clinical trials and strategies for future optimization. Patient Relat Outcome Meas. 2018;9:353–67. https://doi.org/10.2147/PROM.S156279.",
+        "journal-title": "Patient Relat Outcome Meas"
+      },
+      {
+        "key": "3709_CR6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-024-01265-8",
+        "volume": "7",
+        "author": "X Liu",
+        "year": "2024",
+        "unstructured": "Liu X, Liu Y, Lee ML, Hsu W, Liow MHL. Identifying who are unlikely to benefit from total knee arthroplasty using machine learning models. NPJ Digit Med. 2024;7:266. https://doi.org/10.1038/s41746-024-01265-8.",
+        "journal-title": "NPJ Digit Med"
+      },
+      {
+        "key": "3709_CR7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-025-01507-3",
+        "volume": "8",
+        "author": "G Hoyer",
+        "year": "2025",
+        "unstructured": "Hoyer G, et al. Foundations of a knee joint digital twin from qMRI biomarkers for osteoarthritis and knee replacement. NPJ Digit Med. 2025;8:118. https://doi.org/10.1038/s41746-025-01507-3.",
+        "journal-title": "NPJ Digit Med"
+      },
+      {
+        "key": "3709_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "1197883",
+        "DOI": "10.3389/fspor.2023.1197883",
+        "volume": "5",
+        "author": "H Steingrebe",
+        "year": "2023",
+        "unstructured": "Steingrebe H, Spancken S, Sell S, Stein T. Effects of hip osteoarthritis on lower body joint kinematics during locomotion tasks: a systematic review and meta-analysis. Front Sports Act Living. 2023;5:1197883. https://doi.org/10.3389/fspor.2023.1197883.",
+        "journal-title": "Front Sports Act Living"
+      },
+      {
+        "key": "3709_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "1415",
+        "DOI": "10.1016/j.joca.2018.03.011",
+        "volume": "26",
+        "author": "LE Diamond",
+        "year": "2018",
+        "unstructured": "Diamond LE, Allison K, Dobson F, Hall M. Hip joint moments during walking in people with hip osteoarthritis: a systematic review and meta-analysis. Osteoarthritis Cartilage. 2018;26:1415–24. https://doi.org/10.1016/j.joca.2018.03.011.",
+        "journal-title": "Osteoarthritis Cartilage"
+      },
+      {
+        "key": "3709_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "847",
+        "DOI": "10.1016/j.joca.2018.02.897",
+        "volume": "26",
+        "author": "JS Bahl",
+        "year": "2018",
+        "unstructured": "Bahl JS, et al. Biomechanical changes and recovery of gait function after total hip arthroplasty for osteoarthritis: a systematic review and meta-analysis. Osteoarthritis Cartilage. 2018;26:847–63. https://doi.org/10.1016/j.joca.2018.02.897.",
+        "journal-title": "Osteoarthritis Cartilage"
+      },
+      {
+        "key": "3709_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "117",
+        "DOI": "10.1016/j.gaitpost.2018.01.002",
+        "volume": "61",
+        "author": "M Wesseling",
+        "year": "2018",
+        "unstructured": "Wesseling M, Meyer C, Corten K, Desloovere K, Jonkers I. Longitudinal joint loading in patients before and up to one year after unilateral total hip arthroplasty. Gait Posture. 2018;61:117–24. https://doi.org/10.1016/j.gaitpost.2018.01.002.",
+        "journal-title": "Gait Posture"
+      },
+      {
+        "key": "3709_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "314",
+        "DOI": "10.1123/japa.2013-0236",
+        "volume": "23",
+        "author": "A Middleton",
+        "year": "2015",
+        "unstructured": "Middleton A, Fritz SL, Lusardi M. Walking speed: the functional vital sign. J Aging Phys Act. 2015;23:314–22. https://doi.org/10.1123/japa.2013-0236.",
+        "journal-title": "J Aging Phys Act"
+      },
+      {
+        "key": "3709_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "443",
+        "DOI": "10.1016/j.jbiomech.2003.09.009",
+        "volume": "37",
+        "author": "H Miki",
+        "year": "2004",
+        "unstructured": "Miki H, et al. Recovery of walking speed and symmetrical movement of the pelvis and lower extremity joints after unilateral THA. J Biomech. 2004;37:443–55. https://doi.org/10.1016/j.jbiomech.2003.09.009.",
+        "journal-title": "J Biomech"
+      },
+      {
+        "key": "3709_CR14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/jcm10102167",
+        "author": "S van Drongelen",
+        "year": "2021",
+        "unstructured": "van Drongelen S. Identification of patients with similar gait compensating strategies due to unilateral hip osteoarthritis and the effect of total hip replacement: a secondary analysis. J Clin Med. 2021. https://doi.org/10.3390/jcm10102167.",
+        "journal-title": "J Clin Med"
+      },
+      {
+        "key": "3709_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1016/j.jbiomech.2018.09.009",
+        "volume": "81",
+        "author": "E Halilaj",
+        "year": "2018",
+        "unstructured": "Halilaj E, et al. Machine learning in human movement biomechanics: best practices, common pitfalls, and new opportunities. J Biomech. 2018;81:1–11. https://doi.org/10.1016/j.jbiomech.2018.09.009.",
+        "journal-title": "J Biomech"
+      },
+      {
+        "key": "3709_CR16",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Stetter BJ, Stein T. Machine learning in biomechanics: Enhancing human movement analysis. In: Dindorf C, Bartaguiz E, Gassmann F, Fröhlich M, editors. Artificial Intelligence in Sports, Movement, and Health. 1st ed. Cham: Springer Nature Switzerland; Imprint Springer; 2024. p. 139–60. https://doi.org/10.1007/978-3-031-67256-9_9. Published 3 Sept2024, Print ISBN978-3-031-67255-2, Online ISBN978-3-031-67256-9.",
+        "DOI": "10.1007/978-3-031-67256-9_9"
+      },
+      {
+        "key": "3709_CR17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.engappai.2022.104743",
+        "volume": "110",
+        "author": "AE Ezugwu",
+        "year": "2022",
+        "unstructured": "Ezugwu AE, et al. A comprehensive survey of clustering algorithms: state-of-the-art machine learning applications, taxonomy, challenges, and future research prospects. Eng Appl Artif Intell. 2022;110:104743. https://doi.org/10.1016/j.engappai.2022.104743.",
+        "journal-title": "Eng Appl Artif Intell"
+      },
+      {
+        "key": "3709_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "55",
+        "DOI": "10.1016/j.clinbiomech.2016.02.008",
+        "volume": "33",
+        "author": "J Christian",
+        "year": "2016",
+        "unstructured": "Christian J, et al. Computer aided analysis of gait patterns in patients with acute anterior cruciate ligament injury. Clin Biomech. 2016;33:55–60. https://doi.org/10.1016/j.clinbiomech.2016.02.008.",
+        "journal-title": "Clin Biomech"
+      },
+      {
+        "key": "3709_CR19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s42836-022-00118-7",
+        "volume": "4",
+        "author": "LS Lee",
+        "year": "2022",
+        "unstructured": "Lee LS. Artificial intelligence in diagnosis of knee osteoarthritis and prediction of arthroplasty outcomes: a review. Arthroplasty. 2022;4:16. https://doi.org/10.1186/s42836-022-00118-7.",
+        "journal-title": "Arthroplasty"
+      },
+      {
+        "key": "3709_CR20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12891-016-1013-z",
+        "volume": "17",
+        "author": "A Phinyomark",
+        "year": "2016",
+        "unstructured": "Phinyomark A, Osis ST, Hettinga BA, Kobsar D, Ferber R. Gender differences in gait kinematics for patients with knee osteoarthritis. BMC Musculoskelet Disord. 2016;17:157. https://doi.org/10.1186/s12891-016-1013-z.",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "key": "3709_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "42",
+        "DOI": "10.1016/j.compbiomed.2014.09.012",
+        "volume": "55",
+        "author": "D Laroche",
+        "year": "2014",
+        "unstructured": "Laroche D, et al. A classification study of kinematic gait trajectories in hip osteoarthritis. Comput Biol Med. 2014;55:42–8. https://doi.org/10.1016/j.compbiomed.2014.09.012.",
+        "journal-title": "Comput Biol Med"
+      },
+      {
+        "key": "3709_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1016/j.medengphy.2017.12.006",
+        "volume": "53",
+        "author": "J Figueiredo",
+        "year": "2018",
+        "unstructured": "Figueiredo J, Santos CP, Moreno JC. Automatic recognition of gait patterns in human motor disorders using machine learning: a review. Med Eng Phys. 2018;53:1–12. https://doi.org/10.1016/j.medengphy.2017.12.006.",
+        "journal-title": "Med Eng Phys"
+      },
+      {
+        "key": "3709_CR23",
+        "doi-asserted-by": "publisher",
+        "unstructured": "European Data Protection Supervisor, Attoresi M, Bernardo V, Lareo X, Velasco L. TechDispatch – Explainable artificial intelligence. #2/2023. Publications Office of the European Union. 2023. https://doi.org/10.2804/802043.",
+        "DOI": "10.2804/802043"
+      },
+      {
+        "key": "3709_CR24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/e23010018",
+        "author": "P Linardatos",
+        "year": "2020",
+        "unstructured": "Linardatos P, Papastefanopoulos V, Kotsiantis S. Explainable AI: a review of machine learning interpretability methods. Entropy. 2020. https://doi.org/10.3390/e23010018.",
+        "journal-title": "Entropy"
+      },
+      {
+        "key": "3709_CR25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s20164385",
+        "author": "C Dindorf",
+        "year": "2020",
+        "unstructured": "Dindorf C, Teufl W, Taetz B, Bleser G, Fröhlich M. Interpretability of input representations for gait classification in patients after total hip arthroplasty. Sensors. 2020. https://doi.org/10.3390/s20164385.",
+        "journal-title": "Sensors"
+      },
+      {
+        "key": "3709_CR26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jor.23886",
+        "author": "F Stief",
+        "year": "2018",
+        "unstructured": "Stief F, et al. Abnormal loading of the hip and knee joints in unilateral hip osteoarthritis persists two years after total hip replacement. J Orthop Res. 2018. https://doi.org/10.1002/jor.23886.",
+        "journal-title": "J Orthop Res"
+      },
+      {
+        "key": "3709_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "371",
+        "DOI": "10.1016/j.gaitpost.2020.08.085",
+        "volume": "81",
+        "author": "S van Drongelen",
+        "year": "2020",
+        "unstructured": "van Drongelen S, Stetter B, Stief F, Meurer A, Böhm H. Preoperative gait compensation patterns in unilateral hip osteoarthritis patients: do they persist one year postoperatively? Gait Posture. 2020;81:371–2. https://doi.org/10.1016/j.gaitpost.2020.08.085.",
+        "journal-title": "Gait Posture"
+      },
+      {
+        "key": "3709_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "526",
+        "DOI": "10.1186/s12891-019-2832-5",
+        "volume": "20",
+        "author": "S van Drongelen",
+        "year": "2019",
+        "unstructured": "van Drongelen S, et al. Are changes in radiological leg alignment and femoral parameters after total hip replacement responsible for joint loading during gait? BMC Musculoskelet Disord. 2019;20:526. https://doi.org/10.1186/s12891-019-2832-5.",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "key": "3709_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "1764",
+        "DOI": "10.1002/jor.23444",
+        "volume": "35",
+        "author": "A Schmidt",
+        "year": "2017",
+        "unstructured": "Schmidt A, et al. Unilateral hip osteoarthritis: the effect of compensation strategies and anatomic measurements on frontal plane joint loading. J Orthop Res. 2017;35:1764–73. https://doi.org/10.1002/jor.23444.",
+        "journal-title": "J Orthop Res"
+      },
+      {
+        "key": "3709_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "105",
+        "DOI": "10.1123/jab.29.1.105",
+        "volume": "29",
+        "author": "F Stief",
+        "year": "2013",
+        "unstructured": "Stief F, Böhm H, Michel K, Schwirtz A, Döderlein L. Reliability and accuracy in three-dimensional gait analysis: a comparison of two lower body protocols. J Appl Biomech. 2013;29:105–11. https://doi.org/10.1123/jab.29.1.105.",
+        "journal-title": "J Appl Biomech"
+      },
+      {
+        "key": "3709_CR31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.clinbiomech.2022.105858",
+        "volume": "101",
+        "author": "S van Rossom",
+        "year": "2023",
+        "unstructured": "van Rossom S, et al. The biomechanical fingerprint of hip and knee osteoarthritis patients during activities of daily living. Clin Biomech. 2023;101:105858. https://doi.org/10.1016/j.clinbiomech.2022.105858.",
+        "journal-title": "Clin Biomech"
+      },
+      {
+        "key": "3709_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "1498",
+        "DOI": "10.1002/jor.22924",
+        "volume": "33",
+        "author": "CAG Meyer",
+        "year": "2015",
+        "unstructured": "Meyer CAG, et al. Biomechanical gait features associated with hip osteoarthritis: towards a better definition of clinical hallmarks. J Orthop Res. 2015;33:1498–507. https://doi.org/10.1002/jor.22924.",
+        "journal-title": "J Orthop Res"
+      },
+      {
+        "key": "3709_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "49",
+        "DOI": "10.1016/j.gaitpost.2017.04.007",
+        "volume": "55",
+        "author": "J Christian",
+        "year": "2017",
+        "unstructured": "Christian J, Kröll J, Schwameder H. Comparison of the classifier oriented gait score and the gait profile score based on imitated gait impairments. Gait Posture. 2017;55:49–54. https://doi.org/10.1016/j.gaitpost.2017.04.007.",
+        "journal-title": "Gait Posture"
+      },
+      {
+        "key": "3709_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "86",
+        "DOI": "10.1016/j.gaitpost.2006.01.007",
+        "volume": "25",
+        "author": "KJ Deluzio",
+        "year": "2007",
+        "unstructured": "Deluzio KJ, Astephen JL. Biomechanical features of gait waveform data associated with knee osteoarthritis: an application of principal component analysis. Gait Posture. 2007;25:86–93. https://doi.org/10.1016/j.gaitpost.2006.01.007.",
+        "journal-title": "Gait Posture"
+      },
+      {
+        "key": "3709_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "415",
+        "DOI": "10.1016/j.clinbiomech.2004.01.005",
+        "volume": "19",
+        "author": "A Daffertshofer",
+        "year": "2004",
+        "unstructured": "Daffertshofer A, Lamoth CJC, Meijer OG, Beek PJ. PCA in studying coordination and variability: a tutorial. Clin Biomech. 2004;19:415–28. https://doi.org/10.1016/j.clinbiomech.2004.01.005.",
+        "journal-title": "Clin Biomech"
+      },
+      {
+        "key": "3709_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "810",
+        "DOI": "10.1177/15459683231212864",
+        "volume": "37",
+        "author": "N Sánchez",
+        "year": "2023",
+        "unstructured": "Sánchez N, et al. Multi-site identification and generalization of clusters of walking behaviors in individuals with chronic stroke and neurotypical controls. Neurorehabil Neural Repair. 2023;37:810–22. https://doi.org/10.1177/15459683231212864.",
+        "journal-title": "Neurorehabil Neural Repair"
+      },
+      {
+        "key": "3709_CR37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/2532178",
+        "volume": "47",
+        "author": "JE Gentle",
+        "year": "1991",
+        "unstructured": "Gentle JE, Kaufman L, Rousseuw PJ. Finding groups in data: an introduction to cluster analysis. Biometrics. 1991;47:788. https://doi.org/10.2307/2532178.",
+        "journal-title": "Biometrics"
+      },
+      {
+        "key": "3709_CR38",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Lundberg S, Lee S-I. A unified approach to interpreting model predictions. 2017. https://doi.org/10.48550/arXiv.1705.07874.",
+        "DOI": "10.48550/arXiv.1705.07874"
+      },
+      {
+        "key": "3709_CR39",
+        "unstructured": "R Core Team. R: A language and environment for statistical computing. Available at (Vienna, Austria, 2024). https://www.R-project.org/."
+      },
+      {
+        "key": "3709_CR40",
+        "doi-asserted-by": "publisher",
+        "first-page": "1277",
+        "DOI": "10.1016/j.jbiomech.2015.02.051",
+        "volume": "48",
+        "author": "TC Pataky",
+        "year": "2015",
+        "unstructured": "Pataky TC, Vanrenterghem J, Robinson MA. Zero- vs. one-dimensional, parametric vs. non-parametric, and confidence interval vs. hypothesis testing procedures in one-dimensional Biomechanical trajectory analysis. J Biomech. 2015;48:1277–85. https://doi.org/10.1016/j.jbiomech.2015.02.051.",
+        "journal-title": "J Biomech"
+      },
+      {
+        "key": "3709_CR41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.21105/joss.03021",
+        "volume": "6",
+        "author": "ML Waskom",
+        "year": "2021",
+        "unstructured": "Waskom ML. Seaborn: statistical data visualization. J Open Source Softw. 2021;6:3021. https://doi.org/10.21105/joss.03021.",
+        "journal-title": "J Open Source Softw"
+      },
+      {
+        "key": "3709_CR42",
+        "doi-asserted-by": "publisher",
+        "first-page": "19",
+        "DOI": "10.1016/j.jbiomech.2019.02.002",
+        "volume": "87",
+        "author": "DE Lunn",
+        "year": "2019",
+        "unstructured": "Lunn DE, Chapman GJ, Redmond AC. Hip kinematics and kinetics in total hip replacement patients stratified by age and functional capacity. J Biomech. 2019;87:19–27. https://doi.org/10.1016/j.jbiomech.2019.02.002.",
+        "journal-title": "J Biomech"
+      },
+      {
+        "key": "3709_CR43",
+        "doi-asserted-by": "publisher",
+        "first-page": "1044",
+        "DOI": "10.1016/j.jelekin.2010.08.005",
+        "volume": "20",
+        "author": "RM Kiss",
+        "year": "2010",
+        "unstructured": "Kiss RM. Effect of walking speed and severity of hip osteoarthritis on gait variability. J Electromyogr Kinesiol. 2010;20:1044–51.",
+        "journal-title": "J Electromyogr Kinesiol"
+      },
+      {
+        "key": "3709_CR44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12891-025-08911-6",
+        "volume": "26",
+        "author": "Q Yang",
+        "year": "2025",
+        "unstructured": "Yang Q, et al. An interpretable machine learning approach for predicting and grading hip osteoarthritis using gait analysis. BMC Musculoskelet Disord. 2025;26:580. https://doi.org/10.1186/s12891-025-08911-6.",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "key": "3709_CR45",
+        "doi-asserted-by": "publisher",
+        "first-page": "S113",
+        "DOI": "10.1016/j.joca.2017.02.183",
+        "volume": "25",
+        "author": "EM Davis",
+        "year": "2017",
+        "unstructured": "Davis EM, Hubley-Kozey CL, Ikeda D, Stanish WD, Astephen Wilson JL. Changes in gait kinetics precede structural joint changes in individuals with moderate knee osteoarthritis. Osteoarthritis Cartilage. 2017;25:S113–4. https://doi.org/10.1016/j.joca.2017.02.183.",
+        "journal-title": "Osteoarthritis Cartilage"
+      },
+      {
+        "key": "3709_CR46",
+        "doi-asserted-by": "publisher",
+        "first-page": "226",
+        "DOI": "10.1016/j.gaitpost.2025.04.025",
+        "volume": "120",
+        "author": "RSS Subasinghe Arachchige",
+        "year": "2025",
+        "unstructured": "Subasinghe Arachchige RSS, et al. Stage-specific gait deviations in individuals with hip osteoarthritis. Gait Posture. 2025;120:226–33. https://doi.org/10.1016/j.gaitpost.2025.04.025.",
+        "journal-title": "Gait Posture"
+      },
+      {
+        "key": "3709_CR47",
+        "doi-asserted-by": "publisher",
+        "first-page": "671",
+        "DOI": "10.1016/j.joca.2018.02.895",
+        "volume": "26",
+        "author": "IP Munugoda",
+        "year": "2018",
+        "unstructured": "Munugoda IP, et al. The association between ambulatory activity, body composition and hip or knee joint replacement due to osteoarthritis: a prospective cohort study. Osteoarthritis Cartilage. 2018;26:671–9. https://doi.org/10.1016/j.joca.2018.02.895.",
+        "journal-title": "Osteoarthritis Cartilage"
+      },
+      {
+        "key": "3709_CR48",
+        "doi-asserted-by": "publisher",
+        "first-page": "e43069",
+        "DOI": "10.1097/MD.0000000000043069",
+        "volume": "104",
+        "author": "C Zhang",
+        "year": "2025",
+        "unstructured": "Zhang C, et al. Causal association between sarcopenia-related traits and osteoarthritis: a bidirectional 2-sample Mendelian randomization study. Medicine. 2025;104:e43069. https://doi.org/10.1097/MD.0000000000043069.",
+        "journal-title": "Medicine"
+      },
+      {
+        "key": "3709_CR49",
+        "doi-asserted-by": "publisher",
+        "first-page": "1659",
+        "DOI": "10.1136/annrheumdis-2013-203355",
+        "volume": "73",
+        "author": "D Prieto-Alhambra",
+        "year": "2014",
+        "unstructured": "Prieto-Alhambra D, et al. Incidence and risk factors for clinically diagnosed knee, hip and hand osteoarthritis: influences of age, gender and osteoarthritis affecting other joints. Ann Rheum Dis. 2014;73:1659–64. https://doi.org/10.1136/annrheumdis-2013-203355.",
+        "journal-title": "Ann Rheum Dis"
+      },
+      {
+        "key": "3709_CR50",
+        "doi-asserted-by": "publisher",
+        "first-page": "373",
+        "DOI": "10.1016/j.gaitpost.2015.07.005",
+        "volume": "42",
+        "author": "D Schmitt",
+        "year": "2015",
+        "unstructured": "Schmitt D, Vap A, Queen RM. Effect of end-stage hip, knee, and ankle osteoarthritis on walking mechanics. Gait Posture. 2015;42:373–9. https://doi.org/10.1016/j.gaitpost.2015.07.005.",
+        "journal-title": "Gait Posture"
+      },
+      {
+        "key": "3709_CR51",
+        "doi-asserted-by": "publisher",
+        "first-page": "1094",
+        "DOI": "10.1002/jor.22852",
+        "volume": "33",
+        "author": "M Wesseling",
+        "year": "2015",
+        "unstructured": "Wesseling M, et al. Gait alterations to effectively reduce hip contact forces. J Orthop Res. 2015;33:1094–102. https://doi.org/10.1002/jor.22852.",
+        "journal-title": "J Orthop Res"
+      },
+      {
+        "key": "3709_CR52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fbioe.2024.1515583",
+        "volume": "12",
+        "author": "R Mullerpatan",
+        "year": "2024",
+        "unstructured": "Mullerpatan R, Shetty T, Agarwal B. Influence of age and gender on gait kinematics of pelvis and hip in healthy adults aged 19–60 years. Front Bioeng Biotechnol. 2024;12:1515583. https://doi.org/10.3389/fbioe.2024.1515583.",
+        "journal-title": "Front Bioeng Biotechnol"
+      },
+      {
+        "key": "3709_CR53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.rehab.2022.101710",
+        "volume": "66",
+        "author": "M Courtine",
+        "year": "2023",
+        "unstructured": "Courtine M, et al. Functional recovery after total hip/knee replacement in obese people: a systematic review. Ann Phys Rehabil Med. 2023;66:101710. https://doi.org/10.1016/j.rehab.2022.101710.",
+        "journal-title": "Ann Phys Rehabil Med"
+      },
+      {
+        "key": "3709_CR54",
+        "doi-asserted-by": "publisher",
+        "first-page": "283",
+        "DOI": "10.1016/j.physio.2016.01.003",
+        "volume": "103",
+        "author": "B Monaghan",
+        "year": "2017",
+        "unstructured": "Monaghan B, et al. Randomised controlled trial to evaluate a physiotherapy-led functional exercise programme after total hip replacement. Physiotherapy. 2017;103:283–8. https://doi.org/10.1016/j.physio.2016.01.003.",
+        "journal-title": "Physiotherapy"
+      },
+      {
+        "key": "3709_CR55",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/jcm13020467",
+        "author": "M Weißenberger",
+        "year": "2024",
+        "unstructured": "Weißenberger M, et al. Does body mass index (BMI) affect the reconstruction of biomechanical parameters in patients undergoing total hip replacement (THR) through the direct anterior approach (DAA)? J Clin Med. 2024. https://doi.org/10.3390/jcm13020467.",
+        "journal-title": "J Clin Med"
+      },
+      {
+        "key": "3709_CR56",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.clinbiomech.2021.105454",
+        "volume": "89",
+        "author": "G Ippolito",
+        "year": "2021",
+        "unstructured": "Ippolito G, et al. Direct anterior approach for total hip arthroplasty: hip biomechanics and muscle activation during three walking tasks. Clin Biomech. 2021;89:105454. https://doi.org/10.1016/j.clinbiomech.2021.105454.",
+        "journal-title": "Clin Biomech"
+      },
+      {
+        "key": "3709_CR57",
+        "doi-asserted-by": "publisher",
+        "first-page": "iv28",
+        "DOI": "10.1093/ageing/afz164.130",
+        "volume": "48",
+        "author": "A Hadamus",
+        "year": "2019",
+        "unstructured": "Hadamus A, et al. 130 impact of balance training in virtual reality on body balance in patients after total hip replacement. Age Ageing. 2019;48:iv28–33. https://doi.org/10.1093/ageing/afz164.130.",
+        "journal-title": "Age Ageing"
+      },
+      {
+        "key": "3709_CR58",
+        "doi-asserted-by": "publisher",
+        "first-page": "34",
+        "DOI": "10.2478/ijcss-2019-0012",
+        "volume": "18",
+        "author": "J Pietschmann",
+        "year": "2019",
+        "unstructured": "Pietschmann J, Geu Flores F, Jöllenbeck T. Gait training in orthopedic rehabilitation after joint replacement - back to normal gait with sonification? Int J Comput Sci Sport. 2019;18:34–48. https://doi.org/10.2478/ijcss-2019-0012.",
+        "journal-title": "Int J Comput Sci Sport"
+      },
+      {
+        "key": "3709_CR59",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.humov.2022.103042",
+        "volume": "87",
+        "author": "E Dorschky",
+        "year": "2023",
+        "unstructured": "Dorschky E, et al. Perspective on “in the wild” movement analysis using machine learning. Hum Mov Sci. 2023;87:103042. https://doi.org/10.1016/j.humov.2022.103042.",
+        "journal-title": "Hum Mov Sci"
+      },
+      {
+        "key": "3709_CR60",
+        "doi-asserted-by": "publisher",
+        "first-page": "584",
+        "DOI": "10.1148/radiol.2020192091",
+        "volume": "296",
+        "author": "K Leung",
+        "year": "2020",
+        "unstructured": "Leung K, et al. Prediction of total knee replacement and diagnosis of osteoarthritis by using deep learning on knee radiographs: data from the Osteoarthritis Initiative. Radiology. 2020;296:584–93. https://doi.org/10.1148/radiol.2020192091.",
+        "journal-title": "Radiology"
+      },
+      {
+        "key": "3709_CR61",
+        "doi-asserted-by": "publisher",
+        "first-page": "2181",
+        "DOI": "10.1007/s00402-022-04452-y",
+        "volume": "143",
+        "author": "KN Kunze",
+        "year": "2023",
+        "unstructured": "Kunze KN, Karhade AV, Polce EM, Schwab JH, Levine BR. Development and internal validation of machine learning algorithms for predicting complications after primary total hip arthroplasty. Arch Orthop Trauma Surg. 2023;143:2181–8. https://doi.org/10.1007/s00402-022-04452-y.",
+        "journal-title": "Arch Orthop Trauma Surg"
+      },
+      {
+        "key": "3709_CR62",
+        "doi-asserted-by": "publisher",
+        "first-page": "167",
+        "DOI": "10.1016/j.clinbiomech.2018.09.022",
+        "volume": "59",
+        "author": "JH Brunner",
+        "year": "2018",
+        "unstructured": "Brunner JH, Foucher KC. Sex specific associations between biomechanical recovery and clinical recovery after total hip arthroplasty. Clin Biomech. 2018;59:167–73. https://doi.org/10.1016/j.clinbiomech.2018.09.022.",
+        "journal-title": "Clin Biomech"
+      },
+      {
+        "key": "3709_CR63",
+        "doi-asserted-by": "publisher",
+        "first-page": "756460",
+        "DOI": "10.3389/fbioe.2021.756460",
+        "volume": "9",
+        "author": "S van Drongelen",
+        "year": "2021",
+        "unstructured": "van Drongelen S, Braun S, Stief F, Meurer A. Comparison of gait symmetry and joint moments in unilateral and bilateral hip osteoarthritis patients and healthy controls. Front Bioeng Biotechnol. 2021;9:756460. https://doi.org/10.3389/fbioe.2021.756460.",
+        "journal-title": "Front Bioeng Biotechnol"
+      },
+      {
+        "key": "3709_CR64",
+        "doi-asserted-by": "publisher",
+        "first-page": "205",
+        "DOI": "10.5435/JAAOS-D-22-00525",
+        "volume": "31",
+        "author": "CT Oakley",
+        "year": "2023",
+        "unstructured": "Oakley CT, et al. The effect of surgeon and hospital volume on total hip arthroplasty patient-reported outcome measures: an American joint replacement registry study. J Am Acad Orthop Surg. 2023;31:205–11. https://doi.org/10.5435/JAAOS-D-22-00525.",
+        "journal-title": "J Am Acad Orthop Surg"
+      },
+      {
+        "key": "3709_CR65",
+        "doi-asserted-by": "publisher",
+        "first-page": "2347",
+        "DOI": "10.1007/s00402-024-05245-1",
+        "volume": "144",
+        "author": "A Cattaneo",
+        "year": "2024",
+        "unstructured": "Cattaneo A, et al. Motion acquisition of gait characteristics one week after total hip arthroplasty: a factor analysis. Arch Orthop Trauma Surg. 2024;144:2347–56. https://doi.org/10.1007/s00402-024-05245-1.",
+        "journal-title": "Arch Orthop Trauma Surg"
+      },
+      {
+        "key": "3709_CR66",
+        "doi-asserted-by": "publisher",
+        "first-page": "590",
+        "DOI": "10.1302/0301-620X.96B5.32341",
+        "volume": "96-B",
+        "author": "JV Lindgren",
+        "year": "2014",
+        "unstructured": "Lindgren JV, Wretenberg P, Kärrholm J, Garellick G, Rolfson O. Patient-reported outcome is influenced by surgical approach in total hip replacement: a study of the Swedish Hip Arthroplasty Register including 42,233 patients. Bone Joint J. 2014;96-B:590–6. https://doi.org/10.1302/0301-620X.96B5.32341.",
+        "journal-title": "Bone Joint J"
+      },
+      {
+        "key": "3709_CR67",
+        "doi-asserted-by": "publisher",
+        "first-page": "513",
+        "DOI": "10.1177/1120700019888210",
+        "volume": "30",
+        "author": "S Babu",
+        "year": "2020",
+        "unstructured": "Babu S, et al. A comparison of patient-reported outcome measures (PROMs) between short and conventional stem hip replacements: a systematic review and meta-analysis. Hip Int. 2020;30:513–22. https://doi.org/10.1177/1120700019888210.",
+        "journal-title": "Hip Int"
+      }
+    ],
+    "container-title": [
+      "Arthritis Research &amp; Therapy"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/article/10.1186/s13075-025-03709-2",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s13075-025-03709-2.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s13075-025-03709-2.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          27
+        ]
+      ],
+      "date-time": "2025-12-27T08:43:56Z",
+      "timestamp": 1766825036000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.springer.com/10.1186/s13075-025-03709-2"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          23
+        ]
+      ]
+    },
+    "references-count": 67,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "3709"
+    ],
+    "URL": "https://doi.org/10.1186/s13075-025-03709-2",
+    "relation": {},
+    "ISSN": [
+      "1478-6362"
+    ],
+    "issn-type": [
+      {
+        "type": "electronic",
+        "value": "1478-6362"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          23
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "26 June 2025",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "30 November 2025",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "23 December 2025",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "This work comprises a secondary analysis of datasets collected in previous prospective studies. The protocols for those original studies were approved by the local Medical Ethics Committee (reference number 122/14, 497/15 and 2021-52), and written informed consent was obtained from all participants prior to enrollment. The present analysis used de-identified data; no new participant contact or interventions were undertaken. All procedures were conducted in accordance with the Declaration of Helsinki and relevant institutional and national regulations.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethics approval and consent to participate"
+        }
+      },
+      {
+        "value": "Not applicable.",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Consent for publication"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 4,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "229"
+  }
+}

@@ -1,0 +1,129 @@
+=== PDF PAGE 1 ===
+JOURNAL OF SHOULDER AND ELBOW SURGERY • 2020.0 Top 100 Orthopedic AI • Rank #45
+Using Machine Learning to Predict Clinical Outcomes
+After Shoulder Arthroplasty with a Minimal Feature Set.
+Vikas Kumar, Christopher P. Roche, Steve Overman, Ryan W. Simovitch, P. Flurin, T. Wright, J.
+Zuckerman, Howard D. Routman, Ankur Teredesai
+KenSci, Seattle, WA, USA.
+Journal:
+Journal of shoulder and elbow
+surgery
+Publication Year:
+2020.0
+Citations:
+66
+DOI:
+10.1016/j.jse.2020.07.042
+CLINICAL & AGENTIC AI TAKEAWAY
+Machine learning models with both full and minimal feature sets can accurately predict clinical outcomes after
+shoulder arthroplasty, improving decision-making during surgical consultations.
+ABSTRACT
+--- REPOSITORY & PUBLISHER WEB METADATA --- Affiliations: KenSci, Seattle, WA, USA. Keywords: Clinical
+research, Machine Learning, Shoulder Arthroplasty, Predictive Outcomes Analytics, Atsa Outcomes, Rtsa Outcomes
+Extended Abstract from Repository: Background A machine learning analysis was conducted on 5774 shoulder
+arthroplasty patients to create predictive models for multiple clinical outcome measures after anatomic total shoulder
+arthroplasty (aTSA) and reverse total shoulder arthroplasty (rTSA). The goal of this study was to compare the accuracy
+associated with a full-feature set predictive model (ie, full model, comprising 291 parameters) and a minimal-feature set
+model (ie, abbreviated model, comprising 19 input parameters) to predict clinical outcomes to assess the efficacy of using
+a minimal feature set of inputs as a shoulder arthroplasty clinical decision-support tool. Methods Clinical data from 2153
+primary aTSA patients and 3621 primary rTSA patients were analyzed using the XGBoost machine learning technique to
+create and test predictive models for multiple outcome measures at different postoperative time points via the full and
+abbreviated models. Mean absolute errors (MAEs) quantified the difference between actual and predicted outcomes, and
+each model also predicted whether a patient would experience clinical improvement greater than the patient satisfaction
+anchor-based thresholds of the minimal clinically important difference and substantial clinical benefit for each outcome
+measure at 2-3 years after surgery. Results Across all postoperative time points analyzed, the full and abbreviated models
+had similar MAEs for the American Shoulder and Elbow Surgeons score (±11.7 with full model vs. ±12.0 with abbreviated
+model), Constant score (±8.9 vs. ±9.8), Global Shoulder Function score (±1.4 vs. ±1.5), visual analog scale pain score
+(±1.3 vs. ±1.4), active abduction (±20.4° vs. ±21.8°), forward elevation (±17.6° vs. ±19.2°), and external rotation (±12.2°
+vs. ±12.6°). Marginal improvements in MAEs were observed for each outcome measure prediction when the abbreviated
+model was supplemented with data on implant size and/or type and measurements of native glenoid anatomy. The full and
+abbreviated models each effectively risk stratified patients using only preoperative data by accurately identifying patients
+with improvement greater than the minimal clinically important difference and substantial clinical benefit thresholds.
+Discussion Our study showed that the full and abbreviated machine learning models achieved similar accuracy in
+predicting clinical outcomes after aTSA and rTSA at multiple postoperative time points. These promising results
+demonstrate an efficient utilization of machine learning algorithms to predict clinical outcomes. Our findings using a
+
+=== PDF PAGE 2 ===
+minimal feature set of only 19 preoperative inputs suggest that this tool may be easily used during a surgical consultation
+to improve decision making related to shoulder arthroplasty.
+Keywords: Clinical research, Machine Learning, Shoulder Arthroplasty, Predictive Outcomes Analytics, Atsa Outcomes, Rtsa
+Outcomes
+Study Overview & Background
+--- REPOSITORY & PUBLISHER WEB METADATA --- Affiliations: KenSci, Seattle, WA, USA. Keywords: Clinical
+research, Machine Learning, Shoulder Arthroplasty, Predictive Outcomes Analytics, Atsa Outcomes, Rtsa Outcomes
+Extended Abstract from Repository: Background A machine learning analysis was conducted on 5774 shoulder
+arthroplasty patients to create predictive models for multiple clinical outcome measures after anatomic total shoulder
+arthroplasty (aTSA) and reverse total shoulder arthroplasty (rTSA). The goal of this study was to compare the accuracy
+associated with a full-feature set predictive model (ie, full model, comprising 291 parameters) and a minimal-feature set
+model (ie, abbreviated model, comprising 19 input parameters) to predict clinical outcomes to assess the efficacy of using
+a minimal feature set of inputs as a shoulder arthroplasty clinical decision-support tool. Methods Clinical data from 2153
+primary aTSA patients and 3621 primary rTSA patients were analyzed using the XGBoost machine learning technique to
+create and test predictive models for multiple outcome measures at different postoperative time points via the full and
+abbreviated models. Mean absolute errors (MAEs) quantified the difference between actual and predicted outcomes, and
+each model also predicted whether a patient would experience clinical improvement greater than the patient satisfaction
+anchor-based thresholds of the minimal clinically important difference and substantial clinical benefit for each outcome
+measure at 2-3 years after surgery. Results Across all postoperative time points analyzed, the full and abbreviated models
+had similar MAEs for the American Shoulder and Elbow Surgeons score (±11.7 with full model vs. ±12.0 with abbreviated
+model), Constant score (±8.9 vs. ±9.8), Global Shoulder Function score (±1.4 vs. ±1.5), visual analog scale pain score
+(±1.3 vs. ±1.4), active abduction (±20.4° vs. ±21.8°), forward elevation (±17.6° vs. ±19.2°), and external rotation (±12.2°
+vs. ±12.6°). Marginal improvements in MAEs were observed for each outcome measure prediction when the abbreviated
+model was supplemented with data on implant size and/or type and measurements of native glenoid anatomy. The full and
+abbreviated models each effectively risk stratified patients using only preoperative data by accurately identifying patients
+with improvement greater than the minimal clinically important difference and substantial clinical benefit thresholds.
+Discussion Our study showed that the full and abbreviated machine learning models achieved similar accuracy in
+predicting clinical outcomes after aTSA and rTSA at multiple postoperative time points. These promising results
+demonstrate an efficient utilization of machine learning algorithms to predict clinical outcomes. Our findings using a
+minimal feature set of only 19 preoperative inputs suggest that this tool may be easily used during a surgical consultation
+to improve decision making related to shoulder arthroplasty.
+Methodology & Clinical Focus
+Study Classification: theoretical, modeling, or simulation study. Evaluated under orthopedic machine learning and
+artificial intelligence decision frameworks.
+Key Findings & Analysis
+Machine learning models with both full and minimal feature sets can accurately predict clinical outcomes after shoulder
+arthroplasty, improving decision-making during surgical consultations.
+
+=== PDF PAGE 3 ===
+Extended Repository Abstract
+Background A machine learning analysis was conducted on 5774 shoulder arthroplasty patients to create predictive models
+for multiple clinical outcome measures after anatomic total shoulder arthroplasty (aTSA) and reverse total shoulder
+arthroplasty (rTSA). The goal of this study was to compare the accuracy associated with a full-feature set predictive model
+(ie, full model, comprising 291 parameters) and a minimal-feature set model (ie, abbreviated model, comprising 19 input
+parameters) to predict clinical outcomes to assess the efficacy of using a minimal feature set of inputs as a shoulder
+arthroplasty clinical decision-support tool. Methods Clinical data from 2153 primary aTSA patients and 3621 primary
+rTSA patients were analyzed using the XGBoost machine learning technique to create and test predictive models for
+multiple outcome measures at different postoperative time points via the full and abbreviated models. Mean absolute errors
+(MAEs) quantified the difference between actual and predicted outcomes, and each model also predicted whether a patient
+would experience clinical improvement greater than the patient satisfaction anchor-based thresholds of the minimal
+clinically important difference and substantial clinical benefit for each outcome measure at 2-3 years after surgery. Results
+Across all postoperative time points analyzed, the full and abbreviated models had similar MAEs for the American
+Shoulder and Elbow Surgeons score (±11.7 with full model vs. ±12.0 with abbreviated model), Constant score (±8.9 vs.
+±9.8), Global Shoulder Function score (±1.4 vs. ±1.5), visual analog scale pain score (±1.3 vs. ±1.4), active abduction
+(±20.4° vs. ±21.8°), forward elevation (±17.6° vs. ±19.2°), and external rotation (±12.2° vs. ±12.6°). Marginal
+improvements in MAEs were observed for each outcome measure prediction when the abbreviated model was
+supplemented with data on implant size and/or type and measurements of native glenoid anatomy. The full and abbreviated
+models each effectively risk stratified patients using only preoperative data by accurately identifying patients with
+improvement greater than the minimal clinically important difference and substantial clinical benefit thresholds.
+Discussion Our study showed that the full and abbreviated machine learning models achieved similar accuracy in
+predicting clinical outcomes after aTSA and rTSA at multiple postoperative time points. These promising results
+demonstrate an efficient utilization of machine learning algorithms to predict clinical outcomes. Our findings using a
+minimal feature set of only 19 preoperative inputs suggest that this tool may be easily used during a surgical consultation
+to improve decision making related to shoulder arthroplasty.
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+Bibliographic Details & Indexing
+Authors: Vikas Kumar, Christopher P. Roche, Steve Overman, Ryan W. Simovitch, P. Flurin, T. Wright, J.
+Zuckerman, Howard D. Routman, Ankur Teredesai
+Journal / Venue: Journal of shoulder and elbow surgery (2020.0)
+SJR Metric: Quartile 1.0
+Citation Count: 66 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.1016/j.jse.2020.07.042
+Consensus Evidence Link: https://consensus.app/papers/using-machine-learning-to-predict-clinical-outcomes-
+after-kumar-roche/20705904395a548a8ff52667d9671687/
+
+=== PDF PAGE 4 ===
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1016/j.jse.2020.07.042 • Consensus
+Page: https://consensus.app/papers/using-machine-learning-to-predict-clinical-outcomes-after-kumar-
+roche/20705904395a548a8ff52667d9671687/ • Verified and rendered via Deep Search & Academic Repositories.

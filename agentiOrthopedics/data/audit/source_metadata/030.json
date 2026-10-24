@@ -1,0 +1,813 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          22
+        ]
+      ],
+      "date-time": "2026-09-22T07:25:32Z",
+      "timestamp": 1790061932310,
+      "version": "4.0.1"
+    },
+    "reference-count": 46,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              30
+            ]
+          ],
+          "date-time": "2026-01-30T00:00:00Z",
+          "timestamp": 1769731200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              17
+            ]
+          ],
+          "date-time": "2026-02-17T00:00:00Z",
+          "timestamp": 1771286400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 18,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "name": "CBP NonProfit, Inc."
+      },
+      {
+        "name": "The NCMIC Foundation"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Sci Rep"
+    ],
+    "DOI": "10.1038/s41598-026-38059-9",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          30
+        ]
+      ],
+      "date-time": "2026-01-30T05:53:42Z",
+      "timestamp": 1769752422000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 4,
+    "title": [
+      "Machine learning models for predicting treatment outcomes in chronic non-specific back pain patients undergoing lumbar extension traction"
+    ],
+    "prefix": "10.1038",
+    "volume": "16",
+    "author": [
+      {
+        "given": "Ibrahim M.",
+        "family": "Moustafa",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dilber Uzun",
+        "family": "Ozsahin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mubarak Taiwo",
+        "family": "Mustapha",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shima",
+        "family": "Zadeh",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Iman",
+        "family": "Khowailed",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Paul A.",
+        "family": "Oakley",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Deed E.",
+        "family": "Harrison",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          30
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "38059_CR1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wu, A. et al. Global low back pain prevalence and years lived with disability from 1990 to 2017: estimates from the global burden of disease study 2017. Ann. Transl. Med. 8 (6). (2020).",
+        "DOI": "10.21037/atm.2020.02.175"
+      },
+      {
+        "issue": "10137",
+        "key": "38059_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "2368",
+        "DOI": "10.1016/S0140-6736(18)30489-6",
+        "volume": "391",
+        "author": "NE Foster",
+        "year": "2018",
+        "unstructured": "Foster, N. E. et al. Prevention and treatment of low back pain: evidence, challenges, and promising directions. Lancet 391 (10137), 2368–2383 (2018).",
+        "journal-title": "Lancet"
+      },
+      {
+        "issue": "1",
+        "key": "38059_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.5606/tftrd.2021.8216",
+        "volume": "67",
+        "author": "A Ketenci",
+        "year": "2021",
+        "unstructured": "Ketenci, A. & Zure, M. Pharmacological and non-pharmacological treatment approaches to chronic lumbar back pain. Turkish J. Phys. Med. Rehabilitation. 67 (1), 1 (2021).",
+        "journal-title": "Turkish J. Phys. Med. Rehabilitation"
+      },
+      {
+        "issue": "8",
+        "key": "38059_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "e41618",
+        "DOI": "10.1097/MD.0000000000041618",
+        "volume": "104",
+        "author": "Y Guo",
+        "year": "2025",
+        "unstructured": "Guo, Y. et al. Bibliometric analysis of research on manual therapy for low back pain from 2013 to 2023. Med. (Baltim). 104 (8), e41618. https://doi.org/10.1097/MD.0000000000041618 (2025).",
+        "journal-title": "Med. (Baltim)."
+      },
+      {
+        "issue": "Suppl 6",
+        "key": "38059_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "851",
+        "DOI": "10.1007/s00586-017-5433-8",
+        "volume": "27",
+        "author": "EL Hurwitz",
+        "year": "2018",
+        "unstructured": "Hurwitz, E. L., Haldeman, S. & Cedraschi, C. The global spine care initiative: applying evidence-based guidelines on the non-invasive management of back and neck pain to low- and middle-income communities. Eur. Spine J. 27 (Suppl 6), 851–860. https://doi.org/10.1007/s00586-017-5433-8 (2018). Epub 2018 Feb 19.",
+        "journal-title": "Eur. Spine J."
+      },
+      {
+        "key": "38059_CR6",
+        "unstructured": "WHO guideline for non-surgical management of chronic primary low back pain in adults in primary and community care settings. ISBN 978-92-4-008178-9 (electronic version). (Accessed 13 March 2025). https://www.who.int/publications/i/item/9789240081789 (2023)."
+      },
+      {
+        "issue": "11",
+        "key": "38059_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "1585",
+        "DOI": "10.1053/apmr.2002.35485",
+        "volume": "83",
+        "author": "DE Harrison",
+        "year": "2002",
+        "unstructured": "Harrison, D. E., Cailliet, R., Harrison, D. D., Janik, T. J. & Holland, B. Changes in sagittal lumbar configuration with a new method of extension traction: nonrandomized clinical controlled trial. Arch. Phys. Med. Rehabil. 83 (11), 1585–1591. https://doi.org/10.1053/apmr.2002.35485 (2002).",
+        "journal-title": "Arch. Phys. Med. Rehabil"
+      },
+      {
+        "issue": "2",
+        "key": "38059_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "213",
+        "DOI": "10.3233/BMR-130372",
+        "volume": "26",
+        "author": "AA Diab",
+        "year": "2013",
+        "unstructured": "Diab, A. A. & Moustafa, I. M. The efficacy of lumbar extension traction for sagittal alignment in mechanical low back pain: a randomized trial. J. Back Musculoskelet. Rehabil. 26 (2), 213–220. https://doi.org/10.3233/BMR-130372 (2013).",
+        "journal-title": "J. Back Musculoskelet. Rehabil"
+      },
+      {
+        "issue": "4",
+        "key": "38059_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "246",
+        "DOI": "10.1016/j.jmpt.2012.04.021",
+        "volume": "35",
+        "author": "AA Diab",
+        "year": "2012",
+        "unstructured": "Diab, A. A. & Moustafa, I. M. Lumbar lordosis rehabilitation for pain and lumbar segmental motion in chronic mechanical low back pain: a randomized trial. J. Manipulative Physiol. Ther. 35 (4), 246–253. https://doi.org/10.1016/j.jmpt.2012.04.021 (2012).",
+        "journal-title": "J. Manipulative Physiol. Ther."
+      },
+      {
+        "issue": "1",
+        "key": "38059_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "4",
+        "DOI": "10.3390/medicina56010004",
+        "volume": "56",
+        "author": "CH Lee",
+        "year": "2019",
+        "unstructured": "Lee, C. H., Heo, S. J., Park, S. H., Jeong, H. S. & Kim, S. Y. Functional changes in patients and morphological changes in the lumbar intervertebral disc after applying Lordotic Curve-Controlled traction: A Double-Blind randomized controlled study. Med. (Kaunas). 56 (1), 4. https://doi.org/10.3390/medicina56010004 (2019).",
+        "journal-title": "Med. (Kaunas)"
+      },
+      {
+        "issue": "1",
+        "key": "38059_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "51",
+        "DOI": "10.1177/0269215512446093",
+        "volume": "27",
+        "author": "IM Moustafa",
+        "year": "2013",
+        "unstructured": "Moustafa, I. M. & Diab, A. A. Extension traction treatment for patients with discogenic lumbosacral radiculopathy: a randomized controlled trial. Clin. Rehabil. 27 (1), 51–62. https://doi.org/10.1177/0269215512446093 (2013).",
+        "journal-title": "Clin. Rehabil"
+      },
+      {
+        "issue": "8",
+        "key": "38059_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "1180",
+        "DOI": "10.1016/j.spinee.2017.04.034",
+        "volume": "17",
+        "author": "SW Chun",
+        "year": "2017",
+        "unstructured": "Chun, S. W., Lim, C. Y., Kim, K., Hwang, J. & Chung, S. G. The relationships between low back pain and lumbar lordosis: a systematic review and meta-analysis. Spine J. 17 (8), 1180–1191. https://doi.org/10.1016/j.spinee.2017.04.034 (2017).",
+        "journal-title": "Spine J."
+      },
+      {
+        "issue": "1",
+        "key": "38059_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "179",
+        "DOI": "10.1186/s12891-017-1534-0",
+        "volume": "18",
+        "author": "SG Sadler",
+        "year": "2017",
+        "unstructured": "Sadler, S. G., Spink, M. J., Ho, A., De Jonge, X. J. & Chuter, V. H. Restriction in lateral bending range of motion, lumbar lordosis, and hamstring flexibility predicts the development of low back pain: a systematic review of prospective cohort studies. BMC Musculoskelet. Disord. 18 (1), 179. https://doi.org/10.1186/s12891-017-1534-0 (2017).",
+        "journal-title": "BMC Musculoskelet. Disord"
+      },
+      {
+        "key": "38059_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "931274",
+        "DOI": "10.3389/fresc.2022.931274",
+        "volume": "3",
+        "author": "L Cardoso",
+        "year": "2022",
+        "unstructured": "Cardoso, L. et al. Computational modeling of posteroanterior lumbar traction by an automated massage bed: predicting intervertebral disc stresses and deformation. Front. Rehabil Sci. 3, 931274. https://doi.org/10.3389/fresc.2022.931274 (2022).",
+        "journal-title": "Front. Rehabil Sci."
+      },
+      {
+        "issue": "2",
+        "key": "38059_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "125",
+        "DOI": "10.3390/healthcare9020125",
+        "volume": "9",
+        "author": "CH Lee",
+        "year": "2021",
+        "unstructured": "Lee, C. H., Heo, S. J. & Park, S. H. The real time geometric effect of a Lordotic Curve-Controlled spinal traction device: A randomized cross over study. Healthc. (Basel). 9 (2), 125. https://doi.org/10.3390/healthcare9020125 (2021).",
+        "journal-title": "Healthc. (Basel)"
+      },
+      {
+        "issue": "3",
+        "key": "38059_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "635",
+        "DOI": "10.14245/ns.2142368.184",
+        "volume": "18",
+        "author": "B de Andrada Pereira",
+        "year": "2021",
+        "unstructured": "de Andrada Pereira, B. et al. Influence of lumbar lordosis on posterior rod strain in long-segment construct during Biomechanical loading: a cadaveric study. Neurospine 18 (3), 635 (2021).",
+        "journal-title": "Neurospine"
+      },
+      {
+        "issue": "1",
+        "key": "38059_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "11781",
+        "DOI": "10.1038/s41598-024-62812-7",
+        "volume": "14",
+        "author": "IM Moustafa",
+        "year": "2024",
+        "unstructured": "Moustafa, I. M. et al. Utilizing machine learning to predict post-treatment outcomes in chronic non-specific neck pain patients undergoing cervical extension traction. Sci. Rep. 14 (1), 11781 (2024).",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "38059_CR18",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Tangsrivimol, J. A. et al. Artificial intelligence in neurosurgery: a state-of-the-art review from past to future. Diagnostics (Basel) 13 (14), 2429. https://doi.org/10.3390/diagnostics13142429 (2023).",
+        "DOI": "10.3390/diagnostics13142429"
+      },
+      {
+        "key": "38059_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "58",
+        "DOI": "10.1016/J.IJIN.2022.05.002",
+        "volume": "3",
+        "author": "M Javaid",
+        "year": "2022",
+        "unstructured": "Javaid, M., Haleem, A., Pratap Singh, R., Suman, R. & Rab, S. Significance of machine learning in healthcare: Features, pillars and applications. Int. J. Intell. Networks. 3, 58–73. https://doi.org/10.1016/J.IJIN.2022.05.002 (2022).",
+        "journal-title": "Int. J. Intell. Networks"
+      },
+      {
+        "key": "38059_CR20",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Tschuggnall, M. et al. Machine learning approaches to predict rehabilitation success based on clinical and patient-reported outcome measures. Inf. Med. Unlocked 24 https://doi.org/10.1016/J.IMU.2021.100598 (2021).",
+        "DOI": "10.1016/J.IMU.2021.100598"
+      },
+      {
+        "key": "38059_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1038/s41746-020-0303-x",
+        "volume": "3",
+        "author": "SD Tagliaferri",
+        "year": "2020",
+        "unstructured": "Tagliaferri, S. D. et al. Artificial intelligence to improve back pain outcomes and lessons learnt from clinical classification approaches: three systematic reviews. Npj Digit. Med. 3, 1–16. https://doi.org/10.1038/s41746-020-0303-x (2020).",
+        "journal-title": "Npj Digit. Med."
+      },
+      {
+        "key": "38059_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "247",
+        "DOI": "10.1016/J.PHYSIO.2006.05.008",
+        "volume": "92",
+        "author": "C Shanahan",
+        "year": "2006",
+        "unstructured": "Shanahan, C., Ward, A. R. & Robertson, V. J. Comparison of the analgesic efficacy of interferential therapy and transcutaneous electrical nerve stimulation. Physiotherapy 92, 247–253. https://doi.org/10.1016/J.PHYSIO.2006.05.008 (2006).",
+        "journal-title": "Physiotherapy"
+      },
+      {
+        "key": "38059_CR23",
+        "unstructured": "Robertson, V., Ward, A., Low, J. & Reed, A. Electrotherapy explained, Principles and Practice 4th edn (Heinemann, 2006)."
+      },
+      {
+        "key": "38059_CR24",
+        "unstructured": "Kisner, C. & Colby, L. A. Therapeutic Exercise: Foundation and Techniques 5th edn (F.A.Davis Company, 2007)."
+      },
+      {
+        "issue": "4",
+        "key": "38059_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "427",
+        "DOI": "10.1097/01.brs.0000153698.94091.f8",
+        "volume": "30",
+        "author": "WC Horton",
+        "year": "2005",
+        "unstructured": "Horton, W. C. et al. Is there an optimal patient stance for obtaining a lateral 36 radiograph? A critical comparison of three techniques. Spine (Phila Pa. 1976). 30 (4), 427–433. https://doi.org/10.1097/01.brs.0000153698.94091.f8 (2005).",
+        "journal-title": "Spine (Phila Pa. 1976)"
+      },
+      {
+        "issue": "16",
+        "key": "38059_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "4650",
+        "DOI": "10.3390/jcm13164650",
+        "volume": "13",
+        "author": "JW Betz",
+        "year": "2024",
+        "unstructured": "Betz, J. W. et al. Reliability of the Biomechanical assessment of the sagittal lumbar spine and pelvis on radiographs used in clinical practice: A systematic review of the literature. J. Clin. Med. 13 (16), 4650. https://doi.org/10.3390/jcm13164650 (2024).",
+        "journal-title": "J. Clin. Med."
+      },
+      {
+        "issue": "8",
+        "key": "38059_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "2178",
+        "DOI": "10.3390/jcm13082178",
+        "volume": "13",
+        "author": "DE Harrison",
+        "year": "2024",
+        "unstructured": "Harrison, D. E., Haas, J. W., Moustafa, I. M., Betz, J. W. & Oakley, P. A. Can the mismatch of measured pelvic morphology vs. Lumbar lordosis predict chronic low back pain patients? J. Clin. Med. 13 (8), 2178. https://doi.org/10.3390/jcm13082178 (2024).",
+        "journal-title": "J. Clin. Med."
+      },
+      {
+        "key": "38059_CR28",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Kobayashi, T. M. D., Atsuta, Y. M. D., Matsuno, T. M. D. & Takeda Naoki MD†. A longitudinal study of congruent sagittal spinal alignment in an adult cohort. Spine 29 (6), 671–676. https://doi.org/10.1097/01.BRS.0000115127.51758.A2 (2004).",
+        "DOI": "10.1097/01.BRS.0000115127.51758.A2"
+      },
+      {
+        "issue": "1",
+        "key": "38059_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "90",
+        "DOI": "10.1097/BRS.0b013e31815e3a10",
+        "volume": "33",
+        "author": "RW Ostelo",
+        "year": "2008",
+        "unstructured": "Ostelo, R. W. et al. Interpreting change scores for pain and functional status in low back pain: towards international consensus regarding minimal important change. Spine (Phila Pa. 1976). 33 (1), 90–94. https://doi.org/10.1097/BRS.0b013e31815e3a10 (2008).",
+        "journal-title": "Spine (Phila Pa. 1976)"
+      },
+      {
+        "issue": "2",
+        "key": "38059_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "776",
+        "DOI": "10.1093/ptj/81.2.776",
+        "volume": "81",
+        "author": "JM Fritz",
+        "year": "2001",
+        "unstructured": "Fritz, J. M. & Irrgang, J. J. A comparison of a modified Oswestry low back pain disability questionnaire and the Quebec back pain disability scale. Phys. Ther. 81 (2), 776–788. https://doi.org/10.1093/ptj/81.2.776 (2001).",
+        "journal-title": "Phys. Ther."
+      },
+      {
+        "issue": "3",
+        "key": "38059_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "035016",
+        "DOI": "10.1088/2057-1976/ad34db",
+        "volume": "10",
+        "author": "S Raptis",
+        "year": "2024",
+        "unstructured": "Raptis, S., Ilioudis, C. & Theodorou, K. From pixels to prognosis: unveiling radiomics models with SHAP and LIME for enhanced interpretability. Biomedical Phys. Eng. Express. 10 (3), 035016 (2024).",
+        "journal-title": "Biomedical Phys. Eng. Express"
+      },
+      {
+        "key": "38059_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "2356",
+        "DOI": "10.1016/S0140-6736(18)30480-X",
+        "volume": "391",
+        "author": "J Hartvigsen",
+        "year": "2018",
+        "unstructured": "Hartvigsen, J. et al. Lancet low back pain series working Group. What low back pain is and why we need to pay attention. Lancet 391, 2356–2367 (2018).",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "38059_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "2384",
+        "DOI": "10.1016/S0140-6736(18)30488-4",
+        "volume": "391",
+        "author": "R Buchbinder",
+        "year": "2018",
+        "unstructured": "Buchbinder, R. et al. Lancet low back pain series working Group. low back pain: a call for action. Lancet 391, 2384–2388 (2018).",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "38059_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "37",
+        "DOI": "10.1007/s11606-007-0440-9",
+        "volume": "23",
+        "author": "TK Nuckols",
+        "year": "2008",
+        "unstructured": "Nuckols, T. K. et al. Rigorous development does not ensure that guidelines are acceptable to a panel of knowledgeable providers. J. Gen. Intern. Med. 23, 37–44 (2008).",
+        "journal-title": "J. Gen. Intern. Med."
+      },
+      {
+        "issue": "9",
+        "key": "38059_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "601",
+        "DOI": "10.1589/jpts.32.601",
+        "volume": "32",
+        "author": "PA Oakley",
+        "year": "2020",
+        "unstructured": "Oakley, P. A., Ehsani, N. N., Moustafa, I. M. & Harrison, D. E. Restoring lumbar lordosis: a systematic review of controlled trials utilizing chiropractic bio Physics® (CBP®) non-surgical approach to increasing lumbar lordosis in the treatment of low back disorders. J. Phys. Ther. Sci. 32 (9), 601–610. https://doi.org/10.1589/jpts.32.601 (2020).",
+        "journal-title": "J. Phys. Ther. Sci."
+      },
+      {
+        "key": "38059_CR36",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Haas, M., Vavrek, D., Peterson, D., Polissar, N. & Neradilek, M. B. Dose-response and efficacy of spinal manipulation for care of chronic low back pain: a randomized controlled trial. Spine J. 14 (7), 1106-16. https://doi.org/10.1016/j.spinee.2013.07.468 (2014).",
+        "DOI": "10.1016/j.spinee.2013.07.468"
+      },
+      {
+        "key": "38059_CR37",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Haas, M., Groupp, E. & Kraemer, D. F. Dose-response for chiropractic care of chronic low back pain. Spine J. 4 (5), 574–583. https://doi.org/10.1016/j.spinee.2004.02.008 (2004).",
+        "DOI": "10.1016/j.spinee.2004.02.008"
+      },
+      {
+        "issue": "2",
+        "key": "38059_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "99",
+        "DOI": "10.1007/s005860050038",
+        "volume": "7",
+        "author": "J Legaye",
+        "year": "1998",
+        "unstructured": "Legaye, J., Duval-Beaupère, G., Hecquet, J. & Marty, C. Pelvic incidence: a fundamental pelvic parameter for three-dimensional regulation of spinal sagittal curves. Eur. Spine J. 7 (2), 99–103. https://doi.org/10.1007/s005860050038 (1998).",
+        "journal-title": "Eur. Spine J."
+      },
+      {
+        "issue": "16",
+        "key": "38059_CR39",
+        "doi-asserted-by": "publisher",
+        "first-page": "E792",
+        "DOI": "10.1097/BRS.0b013e3181d35ca9",
+        "volume": "35",
+        "author": "S Mendoza-Lattes",
+        "year": "2010",
+        "unstructured": "Mendoza-Lattes, S., Ries, Z., Gao, Y. & Weinstein, S. L. Natural history of spinopelvic alignment differs from symptomatic deformity of the spine. Spine (Phila Pa. 1976). 35 (16), E792–E798. https://doi.org/10.1097/BRS.0b013e3181d35ca9 (2010).",
+        "journal-title": "Spine (Phila Pa. 1976)"
+      },
+      {
+        "issue": "1",
+        "key": "38059_CR40",
+        "doi-asserted-by": "publisher",
+        "first-page": "2",
+        "DOI": "10.1186/s12998-024-00566-9",
+        "volume": "33",
+        "author": "MJ Maiers",
+        "year": "2025",
+        "unstructured": "Maiers, M. J., Albertson, A. K., Major, C., Mendenhall, H. & Petrie, C. P. The association between individual radiographic findings and improvement after chiropractic spinal manipulation and home exercise among older adults with back-related disability: a secondary analysis. Chiropr. Man. Th. 33 (1), 2. https://doi.org/10.1186/s12998-024-00566-9 (2025).",
+        "journal-title": "Chiropr. Man. Th."
+      },
+      {
+        "issue": "1",
+        "key": "38059_CR41",
+        "doi-asserted-by": "publisher",
+        "first-page": "26",
+        "DOI": "10.1186/s12875-025-02726-z",
+        "volume": "26",
+        "author": "L Haslam-Larmer",
+        "year": "2025",
+        "unstructured": "Haslam-Larmer, L. et al. Gleaning a lot from the history and physical exam, and reasonably confident without imaging: a qualitative study of primary care clinicians’ management of patients with low back pain. BMC Prim. Care. 26 (1), 26. https://doi.org/10.1186/s12875-025-02726-z (2025).",
+        "journal-title": "BMC Prim. Care"
+      },
+      {
+        "key": "38059_CR42",
+        "doi-asserted-by": "publisher",
+        "first-page": "28",
+        "DOI": "10.25259/JCIS_68_2024",
+        "volume": "14",
+        "author": "B Williams",
+        "year": "2024",
+        "unstructured": "Williams, B., Gichard, L., Johnson, D. & Louis, M. An investigation into the chiropractic practice and communication of routine, repetitive radiographic imaging for the location of postural misalignments. J. Clin. Imaging Sci. 14, 28. https://doi.org/10.25259/JCIS_68_2024 (2024).",
+        "journal-title": "J. Clin. Imaging Sci."
+      },
+      {
+        "key": "38059_CR43",
+        "doi-asserted-by": "publisher",
+        "first-page": "392",
+        "DOI": "10.1097/BSD.0000000000000533",
+        "volume": "30",
+        "author": "A Noshchenko",
+        "year": "2017",
+        "unstructured": "Noshchenko, A. et al. Spinopelvic parameters in asymptomatic subjects without spine disease and deformity: A systematic review with Meta-Analysis. Clin. Spine Surg. 30, 392–403 (2017).",
+        "journal-title": "Clin. Spine Surg."
+      },
+      {
+        "issue": "9",
+        "key": "38059_CR44",
+        "doi-asserted-by": "publisher",
+        "first-page": "2312",
+        "DOI": "10.1007/s00586-018-5572-6",
+        "volume": "27",
+        "author": "T Fujishiro",
+        "year": "2018",
+        "unstructured": "Fujishiro, T. et al. European spine study Group, ESSG. Decision-making factors in the treatment of adult spinal deformity. Eur. Spine J. 27 (9), 2312–2321 (2018).",
+        "journal-title": "Eur. Spine J."
+      },
+      {
+        "key": "38059_CR45",
+        "doi-asserted-by": "publisher",
+        "first-page": "3687",
+        "DOI": "10.1007/s00586-016-4411-x",
+        "volume": "25",
+        "author": "T Banno",
+        "year": "2016",
+        "unstructured": "Banno, T. et al. The cohort study for the determination of reference values for spinopelvic parameters (T1 pelvic angle and global tilt) in elderly volunteers. Eur. Spine J. 25, 3687–3693 (2016).",
+        "journal-title": "Eur. Spine J."
+      },
+      {
+        "issue": "10",
+        "key": "38059_CR46",
+        "doi-asserted-by": "publisher",
+        "first-page": "3019",
+        "DOI": "10.1007/s00586-021-06965-3",
+        "volume": "30",
+        "author": "R. Tominaga",
+        "year": "2021",
+        "unstructured": "Tominaga, R. et al. Dose-response relationship between spino-pelvic alignment determined by sagittal modifiers and back pain-specific quality of life. Eur. Spine J. 30 (10), 3019–3027 (2021). https://doi.org/10.1007/s00586-021-06965-3",
+        "journal-title": "Eur. Spine J."
+      }
+    ],
+    "container-title": [
+      "Scientific Reports"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.nature.com/articles/s41598-026-38059-9",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41598-026-38059-9.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41598-026-38059-9.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          17
+        ]
+      ],
+      "date-time": "2026-02-17T09:37:17Z",
+      "timestamp": 1771321037000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/s41598-026-38059-9"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          30
+        ]
+      ]
+    },
+    "references-count": 46,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "38059"
+    ],
+    "URL": "https://doi.org/10.1038/s41598-026-38059-9",
+    "relation": {},
+    "ISSN": [
+      "2045-2322"
+    ],
+    "issn-type": [
+      {
+        "value": "2045-2322",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          30
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "18 March 2025",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "28 January 2026",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "30 January 2026",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "PAO is a paid consultant for CBP NonProfit, Inc. DEH teaches rehabilitation methods and is the CEO of a company that distributes spine rehabilitation equipment to physicians in the U.S.A. as used in this manuscript. All the other authors declare that they have no competing interests.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "6738"
+  }
+}

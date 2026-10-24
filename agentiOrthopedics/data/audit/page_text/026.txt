@@ -1,0 +1,85 @@
+=== PDF PAGE 1 ===
+JOURNAL OF ORTHOPAEDIC RESEARCH® • 2025.0 Top 100 Orthopedic AI • Rank #26
+AI in Orthopedic Research: A Comprehensive Review
+A. Mısır, A. Yuce
+Department of Orthopedics and Traumatology, Bahcesehir University School of Medicine, Istanbul, Turkey.
+Journal:
+Journal of Orthopaedic
+Research®
+Publication Year:
+2025.0
+Citations:
+35
+DOI:
+10.1002/jor.26109
+CLINICAL & AGENTIC AI TAKEAWAY
+AI is revolutionizing orthopedic research and clinical practice by improving diagnostic accuracy, optimizing
+treatment strategies, and streamlining clinical workflows, but challenges like data heterogeneity and
+algorithmic bias remain.
+ABSTRACT
+Artificial intelligence (AI) is revolutionizing orthopedic research and clinical practice by enhancing diagnostic accuracy,
+optimizing treatment strategies, and streamlining clinical workflows. Recent advances in deep learning have enabled the
+development of algorithms that detect fractures, grade osteoarthritis, and identify subtle pathologies in radiographic and
+magnetic resonance images with performance comparable to expert clinicians. These AI-driven systems reduce missed
+diagnoses and provide objective, reproducible assessments that facilitate early intervention and personalized treatment
+planning. Moreover, AI has made significant strides in predictive analytics by integrating diverse patient data-including
+gait and imaging features-to forecast surgical outcomes, implant survivorship, and rehabilitation trajectories. Emerging
+applications in robotics, augmented reality, digital twin technologies, and exoskeleton control promise to further transform
+preoperative planning and intraoperative guidance. Despite these promising developments, challenges such as data
+heterogeneity, algorithmic bias, and the "black box" nature of many models-as well as issues with robust validation-
+remain. This comprehensive review synthesizes current developments, critically examines limitations, and outlines future
+directions for integrating AI into musculoskeletal care. © 2025 Orthopaedic Research Society.
+Keywords: Cartilage, Biomechanics, Rehabilitation, Osteoarthritis, Diagnostic Imaging, Disease Process, Surgical Navigation
+Outcomes
+Study Overview & Background
+Artificial intelligence (AI) is revolutionizing orthopedic research and clinical practice by enhancing diagnostic accuracy,
+optimizing treatment strategies, and streamlining clinical workflows. Recent advances in deep learning have enabled the
+development of algorithms that detect fractures, grade osteoarthritis, and identify subtle pathologies in radiographic and
+magnetic resonance images with performance comparable to expert clinicians. These AI-driven systems reduce missed
+diagnoses and provide objective, reproducible assessments that facilitate early intervention and personalized treatment
+planning. Moreover, AI has made significant strides in predictive analytics by integrating diverse patient data-including
+gait and imaging features-to forecast surgical outcomes, implant survivorship, and rehabilitation trajectories. Emerging
+applications in robotics, augmented reality, digital twin technologies, and exoskeleton control promise to further transform
+preoperative planning and intraoperative guidance. Despite these promising developments, challenges such as data
+
+=== PDF PAGE 2 ===
+heterogeneity, algorithmic bias, and the "black box" nature of many models-as well as issues with robust validation-
+remain. This comprehensive review synthesizes current developments, critically examines limitations, and outlines future
+directions for integrating AI into musculoskeletal care. © 2025 Orthopaedic Research Society.
+Methodology & Clinical Focus
+Study Classification: literature review. Evaluated under orthopedic machine learning and artificial intelligence decision
+frameworks.
+Key Findings & Analysis
+AI is revolutionizing orthopedic research and clinical practice by improving diagnostic accuracy, optimizing treatment
+strategies, and streamlining clinical workflows, but challenges like data heterogeneity and algorithmic bias remain.
+Extended Repository Abstract
+Artificial intelligence (AI) is revolutionizing orthopedic research and clinical practice by enhancing diagnostic accuracy,
+optimizing treatment strategies, and streamlining clinical workflows. Recent advances in deep learning have enabled the
+development of algorithms that detect fractures, grade osteoarthritis, and identify subtle pathologies in radiographic and
+magnetic resonance images with performance comparable to expert clinicians. These AI-driven systems reduce missed
+diagnoses and provide objective, reproducible assessments that facilitate early intervention and personalized treatment
+planning. Moreover, AI has made significant strides in predictive analytics by integrating diverse patient data-including
+gait and imaging features-to forecast surgical outcomes, implant survivorship, and rehabilitation trajectories. Emerging
+applications in robotics, augmented reality, digital twin technologies, and exoskeleton control promise to further transform
+preoperative planning and intraoperative guidance. Despite these promising developments, challenges such as data
+heterogeneity, algorithmic bias, and the "black box" nature of many models-as well as issues with robust validation-
+remain. This comprehensive review synthesizes current developments, critically examines limitations, and outlines future
+directions for integrating AI into musculoskeletal care.
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+Bibliographic Details & Indexing
+Authors: A. Mısır, A. Yuce
+Journal / Venue: Journal of Orthopaedic Research® (2025.0)
+SJR Metric: Quartile 1.0
+Citation Count: 35 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.1002/jor.26109
+Consensus Evidence Link: https://consensus.app/papers/ai-in-orthopedic-research-a-comprehensive-review-
+m%C4%B1s%C4%B1r-yuce/559c57caf9265926b3b2a0ca2b0e89ae/
+
+=== PDF PAGE 3 ===
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1002/jor.26109 • Consensus Page:
+https://consensus.app/papers/ai-in-orthopedic-research-a-comprehensive-review-m%C4%B1s%C4%B1r-
+yuce/559c57caf9265926b3b2a0ca2b0e89ae/ • Verified and rendered via Deep Search & Academic Repositories.

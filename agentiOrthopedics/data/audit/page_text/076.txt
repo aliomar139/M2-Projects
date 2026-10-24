@@ -1,0 +1,67 @@
+=== PDF PAGE 1 ===
+MACH. LEARN. KNOWL. EXTR. • 2024.0 Top 100 Orthopedic AI • Rank #76
+Learning Optimal Dynamic Treatment Regime from
+Observational Clinical Data through Reinforcement
+Learning
+S. Abebe, Irene Poli, Roger D. Jones, Debora Slanzi
+Journal:
+Mach. Learn. Knowl. Extr.
+Publication Year:
+2024.0
+Citations:
+4
+DOI:
+10.3390/make6030088
+CLINICAL & AGENTIC AI TAKEAWAY
+Decision tree-based reinforcement learning algorithms show potential in determining optimal dynamic
+treatment regimes for personalized medicine, offering nuanced and effective treatment recommendations.
+ABSTRACT
+In medicine, dynamic treatment regimes (DTRs) have emerged to guide personalized treatment decisions for patients,
+accounting for their unique characteristics. However, existing methods for determining optimal DTRs face limitations,
+often due to reliance on linear models unsuitable for complex disease analysis and a focus on outcome prediction over
+treatment effect estimation. To overcome these challenges, decision tree-based reinforcement learning approaches have
+been proposed. Our study aims to evaluate the performance and feasibility of such algorithms: tree-based reinforcement
+learning (T-RL), DTR-Causal Tree (DTR-CT), DTR-Causal Forest (DTR-CF), stochastic tree-based reinforcement
+learning (SL-RL), and Q-learning with Random Forest. Using real-world clinical data, we conducted experiments to
+compare algorithm performances. Evaluation metrics included the proportion of correctly assigned patients to
+recommended treatments and the empirical mean with standard deviation of expected counterfactual outcomes based on
+estimated optimal treatment strategies. This research not only highlights the potential of decision tree-based reinforcement
+learning for dynamic treatment regimes but also contributes to advancing personalized medicine by offering nuanced and
+effective treatment recommendations.
+Study Overview & Background
+In medicine, dynamic treatment regimes (DTRs) have emerged to guide personalized treatment decisions for patients,
+accounting for their unique characteristics. However, existing methods for determining optimal DTRs face limitations,
+often due to reliance on linear models unsuitable for complex disease analysis and a focus on outcome prediction over
+treatment effect estimation. To overcome these challenges, decision tree-based reinforcement learning approaches have
+been proposed. Our study aims to evaluate the performance and feasibility of such algorithms: tree-based reinforcement
+learning (T-RL), DTR-Causal Tree (DTR-CT), DTR-Causal Forest (DTR-CF), stochastic tree-based reinforcement
+learning (SL-RL), and Q-learning with Random Forest. Using real-world clinical data, we conducted experiments to
+compare algorithm performances. Evaluation metrics included the proportion of correctly assigned patients to
+recommended treatments and the empirical mean with standard deviation of expected counterfactual outcomes based on
+estimated optimal treatment strategies. This research not only highlights the potential of decision tree-based reinforcement
+
+=== PDF PAGE 2 ===
+learning for dynamic treatment regimes but also contributes to advancing personalized medicine by offering nuanced and
+effective treatment recommendations.
+Methodology & Clinical Focus
+Study Classification: theoretical, modeling, or simulation study. Evaluated under orthopedic machine learning and
+artificial intelligence decision frameworks.
+Key Findings & Analysis
+Decision tree-based reinforcement learning algorithms show potential in determining optimal dynamic treatment regimes
+for personalized medicine, offering nuanced and effective treatment recommendations.
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+Bibliographic Details & Indexing
+Authors: S. Abebe, Irene Poli, Roger D. Jones, Debora Slanzi
+Journal / Venue: Mach. Learn. Knowl. Extr. (2024.0)
+SJR Metric: Quartile 1.0
+Citation Count: 4 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.3390/make6030088
+Consensus Evidence Link: https://consensus.app/papers/learning-optimal-dynamic-treatment-regime-from-abebe-
+poli/35306f28ec905e0baea4c0961930cc99/
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.3390/make6030088 • Consensus
+Page: https://consensus.app/papers/learning-optimal-dynamic-treatment-regime-from-abebe-poli/35306f28ec905e0baea4c0961930cc99/ •
+Verified and rendered via Deep Search & Academic Repositories.

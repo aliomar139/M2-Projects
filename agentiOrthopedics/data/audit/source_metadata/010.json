@@ -1,0 +1,445 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          18
+        ]
+      ],
+      "date-time": "2026-09-18T04:02:16Z",
+      "timestamp": 1789704136183,
+      "version": "4.0.1"
+    },
+    "reference-count": 19,
+    "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+    "issue": "12",
+    "content-domain": {
+      "domain": [
+        "lww.com",
+        "ovid.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Clin Orthop Relat Res"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    },
+    "abstract": "<jats:sec>\n                    <jats:title>Background</jats:title>\n                    <jats:p>Artificial intelligence (AI) is engineered to emulate tasks that have historically required human interaction and intellect, including learning, pattern recognition, decision-making, and problem-solving. Although AI models like ChatGPT-4 have demonstrated satisfactory performance on medical licensing exams, suggesting a potential for supporting medical diagnostics and decision-making, no study of which we are aware has evaluated the ability of these tools to make treatment recommendations when given clinical vignettes and representative medical imaging of common orthopaedic conditions. As AI continues to advance, a thorough understanding of its strengths and limitations is necessary to inform safe and helpful integration into medical practice.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Questions/purposes</jats:title>\n                    <jats:p>(1) What is the concordance between ChatGPT-4-generated treatment recommendations for common orthopaedic conditions with both the American Academy of Orthopaedic Surgeons (AAOS) clinical practice guidelines (CPGs) and an orthopaedic attending physician’s treatment plan? (2) In what specific areas do the ChatGPT-4-generated treatment recommendations diverge from the AAOS CPGs?</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>Ten common orthopaedic conditions with associated AAOS CPGs were identified: carpal tunnel syndrome, distal radius fracture, glenohumeral joint osteoarthritis, rotator cuff injury, clavicle fracture, hip fracture, hip osteoarthritis, knee osteoarthritis, ACL injury, and acute Achilles rupture. For each condition, the medical records of 10 deidentified patients managed at our facility were used to construct clinical vignettes that each had an isolated, single diagnosis with adequate clarity. The vignettes also encompassed a range of diagnostic severity to evaluate more thoroughly adherence to the treatment guidelines outlined by the AAOS. These clinical vignettes were presented alongside representative radiographic imaging. The model was prompted to provide a single treatment plan recommendation. Each treatment plan was compared with established AAOS CPGs and to the treatment plan documented by the attending orthopaedic surgeon treating the specific patient. Vignettes where ChatGPT-4 recommendations diverged from CPGs were reviewed to identify patterns of error and summarized.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>ChatGPT-4 provided treatment recommendations in accordance with the AAOS CPGs in 90% (90 of 100) of clinical vignettes. Concordance between ChatGPT-generated plans and the plan recommended by the treating orthopaedic attending physician was 78% (78 of 100). One hundred percent (30 of 30) of ChatGPT-4 recommendations for fracture vignettes and hip and knee arthritis vignettes matched with CPG recommendations, whereas the model struggled most with recommendations for carpal tunnel syndrome (3 of 10 instances demonstrated discordance). ChatGPT-4 recommendations diverged from AAOS CPGs for three carpal tunnel syndrome vignettes; two ACL injury, rotator cuff injury, and glenohumeral joint osteoarthritis vignettes; as well as one acute Achilles rupture vignette. In these situations, ChatGPT-4 most often struggled to correctly interpret injury severity and progression, incorporate patient factors (such as lifestyle or comorbidities) into decision-making, and recognize a contraindication to surgery.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusion</jats:title>\n                    <jats:p>ChatGPT-4 can generate accurate treatment plans aligned with CPGs but can also make mistakes when it is required to integrate multiple patient factors into decision-making and understand disease severity and progression. Physicians must critically assess the full clinical picture when using AI tools to support their decision-making.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Clinical Relevance</jats:title>\n                    <jats:p>ChatGPT-4 may be used as an on-demand diagnostic companion, but patient-centered decision-making should continue to remain in the hands of the physician.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.1097/corr.0000000000003234",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          9
+        ]
+      ],
+      "date-time": "2024-09-09T07:58:57Z",
+      "timestamp": 1725868737000
+    },
+    "page": "2098-2106",
+    "update-policy": "https://doi.org/10.1097/lww.0000000000001000",
+    "source": "Crossref",
+    "is-referenced-by-count": 41,
+    "title": [
+      "“Dr. AI Will See You Now”: How Do ChatGPT-4 Treatment Recommendations Align With Orthopaedic Clinical Practice Guidelines?"
+    ],
+    "prefix": "10.1097",
+    "volume": "482",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-3840-5850",
+        "authenticated-orcid": false,
+        "given": "Tanios",
+        "family": "Dagher",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery, The University of Chicago, Chicago, IL, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Emma P.",
+        "family": "Dwyer",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery, The University of Chicago, Chicago, IL, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hayden P.",
+        "family": "Baker",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery, The University of Chicago, Chicago, IL, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0007-3701-7593",
+        "authenticated-orcid": false,
+        "given": "Senthooran",
+        "family": "Kalidoss",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery, The University of Chicago, Chicago, IL, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1072-1595",
+        "authenticated-orcid": false,
+        "given": "Jason A.",
+        "family": "Strelzow",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery, The University of Chicago, Chicago, IL, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "276",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          6
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "R4-20250505",
+        "article-title": "Orthopaedic Surgeons. Management of glenohumeral joint osteoarthritis. Evidence-based clinical practice guideline"
+      },
+      {
+        "key": "R5-20250505",
+        "article-title": "Orthopaedic Surgeons. Management of hip fractures in older adults. Evidence-based clinical practice guideline"
+      },
+      {
+        "key": "R6-20250505",
+        "article-title": "Orthopaedic Surgeons. Management of osteoarthritis of the hip. Evidence-based clinical practice guideline"
+      },
+      {
+        "issue": "Suppl 1",
+        "key": "R12-20250505",
+        "doi-asserted-by": "crossref",
+        "first-page": "S27",
+        "DOI": "10.1097/BOT.0000000000001365",
+        "article-title": "Biomechanics of femoral neck fractures and implications for fixation",
+        "volume": "33",
+        "author": "Augat",
+        "year": "2019",
+        "journal-title": "J Orthop Trauma"
+      },
+      {
+        "key": "R13-20250505",
+        "doi-asserted-by": "crossref",
+        "first-page": "1026",
+        "DOI": "10.2106/JBJS.22.01079",
+        "article-title": "New considerations in ACL surgery: when is anatomic reconstruction not enough?",
+        "volume": "105",
+        "author": "Baker",
+        "year": "2023",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "key": "R14-20250505",
+        "doi-asserted-by": "crossref",
+        "first-page": "123",
+        "DOI": "10.5435/JAAOS-D-23-00474",
+        "article-title": "ChatGPT’s ability to assist with clinical documentation: a randomized controlled trial",
+        "volume": "32",
+        "author": "Baker",
+        "year": "2024",
+        "journal-title": "J Am Acad Orthop Surg"
+      },
+      {
+        "key": "R15-20250505",
+        "doi-asserted-by": "crossref",
+        "first-page": "521",
+        "DOI": "10.1056/NEJMoa2108337",
+        "article-title": "Cemented or uncemented hemiarthroplasty for intracapsular hip fracture",
+        "volume": "386",
+        "author": "Fernandez",
+        "year": "2022",
+        "journal-title": "N Engl J Med"
+      },
+      {
+        "key": "R16-20250505",
+        "doi-asserted-by": "crossref",
+        "first-page": "e85",
+        "DOI": "10.3928/01477447-20230922-05",
+        "article-title": "The rapid development of artificial intelligence: GPT-4’s performance on orthopedic surgery board questions",
+        "volume": "47",
+        "author": "Hofmann",
+        "year": "2024",
+        "journal-title": "Orthopedics"
+      },
+      {
+        "key": "R18-20250505",
+        "doi-asserted-by": "crossref",
+        "first-page": "807",
+        "DOI": "10.1016/j.gie.2020.06.040",
+        "article-title": "History of artificial intelligence in medicine",
+        "volume": "92",
+        "author": "Kaul",
+        "year": "2020",
+        "journal-title": "Gastrointest Endosc"
+      },
+      {
+        "key": "R19-20250505",
+        "doi-asserted-by": "crossref",
+        "first-page": "511",
+        "DOI": "10.5435/00124635-201008000-00008",
+        "article-title": "AAOS clinical practice guideline: acute Achilles tendon rupture",
+        "volume": "18",
+        "author": "Kou",
+        "year": "2010",
+        "journal-title": "J Am Acad Orthop Surg"
+      },
+      {
+        "key": "R20-20250505",
+        "first-page": "e23",
+        "article-title": "Evaluating ChatGPT performance on the Orthopaedic In-Training Examination",
+        "volume": "8",
+        "author": "Kung",
+        "year": "2023",
+        "journal-title": "JB JS Open Access"
+      },
+      {
+        "key": "R21-20250505",
+        "doi-asserted-by": "crossref",
+        "first-page": "4072",
+        "DOI": "10.1016/j.injury.2022.10.006",
+        "article-title": "Optimizing fixation methods for stable and unstable intertrochanteric hip fractures treated with sliding hip screw or cephalomedullary nailing: a comparative biomechanical and finite element analysis study",
+        "volume": "53",
+        "author": "Kyriakopoulos",
+        "year": "2022",
+        "journal-title": "Injury"
+      },
+      {
+        "key": "R22-20250505",
+        "doi-asserted-by": "crossref",
+        "first-page": "56",
+        "DOI": "10.1186/s41239-023-00426-1",
+        "article-title": "Role of AI chatbots in education: systematic literature review",
+        "volume": "20",
+        "author": "Labadze",
+        "year": "2023",
+        "journal-title": "Int J Educ Technol High Educ"
+      },
+      {
+        "key": "R23-20250505",
+        "doi-asserted-by": "crossref",
+        "first-page": "1173",
+        "DOI": "10.5435/JAAOS-D-23-00396",
+        "article-title": "Comparison of ChatGPT-3.5, ChatGPT-4, and orthopaedic resident performance on orthopaedic assessment examinations",
+        "volume": "31",
+        "author": "Massey",
+        "year": "2023",
+        "journal-title": "J Am Acad Orthop Surg"
+      },
+      {
+        "key": "R24-20250505",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1371/journal.pdig.0000205",
+        "article-title": "ChatGPT passing USMLE shines a spotlight on the flaws of medical education",
+        "volume": "2",
+        "author": "Mbakwe",
+        "year": "2023",
+        "journal-title": "PLOS Digital Health"
+      },
+      {
+        "key": "R25-20250505",
+        "doi-asserted-by": "crossref",
+        "first-page": "1519",
+        "DOI": "10.2106/JBJS.23.00209",
+        "article-title": "Assessing ChatGPT responses to common patient questions regarding total hip arthroplasty",
+        "volume": "105",
+        "author": "Mika",
+        "year": "2023",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "key": "R27-20250505",
+        "doi-asserted-by": "crossref",
+        "first-page": "998",
+        "DOI": "10.1177/21925682231195783",
+        "article-title": "ChatGPT and its role in the decision-making for the diagnosis and treatment of lumbar spinal stenosis: a comparative analysis and narrative review",
+        "volume": "14",
+        "author": "Rajjoub",
+        "year": "2024",
+        "journal-title": "Global Spine J"
+      },
+      {
+        "key": "R29-20250505",
+        "doi-asserted-by": "crossref",
+        "first-page": "173",
+        "DOI": "10.1016/j.ijsu.2018.11.011",
+        "article-title": "Comparison of effects of four treatment methods for unstable intertrochanteric fractures: a network meta-analysis",
+        "volume": "60",
+        "author": "Shu",
+        "year": "2018",
+        "journal-title": "Int J Surg"
+      },
+      {
+        "key": "R30-20250505",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jse.2023.11.014",
+        "article-title": "Do ChatGPT and Google differ in answers to commonly asked patient questions regarding total shoulder and total elbow arthroplasty?",
+        "author": "Tharakan",
+        "year": "2024",
+        "journal-title": "J Shoulder Elbow Surg"
+      }
+    ],
+    "container-title": [
+      "Clinical Orthopaedics &amp; Related Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.lww.com/10.1097/CORR.0000000000003234",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          5,
+          5
+        ]
+      ],
+      "date-time": "2025-05-05T14:00:14Z",
+      "timestamp": 1746453614000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.lww.com/10.1097/CORR.0000000000003234"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          6
+        ]
+      ]
+    },
+    "references-count": 19,
+    "journal-issue": {
+      "issue": "12",
+      "published-print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1097/corr.0000000000003234",
+    "relation": {},
+    "ISSN": [
+      "0009-921X",
+      "1528-1132"
+    ],
+    "issn-type": [
+      {
+        "value": "0009-921X",
+        "type": "print"
+      },
+      {
+        "value": "1528-1132",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          6
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2024-04-03",
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2024-08-02",
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

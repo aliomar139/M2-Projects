@@ -1,0 +1,23 @@
+﻿paper_id,url,status,identity
+LEGACY_026,https://onlinelibrary.wiley.com/doi/pdf/10.1002/jor.26109,403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/pdf/10.1002/jor.26109,not_accepted
+LEGACY_026,https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jor.26109,403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jor.26109,not_accepted
+LEGACY_034,https://esskajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ksa.70304,403 Client Error: Forbidden for url: https://esskajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ksa.70304,not_accepted
+LEGACY_034,https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ksa.70304,403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ksa.70304,not_accepted
+LEGACY_044,http://www.nature.com/articles/s41584-018-0130-5.pdf,Response is not a PDF,not_accepted
+LEGACY_064,https://link.springer.com/content/pdf/10.1007/s44163-026-01187-2.pdf,original_pdf_saved,DOI in first two PDF pages; SHA256 0d5976148db3e616fbc2be69847f90d9ef53b66dfa09d6c8c96b0cc77f8eb243
+LEGACY_068,https://link.springer.com/content/pdf/10.1007/s44163-026-01733-y.pdf,original_pdf_saved,DOI in first two PDF pages; SHA256 0a2b6786a24d31923c0a13afca55018d1b0075010431aa78566c0b18a0076535
+PMID_31994752,https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fjor.24614,400 Client Error: No TDM Client Token was found in the request for url: https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fjor.24614,not_accepted
+PMID_31994752,https://onlinelibrary.wiley.com/doi/pdf/10.1002/jor.24614,403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/pdf/10.1002/jor.24614,not_accepted
+PMID_31994752,https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jor.24614,403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jor.24614,not_accepted
+PMID_37937083,https://journals.sagepub.com/doi/pdf/10.1177/15563316231193367,403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/pdf/10.1177/15563316231193367,not_accepted
+PMID_38712416,https://ojs.jpma.org.pk/index.php/public_html/article/download/20856/3202,original_pdf_saved,DOI in first two PDF pages; SHA256 14e991e5d94116e5604c695e238e80436c3b295d5c9eb999d0936a5011148337
+PMID_40405922,https://journals.sagepub.com/doi/pdf/10.1177/15563316251339596,403 Client Error: Forbidden for url: https://journals.sagepub.com/doi/pdf/10.1177/15563316251339596,not_accepted
+PMID_41720113,http://www.thieme-connect.de/products/ejournals/pdf/10.1055/a-2736-1861.pdf,Response is not a PDF,not_accepted
+PMID_41973309,https://link.springer.com/content/pdf/10.1007/s12178-026-10019-w.pdf,Response is not a PDF,not_accepted
+PMID_41973342,https://link.springer.com/content/pdf/10.1007/s43390-026-01365-3.pdf,original_pdf_saved,DOI in first two PDF pages; SHA256 bf3f4fbc64a728e92b738db755651fa0dd250ec2ef031c10be1c9be4bfa773ec
+PMID_42101555,https://link.springer.com/content/pdf/10.1007/s43390-026-01397-9.pdf,original_pdf_saved,DOI in first two PDF pages; SHA256 9178439532bc4358791a6a56d6ef5bd2faca27064951a0b0bc48b9e29b53e944
+PMID_42536128,https://link.springer.com/content/pdf/10.1007/s11701-026-03753-3.pdf,Response is not a PDF,not_accepted
+PMID_42686880,https://link.springer.com/content/pdf/10.1007/s00586-026-10348-x.pdf,original_pdf_saved,DOI in first two PDF pages; SHA256 292701a9f543b6d1bd212b29b6ec0ef37256f82091087a16ff0ba8027334abca
+PMID_42824522,https://link.springer.com/content/pdf/10.1007/s43465-026-01760-y.pdf,Response is not a PDF,not_accepted
+PMID_42879167,https://esskajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ksa.70647,403 Client Error: Forbidden for url: https://esskajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ksa.70647,not_accepted
+PMID_42879167,https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ksa.70647,403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ksa.70647,not_accepted

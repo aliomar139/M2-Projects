@@ -1,0 +1,1941 @@
+
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.4 20241031//EN" "JATS-archivearticle1-4-mathml3.dtd">
+<article id="jeo270549" xml:lang="en" article-type="review-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">J Exp Orthop</journal-id><journal-id journal-id-type="iso-abbrev">J Exp Orthop</journal-id><journal-id journal-id-type="pmc-domain-id">2776</journal-id><journal-id journal-id-type="pmc-domain">jexporth</journal-id><journal-id journal-id-type="nlm-id">101653750</journal-id><journal-id journal-id-type="publisher-id">JEO2</journal-id><journal-title-group><journal-title>Journal of Experimental Orthopaedics</journal-title></journal-title-group><issn pub-type="epub">2197-1153</issn><?publisher_abbrev blackwell?><publisher><publisher-name>Wiley</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC12616508</article-id><article-id pub-id-type="pmcid-ver">PMC12616508.1</article-id><article-id pub-id-type="pmcaid">12616508</article-id><article-id pub-id-type="pmcaiid">12616508</article-id><article-id pub-id-type="pmid">41245724</article-id><article-id pub-id-type="doi">10.1002/jeo2.70549</article-id><article-id pub-id-type="publisher-id">JEO270549</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="overline"><subject>Review Paper</subject></subj-group><subj-group subj-group-type="heading"><subject>Review Paper</subject></subj-group></article-categories><title-group><article-title>Artificial intelligence algorithms in orthopaedics: A narrative review of methods and clinical applications</article-title></title-group><contrib-group><contrib id="jeo270549-cr-0001" contrib-type="author" corresp="yes"><name name-style="western"><surname>Rosen</surname><given-names initials="J">Jamie</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0009-0005-7505-6871</contrib-id><xref rid="jeo270549-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="jeo270549-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref><address><email>Jamie.rosen@warwick.ac.uk</email></address></contrib><contrib id="jeo270549-cr-0002" contrib-type="author"><name name-style="western"><surname>Russell</surname><given-names initials="J">Jemima</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0009-0009-0014-4390</contrib-id><xref rid="jeo270549-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="jeo270549-cr-0003" contrib-type="author"><name name-style="western"><surname>Kartik</surname><given-names initials="P">Prerna</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0003-1855-8881</contrib-id><xref rid="jeo270549-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="jeo270549-cr-0004" contrib-type="author"><name name-style="western"><surname>Vella‐Baldacchino</surname><given-names initials="M">Martinique</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-3284-7236</contrib-id><xref rid="jeo270549-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib></contrib-group><aff id="jeo270549-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">Warwick Medical School</named-content>
+<institution>University of Warwick</institution>
+<city>Coventry</city>
+<country country="GB">UK</country>
+</aff><aff id="jeo270549-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">MSk Lab, Department of Surgery and Cancer</named-content>
+<institution>Imperial College London</institution>
+<city>London</city>
+<country country="GB">UK</country>
+</aff><aff id="jeo270549-aff-0003">
+<label>
+<sup>3</sup>
+</label>
+<named-content content-type="organisation-division">Department of Trauma &amp; Orthopaedics</named-content>
+<institution>Kettering General Hospital</institution>
+<city>Kettering</city>
+<country country="GB">UK</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>
+<bold>Correspondence</bold> Jamie Rosen, Warwick Medical School, University of Warwick, Medical School Building, Coventry CV4 7AL, UK.<break/>
+Email: <email>Jamie.rosen@warwick.ac.uk</email>
+<break/>
+</corresp></author-notes><pub-date pub-type="epub"><day>14</day><month>11</month><year>2025</year></pub-date><pub-date pub-type="collection"><month>10</month><year>2025</year></pub-date><volume>12</volume><issue seq="31">4</issue><issue-id pub-id-type="pmc-issue-id">497705</issue-id><issue-id pub-id-type="doi">10.1002/jeo2.v12.4</issue-id><elocation-id>e70549</elocation-id><history>
+<date date-type="rev-recd"><day>06</day><month>10</month><year>2025</year></date>
+<date date-type="received"><day>15</day><month>8</month><year>2025</year></date>
+<date date-type="accepted"><day>10</day><month>10</month><year>2025</year></date>
+</history><pub-history><event event-type="pmc-release"><date><day>14</day><month>11</month><year>2025</year></date></event><event event-type="pmc-live"><date><day>15</day><month>11</month><year>2025</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2026-09-24 13:37:05.370"><day>24</day><month>09</month><year>2026</year></date></event></pub-history><permissions><copyright-statement content-type="article-copyright">© 2025 The Author(s). <italic toggle="yes">Journal of Experimental Orthopaedics</italic> published by John Wiley &amp; Sons Ltd on behalf of European Society of Sports Traumatology, Knee Surgery and Arthroscopy.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="JEO2-12-e70549.pdf"><?pdf-name JEO2-12-e70549.pdf?><?pdf-size 1377536?><?pdf-md5 ff5c871e27555a8772e94576ba6e9e06?><?pdf-image-server-status NEVER_LOAD?><?pdf-cloudpmc-urn urn:app:532d/12616508/ff5c871e2755/JEO2-12-e70549.pdf?></self-uri><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pdf" xlink:href="file:JEO2-12-e70549.pdf"/><abstract><title>Abstract</title><p>This narrative review evaluates the role of artificial intelligence (AI) algorithms in orthopaedic surgery and distinguishes itself by explaining how the main algorithmic approaches function and illustrating each with orthopaedic examples. Machine learning methods, including regression, classification and reinforcement learning, have been applied to fracture detection, prediction of revision risk and modelling of outcomes after arthroplasty and sports injury. Deep learning and convolutional neural networks have improved fracture classification, implant surveillance and segmentation of cartilage and meniscal tissue on magnetic resonance imaging. Neural networks such as FracNet and YOLO‐based systems demonstrate growing capability in trauma imaging. Natural language processing has automated the extraction of operative and registry data, while large language models are emerging for diagnostic support and education. Generative artificial intelligence (GAI) have produced synthetic musculoskeletal images to expand data sets. Computer vision and image processing underpin robotic‐assisted surgery and preoperative planning, and federated learning enables multicentre collaboration while protecting privacy. Each algorithm offers strengths in accuracy, efficiency or scalability, but also carries bias, transparency, computational cost and lack of external validation. This review explores how these algorithms are shaping orthopaedics, highlighting their benefits, limitations and challenges. Rigorous validation, transparent reporting and governance are essential for safe clinical use.</p><sec id="jeo270549-sec-0020"><title>Level of Evidence</title><p>N/A.</p></sec></abstract><abstract abstract-type="graphical"><p>Artificial intelligence (AI) algorithms are transforming orthopaedics through imaging and outcome prediction, but safe clinical translation requires robust validation, transparent reporting and effective governance.<boxed-text position="anchor" content-type="graphic" orientation="portrait"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-1" orientation="portrait" xlink:href="JEO2-12-e70549-g001.jpg"><?image-name JEO2-12-e70549-g001.jpg?><?image-size 142656?><?image-md5 514ac2005faee298f461e646058dff79?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1175?><?image-original-width 1000?><?image-scaled-height 783?><?image-scaled-width 666?><?image-cloudpmc-urn urn:cdn:blobs/532d/12616508/514ac2005fae/JEO2-12-e70549-g001.jpg?></graphic></boxed-text>
+</p></abstract><kwd-group><kwd id="jeo270549-kwd-0001">algorithm</kwd><kwd id="jeo270549-kwd-0002">artificial intelligence</kwd><kwd id="jeo270549-kwd-0003">machine learning</kwd><kwd id="jeo270549-kwd-0004">orthopaedics</kwd><kwd id="jeo270549-kwd-0005">orthopaedic surgery</kwd></kwd-group><counts><fig-count count="1"/><table-count count="3"/><page-count count="12"/><word-count count="8436"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>October 2025</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.6.2 mode:remove_FC converted:14.11.2025</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="jeo270549-cit-0116">
+<string-name name-style="western">
+<surname>Rosen</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Russell</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kartik</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vella‐Baldacchino</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>Artificial intelligence algorithms in orthopaedics: a narrative review of methods and clinical applications</article-title>. <source>J Exp Orthop</source>. <year>2025</year>;<volume>12</volume>:<elocation-id>e70549</elocation-id>. <pub-id pub-id-type="doi">10.1002/jeo2.70549</pub-id>
+<pub-id pub-id-type="pmcid">PMC12616508</pub-id><pub-id pub-id-type="pmid">41245724</pub-id></mixed-citation>
+</p></notes></front><body><def-list list-content="abbreviations"><title>Abbreviations</title><def-item><term>AI</term><def><p>artificial intelligence</p></def></def-item><def-item><term>ANN</term><def><p>artificial neural network</p></def></def-item><def-item><term>AR</term><def><p>augmented reality</p></def></def-item><def-item><term>CNNs</term><def><p>convolutional neural networks</p></def></def-item><def-item><term>CT</term><def><p>computed tomography</p></def></def-item><def-item><term>CV</term><def><p>computer vision</p></def></def-item><def-item><term>DL</term><def><p>deep learning</p></def></def-item><def-item><term>DQN</term><def><p>Deep Q‐Networks</p></def></def-item><def-item><term>FL</term><def><p>federated learning</p></def></def-item><def-item><term>GAI</term><def><p>generative artificial intelligence</p></def></def-item><def-item><term>GANS</term><def><p>generative adversarial networks</p></def></def-item><def-item><term>IP</term><def><p>image processing</p></def></def-item><def-item><term>LLM</term><def><p>large language models</p></def></def-item><def-item><term>ML</term><def><p>machine learning</p></def></def-item><def-item><term>MR</term><def><p>mixed reality</p></def></def-item><def-item><term>MRI</term><def><p>magnetic resonance imaging</p></def></def-item><def-item><term>NLP</term><def><p>natural language processing</p></def></def-item><def-item><term>NN</term><def><p>neural network</p></def></def-item><def-item><term>ResNets</term><def><p>residual networks</p></def></def-item><def-item><term>RL</term><def><p>reinforcement learning</p></def></def-item><def-item><term>RNN</term><def><p>recurrent neural networks</p></def></def-item><def-item><term>SL</term><def><p>supervised learning</p></def></def-item><def-item><term>UL</term><def><p>unsupervised learning</p></def></def-item><def-item><term>VR</term><def><p>virtual reality</p></def></def-item></def-list><sec id="jeo270549-sec-0030"><title>INTRODUCTION</title><p>The origins of artificial intelligence (AI) date back to the mid‐20th century to Alan Turing, a pioneer in computer science who introduced the principle of machine learning (ML) [<xref rid="jeo270549-bib-0025" ref-type="bibr">25</xref>]. Turing refers to a test known as the ‘Imitation Game’, whereby a person needs to determine whether they are communicating with a human or a machine based entirely on written conversation [<xref rid="jeo270549-bib-0096" ref-type="bibr">96</xref>]. This paved the way for further study and development in the area of ML. A key development has been the emergence of deep learning (DL) architectures such as Residual Networks (ResNets), which have transformed medical imaging by enabling accurate feature extraction from complex data sets [<xref rid="jeo270549-bib-0034" ref-type="bibr">34</xref>].</p><p>AI is a broad concept that refers to the capability for computer software to mimic human intelligence [<xref rid="jeo270549-bib-0045" ref-type="bibr">45</xref>]. The term AI was formally introduced by Stanford University professor of computer science John McCarthy at Dartmouth in 1956, where he wanted to see if a machine could simulate human intelligence [<xref rid="jeo270549-bib-0008" ref-type="bibr">8</xref>]. AI acts as an umbrella for many different subareas including machine learning (ML), deep learning (DL), neural networks (NN), natural language processing (NLP) and large language models (LLMs), computer vision (CV) and image processing (IP), federated learning (FL) and generative artificial intelligence (GAI) [<xref rid="jeo270549-bib-0053" ref-type="bibr">53</xref>, <xref rid="jeo270549-bib-0068" ref-type="bibr">68</xref>]. Many of these approaches are already incorporated into orthopaedic and musculoskeletal surgery. For example, NNs are applied to fracture detection, NLP to operative notes and administrative tasks and GAI models to synthetic musculoskeletal imaging [<xref rid="jeo270549-bib-0005" ref-type="bibr">5</xref>, <xref rid="jeo270549-bib-0014" ref-type="bibr">14</xref>, <xref rid="jeo270549-bib-0105" ref-type="bibr">105</xref>]. This review seeks to provide an overview of how these algorithms function and illustrate their applications to orthopaedic surgery, while also addressing their benefits, risks and future directions.</p></sec><sec sec-type="methods" id="jeo270549-sec-0040"><title>METHODS</title><sec id="jeo270549-sec-0050"><title>Research methodology</title><p>This review was conducted as a narrative review. No protocol registration or PRISMA reporting framework was applied. A structured literature search was conducted in Ovid MEDLINE and Embase for studies published between 2021 and 2025. This timeframe was chosen to reflect recent advances in AI and the progress in clinical validation that has influenced orthopaedic practice. In addition, key journals in orthopaedics and related fields were manually screened to identify further relevant studies. To provide historical context, earlier influential works were also included. These included the history of AI, the introduction of convolutional neural networks (CNNs), the AlexNet architecture and landmark applications in clinical imaging. Such studies have provided the foundations of current AI methodologies in orthopaedics. Abstracts, preprints and animal studies were excluded.</p><p>The full search strategy is provided in the Supporting Information S1: <xref rid="jeo270549-suppl-0001" ref-type="supplementary-material">Appendix</xref>. This included combinations of AI and algorithms with orthopaedic and related fields (trauma, fracture, arthroplasty, joint replacement), including subfields such as machine learning, deep learning and NLP. Full‐text studies in English focusing on algorithm functionality, clinical applications, benefits, risks and implementation challenges in orthopaedics were included. Both original research and review articles were included to ensure a broad overview of the field. All studies were imported into Rayyan: Systematic Review Management Platform. Title, abstract and full‐text screening were conducted independently and blindly by two reviewers. Included studies were then extracted into Microsoft Excel and organised thematically according to the type of AI technique. No formal critical appraisal was undertaken.</p></sec></sec><sec sec-type="results" id="jeo270549-sec-0060"><title>RESULTS</title><sec id="jeo270549-sec-0070"><title>Key areas of AI</title><sec id="jeo270549-sec-0080"><title>Machine learning (ML)</title><p>ML is a foundational subset of AI concerned with developing algorithms that analyse large data sets, perform specific tasks and improve performance through experience without explicit reprogramming [<xref rid="jeo270549-bib-0072" ref-type="bibr">72</xref>]. It is often defined as a ‘computer programme that learns from experience with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E′ [<xref rid="jeo270549-bib-0062" ref-type="bibr">62</xref>].</p><p>In orthopaedics, ML applications include automated fracture detection and classifications on radiographs, predicting revision risk following joint replacements and a patient's length of stay in hospital [<xref rid="jeo270549-bib-0012" ref-type="bibr">12</xref>, <xref rid="jeo270549-bib-0021" ref-type="bibr">21</xref>, <xref rid="jeo270549-bib-0051" ref-type="bibr">51</xref>]. ML has also been applied to gait and motion analysis for injury and fall risk assessments, optimising rehabilitation strategies and predicting return to sport timelines for athletes [<xref rid="jeo270549-bib-0022" ref-type="bibr">22</xref>, <xref rid="jeo270549-bib-0078" ref-type="bibr">78</xref>].</p></sec><sec id="jeo270549-sec-0090"><title>Deep learning (DL)</title><p>DL is a specialised subset of ML employing multilayered artificial neural networks (ANNs) to model complex, non‐linear relationships and automatically extract hierarchical features. DL processes unstructured data, with foundational research establishing the theoretical and practical basis for its current use in orthopaedic practice [<xref rid="jeo270549-bib-0024" ref-type="bibr">24</xref>, <xref rid="jeo270549-bib-0054" ref-type="bibr">54</xref>].</p><p>DL has been applied to radiological imaging including the detection of fractures on X‐rays and for identifying spinal stenosis and degenerative changes on magnetic resonance imaging (MRIs) [<xref rid="jeo270549-bib-0004" ref-type="bibr">4</xref>, <xref rid="jeo270549-bib-0019" ref-type="bibr">19</xref>]. Beyond fracture detection, it has been applied to pelvic fracture classification using the AO/OTA pelvic fracture classification scale highlighting how DL can support decision‐making in orthopaedic trauma [<xref rid="jeo270549-bib-0055" ref-type="bibr">55</xref>]. DL models' ability to handle large amounts of complex data enables the segmentation of meniscal and cartilage tissue on MRIs, which can support arthroscopic assessment [<xref rid="jeo270549-bib-0013" ref-type="bibr">13</xref>]. Recently, DL models have been used to predict implant loosening by analysing radiographs [<xref rid="jeo270549-bib-0047" ref-type="bibr">47</xref>]. This highlights the potential of DL to improve long‐term arthroplasty surveillance.</p></sec><sec id="jeo270549-sec-0100"><title>Neural networks (NN)</title><p>NNs comprise interconnected input, hidden and output layers that iteratively transform data to identify complex patterns [<xref rid="jeo270549-bib-0087" ref-type="bibr">87</xref>]. Orthopaedic NNs have demonstrated promising outcomes in detecting fractures on radiographs with limited data sets [<xref rid="jeo270549-bib-0004" ref-type="bibr">4</xref>]. Orthopaedic NN FracNet combines supervised learning (SL) with feature fusion in order to improve fracture recognition accuracy [<xref rid="jeo270549-bib-0001" ref-type="bibr">1</xref>].</p><p>CNNs are optimised for image analysis, capturing spatial hierarchies through their layered filters. The AlexNet architecture marked a turning point in CV, enabling widespread adoption of deep CNNs in healthcare [<xref rid="jeo270549-bib-0049" ref-type="bibr">49</xref>]. CNNs have successfully automated the classification of distal radius fractures on radiographs, performing at the level of an orthopaedic surgeon [<xref rid="jeo270549-bib-0071" ref-type="bibr">71</xref>, <xref rid="jeo270549-bib-0075" ref-type="bibr">75</xref>]. CNNs also support paediatric orthopaedic applications with models such as YOLOv8‐AM improving fracture detection in children. These examples highlight how CNNs are becoming increasingly capable of enhancing the speed and accuracy of radiological interpretation in orthopaedics [<xref rid="jeo270549-bib-0007" ref-type="bibr">7</xref>].</p></sec><sec id="jeo270549-sec-0110"><title>Natural language processing (NLP) and large language models (LLM)</title><p>NLP enables computational systems to process, interpret and generate human language, structuring information from unstructured data sources as electronic health records, discharge summaries and consultation transcripts [<xref rid="jeo270549-bib-0100" ref-type="bibr">100</xref>, <xref rid="jeo270549-bib-0105" ref-type="bibr">105</xref>]. Applications within orthopaedics include extracting key fields such as operative approach, fixation method and bearing surfaces from postoperative notes following arthroplasty surgery [<xref rid="jeo270549-bib-0101" ref-type="bibr">101</xref>]. NLP has also been used to analyse large sets of musculoskeletal radiology reports to identify fracture trends, which reduces the need for clinicians to manually check promoting more efficient research [<xref rid="jeo270549-bib-0043" ref-type="bibr">43</xref>].</p><p>LLMs build on NLP by using DL and transformer‐based architectures to generate contextually relevant, human‐like text [<xref rid="jeo270549-bib-0079" ref-type="bibr">79</xref>]. They are trained on extensive volumes and varying types of data, including open‐access literature and other publicly available sources [<xref rid="jeo270549-bib-0063" ref-type="bibr">63</xref>]. LLMs have shown the potential to support orthopaedics through the generation of educational content for both clinicians and patients [<xref rid="jeo270549-bib-0081" ref-type="bibr">81</xref>]. They play a growing role in diagnostics and research by managing large data sets and integrating with other AI approaches to enhance accuracy [<xref rid="jeo270549-bib-0111" ref-type="bibr">111</xref>]. Their autoregressive design enables next‐token prediction based on probabilistic modelling [<xref rid="jeo270549-bib-0106" ref-type="bibr">106</xref>].</p></sec><sec id="jeo270549-sec-0120"><title>Computer vision (CV) and image processing (IP)</title><p>CV uses algorithms, often integrated with DL, to interpret and analyse visual data. IP is a CV subfield that employs techniques such as noise reduction, contrast enhancement and segmentation to optimise diagnostic images [<xref rid="jeo270549-bib-0023" ref-type="bibr">23</xref>, <xref rid="jeo270549-bib-0049" ref-type="bibr">49</xref>]. CV has been applied to interpret pelvic x‐rays and detect fractures with high accuracy and automate AO‐OTA fracture classification [<xref rid="jeo270549-bib-0029" ref-type="bibr">29</xref>]. This highlights the impact to both diagnostic and preoperative planning. IP techniques such as photon‐counting computed tomography (CT) with virtual monoenergetic reconstruction reduce metal artefacts around implants, providing clinicians with better visibility of bone and soft tissue structures [<xref rid="jeo270549-bib-0086" ref-type="bibr">86</xref>]. IP is a key feature of the Mako surgical robot which uses a preoperative CT scan and three‐dimensional (3D) model reconstruction to create a 3D patient‐specific plan for surgery [<xref rid="jeo270549-bib-0027" ref-type="bibr">27</xref>].</p></sec><sec id="jeo270549-sec-0130"><title>Federated learning (FL)</title><p>FL enables collaborative model training across institutions without transferring raw patient data, thereby preserving privacy and addressing governance concerns [<xref rid="jeo270549-bib-0094" ref-type="bibr">94</xref>, <xref rid="jeo270549-bib-0109" ref-type="bibr">109</xref>]. FL has been explored in spine surgery, where it shows promise for robotic telesurgery, vertebral image segmentation, privacy‐preserving predictive modelling and enabling multicentre collaboration without sharing sensitive patient data [<xref rid="jeo270549-bib-0088" ref-type="bibr">88</xref>].</p></sec><sec id="jeo270549-sec-0140"><title>Generative artificial intelligence (GAI)</title><p>GAI creates new content such as audio, code, images, text and videos based on learned data patterns [<xref rid="jeo270549-bib-0050" ref-type="bibr">50</xref>]. GAI has demonstrated its ability to generate orthopaedic discharge documents more efficiently than clinicians whilst maintaining comparable writing quality [<xref rid="jeo270549-bib-0082" ref-type="bibr">82</xref>]. GAI has also been used to generate synthetic radiographs and CT scans of spinal fractures [<xref rid="jeo270549-bib-0014" ref-type="bibr">14</xref>, <xref rid="jeo270549-bib-0020" ref-type="bibr">20</xref>, <xref rid="jeo270549-bib-0058" ref-type="bibr">58</xref>]. These methods can expand training data sets and enhance diagnostic models without compromising patient confidentiality. However, outputs require rigorous expert validation before clinical application [<xref rid="jeo270549-bib-0014" ref-type="bibr">14</xref>].</p></sec></sec><sec id="jeo270549-sec-0150"><title>Key AI approaches</title><sec id="jeo270549-sec-0160"><title>Machine learning</title><p>ML models can be split into three main types of models: supervised, unsupervised and reinforcement learning. SL is a technique where labelled data sets are used to train algorithmic models in order to predict a certain outcome, such as the presence of a disease or tumour [<xref rid="jeo270549-bib-0104" ref-type="bibr">104</xref>]. Unsupervised learning (UL) is where unlabelled data sets are used to train models [<xref rid="jeo270549-bib-0026" ref-type="bibr">26</xref>]. Reinforcement learning (RL) is where the algorithms learn based on trial and error and receive feedback, which allows them to learn [<xref rid="jeo270549-bib-0003" ref-type="bibr">3</xref>]. ML Models will learn using a combination of SL, UL and RL using both human input and large data sets to ensure that models can handle new tasks [<xref rid="jeo270549-bib-0033" ref-type="bibr">33</xref>]. Table <xref rid="jeo270549-tbl-0001" ref-type="table">1</xref> provides an overview of the mechanisms of common ML algorithms, and Table <xref rid="jeo270549-tbl-0002" ref-type="table">2</xref> presents the associated benefits and risks of their application in orthopaedics.</p><table-wrap position="float" id="jeo270549-tbl-0001" content-type="Table" orientation="portrait"><label>Table 1</label><caption><p>Overview of common machine learning algorithms and their mechanism.</p></caption><table frame="hsides" rules="groups"><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><thead valign="bottom"><tr style="border-bottom:solid 1px #000000" valign="bottom"><th align="left" valign="bottom" rowspan="1" colspan="1">Algorithm</th><th align="left" valign="bottom" rowspan="1" colspan="1">Type</th><th align="left" valign="bottom" rowspan="1" colspan="1">Mechanism</th></tr></thead><tbody valign="top"><tr><td align="left" valign="top" rowspan="1" colspan="1">Regression</td><td rowspan="2" valign="middle" align="left" colspan="1">SL</td><td rowspan="2" valign="middle" align="left" colspan="1">Continuously predicts values based on input data by establishing relationships between variables such as <italic toggle="yes">X</italic> and <italic toggle="yes">Y</italic>.</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<p>
+<list list-type="bullet"><list-item><p>Linear</p></list-item><list-item><p>Lasso</p></list-item><list-item><p>Random forest</p></list-item><list-item><p>Gradient boosting</p></list-item></list>
+</p>
+</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Classification</td><td rowspan="2" valign="middle" align="left" colspan="1">SL</td><td rowspan="2" valign="middle" align="left" colspan="1">Assign data to specific categories by analysing their characteristics and features.</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<p>
+<list list-type="bullet"><list-item><p>Logistic</p></list-item><list-item><p>KNN</p></list-item><list-item><p>SVM</p></list-item></list>
+</p>
+</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Naïve Bayes classifiers:</td><td rowspan="2" valign="middle" align="left" colspan="1">SL</td><td rowspan="2" valign="middle" align="left" colspan="1">Applies Bayes' mathematical theorem of probability to predict a data category and sort items into groups with the highest probabilities [<xref rid="jeo270549-bib-0003" ref-type="bibr">3</xref>].</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<p>
+<list list-type="bullet"><list-item><p>Decision trees</p></list-item></list>
+</p>
+</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">K‐means clustering</td><td align="left" valign="top" rowspan="1" colspan="1">SL</td><td align="left" valign="top" rowspan="1" colspan="1">Separates data into groups that are most related or similar and assigns them accordingly.</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Hierarchical clustering</td><td align="left" valign="top" rowspan="1" colspan="1">UL</td><td align="left" valign="top" rowspan="1" colspan="1">Creates a tree of different groups and iteratively grouping and assigning data based on similarity [<xref rid="jeo270549-bib-0069" ref-type="bibr">69</xref>, <xref rid="jeo270549-bib-0092" ref-type="bibr">92</xref>].</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Probabilistic clustering</td><td align="left" valign="top" rowspan="1" colspan="1">UL</td><td align="left" valign="top" rowspan="1" colspan="1">Assigns data to groups by estimating the likelihood of the data belonging to a particular group.</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Q‐Learning</td><td align="left" valign="top" rowspan="1" colspan="1">RL</td><td align="left" valign="top" rowspan="1" colspan="1">Uses an agent (computer software) that learns by updating values in a table to establish which actions yield the best results.</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">DQN</td><td align="left" valign="top" rowspan="1" colspan="1">RL</td><td align="left" valign="top" rowspan="1" colspan="1">Works like the Q‐Learning algorithm but uses a NN instead of a table to establish which actions give the best results, so it can handle larger and more complex data sets.</td></tr></tbody></table><table-wrap-foot><fn id="jeo270549-tbl1-note-0001"><p>Abbreviations: DQN, Deep Q‐Networks; KNN, K‐nearest neighbours; NN, neural network; RL, reinforcement learning; SL, supervised learning; SVM, support‐vector machines; UL, unsupervised learning.</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &amp; Sons, Ltd.</copyright-holder></permissions></table-wrap><table-wrap position="float" id="jeo270549-tbl-0002" content-type="Table" orientation="portrait"><label>Table 2</label><caption><p>Summary of machine learning algorithms with associated benefits and risks in orthopaedic applications.</p></caption><table frame="hsides" rules="groups"><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><thead valign="bottom"><tr style="border-bottom:solid 1px #000000" valign="bottom"><th align="left" valign="bottom" rowspan="1" colspan="1">Algorithm</th><th align="left" valign="bottom" rowspan="1" colspan="1">Type</th><th align="left" valign="bottom" rowspan="1" colspan="1">Benefits</th><th align="left" valign="bottom" rowspan="1" colspan="1">Risks</th></tr></thead><tbody valign="top"><tr><td align="left" valign="top" rowspan="1" colspan="1">Regression:</td><td rowspan="2" valign="middle" align="left" colspan="1">SL</td><td rowspan="2" valign="middle" align="left" colspan="1">Quick to train, it is widely used in practice and is effective at predicting numerical values [<xref rid="jeo270549-bib-0085" ref-type="bibr">85</xref>].</td><td rowspan="2" valign="middle" align="left" colspan="1">Cannot function with complex data or patterns and can be thrown off by unexpected data. Assumes a straight‐line relationship between variables [<xref rid="jeo270549-bib-0085" ref-type="bibr">85</xref>].</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<p>
+<list list-type="bullet"><list-item><p>Linear</p></list-item><list-item><p>Lasso</p></list-item><list-item><p>Random forest</p></list-item><list-item><p>Gradient boosting</p></list-item></list>
+</p>
+</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<p>Classification:</p>
+<p>
+<list list-type="bullet"><list-item><p>Logistic</p></list-item><list-item><p>KNN</p></list-item><list-item><p>SVM</p></list-item></list>
+</p>
+</td><td valign="middle" align="left" rowspan="1" colspan="1">SL</td><td valign="middle" align="left" rowspan="1" colspan="1">Works well with different data types, can process complex patterns/relationships and is commonly implemented [<xref rid="jeo270549-bib-0085" ref-type="bibr">85</xref>].</td><td valign="middle" align="left" rowspan="1" colspan="1">High computational cost, struggle interpreting complex models such as DL and can produce biased results if training data is biased [<xref rid="jeo270549-bib-0059" ref-type="bibr">59</xref>, <xref rid="jeo270549-bib-0085" ref-type="bibr">85</xref>].</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<p>Naïve Bayes classifiers:</p>
+<p>
+<list list-type="bullet"><list-item><p>Decision trees</p></list-item></list>
+</p>
+</td><td valign="middle" align="left" rowspan="1" colspan="1">SL</td><td valign="middle" align="left" rowspan="1" colspan="1">Simple to implement, does not require significant amounts of data to be trained and can handle different data types as input [<xref rid="jeo270549-bib-0015" ref-type="bibr">15</xref>].</td><td valign="middle" align="left" rowspan="1" colspan="1">Can make inaccurate predictions if trained on incorrect data, struggles to compute new data and can assign incorrect values to this, and treats all data as separate even if there is a clear relationship [<xref rid="jeo270549-bib-0015" ref-type="bibr">15</xref>].</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">K‐means clustering</td><td align="left" valign="top" rowspan="1" colspan="1">UL</td><td align="left" valign="top" rowspan="1" colspan="1">Simple to implement, it is fast and can compute relatively large data sets due to its low computational requirements; it is easy to interpret and is used widely across many fields [<xref rid="jeo270549-bib-0028" ref-type="bibr">28</xref>, <xref rid="jeo270549-bib-0038" ref-type="bibr">38</xref>, <xref rid="jeo270549-bib-0040" ref-type="bibr">40</xref>].</td><td align="left" valign="top" rowspan="1" colspan="1">Sensitive to initial values resulting in suboptimal grouping of data, a few unexpected values can skew results, and users can struggle to group data that forms nonspherical or irregular shapes [<xref rid="jeo270549-bib-0028" ref-type="bibr">28</xref>, <xref rid="jeo270549-bib-0038" ref-type="bibr">38</xref>, <xref rid="jeo270549-bib-0040" ref-type="bibr">40</xref>].</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Hierarchical clustering</td><td align="left" valign="top" rowspan="1" colspan="1">UL</td><td align="left" valign="top" rowspan="1" colspan="1">Reveals a clear hierarchical structure which is easy to interpret, and there is no preset number of clusters, so you can decide the number of groups later on making analysis of results easier [<xref rid="jeo270549-bib-0077" ref-type="bibr">77</xref>, <xref rid="jeo270549-bib-0110" ref-type="bibr">110</xref>].</td><td align="left" valign="top" rowspan="1" colspan="1">Large computational requirements, not scalable for very large data sets, and the outcome can vary based on parameters chosen, potentially leading to different cluster structures [<xref rid="jeo270549-bib-0056" ref-type="bibr">56</xref>, <xref rid="jeo270549-bib-0077" ref-type="bibr">77</xref>, <xref rid="jeo270549-bib-0110" ref-type="bibr">110</xref>].</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Probabilistic clustering</td><td align="left" valign="top" rowspan="1" colspan="1">UL</td><td align="left" valign="top" rowspan="1" colspan="1">Capable of analysing groups even if in an irregular shape and can handle data or values that are clear or have errors in [<xref rid="jeo270549-bib-0028" ref-type="bibr">28</xref>].</td><td align="left" valign="top" rowspan="1" colspan="1">Slow when working with large volumes of complex data, and results can be sensitive to initial values [<xref rid="jeo270549-bib-0028" ref-type="bibr">28</xref>].</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Q‐Learning</td><td align="left" valign="top" rowspan="1" colspan="1">RL</td><td align="left" valign="top" rowspan="1" colspan="1">It can function with limited initial data and is useful for uncertain situations [<xref rid="jeo270549-bib-0080" ref-type="bibr">80</xref>].</td><td align="left" valign="top" rowspan="1" colspan="1">Can overestimate values, leading to inaccurate outcomes and poor decision‐making, and can be slow when working with large and complex data sets [<xref rid="jeo270549-bib-0080" ref-type="bibr">80</xref>].</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">DQN</td><td align="left" valign="top" rowspan="1" colspan="1">RL</td><td align="left" valign="top" rowspan="1" colspan="1">Useful in complex data analysis and recognising complex patterns [<xref rid="jeo270549-bib-0076" ref-type="bibr">76</xref>].</td><td align="left" valign="top" rowspan="1" colspan="1">Requires large data sets, requires significant computing power and training time, and can sometimes overestimate values, leading to inaccuracies [<xref rid="jeo270549-bib-0076" ref-type="bibr">76</xref>].</td></tr></tbody></table><table-wrap-foot><fn id="jeo270549-tbl2-note-0001"><p>Abbreviations: DL, deep learning; DQN, Deep Q‐Networks; KNN, K‐nearest neighbours; RL, reinforcement learning; SL, supervised learning; UL, unsupervised learning.</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &amp; Sons, Ltd.</copyright-holder></permissions></table-wrap></sec><sec id="jeo270549-sec-0170"><title>Neural networks</title><p>NN act as an umbrella for different types of NN models. These include but are not limited to CNNs, generative adversarial networks (GANs) and recurrent neural networks (RNNs). CNNs use the mathematical operation of convolution to recognise different patterns in images by analysing key features such as shape, colour or objects [<xref rid="jeo270549-bib-0036" ref-type="bibr">36</xref>]. GANs are made up of two parts, with one part generating a fake image or other types of data and the other part determining if it is fake or not [<xref rid="jeo270549-bib-0002" ref-type="bibr">2</xref>]. These two parts compete in order to make the best fake. RNNs process data and remember previous data they processed, which allows them to recognise complex patterns from sources such as text or speech [<xref rid="jeo270549-bib-0060" ref-type="bibr">60</xref>]. Table <xref rid="jeo270549-tbl-0003" ref-type="table">3</xref> summarises the types of neural networks, their applications in orthopaedics and associated benefits and risks.</p><table-wrap position="float" id="jeo270549-tbl-0003" content-type="Table" orientation="portrait"><label>Table 3</label><caption><p>Summary of types, applications in orthopaedics, benefits and risks of NNs.</p></caption><table frame="hsides" rules="groups"><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><thead valign="bottom"><tr style="border-bottom:solid 1px #000000" valign="bottom"><th align="left" valign="bottom" rowspan="1" colspan="1">Type of NN</th><th align="left" valign="bottom" rowspan="1" colspan="1">Application in orthopaedics</th><th align="left" valign="bottom" rowspan="1" colspan="1">Benefits</th><th align="left" valign="bottom" rowspan="1" colspan="1">Risks</th></tr></thead><tbody valign="top"><tr><td align="left" valign="top" rowspan="1" colspan="1">CNNs</td><td align="left" valign="top" rowspan="1" colspan="1">
+<p>Detection and classification of fractures, including distal radius, proximal humerus, hip, pelvis, femur and spine [<xref rid="jeo270549-bib-0039" ref-type="bibr">39</xref>, <xref rid="jeo270549-bib-0070" ref-type="bibr">70</xref>].</p>
+<p>Automated identification of hip and knee arthroplasty implants and prediction of prosthetic loosening [<xref rid="jeo270549-bib-0009" ref-type="bibr">9</xref>, <xref rid="jeo270549-bib-0030" ref-type="bibr">30</xref>, <xref rid="jeo270549-bib-0047" ref-type="bibr">47</xref>].</p>
+</td><td align="left" valign="top" rowspan="1" colspan="1">Self learns what to look for when extracting, so it does not need to be told everything and is effective at pattern recognition in images and objects [<xref rid="jeo270549-bib-0006" ref-type="bibr">6</xref>, <xref rid="jeo270549-bib-0112" ref-type="bibr">112</xref>].</td><td align="left" valign="top" rowspan="1" colspan="1">Needs a lot of examples to be proficient and can struggle to analyse images different from what it has been trained on [<xref rid="jeo270549-bib-0006" ref-type="bibr">6</xref>, <xref rid="jeo270549-bib-0112" ref-type="bibr">112</xref>].</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">GANs</td><td align="left" valign="top" rowspan="1" colspan="1">Generating synthetic musculoskeletal radiographs to validate ML algorithms and train CAD systems [<xref rid="jeo270549-bib-0046" ref-type="bibr">46</xref>, <xref rid="jeo270549-bib-0074" ref-type="bibr">74</xref>].</td><td align="left" valign="top" rowspan="1" colspan="1">
+<p>Can generate synthetic content which looks real, which can be useful for educational purposes, and content does not need to be labelled as GAN can determine labels [<xref rid="jeo270549-bib-0091" ref-type="bibr">91</xref>, <xref rid="jeo270549-bib-0098" ref-type="bibr">98</xref>].</p>
+<p>Protect patient privacy due to the synthetic nature of the images being generated [<xref rid="jeo270549-bib-0014" ref-type="bibr">14</xref>, <xref rid="jeo270549-bib-0046" ref-type="bibr">46</xref>].</p>
+</td><td align="left" valign="top" rowspan="1" colspan="1">May keep generating the same content instead of new variations and can be hard to train as it can be unpredictable [<xref rid="jeo270549-bib-0091" ref-type="bibr">91</xref>, <xref rid="jeo270549-bib-0098" ref-type="bibr">98</xref>].</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">RNNs</td><td align="left" valign="top" rowspan="1" colspan="1">
+<p>Gait analysis and fall prediction based on longitudinal balance monitoring [<xref rid="jeo270549-bib-0108" ref-type="bibr">108</xref>].</p>
+<p>Analysis of biometric and motion data in order to identify injury patterns in athletes [<xref rid="jeo270549-bib-0084" ref-type="bibr">84</xref>].</p>
+</td><td align="left" valign="top" rowspan="1" colspan="1">Can handle data of varying lengths and sequences and can understand data presented in an order, making it ideal for handling text, speech or time‐based data [<xref rid="jeo270549-bib-0060" ref-type="bibr">60</xref>, <xref rid="jeo270549-bib-0099" ref-type="bibr">99</xref>].</td><td align="left" valign="top" rowspan="1" colspan="1">Requires significant computing power and time to train and has a poor memory, so struggles to remember data past a certain timeframe [<xref rid="jeo270549-bib-0060" ref-type="bibr">60</xref>, <xref rid="jeo270549-bib-0099" ref-type="bibr">99</xref>].</td></tr></tbody></table><table-wrap-foot><fn id="jeo270549-tbl3-note-0001"><p>Abbreviations: CAD, computer‐aided diagnosis; CNNs, convolutional neural networks; GANs, generative adversarial networks; ML, machine learning; NNs, neural networks; RNNs, recurrent neural networks.</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &amp; Sons, Ltd.</copyright-holder></permissions></table-wrap></sec></sec><sec id="jeo270549-sec-0180"><title>Benefits of AI in orthopaedics</title><p>The implementation of AI has already started to transform orthopaedic care. From imaging interpretation and preoperative planning to conducting administrative tasks, AI has been deployed across the surgical pathway. Recent literature highlights AI's potential to enhance diagnostic accuracy, alleviate clinician workload and promote the use of predictive analytics for earlier intervention [<xref rid="jeo270549-bib-0032" ref-type="bibr">32</xref>, <xref rid="jeo270549-bib-0057" ref-type="bibr">57</xref>].</p><sec id="jeo270549-sec-0190"><title>Improved diagnostic accuracy</title><p>AI has demonstrated diagnostic accuracy that in some orthopaedic imaging tasks exceeds or performs comparably to that of clinical experts. Performance in AI models is often measured using the ‘F1 score′. This metric is the harmonic mean of precision and recall and ranges from 0 (poor) to 1 (perfect) [<xref rid="jeo270549-bib-0073" ref-type="bibr">73</xref>]. In paediatric distal radius fracture detection, CNNs outperformed experienced radiologists and orthopaedic surgeons. They achieved F1 scores of 0.90–0.93 compared with 0.77–0.86 for clinicians and area under the curves (AUCs) of 0.95–0.98 versus 0.94 for clinicians [<xref rid="jeo270549-bib-0042" ref-type="bibr">42</xref>]. Similarly, in a study on hip fracture detection using anteroposterior pelvic radiographs, a DL ensemble achieved an F1 score of 0.942, surpassing orthopaedic surgeons (0.938) and radiologists (0.677). The model also reached a sensitivity of 0.97 and a specificity of 0.915 [<xref rid="jeo270549-bib-0011" ref-type="bibr">11</xref>]. Whilst AI models do not consistently surpass orthopaedic surgeons in fracture detection, they often outperform nonorthopaedic clinicians [<xref rid="jeo270549-bib-0017" ref-type="bibr">17</xref>]. This suggests there might be potential value of AI as a training tool for residents and other clinicians. A recent systematic review and meta‐analysis of hip fracture detection found AI accuracy to be inferior to musculoskeletal specialists, highlighting the need for further research and model training before clinical deployment [<xref rid="jeo270549-bib-0067" ref-type="bibr">67</xref>].</p></sec><sec id="jeo270549-sec-0200"><title>Alleviates strain on clinicians and optimises resource use</title><p>Across the orthopaedic surgical pathway, AI reduces repetitive tasks that increase both clinical and administrative workloads. AI support improves fracture interpretation with a 29% reduction in missed fractures and 21% fewer false positives, without increasing reading time [<xref rid="jeo270549-bib-0010" ref-type="bibr">10</xref>]. A systematic review and meta‐analysis of commercial fracture‐AI tools reported time savings of approximately 6–12 s per radiograph when AI was used to support a clinician [<xref rid="jeo270549-bib-0037" ref-type="bibr">37</xref>]. Beyond imaging, NLP extracted key fields from postoperative total hip arthroplasty (THA) notes with 100% accuracy, enabling automated registry updates rather than manual entry [<xref rid="jeo270549-bib-0101" ref-type="bibr">101</xref>]. ChatGPT also produced discharge documents for orthopaedic patients almost 10 times faster than physicians with comparable quality, highlighting AI's ability to reduce administrative workloads [<xref rid="jeo270549-bib-0082" ref-type="bibr">82</xref>].</p></sec><sec id="jeo270549-sec-0210"><title>Predictive analytics and early intervention</title><p>AI's ability to analyse large complex sets of data and accurately predict patient outcomes enables earlier interventions, highlighting its advanced diagnostic capabilities [<xref rid="jeo270549-bib-0051" ref-type="bibr">51</xref>]. ML applied to electronic health records improves fragility fracture prediction by providing a more personalised risk assessment than traditional tools like FRAX [<xref rid="jeo270549-bib-0035" ref-type="bibr">35</xref>]. ML models predicting outcomes after total knee arthroplasty achieved AUCs of 0.79–0.84 accurately forecasting complications and discharge status [<xref rid="jeo270549-bib-0064" ref-type="bibr">64</xref>]. Beyond clinical outcomes, models predicted the theatre duration of hip and knee arthroplasty with mean absolute errors of 11–13 min, enhancing theatre scheduling and resource allocation [<xref rid="jeo270549-bib-0052" ref-type="bibr">52</xref>]. These advances demonstrate the potential of AI to promote earlier intervention and to optimise patient care in orthopaedics.</p></sec></sec><sec id="jeo270549-sec-0220"><title>Risks of AI in orthopaedics</title><p>While the adoption of AI in orthopaedics offers clear benefits, there are also significant risks that need to be addressed. These include bias arising from nonrepresentative training data sets, the ‘black box phenomenon’ that limits clinical insight into model decision‐making and significant privacy concerns related to the use of sensitive patient data.</p><sec id="jeo270549-sec-0230"><title>Bias</title><p>There is a saying amongst computer scientists that an AI model is only as good as its data. If AI models are trained on nonrepresentative data sets, such as radiographs from only one patient demographic, this bias will be reflected in their outputs [<xref rid="jeo270549-bib-0016" ref-type="bibr">16</xref>]. In orthopaedics, this can manifest as poorer accuracy in detecting paediatric fractures when algorithms are developed primarily from adult data sets. Systematic reviews have noted limited external validation and restricted reporting of demographic diversity [<xref rid="jeo270549-bib-0089" ref-type="bibr">89</xref>]. Research has demonstrated that bias in hip and knee image segmentation can arise from imbalances in age, body size, ethnicity and sex. This reduces the generalisability of models across diverse patient populations [<xref rid="jeo270549-bib-0090" ref-type="bibr">90</xref>]. Therefore, it is pivotal that representative, balanced data sets are used when training orthopaedic AI models to ensure equity of care.</p></sec><sec id="jeo270549-sec-0240"><title>Transparency (black box phenomenon)</title><p>The ‘black box phenomenon’ refers to the difficulty users face in understanding how AI models generate their outcomes [<xref rid="jeo270549-bib-0032" ref-type="bibr">32</xref>]. This is particularly important for tasks such as fracture detection and outcome prediction, where surgeons must be able to evaluate why a model makes a specific decision. However, the black‐box nature of many models continues to hinder interpretability and limit clinical confidence [<xref rid="jeo270549-bib-0061" ref-type="bibr">61</xref>]. A practical guide to AI implementation in orthopaedics has stressed that black‐box models present a major barrier to safe clinical translation, emphasising the need for explainability in high‐risk surgical settings [<xref rid="jeo270549-bib-0114" ref-type="bibr">114</xref>]. Models predicting long‐term outcomes after THA demonstrate transparency by highlighting the clinical factors that most strongly influence predictions, making them easier for clinicians to understand [<xref rid="jeo270549-bib-0041" ref-type="bibr">41</xref>]. Finally, recent systematic reviews recommend wider adoption of explainable AI methods to mitigate black‐box concerns and support safe human‐centred deployment [<xref rid="jeo270549-bib-0065" ref-type="bibr">65</xref>].</p></sec><sec id="jeo270549-sec-0250"><title>Privacy and autonomy</title><p>The use of AI in orthopaedics requires the handling and processing of large amounts of sensitive patient data which creates a significant privacy risk [<xref rid="jeo270549-bib-0048" ref-type="bibr">48</xref>]. Despite data being anonymised, breaches or association with external data sets can still enable reidentification [<xref rid="jeo270549-bib-0107" ref-type="bibr">107</xref>]. Respect for patient autonomy also requires transparent disclosure and explicit consent when orthopaedic data is used for AI development. This is especially important given the opacity of many algorithms [<xref rid="jeo270549-bib-0044" ref-type="bibr">44</xref>]. Decentralised approaches such as swarm learning have been successfully applied to fracture diagnosis, enabling multicentre collaboration while keeping data local and thereby reducing the risk of breaches [<xref rid="jeo270549-bib-0102" ref-type="bibr">102</xref>].</p></sec></sec></sec><sec sec-type="discussion" id="jeo270549-sec-0260"><title>DISCUSSION</title><p>AI is reshaping orthopaedic workflows, with the most rapid progress in imaging interpretation, operative planning and outcome prediction. In fracture detection and arthroplasty imaging, models have demonstrated performance comparable to that of subspecialist clinicians. However, findings remain inconsistent, reflecting differences in data sets, fracture types and modelling approaches [<xref rid="jeo270549-bib-0029" ref-type="bibr">29</xref>, <xref rid="jeo270549-bib-0047" ref-type="bibr">47</xref>, <xref rid="jeo270549-bib-0057" ref-type="bibr">57</xref>, <xref rid="jeo270549-bib-0067" ref-type="bibr">67</xref>]. ChatGPT‐4o recently showed strong binary discrimination in knee osteoarthritis radiographs (F1 = 0.88) but poor grading accuracy (AI [35% correct] vs. surgeons [89.6% correct]), highlighting inconsistencies in AI radiographic classification [<xref rid="jeo270549-bib-0113" ref-type="bibr">113</xref>]. Progress will depend on the use and validation of representative orthopaedic training data. Recent reporting frameworks TRIPOD+AI, PROBAST+AI and DECIDE−AI can help ensure such studies are transparent, reproducible and clinically meaningful [<xref rid="jeo270549-bib-0018" ref-type="bibr">18</xref>, <xref rid="jeo270549-bib-0066" ref-type="bibr">66</xref>, <xref rid="jeo270549-bib-0097" ref-type="bibr">97</xref>].</p><p>GAI and LLMs are beginning to show utility in orthopaedics, particularly for documentation, registry curation and patient‐facing education. Pilot studies suggest that LLMs can generate discharge summaries substantially faster than clinicians while maintaining comparable quality [<xref rid="jeo270549-bib-0082" ref-type="bibr">82</xref>]. NLP has also been validated for extracting key operative details from arthroplasty notes with very high accuracy, supporting registry automation [<xref rid="jeo270549-bib-0101" ref-type="bibr">101</xref>]. LLMs have further demonstrated value in improving the readability of orthopaedic patient education materials without compromising accuracy [<xref rid="jeo270549-bib-0081" ref-type="bibr">81</xref>]. A recent evaluation of ChatGPT‐4o and DeepSeek R1 for ACL surgery patient education found both models were highly accurate (3.9/4) and consistent (4/4) on a 4‐point Likert scale. ChatGPT gave more comprehensive answers (4.0 vs. 3.2, <italic toggle="yes">p</italic> &lt; 0.001), while DeepSeek provided clearer layperson‐focused responses (3.9 vs. 3.0, <italic toggle="yes">p</italic> &lt; 0.001), illustrating variability in LLM outputs for patient education [<xref rid="jeo270549-bib-0031" ref-type="bibr">31</xref>].</p><p>A recent systematic review found that most orthopaedic LLM studies report efficiency gains, but clinical performance remains highly variable, with diagnostic accuracy ranging from 55% to 93% [<xref rid="jeo270549-bib-0111" ref-type="bibr">111</xref>]. While these tools may enhance workflow and patient communication, their integration into high‐stakes applications such as implant selection or intraoperative guidance will depend on explainability, transparency and close clinician oversight [<xref rid="jeo270549-bib-0041" ref-type="bibr">41</xref>, <xref rid="jeo270549-bib-0114" ref-type="bibr">114</xref>].</p><p>Regulatory frameworks are now an important factor in how orthopaedic AI can be implemented. The EU AI Act (2024) introduces a risk‐based approach. It places obligations on high‐risk medical AI systems and on certain general‐purpose models. These measures are directly relevant to decision support, imaging and robotics [<xref rid="jeo270549-bib-0095" ref-type="bibr">95</xref>]. Platforms that generate patient‐specific surgical plans demonstrate the clinical utility of AI, but they also highlight the need to clarify accountability at each stage of the surgical pathway [<xref rid="jeo270549-bib-0027" ref-type="bibr">27</xref>]. Federated learning offers another development. It enables multi‐centre collaboration in spine and fracture research while preserving privacy and avoiding direct data sharing [<xref rid="jeo270549-bib-0088" ref-type="bibr">88</xref>]. To strengthen reporting of diagnostic accuracy studies involving AI, the new STARD‐AI guideline provides items specific to ML applications [<xref rid="jeo270549-bib-0093" ref-type="bibr">93</xref>].</p><p>Economic and workflow impact are important factors for AI adoption. ML models have been used to predict theatre duration, length of stay and implant survivorship, showing potential for resource optimisation [<xref rid="jeo270549-bib-0052" ref-type="bibr">52</xref>]. In fracture detection, AI support reduces missed fractures and false positives without increasing reading time. Commercial tools have also shown modest time savings per radiograph, which may scale to service‐level efficiency gains [<xref rid="jeo270549-bib-0010" ref-type="bibr">10</xref>, <xref rid="jeo270549-bib-0037" ref-type="bibr">37</xref>]. NLP has demonstrated high accuracy in extracting registry variables from arthroplasty notes, suggesting a role in reducing manual data entry [<xref rid="jeo270549-bib-0101" ref-type="bibr">101</xref>]. Opportunities also exist in education and training, such as simulation and synthetic data sets, but these remain underevaluated in prospective orthopaedic settings. One study found ChatGpT‐4o achieved a mean score of 70.7% compared to candidates 58% on the Turkish orthopaedics and traumatology board exam. ChatGPT scored much higher in basic science (93% vs. 55%) but only slightly better in limb reconstruction (70% vs. 66%) [<xref rid="jeo270549-bib-0103" ref-type="bibr">103</xref>]. LLMs appear capable of competitive exam‐level performance in certain domains but not consistently throughout orthopaedic subspecialties.</p><p>Recent evidence suggests that rigorous validation, transparent reporting and lifecycle governance are as important as algorithmic advances for safe integration of AI in orthopaedics. Collaboration between engineers and surgeons, evaluation against workflow‐relevant outcomes and postdeployment monitoring should become minimum standards. Equally important is preparing both surgeons and patients. Surgeons will need practical training in how to use and interpret these tools safely. Patients should receive clear explanations of how these tools function and how their data is handled. A recent study of 360 orthopaedic surgeons found that most expect AI to substantially impact practice within 5–10 years, predominantly as a complementary tool rather than a replacement [<xref rid="jeo270549-bib-0083" ref-type="bibr">83</xref>]. Trust in AI will depend on validation, transparency and governance.</p><sec id="jeo270549-sec-0270"><title>Limitations</title><p>This review has several limitations. This review was restricted to English‐language studies published between 2021 and 2025. While selected seminal works published before this period were included to provide historical and methodological context, it remains possible that other relevant earlier studies were not captured. Language or publication bias may also have been introduced. Formal bias assessment tools were not used which limits evaluation of study quality. The rapidly evolving nature of AI means that some findings may become outdated. Finally, the search was limited to two databases, so additional relevant studies may not have been captured.</p></sec><sec id="jeo270549-sec-0280"><title>Future research directions</title><p>Future research in the use of AI in orthopaedics needs to go beyond retrospective studies. There is a lack of solid prospective research that directly compares the performance of AI models with surgeons, especially in the areas of fracture detection and outcome prediction. As most of the studies included in this paper were conducted at single centres, their findings are unlikely to be representative of broader hospital settings or diverse patient populations. Integrating AI with trauma and implant registries could enhance long‐term tracking. Economic evaluations, such as the impact on theatre time or hospital stays, are rare but essential for judging real‐world value. Simulation and synthetic data sets also show promise for training, though they have not yet been properly tested in real clinical settings.</p></sec></sec><sec sec-type="conclusions" id="jeo270549-sec-0290"><title>CONCLUSION</title><p>AI is reshaping orthopaedics. It not only improves imaging interpretation and predictive modelling but also helps ease clinical and administrative burdens. While studies have shown better diagnostic accuracy and more efficient workflows, this progress is not without challenges. Bias remains a concern. Transparency is often limited, and stronger rules and oversight are needed for safe implementation. AI should be viewed as a tool to complement a surgeon and support decision‐making when integrated appropriately. With proper testing, responsible rollout and collaboration between experts, it has the potential to raise the standard of patient care in orthopaedics and beyond. Achieving this will require ongoing evaluation and shared accountability.</p></sec><sec id="jeo270549-sec-0300"><title>AUTHOR CONTRIBUTIONS</title><p>Jamie Rosen, Jemima Russell, Prerna Kartik and Martinique Vella‐Baldacchino each made substantial contributions to this work, including study design, data collection, analysis and interpretation. Jamie Rosen drafted the initial manuscript, and all authors (Jamie Rosen, Jemima Russell, Prerna Kartik and Martinique Vella‐Baldacchino) were involved in revising the manuscript and gave final approval for the version to be published. All authors had access to all data in the study and take responsibility for the integrity of the data and the accuracy of the data analysis. The corresponding author attests that all listed authors meet authorship criteria and that no others meeting the criteria have been omitted.</p></sec><sec sec-type="COI-statement" id="jeo270549-sec-0320"><title>CONFLICT OF INTEREST STATEMENT</title><p>The authors declare no conflict of interest.</p></sec><sec id="jeo270549-sec-0330"><title>ETHICS STATEMENT</title><p>The authors have nothing to report.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material id="jeo270549-suppl-0001" position="float" content-type="local-data" orientation="portrait"><caption><p>Appendix.</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="JEO2-12-e70549-s001.docx" position="float" orientation="portrait"><?suppdata-name JEO2-12-e70549-s001.docx?><?suppdata-size 16152?><?suppdata-md5 45ee08ac5235c59b9f3b9708f999db0e?><?suppdata-image-server-status NEVER_LOAD?><?suppdata-mime-type application?><?suppdata-mime-sub-type vnd.openxmlformats-officedocument.wordprocessingml.document?><?suppdata-cloudpmc-urn urn:app:532d/12616508/45ee08ac5235/JEO2-12-e70549-s001.docx?></media></supplementary-material></sec></body><back><ack id="jeo270549-sec-0310"><title>ACKNOWLEDGEMENTS</title><p>The authors have no funding to report.</p></ack><ref-list content-type="cited-references" id="jeo270549-bibl-0001"><title>REFERENCES</title><ref id="jeo270549-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="jeo270549-cit-0001">
+<string-name name-style="western">
+<surname>A. Alwzwazy</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Alzubaidi</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhao</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gu</surname>
+<given-names>Y</given-names>
+</string-name>. <article-title>FracNet: an end‐to‐end deep learning framework for bone fracture detection</article-title>. <source>Pattern Recognit Lett</source>. <year>2025</year>;<volume>190</volume>:<fpage>1</fpage>–<lpage>7</lpage>.</mixed-citation></ref><ref id="jeo270549-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="jeo270549-cit-0002">
+<string-name name-style="western">
+<surname>Alajaji</surname>
+<given-names>SA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Khoury</surname>
+<given-names>ZH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Elgharib</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Saeed</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ahmed</surname>
+<given-names>ARH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Khan</surname>
+<given-names>MB</given-names>
+</string-name>, et al. <article-title>Generative adversarial networks in digital histopathology: current applications, limitations, ethical considerations, and future directions</article-title>. <source>Mod Pathol</source>. <year>2024</year>;<volume>37</volume>:<elocation-id>100369</elocation-id>.<pub-id pub-id-type="pmid">37890670</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.modpat.2023.100369</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="jeo270549-cit-0003">
+<string-name name-style="western">
+<surname>Alanazi</surname>
+<given-names>A</given-names>
+</string-name>. <article-title>Using machine learning for healthcare challenges and opportunities</article-title>. <source>Inform Med Unlocked</source>. <year>2022</year>;<volume>30</volume>:<elocation-id>100924</elocation-id>.</mixed-citation></ref><ref id="jeo270549-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="jeo270549-cit-0004">
+<string-name name-style="western">
+<surname>Aldhyani</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ahmed</surname>
+<given-names>ZAT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Alsharbi</surname>
+<given-names>BM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ahmad</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Al‐Adhaileh</surname>
+<given-names>MH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kamal</surname>
+<given-names>AH</given-names>
+</string-name>, et al. <article-title>Diagnosis and detection of bone fracture in radiographic images using deep learning approaches</article-title>. <source>Front Med (Lausanne)</source>. <year>2025</year>;<volume>11</volume>:<elocation-id>1506686</elocation-id>.<pub-id pub-id-type="pmid">39927268</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fmed.2024.1506686</pub-id><pub-id pub-id-type="pmcid">PMC11803505</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="jeo270549-cit-0005">
+<string-name name-style="western">
+<surname>Alsoof</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>McDonald</surname>
+<given-names>CL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kuris</surname>
+<given-names>EO</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Daniels</surname>
+<given-names>AH</given-names>
+</string-name>. <article-title>Machine learning for the orthopaedic surgeon</article-title>. <source>J Bone Joint Surg</source>. <year>2022</year>;<volume>104</volume>:<fpage>1586</fpage>–<lpage>1594</lpage>.<pub-id pub-id-type="pmid">35383655</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.2106/JBJS.21.01305</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="jeo270549-cit-0006">
+<string-name name-style="western">
+<surname>Alzubaidi</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Humaidi</surname>
+<given-names>AJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Al‐Dujaili</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Duan</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Al‐Shamma</surname>
+<given-names>O</given-names>
+</string-name>, et al. <article-title>Review of deep learning: concepts, CNN architectures, challenges, applications, future directions</article-title>. <source>J Big Data</source>. <year>2021</year>;<volume>8</volume>(<issue>1</issue>):<fpage>53</fpage>.<pub-id pub-id-type="pmid">33816053</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s40537-021-00444-8</pub-id><pub-id pub-id-type="pmcid">PMC8010506</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="jeo270549-cit-0007">
+<string-name name-style="western">
+<surname>Amirouche</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Prosper</surname>
+<given-names>AM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mzeihem</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>Enhancing pediatric distal radius fracture detection: optimizing YOLOv8 with advanced AI and machine learning techniques</article-title>. <source>BMC Med Imaging</source>. <year>2025</year>;<volume>25</volume>:<fpage>316</fpage>.<pub-id pub-id-type="pmid">40764539</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s12880-025-01669-2</pub-id><pub-id pub-id-type="pmcid">PMC12326825</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="jeo270549-cit-0008">
+<string-name name-style="western">
+<surname>Andresen</surname>
+<given-names>SL</given-names>
+</string-name>. <article-title>John McCarthy: father of AI</article-title>. <source>IEEE Intell Syst</source>. <year>2002</year>;<volume>17</volume>:<fpage>84</fpage>–<lpage>85</lpage>.</mixed-citation></ref><ref id="jeo270549-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="jeo270549-cit-0009">
+<string-name name-style="western">
+<surname>Antonson</surname>
+<given-names>NW</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Buckner</surname>
+<given-names>BC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Konigsberg</surname>
+<given-names>BS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hartman</surname>
+<given-names>CW</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Garvin</surname>
+<given-names>KL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kildow</surname>
+<given-names>BJ</given-names>
+</string-name>. <article-title>Novel technique for the identification of hip implants using artificial intelligence</article-title>. <source>J Arthroplasty</source>. <year>2024</year>;<volume>39</volume>:<fpage>1178</fpage>–<lpage>1183</lpage>.<pub-id pub-id-type="pmid">38336303</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arth.2024.02.001</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="jeo270549-cit-0010">
+<string-name name-style="western">
+<surname>Bachmann</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gunes</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hangaard</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nexmann</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lisouski</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Boesen</surname>
+<given-names>M</given-names>
+</string-name>, et al. <article-title>Improving traumatic fracture detection on radiographs with artificial intelligence support: a multi‐reader study</article-title>. <source>BJR|Open</source>. <year>2023</year>;<volume>6</volume>:<fpage>tzae011</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/bjro/tzae011</pub-id><pub-id pub-id-type="pmcid">PMC11096271</pub-id><pub-id pub-id-type="pmid">38757067</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="jeo270549-cit-0011">
+<string-name name-style="western">
+<surname>Beyaz</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yayli</surname>
+<given-names>SB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kılıç</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kılıç</surname>
+<given-names>K</given-names>
+</string-name>. <article-title>Comparison of artificial intelligence algorithm for the diagnosis of hip fracture on plain radiography with decision‐making physicians: a validation study</article-title>. <source>Acta Orthop Traumatol Turc</source>. <year>2024</year>;<volume>58</volume>:<fpage>4</fpage>–<lpage>9</lpage>.<pub-id pub-id-type="pmid">38525504</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.5152/j.aott.2024.23065</pub-id><pub-id pub-id-type="pmcid">PMC11059475</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="jeo270549-cit-0012">
+<string-name name-style="western">
+<surname>Blackman</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vivekanantha</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mughal</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pareek</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bozzo</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Samuelsson</surname>
+<given-names>K</given-names>
+</string-name>, et al. <article-title>Machine learning models predicting risk of revision or secondary knee injury after anterior cruciate ligament reconstruction demonstrate variable discriminatory and accuracy performance: a systematic review</article-title>. <source>BMC Musculoskelet Disord</source>. <year>2025</year>;<volume>26</volume>:<fpage>16</fpage>.<pub-id pub-id-type="pmid">39755642</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s12891-024-08228-w</pub-id><pub-id pub-id-type="pmcid">PMC11699785</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="jeo270549-cit-0013">
+<string-name name-style="western">
+<surname>Botnari</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kadar</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Puia</surname>
+<given-names>DR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Patrascu</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Patrascu</surname>
+<suffix>Jr</suffix>, <given-names>JM</given-names>
+</string-name>. <article-title>Automated segmentation of knee menisci using U‐net deep learning model: preliminary results</article-title>. <source>Maedica</source>. <year>2024</year>;<volume>19</volume>:<fpage>690</fpage>.<pub-id pub-id-type="pmid">39974461</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.26574/maedica.2024.19.4.690</pub-id><pub-id pub-id-type="pmcid">PMC11834842</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="jeo270549-cit-0014">
+<string-name name-style="western">
+<surname>Carroll</surname>
+<given-names>AN</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Storms</surname>
+<given-names>LA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Malempati</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shanavas</surname>
+<given-names>RV</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Badarudeen</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>Generative artificial intelligence and prompt engineering: a primer for orthopaedic surgeons</article-title>. <source>JBJS Rev</source>. <year>2024</year>;<volume>12</volume>:<elocation-id>00122</elocation-id>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.2106/JBJS.RVW.24.00122</pub-id><pub-id pub-id-type="pmid">39361780</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="jeo270549-cit-0015">
+<string-name name-style="western">
+<surname>Chen</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hu</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hua</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhao</surname>
+<given-names>X</given-names>
+</string-name>. <article-title>Improved naive Bayes classification algorithm for traffic risk management</article-title>. <source>EURASIP J Adv Signal Process</source>. <year>2021</year>;<volume>2021</volume>:<fpage>30</fpage>.</mixed-citation></ref><ref id="jeo270549-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="jeo270549-cit-0016">
+<string-name name-style="western">
+<surname>Chen</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Stotter</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Klestil</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nehrer</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>Artificial intelligence in orthopedic radiography analysis: a narrative review</article-title>. <source>Diagnostics</source>. <year>2022</year>;<volume>12</volume>:<fpage>2235</fpage>.<pub-id pub-id-type="pmid">36140636</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/diagnostics12092235</pub-id><pub-id pub-id-type="pmcid">PMC9498096</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="jeo270549-cit-0017">
+<string-name name-style="western">
+<surname>Christoforides</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rust</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mulroy</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Oswald</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Muralidhar</surname>
+<given-names>R</given-names>
+</string-name>. <article-title>Artificial intelligence vs. physician expertise in appendicular skeleton fracture detection: a scoping review</article-title>. <source>J Am Osteopath Acad Orthop</source>. <year>2024</year>;<volume>5</volume>(<issue>1</issue>):<fpage>ZP987</fpage>.</mixed-citation></ref><ref id="jeo270549-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="jeo270549-cit-0018">
+<string-name name-style="western">
+<surname>Collins</surname>
+<given-names>GS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Moons</surname>
+<given-names>KGM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dhiman</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Riley</surname>
+<given-names>RD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Beam</surname>
+<given-names>AL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Van Calster</surname>
+<given-names>B</given-names>
+</string-name>, et al. <article-title>TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods</article-title>. <source>BMJ</source>. <year>2024</year>;<volume>385</volume>:<elocation-id>e078378</elocation-id>.<pub-id pub-id-type="pmid">38626948</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1136/bmj-2023-078378</pub-id><pub-id pub-id-type="pmcid">PMC11019967</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="jeo270549-cit-0019">
+<string-name name-style="western">
+<surname>Cui</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhu</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Duan</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liao</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>W</given-names>
+</string-name>. <article-title>Artificial intelligence in spinal imaging: current status and future directions</article-title>. <source>Int J Environ Res Public Health</source>. <year>2022</year>;<volume>19</volume>:<elocation-id>11708</elocation-id>.<pub-id pub-id-type="pmid">36141981</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/ijerph191811708</pub-id><pub-id pub-id-type="pmcid">PMC9517575</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="jeo270549-cit-0020">
+<string-name name-style="western">
+<surname>D N</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pai</surname>
+<given-names>RM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bhat</surname>
+<given-names>SN</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pai</surname>
+<given-names>M M M</given-names>
+</string-name>. <article-title>Assessment of perceived realism in AI‐generated synthetic spine fracture CT images</article-title>. <source>Technol Health Care</source>. <year>2025</year>;<volume>33</volume>:<fpage>931</fpage>–<lpage>944</lpage>.<pub-id pub-id-type="pmid">40105176</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/09287329241291368</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="jeo270549-cit-0021">
+<string-name name-style="western">
+<surname>Devana</surname>
+<given-names>SK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shah</surname>
+<given-names>AA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lee</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Roney</surname>
+<given-names>AR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>van der Schaar</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>SooHoo</surname>
+<given-names>NF</given-names>
+</string-name>. <article-title>A novel, potentially universal machine learning algorithm to predict complications in total knee arthroplasty</article-title>. <source>Arthroplast Today</source>. <year>2021</year>;<volume>10</volume>:<fpage>135</fpage>–<lpage>143</lpage>.<pub-id pub-id-type="pmid">34401416</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.artd.2021.06.020</pub-id><pub-id pub-id-type="pmcid">PMC8349766</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0022"><label>22</label><mixed-citation publication-type="book" id="jeo270549-cit-0022">
+<string-name name-style="western">
+<surname>Dindorf</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Horst</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Slijepčević</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dumphart</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dully</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zeppelzauer</surname>
+<given-names>M</given-names>
+</string-name>, et al. <part-title>Machine learning in biomechanics: key applications and limitations in walking, running and sports movements</part-title>. In: <person-group person-group-type="editor">
+<string-name name-style="western">
+<surname>Blondin</surname>
+<given-names>MJ</given-names>
+</string-name>
+</person-group>, <person-group person-group-type="editor">
+<string-name name-style="western">
+<surname>Fister</surname>
+<suffix>Jr.</suffix>
+<given-names>I</given-names>
+</string-name>
+</person-group>, <person-group person-group-type="editor">
+<string-name name-style="western">
+<surname>Pardalos</surname>
+<given-names>PM</given-names>
+</string-name>
+</person-group>, editors. <source>Artificial intelligence, optimization, and data sciences in sports [Internet]</source>. <publisher-loc>Cham</publisher-loc>: <publisher-name>Springer Nature Switzerland</publisher-name>; <year>2025</year>. p. <fpage>91</fpage>–<lpage>148</lpage>. Available from: <pub-id pub-id-type="doi">10.1007/978-3-031-76047-1_4</pub-id>
+</mixed-citation></ref><ref id="jeo270549-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="jeo270549-cit-0023">
+<string-name name-style="western">
+<surname>Esteva</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chou</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yeung</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Naik</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Madani</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mottaghi</surname>
+<given-names>A</given-names>
+</string-name>, et al. <article-title>Deep learning‐enabled medical computer vision</article-title>. <source>npj Digit Med</source>. <year>2021</year>;<volume>4</volume>:<fpage>5</fpage>.<pub-id pub-id-type="pmid">33420381</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41746-020-00376-2</pub-id><pub-id pub-id-type="pmcid">PMC7794558</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="jeo270549-cit-0024">
+<string-name name-style="western">
+<surname>Esteva</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kuprel</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Novoa</surname>
+<given-names>RA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ko</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Swetter</surname>
+<given-names>SM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Blau</surname>
+<given-names>HM</given-names>
+</string-name>, et al. <article-title>Dermatologist‐level classification of skin cancer with deep neural networks</article-title>. <source>Nature</source>. <year>2017</year>;<volume>542</volume>(<issue>7639</issue>):<fpage>115</fpage>–<lpage>118</lpage>.<pub-id pub-id-type="pmid">28117445</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/nature21056</pub-id><pub-id pub-id-type="pmcid">PMC8382232</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="jeo270549-cit-0025">
+<string-name name-style="western">
+<surname>Farhadi</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Barnes</surname>
+<given-names>MR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sugito</surname>
+<given-names>HR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sin</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Henderson</surname>
+<given-names>ER</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Levy</surname>
+<given-names>JJ</given-names>
+</string-name>. <article-title>Applications of artificial intelligence in orthopaedic surgery</article-title>. <source>Front Med Technol</source>. <year>2022</year>;<volume>4</volume>:<elocation-id>995526</elocation-id>.<pub-id pub-id-type="pmid">36590152</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fmedt.2022.995526</pub-id><pub-id pub-id-type="pmcid">PMC9797865</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="jeo270549-cit-0026">
+<string-name name-style="western">
+<surname>Fiste</surname>
+<given-names>O</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liontos</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zagouri</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Stamatakos</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dimopoulos</surname>
+<given-names>MA</given-names>
+</string-name>. <article-title>Machine learning applications in gynecological cancer: a critical review</article-title>. <source>Crit Rev Oncol Hematol</source>. <year>2022</year>;<volume>179</volume>:<elocation-id>103808</elocation-id>.<pub-id pub-id-type="pmid">36087852</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.critrevonc.2022.103808</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="jeo270549-cit-0027">
+<string-name name-style="western">
+<surname>Fontalis</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kayani</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Thompson</surname>
+<given-names>JW</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Plastow</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Haddad</surname>
+<given-names>FS</given-names>
+</string-name>. <article-title>Robotic total hip arthroplasty: past, present and future</article-title>. <source>Orthop Trauma</source>. <year>2022</year>;<volume>36</volume>:<fpage>6</fpage>–<lpage>13</lpage>.</mixed-citation></ref><ref id="jeo270549-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="jeo270549-cit-0028">
+<string-name name-style="western">
+<surname>Gao</surname>
+<given-names>CX</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dwyer</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Smith</surname>
+<given-names>CL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Du</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Filia</surname>
+<given-names>KM</given-names>
+</string-name>, et al. <article-title>An overview of clustering methods with guidelines for application in mental health research</article-title>. <source>Psychiatry Res</source>. <year>2023</year>;<volume>327</volume>:<elocation-id>115265</elocation-id>.<pub-id pub-id-type="pmid">37348404</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.psychres.2023.115265</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="jeo270549-cit-0029">
+<string-name name-style="western">
+<surname>Gao</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Soh</surname>
+<given-names>NYT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lim</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ting</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cheng</surname>
+<given-names>LT‐E</given-names>
+</string-name>, et al. <article-title>Application of a deep learning algorithm in the detection of hip fractures</article-title>. <source>iScience</source>. <year>2023</year>;<volume>26</volume>:<elocation-id>107350</elocation-id>.<pub-id pub-id-type="pmid">37554447</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.isci.2023.107350</pub-id><pub-id pub-id-type="pmcid">PMC10404720</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="jeo270549-cit-0030">
+<string-name name-style="western">
+<surname>Gong</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>He</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fu</surname>
+<given-names>X</given-names>
+</string-name>. <article-title>Automated identification of hip arthroplasty implants using artificial intelligence</article-title>. <source>Sci Rep</source>. <year>2022</year>;<volume>12</volume>:<elocation-id>12179</elocation-id>.<pub-id pub-id-type="pmid">35842515</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41598-022-16534-3</pub-id><pub-id pub-id-type="pmcid">PMC9288441</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="jeo270549-cit-0031">
+<string-name name-style="western">
+<surname>Gültekin</surname>
+<given-names>O</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Inoue</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yilmaz</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cerci</surname>
+<given-names>MH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kilinc</surname>
+<given-names>BE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yilmaz</surname>
+<given-names>H</given-names>
+</string-name>, et al. <article-title>Evaluating DeepResearch and DeepThink in anterior cruciate ligament surgery patient education: ChatGPT‐4o excels in comprehensiveness, DeepSeek R1 leads in clarity and readability of orthopaedic information</article-title>. <source>Knee Surg Sports Traumatol Arthrosc</source>. <year>2025</year>;<volume>33</volume>:<fpage>3025</fpage>–<lpage>3031</lpage>.<pub-id pub-id-type="pmid">40450565</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/ksa.12711</pub-id><pub-id pub-id-type="pmcid">PMC12310095</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="jeo270549-cit-0032">
+<string-name name-style="western">
+<surname>Han</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Huang</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>YF</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lu</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>S</given-names>
+</string-name>, et al. <article-title>Artificial intelligence in orthopedic surgery: current applications, challenges, and future directions</article-title>. <source>MedComm</source>. <year>2025</year>;<volume>6</volume>:<elocation-id>e70260</elocation-id>.<pub-id pub-id-type="pmid">40567249</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/mco2.70260</pub-id><pub-id pub-id-type="pmcid">PMC12188104</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="jeo270549-cit-0033">
+<string-name name-style="western">
+<surname>Harrer</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>Attention is not all you need: the complicated case of ethically using large language models in healthcare and medicine</article-title>. <source>EBioMedicine</source>. <year>2023</year>;<volume>90</volume>:<elocation-id>104512</elocation-id>.<pub-id pub-id-type="pmid">36924620</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.ebiom.2023.104512</pub-id><pub-id pub-id-type="pmcid">PMC10025985</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0034"><label>34</label><mixed-citation publication-type="book" id="jeo270549-cit-0034">
+<string-name name-style="western">
+<surname>He</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ren</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sun</surname>
+<given-names>J</given-names>
+</string-name>. <part-title>Deep residual learning for image recognition</part-title>. In: <source>2016 IEEE conference on computer vision and pattern recognition (CVPR)</source>; <year>2016</year> Jun 27–30; <publisher-loc>Las Vegas, NV, USA</publisher-loc>. <publisher-name>IEEE</publisher-name>; <year>2016</year>. p. <fpage>770</fpage>–<lpage>778</lpage>. <pub-id pub-id-type="doi">10.48550/arXiv.1512.03385</pub-id>
+</mixed-citation></ref><ref id="jeo270549-bib-0035"><label>35</label><mixed-citation publication-type="journal" id="jeo270549-cit-0035">
+<string-name name-style="western">
+<surname>Hong</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Whittier</surname>
+<given-names>DE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Glüer</surname>
+<given-names>C‐C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Leslie</surname>
+<given-names>WD</given-names>
+</string-name>. <article-title>The potential role for artificial intelligence in fracture risk prediction</article-title>. <source>Lancet Diabetes Endocrinol</source>. <year>2024</year>;<volume>12</volume>:<fpage>596</fpage>–<lpage>600</lpage>.<pub-id pub-id-type="pmid">38942044</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/S2213-8587(24)00153-0</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="jeo270549-cit-0036">
+<string-name name-style="western">
+<surname>Hu</surname>
+<given-names>W</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jiang</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sun</surname>
+<given-names>H</given-names>
+</string-name>, et al. <article-title>A state‐of‐the‐art survey of artificial neural networks for whole‐slide image analysis: from popular convolutional neural networks to potential visual transformers</article-title>. <source>Comput Biol Med</source>. <year>2023</year>;<volume>161</volume>:<elocation-id>107034</elocation-id>.<pub-id pub-id-type="pmid">37230019</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.compbiomed.2023.107034</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="jeo270549-cit-0037">
+<string-name name-style="western">
+<surname>Husarek</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hess</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Razaeian</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ruder</surname>
+<given-names>TD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sehmisch</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Müller</surname>
+<given-names>M</given-names>
+</string-name>, et al. <article-title>Artificial intelligence in commercial fracture detection products: a systematic review and meta‐analysis of diagnostic test accuracy</article-title>. <source>Sci Rep</source>. <year>2024</year>;<volume>14</volume>:<elocation-id>23053</elocation-id>.<pub-id pub-id-type="pmid">39367147</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41598-024-73058-8</pub-id><pub-id pub-id-type="pmcid">PMC11452402</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="jeo270549-cit-0038">
+<string-name name-style="western">
+<surname>Ikotun</surname>
+<given-names>AM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ezugwu</surname>
+<given-names>AE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Abualigah</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Abuhaija</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Heming</surname>
+<given-names>J</given-names>
+</string-name>. <article-title>K‐means clustering algorithms: a comprehensive review, variants analysis, and advances in the era of big data</article-title>. <source>Inf Sci (N Y)</source>. <year>2023</year>;<volume>622</volume>:<fpage>178</fpage>–<lpage>210</lpage>.</mixed-citation></ref><ref id="jeo270549-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="jeo270549-cit-0039">
+<string-name name-style="western">
+<surname>Inoue</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Maki</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Furuya</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mikami</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mizutani</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Takada</surname>
+<given-names>I</given-names>
+</string-name>, et al. <article-title>Automated fracture screening using an object detection algorithm on whole‐body trauma computed tomography</article-title>. <source>Sci Rep</source>. <year>2022</year>;<volume>12</volume>:<elocation-id>16549</elocation-id>.<pub-id pub-id-type="pmid">36192521</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41598-022-20996-w</pub-id><pub-id pub-id-type="pmcid">PMC9529907</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="jeo270549-cit-0040">
+<string-name name-style="western">
+<surname>Jahangoshai Rezaee</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Eshkevari</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Saberi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hussain</surname>
+<given-names>O</given-names>
+</string-name>. <article-title>GBK‐means clustering algorithm: an improvement to the K‐means algorithm based on the bargaining game</article-title>. <source>Knowl Based Syst</source>. <year>2021</year>;<volume>213</volume>:<elocation-id>106672</elocation-id>.</mixed-citation></ref><ref id="jeo270549-bib-0041"><label>41</label><mixed-citation publication-type="journal" id="jeo270549-cit-0041">
+<string-name name-style="western">
+<surname>Jang</surname>
+<given-names>SJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fontana</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kunze</surname>
+<given-names>KN</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Anderson</surname>
+<given-names>CG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sculco</surname>
+<given-names>TP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mayman</surname>
+<given-names>DJ</given-names>
+</string-name>, et al. <article-title>An interpretable machine learning model for predicting 10‐year total hip arthroplasty risk</article-title>. <source>J Arthroplasty</source>. <year>2023</year>;<volume>38</volume>:<fpage>S44</fpage>–<lpage>S50.e6</lpage>.<pub-id pub-id-type="pmid">37019312</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arth.2023.03.087</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="jeo270549-cit-0042">
+<string-name name-style="western">
+<surname>Janisch</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Apfaltrer</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hržić</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Castellani</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mittl</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Singer</surname>
+<given-names>G</given-names>
+</string-name>, et al. <article-title>Pediatric radius torus fractures in x‐rays—how computer vision could render lateral projections obsolete</article-title>. <source>Front Pediatr</source>. <year>2022</year>;<volume>10</volume>:<elocation-id>1005099</elocation-id>.<pub-id pub-id-type="pmid">36589159</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fped.2022.1005099</pub-id><pub-id pub-id-type="pmcid">PMC9794847</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0043"><label>43</label><mixed-citation publication-type="journal" id="jeo270549-cit-0043">
+<string-name name-style="western">
+<surname>Jungmann</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kämpgen</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hahn</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wagner</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mildenberger</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Düber</surname>
+<given-names>C</given-names>
+</string-name>, et al. <article-title>Natural language processing of radiology reports to investigate the effects of the COVID‐19 pandemic on the incidence and age distribution of fractures</article-title>. <source>Skeletal Radiol</source>. <year>2022</year>;<volume>51</volume>:<fpage>375</fpage>–<lpage>380</lpage>.<pub-id pub-id-type="pmid">33851252</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00256-021-03760-5</pub-id><pub-id pub-id-type="pmcid">PMC8043440</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0044"><label>44</label><mixed-citation publication-type="journal" id="jeo270549-cit-0044">
+<string-name name-style="western">
+<surname>Kaya Bicer</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fangerau</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sur</surname>
+<given-names>H</given-names>
+</string-name>. <article-title>Artifical intelligence use in orthopedics: an ethical point of view</article-title>. <source>EFORT Open Rev</source>. <year>2023</year>;<volume>8</volume>:<fpage>592</fpage>–<lpage>596</lpage>.<pub-id pub-id-type="pmid">37526254</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1530/EOR-23-0083</pub-id><pub-id pub-id-type="pmcid">PMC10441251</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0045"><label>45</label><mixed-citation publication-type="journal" id="jeo270549-cit-0045">
+<string-name name-style="western">
+<surname>Khoriati</surname>
+<given-names>A‐A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shahid</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fok</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Frank</surname>
+<given-names>RM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Voss</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>D'Hooghe</surname>
+<given-names>P</given-names>
+</string-name>, et al. <article-title>Artificial intelligence and the orthopaedic surgeon: a review of the literature and potential applications for future practice: current concepts</article-title>. <source>J ISAKOS</source>. <year>2024</year>;<volume>9</volume>:<fpage>227</fpage>–<lpage>233</lpage>.<pub-id pub-id-type="pmid">37949113</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jisako.2023.10.015</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0046"><label>46</label><mixed-citation publication-type="journal" id="jeo270549-cit-0046">
+<string-name name-style="western">
+<surname>Khosravi</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rouzrokh</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mickley</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Faghani</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Larson</surname>
+<given-names>AN</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Garner</surname>
+<given-names>HW</given-names>
+</string-name>, et al. <article-title>Creating high fidelity synthetic pelvis radiographs using generative adversarial networks: unlocking the potential of deep learning models without patient privacy concerns</article-title>. <source>J Arthroplasty</source>. <year>2023</year>;<volume>38</volume>:<fpage>2037</fpage>–<lpage>2043.e1</lpage>.<pub-id pub-id-type="pmid">36535448</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arth.2022.12.013</pub-id><pub-id pub-id-type="pmcid">PMC12536427</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0047"><label>47</label><mixed-citation publication-type="journal" id="jeo270549-cit-0047">
+<string-name name-style="western">
+<surname>Kim</surname>
+<given-names>M‐S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kim</surname>
+<given-names>J‐J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kang</surname>
+<given-names>K‐H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lee</surname>
+<given-names>J‐H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>In</surname>
+<given-names>Y</given-names>
+</string-name>. <article-title>Detection of prosthetic loosening in hip and knee arthroplasty using machine learning: a systematic review and meta‐analysis</article-title>. <source>Medicina</source>. <year>2023</year>;<volume>59</volume>:<fpage>782</fpage>.<pub-id pub-id-type="pmid">37109740</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/medicina59040782</pub-id><pub-id pub-id-type="pmcid">PMC10141023</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0048"><label>48</label><mixed-citation publication-type="journal" id="jeo270549-cit-0048">
+<string-name name-style="western">
+<surname>Kiwinda</surname>
+<given-names>LV</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kocher</surname>
+<given-names>SD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bryniarski</surname>
+<given-names>AR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pean</surname>
+<given-names>CA</given-names>
+</string-name>. <article-title>Bioethical considerations of deploying artificial intelligence in clinical orthopedic settings: a narrative review</article-title>. <source>HSS J</source>. <year>2025</year>;<volume>21</volume>:<fpage>274</fpage>–<lpage>282</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/15563316251340303</pub-id><pub-id pub-id-type="pmcid">PMC12126464</pub-id><pub-id pub-id-type="pmid">40458232</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0049"><label>49</label><mixed-citation publication-type="journal" id="jeo270549-cit-0049">
+<string-name name-style="western">
+<surname>Krizhevsky</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sutskever</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hinton</surname>
+<given-names>GE</given-names>
+</string-name>. <article-title>ImageNet classification with deep convolutional neural networks</article-title>. <source>Commun ACM</source>. <year>2017</year>;<volume>60</volume>:<fpage>84</fpage>–<lpage>90</lpage>.</mixed-citation></ref><ref id="jeo270549-bib-0050"><label>50</label><mixed-citation publication-type="journal" id="jeo270549-cit-0050">
+<string-name name-style="western">
+<surname>Kunze</surname>
+<given-names>KN</given-names>
+</string-name>. <article-title>Generative artificial intelligence and musculoskeletal health care</article-title>. <source>HSS J</source>. <year>2025</year>;<volume>21</volume>:<fpage>248</fpage>–<lpage>256</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/15563316251335334</pub-id><pub-id pub-id-type="pmcid">PMC12033169</pub-id><pub-id pub-id-type="pmid">40297632</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0051"><label>51</label><mixed-citation publication-type="journal" id="jeo270549-cit-0051">
+<string-name name-style="western">
+<surname>Kutbi</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>Artificial intelligence‐based applications for bone fracture detection using medical images: a systematic review</article-title>. <source>Diagnostics</source>. <year>2024</year>;<volume>14</volume>:<fpage>1879</fpage>.<pub-id pub-id-type="pmid">39272664</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/diagnostics14171879</pub-id><pub-id pub-id-type="pmcid">PMC11394268</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0052"><label>52</label><mixed-citation publication-type="journal" id="jeo270549-cit-0052">
+<string-name name-style="western">
+<surname>Langenberger</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Schrednitzki</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Halder</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Busse</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pross</surname>
+<given-names>C</given-names>
+</string-name>. <article-title>Leveraging machine learning for duration of surgery prediction in knee and hip arthroplasty—a development and validation study</article-title>. <source>BMC Med Inform Decis Mak</source>. <year>2025</year>;<volume>25</volume>:<fpage>106</fpage>.<pub-id pub-id-type="pmid">40033378</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s12911-025-02927-7</pub-id><pub-id pub-id-type="pmcid">PMC11877953</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0053"><label>53</label><mixed-citation publication-type="journal" id="jeo270549-cit-0053">
+<string-name name-style="western">
+<surname>Leal</surname>
+<given-names>JA</given-names>
+</string-name>. <article-title>Artificial intelligence in orthopaedic and trauma surgery education: applications, ethics, and future perspectives</article-title>. <source>J Am Acad Orthop Surg Glob Res Rev</source>. <year>2025</year>;<volume>9</volume>:<elocation-id>e25.00174</elocation-id>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.5435/JAAOSGlobal-D-25-00174</pub-id><pub-id pub-id-type="pmcid">PMC12425090</pub-id><pub-id pub-id-type="pmid">40956817</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0054"><label>54</label><mixed-citation publication-type="journal" id="jeo270549-cit-0054">
+<string-name name-style="western">
+<surname>LeCun</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bengio</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hinton</surname>
+<given-names>G</given-names>
+</string-name>. <article-title>Deep learning</article-title>. <source>Nature</source>. <year>2015</year>;<volume>521</volume>:<fpage>436</fpage>–<lpage>444</lpage>.<pub-id pub-id-type="pmid">26017442</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/nature14539</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0055"><label>55</label><mixed-citation publication-type="journal" id="jeo270549-cit-0055">
+<string-name name-style="western">
+<surname>Lee</surname>
+<given-names>SH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jeon</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lee</surname>
+<given-names>GJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Park</surname>
+<given-names>JY</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kim</surname>
+<given-names>YJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kim</surname>
+<given-names>KG</given-names>
+</string-name>. <article-title>Automated Association for Osteosynthesis Foundation and Orthopedic Trauma Association classification of pelvic fractures on pelvic radiographs using deep learning</article-title>. <source>Sci Rep</source>. <year>2024</year>;<volume>14</volume>:<elocation-id>20548</elocation-id>.<pub-id pub-id-type="pmid">39232189</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41598-024-71654-2</pub-id><pub-id pub-id-type="pmcid">PMC11374898</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0056"><label>56</label><mixed-citation publication-type="journal" id="jeo270549-cit-0056">
+<string-name name-style="western">
+<surname>Loftus</surname>
+<given-names>TJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shickel</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Balch</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tighe</surname>
+<given-names>PJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Abbott</surname>
+<given-names>KL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fazzone</surname>
+<given-names>B</given-names>
+</string-name>, et al. <article-title>Phenotype clustering in health care: a narrative review for clinicians</article-title>. <source>Front Artif Intell</source>. <year>2022</year>;<volume>5</volume>:<elocation-id>842306</elocation-id>.<pub-id pub-id-type="pmid">36034597</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/frai.2022.842306</pub-id><pub-id pub-id-type="pmcid">PMC9411746</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0057"><label>57</label><mixed-citation publication-type="journal" id="jeo270549-cit-0057">
+<string-name name-style="western">
+<surname>Longo</surname>
+<given-names>UG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lalli</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nicodemi</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pisani</surname>
+<given-names>MG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>De Sire</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>D'Hooghe</surname>
+<given-names>P</given-names>
+</string-name>, et al. <article-title>Artificial intelligence demonstrates potential to enhance orthopaedic imaging across multiple modalities: a systematic review</article-title>. <source>J Exp Orthop</source>. <year>2025</year>;<volume>12</volume>:<elocation-id>e70259</elocation-id>.<pub-id pub-id-type="pmid">40337671</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jeo2.70259</pub-id><pub-id pub-id-type="pmcid">PMC12056712</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0058"><label>58</label><mixed-citation publication-type="journal" id="jeo270549-cit-0058">
+<string-name name-style="western">
+<surname>McNulty</surname>
+<given-names>JR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kho</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Case</surname>
+<given-names>AL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Slater</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Abzug</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Russell</surname>
+<given-names>SA</given-names>
+</string-name>. <article-title>Synthetic medical imaging generation with generative adversarial networks for plain radiographs</article-title>. <source>Appl Sci</source>. <year>2024</year>;<volume>14</volume>:<fpage>6831</fpage>.</mixed-citation></ref><ref id="jeo270549-bib-0059"><label>59</label><mixed-citation publication-type="journal" id="jeo270549-cit-0059">
+<string-name name-style="western">
+<surname>Mehrabi</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Morstatter</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Saxena</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lerman</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Galstyan</surname>
+<given-names>A</given-names>
+</string-name>. <article-title>A survey on bias and fairness in machine learning</article-title>. <source>ACM Comput Surv</source>. <year>2022</year>;<volume>54</volume>:<fpage>1</fpage>–<lpage>35</lpage>.</mixed-citation></ref><ref id="jeo270549-bib-0060"><label>60</label><mixed-citation publication-type="journal" id="jeo270549-cit-0060">
+<string-name name-style="western">
+<surname>Mienye</surname>
+<given-names>ID</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Swart</surname>
+<given-names>TG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Obaido</surname>
+<given-names>G</given-names>
+</string-name>. <article-title>Recurrent neural networks: a comprehensive review of architectures, variants, and applications</article-title>. <source>Information 2024</source>. <year>2024</year>;<volume>15</volume>:<fpage>517</fpage>.</mixed-citation></ref><ref id="jeo270549-bib-0061"><label>61</label><mixed-citation publication-type="journal" id="jeo270549-cit-0061">
+<string-name name-style="western">
+<surname>Misir</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yuce</surname>
+<given-names>A</given-names>
+</string-name>. <article-title>AI in orthopedic research: a comprehensive review</article-title>. <source>J Orthop Res</source>. <year>2025</year>;<volume>43</volume>:<fpage>1508</fpage>–<lpage>1527</lpage>.<pub-id pub-id-type="pmid">40415515</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jor.26109</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0062"><label>62</label><mixed-citation publication-type="journal" id="jeo270549-cit-0062">
+<string-name name-style="western">
+<surname>Mitchell</surname>
+<given-names>TM</given-names>
+</string-name>. <article-title>The discipline of machine learning [Internet]</article-title>. Vol. <volume>9</volume>. Carnegie Mellon University, School of Computer Science, Machine Learning; <year>2006</year>. p. <fpage>1</fpage>–<lpage>7</lpage>. Available from: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.cs.cmu.edu/afs/cs/usr/mitchell/ftp/pubs/MachineLearningTR.pdf" ext-link-type="uri">https://www.cs.cmu.edu/afs/cs/usr/mitchell/ftp/pubs/MachineLearningTR.pdf</ext-link>
+</mixed-citation></ref><ref id="jeo270549-bib-0063"><label>63</label><mixed-citation publication-type="journal" id="jeo270549-cit-0063">
+<string-name name-style="western">
+<surname>Mo</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lin</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dunn</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Girgis</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fang</surname>
+<given-names>W</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Walsh</surname>
+<given-names>J</given-names>
+</string-name>, et al. <article-title>Systematic review on large language models in orthopaedic surgery</article-title>. <source>J Clin Med</source>. <year>2025</year>;<volume>14</volume>:<fpage>5876</fpage>.<pub-id pub-id-type="pmid">40869701</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/jcm14165876</pub-id><pub-id pub-id-type="pmcid">PMC12386971</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0064"><label>64</label><mixed-citation publication-type="journal" id="jeo270549-cit-0064">
+<string-name name-style="western">
+<surname>Mohammed</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Huang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Memtsoudis</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Parks</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Huang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ma</surname>
+<given-names>Y</given-names>
+</string-name>. <article-title>Utilization of machine learning methods for predicting surgical outcomes after total knee arthroplasty</article-title>. <source>PLoS One</source>. <year>2022</year>;<volume>17</volume>:<elocation-id>e0263897</elocation-id>.<pub-id pub-id-type="pmid">35316270</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1371/journal.pone.0263897</pub-id><pub-id pub-id-type="pmcid">PMC8939835</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0065"><label>65</label><mixed-citation publication-type="journal" id="jeo270549-cit-0065">
+<string-name name-style="western">
+<surname>Mohammed</surname>
+<given-names>TJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Xinying</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Alnoor</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Khaw</surname>
+<given-names>KW</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Albahri</surname>
+<given-names>AS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Teoh</surname>
+<given-names>WL</given-names>
+</string-name>, et al. <article-title>A systematic review of artificial intelligence in orthopaedic disease detection: a taxonomy for analysis and trustworthiness evaluation</article-title>. <source>Int J Comput Intell Syst</source>. <year>2024</year>;<volume>17</volume>:<fpage>303</fpage>.</mixed-citation></ref><ref id="jeo270549-bib-0066"><label>66</label><mixed-citation publication-type="journal" id="jeo270549-cit-0066">
+<string-name name-style="western">
+<surname>Moons</surname>
+<given-names>KGM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Damen</surname>
+<given-names>JAA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kaul</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hooft</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Andaur Navarro</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dhiman</surname>
+<given-names>P</given-names>
+</string-name>, et al. <article-title>PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods</article-title>. <source>BMJ</source>. <year>2025</year>;<volume>388</volume>:<elocation-id>e082505</elocation-id>.<pub-id pub-id-type="pmid">40127903</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1136/bmj-2024-082505</pub-id><pub-id pub-id-type="pmcid">PMC11931409</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0067"><label>67</label><mixed-citation publication-type="journal" id="jeo270549-cit-0067">
+<string-name name-style="western">
+<surname>Nowroozi</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Salehi</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shobeiri</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Agahi</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Momtazmanesh</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kaviani</surname>
+<given-names>P</given-names>
+</string-name>, et al. <article-title>Artificial intelligence diagnostic accuracy in fracture detection from plain radiographs and comparing it with clinicians: a systematic review and meta‐analysis</article-title>. <source>Clin Radiol</source>. <year>2024</year>;<volume>79</volume>:<fpage>579</fpage>–<lpage>588</lpage>.<pub-id pub-id-type="pmid">38772766</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.crad.2024.04.009</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0068"><label>68</label><mixed-citation publication-type="journal" id="jeo270549-cit-0068">
+<string-name name-style="western">
+<surname>Oettl</surname>
+<given-names>FC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zsidai</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Oeding</surname>
+<given-names>JF</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hirschmann</surname>
+<given-names>MT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Feldt</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fendrich</surname>
+<given-names>D</given-names>
+</string-name>, et al. <article-title>Artificial intelligence‐assisted analysis of musculoskeletal imaging—a narrative review of the current state of machine learning models</article-title>. <source>Knee Surg Sports Traumatol Arthrosc</source>. <year>2025</year>;<volume>33</volume>:<fpage>3032</fpage>–<lpage>3038</lpage>.<pub-id pub-id-type="pmid">40450562</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/ksa.12702</pub-id><pub-id pub-id-type="pmcid">PMC12310083</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0069"><label>69</label><mixed-citation publication-type="journal" id="jeo270549-cit-0069">
+<string-name name-style="western">
+<surname>Oikonomou</surname>
+<given-names>EK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Khera</surname>
+<given-names>R</given-names>
+</string-name>. <article-title>Machine learning in precision diabetes care and cardiovascular risk prediction</article-title>. <source>Cardiovasc Diabetol</source>. <year>2023</year>;<volume>22</volume>:<fpage>259</fpage>.<pub-id pub-id-type="pmid">37749579</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s12933-023-01985-3</pub-id><pub-id pub-id-type="pmcid">PMC10521578</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0070"><label>70</label><mixed-citation publication-type="journal" id="jeo270549-cit-0070">
+<string-name name-style="western">
+<surname>Oliveira e Carmo</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>van den Merkhof</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Olczak</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gordon</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jutte</surname>
+<given-names>PC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jaarsma</surname>
+<given-names>RL</given-names>
+</string-name>, et al. <article-title>An increasing number of convolutional neural networks for fracture recognition and classification in orthopaedics</article-title>. <source>Bone Joint Open</source>. <year>2021</year>;<volume>2</volume>:<fpage>879</fpage>–<lpage>885</lpage>.<pub-id pub-id-type="pmid">34669518</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1302/2633-1462.210.BJO-2021-0133</pub-id><pub-id pub-id-type="pmcid">PMC8558452</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0071"><label>71</label><mixed-citation publication-type="journal" id="jeo270549-cit-0071">
+<string-name name-style="western">
+<surname>Oude Nijhuis</surname>
+<given-names>KD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Prijs</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Barvelink</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>van Luit</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhao</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liao</surname>
+<given-names>Z</given-names>
+</string-name>, et al. <article-title>Open‐source convolutional neural network to classify distal radial fractures according to the AO/OTA classification on plain radiographs</article-title>. <source>Eur J Trauma Emerg Surg</source>. <year>2025</year>;<volume>51</volume>:<fpage>261</fpage>.<pub-id pub-id-type="pmid">40691325</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00068-025-02931-6</pub-id><pub-id pub-id-type="pmcid">PMC12279608</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0072"><label>72</label><mixed-citation publication-type="journal" id="jeo270549-cit-0072">
+<string-name name-style="western">
+<surname>Padash</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mickley</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vera Garcia</surname>
+<given-names>DV</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nugen</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Khosravi</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Erickson</surname>
+<given-names>BJ</given-names>
+</string-name>, et al. <article-title>An overview of machine learning in orthopedic surgery: an educational paper</article-title>. <source>J Arthroplasty</source>. <year>2023</year>;<volume>38</volume>:<fpage>1938</fpage>–<lpage>1942</lpage>.<pub-id pub-id-type="pmid">37598786</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arth.2023.08.043</pub-id><pub-id pub-id-type="pmcid">PMC10601337</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0073"><label>73</label><mixed-citation publication-type="journal" id="jeo270549-cit-0073">
+<string-name name-style="western">
+<surname>Powers</surname>
+<given-names>D</given-names>
+</string-name>. <article-title>Evaluation: from precision, recall and F‐measure to ROC, informedness, markedness &amp; correlation</article-title>. <source>J Mach Learn Technol</source>. <year>2011</year>;<volume>2</volume>:<fpage>37</fpage>–<lpage>63</lpage>.</mixed-citation></ref><ref id="jeo270549-bib-0074"><label>74</label><mixed-citation publication-type="book" id="jeo270549-cit-0074">
+<string-name name-style="western">
+<surname>Pundir</surname>
+<given-names>BS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kumar</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gupta</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Obaid</surname>
+<given-names>AJ</given-names>
+</string-name>. <part-title>Synthetic image generation for improved detection of bone defects using GAN</part-title>. In: <source>2024 15th international conference on computing communication and networking technologies (ICCCNT)</source> [Internet]. <publisher-name>IEEE</publisher-name>; <year>2024</year>. p. <fpage>1</fpage>–<lpage>5</lpage>. Available from: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://ieeexplore.ieee.org/document/10723913/" ext-link-type="uri">https://ieeexplore.ieee.org/document/10723913/</ext-link>
+</mixed-citation></ref><ref id="jeo270549-bib-0075"><label>75</label><mixed-citation publication-type="journal" id="jeo270549-cit-0075">
+<string-name name-style="western">
+<surname>Ramadanov</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>John</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hable</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Schreyer</surname>
+<given-names>AG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shabo</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Prill</surname>
+<given-names>R</given-names>
+</string-name>, et al. <article-title>Artificial intelligence‐guided distal radius fracture detection on plain radiographs in comparison with human raters</article-title>. <source>J Orthop Surg</source>. <year>2025</year>;<volume>20</volume>:<fpage>468</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s13018-025-05888-9</pub-id><pub-id pub-id-type="pmcid">PMC12083173</pub-id><pub-id pub-id-type="pmid">40380226</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0076"><label>76</label><mixed-citation publication-type="journal" id="jeo270549-cit-0076">
+<string-name name-style="western">
+<surname>Ramesh</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sathyavarapu</surname>
+<given-names>NSB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sharma</surname>
+<given-names>SJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nippun</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Khanna</surname>
+<given-names>NK M</given-names>
+</string-name>. <article-title>Comparative analysis of Q‐learning, SARSA, and deep Q‐network for microgrid energy management</article-title>. <source>Sci Rep</source>. <year>2025</year>;<volume>15</volume>:<elocation-id>694</elocation-id>.<pub-id pub-id-type="pmid">39753622</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41598-024-83625-8</pub-id><pub-id pub-id-type="pmcid">PMC11698738</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0077"><label>77</label><mixed-citation publication-type="journal" id="jeo270549-cit-0077">
+<string-name name-style="western">
+<surname>Ran</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Xi</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lu</surname>
+<given-names>Z</given-names>
+</string-name>. <article-title>Comprehensive survey on hierarchical clustering algorithms and the recent developments</article-title>. <source>Artif Intell Rev</source>. <year>2023</year>;<volume>56</volume>:<fpage>8219</fpage>–<lpage>8264</lpage>.</mixed-citation></ref><ref id="jeo270549-bib-0078"><label>78</label><mixed-citation publication-type="journal" id="jeo270549-cit-0078">
+<string-name name-style="western">
+<surname>Rezapour</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Seymour</surname>
+<given-names>RB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sims</surname>
+<given-names>SH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Karunakar</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Habet</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gurcan</surname>
+<given-names>MN</given-names>
+</string-name>. <article-title>Employing machine learning to enhance fracture recovery insights through gait analysis</article-title>. <source>J Orthop Res</source>. <year>2024</year>;<volume>42</volume>:<fpage>1748</fpage>–<lpage>1761</lpage>.<pub-id pub-id-type="pmid">38596829</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jor.25837</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0079"><label>79</label><mixed-citation publication-type="journal" id="jeo270549-cit-0079">
+<string-name name-style="western">
+<surname>Rizk</surname>
+<given-names>PA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gonzalez</surname>
+<given-names>MR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Galoaa</surname>
+<given-names>BM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Girgis</surname>
+<given-names>AG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Van Der Linden</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chang</surname>
+<given-names>CY</given-names>
+</string-name>, et al. <article-title>Machine learning–assisted decision making in orthopaedic oncology</article-title>. <source>JBJS Rev</source>. <year>2024</year>;<volume>12</volume>:<elocation-id>00057</elocation-id>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.2106/JBJS.RVW.24.00057</pub-id><pub-id pub-id-type="pmid">38991098</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0080"><label>80</label><mixed-citation publication-type="journal" id="jeo270549-cit-0080">
+<string-name name-style="western">
+<surname>Rolf</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jackson</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Müller</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lang</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Reggelin</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ivanov</surname>
+<given-names>D</given-names>
+</string-name>. <article-title>A review on reinforcement learning algorithms and applications in supply chain management</article-title>. <source>Int J Prod Res</source>. <year>2023</year>;<volume>61</volume>:<fpage>7151</fpage>–<lpage>7179</lpage>.</mixed-citation></ref><ref id="jeo270549-bib-0081"><label>81</label><mixed-citation publication-type="journal" id="jeo270549-cit-0081">
+<string-name name-style="western">
+<surname>Romoff</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Brunette</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Peterson</surname>
+<given-names>MK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hashmi</surname>
+<given-names>SZ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kim</surname>
+<given-names>MS</given-names>
+</string-name>. <article-title>The role of large language models in improving the readability of orthopaedic spine patient educational material</article-title>. <source>J Orthop Surg</source>. <year>2025</year>;<volume>20</volume>:<fpage>531</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s13018-025-05955-1</pub-id><pub-id pub-id-type="pmcid">PMC12117680</pub-id><pub-id pub-id-type="pmid">40426209</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0082"><label>82</label><mixed-citation publication-type="journal" id="jeo270549-cit-0082">
+<string-name name-style="western">
+<surname>Rosenberg</surname>
+<given-names>GS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Magnéli</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Barle</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kontakis</surname>
+<given-names>MG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Müller</surname>
+<given-names>AM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wittauer</surname>
+<given-names>M</given-names>
+</string-name>, et al. <article-title>ChatGPT‐4 generates orthopedic discharge documents faster than humans maintaining comparable quality: a pilot study of 6 cases</article-title>. <source>Acta Orthop</source>. <year>2024</year>;<volume>95</volume>:<fpage>152</fpage>–<lpage>156</lpage>.<pub-id pub-id-type="pmid">38597205</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.2340/17453674.2024.40182</pub-id><pub-id pub-id-type="pmcid">PMC10959013</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0083"><label>83</label><mixed-citation publication-type="journal" id="jeo270549-cit-0083">
+<string-name name-style="western">
+<surname>Rupp</surname>
+<given-names>MC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Moser</surname>
+<given-names>LB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hess</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Angele</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Aurich</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dyrna</surname>
+<given-names>F</given-names>
+</string-name>, et al. <article-title>Orthopaedic surgeons display a positive outlook towards artificial intelligence: a survey among members of the AGA Society for Arthroscopy and Joint Surgery</article-title>. <source>J Exp Orthop</source>. <year>2024</year>;<volume>11</volume>:<elocation-id>e12080</elocation-id>.<pub-id pub-id-type="pmid">38974054</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jeo2.12080</pub-id><pub-id pub-id-type="pmcid">PMC11227606</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0084"><label>84</label><mixed-citation publication-type="journal" id="jeo270549-cit-0084">
+<string-name name-style="western">
+<surname>Sadr</surname>
+<given-names>MM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Khani</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tootkaleh</surname>
+<given-names>SM</given-names>
+</string-name>. <article-title>Predicting athletic injuries with deep Learning: evaluating CNNs and RNNs for enhanced performance and Safety</article-title>. <source>Biomed Signal Process Control</source>. <year>2025</year>;<volume>105</volume>:<elocation-id>107692</elocation-id>.</mixed-citation></ref><ref id="jeo270549-bib-0085"><label>85</label><mixed-citation publication-type="journal" id="jeo270549-cit-0085">
+<string-name name-style="western">
+<surname>Sarker</surname>
+<given-names>IH</given-names>
+</string-name>. <article-title>Machine learning: algorithms, real‐world applications and research directions</article-title>. <source>SN Comput Sci</source>. <year>2021</year>;<volume>2</volume>:<fpage>160</fpage>.<pub-id pub-id-type="pmid">33778771</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s42979-021-00592-x</pub-id><pub-id pub-id-type="pmcid">PMC7983091</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0086"><label>86</label><mixed-citation publication-type="journal" id="jeo270549-cit-0086">
+<string-name name-style="western">
+<surname>Schreck</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Laukamp</surname>
+<given-names>KR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Niehoff</surname>
+<given-names>JH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Michael</surname>
+<given-names>AE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Boriesosdick</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wöltjen</surname>
+<given-names>MM</given-names>
+</string-name>, et al. <article-title>Metal artifact reduction in patients with total hip replacements: evaluation of clinical photon counting CT using virtual monoenergetic images</article-title>. <source>Eur Radiol</source>. <year>2023</year>;<volume>33</volume>:<fpage>9286</fpage>–<lpage>9295</lpage>.<pub-id pub-id-type="pmid">37436505</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00330-023-09879-4</pub-id><pub-id pub-id-type="pmcid">PMC10667386</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0087"><label>87</label><mixed-citation publication-type="journal" id="jeo270549-cit-0087">
+<string-name name-style="western">
+<surname>Sequí‐Sabater</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Benavent</surname>
+<given-names>D</given-names>
+</string-name>. <article-title>Artificial intelligence in rheumatology research: what is it good for?</article-title>
+<source>RMD Open</source>. <year>2025</year>;<volume>11</volume>:<elocation-id>e004309</elocation-id>.<pub-id pub-id-type="pmid">39778924</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1136/rmdopen-2024-004309</pub-id><pub-id pub-id-type="pmcid">PMC11748787</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0088"><label>88</label><mixed-citation publication-type="journal" id="jeo270549-cit-0088">
+<string-name name-style="western">
+<surname>Shahzad</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Veliky</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Le</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Qureshi</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Phillips</surname>
+<given-names>FM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Javidan</surname>
+<given-names>Y</given-names>
+</string-name>, et al. <article-title>Preserving privacy in big data research: the role of federated learning in spine surgery</article-title>. <source>Eur Spine J</source>. <year>2024</year>;<volume>33</volume>:<fpage>4076</fpage>–<lpage>4081</lpage>.<pub-id pub-id-type="pmid">38403832</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00586-024-08172-2</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0089"><label>89</label><mixed-citation publication-type="journal" id="jeo270549-cit-0089">
+<string-name name-style="western">
+<surname>Shelmerdine</surname>
+<given-names>SC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>White</surname>
+<given-names>RD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Arthurs</surname>
+<given-names>OJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sebire</surname>
+<given-names>NJ</given-names>
+</string-name>. <article-title>Artificial intelligence for radiological paediatric fracture assessment: a systematic review</article-title>. <source>Insights Imaging</source>. <year>2022</year>;<volume>13</volume>:<fpage>94</fpage>.<pub-id pub-id-type="pmid">35657439</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s13244-022-01234-3</pub-id><pub-id pub-id-type="pmcid">PMC9166920</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0090"><label>90</label><mixed-citation publication-type="journal" id="jeo270549-cit-0090">
+<string-name name-style="western">
+<surname>Siddiqui</surname>
+<given-names>IA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Littlefield</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Carlson</surname>
+<given-names>LA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gong</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chhabra</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Menezes</surname>
+<given-names>Z</given-names>
+</string-name>, et al. <article-title>Fair AI‐powered orthopedic image segmentation: addressing bias and promoting equitable healthcare</article-title>. <source>Sci Rep</source>. <year>2024</year>;<volume>14</volume>:<elocation-id>16105</elocation-id>.<pub-id pub-id-type="pmid">38997335</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41598-024-66873-6</pub-id><pub-id pub-id-type="pmcid">PMC11245517</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0091"><label>91</label><mixed-citation publication-type="journal" id="jeo270549-cit-0091">
+<string-name name-style="western">
+<surname>Simion</surname>
+<given-names>AM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Radu</surname>
+<given-names>Ș</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Florea</surname>
+<given-names>AM</given-names>
+</string-name>. <article-title>A review of generative adversarial networks for computer vision tasks</article-title>. <source>Electronics</source>. <year>2024</year>;<volume>13</volume>:<fpage>713</fpage>.</mixed-citation></ref><ref id="jeo270549-bib-0092"><label>92</label><mixed-citation publication-type="journal" id="jeo270549-cit-0092">
+<string-name name-style="western">
+<surname>Singh</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Goyal</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mallick</surname>
+<given-names>DC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Surani</surname>
+<given-names>SR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kaushik</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chandramohan</surname>
+<given-names>D</given-names>
+</string-name>, et al. <article-title>Artificial intelligence in nephrology: clinical applications and challenges</article-title>. <source>Kidney Med</source>. <year>2025</year>;<volume>7</volume>:<elocation-id>100927</elocation-id>.<pub-id pub-id-type="pmid">39803417</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.xkme.2024.100927</pub-id><pub-id pub-id-type="pmcid">PMC11719832</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0093"><label>93</label><mixed-citation publication-type="journal" id="jeo270549-cit-0093">
+<string-name name-style="western">
+<surname>Sounderajah</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Guni</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Collins</surname>
+<given-names>GS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Karthikesalingam</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Markar</surname>
+<given-names>SR</given-names>
+</string-name>, et al. <article-title>The STARD‐AI reporting guideline for diagnostic accuracy studies using artificial intelligence</article-title>. <source>Nat Med</source>. <year>2025</year>;<volume>31</volume>:<fpage>3283</fpage>–<lpage>3289</lpage>.<pub-id pub-id-type="pmid">40954311</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41591-025-03953-8</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0094"><label>94</label><mixed-citation publication-type="journal" id="jeo270549-cit-0094">
+<string-name name-style="western">
+<surname>Teo</surname>
+<given-names>ZL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jin</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Miao</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ng</surname>
+<given-names>WY</given-names>
+</string-name>, et al. <article-title>Federated machine learning in healthcare: a systematic review on clinical applications and technical architecture</article-title>. <source>Cell Rep Med</source>. <year>2024</year>;<volume>5</volume>:<elocation-id>101419</elocation-id>.<pub-id pub-id-type="pmid">38340728</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.xcrm.2024.101419</pub-id><pub-id pub-id-type="pmcid">PMC10897620</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0095"><label>95</label><mixed-citation publication-type="miscellaneous" id="jeo270549-cit-0095">
+<collab collab-type="authors">European Union</collab>
+. <article-title>Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act), Official Journal L 2024/1689</article-title>; <year>2024</year>. <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng" ext-link-type="uri">https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng</ext-link>
+</mixed-citation></ref><ref id="jeo270549-bib-0096"><label>96</label><mixed-citation publication-type="journal" id="jeo270549-cit-0096">
+<string-name name-style="western">
+<surname>Turing</surname>
+<given-names>AM</given-names>
+</string-name>. <article-title>Computing machinery and intelligence</article-title>. <source>Mind</source>. <year>1950</year>;<volume>59</volume>:<fpage>433</fpage>–<lpage>460</lpage>.</mixed-citation></ref><ref id="jeo270549-bib-0097"><label>97</label><mixed-citation publication-type="journal" id="jeo270549-cit-0097">
+<string-name name-style="western">
+<surname>Vasey</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nagendran</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Campbell</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Clifton</surname>
+<given-names>DA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Collins</surname>
+<given-names>GS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Denaxas</surname>
+<given-names>S</given-names>
+</string-name>, et al. <article-title>Reporting guideline for the early stage clinical evaluation of decision support systems driven by artificial intelligence: DECIDE‐AI</article-title>. <source>BMJ</source>. <year>2022</year>;<volume>377</volume>:<elocation-id>e070904</elocation-id>.<pub-id pub-id-type="pmid">35584845</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1136/bmj-2022-070904</pub-id><pub-id pub-id-type="pmcid">PMC9116198</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0098"><label>98</label><mixed-citation publication-type="journal" id="jeo270549-cit-0098">
+<string-name name-style="western">
+<surname>Wang</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhu</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ma</surname>
+<given-names>Z</given-names>
+</string-name>. <article-title>Lossy point cloud geometry compression via end‐to‐end learning</article-title>. <source>IEEE Trans Circuits Syst Video Technol</source>. <year>2021</year>;<volume>31</volume>:<fpage>4909</fpage>–<lpage>4923</lpage>.</mixed-citation></ref><ref id="jeo270549-bib-0099"><label>99</label><mixed-citation publication-type="journal" id="jeo270549-cit-0099">
+<string-name name-style="western">
+<surname>Waqas</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Humphries</surname>
+<given-names>UW</given-names>
+</string-name>. <article-title>A critical review of RNN and LSTM variants in hydrological time series predictions</article-title>. <source>MethodsX</source>. <year>2024</year>;<volume>13</volume>:<elocation-id>102946</elocation-id>.<pub-id pub-id-type="pmid">39324077</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.mex.2024.102946</pub-id><pub-id pub-id-type="pmcid">PMC11422155</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0100"><label>100</label><mixed-citation publication-type="journal" id="jeo270549-cit-0100">
+<string-name name-style="western">
+<surname>Wu</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wu</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Francis</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chang</surname>
+<given-names>Y‐H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shavick</surname>
+<given-names>A</given-names>
+</string-name>, et al. <article-title>A survey on clinical natural language processing in the United Kingdom from 2007 to 2022</article-title>. <source>npj Digit Med</source>. <year>2022</year>;<volume>5</volume>:<fpage>186</fpage>.<pub-id pub-id-type="pmid">36544046</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41746-022-00730-6</pub-id><pub-id pub-id-type="pmcid">PMC9770568</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0101"><label>101</label><mixed-citation publication-type="journal" id="jeo270549-cit-0101">
+<string-name name-style="western">
+<surname>Wyles</surname>
+<given-names>CC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fu</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Odum</surname>
+<given-names>SL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rowe</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Habet</surname>
+<given-names>NA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Berry</surname>
+<given-names>DJ</given-names>
+</string-name>, et al. <article-title>External validation of natural language processing algorithms to extract common data elements in THA operative notes</article-title>. <source>J Arthroplasty</source>. <year>2023</year>;<volume>38</volume>:<fpage>2081</fpage>–<lpage>2084</lpage>.<pub-id pub-id-type="pmid">36280160</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arth.2022.10.031</pub-id><pub-id pub-id-type="pmcid">PMC10121967</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0102"><label>102</label><mixed-citation publication-type="journal" id="jeo270549-cit-0102">
+<string-name name-style="western">
+<surname>Xie</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yang</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yan</surname>
+<given-names>Z</given-names>
+</string-name>, et al. <article-title>Swarm learning network for privacy‐preserving and collaborative deep learning assisted diagnosis of fracture: a multi‐center diagnostic study</article-title>. <source>Front Med</source>. <year>2025</year>;<volume>12</volume>:<elocation-id>1534117</elocation-id>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fmed.2025.1534117</pub-id><pub-id pub-id-type="pmcid">PMC12267170</pub-id><pub-id pub-id-type="pmid">40678137</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0103"><label>103</label><mixed-citation publication-type="journal" id="jeo270549-cit-0103">
+<string-name name-style="western">
+<surname>Yağar</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gümüşoğlu</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Asfuroğlu</surname>
+<given-names>ZM</given-names>
+</string-name>. <article-title>Assessing the performance of ChatGPT‐4o on the Turkish Orthopedics and Traumatology Board Examination</article-title>. <source>Joint Dis Relat Surg</source>. <year>2025</year>;<volume>36</volume>:<fpage>304</fpage>–<lpage>310</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.52312/jdrs.2025.1958</pub-id><pub-id pub-id-type="pmcid">PMC12086493</pub-id><pub-id pub-id-type="pmid">40235408</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0104"><label>104</label><mixed-citation publication-type="journal" id="jeo270549-cit-0104">
+<string-name name-style="western">
+<surname>Yang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Luo</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Xu</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>L</given-names>
+</string-name>. <article-title>Artificial intelligence for predicting treatment responses in autoimmune rheumatic diseases: advancements, challenges, and future perspectives</article-title>. <source>Front Immunol</source>. <year>2024</year>;<volume>15</volume>:<elocation-id>1477130</elocation-id>.<pub-id pub-id-type="pmid">39502698</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fimmu.2024.1477130</pub-id><pub-id pub-id-type="pmcid">PMC11534874</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0105"><label>105</label><mixed-citation publication-type="journal" id="jeo270549-cit-0105">
+<string-name name-style="western">
+<surname>Yao</surname>
+<given-names>JJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Aggarwal</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lopez</surname>
+<given-names>RD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Namdari</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>Large language models in orthopaedics</article-title>. <source>J Bone Joint Surg</source>. <year>2024</year>;<volume>106</volume>:<fpage>1411</fpage>–<lpage>1418</lpage>.<pub-id pub-id-type="pmid">38896652</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.2106/JBJS.23.01417</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0106"><label>106</label><mixed-citation publication-type="journal" id="jeo270549-cit-0106">
+<string-name name-style="western">
+<surname>Yao</surname>
+<given-names>JJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lopez</surname>
+<given-names>RD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rizk</surname>
+<given-names>AA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Aggarwal</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Namdari</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>Evaluation of a popular large language model in orthopedic literature review: comparison to previously published reviews</article-title>. <source>Arch Bone Joint Surg</source>. <year>2025</year>;<volume>13</volume>:<fpage>460</fpage>–<lpage>469</lpage>.<pub-id pub-id-type="pmid">40951516</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.22038/ABJS.2025.84896.3874</pub-id><pub-id pub-id-type="pmcid">PMC12432827</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0107"><label>107</label><mixed-citation publication-type="journal" id="jeo270549-cit-0107">
+<string-name name-style="western">
+<surname>Youssef</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>De Wet</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Back</surname>
+<given-names>DA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Scherer</surname>
+<given-names>J</given-names>
+</string-name>. <article-title>Digitalization in orthopaedics: a narrative review</article-title>. <source>Front Surg</source>. <year>2024</year>;<volume>10</volume>:<elocation-id>1325423</elocation-id>.<pub-id pub-id-type="pmid">38274350</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fsurg.2023.1325423</pub-id><pub-id pub-id-type="pmcid">PMC10808497</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0108"><label>108</label><mixed-citation publication-type="journal" id="jeo270549-cit-0108">
+<string-name name-style="western">
+<surname>Yu</surname>
+<given-names>C‐H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yeh</surname>
+<given-names>C‐C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lu</surname>
+<given-names>Y‐F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lu</surname>
+<given-names>Y‐L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>T‐M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lin</surname>
+<given-names>FY‐S</given-names>
+</string-name>, et al. <article-title>Recurrent neural network methods for extracting dynamic balance variables during gait from a single inertial measurement unit</article-title>. <source>Sensors</source>. <year>2023</year>;<volume>23</volume>:<fpage>9040</fpage>.<pub-id pub-id-type="pmid">38005428</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/s23229040</pub-id><pub-id pub-id-type="pmcid">PMC10675772</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0109"><label>109</label><mixed-citation publication-type="journal" id="jeo270549-cit-0109">
+<string-name name-style="western">
+<surname>Yurdem</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kuzlu</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gullu</surname>
+<given-names>MK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Catak</surname>
+<given-names>FO</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tabassum</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>Federated learning: overview, strategies, applications, tools and future directions</article-title>. <source>Heliyon</source>. <year>2024</year>;<volume>10</volume>:<elocation-id>e38137</elocation-id>.<pub-id pub-id-type="pmid">39391509</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.heliyon.2024.e38137</pub-id><pub-id pub-id-type="pmcid">PMC11466570</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0110"><label>110</label><mixed-citation publication-type="journal" id="jeo270549-cit-0110">
+<string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Huang</surname>
+<given-names>W</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Niu</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cao</surname>
+<given-names>D</given-names>
+</string-name>. <article-title>Review of clustering technology and its application in coordinating vehicle subsystems</article-title>. <source>Automot Innov</source>. <year>2023</year>;<volume>6</volume>:<fpage>89</fpage>–<lpage>115</lpage>.</mixed-citation></ref><ref id="jeo270549-bib-0111"><label>111</label><mixed-citation publication-type="journal" id="jeo270549-cit-0111">
+<string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhou</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhou</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tian</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>S</given-names>
+</string-name>, et al. <article-title>Examining the role of large language models in orthopedics: systematic review</article-title>. <source>J Med Internet Res</source>. <year>2024</year>;<volume>26</volume>:<elocation-id>e59607</elocation-id>.<pub-id pub-id-type="pmid">39546795</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.2196/59607</pub-id><pub-id pub-id-type="pmcid">PMC11607553</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0112"><label>112</label><mixed-citation publication-type="journal" id="jeo270549-cit-0112">
+<string-name name-style="western">
+<surname>Zhao</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Han</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Deveci</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Parmar</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>A review of convolutional neural networks in computer vision</article-title>. <source>Artif Intell Rev</source>. <year>2024</year>;<volume>57</volume>:<fpage>99</fpage>.</mixed-citation></ref><ref id="jeo270549-bib-0113"><label>113</label><mixed-citation publication-type="journal" id="jeo270549-cit-0113">
+<string-name name-style="western">
+<surname>Zhu</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jiang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Huang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lin</surname>
+<given-names>Y</given-names>
+</string-name>, et al. <article-title>High identification and positive‐negative discrimination but limited detailed grading accuracy of ChatGPT‐4o in knee osteoarthritis radiographs</article-title>. <source>Knee Surg Sports Traumatol Arthrosc</source>. <year>2025</year>;<volume>33</volume>:<fpage>1911</fpage>–<lpage>1919</lpage>.<pub-id pub-id-type="pmid">40053915</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/ksa.12639</pub-id></mixed-citation></ref><ref id="jeo270549-bib-0114"><label>114</label><mixed-citation publication-type="journal" id="jeo270549-cit-0114">
+<string-name name-style="western">
+<surname>Zsidai</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hilkert</surname>
+<given-names>AS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kaarre</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Narup</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Senorski</surname>
+<given-names>EH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Grassi</surname>
+<given-names>A</given-names>
+</string-name>, et al. <article-title>A practical guide to the implementation of AI in orthopaedic research—part 1: opportunities in clinical application and overcoming existing challenges</article-title>. <source>J Exp Orthop</source>. <year>2023</year>;<volume>10</volume>:<elocation-id>00683‐z</elocation-id>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s40634-023-00683-z</pub-id><pub-id pub-id-type="pmcid">PMC10651597</pub-id><pub-id pub-id-type="pmid">37968370</pub-id></mixed-citation></ref></ref-list></back></article>

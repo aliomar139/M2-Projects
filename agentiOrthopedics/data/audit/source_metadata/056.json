@@ -1,0 +1,1045 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          16
+        ]
+      ],
+      "date-time": "2026-10-16T06:08:45Z",
+      "timestamp": 1792130925842,
+      "version": "4.4.0"
+    },
+    "reference-count": 55,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2022-09-01T00:00:00Z",
+          "timestamp": 1661990400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2022-09-01T00:00:00Z",
+          "timestamp": 1661990400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100007601",
+        "name": "Horizon 2020 Framework Programme",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "777090"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "777090"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100007601",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100007601",
+        "name": "Horizon 2020 Framework Programme",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "777090"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "777090"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100007601",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100007601",
+        "name": "Horizon 2020 Framework Programme",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "777090"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "777090"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100007601",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100010663",
+        "name": "H2020 European Research Council",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "689043"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "689043"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100010663",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100010663",
+        "name": "H2020 European Research Council",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "689043"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "689043"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100010663",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100010663",
+        "name": "H2020 European Research Council",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "689043"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "689043"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100010663",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "NTNU Norwegian University of Science and Technology"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "BMC Med Inform Decis Mak"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title><jats:sec><jats:title>Background</jats:title><jats:p>Patient-reported outcome measurements (PROMs) are commonly used in clinical practice to support clinical decision making. However, few studies have investigated machine learning methods for predicting PROMs outcomes and thereby support clinical decision making.</jats:p></jats:sec><jats:sec><jats:title>Objective</jats:title><jats:p>This study investigates to what extent different machine learning methods, applied to two different PROMs datasets, can predict outcomes among patients with non-specific neck and/or low back pain.</jats:p></jats:sec><jats:sec><jats:title>Methods</jats:title><jats:p>Using two datasets consisting of PROMs from (1) care-seeking low back pain patients in primary care who participated in a randomized controlled trial, and (2) patients with neck and/or low back pain referred to multidisciplinary biopsychosocial rehabilitation, we present data science methods for data prepossessing and evaluate selected regression and classification methods for predicting patient outcomes.</jats:p></jats:sec><jats:sec><jats:title>Results</jats:title><jats:p>The results show that there is a potential for machine learning to predict and classify PROMs. The prediction models based on baseline measurements perform well, and the number of predictors can be reduced, which is an advantage for implementation in decision support scenarios. The classification task shows that the dataset does not contain all necessary predictors for the care type classification. Overall, the work presents generalizable machine learning pipelines that can be adapted to other PROMs datasets.</jats:p></jats:sec><jats:sec><jats:title>Conclusion</jats:title><jats:p>This study demonstrates the potential of PROMs in predicting short-term patient outcomes. Our results indicate that machine learning methods can be used to exploit the predictive value of PROMs and thereby support clinical decision making, given that the PROMs hold enough predictive power</jats:p></jats:sec>",
+    "DOI": "10.1186/s12911-022-01973-9",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          1
+        ]
+      ],
+      "date-time": "2022-09-01T11:03:06Z",
+      "timestamp": 1662030186000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 25,
+    "title": [
+      "Exploratory application of machine learning methods on patient reported data in the development of supervised models for predicting outcomes"
+    ],
+    "prefix": "10.1186",
+    "volume": "22",
+    "author": [
+      {
+        "given": "Deepika",
+        "family": "Verma",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Duncan",
+        "family": "Jansen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kerstin",
+        "family": "Bach",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mannes",
+        "family": "Poel",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Paul Jarle",
+        "family": "Mork",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wendy Oude Nijeweme",
+        "family": "d’Hollosy",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "4",
+        "key": "1973_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "230",
+        "DOI": "10.1136/svn-2017-000101",
+        "volume": "2",
+        "author": "F Jiang",
+        "year": "2017",
+        "unstructured": "Jiang F, Jiang Y, Zhi H, Dong Y, Li H, Ma S, Wang Y, Dong Q, Shen H, Wang Y. Artificial intelligence in healthcare: past, present and future. Stroke Vasc Neurol. 2017;2(4):230–43.",
+        "journal-title": "Stroke Vasc Neurol"
+      },
+      {
+        "issue": "10",
+        "key": "1973_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "719",
+        "DOI": "10.1038/s41551-018-0305-z",
+        "volume": "2",
+        "author": "K-H Yu",
+        "year": "2018",
+        "unstructured": "Yu K-H, Beam AL, Kohane IS. Artificial intelligence in healthcare. Nat Biomed Eng. 2018;2(10):719–31.",
+        "journal-title": "Nat Biomed Eng"
+      },
+      {
+        "issue": "2",
+        "key": "1973_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "245",
+        "DOI": "10.1007/s11136-016-1449-5",
+        "volume": "26",
+        "author": "MM Holmes",
+        "year": "2017",
+        "unstructured": "Holmes MM, Lewith G, Newell D, Field J, Bishop FL. The impact of patient-reported outcome measures in clinical practice for pain: a systematic review. Qual Life Res. 2017;26(2):245–57.",
+        "journal-title": "Qual Life Res"
+      },
+      {
+        "issue": "6",
+        "key": "1973_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "796",
+        "DOI": "10.1007/s00586-017-5432-9",
+        "volume": "27",
+        "author": "EL Hurwitz",
+        "year": "2018",
+        "unstructured": "Hurwitz EL, Randhawa K, Yu H, Côté P, Haldeman S. The global spine care initiative: a summary of the global burden of low back and neck pain studies. Eur Spine J. 2018;27(6):796–801.",
+        "journal-title": "Eur Spine J"
+      },
+      {
+        "key": "1973_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "31",
+        "DOI": "10.1016/j.ijmedinf.2017.11.010",
+        "volume": "110",
+        "author": "WO Nijeweme-d’Hollosy",
+        "year": "2018",
+        "unstructured": "Nijeweme-d’Hollosy WO, van Velsen L, Poel M, Groothuis-Oudshoorn CG, Soer R, Hermens H. Evaluation of three machine learning models for self-referral decision support on low back pain in primary care. Int J Med Informatics. 2018;110:31–41.",
+        "journal-title": "Int J Med Informatics"
+      },
+      {
+        "issue": "6",
+        "key": "1973_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "1267",
+        "DOI": "10.1097/CORR.0000000000000687",
+        "volume": "477",
+        "author": "MA Fontana",
+        "year": "2019",
+        "unstructured": "Fontana MA, Lyman S, Sarker GK, Padgett DE, MacLean CH. Can machine learning algorithms predict which patients will achieve minimally clinically important differences from total joint arthroplasty? Clin Orthop Relat Res. 2019;477(6):1267–79.",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "issue": "2",
+        "key": "1973_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "79",
+        "DOI": "10.1136/bjsports-2018-099878",
+        "volume": "54",
+        "author": "I Lin",
+        "year": "2020",
+        "unstructured": "Lin I, Wiles L, Waller R, Goucke R, Nagree Y, Gibberd M, Straker L, Maher CG, O’Sullivan PP. What does best practice care for musculoskeletal pain look like? Eleven consistent recommendations from high-quality clinical practice guidelines: systematic review. Br J Sports Med. 2020;54(2):79–86.",
+        "journal-title": "Br J Sports Med"
+      },
+      {
+        "key": "1973_CR8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2522/ptj.20150359",
+        "author": "B Saragiotto",
+        "year": "2015",
+        "unstructured": "Saragiotto B, Almeida M, Yamato T, Maher C. Multidisciplinary biopsychosocial rehabilitation for nonspecific chronic low back pain. Phys Therapy. 2015. https://doi.org/10.2522/ptj.20150359.",
+        "journal-title": "Phys Therapy"
+      },
+      {
+        "issue": "6",
+        "key": "1973_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "1098",
+        "DOI": "10.1016/j.berh.2017.04.002",
+        "volume": "30",
+        "author": "GC Machado",
+        "year": "2016",
+        "unstructured": "Machado GC, Pinheiro MB, Lee H, Ahmed OH, Hendrick P, Williams C, Kamper SJ. Smartphone apps for the self-management of low back pain: a systematic review. Best Pract Res Clin Rheumatol. 2016;30(6):1098–109.",
+        "journal-title": "Best Pract Res Clin Rheumatol"
+      },
+      {
+        "issue": "7",
+        "key": "1973_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "167",
+        "DOI": "10.2196/resprot.9379",
+        "volume": "7",
+        "author": "PJ Mork",
+        "year": "2018",
+        "unstructured": "Mork PJ, Bach K. A decision support system to enhance self-management of low back pain: protocol for the selfback project. JMIR Res Protoc. 2018;7(7):167.",
+        "journal-title": "JMIR Res Protoc"
+      },
+      {
+        "issue": "11",
+        "key": "1973_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "12001",
+        "DOI": "10.2196/12001",
+        "volume": "20",
+        "author": "QA Rahman",
+        "year": "2018",
+        "unstructured": "Rahman QA, Janmohamed T, Pirbaglou M, Clarke H, Ritvo P, Heffernan JM, Katz J. Defining and predicting pain volatility in users of the manage my pain app: analysis using data mining and machine learning methods. J Med Internet Res. 2018;20(11):12001.",
+        "journal-title": "J Med Internet Res"
+      },
+      {
+        "issue": "4",
+        "key": "1973_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "15601",
+        "DOI": "10.2196/15601",
+        "volume": "7",
+        "author": "QA Rahman",
+        "year": "2019",
+        "unstructured": "Rahman QA, Janmohamed T, Clarke H, Ritvo P, Heffernan J, Katz J. Interpretability and class imbalance in prediction models for pain volatility in manage my pain app users: analysis using feature selection and majority voting methods. JMIR Med Inform. 2019;7(4):15601.",
+        "journal-title": "JMIR Med Inform"
+      },
+      {
+        "issue": "2",
+        "key": "1973_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "452",
+        "DOI": "10.1097/CORR.0000000000000601",
+        "volume": "477",
+        "author": "AH Harris",
+        "year": "2019",
+        "unstructured": "Harris AH, Kuo AC, Weng Y, Trickey AW, Bowe T, Giori NJ. Can machine learning methods produce accurate and easy-to-use prediction models of 30-day complications and mortality after knee or hip arthroplasty? Clin Orthop Relat Res. 2019;477(2):452.",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "issue": "1",
+        "key": "1973_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "3",
+        "DOI": "10.1186/s12911-018-0731-6",
+        "volume": "19",
+        "author": "M Huber",
+        "year": "2019",
+        "unstructured": "Huber M, Kurz C, Leidl R. Predicting patient-reported outcomes following hip and knee replacement surgery using supervised machine learning. BMC Med Inform Decis Mak. 2019;19(1):3.",
+        "journal-title": "BMC Med Inform Decis Mak"
+      },
+      {
+        "issue": "12",
+        "key": "1973_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "14720",
+        "DOI": "10.2196/14720",
+        "volume": "8",
+        "author": "LF Sandal",
+        "year": "2019",
+        "unstructured": "Sandal LF, Stochkendahl MJ, Svendsen MJ, Wood K, Øverås CK, Nordstoga AL, Villumsen M, Rasmussen CDN, Nicholl B, Cooper K, Kjaer P, Mair FS, Sjøgaard G, Nilsen TIL, Hartvigsen J, Bach K, Mork PJ, Søgaard K. An app-delivered self-management program for people with low back pain: protocol for the selfback randomized controlled trial. JMIR Res Protoc. 2019;8(12):14720. https://doi.org/10.2196/14720.",
+        "journal-title": "JMIR Res Protoc"
+      },
+      {
+        "issue": "4",
+        "key": "1973_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "310",
+        "DOI": "10.1111/j.1530-7085.2003.03034.x",
+        "volume": "3",
+        "author": "CT Hartrick",
+        "year": "2003",
+        "unstructured": "Hartrick CT, Kovan JP, Shapiro S. The numeric rating scale for clinical pain measurement: a ratio measure? Pain Pract. 2003;3(4):310–6. https://doi.org/10.1111/j.1530-7085.2003.03034.x.",
+        "journal-title": "Pain Pract"
+      },
+      {
+        "key": "1973_CR17",
+        "volume-title": "Work ability index",
+        "author": "K Tuomi",
+        "year": "2002",
+        "unstructured": "Tuomi K, Ilmarinen J, Jahkola A, Katajarinne L, Tulkki A. Work ability index. Helsinki: Finnish Institute of Occupational Health; 2002."
+      },
+      {
+        "issue": "2",
+        "key": "1973_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "69",
+        "DOI": "10.1016/S0022-3999(01)00296-3",
+        "volume": "52",
+        "author": "I Bjelland",
+        "year": "2002",
+        "unstructured": "Bjelland I, Dahl AA, Haug TT, Neckelmann D. The validity of the hospital anxiety and depression scale: an updated literature review. J Psychosom Res. 2002;52(2):69–77.",
+        "journal-title": "J Psychosom Res"
+      },
+      {
+        "issue": "1",
+        "key": "1973_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "155",
+        "DOI": "10.1186/1471-2474-13-155",
+        "volume": "13",
+        "author": "ML Verra",
+        "year": "2012",
+        "unstructured": "Verra ML, Angst F, Staal JB, Brioschi R, Lehmann S, Aeschlimann A, de Bie RA. Reliability of the multidimensional pain inventory and stability of the MPI classification system in chronic back pain. BMC Musculoskelet Disord. 2012;13(1):155.",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "issue": "9",
+        "key": "1973_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "562",
+        "DOI": "10.1097/BRS.0b013e31828af21f",
+        "volume": "38",
+        "author": "R Soer",
+        "year": "2013",
+        "unstructured": "Soer R, Köke AJ, Vroomen PC, Stegeman P, Smeets RJ, Coppes MH, Reneman MF. Extensive validation of the pain disability index in 3 groups of patients with musculoskeletal pain. Spine. 2013;38(9):562–8.",
+        "journal-title": "Spine"
+      },
+      {
+        "key": "1973_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "289",
+        "DOI": "10.1027/1015-5759/a000191",
+        "volume": "30",
+        "author": "HR Trompetter",
+        "year": "2014",
+        "unstructured": "Trompetter HR, Bohlmeijer ET, Van Baalen B, Kleen M, Köke A, Reneman M, Schreurs KM. The psychological inflexibility in pain scale (pips). Eur J Psychol Assess. 2014;30:289.",
+        "journal-title": "Eur J Psychol Assess"
+      },
+      {
+        "issue": "6",
+        "key": "1973_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "2927",
+        "DOI": "10.21873/anticanres.13422",
+        "volume": "39",
+        "author": "I Saimanen",
+        "year": "2019",
+        "unstructured": "Saimanen I, Kuosmanen V, Rahkola D, Selander T, Kärkkäinen J, Harju J, Aspinen S, Eskelinen M. Rand-36-item health survey: a comprehensive test for long-term outcome and health status following surgery. Anticancer Res. 2019;39(6):2927–33.",
+        "journal-title": "Anticancer Res"
+      },
+      {
+        "key": "1973_CR23",
+        "first-page": "211",
+        "volume-title": "Quantitative expression of cultural relationships",
+        "author": "HE Driver",
+        "year": "1932",
+        "unstructured": "Driver HE, Kroeber AL. Quantitative expression of cultural relationships. Berkeley: University of California Press; 1932. p. 211–56."
+      },
+      {
+        "key": "1973_CR24",
+        "first-page": "551",
+        "volume": "7",
+        "author": "K Crammer",
+        "year": "2006",
+        "unstructured": "Crammer K, Dekel O, Keshet J, Shalev-Shwartz S, Singer Y. Online passive-aggressive algorithms. J Mach Learn Res. 2006;7:551–85.",
+        "journal-title": "J Mach Learn Res"
+      },
+      {
+        "issue": "6",
+        "key": "1973_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "1947",
+        "DOI": "10.1021/ci034160g",
+        "volume": "43",
+        "author": "V Svetnik",
+        "year": "2003",
+        "unstructured": "Svetnik V, Liaw A, Tong C, Culberson JC, Sheridan RP, Feuston BP. Random forest: a classification and regression tool for compound classification and QSAR modeling. J Chem Inf Comput Sci. 2003;43(6):1947–58.",
+        "journal-title": "J Chem Inf Comput Sci"
+      },
+      {
+        "key": "1973_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "400",
+        "DOI": "10.1214/aoms/1177729586",
+        "volume": "22",
+        "author": "H Robbins",
+        "year": "1951",
+        "unstructured": "Robbins H, Monro S. A stochastic approximation method. Ann Math Stat. 1951;22:400–7.",
+        "journal-title": "Ann Math Stat"
+      },
+      {
+        "issue": "1",
+        "key": "1973_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "119",
+        "DOI": "10.1006/jcss.1997.1504",
+        "volume": "55",
+        "author": "Y Freund",
+        "year": "1997",
+        "unstructured": "Freund Y, Schapire RE. A decision-theoretic generalization of on-line learning and an application to boosting. J Comput Syst Sci. 1997;55(1):119–39.",
+        "journal-title": "J Comput Syst Sci"
+      },
+      {
+        "key": "1973_CR28",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Boser BE, Guyon IM, Vapnik VN. A training algorithm for optimal margin classifiers. In: Proceedings of the fifth annual workshop on computational learning theory. ACM; 1992, p. 144–52",
+        "DOI": "10.1145/130385.130401"
+      },
+      {
+        "key": "1973_CR29",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chen T, Guestrin C. Xgboost: a scalable tree boosting system. In: Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining. ACM; 2016, p. 785–94",
+        "DOI": "10.1145/2939672.2939785"
+      },
+      {
+        "issue": "1–12",
+        "key": "1973_CR30",
+        "first-page": "24",
+        "volume": "110",
+        "author": "C Chen",
+        "year": "2004",
+        "unstructured": "Chen C, Liaw A, Breiman L, et al. Using random forest to learn imbalanced data. University of California, Berkeley. 2004;110(1–12):24.",
+        "journal-title": "University of California, Berkeley"
+      },
+      {
+        "issue": "1",
+        "key": "1973_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "185",
+        "DOI": "10.1109/TSMCA.2009.2029559",
+        "volume": "40",
+        "author": "C Seiffert",
+        "year": "2009",
+        "unstructured": "Seiffert C, Khoshgoftaar TM, Van Hulse J, Napolitano A. Rusboost: a hybrid approach to alleviating class imbalance. IEEE Trans Syst Man Cybern Part A Syst Humans. 2009;40(1):185–97.",
+        "journal-title": "IEEE Trans Syst Man Cybern Part A Syst Humans"
+      },
+      {
+        "issue": "1",
+        "key": "1973_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "14",
+        "DOI": "10.1002/widm.8",
+        "volume": "1",
+        "author": "W-Y Loh",
+        "year": "2011",
+        "unstructured": "Loh W-Y. Classification and regression trees. Wiley Interdiscip Rev Data Min Knowl Discov. 2011;1(1):14–23.",
+        "journal-title": "Wiley Interdiscip Rev Data Min Knowl Discov"
+      },
+      {
+        "issue": "4",
+        "key": "1973_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "597",
+        "DOI": "10.1007/s10926-013-9430-4",
+        "volume": "23",
+        "author": "DP Gross",
+        "year": "2013",
+        "unstructured": "Gross DP, Zhang J, Steenstra I, Barnsley S, Haws C, Amell T, McIntosh G, Cooper J, Zaiane O. Development of a computer-based clinical decision support tool for selecting appropriate rehabilitation interventions for injured workers. J Occup Rehabil. 2013;23(4):597–609.",
+        "journal-title": "J Occup Rehabil"
+      },
+      {
+        "key": "1973_CR34",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mamprin M, Zelis JM, Tonino PA, Zinger S, de With PH. Gradient boosting on decision trees for mortality prediction in transcatheter aortic valve implantation. 2020. arXiv preprint arXiv:2001.02431",
+        "DOI": "10.1145/3397391.3397441"
+      },
+      {
+        "issue": "5",
+        "key": "1973_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "307",
+        "DOI": "10.1080/09638280500191753",
+        "volume": "28",
+        "author": "S D’Alisa",
+        "year": "2006",
+        "unstructured": "D’Alisa S, Miscio G, Baudo S, Simone A, Tesio L, Mauro A. Depression is the main determinant of quality of life in multiple sclerosis: a classification-regression (cart) study. Disabil Rehabil. 2006;28(5):307–14.",
+        "journal-title": "Disabil Rehabil"
+      },
+      {
+        "key": "1973_CR36",
+        "unstructured": "Raschka S. Model evaluation, model selection, and algorithm selection in machine learning. 2018. arXiv preprint arXiv:1811.12808"
+      },
+      {
+        "issue": "1",
+        "key": "1973_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "16",
+        "DOI": "10.1016/j.compeleceng.2013.11.024",
+        "volume": "40",
+        "author": "G Chandrashekar",
+        "year": "2014",
+        "unstructured": "Chandrashekar G, Sahin F. A survey on feature selection methods. Comput Electr Eng. 2014;40(1):16–28.",
+        "journal-title": "Comput Electr Eng"
+      },
+      {
+        "key": "1973_CR38",
+        "volume-title": "Feature extraction: foundations and applications",
+        "author": "I Guyon",
+        "year": "2008",
+        "unstructured": "Guyon I, Gunn S, Nikravesh M, Zadeh LA. Feature extraction: foundations and applications, vol. 207. Berlin: Springer; 2008."
+      },
+      {
+        "issue": "4",
+        "key": "1973_CR39",
+        "doi-asserted-by": "publisher",
+        "first-page": "1307",
+        "DOI": "10.1137/0907087",
+        "volume": "7",
+        "author": "F Santosa",
+        "year": "1986",
+        "unstructured": "Santosa F, Symes WW. Linear inversion of band-limited reflection seismograms. SIAM J Sci Stat Comput. 1986;7(4):1307–30.",
+        "journal-title": "SIAM J Sci Stat Comput"
+      },
+      {
+        "issue": "1",
+        "key": "1973_CR40",
+        "doi-asserted-by": "crossref",
+        "first-page": "267",
+        "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+        "volume": "58",
+        "author": "R Tibshirani",
+        "year": "1996",
+        "unstructured": "Tibshirani R. Regression shrinkage and selection via the lasso. J R Stat Soc Ser B (Methodol). 1996;58(1):267–88.",
+        "journal-title": "J R Stat Soc Ser B (Methodol)"
+      },
+      {
+        "issue": "2",
+        "key": "1973_CR41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0087357",
+        "volume": "9",
+        "author": "BC Ross",
+        "year": "2014",
+        "unstructured": "Ross BC. Mutual information between discrete and continuous data sets. PLoS One. 2014;9(2): e87357.",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "1973_CR42",
+        "doi-asserted-by": "crossref",
+        "first-page": "128",
+        "DOI": "10.1007/BF01894738",
+        "volume": "33",
+        "author": "K Wittkowski",
+        "year": "1986",
+        "unstructured": "Wittkowski K. Classification and regression trees-L. Breiman, JH Friedman, RA Olshen and CJ Stone. Metrika. 1986;33:128.",
+        "journal-title": "Metrika"
+      },
+      {
+        "key": "1973_CR43",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Fratello M, Tagliaferri R. Decision trees and random forests. Encyclopedia of Bioinformatics and Computational Biology: ABC of Bioinformatics. 2018;374.",
+        "DOI": "10.1016/B978-0-12-809633-8.20337-3"
+      },
+      {
+        "key": "1973_CR44",
+        "unstructured": "Claesen M, De Moor B. Hyperparameter search in machine learning. 2015. arXiv preprint arXiv:1502.02127"
+      },
+      {
+        "key": "1973_CR45",
+        "unstructured": "Yao Q, Wang M, Chen Y, Dai W, Yi-Qi H, Yu-Feng L, Wei-Wei T, Qiang Y, Yang Y. Taking human out of learning applications: a survey on automated machine learning. 2018. arXiv preprint arXiv:1810.13306"
+      },
+      {
+        "key": "1973_CR46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-05318-5",
+        "volume-title": "Automated machine learning",
+        "author": "F Hutter",
+        "year": "2019",
+        "unstructured": "Hutter F, Kotthoff L, Vanschoren J. Automated machine learning. Berlin: Springer; 2019."
+      },
+      {
+        "key": "1973_CR47",
+        "unstructured": "Lévesque J-C. Bayesian hyperparameter optimization: overfitting, ensembles and conditional spaces. 2018."
+      },
+      {
+        "issue": "6",
+        "key": "1973_CR48",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0177678",
+        "volume": "12",
+        "author": "S Boughorbel",
+        "year": "2017",
+        "unstructured": "Boughorbel S, Jarray F, El-Anbari M. Optimal classifier for imbalanced data using Matthews correlation coefficient metric. PLoS One. 2017;12(6): e0177678.",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "1973_CR49",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Brodersen KH, Ong CS, Stephan KE, Buhmann JM. The balanced accuracy and its posterior distribution. In: 2010 20th international conference on pattern recognition. IEEE; 2010, p. 3121–24.",
+        "DOI": "10.1109/ICPR.2010.764"
+      },
+      {
+        "key": "1973_CR50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4899-7687-1",
+        "volume-title": "Encyclopedia of machine learning and data mining",
+        "author": "C Sammut",
+        "year": "2017",
+        "unstructured": "Sammut C, Webb GI. Encyclopedia of machine learning and data mining. Berlin: Springer; 2017."
+      },
+      {
+        "issue": "1",
+        "key": "1973_CR51",
+        "doi-asserted-by": "publisher",
+        "first-page": "6",
+        "DOI": "10.1186/s12864-019-6413-7",
+        "volume": "21",
+        "author": "D Chicco",
+        "year": "2020",
+        "unstructured": "Chicco D, Jurman G. The advantages of the Matthews correlation coefficient (MCC) over f1 score and accuracy in binary classification evaluation. BMC Genomics. 2020;21(1):6.",
+        "journal-title": "BMC Genomics"
+      },
+      {
+        "issue": "3",
+        "key": "1973_CR52",
+        "doi-asserted-by": "publisher",
+        "first-page": "10",
+        "DOI": "10.1109/MCSE.2007.58",
+        "volume": "9",
+        "author": "TE Oliphant",
+        "year": "2007",
+        "unstructured": "Oliphant TE. Python for scientific computing. Comput Sci Eng. 2007;9(3):10–20.",
+        "journal-title": "Comput Sci Eng"
+      },
+      {
+        "key": "1973_CR53",
+        "unstructured": "Buitinck L, Louppe G, Blondel M, Pedregosa F, Mueller A, Grisel O, Niculae V, Prettenhofer P, Gramfort A, Grobler J, Layton R, VanderPlas J, Joly A, Holt B, Varoquaux G. API design for machine learning software: experiences from the scikit-learn project. In: ECML PKDD workshop: languages for data mining and machine learning; 2013, p. 108–122."
+      },
+      {
+        "issue": "1",
+        "key": "1973_CR54",
+        "first-page": "559",
+        "volume": "18",
+        "author": "G Lemaître",
+        "year": "2017",
+        "unstructured": "Lemaître G, Nogueira F, Aridas CK. Imbalanced-learn: a python toolbox to tackle the curse of imbalanced datasets in machine learning. J Mach Learn Res. 2017;18(1):559–63.",
+        "journal-title": "J Mach Learn Res"
+      },
+      {
+        "key": "1973_CR55",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Oude Nijeweme - d’Hollosy W, van Velsen L, Poel M, Groothuis-Oudshoorn C, Soer R, Stegeman P, Hermens H. Applying machine learning on patient-reported data to model the selection of appropriate treatments for low back pain: a pilot study. In: Proceedings of the 13th international joint conference on biomedical engineering systems and technologies (BIOSTEC 2020), vol. 5: HEALTHINF; 2020, p. 117–124. https://doi.org/10.5220/0008962101170124.",
+        "DOI": "10.5220/0008962101170124"
+      }
+    ],
+    "container-title": [
+      "BMC Medical Informatics and Decision Making"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s12911-022-01973-9.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1186/s12911-022-01973-9/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s12911-022-01973-9.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          3
+        ]
+      ],
+      "date-time": "2024-10-03T02:26:14Z",
+      "timestamp": 1727922374000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-022-01973-9"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          1
+        ]
+      ]
+    },
+    "references-count": 55,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "1973"
+    ],
+    "URL": "https://doi.org/10.1186/s12911-022-01973-9",
+    "relation": {},
+    "ISSN": [
+      "1472-6947"
+    ],
+    "issn-type": [
+      {
+        "value": "1472-6947",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          1
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "18 May 2021",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "22 August 2022",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "1 September 2022",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "18 January 2023",
+        "order": 4,
+        "name": "change_date",
+        "label": "Change Date",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "Update",
+        "order": 5,
+        "name": "change_type",
+        "label": "Change Type",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "Missing Open Access funding information has been added in the Funding Note",
+        "order": 6,
+        "name": "change_details",
+        "label": "Change Details",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "The authors declare that they have no competing interests.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      },
+      {
+        "value": "Ethics approvals were obtained for both <scp>self</scp>BACK and Back-UP before the collection of data. Approval for the <scp>self</scp>BACK trial was obtained from the Regional Ethics Committees for Medical and Health Research Ethics in Denmark (S-20182000-24) and Norway (2018/791). Approval from the data protection agency was obtained for Denmark (18/17955) through the University of Southern Denmark. For the Back-UP trial, approval was obtained from the Regional Committee for Medical and Health Research Ethics in Central Norway (Ref. 2019/64084). All participants provided written informed consent that their data collected as part of the trial can be used in research. No formal ethical approval was required for data collected by Roessingh Center of Rehabilitation since according to the Dutch law (Medical Research Involving Human Subjects Act), the nature of this research did not require formal medical ethical approval. Access to the data was granted by an employee of the Roessingh Center of Rehabilitation who is responsible for managing the dataset, with the verbal agreement of not sharing the data with anyone else. At the beginning of the questionnaire, patients were asked whether they agreed to the use of their data for research purposes (informed consent), where they had to tick a checkbox if they agreed.",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethics approval and consent to participate"
+        }
+      },
+      {
+        "value": "All participants provided written informed consent acknowledging that their data may be used in research, results of which may be made public, but personal identifiable information will not be disclosed in any publication.",
+        "order": 4,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Consent for publication"
+        }
+      }
+    ],
+    "article-number": "227"
+  }
+}

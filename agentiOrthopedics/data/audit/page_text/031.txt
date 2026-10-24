@@ -1,0 +1,887 @@
+=== PDF PAGE 1 ===
+Clin Orthop Relat Res (2025) 483:1731-1743 
+DOI 10.1097/CORR.0000000000003442
+Clinical Research
+Development of Machine Learning–based Algorithms to Predict 
+the 2- and 5-year Risk of TKA After Tibial Plateau
+Fracture Treatment
+Nick Assink PhD 1,2 , Maria P. Gonzalez-Perrino MSc 1 , Raul Santana-Trejo MSc 1,
+Job N. Doornberg MD, PhD 1 , Harm Hoekstra MD, PhD 3 , Joep Kraeima PhD 2 , Frank F. A. IJpma MD, PhD 1
+Received: 13 August 2024 / Accepted: 7 February 2025 / Published online: 12 March 2025
+Copyright © 2025 The Author(s). Published by Wolters Kluwer Health, Inc. on behalf of the Association of Bone and Joint Surgeons
+Abstract
+Background When faced with a severe intraarticular in-
+jury like a tibial plateau fracture, patients count on surgeons 
+to make an accurate estimation of prognosis. 
+Unfortunately, there are few tools available that enable 
+precise, personalized prognosis estimation tailored to each 
+patient’s unique circumstances, including their individual 
+and fracture-speciﬁc characteristics. In this study, we de-
+veloped and validated a clinical prediction model using 
+machine-learning algorithms for the 2- and 5-year risk of 
+TKA after tibia plateau fractures.
+Questions/purposes Can machine learning–based proba-
+bility calculators estimate the probability of 2- and 5-year
+risk of conversion to TKA in patients with a tibial plateau 
+fracture?
+Methods A multicenter, cross-sectional study was per-
+formed in six hospitals in patients treated for a tibial plateau 
+fracture between 2003 to 2019. In total, 2057 patients were 
+eligible for inclusion and were sent informed consent and 
+a questionnaire to inquire whether they underwent con-
+version to TKA. For 56% (1160 of 2057), status of con-
+version to TKA was accounted for at a minimum of 2 years, 
+and 53% (1082 of 2057) were accounted for at a minimum 
+of 5 years. The mean follow-up among responders was 6 6
+4 years after injury. An analysis of nonresponders found 
+that responders were slightly older than nonresponders
+The ﬁrst two authors contributed equally to this manuscript.
+Each author certiﬁes that there are no funding or commercial associations (consultancies, stock ownership, equity interest, patent/licensing 
+arrangements, etc.) that might pose a conﬂict of interest in connection with the submitted article related to the author or any immediate 
+family members.
+All ICMJE Conﬂict of Interest Forms for authors and Clinical Orthopaedics and Related Research® editors and board members are on ﬁle with 
+the publication and can be viewed on request.
+Clinical Orthopaedics and Related Research® neither advocates nor endorses the use of any treatment, drug, or device. Readers are 
+encouraged to always seek additional information, including FDA approval status, of any drug or device before clinical use.
+Ethical approval for this study was obtained from the University Medical Center Groningen (number: 201800411).
+This work was performed at the University Medical Center Groningen, Groningen, The Netherlands.
+1 Department of Trauma Surgery, University of Groningen, University Medical Center Groningen, Groningen, The Netherlands
+2 3D Lab, University of Groningen, University Medical Center Groningen, Groningen, The Netherlands
+3 Department of Traumatology, KU Leuven University Hospitals Leuven Gasthuisberg Campus, Leuven, Belgium
+N. Assink ✉, Department of Trauma Surgery, University of Groningen, University Medical Center Groningen, HPC BA13, Hanzeplein 1, 9713 
+GZ Groningen, The Netherlands, Email: n.assink@umcg.nl
+
+=== PDF PAGE 2 ===
+(53 6 16 years versus 51 6 17 years; p = 0.001), they were 
+more often women (68% [788 of 1160] versus 58% [523 of 
+897]; p = 0.001), they were treated nonoperatively less 
+often (30% [346 of 1160] versus 43% [387 of 897]; p = 
+0.001), and they had larger fracture gaps (6.4 6 6.3 mm 
+versus 4.2 6 5.2 mm; p < 0.001) and step-offs (6.3 6 5.7 
+mm versus 4.5 6 4.7 mm; p < 0.001). AO Foundation/ 
+Orthopaedic Trauma Association (AO/OTA) fracture 
+classiﬁcation did not differ between nonresponders and 
+responders (B1 11% versus 15%, B2 16% versus 19%, B3 
+45% versus 39%, C2 6% versus 8%, C3 22% versus 17%; 
+p = 0.26). A total of 70% (814 of 1160) of patients were 
+treated with open reduction and internal ﬁxation, whereas 
+30% (346 of 1160) of patients were treated nonoperatively 
+with a cast. Most fractures (80% [930 of 1160]) were AO/ 
+OTA type B fractures, and 20% (230 of 1160) were type C. 
+Of these patients, 7% (79 of 1160) and 10% (109 of 1082) 
+underwent conversion to a TKA at 2- and 5-year follow-up, 
+respectively. Patient characteristics were retrieved from 
+electronic patient records, and imaging data were shared 
+with the initiating center from which fracture character-
+istics were determined. Obtained features derived from 
+follow-up questionnaires, electronic patient records, and 
+radiographic assessments were eligible for development of 
+the prediction model. The ﬁrst step consisted of data 
+cleaning and included simple type formatting and stan-
+dardization of numerical columns. Subsequent feature se-
+lection consisted of a review of the published evidence and 
+expert opinion. This was followed by bivariate analysis of 
+the identiﬁed features. The features for the models in-
+cluded: age, gender, BMI, AO/OTA fracture classiﬁcation, 
+fracture displacement (gap, step-off), medial proximal 
+tibial alignment, and posterior proximal tibial alignment. 
+The data set was used to train three models: logistic re-
+gression, random forest, and XGBoost. Logistic regression 
+models linear relationships, random forest handles non-
+linear complexities with decision trees, and XGBoost 
+excels with sequential error correction and regularization. 
+The models were tested using a sixfold validation approach 
+by training the model on data from ﬁve (of six) respective 
+medical centers and validating it against the remaining 
+center that was left out for training. Performance was 
+assessed by the area under the receiver operating charac-
+teristic curve (AUC), which measures a model’s ability to 
+distinguish between classes. AUC varies between 0 and 1, 
+with values closer to 1 indicating better performance. To 
+ensure robust and reliable results, we used bootstrapping as 
+a resampling technique. In addition, calibration curves 
+were plotted, and calibration was assessed with the cali-
+bration slope and intercept. The calibration plot compares 
+the estimated probabilities with the observed probabilities 
+for the primary outcome. Calibration slope evaluates 
+alignment between predicted probabilities and observed 
+outcomes (1 = perfect, < 1 = overﬁt, > 1 = underﬁt).
+Calibration intercept indicates bias (0 = perfect, negative = 
+underestimation, positive = overestimation). Last, the Brier 
+score, measuring the mean squared error of predicted 
+probabilities (0 = perfect), was calculated.
+Results There were no differences among the models in 
+terms of sensitivity and speciﬁcity; the AUCs for each 
+overlapped broadly and ranged from 0.76 to 0.83. 
+Calibration was most optimal in logistic regression for both 
+2- and 5-year models, with slopes of 0.82 (random forest 
+0.60, XGBoost 0.26) and 0.95 (random forest 0.85, 
+XGBoost 0.48) and intercepts of 0.01 for both (random 
+forest 0.01 to 0.02; XGBoost 0.05 to 0.07). Brier score was 
+similar between models varying between 0.06 to 0.09. 
+Given that its performance metrics were highest, we chose 
+the logistic regression algorithm as the ﬁnal prediction 
+model. The web application providing the prediction tool is 
+freely available and can be accessed through: https:// 
+3dtrauma.shinyapps.io/tka_prediction/.
+Conclusion In this study, a personalized risk assessment 
+tool was developed to support clinical decision-making and 
+patient counseling. Our ﬁndings demonstrate that machine-
+learning algorithms, particularly logistic regression, can 
+provide accurate and reliable predictions of TKA conver-
+sion at 2 and 5 years after a tibial plateau fracture. In ad-
+dition, it provides a useful prognostic tool for surgeons who 
+perform fracture surgery that can be used quickly and 
+easily with patients in the clinic or emergency department 
+once it complies with medical device regulations. External 
+validation is needed to assess performance in other insti-
+tutions and countries; to account for patient and surgeon 
+preferences, resources, and cultures; and to further 
+strengthen its clinical applicability.
+Level of Evidence Level III, therapeutic study.
+Introduction
+Lower leg injuries  have a major impact  on patient ’s 
+mobility,  social  activities , and ability  to work. In par-
+ticular,  injuries  to the load-bearing  part of the knee, in-
+cluding  tibial  plateau  fractu res, may substantially  impair  
+movement  [10]. The incidence  of tibial  plateau  fractures  
+is 10 to 25 per 100,000  people  [9, 12], which means that 
+this injury  affects  about 2 million  individuals  worldwide  
+each year. Especially  in cities,  where millions  of people  
+ride motorcycles,  scooters,  and bicycles,  these injuries  
+are common,  and many are treated  surgically.  But de-
+spite achieving  anatomic  reduction,  damage  to the tibial  
+plateau  might progress  to posttraumatic  osteoarthritis  
+and instability,  resulting  in pain and stiffness,  and 
+sometimes  to a conversion  to TKA [17, 18]. Compared  
+with the general  population,  tibial  plateau  fractures  are 
+associated  with a 3.5- to 5-times  increased  risk of 
+TKA [8, 32].
+1732 Assink et al. Clinical Orthopaedics and Related Research ®
+
+=== PDF PAGE 3 ===
+Patients with these injuries often face difﬁcult deci-
+sions about their treatment options, and shared decision-
+making is (or should be) a crucial aspect of their care. 
+Patients may reasonably  harbor uncertainty  about injury 
+severity, beneﬁts and harms of surgery, and prognosis. 
+However, estimating  prognosis is challenging  because so 
+many factors can inﬂuence patients’ results after these 
+injuries, including patient characteristics  (such as age, 
+gender, BMI, comorbidities),  fracture pattern, and the 
+alignment of the fracture on preoperative  and post-
+operative radiographs  [1, 26, 32]. With so many variables 
+to consider, accurate prediction  of clinical outcomes after 
+treatment remains challenging.  Moreover, estimating  
+prognosis often is subjective  and relies heavily on the 
+surgeon’s experience as much or more than data-driven  
+insights. Machine learning–based algorithms  have the 
+potential to combine different features into one model and 
+show great potential in terms of fracture detection, grad-
+ing osteoarthritis,  and predicting outcomes like mortality 
+[6, 13, 23]. These algorithms could be valuable as well in 
+predicting clinical outcome after injuries. Such a model 
+could beneﬁt patient counseling  and shared decision-
+making, as it would allow for more personalized  and in-
+formed treatment plans. However, currently we lack good 
+clinical prediction models in orthopaedic  trauma surgery. 
+Existing outcome prediction models in this ﬁeld are lim-
+ited to mortality or length of hospital stay [20, 25]. We 
+therefore present an innovative  proof of concept for de-
+veloping clinical prediction  models in orthopaedic  
+trauma, aiming to establish a baseline work for outcome 
+prediction after injuries. For this purpose, we collected 
+clinical outcomes from a large, multicenter  cohort of 
+patients with tibial plateau fractures.  Our goal was to 
+develop and internally  validate a machine learning–based 
+prediction model utilizing patient characteristics  for 
+a patient-speci ﬁc risk assessment  of 2- and 5-year con-
+version to TKA. Additionally,  we aimed to integrate the 
+algorithm into an online, freely accessible prediction  tool 
+that can eventually be utilized at the point of care once it 
+complies with medical device regulations.
+In this study, we asked: Can machine learning–based 
+probability calculators estimate the probability of 2- and 5-
+year risk of conversion to TKA in patients with a tibial 
+plateau fracture?
+Patients and Methods
+This study is reported following the Transparent Reporting 
+of Multivariable Prediction Models for Individual 
+Prognosis or Diagnosis Guideline (TRIPOD statement 
+[Appendix 1; http://links.lww.com/CORR/B400]) and the
+Journal of Medical Internet Research Guidelines for 
+Developing and Reporting Machine Learning Predictive
+Models in Biomedical Research [5, 16]. A study protocol 
+was not published.
+Study Design and Setting
+We performed a multicenter, cross-sectional study in 
+patients treated for tibial plateau fractures in the ortho-
+paedic and trauma surgery department of six hospitals 
+within The Netherlands and Belgium between 2003 to 
+2019. Hospitals consisted of two academic centers and four 
+nonacademic centers in medium-sized cities.
+Patients
+We identiﬁed 2241 patients who had an available di-
+agnostic CT scan and who were still alive according to the 
+national population registry. Adult patients ($ 18 years 
+old) who were treated operatively or nonoperatively for 
+their tibial plateau fracture were potentially eligible. From 
+the identiﬁed patients, we excluded 0.2% (4 of 2241) be-
+cause they required amputation, and we excluded 4% (89 
+of 2241) because of coexisting conditions complicating 
+outcome measurement, including Parkinson disease, ce-
+rebrovascular accident, and paralysis. In addition, we ex-
+cluded 3% (60 of 2241) of patients because their address 
+was unknown, and we excluded 1% (31 of 2241) because 
+they spoke a foreign language. Subsequently, 2057 patients 
+were eligible for inclusion and were sent informed consent 
+and questionnaires by posted mail to inquire whether they 
+underwent conversion to TKA. In case of no response, 
+a reminder was sent. Fifty-six percent (1160 of 2057) of 
+patients responded at 6 6 4 years after injury (Fig. 1). For 
+ﬁfty-six percent (1160 of 2057), status of conversion to 
+TKA was accounted for at a minimum of 2 years, and 53% 
+(1082 of 2057) were accounted for at a minimum of
+5 years.
+Analysis of Nonresponders
+For the nonresponse analysis, we used an independent-
+samples t-test for continuous variables and a chi-square test 
+for noncontinuous variables. Overall, nonresponders did 
+not differ very much from responders, which tends to lend 
+credibility to the analysis. The nonresponse analysis 
+showed that nonresponders were slightly younger than 
+responders (mean 6 SD 51 6 17 years versus 53 6 
+16 years; p = 0.001), there was a smaller proportion of 
+women (58% [523 of 897] versus 68% [788 of 1160]; p = 
+0.001), and they received nonoperative treatment more 
+often (43% [387 of 897] versus 30% [346 of 1160]; p = 
+0.001). Knee radiographs and CT images of nonresponders
+Volume 483, Number 9 ML-based Outcome Prediction for Tibial Plateau Fractures 1733
+
+=== PDF PAGE 4 ===
+at the initiating center and one afﬁliated center were the 
+only ones available for the imaging analysis (n = 550). 
+Analysis showed that nonresponders in these centers had 
+smaller gaps (4.2 6 5.2 mm versus 6.4 6 6.3 mm; p < 
+0.001) and step-off (4.5 6 4.7 mm versus 6.3 6 5.7 mm; 
+p < 0.001). AO Foundation/Orthopaedic Trauma 
+Association (AO/OTA) fracture classiﬁcation did not differ 
+between nonresponders and responders (B1 11% versus 
+15%, B2 16% versus 19%, B3 45% versus 39%, C2 6% 
+versus 8%, C3 22% versus 17%; p = 0.26).
+Variables and Data Sources
+Patient characteristics were retrieved from electronic pa-
+tient records and questionnaires, and imaging data were 
+shared with the initiating center from which fracture 
+characteristics were determined. Images from all patients 
+were reassessed through consensus by two observers
+experienced in fracture assessment (NA, FFAIJ) to de-
+termine fracture severity, AO/OTA classiﬁcation [22], and 
+quality of achieved reduction. Fracture severity was 
+assessed on preoperative CT scans by measuring gap and 
+step-off (Supplemental Fig. 1; http://links.lww.com/ 
+CORR/B401). The quality of the operative reduction and 
+tibial alignment was evaluated on postoperative 
+radiographs by measuring articular reduction, medial 
+proximal tibial angle (Supplemental Fig. 2A; http://links. 
+lww.com/CORR/B401), posterior proximal tibial angle 
+(Supplemental Fig. 2B; http://links.lww.com/CORR/ 
+B401), and condylar widening [1].
+Descriptive Data
+Enrolled patients were 53 6 15 years old at the time of 
+injury, most of whom (68% [788 of 1160]) were women 
+(Table 1). A total of 70% (814 of 1160) of patients were
+Fig. 1 The patient inclusion process for this study is depicted in this ﬂow chart.
+1734 Assink et al. Clinical Orthopaedics and Related Research ®
+
+=== PDF PAGE 5 ===
+treated with open reduction and internal ﬁxation, whereas 
+30% (346 of 1160) of patients were treated non-
+operatively  with a cast. The majority of the fractures (80% 
+[930 of 1160]) were AO/OTA type B fractures,  whereas 
+20% (230 of 1160) of the fractures consisted of type C 
+fractures.  The average initial gap was 5 6 6 m m , a n d t h e 
+step-off 6 6 6 mm. In total, 7% (79 of 1160) of patients 
+had conversion  to TKA at the 2-year follow-up, whereas 
+this increased to 10% (109 of 1082) at the 5-year 
+follow-up.
+Primary Study Outcome
+The primary outcome of the model was conversion to TKA 
+at 2- and 5-year follow-up. Whether and when a patient 
+underwent conversion to a TKA was collected by 
+approaching all patients. These time points were selected 
+because the conversion rate to TKA is particularly high 
+within the ﬁrst 5 years after fracture [11] and because of the 
+availability of reliable data.
+Data Cleaning and Feature Selection
+Obtained features, derived from follow-up questionnaires, 
+electronic patient records, and radiographic assessments, 
+were eligible for development of the prediction model 
+(Table 1). Data cleaning included simple type formatting 
+(for example, converting “yes”/“no” columns into 
+Booleans) and included standardization of numeric col-
+umns. Subsequent feature selection consisted of an evi-
+dence review according to the methodological framework 
+principles as proposed by Levac et al. [14] and expert 
+opinion. This was followed by bivariate analysis of the 
+identiﬁed features. Following the rule of thumb for build-
+ing prediction models with a binary outcome, we limited 
+feature selection to ensure that at least 10 events (TKAs) for 
+each feature were included within the model. Feature se-
+lection resulted in the following included features: age, 
+gender, BMI, AO/OTA classiﬁcation, initial gap, initial 
+step-off, medial proximal tibial alignment (MPTA), and 
+posterior proximal tibial alignment (PPTA).
+Missing Data
+There were no missing values other than for BMI. For BMI, 
+4% (52 of 1160) of patients had missing data. Missing 
+values were imputed through K-nearest neighbors impu-
+tation. K-nearest neighbors imputation was chosen to in-
+crease biological feasibility of the imputations by basing 
+them on similar cases.
+Development and External Validation of the Model
+We used the cleaned and processed data set to train three 
+models: logistic regression, random forest, and XGBoost 
+[3, 4]. To capture potential nonlinear relationships in the 
+data, we incorporated restricted cubic splines into the lo-
+gistic regression model, allowing for greater ﬂexibility 
+while avoiding overﬁtting. Logistic regression predicts the 
+probability of an outcome based on a linear relationship 
+between features and is valued for its simplicity and in-
+terpretability. In contrast, random forest combines multiple
+Table 1. Patient characteristics (n = 1160)
+Characteristic Value
+Age in years 53 6 15
+Gender, men 32 (372)
+BMI in kg/m 2 26 6 4.7
+Smoking 20 (234)
+Comorbidities
+Diabetes 8 (92)
+Cardiovascular disease 11 (125)
+Rheumatoid arthritis 5 (59)
+Fracture characteristics
+High-energy trauma 12 (136)
+Side, right 39 (452)
+AO/OTA classiﬁcation 
+41-B1 12 (138)
+41-B2 24 (274)
+41-B3 45 (518)
+41-C1 4 (41)
+41-C2 2 (19)
+41-C3 15 (170)
+Presence of coincident ﬁbular head 
+fracture
+20 (228)
+Initial gap in mm a 5 6 6
+Initial step-oﬀ in mm a 6 6 6
+Treatment
+Surgical 70 (814)
+Nonsurgical 30 (346)
+Radiographic outcome a
+Adequate condylar widening (0-5 
+mm)
+77 (888)
+Adequate medial proximal tibial 
+angle (87° 6 5°)
+84 (971)
+Adequate posterior proximal tibial 
+angle (9° 6 5°)
+81 (938)
+Adequate incongruence < 2 mm 61 (705)
+Conversion to TKA (at any follow-up 
+time point)
+11 (128)
+Data presented as mean 6 SD or % (n).
+a Supplemental Figs. 1 and 2 (http://links.lww.com/CORR/B401) 
+provide an example of radiographic measurements.
+Volume 483, Number 9 ML-based Outcome Prediction for Tibial Plateau Fractures 1735         
+
+=== PDF PAGE 6 ===
+decision trees to handle complex, nonlinear relationships, 
+while XGBoost, a gradient boosting algorithm, builds 
+models sequentially to correct errors and is renowned for its 
+high performance and regularization capabilities. We 
+chose these models because of their simplicity, which 
+might boost performance given obtained data set size. 
+Models were tested using sixfold cross-validation by 
+training the model on data from ﬁve (of six) respective 
+medical centers and validating it against the remaining 
+center that was left out for training. To ensure optimal 
+classiﬁcation, every cross-validation fold used a subset of 
+the training set to determine the classiﬁcation threshold. 
+This approach qualiﬁes as external validation because the 
+model’s performance is assessed in sixfold on data from 
+a distinct medical center that was not included during 
+training, simulating its ability to generalize to unseen 
+clinical environments.
+Assessment of Model Performance
+We used sixfold cross-validation to compare the models. 
+Accuracy was deemed an inappropriate measure for per-
+formance given that the highly imbalanced nature of the 
+data set allows an accuracy of 90% just from predicting the 
+false label (that is, if the model always predicts no con-
+version to TKA, it will be right 90% of the time, as TKA 
+within 5 years only occurred in 10% of the patients). 
+Instead, we chose the area under the receiver operating 
+characteristic curve (AUC) as the main performance met-
+ric. The AUC is widely used to measure accuracy of di-
+agnostic tests and provides an aggregate measure of 
+performance across all possible classiﬁcation thresholds. 
+The AUC score ranges from 0 to 1, with a score of 0.5 
+indicating random guessing and 1 indicating perfect per-
+formance. To ensure robust and reliable results, we used 
+bootstrapping as a resampling technique to estimate the 
+variability of the AUC. This method generates conﬁdence 
+intervals (CIs) by repeatedly sampling from the data set 
+with replacement, helping to assess model stability and 
+mitigate overﬁtting, especially when dealing with limited 
+data. In addition, calibration curves were plotted, and cal-
+ibration was assessed with the calibration slope and in-
+tercept. The calibration plot compares the estimated 
+probabilities with the observed probabilities for the pri-
+mary outcome. Calibration slope assesses how well pre-
+dicted probabilities align with observed outcomes (1 = 
+perfect, < 1 = overﬁtting, > 1 = underﬁtting), and the cal-
+ibration intercept indicates overall prediction bias (0 = 
+perfect, negative = underestimation, positive = over-
+estimation). Last, the Brier score was calculated. The Brier 
+score quantiﬁes the accuracy of probabilistic predictions by 
+measuring the mean squared difference between predicted 
+probabilities and actual outcomes (0 = perfect).
+Ethical Approval
+We obtained ethical approval for this study from the 
+University Medical Center Groningen, Groningen, The 
+Netherlands. There was no patient and public involvement 
+during design, conduct, reporting, interpretation, or dis-
+semination of the study.
+Statistical Analysis
+Descriptive statistics were used to describe the study 
+population. For normally distributed data, continuous 
+variables have been presented as mean 6 SD, and for 
+nonnormally distributed data as median (IQR). Data pre-
+processing and analysis was performed using Python 
+Scripting, version 3.10.6 (Python Software Foundation), 
+importing the scikit-learn [27] and Pandas libraries [19].
+Web Application
+Algorithms that showed the highest performance metrics 
+were integrated into an online, freely accessible prediction 
+tool. Data are available upon request, whereas the code can 
+be assessed online (https://github.com/RaulSantanaTrejo/ 
+TKA-Predictions-2025).
+Results
+Performance of Machine Learning–based Algorithms to 
+Predict the Risk of Conversion to TKA in Patients With 
+a Tibial Plateau Fracture at 2- and 5-Year Follow-up
+There were no differences  among the models for both 2-
+and 5-year follow-up in terms of sensitivity  and speci-
+ﬁcity. The mean AUCs derived from the six folds of each 
+m o d e l o v e r l a p p e d b r o a d l y a n d r a n g e d f r o m 0 . 7 6 t o 0 . 8 3 
+(Fig. 2). AUCs ranging from the 0.7 to 0.9 are sufﬁcient as 
+a foundation  for developing  a robust model. After boot-
+strapping,  the AUC in the random forest model was 0.79 
+(95% CI 0.73 to 0.83) and 0.80 (95% CI 0.76 to 0.85) for 
+2- and 5-year TKA, respectively.  For the logistic re-
+gression model, these were 0.79 (95% CI 0.74 to 0.84) and 
+0.82 (95% CI 0.78 to 0.86), and for the XGBoost, these 
+were 0.73 (95% CI 0.68 to 0.78) and 0.77 (95% CI 0.73 to 
+0.82) (Table 2).
+Calibration of the 2-year TKA prediction models 
+showed calibration slopes ranging from 0.26 to 0.82, 
+intercepts ranging from 0.01 to 0.05, and Brier scores be-
+tween 0.06 to 0.07. The 5-year models showed improved 
+calibration with slopes from 0.48 to 0.95, intercept from 
+0.01 to 0.07, and Brier score of 0.08 to 0.09 (Table 2). The
+1736 Assink et al. Clinical Orthopaedics and Related Research ®
+
+=== PDF PAGE 7 ===
+Fig. 2 ROC curves demonstrating the performances of the ﬁve folds of the (A) random forest 2-year, (B) random forest 5-year, 
+(C) logistic regression 2-year, (D) logistic regression 5-year, (E) XGBoost 2-year, and (F) XGBoost 5-year algorithms for prediction 
+of TKA. A color image accompanies the online version of this article.
+Volume 483, Number 9 ML-based Outcome Prediction for Tibial Plateau Fractures 1737
+
+=== PDF PAGE 8 ===
+full calibration plots have been provided (Supplemental 
+Fig. 3; http://links.lww.com/CORR/B402).
+Developed Model
+The logistic regression algorithm was chosen as the ﬁnal 
+prediction model because it outperformed the other models 
+in terms of calibration, while the AUC was only marginally 
+higher with substantial overlap across the models. Age, 
+gap, and step-off were the strongest predictors in the ﬁnal 
+2-year prediction model (Fig. 3), whereas age, BMI, and 
+step-off were the strongest predictors in the ﬁnal 5-year 
+prediction model (Fig 4.).
+Web Application
+These algorithms were incorporated in a freely available, 
+online prediction tool (three different vignettes that were 
+imputed into the model have been provided [Fig. 5]). The 
+web application providing the prediction tool can be 
+accessed through https://3dtrauma.shinyapps.io/tka_ 
+prediction/.
+Discussion
+Despite achieving anatomic reduction, damage to the ar-
+ticular surface of the tibial plateau can progress to post-
+traumatic osteoarthritis and instability, leading to pain, 
+stiffness, and, in some instances, patients’ query for con-
+version to TKA. Patients with these injuries often face 
+complex decisions about their index treatment options,
+making shared decision-making a crucial aspect of their 
+care. However, with numerous variables to consider, ac-
+curately predicting clinical outcomes after treatment 
+remains a signiﬁcant challenge. Prognosis estimation is 
+often ﬂawed by surgeon biases rather than data-driven 
+insights. Currently, such robust clinical prediction models 
+in orthopaedic trauma surgery to assist in shared decision-
+making are scarce. In this study, we developed a machine 
+learning–driven model that provides personalized outcome 
+predictions for each respective patient based on speciﬁc 
+patient and fracture characteristics. This approach advan-
+ces prior research that primarily focused on associations 
+between individual features and the risk of TKA [1, 2, 30]. 
+Our model predicts the likelihood of conversion to TKA 
+following a tibial plateau fracture and is integrated into an 
+easy-to-use web application. The tool is designed with 
+robust modeling and is intended at future use at the point of 
+care, but it must ﬁrst comply with medical device regu-
+lations. Further validation will be critical for further 
+strengthening its clinical applicability.
+Limitations
+Our developed model was compromised by several limi-
+tations that arose from the study setup. First, selection bias 
+caused by loss to follow-up of nonresponders is inherent to 
+the cross-sectional study design. By contacting all patients 
+multiple times, we minimized the risk of nonresponse bias 
+as much as possible. Our overall response rate of 56% 
+aligns with expectations for postal surveys based on 
+existing evidence [21]. Nonresponse analysis showed that 
+nonresponders were predominantly patients with relatively 
+simpler and less displaced fractures with potentially lesser
+Table 2. Performance of machine-learning algorithms predicting 2- and 5-year conversion to TKA following a tibial plateau fracture 
+after sixfold validation by training the model on ﬁve (of six) hospitals and validating it on the excluded hospital
+Random forest Logistic regression XGBoost
+2-year 5-year 2-year 5-year 2-year 5-year
+AUC (95% CI) 0.79 (0.73 to
+0.83)
+0.80 (0.76 to
+0.85)
+0.79 (0.74 to
+0.84)
+0.82 (0.78 to
+0.86)
+0.73 (0.68 to
+0.78)
+0.77 (0.73 to
+0.82)
+Calibration slope (95% CI) 0.60 (0.46 to
+0.74)
+0.85 (0.73 to
+0.97)
+0.82 (0.66 to
+0.98)
+0.95 (0.82 to
+1.07)
+0.26 (0.16 to
+0.36)
+0.48 (0.38 to
+0.58)
+Calibration intercept (95%
+CI)
+0.02 (0.01 to
+0.04)
+0.01 (-0.1 to
+0.03)
+0.01 (-0.01 to
+0.03)
+0.01 (-0.01 to
+0.02)
+0.05 (0.04 to
+0.07)
+0.07 (0.05 to
+0.09)
+Brier score 0.06 0.08 0.06 0.08 0.07 0.09
+The AUC quantiﬁes the ability of a model to distinguish between classes, with 1 indicating perfect discrimination and 0.5 
+representing random chance. The AUC was calculated following bootstrapping to correct for optimism. The calibration slope 
+assesses how well predicted probabilities align with observed outcomes (1 = perfect, < 1 = overﬁtting, > 1 = underﬁtting), the 
+calibration intercept indicates overall prediction bias (0 = perfect, negative = underestimation, positive = overestimation), and the 
+Brier score quantiﬁes the accuracy of probabilistic predictions by measuring the mean squared diﬀerence between predicted 
+probabilities and actual outcomes (0 = perfect).
+1738 Assink et al. Clinical Orthopaedics and Related Research ®
+
+=== PDF PAGE 9 ===
+complaints, which could explain their lower participation 
+rate. In the context of our study, this means that there is 
+a risk that our model will produce positively biased esti-
+mates of probabilities (that is, to overestimate the risk of
+TKA). Furthermore, the retrospective character of the data 
+set was a limitation because we had to handle missing data. 
+However, missing values among the included model fea-
+tures were minimal, limited to BMI in only 4% of patients’
+Fig. 3 Weights of the diﬀerent included features within the ﬁnal logistic regression model 
+to predict 2-year conversion to TKA.
+Fig. 4 Weights of the diﬀerent included features within the ﬁnal logistic regression model 
+to predict 5-year conversion to TKA.
+Volume 483, Number 9 ML-based Outcome Prediction for Tibial Plateau Fractures 1739
+
+=== PDF PAGE 10 ===
+Fig. 5 Graphical illustration of the potential clinical usage of the machine learning–based prediction 
+model. The included features (age, BMI, AO/OTA classiﬁc a t i o n , g a p , s t e p - oﬀ, MPTA, and PPTA) can be 
+imputed for each patient into the model to compute a personalized risk of TKA at 2- and 5-year follow-
+up. A total of three clinical vignettes are presented to illustrate diﬀerent risks for these individual 
+patients. The ﬁrst involved a 72-year-old woman with a BMI of 28 kg/m 2 . After falling from the stairs, she 
+suﬀered an AO/OTA B2 fracture with a 2-mm gap and a 5-mm step-oﬀ. After treatment, MPTA remained 
+inadequate, whereas PPTA was restored. The model estimated the risk of conversion to a TKA at 7.3% in
+2 years and 16.5% in 5 years. The second was a 30-year-old woman with a BMI of 22 kg/m 2 . T h e p a t i e n t 
+was involved in a motor vehicle accident, resulting in an AO/OTA B3 tibial plateau fracture with a gap of
+4 m m a n d a s t e p - oﬀ of 8 mm. Surgical treatment resulted in adequate MPTA and PPTA, meaning that 
+the risk of this patient receiving a TKA is only 1.2% and 1.9% at the 2- and 5-year follow-up, respectively.
+The last vignette involved a 59-year-old man who fell from his bicycle. The man, with a BMI of 27 kg/m 2 ,
+sustained a C3 tibial plateau fracture with a gap and step-oﬀ of 10 and 8 mm, respectively. After surgical 
+treatment, MPTA was restored, but the PPTA remained inadequate. This would give the man a risk of 
+19.3% of conversion to a TKA in 2 years, and 47.2% in 5 years according to the model. A color image 
+accompanies the online version of this article.
+1740 Assink et al. Clinical Orthopaedics and Related Research ®
+
+=== PDF PAGE 11 ===
+data. Despite these gaps, our best-performing model 
+demonstrated high AUC and strong calibration, suggesting 
+that the missing potential features had a limited impact on 
+performance. Nonetheless, future model improvements 
+could beneﬁt from incorporating baseline osteoarthritis 
+status and mental health data. In addition, the follow-up 
+period was limited to the midterm, with conversion to TKA 
+assessed at endpoints of 2 and 5 years. As evidence indi-
+cates that most conversions to TKA happen within this 
+timeframe [11], our model focusses on the midterm out-
+come. However, given that osteoarthritis tends to progress 
+over time, it may be valuable for future models to in-
+corporate the risk of long-term outcomes (> 10 years). Last, 
+our model was validated using sixfold external validation, 
+where in each fold, one hospital was excluded from the 
+training set and used as an external validation set. While 
+this approach ensured an external validation process, the 
+six hospitals were all located within a speciﬁc geographical 
+region (northwest Europe) with similar healthcare systems. 
+This regional limitation may restrict the generalizability of 
+the model. Future external validation should include data 
+from diverse regions and international healthcare systems 
+to more comprehensively evaluate the model’s robustness 
+and applicability.
+Discussion of Key Findings
+In this study, we developed a personalized risk assessment 
+tool using patient and fracture characteristics to support 
+clinical decision-making and patient counseling. Our 
+ﬁndings demonstrate that machine learning–driven prob-
+ability calculators, particularly logistic regression, can 
+provide accurate and reliable predictions of TKA conver-
+sion at 2 and 5 years after a tibial plateau fracture. In 
+a clinical setting, this model (freely available at https:// 
+3dtrauma.shinyapps.io/tka_prediction/) is intended for use 
+in shared decision-making, which eventually could result 
+in a better informed patient whose expectations regarding 
+expected outcome could be better managed. However, it 
+must ﬁrst meet medical device regulations before being 
+approved for clinical use. Additionally, this prediction 
+model might also guide discussions between professionals 
+regarding surgical treatment plans, including considering 
+primary TKA or minimizing surgical exposure as a bridge 
+to secondary TKA in patients with a high probability of 
+conversion to TKA after osteosynthesis [28, 29]. While our 
+model focuses on predicting clinical outcomes, most 
+existing outcome prediction models in orthopaedic trauma 
+are limited to mortality or length of hospital stay [7]. One 
+recent study developed a machine-learning model to pre-
+dict 2-year conversion to arthroplasty after a femoral neck 
+fracture but performed poorly with AUCs of 0.57 to 0.64 
+and calibration slopes of 0.53 to 0.82 [31]. Another study
+sought to predict the risk of total knee replacement within 
+5 years in patients presenting with recent knee pain and 
+showed good discrimination and calibration with an AUC 
+of 0.79 to 0.87 and calibration slope of 0.95 to 0.96 [15]. 
+Similarly, our best-performing models achieved AUCs of 
+0.79 and 0.82 for the 2- and 5-year predictions, re-
+spectively, with calibration slopes of 0.82 and 0.95, in-
+dicating comparable performance to the previously 
+mentioned model. This model forms a reasonable basis for 
+making prognostic estimates; however, external validation 
+across diverse regions and healthcare systems is necessary 
+to fully assess its robustness and applicability before 
+implementation.
+Our study showed that a relatively simple model such as 
+logistic regression performed better than more complex 
+models such as XGBoost. Simpler models are usually more 
+resistant to issues like relatively small sample size, whereas 
+complex models are prone to overﬁtting on small data sets 
+[24]. The addition of the cubic splines further improved the 
+model by more ﬂexible relationships between the predictor 
+variables and the outcome, particularly capturing nonlinear 
+effects of age or BMI where the impact on the outcome may 
+vary at different stages. Our ﬁnal logistic regression model 
+delivers robust and reliable predictions despite the rela-
+tively small data set. Also, by using these explainable 
+models, physicians can eventually make better treatment 
+decisions based on data. When comparing our data set with 
+different prediction models in orthopaedic trauma research, 
+our model is based on more patients than the median 
+sample size of 875 within these studies [7], indicating that, 
+despite the relatively small data set, it is among the larger 
+data sets in orthopaedic trauma research. Future reﬁnement 
+of the model could involve the creation of larger, pro-
+spectively collected data sets, which would enable the use 
+of more complex models and improve the accuracy and 
+predictive power of the tool. This would enhance its ability 
+to capture nuanced relationships within the data and offer 
+even more precise predictions for TKA conversion, al-
+though the personalized risk should always be interpreted 
+by the physician and considered alongside professional 
+experience and the patient’s wishes.
+Conclusion
+In this study, we developed and validated a machine lear-
+ning–based prediction model (https://3dtrauma.shinyapps. 
+io/tka_prediction/) for identifying patients at risk of 
+conversion to a TKA within 2 and 5 years after a tibial 
+plateau fracture. Using patient and fracture characteristics, 
+we developed a personalized risk assessment tool to 
+support clinical decision-making and patient counseling, 
+and we believe that integrating machine learning into 
+clinical practice can help manage expectations and enable
+Volume 483, Number 9 ML-based Outcome Prediction for Tibial Plateau Fractures 1741
+
+=== PDF PAGE 12 ===
+personalized treatment plans. Our results indicate that 
+machine-learning algorithms, particularly logistic re-
+gression, can achieve reasonable accuracy and perfor-
+mance in predicting TKA conversion. Future studies 
+should focus on further reﬁnement, external validation, and 
+compliance with medical device regulations of these 
+models to improve their accuracy and reliability before 
+they can be deﬁnitively implemented in clinical practice.
+This is an open access article distributed under the terms of the 
+Creative Commons Attribution-Non Commercial-No Derivatives 
+License 4.0 (CCBY-NC-ND), where it is permissible to download 
+and share the work provided it is properly cited. The work cannot be 
+changed in any way or used commercially without permission from 
+the journal.
+Acknowledgments We thank all the researchers who were involved in
+the data collection process: Eelke Bosma, Joost G. ten Brinke, Kaj ten
+Duis, Reinier de Groot, Sven H. van Helden, Christiaan J. S. A. Kramer,
+Robert J. Nijveldt, and Thijs P. Vaartjes. Also, we thank Siem Teusink for
+his advice on the machine-learning algorithms we used.
+References
+1. Assink N, El Moumni M, Kraeima J, et al. Radiographic pre-
+dictors of conversion to total knee arthroplasty after tibial plateau 
+fracture surgery: results in a large multicenter cohort. J Bone 
+Joint Surg Am. 2023;105:1237-1245.
+2. Assink N, Kraeima J, Meesters AML, et al. 3D assessment of 
+initial fracture displacement of tibial plateau fractures is pre-
+dictive for risk on conversion to total knee arthroplasty at long-
+term follow-up. Eur J Trauma Emerg Surg. 2023;49:867-874.
+3. Breiman L. Random forests. Mach Learn. 2001;45:5-32.
+4. Chen T, Guestrin C. Xgboost: a scalable tree boosting system. In: 
+Krishnapuram B, ed. Proceedings of the 22nd ACM SIGKDD 
+International Conference on Knowledge Discovery and Data 
+Mining. Association for Computing Machinery; 2016:785-794.
+5. Collins GS, Reitsma JB, Altman DG, Moons KGM. Transparent 
+reporting of a multivariable prediction model for individual 
+prognosis or diagnosis (TRIPOD) the TRIPOD statement. 
+Circulation. 2015;131:211-219.
+6. Dankelman LHM, Schilstra S, IJpma FFA, et al. Artiﬁcial in-
+telligence fracture recognition on computed tomography: review 
+of literature and recommendations. Eur J Trauma Emerg Surg. 
+2023;49:681-691.
+7. Dijkstra H, van de Kuit A, de Groot T, et al. Systematic review of 
+machine-learning models in orthopaedic trauma: an overview 
+and quality assessment of 45 studies. Bone Jt Open. 2024;5:9-19.
+8. Elsoe R, Johansen MB, Larsen P. Tibial plateau fractures are 
+associated with a long-lasting increased risk of total knee 
+arthroplasty a matched cohort study of 7,950 tibial plateau frac-
+tures. Osteoarthritis Cartilage. 2019;27:805-809.
+9. Elsoe R, Larsen P, Nielsen NPH, Swenne J, Rasmussen S, 
+Ostgaard SE. Population-based epidemiology of tibial plateau 
+fractures. Orthopedics. 2015;38:e780-e786.
+10. Gaston P, Will EM, Keating JF. Recovery of knee function fol-
+lowing fracture of the tibial plateau. J Bone Joint Surg Br. 2005; 
+87:1233-1236.
+11. Haslhofer DJ, Kraml N, Winkler PW, Gotterbarm T, Klasan A. 
+Risk for total knee arthroplasty after tibial plateau fractures: 
+a systematic review. Knee Surg Sports Traumatol Arthrosc. 
+2023;31:5145-5153.
+12. Herteleer M, Van Brandt C, Vandoren C, Nijs S, Hoekstra H. 
+Tibial plateau fractures in Belgium: epidemiology, ﬁnancial 
+burden and costs curbing strategies. Eur J Trauma Emerg Surg. 
+2022;48:3643-3650.
+13. Lalehzarian SP, Gowd AK, Liu JN. Machine learning in ortho-
+paedic surgery. World J Orthop. 2021;12:685-699.
+14. Levac D, Colquhoun H, O’Brien KK. Scoping studies: advanc-
+ing the methodology. Implement Sci. 2010;5:69.
+15. Liu Q, Chu H, LaValley MP, et al. Prediction models for the risk 
+of total knee replacement: development and validation using data 
+from multicentre cohort studies. Lancet Rheumatol. 2022;4: 
+e125-e134.
+16. Luo W, Phung D, Tran T, et al. Guidelines for developing and 
+reporting machine learning predictive models in biomedical re-
+search: a multidisciplinary view. J Med Internet Res. 2016;18: 
+e323.
+17. Manidakis N, Dosani A, Dimitriou R, Stengel D, Matthews S, 
+Giannoudis P. Tibial plateau fractures: functional outcome and 
+incidence of osteoarthritis in 125 cases. Int Orthop. 2010;34: 
+565-570.
+18. Marsh JL, Buckwalter J, Gelberman R, et al. Articular fractures: 
+does an anatomic reduction really change the result? J Bone Joint 
+Surg Am. 2002;84:1259-1271.
+19. McKinney W. Data structures for statistical computing in 
+Python. In: van der Walt S, Millman J, eds. Proceedings of the 
+9th Python in Science Conference. SciPy 2010; 2010:56-61.
+20. Merrill RK, Ferrandino RM, Hoffman R, Shaffer GW, Ndu A. 
+Machine learning accurately predicts short-term outcomes fol-
+lowing open reduction and internal ﬁxation of ankle fractures. 
+J Foot Ankle Surg. 2019;58:410-416.
+21. Meyer VM, Benjamens S, Moumni ME, Lange JFM, Pol RA. 
+Global overview of response rates in patient and health care 
+professional surveys in surgery: a systematic review. Ann Surg. 
+2022;275:e75-e81.
+22. M¨ uller ME, Koch P, Nazarian S, Schatzker J. The 
+Comprehensive Classiﬁcation of Fractures of Long Bones. 
+Springer-Verlag Berlin; 1990.
+23. Ogink PT, Groot OQ, Karhade AV, et al. Wide range of appli-
+cations for machine-learning prediction models in orthopedic 
+surgical outcome: a systematic review. Acta Orthop. 2021;92: 
+526-531.
+24. Oosterhoff JHF, Gravesteijn BY, Karhade AV, et al. Feasibility 
+of machine learning and logistic regression algorithms to predict 
+outcome in orthopaedic trauma surgery. J Bone Joint Surg Am. 
+2022;104:544-551.
+25. Oosterhoff JHF, Savelberg ABMC, Karhade AV, et al. 
+Development and internal validation of a clinical prediction 
+model using machine learning algorithms for 90 day and 2 year 
+mortality in femoral neck fracture patients aged 65 years or 
+above. Eur J Trauma Emerg Surg. 2022;48:4669-4682.
+26. Parkkinen M, Lindahl J, M¨ akinen TJ, Koskinen SK, Mustonen 
+A, Madanat R. Predictors of osteoarthritis following operative 
+treatment of medial tibial plateau fractures. Injury. 2018;49: 
+370-375.
+27. Pedregosa F, Varoquaux G, Gramfort A, et al. Scikit-learn: ma-
+chine learning in Python. J Mach Learn Res. 2011;12: 
+2825-2830.
+28. Sabatini L, Aprato A, Camazzola D, Bistolﬁ A, Capella M, 
+Mass` e A. Primary total knee arthroplasty in tibial plateau frac-
+tures: literature review and our institutional experience. Injury. 
+2023;54:S15-S23.
+29. Stevenson I, McMillan TE, Baliga S, Schemitsch EH. Primary 
+and secondary total knee arthroplasty for tibial plateau fractures. 
+J Am Acad Orthop Surg. 2018;26:386-395.
+1742 Assink et al. Clinical Orthopaedics and Related Research ®
+
+=== PDF PAGE 13 ===
+30. Vaartjes TP, Assink N, Nijveldt RJ, et al. Functional outcome 
+after nonoperative management of tibial plateau fractures in 
+skeletally mature patients: what sizes of gaps and stepoffs can be 
+accepted? Clin Orthop Relat Res. 2022;480:2288-2295.
+31. van de Kuit A, Oosterhoff JHF, Dijkstra H, et al. Patients with 
+femoral neck fractures are at risk for conversion to arthroplasty
+after internal ﬁxation: a machine-learning algorithm. Clin Orthop 
+Relat Res. 2022;480:2350-2360.
+32. Wasserstein D, Henry P, Paterson JM, Kreder HJ, Jenkinson R. 
+Risk of total knee arthroplasty after operatively treated tibial 
+plateau fracture a matched-population-based cohort study. 
+J Bone Joint Surg Am. 2014;96:144-150.
+Volume 483, Number 9 ML-based Outcome Prediction for Tibial Plateau Fractures 1743

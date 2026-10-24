@@ -1,0 +1,214 @@
+﻿archive_file,source_row,title,doi,dedup_key,matched_manifest_ranks
+AgenticAi.csv,1,"Artificial intelligence in orthopaedics: Clinical decision support, medical imaging, surgical planning, and outcome prediction",10.12998/wjcc.v14.i17.120192,doi:10.12998/wjcc.v14.i17.120192,19
+AgenticAi.csv,2,"Artificial intelligence agents in orthopaedics: Concepts, capabilities and the road ahead",10.1002/ksa.70109,doi:10.1002/ksa.70109,
+AgenticAi.csv,3,The Application of Agentic Artificial Intelligence in Orthopaedics.,10.2106/jbjs.25.01497,doi:10.2106/jbjs.25.01497,3
+AgenticAi.csv,4,Artificial Intelligence for Clinically Meaningful Outcome Prediction in Orthopedic Research: Current Applications and Limitations,10.1007/s12178-024-09893-z,doi:10.1007/s12178-024-09893-z,
+AgenticAi.csv,5,Wide range of applications for machine-learning prediction models in orthopedic surgical outcome: a systematic review,10.1080/17453674.2021.1932928,doi:10.1080/17453674.2021.1932928,
+AgenticAi.csv,6,Implementation of clinical decision support tools for treatment selection in knee osteoarthritis: a scoping review,10.1177/1759720x251407070,doi:10.1177/1759720x251407070,35
+AgenticAi.csv,7,"Artificial intelligence in orthopedics: current applications, challenges, and future directions",10.1186/s43019-026-00317-5,doi:10.1186/s43019-026-00317-5,32
+AgenticAi.csv,8,Operative or Non-Operative Treatment is Predicted Accurately for Patients Who Have Hip Complaints Consulting an Orthopaedic Surgeon using Machine Learning Algorithms Trained with Pre-Hospital Acquired History-Taking Data.,10.1016/j.arth.2023.11.022,doi:10.1016/j.arth.2023.11.022,
+AgenticAi.csv,9,SRS108 - Predicting patient-reported outcome measures and evaluating the impact of pre-operative comorbidities on outcomes of hip and knee arthroplasty using supervised machine learning,10.1093/bjs/znag018.105,doi:10.1093/bjs/znag018.105,98
+AgenticAi.csv,10,Machine learning in knee arthroplasty: specific data are key—a systematic review,10.1007/s00167-021-06848-6,doi:10.1007/s00167-021-06848-6,
+AgenticAi.csv,11,Artificial intelligence in total and unicompartmental knee arthroplasty,10.1186/s12891-024-07516-9,doi:10.1186/s12891-024-07516-9,38
+AgenticAi.csv,12,Application of Machine Learning to Improve Appropriateness of Treatment in an Orthopaedic Setting of Personalized Medicine,10.3390/jpm12101706,doi:10.3390/jpm12101706,27
+AgenticAi.csv,13,Machine Learning Algorithms Predict Achievement of Clinically Significant Outcomes Following Orthopaedic Surgery: A Systematic Review.,10.1016/j.arthro.2021.12.030,doi:10.1016/j.arthro.2021.12.030,
+AgenticAi.csv,14,Artificial Learning and Machine Learning Decision Guidance Applications in Total Hip and Knee Arthroplasty: A Systematic Review,10.1016/j.artd.2021.07.012,doi:10.1016/j.artd.2021.07.012,
+AgenticAi.csv,15,Personalized Medicine Using Predictive Analytics: A Machine Learning-Based Prognostic Model for Patients Undergoing Hip Arthroscopy,10.1177/03635465221091847,doi:10.1177/03635465221091847,
+AgenticAi.csv,16,Systematic review of machine-learning models in orthopaedic trauma,10.1302/2633-1462.51.bjo-2023-0095.r1,doi:10.1302/2633-1462.51.bjo-2023-0095.r1,
+AgenticAi.csv,17,Machine learning prediction models in orthopedic surgery: A systematic review in transparent reporting,10.1002/jor.25036,doi:10.1002/jor.25036,
+AgenticAi.csv,18,"Artificial Intelligence in Orthopaedics: Clinical Performance, Limitations, and Translational Readiness—A Review",10.3390/jcm15051751,doi:10.3390/jcm15051751,15
+AgenticAi.csv,19,Using artificial intelligence to predict patient outcomes from patient-reported outcome measures: a scoping review,10.1186/s12955-025-02365-z,doi:10.1186/s12955-025-02365-z,
+AgenticAi.csv,20,Availability and reporting quality of external validations of machine-learning prediction models with orthopedic surgical outcomes: a systematic review,10.1080/17453674.2021.1910448,doi:10.1080/17453674.2021.1910448,
+AgenticAi.csv,21,Artificial Intelligence and Musculoskeletal Surgical Applications,10.1177/15563316251339596,doi:10.1177/15563316251339596,2
+AgenticAi.csv,22,Predicting patient-reported outcomes following hip and knee replacement surgery using supervised machine learning,10.1186/s12911-018-0731-6,doi:10.1186/s12911-018-0731-6,23
+AgenticAi.csv,23,Arthrosis diagnosis and treatment recommendations in clinical practice: an exploratory investigation with the generative AI model GPT-4,10.1186/s10195-023-00740-4,doi:10.1186/s10195-023-00740-4,9
+AgenticAi.csv,24,Machine-learning-based patient-specific prediction models for knee osteoarthritis,10.1038/s41584-018-0130-5,doi:10.1038/s41584-018-0130-5,44
+AgenticAi.csv,25,"Machine learning for predicting outcomes, complications and resource utilisation after hip arthroscopy: A systematic review.",10.1002/ksa.70304,doi:10.1002/ksa.70304,34
+AgenticAi.csv,26,Evidence Based Gait Analysis Interpretation Tools (EB-GAIT) treatment recommendation and outcome prediction models to support decision-making based on clinical gait analysis data,10.1371/journal.pone.0328036,doi:10.1371/journal.pone.0328036,59
+AgenticAi.csv,27,Artificial intelligence in diagnosis of knee osteoarthritis and prediction of arthroplasty outcomes: a review,10.1186/s42836-022-00118-7,doi:10.1186/s42836-022-00118-7,
+AgenticAi.csv,28,What Is the Accuracy of Three Different Machine Learning Techniques to Predict Clinical Outcomes After Shoulder Arthroplasty?,10.1097/corr.0000000000001263,doi:10.1097/corr.0000000000001263,24
+AgenticAi.csv,29,AI-Generated Antibiotic Therapies for Acute Periprosthetic Joint Infections with Implant Retention in Comparison with an Interdisciplinary Team,10.3390/antibiotics15010025,doi:10.3390/antibiotics15010025,6
+AgenticAi.csv,30,Machine Learning in Orthopedics: A Literature Review,10.3389/fbioe.2018.00075,doi:10.3389/fbioe.2018.00075,
+AgenticAi.csv,31,Clinical Decision Support Tools for Predicting Outcomes in Patients Undergoing Total Knee Arthroplasty: A Systematic Review.,10.1016/j.arth.2020.10.053,doi:10.1016/j.arth.2020.10.053,47
+AgenticAi.csv,32,Enabling Personalized Medicine in Orthopaedic Surgery Through Artificial Intelligence: A Critical Analysis Review.,10.2106/jbjs.rvw.23.00232,doi:10.2106/jbjs.rvw.23.00232,
+AgenticAi.csv,33,Machine Learning/Artificial Intelligence in Sports Medicine: State of the Art and Future Directions.,10.1016/j.jisako.2024.01.013,doi:10.1016/j.jisako.2024.01.013,
+AgenticAi.csv,34,Decision curve analysis to evaluate the clinical benefit of prediction models,10.1016/j.spinee.2021.02.024,doi:10.1016/j.spinee.2021.02.024,42
+AgenticAi.csv,35,Using Machine Learning to Predict Clinical Outcomes After Shoulder Arthroplasty with a Minimal Feature Set.,10.1016/j.jse.2020.07.042,doi:10.1016/j.jse.2020.07.042,45
+AgenticAi.csv,36,Can Machine Learning Algorithms Predict Which Patients Will Achieve Minimally Clinically Important Differences From Total Joint Arthroplasty?,10.1097/corr.0000000000000687,doi:10.1097/corr.0000000000000687,22
+AgenticAi.csv,37,Machine learning models for clinical and structural knee osteoarthritis prediction: Recent advancements and future directions,10.1016/j.ocarto.2025.100654,doi:10.1016/j.ocarto.2025.100654,
+AgenticAi.csv,38,AI in physical rehabilitation of traumatological and orthopedic patients: existing technologies and their clinical effectiveness. A review,10.38025/2078-1962-2026-25-3-83-92,doi:10.38025/2078-1962-2026-25-3-83-92,99
+AgenticAi.csv,39,The Impact of Machine Learning on Total Joint Arthroplasty Patient Outcomes: A Systemic Review.,10.1016/j.arth.2022.10.039,doi:10.1016/j.arth.2022.10.039,
+AgenticAi.csv,40,“Dr. AI Will See You Now”: How Do ChatGPT-4 Treatment Recommendations Align With Orthopaedic Clinical Practice Guidelines?,10.1097/corr.0000000000003234,doi:10.1097/corr.0000000000003234,10
+AgenticAi.csv,41,AI in Orthopedic Research: A Comprehensive Review,10.1002/jor.26109,doi:10.1002/jor.26109,26
+AgenticAi.csv,42,Understanding the role of machine learning in predicting progression of osteoarthritis.,10.1302/0301-620x.106b11.bjj-2024-0453.r1,doi:10.1302/0301-620x.106b11.bjj-2024-0453.r1,
+AgenticAi.csv,43,The utility of machine learning algorithms for the prediction of patient-reported outcome measures following primary hip and knee total joint arthroplasty,10.1007/s00402-022-04526-x,doi:10.1007/s00402-022-04526-x,
+AgenticAi.csv,44,"Artificial intelligence in orthopedics: fundamentals, current applications, and future perspectives",10.1186/s40779-025-00633-z,doi:10.1186/s40779-025-00633-z,
+AgenticAi.csv,45,Explainable machine learning for orthopedic decision-making: predicting functional outcomes of total hip replacement from gait biomechanics,10.1186/s13075-025-03709-2,doi:10.1186/s13075-025-03709-2,20
+AgenticAi.csv,46,Artificial intelligence in orthopaedic surgery,10.1302/2046-3758.127.bjr-2023-0111.r1,doi:10.1302/2046-3758.127.bjr-2023-0111.r1,
+AgenticAi.csv,47,Machine learning approaches to predict rehabilitation success based on clinical and patient-reported outcome measures,10.1016/j.imu.2021.100598,doi:10.1016/j.imu.2021.100598,
+AgenticAi.csv,48,Advanced decision‐making using patient‐reported outcome measures in total joint replacement,10.1002/jor.24614,doi:10.1002/jor.24614,25
+AgenticAi.csv,49,Artificial intelligence for treatment planning and soft tissue outcome prediction of orthognathic treatment: A systematic review,10.1177/14653125231203743,doi:10.1177/14653125231203743,
+AgenticAi.csv,50,Machine Learning for the Orthopaedic Surgeon,10.2106/jbjs.21.01305,doi:10.2106/jbjs.21.01305,46
+AgenticAi.csv,51,Towards streamlining orthopedic consultations: Machine learning classification of knee diagnosis groups via computer-assisted history taking.,10.1016/j.knee.2025.05.017,doi:10.1016/j.knee.2025.05.017,
+AgenticAi.csv,52,Precision medicine-based machine learning analyses to explore optimal exercise therapies for individuals with knee osteoarthritis: Random Forest Informed Tree-based Learning,10.3899/jrheum.2022-1039,doi:10.3899/jrheum.2022-1039,
+AgenticAi.csv,53,Applied Machine Learning for Spine Surgeons: Predicting Outcome for Patients Undergoing Treatment for Lumbar Disc Herniation Using PRO Data,10.1177/2192568220967643,doi:10.1177/2192568220967643,
+AgenticAi.csv,54,"Artificial Intelligence in Orthopedic Surgery: Current Applications, Challenges, and Future Directions",10.1002/mco2.70260,doi:10.1002/mco2.70260,
+AgenticAi.csv,55,Machine Learning Clinical Decision Support for Interdisciplinary Multimodal Chronic Musculoskeletal Pain Treatment: Prospective Pilot Study of Patient Assessment and Prognostic Profile Validation,10.2196/65890,doi:10.2196/65890,75
+AgenticAi.csv,56,Revolutionizing total hip arthroplasty: The role of artificial intelligence and machine learning,10.1002/jeo2.70195,doi:10.1002/jeo2.70195,28
+AgenticAi.csv,57,Closed-Loop digital therapeutics empowered by deep reinforcement learning and wearable sensing for precision orthopedic rehabilitation: a simulation-based proof-of-concept study,10.3389/fresc.2026.1822939,doi:10.3389/fresc.2026.1822939,1
+AgenticAi.csv,58,A practical guide to the implementation of AI in orthopaedic research – part 1: opportunities in clinical application and overcoming existing challenges,10.1186/s40634-023-00683-z,doi:10.1186/s40634-023-00683-z,37
+AgenticAi.csv,59,Enhancing patient rehabilitation outcomes: artificial intelligence-driven predictive modeling for home discharge in neurological and orthopedic conditions,10.1186/s12984-025-01654-4,doi:10.1186/s12984-025-01654-4,
+AgenticAi.csv,60,Biopsychosocial based machine learning models predict patient improvement after total knee arthroplasty,10.1038/s41598-025-88560-w,doi:10.1038/s41598-025-88560-w,14
+AgenticAi.csv,61,Machine learning in knee osteoarthritis: A review,10.1016/j.ocarto.2020.100069,doi:10.1016/j.ocarto.2020.100069,
+AgenticAi.csv,62,Initial clinical experience with a predictive clinical decision support tool for anatomic and reverse total shoulder arthroplasty,10.1007/s00590-023-03796-4,doi:10.1007/s00590-023-03796-4,39
+AgenticAi.csv,63,"Artificial Intelligence and its Current Role in Clinical Outcome Prediction, Musculoskeletal Imaging, and Economic and Ethical Considerations within Orthopedics and Sports Medicine.",10.1007/s12178-026-10019-w,doi:10.1007/s12178-026-10019-w,96
+AgenticAi.csv,64,A Hierarchical Machine Learning–Based Framework for Clinical Decision Support in Foot Orthosis Prescription: Algorithm Development and Validation Study,10.2196/92831,doi:10.2196/92831,36
+AgenticAi.csv,65,An Artificial Intelligence-driven Revolution in Orthopedic Surgery and Sports Medicine.,10.1097/js9.0000000000002187,doi:10.1097/js9.0000000000002187,
+AgenticAi.csv,66,Comparisons of Machine Learning Models to Logistic Regression in Orthopedic Sports Medicine are Confounded by Methodological Heterogeneity: A Systematic Review and Meta-Analysis.,10.1016/j.jisako.2026.101088,doi:10.1016/j.jisako.2026.101088,
+AgenticAi.csv,67,Large Language Model Predicts Surgeon Recommendations for Imaging and Surgery for Patients Presenting for Knee and Shoulder Complaints With 70% and 81% Accuracy Using Previsit Questionnaire Responses.,10.1002/arj.70016,doi:10.1002/arj.70016,4
+AgenticAi.csv,68,Assessing AI in Various Elements of Enhanced Recovery After Surgery (ERAS)-Guided Ankle Fracture Treatment: A Comparative Analysis with Expert Agreement,10.2147/jmdh.s508511,doi:10.2147/jmdh.s508511,5
+AgenticAi.csv,69,Translating clinical and patient-reported data to tailored shared decision reports with predictive analytics for knee and hip arthritis,10.1007/s11136-020-02557-8,doi:10.1007/s11136-020-02557-8,
+AgenticAi.csv,70,Machine learning models for predicting treatment outcomes in chronic non-specific back pain patients undergoing lumbar extension traction,10.1038/s41598-026-38059-9,doi:10.1038/s41598-026-38059-9,30
+AgenticAi.csv,71,How to Develop and Validate Prediction Models for Orthopedic Outcomes,10.1016/j.arth.2022.12.032,doi:10.1016/j.arth.2022.12.032,48
+AgenticAi.csv,72,Artificial Intelligence and Orthopaedics: An Introduction for Clinicians.,10.2106/jbjs.19.01128,doi:10.2106/jbjs.19.01128,43
+AgenticAi.csv,73,Causal machine learning for predicting treatment outcomes,10.1038/s41591-024-02902-1,doi:10.1038/s41591-024-02902-1,69
+AgenticAi.csv,74,Predictive Models for Clinical Outcomes in Total Knee Arthroplasty: A Systematic Analysis,10.1016/j.artd.2021.03.013,doi:10.1016/j.artd.2021.03.013,
+AgenticAi.csv,75,Artificial intelligence in orthopaedics: A scoping review,10.1371/journal.pone.0260471,doi:10.1371/journal.pone.0260471,
+AgenticAi.csv,76,Who Is the Surgeon Now: Human Hands or Machine Minds? Artificial Intelligence in Orthopedics from Diagnosis to Follow-Up—A Structured Narrative Review,10.3390/jcm15062165,doi:10.3390/jcm15062165,
+AgenticAi.csv,77,A pilot study on the efficacy of GPT-4 in providing orthopedic treatment recommendations from MRI reports,10.1038/s41598-023-47500-2,doi:10.1038/s41598-023-47500-2,50
+AgenticAi.csv,78,A practical guide to the implementation of artificial intelligence in orthopaedic research—Part 3: How orthopaedic research benefits from the implementation of artificial intelligence,10.1002/jeo2.70481,doi:10.1002/jeo2.70481,33
+AgenticAi.csv,79,ChatGPT in orthopedics: a narrative review exploring the potential of artificial intelligence in orthopedic practice,10.3389/fsurg.2023.1284015,doi:10.3389/fsurg.2023.1284015,8
+AgenticAi.csv,80,Artificial Intelligence in the Management of Anterior Cruciate Ligament Injuries,10.1177/23259671211014206,doi:10.1177/23259671211014206,
+AgenticAi.csv,81,Stratified care in hip arthroscopy: can we predict successful and unsuccessful outcomes? Development and external temporal validation of multivariable prediction models,10.1136/bjsports-2022-105534,doi:10.1136/bjsports-2022-105534,41
+AgenticAi.csv,82,Machine learning predicts clinical response to platelet-rich plasma therapy in knee osteoarthritis,10.3389/fmed.2026.1787872,doi:10.3389/fmed.2026.1787872,
+AgenticAi.csv,83,Predicting patient outcomes and risk for revision surgery after hip and knee replacement surgery: study protocol for a comparison of modelling approaches using the Swiss National Joint Registry (SIRIS),10.1186/s41512-025-00200-z,doi:10.1186/s41512-025-00200-z,17
+AgenticAi.csv,84,Artificial intelligence and robotics in TKA surgery: promising options for improved outcomes?,10.1007/s00167-022-07035-x,doi:10.1007/s00167-022-07035-x,
+AgenticAi.csv,85,"Artificial intelligence in orthopaedics: Enhanced examinations, ambient intelligence and the future of clinical practice",10.1002/ksa.70339,doi:10.1002/ksa.70339,53
+AgenticAi.csv,86,Employing machine learning to enhance fracture recovery insights through gait analysis,10.1002/jor.25837,doi:10.1002/jor.25837,
+AgenticAi.csv,87,Machine Learning Model Developed to Aid in Patient Selection for Outpatient Total Joint Arthroplasty,10.1016/j.artd.2021.11.001,doi:10.1016/j.artd.2021.11.001,
+AgenticAi.csv,88,Artificial Intelligence (AI): A Potential Game Changer in Regenerative Orthopedics—A Scoping Review,10.1007/s43465-024-01189-1,doi:10.1007/s43465-024-01189-1,
+AgenticAi.csv,89,"Artificial Intelligence and Arthroplasty at a Single Institution: Real-World Applications of Machine Learning to Big Data, Value-Based Care, Mobile Health, and Remote Patient Monitoring.",10.1016/j.arth.2019.06.018,doi:10.1016/j.arth.2019.06.018,
+AgenticAi.csv,90,Machine Learning Can Predict Level of Improvement in Shoulder Arthroplasty,10.2106/jbjs.oa.20.00128,doi:10.2106/jbjs.oa.20.00128,
+AgenticAi.csv,91,"Revolutionizing orthopedic care: The impact of ai in predictive analysis, surgical precision, and personalized rehabilitation",10.18231/j.jchm.2024.022,doi:10.18231/j.jchm.2024.022,52
+AgenticAi.csv,92,Can minimal clinically important differences in patient reported outcome measures be predicted by machine learning in patients with total knee or hip arthroplasty? A systematic review,10.1186/s12911-022-01751-7,doi:10.1186/s12911-022-01751-7,
+AgenticAi.csv,93,Can Machine Learning Methods Produce Accurate and Easy-to-Use Preoperative Prediction Models of One-Year Improvements in Pain and Functioning After Knee Arthroplasty?,10.1016/j.arth.2020.07.026,doi:10.1016/j.arth.2020.07.026,
+AgenticAi.csv,94,Artificial intelligence fails to outperform orthopaedic surgeons: A systematic review,10.1002/jeo2.70548,doi:10.1002/jeo2.70548,7
+AgenticAi.csv,95,A theoretical model of health management using data-driven decision-making: the future of precision medicine and health,10.1186/s12967-021-02714-8,doi:10.1186/s12967-021-02714-8,54
+AgenticAi.csv,96,"Machine Learning and Artificial Intelligence: Definitions, Applications, and Future Directions",10.1007/s12178-020-09600-8,doi:10.1007/s12178-020-09600-8,
+AgenticAi.csv,97,Predicting the Objective and Subjective Clinical Outcomes of Anterior Cruciate Ligament Reconstruction: A Machine Learning Analysis of 432 Patients,10.1177/03635465221129870,doi:10.1177/03635465221129870,
+AgenticAi.csv,98,Patient preferences as human factors for health data recommender systems and shared decision making in orthopaedic practice,10.3389/fdgth.2023.1137066,doi:10.3389/fdgth.2023.1137066,40
+AgenticAi.csv,99,Can machine learning predict pharmacotherapy outcomes? An application study in osteoporosis,10.1016/j.cmpb.2022.107028,doi:10.1016/j.cmpb.2022.107028,
+AgenticAi.csv,100,Utilization of machine learning methods for predicting surgical outcomes after total knee arthroplasty,10.1371/journal.pone.0263897,doi:10.1371/journal.pone.0263897,
+AgenticAi.csv,101,Artificial intelligence algorithms in orthopaedics: A narrative review of methods and clinical applications,10.1002/jeo2.70549,doi:10.1002/jeo2.70549,
+AgenticAi.csv,102,Feasibility of Machine Learning and Logistic Regression Algorithms to Predict Outcome in Orthopaedic Trauma Surgery,10.2106/jbjs.21.00341,doi:10.2106/jbjs.21.00341,
+AgenticAi.csv,103,Social determinants of health in prognostic machine learning models for orthopaedic outcomes: A systematic review.,10.1111/jep.13765,doi:10.1111/jep.13765,
+AgenticAi.csv,104,Artificial intelligence versus orthopedic surgeons as an orthopedic consultant in the emergency department.,10.1016/j.injury.2025.112297,doi:10.1016/j.injury.2025.112297,
+AgenticAi.csv,105,"Utility of Machine Learning, Natural Language Processing, and Artificial Intelligence in Predicting Hospital Readmissions After Orthopaedic Surgery",10.2106/jbjs.rvw.24.00075,doi:10.2106/jbjs.rvw.24.00075,
+AgenticAi.csv,106,Custom Large Language Models Improve Accuracy: Comparing Retrieval Augmented Generation and Artificial Intelligence Agents to Non-Custom Models for Evidence-Based Medicine.,10.1016/j.arthro.2024.10.042,doi:10.1016/j.arthro.2024.10.042,51
+AgenticAi.csv,107,Development of Machine Learning–based Algorithms to Predict the 2- and 5-year Risk of TKA After Tibial Plateau Fracture Treatment,10.1097/corr.0000000000003442,doi:10.1097/corr.0000000000003442,31
+AgenticAi.csv,108,Artificial Intelligence and Orthopaedic Prosthetic Planning: A State-of-the-Art Review and Evolving Liability Perspectives,10.3390/sci8020027,doi:10.3390/sci8020027,
+AgenticAi.csv,109,Exploratory application of machine learning methods on patient reported data in the development of supervised models for predicting outcomes,10.1186/s12911-022-01973-9,doi:10.1186/s12911-022-01973-9,56
+AgenticAi.csv,110,Is orthopaedics entering the age of generative AI?—A narrative review of current applications challenges and future directions,10.1002/ksa.70145,doi:10.1002/ksa.70145,49
+AgenticAi.csv,111,Development and Validation of a Machine Learning Algorithm After Primary Total Hip Arthroplasty: Applications to Length of Stay and Payment Models.,10.1016/j.arth.2018.12.030,doi:10.1016/j.arth.2018.12.030,
+AgenticAi.csv,112,Using artificial intelligence to develop a measure of orthopaedic treatment success from clinical notes,10.3389/fdgth.2025.1523953,doi:10.3389/fdgth.2025.1523953,95
+AgenticAi.csv,113,Bone mineral density response prediction following osteoporosis treatment using machine learning to aid personalized therapy,10.1038/s41598-021-93152-5,doi:10.1038/s41598-021-93152-5,92
+AgenticAi.csv,114,Artificial intelligence models cannot yet replace experts in providing patient education for shoulder and elbow orthopaedic pathologies: a systematic review and meta-analysis,10.21037/aoj-25-38,doi:10.21037/aoj-25-38,18
+AgenticAi.csv,115,Abandon the mean value thinking: Personalized medicine an intuitive way for improved outcomes in orthopaedics.,10.1002/ksa.12503,doi:10.1002/ksa.12503,
+AgenticAi.csv,116,Artificial Intelligence (AI) applications in orthopaedics: An innovative technology to embrace.,10.1016/j.jcot.2019.06.012,doi:10.1016/j.jcot.2019.06.012,
+AgenticAi.csv,117,Personalised Outcomes Forecasts of Supervised Exercise Therapy in Intermittent Claudication: An Application of Neighbours Based Prediction Methods with Routinely Collected Clinical Data.,10.1016/j.ejvs.2021.12.040,doi:10.1016/j.ejvs.2021.12.040,
+CrossDomain.csv,1,Operative or Non-Operative Treatment is Predicted Accurately for Patients Who Have Hip Complaints Consulting an Orthopaedic Surgeon using Machine Learning Algorithms Trained with Pre-Hospital Acquired History-Taking Data.,10.1016/j.arth.2023.11.022,doi:10.1016/j.arth.2023.11.022,
+CrossDomain.csv,2,REAL-WORLD VALIDATION OF A MACHINE-LEARNING ALGORITHM PREDICTING TREATMENT STRATEGY FOR HIP OSTEOARTRITIS,10.1302/1358-992x.2024.1.140,doi:10.1302/1358-992x.2024.1.140,
+CrossDomain.csv,3,Towards streamlining orthopedic consultations: Machine learning classification of knee diagnosis groups via computer-assisted history taking.,10.1016/j.knee.2025.05.017,doi:10.1016/j.knee.2025.05.017,
+CrossDomain.csv,4,Machine Learning–Based Individualized Survival Prediction Model for Total Knee Replacement in Osteoarthritis: Data From the Osteoarthritis Initiative,10.1002/acr.24601,doi:10.1002/acr.24601,
+CrossDomain.csv,5,From Real‐World Patient Data to Individualized Treatment Effects Using Machine Learning: Current and Future Methods to Address Underlying Challenges,10.1002/cpt.1907,doi:10.1002/cpt.1907,
+CrossDomain.csv,6,Personalized hypertension treatment recommendations by a data-driven model,10.1186/s12911-023-02137-z,doi:10.1186/s12911-023-02137-z,72
+CrossDomain.csv,7,Personalized Antidepressant Treatment Recommendation Using Reinforcement Learning and Predictive Modelling on Synthetic Patient Data ,10.4236/oalib.1113957,doi:10.4236/oalib.1113957,12
+CrossDomain.csv,8,A clinical decision support system learned from data to personalize treatment recommendations towards preventing breast cancer metastasis,10.1371/journal.pone.0213292,doi:10.1371/journal.pone.0213292,
+CrossDomain.csv,9,Reinforcement Learning-Based Personalized Depression Treatment Using Synthetic Data and Real-Time Decision Support,10.4236/oalib.1113959,doi:10.4236/oalib.1113959,11
+CrossDomain.csv,10,Simulating Personalized Treatment Pathways in Chronic Disease Management Using Reinforcement Learning and Synthetic Patient Data,10.1109/iccids69108.2026.11407691,doi:10.1109/iccids69108.2026.11407691,62
+CrossDomain.csv,11,Developing and validating a machine learning model to predict chronic pain following total knee arthroplasty.,10.1016/j.knee.2025.05.011,doi:10.1016/j.knee.2025.05.011,
+CrossDomain.csv,12,A treatment recommender clinical decision support system for personalized medicine: method development and proof-of-concept for drug resistant tuberculosis,10.1186/s12911-022-01790-0,doi:10.1186/s12911-022-01790-0,93
+CrossDomain.csv,13,Wide range of applications for machine-learning prediction models in orthopedic surgical outcome: a systematic review,10.1080/17453674.2021.1932928,doi:10.1080/17453674.2021.1932928,
+CrossDomain.csv,14,Machine learning prediction models in orthopedic surgery: A systematic review in transparent reporting,10.1002/jor.25036,doi:10.1002/jor.25036,
+CrossDomain.csv,15,Systematic review of machine-learning models in orthopaedic trauma,10.1302/2633-1462.51.bjo-2023-0095.r1,doi:10.1302/2633-1462.51.bjo-2023-0095.r1,
+CrossDomain.csv,16,Machine learning models for clinical and structural knee osteoarthritis prediction: Recent advancements and future directions,10.1016/j.ocarto.2025.100654,doi:10.1016/j.ocarto.2025.100654,
+CrossDomain.csv,17,Machine learning in knee osteoarthritis: A review,10.1016/j.ocarto.2020.100069,doi:10.1016/j.ocarto.2020.100069,
+CrossDomain.csv,18,Personalized Diabetes Treatment Support Using Large Language Models Fine-Tuned on Electronic Health Records: Development and Evaluation Study,10.2196/71541,doi:10.2196/71541,16
+CrossDomain.csv,19,Personalized treatment selection in routine care: Integrating machine learning and statistical algorithms to recommend cognitive behavioral or psychodynamic therapy,10.1080/10503307.2020.1769219,doi:10.1080/10503307.2020.1769219,83
+CrossDomain.csv,20,Artificial Intelligence in Depression-Medication Enhancement (AID-ME): A Cluster Randomized Trial of a Deep-Learning-Enabled Clinical Decision Support System for Personalized Depression Treatment Selection and Management.,10.4088/jcp.24m15634,doi:10.4088/jcp.24m15634,58
+CrossDomain.csv,21,Discovery and Clinical Decision Support for Personalized Healthcare,10.1109/jbhi.2016.2574857,doi:10.1109/jbhi.2016.2574857,84
+CrossDomain.csv,22,Machine learning in knee arthroplasty: specific data are key—a systematic review,10.1007/s00167-021-06848-6,doi:10.1007/s00167-021-06848-6,
+CrossDomain.csv,23,Personalized decision making for coronary artery disease treatment using offline reinforcement learning,10.1038/s41746-025-01498-1,doi:10.1038/s41746-025-01498-1,57
+CrossDomain.csv,24,Personalized Medicine Using Predictive Analytics: A Machine Learning-Based Prognostic Model for Patients Undergoing Hip Arthroscopy,10.1177/03635465221091847,doi:10.1177/03635465221091847,
+CrossDomain.csv,25,Medicine & Treatment Recommendation System using Deep Learning,,title:medicinetreatmentrecommendationsystemusingdeeplearning,100
+CrossDomain.csv,26,Artificial Learning and Machine Learning Decision Guidance Applications in Total Hip and Knee Arthroplasty: A Systematic Review,10.1016/j.artd.2021.07.012,doi:10.1016/j.artd.2021.07.012,
+CrossDomain.csv,27,A Doctor Assistance Tool: Personalized Healthcare Treatment Recommendations Journey from Deep Reinforcement Learning to Generative AI,10.1109/delcon64804.2024.10866814,doi:10.1109/delcon64804.2024.10866814,13
+CrossDomain.csv,28,Machine Learning for the Orthopaedic Surgeon,10.2106/jbjs.21.01305,doi:10.2106/jbjs.21.01305,46
+CrossDomain.csv,29,Deep reinforcement learning for personalized treatment recommendation,10.1002/sim.9491,doi:10.1002/sim.9491,86
+CrossDomain.csv,30,Research on orthopedic auxiliary classification and prediction model based on XGBoost algorithm,10.1007/s00521-019-04378-4,doi:10.1007/s00521-019-04378-4,
+CrossDomain.csv,31,Towards integrating personalized feedback research into clinical practice: Development of the Trier Treatment Navigator (TTN).,10.1016/j.brat.2019.103438,doi:10.1016/j.brat.2019.103438,
+CrossDomain.csv,32,"Machine learning for predicting outcomes, complications and resource utilisation after hip arthroscopy: A systematic review.",10.1002/ksa.70304,doi:10.1002/ksa.70304,34
+CrossDomain.csv,33,A drug recommender system for the treatment of hypertension,10.1186/s12911-023-02170-y,doi:10.1186/s12911-023-02170-y,
+CrossDomain.csv,34,Orthopedic patient analysis using machine learning techniques,10.1088/1742-6596/2664/1/012004,doi:10.1088/1742-6596/2664/1/012004,
+CrossDomain.csv,35,Personalized Medical Recommendation System Using Collaborative Filtering,10.1109/iciccs67901.2026.11502878,doi:10.1109/iciccs67901.2026.11502878,63
+CrossDomain.csv,36,Machine Learning in Orthopedics: A Literature Review,10.3389/fbioe.2018.00075,doi:10.3389/fbioe.2018.00075,
+CrossDomain.csv,37,Personalized Drug Therapy Recommendations Based on Doctor's Clinical Descriptions Using AI,10.52711/0974-360x.2025.00341,doi:10.52711/0974-360x.2025.00341,
+CrossDomain.csv,38,An Overview of Machine Learning in Orthopedic Surgery: An Educational Paper,10.1016/j.arth.2023.08.043,doi:10.1016/j.arth.2023.08.043,
+CrossDomain.csv,39,Therapy Decision Support Based on Recommender System Methods,10.1155/2017/8659460,doi:10.1155/2017/8659460,88
+CrossDomain.csv,40,Machine Learning Predictive Model as Clinical Decision Support System in Orthodontic Treatment Planning,10.3390/dj11010001,doi:10.3390/dj11010001,89
+CrossDomain.csv,41,Personalized Medication for Chronic Diseases Using Multimodal Data‐Driven Chain‐of‐Decisions,10.1002/advs.202504079,doi:10.1002/advs.202504079,29
+CrossDomain.csv,42,Machine Learning Model Developed to Aid in Patient Selection for Outpatient Total Joint Arthroplasty,10.1016/j.artd.2021.11.001,doi:10.1016/j.artd.2021.11.001,
+CrossDomain.csv,43,Machine learning-based clinical decision support system for treatment recommendation and overall survival prediction of hepatocellular carcinoma: a multi-center study,10.1038/s41746-023-00976-8,doi:10.1038/s41746-023-00976-8,73
+CrossDomain.csv,44,Machine Learning Algorithms Predict Achievement of Clinically Significant Outcomes Following Orthopaedic Surgery: A Systematic Review.,10.1016/j.arthro.2021.12.030,doi:10.1016/j.arthro.2021.12.030,
+CrossDomain.csv,45,Prospective evaluation of a clinical decision support system in psychological therapy.,10.1037/ccp0000642,doi:10.1037/ccp0000642,81
+CrossDomain.csv,46,Can Machine Learning Methods Produce Accurate and Easy-to-Use Preoperative Prediction Models of One-Year Improvements in Pain and Functioning After Knee Arthroplasty?,10.1016/j.arth.2020.07.026,doi:10.1016/j.arth.2020.07.026,
+CrossDomain.csv,47,Assessing TDApp: An AI-based clinical decision support system for ADHD treatment recommendations,10.3389/fpsyt.2025.1582746,doi:10.3389/fpsyt.2025.1582746,
+CrossDomain.csv,48,"Can machine learning predict the accuracy of preoperative planning for total hip arthroplasty, basing on patient-related factors? An explorative investigation on Supervised machine learning classification models.",10.1016/j.jcot.2024.102470,doi:10.1016/j.jcot.2024.102470,
+CrossDomain.csv,49,AI-augmented personalized treatment in healthcare a comprehensive survey of models benchmarking and deployment challenges,10.1007/s44163-026-01187-2,doi:10.1007/s44163-026-01187-2,64
+CrossDomain.csv,50,The Impact of Machine Learning on Total Joint Arthroplasty Patient Outcomes: A Systemic Review.,10.1016/j.arth.2022.10.039,doi:10.1016/j.arth.2022.10.039,
+CrossDomain.csv,51,A Reinforcement Learning Framework for Real-Time Personalized Treatment Planning in Clinical Environments,10.48084/etasr.12390,doi:10.48084/etasr.12390,60
+CrossDomain.csv,52,Machine learning models for predicting treatment outcomes in chronic non-specific back pain patients undergoing lumbar extension traction,10.1038/s41598-026-38059-9,doi:10.1038/s41598-026-38059-9,30
+CrossDomain.csv,53,DeepSurv: personalized treatment recommender system using a Cox proportional hazards deep neural network,10.1186/s12874-018-0482-1,doi:10.1186/s12874-018-0482-1,78
+CrossDomain.csv,54,A study on the risk prediction model for venous thromboembolism in orthopedic inpatients based on machine learning,10.3389/fmed.2025.1574546,doi:10.3389/fmed.2025.1574546,
+CrossDomain.csv,55,"APPRAISE-RS: Automated, updated, participatory, and personalized treatment recommender systems based on GRADE methodology",10.1016/j.heliyon.2023.e13074,doi:10.1016/j.heliyon.2023.e13074,
+CrossDomain.csv,56,"Utility of Machine Learning, Natural Language Processing, and Artificial Intelligence in Predicting Hospital Readmissions After Orthopaedic Surgery",10.2106/jbjs.rvw.24.00075,doi:10.2106/jbjs.rvw.24.00075,
+CrossDomain.csv,57,Quantum deep reinforcement learning for clinical decision support in oncology: application to adaptive radiotherapy,10.1038/s41598-021-02910-y,doi:10.1038/s41598-021-02910-y,87
+CrossDomain.csv,58,Can Machine Learning Algorithms Predict Which Patients Will Achieve Minimally Clinically Important Differences From Total Joint Arthroplasty?,10.1097/corr.0000000000000687,doi:10.1097/corr.0000000000000687,22
+CrossDomain.csv,59,A Survey of Personalized Medicine Recommendation,10.26599/ijcs.2023.9100013,doi:10.26599/ijcs.2023.9100013,
+CrossDomain.csv,60,Prediction of progression rate and fate of osteoarthritis: Comparison of machine learning algorithms,10.1002/jor.25398,doi:10.1002/jor.25398,
+CrossDomain.csv,61,Causal machine learning for predicting treatment outcomes,10.1038/s41591-024-02902-1,doi:10.1038/s41591-024-02902-1,69
+CrossDomain.csv,62,What Is the Accuracy of Three Different Machine Learning Techniques to Predict Clinical Outcomes After Shoulder Arthroplasty?,10.1097/corr.0000000000001263,doi:10.1097/corr.0000000000001263,24
+CrossDomain.csv,63,Treatment Response Optimized Clinical Decision Support AI System via Digital Twin Simulation,10.48550/arxiv.2606.17405,doi:10.48550/arxiv.2606.17405,65
+CrossDomain.csv,64,Feasibility of Machine Learning and Logistic Regression Algorithms to Predict Outcome in Orthopaedic Trauma Surgery,10.2106/jbjs.21.00341,doi:10.2106/jbjs.21.00341,
+CrossDomain.csv,65,Deep Reinforcement Learning for Personalized Treatment Planning: Integrating AI into Clinical Decision-Making,10.52783/jns.v14.1940,doi:10.52783/jns.v14.1940,61
+CrossDomain.csv,66,An Interpretable Machine Learning Model for Predicting 10-Year Total Hip Arthroplasty Risk.,10.1016/j.arth.2023.03.087,doi:10.1016/j.arth.2023.03.087,
+CrossDomain.csv,67,A clinical decision support system for AI-assisted decision-making in response-adaptive radiotherapy (ARCliDS),10.1038/s41598-023-32032-6,doi:10.1038/s41598-023-32032-6,71
+CrossDomain.csv,68,Prediction of complications and surgery duration in primary TKA with high accuracy using machine learning with arthroplasty-specific data,10.1007/s00167-022-06957-w,doi:10.1007/s00167-022-06957-w,
+CrossDomain.csv,69,A Primer on Reinforcement Learning in Medicine for Clinicians,10.1038/s41746-024-01316-0,doi:10.1038/s41746-024-01316-0,70
+CrossDomain.csv,70,Machine Learning Can Predict Level of Improvement in Shoulder Arthroplasty,10.2106/jbjs.oa.20.00128,doi:10.2106/jbjs.oa.20.00128,
+CrossDomain.csv,71,Learning Optimal Dynamic Treatment Regime from Observational Clinical Data through Reinforcement Learning,10.3390/make6030088,doi:10.3390/make6030088,76
+CrossDomain.csv,72,Machine learning models to predict osteonecrosis in patients with femoral neck fractures undergoing internal fixation.,10.1016/j.injury.2024.111830,doi:10.1016/j.injury.2024.111830,77
+CrossDomain.csv,73,Using Tree-Based Reinforcement Learning Methods to Support Personalized Decision-Making in Hand Treatment.,10.1016/j.hcl.2025.08.002,doi:10.1016/j.hcl.2025.08.002,66
+CrossDomain.csv,74,Artificial Intelligence Based Patient-Specific Preoperative Planning Algorithm for Total Knee Arthroplasty,10.3389/frobt.2022.840282,doi:10.3389/frobt.2022.840282,
+CrossDomain.csv,75,An Explainable Deep Learning Framework for Transparent and Personalized Recommendations in Clinical Decision-Making,10.25258/ijddt.16.30s.92,doi:10.25258/ijddt.16.30s.92,67
+CrossDomain.csv,76,Predicting patient-reported outcomes following hip and knee replacement surgery using supervised machine learning,10.1186/s12911-018-0731-6,doi:10.1186/s12911-018-0731-6,23
+CrossDomain.csv,77,State of the Art of Machine Learning–Enabled Clinical Decision Support in Intensive Care Units: Literature Review,10.2196/28781,doi:10.2196/28781,85
+CrossDomain.csv,78,Evaluation of centre‐specific machine learning models in predicting 2‐year outcomes of hip arthroscopy for mixed femoracetabular impingement syndrome,10.1002/jeo2.70477,doi:10.1002/jeo2.70477,97
+CrossDomain.csv,79,Prior-informed optimization of treatment recommendation via bandit algorithms trained on large language model-processed historical records,10.48550/arxiv.2510.19014,doi:10.48550/arxiv.2510.19014,21
+CrossDomain.csv,80,Using machine learning methods to predict nonhome discharge after elective total shoulder arthroplasty,10.1016/j.jseint.2021.02.011,doi:10.1016/j.jseint.2021.02.011,
+CrossDomain.csv,81,A survey on deep reinforcement learning for personalized treatment featuring challenges and a theoretical framework,10.1007/s44163-026-01733-y,doi:10.1007/s44163-026-01733-y,68
+CrossDomain.csv,82,Development of machine learning models for predicting depressive symptoms in knee osteoarthritis patients,10.1038/s41598-024-79601-x,doi:10.1038/s41598-024-79601-x,
+CrossDomain.csv,83,Predicting Therapy Success and Costs for Personalized Treatment Recommendations Using Baseline Characteristics: Data-Driven Analysis,10.2196/10275,doi:10.2196/10275,91
+CrossDomain.csv,84,Development of the machine learning model that is highly validated and easily applicable to predict radiographic knee osteoarthritis progression,10.1002/jor.25982,doi:10.1002/jor.25982,
+CrossDomain.csv,85,How machine-learning recommendations influence clinician treatment selections: the example of antidepressant selection,10.1038/s41398-021-01224-x,doi:10.1038/s41398-021-01224-x,80
+CrossDomain.csv,86,Applied Machine Learning for Spine Surgeons: Predicting Outcome for Patients Undergoing Treatment for Lumbar Disc Herniation Using PRO Data,10.1177/2192568220967643,doi:10.1177/2192568220967643,
+CrossDomain.csv,87,Personalization of Medical Treatment Decisions: Simplifying Complex Models while Maintaining Patient Health Outcomes,10.1177/0272989x211037921,doi:10.1177/0272989x211037921,94
+CrossDomain.csv,88,Development and Validation of a Machine Learning Algorithm After Primary Total Hip Arthroplasty: Applications to Length of Stay and Payment Models.,10.1016/j.arth.2018.12.030,doi:10.1016/j.arth.2018.12.030,
+CrossDomain.csv,89,"Medical recommender systems based on continuous-valued logic and multi-criteria decision operators, using interpretable neural networks",10.1186/s12911-021-01553-3,doi:10.1186/s12911-021-01553-3,90
+CrossDomain.csv,90,Machine Learning and Primary Total Knee Arthroplasty: Patient Forecasting for a Patient-Specific Payment Model.,10.1016/j.arth.2018.08.028,doi:10.1016/j.arth.2018.08.028,
+CrossDomain.csv,91,Personalized Mortality Prediction Driven by Electronic Medical Data and a Patient Similarity Metric,10.1371/journal.pone.0127428,doi:10.1371/journal.pone.0127428,55
+CrossDomain.csv,92,Predicting Treatment Outcomes in Patients with Low Back Pain Using Gene Signature-Based Machine Learning Models,10.1007/s40122-024-00700-8,doi:10.1007/s40122-024-00700-8,74
+CrossDomain.csv,93,The Personalized Advantage Index: Translating Research on Prediction into Individualized Treatment Recommendations. A Demonstration,10.1371/journal.pone.0083875,doi:10.1371/journal.pone.0083875,79
+CrossDomain.csv,94,Predicting Depression in Patients With Knee Osteoarthritis Using Machine Learning: Model Development and Validation Study,10.2196/36130,doi:10.2196/36130,
+CrossDomain.csv,95,Clinical decision support of radiotherapy treatment planning: A data-driven machine learning strategy for patient-specific dosimetric decision making.,10.1016/j.radonc.2017.10.014,doi:10.1016/j.radonc.2017.10.014,82
+CrossDomain.csv,96,Estimating Individualized Treatment Rules Using Outcome Weighted Learning,10.1080/01621459.2012.695674,doi:10.1080/01621459.2012.695674,

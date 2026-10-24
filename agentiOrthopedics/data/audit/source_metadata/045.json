@@ -1,0 +1,590 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          7
+        ]
+      ],
+      "date-time": "2026-10-07T13:32:45Z",
+      "timestamp": 1791379965961,
+      "version": "4.3.3"
+    },
+    "reference-count": 24,
+    "publisher": "Elsevier BV",
+    "issue": "5",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2021-05-01T00:00:00Z",
+          "timestamp": 1619827200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2021-05-01T00:00:00Z",
+          "timestamp": 1619827200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "clinicalkey.com",
+        "clinicalkey.com.au",
+        "clinicalkey.es",
+        "clinicalkey.fr",
+        "clinicalkey.jp",
+        "jshoulderelbow.org",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Journal of Shoulder and Elbow Surgery"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.jse.2020.07.042",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          8,
+          18
+        ]
+      ],
+      "date-time": "2020-08-18T22:29:11Z",
+      "timestamp": 1597789751000
+    },
+    "page": "e225-e236",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 81,
+    "title": [
+      "Using machine learning to predict clinical outcomes after shoulder arthroplasty with a minimal feature set"
+    ],
+    "prefix": "10.1016",
+    "volume": "30",
+    "author": [
+      {
+        "given": "Vikas",
+        "family": "Kumar",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3801-3272",
+        "authenticated-orcid": false,
+        "given": "Christopher",
+        "family": "Roche",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Steven",
+        "family": "Overman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ryan",
+        "family": "Simovitch",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0696-1577",
+        "authenticated-orcid": false,
+        "given": "Pierre-Henri",
+        "family": "Flurin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9174-9874",
+        "authenticated-orcid": false,
+        "given": "Thomas",
+        "family": "Wright",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3072-9970",
+        "authenticated-orcid": false,
+        "given": "Joseph",
+        "family": "Zuckerman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Howard",
+        "family": "Routman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ankur",
+        "family": "Teredesai",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib1",
+        "first-page": "1",
+        "article-title": "Interpretable machine learning in healthcare",
+        "volume": "1",
+        "author": "Ahmad",
+        "year": "2018",
+        "journal-title": "IEEE Intell Inform Bull"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib2",
+        "doi-asserted-by": "crossref",
+        "first-page": "516",
+        "DOI": "10.1515/cclm-2017-0287",
+        "article-title": "Machine learning in laboratory medicine: waiting for the flood?",
+        "volume": "56",
+        "author": "Cabitza",
+        "year": "2018",
+        "journal-title": "Clin Chem Lab Med"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib3",
+        "doi-asserted-by": "crossref",
+        "first-page": "75",
+        "DOI": "10.3389/fbioe.2018.00075",
+        "article-title": "Machine learning in orthopedics: a literature review",
+        "volume": "6",
+        "author": "Cabitza",
+        "year": "2018",
+        "journal-title": "Front Bioeng Biotechnol"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib4",
+        "doi-asserted-by": "crossref",
+        "first-page": "1267",
+        "DOI": "10.1097/CORR.0000000000000687",
+        "article-title": "Can machine learning algorithms predict which patients will achieve minimally clinically important differences from total joint arthroplasty?",
+        "volume": "477",
+        "author": "Fontana",
+        "year": "2019",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib5",
+        "doi-asserted-by": "crossref",
+        "first-page": "1264",
+        "DOI": "10.1007/s11999.0000000000000270",
+        "article-title": "Are age and patient gender associated with different rates and magnitudes of clinical improvement after reverse shoulder arthroplasty?",
+        "volume": "476",
+        "author": "Friedman",
+        "year": "2018",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib6",
+        "doi-asserted-by": "crossref",
+        "first-page": "266",
+        "DOI": "10.1016/j.jses.2019.09.010",
+        "article-title": "Preoperative parameters that predict postoperative patient reported outcome measures and range of motion with anatomic and reverse total shoulder arthroplasty",
+        "volume": "3",
+        "author": "Friedman",
+        "year": "2019",
+        "journal-title": "JSES Open Access"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib7",
+        "doi-asserted-by": "crossref",
+        "first-page": "248",
+        "DOI": "10.1186/1471-2474-15-248",
+        "article-title": "A prospective study of the association of patient expectations with changes in health-related quality of life outcomes, following total joint replacement",
+        "volume": "15",
+        "author": "Gonzalez Saenz de Tejada",
+        "year": "2014",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib8",
+        "doi-asserted-by": "crossref",
+        "first-page": "447",
+        "DOI": "10.1111/j.1524-4733.2009.00685.x",
+        "article-title": "Patient expectations and health-related quality of life outcomes following total joint replacement",
+        "volume": "13",
+        "author": "Gonzalez Sáenz de Tejada",
+        "year": "2010",
+        "journal-title": "Value Health"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib9",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.2307/2074954",
+        "article-title": "Applied logistic regression",
+        "volume": "23",
+        "author": "Gortmaker",
+        "year": "1994",
+        "journal-title": "Contemp Sociol"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib10",
+        "doi-asserted-by": "crossref",
+        "first-page": "e410",
+        "DOI": "10.1016/j.jse.2019.05.017",
+        "article-title": "Construct validation of machine learning in the prediction of short-term postoperative complications following total shoulder arthroplasty",
+        "volume": "28",
+        "author": "Gowd",
+        "year": "2019",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib11",
+        "series-title": "Assessing Fit of the Model. In: Hosmer DW Jr, Lemeshow S, Sturdivant RX, editors.Applied logistic regression",
+        "first-page": "177",
+        "author": "Hosmer",
+        "year": "2013"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib12",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1097/CORR.0000000000001263",
+        "article-title": "What is the accuracy of three different machine learning techniques to predict clinical outcomes after shoulder arthroplasty?",
+        "author": "Kumar",
+        "year": "2020",
+        "journal-title": "Cline Orthop Relat Res"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib13",
+        "doi-asserted-by": "crossref",
+        "first-page": "1872",
+        "DOI": "10.1016/j.jse.2014.04.014",
+        "article-title": "Speed of recovery after shoulder arthroplasty: a comparison of reverse and anatomic total shoulder arthroplasty",
+        "volume": "23",
+        "author": "Levy",
+        "year": "2014",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib14",
+        "doi-asserted-by": "crossref",
+        "first-page": "31",
+        "DOI": "10.1145/3236386.3241340",
+        "article-title": "The mythos of model interpretability",
+        "volume": "16",
+        "author": "Lipton",
+        "year": "2018",
+        "journal-title": "Queue"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib15",
+        "first-page": "1273",
+        "article-title": "The importance of patient expectations in predicting functional outcomes after total joint arthroplasty",
+        "volume": "29",
+        "author": "Mahomed",
+        "year": "2002",
+        "journal-title": "J Rheumatol"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib16",
+        "doi-asserted-by": "crossref",
+        "first-page": "1216",
+        "DOI": "10.1056/NEJMp1606181",
+        "article-title": "Predicting the future—big data, machine learning, and clinical medicine",
+        "volume": "375",
+        "author": "Obermeyer",
+        "year": "2016",
+        "journal-title": "N Engl J Med"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib17",
+        "doi-asserted-by": "crossref",
+        "first-page": "53",
+        "DOI": "10.1186/1471-2474-15-53",
+        "article-title": "Determinants of satisfaction 1 year after total hip arthroplasty: the role of expectations fulfilment",
+        "volume": "15",
+        "author": "Palazzo",
+        "year": "2014",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib18",
+        "doi-asserted-by": "crossref",
+        "first-page": "174",
+        "DOI": "10.1016/j.jses.2019.07.004",
+        "article-title": "Patient-reported outcomes of reverse total shoulder arthroplasty: a comparative risk factor analysis of improved versus unimproved cases",
+        "volume": "3",
+        "author": "Parsons",
+        "year": "2019",
+        "journal-title": "JSES Open Access"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib19",
+        "doi-asserted-by": "crossref",
+        "first-page": "298",
+        "DOI": "10.1016/j.jse.2017.09.013",
+        "article-title": "Quantifying success after total shoulder arthroplasty: the minimal clinically important difference",
+        "volume": "27",
+        "author": "Simovitch",
+        "year": "2018",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib20",
+        "doi-asserted-by": "crossref",
+        "first-page": "903",
+        "DOI": "10.1016/j.jse.2017.12.014",
+        "article-title": "Quantifying success after total shoulder arthroplasty: the substantial clinical benefit",
+        "volume": "27",
+        "author": "Simovitch",
+        "year": "2018",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib21",
+        "doi-asserted-by": "crossref",
+        "first-page": "1801",
+        "DOI": "10.2106/JBJS.16.01387",
+        "article-title": "Rate of improvement in clinical outcomes with anatomic and reverse total shoulder arthroplasty",
+        "volume": "99",
+        "author": "Simovitch",
+        "year": "2017",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib22",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.1007/s40708-017-0065-7",
+        "article-title": "Machine learning–XGBoost analysis of language networks to classify patients with epilepsy",
+        "volume": "4",
+        "author": "Torlay",
+        "year": "2017",
+        "journal-title": "Brain Inform"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib23",
+        "doi-asserted-by": "crossref",
+        "first-page": "2624",
+        "DOI": "10.1016/j.arth.2019.06.007",
+        "article-title": "Clinical and statistical validation of a probabilistic prediction tool of total knee arthroplasty outcome",
+        "volume": "34",
+        "author": "Twiggs",
+        "year": "2019",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "10.1016/j.jse.2020.07.042_bib24",
+        "doi-asserted-by": "crossref",
+        "first-page": "1606",
+        "DOI": "10.1109/TII.2017.2785963",
+        "article-title": "Wide and deep convolutional neural networks for electricity-theft detection to secure smart grids",
+        "volume": "14",
+        "author": "Zheng",
+        "year": "2017",
+        "journal-title": "IEEE Trans Industr Inform"
+      }
+    ],
+    "container-title": [
+      "Journal of Shoulder and Elbow Surgery"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1058274620306467?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1058274620306467?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          21
+        ]
+      ],
+      "date-time": "2025-10-21T00:50:39Z",
+      "timestamp": 1761007839000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1058274620306467"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          5
+        ]
+      ]
+    },
+    "references-count": 24,
+    "journal-issue": {
+      "issue": "5",
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            5
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S1058274620306467"
+    ],
+    "URL": "https://doi.org/10.1016/j.jse.2020.07.042",
+    "relation": {},
+    "ISSN": [
+      "1058-2746"
+    ],
+    "issn-type": [
+      {
+        "value": "1058-2746",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          5
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Using machine learning to predict clinical outcomes after shoulder arthroplasty with a minimal feature set",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Journal of Shoulder and Elbow Surgery",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.jse.2020.07.042",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2020 Journal of Shoulder and Elbow Surgery Board of Trustees. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

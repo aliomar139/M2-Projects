@@ -1,0 +1,610 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          8
+        ]
+      ],
+      "date-time": "2026-10-08T02:53:31Z",
+      "timestamp": 1791428011322,
+      "version": "4.3.3"
+    },
+    "reference-count": 63,
+    "publisher": "Wiley",
+    "issue": "7",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              2,
+              24
+            ]
+          ],
+          "date-time": "2020-02-24T00:00:00Z",
+          "timestamp": 1582502400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "onlinelibrary.wiley.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Journal Orthopaedic Research"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          7
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Up to one‐third of total joint replacement (TJR) procedures may be performed inappropriately in a subset of patients who remain dissatisfied with their outcomes, stressing the importance of shared decision‐making. Patient‐reported outcome measures capture physical, emotional, and social aspects of health and wellbeing from the patient's perspective. Powerful computer systems capable of performing highly sophisticated analysis using different types of data, including patient‐derived data, such as patient‐reported outcomes, may eliminate guess work, generating impactful metrics to better inform the decision‐making process. We have created a shared decision‐making tool which generates personalized predictions of risks and benefits from TJR based on patient‐reported outcomes as well as clinical and demographic data. We present the protocol for a randomized controlled trial designed to assess the impact of this tool on decision quality, level of shared decision‐making, and patient and process outcomes. We also discuss current concepts in this field and highlight opportunities leveraging patient‐reported data and artificial intelligence for decision support across the care continuum.</jats:p>",
+    "DOI": "10.1002/jor.24614",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          1,
+          29
+        ]
+      ],
+      "date-time": "2020-01-29T11:14:32Z",
+      "timestamp": 1580296472000
+    },
+    "page": "1414-1422",
+    "update-policy": "https://doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 54,
+    "title": [
+      "Advanced decision‐making using patient‐reported outcome measures in total joint replacement"
+    ],
+    "prefix": "10.1002",
+    "volume": "38",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-2598-2509",
+        "authenticated-orcid": false,
+        "given": "Prakash",
+        "family": "Jayakumar",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Surgery and Perioperative Care, Dell Medical School University of Texas at Austin  Austin Texas"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9398-1239",
+        "authenticated-orcid": false,
+        "given": "Kevin J.",
+        "family": "Bozic",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Surgery and Perioperative Care, Dell Medical School University of Texas at Austin  Austin Texas"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          24
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_7_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12178-012-9139-6"
+      },
+      {
+        "key": "e_1_2_7_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.joca.2019.07.002"
+      },
+      {
+        "key": "e_1_2_7_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.joca.2016.11.005"
+      },
+      {
+        "key": "e_1_2_7_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.15585/mmwr.mm6609e1"
+      },
+      {
+        "key": "e_1_2_7_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/art.39692"
+      },
+      {
+        "key": "e_1_2_7_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10067-004-0965-9"
+      },
+      {
+        "key": "e_1_2_7_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nrrheum.2014.44"
+      },
+      {
+        "key": "e_1_2_7_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s40273-016-0424-x"
+      },
+      {
+        "key": "e_1_2_7_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/art.38685"
+      },
+      {
+        "key": "e_1_2_7_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.17.00405"
+      },
+      {
+        "key": "e_1_2_7_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.joca.2017.08.018"
+      },
+      {
+        "key": "e_1_2_7_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3899/jrheum.180911"
+      },
+      {
+        "key": "e_1_2_7_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.16.00473"
+      },
+      {
+        "key": "e_1_2_7_15_1",
+        "unstructured": "AUC.http://www.orthoguidelines.org/go/auc/auc.cfm?auc_id=224986. Accessed November 15 2019."
+      },
+      {
+        "key": "e_1_2_7_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jclinepi.2017.04.014"
+      },
+      {
+        "key": "e_1_2_7_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.17.00608"
+      },
+      {
+        "key": "e_1_2_7_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jclinepi.2017.04.017"
+      },
+      {
+        "key": "e_1_2_7_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1056/NEJMp1109283"
+      },
+      {
+        "key": "e_1_2_7_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jclinepi.2017.04.012"
+      },
+      {
+        "key": "e_1_2_7_21_1",
+        "article-title": "Shared decision‐making: staying focused on the ultimate goal",
+        "author": "Barry MJ",
+        "year": "2018",
+        "journal-title": "NEJM Catalyst"
+      },
+      {
+        "key": "e_1_2_7_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.M.00004"
+      },
+      {
+        "key": "e_1_2_7_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.joca.2015.07.024"
+      },
+      {
+        "key": "e_1_2_7_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-016-3993-5"
+      },
+      {
+        "issue": "2",
+        "key": "e_1_2_7_25_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "e024906",
+        "DOI": "10.1136/bmjopen-2018-024906",
+        "article-title": "Protocol for a randomised trial evaluating the comparative effectiveness of strategies to promote shared decision making for hip and knee osteoarthritis (DECIDE‐OA study)",
+        "volume": "9",
+        "author": "Mangla M",
+        "year": "2019",
+        "journal-title": "BMJ Open"
+      },
+      {
+        "key": "e_1_2_7_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0272989X18801308"
+      },
+      {
+        "issue": "3",
+        "key": "e_1_2_7_27_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "e0023",
+        "DOI": "10.2106/JBJS.OA.16.00023",
+        "article-title": "A patient‐focused technology‐enabled program improves outcomes in primary total hip and knee replacement",
+        "volume": "2",
+        "author": "Jayakumar P",
+        "year": "2017",
+        "journal-title": "JB JS Open Access"
+      },
+      {
+        "key": "e_1_2_7_28_1",
+        "first-page": "87",
+        "article-title": "The dartmouth college artificial intelligence conference: the next fifty years",
+        "volume": "27",
+        "author": "Moor JH",
+        "year": "2006",
+        "journal-title": "AI Mag"
+      },
+      {
+        "key": "e_1_2_7_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/CORR.0000000000000873"
+      },
+      {
+        "key": "e_1_2_7_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.media.2012.02.005"
+      },
+      {
+        "key": "e_1_2_7_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1056/NEJMp1606181"
+      },
+      {
+        "key": "e_1_2_7_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10916-014-0110-5"
+      },
+      {
+        "key": "e_1_2_7_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.molpharmaceut.5b00982"
+      },
+      {
+        "key": "e_1_2_7_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11999-015-4350-6"
+      },
+      {
+        "key": "e_1_2_7_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11999-016-4770-y"
+      },
+      {
+        "key": "e_1_2_7_36_1",
+        "first-page": "54",
+        "volume-title": "Supporting People to Manage their Health: An Introduction to Patient Activation",
+        "author": "Hibbard J",
+        "year": "2014"
+      },
+      {
+        "key": "e_1_2_7_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11606-011-1931-2"
+      },
+      {
+        "key": "e_1_2_7_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/00004479-200701000-00005"
+      },
+      {
+        "key": "e_1_2_7_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1475-6773.2006.00669.x"
+      },
+      {
+        "key": "e_1_2_7_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0278-6133.9.4.390"
+      },
+      {
+        "key": "e_1_2_7_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11999-015-4247-4"
+      },
+      {
+        "key": "e_1_2_7_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/MLR.0000000000001069"
+      },
+      {
+        "key": "e_1_2_7_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jbi.2008.08.010"
+      },
+      {
+        "key": "e_1_2_7_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jbi.2019.103208"
+      },
+      {
+        "key": "e_1_2_7_45_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1471-2474-12-149"
+      },
+      {
+        "key": "e_1_2_7_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.pec.2013.05.009"
+      },
+      {
+        "issue": "3",
+        "key": "e_1_2_7_47_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "e0002",
+        "DOI": "10.2106/JBJS.OA.19.00002",
+        "article-title": "Relationship between magnitude of limitations and patient experience during recovery from upper‐extremity fracture",
+        "volume": "4",
+        "author": "Jayakumar P",
+        "year": "2019",
+        "journal-title": "JB JS Open Access"
+      },
+      {
+        "key": "e_1_2_7_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/01.MLR.0000093487.78664.3C"
+      },
+      {
+        "key": "e_1_2_7_49_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/archinte.166.10.1092"
+      },
+      {
+        "key": "e_1_2_7_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12891-019-2434-2"
+      },
+      {
+        "key": "e_1_2_7_51_1",
+        "article-title": "Shared decision making: time to get personal",
+        "author": "Sambare T",
+        "year": "2017",
+        "journal-title": "NEJM Catalyst"
+      },
+      {
+        "key": "e_1_2_7_52_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2019.07.024"
+      },
+      {
+        "key": "e_1_2_7_53_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2019.05.021"
+      },
+      {
+        "key": "e_1_2_7_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2014.09.006"
+      },
+      {
+        "key": "e_1_2_7_55_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/CORR.0000000000000687"
+      },
+      {
+        "key": "e_1_2_7_56_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12911-018-0731-6"
+      },
+      {
+        "key": "e_1_2_7_57_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2019.05.034"
+      },
+      {
+        "key": "e_1_2_7_58_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12891-016-1070-3"
+      },
+      {
+        "key": "e_1_2_7_59_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2018.08.028"
+      },
+      {
+        "key": "e_1_2_7_60_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2019.05.048"
+      },
+      {
+        "key": "e_1_2_7_61_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00402-019-03286-5"
+      },
+      {
+        "key": "e_1_2_7_62_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/CORR.0000000000000456"
+      },
+      {
+        "key": "e_1_2_7_63_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2016.04.015"
+      },
+      {
+        "key": "e_1_2_7_64_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.aaw0029"
+      }
+    ],
+    "container-title": [
+      "Journal of Orthopaedic Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fjor.24614",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/jor.24614",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/jor.24614",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/jor.24614",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          9,
+          6
+        ]
+      ],
+      "date-time": "2023-09-06T11:23:10Z",
+      "timestamp": 1693999390000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://onlinelibrary.wiley.com/doi/10.1002/jor.24614"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          24
+        ]
+      ]
+    },
+    "references-count": 63,
+    "journal-issue": {
+      "issue": "7",
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            7
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1002/jor.24614"
+    ],
+    "URL": "https://doi.org/10.1002/jor.24614",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "0736-0266",
+      "1554-527X"
+    ],
+    "issn-type": [
+      {
+        "value": "0736-0266",
+        "type": "print"
+      },
+      {
+        "value": "1554-527X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          24
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2019-12-13",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2020-01-21",
+        "order": 1,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2020-02-24",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

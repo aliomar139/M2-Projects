@@ -1,0 +1,64 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "42",
+    "retmax": "42",
+    "retstart": "0",
+    "idlist": [
+      "41947034",
+      "42896011",
+      "42847516",
+      "42521121",
+      "42786419",
+      "42809429",
+      "42763066",
+      "42877202",
+      "42615432",
+      "42644895",
+      "42302672",
+      "42287372",
+      "42064269",
+      "42518708",
+      "42394476",
+      "42383711",
+      "42473527",
+      "42321735",
+      "41903621",
+      "42218406",
+      "41974163",
+      "41977109",
+      "42365952",
+      "41647032",
+      "41416245",
+      "41217608",
+      "41303806",
+      "40962246",
+      "41080384",
+      "40937001",
+      "40754575",
+      "38781473",
+      "37168027",
+      "36736708",
+      "36323796",
+      "36270657",
+      "36248277",
+      "35027007",
+      "33933587",
+      "32513430",
+      "30203707",
+      "19896056"
+    ],
+    "translationset": [],
+    "querytranslation": "(\"Orthopedics\"[MeSH Terms] OR \"Orthopedic Procedures\"[MeSH Terms] OR \"Arthroplasty\"[MeSH Terms] OR \"Osteoarthritis\"[MeSH Terms] OR \"orthop*\"[Title/Abstract] OR \"arthroplast*\"[Title/Abstract] OR \"Osteoarthritis\"[Title/Abstract] OR \"musculoskeletal\"[Title/Abstract] OR \"spine surgery\"[Title/Abstract] OR \"spine care\"[Title/Abstract] OR \"hip arthroscopy\"[Title/Abstract]) AND (\"causal inference\"[Title/Abstract] OR \"causal machine learning\"[Title/Abstract] OR \"target trial\"[Title/Abstract] OR \"treatment effect heterogeneity\"[Title/Abstract] OR \"individualized treatment rule\"[Title/Abstract]) AND (\"Review\"[Publication Type] OR \"systematic review\"[Title] OR \"scoping review\"[Title] OR \"narrative review\"[Title] OR \"survey\"[Title] OR \"literature review\"[Title]) AND 1800/01/01:2026/10/23[Date - Publication]",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"individualised treatment rule\"[Title/Abstract]"
+      ],
+      "outputmessages": []
+    }
+  }
+}

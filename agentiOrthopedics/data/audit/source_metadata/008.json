@@ -1,0 +1,380 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          12
+        ]
+      ],
+      "date-time": "2026-09-12T17:18:11Z",
+      "timestamp": 1789233491202,
+      "version": "build-2803163510"
+    },
+    "reference-count": 14,
+    "publisher": "Frontiers Media SA",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              11,
+              1
+            ]
+          ],
+          "date-time": "2023-11-01T00:00:00Z",
+          "timestamp": 1698796800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "frontiersin.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Front. Surg."
+    ],
+    "abstract": "<jats:p>The field of orthopedics faces complex challenges requiring quick and intricate decisions, with patient education and compliance playing crucial roles in treatment outcomes. Technological advancements in artificial intelligence (AI) can potentially enhance orthopedic care. ChatGPT, a natural language processing technology developed by OpenAI, has shown promise in various sectors, including healthcare. ChatGPT can facilitate patient information exchange in orthopedics, provide clinical decision support, and improve patient communication and education. It can assist in differential diagnosis, suggest appropriate imaging modalities, and optimize treatment plans based on evidence-based guidelines. However, ChatGPT has limitations, such as insufficient expertise in specialized domains and a lack of contextual understanding. The application of ChatGPT in orthopedics is still evolving, with studies exploring its potential in clinical decision-making, patient education, workflow optimization, and scientific literature. The results indicate both the benefits and limitations of ChatGPT, emphasizing the need for caution, ethical considerations, and human oversight. Addressing training data quality, biases, data privacy, and accountability challenges is crucial for responsible implementation. While ChatGPT has the potential to transform orthopedic healthcare, further research and development are necessary to ensure its reliability, accuracy, and ethical use in patient care.</jats:p>",
+    "DOI": "10.3389/fsurg.2023.1284015",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          1
+        ]
+      ],
+      "date-time": "2023-11-01T13:12:42Z",
+      "timestamp": 1698844362000
+    },
+    "update-policy": "https://doi.org/10.3389/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 69,
+    "title": [
+      "ChatGPT in orthopedics: a narrative review exploring the potential of artificial intelligence in orthopedic practice"
+    ],
+    "prefix": "10.3389",
+    "volume": "10",
+    "author": [
+      {
+        "given": "Riccardo",
+        "family": "Giorgino",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mario",
+        "family": "Alessandri-Bonetti",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrea",
+        "family": "Luca",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Filippo",
+        "family": "Migliorini",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nicolò",
+        "family": "Rossi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Giuseppe M.",
+        "family": "Peretti",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Laura",
+        "family": "Mangiavini",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1965",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "B1",
+        "doi-asserted-by": "publisher",
+        "first-page": "148",
+        "DOI": "10.1001/jamasurg.2019.4917",
+        "article-title": "Artificial intelligence and surgical decision-making",
+        "volume": "155",
+        "author": "Loftus",
+        "year": "2020",
+        "journal-title": "JAMA Surg"
+      },
+      {
+        "key": "B2",
+        "doi-asserted-by": "publisher",
+        "first-page": "807",
+        "DOI": "10.1016/j.gie.2020.06.040",
+        "article-title": "History of artificial intelligence in medicine",
+        "volume": "92",
+        "author": "Kaul",
+        "year": "2020",
+        "journal-title": "Gastrointest Endosc"
+      },
+      {
+        "key": "B3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10439-023-03325-8",
+        "article-title": "The first months of life of ChatGPT and its impact in healthcare: a bibliometric analysis of the current literature",
+        "author": "Alessandri-Bonetti",
+        "year": "2023",
+        "journal-title": "Ann Biomed Eng"
+      },
+      {
+        "key": "B4",
+        "doi-asserted-by": "publisher",
+        "first-page": "109",
+        "DOI": "10.1007/s43465-019-00023-3",
+        "article-title": "Artificial intelligence and machine learning: a new disruptive force in orthopaedics",
+        "volume": "54",
+        "author": "Poduval",
+        "year": "2020",
+        "journal-title": "Indian J Orthop"
+      },
+      {
+        "key": "B5",
+        "doi-asserted-by": "publisher",
+        "first-page": "1366",
+        "DOI": "10.1007/s10439-023-03207-z",
+        "article-title": "The potential of GPT-4 as an AI-powered virtual assistant for surgeons specialized in joint arthroplasty",
+        "volume": "51",
+        "author": "Cheng",
+        "year": "2023",
+        "journal-title": "Ann Biomed Eng"
+      },
+      {
+        "key": "B6",
+        "doi-asserted-by": "publisher",
+        "first-page": "1887",
+        "DOI": "10.1007/s00264-023-05887-7",
+        "article-title": "Two minutes of orthopaedics with ChatGPT: it is just the beginning; it’s going to be hot, hot, hot!",
+        "volume": "47",
+        "author": "Hernigou",
+        "year": "2023",
+        "journal-title": "Int Orthop"
+      },
+      {
+        "key": "B7",
+        "doi-asserted-by": "publisher",
+        "first-page": "1631",
+        "DOI": "10.1097/CORR.0000000000002741",
+        "article-title": "CORR Insights®: can artificial intelligence pass the American board of orthopaedic surgery examination? Orthopaedic residents versus ChatGPT",
+        "volume": "481",
+        "author": "Karnuta",
+        "year": "2023",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "B8",
+        "doi-asserted-by": "publisher",
+        "first-page": "1195",
+        "DOI": "10.1016/j.arth.2023.04.007",
+        "article-title": "Using a google web search analysis to assess the utility of ChatGPT in total joint arthroplasty",
+        "volume": "38",
+        "author": "Dubin",
+        "year": "2023",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "B9",
+        "doi-asserted-by": "publisher",
+        "first-page": "qgad053",
+        "DOI": "10.1093/postmj/qgad053",
+        "article-title": "Artificial intelligence in orthopaedics: can chat generative pre-trained transformer (ChatGPT) pass section 1 of the fellowship of the royal college of surgeons (trauma & orthopaedics) examination?",
+        "author": "Cuthbert",
+        "year": "2023",
+        "journal-title": "Postgrad Med J"
+      },
+      {
+        "key": "B10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10439-023-03318-7",
+        "article-title": "How does ChatGPT perform on the Italian residency admission national exam compared to 15,869 medical graduates?",
+        "author": "Alessandri Bonetti",
+        "year": "2023",
+        "journal-title": "Ann Biomed Eng"
+      },
+      {
+        "key": "B11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.23.00269",
+        "article-title": "What’s important: the next academic-ChatGPT AI?",
+        "author": "Bi",
+        "year": "2023",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "key": "B12",
+        "doi-asserted-by": "publisher",
+        "first-page": "1190",
+        "DOI": "10.1007/s00167-023-07372-5",
+        "article-title": "A deeper dive into ChatGPT: history, use and future perspectives for orthopaedic research",
+        "volume": "31",
+        "author": "Ollivier",
+        "year": "2023",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc"
+      },
+      {
+        "key": "B13",
+        "doi-asserted-by": "publisher",
+        "first-page": "587",
+        "DOI": "10.1302/0301-620X.105B6.BJJ-2023-0156",
+        "article-title": "What’s all the chatter about?",
+        "author": "Kunze",
+        "year": "2023",
+        "journal-title": "Bone Joint J"
+      },
+      {
+        "key": "B14",
+        "doi-asserted-by": "publisher",
+        "first-page": "225",
+        "DOI": "10.22038/abjs.2023.22042",
+        "article-title": "ChatGPT in medicine; a disruptive innovation or just one step forward?",
+        "volume": "11",
+        "author": "Parsa",
+        "year": "2023",
+        "journal-title": "Arch Bone Jt Surg"
+      }
+    ],
+    "container-title": [
+      "Frontiers in Surgery"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://www.frontiersin.org/articles/10.3389/fsurg.2023.1284015/full",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          1
+        ]
+      ],
+      "date-time": "2023-11-01T13:12:49Z",
+      "timestamp": 1698844369000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.frontiersin.org/articles/10.3389/fsurg.2023.1284015/full"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          1
+        ]
+      ]
+    },
+    "references-count": 14,
+    "alternative-id": [
+      "10.3389/fsurg.2023.1284015"
+    ],
+    "URL": "https://doi.org/10.3389/fsurg.2023.1284015",
+    "relation": {},
+    "ISSN": [
+      "2296-875X"
+    ],
+    "issn-type": [
+      {
+        "value": "2296-875X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          1
+        ]
+      ]
+    },
+    "article-number": "1284015"
+  }
+}

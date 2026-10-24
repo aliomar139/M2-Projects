@@ -1,0 +1,754 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          13
+        ]
+      ],
+      "date-time": "2026-10-13T12:57:01Z",
+      "timestamp": 1791896221718,
+      "version": "4.3.4"
+    },
+    "reference-count": 49,
+    "publisher": "MDPI AG",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              12,
+              20
+            ]
+          ],
+          "date-time": "2022-12-20T00:00:00Z",
+          "timestamp": 1671494400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Dentistry Journal"
+    ],
+    "abstract": "<jats:p>Diagnosis and treatment planning forms the crux of orthodontics, which orthodontists gain with years of expertise. Machine Learning (ML), having the ability to learn by pattern recognition, can gain this expertise in a very short duration, ensuring reduced error, inter–intra clinician variability and good accuracy. Thus, the aim of this study was to construct an ML predictive model to predict a broader outline of the orthodontic diagnosis and treatment plan. The sample consisted of 700 case records of orthodontically treated patients in the past ten years. The data were split into a training and a test set. There were 33 input variables and 11 output variables. Four ML predictive model layers with seven algorithms were created. The test set was used to check the efficacy of the ML-predicted treatment plan and compared with that of the decision made by the expert orthodontists. The model showed an overall average accuracy of 84%, with the Decision Tree, Random Forest and XGB classifier algorithms showing the highest accuracy ranging from 87–93%. Yet in their infancy stages, Machine Learning models could become a valuable Clinical Decision Support System in orthodontic diagnosis and treatment planning in the future.</jats:p>",
+    "DOI": "10.3390/dj11010001",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          20
+        ]
+      ],
+      "date-time": "2022-12-20T04:21:56Z",
+      "timestamp": 1671510116000
+    },
+    "page": "1",
+    "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 39,
+    "title": [
+      "Machine Learning Predictive Model as Clinical Decision Support System in Orthodontic Treatment Planning"
+    ],
+    "prefix": "10.3390",
+    "volume": "11",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4775-665X",
+        "authenticated-orcid": false,
+        "given": "Jahnavi",
+        "family": "Prasad",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Orthodontics and Dentofacial Orthopedics, DAPM R V Dental College and Hospital, Bengaluru 560078, Karnataka, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dharma",
+        "family": "Mallikarjunaiah",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthodontics and Dentofacial Orthopedics, DAPM R V Dental College and Hospital, Bengaluru 560078, Karnataka, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Akshai",
+        "family": "Shetty",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthodontics and Dentofacial Orthopedics, DAPM R V Dental College and Hospital, Bengaluru 560078, Karnataka, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8429-7758",
+        "authenticated-orcid": false,
+        "given": "Narayan",
+        "family": "Gandedkar",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Senior Lecturer—Orthodontics, Discipline of Orthodontics & Pediatric Dentistry, School of Dentistry, University of Sydney, Sydney, NSW 2006, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Amarnath",
+        "family": "Chikkamuniswamy",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthodontics and Dentofacial Orthopedics, DAPM R V Dental College and Hospital, Bengaluru 560078, Karnataka, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Prashanth",
+        "family": "Shivashankar",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthodontics and Dentofacial Orthopedics, DAPM R V Dental College and Hospital, Bengaluru 560078, Karnataka, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1968",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          20
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "334",
+        "DOI": "10.1308/147870804290",
+        "article-title": "Artificial intelligence in medicine",
+        "volume": "86",
+        "author": "Ramesh",
+        "year": "2004",
+        "journal-title": "Ann. R. Coll. Surg. Engl."
+      },
+      {
+        "key": "ref_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "502",
+        "DOI": "10.1002/jso.23053",
+        "article-title": "Clinical decision support systems: Potential with pitfalls",
+        "volume": "105",
+        "author": "Eberhardt",
+        "year": "2012",
+        "journal-title": "J. Surg. Oncol."
+      },
+      {
+        "key": "ref_3",
+        "doi-asserted-by": "crossref",
+        "first-page": "527",
+        "DOI": "10.1136/jamia.2001.0080527",
+        "article-title": "Clinical decision support systems for the practice of evidence-based medicine",
+        "volume": "8",
+        "author": "Sim",
+        "year": "2001",
+        "journal-title": "J. Am. Med. Inform. Assoc."
+      },
+      {
+        "key": "ref_4",
+        "doi-asserted-by": "crossref",
+        "first-page": "255",
+        "DOI": "10.1126/science.aaa8415",
+        "article-title": "Machine learning: Trends, perspectives, and prospects",
+        "volume": "349",
+        "author": "Jordan",
+        "year": "2015",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ref_5",
+        "first-page": "117",
+        "article-title": "Machine learning in orthodontics: Application review",
+        "volume": "1001",
+        "author": "Ko",
+        "year": "2019",
+        "journal-title": "Embrac. Nov. Technol. Dent. Orthod."
+      },
+      {
+        "key": "ref_6",
+        "doi-asserted-by": "crossref",
+        "first-page": "879",
+        "DOI": "10.1016/j.tripleo.2008.03.002",
+        "article-title": "An artificial multilayer perceptron neural network for diagnosis of proximal dental caries",
+        "volume": "106",
+        "author": "Devito",
+        "year": "2008",
+        "journal-title": "Oral Surg. Oral Med. Oral Pathol. Oral Radiol. Endodontol."
+      },
+      {
+        "key": "ref_7",
+        "doi-asserted-by": "crossref",
+        "first-page": "1986",
+        "DOI": "10.1097/SCS.0000000000005650",
+        "article-title": "Artificial intelligent model with neural network machine learning for the diagnosis of orthognathic surgery",
+        "volume": "30",
+        "author": "Choi",
+        "year": "2019",
+        "journal-title": "J. Craniofacial Surg."
+      },
+      {
+        "key": "ref_8",
+        "doi-asserted-by": "crossref",
+        "first-page": "424",
+        "DOI": "10.1111/j.1600-0714.1996.tb00291.x",
+        "article-title": "Performance of a computer simulated neural network trained to categorise normal, premalignant and malignant oral smears",
+        "volume": "25",
+        "author": "Brickley",
+        "year": "1996",
+        "journal-title": "J. Oral Pathol. Med."
+      },
+      {
+        "key": "ref_9",
+        "doi-asserted-by": "crossref",
+        "first-page": "257",
+        "DOI": "10.1111/j.1365-2591.2011.01970.x",
+        "article-title": "A new approach for locating the minor apical foramen using an artificial neural network",
+        "volume": "45",
+        "author": "Saghiri",
+        "year": "2012",
+        "journal-title": "Int. Endod. J."
+      },
+      {
+        "key": "ref_10",
+        "doi-asserted-by": "crossref",
+        "first-page": "e2482",
+        "DOI": "10.7717/peerj.2482",
+        "article-title": "A genetic programming approach to oral cancer prognosis",
+        "volume": "4",
+        "author": "Tan",
+        "year": "2016",
+        "journal-title": "PeerJ"
+      },
+      {
+        "key": "ref_11",
+        "doi-asserted-by": "crossref",
+        "first-page": "499",
+        "DOI": "10.1093/ejo/22.5.499",
+        "article-title": "An evaluation of active shape models for the automatic identification of cephalometric landmarks",
+        "volume": "22",
+        "author": "Hutton",
+        "year": "2000",
+        "journal-title": "Eur. J. Orthod."
+      },
+      {
+        "key": "ref_12",
+        "unstructured": "Vandaele, R., Marée, R., Jodogne, S., and Geurts, P. (May, January 29). Automatic cephalometric X-ray landmark detection challenge 2014: A tree-based algorithm. Proceedings of the ISBI, Beijing, China."
+      },
+      {
+        "key": "ref_13",
+        "doi-asserted-by": "crossref",
+        "first-page": "1890",
+        "DOI": "10.1109/TMI.2015.2412951",
+        "article-title": "Evaluation and comparison of anatomical landmark detection methods for cephalometric X-ray images: A grand challenge",
+        "volume": "34",
+        "author": "Wang",
+        "year": "2015",
+        "journal-title": "IEEE Trans. Med. Imaging"
+      },
+      {
+        "key": "ref_14",
+        "doi-asserted-by": "crossref",
+        "first-page": "33581",
+        "DOI": "10.1038/srep33581",
+        "article-title": "Fully automatic system for accurate localisation and analysis of cephalometric landmarks in lateral cephalograms",
+        "volume": "6",
+        "author": "Lindner",
+        "year": "2016",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "ref_15",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lee, H., Park, M., and Kim, J. (2017, January 11–16). Cephalometric landmark detection in dental X-ray images using convolutional neural networks. Proceedings of the Medical Imaging 2017: Computer-Aided Diagnosis, Orlando, FL, USA.",
+        "DOI": "10.1117/12.2255870"
+      },
+      {
+        "key": "ref_16",
+        "doi-asserted-by": "crossref",
+        "first-page": "903",
+        "DOI": "10.2319/022019-127.1",
+        "article-title": "Automated identification of cephalometric landmarks: Part 1—Comparisons between the latest deep-learning methods YOLOV3 and SSD",
+        "volume": "89",
+        "author": "Park",
+        "year": "2019",
+        "journal-title": "Angle Orthod."
+      },
+      {
+        "key": "ref_17",
+        "doi-asserted-by": "crossref",
+        "first-page": "69",
+        "DOI": "10.2319/022019-129.1",
+        "article-title": "Automated identification of cephalometric landmarks: Part 2-Might it be better than human?",
+        "volume": "90",
+        "author": "Hwang",
+        "year": "2020",
+        "journal-title": "Angle Orthod."
+      },
+      {
+        "key": "ref_18",
+        "doi-asserted-by": "crossref",
+        "first-page": "329",
+        "DOI": "10.2319/021220-100.1",
+        "article-title": "Evaluation of automated cephalometric analysis based on the latest deep learning method",
+        "volume": "91",
+        "author": "Hwang",
+        "year": "2021",
+        "journal-title": "Angle Orthod."
+      },
+      {
+        "key": "ref_19",
+        "doi-asserted-by": "crossref",
+        "first-page": "77",
+        "DOI": "10.4041/kjod.2021.51.2.77",
+        "article-title": "Evaluation of a multi-stage convolutional neural network-based fully automated landmark identification system using cone-beam computed tomography-synthesized posteroanterior cephalometric images",
+        "volume": "51",
+        "author": "Kim",
+        "year": "2021",
+        "journal-title": "Korean, J. Orthod."
+      },
+      {
+        "key": "ref_20",
+        "doi-asserted-by": "crossref",
+        "first-page": "127",
+        "DOI": "10.1016/j.ajodo.2015.07.030",
+        "article-title": "New approach for the diagnosis of extractions with neural network machine learning",
+        "volume": "149",
+        "author": "Jung",
+        "year": "2016",
+        "journal-title": "Am. J. Orthod. Dentofac. Orthop."
+      },
+      {
+        "key": "ref_21",
+        "doi-asserted-by": "crossref",
+        "first-page": "2037",
+        "DOI": "10.1038/s41598-018-38439-w",
+        "article-title": "Orthodontic treatment planning based on artificial neural networks",
+        "volume": "9",
+        "author": "Li",
+        "year": "2019",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "ref_22",
+        "unstructured": "Martina, R., Teti, R., D’Addona, D., and Iodice, G. (2006). Intelligent Production Machines and Systems, Elsevier Science Ltd."
+      },
+      {
+        "key": "ref_23",
+        "doi-asserted-by": "crossref",
+        "first-page": "885",
+        "DOI": "10.2319/081908-436.1",
+        "article-title": "Computational Formulation of Orthodontic Tooth-Extraction Decisions: Part I: To extract or not to extract",
+        "volume": "79",
+        "author": "Takada",
+        "year": "2009",
+        "journal-title": "Angle Orthod."
+      },
+      {
+        "key": "ref_24",
+        "first-page": "143",
+        "article-title": "Reasons for extraction obtained by artificial intelligence",
+        "volume": "27",
+        "author": "Duka",
+        "year": "2010",
+        "journal-title": "Acta Fac. Med. Naissensis"
+      },
+      {
+        "key": "ref_25",
+        "doi-asserted-by": "crossref",
+        "first-page": "2037",
+        "DOI": "10.1186/2196-1042-14-47",
+        "article-title": "Extraction decision and identification of treatment predictors in Class I malocclusions",
+        "volume": "14",
+        "author": "Konstantonis",
+        "year": "2013",
+        "journal-title": "Prog. Orthod."
+      },
+      {
+        "key": "ref_26",
+        "doi-asserted-by": "crossref",
+        "first-page": "41",
+        "DOI": "10.1186/s40510-019-0295-8",
+        "article-title": "Usage and comparison of artificial intelligence algorithms for determination of growth and development by cervical vertebrae stages in orthodontics",
+        "volume": "20",
+        "author": "Acilar",
+        "year": "2019",
+        "journal-title": "Prog. Orthod."
+      },
+      {
+        "key": "ref_27",
+        "doi-asserted-by": "crossref",
+        "first-page": "249",
+        "DOI": "10.1177/0022034520901715",
+        "article-title": "Automated skeletal classification with lateral cephalometry based on artificial intelligence",
+        "volume": "99",
+        "author": "Yu",
+        "year": "2020",
+        "journal-title": "J. Dent. Res."
+      },
+      {
+        "key": "ref_28",
+        "doi-asserted-by": "crossref",
+        "first-page": "919",
+        "DOI": "10.1109/TMI.2018.2875814",
+        "article-title": "Deep geodesic learning for segmentation and anatomical landmarking",
+        "volume": "38",
+        "author": "Torosdagli",
+        "year": "2018",
+        "journal-title": "IEEE Trans. Med. Imaging"
+      },
+      {
+        "key": "ref_29",
+        "doi-asserted-by": "crossref",
+        "first-page": "91",
+        "DOI": "10.1097/SCS.0000000000004901",
+        "article-title": "Personal computer-based cephalometric landmark detection with deep learning, using cephalograms on the internet",
+        "volume": "30",
+        "author": "Nishimoto",
+        "year": "2019",
+        "journal-title": "J. Craniofacial Surg."
+      },
+      {
+        "key": "ref_30",
+        "doi-asserted-by": "crossref",
+        "first-page": "262",
+        "DOI": "10.2319/111608-588.1",
+        "article-title": "Artificial neural network modeling for deciding if extractions are necessary prior to orthodontic treatment",
+        "volume": "80",
+        "author": "Xie",
+        "year": "2010",
+        "journal-title": "Angle Orthod."
+      },
+      {
+        "key": "ref_31",
+        "unstructured": "Proffit, W.R., Fields, H.W., and Sarver, D.M. (2013). Contemporary Orthodontics, Mosby. [5th ed.]."
+      },
+      {
+        "key": "ref_32",
+        "doi-asserted-by": "crossref",
+        "first-page": "455",
+        "DOI": "10.1016/0889-5406(93)70072-V",
+        "article-title": "A comparison of surgery and orthodontics in “borderline” adults with Class II, division 1 malocclusions",
+        "volume": "104",
+        "author": "Herbosa",
+        "year": "1993",
+        "journal-title": "Am. J. Orthod. Dentofac. Orthop."
+      },
+      {
+        "key": "ref_33",
+        "doi-asserted-by": "crossref",
+        "first-page": "129",
+        "DOI": "10.1016/S0889-5406(95)70127-3",
+        "article-title": "The morphologic basis for the extraction decision in Class II, division 1 malocclusions: A comparative study",
+        "volume": "107",
+        "author": "Bishara",
+        "year": "1995",
+        "journal-title": "Am. J. Orthod. Dentofac. Orthop."
+      },
+      {
+        "key": "ref_34",
+        "doi-asserted-by": "crossref",
+        "first-page": "77",
+        "DOI": "10.1093/ejo/18.1.77",
+        "article-title": "Consistency of orthodontic extraction decisions",
+        "volume": "18",
+        "author": "Ribarevski",
+        "year": "1996",
+        "journal-title": "Eur. J. Orthod."
+      },
+      {
+        "key": "ref_35",
+        "first-page": "36",
+        "article-title": "Effects of extraction and nonextraction treatment on class I and class II subjects",
+        "volume": "73",
+        "author": "Basciftci",
+        "year": "2003",
+        "journal-title": "Angle Orthod."
+      },
+      {
+        "key": "ref_36",
+        "doi-asserted-by": "crossref",
+        "first-page": "445",
+        "DOI": "10.1016/j.ijom.2017.09.003",
+        "article-title": "Orthodontic camouflage versus orthodontic-orthognathic surgical treatment in class II malocclusion: A systematic review and meta-analysis",
+        "volume": "47",
+        "author": "Raposo",
+        "year": "2018",
+        "journal-title": "Int. J. Oral Maxillofac. Surg."
+      },
+      {
+        "key": "ref_37",
+        "doi-asserted-by": "crossref",
+        "first-page": "80",
+        "DOI": "10.1016/S0889-5406(97)70277-4",
+        "article-title": "Predictive variables for the outcome of early functional treatment of Class III malocclusion",
+        "volume": "112",
+        "author": "Franchi",
+        "year": "1997",
+        "journal-title": "Am. J. Orthod. Dentofac. Orthop."
+      },
+      {
+        "key": "ref_38",
+        "doi-asserted-by": "crossref",
+        "first-page": "27",
+        "DOI": "10.1067/mod.2002.123632",
+        "article-title": "Treatment decision in adult patients with Class III malocclusion: Orthodontic therapy or orthognathic surgery?",
+        "volume": "122",
+        "author": "Lux",
+        "year": "2002",
+        "journal-title": "Am. J. Orthod. Dentofac. Orthop."
+      },
+      {
+        "key": "ref_39",
+        "doi-asserted-by": "crossref",
+        "first-page": "501",
+        "DOI": "10.1016/j.ajodo.2007.08.029",
+        "article-title": "Effect of timing on the outcomes of 1-phase nonextraction therapy of Class II malocclusion",
+        "volume": "136",
+        "author": "Baccetti",
+        "year": "2009",
+        "journal-title": "Am. J. Orthod. Dentofac. Orthop."
+      },
+      {
+        "key": "ref_40",
+        "doi-asserted-by": "crossref",
+        "first-page": "334",
+        "DOI": "10.2319/052912-450.1",
+        "article-title": "Long-term skeletal and dental effects and treatment timing for functional appliances in Class II malocclusion",
+        "volume": "83",
+        "author": "Franchi",
+        "year": "2013",
+        "journal-title": "Angle Orthod."
+      },
+      {
+        "key": "ref_41",
+        "doi-asserted-by": "crossref",
+        "first-page": "94",
+        "DOI": "10.1016/j.jobcr.2014.07.004",
+        "article-title": "Cephalometric norms for orthognathic surgery in North Indian population using Nemoceph software",
+        "volume": "4",
+        "author": "Tikku",
+        "year": "2014",
+        "journal-title": "J. Oral Biol. Craniofacial Res."
+      },
+      {
+        "key": "ref_42",
+        "unstructured": "Graber, L.W., Vanarsdall, R.L., Vig, K.W., and Huang, G.J. (2016). Orthodontics: Current Principles and Techniques, Elsevier Health Sciences."
+      },
+      {
+        "key": "ref_43",
+        "doi-asserted-by": "crossref",
+        "first-page": "482",
+        "DOI": "10.1016/j.jds.2020.05.022",
+        "article-title": "Scope and performance of artificial intelligence technology in orthodontic diagnosis, treatment planning, and clinical decision-making-A systematic review",
+        "volume": "16",
+        "author": "Khanagar",
+        "year": "2021",
+        "journal-title": "J. Dent. Sci."
+      },
+      {
+        "key": "ref_44",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Rischen, R.J., Breuning, K.H., Bronkhorst, E.M., and Kuijpers-Jagtman, A.M. (2013). Records needed for orthodontic diagnosis and treatment planning: A systematic review. PLoS ONE, 8.",
+        "DOI": "10.1371/journal.pone.0074186"
+      },
+      {
+        "key": "ref_45",
+        "first-page": "229",
+        "article-title": "Application of a case-based expert system to orthodontic diagnosis and treatment planning",
+        "volume": "14",
+        "author": "Hammond",
+        "year": "1997",
+        "journal-title": "Aust. Orthod. J."
+      },
+      {
+        "key": "ref_46",
+        "doi-asserted-by": "crossref",
+        "first-page": "235",
+        "DOI": "10.1179/bjo.16.4.235",
+        "article-title": "Who should practice orthodontics?",
+        "volume": "16",
+        "author": "Gravely",
+        "year": "1989",
+        "journal-title": "Br. J. Orthod."
+      },
+      {
+        "key": "ref_47",
+        "doi-asserted-by": "crossref",
+        "first-page": "834",
+        "DOI": "10.1016/j.ajodo.2006.02.025",
+        "article-title": "Orthodontic treatment planning software",
+        "volume": "129",
+        "author": "Noroozi",
+        "year": "2006",
+        "journal-title": "Am. J. Orthod. Dentofac. Orthop."
+      },
+      {
+        "key": "ref_48",
+        "doi-asserted-by": "crossref",
+        "first-page": "265",
+        "DOI": "10.1177/1465312520936704",
+        "article-title": "Introducing 3D printing in your orthodontic practice",
+        "volume": "47",
+        "author": "Cousley",
+        "year": "2020",
+        "journal-title": "J. Orthod."
+      },
+      {
+        "key": "ref_49",
+        "doi-asserted-by": "crossref",
+        "first-page": "26",
+        "DOI": "10.1111/ocr.12492",
+        "article-title": "Clinical Decision Support Systems in Orthodontics: A Narrative Review of Data Science Approaches",
+        "volume": "24",
+        "author": "Bianchi",
+        "year": "2021",
+        "journal-title": "Orthod. Craniofacial Res."
+      }
+    ],
+    "container-title": [
+      "Dentistry Journal"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.mdpi.com/2304-6767/11/1/1/pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          11
+        ]
+      ],
+      "date-time": "2025-10-11T01:44:32Z",
+      "timestamp": 1760147072000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.mdpi.com/2304-6767/11/1/1"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          20
+        ]
+      ]
+    },
+    "references-count": 49,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "dj11010001"
+    ],
+    "URL": "https://doi.org/10.3390/dj11010001",
+    "relation": {},
+    "ISSN": [
+      "2304-6767"
+    ],
+    "issn-type": [
+      {
+        "value": "2304-6767",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          20
+        ]
+      ]
+    }
+  }
+}

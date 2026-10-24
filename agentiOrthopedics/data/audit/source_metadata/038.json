@@ -1,0 +1,1097 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          25
+        ]
+      ],
+      "date-time": "2026-09-25T01:34:32Z",
+      "timestamp": 1790300072615,
+      "version": "4.1.0"
+    },
+    "reference-count": 65,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              22
+            ]
+          ],
+          "date-time": "2024-07-22T00:00:00Z",
+          "timestamp": 1721606400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              7,
+              22
+            ]
+          ],
+          "date-time": "2024-07-22T00:00:00Z",
+          "timestamp": 1721606400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "BMC Musculoskelet Disord"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>The application of Artificial intelligence (AI) and machine learning (ML) tools in total (TKA) and unicompartmental knee arthroplasty (UKA) emerges with the potential to improve patient-centered decision-making and outcome prediction in orthopedics, as ML algorithms can generate patient-specific risk models. This review aims to evaluate the potential of the application of AI/ML models in the prediction of TKA outcomes and the identification of populations at risk.</jats:p><jats:p>An extensive search in the following databases: MEDLINE, Scopus, Cinahl, Google Scholar, and EMBASE was conducted using the PIOS approach to formulate the research question. The PRISMA guideline was used for reporting the evidence of the data extracted. A modified eight-item MINORS checklist was employed for the quality assessment. The databases were screened from the inception to June 2022.</jats:p><jats:p>Forty-four out of the 542 initially selected articles were eligible for the data analysis; 5 further articles were identified and added to the review from the PUBMED database, for a total of 49 articles included. A total of 2,595,780 patients were identified, with an overall average age of the patients of 70.2 years ± 7.9 years old. The five most common AI/ML models identified in the selected articles were: RF, in 38.77% of studies; GBM, in 36.73% of studies; ANN in 34.7% of articles; LR, in 32.65%; SVM in 26.53% of articles.</jats:p><jats:p>This systematic review evaluated the possible uses of AI/ML models in TKA, highlighting their potential to lead to more accurate predictions, less time-consuming data processing, and improved decision-making, all while minimizing user input bias to provide risk-based patient-specific care.\n</jats:p>",
+    "DOI": "10.1186/s12891-024-07516-9",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          22
+        ]
+      ],
+      "date-time": "2024-07-22T03:11:22Z",
+      "timestamp": 1721617882000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 24,
+    "title": [
+      "Artificial intelligence in total and unicompartmental knee arthroplasty"
+    ],
+    "prefix": "10.1186",
+    "volume": "25",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4063-9821",
+        "authenticated-orcid": false,
+        "given": "Umile Giuseppe",
+        "family": "Longo",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sergio",
+        "family": "De Salvatore",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Federica",
+        "family": "Valente",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mariajose",
+        "family": "Villa Corta",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bruno",
+        "family": "Violante",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kristian",
+        "family": "Samuelsson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          22
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "7516_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "75",
+        "DOI": "10.3389/fbioe.2018.00075",
+        "volume": "6",
+        "author": "F Cabitza",
+        "year": "2018",
+        "unstructured": "Cabitza F, Locoro A, Banfi G. Machine learning in orthopedics: a literature review. Front Bioeng Biotechnol. 2018;6:75.",
+        "journal-title": "Front Bioeng Biotechnol"
+      },
+      {
+        "issue": "1",
+        "key": "7516_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "16",
+        "DOI": "10.1186/s42836-022-00118-7",
+        "volume": "4",
+        "author": "LS Lee",
+        "year": "2022",
+        "unstructured": "Lee LS, Chan PK, Wen C, Fung WC, Cheung A, Chan VWK, Cheung MH, Fu H, Yan CH, Chiu KY. Artificial intelligence in diagnosis of knee osteoarthritis and prediction of arthroplasty outcomes: a review. Arthroplasty. 2022;4(1):16.",
+        "journal-title": "Arthroplasty"
+      },
+      {
+        "issue": "9 Pt B",
+        "key": "7516_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "1239",
+        "DOI": "10.1016/j.jacr.2019.05.047",
+        "volume": "16",
+        "author": "T Martín Noguerol",
+        "year": "2019",
+        "unstructured": "Martín Noguerol T, Paulano-Godino F, Martín-Valdivia MT, Menias CO, Luna A. Strengths, weaknesses, opportunities, and threats analysis of artificial intelligence and machine learning applications in radiology. J Am Coll Radiol. 2019;16(9 Pt B):1239–47.",
+        "journal-title": "J Am Coll Radiol"
+      },
+      {
+        "issue": "7_Supple_B",
+        "key": "7516_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "11",
+        "DOI": "10.1302/0301-620X.102B7.BJJ-2019-1628.R1",
+        "volume": "102-B",
+        "author": "N Shohat",
+        "year": "2020",
+        "unstructured": "Shohat N, Goswami K, Tan TL, Yayac M, Soriano A, Sousa R, Wouthuyzen-Bakker M, Parvizi J. (NINJA) ESGoIAIEatNINoJA: 2020 Frank Stinchfield award: identifying who will fail following irrigation and debridement for prosthetic joint infection. Bone Joint J. 2020;102-B(7_Supple_B):11–9.",
+        "journal-title": "Bone Joint J"
+      },
+      {
+        "issue": "2",
+        "key": "7516_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "376",
+        "DOI": "10.1007/s00167-021-06848-6",
+        "volume": "30",
+        "author": "F Hinterwimmer",
+        "year": "2022",
+        "unstructured": "Hinterwimmer F, Lazic I, Suren C, Hirschmann MT, Pohlig F, Rueckert D, Burgkart R, von Eisenhart-Rothe R. Machine learning in knee arthroplasty: specific data are key-a systematic review. Knee Surg Sports Traumatol Arthrosc. 2022;30(2):376–88.",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc"
+      },
+      {
+        "issue": "11",
+        "key": "7516_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "3117",
+        "DOI": "10.1016/j.arth.2020.05.061",
+        "volume": "35",
+        "author": "KN Kunze",
+        "year": "2020",
+        "unstructured": "Kunze KN, Polce EM, Sadauskas AJ, Levine BR. Development of machine learning algorithms to predict patient dissatisfaction after primary total knee arthroplasty. J Arthroplasty. 2020;35(11):3117–22.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "issue": "10",
+        "key": "7516_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "3207",
+        "DOI": "10.1007/s00167-019-05822-7",
+        "volume": "28",
+        "author": "YH Pua",
+        "year": "2020",
+        "unstructured": "Pua YH, Kang H, Thumboo J, Clark RA, Chew ES, Poon CL, Chong HC, Yeo SJ. Machine learning methods are comparable to logistic regression techniques in predicting severe walking limitation following total knee arthroplasty. Knee Surg Sports Traumatol Arthrosc. 2020;28(10):3207–16.",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc"
+      },
+      {
+        "issue": "6",
+        "key": "7516_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "1757",
+        "DOI": "10.1007/s00167-019-05602-3",
+        "volume": "28",
+        "author": "C Jo",
+        "year": "2020",
+        "unstructured": "Jo C, Ko S, Shin WC, Han HS, Lee MC, Ko T, Ro DH. Transfusion after total knee arthroplasty can be predicted using the machine learning algorithm. Knee Surg Sports Traumatol Arthrosc. 2020;28(6):1757–64.",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc"
+      },
+      {
+        "issue": "5",
+        "key": "7516_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "526",
+        "DOI": "10.1080/17453674.2021.1932928",
+        "volume": "92",
+        "author": "PT Ogink",
+        "year": "2021",
+        "unstructured": "Ogink PT, Groot OQ, Karhade AV, Bongers MER, Oner FC, Verlaan JJ, Schwab JH. Wide range of applications for machine-learning prediction models in orthopedic surgical outcome: a systematic review. Acta Orthop. 2021;92(5):526–31.",
+        "journal-title": "Acta Orthop"
+      },
+      {
+        "key": "7516_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "105315",
+        "DOI": "10.1016/j.cmpb.2020.105315",
+        "volume": "189",
+        "author": "H Bonakdari",
+        "year": "2020",
+        "unstructured": "Bonakdari H, Pelletier JP, Martel-Pelletier J. A reliable time-series method for predicting arthritic disease outcomes: new step from regression toward a nonlinear artificial intelligence method. Comput Methods Programs Biomed. 2020;189:105315.",
+        "journal-title": "Comput Methods Programs Biomed"
+      },
+      {
+        "issue": "1",
+        "key": "7516_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "43",
+        "DOI": "10.1016/j.jamcollsurg.2019.09.015",
+        "volume": "230",
+        "author": "JM Hyer",
+        "year": "2020",
+        "unstructured": "Hyer JM, White S, Cloyd J, Dillhoff M, Tsung A, Pawlik TM, Ejaz A. Can we improve prediction of adverse surgical outcomes? Development of a surgical complexity score using a novel machine learning technique. J Am Coll Surg. 2020;230(1):43–52.e41.",
+        "journal-title": "J Am Coll Surg"
+      },
+      {
+        "issue": "1",
+        "key": "7516_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.2106/JBJS.16.00167",
+        "volume": "99",
+        "author": "A Ben-Ari",
+        "year": "2017",
+        "unstructured": "Ben-Ari A, Chansky H, Rozet I. Preoperative opioid use is associated with early revision after total knee arthroplasty: a study of male patients treated in the veterans affairs system. J Bone Joint Surg Am. 2017;99(1):1–9.",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "issue": "10",
+        "key": "7516_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "2267",
+        "DOI": "10.1016/j.arth.2019.05.061",
+        "volume": "34",
+        "author": "RA Bloomfield",
+        "year": "2019",
+        "unstructured": "Bloomfield RA, Williams HA, Broberg JS, Lanting BA, McIsaac KA, Teeter MG. Machine learning groups patients by early functional improvement likelihood based on wearable sensor instrumented preoperative timed-up-and-go tests. J Arthroplasty. 2019;34(10):2267–71.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "issue": "3",
+        "key": "7516_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "927",
+        "DOI": "10.1016/j.arth.2020.09.055",
+        "volume": "36",
+        "author": "P Bovonratwet",
+        "year": "2021",
+        "unstructured": "Bovonratwet P, Shen TS, Islam W, Ast MP, Haas SB, Su EP. Natural language processing of patient-experience comments after primary total knee arthroplasty. J Arthroplasty. 2021;36(3):927–34.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "issue": "4",
+        "key": "7516_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "641",
+        "DOI": "10.1007/s11548-020-02129-8",
+        "volume": "15",
+        "author": "B Chan",
+        "year": "2020",
+        "unstructured": "Chan B, Rudan JF, Mousavi P, Kunz M. Intraoperative integration of structured light scanning for automatic tissue classification: a feasibility study. Int J Comput Assist Radiol Surg. 2020;15(4):641–9.",
+        "journal-title": "Int J Comput Assist Radiol Surg"
+      },
+      {
+        "issue": "9",
+        "key": "7516_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "5985",
+        "DOI": "10.1007/s00402-023-04827-9",
+        "volume": "143",
+        "author": "AM Crawford",
+        "year": "2023",
+        "unstructured": "Crawford AM, Karhade AV, Agaronnik ND, Lightsey HM, Xiong GX, Schwab JH, Schoenfeld AJ, Simpson AK. Development of a machine learning algorithm to identify surgical candidates for hip and knee arthroplasty without in-person evaluation. Arch Orthop Trauma Surg. 2023;143(9):5985–92.",
+        "journal-title": "Arch Orthop Trauma Surg"
+      },
+      {
+        "key": "7516_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "135",
+        "DOI": "10.1016/j.artd.2021.06.020",
+        "volume": "10",
+        "author": "SK Devana",
+        "year": "2021",
+        "unstructured": "Devana SK, Shah AA, Lee C, Roney AR, van der Schaar M, SooHoo NF. A novel, potentially universal machine learning algorithm to predict complications in total knee arthroplasty. Arthroplast Today. 2021;10:135–43.",
+        "journal-title": "Arthroplast Today"
+      },
+      {
+        "issue": "11",
+        "key": "7516_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "3123",
+        "DOI": "10.1016/j.arth.2020.05.077",
+        "volume": "35",
+        "author": "H Farooq",
+        "year": "2020",
+        "unstructured": "Farooq H, Deckard ER, Ziemba-Davis M, Madsen A, Meneghini RM. Predictors of patient satisfaction following primary total knee arthroplasty: results from a traditional statistical model and a machine learning algorithm. J Arthroplasty. 2020;35(11):3123–30.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "issue": "7S",
+        "key": "7516_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "S242",
+        "DOI": "10.1016/j.arth.2021.02.063",
+        "volume": "36",
+        "author": "H Farooq",
+        "year": "2021",
+        "unstructured": "Farooq H, Deckard ER, Arnold NR, Meneghini RM. Machine learning algorithms identify optimal sagittal component position in total knee arthroplasty. J Arthroplasty. 2021;36(7S):S242–9.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "issue": "6",
+        "key": "7516_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "1267",
+        "DOI": "10.1097/CORR.0000000000000687",
+        "volume": "477",
+        "author": "MA Fontana",
+        "year": "2019",
+        "unstructured": "Fontana MA, Lyman S, Sarker GK, Padgett DE, MacLean CH. Can machine learning algorithms predict which patients will achieve minimally clinically important differences from total joint arthroplasty? Clin Orthop Relat Res. 2019;477(6):1267–79.",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "issue": "2",
+        "key": "7516_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "452",
+        "DOI": "10.1097/CORR.0000000000000601",
+        "volume": "477",
+        "author": "AHS Harris",
+        "year": "2019",
+        "unstructured": "Harris AHS, Kuo AC, Weng Y, Trickey AW, Bowe T, Giori NJ. Can machine learning methods produce accurate and easy-to-use prediction models of 30-day complications and mortality after knee or hip arthroplasty? Clin Orthop Relat Res. 2019;477(2):452–60.",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "issue": "1",
+        "key": "7516_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "112",
+        "DOI": "10.1016/j.arth.2020.07.026",
+        "volume": "36",
+        "author": "AHS Harris",
+        "year": "2021",
+        "unstructured": "Harris AHS, Kuo AC, Bowe TR, Manfredi L, Lalani NF, Giori NJ. Can machine learning methods produce accurate and easy-to-use preoperative prediction models of one-year improvements in pain and functioning after knee arthroplasty? J Arthroplasty. 2021;36(1):112–117.e116.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "issue": "5",
+        "key": "7516_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "1298",
+        "DOI": "10.3390/jcm9051298",
+        "volume": "9",
+        "author": "S Heisinger",
+        "year": "2020",
+        "unstructured": "Heisinger S, Hitzl W, Hobusch GM, Windhager R, Cotofana S. Predicting total knee replacement from symptomology and radiographic structural change using artificial neural networks-data from the osteoarthritis initiative (OAI). J Clin Med. 2020;9(5):1298.",
+        "journal-title": "J Clin Med"
+      },
+      {
+        "issue": "21",
+        "key": "7516_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "6302",
+        "DOI": "10.3390/s20216302",
+        "volume": "20",
+        "author": "CY Hsieh",
+        "year": "2020",
+        "unstructured": "Hsieh CY, Huang HY, Liu KC, Chen KH, Hsu SJ, Chan CT. Subtask segmentation of timed up and go test for mobility assessment of perioperative total knee arthroplasty. Sensors (Basel). 2020;20(21):6302.",
+        "journal-title": "Sensors (Basel)"
+      },
+      {
+        "issue": "8",
+        "key": "7516_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "1855",
+        "DOI": "10.1111/trf.14783",
+        "volume": "58",
+        "author": "Z Huang",
+        "year": "2018",
+        "unstructured": "Huang Z, Huang C, Xie J, Ma J, Cao G, Huang Q, Shen B, Byers Kraus V, Pei F. Analysis of a large data set to identify predictors of blood transfusion in primary total hip and knee arthroplasty. Transfusion. 2018;58(8):1855–62.",
+        "journal-title": "Transfusion"
+      },
+      {
+        "issue": "1",
+        "key": "7516_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "3",
+        "DOI": "10.1186/s12911-018-0731-6",
+        "volume": "19",
+        "author": "M Huber",
+        "year": "2019",
+        "unstructured": "Huber M, Kurz C, Leidl R. Predicting patient-reported outcomes following hip and knee replacement surgery using supervised machine learning. BMC Med Inform Decis Mak. 2019;19(1):3.",
+        "journal-title": "BMC Med Inform Decis Mak"
+      },
+      {
+        "issue": "10",
+        "key": "7516_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "1518",
+        "DOI": "10.1002/acr.24601",
+        "volume": "73",
+        "author": "A Jamshidi",
+        "year": "2021",
+        "unstructured": "Jamshidi A, Pelletier JP, Labbe A, Abram F, Martel-Pelletier J, Droit A. Machine learning-based individualized survival prediction model for total knee replacement in osteoarthritis: data from the osteoarthritis initiative. Arthritis Care Res (Hoboken). 2021;73(10):1518–27.",
+        "journal-title": "Arthritis Care Res (Hoboken)"
+      },
+      {
+        "issue": "2",
+        "key": "7516_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "e2037107",
+        "DOI": "10.1001/jamanetworkopen.2020.37107",
+        "volume": "4",
+        "author": "P Jayakumar",
+        "year": "2021",
+        "unstructured": "Jayakumar P, Moore MG, Furlough KA, Uhler LM, Andrawis JP, Koenig KM, Aksan N, Rathouz PJ, Bozic KJ. Comparison of an artificial intelligence-enabled patient decision aid vs educational material on decision quality, shared decision-making, patient experience, and functional outcomes in adults with knee osteoarthritis: a randomized clinical trial. JAMA Netw Open. 2021;4(2):e2037107.",
+        "journal-title": "JAMA Netw Open"
+      },
+      {
+        "key": "7516_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "117",
+        "DOI": "10.2340/17453674.2021.843",
+        "volume": "93",
+        "author": "KB Johannesdottir",
+        "year": "2022",
+        "unstructured": "Johannesdottir KB, Kehlet H, Petersen PB, Aasvang EK, Sørensen HBD, Jørgensen CC, Group CfF-tHaKRC. Machine learning classifiers do not improve prediction of hospitalization > 2 days after fast-track hip and knee arthroplasty compared with a classical statistical risk model. Acta Orthop. 2022;93:117–23.",
+        "journal-title": "Acta Orthop"
+      },
+      {
+        "issue": "10 Supple B",
+        "key": "7516_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "16",
+        "DOI": "10.1302/0301-620X.98B10.BJJ.2016.0473.R1",
+        "volume": "98-B",
+        "author": "GG Jones",
+        "year": "2016",
+        "unstructured": "Jones GG, Kotti M, Wiik AV, Collins R, Brevadt MJ, Strachan RK, Cobb JP. Gait comparison of unicompartmental and total knee arthroplasties with healthy controls. Bone Joint J. 2016;98-B(10 Supple B):16–21.",
+        "journal-title": "Bone Joint J"
+      },
+      {
+        "issue": "10",
+        "key": "7516_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "2235",
+        "DOI": "10.1016/j.arth.2019.05.048",
+        "volume": "34",
+        "author": "JM Karnuta",
+        "year": "2019",
+        "unstructured": "Karnuta JM, Navarro SM, Haeberle HS, Helm JM, Kamath AF, Schaffer JL, Krebs VE, Ramkumar PN. Predicting inpatient payments prior to lower extremity arthroplasty using deep learning: which model architecture is best? J Arthroplasty. 2019;34(10):2235-2241.e2231.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "7516_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "95",
+        "DOI": "10.1016/j.jor.2020.03.052",
+        "volume": "22",
+        "author": "A Katakam",
+        "year": "2020",
+        "unstructured": "Katakam A, Karhade AV, Schwab JH, Chen AF, Bedair HS. Development and validation of machine learning algorithms for postoperative opioid prescriptions after TKA. J Orthop. 2020;22:95–9.",
+        "journal-title": "J Orthop"
+      },
+      {
+        "issue": "4",
+        "key": "7516_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "808",
+        "DOI": "10.1002/jor.25125",
+        "volume": "40",
+        "author": "A Katakam",
+        "year": "2022",
+        "unstructured": "Katakam A, Karhade AV, Collins A, Shin D, Bragdon C, Chen AF, Melnic CM, Schwab JH, Bedair HS. Development of machine learning algorithms to predict achievement of minimal clinically important difference for the KOOS-PS following total knee arthroplasty. J Orthop Res. 2022;40(4):808–15.",
+        "journal-title": "J Orthop Res"
+      },
+      {
+        "issue": "2",
+        "key": "7516_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "545",
+        "DOI": "10.1007/s00167-020-06258-0",
+        "volume": "30",
+        "author": "S Ko",
+        "year": "2022",
+        "unstructured": "Ko S, Jo C, Chang CB, Lee YS, Moon YW, Youm JW, Han HS, Lee MC, Lee H, Ro DH. A web-based machine-learning algorithm predicting postoperative acute kidney injury after total knee arthroplasty. Knee Surg Sports Traumatol Arthrosc. 2022;30(2):545–54.",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc"
+      },
+      {
+        "issue": "12",
+        "key": "7516_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "2235",
+        "DOI": "10.1007/s00402-021-04041-5",
+        "volume": "141",
+        "author": "KN Kunze",
+        "year": "2021",
+        "unstructured": "Kunze KN, Polce EM, Patel A, Courtney PM, Levine BR. Validation and performance of a machine-learning derived prediction guide for total knee arthroplasty component sizing. Arch Orthop Trauma Surg. 2021;141(12):2235–44.",
+        "journal-title": "Arch Orthop Trauma Surg"
+      },
+      {
+        "issue": "3",
+        "key": "7516_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "584",
+        "DOI": "10.1148/radiol.2020192091",
+        "volume": "296",
+        "author": "K Leung",
+        "year": "2020",
+        "unstructured": "Leung K, Zhang B, Tan J, Shen Y, Geras KJ, Babb JS, Cho K, Chang G, Deniz CM. Prediction of total knee replacement and diagnosis of osteoarthritis by using deep learning on knee radiographs: data from the osteoarthritis initiative. Radiology. 2020;296(3):584–93.",
+        "journal-title": "Radiology"
+      },
+      {
+        "issue": "1",
+        "key": "7516_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "7",
+        "DOI": "10.1055/s-0040-1710573",
+        "volume": "35",
+        "author": "H Li",
+        "year": "2022",
+        "unstructured": "Li H, Jiao J, Zhang S, Tang H, Qu X, Yue B. Construction and comparison of predictive models for length of stay after total knee arthroplasty: regression model and machine learning analysis based on 1,826 cases in a single Singapore center. J Knee Surg. 2022;35(1):7–14.",
+        "journal-title": "J Knee Surg"
+      },
+      {
+        "issue": "3",
+        "key": "7516_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "e0263897",
+        "DOI": "10.1371/journal.pone.0263897",
+        "volume": "17",
+        "author": "H Mohammed",
+        "year": "2022",
+        "unstructured": "Mohammed H, Huang Y, Memtsoudis S, Parks M, Ma Y. Utilization of machine learning methods for predicting surgical outcomes after total knee arthroplasty. PLoS One. 2022;17(3):e0263897.",
+        "journal-title": "PLoS One"
+      },
+      {
+        "issue": "12",
+        "key": "7516_CR39",
+        "doi-asserted-by": "publisher",
+        "first-page": "3617",
+        "DOI": "10.1016/j.arth.2018.08.028",
+        "volume": "33",
+        "author": "SM Navarro",
+        "year": "2018",
+        "unstructured": "Navarro SM, Wang EY, Haeberle HS, Mont MA, Krebs VE, Patterson BM, Ramkumar PN. Machine learning and primary total knee arthroplasty: patient forecasting for a patient-specific payment model. J Arthroplasty. 2018;33(12):3617–23.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "issue": "1",
+        "key": "7516_CR40",
+        "doi-asserted-by": "publisher",
+        "first-page": "6922",
+        "DOI": "10.1038/s41598-023-33934-1",
+        "volume": "13",
+        "author": "HR Rajamohan",
+        "year": "2023",
+        "unstructured": "Rajamohan HR, Wang T, Leung K, Chang G, Cho K, Kijowski R, Deniz CM. Prediction of total knee replacement using deep learning analysis of knee MRI. Sci Rep. 2023;13(1):6922.",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "issue": "6S",
+        "key": "7516_CR41",
+        "doi-asserted-by": "publisher",
+        "first-page": "S170",
+        "DOI": "10.1016/j.arth.2021.12.009",
+        "volume": "37",
+        "author": "T Ramazanian",
+        "year": "2022",
+        "unstructured": "Ramazanian T, Yan S, Rouzrokh P, Wyles CC, O Byrne TJ, Taunton MJ, Maradit Kremers H. Distribution and correlates of hip-knee-ankle angle in early osteoarthritis and preoperative total knee arthroplasty patients. J Arthroplasty. 2022;37(6S):S170–5.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "issue": "10",
+        "key": "7516_CR42",
+        "doi-asserted-by": "publisher",
+        "first-page": "2253",
+        "DOI": "10.1016/j.arth.2019.05.021",
+        "volume": "34",
+        "author": "PN Ramkumar",
+        "year": "2019",
+        "unstructured": "Ramkumar PN, Haeberle HS, Ramanathan D, Cantrell WA, Navarro SM, Mont MA, Bloomfield M, Patterson BM. Remote patient monitoring using mobile health for total knee arthroplasty: validation of a wearable and machine learning-based surveillance platform. J Arthroplasty. 2019;34(10):2253–9.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "issue": "10",
+        "key": "7516_CR43",
+        "doi-asserted-by": "publisher",
+        "first-page": "2220",
+        "DOI": "10.1016/j.arth.2019.05.034",
+        "volume": "34",
+        "author": "PN Ramkumar",
+        "year": "2019",
+        "unstructured": "Ramkumar PN, Karnuta JM, Navarro SM, Haeberle HS, Scuderi GR, Mont MA, Krebs VE, Patterson BM. Deep learning preoperatively predicts value metrics for primary total knee arthroplasty: development and validation of an artificial neural network model. J Arthroplasty. 2019;34(10):2220–2227.e2221.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "7516_CR44",
+        "doi-asserted-by": "publisher",
+        "first-page": "136",
+        "DOI": "10.1016/j.jbiomech.2018.08.032",
+        "volume": "80",
+        "author": "JT Rexwinkle",
+        "year": "2018",
+        "unstructured": "Rexwinkle JT, Werner NC, Stoker AM, Salim M, Pfeiffer FM. Investigating the relationship between proteomic, compositional, and histologic biomarkers and cartilage biomechanics using artificial neural networks. J Biomech. 2018;80:136–43.",
+        "journal-title": "J Biomech"
+      },
+      {
+        "issue": "2",
+        "key": "7516_CR45",
+        "doi-asserted-by": "publisher",
+        "first-page": "308",
+        "DOI": "10.1097/j.pain.0000000000002335",
+        "volume": "163",
+        "author": "J Sachau",
+        "year": "2022",
+        "unstructured": "Sachau J, Otto JC, Kirchhofer V, Larsen JB, Kennes LN, Hüllemann P, Arendt-Nielsen L, Baron R. Development of a bedside tool-kit for assessing sensitization in patients with chronic osteoarthritis knee pain or chronic knee pain after total knee replacement. Pain. 2022;163(2):308–18.",
+        "journal-title": "Pain"
+      },
+      {
+        "issue": "3",
+        "key": "7516_CR46",
+        "doi-asserted-by": "publisher",
+        "first-page": "922",
+        "DOI": "10.1016/j.arth.2020.09.029",
+        "volume": "36",
+        "author": "E Sagheb",
+        "year": "2021",
+        "unstructured": "Sagheb E, Ramazanian T, Tafti AP, Fu S, Kremers WK, Berry DJ, Lewallen DG, Sohn S, Maradit Kremers H. Use of natural language processing algorithms to identify common data elements in operative notes for knee arthroplasty. J Arthroplasty. 2021;36(3):922–6.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "issue": "1",
+        "key": "7516_CR47",
+        "doi-asserted-by": "publisher",
+        "first-page": "6371",
+        "DOI": "10.1038/s41598-020-63395-9",
+        "volume": "10",
+        "author": "AA Tolpadi",
+        "year": "2020",
+        "unstructured": "Tolpadi AA, Lee JJ, Pedoia V, Majumdar S. Deep learning predicts total knee replacement from magnetic resonance images. Sci Rep. 2020;10(1):6371.",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "issue": "1",
+        "key": "7516_CR48",
+        "doi-asserted-by": "publisher",
+        "first-page": "553",
+        "DOI": "10.1186/s12891-023-06667-5",
+        "volume": "24",
+        "author": "CC Tsai",
+        "year": "2023",
+        "unstructured": "Tsai CC, Huang CC, Lin CW, Ogink PT, Su CC, Chen SF, Yen MH, Verlaan JJ, Schwab JH, Wang CT, et al. The Skeletal Oncology Research Group Machine Learning Algorithm (SORG-MLA) for predicting prolonged postoperative opioid prescription after total knee arthroplasty: an international validation study using 3,495 patients from a Taiwanese cohort. BMC Musculoskelet Disord. 2023;24(1):553.",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "issue": "6",
+        "key": "7516_CR49",
+        "doi-asserted-by": "publisher",
+        "first-page": "236",
+        "DOI": "10.1302/2633-1462.16.BJO-2020-0056.R1",
+        "volume": "1",
+        "author": "MA Verstraete",
+        "year": "2020",
+        "unstructured": "Verstraete MA, Moore RE, Roche M, Conditt MA. The application of machine learning to balance a total knee arthroplasty. Bone Jt Open. 2020;1(6):236–44.",
+        "journal-title": "Bone Jt Open"
+      },
+      {
+        "issue": "8",
+        "key": "7516_CR50",
+        "doi-asserted-by": "publisher",
+        "first-page": "1358",
+        "DOI": "10.1302/0301-620X.103B8.BJJ-2020-1013.R2",
+        "volume": "103",
+        "author": "C Wei",
+        "year": "2021",
+        "unstructured": "Wei C, Quan T, Wang KY, Gu A, Fassihi SC, Kahlenberg CA, Malahias MA, Liu J, Thakkar S, Gonzalez Della Valle A, et al. Artificial neural network prediction of same-day discharge following primary total knee arthroplasty based on preoperative and intraoperative variables. Bone Joint J. 2021;103(8):1358–66.",
+        "journal-title": "Bone Joint J"
+      },
+      {
+        "issue": "6",
+        "key": "7516_CR51",
+        "doi-asserted-by": "publisher",
+        "first-page": "637",
+        "DOI": "10.1055/s-0041-1741396",
+        "volume": "36",
+        "author": "I Yeo",
+        "year": "2023",
+        "unstructured": "Yeo I, Klemt C, Robinson MG, Esposito JG, Uzosike AC, Kwon YM. The use of artificial neural networks for the prediction of surgical site infection following TKA. J Knee Surg. 2023;36(6):637–43.",
+        "journal-title": "J Knee Surg"
+      },
+      {
+        "issue": "2",
+        "key": "7516_CR52",
+        "doi-asserted-by": "publisher",
+        "first-page": "535",
+        "DOI": "10.1016/j.knee.2019.11.020",
+        "volume": "27",
+        "author": "PH Yi",
+        "year": "2020",
+        "unstructured": "Yi PH, Wei J, Kim TK, Sair HI, Hui FK, Hager GD, Fritz J, Oni JK. Automated detection & classification of knee arthroplasty using deep learning. Knee. 2020;27(2):535–42.",
+        "journal-title": "Knee"
+      },
+      {
+        "issue": "8",
+        "key": "7516_CR53",
+        "doi-asserted-by": "publisher",
+        "first-page": "2624",
+        "DOI": "10.1007/s00167-021-06642-4",
+        "volume": "30",
+        "author": "S Zhang",
+        "year": "2022",
+        "unstructured": "Zhang S, Lau BPH, Ng YH, Wang X, Chua W. Machine learning algorithms do not outperform preoperative thresholds in predicting clinically meaningful improvements after total knee arthroplasty. Knee Surg Sports Traumatol Arthrosc. 2022;30(8):2624–30.",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc"
+      },
+      {
+        "issue": "3",
+        "key": "7516_CR54",
+        "doi-asserted-by": "publisher",
+        "first-page": "861",
+        "DOI": "10.1007/s00167-022-06914-7",
+        "volume": "31",
+        "author": "UG Longo",
+        "year": "2023",
+        "unstructured": "Longo UG, De Salvatore S, Intermesoli G, Pirato F, Piergentili I, Becker R, Denaro V. Metaphyseal cones and sleeves are similar in improving short- and mid-term outcomes in total knee arthroplasty revisions. Knee Surg Sports Traumatol Arthrosc. 2023;31(3):861–82.",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc"
+      },
+      {
+        "issue": "4",
+        "key": "7516_CR55",
+        "doi-asserted-by": "publisher",
+        "first-page": "1323",
+        "DOI": "10.1007/s00167-022-06957-w",
+        "volume": "31",
+        "author": "F Hinterwimmer",
+        "year": "2023",
+        "unstructured": "Hinterwimmer F, Lazic I, Langer S, Suren C, Charitou F, Hirschmann MT, Matziolis G, Seidl F, Pohlig F, Rueckert D, et al. Prediction of complications and surgery duration in primary TKA with high accuracy using machine learning with arthroplasty-specific data. Knee Surg Sports Traumatol Arthrosc. 2023;31(4):1323–33.",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc"
+      },
+      {
+        "issue": "6",
+        "key": "7516_CR56",
+        "doi-asserted-by": "publisher",
+        "first-page": "633",
+        "DOI": "10.1056/NEJMc091111",
+        "volume": "361",
+        "author": "UG Longo",
+        "year": "2009",
+        "unstructured": "Longo UG, Maffulli N, Denaro V. Minimally invasive total knee arthroplasty. N Engl J Med. 2009;361(6):633–4 author reply 634.",
+        "journal-title": "N Engl J Med"
+      },
+      {
+        "key": "7516_CR57",
+        "doi-asserted-by": "publisher",
+        "first-page": "840282",
+        "DOI": "10.3389/frobt.2022.840282",
+        "volume": "9",
+        "author": "A Lambrechts",
+        "year": "2022",
+        "unstructured": "Lambrechts A, Wirix-Speetjens R, Maes F, Van Huffel S. Artificial intelligence based patient-specific preoperative planning algorithm for total knee arthroplasty. Front Robot AI. 2022;9:840282.",
+        "journal-title": "Front Robot AI"
+      },
+      {
+        "key": "7516_CR58",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Berton A, Longo UG, Candela V, Fioravanti S, Giannone L, Arcangeli V, Alciati V, Berton C, Facchinetti G, Marchetti A, et al. Virtual Reality, Augmented Reality, Gamification, and Telerehabilitation: Psychological Impact on Orthopedic Patients' Rehabilitation. J Clin Med. 2020;9(8).",
+        "DOI": "10.3390/jcm9082567"
+      },
+      {
+        "key": "7516_CR59",
+        "doi-asserted-by": "publisher",
+        "first-page": "5",
+        "DOI": "10.1503/cjs.007319",
+        "volume": "22",
+        "author": "A Katakam",
+        "year": "2020",
+        "unstructured": "Goplen CM, Kang SH, Randell JR, et al. Effect of preoperative long-term opioid therapy on patient outcomes after total knee arthroplasty: an analysis of multicentre population-based administrative data. Can J Surg. 2021;64(2):E135–43. https://doi.org/10.1503/cjs.007319.",
+        "journal-title": "J Orthop"
+      },
+      {
+        "issue": "2",
+        "key": "7516_CR60",
+        "doi-asserted-by": "publisher",
+        "first-page": "620",
+        "DOI": "10.1016/j.arth.2017.08.041",
+        "volume": "33",
+        "author": "UG Longo",
+        "year": "2018",
+        "unstructured": "Longo UG, Ciuffreda M, Mannering N, D’Andrea V, Cimmino M, Denaro V. Patellar resurfacing in total knee arthroplasty: systematic review and meta-analysis. J Arthroplasty. 2018;33(2):620–32.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "7516_CR61",
+        "doi-asserted-by": "publisher",
+        "first-page": "71",
+        "DOI": "10.1016/j.knee.2022.11.013",
+        "volume": "40",
+        "author": "M Bravi",
+        "year": "2023",
+        "unstructured": "Bravi M, Longo UG, Laurito A, Greco A, Marino M, Maselli M, Sterzi S, Santacaterina F. Supervised versus unsupervised rehabilitation following total knee arthroplasty: a systematic review and meta-analysis. Knee. 2023;40:71–89.",
+        "journal-title": "Knee"
+      },
+      {
+        "issue": "3",
+        "key": "7516_CR62",
+        "doi-asserted-by": "publisher",
+        "first-page": "1185",
+        "DOI": "10.1007/s00402-021-04222-2",
+        "volume": "143",
+        "author": "UG Longo",
+        "year": "2023",
+        "unstructured": "Longo UG, Silva S, Perdisa F, Salvatore G, Filardo G, Berton A, Piergentili I, Denaro V. Gender related results in total knee arthroplasty: a 15-year evaluation of the Italian population. Arch Orthop Trauma Surg. 2023;143(3):1185–92.",
+        "journal-title": "Arch Orthop Trauma Surg"
+      },
+      {
+        "issue": "1",
+        "key": "7516_CR63",
+        "doi-asserted-by": "publisher",
+        "first-page": "65",
+        "DOI": "10.1093/bmb/ldv009",
+        "volume": "114",
+        "author": "UG Longo",
+        "year": "2015",
+        "unstructured": "Longo UG, Loppini M, Trovato U, Rizzello G, Maffulli N, Denaro V. No difference between unicompartmental versus total knee arthroplasty for the management of medial osteoarthtritis of the knee in the same patient: a systematic review and pooling data analysis. Br Med Bull. 2015;114(1):65–73.",
+        "journal-title": "Br Med Bull"
+      },
+      {
+        "issue": "4",
+        "key": "7516_CR64",
+        "doi-asserted-by": "publisher",
+        "first-page": "321",
+        "DOI": "10.1055/s-0037-1603902",
+        "volume": "31",
+        "author": "UG Longo",
+        "year": "2018",
+        "unstructured": "Longo UG, Ciuffreda M, Mannering N, D’Andrea V, Locher J, Salvatore G, Denaro V. Outcomes of posterior-stabilized compared with cruciate-retaining total knee arthroplasty. J Knee Surg. 2018;31(4):321–40.",
+        "journal-title": "J Knee Surg"
+      },
+      {
+        "issue": "10",
+        "key": "7516_CR65",
+        "doi-asserted-by": "publisher",
+        "first-page": "1126",
+        "DOI": "10.1016/j.amjmed.2005.01.060",
+        "volume": "118",
+        "author": "HT Stelfox",
+        "year": "2005",
+        "unstructured": "Stelfox HT, Gandhi TK, Orav EJ, Gustafson ML. The relation of patient satisfaction with complaints against physicians and malpractice lawsuits. Am J Med. 2005;118(10):1126–33.",
+        "journal-title": "Am J Med"
+      }
+    ],
+    "container-title": [
+      "BMC Musculoskeletal Disorders"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s12891-024-07516-9.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1186/s12891-024-07516-9/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s12891-024-07516-9.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          22
+        ]
+      ],
+      "date-time": "2024-07-22T15:05:05Z",
+      "timestamp": 1721660705000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://bmcmusculoskeletdisord.biomedcentral.com/articles/10.1186/s12891-024-07516-9"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          22
+        ]
+      ]
+    },
+    "references-count": 65,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "7516"
+    ],
+    "URL": "https://doi.org/10.1186/s12891-024-07516-9",
+    "relation": {},
+    "ISSN": [
+      "1471-2474"
+    ],
+    "issn-type": [
+      {
+        "value": "1471-2474",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          22
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "16 October 2023",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "13 May 2024",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "22 July 2024",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "Not applicable.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethics approval and consent to participate"
+        }
+      },
+      {
+        "value": "Not applicable.",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Consent for publication"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 4,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "571"
+  }
+}

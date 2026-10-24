@@ -1,0 +1,350 @@
+=== PDF PAGE 1 ===
+CURRENT REVIEWS IN MUSCULOSKELETAL MEDICINE • 2026.0 Top 100 Orthopedic AI • Rank #96
+Artificial Intelligence and its Current Role in Clinical
+Outcome Prediction, Musculoskeletal Imaging, and
+Economic and Ethical Considerations within Orthopedics
+and Sports Medicine.
+Emmett O'Malley, Brian M. Soth, Alex Capitano, A. Bensa, Joshua R. Eskew, Malik E. Dancy, Benedict
+U. Nwachukwu
+Sports Medicine Institute, Hospital for Special Surgery, New York, NY, USA.
+Journal:
+Current reviews in
+musculoskeletal medicine
+Publication Year:
+2026.0
+Citations:
+1
+DOI:
+10.1007/s12178-026-10019-w
+CLINICAL & AGENTIC AI TAKEAWAY
+AI models show promise in predicting patient outcomes, surgical complications, and healthcare utilization in
+orthopedics and sports medicine, but challenges in validation, accessibility, and ethical considerations remain.
+ABSTRACT
+PURPOSE OF REVIEW: Artificial intelligence (AI) has emerged as a useful tool across the field of orthopedic surgery.
+This review highlights recent literature on AI’s role in surgical outcome prediction, musculoskeletal imaging, economic
+and ethical considerations, with a focus on its integration in sports medicine workflow and procedures. RECENT
+FINDINGS: Machine learning AI models have demonstrated superior accuracy in predicting orthopedic related patient-
+reported outcomes, surgical complications, and the utilization of healthcare compared to traditional, non-AI methods.
+Within imaging, AI applications now produce automated measurements for clinical and presurgical planning with precision
+equivalent to expert-level measurements. Large language AI models are increasingly used for clinical documentation,
+research workflows, and administrative support for healthcare delivery and effectiveness. Despite increasing integration of
+AI into orthopedics and its subspecialties, challenges in validation, accessibility due to cost, and ethical considerations
+remain. Orthopedic surgery and sports medicine are particularly well suited for AI applications due to their well-defined,
+measurable clinical outcomes. Emerging AI tools and models show promise in enhancing patient outcomes, surgical
+planning, and healthcare efficiency. Continued AI research must prioritize external validation, ethical implementation, and
+educational integration to ensure responsible, effective, and reproducible use.
+Keywords: Artificial intelligence, Imaging, Sports Medicine, Orthopedic Surgery, Machine Learning, Clinical Outcome Prediction
+
+=== PDF PAGE 2 ===
+Emmett O’Malley
+Bryan Soth
+Alex Capitano
+Alessandro Bensa
+Joshua Eskew
+Malik Dancy
+Benedict Nwachukwu
+Corresponding author.
+Received 2025 Oct 23; Accepted 2026 Feb 20; Collection date 2026 Dec.
+Abstract
+Purpose of Review
+Artificial intelligence (AI) has emerged as a useful tool across the field of orthopedic surgery. This review highlights recent
+literature on AI’s role in surgical outcome prediction, musculoskeletal imaging, economic and ethical considerations, with
+a focus on its integration in sports medicine workflow and procedures.
+Recent Findings
+Machine learning AI models have demonstrated superior accuracy in predicting orthopedic related patient-reported
+outcomes, surgical complications, and the utilization of healthcare compared to traditional, non-AI methods. Within
+imaging, AI applications now produce automated measurements for clinical and presurgical planning with precision
+equivalent to expert-level measurements. Large language AI models are increasingly used for clinical documentation,
+research workflows, and administrative support for healthcare delivery and effectiveness. Despite increasing integration of
+AI into orthopedics and its subspecialties, challenges in validation, accessibility due to cost, and ethical considerations
+remain.
+Summary
+Orthopedic surgery and sports medicine are particularly well suited for AI applications due to their well-defined,
+measurable clinical outcomes. Emerging AI tools and models show promise in enhancing patient outcomes, surgical
+planning, and healthcare efficiency. Continued AI research must prioritize external validation, ethical implementation, and
+educational integration to ensure responsible, effective, and reproducible use.
+Keywords:Artificial intelligence, Machine learning, Orthopedic surgery, Clinical outcome prediction, Imaging, Sports
+medicine
+Introduction
+Orthopedic surgery is undergoing a technological revolution driven by the integration of artificial intelligence (AI) into
+diagnostic, surgical, and rehabilitative processes. AI has become a tool capable of enhancing clinical decision making,
+streamlining workflow efficiency, and personalizing patient care. This transformation parallels the broader digital
+
+=== PDF PAGE 3 ===
+evolution of orthopedic surgery, as data-driven approaches and robotics are increasingly guiding clinical decision-making
+and patient outcomes [1–3].
+Clinical and preoperative care are among the most active domains for AI integration, with demonstrated success in
+imaging interpretation and automation [4,5]. For example, in anterior cruciate ligament (ACL) reconstruction, deep
+learning (DL) AI models can quantify posterior tibial slope from radiographs with surgeon-level accuracy, enabling
+anatomic risk assessment for the potential risks of graft failure [6]. Similarly, machine learning (ML) AI models have
+enhanced prediction of ACL reconstruction revision risk based on patient specificities supporting individualized
+preoperative planning [7].
+As AI adoption expands within orthopedic surgery, careful evaluation of its capabilities and limitations is essential. The
+following subsections summarize core applications of AI across orthopedics and the subspeciality of sports medicine by
+providing in-depth discussion of outcome prediction in upper and lower extremity procedures, imaging automation and
+quantitative analysis, as well as economic and ethical considerations. This current concept review aims to provide a broad
+synthesis of contemporary applications and future directions for the clinically meaningful implementation of AI in
+musculoskeletal care.
+Core Applications of AI in Sports Medicine
+Outcome Prediction and Patient Selection
+AI outcome prediction has been applied across upper and lower extremity sports medicine procedures, enabling joint-
+specific risk stratification and functional outcome prioritization. ML algorithms trained on clinical and imaging datasets
+enable predictive models to estimate a patient’s likelihood of achieving functional milestones or experiencing surgical
+complications in individualized and selected cohorts. These models are particularly valuable for high-volume procedures
+such as rotator cuff repair, where identifying patients at risk for suboptimal recovery can enhance preoperative counseling
+and postoperative planning [8,9]. Efforts to standardize AI applications in outcome prediction underscore the need for
+transparent reporting of AI model training, comprehensive dataset composition, and AI performance metrics to ensure
+meaningful clinical utility [10].
+Recent AI models enable quantification of individual clinical contributors to injury risk. In professional baseball athletes,
+these models demonstrated strong predictive performance (AUC > 0.80), with prior injury history and workload-related
+performance metrics emerging as the dominant predictors compared with traditional single-variable analyses (Fig.1) [11].
+Such insights reinforce the validity of AI outputs and support their use in prehabilitation planning, workload monitoring,
+and risk stratification.
+Variable importance plot for predicting injury risk in professional athletes. A machine learning (ML) model’s assessment of
+the most influential factors contributing to future injury risk in Major League Baseball players. Prior injury history and
+advanced performance metrics, such as weighted cutter runs per 100 pitches and wins above replacement, ranked highest
+in predictive value. Visualizations like this enhance model interpretability and support the integration of artificial
+intelligence (AI)-based tools into personalized prehabilitation strategies and athlete risk profiling.
+Adapted from Karnuta et al.[11]
+In the lower extremity, Kunze et al. validated ML algorithms capable of predicting clinically meaningful improvement
+following hip arthroscopy for femoracetabular impingement (FAI) [12,13]. The algorithms incorporated preoperative
+variables such as demographics, baseline clinical scores, and interoperative findings to generate individualized outcome
+estimates [14,15].
+
+=== PDF PAGE 4 ===
+Subsequent external validation confirmed the model’s reliability, reinforcing that well-designed algorithms can retain
+predictive accuracy across institutions and patient demographics [15]. ML models demonstrated fair to good
+discrimination for predicting subsequent hip procedures, including need for revision arthroscopy and progression to total
+hip arthroplasty (Fig.2). Model performance was strongest for predicting progression to total hip arthroplasty, with an area
+under the curve (AUC) of approximately 0.80, and demonstrated moderate discrimination for revision arthroscopy and
+periacetabular osteotomy (AUCs ≈ 0.75–0.77) [16]. This reproducibility is critical for advancing AI predictive tools from
+single-center studies to large-scale clinical use, where variability in patient populations and practice settings can otherwise
+compromise validity and reliability.
+Receiver operating characteristic (ROC) curves for predicting subsequent hip surgeries using machine learning (ML). ROC
+curves display the predictive performance of random forest models developed to forecast the risk of subsequent hip
+procedures following primary hip arthroscopy for femoroacetabular impingement (FAI). Area under the curve (AUC)
+values were 0.77 for revision hip arthroscopy, 0.80 for total hip arthroplasty (THA), 0.62 for hip resurfacing arthroplasty
+(HRA), and 0.76 for periacetabular osteotomy (PAO), reflecting fair to good discriminative accuracy. These models
+integrate preoperative demographic, radiographic, and functional data to assist in surgical risk stratification and patient
+counseling
+Despite this progress, widespread clinical translation has remained limited. Most models demonstrate strong internal
+validation but lack external validation across diverse populations and practice settings [17]. The absence of replicability
+and widespread access constrains their universal utility. Integration into clinical workflows will require emphasis on
+interpretability and evaluation of bias among clinicians. In sports medicine, where return-to-sport (RTS) and long-term
+functional success define treatment goals, AI prediction platforms have the potential to become staple components of
+individualized surgical and non-surgical treatment. As healthcare increasingly transitions towards value-based care, AI-
+based tools capable of estimating patient satisfaction, functional recovery, and treatment efficacy will become central to
+optimizing patient care delivery [18]. These upper and lower extremity applications highlight AI’s capacity to enhance care
+from outcome prediction to improved patient experience through more accurate patient assessment and treatment. As
+models continue to evolve, their integration into clinical pathways will expand, resulting in a new era of data-driven,
+patient-centered care.
+Imaging and Biometric Analysis
+AI is transforming the interpretation of orthopedic imaging. DL algorithms now demonstrate high accuracy in recognizing
+radiographic parameters and alignment abnormalities [19]. In ligamentous knee injuries, ML can support more informed
+decision making by standardizing the assessment of imaging-derived risk factors known to influence graft failure risk [7].
+Tasks such as posterior tibial slope quantification, once prone to interobserver variability, can now be standardized through
+automated algorithms [6]. In patients with ACL injury, DL models have demonstrated close agreement with expert human
+measurements, achieving a mean absolute error of approximately 2° while reducing processing time to approximately 5
+seconds per image compared with an estimated 180 minutes for manual segmentation and measurement [6].
+The utility of AI also extends to subtle injury detection. In hip preservation surgery, radiographic indices of native anatomy
+and pathology derived from computed tomography (CT) can be paired with random forest classifiers to predict long-term
+functional outcomes, illustrating a typical imaging-driven approach to outcome prediction in hip arthroscopy (Fig.3).
+These methods underscore AI’s impact on musculoskeletal radiology, particularly in high volume or resource-limited
+environments where automation can reduce time and error.
+Radiographic indices and ML pipeline for predicting hip arthroscopy outcomes. This figure outlines the ML workflow
+used to evaluate the prognostic value of preoperative CT-based radiographic indices in patients undergoing hip
+arthroscopy. Radiologic angles were extracted by board-certified radiologists and analyzed using a random forest classifier
+to predict one- and two-year patient-reported outcomes, including Modified Harris Hip Score (mHHS), Hip Outcome
+
+=== PDF PAGE 5 ===
+Score – Sport Specific (HOS-SS), Hip Outcome Score - Activities of Daily Living (HOS-ADL), and International Hip
+Outcome Tool (iHOT-33). The model’s performance was assessed using the AUC, as shown for both timepoints.
+Adapted from Ramkumar et al.[14]
+However, as reliance on algorithmic outputs increases, concerns are warranted regarding clinical oversight and algorithmic
+bias, particularly when models trained on limited or non-representative datasets are applied across diverse patient
+populations [20]. Optimizing widespread deployment will require standardized and protocol-driven approaches for
+integrating multimodal imaging inputs including magnetic resonance imaging (MRI), CT, and radiographs into unified
+predictive models [21,22].
+For example, a study by Ramkumar et al. used a ML model to predict functional recovery after hip arthroscopy by
+incorporating imaging and radiographic morphology as potential predictors. The cohort reflected a wide range of
+morphology across femoral and acetabular parameters, including alpha angle, center-edge angles, version profiles, and
+combined indices such as the McKibbin and hip impingement indices (Table1). Tables2and3demonstrate that isolated
+radiographic indices show limited utility for functional recovery at 1–2 years [14]. Across sport-specific functions and
+activities of daily living, odds ratios remain close to null with non-significant associations, and discrimination is
+consistently modest, with AUC values clustering near 0.50–0.57 across most parameters [14]. Specifically, alpha angle and
+coronal center-edge angle both demonstrated odds ratios near 1.0 and AUCs near 0.50–0.55 at one- and two-year follow-up
+[14].
+Baseline patient characteristics for machine learning (ML) cohort undergoing hip arthroscopy. This table outlines
+demographic, laterality, and radiographic characteristics for 1,735 patients who underwent hip arthroscopy. Radiographic
+angles include alpha, beta, neck shaft, acetabular version, and femoral version. These data were used as features in ML
+models predicting post-operative outcomes.
+Adapted from Ramkumar et al.[14]
+αData are shown as mean ± standard deviation unless otherwise indicated
+Change in sport function (HOS-SS) by radiographic subgroup. Mean improvement in HOS-ADL scores is displayed across
+various anatomical groupings (e.g., alpha angle ≥ 55° vs. < 55°). No statistically significant differences were observed,
+suggesting radiographic measures do not strongly correlate with recovery in daily activities.
+Adapted from Ramkumar et al.[14]
+αAUC, area under the curve; CI, confidence interval; HOS-SS, Hip Outcomes Score-Sport Specific
+Change in daily living function (HOS-ADL) by radiographic subgroup. This table presents mean changes in HOS-S scores
+following hip arthroscopy, stratified by radiographic parameters. As with HOS-ADL, minimal variation between groups
+highlights the limited prognostic value of static anatomical indices.
+Adapted from Ramkumar et al.[14]
+αAUC, area under the curve; CI, confidence interval; HOS-ADL, hip outcomes score-sport specific
+These findings suggest that commonly cited anatomic indices alone do not meaningfully stratify postoperative functional
+improvement and should not be used as sole inputs for patient selection or counseling. Instead, they support a more
+clinically useful paradigm where radiographic morphology is used within multivariable models that incorporate baseline
+function, intraoperative findings, and patient-level factors of recovery. This shifts AI-driven patient selection from
+morphology-only prediction on imaging to multidimensional prognostication [14].
+
+=== PDF PAGE 6 ===
+Machine Learning and Time- and Cost-Effective Care Delivery
+AI also offers a powerful means to enhance value-based care through cost prediction and improved operational efficiency.
+ML models consistently outperform traditional heuristics and clinician judgment in forecasting surgical costs, discharge
+disposition, and inpatient resource utilization [9]. These predictive tools can identify high-cost drivers preoperatively. This
+allows providers and payers to anticipate factors such as prolonged operative time, inpatient admission, or post-acute care
+needs and allocate resources accordingly [9]. A simplified decision tree (Fig.4) illustrates how individual clinical inputs are
+processed to generate a cost estimate.
+Decision tree example for predicting cost following anterior cruciate ligament (ACL) reconstruction
+A decision tree used by a ML model to predict average total charges for ACL reconstruction based on key perioperative
+variables. The model first stratifies cases by anesthesia type and operative time, with green nodes representing lower-cost
+predictions. Such tools can facilitate real-time decision-making and cost forecasting in surgical planning.Adapted from Lu
+et al.[23].
+Models predicting clinically meaningful improvement also support value-driven care pathways. For example, the
+Orthopedic Sports Medicine and Shoulder Outcomes (OSSO) algorithm predicted attainment of the minimal clinically
+important difference (MCID) following hip arthroscopy with similar performance in the development and external
+validation cohorts, with c-statistics of 0.77 and 0.80, respectively (Table4). Such reproducibility enhances clinical
+confidence and supports health system-wide implementation for consistent outcome tracking.
+Comparative performance of the OSSO machine learning (ML) algorithm in development and external validation cohorts.
+This table presents a side-by-side comparison of performance metrics for the OSSO minimal clinically important
+difference (MCID) prediction model in patients undergoing hip arthroscopy. The model demonstrated strong
+generalizability, with similar c-statistics, calibration slopes, and Brier scores across both the original internal validation and
+the external validation cohorts. Decision curve analysis revealed greater net clinical benefit compared with other
+management strategies.
+Adapted from Kunze et al.[12]
+Values are presented as mean (95% confidence interval). c-statistic, concordance statistic; ML, machine learning; OSSO,
+Orthopedic Sports Medicine and Shoulder Outcomes
+Procedure-specific economic modeling has likewise gained traction. AI-based frameworks can integrate clinical,
+radiographic, and demographic data to predict the financial burden of surgeries such as ACL reconstruction [23]. This
+capability is particularly relevant as bundled payments and outcome-linked reimbursement models become standard across
+the practices of orthopedic surgery.
+Emerging Technologies and Large Language Models
+Large language models (LLMs) have recently emerged as tools capable of advancing musculoskeletal workflow. These
+systems, such as chat-based LLMs, can draft clinical notes, simplify medical instructions, and clarify highly complex
+information into patient-accessible language, thereby improving patient adherence and satisfaction [24–26]. However,
+while LLMs offer a promise of streamlined communication, recent reviews indicate that their performance remains
+inconsistent. Issues such as hallucinated responses, lack of source transparency, and poor reproducibility raise concerns
+about reliability in clinical environments [27–29]. As a result, an integral component to ensure their safe and effective
+utilization is developing solid study designs, openly using the training data, and providing domain-specific fine-tuning
+approaches.
+By processing natural language inputs at scale, these systems can automate complex tasks such as literature review and
+synthesis, and protocol drafting. Different LLM model types have diverse input–output modalities and functional
+
+=== PDF PAGE 7 ===
+capabilities. Appropriate alignment between model capabilities and intended use may help reduce clinician burden and
+improve consistency in data-driven care pathways (Table5) [29]. In practice, inadequate alignment between model
+capability and intended use has contributed to variable methodological quality in the literature, with systematic reviews
+identifying redundancy, limited rigor, and insufficient customization across healthcare applications [28]. These findings
+emphasize the need for purposeful model design, transparent evaluation, and orthopedic specific modeling prior to clinical
+implementation.
+Model concepts and functions of basic large language models (LLMs). Input-output modalities and core functions of LLM
+types, highlighting distinctions between task-based models and foundational systems.
+Adapted from Kunze et al.[29]
+3D, 3-dimensional; LLM, large language model
+Effective use of LLMs in orthopedics depends not only on algorithmic performance, but also on clinician literacy and
+judgment. As AI platforms become more accessible, orthopedic surgeons must learn to interpret, validate and deploy
+output responsibly to ensure alignment with the most responsible patient care. Educational reform is recognized as
+essential to improving AI fluency among trainees and practitioners [25,30]. Retrieval augmented generation (RAG) models
+have demonstrated superior evidence synthesis compared with general purpose LLMs, underscoring the value of tailored
+customization [27].
+In parallel, natural language processing (NLP) has become an important modality for extracting structured insights from
+unstructured clinical text. By mining electronic medical records (EMR), NLP algorithms can identify trends, stratify
+patient risk, and facilitate registry creations. These functions are otherwise limited by human bandwidth and variability
+[31]. The implications for research efficiency, quality assurance, and personalized care delivery are established,
+particularly as orthopedic institutions seek to build scalable data infrastructure.
+When viewed collectively, the implementation of AI across imaging, prediction, and administration provides clear support
+for its general utility in orthopedics. Whether by improving diagnostic precision, optimizing resource allocation, or
+supporting communication, AI has the potential to drive a new era of efficient, personalized musculoskeletal care. In both
+academic and community healthcare settings, the collective impact of AI suggests a unifying benefit: higher-quality
+musculoskeletal care delivered more efficiently and at a lower cost.
+Ethical, Educational, and Global Considerations
+The integration of AI into orthopedic surgery introduces complex ethical, educational, and equity-based challenges that
+need to be addressed to ensure responsible implementation. One of the central concerns is premature clinical adoption of
+unvalidated AI tools, a phenomenon termed the “valley of despair”, where enthusiasm surpasses its actionable benefit [32].
+To mitigate this, bioethical frameworks are being developed to guide AI deployment with principles centered on
+transparency, equity, and safety [33,34]. These frameworks advocate for complete model testing, clear documentation of
+limitations, and mechanisms to ensure human oversight remains central to the decision-making process.
+From an educational standpoint, there is growing recognition that AI competency should be integrated into orthopedic
+training at every level. Recent surveys of orthopedic trainees reveal significant variability in AI knowledge, highlighting
+the need for structured exposure to these technologies early in surgical education [35]. Without a foundational
+understanding, clinicians risk overreliance on or misinterpretation of AI-generated outputs. Editorial voices have
+underscored the danger of deploying AI tools without sufficient user competency, equating these actions to the introduction
+of unregulated instruments into the operating room [36–38]. Multimodal LLMs can process and summarize radiologic
+findings, a capability that underscores both their potential utility and the need for user training and oversight (Fig.5).
+Multimodal large language model (LLM) for medical imaging interpretation. This diagram illustrates how a multimodal
+LLM integrates radiographic imaging with text-based prompts to generate clinical findings. A pretrained vision
+
+=== PDF PAGE 8 ===
+transformer extracts features from the image (in this case, a chest radiograph), which are then processed through a linear
+transformation layer and interpreted by a medically trained LLM. The model outputs a structured diagnostic report,
+showcasing the potential of LLMs to enhance decision-making through image-text alignment.
+Adapted from Kunze et al.[29]
+Global equity remains another important consideration. Most existing AI models are trained and validated on data from
+high-income countries limiting their applicability in resource constrained regions risking digital health disparities.
+Ensuring fairness will require inclusion of diverse patient populations and open access international datasets to promote
+equitable outcomes [39,40].
+Ultimately, the promise of AI in orthopedics depends not only on technological advancement, but also on adherence to
+ethical principles, comprehensive education, and global inclusivity. These pillars are essential for transforming AI from a
+theoretical innovation to a trusted partner in musculoskeletal care delivery.
+Future Directions and Conclusion
+AI continues to evolve in musculoskeletal medicine offering opportunities to enhance diagnostic accuracy, improve
+outcome prediction, and streamline care delivery and costs. As adoption progresses, the field must transition from proof-
+of-concept models to sustained clinical integration. The importance of robust model design, external validation, and ethical
+deployment across a broad range of orthopedic subspecialties has been clearly demonstrated by the contributions of
+physician-scientists thus far [24,29,31,41,42]. Ongoing translational scholarship will be essential in bridging the gap
+between data science and bedside application.
+Despite significant progress, many existing algorithms remain limited by small training cohorts and inconsistent reporting
+standards. To achieve clinical utility, future efforts must prioritize interpretability and workflow compatibility, ensuring the
+AI tools enhance rather than complicate clinical decision making. As with any paradigm-shifting technology, enthusiasm
+should be balanced with critical appraisal and a commitment to patient centered care.
+Priority areas for future development include:
+Prospective, multicenter validation of ML and DL algorithms across diverse patient populations to ensure external validity
+and reduce algorithmic bias.
+Standardized transparent reporting of model architecture and performance metrics, including calibration curves, confusion
+matrices, and AUC values, to support reproducibility and clinician confidence.
+Development of formal orthopedic-specific educational initiatives and programs to improve AI fluency among trainees and
+practicing surgeons, ensuring responsible clinical use.
+Integration of validated AI tools into real-time EMR systems and surgical planning platforms, facilitating decision support
+and reducing the cognitive burden of data management.
+The next chapter of orthopedic innovation will depend on the ability to validate, educate, and integrate AI responsibly. If
+these priorities are met through multi-center collaboration, policy support, and academic rigor, AI will be well positioned
+to lead into a new era of orthopedics. This new era will be defined by clinical precision, personalization, and measurable
+improvements in healthcare and patient outcomes.
+
+=== PDF PAGE 9 ===
+Key References
+Author contributions
+E.O. and B.S. wrote the main manuscript text. E.O. prepared all figures.All authors reviewed and edited the manuscript.
+Data Availability
+No datasets were generated or analysed during the current study.
+Declarations
+Competing interests
+The authors declare no competing interests.
+Disclosure statement
+Statement: Below are the healthcare industry relationships reported by Dr. Nwachukwu as of July 8, 2025.
+BICMD - Co-founder, Ownership Interest
+Figur8 - Advisory Board
+HSS West Side ASC - Ownership Interest
+Medbridge- Advisory Board
+Quantum - Advisory Board
+Stryker Corporation - Consultant
+Footnotes
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+References
+Associated Data
+This section collects any data citations, data availability statements, or supplementary materials included in this article.
+Data Availability Statement
+No datasets were generated or analysed during the current study.
+Articles from Current Reviews in Musculoskeletal Medicine are provided here courtesy ofHumana Press
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1007/s12178-026-10019-w •
+Consensus Page: https://consensus.app/papers/artificial-intelligence-and-its-current-role-in-clinical-omalley-
+soth/8d20467fd61e5cf6b6f19e733f19297f/ • Verified and rendered via Deep Search & Academic Repositories.

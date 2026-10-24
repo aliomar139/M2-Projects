@@ -1,0 +1,1108 @@
+=== PDF PAGE 1 ===
+Received: 14 September 2021 Revised: 22 May 2022 Accepted: 25 May 2022
+DOI:10.1002/sim.9491
+RESEARCH ARTICLE
+Deepreinforcementlearningforpersonalizedtreatment
+recommendation
+MingyangLiu1 XiaotongShen1 WeiPan2
+1SchoolofStatistics,Universityof
+Minnesota,Minneapolis,Minnesota,USA
+2DivisionofBiostatistics,Universityof
+Minnesota,Minneapolis,Minnesota,USA
+Correspondence
+WeiPan,DivisionofBiostatistics,
+UniversityofMinnesota,Minneapolis,
+MN55455,USA.
+Email:panxx014@umn.edu
+Fundinginformation
+NIH,Grant/AwardNumbers:
+R01AG069895,R01AG065636,
+R01AG074858,U01AG073079,
+R01GM126002;NSF,Grant/Award
+Number:DMS-1952539;Minnesota
+SupercomputingInstituteatthe
+UniversityofMinnesota
+In precision medicine, the ultimate goal is to recommend the most effective
+treatmenttoanindividualpatientbasedonpatient-specificmolecularandclini-
+calprofiles,possiblyhigh-dimensional.Toadvancecancertreatment,large-scale
+screenings of cancer cell lines against chemical compounds have been per-
+formedtohelpbetterunderstandtherelationshipbetweengenomicfeaturesand
+drugresponse;existingmachinelearningapproachesuseexclusivelysupervised
+learning,includingpenalizedregressionandrecommendersystems.However,
+itwouldbemoreefficienttoapplyreinforcementlearningtosequentiallylearn
+as data accrue, including selecting the most promising therapy for a patient
+givenindividualmolecularandclinicalfeaturesandthencollectingandlearn-
+ingfromthecorrespondingdata.Inthisarticle,weproposeanovelpersonalized
+rankingsystemcalledProximalPolicyOptimizationRanking(PPORank),which
+ranks the drugs based on their predicted effects per cell line (or patient) in
+the framework of deep reinforcement learning (DRL). Modeled as a Markov
+decision process, the proposed method learns to recommend the most suit-
+able drugs sequentially and continuously over time. As a proof-of-concept,
+we conduct experiments on two large-scale cancer cell line data sets in addi-
+tion to simulated data. The results demonstrate that the proposed DRL-based
+PPORank outperforms the state-of-the-art competitors based on supervised
+learning. Taken together, we conclude that novel methods in the framework
+of DRL have great potential for precision medicine and should be further
+studied.
+KEYWORDS
+actor-criticmethods,deeplearning,precisionmedicine,ProximalPolicyOptimization,
+recommendersystems
+1 INTRODUCTION
+Onemainchallengeinprecisionmedicine 1 istounderstandcommondiseaseatthemolecularleveltorecommendindi-
+vidualizedtherapiestopatients,permittinghighefficacyfordifferentandpossiblyunknown diseasesubtypes.Another
+challenge in clinical practice is how to adapt treatment assignments to possible changes in patients’ health states and
+preferences,includingprevioustreatmenthistory.Optimaltreatmentisdeterminedbymaximizinganevaluationsignal
+ThisisanopenaccessarticleunderthetermsoftheCreativeCommonsAttribution-NonCommercial-NoDerivsLicense,whichpermitsuseanddistribut ioninanymedium,
+providedtheoriginalworkisproperlycited,theuseisnon-commercialandnomodificationsoradaptationsaremade.
+©2022TheAuthors. StatisticsinMedicine publishedbyJohnWiley&SonsLtd.
+4034 wileyonlinelibrary.com/journal/sim StatisticsinMedicine .2022;41:4034–4056.
+
+=== PDF PAGE 2 ===
+LIUetal. 4035
+indicating a long-term patient outcome, accounting for possibly delayed treatment effects and influences on future
+treatmentchoices.
+Animportantresourceforadvancingprecisionmedicineisthroughdrugdiscoveryviacomputationalpredictionof
+drugsensitivityforvariouscelllinesbasedontheirhigh-dimensionalgenomicfeaturesaswellsasthechemicalstructures
+of drugs.2 For such a purpose, large-scale screenings of cancer cell lines have been performed with detailed molecu-
+larprofiles.Forexample,theCancerCell-LineEncyclopedia(CCLE) 3 provideslarge-scalemolecularprofilesincluding
+genomic(eg,geneticmutations),transcriptomic(ie,geneexpression),andepigenomic(eg,DNAmethylation)data.Simi-
+larly,theGenomicsofDrugSensitivityinCancer(GDSC)project 4 hasbeencarriedoutforinvestigatingdrugresponsesof
+numerouscancercelllines,whicharemeasuredbyeachdrug’shalf-maximalinhibitoryconcentration(IC 50);thesmaller
+IC50,themoreeffective(potentially)thedrug.GDSCalsoprovidesmulti-omicsdata,includingwhole-exomesequenc-
+ing(WES),copynumbervariation(CNV),andDNAmethylation(MET)data.Whereasitischallengingtoexaminethe
+patient’sresponsetodifferentclinicaloptions,theCancerGenomeAtlas(TCGA) 5 collectedfollow-uprecordsofaround
+10kpan-cancerpatientsforsurvival/recurrenceinresponsetogiventreatments. 5 WewilluseCCLEandGDSCtodevelop
+and (internally) evaluate our proposed and other existing learning methods before using a TCGA dataset for external
+validation.
+Toadvancedrugdiscovery,variousapproacheshavebeenproposedforpredictingdrugresponsesusinggenomicfea-
+tures.3,4,6-9 Forexample,someReferences 3,4,6,7,9haveproposedlinearregressionmodelstopredictdrugsensitivity(as
+measured by IC50) or the area under the fitted dose response curve (AUC). Some non-linear models such as random
+forests,kernelregression,andneuralnetworkshavealsoappeared. 2,10,11 Thesemodelsaredrug-specificasbeingtrained
+for each drug separately and independently. A drug-specific model is limited by the small number of cell lines avail-
+ablewithagivendrug.Toincreasethesamplesize,others 6 haveproposedaBayesianmultitaskmultiplekernellearning
+(BMTMKL)approach,achievingthebestperformanceinaDREAMchallengefordrugresponseprediction.Thismethod
+has shown the importance of information sharing among the drugs. Besides, there is a matrix factorization approach
+basedoncelllineanddrugsimilarities(SRMF),which,however,couldnotbeusedforpreviouslyunseencelllines. 12 Ina
+similarframeworkofmatrixfactorization,arecommendersystem(CaDRReS)tomapthedrugsandcelllinesintoalatent
+“pharmacogenomic”spacebeforepredictingdrugresponseshasbeenproposed. 13 However,mostofthesemethodsmay
+notbemostclinicallyrelevant:theydirectlypredictdrugresponses,differingfromdirectlyrankingdrugs.Accordingly,
+kernelizedranklearning(KRL)hasbeenproposedtousearankingmetriccallednormalizeddiscountedcumulativegain
+(NDCG@k)torecommendthetop kmostsensitivedrugs. 14 Similarly,CaDRReS13 isanotherrankingprocedure.How-
+ever,bothKRLandCaDRReSoptimizeeitheranapproximateevaluationmetricorthemeansquareerror(MSE)without
+directlyoptimizingtherankingevaluationmetricNDCG.Recently,variousdeeplearning(DL)modelshaveemerged, 15
+showingthatsimpleneuralnetworkssuchasmulti-layerperceptrons(MLPs)couldbeeffectivecompetitorstolassoor
+elasticnet.16 CDRscan17 aimstoexplorevariousarchitecturesofMLPstopredictresponsesfromcelllinegenomicfeatures
+anddrugfingerprints.
+However,therearepotentiallimitationswiththesemethods.Importantly,allthemethodsaresupervised,including
+regression.Inpractice,itwouldbemoreefficientforalearningsystemtolearn sequentiallyandcontinuously asthedata
+accrue, rather than collecting all the data first before starting learning. Accordingly, we propose a deep reinforcement
+learning(DRL)basedapproach,called PPORank.PPORanktreatsrankingasasequentialdecision-makingprocess.We
+adopt a ranking evaluation metric, called NDCG, as the long-term reward, and take both the long-term effects of the
+rankingpolicyandtheexpectedvalueofeachrankingpositionintoaccount.Thusweutilizemoreinformationfroma
+ranking.OnenovelcomponentofPPORankisouradaptationofamodel-free“actor-critic”scheme.Wedirectlyoptimize
+thenon-differentiableevaluationmeasureNDCGthroughpolicygradientandachievebothstabilityandsampleefficiency
+viathePPOoptimizationmethod.Wedesignastaterepresentationmoduleusingadeepneuralnetworkfromapolicy
+network, which is extensible to integrating heterogeneous data sources and is capable to capture complex non-linear
+relationshipsbetweencelllines/patientsanddrugs.Wehavecarriedoutsomeexperimentsoncancerdrugscreeningdata,
+which are high-dimensional in the state and action spaces with only limited and sparse data. The results demonstrate
+thattheproposedmethodoutperformsthestate-of-the-artcompetitors.
+OurproposedPPORankanditsDRLframeworkarerelatedto,butdifferfrom,theexistingliteratureonestimating
+optimaldynamictreatmentregimes(DTRs), 18-20 inwhichoftenonlyasmallnumberoftreatmentsortimepoints(called
+finitetimehorizons)areconsidered, 21-27 thoughafewexceptionswithinfinitetimehorizons areemerging.Themethods
+inthefirstcategoryaremainlybasedonQ-learningandA-learning, 28 oftenbasedonparametric/linearregressionmodels
+forthevaluefunctions.Whenthereisonlyonetimepoint,itreducestoindividualizedtreatmentselection,whichisdone
+intheframeworkofsupervisedlearning,suchastheoutcomeweightedlearning, 29 𝜓-learning,30 andresidualweighted
+
+=== PDF PAGE 3 ===
+4036 LIUetal.
+learning.31 Tworepresentativesforinfinitetimehorizonshaveappearedrecentlyandarebasedonsomepostulatedlin-
+earmodelsfortheQ-valuefunction 32 andtheV-valuefunction 33 respectively;seeReference 1foraniceandup-to-date
+review.OurproposedmethodintheframeworkofDRLnotonlyismoreflexiblebyallowingbothnonparametricmodel-
+ingwithDLandinfinitetimehorizons,butalsotakesastate-of-the-artactor-criticapproachbasedonthePPOalgorithm.
+Inaddition,manyothermethodsrequirethatthedatahavebeencollected(fromeitherrandomizedexperimentsorobser-
+vational studies) at the time of their application, while RL can learn to both recommend treatments and thus collect
+datasimultaneously,whichmightbemoreefficientandtimelyinapplicationssuchasmobilehealth(mHealth)forcon-
+tinuouslylearningandthusrecommendingbetterandbetterbehavioralinterventions, 33 thoughthiswillnotbefurther
+exploredhere.
+1.1 Relatedwork
+Inrecentyears,RLhasbeenadaptedtodeveloppowerfulsolutionsinavarietyofhealthcaredomainscharacterizedas
+sequential procedures.34-39 For example, Dynamic Treatment Regimes (DTR) are tailored for generating new scientific
+hypothesesanddevelopingoptimaltreatmentsacrossorwithingroupsofpatientsbyutilizingdatagenerated,forinstance,
+fromtheSequentialMultipleAssignmentRandomizedTrials(SMART); 40 thedesignofDTRcanbeviewedasasequential
+decisionmakingproblemthatfitsintotheRLframework.ThedomainsofapplyingRLcanbeclassifiedintotwomain
+categories:chronicdiseasesandcriticalcare.Duetothelongtermtreatmentofachronicdisease,RLhasbeenutilized
+to automate the discovery and generation of optimal DTRs in a variety of chronic diseases, including cancer, diabetes,
+anemia, HIV, and mental illnesses. For example, References21,22,41 applied RL to determine optimal chemotherapy
+dosagesforcancertreatment,andReferences 42,43adoptedRLindecisionmakingforoptimalschedulingofradiation
+therapy for cancer. In the criticalcare domain, RL has beenapplied, for example,to treatmentselectionfor sepsis,44,45
+medication recommendations in critical care units,46 and management of invasive mechanical ventilation in intensive
+care units.47 Nevertheless, how to tailor the existing RL methods to deal with limited biomedical data and to take into
+consideration of risk, safety, robustness, and efficiency in healthcare systems remain challenging and to be addressed
+whenapplyingRL.
+The rest of the article is structured as follows. In Section2, we introduce the main components of the proposed
+DRL-based method. Section3 presents the experimental details and the results. We end in Section4 with some main
+conclusionsandashortdiscussionforfuturework.
+2 METHODS
+This section formulates personalized ranking via reinforcement learning. For reinforcement learning, we propose an
+actor-criticnetwork48 basedonahiddenstaterepresentationasinputtolearningtorank.Inparticular,weleveragean
+evaluationsignaltoreducevarianceformoreefficientsampling.
+2.1 Personalizedranking
+Given N cell lines (or patients), we observeX ∈ RN×P, with each row and column representing one cell line and one
+feature, for example, one gene’s expression, respectively; cell line-specific responses, denoted asY ∈ RN×M, are their
+responses to (maximum)M distinct drugs. Each of theN cell lines
+{
+c(i)}N
+i=1 is paired with its drug response vector
+Y(i) =
+{
+y(i)
+1 , … ,y(i)
+Mi
+}
+,w h e r eMi is the number of candidate drugs for cell linec(i). For each cell linec(i), together with
+{(
+X(i),D(i),Y(i))}
+,where X(i) ∈ RP isthecorrespondingcelllinefeaturevector, D(i) =
+{
+d(i)
+1 , … ,d(i)
+Mi
+}
+isasetofthedrugs
+testedoncellline;eachdrug d(i)
+j ∈ RD withj ∈{1, … Mi}denotesadrugfeaturevector,eitheravectorrepresentingthe
+drugstructureoronlyanindicatorforthedrug’sindexwhenthedrugfeaturevectorisunused/unknown.Intheranking
+process,weuse D(i)
+t astheremainingcandidatedrugstoberankedattimestep tforcellline i,so D(i)
+t isasubsetof D(i).
+ThenotationsaresummarizedinTable A1intheAppendix.
+We formulate the ranking problem as learning a scoring function that scores each candidate drug at each ranking
+positiont ∈{1,2, … ,M}.Thescoresusuallyrepresentsomerelevance,inducinganorderingofthedrugsbysortingthem
+
+=== PDF PAGE 4 ===
+LIUetal. 4037
+indescendingorderofrelevancetoformarankedlistateachposition.Whenmovingtothenextposition,accordingtothe
+dynamicchangeofthecandidatedrugs,thecontextenvironment,andthecorrespondingfeaturevectors,thescoresfor
+theremainingdrugsmaychangeunderthescoringfunction.Assuch,thegoaloftherankingistobuildaparameterized
+rankingfunction f(X,Dt,t)thatminimizestheempiricallossacrossalltherankingpositions t:
+(f,N)= 1
+NM
+N∑
+i=1
+M∑
+t=1
+l(Y,f(X(i),D(i)
+t ,t)), (1)
+where l(⋅) is a specified local loss function. In ranking problems,l(⋅) is usually derived from the utility of inter-
+est such as the discounted cumulative gain (DCG) metric,49 and its normalized form called normalized discounted
+cumulative gain (NDCG). Formally, given a ranking list of the drugs for a cell line, say𝝅, the DCG at positionk
+isdefined:
+DCG@k =
+k∑
+t=1
+G
+(
+f,𝝅−1(t)
+)
+𝜂(t), (2)
+where 𝝅−1(t) denotes the drug ranked at positiont by the ranking list𝝅, G(⋅) is the response score of a drug, usu-
+ally set asG
+(
+f,𝝅−1(t)
+)
+=2f𝝅−1(t) −1w i t hf𝝅−1(t) being the response score learned from the ranking functionf(X,Dt,t)at
+position t in the ranking list𝝅,a n d𝜂(t) is a position discount factor, usually set as𝜂(t)= 1∕log2(t+1).I nt h ee n d ,
+DCG@krepresentsthecumulativegainofinformationfrompositiononetoposition kwithdiscountsonthepositions.
+DCG@kgivesahigherweighttoadrugwithahighersensitivityscore,whilethediscountfactorpenalizestheincorrect
+orderingofthese krankings;thegainscanbemaximizedwhenthemosteffective kdrugsarethetop krecommended
+ones.
+As an evaluation criterion, the NDCG is more widely used. It is defined as NDCG@k = 1
+Zk
+∑k
+t=1G(f,𝝅−1(t))𝜂(t),
+whereZk is a normalizing factor calculated at the perfect ranking list𝝅∗ based on the true response scores; NDCG@k
+ranges from 0 to 1, with 1 indicating a perfectly predicted ranking. The final evaluation metric for top k positions is
+NDCG@k = 1
+Zk
+∑k
+t=1
+2
+f𝝅−1(t)−1
+log2(t+1) .Whenitcomestorankatallthepositions,thecriterionis
+NDCG = 1
+ZM
+M∑
+t=1
+2f𝝅−1(t) −1
+log2(t+1), (3)
+whereMisthenumberofallthecandidates(drugs)toberanked(foracellline),and Zisthenormalizingfactor.
+Given N samples {(c(i),X(i),D(i),Y(i))}N
+i=1, (minus) the loss function to be maximized for a given ranking function
+f(X(i),D(i)
+t ,t)acrossallrankingpositionsis
+NDCG(f,N)= 1
+N
+N∑
+i=1
+1
+MiZi,Mi
+Mi∑
+t=1
+2f𝝅−1(t) −1
+log2(t+1), (4)
+whereMi isthenumberofcandidatedrugsforcellline i.Notethat Yingeneralcontainsmissingvaluessinceacellline
+maybegivenonlya(proper)subsetofallcandidatedrugs;thatis, Mi maydifferacrossthecelllines.
+2.2 Reinforcementlearningforranking
+WeformulateapersonalizedrankingprocessasaMarkovdecisionprocess(MDP). 50 Foreachcellline,therankingpro-
+cessonthecandidatedrugsisconsideredasasequenceofdiscrete-timesteps;eachtimestepcorrespondstoaranking
+position,forexample,rankingposition tisconsideredasthesameasthetimestep t.Asthecandidatedrugnumbervaries
+acrossthecelllines,thelengthforeachrankingprocessisdeterminedbythenumberofavailable drugs.Ateachtime
+step,theagentreceivestheenvironment’sstateandchoosesanactionbasedonthestate.Thestateisconstructedbythe
+remainingcandidatedrugs,thecellline,andalistofthepreviouslyrankeddrugs,includingthecandidatedrugandcell
+linefeatures,drug-drug,andcellline-druginteractions.Theactionofdrugselectiononlydependsonapolicy,whichis
+
+=== PDF PAGE 5 ===
+4038 LIUetal.
+afunctionmappingfromthecurrentstatetoaprobabilitydistributionofselectingpossibledrugs.Afteronetimestep,
+theenvironmenttransitstoanewstateaccordingtothecurrentstatewiththecelllineevaluationsignalandthechosen
+action.
+TherankingproblemmodeledasaMDPintheframeworkofRLcanberepresentedby ⟨,, ,,𝜋,𝛾 ⟩,composed
+ofstates,actions,transition,reward,andpolicyasdefinedbelow:
+States  is a set of states, each describing the environment. In the ranking problem, the agent should be
+aware of the current ranking position as well as the candidate drug set that the agent can choose from. For
+simplicity, we only describe the notation under one cell line; if it comes to batch computation, we just need
+to include multiple cell lines. Thus, at time step t, we have observation Ot =[X,Dt,Ht], and the state st is
+definedas
+st =fs(Ot)= fs([X,Dt,Ht]), (5)
+wherefs(⋅)standsforastaterepresentationmodule, Xisthecellline, Dt istheremainingdrugstoberanked,and Ht isa
+hiddenstatelearnedfrompreviouspositiveevaluationsignals;forexample,ifthecelllineprovidesapositiveresponse(ie,
+theimmediaterewardispositive),thenthenexthiddenstateisupdatedto Ht+1 =GRU(X,Dt,Ht);otherwise, Ht+1 =Ht.
+Theinitialstatecanbewrittenas s1 =fs(O1)= fs([X,D,H1]),where Disthesetofallthecandidatedrugs,andthehidden
+stateisinitializedtobe 0.
+Actions  is a discrete set of actions that the agent can take. The set of possible actions depends on the statest,
+denotedas (st).Attimestep t,at ∈ (st)istheselectionofadrug dm(at) ∈Dt fortherankingposition t,where m(at)
+indexesthedrugselectedby at.
+Transition  (,) is a function ∶  × → , mapping a statest to a new state according to actionat.W h e n
+choosing a drug by actionat, it means removing the drugdm (at) from the candidate set, thenst+1 =  ([X,Dt,Ht]) =
+f(
+[
+X,Dt ⧵
+{
+dm(at)
+}
+,Ht+1
+]
+).
+Rewardr(,)istherewardfunction r ∶  × → R.AsourtargetinrankingistomaximizeNDCG,thereward
+shouldbeabletoreflectthecontributiontotheevaluationmetricofselectingthedrug.Thuswedefinetherewardreceived
+correspondingtochoosingaction at asthepromotionoftheDCG: 51
+rDCG (st,at) =
+⎧
+⎪
+⎨
+⎪⎩
+2ym(at) −1 t =1
+2
+ym(at)−1
+log2(t) t >1
+, (6)
+where ym(at) is the drug sensitivity score y=− log(IC50) for the selected drugm(at) at position t (in our two
+cell line data examples). Here we see the immediate reward at each time stept is just the promotion of DCG at
+each ranking positiont, which enables the learning process to utilize DCG values at each time step. Furthermore,
+for each cell line, the cumulative rewards along a trajectory will be DCG= ∑
+t=1 rDCG (st,at),w h i c hw ea i mt o
+maximize.
+Policy𝜋(a|s)∶ × → [0,1]describesthebehaviorsoftheagent,whichisaprobabilisticdistributionoverthepos-
+sibleactionsforagivenstate.Specially,weusethesoftmaxfunctiontoparametrizethepolicy,outputtingtheprobability
+ofselectingeachofthedrugsforthecurrentrankingposition:
+𝜋𝜽 (at|st) = e𝜙(st,at)⊤𝜽
+∑
+a∈A(st)e𝜙(st,a)
+⊤
+𝜽
+, (7)
+where𝜽isthepolicyparametersintheactornetwork, 𝜙(st,at)isthefeaturevectordecidedbythecurrentstateandaction,
+and⊤denotesthetranspose.MoredetailscanbefoundinSection 2.4.6.
+Discountfactor 𝛾, 𝛾 ∈[0,1], defines the discount factor when we measure the present value for future reward. In
+particular,when 𝛾 =0,theagentonlyconsiderstheimmediatereward;alternatively,when 𝛾 =1,allfuturerewardscan
+becountedfullyintothatofthecurrentaction.Itistypicaltohave 𝛾 ∈(0,1).
+Withoutlossofgenerality,alist-wiserankingprocedureisa T-timesteptrajectoryas (s1,a1, … ,sT,aT).Inthisway,
+wedefineonesampleasatupleof ⟨st,at,r(st,at),st+1⟩.Althoughwemayonlyobserveonetrajectoryforonecellline,we
+cansimulatemultipleanddifferenttrajectoriesforeachcellline.
+
+=== PDF PAGE 6 ===
+LIUetal. 4039
+2.3 SomepreliminariesforDRL
+ThegoalofRListomaximizetheexpectedlong-termreturnfromaninitialstateintermsof 𝜏:
+J(𝜽)= E𝜏∼𝜋𝜽(𝜏)[G(𝜏)], (8)
+where𝜋𝜃(𝜏)= 𝜋𝜃 (s1,a1, … ,sT,aT) =p(s1)∏T
+t=1𝜋𝜃 (at|st)p(st+1|st,at)isthedistributionoverthetrajectory,whichonly
+relateswiththeparametersinpolicy. G(𝜏)isthelong-termreturnofthesimulatedrankinglist,whichisdefinedasthe
+discountedsumoftherewards:
+G(𝜏)=
+M∑
+t=1
+𝛾t−1rt, (9)
+wherert =r(st,at)istheimmediaterewardtheagentreceivesattimestep t aftertakingaction at,and0 ≤ 𝛾 ≤1isthe
+discountfactor.Forourtask,themaximumtimestepforeachtrajectoryisthenumberofthetotalcandidatedrugs, M.
+Notethatwhenthediscountfactor 𝛾 =1,G(𝜏)isidenticaltoNDCG.
+DifferentiatingJ(𝜽)withrespectto 𝜽,48 thegradientbecomes
+∇𝜽J(𝜽)= E𝜏∼𝜋𝜽(𝜏)
+[( M∑
+t=1
+∇𝜽 log𝜋𝜽 (at|st)
+)( M∑
+t=1
+𝛾t−1rt
+)]
+, (10)
+whichcanbeapproximatedbysamplingtrajectory 𝜏i:
+∇𝜽J(𝜽)≈ 1
+N
+N∑
+i=1
+( M∑
+t=1
+∇𝜽 log𝜋𝜽
+(
+ai,t|si,t
+)
+)( M∑
+t=1
+𝛾t−1ri,t
+)
+, (11)
+whereri,t =r(si,t,ai,t)istheimmediaterewardofthe ithtrajectoryattimestep tandcanbecalculatedfrom( 6).
+Toreducethevarianceofthegradients,attimestep t,weonlyconsiderthecumulativerewardsreceivedafter t,asthe
+actiontakenattime t′ cannotaffecttherewardat t forall t <t′.Secondwesubtractabaselinefromthetotalrewards.
+Acommonlyusedbaselineisthevaluefunction, V𝜋𝜽(st),whichistheexpectedreturnstartingin st andfollowingpolicy
+𝜋𝜃(at|st)thereafter.Hereweusethesuperscript 𝜋𝜃 denotesthattheagentwillfollowpolicy 𝜋𝜃(at|st).Thestate-actionvalue
+Q𝜋𝜽(st,at)= E𝜋𝜽(𝜏)[∑M
+t′=t𝛾t′−tr(s′
+t,a′
+t)|(st,at)], which is the expected return of taking actionat at statest following policy
+𝜋𝜃 thereafter.Andbysubtractingthisbaselinefrom Q𝜋𝜽(st,at),weareessentiallycalculatingtheadvantage, A𝜋𝜽(st,at)=
+Q𝜋𝜽(st,at)− V𝜋𝜽(st).Insteadofestimatingboththestate-actionvaluefunction Q𝜋𝜽(st,at)andvaluefunction V𝜋𝜽(st),we
+approximate Q𝜋𝜽(st,at)≈ r(st,at)+ 𝛾V𝜋𝜽(st+1) based onE𝜋𝜽 [Q𝜋𝜽(st,at)− V𝜋𝜽(st)|st,at] =A𝜋𝜽(st,at). Then we build the
+criticnetwork(alsocalledthevaluenetwork)toestimatethenon-linearapproximationofthevaluefunction V𝜋𝜽(st).In
+ourDNN,limitedbythesamplesize,thecriticnetworkwillsharetheparameterswiththepolicynetwork,sowewillalso
+onlyuse V𝜋𝜽(st)forthestatevalueoutputfromthecriticnetwork.Thisgivestheactor-criticnetwork’sstructure, 52 which,
+withthecritic,improvesoverthepolicygradient.Denoteby 𝛿𝜋𝜽
+t =R(st,at)+ 𝛾V𝜋𝜽 (st+1)−V𝜋𝜽(st).Then,thegradientof
+thepolicyparametersbecomes:
+∇𝜽J(𝜽)= E𝜏∼𝜋𝜽(𝜏)
+[∇𝜽 log𝜋𝜽(at|st)𝛿𝜋𝜽
+t
+], (12)
+and𝛿𝜋𝜽
+t servesasanunbiasedestimateoftheadvantagefunction.
+Theactor-criticnetworkcombinestheadvantagesofvalue-basedlearningandpolicygradienttoachieveaccelerated
+andstablelearning.Itconsistsoftwocomponents:anactortooptimizethepolicy 𝜋𝜽 inthedirectionofgradient ∇𝜽J(𝜽)
+using(10),andacritictoestimateastate-value function V𝜋𝜽 withthestateoutputfromtheactornetwork.Finally,we
+obtainthepolicygradientin( 12).
+2.4 Actornetwork
+Wedescribethearchitectureoftheactornetwork,inspiredbythedeep ςcrossnetwork.53 Amainmotivationisforflexible
+modelingofpossiblycomplexrelationshipsbetweenhigh-dimensionalcelllineanddrugfeatures.Previousstudies 12,13
+
+=== PDF PAGE 7 ===
+4040 LIUetal.
+FIGURE 1 Theactornetwork
+haveshowntheimportanceofsuchflexiblemodeling.Thisnetworkstartswithanembeddinglayerandastackinglayer,
+followedbyacrossnetworkandadeepnetwork.Intheconcatenationlayer,wecombinetheoutputfromthetwonetworks
+andthatfromagatedrecurrentunit(GRU)layer. 54 Theconcatenatedvectorfromthecombinationlayerisdefinedasthe
+statein( 5).Beforebuildingtheembeddinglayer,wehavepre-trainedamatrixfactorization(MF)modeltoinitializethe
+MFlayer.ThestructureisdisplayedinFigure 1.Next,wedescribetheactornetworkunderthesettingforthecancerdrug
+responserankingproblem.
+2.4.1 Matrixfactorization(MF)layer
+Duetotheheterogeneousdatasources,ifwemodeltheinteractionsbetweencelllinesanddrugs,wemayfirstproject
+themintothespacesofthesamedimension.Theeasiestwayofincorporatingdrugfeaturesistoconsidertheinputas
+one-hotencoding.Cell-linefeaturescanbeprojectedintothesamedenseembeddinglayerwithdrugembeddingvector
+forfurthercomputation.Wehavetriedinitializingtheweightmatrixforprojectingcelllinefeaturesrandomlybutnoted
+thatitconvergesslowly.InspiredbyZhangetal 55 andGuoetal, 56 wedecidetouseanMFlayerforinitialization.The
+inputdataincludedensefeaturessuchasthecelllinegeneexpressionandbinaryencodingfordrugs.Thedrugresponse
+matrixYcanbedecomposedintoabiasmatrix Bandsomelatentfactorsforcelllinesanddrugs:
+Y =B+UVT, U =XWc, V =DWd, (13)
+whereB =(b1,b2, … ,bM)⊤ ∈ RN×M,bi isthebiastermfordrug i;i =1, … ,M,Wc ∈ RP×f andWd ∈ RM×f aretheweight
+matrices projecting the cell line and drug features into the corresponding latent spaces with dimensionf respectively,
+
+=== PDF PAGE 8 ===
+LIUetal. 4041
+andarebothtrainableinaneuralnetwork, D ∈ RM×M whichistheidentitymatrix.Thus U =(u1,u2, … ,uN)⊤ ∈ RN×f
+denotesthecelllinespreferencematrix, V =(v1,v2, … ,vM)⊤ ∈ RM×f denotesthedrugs’preferencematrix.Therefore,the
+outputofftheMFlayeristheprojecteddensefeatures Uforeachcelllineandtheembeddingmatrix Vfortheeachdrug.
+2.4.2 Embeddingandstackinglayer
+TheinputofthislayercomesfromtheoutputoftheMFlayer.Thenwestacktheembeddingvectorsforeachdrugalong
+with the dense features of cell lines, together with the cosine similarity score between the cell line’s and drugs’ latent
+vectors,intoonevector:
+x0 = [u⊤,v⊤
+1 ,v⊤
+2 , … ,v⊤
+M,cos], (14)
+whereuisprojecteddensefeatures, v1,v2, … ,vM isfrom( 13)andcosisthecosinesimilaritymeasurebetweenthecell
+lineandthedrug.Thenwehave x0 =(x1,x2, … xd)⊤ ∈ Rd,d =1+Mf +f +M,and xj isthe jthelementof x0.Compared
+totheWord2Vec 57 embedding,weexplicitlyusetheresponsematrixandthecelllinefeatures,whichnotonlygenerates
+anembeddingforthedrugandcelllineinthesamelatentspacebutalsocompressesthecelllinefeatures.
+Importantly,weusethestackingofallthedrugs’embeddingvector,whichisusedastheinitialstate s1.Attimestep
+t,ifdrug jisremovedfromthecandidatedrugs,wewilluseazerovector (0,0, … ,0)∈ Rf toreplace vj.Itisnotedthat,
+althoughweonlyusetheone-hotencodingvectorforadrugasthesparsevector,sometimesitmaynotbesufficient,and
+wecanuseothersideinformationfordrugs.Forexample,somedrugsimilarityscoresfromPubChem 58 maybeusedas
+additionaldensefeaturesandbeprojectedontothelower-dimensionaldenselayer.
+2.4.3 Crossnetwork
+For MF-based ranking methods, it is possible to capture the linear relationship between the latent vectors, but not
+higher-ordercellline-druginteractionsbasedontheMFlatentfactorrepresentation.Tocaptureahigher-orderinterac-
+tions,weaddadditionallayersinanetworktorepresentinteractionsascross-termfeatures.Wedenotedthecrossterm
+(monomial)as x𝛼1
+1 x𝛼2
+2 … x𝛼d
+d ,withdegree |𝜶| = ∑d
+i=1𝛼i >2.
+Tocapturehigherorderinteractions,wehavethecrossnetworkcomposedofcrosslayers,wheretheinputis x0 from
+thestackingandembeddinglayerin( 14),andwitheachlayerhavingthefollowingformula:
+xl+1 =x0x⊤
+l wl +bl +xl =f (xl,wl,bl)+xl, (15)
+wherex0 is the output from (14), xl,xl+1 are the column vectors as the outputs from thelth and(l+1)th cross layers,
+respectively;wl,bl aretheweightandbiasparametersinthe lthlayer.ByWangetal, 53 thehighestdegreeofcrossterms
+growswiththelayerdepth.
+ItisnotedthatthecrossnetworkisageneralizationofMFandso-calledfactorizationmachines 53 byallowingcross
+termsofanydegrees.
+In addition, by Wang et al53 the number of parameters in the cross network is onlyd×Lc ×2, whereLc is the
+number of cross layers. And the output of the cross network isxLc. Accordingly, when we integrate multi-omic and
+other high-dimensional features, the number of parameters in a network model only grows linearly in the number
+oflayers.
+2.4.4 Deepnetwork
+The deep network is a fully connected feed-forward neural network, which is good at generalization. Its input is
+the same as the cross network, which is alsox0 from the stacking and embedding layer in (14), and each layer is
+representedas
+Hl+1 =f (WlHl +bl), (16)
+
+=== PDF PAGE 9 ===
+4042 LIUetal.
+whereHl ∈ Rnl andHl+1 ∈ Rnl+1 arethe lthand (l+1)thhiddenlayersrespectively; Wl ∈ Rnl+1×nl andbl ∈ Rnl+1 arethe
+weight matrix and bias vector (as the parameters) for thelth layer; andf(⋅)is the ReLU function. Suppose we haveLh
+layersforthedeepnetwork,thentheoutputis HLh withtheinitialinput x0.Inthisfashion,thecrossanddeepcomponents
+sharethesameinput,leadingtomoreefficienttraining,compare. 56
+2.4.5 GRUlayer
+Inclinicalsettings,patients’preferenceorconditions(notcapturedbygivencovariates)maychangeovertime,thuswe
+propose using evaluation signals fromthe ranking processto learn the dynamic hiddenpreference.The positive drugs
+representkeyinformationaboutpatients’preferences,thatis,whichdrugsthepatientsprefer(eg,withoutminimalside
+effects).ThusweproposeusingaGRUlayertomemorizethepreviousevaluationsignals,allowingittorememberval-
+uesovermultipleiterationsinthesequence.Soiftheevaluationsignalispositive,wecanupdatetheGRUlayerasthe
+following:
+zt = 𝜎(Wzxt +UzHt−1 +bz), ret = 𝜎(Wrxt +UrHt−1 +br),
+Ht =GRU(Ht−1,xt) =zt◦Ht−1 +(1−zt)◦tanh(WhHt−1 +Uh (ret◦Ht−1)+bh),
+wherezt istheupdatevector, ret istheresetgatevector, xt istheconcatenatedoutputfromthedeepnetworkandcross
+networkattimestept, Ht isthehiddenstateattimestept, ◦istheHadamardproductandthematrices Wz,Wh,Wr,and
+vectorsb’saretheunknownweightstobeoptimized, 𝜎istheReLUactivationfunction.Theinitialhiddenstateissetas 0.
+Thenifthecurrentevaluationsignalispositive,theoutputofthehiddenstateisincorporatedintothenextcombination
+outputlayer.Wetriedtouseapoolinglayertorepresentthedynamicevaluationsignal,whichgivesequalweighttothe
+cell line evaluation signals in the previous time steps; but with the large action space, we noticed that the top 1 drug
+woulddominatethehistoricalevaluationsignals,andifthetop1recommendationwasfarawayfromthetruth,theactor
+networkwouldhavenochancetoadjustthelearningprocess.
+2.4.6 Concatenationlayer
+TheconcatenationlayerconcatenatestheoutputsfromthetwonetworksandtheGRUlayer.Wefirstoutputtheconcate-
+natedvectorasastaterepresentationtoinputthecriticnetwork,andsecondapplyastandardsoftmaxactivationfunction,
+yieldingtheoutputforpolicy:
+𝜋(at|st) =
+exp
+{
+𝜽⊤
+logitszm(at)
+}
+∑
+a∈A(st)exp
+{
+𝜽⊤
+logitszm(at)
+}, (17)
+wherezm(at) =
+[
+x⊤
+Lc
+,H⊤
+Lh
+,Ht
+]
+istheconcatenatedvector, x⊤
+Lc
+,H⊤
+Lh
+aretheoutputsfromthecrossnetworkanddeepnetwork,
+andHt is the evaluation signal output from the GRU layer.m(a(t))is the drug index,𝜽logits is the weight vector for the
+outputlayer.
+DuringthetrainingphaseofPPORank(asmanyRLalgorithms),theactionisoftenselectedaccordingtothecurrent
+policyestimate;however,toexplore(andlearn)otherpotentiallymorerewardingnewactions,itselectsanactionran-
+domly from the estimated policy distribution. On the other hand, in the testing phase, we just rank the drugs by their
+predictedscoresandselectthebestone.
+2.5 Criticnetwork
+Thecriticnetworkisdesignedtoreducethevarianceofthegradientsinthepolicygradientmethod,whichleveragesa
+deepneuralnetworktoapproximatethetruestatevaluefunction V𝜋𝜽(st).Theinputofthecriticnetworkisjustthestate
+generatedfromtheactornetworkin( 17),anditsoutputisthestatevaluefunction V𝜋𝜽(st).Thecriticnetworkisjointly
+
+=== PDF PAGE 10 ===
+LIUetal. 4043
+FIGURE 2 Theactorandcriticnetworks
+learnedwiththeactornetwork,withthesharedstaterepresentationastheinputfromtheoutputoftheactornetwork.
+Wehavetriedaseparatenetworkdesign,resultinginthedivergenceofthepolicywithtoomanyparameterstolearn;it
+isagoodwaytostabilizetrainingwiththesharedparameters.Thecriticisthenusedtoevaluatethepolicygeneratedby
+theactornetworkandguidesthepolicygradient.ThestructurecanbefoundinFigure 2.
+2.6 LearningtorankwithProximalPolicyOptimization
+Theactor-criticnetworkcombinestheadvantagesofvalue-basedmethodsandpolicygradienttoachieveacceleratedand
+stablelearning.YetitistechnicalandthusisrelegatedtotheSupplementary.
+2.7 Topkranking
+Indrugrecommendation,oftenonlythetoponeorfewmatters(asopposedtopredictingtheexactvalueofapatient’s
+responsestoalldrugs).Thuswemaybemoreinterestedinrankingthetop kdrugs,insteadofrankingalldrugs,though
+the latter may provide more information about the relationships between the drugs and cell lines. The details of our
+proposedmethodsareintheSupplementary.
+3 EXPERIMENTS
+We first conducted our experimentson the cancer screeningdata sets of GDSC and CCLE. Then we demonstrated the
+effectivenessofPPORankusingsimulationdata.
+3.1 Cancerdrugscreeningdata
+3.1.1 Datasets
+The drug-screening data for cancer cell lines are obtained from Genomics of Drug Sensitivity in Cancer (GDSC) and
+Cancer Cell Line Encyclopedia (CCLE). The GDSC database provides a large-scale drug screening dataset with each
+log(IC50)value for a drug-cancer cell line pair. The CCLE database provides genomic, transcriptomic, and epigenomic
+profiles for more than a thousand cancer cell lines. The GDSC has released a panel of 1001 cancer cell lines (covering
+31cancertypes)aswellas265pharmacologicalcompounds/drugs. 4 Thecelllinesweremostlycharacterizedusinggene
+expression,whole-exomesequencing,copynumbervariation,andDNAmethylation.AspointedbyCoronatoetal, 6 gene
+expression data is most informative. Then, we will put more emphasis on our analysis based on gene expression data.
+Tothisend,weencodeeachofthe983profiledcelllineswiththeRMA-normalized(robustmulti-arrayaverage)basal
+
+=== PDF PAGE 11 ===
+4044 LIUetal.
+expressionof17737genes.Toextractcelllinefeaturesfromthegeneexpressionprofiles,weadoptthemethodofReference
+13,wherewenormalizethebaselinegeneexpressionvaluesforeachgenebycomputingthefold-changescomparedto
+themedianvalueacrosscelllines.AccordingtoReference 12,1856essentialgenesareselectedfordimensionreduction
+foreachcellline.ThenwecalculatePearson’scorrelationforeverypairofcelllinesusingtheexpressionfold-changesof
+theseessentialgenes,amongwhichweselect983celllinefeaturesforthefullGDSCdataset.
+FortheCCLEdataset,24drugsandapanelof1036humancancercelllinesareavailable,andweselect491cancer
+celllinesforwhichbothdrugsensitivitymeasuresandgeneexpressionprofiledataareavailable.
+Both GDSC and CCLE report drug sensitivity as the logarithm of half maximal inhibitory concentration of a drug
+on a cell line, log(IC50), which denotes the concentration of the drug/compound required to inhibit the cell growth at
+50%; the smaller log(IC50), the more sensitive the cell line to the drug. But the measuredIC50 values are not compara-
+bleacrossdifferentcompounds. 4 calculateddrug-specificsensitivity(binarization)thresholdsforeachofthe265tested
+drugs.Thesethresholdsweredeterminedusingaheuristicoutlierdetectionprocedure 59 followingapreviousobservation
+thatthemajorityofcelllinesaretypicallyresistanttoagivendrug. 60 Thus,weusethesedrug-specificsensitivitythresh-
+oldstonormalizethedataset.Furthermore,astherankingmetricNDCGisonlyboundedwithnon-negativescores,we
+normalizethesensitivityscoresas −log(IC50∕thrd)+ a,where thrd isthesensitivitythresholdofthegivendrugand ais
+themaximumnormalizedlog (IC50)scoreacrossalldrugs.Afterdeletingtoxicdrugs,wehave223drugsforGDSCand19
+drugsforCCLE.
+Fordrugfeatures,chemicalstructuralinformationforeachdrugisavailableinPubChem. 58 Weexcludedrugsamples
+withoutPubChemIDintheGDSCdatabase,andwealsoexclude15drugswiththesamePubChemIDs,andfinally223
+drugsremained.Butattheend,forfaircomparisonswithotherbaselinemethods,drugfeaturesarenotused.
+WeemployTheCancerGenomeAtlas(TCGA)breastcancer(BRCA)sub-cohortdatatofurtherevaluatewhether/how
+the cell line-based GDSC results of PPORank generalize to cancer patients. We download the Firehose data run
+2016−01−28from.61 WeusetheimmunohistochemistryannotationstoidentifyHER2over-expressed(HER2 +)patients
+(n =163)andtriple-negativebreastcancers(TNBCs)patients( n =116).Furthermore,wedefinetheBRCA1/2-mutant
+(mBRCA)patientsasthe37patientscarryinggermlineloss-of-functionBRCA1/2mutations. 62Finally,weusethepipeline
+proposedbyGeeleheretal 63 toharmonize theLevel3IlluminaHiSeqRNA-seqv2data(1080patients)andthe GDSC
+geneexpressiondata.
+3.1.2 Baselinemethodsandevaluations
+AsdescribedinSection 1,ourmethod(PPORank)ismotivatedbymoreefficienthealthcareapplications:(i)inclinicalset-
+tings,itismoreimportanttorecommendthemostsensitivedrugsinrankedorder,insteadofnumericallypredictingthe
+sensitivityscoreofagivendrug;(ii)atreatmentregimeisusuallycharacterizedafteraprolongedandsequentialproce-
+dure;(iii)currently,manycancer-relatedresourcescoveringgenotypes,phenotypes,anddruginformationareavailable,
+callingforintegratingthesemultipledatasourcesformodelbuilding;(iv)oftenonlyoneorfew toprecommendationsare
+needed(asopposedtoallthedrugs).
+Toaddresstheaboveissues,wewillconductexperimentsfromthefollowingaspects:
+(1) for completeness, we evaluate our method on the full GDSC and CCLE data sets; for a fair comparison, we use
+thesamedatasourcesincludingonlycelllinefeaturesanddrugresponsematrixandevaluatewithNDCGtoshow
+long-termeffects,addressingtheaboveissues(i)and(ii);
+(2) tointegratemultipledataresources,wealsoincludedrugsimilaritydataintothetrainingdatasetalongwithother
+moleculardata:whole-exomesequencing(WES),copynumbervariation(CNV),andDNAmethylation(MET)data,
+withoutanychangestothemodelstructure,addressingissue(iii);
+(3) toaddressthetop krankingproblemofissue(iv),wealsoevaluatethemethodswiththeNDCG @krankingmetrics
+fordifferentvaluesof k.
+Wecomparethemethodswithfive-foldcross-validation,whereeachfoldofthedataisusedoncefortestingwhilethe
+other four folds are used for training. For eachfold, we testcompletely on unseencell-lines. We compare our method,
+PPORank, against several state-of-the-art and representative ones: a method based on the elastic net regression model
+ElasticNet (EN),3,4 kernel ridge regression (KRR),64 similarity-regularized matrix factorization (SRMF),12 Cancer Drug
+ResponsepredictionusingaRecommenderSystem(CaDRRes), 13 andKernelizedRankingLearning(KRL). 14 ForEN,the
+
+=== PDF PAGE 12 ===
+LIUetal. 4045
+modelistrainedforeachdrugasdescribedpreviously 3,4 usingtheElasticNetlibraryinscikit-learn( l1 ratio=0.5).KRR
+hasbeenrecommendedasoneofthebest-performingalgorithmsinasystematicsurvey 7 andwasalsoimplementedusing
+themachinelearninglibrary-scikit-learninPython.ForSRMF,itgoesbeyondmatrixfactorizationbyalsoconsidering
+drugsimilarityobtainedfromchemicalstructuraldataandcelllinesimilaritybasedontheirgeneexpressionprofilesas
+regularizationtermstoavoidover-fitting;butasdescribedinthearticle,drugsimilaritydidnotimprovetheprediction
+performance,sowealsoignoredrugsimilarityhere.Furthermore,SRMFcannotmakepredictionsonunseencelllines
+orpatients.ForCaDRReS,wesetthelatentspacedimensiontobe10.ForKRL,weadopttheradialbasisfunction(RBF)
+kernel,whichperformsbetterthanthelinearkernel,andinsteadofusingcelllinesimilarityfeatures,accordingtothe
+original paper, we use the RMA-normalized (robust multi-array average) basal expression of 17 737 genes as the input
+celllinefeatures.
+3.1.3 Hyper-parametertunning
+Forthebaselinemethods,thetunningparametersaretunedovergridswithfive-foldcross-validation.ForPPORank,we
+havethefollowinghyper-parameters,someofwhicharefixedwhileothersaretunedthroughthesamecross-validation
+procedureasforthebaselinemethods.Thecross-partofthedeep-andcrossnetworkhastwocrosslayers;thedeeppart
+oftheDeep ςCrossnetworkhasthreelayerswith128,64,and32nodesrespectively.FortheDeep ςCrossnetwork,we
+triedsomedeeperorshallowerstructuresbutfoundthatwithmorelayers,theperformancedidnotimprovemuchwhile
+ahigherdropoutratewasneeded;toreducethecomputationalcomplexity,weendedwiththeabovenetworkstructure
+for our agent policy.For the PPO part, there are two main issues:how many experienceepisodes(T) should the agent
+gatherbeforeupdatingthepolicyandhowtoupdateanoldpolicytoanewpolicy.Foreachtrajectory,thecelllineshave
+at most 24 and 265 drugs for the two datasets respectively, soT is set to be 24 for CCLE and 265 for GDSC; for a fair
+comparison,wedonotusethedrugfingerprintfeatureshere;thenumbersoftheparalleledactorsare8forCCLEand16
+forGDSC,mini-batchsizeis16forboth,PPOepochnumber Kforthesurrogateloss(intheSupplementaryequation(5))
+is8forboth.Forotherhyper-parametersintheclippingloss(intheSupplementaryequation(1),whichcontrolsthenew
+policyfrommovingintocollapse),theclippingrange 𝜖 istunnedamong {0.1,0.2,0.3},andthediscountingfactors 𝜆,𝛾
+usedintheadvantagefunction(intheSupplementaryequation(3))aretunedingridsof {0.1,0.2,0.3, … ,0.9,0.99},but
+whenevaluatedonthewholetrajectory’sranking,theyareallfixedatthevalueof0.95;weonlyneedtotunetheirvalues
+whentheevaluationmetricsareNDCG @k.Thecoefficientswiththevaluefunctionandentropy(intheSupplementary
+equation(5))arefixedat c1 =0.5and c2 =0.001.
+3.1.4 Predictionwiththefulldataset
+We use the full GDSC and CCLE data sets with only cell line features to compare the performance of different meth-
+ods,thenwereporttheaverageperformancebasedonNDCGthroughfive-foldcross-validation.Theresultsareshown
+inFigure 3.FortheCCLEdataset,wecanseethatourmethodPPORankperformsmarginallybetterthanothermeth-
+ods: it gives a mean NDCG of 0.7611, slightly higher than 0.7432 and 0.7468 from linear methods CaDRRes and EN.
+Notethatthetotalnumberofthedrugsisonly24,soevenwithunseencelllines,thecandidatedrugshaveappearedfre-
+quentlyenoughinthetrainingset,leadingtogoodperformancebybothregressionmethodsandstaticrankingmethods.
+However,fortheGDSCdataset,asshowninFigure 3B,theimprovementofourPPORankoverothermethodsismuch
+higher. PPORank shows a consistent improvement over all the other methods with the smallest SD (0.003); as a com-
+parison,thesecond-bestmethod,CaDRRes,hasamuchlargerSDof0.011,highlightingtherobustnessofourproposed
+method.NotethatCaDRResalsousestheNDCGasalossfunction,whichmayexplainwhyitperformssecondbest.To
+furthercomparetheperformance,wewilluseNDCG @ktoshowthetop k ≥1selecteddrugsbyeachmethodastobedis-
+cussedinSection3.3(whereitisshownthatPPORankdemonstrateslargerperformancegainsoverCaDRResandother
+methods).
+TocomparetheperformancebetweenourproposedRLandDNN-basedsupervisedlearning,wealsodevelopedand
+trained a DNN using an approximate NDCG as the loss function65 based on the GDSC data. Figure4shows that after
+600epochs,PPORankapproachestheperformanceoftheDNN.ItsuggeststhattheimprovementofPPORankoverother
+methods perhaps mainly comes from two sources: its highly non-linear model and its direct use of NDCG as its target
+lossfunction.
+
+=== PDF PAGE 13 ===
+4046 LIUetal.
+FIGURE 3 MeanNDCGvaluesbyfive-foldcross-validation(with1SDaserrorbars).(A)NDCGvaluesusingfullCCLEdataset;(B)
+NDCGvaluesusingfullGDSCdataset
+FIGURE 4 DNNandPPORank’sperformanceusing NDCGontheGDSCdata
+3.1.5 Predictionwithothertypesofcelllinefeatures
+WeusetheGaussiankernel 66tosummarizesideinformationfromotheromicdatasources:foreachcellline c,K(xc,xc′) =
+exp
+(
+−‖xc −xc′‖2∕2𝜎2)
+,w h e r exc and xc′ denote the feature vectors of two cell lines in the form of (i) whole-exome
+sequencing (WES), (ii) copy number variation (CNV), or (iii) DNA methylation (MET) data, and𝜎 is the kernel width
+oftheGaussiankernel.Forsimplicity,weheuristicallydeterminethekernelwidthusingthe“mediantrick,”settingthe
+width as the reciprocal of the median squared Euclidean distance among all training sample pairs. In this fashion, we
+generatean N ×Nkernelmatrix Kforeachadditionaldatatype,where Nisthenumberofcelllines.Wetreateachrowof
+Kasafeaturevectoroflength Nforthecorrespondingomicdataandcell-line,whichcanbecombinedwiththeoriginal
+cell-linefeaturestoincorporatetheuseofotheromicdata.
+SinceourmethodisbasedonDNNs,itisquiteflexibletoaccommodateotherdatasources:weaddan(MLP)subnet-
+worktoprojectotherhigh-dimensionalfeaturestoalow-dimensionspacebeforefeedingitsoutputtothestackinglayer.
+As gene expression (GEX) data is known to be informative, we use the following cell line features (1) GEX+WES, (2)
+GEX+CNV,(3)GEX +METrespectivelytoshowhowperformancemaychange;moredetailsaboutthesefeaturescanbe
+foundinAppendixTable A1.Figure 5comparestheperformanceinNDCGacrossusingthesethreeadditionaltypesof
+features.Inagreementwiththefindingsfromadrugsensitivitycollaborativecompetition, 6 geneexpressionisconfirmed
+tobethemostpredictivedatatyperegardlessofthemethodbeingemployed,sinceitshowsalmostnoimprovementwith
+theadditionalCNVorWESdataandonlyslightimprovementwiththeMETdata;theseresultsarealsoconsistentwith
+somepreviousstudiessupportingthatMETdataareinformativetocancer. 67
+
+=== PDF PAGE 14 ===
+LIUetal. 4047
+FIGURE 5 MeanNDCGvaluesbyfive-foldcross-validationontheGDSCdatawithdifferenttypesofomicdatafeatures
+FIGURE 6 PPORankperformanceonGDSCwithsequentialdata
+3.2 Sequentiallearningandprediction
+OnedistinctfeatureofRLisitssequentiallearning.AlthoughallthedatafromGDSCareavailableatthetimeoftraining,
+wemimicarealisticsituationbystartingRLwithasubsetoftheavailabledata.Webeginwith50 %ofallthecelllinesin
+theGDSCdataatstarttime t0.Asthemodelusesallthedrugsforembeddinglearninginourdeep ςcrossnet,weconsider
+allthedrugsattime t0;weevaluatethemethodateachfollowingtimepointusingtheindependenttestdata.Specifically,
+attimepoint t0 +1,weadd20celllinesasnewdataandruntheRLalgorithmbasedonthefeedbackofthenewlyadded
+data; after the convergence, we evaluate its performance based on the (unseen) test data. Then we add another 20 cell
+linesasnewdata,andrepeattheprocess.Tosavetime,ateachtimepointwestartRLwiththeestimatedmodel(ie,its
+estimated parameters) obtained from the previous run (or time point), then update the model with the new incoming
+celllines.Figure 6displaystheresultsofapplyingRLontheGDSCtestdata,startingat t0 withonly 50%ofthe whole
+trainingdataandsubsequentlyadding20morecelllinesateachtimepointuntilweuseupalltheGDSCtrainingdata.
+Asexpected,asmoredataareadded,overalltheperformanceofRLimproves.ItisconfirmedthatRLperformswellin
+therealisticset-upforsequentiallearning.
+3.3 Predictionwithtop kranking
+To show the ability of the PPORank model for ranking the topk most sensitive drugs across cell lines, we use the full
+CCLEandGDSCdatasetsrespectivelytocomparedthemethodsintermsofNDCG @kwithk ∈{1,5,10};with k =1,
+one is to select the most sensitive drug. As shown in Figure7, PPORank performs best consistently; its improvements
+
+=== PDF PAGE 15 ===
+4048 LIUetal.
+FIGURE 7 NDCG@kvalueswiththefullCCLEorGDSCdatafordifferent k;theerrorbarsshowoneSDbasedonthree-fold
+cross-validation.(A)NDCG @kwiththeCCLEdata;(B)NDCG @kwiththeGDSCdata
+overothermethodsaremoreobviousfortheGDSCdata.FromSection 2.1,
+NDCG@{k+1}− NDCG@k =
+[
+2
+f𝝅−1(k+1)−1
+log2(k+2) ×Zk −DCG@k× 2yk+1−1
+logk+2
+]
+ZkZk+1
+,
+whereZk isanormalizedfactorthat Zk ≥DCG@k.So ,when 2
+f𝝅−1(k+1)−1
+log2(k+2) ×Zk islargerthanDCG @k× 2yk+1−1
+logk+2
+,NDC G@k
+increasesin k.Inpractice,dependingondata,anincreasingtrendmaynotbeseeninallcircumstancesforatop kranking
+problem.
+3.4 ExternalvalidationwithTCGAbreastcancercohort
+ToshowthegeneralizationabilityofPPORank,weshowthatdrug rankspredictedwithPPORanktrainedoncelllines
+fromGDSCarecorrelatewithpatientresponsetotreatmentinaTCGAbreastcancercohort. 68 Wefollowthedataprepro-
+cessingofReference 63toharmonizethegeneexpressionprofilesmeasuredbyRNA-seqinTCGAandbymicro-arrays
+in GDSC. In this way, they were able to train ridge regression models on the GDSC cell lines and use these models to
+“impute”drugresponsefortheTCGApatients.Theyalsoshowedthat HER2 + TCGA-BRCApatientswerepredictedto
+bemoresensitivetolapatinib,afirst-linetherapyfor HER2 + patients,69 thanotherpatients.Herewefollowtheideaof
+usingmolecularsubtypestoevaluatePPORank’srecommendations.
+WecomparelapatinibandfourPARP1/2inhibitors(PARPi),veliparib,olaparib,talazoparib,andrucaparib,someof
+whichhaveshownpromisingtherapeuticresponseinBRCA1/2-mutant(mBRCA)tumors. 70 Inourexperiments,lapa-
+tinib is ranked higher than all four PARPi for 150 (92%) of the 163 HER2+ patients; in contrast, for mBRCA TNBC ,
+lapatinibisrankedhigherthanPARPionly22 %.T able1showshowlapatinibisrecommendedascomparedtotheover-
+all and individual PARPi treatments. To show the robustness of our proposed method, we retrain the model 10 times
+with a subset of 100 drugs (but with lapatinib and PARPi always included) randomly selected from the 200+ avail-
+able drugs in the GDSC data. It is confirmed that PPORank’s recommendations are indeed statistically different from
+that of a random recommendation (the unpairedt-test with meanP-value=10−11 for HER2 + and P-value =10−27
+for mBRCA TNBC patients). Furthermore, when we apply the unpairedt-test to compare random recommendations
+with each of the four individual PARPi treatments, the results were statistically significant (P-value≤ .005) except for
+rucaparib(P-value = .13).ThissuggestsnorecommendationofrucaparibtomBRCATNBCpatients,whichisinagree-
+mentwitharecentclinicaltrial’s 71 conclusionthattheefficacyofrucaparibwasnotestablishedanditrequiredfurther
+investigation.
+
+=== PDF PAGE 16 ===
+LIUetal. 4049
+TABLE 1 PPORank’srecommendationratesoflapatinibfortheTCGApatientswithtwodifferentbreastcancersubtypes
+Recommendation HER2 + (n =163) mBRCA( n =9)
+lapatinib>PARPi 0.92 0.22
+lapatinib>veliparib 0.95 0.22
+lapatinib>olaparib 0.94 0.44
+lapatinib>talazoparib 0.92 0.22
+lapatinib>rucaparib 0.95 0.44
+FIGURE 8 Simulationsetups:(A)Thecorrelationmatrixofthesimulatedcelllinesfeatureswith10clusters;(B)theweightmatrix W
+with10clusters
+3.5 Simulations
+3.5.1 Primarysimulations
+Tocompareourmethodwithotherbaselinemethods,wefirstconstructtheresponsematrixwithinformationfromthe
+celllines.Nowconsider100drugsand1000celllineswith2000featuresforcelllinesthus X ∈ R1000×2000.Aspointedout
+byCortes-Cirianoetal 12 andSeashore-Ludlowetal 72 drugpairswithinthesameclusterofchemicalfingerprintscanshow
+similarinhibitoryeffectsonthesamecellline.Sowegenerate Xwith2000featuresfrom10clusterswithaclustersizeof
+{480,380,300,240,190,150,120,90,40,10};thefeaturesbelongtothesameclusterarecorrelated.Eachfeatureisgenerated
+from a uniform distribution. The correlation matrix ofXcan be seen from Figure8A. We design a weight matrixW ∈
+R2000×100 with10clusterseachwithanequalsizeof10;foreachcluster,theweightisgeneratedfromastandardnormal
+distributionasshowninFigure 8B.Foreachsimulatedcellline,amaximumnumberof100drugsneedtoberanked.
+Wegeneratetheresponsematrix Y ∈ R1000×100 fromoneofthethreemodels:
+1. Y = 𝝁+𝝐 =0.2×XW+𝝐,
+2. Y = 𝝁+𝝐 =0.15×X3W+0.15×XW+𝝐,
+3. Y = 𝝁+𝝐 =0.1×exp(X)W+0.1×X3W+𝝐,
+representinglinear,non-linear(cubic)andhighlynon-linear(exponential)scenarios,and 𝝐isaGaussiannoise.Here,
+insteadofusingtheoriginalPearsoncorrelationmatrixasintheCaDRRespaper, 13 weusetheoriginalcelllinefeatures
+
+=== PDF PAGE 17 ===
+4050 LIUetal.
+FIGURE 9 PerformanceofDNNandPPORankintermsof NDCGintwosimulationscenarios.(A)Simulationscenario(1);(B)
+simulationscenario(3)
+fromX.Wedefinethe (i,j)thelementof Ytrue asthetruemeanresponseforthe ithcelllinegiventhe jthdrug.AsNDCGis
+commutableonlywhentherelevancelabelisnon-negative,wesetaresponsevalue Yasmissingifitisnegative.Wealso
+set50%oftheremainingresponsevaluesasmissing.Todistinguishbetweensensitiveandnonsensitivedrugs,weusethe
+medianresponseofallthecelllinestoaspecificdrugasthethreshold.Ifaresponsevalueislargerthanthethreshold,
+wetakeitassensitive/positive;otherwise,itisnonsensitive/negative.Duringtraining,ifwehaveanonsensitivedrugina
+rankingpositionwhilethereareothersensitivecandidatedrugstobeselected,wetakeitasanegativeevaluationsignal
+andotherwiseasapositiveevaluationsignal.
+We also compare DNN with PPORank in the linear and exponential scenarios with a sample size of 1000. From
+Figure9a,wecanseethatinthelinearscenario,DNNreachesthestableandperhapsoptimalperformancesooner,while
+PPORankfluctuatesbutreachesarelativelystableplateauafter1000epochs.Asoursamplesizeisonly1000,whilethe
+numberoftheparametersinPRORankisalmost10timesthesamplesize,itneedstosamplemoretrajectoriesinalong
+run to reach and even slightly exceeds the DNN’s performance. As expected, both DNN and PPORank perform worse
+thanthelinearmethodof“CaDDRes.”Ontheotherhand,fortheexponentialscenario,Figure 9Bshowsfasterconver-
+gencebybothDNNandPPORankthanthatinthelinearscenario,presumablybecauseweareusingnonlinearnetworks
+todescribethetruenonlinearrelationship.
+Then we compare our PPORank with and without positive evaluation signals (PPO vs PPO-w/o), respectively, and
+otherbaselinemethods,usingsimulateddataasshowninTable 2.Thesamplesizeforeachscenariois1000or10000.
+WedonotincludeSRMFasitrequiresdrugsimilarity,thoughtheGDSCdataapplicationshowsthatdrugsimilaritydoes
+notimproveperformancemuch.FromtheNDCGvaluesinscenario(1),wherethecelllines’featureshavealineareffect
+ondrugresponse,MF-basedmethodscancapturethelinearrelationshipandperformwell.Afterincreasingthesample
+sizeto10000,PPORankperformsbest,presumablybecauseitistheonlyonetargetingNDCG,theevaluation criterion
+beingused,asitslossfunction.Forscenario(2),wereachthesameconclusionasforscenario(1).Incontrast,forscenario
+(3)withahighlynon-lineartruemodel,PPORankperformsbestwitheithersamplesize(Table 2).
+3.5.2 Secondarysimulations
+Toconsidermorecomplexrelationshipsbetweencelllinesanddrugs,wedesignthefollowing simulationsetup.Suppose
+we have 40 drugs and 1000 cell lines, the cell line feature matrixX ∈ R1000×2000 is the same as in the previous static
+simulation setup. The weight matrixW ∈ R2000×100 is also the same as before. However, the drug response varies with
+thedrug.Forthefirst20,next10,andfinal10drugs,wehave Y =0.2×XW+𝝐,Y =0.15×X3W+0.15×XW+𝝐,and
+Y =0.2×exp(X)W−0.1×X3W+𝝐,respectively.
+Weevaluatetheperformanceswiththesamplesize n =1000and n =10 000.FromTable3wecanseethatPPORank
+performsbest.
+
+=== PDF PAGE 18 ===
+LIUetal. 4051
+TABLE 2 MeanNDCG(SD)intheprimarysimulations
+Scenario1 Scenario2 Scenario3
+n=1000 n =10000 n =1000 n =10000 n =1000 n =10000
+EN 0.793(0.03) 0.801(0.02) 0.593(0.05) 0.621(0.04) 0.890(0.04) 0.905(0.03)
+KRR 0.774(0.04) 0.769(0.07) 0.532(0.05) 0.582(0.05) 0.882(0.06) 0.901(0.04)
+KRL 0.783(0.02) 0.793(0.01) 0.625(0.02) 0.647(0.03) 0.920(0.03) 0.927(0.02)
+CaDRRes 0.809(0.02) 0.824(0.02) 0.632(0.03) 0.682(0.02) 0.922(0.02) 0.931(0.02)
+ppo-w/o 0.798(0.07) 0.811(0.10) 0.670(0.04) 0.693(0.01) 0.940(0.03) 0.948(0.04)
+PPORank 0.790(0.06) 0.832(0.04) 0.651(0.02) 0.705(0.05) 0.941(0.05) 0.959(0.03)
+Note:Theboldfacedvaluesshowthebestperformances.
+TABLE 3 MeanNDCG(SD)forthesecondarysimulations
+n =1000 n =10 000
+EN 0.645(0.08) 0.679(0.07)
+KRR 0.641(0.11) 0.650(0.10)
+KRL 0.689(0.09) 0.707(0.08)
+CaDRRes 0.647(0.11) 0.689(0.09)
+ppo-w/o 0.701(0.11) 0.713(0.12)
+PPORank 0.721(0.11) 0.732(0.09)
+Note:Theboldfacedvaluesshowthebestperformances.
+4 CONCLUSIONSANDDISCUSSION
+Inthisarticle,wehaveproposedanovelpersonalizedrankingsystemcalledProximalPolicyOptimizationRanking(PPO-
+Rank),whichranksdrugs/treatmentsbasedontheirpredictedeffectspercellline(orpatient).Itmakesrecommendations
+directlybasedontherankingofthedrugs,insteadofonpredictingsomedrug-specificresponsesperse,forexample,their
+log(IC50))values,asadoptedbyotherexistingmethods.Hencethispolicy-basedlearningframeworkdirectlyoptimizes
+thetargetevaluationmetricusingthepolicygradientalgorithm.Furthermore,theevaluationmetricNDCGisoptimized
+byleveraginginformationfromalltheranks.Intheimplementation,wehaveadoptedsomestate-of-the-arttechniques
+inDRLasbrieflydiscussedbelow.ByusingaDeep ςCrossnetworktoparametrizethepolicy,wecanlearntheinterac-
+tionsbetweencelllinesanddrugsefficiently,anditcanbeextendedtointegrateotherdatasources.Inparticular,weuse
+aGRUlayertoincorporatethedynamicevaluationsignalfromcelllinesandreinforcethepolicywithevaluationsignals.
+Variance reduction is realized by using the actor-critic framework, where the actor network learns the states from the
+inputandfeedsittothecriticnetworktoevaluatethecurrentpolicy.Tohandlethesampleinefficiencyproblemofpolicy
+gradientmethods,weusethePPOalgorithmwithmultipleepochsofstochasticgradientascenttoupdatethepolicy.As
+proofs-of-concept,wehaveappliedourmethodtotwolarge-scalecancerdrugscreeningdatasetsforpersonalizeddrug
+discovery.Withthelimiteddataandhighdimensionsofthestatesandactions,ourmethodhasshownsuperiorperfor-
+manceoverothermethods.Inparticular,ourmethoddemonstratesitspromisingandclinicallymeaningfulperformance
+whenthelearningalgorithmtrainedonthecelllinedrugscreeningdataisappliedtoaTCGAbreastcancercohort.Most
+importantly,ourmethod,asanyRLmethod,canbemoreefficientlyappliedinpractice:itlearnssequentiallyandcon-
+tinuouslyasthedataaccrue;incontrast,existingsupervisedlearningandmanyDTRmethodswouldrequirefinishing
+collectingdata(fromeitherarandomizedexperimentoranobservationalstudy)firstbeforelearningpersonalizeddrug
+ranking,whichwouldbemoreresource-andtime-consuming.Thisfeatureofourmethodwouldbemostusefulformore
+efficientdrugdiscoveryasforourrealdataapplications,andpossiblyforbehavioralinterventionsinmHealthorselecting
+experimentaldrugsforpatientswithincurableorterminaldiseases.Inaddition,throughtransferlearning,ourproposed
+RLmethodcantakeadvantageofexistingdataandbetrainedaprioribeforebeingappliedtoandfine-tunedbyfuture
+
+=== PDF PAGE 19 ===
+4052 LIUetal.
+clinicaldata.Finally,animportantaspectofourproposedRLmethodisitsactivelearninganddynamicinteractionwith
+individuals: the learning algorithm would suggest the best treatment/intervention based on its current ranking to an
+individual,thenlearnfromtheoutcome,forexample,inmHealthapplications.Duetolackofdata,wehavenotexplored
+thisaspect.ThisisadistinctandattractivefeatureuniquetoRL,butnottosupervisedlearning.
+On the other hand, there are some challenges remaining before DRL being applied more generally for health care
+in practice. First, due to the “data-hungry” nature of both DL and RL (and thus DRL), more data efficient algorithms
+areurgentlyneeded.Transfer learningmentionedearliercanalsohelp.Second,theinterpretabilityofaDLmodelasa
+black-box needs to be improved. Both topics have generated extensive interests and intensive research in the DL com-
+munity,whichwillhopefullyleadtosomebreakthroughsinanearfuture.Insummary,ourproposedandpossiblyother
+DRL-basedmethodsarepromisingforprecisionmedicine,andworthfurtherinvestigation.
+ACKNOWLEDGEMENTS
+This research was partially supported by NSF Grant DMS-1952539, NIH Grants R01AG069895, R01AG065636,
+R01AG074858,U01AG073079,andR01GM126002,andbytheMinnesotaSupercomputingInstituteattheUniversityof
+Minnesota.OpenaccessfundingenabledandorganizedbyProjektDEAL.
+DATAAVAILABILITYSTATEMENT
+ThecodeandtherealdatabeingusedareavailableonGitHubat https://github.com/mylzwq/PPORank.
+ORCID
+XiaotongShen https://orcid.org/0000-0003-1300-1451
+WeiPan https://orcid.org/0000-0002-1159-0582
+REFERENCES
+1. KosorokMR,LaberEB.Precisionmedicine. AnnuRevStatAppl .2019;6:263-286.
+2. Menden MP, Iorio F, Garnett M, et al. Machine learning prediction of cancer cell sensitivity to drugs based on genomic and chemical
+properties.PLoSOne.2013;8(4):e61318.
+3. BarretinaJ,CaponigroG,StranskyN,etal.Thecancercelllineencyclopediaenablespredictivemodellingofanticancerdrugsensitivity.
+Nature.2012;483(7391):603-607.
+4. IorioF,KnijnenburgTA,VisDJ,etal.Alandscapeofpharmacogenomicinteractionsincancer. Cell.2016;166(3):740-754.
+5. WeinsteinJN,CollissonEA,MillsGB,etal.Thecancergenomeatlaspan-canceranalysisproject. NatGenet.2013;45(10):1113-1120.
+6. CostelloJC,HeiserLM,GeorgiiE,etal.Acommunityefforttoassessandimprovedrugsensitivitypredictionalgorithms. NatBiotechnol.
+2014;32(12):1202-1212.
+7. JangIS,NetoEC,GuinneyJ,FriendSH,MargolinAA. SystematicAssessmentofAnalyticalMethodsforDrugSensitivityPredictionfrom
+CancerCellLineData .PacSympBiocomput .2014:63-74.
+8. AzuajeF.Computationalmodelsforpredictingdrugresponsesincancerresearch. BriefBioinform.2017;18(5):820-829.
+9. AbenN,VisDJ,MichautM,WesselsLF.TANDEM:atwo-stageapproachtomaximizeinterpretabilityofdrugresponsemodelsbasedon
+multiplemoleculardatatypes. Bioinformatics.2016;32(17):i413-i420.
+10. GuptaS,ChaudharyK,KumarR,etal.Prioritizationofanticancerdrugsagainstacancerusinggenomicfeaturesofcancercells:Astep
+towardspersonalizedmedicine. SciRep.2016;6:23857.
+11. Cortés-CirianoI,vanWestenGJ,BouvierG,etal.Improvedlarge-scalepredictionofgrowthinhibitionpatternsusingtheNCI60cancer
+celllinepanel. Bioinformatics.2016;32(1):85-95.
+12. Wang L, Li X, Zhang L, Gao Q. Improved anticancer drug response prediction in cell lines using matrix factorization with similarity
+regularization.BMCCancer.2017;17(1):513.
+13. Suphavilai C, Bertrand D, Nagarajan N. Predicting cancer drug response using a recommender system. Bioinformatics.
+2018;34(22):3907-3914.
+14. HeX,FolkmanL,BorgwardtK.Kernelizedranklearningforpersonalizeddrugrecommendation. Bioinformatics.2018;34(16):2808-2816.
+15. DingMQ,ChenL,CooperGF,YoungJD,LuX.Precisiononcologybeyondtargetedtherapy:combiningomicsdatawithmachinelearning
+matchesthemajorityofcancercellstoeffectivetherapeutics. MolCancerRes .2018;16(2):269-278.doi: 10.1158/1541&hyphen;7786.MCR&
+hyphen;17&hyphen;0378
+16. Yuan H, Paskov I, Paskov H, González AJ, Leslie CS. Multitask learning improves prediction of cancer drug sensitivity.Sci Rep.
+2016;6(1):1-11.
+17. Chang Y, Park H, Yang HJ, et al. Cancer drug response profile scan (CDRscan): a deep learning model that predicts drug effectiveness
+fromcancergenomicsignature. SciRep.2018;8(1):8857.doi: 10.1038/s41598&hyphen;018&hyphen;27214&hyphen;6
+18. Robins JM. Correcting for non-compliance in randomized trials using structural nested mean models.Commun Stat Theory Methods.
+1994;23(8):2379-2412.
+
+=== PDF PAGE 20 ===
+LIUetal. 4053
+19. RobinsJM.Causalinferencefromcomplexlongitudinaldata;1997:69-117;Springer.
+20. MurphySA.Optimaldynamictreatmentregimes. JRoyalStatSocSerB(StatMethodol) .2003;65(2):331-355.
+21. ZhaoY,KosorokMR,ZengD.Reinforcementlearningdesignforcancerclinicaltrials. StatMed.2009;28(26):3294-3315.
+22. ZhaoY,ZengD,SocinskiMA,KosorokMR.Reinforcementlearningstrategiesforclinicaltrialsinnonsmallcelllungcancer. Biometrics.
+2011;67(4):1422-1433.
+23. ZhaoYQ,ZengD,LaberEB,KosorokMR.Newstatisticallearningmethodsforestimatingoptimaldynamictreatmentregimes. JAmStat
+Assoc.2015;110(510):583-598.
+24. LeiH,Nahum-ShaniI,LynchK,OslinD,MurphySA.A"SMART"designforbuildingindividualizedtreatmentsequences. AnnuRevClin
+Psychol.2012;8:21-48.
+25. MoodieEE,ChakrabortyB,KramerMS.Q-learningforestimatingoptimaldynamictreatmentrulesfromobservationaldata. CanJStat .
+2012;40(4):629-645.
+26. ZhangB,TsiatisAA,LaberEB,DavidianM.Robustestimationofoptimaldynamictreatmentregimesforsequentialtreatmentdecisions.
+Biometrika.2013;100(3):681-694.
+27. ZhangY,LaberEB,DavidianM,TsiatisAA.Interpretabledynamictreatmentregimes. JAmStatAssoc .2018;113(524):1541-1549.
+28. SchultePJ,TsiatisAA,LaberEB,DavidianM.Q-andA-learningmethodsforestimatingoptimaldynamictreatmentregimes. StatSciRev
+JInstMathStat .2014;29(4):640.
+29. Zhao Y, Zeng D, Rush AJ, Kosorok MR. Estimating individualized treatment rules using outcome weighted learning.JAmStat Assoc.
+2012;107(499):1106-1118.
+30. LiuM,ShenX,PanW.Outcomeweighted 𝜓-learningforindividualizedtreatmentrules. Stat.2021;10(1):e343.
+31. ZhouX,Mayer-HamblettN,KhanU,KosorokMR.Residualweightedlearningforestimatingindividualizedtreatmentrules. JAmStat
+Assoc.2017;112(517):169-187.
+32. ErtefaieA,StrawdermanRL.Constructingdynamictreatmentregimesoverindefinitetimehorizons. Biometrika.2018;105(4):963-977.
+33. LuckettDJ,LaberEB,KahkoskaAR,MaahsDM,Mayer-DavisE,KosorokMR.Estimatingdynamictreatmentregimesinmobilehealth
+usingV-learning. JAmStatAssoc .2020;115(530):692-706.
+34. CoronatoA,NaeemM,DePietroG,ParagliolaG.Reinforcementlearningforintelligenthealthcareapplications:asurvey. ArtifIntellMed .
+2020;109:101964.
+35. YuC,LiuJ,NematiS,YinG.Reinforcementlearninginhealthcare:Asurvey. ACMComputSurv(CSUR) .2021;55(1):1-36.
+36. ZhouSK,LeHN,LuuK,NguyenHV,AyacheN.Deepreinforcementlearninginmedicalimaging:Aliteraturereview. MedImageAnal .
+2021;73:102193.
+37. SchulmanJ,WolskiF,DhariwalP,RadfordA,KlimovO.Proximalpolicyoptimizationalgorithms.arXivpreprintarXiv:1707.06347,2017.
+38. FigueiredoPrudencioR,MaximoMR,LunaCE.Asurveyonofflinereinforcementlearning:taxonomy,review,andopenproblems.arXiv
+e-prints2022:arXiv–2203.
+39. LiuS,SeeKC,NgiamKY,etal.Reinforcementlearningforclinicaldecisionsupportincriticalcare:comprehensivereview. JMedInternet
+Res.2020;22(7):e18477.
+40. MurphySA.Anexperimentaldesignforthedevelopmentofadaptivetreatmentstrategies. StatMed.2005;24(10):1455-1481.
+41. Humphrey K.Using Reinforcement Learning to Personalize Dosing Strategies in a Simulated Cancer Trial with High Dimensional Data
+[Master’sTheses].TheUniversityofArizona;2017.
+42. Yauney G, Shah P. Reinforcement learning with action-derived rewards for chemotherapy and clinical trial dosing regimen selection;
+2018:161-226;PMLR.
+43. Tseng HH, Luo Y, Cui S, Chien JT, Ten Haken RK, Naqa IE. Deep reinforcement learning for automated radiation adaptation in lung
+cancer.MedPhys.2017;44(12):6690-6705.
+44. Peng X, Ding Y, Wihl D, et al.Improving Sepsis Treatment Strategies by Combining Deep and Kernel-Based Reinforcement Learning.
+AmericanMedicalInformaticsAssociation(AMIA)2018AnnualSymposium;2018;887-896.
+45. WengWH,GaoM,HeZ,YanS,SzolovitsP.Representationandreinforcementlearningforpersonalizedglycemiccontrolinsepticpatients.
+arXivpreprintarXiv:1712.00654;2017.
+46. WangL,ZhangW,HeX,ZhaH.Supervisedreinforcementlearningwithrecurrentneuralnetworkfordynamictreatmentrecommenda-
+tion.Proceedingsofthe24thACMSIGKDDInternationalConferenceonKnowledgeDiscovery&DataMining;2018:2447-2456;ACM,
+NewYork.
+47. PrasadN,ChengLF,ChiversC,DraugelisM,EngelhardtBE.Areinforcementlearningapproachtoweaningofmechanicalventilationin
+intensivecareunits.arXivpreprintarXiv:1704.06300,2017.
+48. SuttonRS,BartoAG. ReinforcementLearning:AnIntroduction .Cambridge,MA:MITPress;2018.
+49. JärvelinK,KekäläinenJ.Cumulatedgain-basedevaluationofIRtechniques. ACMTransInfSyst(TOIS) .2002;20(4):422-446.
+50. WeiZ,XuJ,LanY,GuoJ,ChengX.ReinforcementlearningtorankwithMarkovdecisionprocess.Proceedingsofthe40thInternational
+ACMSIGIRConferenceonResearchandDevelopmentinInformationRetrieval;2017:945-948;ACM,NewYork.
+51. Clarke CL, Kolla M, Cormack GV, et al. Novelty and diversity in information retrieval evaluation. Proceedings of the 31st Annual
+InternationalACMSIGIRConferenceonResearchandDevelopmentinInformationRetrieval;2008:659-666;ACM,NewYork.
+52. Sutton RS, McAllester DA, Singh SP, Mansour Y. Policy gradient methods for reinforcement learning with function approximation.
+AdvancesinNeuralInformationProcessingSystems .2000:1057-1063.
+53. WangR,FuB,FuG,WangM.Deep&crossnetworkforadclickpredictions. ProceedingsoftheADKDD’17 .NewYork:ACM;2017:1-7.
+
+=== PDF PAGE 21 ===
+4054 LIUetal.
+54. Cho K, Van Merriënboer B, Gulcehre C, et al. Learning phrase representations using RNN encoder-decoder for statistical machine
+translation.arXivpreprintarXiv:1406.1078,2014.
+55. ZhangW,DuT,WangJ.Deeplearningovermulti-fieldcategoricaldata.ProceedingsoftheEuropeanConferenceonInformationRetrieval;
+2016:45-57;Springer,NewYork.
+56. Guo H, Tang R, Ye Y, Li Z, He X. DeepFM: a factorization-machine based neural network for CTR prediction. arXiv preprint
+arXiv:1703.04247,2017.
+57. MikolovT,ChenK,CorradoG,DeanJ.Efficientestimationofwordrepresentationsinvectorspace.arXivpreprintarXiv:1301.3781,2013.
+58. KimS,ThiessenPA,BoltonEE,etal.PubChemsubstanceandcompounddatabases. NuclAcidsRes .2016;44(D1):D1202-D1213.
+59. Knijnenburg TA, Klau GW, Iorio F, et al. Logic models to predict continuous outputs based on binary inputs with an application to
+personalizedcancertherapy. SciRep.2016;6(1):1-14.
+60. Garnett MJ, Edelman EJ, Heidorn SJ, et al. Systematic identification of genomic markers of drug sensitivity in cancer cells.Nature.
+2012;483(7391):570-575.
+61. HeadT,CarcinomaNSC.BroadinstituteTCGAgenomedataanalysiscenter.FirehoseStddata__2016_01_28run2016.
+62. MaxwellKN,WubbenhorstB,WenzBM,etal.BRCAlocus-specificlossofheterozygosityingermlineBRCA1andBRCA2carriers. Nat
+Commun.2017;8(1):1-11.
+63. GeeleherP,ZhangZ,WangF,etal.Discoveringnovelpharmacogenomicbiomarkersbyimputingdrugresponseincancerpatientsfrom
+largegenomicsstudies. GenomeRes.2017;27(10):1743-1751.
+64. MurphyKP. MachineLearning:AProbabilisticPerspective .Cambridge,MA:MITPress;2012.
+65. Qin T, Liu TY, Li H. A general approximation framework for direct optimization of information retrieval measures.Inf Retr.
+2010;13(4):375-397.doi:10.1007/s10791&hyphen;009&hyphen;9124&hyphen;x
+66. Cichonska A, Pahikkala T, Szedmak S, et al. Learning with multiple pairwise kernels for drug bioactivity prediction.Bioinformatics.
+2018;34(13):i509-i518.
+67. KlutsteinM,NejmanD,GreenfieldR,CedarH.DNAmethylationincancerandaging. CancerRes.2016;76(12):3446-3450.
+68. NetworkCGA.Comprehensivemolecularportraitsofhumanbreasttumours. Nature.2012;490(7418):61.
+69. Gomez HL, Doval DC, Chavez MA, et al. Efficacy and safety of lapatinib as first-line therapy for ErbB2-amplified locally advanced or
+metastaticbreastcancer. JClinOncol .2008;26(18):2999-3005.
+70. TuttA,RobsonM,GarberJE,etal.Oralpoly(ADP-ribose)polymeraseinhibitorolaparibinpatientswithBRCA1orBRCA2mutations
+andadvancedbreastcancer:aproof-of-concepttrial. Lancet.2010;376(9737):235-244.
+71. Drew Y, Ledermann J, Hall G, et al. Phase 2 multicentre trial investigating intermittent and continuous dosing schedules of the poly
+(ADP-ribose)polymeraseinhibitorrucaparibingermlineBRCAmutationcarrierswithadvancedovarianandbreastcancer. BrJCancer .
+2016;114(7):723-730.
+72. Seashore-LudlowB,ReesMG,CheahJH,etal.Harnessingconnectivityinalarge-scalesmall-moleculesensitivitydataset. CancerDiscov.
+2015;5(11):1210-1223.
+SUPPORTINGINFORMATION
+AdditionalsupportinginformationmaybefoundonlineintheSupportingInformationsectionattheendofthisarticle.
+Howtocitethisarticle: LiuM,ShenX,PanW.Deepreinforcementlearningforpersonalizedtreatment
+recommendation.StatisticsinMedicine .2022;41(20):4034-4056.doi:10.1002/sim.9491
+
+=== PDF PAGE 22 ===
+LIUetal. 4055
+APPENDIX
+Table A1 lists main mathematical notations used throughout this article. The main PPORank algorithm and its
+episode-samplingcomponentarealsodescribedastwoalgorithms(Algorithms 1and2).
+TABLE A1 Mathematicalnotations
+Meaning Notation
+Cell-line c,orc(i)a
+Numberoftrainingcelllines N
+Maximumnumberofdrugsforeachcellline M
+Featurevectorofcellline c(i) X(i) orX
+Druguismoresensitivethandrug v du ≻dv
+Numberofdrugsassociatedwithcellline c(i) Mi
+Featurevectororbinaryfeaturesofadrug jassociatedwithcellline c(i) d(i)
+j ordj
+Embeddingvectorofadrug jassociatedwithcellline c(i) d(i)
+embed,j ordembed,j
+Featurevectorsorbinaryindexesofdrugsassociatedwithcellline c(i) D(i) ={d(i)
+j }Mi
+j=1 orD
+Remainingdrugsassociatedwithcellline c(i) attimestept D(i)
+t orDt
+Groundtruthresponsescoreofadrug jassociatedwithcellline c(i) y(i)
+j oryj
+Groundtruthpermutation(rankinglist)fordrugsassociatewithcellline c 𝝅∗
+Originaldrugindexofthe jthelementinpermutation 𝝅𝝅 −1(j)
+Rankingpositionofdrug jinpermutation 𝝅 𝝅(j)
+aThesuperscript {i}indicatestheassociatecellline c(i),ifitismissing,itcanbeappliedtogeneralcasethatisassociatedwithcellline c.
+Algorithm1. Sampleanepisode
+Input ∶ 𝜽,X,D,Y.
+Output ∶AnEpisodeE.
+1: InitializeO0 ← [X,D,H0],M ← |D|,andepisode E ← ∅
+2: fort=0tot=M-1 do
+3: Sampleanaction at+1 ∈ (st) ∼ 𝝅𝜽 (at|st)by(17)
+4: rt ← (st,at)by(6)
+5: Appendst,at,rt totheendofE
+6: Observetheevaluationsignalfromcurrentrankingposition
+7: if thefeedbackispositive thenHt+1 =GRU(X,Dt,Ht)
+8: elseHt+1 =Ht
+9: endif
+10: Movetothenextstate st+1 ←f([X,D∖
+{
+dm(at)
+}
+,Ht+1])
+11: endfor
+12: returnE = (s0,a0,r1,…,sM−1,aM−1,rM).
+
+=== PDF PAGE 23 ===
+4056 LIUetal.
+Algorithm2. PPORank
+Input ∶Labeledtrainingdataset T =
+{(
+c(i),X(i),D(i),Y(i))}N
+i=1,
+learningrate 𝜂,discountfactor 𝛾,ppoepochK,GAEdiscountfactor 𝜆,
+cliprange 𝜖,coefficients c1,c2,parallelactors P,mini-batchsize m.
+Output ∶modelparameters 𝜽.
+1: InitializetheActor 𝝅𝜽 andCritic V𝜽 withparameters 𝜽.
+2: Initialize𝜽old ← 𝜽
+3: Initializetherolloutstorage 
+4: foriteration=1,2…do
+5: foractors=1toP do
+6: Runpolicy 𝜋𝜽old andcollect Ek ←SampleEpisode(𝜽old,X,D,Y){Algorithm1}
+7: Computeadvantageestimates ̂AGAE
+1 … ̂AGAE
+M inSupplementequation(3)
+8: Computetargetvalueestimates Vtarg
+1 …Vtarg
+M
+9: Computeentropy S(𝜋𝜽,s1)…S(𝜋𝜽,sM)
+10: endfor
+11: Updaterolloutstorage withthe P×Mtimestepsdata
+12: forepoch=1toK do
+13: Optimizesurrogatelossw.r.t. 𝜽withmini-batchsize musingAdaminSupplementequation(5)
+14: endfor
+15: 𝜽old ← 𝜽
+16: endfor
+17: return𝜽.

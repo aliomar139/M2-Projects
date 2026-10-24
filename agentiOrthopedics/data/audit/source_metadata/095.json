@@ -1,0 +1,965 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          22
+        ]
+      ],
+      "date-time": "2026-07-22T23:03:07Z",
+      "timestamp": 1784761387129,
+      "version": "3.55.0"
+    },
+    "reference-count": 71,
+    "publisher": "Frontiers Media SA",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              24
+            ]
+          ],
+          "date-time": "2025-04-24T00:00:00Z",
+          "timestamp": 1745452800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "frontiersin.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Front. Digit. Health"
+    ],
+    "abstract": "<jats:sec><jats:title>Introduction</jats:title><jats:p>A readily available outcome measure that reflects the success of a patient's treatment is needed to demonstrate the value of orthopaedic interventions. Patient-reported outcome measures (PROMs) are survey-based instruments that collect joint-specific and general health perceptions on symptoms, functioning, and health-related quality of life. PROMs are considered the gold standard outcome measure in orthopaedic medicine, but their use is limited in real-world practice due to challenges with technology integration, the pace of clinic workflows, and patient compliance. Clinical notes generated during each encounter patients have with their physician contain rich information on current disease symptoms, rehabilitation progress, and unexpected complications. Artificial intelligence (AI) methods can be used to identify phrases of treatment success or failure captured in clinical notes and discern an indicator of treatment success for orthopaedic patients.</jats:p></jats:sec><jats:sec><jats:title>Methods</jats:title><jats:p>This was a cross-sectional analysis of clinical notes from a sample of patients with an acute shoulder injury. The study included adult patients presenting to a Level-1 Trauma Center and regional health system for an acute Proximal Humerus Fracture (PHF) between January 1, 2019 and December 31, 2021. We used the progress note from the office visit for PHF-related care (ICD10: S42.2XXX) or shoulder pain (ICD10: M45.2XXX) closest to 1-year after the injury date. Clinical notes were reviewed by an orthopaedic resident and labeled as treatment success or failure. A structured comparative analysis of classifiers including both machine and deep learning algorithms was performed.</jats:p></jats:sec><jats:sec><jats:title>Results</jats:title><jats:p>The final sample included 868 clinical notes from patients treated by 123 physicians across 35 departments within one regional health system. The study sample was stratified into 465 notes labeled as treatment success and 403 labeled as treatment failure. The Bio-ClinicalBERT model had the highest performance of 87% accuracy (AUC = 0.87 ± 0.04) in correctly distinguishing between treatment success and failure notes.</jats:p></jats:sec><jats:sec><jats:title>Discussion</jats:title><jats:p>Our results suggest that text classifiers applied to clinical notes are capable of differentiating patients with successful treatment outcomes with high levels of accuracy. This finding is encouraging, signaling that routinely collected clinical note content may serve as a data source to develop an outcome measure for orthopaedic patients.</jats:p></jats:sec>",
+    "DOI": "10.3389/fdgth.2025.1523953",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          4,
+          24
+        ]
+      ],
+      "date-time": "2025-04-24T05:25:09Z",
+      "timestamp": 1745472309000
+    },
+    "update-policy": "https://doi.org/10.3389/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 5,
+    "title": [
+      "Using artificial intelligence to develop a measure of orthopaedic treatment success from clinical notes"
+    ],
+    "prefix": "10.3389",
+    "volume": "7",
+    "author": [
+      {
+        "given": "Sarah B.",
+        "family": "Floyd",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ahmed G.",
+        "family": "Almeldien",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "D. Hudson",
+        "family": "Smith",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Benjamin",
+        "family": "Judkins",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Claire E.",
+        "family": "Krohn",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zachary Cole",
+        "family": "Reynolds",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kyle",
+        "family": "Jeray",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jihad S.",
+        "family": "Obeid",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1965",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          4,
+          24
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "B1",
+        "doi-asserted-by": "publisher",
+        "first-page": "1414",
+        "DOI": "10.1002/jor.24614",
+        "article-title": "Advanced decision-making using patient-reported outcome measures in total joint replacement",
+        "volume": "38",
+        "author": "Jayakumar",
+        "year": "2020",
+        "journal-title": "J Orthop Res"
+      },
+      {
+        "key": "B2",
+        "doi-asserted-by": "publisher",
+        "first-page": "263",
+        "DOI": "10.2147/PROM.S132746",
+        "article-title": "The employment of patient-reported outcome measures to communicate the likely benefits of surgery",
+        "volume": "9",
+        "author": "Briffa",
+        "year": "2018",
+        "journal-title": "Patient Relat Outcome Meas"
+      },
+      {
+        "key": "B3",
+        "doi-asserted-by": "publisher",
+        "first-page": "84",
+        "DOI": "10.2106/jbjs.20.00624",
+        "article-title": "Meaningful clinical applications of patient-reported outcome measures in orthopaedics",
+        "volume": "103",
+        "author": "Makhni",
+        "year": "2021",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "key": "B4",
+        "doi-asserted-by": "publisher",
+        "first-page": "3409",
+        "DOI": "10.1007/s11999-013-3224-z",
+        "article-title": "The importance of outcome measurement in orthopaedics",
+        "volume": "471",
+        "author": "Ayers",
+        "year": "2013",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "B5",
+        "doi-asserted-by": "publisher",
+        "first-page": "2098",
+        "DOI": "10.1002/jor.23604",
+        "article-title": "Patient reported outcomes in orthopaedics",
+        "volume": "35",
+        "author": "Gagnier",
+        "year": "2017",
+        "journal-title": "J Orthop Res"
+      },
+      {
+        "key": "B6",
+        "article-title": "Patient reported outcome measures",
+        "year": "2023"
+      },
+      {
+        "key": "B7",
+        "doi-asserted-by": "publisher",
+        "first-page": "1323",
+        "DOI": "10.1016/j.spinee.2023.05.001",
+        "article-title": "Determining minimal clinically important difference estimates following surgery for degenerative conditions of the lumbar spine: analysis of the Canadian spine outcomes and research network (CSORN) registry",
+        "volume": "23",
+        "author": "Power",
+        "year": "2023",
+        "journal-title": "Spine J"
+      },
+      {
+        "key": "B8",
+        "doi-asserted-by": "publisher",
+        "first-page": "1606",
+        "DOI": "10.1177/0363546518768753",
+        "article-title": "Change in KOOS and WOMAC scores in a young athletic population with and without anterior cruciate ligament injury",
+        "volume": "46",
+        "author": "Antosh",
+        "year": "2018",
+        "journal-title": "Am J Sports Med"
+      },
+      {
+        "key": "B9",
+        "article-title": "According to AAOE survey, only 35% of orthopaedic practices are collecting PROMs",
+        "author": "DelPrete",
+        "year": "2017"
+      },
+      {
+        "key": "B10",
+        "doi-asserted-by": "publisher",
+        "first-page": "186",
+        "DOI": "10.1002/jmrs.421",
+        "article-title": "A review of the barriers to using patient-reported outcomes (PROs) and patient-reported outcome measures (PROMs) in routine cancer care",
+        "volume": "68",
+        "author": "Nguyen",
+        "year": "2021",
+        "journal-title": "J Med Radiat Sci"
+      },
+      {
+        "key": "B11",
+        "doi-asserted-by": "publisher",
+        "first-page": "e202764",
+        "DOI": "10.1001/jamanetworkopen.2020.2764",
+        "article-title": "Factors associated with increased collection of patient-reported outcomes within a large health care system",
+        "volume": "3",
+        "author": "Sisodia",
+        "year": "2020",
+        "journal-title": "JAMA Network Open"
+      },
+      {
+        "key": "B12",
+        "doi-asserted-by": "publisher",
+        "first-page": "114",
+        "DOI": "10.5435/JAAOS-D-23-00879",
+        "article-title": "Patient-reported outcome measure collection and utilization: a survey of American academy of orthopaedic surgeons members",
+        "volume": "32",
+        "author": "Shapiro",
+        "year": "2024",
+        "journal-title": "J Am Acad Orthop Surg"
+      },
+      {
+        "key": "B13",
+        "doi-asserted-by": "publisher",
+        "first-page": "817",
+        "DOI": "10.1016/j.amjsurg.2009.06.037",
+        "article-title": "The natural language of the surgeon’s clinical note in outcomes assessment: a qualitative analysis of the medical record",
+        "volume": "199",
+        "author": "Miller",
+        "year": "2010",
+        "journal-title": "Am J Surg"
+      },
+      {
+        "key": "B14",
+        "doi-asserted-by": "publisher",
+        "first-page": "1204",
+        "DOI": "10.1007/s00586-023-07592-w",
+        "article-title": "Defining “successful” treatment outcomes in adolescent idiopathic scoliosis: a scoping review",
+        "volume": "32",
+        "author": "Joarder",
+        "year": "2023",
+        "journal-title": "Eur Spine J"
+      },
+      {
+        "key": "B15",
+        "doi-asserted-by": "publisher",
+        "first-page": "e880",
+        "DOI": "10.5435/JAAOS-D-20-01105",
+        "article-title": "Patient goal-directed care in an orthopaedic spine specialty clinic",
+        "volume": "29",
+        "author": "Turcotte",
+        "year": "2021",
+        "journal-title": "J Am Acad Orthop Surg"
+      },
+      {
+        "key": "B16",
+        "doi-asserted-by": "publisher",
+        "first-page": "1144",
+        "DOI": "10.1016/j.arth.2024.03.001",
+        "article-title": "Goals of care discussions in orthopaedic surgery: geriatric hip fractures",
+        "volume": "39",
+        "author": "Paradis",
+        "year": "2024",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "B17",
+        "doi-asserted-by": "publisher",
+        "first-page": "99",
+        "DOI": "10.1302/0301-620X.102B7.BJJ-2019-1574.R1",
+        "article-title": "Data for registry and quality review can be retrospectively collected using natural language processing from unstructured charts of arthroplasty patients",
+        "author": "Shah",
+        "year": "2020",
+        "journal-title": "Bone Joint J"
+      },
+      {
+        "key": "B18",
+        "doi-asserted-by": "publisher",
+        "first-page": "14",
+        "DOI": "10.15265/IY-2014-0020",
+        "article-title": "Big data in medicine is driving big changes",
+        "volume": "23",
+        "author": "Martin-Sanchez",
+        "year": "2014",
+        "journal-title": "Yearb Med Inform"
+      },
+      {
+        "key": "B19",
+        "doi-asserted-by": "publisher",
+        "first-page": "103489",
+        "DOI": "10.1016/j.jbi.2020.103489",
+        "article-title": "Towards unstructured mortality prediction with free-text clinical notes",
+        "volume": "108",
+        "author": "Hashir",
+        "year": "2020",
+        "journal-title": "J Biomed Inform"
+      },
+      {
+        "key": "B20",
+        "doi-asserted-by": "publisher",
+        "first-page": "1351",
+        "DOI": "10.1001/jama.2013.393",
+        "article-title": "The inevitable application of big data to health care",
+        "volume": "309",
+        "author": "Murdoch",
+        "year": "2013",
+        "journal-title": "Jama"
+      },
+      {
+        "key": "B21",
+        "doi-asserted-by": "publisher",
+        "first-page": "e29120",
+        "DOI": "10.2196/29120",
+        "article-title": "Stroke outcome measurements from electronic medical records: cross-sectional study on the effectiveness of neural and nonneural classifiers",
+        "volume": "9",
+        "author": "Zanotto",
+        "year": "2021",
+        "journal-title": "JMIR Med Inform"
+      },
+      {
+        "key": "B22",
+        "doi-asserted-by": "publisher",
+        "first-page": "e231204",
+        "DOI": "10.1001/jamanetworkopen.2023.1204",
+        "article-title": "Assessment of natural language processing of electronic health records to measure goals-of-care discussions as a clinical trial outcome",
+        "volume": "6",
+        "author": "Lee",
+        "year": "2023",
+        "journal-title": "JAMA Network Open"
+      },
+      {
+        "key": "B23",
+        "doi-asserted-by": "publisher",
+        "first-page": "927",
+        "DOI": "10.1016/j.arth.2020.09.055",
+        "article-title": "Natural language processing of patient-experience comments after primary total knee arthroplasty",
+        "volume": "36",
+        "author": "Bovonratwet",
+        "year": "2021",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "B24",
+        "doi-asserted-by": "publisher",
+        "first-page": "608",
+        "DOI": "10.1002/acr.24869",
+        "article-title": "Development of a natural language processing system for extracting rheumatoid arthritis outcomes from clinical notes using the national rheumatology informatics system for effectiveness registry",
+        "volume": "75",
+        "author": "Humbert-Droz",
+        "year": "2023",
+        "journal-title": "Arthritis Care Res (Hoboken)"
+      },
+      {
+        "key": "B25",
+        "doi-asserted-by": "publisher",
+        "first-page": "66",
+        "DOI": "10.3389/fmed.2019.00066",
+        "article-title": "The revival of the notes field: leveraging the unstructured content in electronic health records",
+        "volume": "6",
+        "author": "Assale",
+        "year": "2019",
+        "journal-title": "Front Med (Lausanne)"
+      },
+      {
+        "key": "B26",
+        "doi-asserted-by": "publisher",
+        "first-page": "407",
+        "DOI": "10.1186/1472-6963-12-407",
+        "article-title": "Quality of outpatient clinical notes: a stakeholder definition derived through qualitative research",
+        "volume": "12",
+        "author": "Hanson",
+        "year": "2012",
+        "journal-title": "BMC Health Serv Res"
+      },
+      {
+        "key": "B27",
+        "volume-title": "SOAP Notes",
+        "author": "Podder",
+        "year": "2021"
+      },
+      {
+        "key": "B28",
+        "volume-title": "Doctors’ Stories: The Narrative Structure of Medical Knowledge",
+        "author": "Hunter",
+        "year": "1993"
+      },
+      {
+        "key": "B29",
+        "doi-asserted-by": "publisher",
+        "first-page": "3",
+        "DOI": "10.1186/2047-2501-2-3",
+        "article-title": "Big data analytics in healthcare: promise and potential",
+        "volume": "2",
+        "author": "Raghupathi",
+        "year": "2014",
+        "journal-title": "Health Inf Sci Syst"
+      },
+      {
+        "key": "B30",
+        "first-page": "1",
+        "article-title": "Communication of clinically relevant information in electronic health records: a comparison between structured data and unrestricted physician language",
+        "volume": "2008",
+        "author": "Resnik",
+        "year": "2008",
+        "journal-title": "Perspect Health Inform Manag"
+      },
+      {
+        "key": "B31",
+        "doi-asserted-by": "publisher",
+        "first-page": "164",
+        "DOI": "10.1186/s12911-019-0894-9",
+        "article-title": "Automated detection of altered mental status in emergency department clinical notes: a deep learning approach",
+        "volume": "19",
+        "author": "Obeid",
+        "year": "2019",
+        "journal-title": "BMC Med Inform Decis Mak"
+      },
+      {
+        "key": "B32",
+        "doi-asserted-by": "publisher",
+        "first-page": "14",
+        "DOI": "10.1016/j.jbi.2017.07.012",
+        "article-title": "Natural language processing systems for capturing and standardizing unstructured clinical information: a systematic review",
+        "volume": "73",
+        "author": "Kreimeyer",
+        "year": "2017",
+        "journal-title": "J Biomed Inform"
+      },
+      {
+        "key": "B33",
+        "doi-asserted-by": "publisher",
+        "first-page": "34",
+        "DOI": "10.1016/j.jbi.2017.11.011",
+        "article-title": "Clinical information extraction applications: a literature review",
+        "volume": "77",
+        "author": "Wang",
+        "year": "2018",
+        "journal-title": "J Biomed Inform"
+      },
+      {
+        "key": "B34",
+        "doi-asserted-by": "publisher",
+        "first-page": "439",
+        "DOI": "10.5435/JAAOS-D-23-00839",
+        "article-title": "Applications of natural language processing for automated clinical data analysis in orthopaedics",
+        "volume": "32",
+        "author": "AlShehri",
+        "year": "2024",
+        "journal-title": "J Am Acad Orthop Surg"
+      },
+      {
+        "key": "B35",
+        "doi-asserted-by": "publisher",
+        "first-page": "11586",
+        "DOI": "10.3390/app132011586",
+        "article-title": "Applications of natural language processing tools in orthopaedic surgery: a scoping review",
+        "volume": "13",
+        "author": "Sasanelli",
+        "year": "2023",
+        "journal-title": "Appl Sci"
+      },
+      {
+        "key": "B36",
+        "doi-asserted-by": "publisher",
+        "first-page": "2167",
+        "DOI": "10.2106/JBJS.19.00661",
+        "article-title": "Natural language processing for the identification of surgical site infections in orthopaedics",
+        "volume": "101",
+        "author": "Thirukumaran",
+        "year": "2019",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "key": "B37",
+        "doi-asserted-by": "publisher",
+        "first-page": "1019",
+        "DOI": "10.1016/j.ijmedinf.2015.09.004",
+        "article-title": "The EHR and building the patient’s story: a qualitative investigation of how EHR use obstructs a vital clinical activity",
+        "volume": "84",
+        "author": "Varpio",
+        "year": "2015",
+        "journal-title": "Int J Med Inf"
+      },
+      {
+        "key": "B38",
+        "first-page": "26",
+        "article-title": "What’s in a note? Unpacking predictive value in clinical note representations",
+        "volume": "2018",
+        "author": "Boag",
+        "year": "2018",
+        "journal-title": "AMIA Jt Summits Transl Sci Proc"
+      },
+      {
+        "key": "B39",
+        "doi-asserted-by": "publisher",
+        "first-page": "101",
+        "DOI": "10.1016/j.ijmedinf.2017.09.008",
+        "article-title": "Using structured and unstructured data to identify patients’ need for services that address the social determinants of health",
+        "volume": "107",
+        "author": "Vest",
+        "year": "2017",
+        "journal-title": "Int J Med Inform"
+      },
+      {
+        "key": "B40",
+        "doi-asserted-by": "publisher",
+        "first-page": "986",
+        "DOI": "10.1093/jamia/ocx039",
+        "article-title": "Challenges in adapting existing clinical natural language processing systems to multiple, diverse health care settings",
+        "volume": "24",
+        "author": "Carrell",
+        "year": "2017",
+        "journal-title": "J Am Med Inform Assoc"
+      },
+      {
+        "key": "B41",
+        "first-page": "As226",
+        "article-title": "Measuring the success of treatment in patient terms",
+        "volume": "33",
+        "author": "Bayley",
+        "year": "1995",
+        "journal-title": "Med Care"
+      },
+      {
+        "key": "B42",
+        "doi-asserted-by": "publisher",
+        "first-page": "244",
+        "DOI": "10.1016/j.injury.2021.12.022",
+        "article-title": "Management options for proximal humerus fractures—a systematic review & network meta-analysis of randomized control trials",
+        "volume": "53",
+        "author": "Davey",
+        "year": "2022",
+        "journal-title": "Injury"
+      },
+      {
+        "key": "B43",
+        "doi-asserted-by": "publisher",
+        "first-page": "137",
+        "DOI": "10.1016/j.jseint.2021.08.006",
+        "article-title": "Trending a decade of proximal humerus fracture management in older adults",
+        "volume": "6",
+        "author": "Patel",
+        "year": "2022",
+        "journal-title": "JSES International"
+      },
+      {
+        "key": "B44",
+        "doi-asserted-by": "publisher",
+        "first-page": "6140",
+        "DOI": "10.3390/jcm11206140",
+        "article-title": "Management of proximal humerus fractures in adults—a scoping review",
+        "volume": "11",
+        "author": "Baker",
+        "year": "2022",
+        "journal-title": "J Clin Med"
+      },
+      {
+        "key": "B45",
+        "doi-asserted-by": "publisher",
+        "first-page": "e259",
+        "DOI": "10.1016/j.jse.2021.11.016",
+        "article-title": "Factors influencing surgical management of proximal humerus fractures: do shoulder and trauma surgeons differ?",
+        "volume": "31",
+        "author": "Hao",
+        "year": "2022",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "key": "B46",
+        "doi-asserted-by": "publisher",
+        "first-page": "e10410",
+        "DOI": "10.1002/lrh2.10410",
+        "article-title": "Wonderings to research questions: engaging patients in long COVID research prioritization within a learning health system",
+        "volume": "8",
+        "author": "Kennedy",
+        "year": "2024",
+        "journal-title": "Learn Health Syst"
+      },
+      {
+        "key": "B47",
+        "doi-asserted-by": "publisher",
+        "first-page": "e70094",
+        "DOI": "10.1111/hex.70094",
+        "article-title": "Through their eyes: using photovoice to capture the capacity-building journey of long COVID patient experts",
+        "volume": "27",
+        "author": "Natafgi",
+        "year": "2024",
+        "journal-title": "Health Expect"
+      },
+      {
+        "key": "B48",
+        "doi-asserted-by": "publisher",
+        "first-page": "814",
+        "DOI": "10.1016/j.math.2015.03.011",
+        "article-title": "Defining patient acceptable symptom state thresholds for commonly used patient reported outcomes measures in general orthopedic practice",
+        "volume": "20",
+        "author": "Wright",
+        "year": "2015",
+        "journal-title": "Man Ther"
+      },
+      {
+        "key": "B49",
+        "doi-asserted-by": "publisher",
+        "first-page": "377",
+        "DOI": "10.1016/j.jbi.2008.08.010",
+        "article-title": "Research electronic data capture (REDCap)–a metadata-driven methodology and workflow process for providing translational research informatics support",
+        "volume": "42",
+        "author": "Harris",
+        "year": "2009",
+        "journal-title": "J Biomed Inform"
+      },
+      {
+        "key": "B50",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1017/CBO9780511809071",
+        "volume-title": "Introduction to Information Retrieval",
+        "author": "Manning",
+        "year": "2008"
+      },
+      {
+        "key": "B51",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/978-3-319-02300-7",
+        "volume-title": "Support Vector Machines Applications",
+        "author": "Ma",
+        "year": "2014"
+      },
+      {
+        "key": "B52",
+        "doi-asserted-by": "publisher",
+        "first-page": "5",
+        "DOI": "10.1023/A:1010933404324",
+        "article-title": "Random forests",
+        "volume": "45",
+        "author": "Breiman",
+        "year": "2001",
+        "journal-title": "Mach Learn"
+      },
+      {
+        "key": "B53",
+        "doi-asserted-by": "publisher",
+        "first-page": "220",
+        "DOI": "10.1007/s11606-019-05512-7",
+        "article-title": "A gradient boosting machine learning model for predicting early mortality in the emergency department triage: devising a nine-point triage score",
+        "volume": "35",
+        "author": "Klug",
+        "year": "2020",
+        "journal-title": "J Gen Intern Med"
+      },
+      {
+        "key": "B54",
+        "doi-asserted-by": "publisher",
+        "first-page": "8",
+        "DOI": "10.1089/neur.2020.0009",
+        "article-title": "XGBoost, a machine learning method, predicts neurological recovery in patients with cervical spinal cord injury",
+        "volume": "1",
+        "author": "Inoue",
+        "year": "2020",
+        "journal-title": "Neurotrauma Rep"
+      },
+      {
+        "key": "B55",
+        "first-page": "6000",
+        "article-title": "Attention is all you need",
+        "author": "Vaswani",
+        "year": "2017",
+        "journal-title": "Proceedings of the 31st International Conference on Neural Information Processing Systems"
+      },
+      {
+        "key": "B56",
+        "first-page": "4171",
+        "article-title": "Bert: pre-training of deep bidirectional transformers for language understanding",
+        "author": "Devlin",
+        "year": "2019",
+        "journal-title": "Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)"
+      },
+      {
+        "key": "B57",
+        "doi-asserted-by": "publisher",
+        "first-page": "1234",
+        "DOI": "10.1093/bioinformatics/btz682",
+        "article-title": "BioBERT: a pre-trained biomedical language representation model for biomedical text mining",
+        "volume": "36",
+        "author": "Lee",
+        "year": "2019",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "B58",
+        "article-title": "Publicly available clinical BERT embeddings",
+        "author": "Alsentzer",
+        "year": "2019"
+      },
+      {
+        "key": "B59",
+        "doi-asserted-by": "publisher",
+        "first-page": "160035",
+        "DOI": "10.1038/sdata.2016.35",
+        "article-title": "MIMIC-III, a freely accessible critical care database",
+        "volume": "3",
+        "author": "Johnson",
+        "year": "2016",
+        "journal-title": "Sci Data"
+      },
+      {
+        "key": "B60",
+        "article-title": "A sensitivity analysis of (and practitioners' guide to) convolutional neural networks for sentence classification",
+        "author": "Zhang",
+        "year": "2015"
+      },
+      {
+        "key": "B61",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.18653/v1/W18-5408",
+        "article-title": "Understanding convolutional neural networks for text classification",
+        "author": "Jacovi",
+        "year": "2018"
+      },
+      {
+        "key": "B62",
+        "doi-asserted-by": "publisher",
+        "first-page": "258",
+        "DOI": "10.1145/2808719.2808746",
+        "article-title": "Convolutional neural networks for biomedical text classification: application in indexing biomedical articles",
+        "volume": "2015",
+        "author": "Rios",
+        "year": "2015",
+        "journal-title": "ACM BCB"
+      },
+      {
+        "key": "B63",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.2307/2529310",
+        "article-title": "The measurement of observer agreement for categorical data",
+        "volume": "33",
+        "author": "Landis",
+        "year": "1977",
+        "journal-title": "Biometrics"
+      },
+      {
+        "key": "B64",
+        "doi-asserted-by": "publisher",
+        "first-page": "131",
+        "DOI": "10.1097/bor.0000000000000364",
+        "article-title": "A new era of quality measurement in rheumatology: electronic clinical quality measures and national registries",
+        "volume": "29",
+        "author": "Tonner",
+        "year": "2017",
+        "journal-title": "Curr Opin Rheumatol"
+      },
+      {
+        "key": "B65",
+        "first-page": "2378",
+        "article-title": "Analysis of language embeddings for classification of unstructured pathology reports",
+        "author": "Allada",
+        "year": "2021"
+      },
+      {
+        "key": "B66",
+        "doi-asserted-by": "publisher",
+        "first-page": "11",
+        "DOI": "10.1016/j.jbi.2018.10.005",
+        "article-title": "Using clinical natural language processing for health outcomes research: overview and actionable suggestions for future advances",
+        "volume": "88",
+        "author": "Velupillai",
+        "year": "2018",
+        "journal-title": "J Biomed Inform"
+      },
+      {
+        "key": "B67",
+        "doi-asserted-by": "publisher",
+        "first-page": "1130",
+        "DOI": "10.1016/S0895-4356(02)00479-1",
+        "article-title": "The role of health care providers and significant others in evaluating the quality of life of patients with chronic disease",
+        "volume": "55",
+        "author": "Sneeuw",
+        "year": "2002",
+        "journal-title": "J Clin Epidemiol"
+      },
+      {
+        "key": "B68",
+        "doi-asserted-by": "publisher",
+        "first-page": "45",
+        "DOI": "10.1177/026921639500900107",
+        "article-title": "Terminal illness: views of patients and their lay carers",
+        "volume": "9",
+        "author": "Field",
+        "year": "1995",
+        "journal-title": "Palliat Med"
+      },
+      {
+        "key": "B69",
+        "doi-asserted-by": "publisher",
+        "first-page": "354",
+        "DOI": "10.1016/j.jpainsymman.2010.11.018",
+        "article-title": "Assessing agreement between terminally ill cancer patients’ reports of their quality of life and family caregiver and palliative care physician proxy ratings",
+        "volume": "42",
+        "author": "Jones",
+        "year": "2011",
+        "journal-title": "J Pain Symptom Manage"
+      },
+      {
+        "key": "B70",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1016/j.jse.2014.08.025",
+        "article-title": "Reliability of patient self-assessment of shoulder range of motion and strength after shoulder arthroplasty",
+        "volume": "24",
+        "author": "Yang",
+        "year": "2015",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "key": "B71",
+        "article-title": "Decoupled weight decay regularization",
+        "author": "Loshchilov",
+        "year": "2017"
+      }
+    ],
+    "container-title": [
+      "Frontiers in Digital Health"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://www.frontiersin.org/articles/10.3389/fdgth.2025.1523953/full",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          4,
+          24
+        ]
+      ],
+      "date-time": "2025-04-24T05:25:12Z",
+      "timestamp": 1745472312000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.frontiersin.org/articles/10.3389/fdgth.2025.1523953/full"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          4,
+          24
+        ]
+      ]
+    },
+    "references-count": 71,
+    "alternative-id": [
+      "10.3389/fdgth.2025.1523953"
+    ],
+    "URL": "https://doi.org/10.3389/fdgth.2025.1523953",
+    "relation": {},
+    "ISSN": [
+      "2673-253X"
+    ],
+    "issn-type": [
+      {
+        "value": "2673-253X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          4,
+          24
+        ]
+      ]
+    },
+    "article-number": "1523953"
+  }
+}

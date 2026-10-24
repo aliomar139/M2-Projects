@@ -1,0 +1,1005 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          17
+        ]
+      ],
+      "date-time": "2026-06-17T03:06:02Z",
+      "timestamp": 1781665562767,
+      "version": "3.54.5"
+    },
+    "reference-count": 54,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              14
+            ]
+          ],
+          "date-time": "2023-12-14T00:00:00Z",
+          "timestamp": 1702512000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              14
+            ]
+          ],
+          "date-time": "2023-12-14T00:00:00Z",
+          "timestamp": 1702512000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Eur J Orthop Surg Traumatol"
+    ],
+    "DOI": "10.1007/s00590-023-03796-4",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          12,
+          14
+        ]
+      ],
+      "date-time": "2023-12-14T06:04:43Z",
+      "timestamp": 1702533883000
+    },
+    "page": "1307-1318",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 14,
+    "title": [
+      "Initial clinical experience with a predictive clinical decision support tool for anatomic and reverse total shoulder arthroplasty"
+    ],
+    "prefix": "10.1007",
+    "volume": "34",
+    "author": [
+      {
+        "given": "Chelsey",
+        "family": "Simmons",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jessica",
+        "family": "DeGrasse",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sandrine",
+        "family": "Polakovic",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "William",
+        "family": "Aibinder",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thomas",
+        "family": "Throckmorton",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mayo",
+        "family": "Noerdlinger",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rick",
+        "family": "Papandrea",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Scott",
+        "family": "Trenhaile",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bradley",
+        "family": "Schoch",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bruno",
+        "family": "Gobbato",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Howard",
+        "family": "Routman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Moby",
+        "family": "Parsons",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3801-3272",
+        "authenticated-orcid": false,
+        "given": "Christopher P.",
+        "family": "Roche",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12,
+          14
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "3",
+        "key": "3796_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "876",
+        "DOI": "10.1093/ije/dyz206",
+        "volume": "49",
+        "author": "G Veronesi",
+        "year": "2019",
+        "unstructured": "Veronesi G, Grassi G, Savelli G, Quatto P, Zambon A (2019) Big data, observational research and P-value: a recipe for false-positive findings? A study of simulated and real prospective cohorts. Int J Epidemiol 49(3):876–884. https://doi.org/10.1093/ije/dyz206",
+        "journal-title": "Int J Epidemiol"
+      },
+      {
+        "issue": "13",
+        "key": "3796_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "1216",
+        "DOI": "10.1056/NEJMp1606181",
+        "volume": "375",
+        "author": "Z Obermeyer",
+        "year": "2016",
+        "unstructured": "Obermeyer Z, Emanuel EJ (2016) Predicting the future-big data, machine learning, and clinical medicine. N Engl J Med 375(13):1216–1219. https://doi.org/10.1056/NEJMp1606181",
+        "journal-title": "N Engl J Med"
+      },
+      {
+        "issue": "6",
+        "key": "3796_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "1267",
+        "DOI": "10.1097/CORR.0000000000000687",
+        "volume": "477",
+        "author": "MA Fontana",
+        "year": "2019",
+        "unstructured": "Fontana MA, Lyman S, Sarker GK, Padgett DE, MacLean CH (2019) Can machine learning algorithms predict which patients will achieve minimally clinically important differences from total joint arthroplasty? Clin Orthop Relat Res 477(6):1267–1279. https://doi.org/10.1097/CORR.0000000000000687",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "issue": "12",
+        "key": "3796_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "e410",
+        "DOI": "10.1016/j.jse.2019.05.017",
+        "volume": "28",
+        "author": "AK Gowd",
+        "year": "2019",
+        "unstructured": "Gowd AK, Agarwalla A, Amin NH, Romeo AA, Nicholson GP, Verma NN et al (2019) Construct validation of machine learning in the prediction of short-term postoperative complications following total shoulder arthroplasty. J Shoulder Elbow Surg 28(12):e410–e421. https://doi.org/10.1016/j.jse.2019.05.017",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "issue": "2",
+        "key": "3796_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "226",
+        "DOI": "10.1053/j.sart.2021.09.005",
+        "volume": "32",
+        "author": "V Kumar",
+        "year": "2022",
+        "unstructured": "Kumar V, Allen C, Overman S, Teredesai A, Simovitch R, Flurin PH, Wright TW, Zuckerman JD, Routman H, Roche C (2022) Development of a predictive model for a machine learning–derived shoulder arthroplasty clinical outcome score. Semin Arthroplast: JSES 32(2):226–237. https://doi.org/10.1053/j.sart.2021.09.005",
+        "journal-title": "Semin Arthroplast: JSES"
+      },
+      {
+        "issue": "10",
+        "key": "3796_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "2351",
+        "DOI": "10.1097/CORR.0000000000001263",
+        "volume": "478",
+        "author": "V Kumar",
+        "year": "2020",
+        "unstructured": "Kumar V, Roche C, Overman S, Simovitch R, Flurin P-H, Wright T et al (2020) What is the accuracy of three different machine learning techniques to predict clinical outcomes after shoulder arthroplasty? Clin Orthop Relat Res 478(10):2351–2363. https://doi.org/10.1097/CORR.0000000000001263",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "issue": "5",
+        "key": "3796_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "e225",
+        "DOI": "10.1016/j.jse.2020.07.042",
+        "volume": "30",
+        "author": "V Kumar",
+        "year": "2021",
+        "unstructured": "Kumar V, Roche C, Overman S, Simovitch R, Flurin P-H, Wright T et al (2021) Using machine learning to predict clinical outcomes after shoulder arthroplasty with a minimal feature set. J Shoulder Elbow Surg 30(5):e225–e236. https://doi.org/10.1016/j.jse.2020.07.042",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "issue": "2",
+        "key": "3796_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "263",
+        "DOI": "10.1053/j.sart.2020.12.003",
+        "volume": "31",
+        "author": "V Kumar",
+        "year": "2021",
+        "unstructured": "Kumar V, Roche C, Overman S, Simovitch R, Flurin P-H, Wright T et al (2021) Use of machine learning to assess the predictive value of 3 commonly used clinical measures to quantify outcomes after total shoulder arthroplasty. Semin Arthroplast: JSES 31(2):263–271. https://doi.org/10.1053/j.sart.2020.12.003",
+        "journal-title": "Semin Arthroplast: JSES"
+      },
+      {
+        "issue": "5",
+        "key": "3796_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "e234",
+        "DOI": "10.1016/j.jse.2021.10.032",
+        "volume": "31",
+        "author": "V Kumar",
+        "year": "2022",
+        "unstructured": "Kumar V, Schoch BS, Allen C, Overman S, Teredesai A, Aibinder W et al (2022) Using machine learning to predict internal rotation after anatomic and reverse total shoulder arthroplasty. J Shoulder Elbow Surg 31(5):e234–e245. https://doi.org/10.1016/j.jse.2021.10.032",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "issue": "1",
+        "key": "3796_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "e2000128",
+        "DOI": "10.2106/JBJS.OA.20.00128",
+        "volume": "6",
+        "author": "PB McLendon",
+        "year": "2021",
+        "unstructured": "McLendon PB, Christmas KN, Simon P, Plummer OR, Hunt A, Ahmed AS, Mighell MA, Frankle MA (2021) Machine learning can predict level of improvement in shoulder arthroplasty. JB JS Open Access 6(1):e2000128. https://doi.org/10.2106/JBJS.OA.20.00128",
+        "journal-title": "JB JS Open Access"
+      },
+      {
+        "issue": "10",
+        "key": "3796_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "2211",
+        "DOI": "10.1016/j.jse.2021.01.021",
+        "volume": "30",
+        "author": "C Roche",
+        "year": "2021",
+        "unstructured": "Roche C, Kumar V, Overman S, Simovitch R, Flurin P-H, Wright T et al (2021) Validation of a machine learning-derived clinical metric to quantify outcomes after total shoulder arthroplasty. J Shoulder Elbow Surg 30(10):2211–2224. https://doi.org/10.1016/j.jse.2021.01.021",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "issue": "5",
+        "key": "3796_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "973",
+        "DOI": "10.1016/j.jbiomech.2005.01.011",
+        "volume": "39",
+        "author": "AE Silver",
+        "year": "2006",
+        "unstructured": "Silver AE, Lungren MP, Johnson ME, O’Driscoll SW, An K-N, Hughes RE (2006) Using support vector machines to optimally classify rotator cuff strength data and quantify post-operative strength in rotator cuff tear patients. J Biomech 39(5):973–979. https://doi.org/10.1016/j.jbiomech.2005.01.011",
+        "journal-title": "J Biomech"
+      },
+      {
+        "issue": "11",
+        "key": "3796_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "2624",
+        "DOI": "10.1016/j.arth.2019.06.007",
+        "volume": "34",
+        "author": "JG Twiggs",
+        "year": "2019",
+        "unstructured": "Twiggs JG, Wakelin EA, Fritsch BA, Liu DW, Solomon MI, Parker DA et al (2019) Clinical and statistical validation of a probabilistic prediction tool of total knee arthroplasty outcome. J Arthroplast 34(11):2624–2631. https://doi.org/10.1016/j.arth.2019.06.007",
+        "journal-title": "J Arthroplast"
+      },
+      {
+        "issue": "6",
+        "key": "3796_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "527",
+        "DOI": "10.1136/jamia.2001.0080527",
+        "volume": "8",
+        "author": "I Sim",
+        "year": "2001",
+        "unstructured": "Sim I, Gorman P, Greenes RA, Haynes RB, Kaplan B, Lehmann H et al (2001) Clinical decision support systems for the practice of evidence-based medicine. J Am Med Inform Assoc 8(6):527–534. https://doi.org/10.1136/jamia.2001.0080527",
+        "journal-title": "J Am Med Inform Assoc"
+      },
+      {
+        "issue": "1",
+        "key": "3796_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "17",
+        "DOI": "10.1038/s41746-020-0221-y",
+        "volume": "3",
+        "author": "RT Sutton",
+        "year": "2020",
+        "unstructured": "Sutton RT, Pincock D, Baumgart DC, Sadowski DC, Fedorak RN, Kroeker KI (2020) An overview of clinical decision support systems: benefits, risks, and strategies for success. NPJ Digit Med 3(1):17. https://doi.org/10.1038/s41746-020-0221-y",
+        "journal-title": "NPJ Digit Med"
+      },
+      {
+        "issue": "4",
+        "key": "3796_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "447",
+        "DOI": "10.1111/j.1524-4733.2009.00685.x",
+        "volume": "13",
+        "author": "MGS de Tejada",
+        "year": "2010",
+        "unstructured": "de Tejada MGS, Escobar A, Herrera C, García L, Aizpuru F, Sarasqueta C (2010) Patient expectations and health-related quality of life outcomes following total joint replacement. Value Health 13(4):447–454. https://doi.org/10.1111/j.1524-4733.2009.00685.x",
+        "journal-title": "Value Health"
+      },
+      {
+        "issue": "1",
+        "key": "3796_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1186/1471-2474-15-248",
+        "volume": "15",
+        "author": "M Gonzalez Saenz de Tejada",
+        "year": "2014",
+        "unstructured": "Gonzalez Saenz de Tejada M, Escobar A, Bilbao A, Herrera-Espiñeira C, García-Perez L, Aizpuru F et al (2014) A prospective study of the association of patient expectations with changes in health-related quality of life outcomes, following total joint replacement. BMC Musculoskelet Disord 15(1):1–10. https://doi.org/10.1186/1471-2474-15-248",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "issue": "6",
+        "key": "3796_CR18",
+        "first-page": "1273",
+        "volume": "29",
+        "author": "NN Mahomed",
+        "year": "2002",
+        "unstructured": "Mahomed NN, Liang MH, Cook EF, Daltroy LH, Fortin PR, Fossel AH et al (2002) The importance of patient expectations in predicting functional outcomes after total joint arthroplasty. J Rheumatol 29(6):1273–1279",
+        "journal-title": "J Rheumatol"
+      },
+      {
+        "key": "3796_CR19",
+        "unstructured": "Clinical Decision Support Software—Draft Guidance. https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-decision-support-software"
+      },
+      {
+        "key": "3796_CR20",
+        "unstructured": "Group ISAAMDSW (2014) “Software as a Medical Device”: Possible framework for risk categorization and corresponding considerations [Internet]. https://www.imdrf.org/sites/default/files/docs/imdrf/final/technical/imdrf-tech-140918-samd-framework-risk-categorization-141013.pdf. Accessed 30 May 2022"
+      },
+      {
+        "issue": "6",
+        "key": "3796_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "e290",
+        "DOI": "10.1016/j.jse.2020.09.007",
+        "volume": "30",
+        "author": "EM Polce",
+        "year": "2021",
+        "unstructured": "Polce EM, Kunze KN, Fu MC, Garrigues GE, Forsythe B, Nicholson GP et al (2021) Development of supervised machine learning algorithms for prediction of satisfaction at 2 years following total shoulder arthroplasty. J Shoulder Elbow Surg 30(6):e290–e299. https://doi.org/10.1016/j.jse.2020.09.007",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "key": "3796_CR22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00590-022-03446-1",
+        "author": "CS Simmons",
+        "year": "2022",
+        "unstructured": "Simmons CS, Roche C, Schoch BS, Parsons M, Aibinder WR (2022) Surgeon confidence in planning total shoulder arthroplasty improves after consulting a clinical decision support tool. Eur J Orthop Surg Traumatol. https://doi.org/10.1007/s00590-022-03446-1",
+        "journal-title": "Eur J Orthop Surg Traumatol"
+      },
+      {
+        "issue": "4",
+        "key": "3796_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "407",
+        "DOI": "10.1016/0197-2456(89)90005-6",
+        "volume": "10",
+        "author": "R Jaeschke",
+        "year": "1989",
+        "unstructured": "Jaeschke R, Singer J, Guyatt GH (1989) Measurement of health status. Ascertaining the minimal clinically important difference. Control Clin Trials 10(4):407–415. https://doi.org/10.1016/0197-2456(89)90005-6",
+        "journal-title": "Control Clin Trials"
+      },
+      {
+        "issue": "4",
+        "key": "3796_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "929",
+        "DOI": "10.1007/s11999-017-5253-5",
+        "volume": "475",
+        "author": "SS Leopold",
+        "year": "2017",
+        "unstructured": "Leopold SS, Porcher R (2017) Editorial: the minimum clinically important difference—the least we can do. Clin Orthop Relat Res 475(4):929–932. https://doi.org/10.1007/s11999-017-5253-5",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "issue": "2",
+        "key": "3796_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "298",
+        "DOI": "10.1016/j.jse.2017.09.013",
+        "volume": "27",
+        "author": "R Simovitch",
+        "year": "2018",
+        "unstructured": "Simovitch R, Flurin P-H, Wright T, Zuckerman JD, Roche CP (2018) Quantifying success after total shoulder arthroplasty: the minimal clinically important difference. J Shoulder Elbow Surg 27(2):298–305. https://doi.org/10.1016/j.jse.2017.09.013",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "issue": "9",
+        "key": "3796_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "1839",
+        "DOI": "10.2106/JBJS.G.01095",
+        "volume": "90",
+        "author": "SD Glassman",
+        "year": "2008",
+        "unstructured": "Glassman SD, Copay AG, Berven SH, Polly DW, Subach BR, Carreon LY (2008) Defining substantial clinical benefit following lumbar spine arthrodesis. J Bone Joint Surg Am 90(9):1839–1847. https://doi.org/10.2106/JBJS.G.01095",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "issue": "4",
+        "key": "3796_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "725",
+        "DOI": "10.1016/j.apmr.2012.11.011",
+        "volume": "94",
+        "author": "LA Michener",
+        "year": "2013",
+        "unstructured": "Michener LA, Snyder Valier AR, McClure PW (2013) Defining substantial clinical benefit for patient-rated outcome tools for shoulder impingement syndrome. Arch Phys Med Rehabil 94(4):725–730. https://doi.org/10.1016/j.apmr.2012.11.011",
+        "journal-title": "Arch Phys Med Rehabil"
+      },
+      {
+        "issue": "5",
+        "key": "3796_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "903",
+        "DOI": "10.1016/j.jse.2017.12.014",
+        "volume": "27",
+        "author": "R Simovitch",
+        "year": "2018",
+        "unstructured": "Simovitch R, Flurin P-H, Wright T, Zuckerman JD, Roche CP (2018) Quantifying success after total shoulder arthroplasty: the substantial clinical benefit. J Shoulder Elbow Surg 27(5):903–911. https://doi.org/10.1016/j.jse.2017.12.014",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "issue": "13",
+        "key": "3796_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "e580",
+        "DOI": "10.5435/JAAOS-D-19-00395",
+        "volume": "28",
+        "author": "DR Biron",
+        "year": "2020",
+        "unstructured": "Biron DR, Sinha I, Kleiner JE, Aluthge DP, Goodman AD, Sarkar IN et al (2020) A novel machine learning model developed to assist in patient selection for outpatient total shoulder arthroplasty. J Am Acad Orthop Surg 28(13):e580–e585. https://doi.org/10.5435/JAAOS-D-19-00395",
+        "journal-title": "J Am Acad Orthop Surg"
+      },
+      {
+        "issue": "12",
+        "key": "3796_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "2698",
+        "DOI": "10.1016/j.jse.2021.06.007",
+        "volume": "30",
+        "author": "AM Baessler",
+        "year": "2021",
+        "unstructured": "Baessler AM, Brolin TJ, Azar FM, Sen S, Chang M, Falkner D et al (2021) Development and validation of a predictive model for outcomes in shoulder arthroplasty: a multicenter analysis of nearly 2000 patients. J Shoulder Elbow Surg 30(12):2698–2702. https://doi.org/10.1016/j.jse.2021.06.007",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "issue": "11",
+        "key": "3796_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "e689",
+        "DOI": "10.1016/j.jse.2021.04.029",
+        "volume": "30",
+        "author": "W Aibinder",
+        "year": "2021",
+        "unstructured": "Aibinder W, Schoch B, Parsons M, Watling J, Ko JK, Gobbato B, Throckmorton T, Routman H, Fan W, Simmons C, Roche C (2021) Risk factors for complications and revision surgery after anatomic and reverse total shoulder arthroplasty. J Shoulder Elbow Surg 30(11):e689–e701. https://doi.org/10.1016/j.jse.2021.04.029",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "issue": "2",
+        "key": "3796_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "382",
+        "DOI": "10.1016/j.jseint.2020.02.006",
+        "volume": "4",
+        "author": "B Carofino",
+        "year": "2020",
+        "unstructured": "Carofino B, Routman H, Roche C (2020) The influence of preoperative external rotation weakness or stiffness on reverse total shoulder arthroplasty. JSES Int 4(2):382–387. https://doi.org/10.1016/j.jseint.2020.02.006",
+        "journal-title": "JSES Int"
+      },
+      {
+        "issue": "6",
+        "key": "3796_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "1264",
+        "DOI": "10.1007/s11999.0000000000000270",
+        "volume": "476",
+        "author": "RJ Friedman",
+        "year": "2018",
+        "unstructured": "Friedman RJ, Cheung EV, Flurin P-H, Wright T, Simovitch RW, Bolch C et al (2018) Are age and patient gender associated with different rates and magnitudes of clinical improvement after reverse shoulder arthroplasty? Clin Orthop Relat Res 476(6):1264–1273. https://doi.org/10.1007/s11999.0000000000000270",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "issue": "4",
+        "key": "3796_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "266",
+        "DOI": "10.1016/j.jses.2019.09.010",
+        "volume": "3",
+        "author": "RJ Friedman",
+        "year": "2019",
+        "unstructured": "Friedman RJ, Eichinger J, Schoch B, Wright T, Zuckerman J, Flurin P-H et al (2019) Preoperative parameters that predict postoperative patient-reported outcome measures and range of motion with anatomic and reverse total shoulder arthroplasty. JSES Open Access 3(4):266–272. https://doi.org/10.1016/j.jses.2019.09.010",
+        "journal-title": "JSES Open Access"
+      },
+      {
+        "issue": "4",
+        "key": "3796_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "811",
+        "DOI": "10.1016/j.jse.2020.07.028",
+        "volume": "30",
+        "author": "SA Parada",
+        "year": "2021",
+        "unstructured": "Parada SA, Flurin PH, Wright TW, Zuckerman JD, Elwell JA, Roche CP, Friedman RJ (2021) Comparison of complication types and rates associated with anatomic and reverse total shoulder arthroplasty. J Shoulder Elbow Surg 30(4):811–818. https://doi.org/10.1016/j.jse.2020.07.028",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "issue": "3",
+        "key": "3796_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "174",
+        "DOI": "10.1016/j.jses.2019.07.004",
+        "volume": "3",
+        "author": "M Parsons",
+        "year": "2019",
+        "unstructured": "Parsons M, Routman HD, Roche CP, Friedman RJ (2019) Patient-reported outcomes of reverse total shoulder arthroplasty: a comparative risk factor analysis of improved versus unimproved cases. JSES Open Access 3(3):174–178. https://doi.org/10.1016/j.jses.2019.07.004",
+        "journal-title": "JSES Open Access"
+      },
+      {
+        "key": "3796_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "379",
+        "DOI": "10.1016/j.jor.2020.08.018",
+        "volume": "21",
+        "author": "M Parsons",
+        "year": "2020",
+        "unstructured": "Parsons M, Routman HD, Roche CP, Friedman RJ (2020) Preoperative external rotation deficit does not predict poor outcomes or lack of improvement after reverse total shoulder arthroplasty. J Orthop 21:379–383. https://doi.org/10.1016/j.jor.2020.08.018",
+        "journal-title": "J Orthop"
+      },
+      {
+        "issue": "8",
+        "key": "3796_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "1647",
+        "DOI": "10.1016/j.jse.2022.01.142",
+        "volume": "31",
+        "author": "BS Schoch",
+        "year": "2022",
+        "unstructured": "Schoch BS, King JJ, Fan W, Flurin PH, Wright TW, Zuckerman JD, Roche CP (2022) Characteristics of anatomic and reverse total shoulder arthroplasty patients who achieve ceiling scores with 3 common patient-reported outcome measures. J Shoulder Elbow Surg 31(8):1647–1657. https://doi.org/10.1016/j.jse.2022.01.142",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "issue": "21",
+        "key": "3796_CR39",
+        "doi-asserted-by": "publisher",
+        "first-page": "1801",
+        "DOI": "10.2106/JBJS.16.01387",
+        "volume": "99",
+        "author": "RW Simovitch",
+        "year": "2017",
+        "unstructured": "Simovitch RW, Friedman RJ, Cheung EV, Flurin P-H, Wright T, Zuckerman JD et al (2017) Rate of improvement in clinical outcomes with anatomic and reverse total shoulder arthroplasty. J Bone Joint Surg Am 99(21):1801–1811. https://doi.org/10.2106/JBJS.16.01387",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "issue": "4",
+        "key": "3796_CR40",
+        "doi-asserted-by": "publisher",
+        "first-page": "516",
+        "DOI": "10.1515/cclm-2017-0287",
+        "volume": "56",
+        "author": "F Cabitza",
+        "year": "2018",
+        "unstructured": "Cabitza F, Banfi G (2018) Machine learning in laboratory medicine: waiting for the flood? Clin Chem Lab Med 56(4):516–524. https://doi.org/10.1515/cclm-2017-0287",
+        "journal-title": "Clin Chem Lab Med"
+      },
+      {
+        "issue": "1",
+        "key": "3796_CR41",
+        "doi-asserted-by": "publisher",
+        "first-page": "128",
+        "DOI": "10.1097/EDE.0b013e3181c30fb2",
+        "volume": "21",
+        "author": "EW Steyerberg",
+        "year": "2010",
+        "unstructured": "Steyerberg EW, Vickers AJ, Cook NR, Gerds T, Gonen M, Obuchowski N et al (2010) Assessing the performance of prediction models: a framework for traditional and novel measures. Epidemiology 21(1):128–138. https://doi.org/10.1097/EDE.0b013e3181c30fb2",
+        "journal-title": "Epidemiology"
+      },
+      {
+        "key": "3796_CR42",
+        "doi-asserted-by": "crossref",
+        "unstructured": "David W Hosmer J, Lemeshow S (2013) Sturdivant RX. Applied Logistic Regression",
+        "DOI": "10.1002/9781118548387"
+      },
+      {
+        "key": "3796_CR43",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Chen T, Guestrin C (2016) XGBoost: a scalable tree boosting system. 785–794. https://doi.org/10.1145/2939672.2939785",
+        "DOI": "10.1145/2939672.2939785"
+      },
+      {
+        "issue": "3",
+        "key": "3796_CR44",
+        "doi-asserted-by": "publisher",
+        "first-page": "159",
+        "DOI": "10.1007/s40708-017-0065-7",
+        "volume": "4",
+        "author": "L Torlay",
+        "year": "2017",
+        "unstructured": "Torlay L, Perrone-Bertolotti M, Thomas E, Baciu M (2017) Machine learning-XGBoost analysis of language networks to classify patients with epilepsy. Brain Inform 4(3):159–169. https://doi.org/10.1007/s40708-017-0065-7",
+        "journal-title": "Brain Inform"
+      },
+      {
+        "key": "3796_CR45",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Cormack GV, Clarke CLA, Buettcher S (2009) Reciprocal rank fusion outperforms condorcet and individual rank learning methods. 758–759. https://doi.org/10.1145/1571941.1572114",
+        "DOI": "10.1145/1571941.1572114"
+      },
+      {
+        "key": "3796_CR46",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ahmad MA, Eckert C, Teredesai A (2018) Interpretable machine learning in healthcare. In: Proceedings of the ACM international conference on bioinformatics, computational biology, and Health Informatics, 559–560",
+        "DOI": "10.1145/3233547.3233667"
+      },
+      {
+        "key": "3796_CR47",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Lipton ZC (2016) The mythos of model interpretability. arXiv. cs.LG. https://doi.org/10.48550/arXiv.1606.03490",
+        "DOI": "10.48550/arXiv.1606.03490"
+      },
+      {
+        "issue": "12",
+        "key": "3796_CR48",
+        "doi-asserted-by": "publisher",
+        "first-page": "1881",
+        "DOI": "10.1016/j.jse.2015.05.048",
+        "volume": "24",
+        "author": "MT Burrus",
+        "year": "2015",
+        "unstructured": "Burrus MT, Werner BC, Cancienne JM, Gwathmey FW, Brockmeier SF (2015) Shoulder arthroplasty in patients with Parkinson’s disease is associated with increased complications. J Shoulder Elbow Surg 24(12):1881–1887. https://doi.org/10.1016/j.jse.2015.05.048",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "issue": "7",
+        "key": "3796_CR49",
+        "doi-asserted-by": "publisher",
+        "first-page": "1138",
+        "DOI": "10.1016/j.jse.2015.11.006",
+        "volume": "25",
+        "author": "AL Kemp",
+        "year": "2016",
+        "unstructured": "Kemp AL, King JJ, Farmer KW, Wright TW (2016) Reverse total shoulder arthroplasty in wheelchair-dependent patients. J Shoulder Elbow Surg 25(7):1138–1145. https://doi.org/10.1016/j.jse.2015.11.006",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "issue": "24",
+        "key": "3796_CR50",
+        "doi-asserted-by": "publisher",
+        "first-page": "1467",
+        "DOI": "10.1056/NEJM198112103052409",
+        "volume": "305",
+        "author": "JP Kassirer",
+        "year": "1981",
+        "unstructured": "Kassirer JP, Pauker SG (1981) The toss-up. N Engl J Med 305(24):1467–1469. https://doi.org/10.1056/NEJM198112103052409",
+        "journal-title": "N Engl J Med"
+      },
+      {
+        "issue": "1",
+        "key": "3796_CR51",
+        "doi-asserted-by": "publisher",
+        "first-page": "31",
+        "DOI": "10.1038/s41746-021-00385-9",
+        "volume": "4",
+        "author": "S Gaube",
+        "year": "2021",
+        "unstructured": "Gaube S, Suresh H, Raue M, Merritt A, Berkowitz SJ, Lermer E et al (2021) Do as AI say: susceptibility in deployment of clinical decision-aids. NPJ Digit Med 4(1):31–38. https://doi.org/10.1038/s41746-021-00385-9",
+        "journal-title": "NPJ Digit Med"
+      },
+      {
+        "key": "3796_CR52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3457607",
+        "author": "N Mehrabi",
+        "year": "2021",
+        "unstructured": "Mehrabi N, Morstatter F, Saxena N, Lerman K, Galstyan A (2021) A survey on bias and fairness in machine learning. ACM Comput Surv (CSUR). https://doi.org/10.1145/3457607",
+        "journal-title": "ACM Comput Surv (CSUR)"
+      },
+      {
+        "key": "3796_CR53",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Ahmad MA, Overman S, Allen C, Kumar V, Teredesai A, Eckert C (2021) Software as a medical device: regulating AI in healthcare via responsible AI. 4023–4024. https://doi.org/10.1145/3447548.3470823",
+        "DOI": "10.1145/3447548.3470823"
+      },
+      {
+        "key": "3796_CR54",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Allen C, Kumar V, Elwell J, Overman S, Schoch B, Aibinder W, Parsons M, Watling J, Ko JW, Gobbato B, Throckmorton T, Routman H, Roche C (2023) Evaluating the fairness and accuracy of machine learning based predictions of clinical outcomes after anatomic and reverse total shoulder arthroplasty. JSES. In press",
+        "DOI": "10.1016/j.jse.2023.08.005"
+      }
+    ],
+    "container-title": [
+      "European Journal of Orthopaedic Surgery &amp; Traumatology"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s00590-023-03796-4.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1007/s00590-023-03796-4/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s00590-023-03796-4.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          29
+        ]
+      ],
+      "date-time": "2024-03-29T18:03:08Z",
+      "timestamp": 1711735388000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.springer.com/10.1007/s00590-023-03796-4"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          12,
+          14
+        ]
+      ]
+    },
+    "references-count": 54,
+    "journal-issue": {
+      "issue": "3",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            4
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "3796"
+    ],
+    "URL": "https://doi.org/10.1007/s00590-023-03796-4",
+    "relation": {},
+    "ISSN": [
+      "1432-1068"
+    ],
+    "issn-type": [
+      {
+        "value": "1432-1068",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          12,
+          14
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "9 August 2023",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "19 November 2023",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "14 December 2023",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "Chelsey Simmons, Jessica DeGrasse, Sandrine Polakovic, and Christopher Roche are employed by Exactech, Inc.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Conflict of interest"
+        }
+      },
+      {
+        "value": "Mayo Noerdlinger has nothing to disclose.",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Disclosure"
+        }
+      },
+      {
+        "value": "All clinical data utilized in this study were collected according to an IRB (WIRB, 20091701) and an approved clinical protocol (CR09-005).",
+        "order": 4,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethical approval"
+        }
+      },
+      {
+        "value": "All patients provided informed consent; signatures are on file. Data collection at each clinical site was funded by Exactech, Inc. Relevant IRB approval letters are provided with this submission.",
+        "order": 5,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Informed consent"
+        }
+      }
+    ]
+  }
+}

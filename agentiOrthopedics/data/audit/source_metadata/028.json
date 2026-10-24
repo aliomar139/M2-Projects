@@ -1,0 +1,689 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          25
+        ]
+      ],
+      "date-time": "2026-08-25T06:55:01Z",
+      "timestamp": 1787640901919,
+      "version": "build-2736575974"
+    },
+    "reference-count": 57,
+    "publisher": "Wiley",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              22
+            ]
+          ],
+          "date-time": "2025-03-22T00:00:00Z",
+          "timestamp": 1742601600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 80,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "esskajournals.onlinelibrary.wiley.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "J. exp. orthop."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:sec><jats:title>Purpose</jats:title><jats:p>There has been substantial growth in the literature describing the effectiveness of artificial intelligence (AI) and machine learning (ML) applications in total hip arthroplasty (THA); these models have shown the potential to predict post‐operative outcomes using algorithmic analysis of acquired data and can ultimately optimize clinical decision‐making while reducing time, cost and complexity. The aim of this review is to analyze the most updated articles on AI/ML applications in THA as well as present the potential of these tools in optimizing patient care and THA outcomes.</jats:p></jats:sec><jats:sec><jats:title>Methods</jats:title><jats:p>A comprehensive search was completed through August 2024, according to the PRISMA guidelines. Publications were searched using the Scopus, Medline, EMBASE, CENTRAL and CINAHL databases. Pertinent findings and patterns in AI/ML methods utilization, as well as their applications, were quantitatively summarized and described using frequencies, averages and proportions. This study used a modified eight‐item Methodological Index for Non‐Randomized Studies (MINORS) checklist for quality assessment.</jats:p></jats:sec><jats:sec><jats:title>Results</jats:title><jats:p>Nineteen articles were eligible for this study. The selected studies were published between 2016 and 2024. Out of the various ML algorithms, four models have proven to be particularly significant and were used in almost 20% of the studies, including elastic net penalized logistic regression, artificial neural network, convolutional neural network (CNN) and multiple linear regression. The highest area under the curve (=1) was reported in the preoperative planning outcome variable and utilized CNN. All 20 studies demonstrated a high level of quality and low risk of bias, with a modified MINORS score of at least 7/8 (88%).</jats:p></jats:sec><jats:sec><jats:title>Conclusions</jats:title><jats:p>Developments in AI/ML prediction models in THA are rapidly increasing. There is clear potential for these tools to assist in all stages of surgical care as well as in challenges at the broader hospital administrative level and patient‐specific level.</jats:p></jats:sec><jats:sec><jats:title>Level of Evidence</jats:title><jats:p>Level III.</jats:p></jats:sec>",
+    "DOI": "10.1002/jeo2.70195",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          23
+        ]
+      ],
+      "date-time": "2025-03-23T12:39:21Z",
+      "timestamp": 1742733561000
+    },
+    "update-policy": "https://doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 11,
+    "title": [
+      "Revolutionizing total hip arthroplasty: The role of artificial intelligence and machine learning"
+    ],
+    "prefix": "10.1002",
+    "volume": "12",
+    "author": [
+      {
+        "given": "Umile Giuseppe",
+        "family": "Longo",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Fondazione Policlinico Universitario Campus Bio‐Medico Roma Italy"
+          },
+          {
+            "name": "Research Unit of Orthopaedic and Trauma Surgery, Department of Medicine and Surgery Università Campus Bio‐Medico di Roma Roma Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sergio",
+        "family": "De Salvatore",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Research Unit of Orthopaedic and Trauma Surgery, Department of Medicine and Surgery Università Campus Bio‐Medico di Roma Roma Italy"
+          },
+          {
+            "name": "Orthopedic Unit, Department of Surgery Bambino Gesù Children's Hospital Palidoro, Rome Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alice",
+        "family": "Piccolomini",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Research Unit of Orthopaedic and Trauma Surgery, Department of Medicine and Surgery Università Campus Bio‐Medico di Roma Roma Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nathan Samuel",
+        "family": "Ullman",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Research Unit of Orthopaedic and Trauma Surgery, Department of Medicine and Surgery Università Campus Bio‐Medico di Roma Roma Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Giuseppe",
+        "family": "Salvatore",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Fondazione Policlinico Universitario Campus Bio‐Medico Roma Italy"
+          },
+          {
+            "name": "Research Unit of Orthopaedic and Trauma Surgery, Department of Medicine and Surgery Università Campus Bio‐Medico di Roma Roma Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Margaux",
+        "family": "D'Hooghe",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Medicine University of Navarra Pamplona Spain"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Maristella",
+        "family": "Saccomanno",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Medical and Surgical Specialties, Radiological Sciences, and Public Health University of Brescia Brescia Italy"
+          },
+          {
+            "name": "Department of Bone and Joint Surgery Speciali Civili Brescia Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5383-3370",
+        "authenticated-orcid": false,
+        "given": "Kristian",
+        "family": "Samuelsson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Sahlgrenska Sports Medicine Center Gothenburg Sweden"
+          },
+          {
+            "name": "Department of Orthopaedics, Institute of Clinical Sciences, Sahlgrenska Academy University of Gothenburg Gothenburg Sweden"
+          },
+          {
+            "name": "Department of Orthopaedics Sahlgrenska University Hospital Mölndal Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rocco",
+        "family": "Papalia",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Fondazione Policlinico Universitario Campus Bio‐Medico Roma Italy"
+          },
+          {
+            "name": "Research Unit of Orthopaedic and Trauma Surgery, Department of Medicine and Surgery Università Campus Bio‐Medico di Roma Roma Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ayoosh",
+        "family": "Pareek",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Hospital for Special Surgery New York New York USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          22
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_14_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/14737167.2019.1665512"
+      },
+      {
+        "key": "e_1_2_14_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.drugpo.2019.102616"
+      },
+      {
+        "key": "e_1_2_14_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ejmp.2021.04.016"
+      },
+      {
+        "key": "e_1_2_14_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5435/JAAOS-D-18-00658"
+      },
+      {
+        "key": "e_1_2_14_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jor.24617"
+      },
+      {
+        "key": "e_1_2_14_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fbioe.2018.00075"
+      },
+      {
+        "key": "e_1_2_14_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/42788"
+      },
+      {
+        "key": "e_1_2_14_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00402-023-04827-9"
+      },
+      {
+        "key": "e_1_2_14_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1148/ryai.2021210097"
+      },
+      {
+        "key": "e_1_2_14_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1213/ANE.0000000000003798"
+      },
+      {
+        "key": "e_1_2_14_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.joca.2019.09.005"
+      },
+      {
+        "key": "e_1_2_14_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2021.08.009"
+      },
+      {
+        "key": "e_1_2_14_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/17453674.2021.1910448"
+      },
+      {
+        "key": "e_1_2_14_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.joca.2019.02.796"
+      },
+      {
+        "key": "e_1_2_14_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.amjsurg.2020.01.043"
+      },
+      {
+        "key": "e_1_2_14_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2022.03.033"
+      },
+      {
+        "key": "e_1_2_14_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cmpb.2019.105282"
+      },
+      {
+        "key": "e_1_2_14_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/jgs.16153"
+      },
+      {
+        "key": "e_1_2_14_20_1",
+        "first-page": "13",
+        "article-title": "Machine learning‐based identification of hip arthroplasty designs",
+        "volume": "21",
+        "author": "Kang YJ",
+        "year": "2020",
+        "journal-title": "J Orthop Transl"
+      },
+      {
+        "key": "e_1_2_14_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2019.06.013"
+      },
+      {
+        "key": "e_1_2_14_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00402-022-04453-x"
+      },
+      {
+        "key": "e_1_2_14_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2020.03.019"
+      },
+      {
+        "key": "e_1_2_14_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1302/2633-1462.31.BJO-2021-0123.R1"
+      },
+      {
+        "key": "e_1_2_14_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s42836-022-00112-z"
+      },
+      {
+        "key": "e_1_2_14_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5312/wjo.v12.i9.685"
+      },
+      {
+        "key": "e_1_2_14_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/CORR.0000000000000848"
+      },
+      {
+        "key": "e_1_2_14_28_1",
+        "first-page": "32",
+        "article-title": "Healthcare costs and nonadherence among chronic opioid users",
+        "volume": "17",
+        "author": "Leider HL",
+        "year": "2011",
+        "journal-title": "Am J Manag Care"
+      },
+      {
+        "key": "e_1_2_14_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/bios11020031"
+      },
+      {
+        "key": "e_1_2_14_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bmb/ldz026"
+      },
+      {
+        "key": "e_1_2_14_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/jcm11133845"
+      },
+      {
+        "key": "e_1_2_14_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/ijerph18052267"
+      },
+      {
+        "key": "e_1_2_14_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/jcm12041525"
+      },
+      {
+        "key": "e_1_2_14_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/jcm12082754"
+      },
+      {
+        "key": "e_1_2_14_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12887-022-03302-5"
+      },
+      {
+        "key": "e_1_2_14_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12893-024-02450-y"
+      },
+      {
+        "key": "e_1_2_14_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12893-022-01785-8"
+      },
+      {
+        "key": "e_1_2_14_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.artd.2021.07.012"
+      },
+      {
+        "key": "e_1_2_14_39_1",
+        "first-page": "173",
+        "article-title": "The genetics of sports injuries and athletic performance",
+        "volume": "3",
+        "author": "Maffulli N",
+        "year": "2013",
+        "journal-title": "Muscles Ligaments Tendons J"
+      },
+      {
+        "key": "e_1_2_14_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0883-5403(96)80079-9"
+      },
+      {
+        "key": "e_1_2_14_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.16.00019"
+      },
+      {
+        "key": "e_1_2_14_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.clinimag.2020.04.025"
+      },
+      {
+        "key": "e_1_2_14_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/jep.12603"
+      },
+      {
+        "key": "e_1_2_14_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0140-6736(19)30428-3"
+      },
+      {
+        "key": "e_1_2_14_45_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jeo2.12039"
+      },
+      {
+        "key": "e_1_2_14_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1120700018757940"
+      },
+      {
+        "key": "e_1_2_14_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s42836-021-00095-3"
+      },
+      {
+        "key": "e_1_2_14_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2019.04.055"
+      },
+      {
+        "key": "e_1_2_14_49_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2018.12.030"
+      },
+      {
+        "key": "e_1_2_14_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jeo2.12080"
+      },
+      {
+        "key": "e_1_2_14_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jor.24654"
+      },
+      {
+        "key": "e_1_2_14_52_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1046/j.1445-2197.2003.02748.x"
+      },
+      {
+        "key": "e_1_2_14_53_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2020.12.038"
+      },
+      {
+        "key": "e_1_2_14_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2019.07.039"
+      },
+      {
+        "key": "e_1_2_14_55_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2016.09.005"
+      },
+      {
+        "key": "e_1_2_14_56_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.hjdsi.2015.04.003"
+      },
+      {
+        "key": "e_1_2_14_57_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2013.06.027"
+      },
+      {
+        "key": "e_1_2_14_58_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s42836-021-00087-3"
+      }
+    ],
+    "container-title": [
+      "Journal of Experimental Orthopaedics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/jeo2.70195",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          16
+        ]
+      ],
+      "date-time": "2025-10-16T19:24:53Z",
+      "timestamp": 1760642693000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/10.1002/jeo2.70195"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          1
+        ]
+      ]
+    },
+    "references-count": 57,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1002/jeo2.70195"
+    ],
+    "URL": "https://doi.org/10.1002/jeo2.70195",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "2197-1153",
+      "2197-1153"
+    ],
+    "issn-type": [
+      {
+        "value": "2197-1153",
+        "type": "print"
+      },
+      {
+        "value": "2197-1153",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          1
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2024-09-15",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-01-15",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-03-22",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ],
+    "article-number": "e70195"
+  }
+}

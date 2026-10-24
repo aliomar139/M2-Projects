@@ -1,0 +1,75 @@
+=== PDF PAGE 1 ===
+HAND CLINICS • 2025.0 Top 100 Orthopedic AI • Rank #66
+Using Tree-Based Reinforcement Learning Methods to
+Support Personalized Decision-Making in Hand
+Treatment.
+Yao Song, Lu Wang
+Department of Biostatistics, School of Public Health, University of Michigan, Ann Arbor, 1415 Washington Heights, Ann Arbor, MI
+48109, USA.
+Journal:
+Hand clinics
+Publication Year:
+2025.0
+Citations:
+0
+DOI:
+10.1016/j.hcl.2025.08.002
+CLINICAL & AGENTIC AI TAKEAWAY
+Tree-based reinforcement learning methods can optimize personalized hand treatment decisions by balancing
+competing clinical priorities and enhancing patient-centered care.
+ABSTRACT
+--- REPOSITORY & PUBLISHER WEB METADATA --- Affiliations: Department of Biostatistics, School of Public
+Health, University of Michigan, Ann Arbor, 1415 Washington Heights, Ann Arbor, MI 48109, USA. Keywords:
+Reinforcement Learning, Personalized Healthcare, Adaptive Dynamic Treatment, Hand Surgery Decision-making, Tree-
+based Decision Optimization Extended Abstract from Repository: Personalized treatment enhances healthcare by tailoring
+optimal decisions to each patient based on their specific characteristics and treatment history. Reinforcement learning (RL)
+methods are powerful tools for estimating optimal, data-driven, dynamic treatment decision rules. This article presents a
+tutorial on Tree-based RL and Multi-Objective Tree-based RL for advancing the estimation of optimal dynamic treatment
+regimes. Data from the Silicone Arthroplasty in Rheumatoid Arthritis study demonstrate their application in optimizing
+joint arthroplasty decisions. These methods support personalized, data-driven strategies while balancing competing clinical
+priorities, aiding clinicians in making informed, patient-centered decisions within ethical and practical constraints.
+Keywords: Reinforcement Learning, Personalized Healthcare, Adaptive Dynamic Treatment, Hand Surgery Decision-making, Tree-
+based Decision Optimization
+Study Overview & Background
+--- REPOSITORY & PUBLISHER WEB METADATA --- Affiliations: Department of Biostatistics, School of Public
+Health, University of Michigan, Ann Arbor, 1415 Washington Heights, Ann Arbor, MI 48109, USA. Keywords:
+Reinforcement Learning, Personalized Healthcare, Adaptive Dynamic Treatment, Hand Surgery Decision-making, Tree-
+based Decision Optimization Extended Abstract from Repository: Personalized treatment enhances healthcare by tailoring
+optimal decisions to each patient based on their specific characteristics and treatment history. Reinforcement learning (RL)
+methods are powerful tools for estimating optimal, data-driven, dynamic treatment decision rules. This article presents a
+tutorial on Tree-based RL and Multi-Objective Tree-based RL for advancing the estimation of optimal dynamic treatment
+regimes. Data from the Silicone Arthroplasty in Rheumatoid Arthritis study demonstrate their application in optimizing
+
+=== PDF PAGE 2 ===
+joint arthroplasty decisions. These methods support personalized, data-driven strategies while balancing competing clinical
+priorities, aiding clinicians in making informed, patient-centered decisions within ethical and practical constraints.
+Methodology & Clinical Focus
+Study Classification: theoretical, modeling, or simulation study. Evaluated under orthopedic machine learning and
+artificial intelligence decision frameworks.
+Key Findings & Analysis
+Tree-based reinforcement learning methods can optimize personalized hand treatment decisions by balancing competing
+clinical priorities and enhancing patient-centered care.
+Extended Repository Abstract
+Personalized treatment enhances healthcare by tailoring optimal decisions to each patient based on their specific
+characteristics and treatment history. Reinforcement learning (RL) methods are powerful tools for estimating optimal, data-
+driven, dynamic treatment decision rules. This article presents a tutorial on Tree-based RL and Multi-Objective Tree-based
+RL for advancing the estimation of optimal dynamic treatment regimes. Data from the Silicone Arthroplasty in
+Rheumatoid Arthritis study demonstrate their application in optimizing joint arthroplasty decisions. These methods support
+personalized, data-driven strategies while balancing competing clinical priorities, aiding clinicians in making informed,
+patient-centered decisions within ethical and practical constraints.
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+Bibliographic Details & Indexing
+Authors: Yao Song, Lu Wang
+Journal / Venue: Hand clinics (2025.0)
+SJR Metric: Quartile 2.0
+Citation Count: 0 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.1016/j.hcl.2025.08.002
+Consensus Evidence Link: https://consensus.app/papers/using-treebased-reinforcement-learning-methods-to-
+song-wang/0d11eb9436b957c8bbedaf217b183011/
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1016/j.hcl.2025.08.002 • Consensus
+Page: https://consensus.app/papers/using-treebased-reinforcement-learning-methods-to-song-
+wang/0d11eb9436b957c8bbedaf217b183011/ • Verified and rendered via Deep Search & Academic Repositories.

@@ -1,0 +1,529 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          10
+        ]
+      ],
+      "date-time": "2026-10-10T00:19:32Z",
+      "timestamp": 1791591572147,
+      "version": "4.3.4"
+    },
+    "reference-count": 47,
+    "publisher": "SAGE Publications",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              20
+            ]
+          ],
+          "date-time": "2022-08-20T00:00:00Z",
+          "timestamp": 1660953600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 365,
+        "URL": "http://www.sagepub.com/licence-information-for-chorus"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000001",
+        "name": "national science foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "DGE-114747"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "DGE-114747"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000001",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000026",
+        "name": "National Institute on Drug Abuse",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R37-DA15612"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R37-DA15612"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000026",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "Stanford University Kaseberg Doolan Graduate Fellowship",
+        "award": [
+          "N/A"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "N/A"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journals.sagepub.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Med Decis Making"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          5
+        ]
+      ]
+    },
+    "abstract": "<jats:sec>\n                    <jats:title>Background</jats:title>\n                    <jats:p>Personalizing medical treatments based on patient-specific risks and preferences can improve patient health. However, models to support personalized treatment decisions are often complex and difficult to interpret, limiting their clinical application.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>We present a new method, using machine learning to create meta-models, for simplifying complex models for personalizing medical treatment decisions. We consider simple interpretable models, interpretable ensemble models, and noninterpretable ensemble models. We use variable selection with a penalty for patient-specific risks and/or preferences that are difficult, risky, or costly to obtain. We interpret the meta-models to the extent permitted by their model architectures. We illustrate our method by applying it to simplify a previously developed model for personalized selection of antipsychotic drugs for patients with schizophrenia.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>The best simplified interpretable, interpretable ensemble, and noninterpretable ensemble models contained at most half the number of patient-specific risks and preferences compared with the original model. The simplified models achieved 60.5% (95% credible interval [crI]: 55.2–65.4), 60.8% (95% crI: 55.5–65.7), and 83.8% (95% crI: 80.8–86.6), respectively, of the net health benefit of the original model (quality-adjusted life-years gained). Important variables in all models were similar and made intuitive sense. Computation time for the meta-models was orders of magnitude less than for the original model.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Limitations</jats:title>\n                    <jats:p>The simplified models share the limitations of the original model (e.g., potential biases).</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>Our meta-modeling method is disease- and model- agnostic and can be used to simplify complex models for personalization, allowing for variable selection in addition to improved model interpretability and computational performance. Simplified models may be more likely to be adopted in clinical settings and can help improve equity in patient outcomes.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.1177/0272989x211037921",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          8,
+          21
+        ]
+      ],
+      "date-time": "2021-08-21T02:06:35Z",
+      "timestamp": 1629511595000
+    },
+    "page": "450-460",
+    "update-policy": "https://doi.org/10.1177/sage-journals-update-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 17,
+    "title": [
+      "Personalization of Medical Treatment Decisions: Simplifying Complex Models while Maintaining Patient Health Outcomes"
+    ],
+    "prefix": "10.1177",
+    "volume": "42",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-2609-9486",
+        "authenticated-orcid": false,
+        "given": "Christopher",
+        "family": "Weyant",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Management Science and Engineering, Stanford University, Stanford, CA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Margaret L.",
+        "family": "Brandeau",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Management Science and Engineering, Stanford University, Stanford, CA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "179",
+    "published-online": {
+      "date-parts": [
+        [
+          2021,
+          8,
+          20
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "bibr1-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/sim.4194"
+      },
+      {
+        "key": "bibr2-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jclinepi.2011.09.005"
+      },
+      {
+        "key": "bibr3-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0272989X15587005"
+      },
+      {
+        "key": "bibr4-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jval.2014.04.008"
+      },
+      {
+        "key": "bibr5-0272989X211037921",
+        "first-page": "15",
+        "author": "Broekhuizen H",
+        "year": "2015",
+        "journal-title": "BMC Med Inform Decis Mak"
+      },
+      {
+        "key": "bibr6-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1524-4733.2009.00595.x"
+      },
+      {
+        "key": "bibr7-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmjopen-2017-018374"
+      },
+      {
+        "key": "bibr8-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s40273-016-0467-z"
+      },
+      {
+        "key": "bibr9-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/imj.12802"
+      },
+      {
+        "key": "bibr10-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13561-015-0048-4"
+      },
+      {
+        "key": "bibr11-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0272989X19884927"
+      },
+      {
+        "key": "bibr12-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12916-018-1122-7"
+      },
+      {
+        "key": "bibr13-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41591-018-0307-0"
+      },
+      {
+        "key": "bibr14-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj.l886"
+      },
+      {
+        "key": "bibr15-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0272989X18798833"
+      },
+      {
+        "key": "bibr16-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0272989X13492014"
+      },
+      {
+        "key": "bibr17-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.apenergy.2017.08.220"
+      },
+      {
+        "issue": "10",
+        "key": "bibr18-0272989X211037921",
+        "volume": "91",
+        "author": "O’Hagan A.",
+        "year": "2006",
+        "journal-title": "Reliab Eng Syst Saf"
+      },
+      {
+        "issue": "4",
+        "key": "bibr19-0272989X211037921",
+        "volume": "129",
+        "author": "Wang GG",
+        "year": "2006",
+        "journal-title": "J Mech Des"
+      },
+      {
+        "key": "bibr20-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0377-2217(98)00392-0"
+      },
+      {
+        "key": "bibr21-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0272989X13505910"
+      },
+      {
+        "key": "bibr22-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0272989X15575286"
+      },
+      {
+        "key": "bibr23-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0272989X15578125"
+      },
+      {
+        "key": "bibr24-0272989X211037921",
+        "unstructured": "Brennan A, Chilcott J, Kharroubi S, O’Hagan A. A two level Monte Carlo approach to calculating expected value of perfect information: resolution of the uncertainty in methods. Presented at: 24th Annual Meeting of the Society for Medical Decision Making;October 23, 2002; Baltimore, MD."
+      },
+      {
+        "key": "bibr25-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0272989X20912233"
+      },
+      {
+        "key": "bibr26-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1524-4733.2007.00244.x"
+      },
+      {
+        "key": "bibr27-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pcbi.1003968"
+      },
+      {
+        "key": "bibr28-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3310/hta8270"
+      },
+      {
+        "key": "bibr29-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0272989X9201200304"
+      },
+      {
+        "key": "bibr30-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0272989X03261561"
+      },
+      {
+        "key": "bibr31-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/14737167.2019.1665512"
+      },
+      {
+        "key": "bibr32-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/2381468320932894"
+      },
+      {
+        "key": "bibr33-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jval.2020.08.2099"
+      },
+      {
+        "key": "bibr34-0272989X211037921",
+        "unstructured": "Zhong H, Brandeau ML, Yazdi G, et al. Metamodeling for policy simulations with multivariate outcomes. Working Paper, Stanford University, 2021."
+      },
+      {
+        "key": "bibr35-0272989X211037921",
+        "unstructured": "Timofeev R. Classification and regression trees (CART) theory and applications. Berlin: Humboldt University; 2004."
+      },
+      {
+        "key": "bibr36-0272989X211037921",
+        "first-page": "1",
+        "author": "Hothorn T",
+        "year": "2015",
+        "journal-title": "Compr R Arch Netw"
+      },
+      {
+        "key": "bibr37-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4614-6849-3_13"
+      },
+      {
+        "key": "bibr38-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jval.2019.02.012"
+      },
+      {
+        "key": "bibr39-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0893-6080(05)80023-1"
+      },
+      {
+        "key": "bibr40-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/BF00117832"
+      },
+      {
+        "key": "bibr41-0272989X211037921",
+        "volume": "6",
+        "author": "van der Laan M",
+        "year": "2007",
+        "journal-title": "J Am Stat Appl Genet Mol Biol"
+      },
+      {
+        "key": "bibr42-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4419-9782-1_3"
+      },
+      {
+        "key": "bibr43-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11136-019-02172-2"
+      },
+      {
+        "key": "bibr44-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1056/NEJMp1405158"
+      },
+      {
+        "key": "bibr45-0272989X211037921",
+        "unstructured": "R Core Team. R: a language and environment for statistical computing. Vienna: R Foundation for Statistical Computing; 2018. Available from: https://www.R-project.org/"
+      },
+      {
+        "key": "bibr46-0272989X211037921",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jama.2013.284427"
+      },
+      {
+        "key": "bibr47-0272989X211037921",
+        "unstructured": "Hall P, Ambati S, Phan W. Ideas on interpreting machine learning. O’Reilly Media. 2017. Available from: https://www.oreilly.com/radar/ideas-on-interpreting-machine-learning/. Accessed March 20, 2021."
+      }
+    ],
+    "container-title": [
+      "Medical Decision Making"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/0272989X211037921",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/0272989X211037921",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/0272989X211037921",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/0272989X211037921",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          1
+        ]
+      ],
+      "date-time": "2026-05-01T18:01:20Z",
+      "timestamp": 1777658480000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.sagepub.com/doi/10.1177/0272989X211037921"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          8,
+          20
+        ]
+      ]
+    },
+    "references-count": 47,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2022,
+            5
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1177/0272989X211037921"
+    ],
+    "URL": "https://doi.org/10.1177/0272989x211037921",
+    "relation": {},
+    "ISSN": [
+      "0272-989X",
+      "1552-681X"
+    ],
+    "issn-type": [
+      {
+        "value": "0272-989X",
+        "type": "print"
+      },
+      {
+        "value": "1552-681X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          8,
+          20
+        ]
+      ]
+    }
+  }
+}

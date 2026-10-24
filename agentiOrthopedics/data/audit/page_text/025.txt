@@ -1,0 +1,78 @@
+=== PDF PAGE 1 ===
+JOURNAL OF ORTHOPAEDIC RESEARCH® • 2020.0 Top 100 Orthopedic AI • Rank #25
+Advanced decision-making using patient-reported
+outcome measures in total joint replacement
+P. Jayakumar, K. Bozic
+Department of Surgery and Perioperative Care, Dell Medical School, University of Texas at Austin, Austin, Texas.
+Journal:
+Journal of Orthopaedic
+Research®
+Publication Year:
+2020.0
+Citations:
+53
+DOI:
+10.1002/jor.24614
+CLINICAL & AGENTIC AI TAKEAWAY
+A shared decision-making tool using patient-reported outcomes and clinical data can personalize total joint
+replacement risks and benefits, improving decision quality and patient satisfaction.
+ABSTRACT
+Up to one-third of total joint replacement (TJR) procedures may be performed inappropriately in a subset of patients who
+remain dissatisfied with their outcomes, stressing the importance of shared decision-making. Patient-reported outcome
+measures capture physical, emotional, and social aspects of health and wellbeing from the patient's perspective. Powerful
+computer systems capable of performing highly sophisticated analysis using different types of data, including patient-
+derived data, such as patient-reported outcomes, may eliminate guess work, generating impactful metrics to better inform
+the decision-making process. We have created a shared decision-making tool which generates personalized predictions of
+risks and benefits from TJR based on patient-reported outcomes as well as clinical and demographic data. We present the
+protocol for a randomized controlled trial designed to assess the impact of this tool on decision quality, level of shared
+decision-making, and patient and process outcomes. We also discuss current concepts in this field and highlight
+opportunities leveraging patient-reported data and artificial intelligence for decision support across the care continuum. ©
+2020 Orthopaedic Research Society. Published by Wiley Periodicals, Inc.
+Keywords: Artificial intelligence, Arthroplasty, Shared Decision Making, Proms, Hip/knee Osteoarthritis
+Study Overview & Background
+Up to one-third of total joint replacement (TJR) procedures may be performed inappropriately in a subset of patients who
+remain dissatisfied with their outcomes, stressing the importance of shared decision-making. Patient-reported outcome
+measures capture physical, emotional, and social aspects of health and wellbeing from the patient's perspective. Powerful
+computer systems capable of performing highly sophisticated analysis using different types of data, including patient-
+derived data, such as patient-reported outcomes, may eliminate guess work, generating impactful metrics to better inform
+the decision-making process. We have created a shared decision-making tool which generates personalized predictions of
+risks and benefits from TJR based on patient-reported outcomes as well as clinical and demographic data. We present the
+protocol for a randomized controlled trial designed to assess the impact of this tool on decision quality, level of shared
+decision-making, and patient and process outcomes. We also discuss current concepts in this field and highlight
+
+=== PDF PAGE 2 ===
+opportunities leveraging patient-reported data and artificial intelligence for decision support across the care continuum. ©
+2020 Orthopaedic Research Society. Published by Wiley Periodicals, Inc.
+Methodology & Clinical Focus
+Investigation into artificial intelligence models, machine learning algorithms, and clinical predictive tools applied to
+orthopedic surgery and musculoskeletal medicine.
+Key Findings & Analysis
+A shared decision-making tool using patient-reported outcomes and clinical data can personalize total joint replacement
+risks and benefits, improving decision quality and patient satisfaction.
+Extended Repository Abstract
+Up to one-third of total joint replacement (TJR) procedures may be performed inappropriately in a subset of patients who
+remain dissatisfied with their outcomes, stressing the importance of shared decision-making. Patient-reported outcome
+measures capture physical, emotional, and social aspects of health and wellbeing from the patient's perspective. Powerful
+computer systems capable of performing highly sophisticated analysis using different types of data, including patient-
+derived data, such as patient-reported outcomes, may eliminate guess work, generating impactful metrics to better inform
+the decision-making process. We have created a shared decision-making tool which generates personalized predictions of
+risks and benefits from TJR based on patient-reported outcomes as well as clinical and demographic data. We present the
+protocol for a randomized controlled trial designed to assess the impact of this tool on decision quality, level of shared
+decision-making, and patient and process outcomes. We also discuss current concepts in this field and highlight
+opportunities leveraging patient-reported data and artificial intelligence for decision support across the care continuum.
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+Bibliographic Details & Indexing
+Authors: P. Jayakumar, K. Bozic
+Journal / Venue: Journal of Orthopaedic Research® (2020.0)
+SJR Metric: Quartile 1.0
+Citation Count: 53 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.1002/jor.24614
+Consensus Evidence Link: https://consensus.app/papers/advanced-decision%E2%80%90making-using-
+patient%E2%80%90reported-jayakumar-bozic/2fb746e1d02b5d208e1d3e2598cf5aea/
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1002/jor.24614 • Consensus Page:
+https://consensus.app/papers/advanced-decision%E2%80%90making-using-patient%E2%80%90reported-jayakumar-
+bozic/2fb746e1d02b5d208e1d3e2598cf5aea/ • Verified and rendered via Deep Search & Academic Repositories.

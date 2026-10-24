@@ -1,0 +1,79 @@
+=== PDF PAGE 1 ===
+DISCOVER ARTIFICIAL INTELLIGENCE • 2026.0 Top 100 Orthopedic AI • Rank #64
+AI-augmented personalized treatment in healthcare a
+comprehensive survey of models benchmarking and
+deployment challenges
+Vijayalaxmi N. Rathod, R. H. Goudar, Geetabai S. Hukkeri
+Journal:
+Discover Artificial Intelligence
+Publication Year:
+2026.0
+Citations:
+0
+DOI:
+10.1007/s44163-026-01187-2
+CLINICAL & AGENTIC AI TAKEAWAY
+This survey highlights the need for robust, transparent, and clinically viable personalized treatment
+recommendation systems in healthcare, addressing challenges in model interpretability, population
+generalizability, data privacy, and ethical compliance.
+ABSTRACT
+Personalized Treatment Recommendation Systems (PTRS) are increasingly central to precision medicine, enabling data-
+driven selection of therapies tailored to individual patient characteristics, including clinical history, biological markers, and
+behavioral context. Despite rapid methodological advances, existing research remains fragmented, with limited consensus
+on evaluation practices and insufficient consideration of real-world deployment constraints. This survey provides a
+systematic and critical review of 60 peer-reviewed studies published between 2019 and 2024, selected using a PRISMA
+guided protocol from major scholarly databases. The reviewed literature is organized into a unified taxonomy
+encompassing content-based, collaborative filtering, knowledge-based, and hybrid treatment recommendation paradigms,
+with emphasis on their clinical applicability and algorithmic design. Recent advances in deep learning and reinforcement
+learning are examined for their role in improving adaptability and treatment personalization. To enable meaningful cross-
+study comparison, this work introduces a multidimensional benchmarking rubric that evaluates PTRS beyond predictive
+performance, incorporating criteria such as algorithmic rigor, clinical relevance, validation depth, data transparency,
+scalability, and explainability. The analysis reveals persistent challenges related to model interpretability, population
+generalizability, data privacy, and ethical compliance, which continue to hinder clinical adoption. Emerging solutions,
+including federated learning, explainable AI, and privacy-preserving architectures, are discussed as promising pathways
+toward trustworthy deployment. By synthesizing methodological trends, practical limitations, and evaluation gaps, this
+survey offers a structured foundation and forward-looking perspective for the development of robust, transparent, and
+clinically viable PTRS in modern healthcare.
+Study Overview & Background
+Personalized Treatment Recommendation Systems (PTRS) are increasingly central to precision medicine, enabling data-
+driven selection of therapies tailored to individual patient characteristics, including clinical history, biological markers, and
+behavioral context. Despite rapid methodological advances, existing research remains fragmented, with limited consensus
+on evaluation practices and insufficient consideration of real-world deployment constraints. This survey provides a
+systematic and critical review of 60 peer-reviewed studies published between 2019 and 2024, selected using a PRISMA
+
+=== PDF PAGE 2 ===
+guided protocol from major scholarly databases. The reviewed literature is organized into a unified taxonomy
+encompassing content-based, collaborative filtering, knowledge-based, and hybrid treatment recommendation paradigms,
+with emphasis on their clinical applicability and algorithmic design. Recent advances in deep learning and reinforcement
+learning are examined for their role in improving adaptability and treatment personalization. To enable meaningful cross-
+study comparison, this work introduces a multidimensional benchmarking rubric that evaluates PTRS beyond predictive
+performance, incorporating criteria such as algorithmic rigor, clinical relevance, validation depth, data transparency,
+scalability, and explainability. The analysis reveals persistent challenges related to model interpretability, population
+generalizability, data privacy, and ethical compliance, which continue to hinder clinical adoption. Emerging solutions,
+including federated learning, explainable AI, and privacy-preserving architectures, are discussed as promising pathways
+toward trustworthy deployment. By synthesizing methodological trends, practical limitations, and evaluation gaps, this
+survey offers a structured foundation and forward-looking perspective for the development of robust, transparent, and
+clinically viable PTRS in modern healthcare.
+Methodology & Clinical Focus
+Study Classification: systematic review. Evaluated under orthopedic machine learning and artificial intelligence decision
+frameworks.
+Key Findings & Analysis
+This survey highlights the need for robust, transparent, and clinically viable personalized treatment recommendation
+systems in healthcare, addressing challenges in model interpretability, population generalizability, data privacy, and ethical
+compliance.
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+Bibliographic Details & Indexing
+Authors: Vijayalaxmi N. Rathod, R. H. Goudar, Geetabai S. Hukkeri
+Journal / Venue: Discover Artificial Intelligence (2026.0)
+SJR Metric: Quartile 1.0
+Citation Count: 0 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.1007/s44163-026-01187-2
+Consensus Evidence Link: https://consensus.app/papers/aiaugmented-personalized-treatment-in-healthcare-a-
+rathod-goudar/ef7219f92bd05820bee86bc95ec9d800/
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1007/s44163-026-01187-2 •
+Consensus Page: https://consensus.app/papers/aiaugmented-personalized-treatment-in-healthcare-a-rathod-
+goudar/ef7219f92bd05820bee86bc95ec9d800/ • Verified and rendered via Deep Search & Academic Repositories.

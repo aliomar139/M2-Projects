@@ -1,0 +1,399 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          6
+        ]
+      ],
+      "date-time": "2026-10-06T08:29:22Z",
+      "timestamp": 1791275362408,
+      "version": "4.1.0"
+    },
+    "reference-count": 19,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "5",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              5,
+              15
+            ]
+          ],
+          "date-time": "2015-05-15T00:00:00Z",
+          "timestamp": 1431648000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.plosone.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PLoS ONE"
+    ],
+    "DOI": "10.1371/journal.pone.0127428",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          5,
+          15
+        ]
+      ],
+      "date-time": "2015-05-15T18:17:29Z",
+      "timestamp": 1431713849000
+    },
+    "page": "e0127428",
+    "update-policy": "https://doi.org/10.1371/journal.pone.corrections_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 120,
+    "title": [
+      "Personalized Mortality Prediction Driven by Electronic Medical Data and a Patient Similarity Metric"
+    ],
+    "prefix": "10.1371",
+    "volume": "10",
+    "author": [
+      {
+        "given": "Joon",
+        "family": "Lee",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David M.",
+        "family": "Maslove",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Joel A.",
+        "family": "Dubin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "340",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          5,
+          15
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "crossref",
+        "first-page": "2161",
+        "DOI": "10.1056/NEJMp1401111",
+        "article-title": "Learning from Big Health Care Data",
+        "volume": "370",
+        "author": "S Schneeweiss",
+        "year": "2014",
+        "journal-title": "N Engl J Med"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "crossref",
+        "first-page": "591",
+        "DOI": "10.1097/00003246-198108000-00008",
+        "article-title": "APACHE-acute physiology and chronic health evaluation: a physiologically based classification system",
+        "volume": "9",
+        "author": "WA Knaus",
+        "year": "1981",
+        "journal-title": "Crit Care Med"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "crossref",
+        "first-page": "741",
+        "DOI": "10.1016/S0140-6736(83)92278-X",
+        "article-title": "Simplified acute physiological score for intensive care patients",
+        "volume": "322",
+        "author": "JR Le Gall",
+        "year": "1983",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "crossref",
+        "first-page": "261",
+        "DOI": "10.1097/CCM.0000000000000694",
+        "article-title": "Comparing Observed and Predicted Mortality Among ICUs Using Different Prognostic Systems: Why Do Performance Assessments Differ?",
+        "volume": "43",
+        "author": "A Kramer",
+        "year": "2015",
+        "journal-title": "Crit Care Med"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "crossref",
+        "first-page": "138",
+        "DOI": "10.3390/jpm2040138",
+        "article-title": "A database-driven decision support system: customized mortality prediction",
+        "volume": "2",
+        "author": "LA Celi",
+        "year": "2012",
+        "journal-title": "J Pers Med"
+      },
+      {
+        "key": "ref6",
+        "first-page": "1",
+        "article-title": "MIT Technol Rev",
+        "volume": "117",
+        "year": "2014",
+        "journal-title": "MIT Technol Rev"
+      },
+      {
+        "key": "ref7",
+        "first-page": "507",
+        "article-title": "Introducing PECOTA",
+        "author": "N Silver",
+        "year": "2003"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "crossref",
+        "first-page": "734",
+        "DOI": "10.1109/TKDE.2005.99",
+        "article-title": "Toward the next generation of recommender systems: a survey of the state-of-the-art and possible extensions [Internet]",
+        "author": "G Adomavicius",
+        "year": "2005",
+        "journal-title": "IEEE Transactions on Knowledge and Data Engineering IEEE Educational Activities Department"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "crossref",
+        "first-page": "523",
+        "DOI": "10.1111/j.1467-985X.1997.00078.x",
+        "article-title": "Statistical Classification Methods in Consumer Credit Scoring: a Review",
+        "volume": "160",
+        "author": "DJ Hand",
+        "year": "1997",
+        "journal-title": "J R Stat Soc Ser A (Statistics Soc"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "crossref",
+        "first-page": "5",
+        "DOI": "10.1145/963770.963772",
+        "article-title": "Evaluating collaborative filtering recommender systems",
+        "author": "JL Herlocker",
+        "year": "2004",
+        "journal-title": "ACM Transactions on Information Systems"
+      },
+      {
+        "key": "ref11",
+        "first-page": "43",
+        "article-title": "Proc 14th Conf Uncertain Artif Intell",
+        "volume": "461",
+        "author": "JS Breese",
+        "year": "1998"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "crossref",
+        "first-page": "16",
+        "DOI": "10.1145/2408736.2408740",
+        "article-title": "Supervised patient similarity measure of heterogeneous patient records",
+        "volume": "14",
+        "author": "J Sun",
+        "year": "2012",
+        "journal-title": "ACM SIGKDD Explor Newsl"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "crossref",
+        "first-page": "1157",
+        "DOI": "10.1164/rccm.201212-2311ED",
+        "article-title": "“Big Data” in the intensive care unit. Closing the data loop",
+        "volume": "187",
+        "author": "LA Celi",
+        "year": "2013",
+        "journal-title": "Am J Respir Crit Care Med"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "crossref",
+        "first-page": "2762",
+        "DOI": "10.1001/jama.284.21.2762",
+        "article-title": "Current and Projected Workforce Requirements for Care of the Critically Ill and Patients With Pulmonary Disease: Can We Meet the Requirements of an Aging Population?",
+        "volume": "284",
+        "author": "DC Angus",
+        "year": "2000",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "crossref",
+        "first-page": "952",
+        "DOI": "10.1097/CCM.0b013e31820a92c6",
+        "article-title": "Multiparameter Intelligent Monitoring in Intensive Care II (MIMIC-II): A public-access intensive care unit database",
+        "volume": "39",
+        "author": "M Saeed",
+        "year": "2011",
+        "journal-title": "Crit Care Med"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "crossref",
+        "first-page": "707",
+        "DOI": "10.1007/BF01709751",
+        "article-title": "The SOFA (Sepsis-related Organ Failure Assessment) score to describe organ dysfunction/failure",
+        "volume": "22",
+        "author": "J Vincent",
+        "year": "1996",
+        "journal-title": "Intensive Care Med"
+      },
+      {
+        "key": "ref17",
+        "article-title": "Text Mining with Information Extraction",
+        "author": "UY Nahm",
+        "year": "2002",
+        "journal-title": "Proceedings of the AAAI 2002 Spring Symposium on Mining Answers from Texts and Knowledge Bases"
+      },
+      {
+        "key": "ref18",
+        "first-page": "233",
+        "article-title": "Proc 23rd Int Conf Mach Learn—ICML’06",
+        "author": "J Davis",
+        "year": "2006"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "crossref",
+        "first-page": "2553",
+        "DOI": "10.1097/01.CCM.0000288123.29559.5A",
+        "article-title": "The impact of different prognostic models and their customization on institutional comparison of intensive care units",
+        "volume": "35",
+        "author": "F Bakhshi-Raiez",
+        "year": "2007",
+        "journal-title": "Crit Care Med"
+      }
+    ],
+    "container-title": [
+      "PLOS ONE"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://dx.plos.org/10.1371/journal.pone.0127428",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          10,
+          20
+        ]
+      ],
+      "date-time": "2018-10-20T09:03:06Z",
+      "timestamp": 1540026186000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dx.plos.org/10.1371/journal.pone.0127428"
+      }
+    },
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Frank",
+        "family": "Emmert-Streib",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "editor"
+          }
+        ]
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          5,
+          15
+        ]
+      ]
+    },
+    "references-count": 19,
+    "journal-issue": {
+      "issue": "5",
+      "published-online": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            15
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1371/journal.pone.0127428",
+    "relation": {},
+    "ISSN": [
+      "1932-6203"
+    ],
+    "issn-type": [
+      {
+        "value": "1932-6203",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2015,
+          5,
+          15
+        ]
+      ]
+    }
+  }
+}

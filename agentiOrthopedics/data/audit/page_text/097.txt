@@ -1,0 +1,943 @@
+=== PDF PAGE 1 ===
+Received: 2 July 2025 | Accepted: 15 August 2025
+DOI: 10.1002/jeo2.70477
+ORIGINAL PAPER
+Evaluation of centre ‐speciﬁc machine learning models in
+predicting 2‐year outcomes of hip arthroscopy for mixed
+femoracetabular impingement syndrome
+Gang Yang1 | Jiali Kang 2 | Fan Hu 1,3 | Yin Pei 1 | Dingge Liu 1 |
+Zhihua Zhang1 | Kaiping Liu1 | Langran Wang1 | Xi Gong1 | Haijun Wang1 |
+Shuangshuang Deng 1 | Ruijie Liu 1 | Xin Zhang 1
+1Beijing Key Laboratory of Sports Injuries,
+Department of Sports Medicine, Peking
+University Third Hospital, Institute of Sports
+Medicine of Peking University, Beijing,
+Haidian, China
+2Department of Epidemiology and
+Biostatistics, School of Public Health, Peking
+University Health Science Centre, Beijing,
+China
+3Tianjin University of Sport, Tianjin, China
+Correspondence
+Xin Zhang, Beijing Key Laboratory of Sports
+Injuries, Department of Sports Medicine,
+Peking University Third Hospital, Institute
+of Sports Medicine of Peking University,
+49 North Road Garden, Beijing 100191,
+Haidian, China.
+Email: Xinzhang0805@bjmu.edu.cn
+Funding information
+National Natural Science Foundation of
+China, Grant/Award Numbers: 82172447,
+82472459; Beijing Natural Science
+Foundation Haidian Joint Project,
+Grant/Award Number: 24L20439; Research
+and translational application of clinical
+characteristic diagnosis and treatment
+technologies in Beijing, Grant/Award Number:
+Z22111000740000
+Abstract
+Purpose: T o construct a centre ‐speciﬁc machine learning (ML) prediction
+model based on preoperative factors. It was hypothesised that the ML
+prediction model would accurately predict whether patient ‐reported out-
+come scores (PROs) over at least 2 years would reach the minimal clinically
+important difference (MCID).
+Methods: A retrospective analysis was performed on mixed ‐type femor-
+oacetabular impingement syndrome (FAIS) patients who had hip arthros-
+copy at our institution between 2016 and 2018. The primary outcome was
+the rate of achieving MCID in PROs assessed at least 2 years after surgery,
+PROs included the hip outcome score ‐activities of daily living (HOS ‐ADL),
+modiﬁed Harris Hip Score (mHHS), visual analogue scale (VAS) for pain
+and international hip outcome tool ‐12 (iHOT‐12), assessed at a minimum of
+2 years postoperatively. Preoperative patient features were selected using
+the least absolute shrinkage and selection operator (LASSO) algorithm.
+Three ML models were constructed using balanced sample data and opti-
+mal feature subsets: logistic regression (LR), support vector machine (SVM)
+and random forest (RF). Model performance was assessed using the area
+under the receiver operating characteristic curve (AUROC) and the con-
+cordance index (C ‐index). Model interpretations were conducted using the
+SHapley Additive explanation (SHAP) method.
+Results: A total of 210 patients (48.1% female) were included. The LR, SVM,
+RF models had AUROC 0.76 (0.61 –0.83), 0.89 (0.80 –0.94), 0.99
+(0.98–1.00), respectively, and C ‐index 0.74 (0.65 –0.82), 0.86 (0.81 –0.90),
+0.95 (0.93–0.96), respectively. Preoperative symptom duration, preoperative
+J Exp Orthop . 2025;12:e70477. wileyonlinelibrary.com/journal/jeo2 | 1o f1 1
+https://doi.org/10.1002/jeo2.70477
+This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium,
+provided the original work is properly cited.
+© 2025 The Author(s). Journal of Experimental Orthopaedics published by John Wiley & Sons Ltd on behalf of European Society of Sports Traumatology, Knee
+Surgery and Arthroscopy.
+Abbreviations: 3D, three ‐dimensional; AL, anterolateral; AP, anteroposterior; AUROC, area under the receiver operating characteristic curve; C ‐index, concor-
+dance index; CT, computed tomography; FAIS, femoroacetabular impingement syndrome; FNR, false negative rate; HOS ‐ADL, hip outcome score ‐activities of daily
+living; iHOT ‐12, international hip outcome tool ‐12; LASSO, least absolute shrinkage and selection operator; LCEA, lateral central ‐edge angle; LR, logistic
+regression; MAP, midanterior portal; MCID, minimal clinically important differences; mHHS, modi ﬁed Harris Hip Score; ML, machine learning; MRI, magnetic
+resonance imaging; OA, osteoarthritis; PROs, patient ‐reported outcomes scores; RF, random forest; SHAP, SHapley Additive explanation; SMOTE, synthetic
+minority oversampling technique; SVM, support vector machine; VAS, visual analogue scale.
+Gang Yang, Jiali Kang and Fan Hu contributed equally.
+
+=== PDF PAGE 2 ===
+HOS‐ADL, hip joint space and preoperative alpha angle were identi ﬁed as
+the most important predictors.
+Conclusion: Among the three ML prediction models, RF performed best in
+predicting whether PROs reached MCID, demonstrating excellent discrim-
+inative ability, calibration and robustness. This indicates that individualised
+and robust ML prediction models for outcome prediction based on pre-
+operative factors are feasible even with limited amounts of centre ‐
+speciﬁc data.
+Level of Evidence: Level III.
+KEYWORDS
+femoroacetabular impingement syndrome, hip arthroscopy, machine learning prediction
+models, patient ‐reported outcomes scores, preoperative factors
+INTRODUCTION
+Femoroacetabular impingement syndrome (FAIS) is
+the leading cause of hip pain in young adults. In addi-
+tion, FAIS is also a signi ﬁcant contributor to hip
+osteoarthritis (OA) [ 7, 37, 42 ]. FAIS is typically cate-
+gorised into cam type, pincer type or mixed type [ 2, 7,
+47]. Labral and cartilage injuries in the hip can be
+treated with arthroscopic surgery, and for normalising
+the anatomical morphology of the hip joint in mixed
+FAIS, intraoperative cam resection and pincer resec-
+tion are essential [ 12, 13 ].
+Minimal clinically important difference (MCID) is an
+important marker of surgical success, it is the minimal
+beneﬁcial change that can be perceived by patients,
+and patient‐reported outcome score (PROS) is a widely
+used outcome tool [ 25, 32, 40, 44 ]. For surgeons, one
+of their key goals is to improve the MCID attainment
+rate of postoperative patients by various means. In
+addition to efforts to improve the surgical technique of
+surgeons, measures such as optimising patient
+screening and prehabilitation can be used to improve
+MCID attainment rate [ 24, 36 ]. Prediction models for
+PROs can improve shared decision ‐making and patient
+counselling [ 14]. Meanwhile, machine learning (ML)
+techniques have attracted interest in the ﬁeld of pre-
+dictive analytics in medicine. Currently, the ML predic-
+tion model has been recognised as capable of
+predicting patients' postoperative PROs, thereby im-
+proving and optimising the quality of medical services
+[9]. Various ML techniques and simple neural networks
+provide higher predictive power compared to more
+traditional modelling techniques [ 39]. The pre-
+operative ability to predict which patients with FAIS will
+achieve the MCID after hip arthroscopy helps deter-
+mine the appropriateness and timing of surgery, so as
+to help doctors and patients choose more appropriate
+treatment time and method [ 9].
+Prediction models based on multicentre clinical data
+usually have the characteristics of large sample size
+and strong versatility, which can provide a reference for
+all surgeons. However, patient characteristics and
+surgical techniques vary among centres. Thus, sur-
+geons can train and apply centre ‐speciﬁc prediction
+models to more accurately predict outcomes after hip
+arthroscopy for better clinical decision making. The aim
+of this study was to develop centre ‐speciﬁc ML pre-
+diction models based on preoperative factors, to predict
+at least 2‐year postoperative outcomes for patients with
+mixed‐type FAIS after hip arthroscopy. It was hy-
+pothesised that a centre ‐speciﬁc ML prediction model
+would accurately predict whether PROs over at least
+2 years would reach MCID.
+MATERIALS AND METHODS
+Patient selection
+Approval for the study was granted through the insti-
+tutional review board (IRB) of Peking University Third
+Hospital (Number: M2019193). Patients who under-
+went primary hip arthroscopic surgery for FAIS at our
+institution between August 2016 and December 2018
+were retrospectively analysed. All arthroscopic sur-
+geries were performed by two senior authors (X.Z. and
+J‐Q.W.). Each of them performs more than 50 hip
+arthroscopic procedures annually.
+Inclusion criteria were as follows: (1) patients un-
+derwent primary hip arthroscopy due to FAIS; (2) pa-
+tients were followed up for at least 2 years. Exclusion
+criteria were as follows: (1) Previous history of ipsi-
+lateral hip surgery. (2) History of contralateral hip sur-
+gery during follow ‐up. (3) Preoperative lateral central ‐
+edge angle (LCEA) < 25°, moderate to advanced OA
+(Tönnis grade ≥2). (4) Incomplete preoperative X ‐ray
+and medical records. Arthroscopic surgery was per-
+formed in 434 hips. After exclusions, a total of 251 hips
+were deemed eligible. Ultimately, 210 hips were fol-
+lowed for at least 2 years and included in the study
+2o f1 1 |
+
+=== PDF PAGE 3 ===
+(Figure 1), either by telephone or in response to
+questions on the scale.
+Radiographic examination
+All patients underwent anteroposterior (AP) pelvic and
+45° Dunn lateral radiography, unilateral hip computed
+tomography (CT) and magnetic resonance imaging
+(MRI). A picture archiving and communication system
+(PACS; GE Healthcare) was used; The images were
+independently evaluated by an experienced radiologist,
+and all measurements were con ﬁrmed by a senior
+author (X.Z.). The LCEA and alpha angle were mea-
+sured on AP pelvic radiographs. While the alpha angle
+was measured on 45° Dunn lateral radiographs. Cam
+deformity was de ﬁned as an alpha angle >55° [ 26].
+Additionally, the LCEA was measured on AP pelvic
+radiographs, with pincer deformity de ﬁned as an
+LCEA ≥ 40° or a crossing sign [ 47]. Labral and articular
+cartilage were evaluate using 3.0 ‐T MRI. Cam defor-
+mity was assessed before and after operation using
+three‐dimensional (3D) CT .
+Surgical technique
+The patient was positioned in a modi ﬁed supine
+position on a standard hip traction table, with peri-
+neum protection during limb traction. Labral tears
+have been treated with debridement, repair, or
+reconstruction, depending on the extent of the injury:
+Labral tears were repaired using suture anchor
+ﬁxation (Smith & Nephew) when possible. In cases of
+irreparable labral tears, autograft gracilis transplan-
+tation could be considered for labral reconstruction.
+Acetabuloplasty was performed using a motorised
+bur, to create a bleeding bone bed for labral healing.
+Chondroplasty was performed for partial ‐thickness
+cartilage lesions and chondral ﬂaps, using an arthro-
+scopic shaver and/or electrocautery device (Smith &
+Nephew). Subspine impingement was diagnosed based
+on preoperative imaging and con ﬁr m e dw i t hap r e -
+operative subspine blocking test guided by ultrasound.
+Resection of the subspine deformity back to the level of
+the acetabular sourcil was typically performed. After
+addressing central compartment pathologies, the
+arthroscope was introduced into the peripheral com-
+partment to decompress cam deformities using a high ‐
+speed bur (Smith & Nephew). Adequate resection of
+the cam deformity was con ﬁrmed through dynamic
+examination and ﬂuoroscopic imaging. Finally, the joint
+capsule of all patients was routinely full closure at the
+end of the procedure using nonabsorbable Orthocord
+(DePuy Mitek).
+Postoperative rehabilitation
+With well supervision from our physical therapy team,
+all patients followed a standardised prescribed reha-
+bilitation protocol [ 46]. The rehabilitation was divided
+into four phases. The ﬁrst phase of the rehabilitation
+protocol emphasised isometric contractions and pas-
+sive range of motion exercises. The second phase
+focused on establishing a regular gait pattern and
+FIGURE 1 Patient selection. A total of 210 patients who met the inclusion criteria and complete data at least 2 years of follow ‐up were
+included in the study. FAIS, femoroacetabular impingement syndrome.
+| 3o f1 1
+
+=== PDF PAGE 4 ===
+restoring full range of motion. The emphasis of the third
+phase shifted towards rebuilding lower extremity
+strength and normal functional activities. The ﬁnal
+phase of rehabilitation centred on reintegrating pre-
+injury higher ‐level activities.
+Assessment of PROs
+PROs included scores for the hip outcome score ‐
+activities of daily living (HOS ‐ADL), modiﬁed Harris Hip
+Score (mHHS), visual analogue scale (VAS) for pain,
+international hip outcome tool ‐12 (iHOT ‐12) and hip
+outcome score ‐sports subscale (HOS ‐SS) [ 25, 44 ].
+However, in this study, half of the patients did not ex-
+ercise regularly, so HOS ‐SS was not calculated. Pa-
+tients completed surveys at the hospital before surgery
+and via a telephone interview after surgery. All as-
+sessments were performed in the patient's native lan-
+guage. Additionally, MCID and patient acceptable
+symptom state (PASS) were calculated to identify
+meaningful outcome improvements [ 17]. The MCID
+values used in this study were determined based on
+previous research: [ 1, 22, 33 ] 1.5 points for VAS pain,
+8.7 points for mHHS, 8.3 points for HOS ‐ADL, and 13.0
+points for iHOT ‐12. The PASS cutoffs were 1.91 for
+VAS pain, 83.3 for mHHS, 88.2 for HOS ‐ADL, and 72.2
+for iHOT ‐12.
+Development of ML prediction models
+Initially, descriptive statistics assessed the overall
+sample characteristics. Next, feature screening utilised
+the Least Absolute Shrinkage and Selection Operator
+(LASSO) [ 45]. Using the balanced data from the
+optimal feature subset, three ML models were
+constructed— logistic regression (LR) [ 28], support
+vector machine (SVM) [ 6] and random forest (RF) [ 3],
+to predict whether the four PROs reach the MCID. And
+model interpretation and knowledge mining were per-
+formed based on the SHapley Additive exPlanations
+(SHAP) method [ 19]. SPSS (version 24.0) facilitated
+the initial data description, while Python (version
+3.8.10) supported all subsequent analyses. The code
+and supporting documents used to generate the model
+can be accessed at https://github.com/ailiwood/ML-
+FAIS-MCID/tree/main.
+Statistical analysis
+The primary outcome of this study was the performance
+of the prediction model, and the secondary outcomes
+were the preoperative factors affecting the postoperative
+outcomes of patients. Continuous variables ﬁtting a
+normal distribution, such as age and BMI, were pre-
+sented using mean ± standard deviation. Those not ﬁt-
+ting a normal distribution were presented using median
+(interquartile range). Categorical variables, such as
+gender, were shown using frequency (percentage).
+Statistical comparisons of PROs, LCEA and alpha an-
+gles before and after surgery utilised a two ‐tailed paired
+Student t ‐test. A p‐value below 0.05 was deemed sta-
+tistically signiﬁcant.
+T o address the common issue of over ﬁtting in ML
+and align with prior studies [ 15], the LASSO model was
+used for feature selection. This approach helps remove
+irrelevant or redundant features, reducing modelling
+time and potential noise, thereby enhancing model
+accuracy [ 38]. The lasso was designed to predict
+changes in PROs scores pre ‐ and postoperatively
+(change values were the basis for determining
+MCID). Parameters were optimised using a grid search
+algorithm to develop an optimal model for each PROs
+score, selecting the feature subset for the predictive
+model.
+Since imbalance reduces the predictive perform-
+ance and generalisation ability of the model, sample
+balancing is performed before formal modelling. The
+ratio of positive samples in the raw data is more than
+9:1, and downsampling would result in a signi ﬁcant loss
+of information. Therefore, the synthetic minority over-
+sampling technique (SMOTE) is used [ 27]. Then ML
+models were developed.
+In the model training and evaluation phases, Grid-
+SearchCV was used to identify optimal hyperparameter
+combinations [ 35]. And a 10 ‐fold cross ‐validation
+method for model evaluation.
+Due to the highly imbalanced nature of the original
+dataset, accuracy alone does not fully capture the
+model's precision. Consequently, the F1 score and the
+false negative rate (FNR) were also reported. For dis-
+crimination, the area under the receiver operating
+characteristic curve (AUROC) and the concordance
+index (C ‐index) were evaluated. While AUC assesses
+the model's overall ability to distinguish between posi-
+tive and negative cases, the C ‐index more speci ﬁcally
+evaluates the relative risk ranking among samples.
+Additionally, this study includes the Brier score to
+gauge and compare the calibration of clinical prediction
+models. The Brier score measures the mean square
+deviation between the predicted probability and the
+actual outcome; thus, a lower Brier score indicates a
+better predictive ability of the model.
+In the phases of model interpretation and knowl-
+edge mining, SHAP was used. A key advantage of
+SHAP values is their consistency, which ensures the
+reliability of the feature importance assessment. The
+robustness and transparency of Shap have facilitated
+its widespread adoption in various research areas
+[10, 18 ].
+4o f1 1 |
+
+=== PDF PAGE 5 ===
+RESULTS
+Patient characteristics
+A total of 210 patients (51.90% male vs. 48.10%
+female) were included in the ﬁnal analysis. The pa-
+tients' basic information, physical examination ﬁndings
+and hip pain history. Statistically signi ﬁcant differences
+were observed between preoperative and post-
+operative alpha angles (65.85 ± 8.15 vs. 44.11 ± 5.11;
+p < 0.001) and between preoperative and postoperative
+LCEA (33.26 ± 6.46 vs. 31.17 ± 5.52; p < 0.001).
+Throughout the follow ‐up period, there was a signi ﬁ-
+cant increase in mHHS (62.51 ± 7.22 vs. 89.09 ± 8.97,
+p < 0.001), HOS ‐ADL (64.01 ± 8.21 vs. 89.27 ± 8.67;
+p < 0.001), iHOT ‐12 (41.02 ± 6.79 vs. 73.39 ± 10.33,
+p < 0.001) and a signi ﬁcant decrease in VAS pain
+scores (6.00 ± 1.37 vs. 1.72 ± 1.45; p < 0.001) (T able1).
+Variable screening
+Ta b l e2 presents the results of variable selection per-
+formed using LASSO for each of the four patient‐reported
+outcomes. A check mark ( ‘√’) indicates that the variable
+was retained in the optimal subset for that outcome,
+signifying its potential impor tance in predicting whether
+the MCID would be achieved. These selected feature
+subsets served as the inputs for subsequent ML model
+training and performance comparison. Variables in bold
+were consistently selected across all four outcomes,
+highlighting predictors of broad clinical relevance.
+Model comparison
+The RF model outperformed the LR and SVM on all
+metrics, consistently achieving the highest C index (mean
+0.94555) and AUC (mean 0.989043) (T able 3 and
+Figure 2). In contrast, the LR model exhibited the poorest
+results, with the highest FNR (mean 0.226875) and a
+missed diagnosis rate 4.51 times higher than that of SVM
+and 8.19 times higher than that of RF . The RF model also
+attained the lowest Brier score, indicating superior model
+calibration. Further analysis of standard deviation in
+model evaluation metrics conﬁrms the robustness of the
+TABLE 1 Characteristics of the study cohort ( N = 210 hips).
+Characteristics Mean ± SD or n (%)
+Age, years 37.58 (±9.64)
+Sex
+Male 109 (51.90%)
+Female 101 (48.10%)
+Height, cm 169.59 (±7.96)
+Weight, kg 67.83 (±12.49)
+BMI 23.45 (±3.17)
+Symptom duration, months 17.67 (±15.43)
+Tönnis grade
+0 130 (61.90%)
+1 80 (38.10%)
+Joint space, mm 4.53 (±0.80)
+Diameter of femoral head, mm 52.51 (±5.60)
+Preoperative symptom duration >2 year 29(13.81%)
+Follow‐up time, months 38.68 (±7.94)
+Alpha angle, deg
+Preoperative 65.85 ± 8.15
+Postoperative 44.11 ± 5.11
+LCEA, deg
+Preoperative 33.26 ± 6.46
+Postoperative 31.17 ± 5.52
+mHHS
+Preoperative 62.51 ± 7.22
+Postoperative 89.09 ± 8.97
+Achievement of PASS 163 (77.61%)
+Achievement of MCID 199 (94.76%)
+HOS‐ADL
+Preoperative 64.01 ± 8.21
+Postoperative 89.27 ± 8.67
+Achievement of PASS 141 (67.14%)
+Achievement of MCID 198 (94.28%)
+iHOT‐12
+Preoperative 41.02 ± 6.79
+Postoperative 73.39 ± 10.33
+Achievement of PASS 121 (57.62%)
+Achievement of MCID 197 (93.80%)
+VAS
+Preoperative 6.00 ± 1.37
+Postoperative 1.72 ± 1.45
+TABLE 1 (Continued)
+Characteristics Mean ± SD or n (%)
+Achievement of PASS 113 (53.81%)
+Achievement of MCID 195 (92.86%)
+Abbreviations: BMI, body mass index; HOS ‐ADL, hip outcome score activities
+of daily living; iHOT12, international hip outcome tool ‐12; LCEA, lateral centre ‐
+edge angle; MCID, minimal clinically important difference; mHHS, modi ﬁed
+Harris Hip Score; PASS, patient acceptable symptom state; VAS, visual
+analogue scale.
+| 5o f1 1
+
+=== PDF PAGE 6 ===
+RF model, which consistently exhibits the lowest varia-
+bility across datasets. Considering its superior discrimi-
+natory power and stability, the RF model is recommended
+for predicting MCID in the clinical setting.
+Model interpretation and preoperative
+predictors analysis
+The results of ranking the importance of features in the
+random forest model using SHAP , displaying the topﬁve
+most important scores (T able 4). The SHAP Heat map,
+with each line representing a feature and the horizontally
+extended colour bar indicating the feature's impact on a
+sample (Figure 3). Factors on the left vertical axis are
+arranged from top to bottom according to predicted
+strength; each narrow vertical strip (one pixel wide) rep-
+resents one patient. The strip's horizontal position is that
+patient's SHAP value for the predictor. Colour encodes
+the same sign— red for positive, blue for negative— while
+colour intensity is proportional to the magnitude of in ﬂu-
+ence. T aking‘age’as an example, red pixels on the right
+indicate that, for those older patients, age increases the
+likelihood of MCID, whereas blue pixels on the left show
+the opposite effect for younger patients.
+DISCUSSION
+The most important ﬁnding of this study is that by
+applying ML methods, accurate personalised pre-
+diction models can be derived even from small
+TABLE 2 Results of variable screening for LASSO.
+Characteristics mHHS
+HOS‐
+ADL iHOT ‐12 VAS
+Age, years √√ √ √
+Sex √
+Height, cm √√
+Weight, kg √√
+BMI
+Diameter of femoral
+head, mm
+√√ √ √
+Joint Space, mm √
+T onnis grade
+Symptom duration,
+months
+√√ √ √
+Preoperative symptom
+duration >2 year
+Preoperative alpha
+angle, deg
+√√ √ √
+Preoperative LCEA, deg √√
+Preoperative mHHS √√ √ √
+Preoperative HOS ‐ADL √√ √
+Preoperative iHOT ‐12 √√
+Note: Bold characteristics, indicating signi ﬁcance for all PROs.
+Abbreviations: BMI, body mass index; HOS ‐ADL, hip outcome score activities
+of daily living; iHOT12, international hip outcome tool ‐12; LASSO, least
+absolute shrinkage and selection operator; LCEA, lateral centre ‐edge angle;
+mHHS, modi ﬁed Harris Hip Score; VAS, visual analogue scale.
+TABLE 3 Performance comparison of the three models on the four datasets.
+Data mHHS HOS ‐ADL iHOT ‐12 VAS
+Model Metric Mean STD Mean STD Mean STD Mean STD
+LR F1 score 0.73 0.07 0.81 0.04 0.65 0.10 0.76 0.05
+FNR 0.28 0.09 0.12 0.08 0.31 0.11 0.20 0.10
+C‐index 0.74 0.07 0.82 0.04 0.65 0.10 0.76 0.04
+Brier score 0.26 0.07 0.18 0.04 0.35 0.10 0.24 0.05
+SVM F1 score 0.89 0.04 0.80 0.04 0.84 0.07 0.89 0.04
+FNR 0.01 0.03 0.10 0.06 0.05 0.04 0.04 0.05
+C‐index 0.90 0.04 0.81 0.05 0.85 0.07 0.89 0.03
+Brier score 0.10 0.04 0.19 0.04 0.15 0.06 0.11 0.04
+RF F1 score 0.95 0.03 0.93 0.03 0.96 0.03 0.93 0.03
+FNR 0.02 0.02 0.04 0.06 0.02 0.04 0.03 0.04
+C‐index 0.95 0.03 0.93 0.03 0.96 0.03 0.93 0.02
+Brier score 0.05 0.03 0.07 0.03 0.04 0.03 0.07 0.03
+Abbreviations: C‐index, concordance index; FNR, false negative rate; HOS ‐ADL, hip outcome score activities of daily living; iHOT12, international hip outcome tool ‐
+12; LR, logistic regression; MCID, minimal clinically important difference; mHHS, modi ﬁed Harris Hip Score; RF , random forest; SVM, support vector machine; VAS,
+visual analogue scale.
+6o f1 1 |
+
+=== PDF PAGE 7 ===
+single ‐centre cohorts. Three ML prediction models
+were developed based on patient preoperative fac-
+tors to predict the outcome of mixed ‐type FAIS pa-
+tients at least 2 years after hip arthroscopy. Among
+them, the RF ML model has the best performance,
+with an AUROC of 0.99 and a C ‐index of 0.95. And
+preoperative mHHS, preoperative HOS ‐ADL, pre-
+operative mHHS and preoperative alpha angle were
+identi ﬁed as the most in ﬂuential factors affecting the
+attainment of MCID for mHHS, HOS ‐ADL, iHOT12
+and VAS scores, respectively.
+The main clinical signi ﬁcance of this study is that it
+provides a strategy for the development and application of
+FAIS personalised prediction tools. By developing a
+centre‐speciﬁc ML prediction model, surgeons can accu-
+rately and reliably inform patients about the possibility of
+symptom improvement before the surgery. This not only
+helps patients make inquiries and participate in decision‐
+making, but also contributes to improving the cost ‐
+effectiveness of FAIS treatment. Different from the tradi-
+tional way that surgeons tell patients the general success
+rate of treatment based on traditional experience, this
+FIGURE 2 The ROC curves for the three models on the four datasets and reports the AUC. (a –d) The results on the four datasets mHHS,
+HOS‐ADL, iHOT ‐12 and VAS, respectively. AUC, area under the ROC curve; HOS ‐ADL, hip outcome score ‐activities of daily living; iHOT ‐12,
+international hip outcome tool ‐12; LR, logistic regression; mHHS, modi ﬁed Harris Hip Score; RF , random forest; SVM, support vector machine;
+VAS, visual analogue scale.
+| 7o f1 1
+
+=== PDF PAGE 8 ===
+model can predict the postoperative outcome of patients
+individually according to the previous data of the centre. By
+applying this model, it is expected to reduce the proportion
+of patients undergoing unnecessary surgery. Based on
+individualised predictive analysis, it may even help hospi-
+tals better understand their own cost ‐effectiveness and
+ﬁnd ways to avoid unnecessary surgeries.
+Compared with multicentre and large ‐sample stud-
+ies, the prediction model in this study signi ﬁcantly im-
+proves the prediction power and interpretability [ 21,
+34]. Pettit et al. [ 34] developed and used a ML model
+for predicting MCID attainment in iHOT ‐12 after hip
+arthroscopy based on 1917 patients from the UK's
+Non‐Arthroplasty Hip Registry. Despite the high quality
+of the study design and implementation, the AUROC
+showed that the accuracy of the ﬁve prediction models
+in predicting MCID at 6 months after surgery was fair or
+poor. The main reason for this is that less than 37% of
+FAIS patients in this sample data who underwent
+arthroscopy completed the de ﬁned primary outcome,
+limiting the data set for model development, and of
+these 37%, many had missing data on baseline patient
+variables. Martin et al. [ 21] reported similar ﬁndings,
+they used 5581 patients from the Danish Hip Arthros-
+copy Registry to predict progression to revision
+arthroscopy after primary hip arthroscopy, and they
+concluded that their models had limited clinical utility
+due to wide discrimination con ﬁdence intervals. Per-
+haps the preferred approach would be to develop a
+predictive model with data from tens of thousands of
+patients that could potentially be broadly applicable and
+also have good accuracy in external data [ 8]. However,
+it often requires complex, expensive data collection and
+sacriﬁces individualised accuracy. Surgeons in different
+centres are exposed to different patient characteristics
+and use different diagnostic criteria, imaging mea-
+surements, surgical techniques and postoperative
+rehabilitation techniques. Therefore, it is still recom-
+mended that each centre develop personalised pre-
+diction models based on its own clinical data.
+Among the prediction models used in this study, LR
+and SVM are common models used for binary classi-
+ﬁcation tasks in disease prognosis prediction. Intro-
+ducing the RF model enriches predictive models and
+conﬁrms its effectiveness, advancing FAIS prognosis
+prediction. This study pioneers the use of the SHAP
+method in FAIS prognostic research. The results
+highlight the importance of factors like patient age and
+imaging characteristics in surgical intervention effec-
+tiveness. SHAP enhances model interpretability, aiding
+clinical decision ‐making. This study signi ﬁcantly im-
+proves both predictive capability and interpretability,
+contributing to FAIS prognostic research.
+Among the preoperative patient characteristics,
+age, femoral head diameter, duration of symptoms,
+preoperative alpha angle and preoperative mHHS were
+found to in ﬂuence the attainment of MCID for all PROs.
+Speciﬁcally, preoperative mHHS, preoperative HOS ‐
+ADL, preoperative mHHS and preoperative alpha angle
+emerged as the most in ﬂuential factors determining
+whether mHHS, HOS ‐ADL, iHOT12 and VAS scores
+reached MCID, respectively. Previous studies have
+consistently demonstrated that younger age and
+shorter symptom duration are signi ﬁcantly associated
+with improved PROs [ 17, 20, 23, 25 ]. Therefore, pa-
+tients should pay attention to their symptoms and do
+not delay in seeking medical treatment. An increased
+alpha angle has generally been linked to poorer clinical
+outcomes in previous research [ 16, 41 ]. In our study,
+both alpha angle and femoral head diameter emerged
+as important predictors of PROs, indicating that femur ‐
+related factors exert a greater in ﬂuence on MCID in
+imaging. The mHHS demonstrates a high predictive
+TABLE 4 Importance ranking of features based on SHAP .
+Targets Feature SHAP importance
+mHHS‐MCID Preoperative mHHS 0.18
+Symptom duration 0.13
+Preoperative alpha
+angle
+0.09
+Age 0.07
+Diameter of
+femoral head
+0.05
+HOS‐
+ADL‐MCID
+Preoperative HOS ‐ADL 0.14
+Age 0.09
+Preoperative mHHS 0.07
+Preoperative alpha
+angle
+0.06
+Diameter of
+femoral head
+0.06
+iHOT12‐MCID Preoperative mHHS 0.08
+Symptom duration 0.08
+Preoperative iHOT12 0.08
+Preoperative alpha
+angle
+0.06
+Preoperative HOS ‐ADL 0.05
+VAS‐MCID Preoperative alpha
+angle
+0.10
+Preoperative mHHS 0.09
+Age 0.09
+Joint space 0.08
+Diameter of
+femoral head
+0.04
+Abbreviations: HOS ‐ADL, hip outcome score activities of daily living; iHOT12,
+international hip outcome tool ‐12; MCID, minimal clinically important
+difference; mHHS, modi ﬁed Harris Hip Score; SHAP , SHapley Additive
+exPlanations; VAS, visual analogue scale.
+8o f1 1 |
+
+=== PDF PAGE 9 ===
+power for each PRO, underscoring its reliability as a hip
+evaluation tool applicable in clinical practice.
+In this study, patients exhibited signiﬁcant reductions
+in alpha angle (65.85 vs. 44.11, p < 0.001) and LCEA
+(33.26 vs. 31.17, p < 0.001) postoperatively. Prior studies
+have indicated that after cam resection, impingement
+typically ceases at an alpha angle of 42° –43° [ 5, 30 ],
+consistent with the postoperative alpha angle observed in
+our study. The normal range of LCEA is generally con-
+s i d e r e dt ob e2 5 °–35° [4, 29], consistent with ourﬁndings.
+Previous follow‐up studies at 2 and 5 years after hip
+arthroscopy in patients with various types of FAIS patients
+have demonstrated favourable PROs, with younger age
+and shorter symptom duration associated with better
+outcomes [ 11, 20, 31, 43 ]. In our study, patients with
+mixed FAIS similarly experienced signi ﬁcant improve-
+ments in PROs posthip arthroscopy, with the majority
+achieving PASS and MCID. These results are not only
+statistically signiﬁcant but also clinically meaningful.
+This study has several limitations. First, all patients
+were obtained from the single institution, which makes
+external validation dif ﬁcult, and the results need to be
+interpreted with caution. Our models have high internal
+validity and may be accurate only in patients with mixed
+FAIS undergoing hip arthroscopy at our centre, as
+surgical techniques and imaging measurement details
+such as the alpha angle may have centre ‐speciﬁc
+characteristics. Second, the limited number of available
+predictive factors constrains comprehensive analysis.
+For instance, the absence of information on patients'
+daily activity habits hinders understanding their poten-
+tial impacts and providing targeted recommendations.
+Thirdly, sample imbalance may overestimate the mod-
+el's performance, requiring careful interpretation of its
+classiﬁcation capabilities. While the SMOTE algorithm
+aims to balance minority samples, its application may
+not fully re ﬂect real ‐world scenarios.
+CONCLUSION
+Three ML prediction models were developed to predict the
+outcomes of patients with mixed ‐type FAIS after hip
+arthroscopy. Among them, RF performed best in predicting
+FIGURE 3 SHapley Additive explanation (SHAP) heat map. Predictors are ordered by importance (top ‐to‐bottom). Each thin vertical stripe
+represents one patient; its horizontal position is that patient's SHAP value. Stripes right of zero (red) raise, and left of zero (blue) lower, the
+probability of achieving minimal clinically important differences (MCID); darker shades indicate stronger in ﬂuence. HOS ‐ADL, hip outcome
+score‐activities of daily living; iHOT ‐12, international hip outcome tool ‐12; mHHS, modi ﬁed Harris Hip Score; VAS, visual analogue scale.
+| 9o f1 1
+
+=== PDF PAGE 10 ===
+whether PROs reached MCID, demonstrating excellent
+discriminative ability, calibration and robustness. This
+indicates that individualised and robust ML prediction
+models for outcome prediction based on preoperative
+factors are feasible even with limited amounts of centre ‐
+speciﬁc data. Surgeons can use the clinical data of their
+own centres to establish centre‐speciﬁc prediction models,
+so as to make accurate prediction of postoperative out-
+comes for their patients.
+AUTHOR CONTRIBUTIONS
+Conceptualisation was permormed by Gang Yang, Jiali
+Kang, Fan Hu and Xin Zhang. Material preparation,
+data collection and analysis were performed by Yin Pei,
+Dingge Liu, Zhihua Zhang, Kaiping Liu, Langran Wang,
+Xi Gong, Haijun Wang, Shuangshuang Deng, Ruijie Liu
+and Jiali Kang; The ﬁrst draft of the manuscript was
+written by Gang Yang, Jiali Kang, Fan Hu, Xin Zhang
+and all authors commented on previous versions of the
+manuscript. All authors read and approved the ﬁnal
+manuscript.
+ACKNOWLEDGEMENTS
+This work was supported by National Natural Science
+Foundation of China (Grant Nos. 82172447, 82472459),
+Beijing Natural Science Foundation Haidian Joint
+Project (Grant No. 24L20439), Research and transla-
+tional application of clinical characteristic diagnosis
+and treatment technologies in Beijing (Program No.
+Z22111000740000). During the preparation of this work
+the authors used ChatGPT 3.5 in order to improve lan-
+guage and readability. After using this tool, the authors
+reviewed and edited the content as needed and take full
+responsibility for the content of the publication.
+CONFLICT OF INTEREST STATEMENT
+The authors declare no con ﬂict of interest.
+DATA AVAILABILITY STATEMENT
+The data that support the ﬁndings of this study are
+available from the corresponding author upon reason-
+able request.
+ETHICS STATEMENT
+Approval for the study was granted through the Peking
+University Third Hospital review board IRB (Number:
+M2019193).
+ORCID
+Xin Zhang https://orcid.org/0009-0000-6975-4730
+REFERENCES
+1. Beck EC, Nwachukwu BU, Mehta N, Jan K, Okoroha KR,
+Rasio J, et al. De ﬁning meaningful functional improvement on
+the visual analog scale for satisfaction at 2 years after hip
+arthroscopy for femoroacetabular impingement syndrome.
+Arthrosc J Arthrosc Rel Surg. 2020;36:734 –42.e2.
+2. Beck M, Kalhor M, Leunig M, Ganz R. Hip morphology in ﬂu-
+ences the pattern of damage to the acetabular cartilage: fe-
+moroacetabular impingement as a cause of early osteoarthritis
+of the hip. J Bone Jt Surg Br. 2005;87:1012 –8.
+3. Breiman L. Random forests. Mach Learn. 2001;45:5 –32.
+4. Casartelli NC, Maf ﬁuletti NA, Valenzuela PL, Grassi A,
+Ferrari E, van Buuren MMA, et al. Is hip morphology a risk factor
+for developing hip osteoarthritis? A systematic review with
+meta‐analysis. Osteoarthr Cartil. 2021;29:1252 –64.
+5. Clohisy JC, Carlisle JC, Beaulé PE, Kim YJ, Trousdale RT,
+Sierra RJ, et al. A systematic approach to the plain radiographic
+evaluation of the young adult hip. J Bone Jt Surg. 2008;
+90(Suppl 4):47 –66.
+6. Cortes C, Vapnik V. Support ‐vector networks. Mach Learn.
+1995;20:273–97.
+7. Ganz R, Parvizi J, Beck M, Leunig M, Nötzli H, Siebenrock KA.
+Femoroacetabular impingement: a cause for osteoarthritis of
+the hip. Clin Orthop Rel Res. 2003;417:112 –20.
+8. Harris JD. Editorial commentary: arti ﬁcial intelligence analysis
+of biomedical, large, clinical registry data using machine
+learning requires tens of thousands of subjects and a focus on
+substantial clinical bene ﬁt: minimal clinically important differ-
+ence is too low a bar. Arthrosc J Arthrosc Rel Surg. 2024;40:
+1164–7.
+9. Harris JD. Editorial commentary: personalized hip arthroscopy
+outcome prediction using machine learning ‐the future is here.
+Arthrosc J Arthrosc Rel Surg. 2021;37:1498 –502.
+10. Hu J, Xu J, Li M, Jiang Z, Mao J, Feng L, et al. Identi ﬁcation and
+validation of an explainable prediction model of acute kidney
+injury with prognostic implications in critically ill children: a
+prospective multicenter cohort study. EClinicalMedicine. 2024;
+68:102409.
+11. Huang HJ, Dang HH, Mamtimin M, Yang G, Zhang X, Wang JQ.
+Hip arthroscopy for femoroacetabular impingement syndrome
+shows good outcomes and low revision rates, with young age
+and low postoperative pain score predicting excellent 5 ‐year
+outcomes. Arthrosc J Arthrosc Rel Surg. 2023;39:285 –92.
+12. Khanduja V, Villar RN. The arthroscopic management of fe-
+moroacetabular impingement. Knee Surg Sports Traumatol
+Arthrosc. 2007;15:1035 –40.
+13. Khanduja V, Villar RN. Arthroscopic surgery of the hip: current
+concepts and recent advances. J Bone Jt Surg Br. 2006;88:
+1557–66.
+14. Khor S, Lavallee D, Cizik AM, Bellabarba C, Chapman JR,
+Howe CR, et al. Development and validation of a prediction
+model for pain and functional outcomes after lumbar spine
+surgery. JAMA Surg. 2018;153:634 –42.
+15. Kunze KN, Polce EM, Clapp IM, Alter T, Nho SJ. Association
+between preoperative patient factors and clinically meaningful
+outcomes after hip arthroscopy for femoroacetabular impinge-
+ment syndrome: a machine learning analysis. Am J Sports Med.
+2022;50:746–56.
+16. Lansdown DA, Kunze K, Ukwuani G, Waterman BR, Nho SJ.
+The importance of comprehensive cam correction: radiographic
+parameters are predictive of patient ‐reported outcome mea-
+sures at 2 years after hip arthroscopy. Am J Sports Med. 2018;
+46:2072–8.
+17. Levy DM, Kuhns BD, Chahal J, Philippon MJ, Kelly BT, Nho SJ.
+Hip arthroscopy outcomes with respect to patient acceptable
+symptomatic state and minimal clinically important difference.
+Arthrosc J Arthrosc Rel Surg. 2016;32:1877 –86.
+18. Lewin ‐Epstein O, Baruch S, Hadany L, Stein GY, Obolski U.
+Predicting antibiotic resistance in hospitalized patients by
+applying machine learning to electronic medical records. Clin
+Infect Dis. 2021;72:e848 –55.
+19. Lundberg SM, Lee SI. A uni ﬁed approach to interpreting model
+predictions. 2017. ArXiv. https://arxiv.org/abs/1705.07874.
+10 of 11 |
+
+=== PDF PAGE 11 ===
+20. Maimaitimin M, Yang F, Huang HJ, Xu Y, Zhang X, Ao Y, et al.
+Outcomes after hip arthroscopy for femoroacetabular impinge-
+ment syndrome in chinese patients: a minimum 2 ‐year follow ‐
+up study. Orthop J Sports Med. 2022;10:23259671221135218.
+21. Martin RK, Wastvedt S, Lange J, Pareek A, Wolfson J, Lund B.
+Limited clinical utility of a machine learning revision prediction
+model based on a national hip arthroscopy registry. Knee Surg
+Sports Traumatol Arthrosc. 2023;31:2079 –89.
+22. Martin RL, Kivlan BR, Christoforetti JJ, Wolff AB, Nho SJ,
+Salvo Jr. JP, et al. De ﬁning variations in outcomes of hip
+arthroscopy for femoroacetabular impingement using the
+12‐item international hip outcome tool (iHOT ‐12). Am J Sports
+Med. 2020;48:1175–80.
+23. McCormick F, Nwachukwu BU, Alpaugh K, Martin SD. Predic-
+tors of hip arthroscopy outcomes for labral tears at minimum
+2‐year follow ‐up: the in ﬂuence of age and arthritis. Arthrosc
+J Arthrosc Rel Surg. 2012;28:1359 –64.
+24. Mullins K, Filan D, Carton P. Early MCID achievement is
+associated with better long ‐term outcomes following arthros-
+copy for femoroacetabular impingement. Knee Surg Sports
+Traumatol Arthrosc. 2025;33:2633 –41.
+25. Mullins K, Filan D, Carton P. High survivorship and excellent
+5‐year outcomes in patients older than 40 years undergoing
+arthroscopy for femoroacetabular impingement. Knee Surg
+Sports Traumatol Arthrosc. 2023;31:2123 –30.
+26. Musielak BJ, Kubicka AM, Wo źniak Ł,J ó źwiak M, Liu RW. Is
+cam morphology found in ancient and medieval populations in
+addition to modern populations? Clin Orthop Rel Res. 2021;
+479:1830–8.
+27. Napiera ła K, Stefanowski J. Addressing imbalanced data with
+argument based rule learning. Expert Syst Appl. 2015;42:
+9468–81.
+28. Nelder JA, Wedderburn RWM. Generalized linear models. J R
+Stat Soc Ser A. 1972;135:370+.
+29. Nepple JJ, Brophy RH, Matava MJ, Wright RW, Clohisy JC.
+Radiographic ﬁndings of femoroacetabular impingement in
+National Football League Combine athletes undergoing radio-
+graphs for previous hip or groin pain. Arthrosc J Arthrosc Rel
+Surg. 2012;28:1396 –403.
+30. Neumann M, Cui Q, Siebenrock KA, Beck M. Impingement ‐free
+hip motion: the ‘normal’ angle alpha after osteochondroplasty.
+Clin Orthop Rel Res. 2009;467:699 –703.
+31. Nikou S, Sandlund C, Lindman I, Johansson PE, Öhlin A,
+Karlsson L, et al. T en ‐year outcomes of hip arthroscopy for fe-
+moroacetabular impingement with osteoarthritis: sustained
+functional bene ﬁts but high conversion to total hip arthroplasty.
+Knee Surg Sports Traumatol Arthrosc. 2025;33:2655 –63.
+32. Nikou S, Sturesson J, Lindman I, Karlsson L, Öhlin A,
+Senorski EH, et al. Arthroscopic treatment for femoroacetabular
+impingement yields favourable patient ‐reported outcomes and
+method survivorship at 10 ‐year follow ‐up. Knee Surg Sports
+Traumatol Arthrosc. 2025;33:1104 –11.
+33. Nwachukwu BU, Beck EC, Kunze KN, Chahla J, Rasio J,
+Nho SJ. De ﬁning the clinically meaningful outcomes for arthro-
+scopic treatment of femoroacetabular impingement syndrome at
+minimum 5‐year follow‐up. Am J Sports Med. 2020;48:901 –7.
+34. Pettit MH, Hickman SHM, Malviya A, Khanduja V. Development
+of machine‐learning algorithms to predict attainment of minimal
+clinically important difference after hip arthroscopy for femor-
+oacetabular impingement yield fair performance and limited
+clinical utility. Arthrosc J Arthrosc Rel Surg. 2024;40:1153–63.e2.
+35. Pirjatullah KD, Nugrahadi DT, Muliadi FA. Hyperparameter
+tuning using gridsearchCV on the comparison of the activation
+function of the ELM method to the classi ﬁcation of pneumonia in
+toddlers. 2021 4th International Conference of Computer and
+Informatics Engineering (IC2IE). 2021:390 –5.
+36. Punnoose A, Claydon ‐Mueller LS, Weiss O, Zhang J,
+Rushton A, Khanduja V. Prehabilitation for patients undergoing
+orthopedic surgery: a systematic review and meta ‐analysis.
+JAMA Netw Open. 2023;6:e238050.
+37. Reid GD, Reid CG, Widmer N, Munk PL. Femoroacetabular
+impingement syndrome: an underrecognized cause of hip pain
+and premature osteoarthritis? J Rheumatol. 2010;37:1395 –404.
+38. Remeseiro B, Bolon ‐Canedo V. A review of feature selection
+methods in medical applications. Comput Biol Med. 2019;
+112:103375.
+39. Senders JT, Arnaout O, Karhade AV, Dasenbrock HH,
+Gormley WB, Broekman ML, et al. Natural and arti ﬁcial intelli-
+gence in neurosurgery: a systematic review. Neurosurgery.
+2018;83:181–92.
+40. Shankar DS, Bi AS, Lan R, Buzin S, Youm T. Reprint of: class i
+obesity delays achievement of patient ‐acceptable symptom
+state but not minimum clinically important difference or sub-
+stantial clinical bene ﬁt after primary hip arthroscopy for femor-
+oacetabular impingement syndrome. Arthrosc J Arthrosc Rel
+Surg. 2023;39:1971 –9.
+41. Stone AV, Beck EC, Malloy P, Chahla J, Nwachukwu BU,
+Neal WH, et al. Preoperative predictors of achieving clinically
+signiﬁcant athletic functional status after hip arthroscopy for
+femoroacetabular impingement at minimum 2 ‐year follow ‐up.
+Arthrosc J Arthrosc Rel Surg. 2019;35:3049 –56.e1.
+42. Tönnis D, Heinecke A. Current concepts review ‐ acetabular
+and femoral anteversion: relationship with osteoarthritis of the
+hip*. J Bone Jt Surg. 1999;81:1747 –70.
+43. Uzun E, Ferrer ‐Rivero J, Lizano X, Cabello J, Gürsu S, Pons MT.
+High satisfaction and low conversion rate to total hip arthroplasty
+after hip arthroscopy for femoroacetabular impingement syndrome
+and risk factors affecting survival at long‐term follow‐up. Knee Surg
+Sports Traumatol Arthrosc. 2025;33:1507–14.
+44. Vogel MJ, Wright ‐Chisem J, Alvero AB, Chan JJ, Chapman RS,
+Nho SJ. The promising 2 ‐year performance of the patient ‐
+reported outcomes measurement information system in primary
+hip arthroscopy for femoroacetabular impingement syndrome.
+Am J Sports Med. 2024;52:998 –1004.
+45. Yamada M, Jitkrittum W, Sigal L, Xing EP, Sugiyama M. High ‐
+dimensional feature selection by feature ‐wise kernelized Lasso.
+Neural Comput. 2014;26:185 –207.
+46. Yang F, Mamtimin M, Duan YP, Sun H, Xu Y, Zhang X, et al.
+Volume of gluteus maximus and minimus increases after hip
+arthroscopy for femoroacetabular impingement syndrome.
+Arthrosc J Arthrosc Rel Surg. 2021;37:862 –70.
+47. Zhou J, Melugin HP, Hale RF, Leland DP, Bernard CD,
+Levy BA, et al. The prevalence of radiographic ﬁndings of
+structural hip deformities for femoroacetabular impingement in
+patients with hip pain. Am J Sports Med. 2020;48:647 –53.
+How to cite this article: Yang G, Kang J, Hu F,
+Pei Y, Liu D, Zhang Z, et al. Evaluation of centre ‐
+speciﬁc machine learning models in predicting
+2‐year outcomes of hip arthroscopy for mixed
+femoracetabular impingement syndrome. J Exp
+Orthop. 2025;0:e70477.
+https://doi.org/10.1002/jeo2.70477
+| 11 of 11

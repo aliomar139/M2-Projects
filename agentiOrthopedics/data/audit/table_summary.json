@@ -1,0 +1,12 @@
+{
+  "archive_rows": 213,
+  "archive_unique_exact_keys": 186,
+  "duplicate_export_rows": 27,
+  "manifest_records_linked_to_archives": 100,
+  "matrix_rows": 100,
+  "assistant_focused_reads": 18,
+  "matching_main_text_candidates": 59,
+  "original_text_retrieval_queue": 41,
+  "independent_review_complete": 0,
+  "final_included_studies": "not_determined"
+}

@@ -1,0 +1,76 @@
+=== PDF PAGE 1 ===
+BRITISH JOURNAL OF SURGERY • 2026.0 Top 100 Orthopedic AI • Rank #98
+SRS108 - Predicting patient-reported outcome measures
+and evaluating the impact of pre-operative comorbidities
+on outcomes of hip and knee arthroplasty using
+supervised machine learning
+Ibrahim Abdelrahman, Amr Selim, S. Davies, A. Roberts, Geraint Thomas, P. Cool
+Journal:
+British Journal of Surgery
+Publication Year:
+2026.0
+Citations:
+0
+DOI:
+10.1093/bjs/znag018.105
+CLINICAL & AGENTIC AI TAKEAWAY
+Machine learning models can predict clinically important improvement in hip and knee arthroplasty, with
+preoperative anxiety and depression linked to reduced likelihood of meaningful improvement.
+ABSTRACT
+Machine learning (ML) is increasingly applied in orthopaedics for outcome prediction. This project aimed to develop and
+internally validate supervised ML models that predict clinically important improvement after primary hip and knee
+arthroplasty using NHS PROMs database, assess whether these data can reliably predict postoperative PROMs for policy
+making, and to evaluate the association of comorbidities with postoperative improvement. We analysed anonymised NHS
+England PROMs data from 2018/2019, including 37 725 hip and 43 639 knee replacements. Predictors included
+demographics, symptom duration, living arrangements, comorbidities, and baseline PROMs (Oxford Hip Score [OHS],
+Oxford Knee Score [OKS], EQ-5D-3L, and EQ-5D VAS). The primary outcome was OHS/OKS improvement, defined as
+≥10 points or postoperative score ≥40. Five ML Models were tested with cross-validation. In hips, all models achieved
+high precision (0.91), recall (1.00), and F1 (0.95). ROC-AUC values ranged 0.67–0.70. For knees, precision was 0.81–
+0.82, recall 0.99–1.00, and F1 0.89–0.90, with ROC-AUC 0.64–0.66. SHAP analysis identified key predictors: pre-
+disability, baseline OHS, and limping for hips; and baseline OKS score, EQ-VAS, and disability for knees. ML models
+predicted hip outcomes moderately well but had lower discrimination for knees. The NHS PROMs dataset shows potential
+for ML and policy applications, though data quality improvements are needed, including standardised PROMs collection,
+better comorbidity coding, and separating unicompartmental from total knee outcomes. Preoperative anxiety and
+depression were linked with reduced likelihood of meaningful improvement and future studies should investigate the
+biological link underlying this correlation.
+Study Overview & Background
+Machine learning (ML) is increasingly applied in orthopaedics for outcome prediction. This project aimed to develop and
+internally validate supervised ML models that predict clinically important improvement after primary hip and knee
+arthroplasty using NHS PROMs database, assess whether these data can reliably predict postoperative PROMs for policy
+making, and to evaluate the association of comorbidities with postoperative improvement. We analysed anonymised NHS
+England PROMs data from 2018/2019, including 37 725 hip and 43 639 knee replacements. Predictors included
+demographics, symptom duration, living arrangements, comorbidities, and baseline PROMs (Oxford Hip Score [OHS],
+
+=== PDF PAGE 2 ===
+Oxford Knee Score [OKS], EQ-5D-3L, and EQ-5D VAS). The primary outcome was OHS/OKS improvement, defined as
+≥10 points or postoperative score ≥40. Five ML Models were tested with cross-validation. In hips, all models achieved
+high precision (0.91), recall (1.00), and F1 (0.95). ROC-AUC values ranged 0.67–0.70. For knees, precision was 0.81–
+0.82, recall 0.99–1.00, and F1 0.89–0.90, with ROC-AUC 0.64–0.66. SHAP analysis identified key predictors: pre-
+disability, baseline OHS, and limping for hips; and baseline OKS score, EQ-VAS, and disability for knees. ML models
+predicted hip outcomes moderately well but had lower discrimination for knees. The NHS PROMs dataset shows potential
+for ML and policy applications, though data quality improvements are needed, including standardised PROMs collection,
+better comorbidity coding, and separating unicompartmental from total knee outcomes. Preoperative anxiety and
+depression were linked with reduced likelihood of meaningful improvement and future studies should investigate the
+biological link underlying this correlation.
+Methodology & Clinical Focus
+Study Classification: theoretical, modeling, or simulation study. Evaluated under orthopedic machine learning and
+artificial intelligence decision frameworks.
+Key Findings & Analysis
+Machine learning models can predict clinically important improvement in hip and knee arthroplasty, with preoperative
+anxiety and depression linked to reduced likelihood of meaningful improvement.
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+Bibliographic Details & Indexing
+Authors: Ibrahim Abdelrahman, Amr Selim, S. Davies, A. Roberts, Geraint Thomas, P. Cool
+Journal / Venue: British Journal of Surgery (2026.0)
+SJR Metric: Quartile 1.0
+Citation Count: 0 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.1093/bjs/znag018.105
+Consensus Evidence Link: https://consensus.app/papers/srs108-predicting-patientreported-outcome-measures-
+and-abdelrahman-selim/23534e7b406c5095b182358555a7d4d4/
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1093/bjs/znag018.105 • Consensus
+Page: https://consensus.app/papers/srs108-predicting-patientreported-outcome-measures-and-abdelrahman-
+selim/23534e7b406c5095b182358555a7d4d4/ • Verified and rendered via Deep Search & Academic Repositories.

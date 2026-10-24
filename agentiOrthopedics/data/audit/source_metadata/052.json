@@ -1,0 +1,359 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          19
+        ]
+      ],
+      "date-time": "2026-10-19T23:28:13Z",
+      "timestamp": 1792452493084,
+      "version": "4.5.0"
+    },
+    "reference-count": 23,
+    "publisher": "IP Innovative Publication Pvt Ltd",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              26
+            ]
+          ],
+          "date-time": "2024-09-26T00:00:00Z",
+          "timestamp": 1727308800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 11,
+        "URL": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "jchm.in",
+        "ipinnovative.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "JCHM"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          28
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Artificial intelligence (AI) is transforming the field of orthopedics, significantly impacting predictive analysis, surgical management, and rehabilitation programs. This review explores the multifaceted role of AI in enhancing orthopedic care, focusing on its application in personalized treatment plans, surgical precision, and remote rehabilitation. Predictive analytics in orthopedics, powered by AI, have revolutionized preoperative planning by forecasting surgical outcomes and potential complications, enabling clinicians to tailor surgical strategies to individual patient needs. AI's integration into surgical procedures, particularly in robotics-assisted and minimally invasive surgeries, has enhanced precision, reduced operative times, and improved patient safety, resulting in faster recovery and better outcomes.AI-driven rehabilitation programs offer personalized exercise regimens, real-time feedback, and remote monitoring, making high-quality rehabilitation accessible to patients regardless of location. These applications adapt to individual patient progress, providing customized exercise plans that optimize recovery while minimizing the risk of reinjury. Additionally, AI-powered rehabilitation tools enhance patient engagement through gamification and interactive features, leading to higher adherence to rehabilitation protocols.The review highlights key studies demonstrating the efficacy of AI in these areas, underscoring its potential to revolutionize orthopedic care. By leveraging AI's capabilities, clinicians can provide more accurate diagnoses, implement effective surgical interventions, and offer personalized rehabilitation solutions, ultimately improving patient outcomes and quality of life. As AI technology continues to advance, its role in orthopedics is expected to expand, offering increasingly innovative and effective solutions for both surgical and non-surgical patient care.</jats:p>",
+    "DOI": "10.18231/j.jchm.2024.022",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          26
+        ]
+      ],
+      "date-time": "2024-09-26T06:13:40Z",
+      "timestamp": 1727331220000
+    },
+    "page": "120-132",
+    "update-policy": "https://doi.org/10.18231/ip-innovative-publication-crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 6,
+    "title": [
+      "Revolutionizing orthopedic care: The impact of ai in predictive analysis, surgical precision, and personalized rehabilitation"
+    ],
+    "prefix": "10.18231",
+    "volume": "11",
+    "author": [
+      {
+        "given": "Amit",
+        "family": "Lakhani",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": ", Mohali, Punjab , India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "9296",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          15
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref1",
+        "unstructured": "Yu L, Yao L, Chen S, Ge L, Zhang Y, Zou W, Automatic detection of hip fractures in plain radiographs using deep convolutional neural networks.Int J Comp Assist Radiol Surg 2018;13(12):1851-8"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Rajpurkar A, Irvin J, Cheng MZ, Duan D, Yoo D, Bagavathiannan M, Preliminary evaluation of a deep learning system for chest radiograph interpretation.Digit  Med 2017;15(9):e44954",
+        "DOI": "10.1371/journal.pmed.1002686"
+      },
+      {
+        "key": "ref3",
+        "unstructured": "Zhang J, Guo H, Yi S, Li J, Liu T, Zhang Y, Artificial intelligence in musculoskeletal rehabilitation.Nat Rev Rheumatol 2020;16(11):687-700"
+      },
+      {
+        "key": "ref4",
+        "unstructured": "Smith R, Jones K, Lee S, Enhancing spinal surgery outcomes with AI: Predicting risks and complications.Spine J 2021;21(2):284-92"
+      },
+      {
+        "key": "ref5",
+        "unstructured": "Zheng G, Tian W, Liu Y, AI for preoperative planning in orthopedic procedures: Improving precision and outcomes.J Orthop Res 2020;38(4):895-902"
+      },
+      {
+        "key": "ref6",
+        "unstructured": "Zhang H, Xu Y, Zhao L, AI-driven navigation systems for robotic-assisted shoulder arthroscopy: Improving accuracy and reducing operative time.J Shoulder Elbow Surg 2020;29(7):1426-32"
+      },
+      {
+        "key": "ref7",
+        "unstructured": "Gupta A, Patel R, Singh A, AI-based real-time guidance in fracture fixation surgery: Improving alignment and outcomes.Injury 2021;52(5):943-950"
+      },
+      {
+        "key": "ref8",
+        "unstructured": "Johnson M, Anderson K, Roberts W, AI-driven postoperative monitoring: Early detection of complications and improved recovery tracking.J Med Syst 2020;44(5):96"
+      },
+      {
+        "key": "ref9",
+        "unstructured": "Davis E, Green A, Martin P, Machine learning for optimizing implant selection in joint replacements: Enhancing accuracy and patient satisfaction.J Arthroplasty 2020;35(6):1480-6"
+      },
+      {
+        "key": "ref10",
+        "unstructured": "Patel S, Kumar R, Shah R, AI models for surgical decision support in complex orthopedic surgeries: Enhancing decision-making and outcomes.Int J Med Robot 2019;155(2):148-58"
+      },
+      {
+        "key": "ref11",
+        "unstructured": "Liu H, Wang L, Sun W, Integrating AI with robotic systems for joint replacement: Enhancing precision and reducing recovery time.J Robot Surg 2019;13(3):321-9"
+      },
+      {
+        "key": "ref12",
+        "unstructured": "Miller T, Johnson R, Brown A, AI-integrated robotic systems for knee surgery: Improving alignment and functional outcomes.J Knee Surg 2021;34(3):251-7"
+      },
+      {
+        "key": "ref13",
+        "unstructured": "Kim M, Lee T, Choi H, AI algorithms in robotic-assisted ankle arthroscopy: Enhancing precision and reducing operative time.Foot Ankle Int 2020;41(6):713-9"
+      },
+      {
+        "key": "ref14",
+        "unstructured": "Tan R, Wu Y, Li S, AI-guided robotic systems for complex foot surgeries: Enhancing precision and outcomes.Foot Ankle Surg 2021;27(3):242-8"
+      },
+      {
+        "key": "ref15",
+        "unstructured": "Patel R, Singh P, Kumar S, AI-driven rehabilitation for ACL injuries: Improving outcomes with technology.Am J Sports Med 2021;49(6):1491-500"
+      },
+      {
+        "key": "ref16",
+        "unstructured": "Liu S, Gao Y, Zhao J, Sun C, Song Y, Zhu H, Artificial intelligence in minimally invasive surgery: Progress and challenges.Am J Surg 2020;220(2):223-32"
+      },
+      {
+        "key": "ref17",
+        "unstructured": "Thompson P, Roberts B, Smith J, AI-based robotic systems for hand surgery: Enhancing precision and reducing recovery time.J Hand Surg Am 2021;46(2):145-53"
+      },
+      {
+        "key": "ref18",
+        "unstructured": "Brown T, Williams J, Davis S, AI-based simulation platforms for improving surgical training in orthopedics.J Surg Educ 2021;78(4):1200-6"
+      },
+      {
+        "key": "ref19",
+        "unstructured": "Kim J, Park E, Lee S, Tele-rehabilitation using AI in orthopedics: A systematic review and meta-analysis.Telemed J E Health 2020;26(11):1389-96"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang Z, Liu J, Cheng Y, AI-guided robotic-assisted hip arthroscopy: Enhancing visualization and precision.J Orthop Surg Res 2021;16(1):110",
+        "DOI": "10.1186/s13018-021-02815-6"
+      },
+      {
+        "key": "ref21",
+        "unstructured": "Lee S, Kim H, Park J, AI-guided robotic systems for hip implant placement: Reducing surgical errors and improving alignment.J Orthop Translat 2021;30:11-8"
+      },
+      {
+        "key": "ref22",
+        "unstructured": "Roberts T, Zhang L, Lee K, AI-guided robotic systems for spine surgery: Enhancing precision and safety.J Neurosurg Spine 2020;33(4):528-36"
+      },
+      {
+        "key": "ref23",
+        "unstructured": "Chen X, Li Y, Wang Q, AI-assisted navigation in minimally invasive spine surgery: Improving accuracy and reducing risks. .Spine 2020;6(5):45-7"
+      }
+    ],
+    "container-title": [
+      "The Journal of Community Health Management"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://jchm.in/media/journals/xml/JCommunityHealthManag-11-3-120-132.xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://jchm.in/journal-article-file/22867",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          26
+        ]
+      ],
+      "date-time": "2024-09-26T06:14:03Z",
+      "timestamp": 1727331243000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://jchm.in/article-details/22867"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          15
+        ]
+      ]
+    },
+    "references-count": 23,
+    "journal-issue": {
+      "issue": "3",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            15
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            28
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.18231/j.jchm.2024.022",
+    "archive": [
+      "CLOCKSS"
+    ],
+    "relation": {},
+    "ISSN": [
+      "2394-272X",
+      "2394-2738"
+    ],
+    "issn-type": [
+      {
+        "value": "2394-272X",
+        "type": "print"
+      },
+      {
+        "value": "2394-2738",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          15
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Yes",
+        "name": "peer_reviewed",
+        "label": "Peer Reviewed"
+      },
+      {
+        "value": "Review Article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "29-08-2024",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "09-09-2024",
+        "order": 1,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "26-09-2024",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "Creative Commons Attribution",
+        "name": "license",
+        "label": "License",
+        "explanation": {
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        "group": {
+          "name": "rights",
+          "label": "Rights"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,988 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          17
+        ]
+      ],
+      "date-time": "2026-07-17T05:08:22Z",
+      "timestamp": 1784264902887,
+      "version": "3.55.0"
+    },
+    "reference-count": 60,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              4
+            ]
+          ],
+          "date-time": "2025-08-04T00:00:00Z",
+          "timestamp": 1754265600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              4
+            ]
+          ],
+          "date-time": "2025-08-04T00:00:00Z",
+          "timestamp": 1754265600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Diagn Progn Res"
+    ],
+    "DOI": "10.1186/s41512-025-00200-z",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          3
+        ]
+      ],
+      "date-time": "2025-08-03T23:01:59Z",
+      "timestamp": 1754262119000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "Predicting patient outcomes and risk for revision surgery after hip and knee replacement surgery: study protocol for a comparison of modelling approaches using the Swiss National Joint Registry (SIRIS)"
+    ],
+    "prefix": "10.1186",
+    "volume": "9",
+    "author": [
+      {
+        "given": "Léonie",
+        "family": "Hofstetter",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nathalie",
+        "family": "Schweyckart",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Christof",
+        "family": "Seiler",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Christian",
+        "family": "Brand",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Laura C.",
+        "family": "Rosella",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mazda",
+        "family": "Farshad",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Milo A.",
+        "family": "Puhan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7257-8122",
+        "authenticated-orcid": false,
+        "given": "Cesar A.",
+        "family": "Hincapié",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          4
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "200_CR1",
+        "unstructured": "National Association for the Development of Quality in Swiss Hospitals and Clinics. Annual report of the SIRIS registry hip & knee, 2012 – 2021 [Internet]. 2022 [cited 2023 Oct 2]. Available from: https://swiss-medtech.ch/en/news/siris-report-2022"
+      },
+      {
+        "issue": "5",
+        "key": "200_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "963",
+        "DOI": "10.2106/00004623-200405000-00012",
+        "volume": "86",
+        "author": "O Ethgen",
+        "year": "2004",
+        "unstructured": "Ethgen O, Bruyère O, Richy F, Dardennes C, Reginster JY. Health-related quality of life in total hip and total knee arthroplasty: a qualitative and systematic review of the literature. JBJS. 2004;86(5):963.",
+        "journal-title": "JBJS"
+      },
+      {
+        "key": "200_CR3",
+        "unstructured": "SIRIS foundation. National registry for hip and knee replacement: organization and function [Internet]. 2018. Available from: https://www.siris-implant.ch/en/Downloads&category=20"
+      },
+      {
+        "issue": "10172",
+        "key": "200_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "655",
+        "DOI": "10.1016/S0140-6736(18)32531-5",
+        "volume": "393",
+        "author": "JT Evans",
+        "year": "2019",
+        "unstructured": "Evans JT, Walker RW, Evans JP, Blom AW, Sayers A, Whitehouse MR. How long does a knee replacement last? A systematic review and meta-analysis of case series and national registry reports with more than 15 years of follow-up. Lancet. 2019;393(10172):655–63.",
+        "journal-title": "Lancet"
+      },
+      {
+        "issue": "10172",
+        "key": "200_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "647",
+        "DOI": "10.1016/S0140-6736(18)31665-9",
+        "volume": "393",
+        "author": "JT Evans",
+        "year": "2019",
+        "unstructured": "Evans JT, Evans JP, Walker RW, Blom AW, Whitehouse MR, Sayers A. How long does a hip replacement last? A systematic review and meta-analysis of case series and national registry reports with more than 15 years of follow-up. Lancet. 2019;393(10172):647–54.",
+        "journal-title": "Lancet"
+      },
+      {
+        "issue": "1",
+        "key": "200_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "e000435",
+        "DOI": "10.1136/bmjopen-2011-000435",
+        "volume": "2",
+        "author": "AD Beswick",
+        "year": "2012",
+        "unstructured": "Beswick AD, Wylde V, Gooberman-Hill R, Blom A, Dieppe P. What proportion of patients report long-term pain after total hip or knee replacement for osteoarthritis? A systematic review of prospective studies in unselected patients. BMJ Open. 2012;2(1):e000435.",
+        "journal-title": "BMJ Open"
+      },
+      {
+        "issue": "5",
+        "key": "200_CR7",
+        "first-page": "89",
+        "volume": "5",
+        "author": "M Bhandari",
+        "year": "2012",
+        "unstructured": "Bhandari M, Smith J, Miller LE, Block JE. Clinical and economic burden of revision knee arthroplasty. Clin Med Insights Arthritis Musculoskelet Disord. 2012;5(5):89–94.",
+        "journal-title": "Clin Med Insights Arthritis Musculoskelet Disord"
+      },
+      {
+        "issue": "1",
+        "key": "200_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "6",
+        "DOI": "10.1056/NEJMp1209500",
+        "volume": "368",
+        "author": "E Oshima Lee",
+        "year": "2013",
+        "unstructured": "Oshima Lee E, Emanuel EJ. Shared decision making to improve care and reduce costs. N Engl J Med. 2013;368(1):6–8.",
+        "journal-title": "N Engl J Med."
+      },
+      {
+        "issue": "12",
+        "key": "200_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "1060",
+        "DOI": "10.1097/MLR.0b013e318268aaff",
+        "volume": "50",
+        "author": "S Ahmed",
+        "year": "2012",
+        "unstructured": "Ahmed S, Berzon RA, Revicki DA, Lenderking WR, Moinpour CM, Basch E, et al. The use of patient-reported outcomes (PRO) within comparative effectiveness research: implications for clinical practice and health care policy. Med Care. 2012;50(12):1060–70.",
+        "journal-title": "Med Care"
+      },
+      {
+        "issue": "1",
+        "key": "200_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "57",
+        "DOI": "10.1177/1355819617740925",
+        "volume": "23",
+        "author": "J Greenhalgh",
+        "year": "2018",
+        "unstructured": "Greenhalgh J, Dalkin S, Gibbons E, Wright J, Valderas JM, Meads D, et al. How do aggregated patient-reported outcome measures data stimulate health care improvement? A realist synthesis. J Health Serv Res Policy. 2018;23(1):57–65.",
+        "journal-title": "J Health Serv Res Policy"
+      },
+      {
+        "issue": "20",
+        "key": "200_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "101116",
+        "DOI": "10.1016/j.artd.2023.101116",
+        "volume": "9",
+        "author": "B Entezari",
+        "year": "2023",
+        "unstructured": "Entezari B, Koucheki R, Abbas A, Toor J, Wolfstadt JI, Ravi B, et al. Improving resource utilization for arthroplasty care by leveraging machine learning and optimization: a systematic review. Arthroplasty Today. 2023;9(20):101116.",
+        "journal-title": "Arthroplasty Today"
+      },
+      {
+        "issue": "10",
+        "key": "200_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "2252",
+        "DOI": "10.1093/aje/kwy121",
+        "volume": "187",
+        "author": "P Aram",
+        "year": "2018",
+        "unstructured": "Aram P, Trela-Larsen L, Sayers A, Hills AF, Blom AW, McCloskey EV, et al. Estimating an individual’s probability of revision surgery after knee replacement: a comparison of modeling approaches using a national data set. Am J Epidemiol. 2018;187(10):2252–62.",
+        "journal-title": "Am J Epidemiol"
+      },
+      {
+        "issue": "2",
+        "key": "200_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "e1001381",
+        "DOI": "10.1371/journal.pmed.1001381",
+        "volume": "10",
+        "author": "EW Steyerberg",
+        "year": "2013",
+        "unstructured": "Steyerberg EW, Moons KGM, van der Windt DA, Hayden JA, Perel P, Schroter S, et al. Prognosis research strategy (PROGRESS) 3: prognostic model research. PLOS Med. 2013;10(2):e1001381.",
+        "journal-title": "PLOS Med"
+      },
+      {
+        "issue": "6",
+        "key": "200_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "1267",
+        "DOI": "10.1097/CORR.0000000000000687",
+        "volume": "477",
+        "author": "MA Fontana",
+        "year": "2019",
+        "unstructured": "Fontana MA, Lyman S, Sarker GK, Padgett DE, MacLean CH. Can machine learning algorithms predict which patients will achieve minimally clinically important differences from total joint arthroplasty? Clin Orthop Relat Res. 2019;477(6):1267.",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "issue": "4",
+        "key": "200_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "2235",
+        "DOI": "10.1007/s00402-022-04526-x",
+        "volume": "143",
+        "author": "C Klemt",
+        "year": "2023",
+        "unstructured": "Klemt C, Uzosike AC, Esposito JG, Harvey MJ, Yeo I, Subih M, et al. The utility of machine learning algorithms for the prediction of patient-reported outcome measures following primary hip and knee total joint arthroplasty. Arch Orthop Trauma Surg. 2023;143(4):2235–45.",
+        "journal-title": "Arch Orthop Trauma Surg"
+      },
+      {
+        "key": "200_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "417",
+        "DOI": "10.1146/annurev.cs.04.060190.002221",
+        "volume": "4",
+        "author": "T Mitchell",
+        "year": "1990",
+        "unstructured": "Mitchell T, Buchanan B, DeJong G, Dietterich T, Rosenbloom P, Waibel A. Machine learning. Annu Rev Comput Sci. 1990;4:417–33.",
+        "journal-title": "Annu Rev Comput Sci"
+      },
+      {
+        "issue": "30",
+        "key": "200_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "100924",
+        "DOI": "10.1016/j.imu.2022.100924",
+        "volume": "1",
+        "author": "A Alanazi",
+        "year": "2022",
+        "unstructured": "Alanazi A. Using machine learning for healthcare challenges and opportunities. Inform Med Unlocked. 2022;1(30):100924.",
+        "journal-title": "Inform Med Unlocked"
+      },
+      {
+        "issue": "11",
+        "key": "200_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "103",
+        "DOI": "10.1016/j.artd.2021.07.012",
+        "volume": "3",
+        "author": "CD Lopez",
+        "year": "2021",
+        "unstructured": "Lopez CD, Gazgalis A, Boddapati V, Shah RP, Cooper HJ, Geller JA. Artificial learning and machine learning decision guidance applications in total hip and knee arthroplasty: a systematic review. Arthroplasty Today. 2021;3(11):103–12.",
+        "journal-title": "Arthroplasty Today"
+      },
+      {
+        "issue": "110",
+        "key": "200_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "12",
+        "DOI": "10.1016/j.jclinepi.2019.02.004",
+        "volume": "1",
+        "author": "E Christodoulou",
+        "year": "2019",
+        "unstructured": "Christodoulou E, Ma J, Collins GS, Steyerberg EW, Verbakel JY, Van Calster B. A systematic review shows no performance benefit of machine learning over logistic regression for clinical prediction models. J Clin Epidemiol. 2019;1(110):12–22.",
+        "journal-title": "J Clin Epidemiol"
+      },
+      {
+        "issue": "10",
+        "key": "200_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "2085",
+        "DOI": "10.1016/j.arth.2022.10.039",
+        "volume": "38",
+        "author": "EA Karlin",
+        "year": "2023",
+        "unstructured": "Karlin EA, Lin CC, Meftah M, Slover JD, Schwarzkopf R. The impact of machine learning on total joint arthroplasty patient outcomes: a systemic review. J Arthroplasty. 2023;38(10):2085–95.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "issue": "2",
+        "key": "200_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "376",
+        "DOI": "10.1007/s00167-021-06848-6",
+        "volume": "30",
+        "author": "F Hinterwimmer",
+        "year": "2022",
+        "unstructured": "Hinterwimmer F, Lazic I, Suren C, Hirschmann MT, Pohlig F, Rueckert D, et al. Machine learning in knee arthroplasty: specific data are key—a systematic review. Knee Surg Sports Traumatol Arthrosc. 2022;30(2):376–88.",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc"
+      },
+      {
+        "key": "200_CR22",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Stacey D, Lewis KB, Smith M, Carley M, Volk R, Douglas EE, et al. Decision aids for people facing health treatment or screening decisions. Cochrane Database Syst Rev. 2024 [cited 2024 Mar 4];(1). Available from: https://doi.org/10.1002/14651858.CD001431.pub6/full.",
+        "DOI": "10.1002/14651858.CD001431.pub6/full"
+      },
+      {
+        "issue": "12",
+        "key": "200_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "1495",
+        "DOI": "10.1016/j.ijsu.2014.07.013",
+        "volume": "12",
+        "author": "E von Elm",
+        "year": "2014",
+        "unstructured": "von Elm E, Altman DG, Egger M, Pocock SJ, Gøtzsche PC, Vandenbroucke JP, et al. The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies. Int J Surg Lond Engl. 2014;12(12):1495–9.",
+        "journal-title": "Int J Surg Lond Engl"
+      },
+      {
+        "issue": "13",
+        "key": "200_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1186/s12916-014-0241-z",
+        "volume": "6",
+        "author": "GS Collins",
+        "year": "2015",
+        "unstructured": "Collins GS, Reitsma JB, Altman DG, Moons KG. Transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD): the TRIPOD Statement. BMC Med. 2015;6(13):1.",
+        "journal-title": "BMC Med"
+      },
+      {
+        "issue": "385",
+        "key": "200_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "e078378",
+        "DOI": "10.1136/bmj-2023-078378",
+        "volume": "16",
+        "author": "GS Collins",
+        "year": "2024",
+        "unstructured": "Collins GS, Moons KGM, Dhiman P, Riley RD, Beam AL, Calster BV, et al. TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ. 2024;16(385):e078378.",
+        "journal-title": "BMJ"
+      },
+      {
+        "issue": "2020",
+        "key": "200_CR26",
+        "first-page": "e6673175",
+        "volume": "30",
+        "author": "T Jentzsch",
+        "year": "2020",
+        "unstructured": "Jentzsch T, Dora C, Müller U, Farshad M. Swiss orthopaedics minimal dataset: first pilot report of reliability and validity. Adv Orthop. 2020;30(2020):e6673175.",
+        "journal-title": "Adv Orthop"
+      },
+      {
+        "key": "200_CR27",
+        "unstructured": "Kanton Zürich Gesundheitsdirektion, swiss orthopaedics, SIRIS. Projektinformation der Gesundheitsdirektion Zürich. 2019 [cited 2024 Jan 29]; Available from: https://www.zh.ch/de/gesundheit/spitaeler-kliniken/qualitaet-listenspitaeler.html#2033659348."
+      },
+      {
+        "key": "200_CR28",
+        "doi-asserted-by": "crossref",
+        "unstructured": "te Molder MEM, Dowsey MM, Smolders JMH, van Steenbergen LN, van den Ende CHM, Heesterbeek PJC. Inadequate classification of poor response after total knee arthroplasty: a comparative analysis of 15 definitions using data from the Dutch arthroplasty register and the osteoarthritis initiative database. J Arthroplasty [Internet]. 2024 [cited 2024 May 19]; Available from: https://www.sciencedirect.com/science/article/pii/S0883540324004790.",
+        "DOI": "10.1016/j.arth.2024.05.032"
+      },
+      {
+        "key": "200_CR29",
+        "unstructured": "te Molder MEM, van Onsem S, Smolders JMH, Dowsey MM, Rolfson O, Singh JA, et al. International consensus-based ranking of definitions for poor response to TKA: a Delphi study [Internet] [Thesis]. Submitted for publication [cited 2024 May 20]. Available from: https://www.maartenskliniek.nl/media/bh2eqew5/smk_proefschrift-mtm_webversie.pdf."
+      },
+      {
+        "key": "200_CR30",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Steyerberg EW. Clinical prediction models: a practical approach to development, validation, and updating [Internet]. Cham: Springer International Publishing; 2019 [cited 2024 Jan 29]. (Statistics for Biology and Health). Available from: https://doi.org/10.1007/978-3-030-16399-0.",
+        "DOI": "10.1007/978-3-030-16399-0"
+      },
+      {
+        "issue": "1",
+        "key": "200_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "6",
+        "DOI": "10.1186/s42836-019-0007-3",
+        "volume": "1",
+        "author": "L Okafor",
+        "year": "2019",
+        "unstructured": "Okafor L, Chen AF. Patient satisfaction and total hip arthroplasty: a review. Arthroplasty. 2019;1(1):6.",
+        "journal-title": "Arthroplasty"
+      },
+      {
+        "issue": "2",
+        "key": "200_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "192",
+        "DOI": "10.1007/s11420-018-9614-8",
+        "volume": "14",
+        "author": "CA Kahlenberg",
+        "year": "2018",
+        "unstructured": "Kahlenberg CA, Nwachukwu BU, McLawhorn AS, Cross MB, Cornell CN, Padgett DE. Patient satisfaction after total knee replacement: a systematic review. HSS J. 2018;14(2):192–201.",
+        "journal-title": "HSS J."
+      },
+      {
+        "issue": "1",
+        "key": "200_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "19",
+        "DOI": "10.1186/s42836-023-00172-9",
+        "volume": "5",
+        "author": "B Zhang",
+        "year": "2023",
+        "unstructured": "Zhang B, Rao S, Mekkawy KL, Rahman R, Sarfraz A, Hollifield L, et al. Risk factors for pain after total hip arthroplasty: a systematic review. Arthroplasty Lond Engl. 2023;5(1):19.",
+        "journal-title": "Arthroplasty Lond Engl"
+      },
+      {
+        "issue": "9",
+        "key": "200_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "2480",
+        "DOI": "10.1016/j.arth.2020.04.090",
+        "volume": "35",
+        "author": "AF Mannion",
+        "year": "2020",
+        "unstructured": "Mannion AF, Nauer S, Arsoy D, Impellizzeri FM, Leunig M. The association between comorbidity and the risks and early benefits of total hip arthroplasty for hip osteoarthritis. J Arthroplasty. 2020;35(9):2480–7.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "issue": "11",
+        "key": "200_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "3370",
+        "DOI": "10.1007/s11999-015-4195-z",
+        "volume": "473",
+        "author": "ME Greene",
+        "year": "2015",
+        "unstructured": "Greene ME, Rolfson O, Gordon M, Garellick G, Nemes S. Standard comorbidity measures do not predict patient-reported outcomes 1 year after total hip arthroplasty. Clin Orthop. 2015;473(11):3370–9.",
+        "journal-title": "Clin Orthop"
+      },
+      {
+        "issue": "2",
+        "key": "200_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "157",
+        "DOI": "10.1302/0301-620X.91B2.20765",
+        "volume": "91-B",
+        "author": "O Rolfson",
+        "year": "2009",
+        "unstructured": "Rolfson O, Dahlberg LE, Nilsson J å, Malchau H, Garellick G. Variables determining outcome in total hip replacement surgery. J Bone Joint Surg Br. 2009;91-B(2):157–61.",
+        "journal-title": "J Bone Joint Surg Br."
+      },
+      {
+        "issue": "10",
+        "key": "200_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "3329",
+        "DOI": "10.1016/j.arth.2018.05.040",
+        "volume": "33",
+        "author": "AT Malik",
+        "year": "2018",
+        "unstructured": "Malik AT, Jain N, Scharschmidt TJ, Li M, Glassman AH, Khan SN. Does surgeon volume affect outcomes following primary total hip arthroplasty? A systematic review J Arthroplasty. 2018;33(10):3329–42.",
+        "journal-title": "A systematic review J Arthroplasty"
+      },
+      {
+        "issue": "6",
+        "key": "200_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "1868",
+        "DOI": "10.1007/s11999-014-3504-2",
+        "volume": "472",
+        "author": "ME Greene",
+        "year": "2014",
+        "unstructured": "Greene ME, Rolfson O, Nemes S, Gordon M, Malchau H, Garellick G. Education attainment is associated with patient-reported outcomes: findings from the Swedish hip arthroplasty register. Clin Orthop Relat Res. 2014;472(6):1868.",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "issue": "3",
+        "key": "200_CR39",
+        "doi-asserted-by": "publisher",
+        "first-page": "e0283446",
+        "DOI": "10.1371/journal.pone.0283446",
+        "volume": "18",
+        "author": "U Olsen",
+        "year": "2023",
+        "unstructured": "Olsen U, Lindberg MF, Rose C, Denison E, Gay C, Aamodt A, et al. Factors correlated with pain after total knee arthroplasty: A systematic review and meta-analysis. PLoS ONE. 2023;18(3):e0283446.",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "issue": "4",
+        "key": "200_CR40",
+        "doi-asserted-by": "publisher",
+        "first-page": "e0214855",
+        "DOI": "10.1371/journal.pone.0214855",
+        "volume": "14",
+        "author": "A Bottle",
+        "year": "2019",
+        "unstructured": "Bottle A, Parikh S, Aylin P, Loeffler M. Risk factors for early revision after total hip and knee arthroplasty: national observational study from a surgeon and population perspective. PLoS ONE. 2019;14(4):e0214855.",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "issue": "1",
+        "key": "200_CR41",
+        "doi-asserted-by": "publisher",
+        "first-page": "188",
+        "DOI": "10.1016/j.arth.2019.08.024",
+        "volume": "35",
+        "author": "RM Peters",
+        "year": "2020",
+        "unstructured": "Peters RM, van Steenbergen LN, Stewart RE, Stevens M, Rijk PC, Bulstra SK, et al. Patient characteristics influence revision rate of total hip arthroplasty: American Society of Anesthesiologists score and body mass index were the strongest predictors for short-term revision after primary total hip arthroplasty. J Arthroplasty. 2020;35(1):188-192.e2.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "200_CR42",
+        "unstructured": "Marsh JD, McClure JA, Lanting B, Vasarhelyi E, MacDonald S, Naudie D, et al. Predictors of undergoing revision within five years of total knee arthroplasty: a population-based study. J Arthroplasty [Internet]. 2023 [cited 2023 Sep 25]; Available from: https://www.sciencedirect.com/science/article/pii/S0883540323009312."
+      },
+      {
+        "issue": "4",
+        "key": "200_CR43",
+        "doi-asserted-by": "publisher",
+        "first-page": "324",
+        "DOI": "10.1080/17453674.2019.1605785",
+        "volume": "90",
+        "author": "RJ Ferguson",
+        "year": "2019",
+        "unstructured": "Ferguson RJ, Silman AJ, Combescure C, Bulow E, Odin D, Hannouche D, et al. ASA class is associated with early revision and reoperation after total hip arthroplasty: an analysis of the Geneva and Swedish hip arthroplasty registries. Acta Orthop. 2019;90(4):324–30.",
+        "journal-title": "Acta Orthop"
+      },
+      {
+        "issue": "6",
+        "key": "200_CR44",
+        "doi-asserted-by": "publisher",
+        "first-page": "1780",
+        "DOI": "10.1016/j.arth.2018.01.014",
+        "volume": "33",
+        "author": "MR Angerame",
+        "year": "2018",
+        "unstructured": "Angerame MR, Fehring TK, Masonis JL, Mason JB, Odum SM, Springer BD. Early failure of primary total hip arthroplasty: is surgical approach a risk factor? J Arthroplasty. 2018;33(6):1780–5.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "issue": "21",
+        "key": "200_CR45",
+        "doi-asserted-by": "publisher",
+        "first-page": "1874",
+        "DOI": "10.2106/JBJS.19.01289",
+        "volume": "102",
+        "author": "W Hoskins",
+        "year": "2020",
+        "unstructured": "Hoskins W, Bingham R, Lorimer M, Hatton A, de Steiger RN. Early rate of revision of total hip arthroplasty related to surgical approach: an analysis of 122,345 primary total hip arthroplasties. JBJS. 2020;102(21):1874.",
+        "journal-title": "JBJS"
+      },
+      {
+        "issue": "1",
+        "key": "200_CR46",
+        "doi-asserted-by": "publisher",
+        "first-page": "251",
+        "DOI": "10.1186/1471-2474-13-251",
+        "volume": "13",
+        "author": "JJ Prokopetz",
+        "year": "2012",
+        "unstructured": "Prokopetz JJ, Losina E, Bliss RL, Wright J, Baron JA, Katz JN. Risk factors for revision of primary total hip arthroplasty: a systematic review. BMC Musculoskelet Disord. 2012;13(1):251.",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "key": "200_CR47",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Wagner A, Wittig U, Leitner L, Vielgut I, Hauer G, Ortmaier R, et al. Comparison of revision rates and epidemiological data of a single total knee arthroplasty system of different designs (cruciate retaining, posterior stabilized, mobile bearing, and fixed bearing): a meta-analysis and systematic review of clinical trials and national arthroplasty registries. Arch Orthop Trauma Surg. 2024. https://doi.org/10.1007/s00402-024-05286-6.",
+        "DOI": "10.1007/s00402-024-05286-6"
+      },
+      {
+        "issue": "19",
+        "key": "200_CR48",
+        "doi-asserted-by": "publisher",
+        "first-page": "74",
+        "DOI": "10.1186/s13018-024-04546-w",
+        "volume": "17",
+        "author": "L Liu",
+        "year": "2024",
+        "unstructured": "Liu L, Li J, Wang Y, Li X, Han P, Li X. Different modalities of patellar management in primary total knee arthroplasty: a Bayesian network meta-analysis of randomized controlled trials. J Orthop Surg. 2024;17(19):74.",
+        "journal-title": "J Orthop Surg"
+      },
+      {
+        "issue": "1",
+        "key": "200_CR49",
+        "doi-asserted-by": "publisher",
+        "first-page": "182",
+        "DOI": "10.1186/s12891-016-1025-8",
+        "volume": "17",
+        "author": "LL Jasper",
+        "year": "2016",
+        "unstructured": "Jasper LL, Jones CA, Mollins J, Pohar SL, Beaupre LA. Risk factors for revision of total knee arthroplasty: a scoping review. BMC Musculoskelet Disord. 2016;17(1):182.",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "key": "200_CR50",
+        "unstructured": "Background - NUTS - Nomenclature of territorial units for statistics - Eurostat [Internet]. [cited 2021 Oct 2]. Available from: https://ec.europa.eu/eurostat/web/nuts/background."
+      },
+      {
+        "issue": "7",
+        "key": "200_CR51",
+        "doi-asserted-by": "publisher",
+        "first-page": "1276",
+        "DOI": "10.1002/sim.7992",
+        "volume": "38",
+        "author": "RD Riley",
+        "year": "2019",
+        "unstructured": "Riley RD, Snell KI, Ensor J, Burke DL, Harrell FE, Moons KG, et al. Minimum sample size for developing a multivariable prediction model: PART II - binary and time-to-event outcomes. Stat Med. 2019;38(7):1276–96.",
+        "journal-title": "Stat Med"
+      },
+      {
+        "issue": "2",
+        "key": "200_CR52",
+        "doi-asserted-by": "publisher",
+        "first-page": "214",
+        "DOI": "10.1002/sim.6787",
+        "volume": "35",
+        "author": "GS Collins",
+        "year": "2016",
+        "unstructured": "Collins GS, Ogundimu EO, Altman DG. Sample size considerations for the external validation of a multivariable prognostic model: a resampling study. Stat Med. 2016;35(2):214–26.",
+        "journal-title": "Stat Med"
+      },
+      {
+        "issue": "45",
+        "key": "200_CR53",
+        "first-page": "1",
+        "volume": "12",
+        "author": "S van Buuren",
+        "year": "2011",
+        "unstructured": "van Buuren S, Groothuis-Oudshoorn K. Mice: multivariate imputation by chained equations in R. J Stat Softw. 2011;12(45):1–67.",
+        "journal-title": "J Stat Softw"
+      },
+      {
+        "issue": "131",
+        "key": "200_CR54",
+        "doi-asserted-by": "publisher",
+        "first-page": "104117",
+        "DOI": "10.1016/j.jbi.2022.104117",
+        "volume": "1",
+        "author": "Y Wang",
+        "year": "2022",
+        "unstructured": "Wang Y, Flowers CR, Li Z, Huang X. CondiS: A conditional survival distribution-based method for censored data imputation overcoming the hurdle in machine learning-based survival analysis. J Biomed Inform. 2022;1(131):104117.",
+        "journal-title": "J Biomed Inform"
+      },
+      {
+        "issue": "1",
+        "key": "200_CR55",
+        "doi-asserted-by": "publisher",
+        "first-page": "W1",
+        "DOI": "10.7326/M14-0698",
+        "volume": "162",
+        "author": "KGM Moons",
+        "year": "2015",
+        "unstructured": "Moons KGM, Altman DG, Reitsma JB, Ioannidis JPA, Macaskill P, Steyerberg EW, et al. Transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD): explanation and elaboration. Ann Intern Med. 2015;162(1):W1-73.",
+        "journal-title": "Ann Intern Med"
+      },
+      {
+        "issue": "4",
+        "key": "200_CR56",
+        "doi-asserted-by": "publisher",
+        "first-page": "361",
+        "DOI": "10.1002/(SICI)1097-0258(19960229)15:4<361::AID-SIM168>3.0.CO;2-4",
+        "volume": "15",
+        "author": "FE Harrell Jr",
+        "year": "1996",
+        "unstructured": "Harrell FE Jr, Lee KL, Mark DB. Multivariable prognostic models: issues in developing models, evaluating assumptions and adequacy, and measuring and reducing errors. Stat Med. 1996;15(4):361–87.",
+        "journal-title": "Stat Med."
+      },
+      {
+        "issue": "3",
+        "key": "200_CR57",
+        "doi-asserted-by": "publisher",
+        "first-page": "517",
+        "DOI": "10.1002/sim.5941",
+        "volume": "33",
+        "author": "PC Austin",
+        "year": "2014",
+        "unstructured": "Austin PC, Steyerberg EW. Graphical assessment of internal and external calibration of logistic regression models by using loess smoothers. Stat Med. 2014;33(3):517–35.",
+        "journal-title": "Stat Med"
+      },
+      {
+        "key": "200_CR58",
+        "unstructured": "R: the R project for statistical computing. [cited 2021 Feb 3]. Available from: https://www.r-project.org/."
+      },
+      {
+        "issue": "6",
+        "key": "200_CR59",
+        "doi-asserted-by": "publisher",
+        "first-page": "565",
+        "DOI": "10.1177/0272989X06295361",
+        "volume": "26",
+        "author": "AJ Vickers",
+        "year": "2006",
+        "unstructured": "Vickers AJ, Elkin EB. Decision curve analysis: a novel method for evaluating prediction models. Med Decis Mak Int J Soc Med Decis Mak. 2006;26(6):565–74.",
+        "journal-title": "Med Decis Mak Int J Soc Med Decis Mak"
+      },
+      {
+        "issue": "10",
+        "key": "200_CR60",
+        "doi-asserted-by": "publisher",
+        "first-page": "1643",
+        "DOI": "10.1016/j.spinee.2021.02.024",
+        "volume": "21",
+        "author": "AJ Vickers",
+        "year": "2021",
+        "unstructured": "Vickers AJ, Holland F. Decision curve analysis to evaluate the clinical benefit of prediction models. Spine J. 2021;21(10):1643–8.",
+        "journal-title": "Spine J"
+      }
+    ],
+    "container-title": [
+      "Diagnostic and Prognostic Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s41512-025-00200-z.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1186/s41512-025-00200-z/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s41512-025-00200-z.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          9,
+          7
+        ]
+      ],
+      "date-time": "2025-09-07T05:39:18Z",
+      "timestamp": 1757223558000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://diagnprognres.biomedcentral.com/articles/10.1186/s41512-025-00200-z"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          4
+        ]
+      ]
+    },
+    "references-count": 60,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "200"
+    ],
+    "URL": "https://doi.org/10.1186/s41512-025-00200-z",
+    "relation": {},
+    "ISSN": [
+      "2397-7523"
+    ],
+    "issn-type": [
+      {
+        "value": "2397-7523",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          4
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "9 September 2024",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "20 June 2025",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "4 August 2025",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "The local ethics committee of Canton Zurich was consulted to assess the need for ethics approval (BASEC-Nr: 2024–01188). According to the ethics committee, this project was not subject to ethics approval given that the research group exclusively processed anonymous data. This is a register-based study where all data are anonymised and thus there is no ability to directly consent patients/participants.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethics approval and consent to participate"
+        }
+      },
+      {
+        "value": "Not applicable.",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Consent for publication"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 4,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "16"
+  }
+}

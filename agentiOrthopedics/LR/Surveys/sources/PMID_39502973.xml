@@ -1,0 +1,971 @@
+
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.4 20241031//EN" "JATS-archivearticle1-4-mathml3.dtd">
+<article xml:lang="en" article-type="review-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Cureus</journal-id><journal-id journal-id-type="iso-abbrev">Cureus</journal-id><journal-id journal-id-type="pmc-domain-id">2757</journal-id><journal-id journal-id-type="pmc-domain">cureus</journal-id><journal-id journal-id-type="nlm-id">101596737</journal-id><journal-title-group><journal-title>Cureus</journal-title></journal-title-group><issn pub-type="epub">2168-8184</issn><?publisher_abbrev cureusinc?><publisher><publisher-name>Cureus Inc.</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC11537776</article-id><article-id pub-id-type="pmcid-ver">PMC11537776.1</article-id><article-id pub-id-type="pmcaid">11537776</article-id><article-id pub-id-type="pmcaiid">11537776</article-id><article-id pub-id-type="pmid">39502973</article-id><article-id pub-id-type="doi">10.7759/cureus.70932</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="heading"><subject>Internal Medicine</subject></subj-group><subj-group><subject>Medical Education</subject></subj-group><subj-group><subject>Medical Simulation</subject></subj-group></article-categories><title-group><article-title>Knee Arthroscopy in the Era of Precision Medicine: A Comprehensive Review of Tailored Approaches and Emerging Technologies</article-title></title-group><contrib-group><contrib contrib-type="editor"><name name-style="western"><surname>Muacevic</surname><given-names initials="A">Alexander</given-names></name></contrib><contrib contrib-type="editor"><name name-style="western"><surname>Adler</surname><given-names initials="JR">John R</given-names></name></contrib></contrib-group><contrib-group><contrib contrib-type="author" corresp="yes"><name name-style="western"><surname>Rathod</surname><given-names initials="V">Vinit</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Shrivastav</surname><given-names initials="S">Sandeep</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Gharpinde</surname><given-names initials="MR">Milind R</given-names></name><xref rid="aff-1" ref-type="aff">1</xref></contrib></contrib-group><aff id="aff-1">
+<label>1</label>
+Department of Orthopedics, Jawaharlal Nehru Medical College, Datta Meghe Institute of Higher Education and Research, Wardha, IND </aff><author-notes><corresp id="cor1">
+Vinit Rathod <email>rathodvinit999@gmail.com</email>
+</corresp></author-notes><pub-date date-type="pub" publication-format="electronic"><day>6</day><month>10</month><year>2024</year></pub-date><pub-date date-type="collection" publication-format="electronic"><month>10</month><year>2024</year></pub-date><volume>16</volume><issue>10</issue><issue-id pub-id-type="pmc-issue-id">471934</issue-id><elocation-id>e70932</elocation-id><history><date date-type="received"><day>29</day><month>9</month><year>2024</year></date><date date-type="accepted"><day>6</day><month>10</month><year>2024</year></date></history><pub-history><event event-type="pmc-release"><date><day>06</day><month>10</month><year>2024</year></date></event><event event-type="pmc-live"><date><day>05</day><month>11</month><year>2024</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2026-02-20 19:25:13.580"><day>20</day><month>02</month><year>2026</year></date></event></pub-history><permissions><copyright-statement>Copyright © 2024, Rathod et al.</copyright-statement><copyright-year>2024</copyright-year><copyright-holder>Rathod et al.</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article distributed under the terms of the Creative Commons Attribution License CC-BY 4.0., which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="cureus-0016-00000070932.pdf"><?pdf-name cureus-0016-00000070932.pdf?><?pdf-size 276502?><?pdf-md5 819e074c302b902cd8ca90dcdc6f16bd?><?pdf-image-server-status NEVER_LOAD?><?pdf-cloudpmc-urn urn:app:a894/11537776/819e074c302b/cureus-0016-00000070932.pdf?></self-uri><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.cureus.com/articles/307435-knee-arthroscopy-in-the-era-of-precision-medicine-a-comprehensive-review-of-tailored-approaches-and-emerging-technologies">This article is available from https://www.cureus.com/articles/307435-knee-arthroscopy-in-the-era-of-precision-medicine-a-comprehensive-review-of-tailored-approaches-and-emerging-technologies</self-uri><abstract><p>Knee arthroscopy, a minimally invasive procedure, has transformed the treatment of knee pathologies by enabling direct visualization and management with minimal tissue disruption. Recent advances in precision medicine have introduced a new dimension to this field, allowing for highly individualized surgical approaches considering each patient's unique genetic, environmental, and biomechanical characteristics. This review explores the integration of precision medicine into knee arthroscopy, focusing on tailored approaches and emerging technologies. Key innovations such as robotic-assisted surgery, advanced imaging, and patient-specific instrumentation have enhanced surgical accuracy and patient outcomes, reduced recovery times, and minimized postoperative complications. The review also examines the role of biomarkers in guiding personalized treatment strategies, including ligament reconstructions, meniscal repairs, and cartilage restoration, which are now being refined to cater to the specific needs of individual patients. While the benefits of these innovations are clear, there are challenges to widespread adoption, including cost, resource allocation, and the need for further research to validate the efficacy of precision-driven approaches in knee arthroscopy. Moreover, the ethical considerations surrounding personalized medicine, such as patient privacy and genetic data usage, must also be addressed. Despite these barriers, the future of knee arthroscopy in the era of precision medicine holds great promise, with ongoing developments in artificial intelligence, genomics, and biomarker discovery poised to further refine patient-centered care. This comprehensive review provides valuable insights into how precision medicine reshapes knee arthroscopy, offering a glimpse into the future of more targeted and effective orthopedic interventions. By embracing these advancements, surgeons and healthcare providers can ensure optimal outcomes for patients undergoing knee arthroscopy.</p></abstract><kwd-group kwd-group-type="author"><kwd>biomarkers</kwd><kwd>emerging technologies</kwd><kwd>knee arthroscopy</kwd><kwd>personalized surgery</kwd><kwd>precision medicine</kwd><kwd>robotic-assisted surgery</kwd></kwd-group><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec sec-type="intro"><title>Introduction and background</title><p>Knee arthroscopy has emerged as a cornerstone of minimally invasive surgical techniques in orthopedics. This procedure allows for direct visualization, diagnosis, and management of a wide range of knee joint pathologies using small incisions, reducing the need for more invasive surgical approaches [<xref rid="REF1" ref-type="bibr">1</xref>]. Traditional open knee surgeries, though effective, often result in extended recovery times, higher risks of complications, and increased postoperative pain. In contrast, knee arthroscopy significantly minimizes these drawbacks, offering patients faster recovery, less postoperative discomfort, and improved cosmetic outcomes. With its application in treating conditions like meniscal tears, anterior cruciate ligament (ACL) reconstructions, and cartilage repair, knee arthroscopy has gained widespread acceptance for its efficiency and positive patient outcomes across various demographics [<xref rid="REF2" ref-type="bibr">2</xref>].</p><p>In recent years, the concept of precision medicine has revolutionized many healthcare fields, and orthopedic surgery is no exception. Precision medicine, often described as personalized or individualized medicine, aims to tailor medical treatments and interventions based on a patient's unique genetic makeup, environmental exposures, and lifestyle factors. This approach marks a significant shift from the traditional one-size-fits-all model of care, promoting more targeted and effective treatments [<xref rid="REF3" ref-type="bibr">3</xref>]. Precision medicine is highly relevant in the context of knee arthroscopy as it opens up new avenues for customizing surgical interventions. For example, surgeons can now consider specific patient factors such as genetic predisposition to certain conditions, molecular profiles of the knee joint, and even biomechanical characteristics when planning surgical procedures. This has led to the development of more refined, patient-specific techniques, reducing the risk of complications and enhancing recovery outcomes [<xref rid="REF4" ref-type="bibr">4</xref>].</p><p>This comprehensive review aims to explore the intersection of precision medicine and knee arthroscopy, with a particular focus on the tailored approaches and emerging technologies that are transforming the field. By examining the historical evolution of knee arthroscopy, the principles underpinning precision medicine, and the innovative technologies that have recently emerged, this review aims to highlight how these advancements are reshaping patient care. Additionally, it will address the current challenges and limitations of integrating precision-driven strategies in knee arthroscopy and discuss future research and clinical application directions. In doing so, the review seeks to provide valuable insights into how personalized, technology-enhanced surgical interventions can further improve patient outcomes in orthopedic practice.</p></sec><sec sec-type="review"><title>Review</title><p>Evolution of knee arthroscopy</p><p>Knee arthroscopy has significantly transformed from basic techniques to advanced, precision-driven approaches. This evolution can be categorized into three primary areas: historical development, advancements in surgical techniques and equipment, and the shift from conventional to precision-driven methodologies [<xref rid="REF5" ref-type="bibr">5</xref>]. The origins of arthroscopy date back to the 1800s, with the development of the cystoscope for bladder examination, which laid the groundwork for visualizing internal structures. In 1912, Severin Nordentoft became the first to apply an endoscope to the knee joint, marking a pivotal moment in joint visualization [<xref rid="REF6" ref-type="bibr">6</xref>]. The 1920s saw Kenji Takagi develop the first arthroscope specifically designed for knee examination, although it was not initially suitable for widespread clinical use. His work primarily focused on diagnosing tuberculous knees. The practical application of arthroscopy expanded significantly in the 1950s when Masaki Watanabe introduced fiber optics, revolutionizing the field. Watanabe performed the first arthroscopic meniscectomy in 1962, further solidifying arthroscopy's role in orthopedic surgery. By the 1970s, modern arthroscopic systems began incorporating cold light sources, enhancing visibility during procedures, and extending arthroscopic techniques to other joints beyond the knee [<xref rid="REF6" ref-type="bibr">6</xref>]. Technological innovations have been instrumental in advancing knee arthroscopy. Today’s systems utilize ultrahigh-definition imaging, providing superior visualization of joint structures and significantly improving diagnostic and surgical precision. The emergence of robotic-assisted surgery allows for enhanced accuracy through three-dimensional surgical planning and real-time adjustments during procedures. Moreover, minimally invasive techniques have become standard practice, employing smaller incisions that result in reduced tissue damage, less postoperative pain, and quicker recovery times than traditional open surgeries [<xref rid="REF7" ref-type="bibr">7</xref>].</p><p>Instrumentation has also seen remarkable advancements. New implant technologies with sensors deliver real-time data on joint function and recovery progress, enabling more personalized postoperative care. Additionally, advances in three-dimensional printing allow for the creation of patient-specific implants that closely match individual anatomical structures, improving surgical outcomes [<xref rid="REF8" ref-type="bibr">8</xref>]. The transition toward precision medicine in knee arthroscopy emphasizes individualized treatment plans based on a patient's unique anatomy and specific conditions. This approach leverages data from advanced imaging and monitoring technologies to effectively tailor interventions. Enhanced recovery protocols have evolved alongside these advancements; with minimally invasive techniques and precise surgical methods, recovery regimens now focus on accelerated rehabilitation. Patients benefit from shorter recovery times and improved functional outcomes due to targeted physical therapy supported by real-time data from smart devices [<xref rid="REF9" ref-type="bibr">9</xref>]. Looking ahead, the future of knee arthroscopy is set for further advancements with emerging technologies such as nanotechnology and regenerative medicine. These innovations aim to enhance joint repair processes while minimizing the need for invasive procedures, potentially transforming how orthopedic surgeons approach knee pathologies [<xref rid="REF8" ref-type="bibr">8</xref>].</p><p>Principles of precision medicine in knee arthroscopy</p><p>Precision medicine represents an innovative approach to healthcare, tailoring medical treatments to the individual characteristics of each patient. This paradigm shift moves away from a one-size-fits-all model, strongly emphasizing individualization, data-driven insights, and a holistic perspective. Individualization entails customizing treatments based on a patient's genetic makeup, lifestyle, and environmental factors. Data-driven insights leverage advanced technologies, such as genomics and proteomics, to gather information that informs treatment decisions. Furthermore, a holistic approach considers multiple biological, psychological, and social influences to optimize patient outcomes [<xref rid="REF10" ref-type="bibr">10</xref>]. In knee arthroscopy, personalized treatment plans are increasingly utilized to enhance surgical outcomes. This process begins with a thorough preoperative assessment that employs advanced imaging techniques and a comprehensive patient history to develop tailored surgical strategies. Surgeons can implement customized surgical techniques, utilizing minimally invasive approaches and robotic-assisted systems that adapt to the patient's unique anatomical features [<xref rid="REF11" ref-type="bibr">11</xref>]. Such an approach ensures precise interventions while also minimizing recovery times. Postoperative monitoring is equally crucial; smart implants and wearable technology track recovery metrics in real time, allowing for adjustments in rehabilitation protocols based on individual progress [<xref rid="REF11" ref-type="bibr">11</xref>]. Integrating molecular biology into knee arthroscopy transforms treatment paradigms by applying genomics, proteomics, and biomarker-driven interventions. Genomics aids in understanding genetic predispositions that can guide decisions regarding surgical interventions and postoperative care. For instance, patients with specific genetic markers may respond differently to certain treatments, enabling more informed choices about surgery or conservative management [<xref rid="REF12" ref-type="bibr">12</xref>]. Proteomics studies proteins involved in joint health and helps identify biomarkers to predict surgical outcomes or complications. This information facilitates tailored interventions that mitigate risks associated with knee surgeries. Moreover, identifying biomarkers related to inflammation or cartilage degradation can lead to targeted therapies that enhance recovery and reduce the necessity for invasive procedures [<xref rid="REF12" ref-type="bibr">12</xref>]. Principles of precision medicine in knee arthroscopy are illustrated in Table <xref rid="TAB1" ref-type="table">1</xref>.</p><table-wrap position="float" id="TAB1" orientation="portrait"><label>Table 1</label><caption><title>Principles of precision medicine in knee arthroscopy</title><p>ACL: anterior cruciate ligament; AR: augmented reality; VR: virtual reality; PSI: patient-specific instrumentation</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Principle
+</td><td rowspan="1" colspan="1">
+Description
+</td><td rowspan="1" colspan="1">
+Applications in knee arthroscopy
+</td></tr><tr><td rowspan="1" colspan="1">
+Genomic and proteomic profiling [<xref rid="REF13" ref-type="bibr">13</xref>]
+</td><td rowspan="1" colspan="1">
+Utilizes patient-specific molecular data, such as genetic and protein markers, to predict disease risk, treatment responses, and healing potential
+</td><td rowspan="1" colspan="1">
+Identifying patients with genetic predispositions for delayed healing or complications, customizing pharmacologic interventions to improve outcomes
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Personalized biomechanical analysis [<xref rid="REF14" ref-type="bibr">14</xref>]
+</td><td rowspan="1" colspan="1">
+Involves the use of advanced imaging and motion analysis to assess individual joint kinematics and load distribution for tailored surgical approaches
+</td><td rowspan="1" colspan="1">
+Enhances surgical precision in ligament reconstruction and cartilage repair by providing detailed insight into the patient’s unique biomechanics, optimizing graft placement and surgical technique
+</td></tr><tr><td rowspan="1" colspan="1">
+Robotics and navigation systems [<xref rid="REF15" ref-type="bibr">15</xref>]
+</td><td rowspan="1" colspan="1">
+Leverages robotic assistance and navigation systems for real-time intraoperative guidance, enhancing accuracy and minimizing human error
+</td><td rowspan="1" colspan="1">
+Used in ACL reconstruction, meniscal repair, and complex cartilage procedures, offering enhanced precision in graft placement, cutting, and soft tissue management
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+AR and VR [<xref rid="REF16" ref-type="bibr">16</xref>]
+</td><td rowspan="1" colspan="1">
+Provides immersive visualization tools for preoperative planning and intraoperative assistance, allowing surgeons to visualize patient-specific anatomy in 3D
+</td><td rowspan="1" colspan="1">
+Improves the accuracy of procedures by overlaying patient-specific anatomical details during arthroscopy, assisting in meniscal repairs, chondroplasty, and cartilage restoration
+</td></tr><tr><td rowspan="1" colspan="1">
+Bioprinting and tissue engineering [<xref rid="REF17" ref-type="bibr">17</xref>]
+</td><td rowspan="1" colspan="1">
+Involves creating custom biological grafts and implants tailored to the patient’s anatomy and pathology using 3D bioprinting and tissue engineering techniques
+</td><td rowspan="1" colspan="1">
+Enables personalized meniscal and cartilage restoration by producing grafts closely mimicking native tissue, improving long-term durability and function
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Smart implants and wearable sensors [<xref rid="REF18" ref-type="bibr">18</xref>]
+</td><td rowspan="1" colspan="1">
+Real-time data collection through implants and sensors that monitor healing progress, joint movement, and load distribution during recovery
+</td><td rowspan="1" colspan="1">
+Provides continuous postoperative monitoring, allowing for early detection of complications and the ability to adjust rehabilitation protocols based on patient-specific recovery data
+</td></tr><tr><td rowspan="1" colspan="1">
+PSI [<xref rid="REF19" ref-type="bibr">19</xref>]
+</td><td rowspan="1" colspan="1">
+Custom instruments are designed based on preoperative imaging to match the patient's anatomy for increased surgical precision
+</td><td rowspan="1" colspan="1">
+Tailored ACL reconstruction and meniscal repair with reduced surgical time, improved graft positioning, and minimized risk of postoperative complications
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Biological augmentation [<xref rid="REF20" ref-type="bibr">20</xref>]
+</td><td rowspan="1" colspan="1">
+Use growth factors, stem cells, and biological agents to enhance tissue healing and regeneration
+</td><td rowspan="1" colspan="1">
+Enhances cartilage repair and meniscal healing by delivering biological agents directly to the injury site, promoting faster and more effective recovery
+</td></tr></tbody></table></table-wrap><p>Patient-specific approaches in knee arthroscopy</p><p>The evolution of knee arthroscopy underscores the importance of tailoring surgical techniques and rehabilitation programs to individual patient profiles. This personalized approach enhances outcomes and minimizes complications, making it a crucial aspect of modern orthopedic care [<xref rid="REF21" ref-type="bibr">21</xref>]. Patient profiling is fundamental in determining the most effective treatment strategies. Age plays a significant role, as younger patients may present with different knee conditions and have varying recovery expectations compared to older individuals, who often have more comorbidities that can complicate surgical outcomes. Additionally, a patient's activity level is critical; active individuals may require more aggressive interventions to restore functionality, whereas sedentary patients might benefit from less invasive options that prioritize safety and recovery [<xref rid="REF22" ref-type="bibr">22</xref>]. Comorbidities also significantly influence surgical decisions. Conditions such as obesity, diabetes, and cardiovascular diseases can complicate both the surgery itself and the recovery process. By assessing these factors, surgeons can customize their approaches to ensure that the selected techniques align with the patient’s overall health status, enhancing safety and effectiveness [<xref rid="REF23" ref-type="bibr">23</xref>]. Recent advancements in biomarker research enable surgeons to tailor surgical techniques based on individual biological markers. This customization can optimize surgical outcomes by identifying inflammation levels that indicate the extent of tissue damage, guiding the choice of surgical interventions. Additionally, understanding a patient’s biological response to surgery can inform decisions regarding regenerative techniques or specific rehabilitation protocols [<xref rid="REF24" ref-type="bibr">24</xref>]. Moreover, technologies such as 3D printing facilitate the creation of patient-specific implants that better fit individual anatomies. This personalized approach improves integration with natural tissues and enhances overall function after surgery, leading to improved long-term outcomes [<xref rid="REF25" ref-type="bibr">25</xref>]. Rehabilitation following knee arthroscopy is critical for recovery and long-term success. Individualized rehabilitation programs can include tailored exercise regimens designed by physical therapists based on preoperative assessments. These regimens cater to each patient's activity level and personal goals, ensuring a more effective recovery process [<xref rid="REF26" ref-type="bibr">26</xref>]. The integration of smart technology also plays a vital role in rehabilitation. Wearable devices can monitor recovery metrics such as range of motion and activity levels, allowing for real-time adjustments to rehabilitation plans. Furthermore, telehealth integration enhances patient engagement by providing remote monitoring and consultations, making it easier for patients to adhere to rehabilitation protocols [<xref rid="REF27" ref-type="bibr">27</xref>]. Patient-specific approaches in knee arthroscopy are illustrated in Table <xref rid="TAB2" ref-type="table">2</xref>.</p><table-wrap position="float" id="TAB2" orientation="portrait"><label>Table 2</label><caption><title>Patient-specific approaches in knee arthroscopy</title><p>PSI: patient-specific instrumentation; ACL: anterior cruciate ligament; AI: artificial intelligence; MRI: magnetic resonance imaging; CT: computed tomography; AR: augmented reality; VR: virtual reality; ACI: autologous chondrocyte implantation; PRP: platelet-rich plasma</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Approach
+</td><td rowspan="1" colspan="1">
+Description
+</td><td rowspan="1" colspan="1">
+Key benefits
+</td><td rowspan="1" colspan="1">
+Example technologies/techniques
+</td></tr><tr><td rowspan="1" colspan="1">
+Genomic and proteomic profiling [<xref rid="REF28" ref-type="bibr">28</xref>]
+</td><td rowspan="1" colspan="1">
+Analyzing genetic and protein data to identify individual risk factors for complications and healing responses
+</td><td rowspan="1" colspan="1">
+Tailored pharmacological interventions, optimized rehabilitation, and reduced postoperative complications
+</td><td rowspan="1" colspan="1">
+Genetic testing and proteomic markers
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Personalized biomechanical analysis [<xref rid="REF29" ref-type="bibr">29</xref>]
+</td><td rowspan="1" colspan="1">
+Utilizing patient-specific joint kinematics and load distribution to customize surgical techniques
+</td><td rowspan="1" colspan="1">
+Improved accuracy in surgical planning, better alignment, and reduced risk of mechanical failure
+</td><td rowspan="1" colspan="1">
+3D motion analysis and computational modeling
+</td></tr><tr><td rowspan="1" colspan="1">
+PSI [<xref rid="REF30" ref-type="bibr">30</xref>]
+</td><td rowspan="1" colspan="1">
+Customized surgical tools based on patient’s anatomical data from preoperative imaging
+</td><td rowspan="1" colspan="1">
+Enhanced precision in procedures such as ACL reconstruction, reduced surgical time, and improved implant positioning
+</td><td rowspan="1" colspan="1">
+MRI/CT-based custom instruments
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Robotics and navigation systems [<xref rid="REF31" ref-type="bibr">31</xref>]
+</td><td rowspan="1" colspan="1">
+Robotic-assisted surgery with real-time feedback and navigation for precise execution of procedures
+</td><td rowspan="1" colspan="1">
+Increased accuracy, reduced human error, and enhanced precision in ligament reconstruction, graft placement, and cartilage repair
+</td><td rowspan="1" colspan="1">
+Robotic-assisted surgery platforms and intraoperative navigation systems
+</td></tr><tr><td rowspan="1" colspan="1">
+AR and VR [<xref rid="REF32" ref-type="bibr">32</xref>]
+</td><td rowspan="1" colspan="1">
+Real-time visualization of anatomical structures during surgery using AR and preoperative planning through VR
+</td><td rowspan="1" colspan="1">
+Enhanced precision in complex procedures, improved surgeon training, and better preoperative planning for customized interventions
+</td><td rowspan="1" colspan="1">
+AR glasses and VR surgical planning platforms
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Bioprinting and tissue engineering [<xref rid="REF33" ref-type="bibr">33</xref>]
+</td><td rowspan="1" colspan="1">
+Creating patient-specific grafts and implants that replicate native cartilage or meniscus
+</td><td rowspan="1" colspan="1">
+Personalized cartilage restoration and meniscal repair with longer lasting results
+</td><td rowspan="1" colspan="1">
+3D bioprinting and tissue-engineered scaffolds
+</td></tr><tr><td rowspan="1" colspan="1">
+Smart implants and wearable sensors [<xref rid="REF34" ref-type="bibr">34</xref>]
+</td><td rowspan="1" colspan="1">
+Real-time monitoring of joint movement, load, and healing progress through wearable or implantable devices
+</td><td rowspan="1" colspan="1">
+Data-driven postoperative rehabilitation, early detection of complications, and personalized rehabilitation plans
+</td><td rowspan="1" colspan="1">
+Smart knee implants and wearable motion sensors
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Cartilage restoration with precision medicine [<xref rid="REF35" ref-type="bibr">35</xref>]
+</td><td rowspan="1" colspan="1">
+Customizing cartilage repair techniques based on patient-specific molecular and biomechanical data
+</td><td rowspan="1" colspan="1">
+Enhanced durability and functionality of repaired cartilage and better selection of candidates for specific treatments
+</td><td rowspan="1" colspan="1">
+ACI, osteochondral allograft transplantation, growth factors, or stem cell therapies
+</td></tr><tr><td rowspan="1" colspan="1">
+Meniscal repair with biological augmentation [<xref rid="REF36" ref-type="bibr">36</xref>]
+</td><td rowspan="1" colspan="1">
+Tailoring meniscal repair techniques using patient-specific healing potential, often augmented with biological agents
+</td><td rowspan="1" colspan="1">
+Improved meniscal preservation, faster healing, and reduced risk of future meniscal degeneration
+</td><td rowspan="1" colspan="1">
+All-inside repair systems, growth factors, and PRP injections
+</td></tr></tbody></table></table-wrap><p>Emerging technologies enhancing knee arthroscopy</p><p>Knee arthroscopy is undergoing a significant transformation, driven by innovative technologies that enhance precision, accuracy, and overall patient outcomes. Among these advancements, robotic-assisted systems stand out for their ability to improve surgical precision. These robotic platforms enable surgeons to perform procedures more accurately, making real-time adjustments based on the patient's unique anatomy. Additionally, integrating artificial intelligence (AI) into surgical planning is revolutionizing the field. AI can analyze extensive datasets to assist surgeons in making informed decisions, thereby optimizing treatment plans tailored to individual needs [<xref rid="REF11" ref-type="bibr">11</xref>]. Another groundbreaking area is using 3D imaging and virtual reality (VR) tools. Advanced imaging technologies provide high-definition, three-dimensional views of the knee joint, facilitating better presurgical planning and enhancing the surgeon's understanding of the joint's complex anatomy. Furthermore, VR tools are being incorporated into training programs for surgeons, allowing them to practice procedures in a simulated environment. This immersive experience enhances surgical skills and prepares surgeons for complex cases without the risks associated with real-life operations [<xref rid="REF37" ref-type="bibr">37</xref>]. Intraoperative navigation systems are also making a significant impact on knee arthroscopy. These systems offer real-time feedback during surgery, providing enhanced surgical field visualization. This technology ensures accurate placement of instruments and implants, thereby reducing the likelihood of complications and improving overall surgical outcomes [<xref rid="REF38" ref-type="bibr">38</xref>]. Finally, nanotechnology and wearable devices are emerging as essential components in postoperative care. Wearable sensors can monitor patients' recovery progress after surgery by tracking activity levels and joint function. These data are transmitted to healthcare providers for ongoing assessment, allowing for timely interventions if necessary. Additionally, advancements in nanotechnology may enhance healing processes by delivering targeted therapies directly to affected tissues, potentially speeding up recovery times and improving outcomes [<xref rid="REF39" ref-type="bibr">39</xref>]. Integrating these cutting-edge technologies into knee arthroscopy represents a significant leap forward in orthopedic surgery. Enhancing precision and personalizing care promises to improve patient experiences and outcomes in knee surgeries [<xref rid="REF8" ref-type="bibr">8</xref>]. Emerging technologies enhancing knee arthroscopy are summarized in Table <xref rid="TAB3" ref-type="table">3</xref>.</p><table-wrap position="float" id="TAB3" orientation="portrait"><label>Table 3</label><caption><title>Emerging technologies that enhance knee arthroscopy</title><p>ACL: anterior cruciate ligament; AR: augmented reality; VR: virtual reality; AI: artificial intelligence; MRI: magnetic resonance imaging; CT: computed tomography</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Technology
+</td><td rowspan="1" colspan="1">
+Description
+</td><td rowspan="1" colspan="1">
+Applications in knee arthroscopy
+</td><td rowspan="1" colspan="1">
+Key benefits
+</td></tr><tr><td rowspan="1" colspan="1">
+Robotic-assisted surgery [<xref rid="REF40" ref-type="bibr">40</xref>]
+</td><td rowspan="1" colspan="1">
+Robotic systems provide real-time feedback and assist in precision surgery, such as ligament reconstruction
+</td><td rowspan="1" colspan="1">
+ACL reconstruction, meniscal repair, and complex cartilage restoration
+</td><td rowspan="1" colspan="1">
+Increased accuracy, reduced human error, optimized graft placement, and enhanced precision
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+AR [<xref rid="REF41" ref-type="bibr">41</xref>]
+</td><td rowspan="1" colspan="1">
+AR overlays real-time digital information onto the surgical field, enhancing the surgeon's view of the anatomy
+</td><td rowspan="1" colspan="1">
+Meniscal repair, cartilage restoration, and ACL reconstruction
+</td><td rowspan="1" colspan="1">
+Improved intraoperative visualization, enhanced precision in soft tissue procedures, and better navigation during surgery
+</td></tr><tr><td rowspan="1" colspan="1">
+VR [<xref rid="REF42" ref-type="bibr">42</xref>]
+</td><td rowspan="1" colspan="1">
+VR is used for surgical training, preoperative planning, and simulation of knee arthroscopy
+</td><td rowspan="1" colspan="1">
+Preoperative planning, surgical simulations, and training of knee arthroscopy procedures
+</td><td rowspan="1" colspan="1">
+Enhanced surgical training, better preoperative visualization, and improved surgeon preparedness
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+3D bioprinting [<xref rid="REF43" ref-type="bibr">43</xref>]
+</td><td rowspan="1" colspan="1">
+3D bioprinting allows for the creation of patient-specific grafts and tissue scaffolds for cartilage or meniscus repair
+</td><td rowspan="1" colspan="1">
+Cartilage restoration and meniscal repair
+</td><td rowspan="1" colspan="1">
+Customizable tissue regeneration, improved integration of grafts, and long-term durability of repairs
+</td></tr><tr><td rowspan="1" colspan="1">
+Smart implants [<xref rid="REF34" ref-type="bibr">34</xref>]
+</td><td rowspan="1" colspan="1">
+Smart implants provide real-time data on knee joint performance, load distribution, and healing progress after surgery
+</td><td rowspan="1" colspan="1">
+ACL reconstruction, knee replacement monitoring, and postarthroscopic healing tracking
+</td><td rowspan="1" colspan="1">
+Real-time data collection, personalized rehabilitation, and early detection of complications
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Wearable sensors [<xref rid="REF44" ref-type="bibr">44</xref>]
+</td><td rowspan="1" colspan="1">
+Sensors worn on the body or integrated into rehabilitation devices to monitor joint movement and recovery
+</td><td rowspan="1" colspan="1">
+Postoperative rehabilitation and real-time tracking of knee function after surgery
+</td><td rowspan="1" colspan="1">
+Data-driven recovery protocols, personalized rehab plans, and better monitoring of patient progress
+</td></tr><tr><td rowspan="1" colspan="1">
+3D motion analysis [<xref rid="REF45" ref-type="bibr">45</xref>]
+</td><td rowspan="1" colspan="1">
+This technology uses high-resolution cameras and sensors to analyze knee joint kinematics during movement
+</td><td rowspan="1" colspan="1">
+Preoperative assessment of joint function, biomechanics analysis, and postinjury functional assessment
+</td><td rowspan="1" colspan="1">
+Precise understanding of joint dynamics and customized surgical planning based on individual biomechanics
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+AI algorithms [<xref rid="REF46" ref-type="bibr">46</xref>]
+</td><td rowspan="1" colspan="1">
+AI algorithms analyze large datasets to optimize surgical planning and postoperative rehabilitation strategies
+</td><td rowspan="1" colspan="1">
+Preoperative risk stratification, optimization of postoperative rehab programs, and prediction of surgical outcomes
+</td><td rowspan="1" colspan="1">
+Enhanced decision-making, personalized treatment plans, and data-driven postoperative care
+</td></tr><tr><td rowspan="1" colspan="1">
+High-resolution imaging technologies [<xref rid="REF47" ref-type="bibr">47</xref>]
+</td><td rowspan="1" colspan="1">
+Advanced imaging, such as 3D MRI or CT, for detailed visualization of knee joint structures
+</td><td rowspan="1" colspan="1">
+Preoperative planning, intraoperative guidance in cartilage repair, meniscal surgeries, and ligament reconstruction
+</td><td rowspan="1" colspan="1">
+Improved diagnostic accuracy, better visualization of soft tissues and cartilage, and early detection of pathologies
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Nanotechnology in implants [<xref rid="REF48" ref-type="bibr">48</xref>]
+</td><td rowspan="1" colspan="1">
+Nanoscale materials and coatings for knee implants to improve biocompatibility and durability
+</td><td rowspan="1" colspan="1">
+Joint resurfacing, cartilage restoration, and meniscus replacement
+</td><td rowspan="1" colspan="1">
+Enhanced integration with natural tissue, reduced inflammation, and longer lasting implants
+</td></tr></tbody></table></table-wrap><p>Tailored surgical techniques</p><p>Knee arthroscopy is experiencing a transformative evolution, characterized by tailored surgical techniques that enhance the precision and effectiveness of treatments. Innovations in ligament repair and reconstruction, particularly with techniques such as bridge-enhancing ACL repair (BEAR) and internal bracing (IB), are leading this evolution. The BEAR technique facilitates the natural healing of the ACL by using an implant that bridges the torn ends of the ligament, combined with the patient’s blood, to promote healing. This approach not only preserves the original attachments of the ACL but also has the potential to lead to faster recovery times and improved patient satisfaction compared to traditional reconstruction methods. Similarly, IB augments ACL reconstruction by utilizing suture tape as a secondary stabilizer, enhancing graft integration and enabling earlier rehabilitation without increasing the risk of graft failure [<xref rid="REF49" ref-type="bibr">49</xref>]. In meniscal repair, personalized treatment pathways are becoming increasingly prevalent. Surgeons are leveraging advanced 3D imaging technologies to create detailed models of a patient's knee, allowing customized surgical approaches tailored to individual anatomical variations and specific injury patterns. This precision in surgical planning can lead to better outcomes and reduced complications, ensuring that each patient receives care that closely aligns with their unique needs [<xref rid="REF43" ref-type="bibr">43</xref>]. Cartilage restoration is also benefiting from innovative techniques that emphasize customization. Regenerative medicine approaches, such as stem cell therapy and tissue engineering, aim to harness the body’s natural healing processes to restore cartilage. These methods have the potential to reduce the need for invasive surgeries or artificial implants. Furthermore, 3D printing technology creates patient-specific implants that fit individual anatomical requirements perfectly. This level of customization not only improves implant integration but also minimizes complications commonly associated with standard implants [<xref rid="REF20" ref-type="bibr">20</xref>]. The shift toward patient-specific instrumentation is further enhancing surgical precision in knee arthroscopy. Surgeons can now utilize advanced imaging techniques to develop highly accurate 3D models of a patient's joint, which inform personalized treatment plans and implant designs. This tailored approach significantly enhances surgical accuracy and improves postoperative outcomes [<xref rid="REF50" ref-type="bibr">50</xref>]. Tailored surgical techniques in knee arthroscopy are summarized in Table <xref rid="TAB4" ref-type="table">4</xref>.</p><table-wrap position="float" id="TAB4" orientation="portrait"><label>Table 4</label><caption><title>Tailored surgical techniques in knee arthroscopy</title><p>PSI: patient-specific instrumentation; ACL: anterior cruciate ligament; PRP: platelet-rich plasma; ACI: autologous chondrocyte implantation; PCL: posterior cruciate ligament; HTO: high tibial osteotomy</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Surgical technique
+</td><td rowspan="1" colspan="1">
+Description
+</td><td rowspan="1" colspan="1">
+Application in knee arthroscopy
+</td><td rowspan="1" colspan="1">
+Key benefits
+</td></tr><tr><td rowspan="1" colspan="1">
+PSI [<xref rid="REF19" ref-type="bibr">19</xref>]
+</td><td rowspan="1" colspan="1">
+Customized surgical tools designed from preoperative imaging, tailored to the patient’s specific anatomy
+</td><td rowspan="1" colspan="1">
+ACL reconstruction, meniscal repair, and osteochondral transplantation
+</td><td rowspan="1" colspan="1">
+Enhanced precision, reduced surgical time, and improved implant positioning
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+All-inside meniscal repair [<xref rid="REF51" ref-type="bibr">51</xref>]
+</td><td rowspan="1" colspan="1">
+A minimally invasive technique that uses smaller incisions and fewer sutures, tailored to the type and location of the tear
+</td><td rowspan="1" colspan="1">
+Meniscal tear repair
+</td><td rowspan="1" colspan="1">
+Minimally invasive, reduced recovery time, and preservation of meniscal tissue
+</td></tr><tr><td rowspan="1" colspan="1">
+Biological augmentation of cartilage repair [<xref rid="REF52" ref-type="bibr">52</xref>]
+</td><td rowspan="1" colspan="1">
+Use of growth factors, stem cells, or PRP to enhance healing in cartilage restoration tailored to patient pathology
+</td><td rowspan="1" colspan="1">
+Cartilage restoration techniques such as microfracture and ACI
+</td><td rowspan="1" colspan="1">
+Accelerated healing, improved cartilage durability, and enhanced tissue regeneration
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+ACI [<xref rid="REF53" ref-type="bibr">53</xref>]
+</td><td rowspan="1" colspan="1">
+Personalized approach using the patient's cartilage cells for repair
+</td><td rowspan="1" colspan="1">
+Treatment of focal cartilage defects
+</td><td rowspan="1" colspan="1">
+Long-term durability, patient-specific tissue regeneration, and better cartilage integration
+</td></tr><tr><td rowspan="1" colspan="1">
+Osteochondral autograft transplantation [<xref rid="REF54" ref-type="bibr">54</xref>]
+</td><td rowspan="1" colspan="1">
+Transfer of cartilage from a non-weight-bearing area to the damaged area, tailored to patient-specific cartilage defects
+</td><td rowspan="1" colspan="1">
+Focal cartilage defect repair
+</td><td rowspan="1" colspan="1">
+Personalized cartilage restoration, reduced risk of rejection, and faster integration
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Ligament reconstruction with custom grafts [<xref rid="REF55" ref-type="bibr">55</xref>]
+</td><td rowspan="1" colspan="1">
+Use of patient-specific grafts (e.g., hamstring or patellar tendon) for ligament repair, with personalized graft placement
+</td><td rowspan="1" colspan="1">
+ACL and PCL reconstructions
+</td><td rowspan="1" colspan="1">
+Enhanced graft durability, better anatomical fit, and optimized biomechanics after surgery
+</td></tr><tr><td rowspan="1" colspan="1">
+Partial knee replacement [<xref rid="REF56" ref-type="bibr">56</xref>]
+</td><td rowspan="1" colspan="1">
+Customized to treat specific compartments of the knee affected by arthritis or injury, sparing healthy tissues
+</td><td rowspan="1" colspan="1">
+Patients with localized knee osteoarthritis or injury
+</td><td rowspan="1" colspan="1">
+Preservation of healthy tissue, reduced recovery time, and more natural joint movement
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+HTO [<xref rid="REF57" ref-type="bibr">57</xref>]
+</td><td rowspan="1" colspan="1">
+Tailored realignment surgery that shifts weight-bearing load away from the damaged part of the knee
+</td><td rowspan="1" colspan="1">
+Patients with knee malalignment or early-stage arthritis
+</td><td rowspan="1" colspan="1">
+Delays need for full knee replacement, preserves joint function, and reduces pain
+</td></tr><tr><td rowspan="1" colspan="1">
+Custom 3D-printed implants [<xref rid="REF58" ref-type="bibr">58</xref>]
+</td><td rowspan="1" colspan="1">
+Personalized implants made using 3D printing technology to fit individual patient anatomy
+</td><td rowspan="1" colspan="1">
+Joint resurfacing, and partial or full knee replacements
+</td><td rowspan="1" colspan="1">
+Perfect anatomical fit, reduced implant failure, and enhanced joint function
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Minimally invasive ACL reconstruction [<xref rid="REF59" ref-type="bibr">59</xref>]
+</td><td rowspan="1" colspan="1">
+ACL reconstruction using smaller incisions and patient-specific grafts
+</td><td rowspan="1" colspan="1">
+ACL injury treatment
+</td><td rowspan="1" colspan="1">
+Quicker recovery, less postoperative pain, reduced scarring, and tailored graft placement for better functional outcomes
+</td></tr></tbody></table></table-wrap><p>Challenges and limitations in precision knee arthroscopy</p><p>The integration of precision medicine into knee arthroscopy encounters numerous challenges and limitations that impede its widespread adoption. Key concerns include barriers to personalized approaches, costs, resource allocation, and ethical considerations related to biomarker-driven surgery [<xref rid="REF60" ref-type="bibr">60</xref>]. One of the foremost obstacles to adopting personalized methods in knee arthroscopy is the lack of standardization. Without established protocols for implementing these innovative techniques, variability in practice can result in inconsistent outcomes. This inconsistency makes it difficult for healthcare providers to justify deviating from traditional approaches [<xref rid="REF61" ref-type="bibr">61</xref>]. Additionally, surgeons may require specialized training to effectively utilize new technologies, which can discourage institutions from adopting these advancements, particularly in resource-limited settings. Moreover, resistance to change within the medical community poses a challenge, as established surgical practices are often deeply ingrained. Many practitioners may hesitate to embrace new methodologies if they perceive them as unproven or overly complex [<xref rid="REF61" ref-type="bibr">61</xref>]. Cost is another significant barrier associated with precision knee arthroscopy. Advanced technologies like robotic systems and high-definition imaging often entail substantial upfront investments. Healthcare facilities must carefully assess whether the potential benefits of these technologies justify their costs, which can be a significant hurdle for many institutions. Furthermore, ongoing maintenance and upgrades of sophisticated equipment can strain budgets, compelling hospitals to balance the need for cutting-edge technology against financial constraints [<xref rid="REF62" ref-type="bibr">62</xref>]. Economic viability is also a concern; studies have indicated that the cost-effectiveness of arthroscopic procedures is sometimes questionable compared to nonoperative treatments. In certain instances, including arthroscopy does not significantly enhance outcomes relative to its costs, raising further doubts about its economic justification in standard practice [<xref rid="REF62" ref-type="bibr">62</xref>]. Ethical and clinical issues surrounding biomarker-driven surgery add another layer of complexity. The reliance on biomarkers to guide surgical decisions raises questions about their predictive validity. If these biomarkers do not accurately reflect patient outcomes, there is a risk of inappropriate surgical interventions that could potentially harm patients.</p><p>Additionally, personalized approaches dependent on advanced diagnostics may exacerbate disparities in healthcare access [<xref rid="REF63" ref-type="bibr">63</xref>]. Patients in underresourced settings may lack access to necessary tests or technologies, leading to unequal treatment opportunities. Informed consent also becomes more intricate with biomarker-driven approaches; the complexity requires clear communication with patients regarding potential risks and benefits. Ensuring that patients fully understand these factors can be challenging, especially when discussing novel technologies that are still evolving [<xref rid="REF63" ref-type="bibr">63</xref>]. The challenges and limitations in precision knee arthroscopy are summarized in Table <xref rid="TAB5" ref-type="table">5</xref>.</p><table-wrap position="float" id="TAB5" orientation="portrait"><label>Table 5</label><caption><title>Challenges and limitations in precision knee arthroscopy</title><p>AI: artificial intelligence</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Challenge/limitation
+</td><td rowspan="1" colspan="1">
+Description
+</td><td rowspan="1" colspan="1">
+Impact on knee arthroscopy
+</td><td rowspan="1" colspan="1">
+Potential solutions
+</td></tr><tr><td rowspan="1" colspan="1">
+High cost of advanced technologies [<xref rid="REF64" ref-type="bibr">64</xref>]
+</td><td rowspan="1" colspan="1">
+Precision tools and technologies, such as robotics, 3D printing, and smart implants, are expensive
+</td><td rowspan="1" colspan="1">
+Limits accessibility for patients and increases the overall cost of treatment
+</td><td rowspan="1" colspan="1">
+Development of cost-effective technologies and insurance coverage expansion
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Limited access to genomic and proteomic data [<xref rid="REF65" ref-type="bibr">65</xref>]
+</td><td rowspan="1" colspan="1">
+Not all patients have access to genomic testing, limiting personalized treatment planning
+</td><td rowspan="1" colspan="1">
+Hinders the ability to tailor surgical approaches based on molecular data
+</td><td rowspan="1" colspan="1">
+Integration of affordable genetic screening in routine clinical settings
+</td></tr><tr><td rowspan="1" colspan="1">
+Lack of clinical validation [<xref rid="REF66" ref-type="bibr">66</xref>]
+</td><td rowspan="1" colspan="1">
+Many emerging technologies lack large-scale clinical trials to validate their long-term efficacy
+</td><td rowspan="1" colspan="1">
+Slows the adoption of novel precision-based techniques in routine clinical practice
+</td><td rowspan="1" colspan="1">
+Conducting more comprehensive, multicenter clinical trials
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Steep learning curve for surgeons [<xref rid="REF67" ref-type="bibr">67</xref>]
+</td><td rowspan="1" colspan="1">
+Technologies like robotics and AI require specialized training and experience
+</td><td rowspan="1" colspan="1">
+Limits widespread use of precision technologies, especially in low-resource settings
+</td><td rowspan="1" colspan="1">
+Increased access to training programs, hands-on workshops, and virtual simulations for surgeons
+</td></tr><tr><td rowspan="1" colspan="1">
+Interoperability issues between systems [<xref rid="REF68" ref-type="bibr">68</xref>]
+</td><td rowspan="1" colspan="1">
+Lack of standardization among different technologies (e.g., robotic systems, imaging, and navigation platforms)
+</td><td rowspan="1" colspan="1">
+This can result in compatibility problems during surgery, reducing efficiency and precision
+</td><td rowspan="1" colspan="1">
+Development of standardized protocols and better integration between systems
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Increased surgery time [<xref rid="REF69" ref-type="bibr">69</xref>]
+</td><td rowspan="1" colspan="1">
+The use of advanced technologies may increase the time taken for surgery due to the need for setup and precision tasks
+</td><td rowspan="1" colspan="1">
+Prolonged operating times can increase risks like infection and longer recovery periods for patients
+</td><td rowspan="1" colspan="1">
+Refining procedures to streamline technology use and decrease time
+</td></tr><tr><td rowspan="1" colspan="1">
+Patient selection criteria [<xref rid="REF11" ref-type="bibr">11</xref>]
+</td><td rowspan="1" colspan="1">
+Not all patients are ideal candidates for precision-based approaches (e.g., genomic therapies or robotic surgeries)
+</td><td rowspan="1" colspan="1">
+Some patients may not benefit from precision techniques, leading to inconsistent outcomes
+</td><td rowspan="1" colspan="1">
+Development of clearer guidelines for patient selection
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Data privacy and ethical concerns [<xref rid="REF70" ref-type="bibr">70</xref>]
+</td><td rowspan="1" colspan="1">
+Collecting and storing large amounts of genetic and biomechanical data raises privacy concerns
+</td><td rowspan="1" colspan="1">
+This may deter patients from opting for precision medicine-based approaches due to fear of data misuse
+</td><td rowspan="1" colspan="1">
+Stronger data protection regulations, informed consent processes, and transparent data use policies
+</td></tr><tr><td rowspan="1" colspan="1">
+Technological failure or malfunction [<xref rid="REF71" ref-type="bibr">71</xref>]
+</td><td rowspan="1" colspan="1">
+Reliance on technology increases the risk of failure or malfunction during surgery
+</td><td rowspan="1" colspan="1">
+This can lead to complications if robotic systems or navigation tools fail mid-procedure
+</td><td rowspan="1" colspan="1">
+Establishing reliable backup systems and improved quality control measures
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Variation in postoperative outcomes [<xref rid="REF72" ref-type="bibr">72</xref>]
+</td><td rowspan="1" colspan="1">
+Despite precision techniques, variability in patient healing and response to surgery still exists
+</td><td rowspan="1" colspan="1">
+This can lead to inconsistent results in terms of recovery time, pain relief, and long-term success
+</td><td rowspan="1" colspan="1">
+Continued research into individual factors that affect postoperative recovery
+</td></tr><tr><td rowspan="1" colspan="1">
+Patient awareness and expectations [<xref rid="REF73" ref-type="bibr">73</xref>]
+</td><td rowspan="1" colspan="1">
+Patients may have limited knowledge of precision arthroscopy, leading to unrealistic expectations
+</td><td rowspan="1" colspan="1">
+This can result in dissatisfaction if outcomes do not meet patient expectations
+</td><td rowspan="1" colspan="1">
+Better patient education and setting realistic expectations during preoperative consultations
+</td></tr></tbody></table></table-wrap><p>Future directions and research</p><p>Integrating AI, machine learning, and big data into knee arthroscopy presents substantial potential for advancing orthopedic surgery. These technologies can analyze extensive datasets derived from patient histories, imaging results, and surgical outcomes to uncover patterns that enhance both preoperative planning and postoperative care [<xref rid="REF74" ref-type="bibr">74</xref>]. For example, AI algorithms can assist surgeons in predicting potential complications, optimizing surgical techniques, and personalizing rehabilitation protocols based on individual patient profiles. By leveraging big data analytics, healthcare providers can make more informed decisions, drawing insights from a wider array of patient experiences and outcomes [<xref rid="REF74" ref-type="bibr">74</xref>]. Another promising area of research is the application of genetic testing in preoperative planning for knee arthroscopy. Understanding genetic predispositions related to drug metabolism and surgical recovery can lead to more tailored anesthetic and postoperative medication strategies [<xref rid="REF75" ref-type="bibr">75</xref>]. Pharmacogenomics, which examines inherited differences in drug metabolism among individuals, can inform medication choices, potentially minimizing adverse effects and improving recovery times. Integrating genetic testing results into electronic health records (EHRs) allows healthcare providers to receive real-time alerts regarding genetic risks associated with specific medications, thereby enhancing perioperative outcomes [<xref rid="REF75" ref-type="bibr">75</xref>]. Long-term studies focusing on patient outcomes following personalized knee arthroscopy are crucial for validating the effectiveness of these tailored approaches. Research should aim to assess how individualized treatment plans, considering factors such as genetic profiles, lifestyle choices, and specific knee conditions, impact recovery times, pain management, and overall patient satisfaction [<xref rid="REF76" ref-type="bibr">76</xref>]. Such studies will provide critical data to support the evolution of precision medicine in orthopedics, ultimately leading to improved surgical techniques and enhanced patient care [<xref rid="REF76" ref-type="bibr">76</xref>]. Future directions and research in precision knee arthroscopy are summarized in Table <xref rid="TAB6" ref-type="table">6</xref>.</p><table-wrap position="float" id="TAB6" orientation="portrait"><label>Table 6</label><caption><title>Future directions and research in precision knee arthroscopy</title><p>AI: artificial intelligence; CRISPR: clustered regularly interspaced short palindromic repeats; MRI: magnetic resonance imaging</p></caption><table frame="hsides" rules="groups"><tbody><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Future direction/research area
+</td><td rowspan="1" colspan="1">
+Description
+</td><td rowspan="1" colspan="1">
+Potential impact on knee arthroscopy
+</td><td rowspan="1" colspan="1">
+Current challenges
+</td></tr><tr><td rowspan="1" colspan="1">
+AI integration [<xref rid="REF77" ref-type="bibr">77</xref>]
+</td><td rowspan="1" colspan="1">
+Advanced AI algorithms for preoperative planning, surgical decision-making, and postoperative care
+</td><td rowspan="1" colspan="1">
+Improved accuracy in diagnosis, personalized surgical plans, and data-driven rehabilitation strategies
+</td><td rowspan="1" colspan="1">
+Need for large-scale data integration and ethical concerns regarding decision-making
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Machine learning for predictive outcomes [<xref rid="REF78" ref-type="bibr">78</xref>]
+</td><td rowspan="1" colspan="1">
+Using machine learning models to predict patient outcomes based on preoperative data and surgery type
+</td><td rowspan="1" colspan="1">
+Better prediction of recovery times, risk of complications, and likelihood of successful outcomes
+</td><td rowspan="1" colspan="1">
+Requires access to extensive patient data and validation of predictive models
+</td></tr><tr><td rowspan="1" colspan="1">
+Development of biocompatible smart implants [<xref rid="REF79" ref-type="bibr">79</xref>]
+</td><td rowspan="1" colspan="1">
+Creating implants that monitor joint health, healing, and response to stress in real time
+</td><td rowspan="1" colspan="1">
+Continuous monitoring of postoperative healing, improved rehabilitation, and early detection of complications
+</td><td rowspan="1" colspan="1">
+High cost and technical complexity in developing durable, biocompatible smart implants
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+3D-printed personalized implants [<xref rid="REF80" ref-type="bibr">80</xref>]
+</td><td rowspan="1" colspan="1">
+Research into fully customized implants created through 3D printing tailored to the patient's specific anatomy
+</td><td rowspan="1" colspan="1">
+Increased precision in joint replacement and cartilage repair, and reduced implant failure rates
+</td><td rowspan="1" colspan="1">
+High costs, regulatory challenges, and lack of long-term data on the effectiveness of custom implants
+</td></tr><tr><td rowspan="1" colspan="1">
+Gene therapy for cartilage repair [<xref rid="REF81" ref-type="bibr">81</xref>]
+</td><td rowspan="1" colspan="1">
+Exploring gene-editing techniques like CRISPR to promote cartilage regeneration and repair
+</td><td rowspan="1" colspan="1">
+Potential to prevent or reverse cartilage damage, reducing the need for joint replacement
+</td><td rowspan="1" colspan="1">
+Ethical concerns, limited clinical trials, and unknown long-term effects
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Tissue engineering and regenerative medicine [<xref rid="REF82" ref-type="bibr">82</xref>]
+</td><td rowspan="1" colspan="1">
+Research into tissue scaffolds, stem cells, and bioprinting to regrow damaged cartilage or meniscus tissue
+</td><td rowspan="1" colspan="1">
+Long-term cartilage and meniscal restoration, potentially eliminating the need for artificial implants
+</td><td rowspan="1" colspan="1">
+Complex manufacturing processes, high cost, and variable patient response
+</td></tr><tr><td rowspan="1" colspan="1">
+Wearable health monitoring devices [<xref rid="REF83" ref-type="bibr">83</xref>]
+</td><td rowspan="1" colspan="1">
+Research into wearable devices that continuously monitor joint motion, pressure, and rehabilitation progress after surgery
+</td><td rowspan="1" colspan="1">
+Real-time data collection to adjust rehabilitation protocols and detect complications early
+</td><td rowspan="1" colspan="1">
+Data privacy concerns, integration with clinical systems, and patient adherence to wearing devices
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Robotics with haptic feedback [<xref rid="REF84" ref-type="bibr">84</xref>]
+</td><td rowspan="1" colspan="1">
+Development of robotic systems that provide surgeons with tactile feedback during arthroscopy
+</td><td rowspan="1" colspan="1">
+Enhanced precision in surgeries, better handling of delicate tissues, and reduced error rates
+</td><td rowspan="1" colspan="1">
+High cost, steep learning curve for surgeons, and complex integration into surgical workflows
+</td></tr><tr><td rowspan="1" colspan="1">
+Enhanced imaging techniques [<xref rid="REF85" ref-type="bibr">85</xref>]
+</td><td rowspan="1" colspan="1">
+Research into new imaging modalities such as high-resolution MRI and intraoperative ultrasound
+</td><td rowspan="1" colspan="1">
+Better visualization of cartilage, ligaments, and soft tissues for more accurate diagnosis and real-time surgical guidance
+</td><td rowspan="1" colspan="1">
+High cost and limited access to advanced imaging technologies
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Personalized rehabilitation programs [<xref rid="REF86" ref-type="bibr">86</xref>]
+</td><td rowspan="1" colspan="1">
+Development of data-driven, individualized rehabilitation programs based on patient’s surgical data and biomechanical feedback
+</td><td rowspan="1" colspan="1">
+Improved recovery times, reduced risk of reinjury, and personalized care based on real-time monitoring
+</td><td rowspan="1" colspan="1">
+Requires integration of wearable technology and AI for real-time data interpretation
+</td></tr><tr><td rowspan="1" colspan="1">
+Nanotechnology in cartilage repair [<xref rid="REF87" ref-type="bibr">87</xref>]
+</td><td rowspan="1" colspan="1">
+Research into using nanoscale materials to repair cartilage or prevent degeneration
+</td><td rowspan="1" colspan="1">
+Potential for long-lasting cartilage repair, reduced inflammation, and improved healing outcomes
+</td><td rowspan="1" colspan="1">
+Limited clinical research, high development costs, and the need for regulatory approval
+</td></tr><tr style="background-color:#ccc"><td rowspan="1" colspan="1">
+Telemedicine and remote surgery assistance [<xref rid="REF88" ref-type="bibr">88</xref>]
+</td><td rowspan="1" colspan="1">
+Expanding telemedicine for postoperative care and exploring robotic surgery assistance remotely
+</td><td rowspan="1" colspan="1">
+Improved patient access to specialized care, enhanced monitoring of recovery, and potential for expert guidance during surgery
+</td><td rowspan="1" colspan="1">
+Security concerns with remote technology, availability of internet infrastructure, and surgeon adaptability
+</td></tr></tbody></table></table-wrap></sec><sec sec-type="conclusions"><title>Conclusions</title><p>The integration of precision medicine into knee arthroscopy represents a significant advancement in orthopedic surgery, paving the way for more personalized and effective interventions. By leveraging the principles of precision medicine, surgeons can now tailor their approach to individual patient profiles, considering genetic, molecular, and biomechanical factors. Emerging technologies, such as robotic-assisted surgery, advanced imaging, and patient-specific instruments, further enhance the precision and outcomes of knee arthroscopic procedures. These innovations improve the accuracy of diagnosis and treatment, minimize complications, and accelerate recovery. However, despite the promising benefits, challenges such as cost, accessibility, and the need for further clinical validation remain. As research continues to advance, the future of knee arthroscopy in the era of precision medicine holds the potential to offer even more refined, patient-centered care. This comprehensive review underscores the importance of continued exploration and adoption of these tailored approaches, ensuring patients receive the most advanced and effective treatments possible.</p></sec></body><back><ack><p>We acknowledge the valuable assistance provided by ChatGPT (OpenAI, Inc., San Francisco, CA) in offering insightful suggestions for ensuring clarity and precision in our writing with Grammarly (Grammarly, Inc., San Francisco, CA) and Paperpal (Cactus Communications Services Pte. Ltd., McCallum Street, Singapore) to enhance the quality and accuracy of our work.</p></ack><fn-group content-type="conflict"><title>Disclosures</title><fn fn-type="COI-statement"><p><bold>Conflicts of interest:</bold> In compliance with the ICMJE uniform disclosure form, all authors declare the following:</p><p><bold>Payment/services info:</bold> All authors have declared that no financial support was received from any organization for the submitted work.</p><p><bold>Financial relationships:</bold> All authors have declared that they have no financial relationships at present or within the previous three years with any organizations that might have an interest in the submitted work.</p><p><bold>Other relationships:</bold> All authors have declared that there are no other relationships or activities that could appear to have influenced the submitted work.</p></fn></fn-group><fn-group content-type="other"><title>Author Contributions</title><fn fn-type="other"><p><bold>Concept and design:</bold>  Vinit Rathod, Milind R. Gharpinde , Sandeep Shrivastav</p><p><bold>Acquisition, analysis, or interpretation of data:</bold>  Vinit Rathod, Milind R. Gharpinde , Sandeep Shrivastav</p><p><bold>Drafting of the manuscript:</bold>  Vinit Rathod, Milind R. Gharpinde , Sandeep Shrivastav</p><p><bold>Critical review of the manuscript for important intellectual content:</bold>  Vinit Rathod, Milind R. Gharpinde , Sandeep Shrivastav</p><p><bold>Supervision:</bold>  Vinit Rathod, Milind R. Gharpinde , Sandeep Shrivastav</p></fn></fn-group><ref-list><title>References</title><ref id="REF1"><label>1</label><element-citation publication-type="journal"><article-title>Minimally invasive orthopedic surgery: arthroscopy</article-title><source>Ochsner J</source><person-group>
+<name name-style="western"><surname>Treuting</surname><given-names>R</given-names></name>
+</person-group><fpage>158</fpage><lpage>163</lpage><volume>2</volume><year>2000</year><uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://pubmed.ncbi.nlm.nih.gov/21765685/">https://pubmed.ncbi.nlm.nih.gov/21765685/</uri><pub-id pub-id-type="pmid">21765685</pub-id><pub-id pub-id-type="pmcid">PMC3117522</pub-id></element-citation></ref><ref id="REF2"><label>2</label><element-citation publication-type="journal"><article-title>Arthroscopic treatment of total knee arthroplasty complications</article-title><source>EFORT Open Rev</source><person-group>
+<name name-style="western"><surname>Encinas-Ullán</surname><given-names>CA</given-names></name>
+<name name-style="western"><surname>Rodríguez-Merchán</surname><given-names>EC</given-names></name>
+</person-group><fpage>33</fpage><lpage>43</lpage><volume>4</volume><year>2019</year><pub-id pub-id-type="pmid">30931147</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1302/2058-5241.4.180035</pub-id><pub-id pub-id-type="pmcid">PMC6404793</pub-id></element-citation></ref><ref id="REF3"><label>3</label><element-citation publication-type="journal"><article-title>Precision medicine, AI, and the future of personalized health care</article-title><source>Clin Transl Sci</source><person-group>
+<name name-style="western"><surname>Johnson</surname><given-names>KB</given-names></name>
+<name name-style="western"><surname>Wei</surname><given-names>WQ</given-names></name>
+<name name-style="western"><surname>Weeraratne</surname><given-names>D</given-names></name>
+<etal/>
+</person-group><fpage>86</fpage><lpage>93</lpage><volume>14</volume><year>2021</year><pub-id pub-id-type="pmid">32961010</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/cts.12884</pub-id><pub-id pub-id-type="pmcid">PMC7877825</pub-id></element-citation></ref><ref id="REF4"><label>4</label><element-citation publication-type="journal"><article-title>Arthroscopy as a treatment for knee osteoarthritis</article-title><source>Best Pract Res Clin Rheumatol</source><person-group>
+<name name-style="western"><surname>Felson</surname><given-names>DT</given-names></name>
+</person-group><fpage>47</fpage><volume>24</volume><year>2010</year><pub-id pub-id-type="pmid">20129199</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.berh.2009.08.002</pub-id><pub-id pub-id-type="pmcid">PMC2818323</pub-id></element-citation></ref><ref id="REF5"><label>5</label><element-citation publication-type="journal"><article-title>The evolving trends in arthroscopy and sports medicine</article-title><source>J Clin Orthop Trauma</source><person-group>
+<name name-style="western"><surname>Sundararajan</surname><given-names>SR</given-names></name>
+<name name-style="western"><surname>Ramakanth</surname><given-names>R</given-names></name>
+<name name-style="western"><surname>Rajasekaran</surname><given-names>S</given-names></name>
+</person-group><fpage>101915</fpage><volume>31</volume><year>2022</year><pub-id pub-id-type="pmid">35789820</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jcot.2022.101915</pub-id><pub-id pub-id-type="pmcid">PMC9250011</pub-id></element-citation></ref><ref id="REF6"><label>6</label><element-citation publication-type="journal"><article-title>A hundred years of knee arthroscopy</article-title><source>Rev Bras Ortop</source><person-group>
+<name name-style="western"><surname>de Mello Granata GS</surname><given-names>Jr</given-names></name>
+</person-group><fpage>684</fpage><volume>47</volume><year>2012</year><pub-id pub-id-type="pmid">27047884</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/S2255-4971(15)30022-7</pub-id><pub-id pub-id-type="pmcid">PMC4799482</pub-id></element-citation></ref><ref id="REF7"><label>7</label><element-citation publication-type="journal"><article-title>Recent advances in robot-assisted surgical systems</article-title><source>Adv Biomed Eng</source><person-group>
+<name name-style="western"><surname>Biswas</surname><given-names>P</given-names></name>
+<name name-style="western"><surname>Sikander</surname><given-names>S</given-names></name>
+<name name-style="western"><surname>Kulkarni</surname><given-names>P</given-names></name>
+</person-group><fpage>100109</fpage><volume>6</volume><year>2023</year></element-citation></ref><ref id="REF8"><label>8</label><element-citation publication-type="journal"><article-title>New technologies in knee arthroplasty: current concepts</article-title><source>J Clin Med</source><person-group>
+<name name-style="western"><surname>Batailler</surname><given-names>C</given-names></name>
+<name name-style="western"><surname>Swan</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Sappey Marinier</surname><given-names>E</given-names></name>
+<name name-style="western"><surname>Servien</surname><given-names>E</given-names></name>
+<name name-style="western"><surname>Lustig</surname><given-names>S</given-names></name>
+</person-group><fpage>47</fpage><volume>10</volume><year>2020</year><pub-id pub-id-type="pmid">33375702</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/jcm10010047</pub-id><pub-id pub-id-type="pmcid">PMC7795103</pub-id></element-citation></ref><ref id="REF9"><label>9</label><element-citation publication-type="journal"><article-title>Navigating the divide: a comprehensive review of the mechanical and anatomical axis approaches in total knee replacement</article-title><source>Cureus</source><person-group>
+<name name-style="western"><surname>Suneja</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Deshpande</surname><given-names>SV</given-names></name>
+<name name-style="western"><surname>Pisulkar</surname><given-names>G</given-names></name>
+<name name-style="western"><surname>Taywade</surname><given-names>S</given-names></name>
+<name name-style="western"><surname>Awasthi</surname><given-names>AA</given-names></name>
+<name name-style="western"><surname>Salwan</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Goel</surname><given-names>S</given-names></name>
+</person-group><fpage>0</fpage><volume>16</volume><year>2024</year><pub-id pub-id-type="doi" assigning-authority="pmc">10.7759/cureus.57938</pub-id><pub-id pub-id-type="pmcid">PMC11084915</pub-id><pub-id pub-id-type="pmid">38738158</pub-id></element-citation></ref><ref id="REF10"><label>10</label><element-citation publication-type="journal"><article-title>Advancing precision medicine: a review of innovative in silico approaches for drug development, clinical pharmacology and personalized healthcare</article-title><source>Pharmaceutics</source><person-group>
+<name name-style="western"><surname>Marques</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Costa</surname><given-names>B</given-names></name>
+<name name-style="western"><surname>Pereira</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><fpage>332</fpage><volume>16</volume><year>2024</year><pub-id pub-id-type="pmid">38543226</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/pharmaceutics16030332</pub-id><pub-id pub-id-type="pmcid">PMC10975777</pub-id></element-citation></ref><ref id="REF11"><label>11</label><element-citation publication-type="journal"><article-title>Advancements in robotic surgery: a comprehensive overview of current utilizations and upcoming frontiers</article-title><source>Cureus</source><person-group>
+<name name-style="western"><surname>Reddy</surname><given-names>K</given-names></name>
+<name name-style="western"><surname>Gharde</surname><given-names>P</given-names></name>
+<name name-style="western"><surname>Tayade</surname><given-names>H</given-names></name>
+<name name-style="western"><surname>Patil</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Reddy</surname><given-names>LS</given-names></name>
+<name name-style="western"><surname>Surya</surname><given-names>D</given-names></name>
+</person-group><fpage>0</fpage><volume>15</volume><year>2023</year><pub-id pub-id-type="doi" assigning-authority="pmc">10.7759/cureus.50415</pub-id><pub-id pub-id-type="pmcid">PMC10784205</pub-id><pub-id pub-id-type="pmid">38222213</pub-id></element-citation></ref><ref id="REF12"><label>12</label><element-citation publication-type="book"><article-title>Reaping the Benefits of Genomic and Proteomic Research: Intellectual Property Rights, Innovation, and Public Health</article-title><person-group>
+<name name-style="western"><surname>National Research Council (US) Committee on Intellectual Property Rights in Genomic and Protein Research and</surname><given-names>Innovation</given-names></name>
+</person-group><publisher-loc>Washington, DC</publisher-loc><publisher-name>National Academies Press (US)</publisher-name><year>2006</year><uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://pubmed.ncbi.nlm.nih.gov/20669435/">https://pubmed.ncbi.nlm.nih.gov/20669435/</uri><pub-id pub-id-type="pmid">20669435</pub-id></element-citation></ref><ref id="REF13"><label>13</label><element-citation publication-type="journal"><article-title>Precision and personalized medicine: how genomic approach improves the management of cardiovascular and neurodegenerative disease</article-title><source>Genes (Basel)</source><person-group>
+<name name-style="western"><surname>Strianese</surname><given-names>O</given-names></name>
+<name name-style="western"><surname>Rizzo</surname><given-names>F</given-names></name>
+<name name-style="western"><surname>Ciccarelli</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><fpage>747</fpage><volume>11</volume><year>2020</year><pub-id pub-id-type="pmid">32640513</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/genes11070747</pub-id><pub-id pub-id-type="pmcid">PMC7397223</pub-id></element-citation></ref><ref id="REF14"><label>14</label><element-citation publication-type="journal"><article-title>Evaluation of anterior cruciate ligament surgical reconstruction through finite element analysis</article-title><source>Sci Rep</source><person-group>
+<name name-style="western"><surname>Risvas</surname><given-names>K</given-names></name>
+<name name-style="western"><surname>Stanev</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Benos</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Filip</surname><given-names>K</given-names></name>
+<name name-style="western"><surname>Tsaopoulos</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Moustakas</surname><given-names>K</given-names></name>
+</person-group><fpage>8044</fpage><volume>12</volume><year>2022</year><pub-id pub-id-type="pmid">35577879</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41598-022-11601-1</pub-id><pub-id pub-id-type="pmcid">PMC9110399</pub-id></element-citation></ref><ref id="REF15"><label>15</label><element-citation publication-type="journal"><article-title>Robotic systems and navigation techniques in orthopedics: a historical review</article-title><source>Appl Sci</source><person-group>
+<name name-style="western"><surname>Li</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Badre</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Alambeigi</surname><given-names>F</given-names></name>
+<name name-style="western"><surname>Tavakoli</surname><given-names>M</given-names></name>
+</person-group><fpage>9768</fpage><volume>13</volume><year>2023</year></element-citation></ref><ref id="REF16"><label>16</label><element-citation publication-type="journal"><article-title>Virtual reality and augmented reality-translating surgical training into surgical technique</article-title><source>Curr Rev Musculoskelet Med</source><person-group>
+<name name-style="western"><surname>McKnight</surname><given-names>RR</given-names></name>
+<name name-style="western"><surname>Pean</surname><given-names>CA</given-names></name>
+<name name-style="western"><surname>Buck</surname><given-names>JS</given-names></name>
+<name name-style="western"><surname>Hwang</surname><given-names>JS</given-names></name>
+<name name-style="western"><surname>Hsu</surname><given-names>JR</given-names></name>
+<name name-style="western"><surname>Pierrie</surname><given-names>SN</given-names></name>
+</person-group><fpage>663</fpage><lpage>674</lpage><volume>13</volume><year>2020</year><pub-id pub-id-type="pmid">32779019</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s12178-020-09667-3</pub-id><pub-id pub-id-type="pmcid">PMC7661680</pub-id></element-citation></ref><ref id="REF17"><label>17</label><element-citation publication-type="journal"><article-title>3-D bioprinting technologies in tissue engineering and regenerative medicine: current and future trends</article-title><source>Genes Dis</source><person-group>
+<name name-style="western"><surname>Bishop</surname><given-names>ES</given-names></name>
+<name name-style="western"><surname>Mostafa</surname><given-names>S</given-names></name>
+<name name-style="western"><surname>Pakvasa</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><fpage>185</fpage><lpage>195</lpage><volume>4</volume><year>2017</year><pub-id pub-id-type="pmid">29911158</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.gendis.2017.10.002</pub-id><pub-id pub-id-type="pmcid">PMC6003668</pub-id></element-citation></ref><ref id="REF18"><label>18</label><element-citation publication-type="journal"><article-title>Beyond tissue replacement: the emerging role of smart implants in healthcare</article-title><source>Mater Today Bio</source><person-group>
+<name name-style="western"><surname>Abyzova</surname><given-names>E</given-names></name>
+<name name-style="western"><surname>Dogadina</surname><given-names>E</given-names></name>
+<name name-style="western"><surname>Rodriguez</surname><given-names>RD</given-names></name>
+<etal/>
+</person-group><fpage>100784</fpage><volume>22</volume><year>2023</year><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.mtbio.2023.100784</pub-id><pub-id pub-id-type="pmcid">PMC10507164</pub-id><pub-id pub-id-type="pmid">37731959</pub-id></element-citation></ref><ref id="REF19"><label>19</label><element-citation publication-type="journal"><article-title>Patient specific instrumentation in total knee arthroplasty: a state of the art</article-title><source>Ann Transl Med</source><person-group>
+<name name-style="western"><surname>Mattei</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Pellegrino</surname><given-names>P</given-names></name>
+<name name-style="western"><surname>Calò</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Bistolfi</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Castoldi</surname><given-names>F</given-names></name>
+</person-group><fpage>126</fpage><volume>4</volume><year>2016</year><pub-id pub-id-type="pmid">27162776</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.21037/atm.2016.03.33</pub-id><pub-id pub-id-type="pmcid">PMC4842392</pub-id></element-citation></ref><ref id="REF20"><label>20</label><element-citation publication-type="journal"><article-title>Articular cartilage repair biomaterials: strategies and applications</article-title><source>Mater Today Bio</source><person-group>
+<name name-style="western"><surname>Wang</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Wu</surname><given-names>Y</given-names></name>
+<name name-style="western"><surname>Li</surname><given-names>G</given-names></name>
+<name name-style="western"><surname>Lin</surname><given-names>Q</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>W</given-names></name>
+<name name-style="western"><surname>Liu</surname><given-names>H</given-names></name>
+<name name-style="western"><surname>Su</surname><given-names>J</given-names></name>
+</person-group><fpage>100948</fpage><volume>24</volume><year>2024</year><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.mtbio.2024.100948</pub-id><pub-id pub-id-type="pmcid">PMC10806349</pub-id><pub-id pub-id-type="pmid">38269053</pub-id></element-citation></ref><ref id="REF21"><label>21</label><element-citation publication-type="journal"><article-title>Clinical effectiveness of arthroscopy-assisted fixation in the treatment of avulsed posterior cruciate ligament injuries</article-title><source>Cureus</source><person-group>
+<name name-style="western"><surname>Gawande</surname><given-names>V</given-names></name>
+<name name-style="western"><surname>Badge</surname><given-names>A</given-names></name>
+</person-group><fpage>0</fpage><volume>15</volume><year>2023</year><pub-id pub-id-type="doi" assigning-authority="pmc">10.7759/cureus.50152</pub-id><pub-id pub-id-type="pmcid">PMC10771625</pub-id><pub-id pub-id-type="pmid">38186527</pub-id></element-citation></ref><ref id="REF22"><label>22</label><element-citation publication-type="book"><article-title>Knee Effusion</article-title><person-group>
+<name name-style="western"><surname>Gerena</surname><given-names>LA</given-names></name>
+<name name-style="western"><surname>Mabrouk</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>DeCastro</surname><given-names>A</given-names></name>
+</person-group><publisher-loc>Treasure Island, FL</publisher-loc><publisher-name>StatPearls Publishing</publisher-name><year>2024</year><uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.ncbi.nlm.nih.gov/books/NBK532279/">https://www.ncbi.nlm.nih.gov/books/NBK532279/</uri><pub-id pub-id-type="pmid">30335312</pub-id></element-citation></ref><ref id="REF23"><label>23</label><element-citation publication-type="journal"><article-title>Recent advances in bariatric surgery: a narrative review of weight loss procedures</article-title><source>Ann Med Surg (Lond)</source><person-group>
+<name name-style="western"><surname>Aderinto</surname><given-names>N</given-names></name>
+<name name-style="western"><surname>Olatunji</surname><given-names>G</given-names></name>
+<name name-style="western"><surname>Kokori</surname><given-names>E</given-names></name>
+<name name-style="western"><surname>Olaniyi</surname><given-names>P</given-names></name>
+<name name-style="western"><surname>Isarinade</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Yusuf</surname><given-names>IA</given-names></name>
+</person-group><fpage>6091</fpage><lpage>6104</lpage><volume>85</volume><year>2023</year><pub-id pub-id-type="pmid">38098582</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1097/MS9.0000000000001472</pub-id><pub-id pub-id-type="pmcid">PMC10718334</pub-id></element-citation></ref><ref id="REF24"><label>24</label><element-citation publication-type="journal"><article-title>The role of biomarkers in surgery for ulcerative colitis: a review</article-title><source>J Clin Med</source><person-group>
+<name name-style="western"><surname>Matson</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Ramamoorthy</surname><given-names>S</given-names></name>
+<name name-style="western"><surname>Lopez</surname><given-names>NE</given-names></name>
+</person-group><fpage>3362</fpage><volume>10</volume><year>2021</year><pub-id pub-id-type="pmid">34362144</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/jcm10153362</pub-id><pub-id pub-id-type="pmcid">PMC8348722</pub-id></element-citation></ref><ref id="REF25"><label>25</label><element-citation publication-type="journal"><article-title>Recent advances of additive manufacturing in implant fabrication - a review</article-title><source>Appl Surf Sci Adv</source><person-group>
+<name name-style="western"><surname>Mobarak</surname><given-names>MH</given-names></name>
+<name name-style="western"><surname>Islam</surname><given-names>MdA</given-names></name>
+<name name-style="western"><surname>Hossain</surname><given-names>N</given-names></name>
+<name name-style="western"><surname>Al Mahmud</surname><given-names>MdZ</given-names></name>
+<name name-style="western"><surname>Rayhan</surname><given-names>MdT</given-names></name>
+<name name-style="western"><surname>Nishi</surname><given-names>NJ</given-names></name>
+<name name-style="western"><surname>Chowdhury</surname><given-names>MA</given-names></name>
+</person-group><fpage>100462</fpage><volume>18</volume><year>2023</year></element-citation></ref><ref id="REF26"><label>26</label><element-citation publication-type="journal"><article-title>Physical therapist management of total knee arthroplasty</article-title><source>Phys Ther</source><person-group>
+<name name-style="western"><surname>Jette</surname><given-names>DU</given-names></name>
+<name name-style="western"><surname>Hunter</surname><given-names>SJ</given-names></name>
+<name name-style="western"><surname>Burkett</surname><given-names>L</given-names></name>
+<etal/>
+</person-group><fpage>1603</fpage><lpage>1631</lpage><volume>100</volume><year>2020</year><pub-id pub-id-type="pmid">32542403</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/ptj/pzaa099</pub-id><pub-id pub-id-type="pmcid">PMC7462050</pub-id></element-citation></ref><ref id="REF27"><label>27</label><element-citation publication-type="journal"><article-title>Wearable movement sensors for rehabilitation: a focused review of technological and clinical advances</article-title><source>PM R</source><person-group>
+<name name-style="western"><surname>Porciuncula</surname><given-names>F</given-names></name>
+<name name-style="western"><surname>Roto</surname><given-names>AV</given-names></name>
+<name name-style="western"><surname>Kumar</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Davis</surname><given-names>I</given-names></name>
+<name name-style="western"><surname>Roy</surname><given-names>S</given-names></name>
+<name name-style="western"><surname>Walsh</surname><given-names>CJ</given-names></name>
+<name name-style="western"><surname>Awad</surname><given-names>LN</given-names></name>
+</person-group><fpage>0</fpage><lpage>32</lpage><volume>10</volume><year>2018</year><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.pmrj.2018.06.013</pub-id><pub-id pub-id-type="pmcid">PMC6700726</pub-id><pub-id pub-id-type="pmid">30269807</pub-id></element-citation></ref><ref id="REF28"><label>28</label><element-citation publication-type="journal"><article-title>Predict, prevent and personalize: genomic and proteomic approaches to cardiovascular medicine</article-title><source>Can J Cardiol</source><person-group>
+<name name-style="western"><surname>Ouzounian</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Lee</surname><given-names>DS</given-names></name>
+<name name-style="western"><surname>Gramolini</surname><given-names>AO</given-names></name>
+<name name-style="western"><surname>Emili</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Fukuoka</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Liu</surname><given-names>PP</given-names></name>
+</person-group><fpage>28</fpage><lpage>33</lpage><volume>23</volume><year>2007</year><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/s0828-282x(07)71003-6</pub-id><pub-id pub-id-type="pmcid">PMC2787001</pub-id><pub-id pub-id-type="pmid">17668085</pub-id></element-citation></ref><ref id="REF29"><label>29</label><element-citation publication-type="journal"><article-title>Biomechanical and clinical effect of patient-specific or customized knee implants: a review</article-title><source>J Clin Med</source><person-group>
+<name name-style="western"><surname>Lee</surname><given-names>JA</given-names></name>
+<name name-style="western"><surname>Koh</surname><given-names>YG</given-names></name>
+<name name-style="western"><surname>Kang</surname><given-names>KT</given-names></name>
+</person-group><fpage>1559</fpage><volume>9</volume><year>2020</year><pub-id pub-id-type="pmid">32455733</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/jcm9051559</pub-id><pub-id pub-id-type="pmcid">PMC7290390</pub-id></element-citation></ref><ref id="REF30"><label>30</label><element-citation publication-type="journal"><article-title>Patient specific instruments and patient individual implants-a narrative review</article-title><source>J Pers Med</source><person-group>
+<name name-style="western"><surname>Benignus</surname><given-names>C</given-names></name>
+<name name-style="western"><surname>Buschner</surname><given-names>P</given-names></name>
+<name name-style="western"><surname>Meier</surname><given-names>MK</given-names></name>
+<name name-style="western"><surname>Wilken</surname><given-names>F</given-names></name>
+<name name-style="western"><surname>Rieger</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Beckmann</surname><given-names>J</given-names></name>
+</person-group><fpage>426</fpage><volume>13</volume><year>2023</year><pub-id pub-id-type="pmid">36983609</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/jpm13030426</pub-id><pub-id pub-id-type="pmcid">PMC10051718</pub-id></element-citation></ref><ref id="REF31"><label>31</label><element-citation publication-type="journal"><article-title>Navigation-guided/robot-assisted spinal surgery: a review article</article-title><source>Neurospine</source><person-group>
+<name name-style="western"><surname>Lee</surname><given-names>YS</given-names></name>
+<name name-style="western"><surname>Cho</surname><given-names>DC</given-names></name>
+<name name-style="western"><surname>Kim</surname><given-names>KT</given-names></name>
+</person-group><fpage>8</fpage><lpage>17</lpage><volume>21</volume><year>2024</year><pub-id pub-id-type="pmid">38569627</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.14245/ns.2347184.592</pub-id><pub-id pub-id-type="pmcid">PMC10992634</pub-id></element-citation></ref><ref id="REF32"><label>32</label><element-citation publication-type="journal"><article-title>Virtual, augmented, and mixed reality applications for surgical rehearsal, operative execution, and patient education in spine surgery: a scoping review</article-title><source>Medicina (Kaunas)</source><person-group>
+<name name-style="western"><surname>Bui</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Ruiz-Cardozo</surname><given-names>MA</given-names></name>
+<name name-style="western"><surname>Dave</surname><given-names>HS</given-names></name>
+<etal/>
+</person-group><fpage>332</fpage><volume>60</volume><year>2024</year><pub-id pub-id-type="pmid">38399619</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/medicina60020332</pub-id><pub-id pub-id-type="pmcid">PMC10890632</pub-id></element-citation></ref><ref id="REF33"><label>33</label><element-citation publication-type="journal"><article-title>3D bioprinted implants for cartilage repair in intervertebral discs and knee menisci</article-title><source>Front Bioeng Biotechnol</source><person-group>
+<name name-style="western"><surname>Perera</surname><given-names>K</given-names></name>
+<name name-style="western"><surname>Ivone</surname><given-names>R</given-names></name>
+<name name-style="western"><surname>Natekin</surname><given-names>E</given-names></name>
+<name name-style="western"><surname>Wilga</surname><given-names>CA</given-names></name>
+<name name-style="western"><surname>Shen</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Menon</surname><given-names>JU</given-names></name>
+</person-group><fpage>754113</fpage><volume>9</volume><year>2021</year><pub-id pub-id-type="pmid">34746106</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fbioe.2021.754113</pub-id><pub-id pub-id-type="pmcid">PMC8570130</pub-id></element-citation></ref><ref id="REF34"><label>34</label><element-citation publication-type="journal"><article-title>Smart sensor implant technology in total knee arthroplasty</article-title><source>J Clin Orthop Trauma</source><person-group>
+<name name-style="western"><surname>Iyengar</surname><given-names>KP</given-names></name>
+<name name-style="western"><surname>Gowers</surname><given-names>BT</given-names></name>
+<name name-style="western"><surname>Jain</surname><given-names>VK</given-names></name>
+<name name-style="western"><surname>Ahluwalia</surname><given-names>RS</given-names></name>
+<name name-style="western"><surname>Botchu</surname><given-names>R</given-names></name>
+<name name-style="western"><surname>Vaishya</surname><given-names>R</given-names></name>
+</person-group><fpage>101605</fpage><volume>22</volume><year>2021</year><pub-id pub-id-type="pmid">34631412</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jcot.2021.101605</pub-id><pub-id pub-id-type="pmcid">PMC8479248</pub-id></element-citation></ref><ref id="REF35"><label>35</label><element-citation publication-type="journal"><article-title>Current and novel therapeutics for articular cartilage repair and regeneration</article-title><source>Ther Clin Risk Manag</source><person-group>
+<name name-style="western"><surname>Cong</surname><given-names>B</given-names></name>
+<name name-style="western"><surname>Sun</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Zhao</surname><given-names>Y</given-names></name>
+<name name-style="western"><surname>Chen</surname><given-names>M</given-names></name>
+</person-group><fpage>485</fpage><lpage>502</lpage><volume>19</volume><year>2023</year><pub-id pub-id-type="pmid">37360195</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.2147/TCRM.S410277</pub-id><pub-id pub-id-type="pmcid">PMC10290456</pub-id></element-citation></ref><ref id="REF36"><label>36</label><element-citation publication-type="journal"><article-title>Meniscus treatment: biological augmentation strategies: a narrative review</article-title><source>Ann Jt</source><person-group>
+<name name-style="western"><surname>Poggi</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Reale</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Boffa</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Andriolo</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Di Martino</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Filardo</surname><given-names>G</given-names></name>
+</person-group><fpage>25</fpage><volume>7</volume><year>2022</year><pub-id pub-id-type="pmid">38529165</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.21037/aoj-21-14</pub-id><pub-id pub-id-type="pmcid">PMC10929437</pub-id></element-citation></ref><ref id="REF37"><label>37</label><element-citation publication-type="journal"><article-title>Immersive 3D virtual reality imaging in planning minimally invasive and complex adult cardiac surgery</article-title><source>Eur Heart J Digit Health</source><person-group>
+<name name-style="western"><surname>Sadeghi</surname><given-names>AH</given-names></name>
+<name name-style="western"><surname>Bakhuis</surname><given-names>W</given-names></name>
+<name name-style="western"><surname>Van Schaagen</surname><given-names>F</given-names></name>
+<etal/>
+</person-group><fpage>62</fpage><lpage>70</lpage><volume>1</volume><year>2020</year><pub-id pub-id-type="pmid">36713960</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/ehjdh/ztaa011</pub-id><pub-id pub-id-type="pmcid">PMC9708043</pub-id></element-citation></ref><ref id="REF38"><label>38</label><element-citation publication-type="journal"><article-title>The application of extended reality technology-assisted intraoperative navigation in orthopedic surgery</article-title><source>Front Surg</source><person-group>
+<name name-style="western"><surname>Bian</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Lin</surname><given-names>Z</given-names></name>
+<name name-style="western"><surname>Lu</surname><given-names>H</given-names></name>
+<name name-style="western"><surname>Zhong</surname><given-names>Q</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>K</given-names></name>
+<name name-style="western"><surname>Tang</surname><given-names>X</given-names></name>
+<name name-style="western"><surname>Zang</surname><given-names>J</given-names></name>
+</person-group><fpage>1336703</fpage><volume>11</volume><year>2024</year><pub-id pub-id-type="pmid">38375409</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fsurg.2024.1336703</pub-id><pub-id pub-id-type="pmcid">PMC10875025</pub-id></element-citation></ref><ref id="REF39"><label>39</label><element-citation publication-type="journal"><article-title>Wearable devices for patient monitoring in the early postoperative period: a literature review</article-title><source>Mhealth</source><person-group>
+<name name-style="western"><surname>Amin</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Mobbs</surname><given-names>RJ</given-names></name>
+<name name-style="western"><surname>Mostafa</surname><given-names>N</given-names></name>
+<name name-style="western"><surname>Sy</surname><given-names>LW</given-names></name>
+<name name-style="western"><surname>Choy</surname><given-names>WJ</given-names></name>
+</person-group><fpage>50</fpage><volume>7</volume><year>2021</year><pub-id pub-id-type="pmid">34345627</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.21037/mhealth-20-131</pub-id><pub-id pub-id-type="pmcid">PMC8326951</pub-id></element-citation></ref><ref id="REF40"><label>40</label><element-citation publication-type="journal"><article-title>Robotic-assisted anatomic anterior cruciate ligament reconstruction: a comparative analysis of modified transtibial and anteromedial portal techniques in cadaveric knees</article-title><source>Front Bioeng Biotechnol</source><person-group>
+<name name-style="western"><surname>Zhang</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Lin</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Zhao</surname><given-names>X</given-names></name>
+<etal/>
+</person-group><fpage>1360560</fpage><volume>12</volume><year>2024</year><pub-id pub-id-type="pmid">38511128</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fbioe.2024.1360560</pub-id><pub-id pub-id-type="pmcid">PMC10953503</pub-id></element-citation></ref><ref id="REF41"><label>41</label><element-citation publication-type="journal"><article-title>Augmented reality (AR) in orthopedics: current applications and future directions</article-title><source>Curr Rev Musculoskelet Med</source><person-group>
+<name name-style="western"><surname>Furman</surname><given-names>AA</given-names></name>
+<name name-style="western"><surname>Hsu</surname><given-names>WK</given-names></name>
+</person-group><fpage>397</fpage><lpage>405</lpage><volume>14</volume><year>2021</year><pub-id pub-id-type="pmid">34751894</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s12178-021-09728-1</pub-id><pub-id pub-id-type="pmcid">PMC8733124</pub-id></element-citation></ref><ref id="REF42"><label>42</label><element-citation publication-type="journal"><article-title>Developing a virtual reality simulation system for preoperative planning of thoracoscopic thoracic surgery</article-title><source>J Thorac Dis</source><person-group>
+<name name-style="western"><surname>Ujiie</surname><given-names>H</given-names></name>
+<name name-style="western"><surname>Yamaguchi</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Gregor</surname><given-names>A</given-names></name>
+<etal/>
+</person-group><fpage>778</fpage><lpage>783</lpage><volume>13</volume><year>2021</year><pub-id pub-id-type="pmid">33717550</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.21037/jtd-20-2197</pub-id><pub-id pub-id-type="pmcid">PMC7947494</pub-id></element-citation></ref><ref id="REF43"><label>43</label><element-citation publication-type="journal"><article-title>Meniscus regeneration by 3D printing technologies: current advances and future perspectives</article-title><source>J Tissue Eng</source><person-group>
+<name name-style="western"><surname>Stocco</surname><given-names>E</given-names></name>
+<name name-style="western"><surname>Porzionato</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>De Rose</surname><given-names>E</given-names></name>
+<name name-style="western"><surname>Barbon</surname><given-names>S</given-names></name>
+<name name-style="western"><surname>De Caro</surname><given-names>R</given-names></name>
+<name name-style="western"><surname>Macchi</surname><given-names>V</given-names></name>
+</person-group><fpage>20417314211065860</fpage><volume>13</volume><year>2022</year><pub-id pub-id-type="pmid">35096363</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/20417314211065860</pub-id><pub-id pub-id-type="pmcid">PMC8793124</pub-id></element-citation></ref><ref id="REF44"><label>44</label><element-citation publication-type="journal"><article-title>Wearable sensors and smart devices to monitor rehabilitation parameters and sports performance: an overview</article-title><source>Sensors (Basel)</source><person-group>
+<name name-style="western"><surname>De Fazio</surname><given-names>R</given-names></name>
+<name name-style="western"><surname>Mastronardi</surname><given-names>VM</given-names></name>
+<name name-style="western"><surname>De Vittorio</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Visconti</surname><given-names>P</given-names></name>
+</person-group><fpage>1856</fpage><volume>23</volume><year>2023</year><pub-id pub-id-type="pmid">36850453</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/s23041856</pub-id><pub-id pub-id-type="pmcid">PMC9965388</pub-id></element-citation></ref><ref id="REF45"><label>45</label><element-citation publication-type="journal"><article-title>Emerging innovations in preoperative planning and motion analysis in orthopedic surgery</article-title><source>Diagnostics (Basel)</source><person-group>
+<name name-style="western"><surname>Berhouet</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Samargandi</surname><given-names>R</given-names></name>
+</person-group><fpage>1321</fpage><volume>14</volume><year>2024</year><pub-id pub-id-type="pmid">39001212</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/diagnostics14131321</pub-id><pub-id pub-id-type="pmcid">PMC11240316</pub-id></element-citation></ref><ref id="REF46"><label>46</label><element-citation publication-type="journal"><article-title>Leveraging artificial intelligence and machine learning to optimize enhanced recovery after surgery (ERAS) protocols</article-title><source>Cureus</source><person-group>
+<name name-style="western"><surname>Zain</surname><given-names>Z</given-names></name>
+<name name-style="western"><surname>Almadhoun</surname><given-names>MK</given-names></name>
+<name name-style="western"><surname>Alsadoun</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Bokhari</surname><given-names>SF</given-names></name>
+</person-group><fpage>0</fpage><volume>16</volume><year>2024</year><pub-id pub-id-type="doi" assigning-authority="pmc">10.7759/cureus.56668</pub-id><pub-id pub-id-type="pmcid">PMC11032416</pub-id><pub-id pub-id-type="pmid">38646209</pub-id></element-citation></ref><ref id="REF47"><label>47</label><element-citation publication-type="journal"><article-title>CT- and MRI-based 3D reconstruction of knee joint to assess cartilage and bone</article-title><source>Diagnostics (Basel)</source><person-group>
+<name name-style="western"><surname>Ciliberti</surname><given-names>FK</given-names></name>
+<name name-style="western"><surname>Guerrini</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Gunnarsson</surname><given-names>AE</given-names></name>
+<etal/>
+</person-group><fpage>279</fpage><volume>12</volume><year>2022</year><pub-id pub-id-type="pmid">35204370</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/diagnostics12020279</pub-id><pub-id pub-id-type="pmcid">PMC8870751</pub-id></element-citation></ref><ref id="REF48"><label>48</label><element-citation publication-type="journal"><article-title>Biomaterials for meniscus and cartilage in knee surgery: state of the art</article-title><source>J ISAKOS</source><person-group>
+<name name-style="western"><surname>Kluyskens</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Debieux</surname><given-names>P</given-names></name>
+<name name-style="western"><surname>Wong</surname><given-names>KL</given-names></name>
+<name name-style="western"><surname>Krych</surname><given-names>AJ</given-names></name>
+<name name-style="western"><surname>Saris</surname><given-names>DB</given-names></name>
+</person-group><fpage>67</fpage><lpage>77</lpage><volume>7</volume><year>2022</year><pub-id pub-id-type="pmid">35543667</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1136/jisakos-2020-000600</pub-id></element-citation></ref><ref id="REF49"><label>49</label><element-citation publication-type="journal"><article-title>Bridge-enhanced anterior cruciate ligament repair: two-year results of a first-in-human study</article-title><source>Orthop J Sports Med</source><person-group>
+<name name-style="western"><surname>Murray</surname><given-names>MM</given-names></name>
+<name name-style="western"><surname>Kalish</surname><given-names>LA</given-names></name>
+<name name-style="western"><surname>Fleming</surname><given-names>BC</given-names></name>
+<etal/>
+</person-group><fpage>2325967118824356</fpage><volume>7</volume><year>2019</year><pub-id pub-id-type="pmid">30923725</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/2325967118824356</pub-id><pub-id pub-id-type="pmcid">PMC6431773</pub-id></element-citation></ref><ref id="REF50"><label>50</label><element-citation publication-type="journal"><article-title>The role of 3D-printed patient-specific instrumentation in total knee arthroplasty: a literature review</article-title><source>Cureus</source><person-group>
+<name name-style="western"><surname>Keskinis</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Paraskevopoulos</surname><given-names>K</given-names></name>
+<name name-style="western"><surname>Diamantidis</surname><given-names>DE</given-names></name>
+<name name-style="western"><surname>Ververidis</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Fiska</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Tilkeridis</surname><given-names>K</given-names></name>
+</person-group><fpage>0</fpage><volume>15</volume><year>2023</year><pub-id pub-id-type="doi" assigning-authority="pmc">10.7759/cureus.43321</pub-id><pub-id pub-id-type="pmcid">PMC10493459</pub-id><pub-id pub-id-type="pmid">37700954</pub-id></element-citation></ref><ref id="REF51"><label>51</label><element-citation publication-type="journal"><article-title>All-inside meniscus repair</article-title><source>Curr Rev Musculoskelet Med</source><person-group>
+<name name-style="western"><surname>Golz</surname><given-names>AG</given-names></name>
+<name name-style="western"><surname>Mandelbaum</surname><given-names>B</given-names></name>
+<name name-style="western"><surname>Pace</surname><given-names>JL</given-names></name>
+</person-group><fpage>252</fpage><lpage>258</lpage><volume>15</volume><year>2022</year><pub-id pub-id-type="pmid">35661090</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s12178-022-09766-3</pub-id><pub-id pub-id-type="pmcid">PMC9276856</pub-id></element-citation></ref><ref id="REF52"><label>52</label><element-citation publication-type="journal"><article-title>Instructive cartilage regeneration modalities with advanced therapeutic implantations under abnormal conditions</article-title><source>Bioact Mater</source><person-group>
+<name name-style="western"><surname>Wang</surname><given-names>Z</given-names></name>
+<name name-style="western"><surname>Le</surname><given-names>H</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>Y</given-names></name>
+<etal/>
+</person-group><fpage>317</fpage><lpage>338</lpage><volume>11</volume><year>2022</year><pub-id pub-id-type="pmid">34977434</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.bioactmat.2021.10.002</pub-id><pub-id pub-id-type="pmcid">PMC8671106</pub-id></element-citation></ref><ref id="REF53"><label>53</label><element-citation publication-type="journal"><article-title>Cartilage defect treatment using high-density autologous chondrocyte implantation (HD-ACI)</article-title><source>Bioengineering (Basel)</source><person-group>
+<name name-style="western"><surname>Guillén-García</surname><given-names>P</given-names></name>
+<name name-style="western"><surname>Guillén-Vicente</surname><given-names>I</given-names></name>
+<name name-style="western"><surname>Rodríguez-Iñigo</surname><given-names>E</given-names></name>
+<etal/>
+</person-group><fpage>1083</fpage><volume>10</volume><year>2023</year><pub-id pub-id-type="pmid">37760185</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/bioengineering10091083</pub-id><pub-id pub-id-type="pmcid">PMC10525711</pub-id></element-citation></ref><ref id="REF54"><label>54</label><element-citation publication-type="book"><article-title>Osteochondral Autograft transplantation</article-title><person-group>
+<name name-style="western"><surname>Branam</surname><given-names>GM</given-names></name>
+<name name-style="western"><surname>Saber</surname><given-names>AY</given-names></name>
+</person-group><publisher-loc>Treasure Island, FL</publisher-loc><publisher-name>StatPearls Publishing</publisher-name><year>2024</year><uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.ncbi.nlm.nih.gov/books/NBK560655/">https://www.ncbi.nlm.nih.gov/books/NBK560655/</uri><pub-id pub-id-type="pmid">32809490</pub-id></element-citation></ref><ref id="REF55"><label>55</label><element-citation publication-type="journal"><article-title>Graft choices for anterior cruciate ligament reconstruction</article-title><source>Indian J Orthop</source><person-group>
+<name name-style="western"><surname>Dhammi</surname><given-names>IK</given-names></name>
+<name name-style="western"><surname>Rehan-Ul-Haq</surname><given-names>Rehan-Ul-Haq</given-names></name>
+<name name-style="western"><surname>Kumar</surname><given-names>S</given-names></name>
+</person-group><fpage>127</fpage><lpage>128</lpage><volume>49</volume><year>2015</year><pub-id pub-id-type="pmid">26015598</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.4103/0019-5413.152393</pub-id><pub-id pub-id-type="pmcid">PMC4436475</pub-id></element-citation></ref><ref id="REF56"><label>56</label><element-citation publication-type="book"><article-title>Total Knee Replacement Techniques</article-title><person-group>
+<name name-style="western"><surname>Gemayel</surname><given-names>AC</given-names></name>
+<name name-style="western"><surname>Varacallo</surname><given-names>M</given-names></name>
+</person-group><publisher-loc>Treasure Island, FL</publisher-loc><publisher-name>StatPearls Publishing</publisher-name><year>2024</year><uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.ncbi.nlm.nih.gov/books/NBK538208/">https://www.ncbi.nlm.nih.gov/books/NBK538208/</uri><pub-id pub-id-type="pmid">30855796</pub-id></element-citation></ref><ref id="REF57"><label>57</label><element-citation publication-type="journal"><article-title>Personalised high tibial osteotomy has mechanical safety equivalent to generic device in a case-control in silico clinical trial</article-title><source>Commun Med (Lond)</source><person-group>
+<name name-style="western"><surname>MacLeod</surname><given-names>AR</given-names></name>
+<name name-style="western"><surname>Peckham</surname><given-names>N</given-names></name>
+<name name-style="western"><surname>Serrancolí</surname><given-names>G</given-names></name>
+<etal/>
+</person-group><fpage>6</fpage><volume>1</volume><year>2021</year><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s43856-021-00001-7</pub-id><pub-id pub-id-type="pmcid">PMC9053187</pub-id><pub-id pub-id-type="pmid">35602226</pub-id></element-citation></ref><ref id="REF58"><label>58</label><element-citation publication-type="journal"><article-title>An overview of 3D printed metal implants in orthopedic applications: present and future perspectives</article-title><source>Heliyon</source><person-group>
+<name name-style="western"><surname>Wu</surname><given-names>Y</given-names></name>
+<name name-style="western"><surname>Liu</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Kang</surname><given-names>L</given-names></name>
+<etal/>
+</person-group><fpage>0</fpage><volume>9</volume><year>2023</year><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.heliyon.2023.e17718</pub-id><pub-id pub-id-type="pmcid">PMC10344715</pub-id><pub-id pub-id-type="pmid">37456029</pub-id></element-citation></ref><ref id="REF59"><label>59</label><element-citation publication-type="journal"><article-title>All-inside anterior cruciate ligament reconstruction technique: tips and tricks</article-title><source>J Clin Med</source><person-group>
+<name name-style="western"><surname>Bosco</surname><given-names>F</given-names></name>
+<name name-style="western"><surname>Giustra</surname><given-names>F</given-names></name>
+<name name-style="western"><surname>Ghirri</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Cacciola</surname><given-names>G</given-names></name>
+<name name-style="western"><surname>Massè</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Capella</surname><given-names>M</given-names></name>
+</person-group><fpage>5793</fpage><volume>12</volume><year>2023</year><pub-id pub-id-type="pmid">37762734</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/jcm12185793</pub-id><pub-id pub-id-type="pmcid">PMC10532376</pub-id></element-citation></ref><ref id="REF60"><label>60</label><element-citation publication-type="journal"><article-title>Patients' perspectives related to ethical issues and risks in precision medicine: a systematic review</article-title><source>Front Med (Lausanne)</source><person-group>
+<name name-style="western"><surname>Ahmed</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Constantinidou</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Chatzittofis</surname><given-names>A</given-names></name>
+</person-group><fpage>1215663</fpage><volume>10</volume><year>2023</year><pub-id pub-id-type="pmid">37396896</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fmed.2023.1215663</pub-id><pub-id pub-id-type="pmcid">PMC10310545</pub-id></element-citation></ref><ref id="REF61"><label>61</label><element-citation publication-type="journal"><article-title>Barriers and enablers to the effective implementation of robotic assisted surgery</article-title><source>PLoS One</source><person-group>
+<name name-style="western"><surname>Lawrie</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Gillies</surname><given-names>K</given-names></name>
+<name name-style="western"><surname>Duncan</surname><given-names>E</given-names></name>
+<name name-style="western"><surname>Davies</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Beard</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Campbell</surname><given-names>MK</given-names></name>
+</person-group><fpage>0</fpage><volume>17</volume><year>2022</year><pub-id pub-id-type="doi" assigning-authority="pmc">10.1371/journal.pone.0273696</pub-id><pub-id pub-id-type="pmcid">PMC9423619</pub-id><pub-id pub-id-type="pmid">36037179</pub-id></element-citation></ref><ref id="REF62"><label>62</label><element-citation publication-type="journal"><article-title>Robotic-arm assisted technology's impact on knee arthroplasty and associated healthcare costs</article-title><source>J Health Econ Outcomes Res</source><person-group>
+<name name-style="western"><surname>Kolessar</surname><given-names>DJ</given-names></name>
+<name name-style="western"><surname>Hayes</surname><given-names>DS</given-names></name>
+<name name-style="western"><surname>Harding</surname><given-names>JL</given-names></name>
+<name name-style="western"><surname>Rudraraju</surname><given-names>RT</given-names></name>
+<name name-style="western"><surname>Graham</surname><given-names>JH</given-names></name>
+</person-group><fpage>57</fpage><lpage>66</lpage><volume>9</volume><year>2022</year><pub-id pub-id-type="pmid">36072348</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.36469/001c.37024</pub-id><pub-id pub-id-type="pmcid">PMC9398468</pub-id></element-citation></ref><ref id="REF63"><label>63</label><element-citation publication-type="journal"><article-title>A perspective on challenges and issues in biomarker development and drug and biomarker codevelopment</article-title><source>J Natl Cancer Inst</source><person-group>
+<name name-style="western"><surname>Taube</surname><given-names>SE</given-names></name>
+<name name-style="western"><surname>Clark</surname><given-names>GM</given-names></name>
+<name name-style="western"><surname>Dancey</surname><given-names>JE</given-names></name>
+<name name-style="western"><surname>McShane</surname><given-names>LM</given-names></name>
+<name name-style="western"><surname>Sigman</surname><given-names>CC</given-names></name>
+<name name-style="western"><surname>Gutman</surname><given-names>SI</given-names></name>
+</person-group><fpage>1453</fpage><lpage>1463</lpage><volume>101</volume><year>2009</year><pub-id pub-id-type="pmid">19855077</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/jnci/djp334</pub-id><pub-id pub-id-type="pmcid">PMC2773185</pub-id></element-citation></ref><ref id="REF64"><label>64</label><element-citation publication-type="journal"><article-title>3D printing applications for healthcare research and development</article-title><source>Glob Health J</source><person-group>
+<name name-style="western"><surname>Javaid</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Haleem</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Singh</surname><given-names>RP</given-names></name>
+<name name-style="western"><surname>Suman</surname><given-names>R</given-names></name>
+</person-group><fpage>217</fpage><lpage>226</lpage><volume>6</volume><year>2022</year></element-citation></ref><ref id="REF65"><label>65</label><element-citation publication-type="book"><article-title>Exploring the barriers to accessing genomic and genetic services</article-title><source>Understanding Disparities in Access to Genomic Medicine: Proceedings of a Workshop</source><person-group>
+<name name-style="western"><surname>National Academies of</surname><given-names>Sciences</given-names></name>
+<name name-style="western"><surname>Engineering</surname><given-names>Engineering</given-names></name>
+<name name-style="western"><surname>and Medicine; Health and Medicine Division; Board on Health Sciences Policy; Roundtable on Genomics and Precision</surname><given-names>Health</given-names></name>
+</person-group><publisher-loc>Washington, DC</publisher-loc><publisher-name>National Academies Press (US)</publisher-name><year>2018</year><uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.ncbi.nlm.nih.gov/books/NBK538442/">https://www.ncbi.nlm.nih.gov/books/NBK538442/</uri><pub-id pub-id-type="pmid">30452197</pub-id></element-citation></ref><ref id="REF66"><label>66</label><element-citation publication-type="journal"><article-title>Clinical validation of digital healthcare solutions: state of the art, challenges and opportunities</article-title><source>Healthcare (Basel)</source><person-group>
+<name name-style="western"><surname>Gomis-Pastor</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Berdún</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Borrás-Santos</surname><given-names>A</given-names></name>
+<etal/>
+</person-group><fpage>1057</fpage><volume>12</volume><year>2024</year><pub-id pub-id-type="pmid">38891132</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/healthcare12111057</pub-id><pub-id pub-id-type="pmcid">PMC11171879</pub-id></element-citation></ref><ref id="REF67"><label>67</label><element-citation publication-type="journal"><article-title>Exploring the evolution of robotic surgery in obstetrics and gynecology: past, present, and future perspectives</article-title><source>Cureus</source><person-group>
+<name name-style="western"><surname>Yadav</surname><given-names>P</given-names></name>
+<name name-style="western"><surname>Chaudhari</surname><given-names>K</given-names></name>
+<name name-style="western"><surname>Dave</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Sindhu</surname><given-names>A</given-names></name>
+</person-group><fpage>0</fpage><volume>16</volume><year>2024</year><pub-id pub-id-type="doi" assigning-authority="pmc">10.7759/cureus.57155</pub-id><pub-id pub-id-type="pmcid">PMC11055614</pub-id><pub-id pub-id-type="pmid">38681448</pub-id></element-citation></ref><ref id="REF68"><label>68</label><element-citation publication-type="journal"><article-title>Interoperability of heterogeneous health information systems: a systematic literature review</article-title><source>BMC Med Inform Decis Mak</source><person-group>
+<name name-style="western"><surname>Torab-Miandoab</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Samad-Soltani</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Jodati</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Rezaei-Hachesu</surname><given-names>P</given-names></name>
+</person-group><fpage>18</fpage><volume>23</volume><year>2023</year><pub-id pub-id-type="pmid">36694161</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s12911-023-02115-5</pub-id><pub-id pub-id-type="pmcid">PMC9875417</pub-id></element-citation></ref><ref id="REF69"><label>69</label><element-citation publication-type="journal"><article-title>Surgery in the 2020s: implications of advancing technology for patients and the workforce</article-title><source>Future Healthc J</source><person-group>
+<name name-style="western"><surname>Kerr</surname><given-names>RS</given-names></name>
+</person-group><fpage>46</fpage><lpage>49</lpage><volume>7</volume><year>2020</year><pub-id pub-id-type="pmid">32104765</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.7861/fhj.2020-0001</pub-id><pub-id pub-id-type="pmcid">PMC7032584</pub-id></element-citation></ref><ref id="REF70"><label>70</label><element-citation publication-type="journal"><article-title>Ethical, legal and social implications of incorporating personalized medicine into healthcare</article-title><source>Per Med</source><person-group>
+<name name-style="western"><surname>Brothers</surname><given-names>KB</given-names></name>
+<name name-style="western"><surname>Rothstein</surname><given-names>MA</given-names></name>
+</person-group><fpage>43</fpage><lpage>51</lpage><volume>12</volume><year>2015</year><pub-id pub-id-type="pmid">25601880</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.2217/pme.14.65</pub-id><pub-id pub-id-type="pmcid">PMC4296905</pub-id></element-citation></ref><ref id="REF71"><label>71</label><element-citation publication-type="journal"><article-title>Malfunctions of robotic system in surgery: role and responsibility of surgeon in legal point of view</article-title><source>Open Med (Wars)</source><person-group>
+<name name-style="western"><surname>Ferrarese</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Pozzi</surname><given-names>G</given-names></name>
+<name name-style="western"><surname>Borghi</surname><given-names>F</given-names></name>
+<etal/>
+</person-group><fpage>286</fpage><lpage>291</lpage><volume>11</volume><year>2016</year><pub-id pub-id-type="pmid">28352809</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1515/med-2016-0055</pub-id><pub-id pub-id-type="pmcid">PMC5329842</pub-id></element-citation></ref><ref id="REF72"><label>72</label><element-citation publication-type="journal"><article-title>A narrative review on perioperative pain management strategies in enhanced recovery pathways—the past, present and future</article-title><source>J Clin Med</source><person-group>
+<name name-style="western"><surname>Chen</surname><given-names>Q</given-names></name>
+<name name-style="western"><surname>Chen</surname><given-names>E</given-names></name>
+<name name-style="western"><surname>Qian</surname><given-names>X</given-names></name>
+</person-group><fpage>2568</fpage><volume>10</volume><year>2021</year><pub-id pub-id-type="pmid">34200695</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/jcm10122568</pub-id><pub-id pub-id-type="pmcid">PMC8229260</pub-id></element-citation></ref><ref id="REF73"><label>73</label><element-citation publication-type="journal"><article-title>Patient expectations and the paradigm shift of care in emergency medicine</article-title><source>J Emerg Trauma Shock</source><person-group>
+<name name-style="western"><surname>Lateef</surname><given-names>F</given-names></name>
+</person-group><fpage>163</fpage><lpage>167</lpage><volume>4</volume><year>2011</year><pub-id pub-id-type="pmid">21769199</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.4103/0974-2700.82199</pub-id><pub-id pub-id-type="pmcid">PMC3132352</pub-id></element-citation></ref><ref id="REF74"><label>74</label><element-citation publication-type="journal"><article-title>Artificial intelligence in orthopaedic surgery: a comprehensive review of current innovations and future directions</article-title><source>Comput Struct Biotechnol J</source><person-group>
+<name name-style="western"><surname>Tafat</surname><given-names>W</given-names></name>
+<name name-style="western"><surname>Budka</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>McDonald</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Wainwright</surname><given-names>TW</given-names></name>
+</person-group><fpage>100006</fpage><volume>1</volume><year>2024</year></element-citation></ref><ref id="REF75"><label>75</label><element-citation publication-type="journal"><article-title>Potential role of pharmacogenomics testing in the setting of enhanced recovery pathways after surgery</article-title><source>Pharmgenomics Pers Med</source><person-group>
+<name name-style="western"><surname>Awad</surname><given-names>H</given-names></name>
+<name name-style="western"><surname>Ahmed</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Urman</surname><given-names>RD</given-names></name>
+<name name-style="western"><surname>Stoicea</surname><given-names>N</given-names></name>
+<name name-style="western"><surname>Bergese</surname><given-names>SD</given-names></name>
+</person-group><fpage>145</fpage><lpage>154</lpage><volume>12</volume><year>2019</year><pub-id pub-id-type="pmid">31440074</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.2147/PGPM.S198224</pub-id><pub-id pub-id-type="pmcid">PMC6666379</pub-id></element-citation></ref><ref id="REF76"><label>76</label><element-citation publication-type="journal"><article-title>Knee arthroscopy versus conservative management in patients with degenerative knee disease: a systematic review</article-title><source>BMJ Open</source><person-group>
+<name name-style="western"><surname>Brignardello-Petersen</surname><given-names>R</given-names></name>
+<name name-style="western"><surname>Guyatt</surname><given-names>GH</given-names></name>
+<name name-style="western"><surname>Buchbinder</surname><given-names>R</given-names></name>
+<etal/>
+</person-group><fpage>0</fpage><volume>7</volume><year>2017</year><pub-id pub-id-type="doi" assigning-authority="pmc">10.1136/bmjopen-2017-016114</pub-id><pub-id pub-id-type="pmcid">PMC5541494</pub-id><pub-id pub-id-type="pmid">28495819</pub-id></element-citation></ref><ref id="REF77"><label>77</label><element-citation publication-type="journal"><article-title>Artificial intelligence and surgery</article-title><source>Ann Gastroenterol Surg</source><person-group>
+<name name-style="western"><surname>Takeuchi</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Kitagawa</surname><given-names>Y</given-names></name>
+</person-group><fpage>4</fpage><lpage>5</lpage><volume>8</volume><year>2024</year><pub-id pub-id-type="pmid">38250693</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/ags3.12766</pub-id><pub-id pub-id-type="pmcid">PMC10797843</pub-id></element-citation></ref><ref id="REF78"><label>78</label><element-citation publication-type="journal"><article-title>Predicting patient-reported outcomes following surgery using machine learning</article-title><source>Am Surg</source><person-group>
+<name name-style="western"><surname>Hassan</surname><given-names>AM</given-names></name>
+<name name-style="western"><surname>Biaggi-Ondina</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Rajesh</surname><given-names>A</given-names></name>
+<etal/>
+</person-group><fpage>31</fpage><lpage>35</lpage><volume>89</volume><year>2023</year><pub-id pub-id-type="pmid">35722685</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/00031348221109478</pub-id><pub-id pub-id-type="pmcid">PMC9759616</pub-id></element-citation></ref><ref id="REF79"><label>79</label><element-citation publication-type="journal"><article-title>Smart implants in orthopedic surgery, improving patient outcomes: a review</article-title><source>Innov Entrep Health</source><person-group>
+<name name-style="western"><surname>Ledet</surname><given-names>EH</given-names></name>
+<name name-style="western"><surname>Liddle</surname><given-names>B</given-names></name>
+<name name-style="western"><surname>Kradinova</surname><given-names>K</given-names></name>
+<name name-style="western"><surname>Harper</surname><given-names>S</given-names></name>
+</person-group><fpage>41</fpage><lpage>51</lpage><volume>5</volume><year>2018</year><pub-id pub-id-type="pmid">30246037</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.2147/IEH.S133518</pub-id><pub-id pub-id-type="pmcid">PMC6145822</pub-id></element-citation></ref><ref id="REF80"><label>80</label><element-citation publication-type="journal"><article-title>The possibilities of personalized 3D printed implants-a case series study</article-title><source>Medicina (Kaunas)</source><person-group>
+<name name-style="western"><surname>Safali</surname><given-names>S</given-names></name>
+<name name-style="western"><surname>Berk</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Makelov</surname><given-names>B</given-names></name>
+<name name-style="western"><surname>Acar</surname><given-names>MA</given-names></name>
+<name name-style="western"><surname>Gueorguiev</surname><given-names>B</given-names></name>
+<name name-style="western"><surname>Pape</surname><given-names>HC</given-names></name>
+</person-group><fpage>249</fpage><volume>59</volume><year>2023</year><pub-id pub-id-type="pmid">36837451</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/medicina59020249</pub-id><pub-id pub-id-type="pmcid">PMC9959288</pub-id></element-citation></ref><ref id="REF81"><label>81</label><element-citation publication-type="journal"><article-title>Gene therapy for cartilage repair</article-title><source>Cartilage</source><person-group>
+<name name-style="western"><surname>Madry</surname><given-names>H</given-names></name>
+<name name-style="western"><surname>Orth</surname><given-names>P</given-names></name>
+<name name-style="western"><surname>Cucchiarini</surname><given-names>M</given-names></name>
+</person-group><fpage>201</fpage><lpage>225</lpage><volume>2</volume><year>2011</year><pub-id pub-id-type="pmid">26069580</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/1947603510392914</pub-id><pub-id pub-id-type="pmcid">PMC4300805</pub-id></element-citation></ref><ref id="REF82"><label>82</label><element-citation publication-type="journal"><article-title>Applications of biocompatible scaffold materials in stem cell-based cartilage tissue engineering</article-title><source>Front Bioeng Biotechnol</source><person-group>
+<name name-style="western"><surname>Zhao</surname><given-names>X</given-names></name>
+<name name-style="western"><surname>Hu</surname><given-names>DA</given-names></name>
+<name name-style="western"><surname>Wu</surname><given-names>D</given-names></name>
+<etal/>
+</person-group><fpage>603444</fpage><volume>9</volume><year>2021</year><pub-id pub-id-type="pmid">33842441</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fbioe.2021.603444</pub-id><pub-id pub-id-type="pmcid">PMC8026885</pub-id></element-citation></ref><ref id="REF83"><label>83</label><element-citation publication-type="journal"><article-title>Wearable health devices in health care: narrative systematic review</article-title><source>JMIR Mhealth Uhealth</source><person-group>
+<name name-style="western"><surname>Lu</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Xie</surname><given-names>Y</given-names></name>
+<name name-style="western"><surname>Gao</surname><given-names>F</given-names></name>
+<name name-style="western"><surname>Xu</surname><given-names>S</given-names></name>
+<name name-style="western"><surname>Wu</surname><given-names>X</given-names></name>
+<name name-style="western"><surname>Ye</surname><given-names>Z</given-names></name>
+</person-group><fpage>0</fpage><volume>8</volume><year>2020</year><pub-id pub-id-type="doi" assigning-authority="pmc">10.2196/18907</pub-id><pub-id pub-id-type="pmcid">PMC7683248</pub-id><pub-id pub-id-type="pmid">33164904</pub-id></element-citation></ref><ref id="REF84"><label>84</label><element-citation publication-type="journal"><article-title>Sensorless based haptic feedback integration in robot-assisted pedicle screw insertion for lumbar spine surgery: a preliminary cadaveric study</article-title><source>Comput Struct Biotechnol J</source><person-group>
+<name name-style="western"><surname>Nakdhamabhorn</surname><given-names>S</given-names></name>
+<name name-style="western"><surname>Pillai</surname><given-names>BM</given-names></name>
+<name name-style="western"><surname>Chotivichit</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Suthakorn</surname><given-names>J</given-names></name>
+</person-group><fpage>420</fpage><lpage>433</lpage><volume>24</volume><year>2024</year><pub-id pub-id-type="pmid">38841212</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.csbj.2024.05.022</pub-id><pub-id pub-id-type="pmcid">PMC11152607</pub-id></element-citation></ref><ref id="REF85"><label>85</label><element-citation publication-type="journal"><article-title>High-resolution imaging insights into shoulder joint pain: a comprehensive review of ultrasound and magnetic resonance imaging (MRI)</article-title><source>Cureus</source><person-group>
+<name name-style="western"><surname>Nunna B</surname><given-names>Jr</given-names></name>
+<name name-style="western"><surname>Parihar</surname><given-names>P</given-names></name>
+<name name-style="western"><surname>Wanjari</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Shetty</surname><given-names>N</given-names></name>
+<name name-style="western"><surname>Bora</surname><given-names>N</given-names></name>
+</person-group><fpage>0</fpage><volume>15</volume><year>2023</year><pub-id pub-id-type="doi" assigning-authority="pmc">10.7759/cureus.48974</pub-id><pub-id pub-id-type="pmcid">PMC10725840</pub-id><pub-id pub-id-type="pmid">38111406</pub-id></element-citation></ref><ref id="REF86"><label>86</label><element-citation publication-type="journal"><article-title>How new technology is improving physical therapy</article-title><source>Curr Rev Musculoskelet Med</source><person-group>
+<name name-style="western"><surname>Owens</surname><given-names>JG</given-names></name>
+<name name-style="western"><surname>Rauzi</surname><given-names>MR</given-names></name>
+<name name-style="western"><surname>Kittelson</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Graber</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Bade</surname><given-names>MJ</given-names></name>
+<name name-style="western"><surname>Johnson</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Nabhan</surname><given-names>D</given-names></name>
+</person-group><fpage>200</fpage><lpage>211</lpage><volume>13</volume><year>2020</year><pub-id pub-id-type="pmid">32162144</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s12178-020-09610-6</pub-id><pub-id pub-id-type="pmcid">PMC7174486</pub-id></element-citation></ref><ref id="REF87"><label>87</label><element-citation publication-type="journal"><article-title>The use of nanomaterials in tissue engineering for cartilage regeneration; current approaches and future perspectives</article-title><source>Int J Mol Sci</source><person-group>
+<name name-style="western"><surname>Eftekhari</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Maleki Dizaj</surname><given-names>S</given-names></name>
+<name name-style="western"><surname>Sharifi</surname><given-names>S</given-names></name>
+<etal/>
+</person-group><fpage>536</fpage><volume>21</volume><year>2020</year><pub-id pub-id-type="pmid">31947685</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/ijms21020536</pub-id><pub-id pub-id-type="pmcid">PMC7014227</pub-id></element-citation></ref><ref id="REF88"><label>88</label><element-citation publication-type="journal"><article-title>Current and future use of telemedicine in surgical clinics during and beyond COVID-19: a narrative review</article-title><source>Ann Med Surg (Lond)</source><person-group>
+<name name-style="western"><surname>McMaster</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Wright</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Mori</surname><given-names>K</given-names></name>
+<name name-style="western"><surname>Stelmach</surname><given-names>W</given-names></name>
+<name name-style="western"><surname>To</surname><given-names>H</given-names></name>
+</person-group><fpage>102378</fpage><volume>66</volume><year>2021</year><pub-id pub-id-type="pmid">33996071</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.amsu.2021.102378</pub-id><pub-id pub-id-type="pmcid">PMC8105355</pub-id></element-citation></ref></ref-list></back></article>

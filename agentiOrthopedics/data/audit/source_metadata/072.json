@@ -1,0 +1,975 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          8
+        ]
+      ],
+      "date-time": "2026-09-08T14:20:25Z",
+      "timestamp": 1788877225318,
+      "version": "build-2803163510"
+    },
+    "reference-count": 51,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2023-03-01T00:00:00Z",
+          "timestamp": 1677628800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2023-03-01T00:00:00Z",
+          "timestamp": 1677628800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000001",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "IIS-1914792"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "IIS-1914792"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000001",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000001",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "DMS-1664644"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "DMS-1664644"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000001",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000001",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "CCF-2200052"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "CCF-2200052"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000001",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000006",
+        "name": "Office of Naval Research",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "N00014-19-1-2571"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "N00014-19-1-2571"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000006",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000057",
+        "name": "National Institute of General Medical Sciences",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "GM135930"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "GM135930"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000057",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100006108",
+        "name": "National Center for Advancing Translational Sciences",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "UL54 TR004130"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "UL54 TR004130"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100006108",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "BMC Med Inform Decis Mak"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title><jats:sec><jats:title>Background</jats:title><jats:p>Hypertension is a prevalent cardiovascular disease with severe longer-term implications. Conventional management based on clinical guidelines does not facilitate personalized treatment that accounts for a richer set of patient characteristics.</jats:p></jats:sec><jats:sec><jats:title>Methods</jats:title><jats:p>Records from 1/1/2012 to 1/1/2020 at the Boston Medical Center were used, selecting patients with either a hypertension diagnosis or meeting diagnostic criteria (≥ 130 mmHg systolic or ≥ 90 mmHg diastolic, n = 42,752). Models were developed to recommend a class of antihypertensive medications for each patient based on their characteristics. Regression immunized against outliers was combined with a nearest neighbor approach to associate with each patient an affinity group of other patients. This group was then used to make predictions of future Systolic Blood Pressure (SBP) under each prescription type. For each patient, we leveraged these predictions to select the class of medication that minimized their future predicted SBP.</jats:p></jats:sec><jats:sec><jats:title>Results</jats:title><jats:p>The proposed model, built with a distributionally robust learning procedure, leads to a reduction of 14.28 mmHg in SBP, on average. This reduction is 70.30% larger than the reduction achieved by the standard-of-care and 7.08% better than the corresponding reduction achieved by the 2nd best model which uses ordinary least squares regression. All derived models outperform following the previous prescription or the current ground truth prescription in the record. We randomly sampled and manually reviewed 350 patient records; 87.71% of these model-generated prescription recommendations passed a sanity check by clinicians.</jats:p></jats:sec><jats:sec><jats:title>Conclusion</jats:title><jats:p>Our data-driven approach for personalized hypertension treatment yielded significant improvement compared to the standard-of-care. The model implied potential benefits of computationally deprescribing and can support situations with clinical equipoise.</jats:p></jats:sec>",
+    "DOI": "10.1186/s12911-023-02137-z",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          1
+        ]
+      ],
+      "date-time": "2023-03-01T16:03:29Z",
+      "timestamp": 1677686609000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 37,
+    "title": [
+      "Personalized hypertension treatment recommendations by a data-driven model"
+    ],
+    "prefix": "10.1186",
+    "volume": "23",
+    "author": [
+      {
+        "given": "Yang",
+        "family": "Hu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jasmine",
+        "family": "Huerta",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nicholas",
+        "family": "Cordella",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rebecca G.",
+        "family": "Mishuris",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3343-2913",
+        "authenticated-orcid": false,
+        "given": "Ioannis Ch.",
+        "family": "Paschalidis",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2137_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "1659",
+        "DOI": "10.1016/S0140-6736(16)31679-8",
+        "volume": "388",
+        "author": "MH Forouzanfar",
+        "year": "2016",
+        "unstructured": "Forouzanfar MH, Afshin A, Alexander LT, Anderson HR, Bhutta ZA, Biryukov S, et al. Global, regional, and national comparative risk assessment of 79 behavioural, environmental and occupational, and metabolic risks or clusters of risks, 1990–2015: a systematic analysis for the Global Burden of Disease Study 2015. The Lancet. 2016;388:1659–724.",
+        "journal-title": "The Lancet"
+      },
+      {
+        "key": "2137_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "196",
+        "DOI": "10.3109/08037051.2011.557902",
+        "volume": "20",
+        "author": "G Grassi",
+        "year": "2011",
+        "unstructured": "Grassi G, Seravalle G, Mancia G. Cardiovascular consequences of poor compliance to antihypertensive therapy. Blood Press. 2011;20:196–203.",
+        "journal-title": "Blood Press"
+      },
+      {
+        "key": "2137_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "2560",
+        "DOI": "10.1001/jama.289.19.2560",
+        "volume": "289",
+        "author": "AV Chobanian",
+        "year": "2003",
+        "unstructured": "Chobanian AV. The seventh report of the joint national committee on prevention, detection, evaluation, and treatment of high blood pressure The JNC 7 report. JAMA. 2003;289:2560.",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "2137_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "e127",
+        "DOI": "10.1016/j.jacc.2017.11.006",
+        "volume": "71",
+        "author": "PK Whelton",
+        "year": "2018",
+        "unstructured": "Whelton PK, Carey RM, Aronow WS, Casey DE, Collins KJ, Dennison HC, et al. 2017 ACC/AHA/AAPA/ABC/ACPM/AGS/APhA/ASH/ASPC/NMA/PCNA guideline for the prevention, detection, evaluation, and management of high blood pressure in adults. J Am Coll Cardiol. 2018;71:e127-248.",
+        "journal-title": "J Am Coll Cardiol"
+      },
+      {
+        "key": "2137_CR5",
+        "first-page": "1007",
+        "volume": "57",
+        "author": "S Oparil",
+        "year": "1998",
+        "unstructured": "Oparil S, Calhoun DA. Managing the patient with hard-to-control hypertension. AFP. 1998;57:1007.",
+        "journal-title": "AFP"
+      },
+      {
+        "key": "2137_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "13",
+        "DOI": "10.1007/s11906-019-0921-3",
+        "volume": "21",
+        "author": "S Melville",
+        "year": "2019",
+        "unstructured": "Melville S, Byrd JB. Personalized medicine and the treatment of hypertension. Curr Hypertens Rep. 2019;21:13.",
+        "journal-title": "Curr Hypertens Rep"
+      },
+      {
+        "key": "2137_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "447",
+        "DOI": "10.1161/CIR.0000000000000366",
+        "volume": "133",
+        "author": "D Mozaffarian",
+        "year": "2016",
+        "unstructured": "Mozaffarian D, Benjamin EJ, Go AS, Arnett DK, Blaha MJ, Cushman M, et al. Executive summary: heart disease and stroke statistics—2016 update. Circulation. 2016;133:447–54.",
+        "journal-title": "Circulation"
+      },
+      {
+        "key": "2137_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "790",
+        "DOI": "10.1016/0895-7061(95)00151-E",
+        "volume": "8",
+        "author": "P Verdecchia",
+        "year": "1995",
+        "unstructured": "Verdecchia P, Schillaci G, Borgioni C, Ciucci A, Zampi I, Gattobigio R, et al. White coat hypertension and white coat effect similarities and differences. Am J Hypertens. 1995;8:790–8.",
+        "journal-title": "Am J Hypertens"
+      },
+      {
+        "key": "2137_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "293",
+        "DOI": "10.1097/00126097-200212000-00001",
+        "volume": "7",
+        "author": "TG Pickering",
+        "year": "2002",
+        "unstructured": "Pickering TG, Gerin W, Schwartz AR. What is the white-coat effect and how should it be measured? Blood Press Monit. 2002;7:293–300.",
+        "journal-title": "Blood Press Monit"
+      },
+      {
+        "key": "2137_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "2671",
+        "DOI": "10.1042/CS20160407",
+        "volume": "131",
+        "author": "C Savoia",
+        "year": "2017",
+        "unstructured": "Savoia C, Volpe M, Grassi G, Borghi C, Agabiti Rosei E, Touyz RM. Personalized medicine—a modern approach for the diagnosis and management of hypertension. Clin Sci. 2017;131:2671–85.",
+        "journal-title": "Clin Sci"
+      },
+      {
+        "key": "2137_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "1403",
+        "DOI": "10.1161/HYPERTENSIONAHA.108.189141",
+        "volume": "51",
+        "author": "DA Calhoun",
+        "year": "2008",
+        "unstructured": "Calhoun DA, Jones D, Textor S, Goff DC, Murphy TP, Toto RD, et al. Resistant hypertension: diagnosis, evaluation, and treatment. Hypertension. 2008;51:1403–19.",
+        "journal-title": "Hypertension"
+      },
+      {
+        "key": "2137_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "175",
+        "DOI": "10.1186/s12911-017-0575-5",
+        "volume": "17",
+        "author": "D Backenroth",
+        "year": "2017",
+        "unstructured": "Backenroth D, Chase HS, Wei Y, Friedman C. Monitoring prescribing patterns using regression and electronic health records. BMC Med Inform Decis Mak. 2017;17:175.",
+        "journal-title": "BMC Med Inform Decis Mak"
+      },
+      {
+        "key": "2137_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "339",
+        "DOI": "10.1007/s10729-021-09545-5",
+        "volume": "24",
+        "author": "D Bertsimas",
+        "year": "2021",
+        "unstructured": "Bertsimas D, Borenstein A, Mingardi L, Nohadani O, Orfanoudaki A, Stellato B, et al. Personalized prescription of ACEI/ARBs for hypertensive COVID-19 patients. Health Care Manag Sci. 2021;24:339–55.",
+        "journal-title": "Health Care Manag Sci"
+      },
+      {
+        "key": "2137_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "2657",
+        "DOI": "10.1016/j.jacc.2017.03.571",
+        "volume": "69",
+        "author": "C Krittanawong",
+        "year": "2017",
+        "unstructured": "Krittanawong C, Zhang H, Wang Z, Aydar M, Kitai T. Artificial intelligence in precision cardiovascular medicine. J Am Coll Cardiol. 2017;69:2657–64.",
+        "journal-title": "J Am Coll Cardiol"
+      },
+      {
+        "key": "2137_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "830",
+        "DOI": "10.1016/j.jbi.2013.06.010",
+        "volume": "46",
+        "author": "NG Weiskopf",
+        "year": "2013",
+        "unstructured": "Weiskopf NG, Hripcsak G, Swaminathan S, Weng C. Defining and measuring completeness of electronic health records for secondary use. J Biomed Inform. 2013;46:830–6.",
+        "journal-title": "J Biomed Inform"
+      },
+      {
+        "key": "2137_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "198",
+        "DOI": "10.1093/jamia/ocw042",
+        "volume": "24",
+        "author": "BA Goldstein",
+        "year": "2017",
+        "unstructured": "Goldstein BA, Navar AM, Pencina MJ, Ioannidis JPA. Opportunities and challenges in developing risk prediction models with electronic health records data: a systematic review. J Am Med Inform Assoc. 2017;24:198–208.",
+        "journal-title": "J Am Med Inform Assoc"
+      },
+      {
+        "key": "2137_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "3667",
+        "DOI": "10.1177/0962280218810911",
+        "volume": "28",
+        "author": "TS Brisimi",
+        "year": "2019",
+        "unstructured": "Brisimi TS, Xu T, Wang T, Dai W, Paschalidis IC. Predicting diabetes-related hospitalizations based on electronic health records. Stat Methods Med Res. 2019;28:3667–82.",
+        "journal-title": "Stat Methods Med Res"
+      },
+      {
+        "key": "2137_CR18",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhu F, Guo J, Li R, Huang J. Robust Actor-Critic Contextual Bandit for Mobile Health (mHealth) Interventions. arXiv:180209714 [cs]. 2018.",
+        "DOI": "10.1145/3233547.3233554"
+      },
+      {
+        "key": "2137_CR19",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tewari A, Murphy S. From ads to interventions: contextual bandits in mobile health. In: Mobile health—sensors, analytic methods, and applications. 2017.",
+        "DOI": "10.1007/978-3-319-51394-2_25"
+      },
+      {
+        "key": "2137_CR20",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Stiglic G, Kocbek P, Fijacko N, Zitnik M, Verbert K, Cilar L. Interpretability of machine learning based prediction models in healthcare. WIREs Data Mining Knowl Discov. 2020;10.",
+        "DOI": "10.1002/widm.1379"
+      },
+      {
+        "key": "2137_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1016/j.jnca.2018.12.012",
+        "volume": "129",
+        "author": "Q Zhang",
+        "year": "2019",
+        "unstructured": "Zhang Q, Bai C, Chen Z, Li P, Wang S, Gao H. Smart Chinese medicine for hypertension treatment with a deep learning model. J Netw Comput Appl. 2019;129:1–8.",
+        "journal-title": "J Netw Comput Appl"
+      },
+      {
+        "key": "2137_CR22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijmedinf.2020.104122",
+        "volume": "139",
+        "author": "X Ye",
+        "year": "2020",
+        "unstructured": "Ye X, Zeng QT, Facelli JC, Brixner DI, Conway M, Bray BE. Predicting optimal hypertension treatment pathways using recurrent neural networks. Int J Med Informatics. 2020;139: 104122.",
+        "journal-title": "Int J Med Informatics"
+      },
+      {
+        "key": "2137_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "252",
+        "DOI": "10.1186/s12911-020-01268-x",
+        "volume": "20",
+        "author": "D Mandair",
+        "year": "2020",
+        "unstructured": "Mandair D, Tiwari P, Simon S, Colborn KL, Rosenberg MA. Prediction of incident myocardial infarction using machine learning applied to harmonized electronic health record data. BMC Med Inform Decis Mak. 2020;20:252.",
+        "journal-title": "BMC Med Inform Decis Mak"
+      },
+      {
+        "key": "2137_CR24",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chen R, Paschalidis IC. Distributionally Robust Learning. Foundations and Trends® in Optimization. 2020;4:1–243.",
+        "DOI": "10.1561/2400000026"
+      },
+      {
+        "key": "2137_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "21",
+        "DOI": "10.1109/TIT.1967.1053964",
+        "volume": "13",
+        "author": "T Cover",
+        "year": "1967",
+        "unstructured": "Cover T, Hart P. Nearest neighbor pattern classification. IEEE Trans Inf Theory. 1967;13:21–7.",
+        "journal-title": "IEEE Trans Inf Theory"
+      },
+      {
+        "key": "2137_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "5",
+        "DOI": "10.1023/A:1010933404324",
+        "volume": "45",
+        "author": "L Breiman",
+        "year": "2001",
+        "unstructured": "Breiman L. Random forests. Mach Learn. 2001;45:5–32.",
+        "journal-title": "Mach Learn"
+      },
+      {
+        "key": "2137_CR27",
+        "first-page": "517",
+        "volume": "19",
+        "author": "R Chen",
+        "year": "2018",
+        "unstructured": "Chen R, Paschalidis IC. A robust learning approach for regression models based on distributionally robust optimization. J Mach Learn Res. 2018;19:517–64.",
+        "journal-title": "J Mach Learn Res"
+      },
+      {
+        "key": "2137_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "607",
+        "DOI": "10.1038/sj.jhh.1001873",
+        "volume": "19",
+        "author": "C Bourgault",
+        "year": "2005",
+        "unstructured": "Bourgault C, Sénécal M, Brisson M, Marentette MA, Grégoire J-P. Persistence and discontinuation patterns of antihypertensive therapy among newly treated patients: a population-based study. J Hum Hypertens. 2005;19:607–13.",
+        "journal-title": "J Hum Hypertens"
+      },
+      {
+        "key": "2137_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "2093",
+        "DOI": "10.1097/01.hjh.0000186832.41125.8a",
+        "volume": "23",
+        "author": "G Mazzaglia",
+        "year": "2005",
+        "unstructured": "Mazzaglia G, Mantovani LG, Sturkenboom MC, Filippi A, Trifirò G, Cricelli C, et al. Patterns of persistence with antihypertensive medications in newly diagnosed hypertensive patients in Italy: a retrospective cohort study in primary care. J Hypertens. 2005;23:2093–100.",
+        "journal-title": "J Hypertens"
+      },
+      {
+        "key": "2137_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "802",
+        "DOI": "10.1038/ajh.2009.67",
+        "volume": "22",
+        "author": "MCS Wong",
+        "year": "2009",
+        "unstructured": "Wong MCS, Jiang JY, Gibbs T, Griffiths SM. Factors associated with antihypertensive drug discontinuation among Chinese patients: a cohort study. Am J Hypertens. 2009;22:802–10.",
+        "journal-title": "Am J Hypertens"
+      },
+      {
+        "key": "2137_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "185",
+        "DOI": "10.1007/s40256-015-0116-5",
+        "volume": "15",
+        "author": "S Taddei",
+        "year": "2015",
+        "unstructured": "Taddei S. Combination therapy in hypertension: what are the best options according to clinical pharmacology principles and controlled clinical trial evidence? Am J Cardiovasc Drugs. 2015;15:185–94.",
+        "journal-title": "Am J Cardiovasc Drugs"
+      },
+      {
+        "key": "2137_CR32",
+        "unstructured": "Chen R, Paschalidis I. Selecting optimal decisions via distributionally robust nearest-neighbor regression. In: Advances in Neural Information Processing Systems. Curran Associates, Inc.; 2019."
+      },
+      {
+        "key": "2137_CR33",
+        "doi-asserted-by": "crossref",
+        "first-page": "267",
+        "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+        "volume": "58",
+        "author": "R Tibshirani",
+        "year": "1996",
+        "unstructured": "Tibshirani R. Regression shrinkage and selection via the Lasso. J Roy Stat Soc: Ser B (Methodol). 1996;58:267–88.",
+        "journal-title": "J Roy Stat Soc: Ser B (Methodol)"
+      },
+      {
+        "key": "2137_CR34",
+        "unstructured": "Breiman L, Friedman JH, Olshen R, Stone CJ. Classification and Regression Trees. 1984."
+      },
+      {
+        "key": "2137_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "8536",
+        "DOI": "10.3390/ijms21228536",
+        "volume": "21",
+        "author": "P Araos",
+        "year": "2020",
+        "unstructured": "Araos P, Figueroa S, Amador CA. The role of neutrophils in hypertension. Int J Mol Sci. 2020;21:8536.",
+        "journal-title": "Int J Mol Sci"
+      },
+      {
+        "key": "2137_CR36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1155/2017/7089493",
+        "volume": "2017",
+        "author": "N Li",
+        "year": "2017",
+        "unstructured": "Li N, Zhou H, Tang Q. Red blood cell distribution width: a novel predictive indicator for cardiovascular and cerebrovascular diseases. Dis Markers. 2017;2017: e7089493.",
+        "journal-title": "Dis Markers"
+      },
+      {
+        "key": "2137_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "177",
+        "DOI": "10.3109/08037051.2012.645335",
+        "volume": "21",
+        "author": "A Tanindi",
+        "year": "2012",
+        "unstructured": "Tanindi A, Topal FE, Topal F, Celik B. Red cell distribution width in patients with prehypertension and hypertension. Blood Press. 2012;21:177–81.",
+        "journal-title": "Blood Press"
+      },
+      {
+        "key": "2137_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "827",
+        "DOI": "10.1001/jamainternmed.2015.0324",
+        "volume": "175",
+        "author": "IA Scott",
+        "year": "2015",
+        "unstructured": "Scott IA, Hilmer SN, Reeve E, Potter K, Le Couteur D, Rigby D, et al. Reducing inappropriate polypharmacy: the process of deprescribing. JAMA Intern Med. 2015;175:827–34.",
+        "journal-title": "JAMA Intern Med"
+      },
+      {
+        "key": "2137_CR39",
+        "doi-asserted-by": "publisher",
+        "first-page": "2584",
+        "DOI": "10.1016/j.jacc.2019.03.467",
+        "volume": "73",
+        "author": "A Krishnaswami",
+        "year": "2019",
+        "unstructured": "Krishnaswami A, Steinman MA, Goyal P, Zullo AR, Anderson TS, Birtcher KK, et al. Deprescribing in older adults with cardiovascular disease. J Am Coll Cardiol. 2019;73:2584–95.",
+        "journal-title": "J Am Coll Cardiol"
+      },
+      {
+        "key": "2137_CR40",
+        "doi-asserted-by": "publisher",
+        "first-page": "507",
+        "DOI": "10.1001/jama.2013.284427",
+        "volume": "311",
+        "author": "PA James",
+        "year": "2014",
+        "unstructured": "James PA, Oparil S, Carter BL, Cushman WC, Dennison-Himmelfarb C, Handler J, et al. Evidence-based guideline for the management of high blood pressure in adults: report from the panel members appointed to the Eighth Joint National Committee (JNC 8). JAMA. 2014;311:507–20.",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "2137_CR41",
+        "doi-asserted-by": "publisher",
+        "first-page": "193",
+        "DOI": "10.3109/08037051.2013.812549",
+        "volume": "22",
+        "author": "G Mancia",
+        "year": "2013",
+        "unstructured": "Mancia G, Fagard R, Narkiewicz K, Redon J, Zanchetti A, Böhm M, et al. 2013 ESH/ESC guidelines for the management of arterial hypertension. Blood Press. 2013;22:193–278.",
+        "journal-title": "Blood Press"
+      },
+      {
+        "key": "2137_CR42",
+        "doi-asserted-by": "publisher",
+        "first-page": "1045",
+        "DOI": "10.1161/CIRCRESAHA.118.313236",
+        "volume": "124",
+        "author": "A Benetos",
+        "year": "2019",
+        "unstructured": "Benetos A, Petrovic M, Strandberg T. Hypertension management in older and frail older patients. Circ Res. 2019;124:1045–60.",
+        "journal-title": "Circ Res"
+      },
+      {
+        "key": "2137_CR43",
+        "doi-asserted-by": "publisher",
+        "first-page": "2039",
+        "DOI": "10.1001/jama.2020.4871",
+        "volume": "323",
+        "author": "JP Sheppard",
+        "year": "2020",
+        "unstructured": "Sheppard JP, Burt J, Lown M, Temple E, Lowe R, Fraser R, et al. Effect of antihypertensive medication reduction vs usual care on short-term blood pressure control in patients with hypertension aged 80 years and older: the optimise randomized clinical trial. JAMA. 2020;323:2039–51.",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "2137_CR44",
+        "doi-asserted-by": "publisher",
+        "first-page": "1090",
+        "DOI": "10.1111/jgs.16388",
+        "volume": "68",
+        "author": "C Sanyal",
+        "year": "2020",
+        "unstructured": "Sanyal C, Turner JP, Martin P, Tannenbaum C. Cost-effectiveness of pharmacist-led deprescribing of NSAIDs in community-dwelling older adults. J Am Geriatr Soc. 2020;68:1090–7.",
+        "journal-title": "J Am Geriatr Soc"
+      },
+      {
+        "key": "2137_CR45",
+        "doi-asserted-by": "publisher",
+        "first-page": "1061",
+        "DOI": "10.1093/gerona/glaa180",
+        "volume": "76",
+        "author": "JP Turner",
+        "year": "2021",
+        "unstructured": "Turner JP, Sanyal C, Martin P, Tannenbaum C. Economic Evaluation of sedative deprescribing in older adults by community pharmacists. J Gerontol A Biol Sci Med Sci. 2021;76:1061–7.",
+        "journal-title": "J Gerontol A Biol Sci Med Sci"
+      },
+      {
+        "key": "2137_CR46",
+        "doi-asserted-by": "publisher",
+        "first-page": "424",
+        "DOI": "10.1161/HYPERTENSIONAHA.118.12191",
+        "volume": "73",
+        "author": "RM Carey",
+        "year": "2019",
+        "unstructured": "Carey RM, Sakhuja S, Calhoun DA, Whelton PK, Muntner P. Prevalence of apparent treatment-resistant hypertension in the united states. Hypertension. 2019;73:424–31.",
+        "journal-title": "Hypertension"
+      },
+      {
+        "key": "2137_CR47",
+        "doi-asserted-by": "publisher",
+        "first-page": "393",
+        "DOI": "10.1111/j.1524-6175.2002.02045.x",
+        "volume": "4",
+        "author": "WC Cushman",
+        "year": "2002",
+        "unstructured": "Cushman WC, Ford CE, Cutler JA, Margolis KL, Davis BR, Grimm RH, et al. Original papers. Success and predictors of blood pressure control in diverse North American settings: the antihypertensive and lipid-lowering treatment to prevent heart attack trial (ALLHAT). J Clin Hypertension. 2002;4:393–404.",
+        "journal-title": "J. Clin. Hypertension."
+      },
+      {
+        "key": "2137_CR48",
+        "doi-asserted-by": "publisher",
+        "first-page": "707",
+        "DOI": "10.1016/j.amjmed.2015.02.008",
+        "volume": "128",
+        "author": "VJ Howard",
+        "year": "2015",
+        "unstructured": "Howard VJ, Tanner RM, Anderson A, Irvin MR, Calhoun DA, Lackland DT, et al. Apparent treatment-resistant hypertension among individuals with history of stroke or transient ischemic attack. Am J Med. 2015;128:707-714.e2.",
+        "journal-title": "Am J Med"
+      },
+      {
+        "key": "2137_CR49",
+        "doi-asserted-by": "publisher",
+        "first-page": "614",
+        "DOI": "10.36660/abc.20201180",
+        "volume": "118",
+        "author": "CT Sousa",
+        "year": "2022",
+        "unstructured": "Sousa CT, Ribeiro A, Barreto SM, Giatti L, Brant L, Lotufo P, et al. Racial differences in blood pressure control from users of antihypertensive monotherapy: results from the ELSA-Brasil study. Arq Bras Cardiol. 2022;118:614–22.",
+        "journal-title": "Arq Bras Cardiol"
+      },
+      {
+        "key": "2137_CR50",
+        "doi-asserted-by": "publisher",
+        "first-page": "965",
+        "DOI": "10.1001/archinte.161.7.965",
+        "volume": "161",
+        "author": "P Sareli",
+        "year": "2001",
+        "unstructured": "Sareli P, Radevski IV, Valtchanova ZP, Libhaber E, Candy GP, Den Hond E, et al. Efficacy of different drug classes used to initiate antihypertensive treatment in black subjects: results of a randomized trial in Johannesburg, South Africa. Archiv Internal Med. 2001;161:965–71.",
+        "journal-title": "Archiv Internal Med"
+      },
+      {
+        "key": "2137_CR51",
+        "doi-asserted-by": "publisher",
+        "first-page": "102",
+        "DOI": "10.1016/j.ahj.2018.05.006",
+        "volume": "204",
+        "author": "O Mukhtar",
+        "year": "2018",
+        "unstructured": "Mukhtar O, Cheriyan J, Cockcroft JR, Collier D, Coulson JM, Dasgupta I, et al. A randomized controlled crossover trial evaluating differential responses to antihypertensive drugs (used as mono- or dual therapy) on the basis of ethnicity: The comparIsoN oF Optimal Hypertension RegiMens; part of the Ancestry Informative Markers in HYpertension program—AIM-HY INFORM trial. Am Heart J. 2018;204:102–8.",
+        "journal-title": "Am Heart J"
+      }
+    ],
+    "container-title": [
+      "BMC Medical Informatics and Decision Making"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s12911-023-02137-z.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1186/s12911-023-02137-z/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s12911-023-02137-z.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          15
+        ]
+      ],
+      "date-time": "2024-10-15T13:56:43Z",
+      "timestamp": 1729000603000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-023-02137-z"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          1
+        ]
+      ]
+    },
+    "references-count": 51,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "2137"
+    ],
+    "URL": "https://doi.org/10.1186/s12911-023-02137-z",
+    "relation": {},
+    "ISSN": [
+      "1472-6947"
+    ],
+    "issn-type": [
+      {
+        "value": "1472-6947",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          1
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "11 September 2022",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "9 February 2023",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "1 March 2023",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "The study has been approved by the Boston University Medical Campus and Boston University Institutional Review Boards. Since it analyzed de-identified records, it was classified as non-human subject research. Informed consent has been waived. The Boston University team has signed a Data Use Agreement (DUA) with the Boston Medical Center to access the data.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethics approval and consent to participate"
+        }
+      },
+      {
+        "value": "Not Applicable.",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Consent for publication"
+        }
+      },
+      {
+        "value": "The authors declare that they have no competing interests.",
+        "order": 4,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "44"
+  }
+}

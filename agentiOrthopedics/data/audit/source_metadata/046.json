@@ -1,0 +1,1099 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          26
+        ]
+      ],
+      "date-time": "2026-08-26T14:47:27Z",
+      "timestamp": 1787755647685,
+      "version": "build-2784847793"
+    },
+    "reference-count": 76,
+    "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+    "issue": "17",
+    "content-domain": {
+      "domain": [
+        "lww.com",
+        "ovid.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          7
+        ]
+      ]
+    },
+    "abstract": "<jats:p>\n                    <jats:list list-type=\"plain\">\n                      <jats:list-item>\n                        <jats:p>➤ Machine learning is a subset of artificial intelligence in which computer algorithms are trained to make classifications and predictions based on patterns in data. The utilization of these techniques is rapidly expanding in the field of orthopaedic research.</jats:p>\n                      </jats:list-item>\n                      <jats:list-item>\n                        <jats:p>➤ There are several domains in which machine learning has application to orthopaedics, including radiographic diagnosis, gait analysis, implant identification, and patient outcome prediction.</jats:p>\n                      </jats:list-item>\n                      <jats:list-item>\n                        <jats:p>➤ Several limitations prevent the widespread use of machine learning in the daily clinical environment. However, future work can overcome these issues and enable machine learning tools to be a useful adjunct for orthopaedic surgeons in their clinical decision-making.</jats:p>\n                      </jats:list-item>\n                    </jats:list>\n                  </jats:p>",
+    "DOI": "10.2106/jbjs.21.01305",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          5
+        ]
+      ],
+      "date-time": "2022-04-05T14:03:29Z",
+      "timestamp": 1649167409000
+    },
+    "page": "1586-1594",
+    "update-policy": "https://doi.org/10.1097/lww.0000000000001000",
+    "source": "Crossref",
+    "is-referenced-by-count": 38,
+    "title": [
+      "Machine Learning for the Orthopaedic Surgeon"
+    ],
+    "prefix": "10.2106",
+    "volume": "104",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-8754-7070",
+        "authenticated-orcid": false,
+        "given": "Daniel",
+        "family": "Alsoof",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Orthopedic Surgery, Warren Alpert Medical School of Brown University, Providence, Rhode Island"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9633-5336",
+        "authenticated-orcid": false,
+        "given": "Christopher L.",
+        "family": "McDonald",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopedic Surgery, Warren Alpert Medical School of Brown University, Providence, Rhode Island"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2303-7610",
+        "authenticated-orcid": false,
+        "given": "Eren O.",
+        "family": "Kuris",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopedic Surgery, Warren Alpert Medical School of Brown University, Providence, Rhode Island"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9597-4139",
+        "authenticated-orcid": false,
+        "given": "Alan H.",
+        "family": "Daniels",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopedic Surgery, Warren Alpert Medical School of Brown University, Providence, Rhode Island"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "276",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          5
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "6",
+        "key": "bib1-20250430",
+        "first-page": "235",
+        "article-title": "Artificial Intelligence for the Orthopaedic Surgeon: An Overview of Potential Benefits, Limitations, and Clinical Applications",
+        "volume": "29",
+        "author": "Makhni",
+        "year": "2021",
+        "journal-title": "J Am Acad Orthop Surg."
+      },
+      {
+        "issue": "4",
+        "key": "bib2-20250430",
+        "first-page": "12",
+        "article-title": "A proposal for the Dartmouth summer research project on artificial intelligence",
+        "volume": "27",
+        "author": "McCarthy",
+        "year": "2006",
+        "journal-title": "AI Mag."
+      },
+      {
+        "issue": "12",
+        "key": "bib3-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "1476",
+        "DOI": "10.1302/0301-620X.101B12.BJJ-2019-0850.R1",
+        "article-title": "The role of artificial intelligence and machine learning in predicting orthopaedic outcomes",
+        "volume": "101-B",
+        "author": "Bayliss",
+        "year": "2019",
+        "journal-title": "Bone Joint J."
+      },
+      {
+        "issue": "6",
+        "key": "bib4-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "603",
+        "DOI": "10.1111/joim.12822",
+        "article-title": "eDoctor: machine learning and the future of medicine",
+        "volume": "284",
+        "author": "Handelman",
+        "year": "2018",
+        "journal-title": "J Intern Med."
+      },
+      {
+        "issue": "14",
+        "key": "bib5-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "1347",
+        "DOI": "10.1056/NEJMra1814259",
+        "article-title": "Machine Learning in Medicine",
+        "volume": "380",
+        "author": "Rajkomar",
+        "year": "2019",
+        "journal-title": "N Engl J Med."
+      },
+      {
+        "issue": "1",
+        "key": "bib7-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "64",
+        "DOI": "10.1186/s12874-019-0681-4",
+        "article-title": "Machine learning in medicine: a practical introduction",
+        "volume": "19",
+        "author": "Sidey-Gibbons",
+        "year": "2019",
+        "journal-title": "BMC Med Res Methodol."
+      },
+      {
+        "key": "bib8-20250430",
+        "article-title": "What Is the Difference Between Test and Validation Datasets?",
+        "author": "Brownlee",
+        "year": "2017",
+        "journal-title": "Machine Learning Mastery."
+      },
+      {
+        "issue": "20",
+        "key": "bib9-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "1920",
+        "DOI": "10.1161/CIRCULATIONAHA.115.001593",
+        "article-title": "Machine learning in medicine",
+        "volume": "132",
+        "author": "Deo",
+        "year": "2015",
+        "journal-title": "Circulation."
+      },
+      {
+        "issue": "1",
+        "key": "bib10-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "111",
+        "DOI": "10.1007/s12551-018-0449-9",
+        "article-title": "Machine learning: applications of artificial intelligence to imaging and diagnosis",
+        "volume": "11",
+        "author": "Nichols",
+        "year": "2019",
+        "journal-title": "Biophys Rev."
+      },
+      {
+        "issue": "4",
+        "key": "bib12-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "230",
+        "DOI": "10.1136/svn-2017-000101",
+        "article-title": "Artificial intelligence in healthcare: past, present and future",
+        "volume": "2",
+        "author": "Jiang",
+        "year": "2017",
+        "journal-title": "Stroke Vasc Neurol."
+      },
+      {
+        "issue": "12",
+        "key": "bib13-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "3488",
+        "DOI": "10.1016/j.arth.2020.06.063",
+        "article-title": "K-Means Clustering to Elucidate Vulnerable Subpopulations Among Medicare Patients Undergoing Total Joint Arthroplasty",
+        "volume": "35",
+        "author": "Ranti",
+        "year": "2020",
+        "journal-title": "J Arthroplasty."
+      },
+      {
+        "key": "bib14-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "9",
+        "DOI": "10.1016/j.jbi.2017.10.008",
+        "article-title": "Beyond discrimination: A comparison of calibration methods and clinical usefulness of predictive models of readmission risk",
+        "volume": "76",
+        "author": "Walsh",
+        "year": "2017",
+        "journal-title": "J Biomed Inform."
+      },
+      {
+        "issue": "14",
+        "key": "bib15-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "1377",
+        "DOI": "10.1001/jama.2017.12126",
+        "article-title": "Discrimination and Calibration of Clinical Prediction Models: Users’ Guides to the Medical Literature",
+        "volume": "318",
+        "author": "Alba",
+        "year": "2017",
+        "journal-title": "JAMA."
+      },
+      {
+        "issue": "1",
+        "key": "bib16-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "19",
+        "DOI": "10.1186/s41512-017-0020-3",
+        "article-title": "The Brier score does not evaluate the clinical utility of diagnostic tests or prediction models",
+        "volume": "1",
+        "author": "Assel",
+        "year": "2017",
+        "journal-title": "Diagn Progn Res."
+      },
+      {
+        "issue": "3",
+        "key": "bib17-20250430",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1371/journal.pone.0091249",
+        "article-title": "Alternative performance measures for prediction models",
+        "volume": "9",
+        "author": "Wu",
+        "year": "2014",
+        "journal-title": "PLoS One."
+      },
+      {
+        "key": "bib18-20250430",
+        "first-page": "25",
+        "article-title": "The rise of artificial intelligence in healthcare applications",
+        "author": "Bohr",
+        "year": "2020",
+        "journal-title": "Artificial Intelligence in Healthcare."
+      },
+      {
+        "issue": "7676",
+        "key": "bib19-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "354",
+        "DOI": "10.1038/nature24270",
+        "article-title": "Mastering the game of Go without human knowledge",
+        "volume": "550",
+        "author": "Silver",
+        "year": "2017",
+        "journal-title": "Nature."
+      },
+      {
+        "key": "bib20-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "2012",
+        "DOI": "10.12688/f1000research.13016.1",
+        "article-title": "The rise and fall of machine learning methods in biomedical research",
+        "volume": "6",
+        "author": "Koohy",
+        "year": "2017",
+        "journal-title": "F1000Res."
+      },
+      {
+        "issue": "1",
+        "key": "bib22-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "3923",
+        "DOI": "10.1038/s41467-020-17419-7",
+        "article-title": "Improving the accuracy of medical diagnosis with causal machine learning",
+        "volume": "11",
+        "author": "Richens",
+        "year": "2020",
+        "journal-title": "Nat Commun."
+      },
+      {
+        "issue": "2",
+        "key": "bib23-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "1687814018755519",
+        "DOI": "10.1177/1687814018755519",
+        "article-title": "Machine learning techniques for quality control in high conformance manufacturing environment",
+        "volume": "10",
+        "author": "Escobar",
+        "year": "2018",
+        "journal-title": "Adv Mech Eng."
+      },
+      {
+        "key": "bib24-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "114820",
+        "DOI": "10.1016/j.eswa.2021.114820",
+        "article-title": "Machine Learning for industrial applications: A comprehensive literature review",
+        "volume": "175",
+        "author": "Bertolini",
+        "year": "2021",
+        "journal-title": "Expert Syst Appl."
+      },
+      {
+        "issue": "1_suppl)(suppl",
+        "key": "bib25-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "23S",
+        "DOI": "10.1177/2192568220961353",
+        "article-title": "Applications of Machine Learning to Imaging of Spinal Disorders: Current Status and Future Directions",
+        "volume": "11",
+        "author": "Merali",
+        "year": "2021",
+        "journal-title": "Global Spine J."
+      },
+      {
+        "issue": "5",
+        "key": "bib26-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "933",
+        "DOI": "10.1016/j.media.2012.02.005",
+        "article-title": "Machine learning and radiology",
+        "volume": "16",
+        "author": "Wang",
+        "year": "2012",
+        "journal-title": "Med Image Anal."
+      },
+      {
+        "issue": "Pt 2",
+        "key": "bib27-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "108",
+        "DOI": "10.1016/j.compmedimag.2015.03.001",
+        "article-title": "Features extraction in anterior and posterior cruciate ligaments analysis",
+        "volume": "46",
+        "author": "Zarychta",
+        "year": "2015",
+        "journal-title": "Comput Med Imaging Graph."
+      },
+      {
+        "issue": "11",
+        "key": "bib28-20250430",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1371/journal.pmed.1002699",
+        "article-title": "Deep-learning-assisted diagnosis for knee magnetic resonance imaging: Development and retrospective validation of MRNet",
+        "volume": "15",
+        "author": "Bien",
+        "year": "2018",
+        "journal-title": "PLoS Med."
+      },
+      {
+        "issue": "6",
+        "key": "bib29-20250430",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1371/journal.pone.0178992",
+        "article-title": "A preliminary examination of the diagnostic value of deep learning in hip osteoarthritis",
+        "volume": "12",
+        "author": "Xue",
+        "year": "2017",
+        "journal-title": "PLoS One."
+      },
+      {
+        "issue": "3",
+        "key": "bib30-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "788",
+        "DOI": "10.1148/radiol.2017162100",
+        "article-title": "Vertebral body compression fractures and bone density: Automated detection and classification on CT Images",
+        "volume": "284",
+        "author": "Burns",
+        "year": "2017",
+        "journal-title": "Radiology."
+      },
+      {
+        "issue": "8",
+        "key": "bib31-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "2157",
+        "DOI": "10.1007/s00586-021-06799-z",
+        "article-title": "Artificial intelligence clustering of adult spinal deformity sagittal plane morphology predicts surgical characteristics, alignment, and outcomes",
+        "volume": "30",
+        "author": "Durand",
+        "year": "2021",
+        "journal-title": "Eur Spine J."
+      },
+      {
+        "issue": "13",
+        "key": "bib32-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "915",
+        "DOI": "10.1097/BRS.0000000000002974",
+        "article-title": "European Spine Study Group, International Spine Study Group. Artificial Intelligence Based Hierarchical Clustering of Patient Types and Intervention Categories in Adult Spinal Deformity Surgery: Towards a New Classification Scheme that Predicts Quality and Value",
+        "volume": "44",
+        "author": "Ames",
+        "year": "2019",
+        "journal-title": "Spine (Phila Pa 1976)."
+      },
+      {
+        "issue": "10",
+        "key": "bib33-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "16",
+        "DOI": "10.1302/0301-620X.98B10.BJJ.2016.0473.R1",
+        "article-title": "Gait comparison of unicompartmental and total knee arthroplasties with healthy controls",
+        "volume": "98-B",
+        "author": "Jones",
+        "year": "2016",
+        "journal-title": "Bone Joint J."
+      },
+      {
+        "issue": "12",
+        "key": "bib34-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "2751",
+        "DOI": "10.1097/CORR.0000000000001360",
+        "article-title": "Does Artificial Intelligence Outperform Natural Intelligence in Interpreting Musculoskeletal Radiological Studies? A Systematic Review",
+        "volume": "478",
+        "author": "Groot",
+        "year": "2020",
+        "journal-title": "Clin Orthop Relat Res."
+      },
+      {
+        "issue": "16",
+        "key": "bib35-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "1151",
+        "DOI": "10.1097/BRS.0000000000003475",
+        "article-title": "Machine Learning for Predictive Modeling of 90-day Readmission, Major Medical Complication, and Discharge to a Facility in Patients Undergoing Long Segment Posterior Lumbar Spine Fusion",
+        "volume": "45",
+        "author": "Jain",
+        "year": "2020",
+        "journal-title": "Spine (Phila Pa 1976"
+      },
+      {
+        "issue": "18",
+        "key": "bib36-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "4074",
+        "DOI": "10.3390/jcm10184074",
+        "article-title": "Machine Learning Prediction of Length of Stay in Adult Spinal Deformity Patients Undergoing Posterior Spine Fusion Surgery",
+        "volume": "10",
+        "author": "Zhang",
+        "year": "2021",
+        "journal-title": "J Clin Med."
+      },
+      {
+        "issue": "13",
+        "key": "bib37-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "e580",
+        "DOI": "10.5435/JAAOS-D-19-00395",
+        "article-title": "A Novel Machine Learning Model Developed to Assist in Patient Selection for Outpatient Total Shoulder Arthroplasty",
+        "volume": "28",
+        "author": "Biron",
+        "year": "2020",
+        "journal-title": "J Am Acad Orthop Surg."
+      },
+      {
+        "issue": "3",
+        "key": "bib38-20250430",
+        "first-page": "1",
+        "article-title": "Using machine learning to predict 30-day readmissions after posterior lumbar fusion: an NSQIP study involving 23,264 patients",
+        "volume": "32",
+        "author": "Hopkins",
+        "year": "2019",
+        "journal-title": "J Neurosurg Spine."
+      },
+      {
+        "issue": "6",
+        "key": "bib39-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "547",
+        "DOI": "10.2106/JBJS.18.00843",
+        "article-title": "A Novel Risk Calculator Predicts 90-Day Readmission Following Total Joint Arthroplasty",
+        "volume": "101",
+        "author": "Goltz",
+        "year": "2019",
+        "journal-title": "J Bone Joint Surg Am."
+      },
+      {
+        "issue": "11",
+        "key": "bib40-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "2385",
+        "DOI": "10.1016/j.jse.2020.04.009",
+        "article-title": "The value of artificial neural networks for predicting length of stay, discharge disposition, and inpatient costs after anatomic and reverse shoulder arthroplasty",
+        "volume": "29",
+        "author": "Karnuta",
+        "year": "2020",
+        "journal-title": "J Shoulder Elbow Surg."
+      },
+      {
+        "key": "bib41-20250430",
+        "first-page": "2192568220979835",
+        "article-title": "Machine Learning Approaches to Define Candidates for Ambulatory Single Level Laminectomy Surgery",
+        "author": "Li",
+        "year": "2021",
+        "journal-title": "Global Spine J."
+      },
+      {
+        "issue": "11",
+        "key": "bib42-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "1764",
+        "DOI": "10.1016/j.spinee.2019.06.002",
+        "article-title": "Development of machine learning algorithms for prediction of prolonged opioid prescription after surgery for lumbar disc herniation",
+        "volume": "19",
+        "author": "Karhade",
+        "year": "2019",
+        "journal-title": "Spine J."
+      },
+      {
+        "issue": "6",
+        "key": "bib43-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "976",
+        "DOI": "10.1016/j.spinee.2019.01.009",
+        "article-title": "Machine learning for prediction of sustained opioid prescription after anterior cervical discectomy and fusion",
+        "volume": "19",
+        "author": "Karhade",
+        "year": "2019",
+        "journal-title": "Spine J."
+      },
+      {
+        "issue": "11",
+        "key": "bib44-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "797",
+        "DOI": "10.3928/01477447-20100924-04",
+        "article-title": "Digital templating in primary total hip and knee arthroplasty",
+        "volume": "33",
+        "author": "Levine",
+        "year": "2010",
+        "journal-title": "Orthopedics."
+      },
+      {
+        "key": "bib45-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "268",
+        "DOI": "10.1016/j.artd.2021.01.006",
+        "article-title": "Machine Learning Predicts Femoral and Tibial Implant Size Mismatch for Total Knee Arthroplasty",
+        "volume": "8",
+        "author": "Polce",
+        "year": "2021",
+        "journal-title": "Arthroplast Today."
+      },
+      {
+        "issue": "2",
+        "key": "bib46-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "407",
+        "DOI": "10.1007/s00256-021-03884-8",
+        "article-title": "Artificial intelligence in orthopedic implant model classification: a systematic review",
+        "volume": "51",
+        "author": "Ren",
+        "year": "2022",
+        "journal-title": "Skeletal Radiol."
+      },
+      {
+        "issue": "2",
+        "key": "bib47-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "251",
+        "DOI": "10.1016/j.arth.2013.06.027",
+        "article-title": "Revision total hip and knee arthroplasty implant identification: implications for use of Unique Device Identification 2012 AAHKS member survey results",
+        "volume": "29",
+        "author": "Wilson",
+        "year": "2014",
+        "journal-title": "J Arthroplasty."
+      },
+      {
+        "issue": "4",
+        "key": "bib48-20250430",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1148/ryai.2021200183",
+        "article-title": "Automated identification of orthopedic implants on radiographs using deep learning",
+        "volume": "3",
+        "author": "Patel",
+        "year": "2021",
+        "journal-title": "Radiol Artif Intell."
+      },
+      {
+        "issue": "1",
+        "key": "bib49-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "69",
+        "DOI": "10.1007/s12178-020-09600-8",
+        "article-title": "Machine Learning and Artificial Intelligence: Definitions, Applications, and Future Directions",
+        "volume": "13",
+        "author": "Helm",
+        "year": "2020",
+        "journal-title": "Curr Rev Musculoskelet Med."
+      },
+      {
+        "issue": "10",
+        "key": "bib50-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "2253",
+        "DOI": "10.1016/j.arth.2019.05.021",
+        "article-title": "Artificial Intelligence and Machine Learning Remote Patient Monitoring Using Mobile Health for Total Knee Arthroplasty: Validation of a Wearable and Machine Learning-Based Surveillance Platform",
+        "volume": "34",
+        "author": "Ramkumar",
+        "year": "2019",
+        "journal-title": "J Arthroplasty."
+      },
+      {
+        "issue": "5",
+        "key": "bib51-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "1018",
+        "DOI": "10.1097/AOG.0b013e3181f98300",
+        "article-title": "Epidemiologic research using administrative databases: garbage in, garbage out",
+        "volume": "116",
+        "author": "Grimes",
+        "year": "2010",
+        "journal-title": "Obstet Gynecol."
+      },
+      {
+        "issue": "12",
+        "key": "bib52-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "853",
+        "DOI": "10.1097/BRS.0000000000002442",
+        "article-title": "Examining the Ability of Artificial Neural Networks Machine Learning Models to Accurately Predict Complications Following Posterior Lumbar Spine Fusion",
+        "volume": "43",
+        "author": "Kim",
+        "year": "2018",
+        "journal-title": "Spine (Phila Pa 1976)."
+      },
+      {
+        "issue": "20",
+        "key": "bib53-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "393",
+        "DOI": "10.21037/atm.2016.10.49",
+        "article-title": "Surgical research using national databases",
+        "volume": "4",
+        "author": "Alluri",
+        "year": "2016",
+        "journal-title": "Ann Transl Med."
+      },
+      {
+        "issue": "23",
+        "key": "bib54-20250430",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.2106/JBJS.M.01490",
+        "article-title": "Variations in data collection methods between national databases affect study results: a comparison of the Nationwide Inpatient Sample and National Surgical Quality Improvement Program databases for lumbar spine fusion procedures",
+        "volume": "96",
+        "author": "Bohl",
+        "year": "2014",
+        "journal-title": "J Bone Joint Surg Am."
+      },
+      {
+        "issue": "21",
+        "key": "bib55-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "1799",
+        "DOI": "10.2106/JBJS.O.00134",
+        "article-title": "Database and registry research in orthopaedic surgery: Part 2: Clinical registry data",
+        "volume": "97",
+        "author": "Pugely",
+        "year": "2015",
+        "journal-title": "J Bone Joint Surg Am."
+      },
+      {
+        "key": "bib56-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "44",
+        "DOI": "10.1016/j.jocn.2016.10.045",
+        "article-title": "Systemic inaccuracies in the National Surgical Quality Improvement Program database: Implications for accuracy and validity for neurosurgery outcomes research",
+        "volume": "37",
+        "author": "Rolston",
+        "year": "2017",
+        "journal-title": "J Clin Neurosci."
+      },
+      {
+        "issue": "9",
+        "key": "bib57-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "703",
+        "DOI": "10.1038/nmeth.3968",
+        "article-title": "Model selection and overfitting",
+        "volume": "13",
+        "author": "Lever",
+        "year": "2016",
+        "journal-title": "Nature Methods."
+      },
+      {
+        "issue": "3",
+        "key": "bib59-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "283",
+        "DOI": "10.1056/NEJMc2104626",
+        "article-title": "The Clinician and Dataset Shift in Artificial Intelligence",
+        "volume": "385",
+        "author": "Finlayson",
+        "year": "2021",
+        "journal-title": "N Engl J Med."
+      },
+      {
+        "issue": "1",
+        "key": "bib60-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "31",
+        "DOI": "10.1038/s41746-019-0105-1",
+        "article-title": "Deep learning predicts hip fracture using confounding patient and healthcare variables",
+        "volume": "2",
+        "author": "Badgeley",
+        "year": "2019",
+        "journal-title": "NPJ Digit Med."
+      },
+      {
+        "issue": "11",
+        "key": "bib61-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "981",
+        "DOI": "10.1056/NEJMp1714229",
+        "article-title": "Implementing Machine Learning in Health Care - Addressing Ethical Challenges",
+        "volume": "378",
+        "author": "Char",
+        "year": "2018",
+        "journal-title": "N Engl J Med."
+      },
+      {
+        "issue": "6",
+        "key": "bib62-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "843",
+        "DOI": "10.1016/j.bja.2020.07.040",
+        "article-title": "Bias and ethical considerations in machine learning and the automation of perioperative risk assessment",
+        "volume": "125",
+        "author": "O’Reilly-Shah",
+        "year": "2020",
+        "journal-title": "Br J Anaesth."
+      },
+      {
+        "issue": "1",
+        "key": "bib63-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "195",
+        "DOI": "10.1186/s12916-019-1426-2",
+        "article-title": "Key challenges for delivering clinical impact with artificial intelligence",
+        "volume": "17",
+        "author": "Kelly",
+        "year": "2019",
+        "journal-title": "BMC Med."
+      },
+      {
+        "issue": "10",
+        "key": "bib64-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "100347",
+        "DOI": "10.1016/j.patter.2021.100347",
+        "article-title": "Addressing bias in big data and AI for health care: A call for open science",
+        "volume": "2",
+        "author": "Norori",
+        "year": "2021",
+        "journal-title": "Patterns (N Y)."
+      },
+      {
+        "issue": "11",
+        "key": "bib65-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "1247",
+        "DOI": "10.1001/jamadermatol.2018.2348",
+        "article-title": "Machine Learning and Health Care Disparities in Dermatology",
+        "volume": "154",
+        "author": "Adamson",
+        "year": "2018",
+        "journal-title": "JAMA Dermatol."
+      },
+      {
+        "key": "bib66-20250430",
+        "article-title": "Gender Bias in Contextualized Word Embeddings",
+        "author": "Zhao",
+        "journal-title": "ArXiv190403310 Cs."
+      },
+      {
+        "key": "bib67-20250430",
+        "article-title": "Man is to Doctor as Woman is to Nurse: the Gender Bias of Word Embeddings. Why we should worry about gender inequality in Natural Language Processing Techniques",
+        "author": "Buonocore",
+        "year": "2019",
+        "journal-title": "Towards Data Science."
+      },
+      {
+        "issue": "11",
+        "key": "bib68-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "1544",
+        "DOI": "10.1001/jamainternmed.2018.3763",
+        "article-title": "Potential Biases in Machine Learning Algorithms Using Electronic Health Record Data",
+        "volume": "178",
+        "author": "Gianfrancesco",
+        "year": "2018",
+        "journal-title": "JAMA Intern Med."
+      },
+      {
+        "issue": "6",
+        "key": "bib69-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "1142",
+        "DOI": "10.1016/j.eururo.2014.11.025",
+        "article-title": "Transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD): The TRIPOD Statement",
+        "volume": "67",
+        "author": "Collins",
+        "year": "2015",
+        "journal-title": "Eur Urol."
+      },
+      {
+        "key": "bib71-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "40",
+        "DOI": "10.1038/s41746-018-0048-y",
+        "article-title": "With an eye to AI and autonomous diagnosis",
+        "volume": "1",
+        "author": "Keane",
+        "year": "2018",
+        "journal-title": "NPJ Digit Med."
+      },
+      {
+        "issue": "1",
+        "key": "bib72-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "54",
+        "DOI": "10.1186/s12911-021-01403-2",
+        "article-title": "Systematic literature review of machine learning methods used in the analysis of real-world data for patient-provider decision making",
+        "volume": "21",
+        "author": "Brnabic",
+        "year": "2021",
+        "journal-title": "BMC Med Inform Decis Mak."
+      },
+      {
+        "issue": "5",
+        "key": "bib73-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "1097",
+        "DOI": "10.1007/s00420-020-01648-w",
+        "article-title": "Contributions and limitations of using machine learning to predict noise-induced hearing loss",
+        "volume": "94",
+        "author": "Chen",
+        "year": "2021",
+        "journal-title": "Int Arch Occup Environ Health."
+      },
+      {
+        "issue": "3",
+        "key": "bib74-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "405",
+        "DOI": "10.3348/kjr.2019.0025",
+        "article-title": "Design characteristics of studies reporting the performance of artificial intelligence algorithms for diagnostic analysis of medical images: Results from recently published papers",
+        "volume": "20",
+        "author": "Kim",
+        "year": "2019",
+        "journal-title": "Korean J Radiol."
+      },
+      {
+        "issue": "2",
+        "key": "bib75-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "e1920733",
+        "DOI": "10.1001/jamanetworkopen.2019.20733",
+        "article-title": "Prospective and External Evaluation of a Machine Learning Model to Predict In-Hospital Mortality of Adults at Time of Admission",
+        "volume": "3",
+        "author": "Brajer",
+        "year": "2020",
+        "journal-title": "JAMA Netw Open."
+      },
+      {
+        "issue": "14",
+        "key": "bib76-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "1351",
+        "DOI": "10.1001/jama.2019.10306",
+        "article-title": "Making Machine Learning Models Clinically Useful",
+        "volume": "322",
+        "author": "Shah",
+        "year": "2019",
+        "journal-title": "JAMA."
+      },
+      {
+        "issue": "1",
+        "key": "bib77-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "44",
+        "DOI": "10.1038/s41591-018-0300-7",
+        "article-title": "High-performance medicine: the convergence of human and artificial intelligence",
+        "volume": "25",
+        "author": "Topol",
+        "year": "2019",
+        "journal-title": "Nat Med."
+      },
+      {
+        "issue": "5",
+        "key": "bib78-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "513",
+        "DOI": "10.1080/17453674.2021.1918389",
+        "article-title": "Presenting artificial intelligence, deep learning, and machine learning studies to clinicians and healthcare stakeholders: an introductory reference with a guideline and a Clinical AI Research (CAIR) checklist proposal",
+        "volume": "92",
+        "author": "Olczak",
+        "year": "2021",
+        "journal-title": "Acta Orthop."
+      },
+      {
+        "issue": "4",
+        "key": "bib79-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "686",
+        "DOI": "10.14245/ns.1938414.207",
+        "article-title": "Artificial intelligence for adult spinal deformity",
+        "volume": "16",
+        "author": "Joshi",
+        "year": "2019",
+        "journal-title": "Neurospine."
+      },
+      {
+        "issue": "5",
+        "key": "bib80-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "1223",
+        "DOI": "10.1007/s43390-021-00360-0",
+        "article-title": "State-of-the-art reviews predictive modeling in adult spinal deformity: applications of advanced analytics",
+        "volume": "9",
+        "author": "Joshi",
+        "year": "2021",
+        "journal-title": "Spine Deform."
+      },
+      {
+        "issue": "5",
+        "key": "bib82-20250430",
+        "doi-asserted-by": "crossref",
+        "first-page": "1161",
+        "DOI": "10.2106/00004623-200605000-00036",
+        "article-title": "Revised grades of recommendation for summaries or reviews of orthopaedic surgical studies",
+        "volume": "88",
+        "author": "Wright",
+        "year": "2006",
+        "journal-title": "J Bone Joint Surg Am."
+      }
+    ],
+    "container-title": [
+      "Journal of Bone and Joint Surgery"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.ovid.com/10.2106/JBJS.21.01305",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          26
+        ]
+      ],
+      "date-time": "2026-08-26T13:46:03Z",
+      "timestamp": 1787751963000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.ovid.com/10.2106/JBJS.21.01305"
+      }
+    },
+    "subtitle": [
+      "Uses and Limitations"
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          5
+        ]
+      ]
+    },
+    "references-count": 76,
+    "journal-issue": {
+      "issue": "17",
+      "published-print": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.2106/jbjs.21.01305",
+    "relation": {},
+    "ISSN": [
+      "0021-9355",
+      "1535-1386"
+    ],
+    "issn-type": [
+      {
+        "value": "0021-9355",
+        "type": "print"
+      },
+      {
+        "value": "1535-1386",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          5
+        ]
+      ]
+    }
+  }
+}

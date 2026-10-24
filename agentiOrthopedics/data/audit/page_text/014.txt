@@ -1,0 +1,686 @@
+=== PDF PAGE 1 ===
+Biopsychosocial based machine 
+learning models predict patient 
+improvement after total knee 
+arthroplasty
+Karen Ribbons1,2,3,11, Jodie Cochrane1,2,4,11, Sarah Johnson1,2,4, Adrian Wills1,2,4, 
+Elizabeth Ditton1,2,3, David Dewar5, Matthew Broadhead6, Ian Chan6, Michael Dixon7, 
+Christopher Dunkley5, Richard Harbury5, Aleksandar Jovanovic6, Anthony Leong7,8, 
+Peter Summersell6, Chad Todhunter8, Richard Verheul5, Michael Pollack1,3,9, 
+Rohan Walker1,2,3,12 & Michael Nilsson1,2,3,10,12
+Total knee arthroplasty (TKA) is an effective treatment for end stage osteoarthritis. However, 
+biopsychosocial features are not routinely considered in TKA clinical decision-making, despite 
+increasing evidence to support their role in patient recovery. We have developed a more holistic 
+model of patient care by using machine learning and Bayesian inference methods to build patient-
+centred predictive models, enhanced by a comprehensive battery of biopsychosocial features. Data 
+from 863 patients with TKA (mean age 68 years (SD 8), 50% women), identified between 2019 and 
+2022 from four hospitals in NSW, Australia, was included in model development. Predictive models 
+for improvement in patient quality-of-life and knee symptomology at three months post-TKA were 
+developed, as measured by a change in the Short Form-12 Physical Composite Score (PCS) or Western 
+Ontario and McMasters Universities Osteoarthritis Index (WOMAC), respectively. Retained predictive 
+variables in the quality-of-life model included pre-surgery PCS, knee symptomology, nutrition, alcohol 
+consumption, employment, committed action, pain improvement expectation, pain in other places, 
+and hand grip strength. Retained variables for the knee symptomology model were comparable, but 
+also included pre-surgery WOMAC, pain catastrophizing, and exhaustion. Bayesian machine learning 
+methods generated predictive distributions, enabling outcomes and uncertainty to be determined on 
+an individual basis to further inform decision-making.
+Keywords Biopsychosocial, Prediction algorithm, Total knee arthroplasty, Machine learning, Bayesian 
+inference
+Abbreviations
+ASA  American Society of Anesthesiologists
+BMI  Body Mass Index
+DCC  Divide, Conquer, Combine
+PDF  Probability density function
+RMSE  Root Mean Square Error
+SF-12 MCS  Short Form Version 12 Mental Health Composite Score
+SF-12 PCS  Short Form Version 12 Physical Health Composite Score
+1Centre for Rehab Innovations, University of Newcastle, Callaghan, NSW, Australia. 2Centre for Rehab Innovations, 
+Hunter Medical Research Institute, Kookaburra Circuit, New Lambton Heights, NSW 2305, Australia. 3College of 
+Health, Medicine and Wellbeing, University of Newcastle, Callaghan, NSW, Australia. 4College of Engineering, 
+Science and Environment, University of Newcastle, Callaghan, NSW, Australia. 5Ramsay Healthcare, Lake Macquarie 
+Private Hospital, Gateshead, NSW, Australia. 6Ramsay Healthcare, Baringa Hospital, Coffs Harbour, NSW, Australia. 
+7Ramsay Healthcare, Kareena Hospital, Caringbah, NSW, Australia. 8Ramsay Healthcare, Wollongong Private 
+Hospital, Wollongong, NSW, Australia. 9Hunter New England Area Health Service, John Hunter Hospital, New 
+Lambton Heights, NSW, Australia. 10Rehabilitation Research Institute Singapore (RRIS), Singapore, Singapore. 
+11These authors contributed equally: Karen Ribbons and Jodie Cochrane. 12These authors jointly supervised this 
+work: F. Rohan Walker and Michael Nilsson. email: karen.ribbons@newcastle.edu.au
+OPEN
+Scientific Reports |         (2025) 15:4926 1| https://doi.org/10.1038/s41598-025-88560-w
+www.nature.com/scientificreports
+
+
+=== PDF PAGE 2 ===
+TKA  Total knee arthroplasty
+WOMAC  Western Ontario and McMasters Universities Osteoarthritis Index
+Total knee arthroplasty (TKA) is the standard treatment for end-stage osteoarthritis, improving joint function 
+and attenuating local pain, with low rates of mortality1,2. The cumulative revision rate of TKA has been reported 
+at 8%, over the last 20 years in Australian patients2. TKA is commonly undertaken in people aged over 50, with 
+annual rates of over 60,000 in Australia2 and approximately one million in the USA3. With an ageing population 
+driving an escalation in osteoarthritis cases4, it is anticipated that TKA procedures will rise dramatically over the 
+coming decade5, increasing the burden on healthcare services globally.
+Despite perceived high success rates, between 10 and 20% of TKA patients continue to report dissatisfaction 
+with surgery outcomes, reflected by enduring pain, limited function, and diminished quality-of-life 7,7. These 
+rates persist, even following recent improvements in surgical procedures such as robotic-guided surgery 8 and 
+kinematic prosthetic alignment9.
+With current dissatisfaction rates, it is informative to consider standard TKA rehabilitation activities. 
+Although no ‘one’ approach exists, current standards strongly emphasize physical aspects of recovery, with many 
+programs focused on improving knee function and enhancing pain relief 10. This strong emphasis is surprising 
+given the increasing evidence that pain and dissatisfaction are not solely due to medical and physical variables11. 
+Indeed, it has been suggested that pre-surgical pain catastrophizing and mental health status are associated with 
+post-TKA pain12.
+Driven by the escalating burden and cost to healthcare services, there has been a shift in rehabilitation 
+location and types of care teams, resulting in reductions in hospital-based programs and increases in home 
+and community-based services13. To date, this approach has focused on joint mobility and pain management14, 
+with limited stratification of rehabilitation location based on a patient’s individual social needs or psychological 
+features.
+A novel approach is to adopt a biopsychosocial model of health which systematically considers biological, 
+psychological, and socio-environmental factors and their complex interactions in understanding illness, health, 
+and healthcare delivery. Indeed, several psychological factors have been associated with, or have the potential 
+to impact, recovery trajectories following TKA15–18 as summarised by Ditton et al. 202011. Pre-surgical features 
+such as depression, anxiety, and pain catastrophizing have been correlated with pain levels prior to and following 
+surgery12,19,20, and with the need for surgical revision21. In contrast, other “protective” features, such as resilience 
+and committed action, have been linked to post-surgery recovery rates and quality-of-life 22,23. Although the 
+importance of adopting a biopsychosocial approach in musculoskeletal disease models of care is increasingly 
+acknowledged, these factors are not routinely reviewed prior to surgery and remain overlooked in rehabilitation 
+and clinical decision-making24.
+There have been relatively few studies that consider the ability of biopsychosocial factors to predict patient 
+outcomes post-TKA. Clinical support tools assessing the impact of a broad range of biopsychosocial parameters 
+on recovery outcomes could enable the clinical validity of a more multifaceted and holistic approach to 
+rehabilitative programs. Furthermore, such tools could identify “at risk” patients based on pre-surgical factors, 
+which may more precisely guide the implementation of pre-surgical interventions and rehabilitation strategies.
+The increasing availability of clinical data has resulted in a greater use of artificial intelligence (AI)-based 
+predictive modelling in orthopaedic settings25,26. Predictive modelling has the potential to create clinical decision 
+tools that can address several aspects of TKA patient care and management27. Machine learning (ML), which sits 
+under the umbrella of AI, encompasses multivariate approaches, such as traditional regression techniques. What 
+is beneficial with the additional AI/ML approach considered here is that it allows nonlinear relationships between 
+patient inputs and outcomes. However, the clinical utility of these decision tools for TKA remains limited due 
+to a lack of external validation, such that the widespread clinical utility of the model in a larger population has 
+not yet been determined. Possible issues include dataset limitations such as missing patient measures that were 
+found predictive in other studies, the use of existing datasets, low patient numbers, demographic homogeneity, 
+limited data of variables of interest or incomplete datasets. These issues can hinder exploration of the predictive 
+capacity of the clinical variables of interest27,28.
+Further, no attempt has been made to quantify the uncertainty of predicted outcomes, which often provides 
+important information for decision-making, without which assurance may be ascribed to a predicted outcome 
+with false confidence. Quantifying prediction uncertainty can be addressed in a mathematically coherent way by 
+using Bayesian inference,29 which provides a means for describing prediction uncertainty based on the model 
+uncertainty and the available data, which will have direct impact on the clinical utility of the models developed. 
+An additional benefit of using Bayesian machine learning (also under the AI umbrella) is that the generated 
+outcome is a predictive distribution, as opposed to a point estimate as provided by traditional approaches. These 
+techniques provide flexibility and additional information that should be considered in decision-making.
+The aim of the current study was to predict improvement and associated prediction certainty in TKA patient 
+outcomes using a comprehensive battery of biopsychosocial features which were selected following an extensive 
+review of the literature 11. The impact of pre-surgical features was assessed at three months post-TKA which, 
+although early on in the recovery journey, is associated with the most dramatic change in post-surgery knee 
+function30. Machine learning models based on pre-surgical biopsychosocial features were developed to predict 
+patient-reported TKA outcomes, focussing on improvements in knee symptomology and quality-of-life. A novel 
+Bayesian inference method 31 enabled the certainty around the outcome prediction to be determined, further 
+enhancing the clinical use of the model. This approach has the potential to facilitate the allocation of rehabilitation 
+resources towards a more holistic and prioritised model of recovery and the efficiency of rehabilitation service 
+provision.
+Scientific Reports |         (2025) 15:4926 2| https://doi.org/10.1038/s41598-025-88560-w
+www.nature.com/scientificreports/
+
+=== PDF PAGE 3 ===
+Methods
+Participants
+Patients over the age of 18, requiring unilateral or simultaneous bilateral TKA, were referred for inclusion in 
+the study by 11 orthopaedic specialists, with surgery undertaken at one of four Ramsay Healthcare private 
+hospitals in NSW , Australia including: Lake Macquarie Private Hospital, 187 bed capacity facility located in the 
+metropolitan area of a major regional city; Baringa Hospital, 78 bed capacity facility local in a large rural town; 
+Kareena Hospital, 142 bed facility located in the metropolitan area of a major city; and Wollongong Private 
+Hospital, 171 bed facility located in the metropolitan area of a major regional city. Recruitment took place from 
+November 2019 to June 2022. Patients were excluded if they had knee surgery within the prior 6 months, had 
+knee surgery on their other knee scheduled within the following 12 months, or if surgery was due to trauma. All 
+participants provided informed consent prior to study commencement32.
+Participant recruitment took place during the COVID-19 pandemic. During this time TKA surgeries were 
+ceased on two occasions for a total duration of 2 months, due to halting elective surgical procedures as mandated 
+by local government bodies. During our recruitment period, we accessed patient surgical schedules with consent 
+of our collaborating surgeons and were able to post and call patients and provide electronic or postal copies of 
+study information. The study design did not require physical contact with the research team as questionnaires 
+were provided online or as hard copies by post. Physical measures were all conducted via telehealth videocall 
+sessions with patients at home eliminating the need for social contact 32. When participants were contacted by 
+phone regarding their potential involvement in the study, they were also asked if they consented to undertake 2 
+physical tests in their home, taking 15 min, that enabled measurements of their mobility, balance, and strength. 
+Participants were provided with a checklist of the following items they required for the video calls:
+• Sufficient internet access and a mobile phone or tablet device or computer with a movable camera.
+• Someone to be at home with them during the call, to assist with holding the device during the call and be there 
+for safety support if the participant stumbles or falls during the assessments.
+• A dining chair or similar chair with a firm seat and arm rests, to perform assessments.
+• A 4-m length floor space with uniform flooring and no trip hazards to perform assessments.
+Prior to undertaking study measurements, participants and their support person took part in a training session 
+with the assessor on how to undertake the videocall assessments. During this session the participants were able 
+to practice using the videocall platform and practice undertaking the assessments. To optimize the accuracy 
+of the measurements to be undertaken the assessor discussed with the participant the appropriate location in 
+their home to run the assessments. Appropriate camera location was determined so that the assessor was able to 
+accurately view the participants body positioning during the testing procedures.
+Sample size
+For machine learning, the required sample size should ensure at least 10 events for each included predictor 
+parameter33. In the current study, we have a total of 39 input variables or 76, after one-hot-encoding, which is 
+a method which converts a categorial variable into multiple separate binary variables (one for each category) 
+to be used in machine learning methods 29. This would require 390 participants for models without one-hot-
+encoding and 760 participants when including one-hot-encoding. We aimed to recruit 1000 TKA patients to 
+ensure sufficient data for predictive modelling analyses, allowing for 20% missing data.
+Institutional review board approval
+Research methodology was peer-reviewed and approved by the School of Medicine and Public Health at the 
+University of Newcastle, NSW , Australia, in accordance with the Australian Code for the Responsible Conduct 
+of Research. The study was conducted according to the National Statement on Ethical Conduction in Human 
+Research (2007). Ethics approval was granted by the University of Newcastle Human Research Ethics Committee 
+(approval ID: H-2019–0109) on June 21, 2019. Approval for each study site’s participation was reviewed and 
+approved by the Ramsay Research and Governance Office, NSW , Australia.
+Predictors and outcome measures
+As outlined in the SuPeR Knee™—Support, Predict, Recover protocol (International Registered Report 
+Identifier (IRRID)DERRI-10.2196/48801)), 32we included 39 potential biopsychosocial predictive features, 
+collected within the month prior to TKA. Features that had been associated with patient outcomes following 
+TKA were selected based on extensive review of the literature11. Pre-surgery predictors included; psychological 
+features (depression, anxiety, stress, pain catastrophizing, resilience, committed action), sex, age, employment, 
+education, residence (Modified Monash Model 34), lifestyle and anthropometric factors (Body Mass Index 
+(BMI), smoking status, physical activity, sleep quality, nutrition/dietary behaviours, alcohol intake), medical 
+history (concomitant conditions, American Society of Anesthesiologists (ASA) score, self-reported Charlson 
+Comorbidity Index), quality-of-life (Short Form-12 (SF-12), physical (PCS) and mental (MCS) health 
+subdomains), knee symptomology and function (Western Ontario and McMaster Universities Osteoarthritis 
+Index (WOMAC) pain, stiffness, knee function sub-scores and the composite score, which is the summation of 
+the sub-scores), pain in other places, and strength and mobility (timed up-and-go, 30-s sit-to-stand, hand grip 
+strength). Participants also reported expectations regarding TKA outcomes, including knee pain attenuation, 
+and achievement of post-surgery activities. The full description of all assessments undertaken can be found in 
+the protocol paper for this study32. A summary of key parameters assessed is shown below:
+Scientific Reports |         (2025) 15:4926 3| https://doi.org/10.1038/s41598-025-88560-w
+www.nature.com/scientificreports/
+
+=== PDF PAGE 4 ===
+Body mass index (BMI)
+BMI is a highly recognised methods for assessing body weight in adults which is measured by dividing body 
+weight (in kg) by height (in metres) determined prior to surgery35.
+Nutrition status
+Dietary habits of participants prior to the TKA were assessed using the Starting the Conversion Score (STC) 36. 
+The STC is a validated 8-point screening tool used to evaluate dietary habits. Participants rate the frequency of 
+ingesting a range of 8 different food types over the past few months. The total scale ranges from 0 to 16, with 
+higher scores associated with worse dietary habits.
+Alcohol consumption
+Alcohol consumption prior to TKA was evaluated using a modified version of the Alcohol Use Disorders 
+Identification Test (AUDIT) relating to alcohol consumption only (AUDIT-C) 37. Participants were asked 3 
+questions relating to their average alcohol consumption over the last 12 months, with a maximum total scale score 
+of 12. Total scores < 5 indicated low risk consumption, scores ≥ 5 indicated hazardous or harmful consumption.
+Social support
+The level of social support participants felt they had available to them prior to their TKA was assessed using the 
+Medical Outcomes Study 6 item Social Support Survey (MOS-SSS-6)38. The survey captures information relating 
+to perceived psychological and material support derived from interpersonal relationships. Scores ranged from 6 
+to 30, with higher scores indicative of higher levels of perceived support.
+Committed action
+Committed action is a component of ‘psychological flexibility’ and is defined as a person’s capacity to flexibly 
+engage in effective and adaptive behaviours, guided by personally held values, even in the presence of challenges 
+and discomfort 39. We used a shortened form of the Committed Action Questionnaire (CAQ-8), which is 
+comprised of 8 statements. Respondents rate the extent to which each item applies to them ranging from 0 
+(“never true”) to 6 (“always true”). Total scores are calculated by summing the item scores, with a maximum 
+score of 48. Higher scores denote greater committed action.
+Pain catastrophizing
+We used the Pain Catastrophizing Scale (PCS) 40 to measure the level of catastrophic thinking relating to pain 
+prior to TKA. The self-report form consists of 13 items describing thoughts and feelings patients may experience 
+when they are in pain. Respondents provided ratings for each item on a 5-point Likert scale ranging from, 0 
+(“not at all”), to 4 (“all the time”). Higher scores are associated with higher amounts of pain catastrophizing, with 
+scores higher than 30 associated with high risk of chronic pain.
+Pre-surgery hand grip strength assessment
+Hand grip strength measures the maximum amount of static force that a person can apply by their hand whilst 
+gripping a handheld dynamometer. It is a reliable proxy for overall strength, and is related to risk of frailty, 
+falls, functional capacity, morbidity, and mortality41. Hand grip strength was assessed prior to surgery. As this 
+assessment requires the use of a calibrated dynamometer (Jamar Diagnostics, Jamar Plus + Hand Dynamometer); 
+a device was provided to each study site. Hospital site staff were trained to undertake these assessments by a 
+member of the research team prior to study commencement.
+Data collection
+The secure electronic platform Vision Tree Optimal Care™, developed by VisionTree Software, Inc, San Diego, 
+CA, USA, enabled direct entry of data by participants and served as a centralised data repository. An e-consent 
+form was the first item viewed and completed by participants when accessing the platform, with a hard copy 
+included in any posted questionnaires. Participants were asked to sign the consent form prior to commencing the 
+questionnaires. Any hard copies were posted back to the research team and data was entered to the centralised 
+data repository.
+All questionnaires were provided to participants with instructions preceding each form on how to enter 
+their responses. Study staff could be contacted if participants required clarification regarding the questions 
+and answers required, however, all questionnaires were based on participants entering their responses directly 
+themselves on to the data forms. Participants at all study sites were disseminated study questionnaires in the same 
+manner. All participants were instructed to complete questionnaires provided at each assessment time within 
+a 48-h window from commencement, providing those who experienced fatigue additional time to complete 
+their responses. For participants completing online questionnaires, reminder emails were sent to encourage 
+questionnaire completion in a timely manner. If incomplete hard copy questionnaires were received, participants 
+were contacted by phone and missing data was collected verbally32.
+Data processing
+Data were randomly allocated to either training (used to determine the best model) or test (used to assess model 
+performance) datasets using an 80:20 split, the standard ratio used in the machine learning literature29.
+Patients had to complete at least one pre-TKA and post-TKA questionnaire to be included. Two datasets 
+were created based on each outcome, where any patient missing the outcome (either SF-12 PCS or WOMAC 
+composite score) was removed to create the corresponding dataset. Remaining missing input data were imputed 
+by either the population mean for numerical inputs or the population mode for categorical measures.
+Scientific Reports |         (2025) 15:4926 4| https://doi.org/10.1038/s41598-025-88560-w
+www.nature.com/scientificreports/
+
+=== PDF PAGE 5 ===
+Input predictors
+One-hot-encoding29 was applied to each input variable. The optimal set of input predictors was determined 
+via an improved derivative of the ‘forward selection process’ (see the Supplementary Materials Fig. S1 for more 
+information about this process). The predictive ability of each combination of inputs was determined using a 
+linear regression model, using the fivefold cross-validation root mean square error (RMSE) performance metric 
+(further details provided in Supplementary Materials, Fig. S1).
+Output prediction modelling
+Machine learning-based predictive modelling was undertaken to evaluate the predictive capacity of pre-surgical 
+features on outcomes three months post-TKA. The primary outcome measure was improvement in quality-
+of-life (SF-12 PCS) with improvement in knee symptomology and function (WOMAC composite score) the 
+secondary outcome measure. The composite WOMAC score is a global score combining the three sub-scores 
+derived by this tool including assessments of self-reported pain, stiffness and functional impairment experienced 
+by the respondent. We acknowledge that the stiffness score is a minor contributor to the composite score due 
+to limited responses relating to this concept. The global/composite score has been shown to have convergent 
+construct validity with a number of knee physical measures, including range of motion as well as several clinical 
+parameters42. In addition, the composite/global WOMAC score has been used in predictive modelling of patient 
+outcomes following total joint replacement by others 43,44 with the score was used as an outcome variable to 
+evaluate surgical outcomes in patients with TKA.
+The prediction models considered were standard linear regression and Bayesian DCC-Tree31. The Bayesian 
+DCC-Tree model can be considered a combination of linear regression and decision trees, moving the model 
+definition closer to that of a neural network, giving more flexibility but with added complexity. Details regarding 
+the application of the DCC-Tree method are provided in Supplementary Materials (Supplementary Materials 
+Table 1). The final model chosen for each output was that with the lowest prediction error (RMSE).
+Role of the funding source
+The funders of this study had no role in the study design, data collection, data analysis, or results interpretation 
+and did not contribute to the writing of this manuscript.
+Results
+Cohort demographic and clinical characteristics
+A total of 1050 TKA patients across the four sites were enrolled to the study. Data was randomly split, resulting 
+in 840 and 210 patient observations in the training and testing sets respectively. Although all patients consented 
+to participate, a small proportion did not complete all pre-TKA or post-TKA questionnaires (n = 40 (4%)). Pre-
+Outcome measure Number of input variables retained Input variables retained
+Change in physical health quality-of-life (SF-12 PCS) 13
+Quality-of-life
+ SF-12 PCS score
+Knee symptomology
+ WOMAC global score
+ WOMAC function score
+ Impact of knee on activities (no impact)
+ Impact of knee on activities (low impact)
+Pain
+ Expectation for knee pain improvement (minimally worse)
+ Significant pain in other places (no)
+Lifestyle
+ Nutrition score
+ Alcohol score
+ Nature of normal work (strenuous)
+ Occupation (unemployed)
+Psychological
+ Committed Action
+Physical
+ Hand Grip Strength
+Change in knee symptomology (WOMAC global) 13
+Knee symptomology
+ WOMAC global score
+ WOMAC stiffness score
+ Impact of knee on activities (unable to perform activities)
+Pain
+ Expectation for knee pain improvement (minimally worse)
+Lifestyle
+ Nutrition score
+ Nature of normal work (strenuous)
+ Nature of normal work (non-manual)
+ Exhaustion—could not get going (most of the time)
+  Exhaustion—everything was an effort (never/rarely)
+ Expectation of activities to be undertaken (Class 3)
+Psychological
+ Committed Action
+ Pain Catastrophizing
+Physical
+ Hand Grip Strength
+Table 1. Input variables retained in the linear regression predictive models.
+ 
+Scientific Reports |         (2025) 15:4926 5| https://doi.org/10.1038/s41598-025-88560-w
+www.nature.com/scientificreports/
+
+=== PDF PAGE 6 ===
+TKA data was not successfully collected in a small proportion of participants (n = 31 (3%)) and a sub-group of 
+enrolled participants did not complete three-month post-TKA assessments (n = 116 (11%)).
+The entire dataset was used to analyse cohort characteristics after removing any patient who did not complete 
+at least one pre-TKA and post-TKA questionnaire. This resulted in 863 patient observations (694 training/169 
+testing). To understand lost-to-follow-up, we compared pre-surgery age, WOMAC, and SF-12 sub-scores 
+between groups (lost-to-follow-up: n = 116, included: n = 863). The median age of both groups was comparable. 
+However, participants lost-to-follow-up displayed worse knee symptomology (median WOMAC composite: 53 
+(10–89) versus 45 (0–96), knee pain: 11 (1–20) versus 9 (0–20), function: 36 (8–62) versus 32 (0–68), P ≤ 0.01) 
+and lower quality-of-life (SF-12 MCS: 48.7 (14.9–68.4) versus 54.9 (14.9–73.2), P < 0.001).
+Demographic and clinical characteristics of the study cohort are summarised in Table S2 (Supplementary 
+Materials). The participant group was predominantly 60–80 years (79%), with equal sex representation. Most 
+were retired, but 29% reported being employed, of which equal proportions engaged in manual and non-manual 
+activities. Nearly half had attained a high school education, with 49% undertaking tertiary-level education. Most 
+participants identified as Australian (90%) and resided in metropolitan areas within New South Wales, Australia 
+(75%). Unilateral TKA patients (87%) were most associated with an osteoarthritis diagnosis (99%).
+Most participants reported one or two co-morbidities, with ASA scores reported at level 1 or 2. The most 
+common concomitant conditions included cardiovascular disease, respiratory conditions, and diabetes. The 
+common classes of concomitant medications included cardiovascular agents/anti-hypertensives, gastrointestinal 
+agents, blood glucose regulators, and respiratory tract agents, with 43% of participants reported taking five or 
+more medications pre-surgery.
+The average BMI was within obese class I, with 50% having a BMI in the ‘above normal’ range 35. Reported 
+dietary habits were ‘healthy’ (mean nutrition score of 5). Alcohol consumption was low risk (average score < 5)37, 
+although 30% of participants had scores of 5 or greater (associated with hazardous or harmful consumption). 
+Most participants were non-smokers (98%). High availability of social support was reported by most participants, 
+however, 19% reported scores indicative of low levels of available support.
+Psychological features were not normally distributed and are presented in Table S2 (Supplementary Materials) 
+as the median and range for each group. Resilience was left-skewed (skewness: 0.49, kurtosis: 3.33), with most 
+participants reporting high levels of resilience prior to surgery. The median pre-surgery committed action score 
+(35) was above that indicative of high levels (32), despite the large range (10–48) reported. Pain catastrophizing 
+was right-skewed (skewness: 1.61, kurtosis: 5.53), with most participants (76%) reporting low levels of pain 
+catastrophizing prior to surgery. The median pre-surgery depression, anxiety, and stress scores were within 
+normal clinical ranges (scores of 0–9, 0–7, and 0–14, respectively 45) with data skewed to the right (skewness: 
+2.03, 2.17, 1.41, kurtosis: 5.53, 9.01, 5.24, respectively) and a high proportion having low scores for each mood 
+state pre-TKA, despite the large range of scores observed.
+The expectation of knee pain reduction from TKA was very high, with 97% of the cohort expecting knee 
+pain to be either very much or much improved by surgery. When asked, 75% reported experiencing pain in 
+places other than their operated knee. Those who reported pain at three or more sites (18%) were categorised as 
+experiencing ‘significant other pain’ .
+Changes in quality-of-life and knee symptomology 3 months after TKA
+TKA was associated with variable levels of improvement in participants’ quality-of-life and knee symptomology 
+at three months post-surgery. Figure  1 shows the distribution of SF-12 PCS and WOMAC composite scores 
+prior to and following surgery. TKA was associated with a significant 21% increase in median SF-12 PCS 
+Fig. 1. Physical health quality-of-life (SF-12 PCS) and knee symptomology (global WOMAC) scores prior to 
+and three months following TKA.
+ 
+Scientific Reports |         (2025) 15:4926 6| https://doi.org/10.1038/s41598-025-88560-w
+www.nature.com/scientificreports/
+
+=== PDF PAGE 7 ===
+scores three months post-surgery (45.11 (17.42–63.67)) compared to pre-TKA (37.2 (17.09–58.6)), (Z = -19.14, 
+P < 0.001) with an average change of 6.73 points. Knee symptomology was also improved by TKA, evidenced 
+by a significant reduction (52%) in median WOMAC composite scores three months post-surgery (21 (0–77)) 
+compared to pre-TKA (44 (0–96)), (Z = 23.24, P < 0.001), with an average change of 21.94 points.
+Data processing
+The final datasets included 682 training and 169 testing datapoints for the SF-12 PCS improvement outcome 
+and 687 training and 169 testing datapoints for the WOMAC composite score improvement outcome. For SF-
+12 PCS, 4.5% of input training data values were imputed and 4.8% within the testing dataset. For WOMAC 
+composite, 3.6% of input training data values were imputed and 3.3% within the testing dataset.
+Retained predictive variables
+Table 1 lists the pre-surgical features retained in the machine learning linear regression models for each 
+outcome. In addition to the pre-TKA value, retained parameters included knee symptomology, pain, lifestyle, 
+psychological, and physical functioning. The number of retained features was selected to ensure both optimal 
+performance and logistical feasibility for collection in a clinical setting.
+Machine learning predictive models
+Table 2 shows the lowest test RMSE for the quality-of-life outcome was achieved by the machine learning-AI 
+Bayesian DCC-Tree model (RMSE 8.01) and linear regression model for knee symptomology (RMSE 13.34). 
+Reported R2 ranged from 0.24 (quality-of-life) to 0.45 (knee symptomology). Additional performance metrics 
+are provided in Table S3 (Supplementary Materials).
+Bayesian Modelling
+Figure 2 highlights the importance of using Bayesian methods to provide estimates of the range of predictive 
+certainty. Figures 2a,c show example Bayesian predictive distribution for the SF-12 PCS and WOMAC outcome 
+measures respectively. In both cases, the distribution indicates good confidence in the prediction, with the range 
+of high probability density function (PDF) values corresponding to the true patient outcome (purple line), 
+which is also close to that predicted by the standard linear regression model (green line).
+However, Fig. 2b,d show examples where the distribution indicates less certainty about the prediction. In 
+Fig. 2b, the true patient outcome is sufficiently different from that predicted by the standard linear regression 
+model, but importantly, is still captured within the range of the distribution. In Fig. 2d, the range of highest PDF 
+values include the true patient outcome, although the other regions are still relatively high, including that which 
+corresponds to the linear regression model. In both cases, the standard linear regression prediction would not 
+accurately reflect the patient’s true trajectory, and moreover incorrectly predicts a positive change, which would 
+negatively affect subsequent decision-making.
+Discussion
+This study aimed to develop biopsychosocial-based, machine learning models to predict changes in quality-of-
+life and knee symptomology for individuals following TKA. These models could be used in the development 
+of clinical decision support tools to: improve post-TKA patient outcomes; evolve the type and setting of 
+rehabilitation or pre-habilitation; or help develop the biopsychosocial model of care. To our knowledge, we have 
+considered the most comprehensive battery of pre-surgical biopsychosocial features in TKA predictive models 
+to date.
+Our goal was to develop models with optimal performance, a realistic number of inputs, and good clinical 
+validity. The input selection process resulted in the retention of 18 predictors, 13 for each outcome (8 common), 
+from a possible 76 features. The predictive models accounted for up to 24% of the variance in improvement in 
+quality-of-life and 40% for knee symptomology at three months post-TKA. We acknowledge that inclusion of 
+other clinical and surgical variables may lead to improved model performance by accounting for the remaining 
+outcome variance. Indeed, it would be of interest to explore the impact of biopsychosocial features combined 
+with additional surgical and clinical features. This may strengthen the clinical utility of predictive models to 
+inform pre-habilitation and rehabilitation approaches. Our findings reaffirm the importance of biopsychosocial 
+features in patient recovery post-TKA, challenging the prevalent notion that recovery outcomes are primarily 
+determined by joint features and surgical procedures. The predictive models have the potential to complement 
+existing clinical examination and patient engagement by objectively forecasting health outcomes, or by 
+stratification of patients, such that those at risk can be identified and potential patient-tailored therapeutic 
+strategies implemented.
+Linear regression 
+model
+Bayesian DCC-tree 
+model
+Outcome measure Number of test datapoints Test RMSE Test R2 Test RMSE Test R2
+Change in physical health quality-of-life (SF-12 PCS) 169 8.03 0.24 8.01 0.24
+Change in knee symptomology (WOMAC global) 169 13.34 0.45 13.37 0.44
+Table 2. Internal validation of machine learning models predicting difference in quality-of-life (SF-12 PCS) 
+and knee symptomology (WOMAC global) from pre-TKA to post-TKA.
+ 
+Scientific Reports |         (2025) 15:4926 7| https://doi.org/10.1038/s41598-025-88560-w
+www.nature.com/scientificreports/
+
+=== PDF PAGE 8 ===
+Our protocol enabled the effective prospective collection of patient data to be directly entered into a digital 
+repository. This approach was readily accepted and adhered to by our cohort, with only 11% lost-to-follow-up. 
+Our findings support potential implementation within the clinical setting, enhancing data acquisition for clinical 
+decision-making. Clinical decision tools derived from this data could provide specialists with an evidence-based 
+approach to inform rehabilitation and care in the most efficient and potentially cost-effective manner.
+For both outcomes, we observed the pre-surgical value was predictive of the magnitude of change of that 
+variable at three months post-surgery. Those with a higher (better) pre-surgery SF-12 PCS had a lower change 
+post-TKA, with higher changes for those reporting lower pre-surgery values. Similarly, a higher (worse) pre-
+surgery WOMAC composite score was predictive of a greater change post-TKA, with lower pre-surgery scores 
+resulting in less change. Similar findings have been reported by others, where although TKA patients with 
+higher pre-surgery quality-of-life reported higher post-TKA quality-of-life, the magnitude of change was greater 
+for those with lower pre-TKA quality-of-life 46–48. As such, pre-surgical features can enable informed patient 
+decision-making regarding TKA, which in turn may influence post-surgical satisfaction.
+Other retained variables include modifiable psychological and lifestyle features such as committed action, 
+pain catastrophizing, nutrition status, and alcohol intake, all of which can potentially inform pre-habilitation 
+and rehabilitation strategies to improve patient outcomes. Possible interventions have been reported: committed 
+action can be enhanced by Acceptance and Commitment Therapy 49,50, while pain catastrophizing can be 
+attenuated by cognitive behavioural therapy, although research of the impact on post-TKA pain and function 
+has been limited to date51.
+It is difficult to directly compare our model performance to those in the literature due to a lack of studies 
+considering the same outcome measures. However, one study 52 reported RMSE and R 2 for a linear model to 
+predict changes in Oxford Knee Score function (RMSE = 14.33, R2 = 0.39) and pain (RMSE = 18.93, R2 = 0.19) 
+12  months post-TKA, which was comparable to our reported performance for the three-month post-TKA 
+WOMAC composite model.
+One of the benefits of using a probabilistic machine learning modelling approach is the generated predictive 
+uncertainty estimates. Our results showed the ability to perform inference and quantify the prediction 
+uncertainty for clinical outcomes. The novel Bayesian DCC-Tree method showed good predictive performance 
+when applied to the TKA dataset and performed similarly to the linear regression model. Predictive distributions 
+showed that the true outcome was often supported, even when far from the linear regression prediction. Our 
+Fig. 2. Example Bayesian predictive plots.
+ 
+Scientific Reports |         (2025) 15:4926 8| https://doi.org/10.1038/s41598-025-88560-w
+www.nature.com/scientificreports/
+
+=== PDF PAGE 9 ===
+findings provide interesting insight into the improvements machine learning and Bayesian methods can provide 
+to existing clinical prediction models for TKA.
+Several limitations to our study are worth noting. First is possible response bias, considering that our lost-
+to-follow-up group, albeit 11%, was characterised by worse knee symptomology and quality-of-life. We also 
+observed skewness in pre-surgery psychological features, with a high proportion of the cohort displaying 
+normal mood status, low pain catastrophizing, and high committed action, and as such, the true effects of 
+these predictors may be underestimated. Secondly, recovery outcomes were assessed three months post-TKA. 
+Although possibly considered early in the recovery journey, changes in knee symptomology occur rapidly within 
+the first three months, with subsequent, slower, improvements continuing up to 12 months post-surgery30,53. The 
+impact of psychological factors on patient outcomes may differ at later time points, and as such, analysis from 
+the current study may be limited to early recovery outcomes. While beyond the current scope, investigating the 
+predictive capacity of biopsychosocial features on patient quality-of-life and knee symptomology at later post-
+surgical timepoints would be of interest. Lastly, we were mindful of reducing surgeon and institutional bias by 
+including patients referred by 11 surgeons across four hospitals. However, all procedures were undertaken in the 
+private healthcare sector. As patients undergoing TKA may differ in the public sector, external validation will be 
+required to assess suitability in a wider clinical setting.
+Conclusions
+The improvement in patient quality-of-life and knee symptomology three months post-TKA can be predicted 
+based on patients’ pre-surgery biopsychosocial features. This study substantiates the importance of a more 
+comprehensive and holistic therapeutic strategy for TKA and post-operative rehabilitation. Bayesian analysis 
+emphasised the importance of considering the predictive uncertainty, where this information could better 
+inform clinical decision-making. Our predictive models have the potential for stratification according to 
+individual needs, allowing for more targeted service provision, maximizing the impact potential, and supporting 
+appropriate follow-up rehabilitation services by identifying ‘at risk’ individuals early in their recovery journey.
+Data availability
+Data sharing of the SuPeR Knee data are de-identified participant-level data.  Access with be through the Prin-
+cipal Investigator, or named delegate, contacted at karen.ribbons@newcastle.edu.au after approval of a written 
+proposal, with a signed data access agreement after publication of this manuscript.  A full data dictionary will 
+be available. The study protocol is available via open access https://www.researchprotocols.org/2023/1/e48801/
+Received: 29 July 2024; Accepted: 29 January 2025
+References
+ 1. Robertsson, O. et al. Knee arthroplasty in Denmark, Norway, and Sweden. A pilot from the Nordic Arthroplasty Register 
+Association. Acta Orthop. 81(1), 82–89. https://doi.org/10.3109/17453671003685442 (2010).
+ 2. Australian Orthopaedic Association National Joint Replacement Registry (AOANJRR). Hip, Knee, and Shoulder Arthroplasty: 
+Annual Report 2022. Adelaide, SA: AOA.
+ 3. Singh, J. A., Yu, S., Chen, L. & Clevland, J. D. Rates of total joint replacement in the United States: Future projections to 2020–2040 
+using the national inpatient sample. J. Rheumatol. 46(9), 1134–1140. https://doi.org/10.3899/jrheum.170990 (2019).
+ 4. Chen, X., Tang, H., Lin, J. & Zeng, R. Temporal trends in the disease burden of osteoarthritis from 1990 to 2019, and projections 
+until 2030. Plos One 18(7), e0288561. https://doi.org/10.1371/journal.pone.0288561 (2023).
+ 5. Shichman, I., Roof, M., Askew, N., Nherera, L., Rozell, J. C., Seyler, T.M., Schwarzkopf R. Projections and epidemiology of primary 
+hip and knee arthroplasty in medicare patients to 2040–2060. JBJS Open Access e22.00112 (2023).  h t t p s : / / d o i . o r g / 1 0 . 2 1 0 6 / J B J S . O 
+A . 2 2 . 0 0 1 1 2       
+ 6. DeFrance, M. J. & Scuderi, G. R. Are 20% of patients actually dissatisfied following total knee arthroplasty? A systematic review of 
+the literature. J. Arthroplasty 38, 594–599. https://doi.org/10.1016/j.arth.2022.10.011 (2023).
+ 7. Kahlenberg, C. A. et al. Patient satisfaction after total knee replacement: A systematic review. HSS J. 14, 192–201.  h t t p s : / / d o i . o r g / 1 
+0 . 1 0 0 7 / s 1 1 4 2 0 - 0 1 8 - 9 6 1 4 - 8     (2018).
+ 8. Saber, A. Y ., Marappa-Ganeshan, R., Mabrouk, A. Robotic-Assisted Total Knee Arthroplasty. [Updated 2023 Apr 22]. In: StatPearls 
+[Internet]. Treasure Island (FL): StatPearls Publishing; 2023 Jan-. Available from:  h t t p s : / / w w w . n c b i . n l m . n i h . g o v / b o o k s / N B K 5 6 4 3 
+9 6 /       
+ 9. Gao, Z.-X. et al. Comparison of kinematic alignment and mechanical alignment in total knee arthroplasty: A meta-analysis of 
+randomized controlled clinical trials. Orthop. Surg. 12, 1567–1578. https://doi.org/10.1111/os.12826 (2020).
+ 10. Sattler, L., Hing, W . & Vertullo, C. Changes to rehabilitation after total knee replacement. Austr. J. Gen. Pract. 49(9), 587–591. 
+https://doi.org/10.31128/AJGP-03-20-5297 (2020).
+ 11. Ditton, E. et al. Improving patient outcomes following total knee arthroplasty: Identifying rehabilitation pathways based on 
+modifiable psychological risk and resillience factors. Front. Psychol. 11, 1–15 (2020).
+ 12. Olsen Lindberg, M. F . et al. Factors correlated with pain after total knee arthroplasty: A systematic review and meta-analysis. Plos 
+One 18(3), e0283446 (2023).
+ 13. Naylor, J. M., Hart, A., Mittal, R., Harris, I. & Xuan, W . The value of inpatient rehabilitation after uncomplicated knee arthroplasty: 
+A propensity score analysis. Med. J. Australia 207(6), 250–255. https://doi.org/10.5694/mja16.01362 (2017).
+ 14. Bravi, M. et al. upervised versus unsupervised rehabilitation following knee arthroplasty: A systematic review and meta-analysis. 
+The Knee 40, 71–89. https://doi.org/10.1016/j.knee.2022.11.013 (2023).
+ 15. Shan, Y . et al. Predictors of psychological resilience trajectories in patients with knee arthroplasty: A longitudinal study. J. Adv. 
+Nurs. 16, 1–13. https://doi.org/10.1111/jan.15421 (2022).
+ 16. Cremeans-Smith, J. K., Greene, K. & Delahanty, D. L. Resilience and recovery from total knee arthroplasty (TKA): A pathway for 
+optimizing patient outcomes. J. Behav. Med. 45(3), 481–489. https://doi.org/10.1007/s10865-022-00287-5 (2022).
+ 17. Springer, B. D. & Sotile, W . M. The psychology of total joint arthroplasty. J. Arthroplasty 35, S46–S49.  h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / j . a r t 
+h . 2 0 2 0 . 0 1 . 0 0 2     (2020).
+ 18. Kazarian, G. S., Anthony, C. A., Lawrie, C. M. & Barrack, R. L. The impact of psychological factors and their treatment on the 
+results of total knee arthroplasty. J. Bone Joint Surg. Am. 103, 1744–1756. https://doi.org/10.2106/JBJS.20.01479 (2021).
+Scientific Reports |         (2025) 15:4926 9| https://doi.org/10.1038/s41598-025-88560-w
+www.nature.com/scientificreports/
+
+=== PDF PAGE 10 ===
+ 19. Ashoorion, V . et al. Predictors of persistent post-surgical pain following total knee arthroplasty: A systematic review and meta-
+analysis of observational studies. Pain Med. 24(4), 369–381 (2023).
+ 20. Hardy, A. et al. Pain catastrophizing and pre-operative psychological state are predictive of chronic pain after joint arthroplasty of 
+the hip, knee or shoulder: Results of a prospective, comparative study at one year follow up. Int. Orthop. 46, 2461–2469.  h t t p s : / / d o 
+i . o r g / 1 0 . 1 0 0 7 / s 0 0 2 6 4 - 0 2 2 - 0 5 5 4 2 - 7     (2022).
+ 21. Sorel, J. C. et al. Do symptoms of anxiety and/or depression and pain intensity before primary total knee arthroplasty influence 
+reason for revision? Results of an observational study from eh Dutch arthroplasty register in 56,233 patients. General Hosp. 
+Psychiatry 78, 42–49. https://doi.org/10.1016/j.genhosppsych.2022.07.001 (2022).
+ 22. Nwankwo, V . C. et al. Resilience and pain catastrophizing among patients with total knee arthroplasty: A cohort study to examine 
+psychological constructs as predictors of post-operative outcomes. Health Qual. Life Outcomes 19, 136.  h t t p s : / / d o i . o r g / 1 0 . 1 1 8 6 / s 1 
+2 9 5 5 - 0 2 1 - 0 1 7 7 2 - 2     (2021).
+ 23. Trinh, J. Q. et al. Resilience and depression influence clinical outcomes following primary total joint arthroplasty. J. Arthroplasty 
+36, 1520–1526. https://doi.org/10.1016/j.arth.2020.11.032 (2021).
+ 24. Lin, I. et al. What does best practice care for musculoskeletal pain look like? Eleven consistent recommendations from high-quality 
+clinical practice guidelines: Systematic review. Br. J. Sports Med. 54, 79–86. https://doi.org/10.1136/bjsports-2018-099878 (2020).
+ 25. Entezari, B. et al. Improving resource utilization for arthroplasty care by leveraging machine learning and optimization: A 
+systematic review. Arthroplasty Today 20, 101116. https://doi.org/10.1016/j.artd.2023.101116 (2023).
+ 26. Chang, W .-J., Naylor, J., Nararajan, P ., Liu, V . & Adie, S. Evaluating methodological quality of prognostic prediction models on 
+patient reported outcome measures after total hip replacement and total knee replacement surgery: A systematic review protocol. 
+Syst. Rev. 11, 165. https://doi.org/10.1186/s13643-022-02039-7 (2022).
+ 27. Kurmis, A. P . A role for artificial intelligence applications insides and outside of the operating theatre: A review of contemporary 
+use associated with total knee arthroplasty. Arthroplasty 5(1), 40. https://doi.org/10.1186/s42836-023-00189-0 (2023).
+ 28. Cochrane, J. A. et al. Clinical decision support tools for predicting outcomes in patients undergoing total knee arthroplasty: A 
+systematic review. J. Arthroplasty 36(5), 1832–1845 (2021).
+ 29. Murphy, K. P . Machine learning: a probabilistic perspective (MIT Press, 2012).
+ 30. Naal, F . D. et al. Clinical improvement and satisfaction after total joint replacement: A prospective 12-month evaluation on the 
+patients’ perspective. Qual. Life Res. 24, 2917–2925. https://doi.org/10.1007/s11136-015-1042-3 (2015).
+ 31. Cochrane JA, Wills A, Johnson SJ. Divide, Conquer, Combine Bayesian Decision Tree Sampling. arXiv preprint arXiv:2403.18147. 
+2024 Mar 26.
+ 32. Ribbons, K. et al. Using pre-surgical biopsychosocial features to develop an advanced clinical decision-making support tool for 
+predicting recovery trajectories in patients undergoing total knee arthroplasty (SuPeR Knee – Support, Predict, Recover): Protocol 
+for a prospective observational study. JMIR Res. Protocols 12, e48801 (2023).
+ 33. Peduzzi, P ., Concato, J., Kemper, E., Holford, T. R. & Feinstein, A. R. A simulation study of the number of events per variable in 
+logistic regression analysis. J. Clin. Epidemiol. 49(12), 1373–1379. https://doi.org/10.1016/s0895-4356(96)00236-3 (1996).
+ 34. Australian Government, Department of Health and Aged Care. Modified Monash Model. Canberra, Australia: Australian 
+Government, Department of Health and Aged Care; 2021.  h t t p s :   /  / w w  w . h e a l t  h . g  o v  .  a u / h  e a  l t h -  t o p  i c  s / r  u r  a l - h e   a l t h - w  o r k  f o r  c e / c l  a s s i 
+fi  c a  t i o n s / m m m. Accessed October 2, 2022
+ 35. Australian Government Department of Health and Aged Care. 29 July 2021.  w w w . h t t p s / h e a l t h . g o v . a u / t o p i c s / o v e r w e i g h t - a n d - o b e 
+s i t y / b m i - a n d - w a i s t
+ 36. Paxton, A., Strycker, L., Toobert, D., Ammerman, A. & Glasgow, R. Starting the conversation performance of a brief dietary 
+assessment, and intervention tool for health professionals. Am. J. Prev. Med. 40(1), 67–71.  h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / j . a m e p r e . 2 0 1 0 . 1 
+0 . 0 0 9     (2011).
+ 37. Bush, K., Kivlahan, D. R., McDonell, M. B., Fihn, S. D. & Bradley, K. A. The AUDIT alcohol consumption questions (AUDIT-C): An 
+effective brief screening test for problem drinking. Ambulatory Care of Quality Improvement (ACQUIP). Alcohol use disorders 
+identification test. Arch. Intern Med. 158(16), 1789–1795. https://doi.org/10.1001/archinte.158.16.1789 (1998).
+ 38. Holden, L., Lee, C., Hockey, R., Ware, R. S. & Dobson, A. J. Validation of the MOS Social-Support Survey 6-item (MOS-SSS-6) 
+measure with two large population-based samples of Australian women. Qual. Life Res. 23, 2849–2853.  h t t p s : / / d o i . o r g / 1 0 . 1 0 0 7 / s 1 
+1 1 3 6 - 0 1 4 - 0 7 4 1 - 5     (2014).
+ 39. McCracken, L., Chilcot, J. & Norton, S. Further development in the assessment of psychological flexibility: A shortened Committed 
+Action Questionnaire (CAQ-8). Eur. J. Pain 19, 677–685. https://doi.org/10.1002/ejp.589 (2015).
+ 40. Sullivan, M. J. L., Bishop, S. R. & Pivik, J. The Pain Catastrophizing Scale: Development and validation. Psychol. Assess. 7(4), 
+524–532 (1995).
+ 41. Roberts, H. C. et al. A review of the measurement of grip strength in clinical and epidemiological studies: Towards a standardised 
+approach. Age Ageing 40(4), 423–429. https://doi.org/10.1093/ageing/afr051 (2011).
+ 42. McConnell, S., Kolopack, P . & Davis, A. M. The Western Onatrio and McMaster Universities Osteoarthritis Index (WOMAC): A 
+review of its utility and measurement properties. Arthritis Rheum. 45(5), 453–461 (2001).
+ 43. Dowsey, M. M., Spelman, T. & Choong, P . F . Development of a prognostic nomogram for predicting the probability of nonresponse 
+to total knee arthroplasty 1 Y ear after surgery. J. Arthroplasty 31, 1654e60 (2016).
+ 44. Garriga, C. et al. Development of a model predicting non-satisfaction 1 year after primary total knee replacement in the UK and 
+transportation to Switzerland. Sci. Rep. 8, 3380 (2018).
+ 45. Lovibond, P . F . & Lovibond, S. H. The structure of negative emotional states: Comparison of the depression anxiety stress scales 
+(DASS) with the beck depression and anxiety inventories. Behav. Res. Ther. 33(3), 335–343 (1995).
+ 46. Zhou, Y ., Dowsey, M., Spelman, T., Choong, P . & Schilling, C. SMART choice (knee) tool: A patient-focused predictive model to 
+predict improvement in health-related quality of life after total knee arthroplasty. ANZ J. Surg. 93, 316–327 (2023).
+ 47. Ohyama, Y ., Iwamura, T., Hshino, T. & Miyata, K. Prognostic models of quality of life after total knee replacement: A systematic 
+review. Physiother. Theory Pract. 10, 1–12. https://doi.org/10.1080/09593985.2023.2211716 (2023).
+ 48. Hofstede, S. N. et al. The influence of preoperative determinants on quality of life, functioning and pain after total knee and hip 
+replacement: A pooled analysis of Dutch cohorts. BMC Musculoskeletal Disord. 19(1), 68.  h t t p s : / / d o i . o r g / 1 0 . 1 1 8 6 / s 1 2 8 9 1 - 0 1 8 - 1 9 9 
+1 - 0     (2018).
+ 49. Lin, J., Klatt, L.-I., McCracken, L. M. & Baumeister, H. Psychological flexibility mediates the effect of an online-based acceptance 
+and commitment therapy for chronic pain: An investigation of change processes. Pain J. Online 159(4), 663–672.  h t t p s : / / d o i . o r g / 1 
+0 . 1 0 9 7 / j . p a i n . 0 0 0 0 0 0 0 0 0 0 0 0 1 1 3 4     (2018).
+ 50. Roddy, M. K. et al. One-day acceptance and commitment therapy workshop for preventing persistent post-surgical pain and 
+dysfunction in at-risk veterans: A randomized controlled trial protocol. J. Psychom. Res. 138, 110250.  h t t p s : / / d o i . o r g / 1 0 . 1 0 1 6 / j . j p s 
+y c h o r e s . 2 0 2 0 . 1 1 0 2 5 0     (2020).
+ 51. Buvanendran, A. et al. Preoperative cognitive-behavioural therapy for reducing pain catastrophizing and improving pain outcomes 
+after total knee replacement: A randomized clinical trial. Reg. Anesth. Pain Med. 46, 313–321.  h t t p s : / / d o i . o r g / 1 0 . 1 1 3 6 / r a p m - 2 0 2 
+0 - 1 0 2 2 5 8     (2021).
+ 52. Buus, A. A. O. et al. Patient -reported outcomes for function and pain in total knee arthroplasty patients. Nurs. Res. Online 71(5), 
+E39–E47. https://doi.org/10.1097/NNR.0000000000000602 (2022).
+ 53. Kuklinski, D. et al. Thresholds for meaningful improvement in WOMAC scores need to be adjusted to patient characteristics after 
+hip and knee replacement. J. Orthop. 29, 50–59. https://doi.org/10.1016/j.jor.2022.01.002 (2022).
+Scientific Reports |         (2025) 15:4926 10| https://doi.org/10.1038/s41598-025-88560-w
+www.nature.com/scientificreports/
+
+=== PDF PAGE 11 ===
+Acknowledgements
+We would like to acknowledge the SuPeR Knee research assistants who were involved with data collection for 
+this study. We are thankful to the Centre for Rehab Innovations (CRI) data analysts for their role in data manage-
+ment, processing, and analysis. We also extend our thanks to the CRI team members for their involvement in the 
+study design and administrative support for the project. We would also like to acknowledge the time provided by 
+all study participants, and the collaboration and support from all participating Ramsay Healthcare Orthopaedic 
+surgeons and their administrative teams involved with participant enrolment to the study.
+Author contributions
+MN, MP , RW , SJ, AW conceptualized the study. MN was instrumental in funding acquisition. KR and JC wrote 
+the original draft with all other co-authors involved in the review and editing process. JC, SJ and KR directly 
+accessed and verified the underlying data reported in this manuscript and undertook the machine learning and 
+statistical analysis. ED provided insights into the data collection tools and clinical validity of the study findings. 
+SJ and AW supervised the data collection and processing aspects of the study. KR managed the project admin -
+istration and all aspects of the investigation. RW , MP and MN provided guidance with the scope and clinical 
+aspects of the protocol. MN oversaw the project. All authors agreed to the publication of the final version of this 
+manuscript.
+Funding
+Funding for this study was provided by the Ramsay Hospital Research Foundation, Sydney, Australia.
+Declarations
+Competing interests
+The authors declare no competing interests.
+Ethics approval
+Ethics approval was granted by the University of Newcastle Human Research Ethics Committee (approval ID: 
+H-2019-0109) on June 21, 2019.
+Consent to participate
+Informed consent was obtained from all participants who took part in this study.
+Additional information
+Supplementary Information The online version contains supplementary material available at  h t t p s : / / d o i . o r g / 1 
+0 . 1 0 3 8 / s 4 1 5 9 8 - 0 2 5 - 8 8 5 6 0 - w     .  
+Correspondence and requests for materials should be addressed to K.R.
+Reprints and permissions information is available at www.nature.com/reprints.
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and 
+institutional affiliations.
+Open Access  This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 
+4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in 
+any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide 
+a link to the Creative Commons licence, and indicate if you modified the licensed material. Y ou do not have 
+permission under this licence to share adapted material derived from this article or parts of it. The images or 
+other third party material in this article are included in the article’s Creative Commons licence, unless indicated 
+otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence 
+and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to 
+obtain permission directly from the copyright holder. To view a copy of this licence, visit  h t t p : / / c r e a t i v e c o m m o 
+n s . o r g / l i c e n s e s / b y - n c - n d / 4 . 0 /     .  
+© The Author(s) 2025 
+Scientific Reports |         (2025) 15:4926 11| https://doi.org/10.1038/s41598-025-88560-w
+www.nature.com/scientificreports/

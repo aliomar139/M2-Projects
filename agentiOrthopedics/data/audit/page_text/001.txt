@@ -1,0 +1,1116 @@
+=== PDF PAGE 1 ===
+EDITED BY  
+Hubin Zhao,  
+University College London, United 
+Kingdom
+REVIEWED BY  
+Sawan Kumar,  
+L&T Technology Services Limited, India
+Bekzat Amanov,  
+Al-Farabi Kazakh National University, 
+Kazakhstan
+*CORRESPONDENCE  
+Tao Chen  
+henpao@126.com
+RECEIVED 04 March 2026 
+REVISED 09 May 2026 
+ACCEPTED 13 May 2026 
+PUBLISHED 11 June 2026
+CITATION 
+Dong J, Chen T and Peng Z (2026) 
+Closed-Loop digital therapeutics 
+empowered by deep reinforcement 
+learning and wearable sensing for 
+precision orthopedic rehabilitation: a 
+simulation-based proof-of-concept 
+study.  
+Front. Rehabil. Sci. 7:1822939. 
+doi: 10.3389/fresc.2026.1822939
+COPYRIGHT 
+© 2026 Dong, Chen and Peng. This is an 
+open-access article distributed under 
+the terms of the Creative Commons 
+Attribution License (CC BY). The use, 
+distribution or reproduction in other 
+forums is permitted, provided the 
+original author(s) and the copyright 
+owner(s) are credited and that the 
+original publication in this journal is 
+cited, in accordance with accepted 
+academic practice. No use, distribution 
+or reproduction is permitted which does 
+not comply with these terms.
+Closed-Loop digital therapeutics 
+empowered by deep 
+reinforcement learning and 
+wearable sensing for precision 
+orthopedic rehabilitation: a 
+simulation-based proof-of- 
+concept study
+Jiahao Dong
+1
+, Tao Chen
+2* and Zhongyu Peng
+2
+1First Clinical Medical College, Yunnan University of Traditional Chinese Medicine, Kunming, China, 
+2Yunnan Provincial Hospital of Chinese Medicine, Kunming, China
+Objective: Static, one-size-ﬁts-all protocols in postoperative orthopedic 
+rehabilitation fail to adapt to individual recovery dynamics, potentially leading 
+to suboptimal rehabilitation efﬁciency or an elevated risk of secondary injury. 
+To address this critical gap, we propose and provide a simulation-based 
+proof-of-concept validation for a novel closed-loop management system that 
+deeply integrates patient-generated health data (PGHD) with deep 
+reinforcement learning (DRL), offering a potential technical pathway for real- 
+time personalized optimization of rehabilitation regimens and continuous 
+prediction of long-term functional outcomes.
+Methods: A three-tier system architecture was constructed, comprising an 
+intelligent sensing layer, an AI decision-making and prediction layer, and an 
+interactive feedback layer. Through wearable inertial measurement units 
+(IMUs) and surface electromyography (sEMG) devices, the system 
+continuously collected multi-dimensional PGHD, including movement quality, 
+training intensity, adherence, and pain feedback. These heterogeneous data 
+were encoded into a comprehensive “patient state space ” through a 
+standardized feature engineering pipeline. A proximal policy optimization 
+(PPO) algorithm was employed to train a DRL agent to learn the optimal 
+policy for dynamically adjusting the next-cycle rehabilitation prescription 
+(including exercise type, intensity, frequency, and progression pace). The 
+agent aimed to maximize a hierarchical cumulative reward function that 
+integrates short-term safety ( ΔVAS pain score monitoring), mid-term 
+adherence (training completion rate), and long-term functional improvement. 
+Critically, a temporal convolutional network (TCN) prognostic module was 
+deeply coupled with the DRL agent, providing prospective predictions of 
+future functional recovery curves that inform the agent ’s long-term reward 
+calculation, equipping the system with the capability of “making decisions 
+based on predictions.”
+TYPE Systematic Review 
+PUBLISHED 11 June 2026 
+DOI 10.3389/fresc.2026.1822939
+Frontiers in Rehabilitation Sciences 01 frontiersin.org
+
+=== PDF PAGE 2 ===
+Results: A proof-of-concept validation was conducted in a simulated 
+environment for a post-operative anterior cruciate ligament reconstruction 
+(ACLR) scenario. The trained DRL agent demonstrated the ability to generate 
+differentiated rehabilitation strategies: in stratiﬁed analysis, it prescribed distinct 
+progression paces for virtual patients with fast vs. slow recovery trajectories. 
+Under this simulation setting, compared with a static conservative protocol, the 
+DRL-driven strategy reduced the simulated time to “safe return to light activity ” 
+by an average of 15% and, compared with a static aggressive protocol, relatively 
+decreased simulated “re-injury” events by 40%. The mean absolute errors 
+(MAEs) of the TCN prognostic module for predicting functional scores at 2, 4, 
+and 8 weeks into the future were 3.2, 4.8, and 6.5 points (on a 100-point 
+scale), respectively, outperforming the ARIMA, LSTM, and GRU baseline models. 
+An ablation study conﬁrmed the TCN module ’s independent contribution, as its 
+removal led to a relative increase in the simulated re-injury rate.
+Conclusion:This proof-of-concept study provides foundational evidence for the 
+technical feasibility of a DRL-based closed-loop rehabilitation system. The 
+proposed framework uniquely couples a wearable sensing layer with a 
+symbiotic DRL-TCN architecture, demonstrating the potential to safely and 
+dynamically personalize rehabilitation strategies in a simulated environment. 
+These ﬁndings lay the groundwork for future prospective clinical trials, which 
+are the necessary next step to validate safety, efﬁcacy, and clinical utility in 
+real-world settings.
+KEYWORDS
+deep reinforcement learning, wearable sensing, prognostic prediction, patient- 
+generated health data, orthopedic rehabilitation, personalized medicine, intelligent 
+rehabilitation system, temporal convolutional network
+1 Introduction
+Post-operative orthopedic rehabilitation management is 
+progressively evolving from a standardized, static paradigm 
+toward a personalized and dynamic approach. This trend is both 
+an intrinsic requirement of advancing clinical practice and a 
+beneﬁt of the continuous development of digital health 
+technologies. Among these, wearable sensing devices, 
+characterized by their non-invasive and continuous monitoring 
+capabilities, have become crucial tools for achieving objective 
+quantiﬁcation and real-time assessment of the rehabilitation 
+process. By collecting multi-modal physiological data such as 
+gait, joint range of motion, and electromyographic signals in 
+real time, wearable systems can provide dynamic information 
+beyond traditional scales, offering data-driven support for 
+rehabilitation decisions ( 1). In scenarios involving orthopedic 
+degenerative diseases, post-traumatic conditions, and spinal cord 
+injuries, wearable devices with embedded sensor networks 
+enable the quantitative assessment of gait symmetry, joint range 
+of motion, and muscle activation patterns, with data acquisition 
+accuracy reaching over 90% of that of clinical electromyography, 
+thus providing an objective basis for formulating rehabilitation 
+plans ( 2). For instance, a randomized controlled trial (RCT) on 
+knee osteoarthritis (KOA) demonstrated that a wearable device 
+utilizing an IMU signiﬁcantly improved patients’ Lysholm scores 
+and reduced inOfülammatory factor levels (3). Technologies such 
+as IMUs and sEMG have been widely applied in post-operative 
+rehabilitation for anterior cruciate ligament reconstruction and 
+total knee arthroplasty, showing good validity in quantifying 
+motor function and identifying abnormal patterns, though they 
+still face challenges such as signal interference and individual 
+variability. Clinical validation studies require the establishment 
+of a standardized evaluation framework, including veriﬁcation of 
+IMU kinematic parameter accuracy through synchronized video- 
+based motion analysis systems, validation of sEMG signal 
+quality against the gold standard of needle electromyography, 
+and conﬁrmation of clinical predictive value through large- 
+sample RCTs ( 4). For example, a tai chi rehabilitation protocol 
+customized based on IMU/sEMG data signiﬁcantly improved 
+gait speed and motor function in stroke patients in an RCT ( 5). 
+Nevertheless, a fundamental limitation persists: the majority of 
+current rehabilitation protocols still rely on static, periodic 
+clinical assessments, which suffer from irreducible feedback 
+delays and an inherent inability to adapt prescriptions in real 
+time to a patient’s dynamically changing recovery status.
+In recent years, artiﬁcial intelligence, particularly deep 
+reinforcement learning (DRL), has shown potential in medical 
+decision support. By constructing a closed-loop optimization 
+mechanism of “state-action-reward,” DRL can adapt to complex, 
+continuous decision-making environments and has made initial 
+progress in areas such as chronic disease management and 
+rehabilitation robot control. For example, in the anti-infective 
+treatment of sepsis, a DRL model guided by clinical knowledge 
+effectively improved the prognostic outcomes of antibiotic 
+recommendation protocols ( 6); in intermittent androgen 
+deprivation therapy for prostate cancer, a DRL framework also 
+enabled dynamic, personalized adjustment of dosing strategies 
+(7). However, translating this potential to multi-variable, heavily 
+constrained scenarios like orthopedic rehabilitation is non- 
+trivial. Key challenges include high data heterogeneity across 
+Dong et al.                                                                                                                                                             10.3389/fresc.2026.1822939
+Frontiers in Rehabilitation Sciences 02 frontiersin.org
+
+=== PDF PAGE 3 ===
+patients, insufﬁcient model interpretability —often referred to as 
+the “black box” problem —and, most critically, difﬁculties in 
+establishing rigorous safety boundaries to prevent injury during 
+the learning and execution of policies ( 8–10).
+Concurrently, patient-generated health data (PGHD) provides 
+a new data foundation for continuous and dynamic rehabilitation 
+modeling. PGHD encompasses multi-dimensional information — 
+including physiological parameters, behavioral logs, and 
+subjective symptom reports —continuously collected by patients 
+or wearable devices. It can supplement the limitations of 
+traditional electronic health records in temporal continuity and 
+contextual completeness, thereby supporting more precise 
+individualized interventions ( 11, 12). Nonetheless, the 
+standardization, quality control, and privacy protection of 
+PGHD remain critical issues that must be addressed during its 
+clinical translation.
+Therefore, to bridge this gap and explore potential technical 
+pathways for the intelligent evolution of post-operative 
+orthopedic rehabilitation, this original research article aims to 
+propose and rigorously validate, within a simulation-based 
+environment, a novel closed-loop system framework that deeply 
+integrates PGHD and DRL for dynamic rehabilitation 
+optimization and prognostic prediction.
+The system continuously monitors patient status (Monitoring) 
+through an intelligent sensing layer (wearable IMU/sEMG and 
+patient reports). Multi-modal PGHD is transmitted to the 
+cloud-based AI core, where a Temporal Convolutional Network 
+(TCN) prognostic module predicts future functional recovery. 
+This output is utilized in the long-term reward calculation of 
+the Deep Reinforcement Learning (DRL) agent to generate a 
+personalized rehabilitation prescription (Prediction & Decision). 
+The prescription is delivered to the patient-end App for 
+execution (Intervention) via an interactive feedback layer, while 
+clinicians can review all AI suggestions through a monitoring 
+dashboard, ensuring safety and clinical control (Human-in-the- 
+Loop). The entire system forms a dynamically optimized 
+intelligent management closed loop.
+As illustrated in Figure 1, the system constructs an intelligent 
+management closed loop of “monitoring-prediction-intervention.” 
+It continuously collects multi-modal patient data through the 
+intelligent sensing layer. In the cloud-based AI core, the DRL 
+agent and the TCN prognostic module work in concert to 
+generate personalized rehabilitation prescriptions and 
+predictions. The interactive feedback layer ensures that the 
+clinician retains the ﬁnal decision-making authority. This study 
+aims to provide a rigorous proof-of-concept validation of the 
+system framework’s technical feasibility through comprehensive 
+simulation modeling and analysis, offering methodological 
+evidence and prospective references for subsequent clinical 
+translation research.
+2 Methods
+2.1 Overall system architecture and clinical 
+workﬂow integration
+The proposed system employs a modular three-tier 
+architecture, meticulously designed to align with the clinical 
+rehabilitation pathway and achieve seamless closed-loop 
+management from data acquisition to interventional feedback.
+Intelligent Sensing Layer (Data Acquisition End):
+This layer is responsible for the non-invasive, con tinuous 
+collection of multi-modal physiological and behavio ral data, 
+including kinematic data from IMUs (e.g., 3-axis ac celerometer 
+and gyroscope data sampled at 100 Hz), electromyogr aphic 
+activity data from sEMG, and patient-reported outcom es 
+(PROs) collected via a mobile application. All devi ces 
+synchronize and transmit data in real time using Bl uetooth 
+Low Energy (BLE).
+AI Decision-Making and Prediction Layer (Cloud Processing 
+Center):
+This layer constitutes the intelligent core of the system, 
+containing a state encoder, the DRL agent, a prognostic 
+prediction module, and a safety monitoring module. It receives 
+data from the sensing layer, outputs personalized rehabilitation 
+prescription recommendations and prognostic predictions, and 
+ensures decision safety.
+Interactive Feedback Layer (User End):
+This layer translates AI decisions into executable instructions 
+and visual feedback, including a patient-facing rehabilitation 
+guidance App and a clinician-facing monitoring and review 
+dashboard, ensuring human-in-the-loop clinical control.
+2.2 Data standardization and clinical state 
+space construction
+To transform raw, heterogeneous sensor data into structured 
+information suitable for model learning, we established a 
+standardized feature engineering pipeline ( Figure 2 ). This 
+pipeline aims to extract features with explicit clinical signiﬁcance 
+from multi-modal PGHD and construct a comprehensive 
+“patient state space.”
+Raw IMU kinematic signals and sEMG electromyographi c 
+signals undergo standardized pre-processing (e.g., ﬁltering, 
+attitude calculation). Subsequently, four major cat egories of 
+clinical features are extracted from the pre-proces sed signals: 
+joint function, motor control, muscle function, and  adherence 
+& symptoms. These dynamic features, along with stat ic 
+baseline features (demographics, surgical informati on) and 
+temporal contextual features (post-operative day), are 
+collectively encoded into a ﬁxed-dimensional numeri cal 
+vector, forming the “patient state space St” percei ved by the 
+DRL agent.
+To achieve model generalizability, we established r igorous 
+data preprocessing and feature engineering protocol s, with all 
+extracted features referencing and integrating vali dated 
+methods from existing research. Traditional kinemat ic 
+assessment primarily relies on IMUs or optical moti on 
+capture systems; while they can accurately record 
+macroscopic kinematic parameters like joint angles and 
+displacements, they struggle to directly reOfülect neu romuscular 
+control mechanisms ( 13). In contrast, sEMG technology 
+quantiﬁes microscopic physiological characteristics  such as 
+motor unit recruitment patterns and muscle co-activ ation 
+timing by detecting electrical activity signals fro m muscles. 
+The combination of these two modalities forms a 
+Dong et al.                                                                                                                                                             10.3389/fresc.2026.1822939
+Frontiers in Rehabilitation Sciences 03 frontiersin.org
+
+=== PDF PAGE 4 ===
+comprehensive assessment framework spanning from 
+biomechanics to neurophysiology ( 14).
+Raw Signal Processing:
+IMU data underwent attitude calculation using a 
+complementary ﬁlter. sEMG signals were processed through 
+band-pass ﬁltering (20 –500 Hz), full-wave rectiﬁcation, and 
+smoothing to extract the linear envelope of muscle activation, a 
+standard preprocessing method for analyzing muscle function. 
+The standardized pipeline for sEMG signal processing is a key 
+component for ensuring data reliability and research 
+FIGURE 1 
+Framework of the PGHD- and DRL-based closed-loop intelligent management system for post-operative orthopedic rehabilitation.
+FIGURE 2 
+Flowchart for constructing the patient clinical state space from multi-modal sensor data.
+Dong et al.                                                                                                                                                             10.3389/fresc.2026.1822939
+Frontiers in Rehabilitation Sciences 04 frontiersin.org
+
+=== PDF PAGE 5 ===
+reproducibility, encompassing three main stages: signal 
+acquisition, pre-processing, and feature extraction/analysis.
+Clinical Feature Extraction: For each assessment cycle (24 h), 
+the following core clinical indicators were calculated:
+Joint Function Category:
+Ratio of active/passive range of motion between the affected 
+and unaffected sides; peak torque difference in simulated 
+isokinetic strength testing.
+Motor Control Category:
+Peak knee adduction moment and sway path length of the 
+center of gravity during standardized tasks (e.g., sit-to-stand 
+transfer); asymmetry index of spatiotemporal parameters in the 
+gait cycle. These biomechanical features have been demonstrated 
+to be highly correlated with functional recovery after knee 
+injuries. The clinical translational value of gait analysis is further 
+underscored by its utility as a screening tool. Traditional PRO 
+assessments can be inOfüluenced by patients’ subjective cognitive 
+biases, whereas gait parameters (such as the peak moment in 
+the early stance phase) can objectively identify high-risk 
+individuals requiring intensiﬁed intervention ( 15).
+Muscle Function Category: Activation delay time of target 
+muscles; co-activation index of antagonist muscles.
+Adherence and Symptom Category: Training completion rate; 
+average subjective pain VAS score.
+State Space (St) Deﬁnition:
+The above dynamic features were collectively encoded with 
+static baseline features (demographics, surgical information) and 
+temporal contextual features (post-operative day) into a ﬁxed- 
+dimensional numerical vector, forming a comprehensive 
+“clinical portrait” of the patient at time *t*. All continuous 
+features were normalized using Z-score standardization. For 
+sporadic missing data caused by improper device wear or 
+transmission errors, a forward-ﬁlling method was applied. The 
+ﬁnal state vector dimension was *d = 52*.
+2.3 Clinically-Oriented design of the deep 
+reinforcement learning model
+The DRL framework was designed as a “virtual rehabilitation 
+therapist.” We employed the Proximal Policy Optimization (PPO) 
+algorithm to construct the agent, which is deeply coupled with an 
+independent TCN prognostic prediction module to jointly enable 
+prospective decision-making ( Figure 3 ). This algorithm was 
+chosen for its advantages in training stability and sample 
+efﬁciency, which have been successfully applied in medical 
+scenarios requiring continuous, safe decision-making, such as 
+blood glucose regulation and mechanical ventilation parameter 
+optimization. For instance, by designing an “opt-out” default 
+framework, the PPO policy increased the accuracy of medication 
+dosage calculations for obese patients by 37% –39% while 
+avoiding the alert fatigue commonly associated with traditional 
+clinical decision support systems ( 16). This “nudge” mechanism 
+innovatively balances clinical autonomy with best-practice 
+guidance, with its theoretical basis lying in the conservative 
+nature of PPO policy updates, which maintains the stability of 
+decision boundaries ( 17).
+Action Space (At) Design:
+Corresponding to the adjustment of the prescription for the 
+next rehabilitation cycle (e.g., 72 h), it is a hybrid space tailored 
+to clinical habits. The speciﬁc deﬁnitions are as follows:
+Training Modality Selection (Discrete Action ad): Comprising 
+4 options: {Add balance training, Add strength training, Maintain 
+current regimen, Reduce weight-bearing}.
+FIGURE 3 
+Collaborative working mechanism of the DRL agent and TCN prognostic prediction module.
+Dong et al.                                                                                                                                                             10.3389/fresc.2026.1822939
+Frontiers in Rehabilitation Sciences 05 frontiersin.org
+
+=== PDF PAGE 6 ===
+Training Dosage Adjustment (Continuous Action ac): 
+A scaling factor for the current training intensity, with a range 
+of [ −0.5, 0.5].
+Progression Decision (Discrete Action ap): Whether to 
+introduce a higher-difﬁculty exercise from the next phase, 
+comprising 2 options: {Yes, No}.
+To implement this hybrid action space, the output end of the 
+PPO policy network adopts a multi-head structure: two heads 
+output the logits for discrete actions, and one head outputs the 
+mean and log standard deviation for the continuous action.
+Reward Function (Rt) Design:
+A hierarchical weighted design was adopted to guide the agent 
+in learning policies that align with clinical objectives. The weights 
+for each reward component were calibrated through a structured, 
+two-stage process. First, a grid search over weight combinations 
+was conducted on a smaller virtual cohort of 200 patients to 
+identify Pareto-optimal trade-offs among safety, adherence, and 
+progress. Second, these candidate weightings were presented to 
+two senior orthopedic surgeons, whose structured feedback was 
+used to select the ﬁnal conﬁguration that best reOfülected clinical 
+priorities—speciﬁcally, the principle that a safety violation 
+should dominate the cumulative reward.
+Safety Reward (Rs):
+A large negative reward (*Rs = −1.0*) is applied if the average 
+VAS pain score increase within a single assessment cycle 
+ΔVAS > 2, or if an abnormal movement pattern (deﬁned as a 
+gait asymmetry index exceeding a preset threshold of 20%) is 
+detected; otherwise, it is 0.
+Adherence Reward (Ra): Positively correlated with the training 
+completion rate ct, deﬁned as Ra = ct.
+Functional Progress Reward (Rp):
+Linked to the improvement in objective functional indicators and 
+the long-term functional gain predicted by the prog nostic module. 
+Speciﬁcally deﬁned as *Rp = (Lysholmt - Lysholmt-1) /10 + α * 
+ΔŶt + 4w*, where Lysholm is the functional score of the current 
+cycle, *ΔŶt + 4w* is the change in functional score predicted by the 
+TCN for the next 4 weeks, and α is a balancing coefﬁcient set to 0.5.
+Total Reward: *Rt = λ1 * Rs + λ2 * Ra + λ3 * Rp*. The ﬁnal 
+weights were set as * λ1 = 10.0, λ2 = 0.5, λ3 = 1.0*, ensuring that a 
+single safety violation (Rs = −1.0) incurs a penalty of −10.0, an 
+order of magnitude larger than any positive progress reward 
+achievable in a single cycle. This clinically-driven trade-off 
+prioritizes “do no harm” above all else.
+Algorithm Implementation: The policy network ( π) takes the 
+state St as input and outputs the action probability distribution, 
+striking a balance between exploration and exploitation.
+The DRL agent (left) observes the current patient state St and 
+outputs a rehabilitation prescription action At via its policy 
+network π. The action is executed in the environment (patient/ 
+simulation model), generating a new state *St + 1* and an 
+immediate reward Rt. The reward function integrates three 
+dimensions: safety (Rs), adherence (Ra), and functional progress 
+(Rp). Crucially, the functional progress reward Rp receives a key 
+input from the TCN prognostic module’s (right) prediction of 
+the future functional recovery curve Ŷ. The TCN analyzes 
+historical state-action sequences through a dilated convolutional 
+architecture, and its prediction enables the DRL to assess the 
+long-term value of current decisions, thus achieving 
+prospective optimization.
+2.4 Prognostic prediction module: 
+temporal modeling
+To provide prospective decision support, the system integrated 
+an independent prognostic prediction model. We employed a 
+Temporal Convolutional Network (TCN), whose dilated causal 
+convolution structure can effectively capture long-range 
+dependencies with high computational efﬁciency. TCNs have 
+demonstrated superior performance over traditional models like 
+recurrent neural networks (RNNs) in medical time-series tasks 
+such as ECG classiﬁcation and disease progression prediction, 
+particularly in handling long sequences and mitigating vanishing 
+gradients. As an emerging deep learning architecture, it has 
+recently shown signiﬁcant advantages in medical time-series 
+data analysis. Its core value lies in the efﬁcient capture of both 
+short- and long-term dependencies, parallel computing 
+capability, and adaptability to irregular temporal patterns. 
+Compared to traditional RNNs or Long Short-Term Memory 
+(LSTM) networks, TCNs, through dilated convolutions and 
+multi-layer stacking structures, can model complex temporal 
+dynamics in long sequences at a lower computational cost (18, 19).
+Input and Output: The input is a sequence of historical states 
+and actions from the past * N = 14* cycles, and the output is the 
+standard functional score (e.g., Lysholm score) for the future 
+*T = 4, 8, 12* weeks.
+Co-Training Paradigm:
+The TCN module and the DRL agent were trained using an 
+iterative collaborative approach. First, the TCN was pre-trained 
+using initial sequence data generated by the DRL’s random 
+exploration in the simulation environment. Subsequently, during 
+the DRL training iterations, after a certain number of policy 
+updates, the TCN was ﬁne-tuned using the newly generated 
+interaction data. In this process, the DRL relied on the TCN’s 
+predictions to calculate the long-term functional gain term ΔŶ 
+in the reward function, while the TCN learned more robust 
+“intervention-response” dynamics from the diverse policy 
+trajectories explored by the DRL.
+2.5 Simulation-Based proof-of-concept 
+and safety assessment
+Prior to clinical introduction, we conducted a proof-of- 
+concept validation in a highly controllable simulation 
+environment. This approach draws on the research paradigm in 
+computational biomechanics and rehabilitation engineering, 
+where simulation is used to pre-emptively evaluate the safety of 
+interventional strategies. For example, by coupling macroscopic 
+skeletal muscle dynamics with microscopic myoﬁber 
+electrophysiological properties, the temporal relationship 
+between muscle fatigue and strength recovery during 
+rehabilitation training can be more accurately predicted ( 20, 21). 
+Furthermore, interactive simulation platforms based on virtual 
+reality (VR) allow rehabilitation physicians to adjust training 
+parameters (e.g., resistance magnitude or range of motion) in 
+real-time and provide haptic feedback via force-feedback 
+devices, thereby compensating for the lack of physical realism in 
+traditional VR ( 22, 23).
+Simulation Environment Construction:
+Dong et al.                                                                                                                                                             10.3389/fresc.2026.1822939
+Frontiers in Rehabilitation Sciences 06 frontiersin.org
+
+=== PDF PAGE 7 ===
+We developed a simulation environment driven by physiology 
+and post-operative ACLR knowledge, with the following core 
+components and assumptions:
+Lower Limb Musculoskeletal Biomechanical Model:
+A simpliﬁed two-dimensional sagittal plane model was 
+adopted, encompassing major muscle groups such as the 
+quadriceps and hamstrings. The muscle force-length-velocity 
+relationship was based on a simpliﬁed Hill muscle model, and 
+joint moments were estimated via inverse dynamics.
+Tissue Healing Temporal Function: Graft healing strength was 
+modeled as a sigmoid function of post-operative time *H 
+(t) = H0 + (Hmax - H 0)/(1 + e-k(t-t0))*, with parameters set based 
+on animal model healing literature.
+“Load-Response” Relationship Model: If the load bor ne by 
+the tissue exceeds the current healing strength H(t ) by a 
+safety factor (set at 1.2), a “re-injury” simulatio n event is 
+triggered, leading to a sharp decline in the functi onal score 
+and a reset of the healing timeline. The load level  is 
+determined by the DRL’s actions.
+Virtual Patient Behavioral Model: Incorporated individual 
+differences, including “recovery potential” (affecting the healing 
+speed parameter *k*), “adherence” (affecting the deviation 
+between actual executed dose and prescribed dose), and “pain 
+sensitivity” (affecting the mapping between physiological load 
+and VAS report). Each virtual patient was parameterized by 
+sampling *k* from a log-normal distribution [ μ = ln(0.15), 
+σ = 0.3] to represent the spectrum of “fast” to “slow” recovery 
+phenotypes. Adherence was sampled from a truncated normal 
+distribution with a mean of 0.80 and a standard deviation of 
+0.15 [range: (0.5, 1.0)], while pain sensitivity was drawn from a 
+uniform distribution [0.8, 1.2] acting as a multiplicative factor 
+on the standard load-to-VAS mapping.
+Formal Deﬁnition of “Safe Return to Light Activity":
+In the simulation, this endpoint was deﬁned as: for two 
+consecutive assessment cycles, the affected limb’s quadriceps 
+strength reaching ≥70% of the unaffected side, and a gait 
+asymmetry index <10% during the completion of a standard 
+“sit-to-stand” transfer task.
+Training and Testing:
+The DRL agent was trained in an environment of 1,000 virtual 
+patients and subsequently tested head-to-head against two 
+predeﬁned static protocols in a cohort of 500 new virtual 
+patients, independently and identically distributed from the 
+training set. The conservative static protocol mandated a ﬁxed 
+10% increase in training load per week with no new modalities 
+introduced before week 8, while the aggressive static protocol 
+applied a 25% weekly load increase and introduced advanced 
+maneuvers at week 4, irrespective of patient state. These rule- 
+based protocols were chosen to represent the extremes of 
+current clinical practice. Key indicators, including simulated 
+time-to-return and simulated re-injury rate, were evaluated, 
+along with the prognostic prediction module’s accuracy.
+2.6 Simulation and training details for 
+reproducibility
+To ensure full reproducibility of our results, we provide here a 
+comprehensive account of the computational environment, model 
+architectures, and hyperparameter conﬁgurations used in 
+this study.
+Computational Environment and Implementation: All models 
+were implemented in Python 3.9 using PyTorch 2.0. The PPO 
+agent was built using the Stable-Baselines3 library (v2.1.0). 
+Training and testing were conducted on a workstation equipped 
+with an Intel Core i9 –13900 K CPU, 64 GB of RAM, and an 
+NVIDIA GeForce RTX 4090 GPU.
+PPO Hyperparameters: The PPO agent was conﬁgured with 
+the following hyperparameters, tuned through a preliminary 
+grid search on a smaller validation cohort: learning rate, 3e-4; 
+discount factor ( γ), 0.99; generalized advantage estimation 
+(GAE) lambda ( λ), 0.95; clip range, 0.2; batch size, 64; number 
+of epochs per update, 10; entropy coefﬁcient, 0.01; and value 
+function coefﬁcient, 0.5. The policy network and value network 
+shared a common backbone consisting of 3 fully connected 
+layers of 256 units each with ReLU activation functions, 
+followed by separate output heads for the policy and value.
+TCN Architecture: The TCN comprised 4 residual blocks with 
+exponentially increasing dilation rates (1, 2, 4, 8), each containing 
+two dilated causal convolutional layers with 128 ﬁlters of kernel 
+size 3. Weight normalization and dropout (rate=0.1) were 
+applied after each convolution. The model was trained using the 
+Adam optimizer with a learning rate of 1e-3 and a mean 
+squared error (MSE) loss, for a maximum of 500 epochs with 
+early stopping (patience=25 epochs). The total number of 
+trainable parameters for the TCN was 1,247,000.
+Training Procedure: The DRL agent was trained for a total of 2 
+million environment steps across 1,000 virtual patients. After 
+every 100,000 steps, the policy was evaluated on a held-out 
+validation set of 100 patients to monitor for overﬁtting. The 
+TCN was pre-trained on 500,000 sequences collected from the 
+DRL agent’s random policy and was subsequently ﬁne-tuned 
+every 500,000 steps during DRL training. The complete training 
+process took approximately 18 h on the hardware described above.
+3 Results
+In a simulated post-ACLR environment comprising 1,0 00 
+virtual patients, the proposed DRL closed-loop syst em was trained 
+and tested. Under this simulation setting, the syst em 
+demonstrated potential advantages in simulated reha bilitation 
+efﬁciency, safety, and prognostic prediction accura cy compared to 
+static rehabilitation protocols (Figure 4). A detailed analysis follows.
+(A) Conceptual diagram of the simulation experiment 
+environment, including the virtual patient model and 
+biomechanical simulation. (B) Comparison of the time required 
+to achieve the “safe return to light activity” standard among the 
+three rehabilitation protocols. The DRL protocol required 
+statistically less time than the static conservative protocol 
+(P < 0.05). (C) Incidence of “re-injury” events during simulated 
+rehabilitation among the three protocols. The DRL protocol’s 
+incidence was signiﬁcantly lower than that of the static 
+aggressive protocol (**P < 0.001). (D) Prediction curves from the 
+TCN prognostic prediction module vs. actual values for 
+functional scores at 2, 4, 8, and 12 weeks into the future; the 
+inset table shows the Mean Absolute Error (MAE) at each 
+time point.
+Dong et al.                                                                                                                                                             10.3389/fresc.2026.1822939
+Frontiers in Rehabilitation Sciences 07 frontiersin.org
+
+=== PDF PAGE 8 ===
+3.1 Clinical pattern analysis of DRL agent ’s 
+learned policy
+After training, the DRL agent demonstrated highly adaptive 
+decision-making capabilities in the simulation. post-hoc analysis 
+of the learned policy revealed structural similarities between its 
+decision patterns and the general principles of rehabilitation 
+therapy. This similarity indicates that when the reward function 
+is meticulously designed to encode core clinical objectives, the 
+DRL agent can autonomously induce decision rules from data 
+that partially align with expert experience. Research has shown 
+that in the Kellgren-Lawrence (KL) grading task for knee 
+osteoarthritis (KOA), AI assistance improved the assessment 
+accuracy of junior physicians from 0.76 ± 0.018 to 0.86 ± 0.013 
+(P < 0.001) and signiﬁcantly enhanced inter-rater agreement 
+(24). Similarly, in radiographic hip fracture detection, the 
+diagnostic performance (F1 score 0.942) of an AI algorithm 
+based on multi-model voting approached that of senior 
+orthopedic physicians (0.938) ( 25). Speciﬁcally, in this study, the 
+trained DRL agent exhibited the following observable decision 
+patterns:
+Differentiated Progression Strategy:
+The system could distinguish between virtual patient groups 
+with different recovery trajectories and adopt distinct 
+progression paces and training load adjustment strategies. 
+Speciﬁcally, for virtual patients classiﬁed as “fast recoverers” (top 
+tertile of the healing rate parameter *k*), the agent prescribed a 
+40% more aggressive mean progression pace compared to “slow 
+recoverers” (bottom tertile), while maintaining comparable 
+safety outcomes. This demonstrates a high potential for data- 
+driven strategy personalization.
+Biomarker-Based Anticipatory Decision-Making:
+The agent was able to proactively postpone the introduction of 
+high-risk maneuvers in patient models based on subtle abnormal 
+patterns in sEMG signals (e.g., insufﬁcient muscle activation 
+efﬁciency or temporal discoordination) before signiﬁcant 
+functional limitations became apparent.
+Autonomous Maintenance of Safety Boundaries: During 
+simulated testing, the agent exhibited high sensitivity to pain 
+exacerbation signals ( ΔVAS > 2), capable of immediately 
+triggering commands for training regression or rest. This 
+validates the effectiveness of the safety weight design in its 
+reward function, ensuring the principle of safety priority in the 
+rehabilitation process.
+3.2 Comparison of simulated efﬁcacy and 
+safety with static rehabilitation protocols
+In a head-to-head comparative test involving 500 virtual 
+patients, the dynamic DRL rehabilitation protocol demonstrated 
+a more balanced advantage in key simulated efﬁcacy and 
+safety indicators.
+Efﬁcacy Comparison:
+Regarding the key efﬁciency indicator of “time to safe return 
+to light activity,” the DRL protocol signiﬁcantly outperformed 
+FIGURE 4 
+Proof-of-concept results from simulation-based validation. (A) Conceptual diagram of the simulation experiment environment, including the virtual 
+patient model and biomechanical simulation. (B) Comparison of the time required to achieve the ‘safe return to light activity ’ standard among the 
+three rehabilitation protocols. The DRL protocol required statistically less time than the static conservative protocol ( P < 0.05). (C) Incidence of 
+‘re-injury’ events during simulated rehabilitation among the three protocols. The DRL protocol ’s incidence was signiﬁcantly lower than that of the 
+static aggressive protocol (** P < 0.001). (D) Prediction curves from the TCN prognostic prediction module vs. actual values for functional scores at 
+2, 4, 8, and 12 weeks into the future; the inset table shows the Mean Absolute Error (MAE) at each time point.
+Dong et al.                                                                                                                                                             10.3389/fresc.2026.1822939
+Frontiers in Rehabilitation Sciences 08 frontiersin.org
+
+=== PDF PAGE 9 ===
+the conservative static protocol ( P < 0.05) and was comparable to 
+the aggressive static protocol. However, in terms of the long- 
+term functional score at Week 12 of the simulated rehabilitation 
+cycle, the DRL protocol signiﬁcantly outperformed both the 
+conservative and aggressive static protocols ( P < 0.05). This 
+simulation result suggests that the DRL protocol, while pursuing 
+rehabilitation efﬁciency, may place greater emphasis on long- 
+term recovery quality, avoiding potential damage or recovery 
+plateaus caused by overloading.
+Safety Comparison:
+The incidence of “re-injury” events triggered by the DRL 
+protocol in the simulation was 2.8%, which was signiﬁcantly 
+lower than the 7.0% rate observed with the aggressive static 
+protocol ( P < 0.001). Simultaneously, the number of training 
+interruptions triggered by “pain provocation” during the 
+execution of the DRL protocol was extremely low. These results 
+collectively indicate that the DRL agent, within this simulation 
+environment, successfully achieved a more optimal balance 
+between advancing the rehabilitation process and strictly 
+adhering to safety boundaries.
+3.3 Performance evaluation of the 
+prognostic prediction module
+The TCN prognostic prediction module integrated into the 
+system demonstrated acceptable prediction accuracy and 
+potential clinical early-warning value on an independent test set 
+within the simulation environment.
+Prediction Accuracy: The MAEs for predicting functional scores 
+at 2, 4, 8, and 12 weeks into the future, along wit h comparisons to 
+other models, are detailed in Table 1 . The Pearson correlation 
+coefﬁcients (r) between predicted and actual values  at all time 
+points were all greater than 0.78. Its prediction p erformance 
+signiﬁcantly outperformed the traditional ARIMA mod el, which 
+served as a baseline, at all time points ( P < 0.01). To validate the 
+architectural advantages of the TCN, we compared LS TM and 
+GRU models on the same dataset. The results showed that the 
+TCN’s MAE for long-term predictions (8-week, 12-wee k) was 
+reduced by approximately 10% –15% on average, consistent with 
+its theoretical property of more effectively captur ing long-range 
+temporal dependencies. The hierarchical receptive ﬁ eld 
+constructed by TCNs through dilated causal convolut ions offers 
+the advantages of parallel computation and powerful  long-range 
+dependency capture, making them particularly suitab le for 
+processing the high-sampling-frequency physiologica l time-series 
+signals in this study ( 26, 27). For instance, in a sleep staging task, 
+a multi-scale TCN (MTCNN) achieved an overall class iﬁcation 
+accuracy of 91.12% by simulating EEG features acros s different 
+frequency bands, a performance signiﬁcantly superio r to 
+traditional LSTM models (28).
+Clinical Early Warning Value: “Delayed recovery” was deﬁned 
+as a simulated Lysholm score at post-operative Week 12 falling 
+below two standard deviations of the age-matched healthy 
+population reference mean. Based on this deﬁnition, the 
+prediction module successfully provided an early warning at 
+least two weeks in advance for 82.6% of the cases that ultimately 
+experienced recovery lag. Early identiﬁcation of recovery 
+trajectory deviation is crucial for timely adjustment of 
+rehabilitation interventions to avoid adverse outcomes. Studies 
+have conﬁrmed that early warning systems based on machine 
+learning models can signiﬁcantly improve chronic disease 
+management and rehabilitation outcomes. For example, a 
+warning model constructed by integrating indicators such as 
+APTT and lymphocyte count demonstrated signiﬁcantly 
+superior predictive performance (AUROC=0.971) compared to 
+traditional scoring systems and enabled early warning of 
+infectious complications ( 29–31). The TCN module in this 
+study, under this simulation setting, demonstrated similar early 
+warning potential, providing a possible prospective basis for 
+dynamically adjusting rehabilitation strategies in clinical practice.
+3.4 Ablation study and subgroup analysis
+To rigorously validate the contribution of individual system 
+components and the personalization capability of the learned 
+policy, we conducted a series of supplementary analyses.
+3.4.1 Ablation study: contribution of the TCN 
+prognostic module
+To isolate the contribution of the TCN-based prognostic 
+module, we trained a variant agent (denoted as DRL w/o TCN) 
+where the long-term functional gain term ( α * ΔŶt + 4w) was 
+removed from the reward function. This agent optimized solely 
+based on immediate functional changes and safety/adherence 
+rewards. When tested on the same 500 virtual patients, the DRL 
+w/o TCN agent achieved a signiﬁcantly lower 12-week 
+functional score compared to the full DRL agent (mean 
+difference: 8.5 points on the Lysholm scale; P < 0.01). 
+Furthermore, the removal of the TCN’s foresight led to a 
+relative increase of 21.4% in the simulated re-injury rate (from 
+2.8% to 3.4%), suggesting that the prognostic module is critical 
+in enabling the agent to forgo short-term progress in favor of 
+long-term safety when necessary.
+3.4.2 Subgroup analysis: validation of 
+personalized strategies
+To quantitatively validate the agent’s personalization 
+capability, we stratiﬁed the 500 virtual test patients into three 
+subgroups based on their preset healing rate parameter *k*: 
+“fast” (top 33rd percentile), “medium” (middle 33rd percentile), 
+and “slow” (bottom 33rd percentile) recoverers. Analysis of the 
+TABLE 1 Comparison of prediction error (MAE) between the TCN model and baseline models 
+at different prediction horizons.
+Prediction 
+Horizon
+TCN (This 
+Study)
+ARIMA LSTM GRU
+2-week 3.2 5.1 3.6 3.7
+4-week 4.8 8.3 5.5 5.6
+8-week 6.5 12.1 7.4 7.2
+12-week 8.1 15.6 9.5 9.0
+All MAE values are measured on the Lysholm centesimal scoring system.
+Dong et al.                                                                                                                                                             10.3389/fresc.2026.1822939
+Frontiers in Rehabilitation Sciences 09 frontiersin.org
+
+=== PDF PAGE 10 ===
+prescribed training intensity (continuous action ac ) revealed 
+distinct temporal patterns across subgroups. For sl ow recoverers, 
+the agent prescribed a signiﬁcantly lower mean inte nsity during 
+weeks 2–6 post-surgery (mean scaling factor: −0.18 vs. + 0.22 for 
+fast recoverers; P < 0.01) and was 3.5 times more likely to issue a 
+“Reduce weight-bearing” discrete action during the same period. 
+Critically, despite these divergent strategies, the  12-week safety 
+outcomes were statistically equivalent across subgr oups (re-injury 
+rates: fast, 2.8%; medium, 2.9%; slow, 2.7%; P > 0.05 for all 
+pairwise comparisons). This indicates that the agen t successfully 
+personalized progression aggressiveness to individu al recovery 
+capacity while maintaining a uniform safety standar d.
+4 Discussion
+This study preliminarily explored the technical feasibility of a 
+dynamic closed-loop management system for post-operative 
+orthopedic rehabilitation based on PGHD and DRL through 
+simulation modeling. The simulation results indicate that the 
+system can achieve personalized, dynamic adjustment of 
+rehabilitation strategies under idealized conditions and 
+demonstrates potential advantages in simulated safety and long- 
+term functional recovery. The following is a comprehensive 
+discussion of the system’s potential clinical signiﬁcance, 
+innovative value, current limitations, and future translation 
+pathways based on the key ﬁndings.
+4.1 Core ﬁndings and the potential 
+innovation of the clinical decision-making 
+paradigm
+The core contribution of this study lies in the construction and 
+systematic validation of a DRL agent capable of continuously 
+learning and optimizing rehabilitation strategies in a safe, 
+personalized manner. By integrating multi-modal physiological 
+and behavioral data in real time, it converts abstract clinical 
+goals (such as safety, efﬁcacy, and personalization) into 
+executable, data-driven, continuous decisions. Compared to 
+current rehabilitation models that rely on ﬁxed-periodic 
+assessments and static protocols, this framework demonstrates 
+the potential to transform from a “reactive” intervention to a 
+“prospective” management approach. The agent’s ability to 
+differentiate progression strategies among virtual patients — 
+conﬁrmed quantitatively in our subgroup analysis —and its 
+biomarker-based anticipatory decision-making suggest a genuine 
+capacity to identify and respond to subtle differences in 
+individual recovery trajectories. This potential paradigm shift 
+could not only enhance rehabilitation efﬁciency but also offers a 
+technical framework worth exploring for achieving genuinely 
+precision rehabilitation.
+4.2 Multi-dimensional innovative value of 
+the system
+The innovation of this system is manifested at the methodological, 
+technical integration, and clinical paradigm levels. Methodologically, 
+this study systematically introduces the DRL framew ork into the 
+context of orthopedic rehabilitation —a domain characterized by 
+continuous decision-making and multiple constraints —and 
+encodes clinical experience into quantiﬁable optimization objectives 
+through a meticulously designed reward function. Te chnically, the 
+system achieves deep coupling between the DRL agent  and the 
+TCN prognostic prediction module. The TCN module no t only 
+provides continuous prediction of future functional  recovery but 
+also feeds its predictions back into the DRL’s rewa rd function, 
+equipping the system with the prospective computational capability 
+of “making decisions based on predictions.” Our abl ation study 
+(Section 2.4.1) provides direct causal evidence for  the added value 
+of this technical coupling, demonstrating that the TCN’s predictive 
+foresight is essential for achieving the observed b alance between 
+efﬁciency and safety. At the clinical paradigm leve l, this study 
+constructs a complete digital closed loop of “sensi ng-decision- 
+prediction-feedback,” providing a scalable architectural template for 
+the development of highly interactive, adaptive Digital Therapeutics 
+(DTx). This closed-loop management paradigm has the potential to 
+enhance patient engagement and provide clinicians w ith 
+continuous, objective decision support.
+4.3 Limitations and key challenges for 
+clinical translation
+Although the simulation results are encouraging, the 
+fundamental limitations of the current study must be clearly 
+acknowledged, as these are critical obstacles that must be 
+overcome for the system to transition into a real-world 
+clinical setting.
+First, the gap between simulation and the real world is the 
+primary and most important limitation. While the simulation 
+environment used in this study integrates biomechanical and 
+tissue healing models, it remains a signiﬁcant simpliﬁcation of 
+the complex bio-psycho-social reality of the human body. It 
+cannot fully simulate true individual physiological differences, 
+pain psychology, social support factors, or all potential 
+complication patterns (such as arthroﬁbrosis or complex 
+regional pain syndrome). The behavioral model of the “virtual 
+patient” in the simulation is idealized, and its results absolutely 
+cannot be directly equated with clinical efﬁcacy; they must be 
+rigorously validated in prospective clinical studies.
+Second, model interpretability and safety are core challenges 
+for the clinical acceptance of medical AI. The “black box” 
+nature of DRL models makes their decision-making logic 
+difﬁcult for clinicians to understand directly, which may affect 
+trust and adoption. Future work must integrate Explainable AI 
+(XAI) techniques, such as attention mechanism visualization, 
+post-hoc attribution of decisions, or counterfactual analysis, to 
+attempt to elucidate the “clinical logic” behind the system’s 
+recommendation of a speciﬁc prescription. Research has shown 
+that XAI techniques can signiﬁcantly enhance the transparency 
+and clinical adoption rate of medical AI systems ( 32–34). 
+Concurrently, it is imperative to ensure that the system 
+possesses a comprehensive “human-in-the-loop” mechanism and 
+safety monitoring module, enabling clinicians to always retain 
+ultimate decision-making authority and control.
+Dong et al.                                                                                                                                                             10.3389/fresc.2026.1822939
+Frontiers in Rehabilitation Sciences 10 frontiersin.org
+
+=== PDF PAGE 11 ===
+Third, data ethics and engineering implementation face severe 
+challenges. The long-term, continuous collection of PGHD 
+involves patient privacy and security, and the system must 
+strictly comply with data protection regulations such as HIPAA 
+and GDPR. Adopting privacy-preserving computation 
+technologies like federated learning, which allows collaborative 
+model training across multiple centers without centralizing raw 
+data, represents a cutting-edge direction for resolving the 
+contradiction between data silos and privacy ( 35–37). 
+Furthermore, factors such as device-wearing adherence in home 
+environments, data acquisition quality, and the long-term stable 
+operation of the system are practical issues that need to be 
+addressed during engineering realization.
+Finally, the clinical translation pathway must adhere to 
+rigorous evidence-based medicine standards. The translation 
+from simulation to bedside should proceed in phases: initial 
+feasibility studies should focus on system usability, safety, and 
+patient/clinician acceptance; subsequently, well-designed 
+randomized controlled trials (RCTs) should verify clinical 
+efﬁcacy and cost-effectiveness. The design of RCTs for dynamic 
+AI interventions requires special consideration of comparator 
+group settings, outcome measure selection, and the adaptive 
+nature of the intervention, with relevant methodologies 
+continually evolving ( 38). The ultimate success of the system 
+also depends on seamless integration with existing hospital 
+information systems, electronic health records, and 
+rehabilitation equipment.
+4.4 Conclusion and future directions
+In summary, this proof-of-concept study provides compelling 
+preliminary evidence for the technical feasibility of a DRL-driven, 
+closed-loop system for precision orthopedic rehabilitation. Our 
+framework uniquely couples a wearable sensing layer with a 
+symbiotic DRL-TCN architecture, and through systematic 
+simulation validation—including ablation and subgroup analyses 
+—we demonstrate its potential to safely and dynamically 
+personalize rehabilitation strategies.
+Three critical limitations deﬁne the path for future work. First, 
+the simulation-reality gap necessitates a progressive clinical 
+validation strategy: beginning with a feasibility study on healthy 
+volunteers, then a pilot safety study on small patient cohorts, 
+before a full-scale randomized controlled trial (RCT). Second, to 
+gain clinical acceptance, we must unpack the “black-box” nature 
+of DRL through post-hoc explainability tools such as SHAP 
+analysis on the policy network’s state-action mappings. Third, 
+addressing data privacy through approaches like federated 
+learning is not merely a technical requirement but an ethical 
+imperative for ensuring the system’s long-term scalability and 
+public trust.
+By systematically tackling these challenges, the framework 
+proposed here offers a transformative blueprint for moving 
+beyond static protocols towards genuinely adaptive, data-driven, 
+and patient-centric rehabilitation in sports medicine and beyond.
+Data availability statement
+The original contributions presented in the study are included 
+in the article/Supplementary Material. further inquiries can be 
+directed to the corresponding author.
+Author contributions
+JD: Writing – original draft. TC: Funding acquisition, Project 
+administration, Resources, Writing – review & editing. ZP: 
+Writing – review & editing.
+Funding
+The author(s) declared that ﬁnancial support was received for 
+this work and/or its publication. This project received the 
+following funding: the 2026 Key Clinical Discipline Project of 
+Traditional Chinese Medicine (Orthopedics), Yunnan Provincial 
+Department of Finance and Social Security (Grant No. 
+YunCaiShe [2026] No. 1); Yunnan Provincial Science and 
+Technology Talent and Platform Program (Academician Expert 
+Workstation) (202305AF150151); Yunnan Provincial Social 
+Sciences Federation-Yunnan University of Chinese Medicine 
+Joint Special Project (LHZX202423).
+Conﬂict of interest
+The author(s) declared that this work was conducted in the 
+absence of any commercial or ﬁnancial relationships that could 
+be construed as a potential conOfülict of interest.
+Generative AI statement
+The author(s) declared that generative AI was not used in the 
+creation of this manuscript.
+Any alternative text (alt text) provided alongside ﬁgures in this 
+article has been generated by Frontiers with the support of 
+artiﬁcial intelligence and reasonable efforts have been made to 
+ensure accuracy, including review by the authors wherever 
+possible. If you identify any issues, please contact us.
+Publisher’s note
+All claims expressed in this article are solely those of the 
+authors and do not necessarily represent those of their afﬁliated 
+organizations, or those of the publisher, the editors and the 
+reviewers. Any product that may be evaluated in this article, or 
+claim that may be made by its manufacturer, is not guaranteed 
+or endorsed by the publisher.
+Dong et al.                                                                                                                                                             10.3389/fresc.2026.1822939
+Frontiers in Rehabilitation Sciences 11 frontiersin.org
+
+=== PDF PAGE 12 ===
+References
+1. Yue YS, Li C. Advances in the application of wearable technology in orthopedic 
+rehabilitation. Prac Jo Clin Med . (2024) 21(5):189 –92.
+2. Lu W, Chen XY. Application and progress of wearable devices in orthopedic 
+rehabilitation. China Medical Devices . (2023) 38(3):160 –5.
+3. Wang YJ, Yin XX, Han LL. Application of wearable devices in home-based exercise 
+rehabilitation for patients with knee osteoarthritis. Heilongjiang Med J . (2025) 
+49(9):1122–5. 1128.
+4. Lin BS, Zhang Z, Peng CW, Chen SH, Chan WP, Lai CH . Effectiveness of repetitive 
+transcranial magnetic stimulation combined with transspinal electrical stimulation on 
+corticospinal excitability for individuals with inc omplete spinal cord injury: a pilot 
+study. IEEE Trans Neural Syst Rehabil Eng . (2023) 31:4790–800. doi: 10.1109/TNSRE. 
+2023.3338226
+5. Li Z, Li X, Fu X, Zhou T, Wang P, Fang L, et al. Modiﬁed tai chi movement training 
+based on sEMG and movement analysis on improving upper extremities motor 
+function: a protocol for a clinical randomised controlled trial. BMJ Open . (2024) 
+14(10):e087399. doi: 10.1136/bmjopen-2024-087399
+6. Wang Y, Liu A, Yang J, Wang L, Xiong N, Cheng Y, et al. Clinical knowledge- 
+guided deep reinforcement learning for sepsis antibiotic dosing recommendations. 
+Artif Intell Med . (2024) 150:102811. doi: 10.1016/j.artmed.2024.102811
+7. Lu Y, Chu Q, Li Z, Wang M, Gatenby R, Zhang Q. Deep reinforcement learning 
+identiﬁes personalized intermittent androgen deprivation therapy for prostate cancer. 
+Brief Bioinform. (2024) 25(2):bbae071. doi: 10.1093/bib/bbae071
+8. Gong JY, Huan LQ, Zheng XW. Methods for interpretability analysis of deep learning 
+in image interpretation. Acta Geodaetica et Cartographica Sinica. (2022) 51(6):873–84.
+9. Han SM, Xiao F, Cheng WS. A review of deep reinforcement learning applications 
+in autonomous driving systems. J Xihua Univ(Natural Science Edition) . (2023) 
+42(4):25–31.
+10. Jia XX. Research on data security risk identiﬁcation based on explainable artiﬁcial 
+intelligence. Inform Syst Eng . (2024) (1):50 –4.
+11. Monton O, Smith A, Sabboobeh S, Demian M, Cornish J, Wexner SD, et al. The 
+use of patient-generated health data in the management of low anterior resection 
+syndrome: a qualitative study. Front Surg . (2024) 11:1506688. doi: 10.3389/fsurg. 
+2024.1506688
+12. Sittig DF, Boxwala A, Wright A, Zott C, Gauthreaux NA, Swiger J, et al. Patient- 
+centered clinical decision support challenges and opportunities identiﬁed from 
+workOfülow execution models. J Am Med Inform Assoc . (2024) 31(8):1682 –92. 
+doi: 10.1093/jamia/ocae138
+13. Ding Y, Nan T, Wang F, Zhao Y, Cui X. Data knee pads: a lower limb motion 
+capture system based on heterogeneous sensors. IEEE J Biomed Health Inform . 
+(2025) 29(7):4716–27. doi: 10.1109/JBHI.2025.3542583
+14. Alcan V, Zinnuroğlu M. Current developments in surface electromyography. Turk 
+J Med Sci . (2023) 53(5):1019 –31. doi: 10.55730/1300-0144.5667
+15. He J, Williams A, Erhart-Hledik JC, Chu CR. Patient acceptable symptom state 2 
+years after anterior cruciate ligament reconstruction reOfülects knee loading patterns 
+associated with worse outcomes. Orthop J Sports Med . (2024) 12(7_suppl2). 
+doi: 10.1177/2325967124S00288
+16. Cloyd CP, Macedone D, Merandi J, Pierson S, Sellas Wcislo M, Lutmer J, et al. A 
+quality initiative to improve appropriate medication dosing in pediatric patients with 
+obesity. Pediatr Qual Saf . (2024) 9(3):e741. doi: 10.1097/pq9.0000000000000741
+17. Cheng Y, Huang L, Wang X. Authentic boundary proximal policy optimization. 
+IEEE Trans Cybern . (2022) 52(9):9428 –38. doi: 10.1109/TCYB.2021.3051456
+18. Sheng Z, Cao Y, Yang Y, Feng Z-K, Shi K, Huang T, et al. Residual temporal 
+convolutional network with dual attention mechanism for multilead-time 
+interpretable runoff forecasting. IEEE Trans Neural Netw Learn Syst . (2025) 
+36(5):8757–71. doi: 10.1109/TNNLS.2024.3411166
+19. Wang Y, Chen P. Network trafﬁc prediction based on transformer and temporal 
+convolutional network. PLoS One. (2025) 20(4):e0320368. doi: 10.1371/journal.pone. 
+0320368
+20. Liu D, He L, Yang D, Zhang J, Chen J, Yang G. Rese arch progress on digital twin 
+technology of human skeletal muscle. J Biomed Eng. (2023) 40(4):784–91. doi: 10.7507/ 
+1001-5515.202210007
+21. Cimolato A, Ciotti F, Kljajić J, Valle G, Raspopov ic S. Symbiotic 
+electroneural and musculoskeletal framework to enco de proprioception via 
+neurostimulation. ProprioStim. IScience . (2023) 26(3):106248. doi: 10.1016/j.isci. 
+2023.106248
+22. Bogdanov TG, Tsonev HR, Yankov DA, Mileva-Popova RD, Ferdinandov D. 
+Realistic 3D-printed lumbar spine model for non-cadaveric surgical training: a 
+proof of concept study. Cureus. (2025) 17(3):e81297. doi: 10.7759/cureus.81297
+23. Huang R, Xu Z, Guan H, Zhou J, Yang K, Peng S, et al. Construction of a virtual 
+reality platform for computer-aided navigation lingnan bone setting technique. 
+Bioengineered. (2023) 14(1):165 –78. doi: 10.1080/21655979.2023.2184546
+24. Brejnebøl MW, Lenskjold A, Ziegeler K, Ruitenbeek H, Müller FC, Nybing JU, 
+et al. Interobserver agreement and performance of concurrent AI assistance for 
+radiographic evaluation of knee osteoarthritis. Radiology. (2024) 312(1):e233341. 
+doi: 10.1148/radiol.233341
+25. Beyaz S, Yayli SB, Kılıç E, Kılıç K. Comparison of artiﬁcial intelligence algorithm 
+for the diagnosis of hip fracture on plain radiography with decision-making 
+physicians: a validation study. Acta Orthop Traumatol Turc . (2024) 58(1):4 –9. 
+doi: 10.5152/j.aott.2024.23065
+26. Li S, Farha YA, Liu Y, Cheng MM, Gall J. MS-TCN++: multi-stage temporal 
+convolutional network for action segmentation. IEEE Trans Pattern Anal Mach 
+Intell. (2023) 45(6):6647 –58. doi: 10.1109/TPAMI.2020.3021756
+27. Merkle P, Winken M, Pfaff J, Schwarz H, Marpe D, Wiegand T. 
+Spatio-temporal convolutional neural network for enhanced inter prediction in 
+video coding. IEEE Trans Image Process . (2024) 33:4738 –52. doi: 10.1109/TIP.2024. 
+3446228
+28. Phang CR, Hirata A. Explainable multiscale temporal convolutional neural 
+network model for sleep stage detection based on electroencephalogram activities. 
+J Neural Eng . (2025) 22(2). doi: 10.1088/1741-2552/adb90c
+29. Ma X, Mai Y, Ma Y, Ma X. Constructing an early warning model for elderly sepsis 
+patients based on machine learning. Sci Rep. (2025) 15(1):10580. doi: 10.1038/s41598- 
+025-95604-8
+30. Chen J, Huang M, Xu R, Lin Y, Chen S, Xie Y, et al. Value of using blood routine 
+indicators combined with artiﬁcial intelligence in sepsis patients. Am J Transl Res . 
+(2025) 17(4):2678–89. doi: 10.62347/MMNQ1017
+31. Alfonsi T, Bernasconi A, Chiara M, Ceri S. Lightweight multiscale early warning 
+system for inOfüluenza A spillovers. Sci Adv . (2025) 11(43):eadz7312. doi: 10.1126/ 
+sciadv.adz7312
+32. Arthi R, Krishnaveni S. Optimized tiny machine lea rning and 
+explainable AI for trustable and energy-efﬁcient fo g-enabled healthcare decision 
+support system. Int J Comput Intell Syst . (2024) 17(1). doi: 10.1007/s44196-024- 
+00631-4
+33. Thavanesan N, Farahi A, Parﬁtt C, Belkhatir Z, Azim T, Vallejos EP, et al. Insights 
+from explainable AI in oesophageal cancer team decisions. Comput Biol Med. (2024) 
+180:108978. doi: 10.1016/j.compbiomed.2024.108978
+34. Hasan R, Dattana V, Mahmood S, Hussain S. Towards transparent diabetes 
+prediction: combining AutoML and explainable AI for improved clinical insights. 
+Information. (2024) 16(1):7. doi: 10.3390/info16010007
+35. Tewari A. Mhealth systems need a privacy-by-design approach: commentary on 
+“federated machine learning, privacy-enhancing technologies, and data protection 
+laws in medical research: scoping review”. J Med Internet Res . (2023) 25:e46700. 
+doi: 10.2196/46700
+36. Yazdinejad A, Dehghantanha A, Srivastava G. AP2FL: auditable privacy- 
+preserving federated learning framework for electronics in healthcare. IEEE Trans 
+Consum Electron. (2024) 70(1):2527 –35. doi: 10.1109/TCE.2023.3318509
+37. Sinaci AA, Gencturk M, Alvarez-Romero C, Laleci Erturkmen GB, Martinez- 
+Garcia A, Escalona-Cuaresma MJ, et al. Privacy-preserving federated machine 
+learning on FAIR health data: a real-world application. Comput Struct Biotechnol J . 
+(2024) 24:136–45. doi: 10.1016/j.csbj.2024.02.014
+38. Abusamaan MS, Ballreich J, Dobs A, Kane B, Maruthur N, McGready J, et al. 
+Effectiveness of artiﬁcial intelligence vs. Human coaching in diabetes prevention: a 
+study protocol for a randomized controlled trial. Trials. (2024) 25(1):325. doi: 10. 
+1186/s13063-024-08177-8
+Dong et al.                                                                                                                                                             10.3389/fresc.2026.1822939
+Frontiers in Rehabilitation Sciences 12 frontiersin.org

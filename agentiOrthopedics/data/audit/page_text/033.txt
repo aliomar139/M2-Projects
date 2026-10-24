@@ -1,0 +1,1034 @@
+=== PDF PAGE 1 ===
+Received: 15 April 2025 | Accepted: 11 August 2025
+DOI: 10.1002/jeo2.70481
+REVIEW PAPER
+A practical guide to the implementation of arti ﬁcial
+intelligence in orthopaedic research —Part 3: How
+orthopaedic research bene ﬁts from the implementation
+of arti ﬁcial intelligence
+James A. Pruneski 1 | Ayoosh Pareek 2 | Bálint Zsidai 3,4,5 |
+Jacob F . Oeding3,6 | Jonathan D. Hughes7 | Felix C. Oettl8 | Philipp W. Winkler9 |
+Thomas Tischer10,11 | Elmar Herbst12 | Alberto Grassi13 |
+Michael T . Hirschmann14,15 | Christophe Ley16 | Yinan Yu17 |
+Kristian Samuelsson 3,4,18 | ESSKA Arti ﬁcial Intelligence Working Group
+1Department of Orthopaedic Surgery, Tripler Army Medical Center, Honolulu, Hawaii, USA
+2Sports Medicine and Shoulder Service, Hospital for Special Surgery, New York, New York, USA
+3Department of Orthopaedics, Institute of Clinical Sciences, Sahlgrenska Academy, University of Gothenburg, Gothenburg, Sweden
+4Sahlgrenska Sports Medicine Center, Göteborg, Sweden
+5Department of Orthopedics, Skåne University Hospital, Malmö/Lund, Sweden
+6Mayo Clinic Alix School of Medicine, Mayo Clinic, Rochester, Minnesota, USA
+7Department of Orthopaedic Surgery, UPMC Freddie Fu Sports Medicine Center, Pittsburgh, Pennsylvania, USA
+8Balgrist University Hospital, Zurich, Switzerland
+9Department for Orthopaedics and Traumatology, Kepler University Hospital GmbH, Johannes Kepler University Linz, Linz, Austria
+10Department of Orthopaedic Surgery, Universitymedicine Rostock, Rostock, Germany
+11Department of Orthopaedic and Trauma Surgery, Malteser Waldkrankenhaus Erlangen, Erlangen, Germany
+12Department of Trauma, Hand and Reconstructive Surgery, University Hospital Muenster, Muenster, Germany
+13IIa Clinica Ortopedica e Traumatologica, IRCCS Istituto Ortopedico Rizzoli, Bologna, Italy
+14Department of Orthopaedic Surgery and Traumatology, Kantonsspital Baselland, Bruderholz, Switzerland
+15University of Basel, Basel, Switzerland
+16Department of Mathematics, University of Luxembourg, Esch ‐sur‐Alzette, Luxembourg
+17Department of Computer Science and Engineering, Chalmers University of T echnology, Gothenburg, Sweden
+18Department of Orthopaedics, Sahlgrenska University Hospital, Mölndal, Sweden
+Correspondence
+Kristian Samuelsson, Department of
+Orthopaedics, Institute of Clinical Sciences,
+Sahlgrenska Academy, University of
+Abstract
+Artiﬁcial intelligence (AI) encompasses the development of systems that can
+perform human ‐like tasks, such as treatment guidance, decision ‐making,
+J Exp Orthop . 2025;12:e70481. wileyonlinelibrary.com/journal/jeo2 | 1o f1 2
+https://doi.org/10.1002/jeo2.70481
+This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium,
+provided the original work is properly cited.
+© 2025 The Author(s). Journal of Experimental Orthopaedics published by John Wiley & Sons Ltd on behalf of European Society of Sports Traumatology, Knee
+Surgery and Arthroscopy.
+Abbreviations: ACL, anterior cruciate ligament; AI, arti ﬁcial intelligence; DL, deep learning; EMR, electronic medical record; ML, machine learning; NLP, natural
+language processing; UCL, ulnar collateral ligament.
+
+=== PDF PAGE 2 ===
+Gothenburg, Göteborgsvägen 31, Mölndal 431
+80, Sweden.
+Email: kristian.samuelsson@gu.se
+pattern recognition and understanding language. Within AI, machine learning
+and deep learning play pivotal roles in diagnosis and outcome prediction,
+while natural language processing aids in synthesising large datasets from
+the electronic medical record. In orthopaedics, AI has demonstrated success
+in various areas, including image evaluation, surgical planning, outcome
+prediction, cohort identiﬁcation and administrative tasks. The purpose of this
+manuscript was to provide an overview of the bene ﬁts of AI implementation
+within the ﬁeld of orthopaedics. An additional goal was to address the chal-
+lenges associated with producing high quality AI ‐based research in a rapidly
+developing ﬁeld.
+Level of Evidence: Level IV.
+KEYWORDS
+artiﬁcial intelligence, machine learning, orthopaedics, research methods, sports medicine
+INTRODUCTION
+The broad ﬁeld of arti ﬁcial intelligence (AI), ﬁrst intro-
+duced in 1955 by McCarthy et al., encompasses the
+process of developing systems that perform tradition-
+ally human tasks, including decision ‐making, pattern
+recognition and understanding language [ 44]. Shortly
+thereafter, machine learning (ML) was introduced as a
+subset of AI by which algorithms and statistical models
+were developed that allowed computers to learn and
+make predictions or decisions from provided data
+without explicit programming [ 2, 57 ]. Within ML, deep
+learning (DL) encompasses the use of neural networks
+for tasks involving large volumes of data for complex
+tasks including image and speech recognition [ 48].
+Natural language processing (NLP) is another subset
+of AI increasingly used in healthcare research, which
+can often incorporate elements of ML and DL to allow
+computers to understand and interpret human lan-
+guage [ 4, 56, 86 ]. These applications are described
+more in depth in a previous work [ 85]. Across all
+medical specialities, medical practitioners, insurance
+providers and the medical device industry are
+adapting AI techniques to aid in diagnosing and
+treating pathology, facilitating patient engagement
+and adherence and streamlining administrative tasks
+[2, 12, 21, 81 ].
+Concurrently, there is a growing body of literature
+regarding the use of AI in orthopaedic research.
+Orthopaedic researchers have demonstrated suc-
+cess in implementing AI for an array of tasks,
+including image evaluation, surgical planning and
+decision making, cohort identi ﬁcation, variable ex-
+traction and outcome prediction [ 10, 17, 35, 51, 63,
+65, 68, 76, 82 ]. Of note, the orthopaedic ﬁeld has
+been slower to implement AI techniques compared to
+other specialities such as oncology, general surgery
+and radiology, although the number of AI and
+ML publications within orthopaedics is increasing
+each year (Figure 1). These technological innova-
+tions provide enormous potential to improve surgical
+practice, research and education. On a larger scale,
+broader implementation of AI may further optimise
+systems ‐level processes, including clinical docu-
+mentation, scheduling, coding and billing and inter-
+actions with payers to facilitate greater e ﬃciency in
+surgeon work ﬂow. This work will explore the trans-
+formative potential of AI in orthopaedic research,
+focusing on its current applications and the pre-
+requisites for high ‐quality AI research in the ﬁeld of
+orthopaedics.
+CURRENT STATE OF AI IN
+ORTHOPAEDIC RESEARCH
+There has been a drastic increase in orthopaedic
+publications regarding the use of AI and ML in
+recent years [ 59]. The following review is not meant to
+be comprehensive, as such reviews already exist. This
+section serves to provide an overview of common
+themes of AI ‐related research within the orthopaedic
+literature (Figure 2).
+Injury and outcome prediction
+An important and clinically relevant use ‐case for AI is
+in the prediction of injuries and outcomes. Within
+orthopaedics, researchers have found success in
+predicting several osseous and soft tissue patholo-
+gies (T able 1)[ 6, 20, 22, 47, 72, 75 ]. Additionally,
+authors have demonstrated success using AI to
+predict outcomes for an array of procedures, includ-
+ing ACL reconstruction, hip arthroscopy and knee
+and shoulder arthroplasty [ 13, 18, 32, 34, 41, 52, 78 ].
+Arthroplasty dislocation calculators have also
+been developed with promising results [ 27, 46 ].
+2o f1 2 |
+
+=== PDF PAGE 3 ===
+FIGURE 1 Artiﬁcial intelligence (AI) and machine learning publications on PubMed in (a) orthopaedic surgery, by year and (b) across a
+broad range of 13 medical specialities since 2000. Speci ﬁc search queries used on 03 February 2024 were: (a) ( ‘AI’OR ‘artiﬁcial intelligence’OR
+‘machine learning’) AND (‘orthopaedic’OR ‘orthopaedic’), and (b) ( ‘AI’OR ‘artiﬁcial intelligence’OR ‘machine learning’) AND (Medical Specialty)
+AND ( ‘2000/01/01’(Date— Publication): ‘2024/02/03’(Date— Publication).
+FIGURE 2 Areas for potential arti ﬁcial intelligence (AI) applications throughout and after a patient ‐care cycle. Beginning in a preinjury state,
+supervised machine learning (ML) models can be used to identify what puts patients at increased injury risk. Once injured, deep learning (DL)
+models can be used to identify pathology from provided images. Subsequently, DL models can assist with surgical planning and decision making
+(e.g., automated templating, automated measurements), and natural language processing (NLP) can be used to provide a list of applicable
+billing codes to the clinical encounter. After surgery, supervised ML models can be used to predict patient outcomes using patient and surgical
+variables, and similar models can predict re ‐injury after surgery, capturing an entire patient ‐care cycle. On a larger scale, NLP can be used to
+identify cohorts of interest from these care cycles and capture relevant variables to create real ‐time registries e ﬃciently and accurately. These
+registries can be used to train further models, allowing for a cycle of continuous improvement.
+| 3o f1 2
+
+=== PDF PAGE 4 ===
+These analyses typically combine demographic,
+injury and surgical patient ‐speci ﬁc variables to pre-
+dict patient ‐reported outcomes, revision surgery or
+clinically meaningful improvement. Similarly, re-
+searchers combine various modi ﬁable and non-
+modiﬁable risk factors with the goal of determining
+what puts patients at higher risk for secondary or
+concomitant injuries that are clinically relevant but
+otherwise di ﬃcult to predict [ 47, 54 ].
+Imaging interpretation
+One of the more apparent use ‐cases for AI,
+particularly DL, is in the analysis and interpretation
+of imaging data. Importantly, the purpose of this
+implementation is not to replace the role of the
+physician in diagnosing musculoskeletal pathology,
+but rather to supplement the knowledge of the phy-
+sician, identify patterns, minimise error and assist in
+the education of lower ‐level trainees. Potential
+bene ﬁts of successful implementation include
+increasing e ﬃciency in the diagnostic timeline, the
+ability to provide expert ‐level interpretations in
+areas with limited access to care, and the potential
+to teach residents, fellows and students [ 15]. DL has
+been successfully implemented to aid in the diag-
+nosis of several di ﬀerent pathologies across varying
+supspecialties (T able 2)[ 3, 35, 64, 66, 77, 82 ].
+Additionally, implant identi ﬁcation tools have been
+developed which will aid future e ﬀorts for registry ‐
+building and outcomes research, as well as poten-
+tially assist with timely planning for hardware
+removal and revision procedures [ 23, 31 ].
+Surgical planning
+One of the primary driving forces behind the growing
+interest in incorporating AI into the orthopaedic sur-
+geon's work ﬂow is the desire for increased e ﬃciency
+and decreased time spent completing routine manual
+tasks. As such, incorporating AI into the surgical plan-
+ning work ﬂow is greatly desired, as much of this
+involves manual measurements and calculations,
+which can often vary between surgeons. Recent stud-
+ies demonstrate successful implementation of AI plat-
+forms for automating an array of surgically relevant
+measurements (T able3)[ 5, 11, 19, 37, 38, 40 ]. Surgical
+templating tools for arthroplasty procedures have also
+been developed with early success [ 62, 73]. The ability
+to have these measurements reliably calculated in a
+validated and reproducible manner can drastically
+improve the surgeon's work ﬂow, while possible creating
+more predictable outcomes between surgeons.
+Administrative tasks
+Outside of direct orthopaedic practice and research,
+there has also been early success in using AI to aug-
+ment administrative tasks. Researchers have pub-
+lished the successful implementations of AI pipelines
+for the purposes of predicting operative time, length of
+hospital stay, costs and billing codes (T able 4)[ 24, 58,
+68, 79 ]. Additionally, AI can assist in clinical docu-
+mentation and consultation, allowing surgeons to see
+and treat more patients e ﬃciently [ 16, 30 ]. Once vali-
+dated, such models could optimise surgical scheduling,
+payment plans and administrative tasks in a way that
+TABLE 1 Examples of studies using arti ﬁcial intelligence (AI) for injury risk prediction.
+Author Topic/aim Conclusion/ ﬁndings
+Bulstra et al. [ 6] Estimating probability of scaphoid fracture The best classi ﬁer had a mean area under the receiver
+operating characteristic curve (AUC ‐ROC) of 0.77. Additionally,
+the authors developed a decision rule with a sensitivity of 1.0,
+decreasing number of patients undergoing advanced imaging
+by 36% without missing a fracture.
+Jauhiainen et al. [ 20] Predicting risk of anterior cruciate ligament
+(ACL) injury based on physical screening tests
+The best classi ﬁer had a mean AUC ‐ROC of 0.63. Accordingly,
+some variables may assist with understanding causation,
+however, are insu ﬃcient to predict injury in practice.
+Jurgensmeier
+et al. [ 22]
+Predicting risk of secondary meniscus injury
+after ACL reconstruction
+All 4 ML models outperformed traditional logistic regression.
+The best classi ﬁer had a mean AUC ‐ROC of 0.79. Risk factors
+were identi ﬁed for secondary meniscal injury.
+Oeding et al. [ 47] Predicting the presence of subscapularis tears
+based on preoperative exam and imaging
+Using preoperative imaging factors, the model had an accuracy
+of 0.85, and identi ﬁed ﬁve key imaging features associated with
+tear presence.
+Whiteside et al. [ 75] Identifying signi ﬁcant predictors of ulnar
+collateral ligament (UCL) reconstruction in MLB
+pitchers
+The top performing model predicted UCL reconstruction with an
+accuracy of 0.75, Additionally, 6 key performance factors were
+identiﬁed as potential risk factors for UCL reconstruction.
+4o f1 2 |
+
+=== PDF PAGE 5 ===
+TABLE 2 Examples of studies using arti ﬁcial intelligence (AI) for imaging interpretation.
+Author Topic/aim Conclusion/ ﬁndings
+Bien et al. [ 3] Development of a deep learning model to identify
+abnormalities and speci ﬁc diagnoses from knee magnetic
+resonance imaging (MRI) studies
+The model achieved an area under the receiver operating
+characteristic curve (AUC ‐ROC) of 0.937, 0.965 and 0.847
+for detecting abnormalities, anterior cruciate ligament (ACL)
+tears and meniscal tears, respectively. Providing model
+predictions signi ﬁcantly increased clinical experts' speci ﬁcity
+in identifying ACL tears.
+Karnuta
+et al. [ 23]
+Development and testing of a deep learning system to
+classify total hip arthroplasty implants
+The system discriminated 8 implant models with a mean
+AUC‐ROC of 0.991 in the external testing set. The software
+classiﬁed implants at a mean speed of 0.02 s per image.
+Kunze
+et al. [ 31]
+Development and testing of a deep learning system to
+classify total shoulder arthroplasty implants
+The system discriminated 22 implant models with AUC ‐
+ROCs between 0.994 and 1.000 in the independent testing
+set. The software classi ﬁed implants at a mean speed of
+0.079 s per image.
+Shim et al. [ 64] Development of a deep learning method to diagnose,
+classify and visualise rotator cu ﬀ tears
+The neural network outperformed shoulder specialists with
+regards to binary accuracy (0.925 vs. 0.764) and speci ﬁcity
+(0.86 vs. 0.61). Class activation maps were generated to
+provide information regarding the location and three ‐
+dimensional size of the tear.
+Suzuki
+et al. [ 66]
+Development of a deep learning method to diagnose distal
+radius fractures
+The model achieved an AUC ‐ROC 0.993. The neural
+network based on anteroposterior and lateral radiographs
+had accuracy, sensitivity and speci ﬁcity of 0.993, 0.987 and
+1.00, respectively. The accuracy of the convolutional neural
+network was equal to or better than that of three orthopaedic
+hand surgeons.
+Yamada
+et al. [ 77]
+Development of a deep learning method to discriminate
+femoral neck fractures, trochanteric fractures and
+nonfracture
+The average accuracy, sensitivity and speci ﬁcity of the neural
+network were 0.98, 0.98 and 0.98, respectively. The
+accuracy of the model was comparable to, or statistically
+signiﬁcantly better than, that of the orthopaedic surgeons.
+TABLE 3 Examples of studies using arti ﬁcial intelligence (AI) for surgical planning.
+Author Topic/aim Conclusion/ ﬁndings
+Boileau et al. [ 5] T o determine whether 3D automated measurements of
+glenoid version and inclination are accurate and reliable
+Concordance correlation coe ﬃcients between the automated
+approach and previously described measurement techniques
+ranged from 0.93 and 0.95 for glenoid version and was 0.78
+for inclination.
+Jang et al. [ 19] Development of a deep learning platform to identify leg
+length discrepancy (LLD) landmarks and automate LLD
+measurements
+Interclass correlation coe ﬃcients (ICC) varied from 0.73 and
+0.98 for the six LLD methods. When comparing the methods
+for agreement, no combination had ICC > 0.90, and 53% of
+combinations had a poor ICC (<0.50).
+Larson et al. [ 37] Development of a deep learning platform to assess
+bone age
+The mean di ﬀerence between the neural network and
+radiologist bone age estimates was 0 years.
+Larson et al. [ 38] Development of a deep learning platform to identify LLD
+landmarks and automate LLD measurements
+Anatomic landmarks were identi ﬁed with sensitivity and
+speciﬁcity of 0.98 and 0.96, respectively. Correlation
+coeﬃcients between radiologist and AI measurements were
+>0.99 for LLD measurements, and 0.98 and 0.86 for
+mechanical axis angle and pelvic tilt, respectively.
+Rouzrokh
+et al. [ 62]
+Development of a deep learning platform to generate
+synthetic postoperative hip arthroplasty radiographs.
+The surgical validity of synthetic postoperative radiographs
+was higher than their real counterparts (by 0.8 –1.1 points on
+10‐point Likert scale), representing a potentially useful tool for
+arthroplasty templating.
+| 5o f1 2
+
+=== PDF PAGE 6 ===
+minimises waste and costs and allowing the surgeon to
+spend more time on patient care.
+T H EB E N E F I T SO FA II N
+ORTHOPAEDIC RESEARCH
+Modern increases in computing power and the vast
+amount of patient data available through the electronic
+medical record (EMR) have paved the way for the rapid
+growth of AI and ML research within orthopaedics.
+While ML theory has existed for over ﬁve decades, the
+biomedical literature has predominantly utilised tradi-
+tional statistical methods in analysing patient data. In
+general, statistical methods are ‘top‐down’approaches,
+in that a model and distribution are assumed, and
+unknown model parameters are estimated from the
+data [ 39]. In contrast, ML methods are ‘bottom‐up’
+approaches, in which a model is developed through a
+standardised process with prediction or classi ﬁcation
+as the primary goal [ 39, 57 ]. Within ML, a range of
+models exist that vary in both complexity and explain-
+ability and can be tailored to suit speci ﬁc tasks [ 55]. In
+general, explainability is sacri ﬁced for predictive power
+when moving from models such as decision trees to-
+ward deep neural networks. ML models have demon-
+strated improved predictive ability compared to
+traditional regression in an array of clinical scenarios,
+including detecting osteoarthritis and predicting pro-
+fessional sports injuries [ 29, 42, 75 ]. Importantly, how-
+ever explainability is paramount in healthcare AI
+implementation where clinical decisions have direct
+patient impact, as the ‘black box ’ nature of
+advanced ML models can undermine trust among
+healthcare professionals, potentially perpetuates
+biases and complicate error correction [ 8, 84 ]. While
+complex models like neural networks may outperform
+simpler models in prediction tasks, their reduced
+transparency poses signi ﬁcant challenges [ 8, 84 ].
+Achieving the optimal balance between predictive
+power and interpretability remains essential for
+responsible AI adoption in medical settings.
+A key bene ﬁt of AI to orthopaedic research is its
+signiﬁcant potential to augment the conduction of
+inductive research, by aiding in the creation of new
+hypotheses. Unsupervised ML techniques, such as
+clustering and principal components analysis, have
+been used in orthopaedics to identify subtle patterns
+and structures from high ‐dimensional datasets [ 14].
+For example, groups have identi ﬁed outcome patterns
+in patients undergoing spinal deformity surgery, ortho-
+paedic trauma surgery and total joint arthroplasty
+[1, 9, 60 ]. Additionally, clustering and principal compo-
+nent analyses have been used in kinematic studies to
+identify patterns in patients and associate those pat-
+terns with risk for bone stress injury risk and limited
+mobility after arthroplasty [ 43, 80 ]. By identifying these
+patterns in a timely manner, physicians are a ﬀorded the
+opportunity to tailor personalised treatment plans to
+optimise outcomes in patients. This ability to identify
+patterns and then create hypotheses or enact action-
+able plans is unique to ML and poses an exciting
+frontier for research in the era of ‘big data ’.
+For applications of AI in orthopaedic surgery to
+continue to evolve, a critical step will be the creation of
+large registries of data that can be built upon and uti-
+lised for multiple applications [ 36]. While these regis-
+tries can be used to create novel ML and DL algorithms
+with signi ﬁcant predictive ability, AI models can also
+assist in the registry creation process itself. For ex-
+ample, AI can automate the cohort identi ﬁcation pro-
+cess by using unstructured clinical documentation from
+the EMR [ 67–70]. This process has been historically
+labour intensive, logistically and ﬁnancially expensive
+TABLE 4 Examples of studies using arti ﬁcial intelligence (AI) for administrative tasks.
+Author Topic/aim Conclusion/ ﬁndings
+Karnuta et al. [ 24] Development of a machine learning model to predict
+length of stay and cost after hip fracture
+The model demonstrated 0.765 and 0.79 accuracy for
+length of stay and cost, respectively.
+Ramkumar
+et al. [ 58]
+Development of a deep learning model to predict length
+of stay, cost and discharge disposition after total knee
+arthroplasty
+The model achieved an area under the receiver operating
+characteristic curve (AUC ‐ROC) of 0.748, 0.828 and 0.761
+for length of stay, costs and discharge disposition,
+respectively.
+T avabi et al. [68] T o assess the performance of common natural
+language processing techniques to predict current
+procedural terminology (CPT) codes from operative
+notes.
+Traditional techniques, such as term frequency ‐inverse
+document frequency (TF ‐IDF), outperformed more
+computationally intensive transformer models, with a mean
+AUC‐ROC of 0.96 and accuracy of 0.97 when assessing the
+100 most common musculoskeletal CPT codes.
+Yeo et al. [ 79] T o assess the performance of di ﬀerent machine
+learning models in predicting operative time for patients
+undergoing total knee arthroplasty
+The best performing model (neural network) achieved an
+AUC‐ROC of 0.82. Additionally, several factors were found
+to be predictive of surgical operative time.
+6o f1 2 |
+
+=== PDF PAGE 7 ===
+and plagued by error. Once the cohort is identi ﬁed,
+variables of interest can be extracted from the EMR for
+the purpose of registry ‐based research [ 54, 67, 76 ].
+Furthermore, classi ﬁcation algorithms that can label
+imaging data (e.g., implant type, radiographic mea-
+surements) have the potential to add to the pool of data
+used to train ML models. These combined imaging and
+tabular data registries have demonstrated far greater
+predictive ability compared to tabular data ‐trained
+models alone [ 27]. Without question, the ability to reli-
+ably create a registry that can be used for multiple
+clinical investigations may greatly improve the quality of
+research in the ﬁeld of orthopaedics and will be a
+necessary step for algorithms to evolve beyond basic
+tasks such as fracture or tear detection.
+Generative AI is an area of growing interest, as the
+ability to synthesise realistic data would bene ﬁt model
+training, testing and validation while protecting patient
+privacy. This is critical to the future of research, as DL
+performance has been shown to improve with large,
+diverse, high ‐quality training datasets [ 74]. Within
+orthopaedics, researchers have demonstrated success
+in creating high ‐quality pelvis radiographs, as well as
+anonymising existing radiographs, and improving
+image quality with DL [ 26, 28, 83 ]. Generative AI can
+also minimise barriers to collaboration in orthopaedics
+by minimising language barriers within academic
+writing [ 25, 50 ].
+As previously mentioned, meaningful implementa-
+tion of AI research in orthopaedics should augment the
+physician's work ﬂow in a reliable way. AI, as opposed
+to statistics, is required to meet the complex demands
+of modern practice. The ability of these models to
+handle large amounts of nonlinear data, while being
+able to be ﬁne‐tuned to speci ﬁc practice scenarios
+makes them ideal to be used in an array of clinical
+scenarios. As the emphasis on personalised, precision
+medicine continues to increase, surgeons and re-
+searchers will begin to lean increasingly on these more
+complex models to improve e ﬃciency and outcomes.
+CHALLENGES AND
+REQUIREMENTS FOR HIGH
+QUALITY AI RESEARCH
+While the drastic increase in AI ‐based orthopaedic lit-
+erature demonstrates increased access to, interest in,
+and understanding of technology, the current state of AI
+within our ﬁeld is not without pitfalls and challenges.
+Primarily, these models require high ‐quality data,
+interdisciplinary collaboration and validation, appropri-
+ate context and interpretability prior to wide ‐scale
+implementation for clinical practice. In their work,
+Cabitza et al. highlighted four key consequences of ML
+in medicine: reduced physician skills, the demise of
+context, the intrinsic uncertainty of clinical medicine,
+and uninterpretable output [ 7]. The authors highlighted
+examples of studies in which physicians demonstrated
+decreased diagnostic accuracy and sensitivity when
+analysing results that were annotated with inaccurate
+computer‐generated results, suggesting an over-
+reliance on technology [ 7, 53, 71 ]. T o avoid this
+potentially serious consequence for patient care,
+developers of AI models should de ﬁne a priori whether
+the purpose of the model is to (1) augment clinician
+performance by performing tasks that humans are ei-
+ther not able to perform or for which AI may be better
+suited to perform, such as recognising unique patterns
+in images or large amounts of data, or (2) increase
+clinician e ﬃciency by assisting with relatively routine
+tasks. DL models should be trained speci ﬁcally for
+the stated purpose (i.e., trained on fractures that are
+commonly missed by humans if the goal is to augment
+clinician performance or trained on routine fractures if
+the goal is to improve work ﬂow e ﬃciency), and this
+purpose should be clearly communicated to users.
+Additionally, the data utilised in these models should be
+scrutinised for quality, as high amounts of missing
+data and nonrepresentative samples may cause
+performance bias, leading to limited generalisability
+[33, 49, 57 ]. These observations strengthen the notion
+that AI should augment, not replace, the work of the
+physician/surgeon, and that the user should under-
+stand, generally, how the model works, when it may be
+applied, and what limitations exist.
+Importantly, even with high ‐quality data, the models
+should still undergo external validation on other popu-
+lation data, as well as prospective evaluation prior to
+clinical implementation [ 57, 59 ]. This is one of the key
+tenants for high ‐quality AI research, proposed by
+Ramkumar et al. [ 59]. Their work also proposed that
+inappropriate vernacular, repackaging registry data,
+overstating the ‘black‐box phenomenon ’, and with-
+holding full model code were key concerns about AI
+research within the ﬁeld of orthopaedics. The black ‐box
+phenomenon pertains to decreased interpretability of
+model methods, and the model's tendency to detect
+unconventional or out ‐of‐context patterns that might
+not have previously been correlated or reported [ 7, 45].
+Finally, the ethical considerations of these models must
+be considered prior to release. Patient privacy must be
+assured, training populations must be generalisable
+and representative to avoid bias, and data must be
+protected and defended both during and after model
+implementation [45]. While this is not a comprehensive
+evaluation of the challenges of integrating AI and ML
+applications to the ﬁeld of orthopaedics, the afore-
+mentioned pitfalls are important to be aware of when
+evaluating potential tools or models proposed in the
+literature. Despite these challenges, the use of these
+models does not appear to be slowing down — or should
+it. Given that high ‐quality data are collected, and a
+model is properly developed and evaluated for a
+| 7o f1 2
+
+=== PDF PAGE 8 ===
+speciﬁc purpose, AI models have the potential to sig-
+niﬁcantly improve the clinician's ability to care for
+patients.
+PRACTICAL CONSIDERATIONS
+FOR AI ‐DRIVEN RESEARCH
+Equipped with a fundamental technical knowledge of
+AI, the orthopaedic researcher needs to consider
+additional factors to proceed with designing feasible AI ‐
+driven research projects. Often, these projects are
+designed and executed by multidisciplinary teams,
+involving both clinical and technical specialists. When
+considering the next steps, orthopaedic researchers
+should make deliberate, well ‐informed decisions about
+the type of domain ‐speciﬁc research topics that can be
+investigated using AI. Data acquisition, management
+and processing for AI ‐intensive research must be
+strategically planned. A plan must be established to
+assess the performance of AI systems, navigate the
+interpretability of AI ‐driven research output and to val-
+idate the end ‐product. A general approach to the
+implementation of AI for orthopaedic research is out-
+lined in Figure 3. Subsequent parts of this learning
+series will focus on exploring these topics in more
+detail.
+FUTURE DIRECTIONS
+The future of AI in orthopaedics is clearly promising
+given the rapid advances in technological and com-
+putational power. One can envision a scenario in
+which at any stage of a clinical encounter, from
+scheduling to diagnosis to surgical management,
+technology can autonomously augment the clinical
+workﬂow. Orthopaedic surgery could undergo a
+transformative shift as AI systems assist surgeons in
+planning procedures with unparalleled precision, op-
+timising implant selection and reducing surgical risks.
+Generative AI may aid in the curation of large radio-
+graphic datasets, which in turn can allow for high ‐
+quality diagnostic models. Additionally, generative AI ‐
+driven decision support tools are expected to aid
+surgeons in tailoring treatment plans to individual
+patient needs, improving outcomes and reducing
+recovery times. These advancements are set to
+redeﬁne orthopaedic surgery and research, ushering
+in an era of personalised and e ﬃcient care for patients
+with musculoskeletal disorders and injuries. However,
+this requires interdisciplinary communication and
+teamwork, quality assurance and external validation
+and collaboration to ensure that models are accurate
+and applicable to diverse clinical scenarios. While
+many institutional and administrative barriers exist in
+FIGURE 3 An illustrative process for crafting, assessing and implementing machine learning models. Following data preparation, the
+customary division into training, validation, and test sets is executed. The training dataset is predominantly employed for model creation and
+algorithm optimisation, while validation sets aid in ﬁne‐tuning through hyperparameter selection. Subsequently, the model undergoes evaluation
+on blinded test datasets, ensuring unbiased assessment before transitioning into a functional predictive model. Ongoing monitoring and
+retraining are integral for maintenance, o ﬀering the ﬂexibility of potential deployment to alternative sites for external validation. Figure used with
+permission from Pruneski et al. [ 57].
+8o f1 2 |
+
+=== PDF PAGE 9 ===
+completing multicentre studies and collaborating via
+data and code sharing, the ﬁeld of orthopaedics
+stands to bene ﬁt substantially from such collaboration.
+Federated learning is one paradigm that seeks to
+address the problem of data governance and privacy,
+wherein algorithms are trained collaboratively without
+exchanging the data itself [ 61]. Similar approaches
+and paradigms that minimise barriers to collaboration
+will allow AI applications to more broadly and rapidly
+transform the medical landscape.
+CONCLUSION
+The valuable role of AI in orthopaedics is under-
+scored by its ability to handle large and complex
+data and provide predictive power that surpasses
+traditional statistical methods. Researchers have
+demonstrated success in an array of clinical sce-
+narios, from optimising surgical work ﬂow to planning
+surgery and predicting outcomes. While there are
+challenges to be addressed, including data quality,
+validation and ethical considerations, AI's potential
+to improve clinical practice is undeniable. The future
+of AI in orthopaedics is promising, with the potential
+for autonomous clinical support, precision surgical
+planning and personalised patient care. T o harness
+these bene ﬁts, interdisciplinary collaboration, qual-
+ity assurance and external validation are essential.
+As such, the integration of AI into orthopaedics
+is advocated for its potential to advance patient
+care and our understanding of musculoskeletal
+pathology.
+AUTHOR CONTRIBUTIONS
+All listed authors have contributed substantially to this
+work. James A. Pruneski, Ayoosh Pareek, Bálint
+Zsidai, Jacob F . Oeding, Philipp W. Winkler and Jona-
+than D. Hughes performed literature review, and pri-
+mary manuscript preparation. Editing and ﬁnal
+manuscript preparation was performed by Thomas
+Tischer, Felix C. Oettl, Elmar Herbst, Alberto Grassi,
+Michael T . Hirschmann, Christophe Ley, Yinan Yu and
+Kristian Samuelsson. All authors read and approved
+the ﬁnal manuscript.
+CONFLICT OF INTEREST STATEMENT
+Kristian Samuelsson is a member of the Board of
+Directors in Getinge AB. Jacob F . Oeding is a consul-
+tant for Kaliber.ai. Jonathan D. Hughes and Thomas
+Tischer are associate editors for KSSTA. Jonathan D.
+Hughes receives educational funding from Stryker,
+Smith and Nephew, Arthrex, New Clip. Elmar Herbst is
+the Deputy Editor ‐in‐Chief of KSSTA. Michael T .
+Hirschmann is the editor ‐in‐chief of KSSTA, and a
+consultant for Medacta, Symbios and Depuy Synthes.
+DATA AVAILABILITY STATEMENT
+The authors have nothing to report.
+ETHICS STATEMENT
+The authors have nothing to report.
+ORCID
+James A. Pruneski https://orcid.org/0000-0002-
+8645-9386
+Kristian Samuelsson https://orcid.org/0000-0001-
+5383-3370
+REFERENCES
+1. Ames CP, Smith JS, Pellisé F, Kelly M, Alanay A, Acaro ğlu E,
+et al. Arti ﬁcial intelligence based hierarchical clustering of
+patient types and intervention categories in adult spinal defor-
+mity surgery: towards a new classi ﬁcation scheme that predicts
+quality and value. Spine. 2019;44:915 –26.
+2. Beam AL, Kohane IS. Big data and machine learning in health
+care. JAMA. 2018;319:1317 –8.
+3. Bien N, Rajpurkar P, Ball RL, Irvin J, Park A, Jones E, et al.
+Deep‐learning‐assisted diagnosis for knee magnetic resonance
+imaging: development and retrospective validation of MRNet.
+PLoS Med. 2018;15:e1002699.
+4. Bobba PS, Sailer A, Pruneski JA, Beck S, Mozayan A,
+Mozayan S, et al. Natural language processing in radiology:
+clinical applications and future directions. Clin Imaging. 2023;
+97:55–61.
+5. Boileau P, Cheval D, Gauci M ‐O, Holzer N, Chaoui J, Walch G.
+Automated three ‐dimensional measurement of glenoid version
+and inclination in arthritic shoulders. J Bone Jt Surg. 2018;100:
+57–65.
+6. Bulstra AEJ, Buijze GA, Bulstra AEJ, Cohen A, Colaris JW,
+Court‐Brown CM, et al. A machine learning algorithm to esti-
+mate the probability of a true scaphoid fracture after wrist
+trauma. J Hand Surg. 2022;47:709 –18.
+7. Cabitza F, Rasoini R, Gensini GF. Unintended consequences of
+machine learning in medicine. JAMA. 2017;318:517 –8.
+8. Caruana R, Lou Y, Gehrke J, Koch P, Sturm M, Elhadad N.
+Intelligible models for healthcare: predicting pneumonia risk and
+hospital 30 ‐day readmission. In: Cao L, editor. Proceedings of
+the 21th ACM SIGKDD international conference on knowledge
+discovery and data mining. Sydney, NSW, Australia: Associa-
+tion for Computing Machinery; 2015.
+9. Castillo RC, Huang Y, Scharfstein D, Frey K, Bosse MJ,
+Pollak AN, et al. Association between 6 ‐week postdischarge
+risk classi ﬁcation and 12 ‐month outcomes after orthopedic
+trauma. JAMA Surg. 2019;154:e184824.
+10. Chen X, Liu X, Wang Y, Ma R, Zhu S, Li S, et al. Development
+and validation of an arti ﬁcial intelligence preoperative
+planning system for total hip arthroplasty. Front Med. 2022;
+9:841202.
+11. Cho B, Geng E, Arvind V, Valliani AA, T ang JE, Schwartz J,
+et al. Understanding arti ﬁcial intelligence and predictive analy-
+tics: a clinically focused review of machine learning techniques.
+JBJS Rev. 2022;10(3):e21.
+12. Davenport T, Kalakota R. The potential for arti ﬁcial intelligence
+in healthcare. Fut Healthcare J. 2019;6:94 –8.
+13. Domb BG, Ouyang VW, Go CC, Gornbein JA, Shapira J,
+Meghpara MB, et al. Personalized medicine using predictive
+analytics: a machine learning ‐based prognostic model for pa-
+tients undergoing hip arthroscopy. Am J Sports Med. 2022;50:
+1900–8.
+14. Eckhardt CM, Madjarova SJ, Williams RJ, Ollivier M,
+Karlsson J, Pareek A, et al. Unsupervised machine learning
+| 9o f1 2
+
+=== PDF PAGE 10 ===
+methods and emerging applications in healthcare. Knee Surg
+Sports Traumatol Arthrosc. 2023;31:376 –81.
+15. Fritz B, Fritz J. Arti ﬁcial intelligence for MRI diagnosis of joints: a
+scoping review of the current state ‐of‐the‐art of deep learning ‐
+based approaches. Skeletal Radiol. 2022;51:315 –29.
+16. Gill K, Cacciamani G, Nabhani J, Corb J, Buchanan T, Park D,
+et al. A novel arti ﬁcial intelligence platform to automate clinical
+consultation notes and enhance diagnostic e ﬃciency in the
+outpatient clinic: a multi ‐center, multi ‐disciplinary, prospective
+randomized controlled trial. medRxiv; 2023. https://doi.org/10.
+1101/2023.06.26.232918792023.2006.2026.23291879
+17. Hall T, Wong JRY, Dirckx M, Rajesparan K, Rashid A. Pre ‐
+operative arthritic glenoid assessment: 3D automated planning
+software versus manual multiplanar measurements of version
+and inclination. J Orthop. 2023;36:24 –8.
+18. Hinterwimmer F, Lazic I, Langer S, Suren C, Charitou F,
+Hirschmann MT, et al. Prediction of complications and surgery
+duration in primary TKA with high accuracy using machine
+learning with arthroplasty ‐speciﬁc data. Knee Surg Sports
+Traumatol Arthrosc. 2023;31:1323 –33.
+19. Jang SJ, Kunze KN, Bornes TD, Anderson CG, Mayman DJ,
+Jerabek SA, et al. Leg ‐length discrepancy variability on stan-
+dard anteroposterior pelvis radiographs: an analysis using deep
+learning measurements. J Arthroplasty. 2023;38:2017 –23.e3.
+20. Jauhiainen S, Kauppi J ‐P, Krosshaug T, Bahr R, Bartsch J,
+Äyrämö S. Predicting ACL injury using machine learning on
+data from an extensive screening test battery of 880 female elite
+athletes. Am J Sports Med. 2022;50:2917 –24.
+21. Jiang F, Jiang Y, Zhi H, Dong Y, Li H, Ma S, et al. Arti ﬁcial
+intelligence in healthcare: past, present and future. Stroke Vasc
+Neurol. 2017;2:230 –43.
+22. Jurgensmeier K, Till SE, Lu Y, Arguello AM, Stuart MJ,
+Saris DBF, et al. Risk factors for secondary meniscus tears can
+be accurately predicted through machine learning, creating a
+resource for patient education and intervention. Knee Surg
+Sports Traumatol Arthrosc. 2022;31:518 –29.
+23. Karnuta JM, Murphy MP, Luu BC, Ryan MJ, Haeberle HS,
+Brown NM, et al. Arti ﬁcial intelligence for automated implant
+identiﬁcation in total hip arthroplasty: a multicenter external
+validation study exceeding two million plain radiographs.
+J Arthroplasty. 2023;38:1998 –2003.e1.
+24. Karnuta JM, Navarro SM, Haeberle HS, Billow DG, Krebs VE,
+Ramkumar PN. Bundled care for hip fractures: a machine ‐
+learning approach to an untenable patient ‐speciﬁc payment
+model. J Orthop Trauma. 2019;33:324 –30.
+25. Kayaalp ME, Ollivier M, Winkler PW, Dahmen J, Musahl V,
+Hirschmann MT, et al. Embrace responsible ChatGPT usage to
+overcome language barriers in academic writing. Knee Surg
+Sports Traumatol Arthrosc. 2024;32:5 –9.
+26. Khosravi B, Mickley JP, Rouzrokh P, T aunton MJ, Larson AN,
+Erickson BJ, et al. Anonymizing radiographs using an object
+detection deep learning algorithm. Radiol Artif Intel. 2023;
+5:e230085.
+27. Khosravi B, Rouzrokh P, Maradit Kremers H, Larson DR,
+Johnson QJ, Faghani S, et al. Patient ‐speciﬁc hip arthroplasty
+dislocation risk calculator: an explainable multimodal machine
+learning–based approach. Radiol Artif Intel. 2022;4:e220067.
+28. Khosravi B, Rouzrokh P, Mickley JP, Faghani S, Larson AN,
+Garner HW, et al. Creating high ﬁdelity synthetic pelvis radio-
+graphs using generative adversarial networks: unlocking the
+potential of deep learning models without patient privacy con-
+cerns. J Arthroplasty. 2023;38:2037 –43.e1.
+29. Kotti M, Du ﬀell LD, Faisal AA, McGregor AH. Detecting knee
+osteoarthritis and its discriminating parameters using random
+forests. Med Eng Phys. 2017;43:19 –29.
+30. Kumah ‐Crystal Y, Pirtle C, Whyte H, Goode E, Anders S,
+Lehmann C. Electronic health record interactions through voice:
+a review. Appl Clin Inform. 2018;09:541 –52.
+31. Kunze KN, Jang SJ, Li TY, Pareek A, Finocchiaro A, Fu MC,
+et al. Arti ﬁcial intelligence for automated identi ﬁcation of total
+shoulder arthroplasty implants. J Shoulder Elbow Surg. 2023;
+32:2115–22.
+32. Kunze KN, Kaidi A, Madjarova S, Polce EM, Ranawat AS,
+Nawabi DH, et al. External validation of a machine learning
+algorithm for predicting clinically meaningful functional
+improvement after arthroscopic hip preservation surgery. Am
+J Sports Med. 2022;50:3593 –9.
+33. Kunze KN, Orr M, Krebs V, Bhandari M, Piuzzi NS. Potential
+beneﬁts, unintended consequences, and future roles of arti ﬁcial
+intelligence in orthopaedic surgery research. Bone Jt Open.
+2022;3:93–7.
+34. Kunze KN, Polce EM, Ranawat AS, Randsborg PH,
+Williams RJ, Allen AA, et al. Application of machine learning
+algorithms to predict clinically meaningful improvement after
+arthroscopic anterior cruciate ligament reconstruction. Orthop
+J Sports Med. 2021;9:23259671211046575.
+35. Kunze KN, Rossi DM, White GM, Karhade AV, Deng J,
+Williams BT, et al. Diagnostic performance of arti ﬁcial intelli-
+gence for detection of anterior cruciate ligament and meniscus
+tears: a systematic review. Arthrosc J Arthrosc Rel Surg. 2021;
+37:771–81.
+36. Kunze KN, Williams RJ, Ranawat AS, Pearle AD, Kelly BT,
+Karlsson J, et al. Arti ﬁcial intelligence (AI) and large data reg-
+istries: Understanding the advantages and limitations of con-
+temporary data sets for use in AI research. Knee Surg Sports
+Traumatol Arthrosc. 2024;32:13 –8.
+37. Larson DB, Chen MC, Lungren MP, Halabi SS, Stence NV,
+Langlotz CP. Performance of a deep ‐learning neural network
+model in assessing skeletal maturity on pediatric hand radio-
+graphs. Radiology. 2018;287:313 –22.
+38. Larson N, Nguyen C, Do B, Kaul A, Larson A, Wang S, et al.
+Artiﬁcial intelligence system for automatic quantitative analysis
+and radiology reporting of leg length radiographs. J Digit
+Imaging. 2022;35:1494 –505.
+39. Ley C, Martin RK, Pareek A, Groll A, Seil R, Tischer T. Machine
+learning and conventional statistics: making sense of the di ﬀer-
+ences. Knee Surg Sports Traumatol Arthrosc. 2022;30:753 –7.
+40. Lezak BA, Pruneski JA, Oeding JF, Kunze KN, Williams RJ,
+Alaia MJ, et al. Diagnostic performance of deep learning for leg
+length measurements on radiographs in leg length discrepancy:
+a systematic review. J Exp Orthop. 2024;11:e70080.
+41. Lu Y, Reinholz AK, Till SE, Kalina SV, Saris DBF, Camp CL,
+et al. Predicting the risk of posttraumatic osteoarthritis after
+primary anterior cruciate ligament reconstruction: a machine
+learning time ‐to‐event analysis. Am J Sports Med. 2023;51:
+1673–85.
+42. Luu BC, Wright AL, Haeberle HS, Karnuta JM, Schickendantz
+MS, Makhni EC, et al. Machine learning outperforms logistic
+regression analysis to predict next ‐season NHL player injury: an
+analysis of 2322 players from 2007 to 2017. Orthop J Sports
+Med. 2020;8:2325967120953404.
+43. Martin JA, Sti ﬄer‐Joachim MR, Wille CM, Heiderscheit BC. A
+hierarchical clustering approach for examining potential risk
+factors for bone stress injury in runners. J Biomech. 2022;
+141:111136.
+44. McCarthy J, Minsky ML, Rochester N, Shannon CE. A proposal
+for the dartmouth summer research project on arti ﬁcial intelli-
+gence, August 31, 1955. AI Magazine. 2006;27:12.
+45. Myers TG, Ramkumar PN, Ricciardi BF, Urish KL, Kipper J,
+Ketonis C. Arti ﬁcial intelligence and orthopaedics: an introduc-
+tion for clinicians. J Bone Jt Surg. 2020;102:830 –40.
+46. Oeding JF, Lu Y, Pareek A, Marigi EM, Okoroha KR, Barlow JD,
+et al. Understanding risk for early dislocation resulting in re-
+operation within 90 days of reverse total shoulder arthroplasty:
+extreme rare event detection through cost sensitive machine
+learning. J Should Elbow Surg. 2023;32:e437 –50.
+10 of 12 |
+
+=== PDF PAGE 11 ===
+47. Oeding JF, Pareek A, Nieboer MJ, Rhodes NG, Tiegs ‐Heiden
+CA, Camp CL, et al. A machine learning model demonstrates
+excellent performance in predicting subscapularis tears based
+on pre‐operative imaging parameters alone. Arthrosc J Arthrosc
+Rel Surg. 2024;40(4):1044 –55.
+48. Oeding JF, Williams RJ, Nwachukwu BU, Martin RK, Kelly BT,
+Karlsson J, et al. A practical guide to the development and
+deployment of deep learning models for the Orthopedic sur-
+geon: part I. Knee Surg Sports Traumatol Arthrosc. 2023;31:
+382–9.
+49. Oettl FC, Pareek A, Winkler PW, Zsidai B, Pruneski JA,
+Senorski EH, et al. A practical guide to the implementation of
+AI in orthopaedic research, Part 6: how to evaluate the per-
+formance of AI research? J Exp Orthop. 2024;11:e12039.
+50. Ollivier M, Pareek A, Dahmen J, Kayaalp ME, Winkler PW,
+Hirschmann MT, et al. A deeper dive into ChatGPT : history, use
+and future perspectives for orthopaedic research. Knee Surg
+Sports Traumatol Arthrosc. 2023;31:1190 –2.
+51. Pasha S, Shah S, Newton P. Machine learning predicts the 3D
+outcomes of adolescent idiopathic scoliosis surgery using
+patient–surgeon speci ﬁc parameters. Spine. 2021;46:579 –87.
+52. Polce EM, Kunze KN, Fu MC, Garrigues GE, Forsythe B,
+Nicholson GP, et al. Development of supervised machine
+learning algorithms for prediction of satisfaction at 2 years fol-
+lowing total shoulder arthroplasty. J Shoulder Elbow Surg.
+2021;30:e290–9.
+53. Povyakalo AA, Alberdi E, Strigini L, Ayton P. How to discrimi-
+nate between computer ‐aided and computer ‐hindered deci-
+sions: a case study in mammography. Med Decis Making. 2013;
+33:98–107.
+54. Pruneski JA, Heyworth BE, Kocher MS, T avabi N,
+Milewski MD, Kramer DE, et al. Prevalence and predictors of
+concomitant meniscal and ligamentous injuries associated
+with ACL surgery: an analysis of 20 years of ACL
+reconstruction at a tertiary care children's hospital. Am
+J Sports Med. 2024;52:77 –86.
+55. Pruneski JA, Pareek A, Kunze KN, Martin RK, Karlsson J,
+Oeding JF, et al. Supervised machine learning and associated
+algorithms: applications in orthopedic surgery. Knee Surg
+Sports Traumatol Arthrosc. 2022;31:1196 –202.
+56. Pruneski JA, Pareek A, Nwachukwu BU, Martin RK, Kelly BT,
+Karlsson J, et al. Natural language processing: using arti ﬁcial
+intelligence to understand human language in orthopedics.
+Knee Surg Sports Traumatol Arthrosc. 2022;31:1203 –11.
+57. Pruneski JA, Williams RJ, Nwachukwu BU, Ramkumar PN,
+Kiapour AM, Martin RK, et al. The development and deployment
+of machine learning models. Knee Surg Sports Traumatol
+Arthrosc. 2022;30:3917 –23.
+58. Ramkumar PN, Karnuta JM, Navarro SM, Haeberle HS,
+Scuderi GR, Mont MA, et al. Deep learning preoperatively
+predicts value metrics for primary total knee arthroplasty:
+development and validation of an arti ﬁcial neural network
+model. J Arthroplasty. 2019;34:2220 –7.e1.
+59. Ramkumar PN, Pang M, Polisetty T, Helm JM, Karnuta JM.
+Meaningless applications and misguided methodologies in
+artiﬁcial intelligence ‐related orthopaedic research propagates
+hype over hope. Arthrosc J Arthrosc Rel Surg. 2022;38:2761 –6.
+60. Ranti D, Warburton AJ, Hanss K, Katz D, Poeran J, Moucha C.
+K‐means clustering to elucidate vulnerable subpopulations
+among medicare patients undergoing total joint arthroplasty.
+J Arthroplasty. 2020;35:3488 –97.
+61. Rieke N, Hancox J, Li W, Milletarì F, Roth HR, Albarqouni S,
+et al. The future of digital health with federated learning. npj Dig
+Med. 2020;3:119.
+62. Rouzrokh P, Khosravi B, Mickley JP, Erickson BJ, T aunton MJ,
+Wyles CC. THA ‐net: a deep learning solution for next ‐
+generation templating and patient ‐speciﬁc surgical execution.
+J Arthroplasty. 2024;39(3):727 –33.
+63. Sagheb E, Ramazanian T, T afti AP, Fu S, Kremers WK,
+Berry DJ, et al. Use of natural language processing algorithms
+to identify common data elements in operative notes for knee
+arthroplasty. J Arthroplasty. 2021;36:922 –6.
+64. Shim E, Kim JY, Yoon JP, Ki S ‐Y, Lho T, Kim Y, et al. Auto-
+mated rotator cu ﬀ tear classi ﬁcation using 3D convolutional
+neural network. Sci Rep. 2020;10:15632.
+65. Stojadinovic A, Kyle Potter B, Eberhardt J, Shawen SB,
+Andersen RC, Forsberg JA, et al. Development of a prognostic
+naïve bayesian classi ﬁer for successful treatment of nonunions.
+J Bone Jt Surg Am Vol. 2011;93:187 –94.
+66. Suzuki T, Maki S, Yamazaki T, Wakita H, T oguchi Y, Horii M,
+et al. Detecting distal radial fractures from wrist radiographs
+using a deep convolutional neural network with an accuracy
+comparable to hand orthopedic surgeons. J Digit Imaging.
+2022;35:39–46.
+67. T avabi N, Pruneski J, Golchin S, Singh M, Sanborn R,
+Heyworth B, et al. Building large ‐scale registries from
+unstructured clinical notes using a low ‐resource natural lan-
+guage processing pipeline. Artif Intell Med. 2024;151:102847.
+68. T avabi N, Singh M, Pruneski J, Kiapour AM. Systematic eva-
+luation of common natural language processing techniques to
+codify clinical notes. PLoS One. 2024;19:e0298892.
+69. Thirukumaran CP, Zaman A, Rubery PT, Calabria C, Li Y,
+Ricciardi BF, et al. Natural language processing for the identi-
+ﬁcation of surgical site infections in orthopaedics. J Bone Jt
+Surg. 2019;101:2167 –74.
+70. Tibbo ME, Wyles CC, Fu S, Sohn S, Lewallen DG, Berry DJ, et al.
+Use of natural language processing tools to identify and classify
+periprosthetic femur fractures.J Arthroplasty. 2019;34:2216–9.
+71. T sai TL, Fridsma DB, Gatti G. Computer decision support as a
+source of interpretation error: the case of electrocardiograms.
+J Am Med Inform Assoc. 2003;10:478 –83.
+72. Van Eetvelde H, Mendonça LD, Ley C, Seil R, Tischer T.
+Machine learning methods in sport injury prediction and pre-
+vention: a systematic review. J Exp Orthop. 2021;8:27.
+73. Velasquez Garcia A, Bukowiec LG, Yang L, Nishikawa H,
+Fitzsimmons JS, Larson AN, et al. Arti ﬁcial intelligence –based
+three‐dimensional templating for total joint arthroplasty plan-
+ning: a scoping review. Int Orthop. 2024;48:997 –1010.
+74. Wang H, Fu T, Du Y, Gao W, Huang K, Liu Z, et al. Scienti ﬁc
+discovery in the age of arti ﬁcial intelligence. Nature. 2023;620:
+47–60.
+75. Whiteside D, Martini DN, Lepley AS, Zernicke RF, Goulet GC.
+Predictors of ulnar collateral ligament reconstruction in major
+league baseball pitchers. Am J Sports Med. 2016;44:2202 –9.
+76. Wyles CC, Tibbo ME, Fu S, Wang Y, Sohn S, Kremers WK,
+et al. Use of natural language processing algorithms to identify
+common data elements in operative notes for total hip ar-
+throplasty. J Bone Jt Surg. 2019;101:1931 –8.
+77. Yamada Y, Maki S, Kishida S, Nagai H, Arima J, Yamakawa N,
+et al. Automated classi ﬁcation of hip fractures using deep
+convolutional neural networks with orthopedic surgeon ‐level
+accuracy: ensemble decision ‐making with antero ‐posterior and
+lateral radiographs. Acta Orthop. 2020;91:699 –704.
+78. Ye Z, Zhang T, Wu C, Qiao Y, Su W, Chen J, et al. Predicting
+the objective and subjective clinical outcomes of anterior cru-
+ciate ligament reconstruction: a machine learning analysis of
+432 patients. Am J Sports Med. 2022;50:3786 –95.
+79. Yeo I, Klemt C, Melnic CM, Pattavina MH, De Oliveira BMC,
+Kwon Y ‐M. Predicting surgical operative time in primary total
+knee arthroplasty utilizing machine learning models. Arch
+Orthop Trauma Surg. 2023;143:3299 –307.
+80. Yocum D, Reinbolt J, Weinhandl JT, Standi ﬁrd TW, Fitzhugh E,
+Cates H, et al. Principal component analysis of knee joint dif-
+ferences between bilateral and unilateral total knee replace-
+ment patients during level walking. J Biomech Eng. 2021;
+143(11):111003.
+| 11 of 12
+
+=== PDF PAGE 12 ===
+81. Yu K ‐H, Beam AL, Kohane IS. Arti ﬁcial intelligence in health-
+care. Nat Biomed Eng. 2018;2:719 –31.
+82. Zhan H, T eng F, Liu Z, Yi Z, He J, Chen Y, et al. Arti ﬁcial
+intelligence aids detection of rotator cu ﬀ pathology: a systematic
+review. Arthrosc J Arthrosc Rel Surg. 2024;40:567 –78.
+83. Zhang K, Hu H, Philbrick K, Conte GM, Sobek JD, Rouzrokh P,
+et al. SOUP ‐GAN: super ‐resolution MRI using generative
+adversarial networks. T omography. 2022;8:905–19.
+84. Zhang Y, Weng Y, Lund J. Applications of explainable arti ﬁcial
+intelligence in diagnosis and surgery. Diagnostics. 2022;12:237.
+85. Zsidai B, Hilkert AS, Kaarre J, Narup E, Senorski EH, Grassi A,
+et al. A practical guide to the implementation of AI in ortho-
+paedic research ‐ part 1: opportunities in clinical application and
+overcoming existing challenges. J Exp Orthop. 2023;10:117.
+86. Zsidai B, Kaarre J, Narup E, Hamrin Senorski E, Pareek A,
+Grassi A, et al. A practical guide to the implementation of
+artiﬁcial intelligence in orthopaedic research ‐part 2: a technical
+introduction. J Exp Orthop. 2024;11:e12025.
+How to cite this article: Pruneski JA, Pareek A,
+Zsidai B, Oeding JF, Hughes JD, Oettl FC, et al.
+A practical guide to the implementation of
+artiﬁcial intelligence in orthopaedic research —
+Part 3: how orthopaedic research bene ﬁts from
+the implementation of arti ﬁcial intelligence. J Exp
+Orthop. 2025;12:e70481.
+https://doi.org/10.1002/jeo2.70481
+12 of 12 |

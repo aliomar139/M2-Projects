@@ -1,0 +1,532 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          2
+        ]
+      ],
+      "date-time": "2026-09-02T14:01:06Z",
+      "timestamp": 1788357666541,
+      "version": "build-2803163510"
+    },
+    "reference-count": 25,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              6,
+              11
+            ]
+          ],
+          "date-time": "2021-06-11T00:00:00Z",
+          "timestamp": 1623369600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              6,
+              11
+            ]
+          ],
+          "date-time": "2021-06-11T00:00:00Z",
+          "timestamp": 1623369600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Hochschule Esslingen"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "BMC Med Inform Decis Mak"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:sec>\n                <jats:title>Background</jats:title>\n                <jats:p>Out of the pressure of Digital Transformation, the major industrial domains are using advanced and efficient digital technologies to implement processes that are applied on a daily basis. Unfortunately, this still does not happen in the same way in the medical domain. For this reason, doctors usually do not have the time or knowledge to evaluate all alternative treatment options for each patient accurately and individually. However, physicians can reduce their workload by using recommender systems, still having every decision under control. In this way, they also get an insight into how other physicians make treatment decisions in each situation. In this work, we report the development of a novel recommender system that uses predicted outcomes based on continuous-valued logic and multi-criteria decision operators. The advantage of this methodology is that it is transparent, since the model outcomes emulate logical decision processes based on the hierarchy of relevant physiological parameters, and second, it is safer against adversarial attacks than conventional deep learning methods since it drastically reduces the number of trainable parameters.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Methods</jats:title>\n                <jats:p>We test our methodology in a patient population with diabetes and heart insufficiency that becomes a therapy (beta-blockers, ACE or Aspirin). The original database (Pakistan database) is publicly available and accessible via the internet. However, to explore methods to protect the patient's identity and guarantee data privacy we implemented a methodology on a variable-by-variable basis by fitting a sequence of regression models and drawing synthetic values from the corresponding predictive distributions using linear regressions and norm rank. Furthermore, we implemented a deep-learning model based <jats:italic>on</jats:italic> logical gates modeled by perceptrons with fixed weights and biases. While a first trainable layer automatically recognizes a meaningful parameter hierarchy, the implemented Logic-Operator Neuronal Network (LONN) simulates cognitive processes like a rational, logical thinking process, considering that this logic is joined by fuzziness, i.e., logical operations are not exact but essentially fuzzy due to the implemented continuous-valued operators. The predicted outcomes of the model (kind of therapy-ACE, Aspirin or beta-blocker- and expected therapy time of the patient) are then implemented in a recommender system that compares two different models: model 1 trained on a population excluding negative outcomes (patient group 1, with no patient dead and long therapy times) and a model 2 trained on the whole patient population (patient group 2). In this way, we provide a recommendation of the best possible therapy based on the outcome of the model and the confidence of this recommendation when the outcome of model 1 is compared with the outcome of model 2.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Results</jats:title>\n                <jats:p>With the applied method for data synthetization, we obtained an error of about 1% for all the relevant parameters. Furthermore, we demonstrate that the LONN models reach an accuracy of about 75%. After comparing the LONN models against conventional deep-learning models we observe that our implemented models are less accurate (accuracy loss of about 8%). However, the loss of accuracy is compensated by the fact that LONN models are transparent and safe because the freezing of training parameters makes them less prone to adversarial attacks. Finally, we predict the best therapy as well as the expected therapy time. We were able to predict individualized therapies, which were classified as optimal (binary value) when the prediction fully matched predictions made with models 1 and 2. The results provided by the recommender system are displayed using a graphical interface. The current is a proof of concept to improve the quality of the disease management, while the methods are continuously visualized to preserve transparency for the customers.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Conclusions</jats:title>\n                <jats:p>This work contributes to simplify administrative functions and boost the quality of management of patients improving the quality of healthcare with models that are both transparent and safe. Our methodology can be extended to different clinical scenarios where recommender systems can be applied. The acceptance and further development of the app is one of the next important steps and still requires further development depending on specific requirements of the health management, the physicians or health professionals, and the patent population.</jats:p>\n              </jats:sec>",
+    "DOI": "10.1186/s12911-021-01553-3",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          6,
+          11
+        ]
+      ],
+      "date-time": "2021-06-11T03:34:16Z",
+      "timestamp": 1623382456000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 43,
+    "title": [
+      "Medical recommender systems based on continuous-valued logic and multi-criteria decision operators, using interpretable neural networks"
+    ],
+    "prefix": "10.1186",
+    "volume": "21",
+    "author": [
+      {
+        "given": "Juan G. Diaz",
+        "family": "Ochoa",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Orsolya",
+        "family": "Csiszár",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thomas",
+        "family": "Schimper",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2021,
+          6,
+          11
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "1553_CR1",
+        "volume-title": "Healthcare data analytics. Data mining and knowledge discovery series",
+        "author": "CK Reddy",
+        "year": "2015",
+        "unstructured": "Reddy CK, Aggarwal CC. Healthcare data analytics. Data mining and knowledge discovery series. Boca Raton: Chapman & Hall/CRC ; 2015."
+      },
+      {
+        "issue": "2",
+        "key": "1553_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "102",
+        "DOI": "10.1111/j.1471-1842.2004.00506.x",
+        "volume": "21",
+        "author": "A Hall",
+        "year": "2004",
+        "unstructured": "Hall A, Walton G. Information overload within the health care system: a literature review. Health Inf Libr J. 2004;21(2):102–8. https://doi.org/10.1111/j.1471-1842.2004.00506.x.",
+        "journal-title": "Health Inf Libr J"
+      },
+      {
+        "issue": "4",
+        "key": "1553_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "1859",
+        "DOI": "10.25300/MISQ/2020/14435/",
+        "volume": "44",
+        "author": "L Bouayad",
+        "year": "2020",
+        "unstructured": "Bouayad L, Padmanabhan B, Chari K. Can recommender systems reduce healthcare costs? The role of time pressure and cost transparency in prescription choice. Manag Inf Syst Q. 2020;44(4):1859–903.",
+        "journal-title": "Manag Inf Syst Q"
+      },
+      {
+        "key": "1553_CR4",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Ricci F, Rokach L, Shapira B. Recommender systems handbook. In: Recommender systems handbook, vol 1–35. 2010. p. 1–35. https://doi.org/10.1007/978-0-387-85820-3_1.",
+        "DOI": "10.1007/978-0-387-85820-3_1"
+      },
+      {
+        "issue": "3",
+        "key": "1553_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "2580",
+        "DOI": "10.3390/ijerph110302580",
+        "volume": "11",
+        "author": "M Wiesner",
+        "year": "2014",
+        "unstructured": "Wiesner M, Pfeifer D. Health recommender systems: concepts, requirements, technical basics and challenges. Int J Environ Res Public Health. 2014;11(3):2580–607. https://doi.org/10.3390/ijerph110302580.",
+        "journal-title": "Int J Environ Res Public Health"
+      },
+      {
+        "issue": "5",
+        "key": "1553_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "1589",
+        "DOI": "10.1109/JBHI.2017.2767063",
+        "volume": "22",
+        "author": "B Shickel",
+        "year": "2018",
+        "unstructured": "Shickel B, Tighe PJ, Bihorac A, Rashidi P. Deep EHR: A survey of recent advances in deep learning techniques for electronic health record (EHR) analysis. IEEE J Biomed Health Inform. 2018;22(5):1589–604. https://doi.org/10.1109/JBHI.2017.2767063.",
+        "journal-title": "IEEE J Biomed Health Inform"
+      },
+      {
+        "issue": "1",
+        "key": "1553_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1038/s41746-018-0029-1",
+        "volume": "1",
+        "author": "A Rajkomar",
+        "year": "2018",
+        "unstructured": "Rajkomar A, et al. Scalable and accurate deep learning with electronic health records. NPJ Digit Med. 2018;1(1):1–10. https://doi.org/10.1038/s41746-018-0029-1.",
+        "journal-title": "NPJ Digit Med"
+      },
+      {
+        "key": "1553_CR8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10844-020-00633-6",
+        "author": "TNT Tran",
+        "year": "2020",
+        "unstructured": "Tran TNT, Felfernig A, Trattner C, Holzinger A. Recommender systems in the healthcare domain: state-of-the-art and research issues. J Intell Inf Syst. 2020. https://doi.org/10.1007/s10844-020-00633-6.",
+        "journal-title": "J Intell Inf Syst"
+      },
+      {
+        "key": "1553_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "106530",
+        "DOI": "10.1016/j.knosys.2020.106530",
+        "volume": "210",
+        "author": "O Csiszár",
+        "year": "2020",
+        "unstructured": "Csiszár O, Csiszár G, Dombi J. How to implement MCDM tools and continuous logic into neural computation? Towards better interpretability of neural networks. Knowl Based Syst. 2020;210:106530. https://doi.org/10.1016/j.knosys.2020.106530.",
+        "journal-title": "Knowl Based Syst"
+      },
+      {
+        "key": "1553_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "105972",
+        "DOI": "10.1016/j.knosys.2020.105972",
+        "volume": "199",
+        "author": "O Csiszár",
+        "year": "2020",
+        "unstructured": "Csiszár O, Csiszár G, Dombi J. Interpretable neural networks based on continuous-valued logic and multicriteria decision operators. Knowl Based Syst. 2020;199:105972. https://doi.org/10.1016/j.knosys.2020.105972.",
+        "journal-title": "Knowl Based Syst"
+      },
+      {
+        "key": "1553_CR11",
+        "unstructured": "Riegel R, et al. Logical neural networks. 2020. 2006.13155. Accessed 07 Dec 2020"
+      },
+      {
+        "key": "1553_CR12",
+        "unstructured": "Shi S, Chen H, Zhang M, Zhang Y. Neural logic networks. 2019. 1910.08629. Accessed 07 Dec 2020"
+      },
+      {
+        "issue": "1",
+        "key": "1553_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "15",
+        "DOI": "10.1186/1475-2840-10-15",
+        "volume": "10",
+        "author": "F Edelmann",
+        "year": "2011",
+        "unstructured": "Edelmann F, et al. Heart failure therapy in diabetic patients-comparison with the recent ESC/EASD guideline. Cardiovasc Diabetol. 2011;10(1):15. https://doi.org/10.1186/1475-2840-10-15.",
+        "journal-title": "Cardiovasc Diabetol"
+      },
+      {
+        "issue": "1",
+        "key": "1553_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.18637/jss.v074.i11",
+        "volume": "74",
+        "author": "B Nowok",
+        "year": "2016",
+        "unstructured": "Nowok B, Raab GM, Dibben C. synthpop: Bespoke creation of synthetic data in R. J Stat Softw. 2016;74(1):1. https://doi.org/10.18637/jss.v074.i11.",
+        "journal-title": "J Stat Softw"
+      },
+      {
+        "key": "1553_CR15",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Urenda JC, et al. Why squashing functions in multi-layer neural networks. In: 2020 IEEE international conference on systems, man, and cybernetics (SMC), 2020. p. 1705–1711. https://doi.org/10.1109/SMC42975.2020.9282886.",
+        "DOI": "10.1109/SMC42975.2020.9282886"
+      },
+      {
+        "key": "1553_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "121",
+        "DOI": "10.1007/978-3-030-72280-7_7",
+        "volume-title": "Explainable neural networks based on fuzzy logic and multi-criteria decision tools",
+        "author": "J Dombi",
+        "year": "2021",
+        "unstructured": "Dombi J, Csiszár O. Squashing Functions. In: Dombi J, Csiszár O, editors. Explainable neural networks based on fuzzy logic and multi-criteria decision tools. Cham: Springer; 2021. p. 121–34. https://doi.org/10.1007/978-3-030-72280-7_7."
+      },
+      {
+        "key": "1553_CR17",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Zeltner D, Schmid B, Csiszár G, Csiszár O. Squashing activation functions in benchmark tests: Towards a more eXplainable Artificial Intelligence using continuous-valued logic, Knowledge-Based Systems. 2021. https://doi.org/10.1016/j.knosys.2021.106779.",
+        "DOI": "10.1016/j.knosys.2021.106779"
+      },
+      {
+        "key": "1553_CR18",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Dombi J, Csiszár O. Explainable neural networks based on fuzzy logic and multi-criteria decision tools. Springer Nature. Studies in Fuzziness and Soft Computing, STUDFUZZ, Vol. 408, 2021.",
+        "DOI": "10.1007/978-3-030-72280-7"
+      },
+      {
+        "key": "1553_CR19",
+        "unstructured": "Kingma DP, Ba J. Adam: a method for stochastic optimization. 2017. 1412.6980. Accessed 09 Apr 2021"
+      },
+      {
+        "key": "1553_CR20",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Alvarez K, et al. Towards Fast and Understandable Computations: Which ‘And’- and ‘Or’-Operations Can Be Represented by the Fastest (i.e., 1-Layer) Neural Networks? Which Activations Functions Allow Such Representations? Acta Polytechnica Hungarica. 2021;18(2):27–45.",
+        "DOI": "10.12700/APH.18.2.2021.2.2"
+      },
+      {
+        "issue": "8",
+        "key": "1553_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "659",
+        "DOI": "10.1093/jat/bkw092",
+        "volume": "40",
+        "author": "SA Love",
+        "year": "2016",
+        "unstructured": "Love SA, Seegmiller JC, Kloss J, Apple FS. Urine creatinine concentrations in drug monitoring participants and hospitalized patients. J Anal Toxicol. 2016;40(8):659–62. https://doi.org/10.1093/jat/bkw092.",
+        "journal-title": "J Anal Toxicol"
+      },
+      {
+        "issue": "3",
+        "key": "1553_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "487",
+        "DOI": "10.1007/s13347-019-00372-9",
+        "volume": "33",
+        "author": "M Krishnan",
+        "year": "2020",
+        "unstructured": "Krishnan M. Against interpretability: a critical examination of the interpretability problem in machine learning. Philos Technol. 2020;33(3):487–502. https://doi.org/10.1007/s13347-019-00372-9.",
+        "journal-title": "Philos Technol"
+      },
+      {
+        "key": "1553_CR23",
+        "unstructured": "Kamarinou D, Millard C, Singh J. Machine learning with personal data. Social Science Research Network, Rochester, NY, SSRN Scholarly Paper ID 2865811. 2016. https://papers.ssrn.com/abstract=2865811. Accessed 03 Mar 2020"
+      },
+      {
+        "issue": "1",
+        "key": "1553_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "34",
+        "DOI": "10.1186/s12911-020-1027-1",
+        "volume": "20",
+        "author": "L Timotijevic",
+        "year": "2020",
+        "unstructured": "Timotijevic L, et al. Designing a mHealth clinical decision support system for Parkinson’s disease: a theoretically grounded user needs approach. BMC Med Inform Decis Mak. 2020;20(1):34. https://doi.org/10.1186/s12911-020-1027-1.",
+        "journal-title": "BMC Med Inform Decis Mak"
+      },
+      {
+        "issue": "3",
+        "key": "1553_CR25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.23915/distill.00010",
+        "volume": "3",
+        "author": "C Olah",
+        "year": "2018",
+        "unstructured": "Olah C, et al. The building blocks of interpretability. Distill. 2018;3(3): e10. https://doi.org/10.23915/distill.00010.",
+        "journal-title": "Distill"
+      }
+    ],
+    "container-title": [
+      "BMC Medical Informatics and Decision Making"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s12911-021-01553-3.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1186/s12911-021-01553-3/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s12911-021-01553-3.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          6,
+          11
+        ]
+      ],
+      "date-time": "2021-06-11T03:35:10Z",
+      "timestamp": 1623382510000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-021-01553-3"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          6,
+          11
+        ]
+      ]
+    },
+    "references-count": 25,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "1553"
+    ],
+    "URL": "https://doi.org/10.1186/s12911-021-01553-3",
+    "relation": {},
+    "ISSN": [
+      "1472-6947"
+    ],
+    "issn-type": [
+      {
+        "value": "1472-6947",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          6,
+          11
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2 February 2021",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "27 May 2021",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "11 June 2021",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "No research in human/animal participants.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethics approval and consent to participate"
+        }
+      },
+      {
+        "value": "Hereby the authors provide permission to publish this article.",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Consent for publication"
+        }
+      },
+      {
+        "value": "JDO is associated with PerMediQ GmbH; TS is associated with Knowledgepark GmbH.",
+        "order": 4,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "186"
+  }
+}

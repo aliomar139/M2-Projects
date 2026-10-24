@@ -1,0 +1,629 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          22
+        ]
+      ],
+      "date-time": "2026-09-22T20:12:16Z",
+      "timestamp": 1790107936883,
+      "version": "4.0.1"
+    },
+    "reference-count": 29,
+    "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+    "issue": "9",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              12
+            ]
+          ],
+          "date-time": "2025-03-12T00:00:00Z",
+          "timestamp": 1741737600000
+        },
+        "content-version": "unspecified",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "lww.com",
+        "ovid.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Clin Orthop Relat Res"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          9
+        ]
+      ]
+    },
+    "abstract": "<jats:sec>\n            <jats:title>Background</jats:title>\n            <jats:p>When faced with a severe intraarticular injury like a tibial plateau fracture, patients count on surgeons to make an accurate estimation of prognosis. Unfortunately, there are few tools available that enable precise, personalized prognosis estimation tailored to each patient’s unique circumstances, including their individual and fracture-specific characteristics. In this study, we developed and validated a clinical prediction model using machine-learning algorithms for the 2- and 5-year risk of TKA after tibia plateau fractures.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Questions/purposes</jats:title>\n            <jats:p>Can machine learning–based probability calculators estimate the probability of 2- and 5-year risk of conversion to TKA in patients with a tibial plateau fracture?</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Methods</jats:title>\n            <jats:p>A multicenter, cross-sectional study was performed in six hospitals in patients treated for a tibial plateau fracture between 2003 to 2019. In total, 2057 patients were eligible for inclusion and were sent informed consent and a questionnaire to inquire whether they underwent conversion to TKA. For 56% (1160 of 2057), status of conversion to TKA was accounted for at a minimum of 2 years, and 53% (1082 of 2057) were accounted for at a minimum of 5 years. The mean follow-up among responders was 6 ± 4 years after injury. An analysis of nonresponders found that responders were slightly older than nonresponders (53 ± 16 years versus 51 ± 17 years; p = 0.001), they were more often women (68% [788 of 1160] versus 58% [523 of 897]; p = 0.001), they were treated nonoperatively less often (30% [346 of 1160] versus 43% [387 of 897]; p = 0.001), and they had larger fracture gaps (6.4 ± 6.3 mm versus 4.2 ± 5.2 mm; p &lt; 0.001) and step-offs (6.3 ± 5.7 mm versus 4.5 ± 4.7 mm; p &lt; 0.001). AO Foundation/Orthopaedic Trauma Association (AO/OTA) fracture classification did not differ between nonresponders and responders (B1 11% versus 15%, B2 16% versus 19%, B3 45% versus 39%, C2 6% versus 8%, C3 22% versus 17%; p = 0.26). A total of 70% (814 of 1160) of patients were treated with open reduction and internal fixation, whereas 30% (346 of 1160) of patients were treated nonoperatively with a cast. Most fractures (80% [930 of 1160]) were AO/OTA type B fractures, and 20% (230 of 1160) were type C. Of these patients, 7% (79 of 1160) and 10% (109 of 1082) underwent conversion to a TKA at 2- and 5-year follow-up, respectively. Patient characteristics were retrieved from electronic patient records, and imaging data were shared with the initiating center from which fracture characteristics were determined. Obtained features derived from follow-up questionnaires, electronic patient records, and radiographic assessments were eligible for development of the prediction model. The first step consisted of data cleaning and included simple type formatting and standardization of numerical columns. Subsequent feature selection consisted of a review of the published evidence and expert opinion. This was followed by bivariate analysis of the identified features. The features for the models included: age, gender, BMI, AO/OTA fracture classification, fracture displacement (gap, step-off), medial proximal tibial alignment, and posterior proximal tibial alignment. The data set was used to train three models: logistic regression, random forest, and XGBoost. Logistic regression models linear relationships, random forest handles nonlinear complexities with decision trees, and XGBoost excels with sequential error correction and regularization. The models were tested using a sixfold validation approach by training the model on data from five (of six) respective medical centers and validating it against the remaining center that was left out for training. Performance was assessed by the area under the receiver operating characteristic curve (AUC), which measures a model’s ability to distinguish between classes. AUC varies between 0 and 1, with values closer to 1 indicating better performance. To ensure robust and reliable results, we used bootstrapping as a resampling technique. In addition, calibration curves were plotted, and calibration was assessed with the calibration slope and intercept. The calibration plot compares the estimated probabilities with the observed probabilities for the primary outcome. Calibration slope evaluates alignment between predicted probabilities and observed outcomes (1 = perfect, &lt; 1 = overfit, &gt; 1 = underfit). Calibration intercept indicates bias (0 = perfect, negative = underestimation, positive = overestimation). Last, the Brier score, measuring the mean squared error of predicted probabilities (0 = perfect), was calculated.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Results</jats:title>\n            <jats:p>There were no differences among the models in terms of sensitivity and specificity; the AUCs for each overlapped broadly and ranged from 0.76 to 0.83. Calibration was most optimal in logistic regression for both 2- and 5-year models, with slopes of 0.82 (random forest 0.60, XGBoost 0.26) and 0.95 (random forest 0.85, XGBoost 0.48) and intercepts of 0.01 for both (random forest 0.01 to 0.02; XGBoost 0.05 to 0.07). Brier score was similar between models varying between 0.06 to 0.09. Given that its performance metrics were highest, we chose the logistic regression algorithm as the final prediction model. The web application providing the prediction tool is freely available and can be accessed through: https://3dtrauma.shinyapps.io/tka_prediction/.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Conclusion</jats:title>\n            <jats:p>In this study, a personalized risk assessment tool was developed to support clinical decision-making and patient counseling. Our findings demonstrate that machine-learning algorithms, particularly logistic regression, can provide accurate and reliable predictions of TKA conversion at 2 and 5 years after a tibial plateau fracture. In addition, it provides a useful prognostic tool for surgeons who perform fracture surgery that can be used quickly and easily with patients in the clinic or emergency department once it complies with medical device regulations. External validation is needed to assess performance in other institutions and countries; to account for patient and surgeon preferences, resources, and cultures; and to further strengthen its clinical applicability.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Level of Evidence</jats:title>\n            <jats:p>Level III, therapeutic study.</jats:p>\n          </jats:sec>",
+    "DOI": "10.1097/corr.0000000000003442",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          19
+        ]
+      ],
+      "date-time": "2025-03-19T16:22:48Z",
+      "timestamp": 1742401368000
+    },
+    "page": "1731-1743",
+    "update-policy": "https://doi.org/10.1097/lww.0000000000001000",
+    "source": "Crossref",
+    "is-referenced-by-count": 4,
+    "title": [
+      "Development of Machine Learning–based Algorithms to Predict the 2- and 5-year Risk of TKA After Tibial Plateau Fracture Treatment"
+    ],
+    "prefix": "10.1097",
+    "volume": "483",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-0034-6816",
+        "authenticated-orcid": false,
+        "given": "Nick",
+        "family": "Assink",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Trauma Surgery, University of Groningen, University Medical Center Groningen, Groningen, The Netherlands"
+          },
+          {
+            "name": "3D Lab, University of Groningen, University Medical Center Groningen, Groningen, The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Maria P.",
+        "family": "Gonzalez-Perrino",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Trauma Surgery, University of Groningen, University Medical Center Groningen, Groningen, The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Raul",
+        "family": "Santana-Trejo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Trauma Surgery, University of Groningen, University Medical Center Groningen, Groningen, The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Job N.",
+        "family": "Doornberg",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Trauma Surgery, University of Groningen, University Medical Center Groningen, Groningen, The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8061-1060",
+        "authenticated-orcid": false,
+        "given": "Harm",
+        "family": "Hoekstra",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Traumatology, KU Leuven University Hospitals Leuven Gasthuisberg Campus, Leuven, Belgium"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Joep",
+        "family": "Kraeima",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "3D Lab, University of Groningen, University Medical Center Groningen, Groningen, The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Frank F. A.",
+        "family": "IJpma",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Trauma Surgery, University of Groningen, University Medical Center Groningen, Groningen, The Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "276",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          12
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "R1-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "1237",
+        "DOI": "10.2106/JBJS.22.00500",
+        "article-title": "Radiographic predictors of conversion to total knee arthroplasty after tibial plateau fracture surgery: results in a large multicenter cohort",
+        "volume": "105",
+        "author": "Assink",
+        "year": "2023",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "key": "R2-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "867",
+        "DOI": "10.1007/s00068-022-02139-y",
+        "article-title": "3D assessment of initial fracture displacement of tibial plateau fractures is predictive for risk on conversion to total knee arthroplasty at long-term follow-up",
+        "volume": "49",
+        "author": "Assink",
+        "year": "2023",
+        "journal-title": "Eur J Trauma Emerg Surg"
+      },
+      {
+        "key": "R3-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "5",
+        "DOI": "10.1023/A:1010933404324",
+        "article-title": "Random forests",
+        "volume": "45",
+        "author": "Breiman",
+        "year": "2001",
+        "journal-title": "Mach Learn"
+      },
+      {
+        "key": "R5-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "211",
+        "DOI": "10.1161/CIRCULATIONAHA.114.014508",
+        "article-title": "Transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD) the TRIPOD statement",
+        "volume": "131",
+        "author": "Collins",
+        "year": "2015",
+        "journal-title": "Circulation"
+      },
+      {
+        "key": "R6-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "681",
+        "DOI": "10.1007/s00068-022-02128-1",
+        "article-title": "Artificial intelligence fracture recognition on computed tomography: review of literature and recommendations",
+        "volume": "49",
+        "author": "Dankelman",
+        "year": "2023",
+        "journal-title": "Eur J Trauma Emerg Surg"
+      },
+      {
+        "key": "R7-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "9",
+        "DOI": "10.1302/2633-1462.51.BJO-2023-0095.R1",
+        "article-title": "Systematic review of machine-learning models in orthopaedic trauma: an overview and quality assessment of 45 studies",
+        "volume": "5",
+        "author": "Dijkstra",
+        "year": "2024",
+        "journal-title": "Bone Jt Open"
+      },
+      {
+        "key": "R8-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "805",
+        "DOI": "10.1016/j.joca.2018.12.020",
+        "article-title": "Tibial plateau fractures are associated with a long-lasting increased risk of total knee arthroplasty a matched cohort study of 7,950 tibial plateau fractures",
+        "volume": "27",
+        "author": "Elsoe",
+        "year": "2019",
+        "journal-title": "Osteoarthritis Cartilage"
+      },
+      {
+        "key": "R9-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "e780",
+        "DOI": "10.3928/01477447-20150902-55",
+        "article-title": "Population-based epidemiology of tibial plateau fractures",
+        "volume": "38",
+        "author": "Elsoe",
+        "year": "2015",
+        "journal-title": "Orthopedics."
+      },
+      {
+        "key": "R10-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "1233",
+        "DOI": "10.1302/0301-620X.87B9.16276",
+        "article-title": "Recovery of knee function following fracture of the tibial plateau",
+        "volume": "87",
+        "author": "Gaston",
+        "year": "2005",
+        "journal-title": "J Bone Joint Surg Br"
+      },
+      {
+        "key": "R11-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "5145",
+        "DOI": "10.1007/s00167-023-07585-8",
+        "article-title": "Risk for total knee arthroplasty after tibial plateau fractures: a systematic review",
+        "volume": "31",
+        "author": "Haslhofer",
+        "year": "2023",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc"
+      },
+      {
+        "key": "R12-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "3643",
+        "DOI": "10.1007/s00068-020-01525-8",
+        "article-title": "Tibial plateau fractures in Belgium: epidemiology, financial burden and costs curbing strategies",
+        "volume": "48",
+        "author": "Herteleer",
+        "year": "2022",
+        "journal-title": "Eur J Trauma Emerg Surg"
+      },
+      {
+        "key": "R13-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "685",
+        "DOI": "10.5312/wjo.v12.i9.685",
+        "article-title": "Machine learning in orthopaedic surgery",
+        "volume": "12",
+        "author": "Lalehzarian",
+        "year": "2021",
+        "journal-title": "World J Orthop"
+      },
+      {
+        "key": "R14-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "69",
+        "DOI": "10.1186/1748-5908-5-69",
+        "article-title": "Scoping studies: advancing the methodology",
+        "volume": "5",
+        "author": "Levac",
+        "year": "2010",
+        "journal-title": "Implement Sci"
+      },
+      {
+        "key": "R15-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "e125",
+        "DOI": "10.1016/S2665-9913(21)00324-6",
+        "article-title": "Prediction models for the risk of total knee replacement: development and validation using data from multicentre cohort studies",
+        "volume": "4",
+        "author": "Liu",
+        "year": "2022",
+        "journal-title": "Lancet Rheumatol"
+      },
+      {
+        "key": "R16-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "e323",
+        "DOI": "10.2196/jmir.5870",
+        "article-title": "Guidelines for developing and reporting machine learning predictive models in biomedical research: a multidisciplinary view",
+        "volume": "18",
+        "author": "Luo",
+        "year": "2016",
+        "journal-title": "J Med Internet Res"
+      },
+      {
+        "key": "R17-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "565",
+        "DOI": "10.1007/s00264-009-0790-5",
+        "article-title": "Tibial plateau fractures: functional outcome and incidence of osteoarthritis in 125 cases",
+        "volume": "34",
+        "author": "Manidakis",
+        "year": "2010",
+        "journal-title": "Int Orthop"
+      },
+      {
+        "key": "R18-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "1259",
+        "DOI": "10.2106/00004623-200207000-00026",
+        "article-title": "Articular fractures: does an anatomic reduction really change the result?",
+        "volume": "84",
+        "author": "Marsh",
+        "year": "2002",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "key": "R20-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "410",
+        "DOI": "10.1053/j.jfas.2018.09.004",
+        "article-title": "Machine learning accurately predicts short-term outcomes following open reduction and internal fixation of ankle fractures",
+        "volume": "58",
+        "author": "Merrill",
+        "year": "2019",
+        "journal-title": "J Foot Ankle Surg"
+      },
+      {
+        "key": "R21-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "e75",
+        "DOI": "10.1097/SLA.0000000000004078",
+        "article-title": "Global overview of response rates in patient and health care professional surveys in surgery: a systematic review",
+        "volume": "275",
+        "author": "Meyer",
+        "year": "2022",
+        "journal-title": "Ann Surg"
+      },
+      {
+        "key": "R23-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "526",
+        "DOI": "10.1080/17453674.2021.1932928",
+        "article-title": "Wide range of applications for machine-learning prediction models in orthopedic surgical outcome: a systematic review",
+        "volume": "92",
+        "author": "Ogink",
+        "year": "2021",
+        "journal-title": "Acta Orthop"
+      },
+      {
+        "key": "R24-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "544",
+        "DOI": "10.2106/JBJS.21.00341",
+        "article-title": "Feasibility of machine learning and logistic regression algorithms to predict outcome in orthopaedic trauma surgery",
+        "volume": "104",
+        "author": "Oosterhoff",
+        "year": "2022",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "key": "R25-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "4669",
+        "DOI": "10.1007/s00068-022-01981-4",
+        "article-title": "Development and internal validation of a clinical prediction model using machine learning algorithms for 90 day and 2 year mortality in femoral neck fracture patients aged 65 years or above",
+        "volume": "48",
+        "author": "Oosterhoff",
+        "year": "2022",
+        "journal-title": "Eur J Trauma Emerg Surg"
+      },
+      {
+        "key": "R26-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "370",
+        "DOI": "10.1016/j.injury.2017.11.014",
+        "article-title": "Predictors of osteoarthritis following operative treatment of medial tibial plateau fractures",
+        "volume": "49",
+        "author": "Parkkinen",
+        "year": "2018",
+        "journal-title": "Injury."
+      },
+      {
+        "key": "R27-20250827",
+        "first-page": "2825",
+        "article-title": "Scikit-learn: machine learning in Python",
+        "volume": "12",
+        "author": "Pedregosa",
+        "year": "2011",
+        "journal-title": "J Mach Learn Res"
+      },
+      {
+        "key": "R28-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "S15",
+        "DOI": "10.1016/j.injury.2021.02.006",
+        "article-title": "Primary total knee arthroplasty in tibial plateau fractures: literature review and our institutional experience",
+        "volume": "54",
+        "author": "Sabatini",
+        "year": "2023",
+        "journal-title": "Injury"
+      },
+      {
+        "key": "R29-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "386",
+        "DOI": "10.5435/JAAOS-D-16-00565",
+        "article-title": "Primary and secondary total knee arthroplasty for tibial plateau fractures",
+        "volume": "26",
+        "author": "Stevenson",
+        "year": "2018",
+        "journal-title": "J Am Acad Orthop Surg"
+      },
+      {
+        "key": "R30-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "2288",
+        "DOI": "10.1097/CORR.0000000000002266",
+        "article-title": "Functional outcome after nonoperative management of tibial plateau fractures in skeletally mature patients: what sizes of gaps and stepoffs can be accepted?",
+        "volume": "480",
+        "author": "Vaartjes",
+        "year": "2022",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "R31-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "2350",
+        "DOI": "10.1097/CORR.0000000000002283",
+        "article-title": "Patients with femoral neck fractures are at risk for conversion to arthroplasty after internal fixation: a machine-learning algorithm",
+        "volume": "480",
+        "author": "van de Kuit",
+        "year": "2022",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "R32-20250827",
+        "doi-asserted-by": "crossref",
+        "first-page": "144",
+        "DOI": "10.2106/JBJS.L.01691",
+        "article-title": "Risk of total knee arthroplasty after operatively treated tibial plateau fracture a matched-population-based cohort study",
+        "volume": "96",
+        "author": "Wasserstein",
+        "year": "2014",
+        "journal-title": "J Bone Joint Surg Am"
+      }
+    ],
+    "container-title": [
+      "Clinical Orthopaedics &amp; Related Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.lww.com/10.1097/CORR.0000000000003442",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          27
+        ]
+      ],
+      "date-time": "2025-08-27T20:00:42Z",
+      "timestamp": 1756324842000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.lww.com/10.1097/CORR.0000000000003442"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          12
+        ]
+      ]
+    },
+    "references-count": 29,
+    "journal-issue": {
+      "issue": "9",
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1097/corr.0000000000003442",
+    "relation": {},
+    "ISSN": [
+      "0009-921X",
+      "1528-1132"
+    ],
+    "issn-type": [
+      {
+        "value": "0009-921X",
+        "type": "print"
+      },
+      {
+        "value": "1528-1132",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          12
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2024-08-13",
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-02-07",
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

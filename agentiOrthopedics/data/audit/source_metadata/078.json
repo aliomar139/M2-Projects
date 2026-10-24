@@ -1,0 +1,730 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          23
+        ]
+      ],
+      "date-time": "2026-10-23T11:10:27Z",
+      "timestamp": 1792753827929,
+      "version": "4.5.0"
+    },
+    "reference-count": 36,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2018,
+              2,
+              26
+            ]
+          ],
+          "date-time": "2018-02-26T00:00:00Z",
+          "timestamp": 1519603200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2018,
+              2,
+              26
+            ]
+          ],
+          "date-time": "2018-02-26T00:00:00Z",
+          "timestamp": 1519603200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000051",
+        "name": "National Human Genome Research Institute",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "1R01HG008383-01A1"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "1R01HG008383-01A1"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000051",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000086",
+        "name": "Directorate for Mathematical and Physical Sciences",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "DMS-1402254"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "DMS-1402254"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000086",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "BMC Med Res Methodol"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1186/s12874-018-0482-1",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          26
+        ]
+      ],
+      "date-time": "2018-02-26T17:33:28Z",
+      "timestamp": 1519666408000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1832,
+    "title": [
+      "DeepSurv: personalized treatment recommender system using a Cox proportional hazards deep neural network"
+    ],
+    "prefix": "10.1186",
+    "volume": "18",
+    "author": [
+      {
+        "given": "Jared L.",
+        "family": "Katzman",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Uri",
+        "family": "Shaham",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alexander",
+        "family": "Cloninger",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jonathan",
+        "family": "Bates",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tingting",
+        "family": "Jiang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3035-071X",
+        "authenticated-orcid": false,
+        "given": "Yuval",
+        "family": "Kluger",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          26
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "482_CR1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "RW Y, EA S, DJ K, et al. Development and validation of a prediction rule for benefit and harm of dual antiplatelet therapy beyond 1 year after percutaneous coronary intervention. JAMA. 2016; 315(16):1735–49. \n                    https://doi.org/10.1001/jama.2016.3775\n                    \n                  .",
+        "DOI": "10.1001/jama.2016.3775"
+      },
+      {
+        "issue": "1",
+        "key": "482_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1186/1471-2288-13-1",
+        "volume": "13",
+        "author": "P Royston",
+        "year": "2013",
+        "unstructured": "Royston P, Altman DG. External validation of a cox prognostic model: principles and methods. BMC Med Res Methodol. 2013; 13(1):1.",
+        "journal-title": "BMC Med Res Methodol"
+      },
+      {
+        "issue": "4",
+        "key": "482_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "108",
+        "DOI": "10.1371/journal.pbio.0020108",
+        "volume": "2",
+        "author": "E Bair",
+        "year": "2004",
+        "unstructured": "Bair E, Tibshirani R. Semi-supervised methods to predict patient survival from gene expression data. PLoS Biol. 2004; 2(4):108.",
+        "journal-title": "PLoS Biol"
+      },
+      {
+        "issue": "181",
+        "key": "482_CR4",
+        "first-page": "181",
+        "volume": "5",
+        "author": "W-Y Cheng",
+        "year": "2013",
+        "unstructured": "Cheng W-Y, Yang T-HO, Anastassiou D. Development of a prognostic model for breast cancer survival in an open challenge environment. Sci Total Environ. 2013; 5(181):181–5018150.",
+        "journal-title": "Sci Total Environ"
+      },
+      {
+        "key": "482_CR5",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Cox DR. In: Kotz S, Johnson NL, (eds).Regression Models and Life-Tables. New York: Springer; 1992, pp. 527–41. \n                    https://doi.org/10.1007/978-1-4612-4380-9\n                    \n                  .",
+        "DOI": "10.1007/978-1-4612-4380-9"
+      },
+      {
+        "issue": "12",
+        "key": "482_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "1189",
+        "DOI": "10.1002/sim.4780131202",
+        "volume": "13",
+        "author": "K Liestbl",
+        "year": "1994",
+        "unstructured": "Liestbl K, Andersen PK, Andersen U. Survival analysis and neural nets. Stat Med. 1994; 13(12):1189–200.",
+        "journal-title": "Stat Med"
+      },
+      {
+        "key": "482_CR7",
+        "unstructured": "Street WN. A neural network model for prognostic prediction In: Kaufmann M, editor. Proceedings of the Fifteenth International Conference on Machine Learning. San Francisco: 1998. p. 540–46."
+      },
+      {
+        "key": "482_CR8",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Jerez JM, Franco L, Alba E, Llombart-Cussac A, Lluch A, Ribelles N, Munárriz B, Martín M. Improvement of breast cancer relapse prediction in high risk intervals using artificial neural networks. Breast Cancer Res Treat. 2005; 94(3):265–72. \n                    https://doi.org/10.1007/s10549-005-9013-y\n                    \n                  .",
+        "DOI": "10.1007/s10549-005-9013-y"
+      },
+      {
+        "issue": "10",
+        "key": "482_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "1169",
+        "DOI": "10.1002/(SICI)1097-0258(19980530)17:10<1169::AID-SIM796>3.0.CO;2-D",
+        "volume": "17",
+        "author": "E Biganzoli",
+        "year": "1998",
+        "unstructured": "Biganzoli E, Boracchi P, Mariani L, Marubini E. Feed forward neural networks for the analysis of censored survival data: a partial logistic regression approach. Stat Med. 1998; 17(10):1169–86.",
+        "journal-title": "Stat Med"
+      },
+      {
+        "issue": "1",
+        "key": "482_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "73",
+        "DOI": "10.1002/sim.4780140108",
+        "volume": "14",
+        "author": "D Faraggi",
+        "year": "1995",
+        "unstructured": "Faraggi D, Simon R. A neural network model for survival data. Stat Med. 1995; 14(1):73–82.",
+        "journal-title": "Stat Med"
+      },
+      {
+        "issue": "S8",
+        "key": "482_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "1636",
+        "DOI": "10.1002/1097-0142(20010415)91:8+<1636::AID-CNCR1176>3.0.CO;2-D",
+        "volume": "91",
+        "author": "DJ Sargent",
+        "year": "2001",
+        "unstructured": "Sargent DJ. Comparison of artificial neural networks with other statistical approaches. Cancer. 2001; 91(S8):1636–42.",
+        "journal-title": "Cancer"
+      },
+      {
+        "issue": "2",
+        "key": "482_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "243",
+        "DOI": "10.1016/S0167-9473(99)00098-5",
+        "volume": "34",
+        "author": "A Xiang",
+        "year": "2000",
+        "unstructured": "Xiang A, Lapuerta P, Ryutov A, Buckley J, Azen S. Comparison of the performance of neural network methods and cox regression for censored survival data. Comput Stat Data Anal. 2000; 34(2):243–57.",
+        "journal-title": "Comput Stat Data Anal"
+      },
+      {
+        "issue": "2",
+        "key": "482_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "167",
+        "DOI": "10.1023/A:1005765403093",
+        "volume": "44",
+        "author": "L Mariani",
+        "year": "1997",
+        "unstructured": "Mariani L, Coradini D, Biganzoli E, Boracchi P, Marubini E, Pilotti S, Salvadori B, Silvestrini R, Veronesi U, Zucali R, et al. Prognostic factors for metachronous contralateral breast cancer: a comparison of the linear cox regression model and its artificial neural network extension. Breast Cancer Res Treat. 1997; 44(2):167–78.",
+        "journal-title": "Breast Cancer Res Treat"
+      },
+      {
+        "key": "482_CR14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4757-3294-8",
+        "volume-title": "Modeling Survival Data : Extending the Cox Model",
+        "author": "T Therneau",
+        "year": "2000",
+        "unstructured": "Therneau T, Grambsch PM. Modeling Survival Data : Extending the Cox Model. New York: Springer; 2000."
+      },
+      {
+        "issue": "2",
+        "key": "482_CR15",
+        "first-page": "25",
+        "volume": "7",
+        "author": "H Ishwaran",
+        "year": "2007",
+        "unstructured": "Ishwaran H, Kogalur UB. Random survival forests for r. R News. 2007; 7(2):25–31.",
+        "journal-title": "R News"
+      },
+      {
+        "issue": "3",
+        "key": "482_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "841",
+        "DOI": "10.1214/08-AOAS169",
+        "volume": "2",
+        "author": "H Ishwaran",
+        "year": "2008",
+        "unstructured": "Ishwaran H, Kogalur UB, Blackstone EH, Lauer MS. Random survival forests. Ann Appl Statist. 2008; 2(3):841–60.",
+        "journal-title": "Ann Appl Statist"
+      },
+      {
+        "key": "482_CR17",
+        "unstructured": "Ranganath R, Perotte A, Elhadad N, Blei D. Deep survival analysis In: Doshi-Velez F, Fackler J, Kale D, Wallace B, Weins J, editors. Proceedings of the 1st Machine Learning for Healthcare Conference. Proceedings of Machine Learning Research, vol 56. Northeastern University, Boston, MA, USA: PMLR: 2016. p. 101–14. \n                    http://proceedings.mlr.press/v56/Ranganath16.html\n                    \n                  ."
+      },
+      {
+        "issue": "1",
+        "key": "482_CR18",
+        "first-page": "1929",
+        "volume": "15",
+        "author": "N Srivastava",
+        "year": "2014",
+        "unstructured": "Srivastava N, Hinton G, Krizhevsky A, Sutskever I, Salakhutdinov R. Dropout: A simple way to prevent neural networks from overfitting. J Mach Learn Res. 2014; 15(1):1929–58.",
+        "journal-title": "J Mach Learn Res"
+      },
+      {
+        "key": "482_CR19",
+        "unstructured": "Klambauer G, Unterthiner T, Mayr A, Hochreiter S. Self-normalizing neural networks. In: Advances in Neural Information Processing Systems: 2017. p. 972–81. arXiv preprint. \n                    1706.02515\n                    \n                  ."
+      },
+      {
+        "key": "482_CR20",
+        "unstructured": "Kingma D, Ba J. Adam: A method for stochastic optimization. Proceedings of the 3rd International Conference on Learning Representations (ICLR 2015). 2015. arXiv preprint arXiv:1412.6980. \n                    https://dare.uva.nl/search?identifier=a20791d3-1aff-464a-8544-268383c33a75\n                    \n                  ."
+      },
+      {
+        "issue": "1",
+        "key": "482_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "125",
+        "DOI": "10.1007/s10107-012-0629-5",
+        "volume": "140",
+        "author": "Y Nesterov",
+        "year": "2013",
+        "unstructured": "Nesterov Y. Gradient methods for minimizing composite functions. Math Program. 2013; 140(1):125–61.",
+        "journal-title": "Math Program"
+      },
+      {
+        "key": "482_CR22",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Senior A, Heigold G, Ranzato M, Yang K. An empirical study of learning rates in deep neural networks for speech recognition. In: Acoustics, Speech and Signal Processing (ICASSP), 2013 IEEE International Conference on Acoustics, Speech and Signal Processing. IEEE: 2013. p. 6724–8.",
+        "DOI": "10.1109/ICASSP.2013.6638963"
+      },
+      {
+        "issue": "1",
+        "key": "482_CR23",
+        "first-page": "281",
+        "volume": "13",
+        "author": "J Bergstra",
+        "year": "2012",
+        "unstructured": "Bergstra J, Bengio Y. Random search for hyper-parameter optimization. J Mach Learn Res. 2012; 13(1):281–305.",
+        "journal-title": "J Mach Learn Res"
+      },
+      {
+        "issue": "2",
+        "key": "482_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "143",
+        "DOI": "10.1002/sim.4780030207",
+        "volume": "3",
+        "author": "FE Harrell",
+        "year": "1984",
+        "unstructured": "Harrell FE, Lee KL, Califf RM, Pryor DB, Rosati RA. Regression modeling strategies for improved prognostic prediction. Stat Med. 1984; 3(2):143–52.",
+        "journal-title": "Stat Med"
+      },
+      {
+        "key": "482_CR25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4899-4541-9",
+        "volume-title": "An Introduction to the Bootstrap",
+        "author": "B Efron",
+        "year": "1993",
+        "unstructured": "Efron B, Tibshirani RJ. An Introduction to the Bootstrap. New York: Chapman & Hall; 1993."
+      },
+      {
+        "issue": "29",
+        "key": "482_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "3946",
+        "DOI": "10.1002/sim.5452",
+        "volume": "31",
+        "author": "PC Austin",
+        "year": "2012",
+        "unstructured": "Austin PC. Generating survival times to simulate cox proportional hazards models with time-varying covariates. Stat Med. 2012; 31(29):3946–58.",
+        "journal-title": "Stat Med"
+      },
+      {
+        "key": "482_CR27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/9780470258019",
+        "volume-title": "Applied Survival Analysis: Regression Modeling of Time to Event Data. 2nd ed",
+        "author": "DW Hosmer",
+        "year": "2008",
+        "unstructured": "Hosmer DW, Lemeshow S, May S. Applied Survival Analysis: Regression Modeling of Time to Event Data. 2nd ed. New York: Wiley-Interscience; 2008."
+      },
+      {
+        "issue": "3",
+        "key": "482_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "191",
+        "DOI": "10.7326/0003-4819-122-3-199502010-00007",
+        "volume": "122",
+        "author": "WA Knaus",
+        "year": "1995",
+        "unstructured": "Knaus WA, Harrell FE, Lynn J, Goldman L, Phillips RS, Connors AF, Dawson NV, Fulkerson WJ, Califf RM, Desbiens N, et al. The support prognostic model: objective estimates of survival for seriously ill hospitalized adults. Ann Intern Med. 1995; 122(3):191–203.",
+        "journal-title": "Ann Intern Med"
+      },
+      {
+        "issue": "7403",
+        "key": "482_CR29",
+        "doi-asserted-by": "crossref",
+        "first-page": "346",
+        "DOI": "10.1038/nature10983",
+        "volume": "486",
+        "author": "C Curtis",
+        "year": "2012",
+        "unstructured": "Curtis C, Shah SP, Chin S-F, Turashvili G, Rueda OM, Dunning MJ, Speed D, Lynch AG, Samarajiwa S, Yuan Y, et al. The genomic and transcriptomic architecture of 2,000 breast tumours reveals novel subgroups. Nature. 2012; 486(7403):346–52.",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "482_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "147",
+        "DOI": "10.1016/j.breast.2016.06.019",
+        "volume": "29",
+        "author": "R Lakhanpal",
+        "year": "2016",
+        "unstructured": "Lakhanpal R, Sestak I, Shadbolt B, Bennett GM, Brown M, Phillips T, Zhang Y, Bullman A, Rezo A. Ihc4 score plus clinical treatment score predicts locoregional recurrence in early breast cancer. The Breast. 2016; 29:147–52.",
+        "journal-title": "The Breast"
+      },
+      {
+        "issue": "3",
+        "key": "482_CR31",
+        "first-page": "636",
+        "volume": "60",
+        "author": "JA Foekens",
+        "year": "2000",
+        "unstructured": "Foekens JA, Peters HA, Look MP, Portengen H, Schmitt M, Kramer MD, Brünner N, Jänicke F, Meijer-van Gelder ME, Henzen-Logmans SC, et al. The urokinase system of plasminogen activation and prognosis in 2780 breast cancer patients. Cancer Res. 2000; 60(3):636–43.",
+        "journal-title": "Cancer Res"
+      },
+      {
+        "issue": "10",
+        "key": "482_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "2086",
+        "DOI": "10.1200/JCO.1994.12.10.2086",
+        "volume": "12",
+        "author": "M Schumacher",
+        "year": "1994",
+        "unstructured": "Schumacher M, Bastert G, Bojar H, Huebner K, Olschewski M, Sauerbrei W, Schmoor C, Beyerle C, Neumann R, Rauschecker H. Randomized 2 x 2 trial evaluating hormonal treatment and the duration of chemotherapy in node-positive breast cancer patients. german breast cancer study group. J Clin Oncol. 1994; 12(10):2086–93.",
+        "journal-title": "J Clin Oncol"
+      },
+      {
+        "issue": "4",
+        "key": "482_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "453",
+        "DOI": "10.1002/(SICI)1097-0258(20000229)19:4<453::AID-SIM350>3.0.CO;2-5",
+        "volume": "19",
+        "author": "DG Altman",
+        "year": "2000",
+        "unstructured": "Altman DG, Royston P. What do we mean by validating a prognostic model?Stat Med. 2000; 19(4):453–73.",
+        "journal-title": "Stat Med"
+      },
+      {
+        "key": "482_CR34",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Katzman JL. DeepSurv. GitHub. 2017. \n                    https://doi.org/10.5281/zenodo.1134133\n                    \n                  . \n                    https://github.com/jaredleekatzman/DeepSurv\n                    \n                  .",
+        "DOI": "10.5281/zenodo.1134133"
+      },
+      {
+        "issue": "5",
+        "key": "482_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "236",
+        "DOI": "10.1016/0041-5553(76)90154-3",
+        "volume": "16",
+        "author": "IM Sobol",
+        "year": "1976",
+        "unstructured": "Sobol IM. Uniformly distributed sequences with an additional uniform property. USSR Comput Math Math Phys. 1976; 16(5):236–42.",
+        "journal-title": "USSR Comput Math Math Phys"
+      },
+      {
+        "key": "482_CR36",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Fox BL. Algorithm 647: Implementation and relative efficiency of quasirandom sequence generators. ACM Trans Math Softw. 1986; 12(4):362–76. \n                    https://doi.org/10.1145/22721.356187\n                    \n                  .",
+        "DOI": "10.1145/22721.356187"
+      }
+    ],
+    "container-title": [
+      "BMC Medical Research Methodology"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1186/s12874-018-0482-1.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/article/10.1186/s12874-018-0482-1/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1186/s12874-018-0482-1.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2020,
+          5,
+          14
+        ]
+      ],
+      "date-time": "2020-05-14T10:52:21Z",
+      "timestamp": 1589453541000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-018-0482-1"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          26
+        ]
+      ]
+    },
+    "references-count": 36,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2018,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "482"
+    ],
+    "URL": "https://doi.org/10.1186/s12874-018-0482-1",
+    "relation": {},
+    "ISSN": [
+      "1471-2288"
+    ],
+    "issn-type": [
+      {
+        "value": "1471-2288",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          26
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "3 September 2017",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "7 February 2018",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "26 February 2018",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "Not applicable.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethics approval and consent to participate"
+        }
+      },
+      {
+        "value": "Not applicable.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Consent for publication"
+        }
+      },
+      {
+        "value": "The authors declare that they have no competing interests.",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      },
+      {
+        "value": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
+        "order": 4,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Publisher’s Note"
+        }
+      }
+    ],
+    "article-number": "24"
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          22
+        ]
+      ],
+      "date-time": "2026-10-22T07:16:19Z",
+      "timestamp": 1792653379419,
+      "version": "4.5.0"
+    },
+    "reference-count": 0,
+    "publisher": "American Psychological Association (APA)",
+    "issue": "1",
+    "funder": [
+      {
+        "DOI": "10.13039/501100001659",
+        "name": "German Research Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "LU 660/10-1"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "LU 660/10-1"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001659",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Journal of Consulting and Clinical Psychology"
+    ],
+    "DOI": "10.1037/ccp0000642",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          6,
+          24
+        ]
+      ],
+      "date-time": "2021-06-24T10:38:00Z",
+      "timestamp": 1624531080000
+    },
+    "page": "90-106",
+    "source": "Crossref",
+    "is-referenced-by-count": 122,
+    "title": [
+      "Prospective evaluation of a clinical decision support system in psychological therapy."
+    ],
+    "prefix": "10.1037",
+    "volume": "90",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-5141-3847",
+        "authenticated-orcid": false,
+        "given": "Wolfgang",
+        "family": "Lutz",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5521-2535",
+        "authenticated-orcid": false,
+        "given": "Anne-Katharina",
+        "family": "Deisenhofer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9625-6611",
+        "authenticated-orcid": false,
+        "given": "Julian",
+        "family": "Rubel",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Björn",
+        "family": "Bennemann",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3370-793X",
+        "authenticated-orcid": false,
+        "given": "Julia",
+        "family": "Giesemann",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1653-7772",
+        "authenticated-orcid": false,
+        "given": "Kaitlyn",
+        "family": "Poster",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4695-4953",
+        "authenticated-orcid": false,
+        "given": "Brian",
+        "family": "Schwartz",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "15",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          1
+        ]
+      ]
+    },
+    "container-title": [
+      "Journal of Consulting and Clinical Psychology"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://psycnet.apa.org/journals/ccp/90/1/90.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          5
+        ]
+      ],
+      "date-time": "2024-02-05T17:24:19Z",
+      "timestamp": 1707153859000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://doi.apa.org/doi/10.1037/ccp0000642"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          1
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "2021-58431-001",
+      "34166000"
+    ],
+    "URL": "https://doi.org/10.1037/ccp0000642",
+    "relation": {},
+    "ISSN": [
+      "1939-2117",
+      "0022-006X"
+    ],
+    "issn-type": [
+      {
+        "value": "1939-2117",
+        "type": "electronic"
+      },
+      {
+        "value": "0022-006X",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          1
+        ]
+      ]
+    }
+  }
+}

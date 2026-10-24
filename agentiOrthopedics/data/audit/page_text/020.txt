@@ -1,0 +1,1271 @@
+=== PDF PAGE 1 ===
+RESEARCH Open Access
+© The Author(s) 2025. Open Access  This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, 
+sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and 
+the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this 
+article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included 
+in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will 
+need to obtain permission directly from the copyright holder. To view a copy of this licence, visit  h t t p  : / /  c r e a  t i  v e c  o m m  o n s .  o r  g / l i c e n s e s / b y / 4 . 0 /.
+Stetter et al. Arthritis Research & Therapy          (2025) 27:229 
+https://doi.org/10.1186/s13075-025-03709-2
+Arthritis Research & Therapy
+†Stefan van Drongelen and Thorsten Stein share senior authorship.
+*Correspondence:
+Bernd J. Stetter
+bernd.stetter@kit.edu
+1Institute of Sports and Sports Science, Karlsruhe Institute of Technology, 
+Karlsruhe, Germany
+2Department of Sports Science, University of Kaiserslautern-Landau 
+(RPTU), Kaiserslautern, Germany
+3Function and Motion Lab, Berufsgenossenschaftliche Unfallklinik 
+Frankfurt, Frankfurt am Main, Germany
+4Department of Sport and Exercise Science, University of Salzburg, 
+Hallein, Salzburg, Austria
+5Dr. Rolf M. Schwiete Research Unit for Osteoarthritis, Department of 
+Trauma Surgery and Orthopedics, University Hospital Frankfurt, Goethe 
+University Frankfurt, Frankfurt am Main, Germany
+6Joint Center Black Forest, Hospital Neuenbuerg, Neuenbuerg, Germany
+Abstract
+This study aimed to identify subpopulations of patients with hip osteoarthritis who exhibit distinct adaptations in 
+gait biomechanics, and to evaluate subpopulation-specific effects of total hip replacement on gait biomechanics. 
+Three datasets were analyzed: (1) a cohort of 109 unilateral hip osteoarthritis patients before total hip replacement, 
+(2) a subset of the first dataset of 63 patients re-evaluated after total hip replacement and (3) a control group of 
+56 healthy individuals. For all participants, three-dimensional joint angle and moment waveforms of the pelvis, 
+ipsilateral hip and knee, as well as sagittal-plane ankle motion and the foot progression angle, were obtained. 
+The analytical framework integrated k-means clustering, support vector machine classifiers, Shapley Additive 
+exPlanations, and statistical waveform analyses. Clustering of the pre-operative dataset revealed three distinct 
+subpopulations characterized by unique patterns in gait kinematics and joint moments. These subpopulations also 
+differed in age, Kellgren-Lawrence score, and walking speed. Prior to total hip replacement, between 51.4% and 
+85.2% of hip osteoarthritis patients were classified as pathologic; following surgery, this proportion decreased to 
+27.8% − 51.8%. Hip flexion and rotation angles and moments were identified as the most important features for 
+patient classification. The magnitude of gait improvement after total hip replacement varied across subpopulations, 
+indicating subpopulation-specific responses to surgical intervention. In conclusion, patients with hip osteoarthritis 
+demonstrate distinct subpopulation-specific gait adaptations, both before and after total hip replacement. 
+Preoperative classification of patients into the identified subpopulations using machine learning approaches may 
+facilitate the prediction of postoperative gait recovery and support the development of personalized treatment and 
+rehabilitation strategies.
+Explainable machine learning for orthopedic 
+decision-making: predicting functional 
+outcomes of total hip replacement from gait 
+biomechanics
+Bernd J. Stetter1* , Jonas Dully1,2 , Felix Stief3 , Jana Holder4 , Hannah Steingrebe5 , Frank Zaucke5 , 
+Stefan Sell1,6 , Stefan van Drongelen5†  and Thorsten Stein1†
+
+=== PDF PAGE 2 ===
+Page 2 of 13
+Stetter et al. Arthritis Research & Therapy           (2025) 27:229 
+Introduction
+Hip osteoarthritis (OA) is a degenerative joint disease 
+and a major public health concern [ 1]. Its prevalence is 
+expected to increase due to demographic aging, as well as 
+rising obesity and injury rates [2]. Hip OA is a progressive 
+condition [3] and as it progresses, patients typically expe-
+rience a decline in quality of life [ 4]. When quality of life 
+becomes severely affected, total hip replacement is the 
+primary surgical treatment option [ 5]. Recent advances 
+in machine learning (ML) have created new opportuni -
+ties to enhance clinical decision-making in OA and joint 
+replacement [6, 7]. For instance, ML models haven been 
+used to predict patient dissatisfaction following total 
+knee replacement by combining clinical and imaging data 
+to identify individuals less likely to benefit from surgery 
+[6].
+Biomechanical alterations in gait kinematics and kinet -
+ics are well documented in patients with hip OA [ 8, 9]. 
+Many patients exhibit compensatory changes in hip kine-
+matics [ 8], while reductions in joint moments are par -
+ticularly characteristic for patients with end-stage hip 
+OA [ 9]. Although gait biomechanics generally improve 
+within one year after total hip replacement [ 10], some 
+limitations - such as decreased stride length and dimin -
+ished hip range of motion in the sagittal plane - often 
+persist [10, 11]. Walking speed, an important indicator of 
+functional capacity [ 12], typically recovers after surgery 
+[13]. However, postoperative adaptations are influenced 
+by preoperative gait patterns [ 14], meaning that certain 
+biomechanical effects may remain undetected when 
+using conventional analyses. Furthermore, most existing 
+studies have focused on discrete biomechanical param -
+eters (e.g. peak values or range of motion) rather than 
+continuous waveform data. Because these gait waveforms 
+contain hundreds of data points, they provide a more 
+comprehensive representation of movement patterns 
+[15].
+The high dimensionality of biomechanical waveforms 
+can be effectively addressed using ML-based analysis 
+techniques [ 16]. Machine learning enables the identi -
+fication of subgroups within complex datasets that are 
+internally similar but distinct to other groups, a process 
+known as clustering [ 17]. Previous studies used ML to 
+identify patient subpopulations exhibiting similar gait 
+compensating strategies [ 14] and to evaluate treatment 
+effects [ 18]. In a prior study from us, clustering based 
+on lower-body kinematics identified two characteristic 
+subpopulations among patients with hip OA, offering a 
+more nuanced understanding of movement biomechan -
+ics [ 14]. Extending this approach to a larger and more 
+diverse dataset, including variables like joint moments, 
+may uncover additional clinically meaningful subpopula -
+tions. Identifying and characterizing these biomechani -
+cal subpopulations could support optimized treatment 
+decisions and more personalized rehabilitation strategies 
+following total hip replacement [ 10, 14]. Machine learn -
+ing can facilitate this biomechanical characterization, 
+particularly because deviations from healthy gait can be 
+subtle [19]. Support vector machines (SVM), for example, 
+have demonstrated high sensitivity in detecting system -
+atic changes in gait biomechanics [ 20, 21]. Furthermore, 
+novel ML-derived metrics such as the classifier-oriented 
+gait score (COGS) [ 18] provide low-dimensional, clini -
+cally interpretable measures designed to support prac -
+tical clinical applications through assistive tools. Such 
+ML-based tools can automatically evaluate complex bio -
+mechanical gait data, providing clinicians with a more 
+streamlined, data-driven assessment of gait function [22]. 
+Despite growing integration of ML into biomechanical 
+research [15, 16], its clinical application remains limited 
+due to the black-box nature of many ML techniques [ 23]. 
+Consequently, explainable ML [ 24], focused on building 
+interpretable, white-box models, has gained increased 
+attention. Explainable ML has recently been applied to 
+understand biomechanical differences between patients 
+after total hip replacement and healthy participants from 
+classification models [25]. However, the combined use of 
+data-driven subpopulation identification based on gait 
+biomechanics and the subpopulation-specific assessment 
+of treatment effects using explainable ML has not yet 
+been explored.
+Therefore, the present study aimed to identify and 
+characterize subpopulations of patients who respond 
+differently to hip OA by exhibiting distinct adaptations 
+in gait kinematics and joint moments using clustering 
+techniques, SVMs and explainable ML. It was hypoth -
+esized that (1) the identified subpopulations would dif -
+fer in their patient characteristics and gait biomechanics 
+relative to healthy controls, and (2) total hip replacement 
+would lead to subpopulation-specific changes in patient 
+characteristics, gait biomechanics, and COGS.
+Methods
+Participants
+The analysis included three datasets drawn from our cur -
+rent and previous prospective studies [ 26–29]: one com-
+prising 109 unilateral hip osteoarthritis patients before 
+total hip replacement (HOA), a subset of 63 patients who 
+were re-examined 7–25 months after total hip replace -
+ment (THR), and a dataset of 56 healthy controls (HC). 
+The protocols for the original studies were approved 
+by local Medical Ethics Committee (reference number 
+122/14, 497/15 and 2021-52). A detailed description of 
+the three datasets is presented in Table 1.
+Data acquisition
+Biomechanical data were collected using a 3D motion 
+capturing system (8 MX T10 cameras, 200 Hz; Vicon 
+
+=== PDF PAGE 3 ===
+Page 3 of 13
+Stetter et al. Arthritis Research & Therapy           (2025) 27:229 
+Motion Systems Ltd., Oxford, United Kingdom) and 
+two AMTI force plates (1000 Hz; Advanced Mechani -
+cal Technology, Inc., Watertown, MA, USA). A modi -
+fied Plug-in-Gait marker set was applied, with additional 
+markers placed on the medial malleolus, medial femoral 
+condyle and trochanter major [ 30]. Marker trajectories 
+were reconstructed and smoothed using a Woltring filter 
+(mean square error = 10) within the Vicon Nexus soft -
+ware (version 2.12; Vicon Motion Systems, Oxford UK). 
+Kinematic and kinetic data were time-normalized to 101 
+datapoints for the stance phase of the gait cycle. Joint 
+moments were normalized to body mass and expressed 
+as external moments. For each participant, three barefoot 
+gait trials at self-selected walking speed were analyzed. 
+This represented the maximum number of valid trials 
+available across all participants, thereby ensuring consis -
+tency and comparability in the data [31, 32]. For the study 
+groups HOA and THR the affected leg was analyzed. To 
+maintain side-to-side balance between groups, the ratio 
+of left to right affected legs in the HOA group was used 
+to randomly assign the right or left leg for analysis in the 
+HC group.
+Data processing
+A visual overview of the study workflow is provided in 
+Figure 1. For each participant, 18 biomechanical wave -
+forms were averaged over the three trials, and the result -
+ing mean waveforms were used for subsequent analyses. 
+Kinematic (joint-angle) waveforms included pelvic tilt, 
+pelvic rotation, pelvic obliquity, hip flexion, hip adduc -
+tion, hip rotation, knee flexion, knee adduction, knee 
+rotation, ankle plantarflexion, and foot progression 
+angles. Kinetic (joint-moment) waveforms included 
+hip flexion, hip adduction, hip rotation, knee flexion, 
+knee adduction, knee rotation, and ankle plantarflex -
+ion moments. Because ML-models operate on abso -
+lute numerical values, z-standardization was performed 
+[33]. Specifically, the mean and standard deviation of the 
+HC group were used to standardize the HOA and THR 
+datasets, ensuring that all data were expressed within 
+the same dimensional space as the HC group. Princi -
+pal component analysis (PCA) was then applied to the 
+HOA dataset, represented as a data matrix of 109 par -
+ticipants, each described by 18 standardized waveforms 
+consisting of 101 time points (18 × 101 = 1818 variables). 
+Table 1 Descriptive data of the three investigated datasets
+HOA (N = 109) THR (N = 63) HC (N = 56)
+Sex (male/female) 56/53 34/29 23/33
+Age [years] 61.3 ± 10.7 62.4 ± 9.9 63.5 ± 7.6
+Body mass [kg] 80.5 ± 14.6 82.3 ± 13.7 69.0 ± 11.9
+Body height [m] 1.70 ± 0.09 1.72 ± 0.07 1.68 ± 0.09
+BMI [kg/m2] 27.7 ± 4.1 28.1 ± 4.0 24.2 ± 2.8
+Affected leg (Left/Right) 46/63 30/33 26/30
+Walking speed [m/s] 1.01 ± 0.19 1.17 ± 0.15 1.32 ± 0.15
+For the HC dataset, the variable affected leg represents the total number of left and right legs considered
+HOA Hip Osteoarthritis dataset, THR Total Hip Replacement dataset,  HC Healthy Controls dataset,  BMI Body Mass Index
+Fig. 1 Illustration of the machine learning workflow used to identify and characterize subpopulations of patients with hip osteoarthritis and to as -
+sess the subpopulation-specific effects of total hip replacement. Abbreviations: HOA = Hip Osteoarthritis dataset; THR = Total Hip Replacement dataset; 
+HC = Healthy Controls dataset; PCA = Principal Component Analysis; SVM = Support Vector Machine
+ 
+
+=== PDF PAGE 4 ===
+Page 4 of 13
+Stetter et al. Arthritis Research & Therapy           (2025) 27:229 
+In accordance with established approaches, the PCA 
+retention threshold was set at 90% cumulative variance 
+to achieve substantial dimensionality reduction while 
+retaining relevant biomechanical information [ 34, 35]. 
+Applied to the HOA dataset, this criterion resulted in 14 
+retained principal components (PCs) collectively explain-
+ing 90% of the total variance [ 14, 18]. The resulting PCs 
+provide a lower dimensional representation of the indi -
+vidual gait biomechanics. The applied PCA on the HOA 
+dataset yielded eigenvectors defining a reduced feature 
+space. The THR and HC datasets were subsequently 
+expressed into the same feature space by multiplying 
+their respective data matrices with the eigenvector matrix 
+derived from the HOA dataset. This procedure ensured 
+that all groups were represented within the identical fea -
+ture space, thereby allowing direct comparison and con -
+sistent use of components in subsequent modeling.
+Identification of subpopulations with hip OA
+Hierarchical clustering combined with k-means clus -
+tering was applied to the HOA dataset, following an 
+established approach for identifying subpopulations in 
+biomechanical data [14, 36]. The Ward method was used 
+within hierarchical clustering to determine the optimal 
+number of clusters [ 16]. Based on this, k-means cluster -
+ing was performed to identify patients in the different 
+subpopulations. To ensure robust results despite possible 
+variations from repeated runs, the k-means algorithm 
+was executed five times. The silhouette coefficients, 
+which measure how well each patient fits within their 
+assigned cluster, were evaluated for these clusters [37].
+Biomechanical characterization of subpopulations
+For each HOA subpopulation, a SVM with a linear func -
+tion was trained to discriminate between the specific sub-
+population and the HC, using a 10-fold-cross-validation. 
+To prioritize model explainability, the box constraint and 
+kernel scale were both set to 1, following the approach 
+used in the COGS study [ 18]. Classification rates were 
+defined as the percentage of individuals correctly classi -
+fied. The pathologic ratio was computed as the propor -
+tion of individuals within each subpopulation classified 
+as having HOA or THR relative to the total number of 
+individuals in that subpopulation. To further assess 
+model performance, sensitivity (true-positive rate; pro -
+portion of pathological cases correctly identified), speci -
+ficity (true-negative rate; proportion of healthy controls 
+correctly identified), and ROC-AUC (a unitless measure 
+of discriminative ability across all decision thresholds) 
+were calculated. The THR data from each subpopulation 
+were then projected into the corresponding SVM model 
+and evaluated to quantify the postoperative changes fol -
+lowing total hip replacement.
+Because PCs represent abstract features of the original 
+biomechanical waveforms, direct biomechanical inter -
+pretation of differences between the subpopulations and 
+HC is not possible. Therefore, Shapley Additive exPla -
+nations [38] were computed for each PC to identify the 
+most important biomechanical features contributing to 
+the SVM classifiers. The absolute Shapley value of each 
+PC was multiplied by the corresponding PC score, and 
+these weighted PCs were then multiplied by the eigen -
+vector matrix to reconstruct the original biomechanical 
+waveforms. The reconstructed waveforms were subse -
+quently scaled by their importance factor and the mean 
+of these reconstructed waveforms was used to quantify 
+the importance of each original biomechanical wave -
+form. These importance values were model-specific and 
+thus not directly comparable across subpopulations. A 
+higher importance value indicated greater contribution 
+of a given biomechanical waveform in distinguishing the 
+subpopulation from the HC group. For each subpopula -
+tion, the five most influential waveforms (i.e., those with 
+the highest importance values) were analyzed to biome -
+chanically characterize them.
+The COGS was computed to quantify the gait quality 
+in a low-dimensional space. This score was defined as the 
+orthogonal (minimal) distance of each participant to the 
+SVM hyperplane. More detailed descriptions and visual -
+ization are provided in Christian et al. [18].
+Statistical analysis
+All statistical analyses were performed in R (version 4.4.1, 
+R Foundation for Statistical Computing, Vienna, Austria) 
+[39]. Normality of all continuous variables was tested 
+using the Shapiro-Wilk test and visual inspection of the 
+Q-Q-plots, while homoscedasticity was evaluated using 
+the Levene test.
+Patient characteristics were compared both between 
+subpopulations and HC, and between HOA and THR. 
+Two separate one-way ANOVAs were performed to com-
+pare (1) the HOA subpopulations with the HC and (2) the 
+THR subpopulations with the HC, both for the variables 
+age, body height, body mass, BMI and walking speed. 
+Two separate Chi-squared tests were performed to com -
+pare the distribution of sex within HOA subpopulations 
+and within THR subpopulations. A Kruskal-Wallis H 
+test was used to compare the KL score of the affected leg 
+between HOA subpopulations. A two-way mixed model 
+ANOVA was conducted with time (HOA vs. THR) as the 
+within-subject factor and subpopulation as the between-
+subject factor to analyze changes in body mass, BMI and 
+walking speed. Only patients who participated in both 
+examinations were included in this repeated measure 
+analysis.
+For statistically significant ANOVA results, post-hoc 
+tests (paired, or unpaired t-tests as appropriate) were 
+
+=== PDF PAGE 5 ===
+Page 5 of 13
+Stetter et al. Arthritis Research & Therapy           (2025) 27:229 
+conducted with Bonferroni correction for multiple com -
+parisons. When data did not meet the assumptions of 
+parametric testing, the following non-parametric tests 
+were applied: Kruskal-Wallis H test (instead of one-way 
+ANOVA), Scheirer-Ray-Hare test (instead of two-way 
+repeated measures ANOVA), Wilcoxon signed-rank test 
+(instead of paired t-tests) and Mann-Whitney U test 
+(instead of unpaired t-tests).
+Statistical parametric mapping with the spm1d pack -
+age [40] was used to compare biomechanical waveforms. 
+Two comparisons were performed: (1) between each 
+identified HOA subpopulation as well as each THR sub -
+population and HC (unpaired t-tests) and (2) between 
+those participants represented in a subpopulation before 
+and after total hip replacement (HOA vs. THR, paired 
+t-tests).
+The change over time of the GOGS within the sub -
+populations (HOA vs. THR) was done with a paired t-test 
+for each of the subpopulations. COGS distributions were 
+visualized with violin plots using the seaborn package 
+[41] in Python (version 3.12, Python Software Founda -
+tion, Wilmington, Delaware, United States).
+For all statistical tests, a two-sided p-value of < 0.05 
+was considered statistically significant. Effect sizes were 
+calculated as follows: Cohen’s d for t-tests, eta squared 
+(η 2
+G) for ANOVAs and rank-biserial correlation (r) for 
+non-parametric tests. Unless otherwise stated, results 
+were reported as means with corresponding 95% confi -
+dence intervals (95% CI).
+Results
+Identification of subpopulations with hip OA
+A total of 14 PCs were required to explain 90% of 
+the variance across all biomechanical waveforms. 
+Hierarchical clustering of the HOA dataset identified 
+three distinct subpopulations, denoted as HOA1, HOA2, 
+and HOA3. These subpopulations comprised of 27, 42, 
+and 35 patients, respectively (Table  2). Five of the 109 
+HOA patients, two of whom were also included in the 
+THR group, could not be consistently assigned to any 
+single subpopulation and were therefore excluded from 
+subsequent subpopulation-based analyses. A graphical 
+representation of the three identified subpopulations is 
+provided in Figure 2.
+Patient characteristics of subpopulations with hip OA
+The patient characteristics of the three HOA subpopu -
+lations are presented in Table  2. The one-way ANOVA 
+showed a significant main effect for all patient charac -
+teristics. Detailed pairwise comparisons are provided in 
+the Supplementary Material (S.Table  1) and indicated 
+that the subpopulation HOA1 was significantly older 
+compared to HOA3 (64.9 [61.5, 68.3] years vs. 57.8 [53.8, 
+61.8] years, p = 0.023). HOA3 demonstrated a greater 
+body height than HOA2 (1.73 [1.70, 1.79] m vs. 1.68 
+[1.65, 1.70] m, p = 0.021). Sex distributions differed within 
+HOA subpopulations ( χ2(2) = 8.45; p = 0.015): HOA1, 
+15 male/12 female patients; HOA2, 15 male/27 female 
+patients; HOA3, 24 male/11 female patients. The KL 
+score of the affected leg differed within HOA subpopula -
+tions (H(2, 162) = 12.68; p = 0.002; η 2
+G = 0.11). Pairwise 
+comparisons showed that HOA2 had a lower KL score 
+(median = 3.0 [Interquartile range (IQR): 3–3]) compared 
+with HOA1(3.5 [IQR: 3–4], p = 0.002) and HOA3 (3.4 
+[IQR: 3–4], p = 0.003, S.Table 2). When compared to HC, 
+HOA3 was younger ( p = 0.038) and taller ( p = 0.031). All 
+HOA subpopulations demonstrated greater body mass 
+(p < 0.020), BMI ( p < 0.001) and lower walking speeds 
+(p < 0.001) than HC (S.Table 1).
+Table 2 Descriptive statistics for all subpopulations with the results of the one-way ANOVAs and the distribution tests
+Variable HOA1 HOA2 HOA3 THR1 THR2 THR3 HC ANOVA (HOA vs. HC) ANOVA (THR vs. HC)
+N 27 42 35 16 27 18 56 / /
+Age [years] 64.9  
+[61.5 68.3]
+61.8  
+[58.6 65.0]
+57.8  
+[53.8 61.8]
+64.2  
+[59.5 68.9]
+62.7  
+[58.6 66.9]
+60.2  
+[55.3 65.2]
+63.5  
+[61.5 65.5]
+F(3, 156) = 3.58;
+p = 0.015*;η 2
+G = 0.06
+F(3, 113) = 0.75;
+p = 0.524;η 2
+G = 0.02
+Body height [m] 1.71  
+[1.68 1.75]
+1.68  
+[1.65 1.70]
+1.73  
+[1.70 1.76]
+1.74  
+[1.70 1.79]
+1.70  
+[1.67 1.72]
+1.73  
+[1.70 1.76]
+1.68  
+[1.66 1.71]
+F(3, 156) = 3.25;
+p = 0.023*;η 2
+G = 0.06
+F(3, 113) = 3.33;
+p = 0.022*;η 2
+G = 0.08
+Body mass[kg] 84.1  
+[78.2 89.9]
+76.7  
+[72.1 81.3]
+82.3  
+[77.6 87.0]
+90.3  
+[83.1 97.5]
+79.0  
+[73.4 84.7]
+80.2  
+[74.9 85.5]
+69.0  
+[65.8 72.2]
+F(3, 156) = 10.68;
+p < 0.001*;η 2
+G = 0.17
+F(3, 113) = 13.96;
+p < 0.001*;η 2
+G = 0.27
+BMI [kg/m2] 28.6  
+[26.9 30.2]
+27.1  
+[25.8 28.5]
+27.5  
+[26.1 28.9]
+29.7  
+[27.6 31.8]
+27.5  
+[25.6 29.3]
+26.7  
+[25.2 28.3]
+24.2  
+[23.5 25.0]
+F(3, 156) = 10.62;
+p < 0.001*;η 2
+G = 0.17
+F(3, 113) = 13.96;
+p < 0.001*;η 2
+G = 0.27
+Walking speed 
+[m/s]
+0.98  
+[0.89 1.07]
+1.03  
+[0.98 1.08]
+1.03  
+[0.98 1.09]
+1.12  
+[1.02 1.22]
+1.16  
+[1.11 1.21]
+1.23  
+[1.15 1.31]
+1.32  
+[1.28 1.36]
+F(3, 156) = 36.98;
+p < 0.001*;η 2
+G = 0.42
+F(3, 113) = 11.16;
+p < 0.001*;η 2
+G = 0.23
+HOA1 HOA2 HOA3 THR1 THR2 THR3 Distribution Test 
+(HOA)
+Distribution Test 
+(THR)
+Sex [male/
+female]
+15/12 15/27 24/11 11/5 10/17 13/5 χ2(2) = 8.45;
+p = 0.015*
+χ2(2) = 6.91;
+p = 0.032*
+Values are mean and 95% Confidence Interval for all variables
+HOA Hip Osteoarthritis, THR Total Hip Replacement, HC Healthy Controls, N Number of individuals, BMI Body Mass Index, F Test-value for the parametric tests, 
+Generalized eta squared, χ2 Chi-squared test; Level of significance ≤ 0.05; *marks a significant result
+
+=== PDF PAGE 6 ===
+Page 6 of 13
+Stetter et al. Arthritis Research & Therapy           (2025) 27:229 
+Biomechanical characterization of subpopulations with hip 
+OA
+The classification results are presented in Table  3. Indi -
+vidual classification rates for the three HOA subpopu -
+lations ranged from 63.7% to 90.4%. The proportion of 
+patients classified as pathologic before total hip replace -
+ment varied between 51.4% and 85.2% for the HOA sub -
+populations and decreased to 27.8% to 51.8% after total 
+hip replacement. For the HOA subpopulations, sensi -
+tivity ranged from 0.486 to 0.815, specificity from 0.750 
+to 0.929, and ROC-AUC from 0.689 to 0.919. Following 
+total hip replacement, sensitivity decreased to 0.278 to 
+0.519, whereas specificity increased to 0.893 to 0.947, 
+with corresponding ROC-AUC values between 0.568 
+and 0.913. The five most influential biomechanical wave -
+forms, derived from the SVM-specific Shapley values, are 
+listed in Table 4.
+Figure 3 illustrates the time-dependent differences 
+from HC for these five key biomechanical waveforms of 
+the three subpopulations. Differences between HOA sub-
+populations and HC were observed over 74.9% to 100.0% 
+of the stance phase. HOA1 showed greater internal hip 
+rotation, higher hip and knee flexion, and lower sagit -
+tal and transversal hip moment ranges compared with 
+HC. HOA2 demonstrated higher external hip rotation, 
+lower hip flexion during early stance, lower hip exten -
+sion during late stance, lower knee flexion in early stance, 
+higher knee flexion in late stance, and lower hip sagittal 
+and transversal moment ranges relative to HC. HOA3 
+showed higher external hip rotation, reduced hip adduc -
+tion, higher hip flexion, reduced external knee rotation, 
+and increased pelvis anterior tilt compared with HC.
+Patient characteristics of subpopulations after total hip 
+replacement
+The patient characteristics for the three subpopulations 
+after total hip replacement (THR1, THR2, THR3) are 
+summarized in Table 2, with detailed post-hoc compari -
+sons provided in the Supplementary Materials (S.Table 
+3). THR1 patients were heavier than those in THR2 (90.3 
+Table 3 Classification results for the three subpopulations at the two examinations
+Subgroup Classification rate [%] Classified as HOA [N] Classified as HC [N] Pathologic ratio [%] Sensitivity Specificity ROC-AUC
+HOA1 90.4 23 4 85.2% 0.815 0.929 0.919
+HOA2 73.5 26 16 61.9% 0.595 0.839 0.777
+HOA3 63.7 18 17 51.4% 0.486 0.75 0.689
+THR1 / 7 9 43.8% 0.438 0.947 0.913
+THR2 / 14 13 51.9% 0.519 0.893 0.737
+THR3 / 5 13 27.8% 0.278 0.929 0.568
+HOA Hip Osteoarthritis,  THR Total Hip Replacement,  HC Healthy Controls,  N Number of individuals,  ROC-AUC Area Under the Receiver Operating Characteristic Curve
+Table 4 The five most important biomechanical waveforms for the three SVM that classify an individual as patient with hip 
+osteoarthritis. The number of the SVM corresponds to the HOA subpopulation.
+Importance SVM 1
+(0.05–9.57)
+SVM 2
+(0.15–3.62)
+SVM 3
+(0.19–3.83)
+1 Hip rotation angle (9.57) Hip flexion moment (3.62) Hip rotation angle (3.83)
+2 Hip flexion moment (8.43) Knee flexion angle (3.22) Hip abduction angle (3.13)
+3 Knee flexion angle (7.96) Hip rotation angle (3.04) Hip flexion angle (2.76)
+4 Hip flexion angle (6.17) Hip flexion angle (2.27) Knee rotation angle (2.76)
+5 Hip rotation moment (4.52) Hip rotation moment (1.62) Pelvic tilt (2.62)
+The numbers in brackets represent the range of the importance of all biomechanical waveforms in the subpopulation-specific SVM
+SVM Support Vector Machine
+Fig. 2 Two-dimensional visualization of the three identified subpopula -
+tions before total hip replacement based on the first two principal com -
+ponents (PC1 and PC2). Lines connect the outermost patients of each 
+subpopulation to enhance visualization. Subpopulation with hip osteoar -
+thritis HOA1 = blue, HOA2 = red, HOA3 = green
+ 
+
+=== PDF PAGE 7 ===
+Page 7 of 13
+Stetter et al. Arthritis Research & Therapy           (2025) 27:229 
+[83.1, 97.5] kg vs 79.0 [73.4, 84.7] kg, p = 0.041). Sex dis -
+tributions differed within THR subpopulations (χ2(2) 
+= 6.91; p = 0.032): THR1, 11 male/5 female; THR2, 10 
+male/17 female; THR3, 13 male/5 female. When com -
+pared to HC, all subpopulations still had greater body 
+mass (p < 0.008) and BMI (p < 0.002). THR3 reached the 
+greatest improvement in walking speed reaching 1.23 
+[1.15, 1.31] m/s), which was only slightly below the value 
+of HC (1.32 [1.28, 1.36] m/s, p = 0.120). THR1 and THR2 
+still had lower walking speeds (p < 0.002).
+When comparing pre- and post-surgical subpopula -
+tions (HOA vs. THR) (Table 5), THR2 showed increased 
+body mass and BMI (p = 0.002) relative to HOA2. All 
+subpopulations showed significant improvements in 
+walking speed after total hip replacement compared with 
+their HOA conditions (p < 0.003, S.Table 4).
+Biomechanical characteristics and COGS of subpopulations 
+after total hip replacement
+Figure 4 depicts the time-dependent differences in the 
+five most influential biomechanical waveforms between 
+HOA and THR subpopulations. Across all subpopula -
+tions, the waveforms demonstrated differences from 
+the HOA patterns, with changes trending towards the 
+HC patterns. For all biomechanical waveforms, THR1 
+and THR3 exhibited pronounced changes compared 
+to HOA, showing differences over 66.6 to 100% of the 
+stance phase. In contrast, THR2 showed fewer changes, 
+with the most notable differences occurring for the hip 
+rotation angle (over 69.5% of the stance phase), whereas 
+knee flexion angle and hip rotation moment differed only 
+over short periods of the stance phase (12.2% and 3.5%, 
+respectively).
+For all subpopulations, COGS increased from HOA to 
+THR (HOA1 vs THR1: t(15) = 5.22, p < 0.001; HOA2 vs 
+THR2: t(26) = 5.37, p < 0.001; HOA3 vs THR3: t(17) = 
+5.39, p < 0.001; Figure 5), indicating an overall improve -
+ment in gait quality following surgery. 
+Discussion
+This study aimed to identify and characterize subpopu -
+lations of patients with hip OA based on their distinct 
+adaptations in gait kinematics and joint moments, and 
+to evaluate how these subpopulations respond to total 
+hip replacement. The findings revealed three biome -
+chanically distinct subpopulations, each characterized 
+Fig. 3 Differences between the five most important biomechanical waveforms for the three subpopulations before total hip replacement (red; HOA1 
+(left), HOA2 (middle), HOA3 (right)) and healthy controls (blue; HC). Level of significance < 0.05; The grey-shaded areas indicate significant differences
+ 
+
+=== PDF PAGE 8 ===
+Page 8 of 13
+Stetter et al. Arthritis Research & Therapy           (2025) 27:229 
+Table 5 Descriptive statistics of the subpopulations with only the patients who were included in the pre- and post- surgery dataset as 
+well as the results for the two-way mixed model ANOVA (factors: subpopulation and time of measurement)
+Variable HOA1 HOA2 HOA3 THR1 THR2 THR3 ANOVA
+(SUB)
+ANOVA
+(Time)
+ANOVA 
+(Interaction)
+N 16 27 18 16 27 18
+Age [years] 63.1  
+[58.4 67.8]
+61.7  
+[57.6 65.8]
+59.0  
+[54.2 63.8]
+64.2  
+[59.5 68.9]
+62.7  
+[58.6 66.9]
+60.2  
+[55.3 65.2]
+F(2, 101) = 3.642);
+p = 0.030*;η 2
+G = 0.07
+Body height 
+[m]
+1.74  
+[1.70 1.77]
+1.70  
+[1.67 1.72]
+1.73  
+[1.70 1.76]
+1.74  
+[1.70 1.79]
+1.70  
+[1.67 1.72]
+1.73  
+[1.70 1.76]
+F(2, 101) = 3.86);
+p = 0.024*;η 2
+G = 0.07
+Body mass [kg] 89.23  
+[82.3 96.1]
+77.6  
+[72.3 83.0]
+79.6  
+[74.9 84.3]
+90.3  
+[83.1 97.5]
+79.0  
+[73.4 84.7]
+80.2  
+[74.9 85.5]
+F(2, 58) = 4.39);
+p = 0.017*;η 2
+G = 0.13
+F(1, 58) = 10.01);
+p = 0.002*;η 2
+G =  
+0.00
+F(2, 58) = 0.51);
+p = 0.602;η 2
+G =  
+0.00
+BMI [kg/m2] 29.4  
+[27.4 31.4]
+27.0  
+[25.3 28.7]
+26.6  
+[25.2 27.0]
+29.7  
+[27.6 31.8]
+27.5  
+[25.6 29.3]
+26.7  
+[25.2 28.3]
+F(2, 58) = 2.62);
+p = 0.082;η 2
+G = 0.08
+F(1, 58) = 7.19);
+p = 0.010*;η 2
+G =  
+0.00
+F(2, 58) = 0.52);
+p = 0.599;η 2
+G =  
+0.00
+Walking speed 
+[m/s]
+0.96  
+[0.84 1.09]
+1.05  
+[0.99 1.12]
+1.04  
+[0.96 1.11]
+1.12  
+[1.02 1.22]
+1.16  
+[1.11 1.21]
+1.23  
+[1.15 1.31]
+F(2, 58) = 1.69);
+p = 0.193;η 2
+G = 0.05
+F(1, 58) = 61.47);
+p < 0.001*;η 2
+G =  
+0.17
+F(2, 58) = 2.15);
+p = 0.125;η 2
+G =  
+0.01
+Values are mean and 95% Confidence Interval for all variables apart from Kellgren-Lawrence score, which is reported as mean and interquartile range
+HOA Hip Osteoarthritis, THR Total Hip Replacement, N Number of individuals, KL Kellgren-Lawrence score, BMI Body Mass Index, SUB Between subpopulation effect, 
+Time = within subpopulation effect; F = test-value for the parametric tests; η 2
+G= generalized eta squared, Level of significance ≤ 0.05; * marks a significant result
+Fig. 4 Differences between the five most important biomechanical waveforms for the three subpopulations before (red; HOA1 (left), HOA2 (middle), 
+HOA3 (right)) and after total hip replacement (green; THR1 (left), THR2 (middle), THR3 (right)). Level of significance ≤ 0.05; The grey-shaded areas indicate 
+significant differences. The blue lines represent the mean and standard deviation of the healthy controls (HC)
+ 
+
+=== PDF PAGE 9 ===
+Page 9 of 13
+Stetter et al. Arthritis Research & Therapy           (2025) 27:229 
+by unique gait biomechanics, patient characteristics, and 
+responses to total hip replacement. These results confirm 
+our hypotheses and underscore the heterogeneity of hip 
+OA, emphasizing the need for more personalized clinical 
+management
+Differences among subpopulations with hip OA
+Our data-driven approach identified three demographi -
+cally and biomechanically distinct hip OA subpopu -
+lations that differed in age, sex, radiographic disease 
+severity, body composition, and walking speed; all fac -
+tors known to influence both functional impairment and 
+surgical outcomes [ 42]. Specifically, HOA1 was the old -
+est subpopulation and had the highest KL score, whereas 
+HOA3 was the youngest, tallest, and had a lower KL 
+score than HOA1, but higher than HOA2. All subpopu -
+lations walked slower and had higher body mass and 
+BMI compared with HC. The identification of these sub -
+populations through data-driven clustering is plausible, 
+as patient characteristics age, body composition, and 
+walking speed are known to influence gait biomechan -
+ics [ 43], which served as the basis for clustering. These 
+insights emphasize that patients should not be catego -
+rized solely by radiographic severity, as demographic and 
+functional characteristics can provide additional insight 
+into disease manifestation and risk stratification [ 44–46]. 
+Age, body composition and walking speed, often under -
+emphasized in routine clinical evaluation, could enhance 
+the identification of high-risk individuals and guide more 
+individual treatment strategies as well as reduce unnec -
+essary interventions [ 47, 48]. Interestingly, the clustering 
+process, which did not include anthropometrics or sex 
+information, revealed one predominantly female (HOA2) 
+and one predominantly male (HOA3) subpopulation. 
+This aligns with previous studies [ 20, 49] reporting sex-
+specific gait patterns in OA patients, suggesting that our 
+workflow effectively captures biomechanical-relevant 
+features.
+ Regarding the classification based on gait biome -
+chanics, HOA1 showed the highest separability from 
+HC (classification rate of 90.4%), followed by HOA2 
+(73.5%) and HOA3 (63.7%), indicating distinct degrees 
+of deviations in gait biomechanics. These rates were 
+comparable or slightly lower than previously reported 
+[18, 20] likely reflecting milder gait alterations in HOA2 
+and HOA3. The lower rates of these groups supports 
+the idea that their biomechanical changes from HC are 
+less pronounced [ 21]. This is further supported by the 
+reduced sensitivity (true-positive rate) in the THR sub -
+populations, meaning fewer participants are classified as 
+pathological.
+ Of the 15 most influential biomechanical waveforms 
+identified (five per subpopulation), 11 originated from 
+the hip, three from the knee and one from the pelvis. 
+This distribution reflects the central role of hip mechan -
+ics in gait pathology. From a clinical perspective, the 
+subpopulation-specific adaptations observed here may 
+explain the variability in previous literature on com -
+pensatory strategies in hip kinematics and kinetics [ 10]. 
+Interestingly, both internal and external hip rotations 
+were observed: HOA1 displayed a flexed and internally 
+rotated hip; HOA2 showed and extended and externally 
+rotated hip; and HOA3 demonstrated a flexed and exter -
+nally rotated hip. These findings mirror the variability 
+found in an earlier meta-analysis regarding hip rotation 
+in hip OA [ 8] and provide a biomechanical rationale for 
+conflicting results. Notably, HOA3, comprising younger, 
+taller patients with moderate radiographic findings, dem-
+onstrated distinct gait adaptations including reduced hip 
+adduction and increased anterior pelvic tilt during late 
+stance [ 13, 50]. These biomechanical gait adaptations 
+may reflect compensatory mechanisms in younger, more 
+active individuals and highlight the need for earlier or 
+targeted interventions in this subpopulation to delay dis -
+ease progression or optimize surgical timing [51, 52].
+Subpopulation-specific functional improvement after total 
+hip replacement
+ All subpopulations demonstrated functional improve -
+ment following total hip replacement, particularly in 
+walking speed, with THR3 approaching the level of 
+healthy controls. Walking speed is a robust surrogate for 
+overall mobility and quality of life [ 12], underscoring the 
+effectiveness of total hip replacement in restoring func -
+tion across diverse subpopulations [53, 54]. The observed 
+post-surgery weight gain in THR2 warrants attention. 
+While often considered undesirable, such an increase 
+may indicate improved physical capacity or increased 
+Fig. 5 Violin-plot for the classifier-oriented gait score (GOGS) quantifying 
+gait function. The left side (light grey; HOA1, HOA2, HOA3) of each violin 
+are the subpopulation-specific COGS before and on the right side (dark 
+grey; THR1, THR2, THR3) are the subpopulation-specific COGS after total 
+hip replacement. Level of significance ≤ 0.05; * marks a significant result
+ 
+
+=== PDF PAGE 10 ===
+Page 10 of 13
+Stetter et al. Arthritis Research & Therapy           (2025) 27:229 
+muscle mass, both of which can enhance function [ 53, 
+55]. Nevertheless, this underscores the importance of 
+incorporating weight management and strength training 
+into postoperative rehabilitation protocols.
+Reductions in gait compensations, as quantified by the 
+COGS, further support the efficacy of total hip replace -
+ment in restoring biomechanical function. Clinically, 
+metrics like the COGS could enable standardized, auto -
+mated gait monitoring of rehabilitation progress and 
+facilitate data-driven treatment evaluation [18].
+ Biomechanical waveform analysis revealed overall 
+movement patterns shifting towards HC, consistent with 
+prior meta-analysis [ 10]. Interestingly, THR1, which was 
+initially the most impaired subpopulation, exhibited the 
+greatest biomechanical normalization, suggesting that 
+patients with more pronounced preoperative deficits 
+may derive larger relative benefits from surgery [ 42]. In 
+contrast, THR2, which presented milder impairments, 
+showed smaller postoperative changes, highlighting a 
+possible ceiling effect in patients with milder preopera -
+tive impairments [42].
+ Together, the results highlight the subpopulation-
+dependent nature of surgical recovery following total hip 
+replacement and support the clinical importance of tai -
+loring rehabilitation strategies to individual biomechani -
+cal adaptations to maximize functional gains.
+Implications for personalized hip OA therapy
+ The identification of subpopulation-specific adaptations 
+in gait kinematics and joint moments highlights oppor -
+tunities for advancing personalized treatment and reha -
+bilitation strategies in hip OA. Standardized treatment 
+protocols may not sufficiently address the heterogeneous 
+functional limitations and compensatory mechanisms 
+across patient subpopulations. For example, individu -
+als in HOA1 may benefit from interventions targeting 
+hip extension and reducing compensatory knee stiff -
+ness, while HOA2 may require rehabilitation strategies 
+to improve hip rotation control. Comprehensive bio -
+mechanical assessment before and after surgery could 
+enable clinicians to tailor interventions more precisely, 
+optimizing both short-term and long-term recovery [ 10, 
+56]. Moreover, the persistence of certain gait compensa -
+tions after total hip replacement underscores the need to 
+move beyond generic mobility training toward targeted 
+biomechanical retraining [ 57, 58]. In a realistic clini -
+cal setting, a potential workflow may involve automatic 
+classification of new patients with hip OA via their gait 
+analysis: gait data are automatically processed (normal -
+ization and PCA) and assigned to a subpopulation using 
+the clustering model (e.g. HOA2). Based on this classifi -
+cation, the COGS is calculated using the corresponding 
+SVM, and an estimation of likely functional improvement 
+after surgery can be made (e.g., moderate improvement 
+for HOA2 with certain complications). This prediction 
+can be used to suggest an individualized rehabilitation 
+protocol, for instance rotational control training and 
+weight management for a patient in HOA2. In this con -
+text, mobile measurement technologies could further 
+facilitate the collection of detailed biomechanical data to 
+advance the individual approach [ 59], while integration 
+with adjacent predictive systems (e.g. radiological fore -
+casting models [ 7, 60] or predicting postoperative com -
+plications [ 6, 61]) ultimately enhances the development 
+of more personalized therapeutic pathways [19].
+Limitations
+ Several limitations should be considered when inter -
+preting the results. First, sex differences within the 
+subpopulations were not explicitly analyzed due to lim -
+ited subgroup sizes and imbalanced sex distribution. 
+Although the subpopulations containing mainly male or 
+female patients showed consistent post-surgical changes, 
+future studies with larger and more balanced cohorts 
+and a more specific sex analysis might yield different 
+results [ 20, 49, 62]. Second, only the affected limb was 
+analyzed. While this approach ensured that clustering 
+reflected adaptations specific to the pathological joint, 
+it precluded analysis of contralateral compensations, 
+which are known to occur in hip OA and after surgery 
+[11, 63]. Including both legs in future studies (effectively 
+doubling the dataset) would allow characterization of 
+subpopulation-specific contralateral compensatory pat -
+terns, though care must be taken to avoid diluting pathol-
+ogy specific effects. Here, subpopulations driven by the 
+contralateral leg could be created, potentially misleading 
+therapeutic implications. Third, surgical factors such as 
+the operation surgeon, approach, and implant type could 
+influence surgical outcomes [64–67]. In the present study 
+data were collected over a 10- year period with multiple 
+surgeons involved and implant types used. However, post 
+hoc chi-squared tests revealed no uneven distribution of 
+these factors across the subpopulations (p >0.400). None-
+theless, standardized surgery studies (one surgeon and 
+same implant) could minimize these sources of variabil -
+ity. Another limitation concerns how well each patient 
+fits into their subpopulation. The silhouette values 
+obtained from k-means clustering were moderate, typi -
+cally above 0.25, suggesting a systematic but potentially 
+limited fit [ 37]. Finally, although nonlinear dimensional -
+ity-reduction methods or hyperparameter tuning could 
+improve ML model accuracy, such approaches might 
+compromise clinical interpretability, which is essential 
+for translational applications in healthcare.
+
+=== PDF PAGE 11 ===
+Page 11 of 13
+Stetter et al. Arthritis Research & Therapy           (2025) 27:229 
+Conclusion
+ This study identified clinically meaningful heterogeneity 
+among patients with hip OA, underscoring the potential 
+of gait biomechanics to inform individualized treatment 
+decisions and guide postoperative rehabilitation. The 
+observed subpopulation-specific differences in gait adap -
+tations and surgical responses highlight the potential of 
+ML-based classification to support a more personalized 
+approach to hip OA management. Integrating biome -
+chanical gait data and explainable ML into clinical prac -
+tice could enhance outcome prediction, enable tailored 
+interventions, and ultimately improve quality of life for 
+patients undergoing total hip replacement.
+Supplementary Information
+The online version contains supplementary material available at  h t t p  s : /  / d o i  . o  r 
+g /  1 0 .  1 1 8 6  / s  1 3 0 7 5 - 0 2 5 - 0 3 7 0 9 - 2.
+Supplementary Material 1
+Code availability
+The GitHub repository  h t t p  s : /  / g i t  h u  b . c  o m /  j d u l  l y  7 4 /  H O A  _ c l a  s s  i fi   e r / t r e e / m a i 
+n provides the data, pretrained models, and functions needed to classify and 
+evaluate new patients into the predefined subpopulations. The full codebase 
+is not publicly available but may be shared with qualified researchers upon 
+reasonable request to the corresponding author.
+Declaration of generative AI and AI-assisted technologies
+During the preparation of this work the authors used OpenAI’s ChatGPT to 
+improve readability and language, specifically to refine phrasing and improve 
+clarity. After using this tool, the authors reviewed and edited the content as 
+needed and take full responsibility for the content of the publication.
+Authors’ contributions
+Conceptualization, BJS, FS, SvD, and TS; methodology, BJS, JD, SvD, and TS; 
+validation, BJS, and JD; formal analysis, BJS, and JD; investigation, BJS., and JD; 
+resources, SS, and TS; data curation, BJS, JD, FS, and SvD; writing-original draft 
+preparation, BJS, JD, and SvD; writing-review and editing, BJS, JD, FS, JH, HS, 
+FZ, SS, SvD, and TS; visualization, BJS, and JD; supervision, FS, FZ, SS, SvD, and 
+TS; project administration, BJS, SvD, and TS. Final approval of the article, BJS, 
+JD, FS, JH, HS, FZ, SS, SvD, and TS.
+Funding
+Open Access funding enabled and organized by Projekt DEAL. This study was 
+supported by the Deutsche Forschungsgemeinchaft (DFG, German Research 
+Foundation) under project number 492686079. The funding agency had no 
+role in the study design, data collection, data analysis, manuscript preparation, 
+or decision to submit for publication. The authors declare no conflicts of 
+interest related to this funding source.
+Data availability
+The datasets analyzed during the current study are not publicly available due 
+to patient privacy restrictions but are available from the corresponding author 
+on reasonable request.
+Declarations
+Ethics approval and consent to participate
+This work comprises a secondary analysis of datasets collected in previous 
+prospective studies. The protocols for those original studies were approved 
+by the local Medical Ethics Committee (reference number 122/14, 497/15 and 
+2021-52), and written informed consent was obtained from all participants 
+prior to enrollment. The present analysis used de-identified data; no new 
+participant contact or interventions were undertaken. All procedures were 
+conducted in accordance with the Declaration of Helsinki and relevant 
+institutional and national regulations.
+Consent for publication
+Not applicable.
+Competing interests
+The authors declare no competing interests.
+Received: 26 June 2025 / Accepted: 30 November 2025
+References
+1. Hunter DJ, Bierma-Zeinstra S. Osteoarthritis. Lancet. 2019;393:1745–59.  h t t p  s : 
+/  / d o i  . o  r g /  1 0 .  1 0 1 6  / S  0 1 4 0 - 6 7 3 6 ( 1 9 ) 3 0 4 1 7 - 9.
+2. Cieza A, et al. Global estimates of the need for rehabilitation based on the 
+global burden of disease study 2019: a systematic analysis for the global 
+burden of disease study 2019. Lancet. 2021;396:2006–17.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 
+0 1 6  / S  0 1 4 0 - 6 7 3 6 ( 2 0 ) 3 2 3 4 0 - 0.
+3. Lespasio MJ, et al. Hip osteoarthritis: a primer. Perm J. 2018.  h t t p  s : /  / d o i  . o  r g /  1 0 
+.  7 8 1 2  / T  P P / 1 7 - 0 8 4.
+4. van der Waal JM, Terwee CB, van der Windt DAWM, Bouter LM, Dekker J. The 
+impact of non-traumatic hip and knee disorders on health-related quality of 
+life as measured with the SF-36 or SF-12. A systematic review. Qual Life Res. 
+2005;14:1141–55.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 0 7  / s  1 1 1 3 6 - 0 0 4 - 4 5 9 9 - 9.
+5. Mercieca-Bebber R, King MT, Calvert MJ, Stockler MR, Friedlander M. The 
+importance of patient-reported outcomes in clinical trials and strategies for 
+future optimization. Patient Relat Outcome Meas. 2018;9:353–67.  h t t p  s : /  / d o i  . 
+o  r g /  1 0 .  2 1 4 7  / P  R O M . S 1 5 6 2 7 9.
+6. Liu X, Liu Y, Lee ML, Hsu W, Liow MHL. Identifying who are unlikely to benefit 
+from total knee arthroplasty using machine learning models. NPJ Digit Med. 
+2024;7:266.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 3 8  / s  4 1 7 4 6 - 0 2 4 - 0 1 2 6 5 - 8.
+7. Hoyer G, et al. Foundations of a knee joint digital twin from qMRI biomarkers 
+for osteoarthritis and knee replacement. NPJ Digit Med. 2025;8:118.  h t t p  s : /  / d 
+o i  . o  r g /  1 0 .  1 0 3 8  / s  4 1 7 4 6 - 0 2 5 - 0 1 5 0 7 - 3.
+8. Steingrebe H, Spancken S, Sell S, Stein T. Effects of hip osteoarthritis on lower 
+body joint kinematics during locomotion tasks: a systematic review and 
+meta-analysis. Front Sports Act Living. 2023;5:1197883.  h t t p  s : /  / d o i  . o  r g /  1 0 .  3 3 8 
+9  / f  s p o r . 2 0 2 3 . 1 1 9 7 8 8 3.
+9. Diamond LE, Allison K, Dobson F, Hall M. Hip joint moments during walking 
+in people with hip osteoarthritis: a systematic review and meta-analysis. 
+Osteoarthritis Cartilage. 2018;26:1415–24.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  / j  . j o c a . 2 0 1 8 . 
+0 3 . 0 1 1.
+10. Bahl JS, et al. Biomechanical changes and recovery of gait function after total 
+hip arthroplasty for osteoarthritis: a systematic review and meta-analysis. 
+Osteoarthritis Cartilage. 2018;26:847–63.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  / j  . j o c a . 2 0 1 8 . 0 
+2 . 8 9 7.
+11. Wesseling M, Meyer C, Corten K, Desloovere K, Jonkers I. Longitudinal joint 
+loading in patients before and up to one year after unilateral total hip arthro-
+plasty. Gait Posture. 2018;61:117–24.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  / j  . g a  i t p  o s t .  2 0  1 8 . 0 
+1 . 0 0 2.
+12. Middleton A, Fritz SL, Lusardi M. Walking speed: the functional vital sign. J 
+Aging Phys Act. 2015;23:314–22.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 1 2 3  / j  a p a . 2 0 1 3 - 0 2 3 6 .
+13. Miki H, et al. Recovery of walking speed and symmetrical movement 
+of the pelvis and lower extremity joints after unilateral THA. J Biomech. 
+2004;37:443–55.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  / j  . j b  i o m  e c h .  2 0  0 3 . 0 9 . 0 0 9.
+14. van Drongelen S. Identification of patients with similar gait compensat-
+ing strategies due to unilateral hip osteoarthritis and the effect of total hip 
+replacement: a secondary analysis. J Clin Med. 2021.  h t t p  s : /  / d o i  . o  r g /  1 0 .  3 3 9 0  / j  
+c m 1 0 1 0 2 1 6 7.
+15. Halilaj E, et al. Machine learning in human movement biomechanics: best 
+practices, common pitfalls, and new opportunities. J Biomech. 2018;81:1–11.  
+h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  / j  . j b  i o m  e c h .  2 0  1 8 . 0 9 . 0 0 9.
+16. Stetter BJ, Stein T. Machine learning in biomechanics: Enhancing human 
+movement analysis. In: Dindorf C, Bartaguiz E, Gassmann F, Fröhlich M, edi-
+tors. Artificial Intelligence in Sports, Movement, and Health. 1st ed. Cham: 
+Springer Nature Switzerland; Imprint Springer; 2024. p. 139–60.  h t t p  s : /  / d o i  . o  
+r g /  1 0 .  1 0 0 7  / 9  7 8 -  3 - 0  3 1 - 6  7 2  5 6 - 9 _ 9. Published 3 Sept2024, Print  I S B N 9 7 8 - 3 - 0 3 
+1 - 6 7 2 5 5 - 2 , Online ISBN978-3-031-67256-9.
+
+=== PDF PAGE 12 ===
+Page 12 of 13
+Stetter et al. Arthritis Research & Therapy           (2025) 27:229 
+17. Ezugwu AE, et al. A comprehensive survey of clustering algorithms: state-
+of-the-art machine learning applications, taxonomy, challenges, and future 
+research prospects. Eng Appl Artif Intell. 2022;110:104743.  h t t p  s : /  / d o i  . o  r g /  1 0 .  
+1 0 1 6  / j  . e n  g a p  p a i .  2 0  2 2 . 1 0 4 7 4 3.
+18. Christian J, et al. Computer aided analysis of gait patterns in patients with 
+acute anterior cruciate ligament injury. Clin Biomech. 2016;33:55–60.  h t t p  s : /  / 
+d o i  . o  r g /  1 0 .  1 0 1 6  / j  . c l  i n b  i o m e  c h  . 2 0 1 6 . 0 2 . 0 0 8.
+19. Lee LS. Artificial intelligence in diagnosis of knee osteoarthritis and prediction 
+of arthroplasty outcomes: a review. Arthroplasty. 2022;4:16.  h t t p  s : /  / d o i  . o  r g /  1 0 
+.  1 1 8 6  / s  4 2 8 3 6 - 0 2 2 - 0 0 1 1 8 - 7.
+20. Phinyomark A, Osis ST, Hettinga BA, Kobsar D, Ferber R. Gender differences 
+in gait kinematics for patients with knee osteoarthritis. BMC Musculoskelet 
+Disord. 2016;17:157.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 1 8 6  / s  1 2 8 9 1 - 0 1 6 - 1 0 1 3 - z.
+21. Laroche D, et al. A classification study of kinematic gait trajectories in hip 
+osteoarthritis. Comput Biol Med. 2014;55:42–8.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  / j  . c o  m 
+p b  i o m e  d .  2 0 1 4 . 0 9 . 0 1 2.
+22. Figueiredo J, Santos CP , Moreno JC. Automatic recognition of gait patterns 
+in human motor disorders using machine learning: a review. Med Eng Phys. 
+2018;53:1–12.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  / j  . m e  d e n  g p h y  . 2  0 1 7 . 1 2 . 0 0 6.
+23. European Data Protection Supervisor, Attoresi M, Bernardo V, Lareo X, Velasco 
+L. TechDispatch – Explainable artificial intelligence. #2/2023. Publications 
+Office of the European Union. 2023.  h t t p  s : /  / d o i  . o  r g /  1 0 .  2 8 0 4  / 8  0 2 0 4 3.
+24. Linardatos P , Papastefanopoulos V, Kotsiantis S. Explainable AI: a review of 
+machine learning interpretability methods. Entropy. 2020.  h t t p  s : /  / d o i  . o  r g /  1 0 .  
+3 3 9 0  / e  2 3 0 1 0 0 1 8.
+25. Dindorf C, Teufl W, Taetz B, Bleser G, Fröhlich M. Interpretability of input 
+representations for gait classification in patients after total hip arthroplasty. 
+Sensors. 2020.  h t t p  s : /  / d o i  . o  r g /  1 0 .  3 3 9 0  / s  2 0 1 6 4 3 8 5.
+26. Stief F, et al. Abnormal loading of the hip and knee joints in unilateral hip 
+osteoarthritis persists two years after total hip replacement. J Orthop Res. 
+2018.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 0 2  / j  o r . 2 3 8 8 6.
+27. van Drongelen S, Stetter B, Stief F, Meurer A, Böhm H. Preoperative gait com-
+pensation patterns in unilateral hip osteoarthritis patients: do they persist 
+one year postoperatively? Gait Posture. 2020;81:371–2.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 
+6  / j  . g a  i t p  o s t .  2 0  2 0 . 0 8 . 0 8 5.
+28. van Drongelen S, et al. Are changes in radiological leg alignment and femoral 
+parameters after total hip replacement responsible for joint loading during 
+gait? BMC Musculoskelet Disord. 2019;20:526.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 1 8 6  / s  1 2 8 9 
+1 - 0 1 9 - 2 8 3 2 - 5.
+29. Schmidt A, et al. Unilateral hip osteoarthritis: the effect of compensation 
+strategies and anatomic measurements on frontal plane joint loading. J 
+Orthop Res. 2017;35:1764–73.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 0 2  / j  o r . 2 3 4 4 4.
+30. Stief F, Böhm H, Michel K, Schwirtz A, Döderlein L. Reliability and accuracy in 
+three-dimensional gait analysis: a comparison of two lower body protocols. J 
+Appl Biomech. 2013;29:105–11.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 1 2 3  / j  a b . 2 9 . 1 . 1 0 5.
+31. van Rossom S, et al. The biomechanical fingerprint of hip and knee osteoar-
+thritis patients during activities of daily living. Clin Biomech. 2023;101:105858.  
+h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  / j  . c l  i n b  i o m e  c h  . 2 0 2 2 . 1 0 5 8 5 8.
+32. Meyer CAG, et al. Biomechanical gait features associated with hip osteo-
+arthritis: towards a better definition of clinical hallmarks. J Orthop Res. 
+2015;33:1498–507.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 0 2  / j  o r . 2 2 9 2 4.
+33. Christian J, Kröll J, Schwameder H. Comparison of the classifier oriented gait 
+score and the gait profile score based on imitated gait impairments. Gait 
+Posture. 2017;55:49–54.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  / j  . g a  i t p  o s t .  2 0  1 7 . 0 4 . 0 0 7.
+34. Deluzio KJ, Astephen JL. Biomechanical features of gait waveform data 
+associated with knee osteoarthritis: an application of principal component 
+analysis. Gait Posture. 2007;25:86–93.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  / j  . g a  i t p  o s t .  2 0  0 6 . 
+0 1 . 0 0 7.
+35. Daffertshofer A, Lamoth CJC, Meijer OG, Beek PJ. PCA in studying coordina-
+tion and variability: a tutorial. Clin Biomech. 2004;19:415–28.  h t t p  s : /  / d o i  . o  r g /  1 
+0 .  1 0 1 6  / j  . c l  i n b  i o m e  c h  . 2 0 0 4 . 0 1 . 0 0 5.
+36. Sánchez N, et al. Multi-site identification and generalization of clusters of 
+walking behaviors in individuals with chronic stroke and neurotypical con-
+trols. Neurorehabil Neural Repair. 2023;37:810–22.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 1 7 7  / 1  5 
+4 5 9 6 8 3 2 3 1 2 1 2 8 6 4.
+37. Gentle JE, Kaufman L, Rousseuw PJ. Finding groups in data: an introduction 
+to cluster analysis. Biometrics. 1991;47:788.  h t t p  s : /  / d o i  . o  r g /  1 0 .  2 3 0 7  / 2  5 3 2 1 7 8.
+38. Lundberg S, Lee S-I. A unified approach to interpreting model predictions. 
+2017.  h t t p  s : /  / d o i  . o  r g /  1 0 .  4 8 5 5  0 /  a r X i v . 1 7 0 5 . 0 7 8 7 4.
+39. R Core Team. R: A language and environment for statistical computing. Avail-
+able at (Vienna, Austria, 2024). https://www.R-project.org/.
+40. Pataky TC, Vanrenterghem J, Robinson MA. Zero- vs. one-dimensional, 
+parametric vs. non-parametric, and confidence interval vs. hypothesis testing 
+procedures in one-dimensional Biomechanical trajectory analysis. J Biomech. 
+2015;48:1277–85.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  / j  . j b  i o m  e c h .  2 0  1 5 . 0 2 . 0 5 1.
+41. Waskom ML. Seaborn: statistical data visualization. J Open Source Softw. 
+2021;6:3021.  h t t p  s : /  / d o i  . o  r g /  1 0 .  2 1 1 0  5 /  j o s s . 0 3 0 2 1.
+42. Lunn DE, Chapman GJ, Redmond AC. Hip kinematics and kinetics in total hip 
+replacement patients stratified by age and functional capacity. J Biomech. 
+2019;87:19–27.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  / j  . j b  i o m  e c h .  2 0  1 9 . 0 2 . 0 0 2.
+43. Kiss RM. Effect of walking speed and severity of hip osteoarthritis on gait 
+variability. J Electromyogr Kinesiol. 2010;20:1044–51.
+44. Yang Q, et al. An interpretable machine learning approach for predicting 
+and grading hip osteoarthritis using gait analysis. BMC Musculoskelet Disord. 
+2025;26:580.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 1 8 6  / s  1 2 8 9 1 - 0 2 5 - 0 8 9 1 1 - 6.
+45. Davis EM, Hubley-Kozey CL, Ikeda D, Stanish WD, Astephen Wilson JL. 
+Changes in gait kinetics precede structural joint changes in individuals with 
+moderate knee osteoarthritis. Osteoarthritis Cartilage. 2017;25:S113–4.  h t t p  s : /  
+/ d o i  . o  r g /  1 0 .  1 0 1 6  / j  . j o c a . 2 0 1 7 . 0 2 . 1 8 3.
+46. Subasinghe Arachchige RSS, et al. Stage-specific gait deviations in individuals 
+with hip osteoarthritis. Gait Posture. 2025;120:226–33.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  
+/ j  . g a  i t p  o s t .  2 0  2 5 . 0 4 . 0 2 5.
+47. Munugoda IP , et al. The association between ambulatory activity, body 
+composition and hip or knee joint replacement due to osteoarthritis: a 
+prospective cohort study. Osteoarthritis Cartilage. 2018;26:671–9.  h t t p  s : /  / d o i  . 
+o  r g /  1 0 .  1 0 1 6  / j  . j o c a . 2 0 1 8 . 0 2 . 8 9 5.
+48. Zhang C, et al. Causal association between sarcopenia-related traits and 
+osteoarthritis: a bidirectional 2-sample Mendelian randomization study. 
+Medicine. 2025;104:e43069.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 9 7  / M  D . 0  0 0 0  0 0 0 0  0 0  0 4 3 0 6 9.
+49. Prieto-Alhambra D, et al. Incidence and risk factors for clinically diagnosed 
+knee, hip and hand osteoarthritis: influences of age, gender and osteoarthri-
+tis affecting other joints. Ann Rheum Dis. 2014;73:1659–64.  h t t p  s : /  / d o i  . o  r g /  1 0 
+.  1 1 3 6  / a  n n r  h e u  m d i s  - 2  0 1 3 - 2 0 3 3 5 5.
+50. Schmitt D, Vap A, Queen RM. Effect of end-stage hip, knee, and ankle osteoar-
+thritis on walking mechanics. Gait Posture. 2015;42:373–9.  h t t p  s : /  / d o i  . o  r g /  1 0 .  
+1 0 1 6  / j  . g a  i t p  o s t .  2 0  1 5 . 0 7 . 0 0 5.
+51. Wesseling M, et al. Gait alterations to effectively reduce hip contact forces. J 
+Orthop Res. 2015;33:1094–102.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 0 2  / j  o r . 2 2 8 5 2.
+52. Mullerpatan R, Shetty T, Agarwal B. Influence of age and gender on gait 
+kinematics of pelvis and hip in healthy adults aged 19–60 years. Front Bioeng 
+Biotechnol. 2024;12:1515583.  h t t p  s : /  / d o i  . o  r g /  1 0 .  3 3 8 9  / f  b i o e . 2 0 2 4 . 1 5 1 5 5 8 3.
+53. Courtine M, et al. Functional recovery after total hip/knee replacement in 
+obese people: a systematic review. Ann Phys Rehabil Med. 2023;66:101710.  h t 
+t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  / j  . r e  h a b  . 2 0 2  2 .  1 0 1 7 1 0.
+54. Monaghan B, et al. Randomised controlled trial to evaluate a physiotherapy-
+led functional exercise programme after total hip replacement. Physiother-
+apy. 2017;103:283–8.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  / j  . p h  y s i  o . 2 0  1 6  . 0 1 . 0 0 3.
+55. Weißenberger M, et al. Does body mass index (BMI) affect the reconstruction 
+of biomechanical parameters in patients undergoing total hip replacement 
+(THR) through the direct anterior approach (DAA)? J Clin Med. 2024.  h t t p  s : /  / d 
+o i  . o  r g /  1 0 .  3 3 9 0  / j  c m 1 3 0 2 0 4 6 7.
+56. Ippolito G, et al. Direct anterior approach for total hip arthroplasty: hip bio-
+mechanics and muscle activation during three walking tasks. Clin Biomech. 
+2021;89:105454.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  / j  . c l  i n b  i o m e  c h  . 2 0 2 1 . 1 0 5 4 5 4.
+57. Hadamus A, et al. 130 impact of balance training in virtual reality on body 
+balance in patients after total hip replacement. Age Ageing. 2019;48:iv28–33.  
+h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 9 3  / a  g e i n g / a f z 1 6 4 . 1 3 0.
+58. Pietschmann J, Geu Flores F, Jöllenbeck T. Gait training in orthopedic reha-
+bilitation after joint replacement - back to normal gait with sonification? Int J 
+Comput Sci Sport. 2019;18:34–48.  h t t p  s : /  / d o i  . o  r g /  1 0 .  2 4 7 8  / i  j c s s - 2 0 1 9 - 0 0 1 2.
+59. Dorschky E, et al. Perspective on “in the wild” movement analysis using 
+machine learning. Hum Mov Sci. 2023;87:103042.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  / j  . h u  
+m o v  . 2 0 2  2 .  1 0 3 0 4 2.
+60. Leung K, et al. Prediction of total knee replacement and diagnosis of 
+osteoarthritis by using deep learning on knee radiographs: data from the 
+Osteoarthritis Initiative. Radiology. 2020;296:584–93.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 1 4 8  / r  
+a d i o l . 2 0 2 0 1 9 2 0 9 1.
+61. Kunze KN, Karhade AV, Polce EM, Schwab JH, Levine BR. Development and 
+internal validation of machine learning algorithms for predicting com-
+plications after primary total hip arthroplasty. Arch Orthop Trauma Surg. 
+2023;143:2181–8.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 0 7  / s  0 0 4 0 2 - 0 2 2 - 0 4 4 5 2 - y.
+
+=== PDF PAGE 13 ===
+Page 13 of 13
+Stetter et al. Arthritis Research & Therapy           (2025) 27:229 
+62. Brunner JH, Foucher KC. Sex specific associations between biomechanical 
+recovery and clinical recovery after total hip arthroplasty. Clin Biomech. 
+2018;59:167–73.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 1 6  / j  . c l  i n b  i o m e  c h  . 2 0 1 8 . 0 9 . 0 2 2.
+63. van Drongelen S, Braun S, Stief F, Meurer A. Comparison of gait symmetry 
+and joint moments in unilateral and bilateral hip osteoarthritis patients and 
+healthy controls. Front Bioeng Biotechnol. 2021;9:756460.  h t t p  s : /  / d o i  . o  r g /  1 0 .  3 
+3 8 9  / f  b i o e . 2 0 2 1 . 7 5 6 4 6 0.
+64. Oakley CT, et al. The effect of surgeon and hospital volume on total hip 
+arthroplasty patient-reported outcome measures: an American joint replace-
+ment registry study. J Am Acad Orthop Surg. 2023;31:205–11.  h t t p  s : /  / d o i  . o  r g /  
+1 0 .  5 4 3 5  / J  A A O S - D - 2 2 - 0 0 5 2 5.
+65. Cattaneo A, et al. Motion acquisition of gait characteristics one week 
+after total hip arthroplasty: a factor analysis. Arch Orthop Trauma Surg. 
+2024;144:2347–56.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 0 0 7  / s  0 0 4 0 2 - 0 2 4 - 0 5 2 4 5 - 1.
+66. Lindgren JV, Wretenberg P , Kärrholm J, Garellick G, Rolfson O. Patient-reported 
+outcome is influenced by surgical approach in total hip replacement: a study 
+of the Swedish Hip Arthroplasty Register including 42,233 patients. Bone 
+Joint J. 2014;96-B:590–6.  h t t p  s : /  / d o i  . o  r g /  1 0 .  1 3 0 2  / 0  3 0 1  - 6 2  0 X . 9  6 B  5 . 3 2 3 4 1.
+67. Babu S, et al. A comparison of patient-reported outcome measures (PROMs) 
+between short and conventional stem hip replacements: a systematic review 
+and meta-analysis. Hip Int. 2020;30:513–22.  h t t p s :   /  / d o  i .  o r  g  /  1 0  . 1 1   7 7  / 1 1 2 0 7 0 0 
+0 1 9 8 8 8 2 1 0.
+Publisher’s Note
+Springer Nature remains neutral with regard to jurisdictional claims in 
+published maps and institutional affiliations.

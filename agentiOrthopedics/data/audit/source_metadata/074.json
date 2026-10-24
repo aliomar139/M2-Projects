@@ -1,0 +1,723 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          27
+        ]
+      ],
+      "date-time": "2026-08-27T17:21:16Z",
+      "timestamp": 1787851276469,
+      "version": "build-2784847793"
+    },
+    "reference-count": 34,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              25
+            ]
+          ],
+          "date-time": "2024-12-25T00:00:00Z",
+          "timestamp": 1735084800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              25
+            ]
+          ],
+          "date-time": "2024-12-25T00:00:00Z",
+          "timestamp": 1735084800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "81973871"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "81973871"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "82074466"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "82074466"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Pain Ther"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1007/s40122-024-00700-8",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          25
+        ]
+      ],
+      "date-time": "2024-12-25T16:50:47Z",
+      "timestamp": 1735145447000
+    },
+    "page": "359-373",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 9,
+    "title": [
+      "Predicting Treatment Outcomes in Patients with Low Back Pain Using Gene Signature-Based Machine Learning Models"
+    ],
+    "prefix": "10.1007",
+    "volume": "14",
+    "author": [
+      {
+        "given": "Youzhi",
+        "family": "Lian",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yinyu",
+        "family": "Shi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Haibin",
+        "family": "Shang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hongsheng",
+        "family": "Zhan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          25
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "700_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "9033",
+        "DOI": "10.3390/ijerph19159033",
+        "volume": "19",
+        "author": "S Negrini",
+        "year": "2022",
+        "unstructured": "Negrini S, Pollet J, Ranica G, Donzelli S, Vanossi M, Piovanelli B, et al. Movement analysis could help in the assessment of chronic low back pain patients: results from a preliminary explorative study. Int J Environ Res Public Health. 2022;19:9033.",
+        "journal-title": "Int J Environ Res Public Health"
+      },
+      {
+        "key": "700_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "3324",
+        "DOI": "10.3390/ijerph19063324",
+        "volume": "19",
+        "author": "C-Y Lin",
+        "year": "2022",
+        "unstructured": "Lin C-Y, Liu Y-H, Chen S-M, Cheng S-C, Liu M-F. The effectiveness of group-based core stability exercise and educational booklet for hospital workers in Taiwan with nonspecific low back pain: a preliminary study. Int J Environ Res Public Health. 2022;19:3324.",
+        "journal-title": "Int J Environ Res Public Health"
+      },
+      {
+        "key": "700_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "78",
+        "DOI": "10.1016/S0140-6736(21)00733-9",
+        "volume": "398",
+        "author": "NN Knezevic",
+        "year": "2021",
+        "unstructured": "Knezevic NN, Candido KD, Vlaeyen JWS, Zundert JV, Cohen SP. Low back pain. The Lancet. 2021;398:78–92.",
+        "journal-title": "The Lancet"
+      },
+      {
+        "key": "700_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "4",
+        "DOI": "10.1186/s12963-023-00303-z",
+        "volume": "21",
+        "author": "V Gorasso",
+        "year": "2023",
+        "unstructured": "Gorasso V, Van der Heyden J, De Pauw R, Pelgrims I, De Clercq EM, De Ridder K, et al. The health and economic burden of musculoskeletal disorders in Belgium from 2013 to 2018. Popul Health Metr. 2023;21:4.",
+        "journal-title": "Popul Health Metr"
+      },
+      {
+        "key": "700_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "357",
+        "DOI": "10.3390/jpm12030357",
+        "volume": "12",
+        "author": "A Bryndal",
+        "year": "2022",
+        "unstructured": "Bryndal A, Glowinski S, Majchrzycki M. Influence of pregnancy on the occurrence of lumbar spine pain in polish women: a retrospective study. J Pers Med. 2022;12:357.",
+        "journal-title": "J Pers Med"
+      },
+      {
+        "key": "700_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "2557",
+        "DOI": "10.1186/s12889-024-19953-1",
+        "volume": "24",
+        "author": "H Liu",
+        "year": "2024",
+        "unstructured": "Liu H, Li H, Huang L, Tian H, Wu J, Guan Q, et al. The link between childhood physical activity enjoyment and adult kinesiophobia in individuals with chronic low back pain. BMC Public Health. 2024;24:2557.",
+        "journal-title": "BMC Public Health"
+      },
+      {
+        "key": "700_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "1388229",
+        "DOI": "10.3389/fbioe.2024.1388229",
+        "volume": "12",
+        "author": "T Zhang",
+        "year": "2024",
+        "unstructured": "Zhang T, Firouzabadi A, Yang D, Liu S, Schmidt H. Age-dependent flexion relaxation phenomenon in chronic low back pain patients. Front Bioeng Biotechnol. 2024;12:1388229.",
+        "journal-title": "Front Bioeng Biotechnol"
+      },
+      {
+        "key": "700_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "ITC113",
+        "DOI": "10.7326/AITC202108170",
+        "volume": "174",
+        "author": "R Chou",
+        "year": "2021",
+        "unstructured": "Chou R. Low back pain. Ann Intern Med. 2021;174:ITC113–28.",
+        "journal-title": "Ann Intern Med"
+      },
+      {
+        "key": "700_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "52",
+        "DOI": "10.1038/s41572-018-0052-1",
+        "volume": "4",
+        "author": "JWS Vlaeyen",
+        "year": "2018",
+        "unstructured": "Vlaeyen JWS, Maher CG, Wiech K, Van Zundert J, Meloto CB, Diatchenko L, et al. Low back pain. Nat Rev Dis Primers. 2018;4:52.",
+        "journal-title": "Nat Rev Dis Primers"
+      },
+      {
+        "key": "700_CR10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fpubh.2022.860396",
+        "volume": "10",
+        "author": "J Rashid",
+        "year": "2022",
+        "unstructured": "Rashid J, Batool S, Kim J, Wasif Nisar M, Hussain A, Juneja S, et al. An augmented artificial intelligence approach for chronic diseases prediction. Front Public Health. 2022;10: 860396.",
+        "journal-title": "Front Public Health"
+      },
+      {
+        "key": "700_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "2664",
+        "DOI": "10.3390/cancers14112664",
+        "volume": "14",
+        "author": "X Zhang",
+        "year": "2022",
+        "unstructured": "Zhang X, Zhang H, Fan C, Hildesjö C, Shen B, Sun X-F. Loss of CHGA protein as a potential biomarker for colon cancer diagnosis: a study on biomarker discovery by machine learning and confirmation by immunohistochemistry in colorectal cancer tissue microarrays. Cancers (Basel). 2022;14:2664.",
+        "journal-title": "Cancers (Basel)"
+      },
+      {
+        "key": "700_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "e154194",
+        "DOI": "10.1172/jci.insight.154194",
+        "volume": "7",
+        "author": "SK Singh",
+        "year": "2022",
+        "unstructured": "Singh SK, Krukowski K, Laumet GO, Weis D, Alexander JF, Heijnen CJ, et al. CD8+ T cell–derived IL-13 increases macrophage IL-10 to resolve neuropathic pain. JCI Insight. 2022;7:e154194.",
+        "journal-title": "JCI Insight"
+      },
+      {
+        "key": "700_CR13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fcell.2022.924692",
+        "volume": "10",
+        "author": "P Bermudez-Lekerika",
+        "year": "2022",
+        "unstructured": "Bermudez-Lekerika P, Crump KB, Tseranidou S, Nüesch A, Kanelis E, Alminnawi A, et al. Immuno-modulatory effects of intervertebral disc cells. Front Cell Dev Biol. 2022;10: 924692.",
+        "journal-title": "Front Cell Dev Biol"
+      },
+      {
+        "key": "700_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "872",
+        "DOI": "10.3390/molecules28020872",
+        "volume": "28",
+        "author": "NA Artero",
+        "year": "2023",
+        "unstructured": "Artero NA, Manchope MF, Carvalho TT, Saraiva-Santos T, Bertozzi MM, Carneiro JA, et al. Hesperidin methyl chalcone reduces the arthritis caused by TiO2 in mice: targeting inflammation, oxidative stress, cytokine production, and nociceptor sensory neuron activation. Molecules. 2023;28:872.",
+        "journal-title": "Molecules"
+      },
+      {
+        "key": "700_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "3486",
+        "DOI": "10.3390/ijms23073486",
+        "volume": "23",
+        "author": "E Bresciani",
+        "year": "2022",
+        "unstructured": "Bresciani E, Squillace N, Orsini V, Piolini R, Rizzi L, Molteni L, et al. miRNA expression profiling in subcutaneous adipose tissue of monozygotic twins discordant for HIV infection: validation of differentially expressed miRNA and bioinformatic analysis. Int J Mol Sci. 2022;23:3486.",
+        "journal-title": "Int J Mol Sci"
+      },
+      {
+        "key": "700_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "50",
+        "DOI": "10.1186/s13073-022-01055-5",
+        "volume": "14",
+        "author": "M Alvarez",
+        "year": "2022",
+        "unstructured": "Alvarez M, Benhammou JN, Darci-Maher N, French SW, Han SB, Sinsheimer JS, et al. Human liver single nucleus and single cell RNA sequencing identify a hepatocellular carcinoma-associated cell-type affecting survival. Genome Med. 2022;14:50.",
+        "journal-title": "Genome Med"
+      },
+      {
+        "key": "700_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "5901",
+        "DOI": "10.1021/acsomega.2c07717",
+        "volume": "8",
+        "author": "V Poongavanam",
+        "year": "2023",
+        "unstructured": "Poongavanam V, Kölling F, Giese A, Göller AH, Lehmann L, Meibom D, et al. Predictive modeling of PROTAC cell permeability with machine learning. ACS Omega. 2023;8:5901–16.",
+        "journal-title": "ACS Omega"
+      },
+      {
+        "key": "700_CR18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1128/mbio.03796-21",
+        "volume": "13",
+        "author": "S Shaik",
+        "year": "2022",
+        "unstructured": "Shaik S, Singh A, Suresh A, Ahmed N. Genome Informatics and machine learning-based identification of antimicrobial resistance-encoding features and virulence attributes in Escherichia coli genomes representing globally prevalent lineages, including high-risk clonal complexes. MBio. 2022;13: e03796-21.",
+        "journal-title": "MBio"
+      },
+      {
+        "key": "700_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "223",
+        "DOI": "10.3390/biomedicines10020223",
+        "volume": "10",
+        "author": "B Ahmad",
+        "year": "2022",
+        "unstructured": "Ahmad B, Sun J, You Q, Palade V, Mao Z. Brain tumor classification using a combination of variational autoencoders and generative adversarial networks. Biomedicines. 2022;10:223.",
+        "journal-title": "Biomedicines"
+      },
+      {
+        "key": "700_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "1185",
+        "DOI": "10.3390/cancers14051185",
+        "volume": "14",
+        "author": "M Divate",
+        "year": "2022",
+        "unstructured": "Divate M, Tyagi A, Richard DJ, Prasad PA, Gowda H, Nagaraj SH. Deep learning-based pan-cancer classification model reveals tissue-of-origin specific gene expression signatures. Cancers (Basel). 2022;14:1185.",
+        "journal-title": "Cancers (Basel)"
+      },
+      {
+        "key": "700_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "410",
+        "DOI": "10.3390/biom11030410",
+        "volume": "11",
+        "author": "D Delfino",
+        "year": "2021",
+        "unstructured": "Delfino D, Mori G, Rivetti C, Grigoletto A, Bizzotto G, Cavozzi C, et al. Actin-resistant DNase1L2 as a potential therapeutics for CF lung disease. Biomolecules. 2021;11:410.",
+        "journal-title": "Biomolecules"
+      },
+      {
+        "key": "700_CR22",
+        "first-page": "4699",
+        "volume": "15",
+        "author": "Z Wu",
+        "year": "2023",
+        "unstructured": "Wu Z, Liu Q. Effects of repetitive transcranial magnetic stimulation combined with acupuncture on NLRP3 inflammasome and protease levels in patients with neuropathic pain. Am J Transl Res. 2023;15:4699–708.",
+        "journal-title": "Am J Transl Res"
+      },
+      {
+        "key": "700_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "126",
+        "DOI": "10.1002/mc.22914",
+        "volume": "58",
+        "author": "Y Feng",
+        "year": "2019",
+        "unstructured": "Feng Y, Gao Y, Yu J, Jiang G, Zhang X, Lin X, et al. CCDC85B promotes non-small cell lung cancer cell proliferation and invasion. Mol Carcinog. 2019;58:126–34.",
+        "journal-title": "Mol Carcinog"
+      },
+      {
+        "key": "700_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "380",
+        "DOI": "10.1002/cpt.3286",
+        "volume": "116",
+        "author": "L Colloca",
+        "year": "2024",
+        "unstructured": "Colloca L, Mocci E, Wang Y, Massalee R, Chen S, White J, et al. Transcriptomic profiles associated with experimental placebo effects in chronic pain. Clin Pharmacol Ther. 2024;116:380–9.",
+        "journal-title": "Clin Pharmacol Ther"
+      },
+      {
+        "key": "700_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "135",
+        "DOI": "10.3892/or.2024.8794",
+        "volume": "52",
+        "author": "S Park",
+        "year": "2024",
+        "unstructured": "Park S, Kim S, Kim M-Y, Lee SS, Choi J. Pituitary tumor-transforming gene 1 regulates the senescence and apoptosis of oral squamous cell carcinoma in a p21-dependent DNA damage response manner. Oncol Rep. 2024;52:135.",
+        "journal-title": "Oncol Rep"
+      },
+      {
+        "key": "700_CR26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ejphar.2024.176824",
+        "volume": "983",
+        "author": "H Wu",
+        "year": "2024",
+        "unstructured": "Wu H, Li D, Zhang C-Y, Huang L-L, Zeng Y-J, Chen T-G, et al. Restoration of ARA metabolic disorders in vascular smooth muscle cells alleviates intimal hyperplasia. Eur J Pharmacol. 2024;983: 176824.",
+        "journal-title": "Eur J Pharmacol"
+      },
+      {
+        "key": "700_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "32",
+        "DOI": "10.1186/s12974-023-02719-8",
+        "volume": "20",
+        "author": "I Sankaranarayanan",
+        "year": "2023",
+        "unstructured": "Sankaranarayanan I, Tavares-Ferreira D, Mwirigi JM, Mejia GL, Burton MD, Price TJ. Inducible co-stimulatory molecule (ICOS) alleviates paclitaxel-induced neuropathic pain via an IL-10-mediated mechanism in female mice. J Neuroinflammation. 2023;20:32.",
+        "journal-title": "J Neuroinflammation"
+      },
+      {
+        "key": "700_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "13",
+        "DOI": "10.1186/s13075-021-02709-2",
+        "volume": "24",
+        "author": "C Orvain",
+        "year": "2022",
+        "unstructured": "Orvain C, Cauvet A, Prudent A, Guignabert C, Thuillet R, Ottaviani M, et al. Acazicolcept (ALPN-101), a dual ICOS/CD28 antagonist, demonstrates efficacy in systemic sclerosis preclinical mouse models. Arthritis Res Ther. 2022;24:13.",
+        "journal-title": "Arthritis Res Ther"
+      },
+      {
+        "key": "700_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "59",
+        "DOI": "10.21037/atm-22-6245",
+        "volume": "11",
+        "author": "C Kang",
+        "year": "2023",
+        "unstructured": "Kang C, Yun F, Shi L, Jia Y, Liu X. Landscape of costimulatory molecule signature in breast cancer and its prognostic significance. Ann Transl Med. 2023;11:59.",
+        "journal-title": "Ann Transl Med"
+      },
+      {
+        "key": "700_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "243",
+        "DOI": "10.3390/md20040243",
+        "volume": "20",
+        "author": "NN Besednova",
+        "year": "2022",
+        "unstructured": "Besednova NN, Andryukov BG, Zaporozhets TS, Kuznetsova TA, Kryzhanovsky SP, Ermakova SP, et al. Molecular targets of brown algae phlorotannins for the therapy of inflammatory processes of various origins. Mar Drugs. 2022;20:243.",
+        "journal-title": "Mar Drugs"
+      },
+      {
+        "key": "700_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "1275",
+        "DOI": "10.3390/jcm11051275",
+        "volume": "11",
+        "author": "U Żywień",
+        "year": "2022",
+        "unstructured": "Żywień U, Barczyk-Pawelec K, Sipko T. Associated risk factors with low back pain in white-collar workers—a cross-sectional study. J Clin Med. 2022;11:1275.",
+        "journal-title": "J Clin Med"
+      },
+      {
+        "key": "700_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "1063336",
+        "DOI": "10.3389/fmed.2022.1063336",
+        "volume": "9",
+        "author": "M Abshirini",
+        "year": "2022",
+        "unstructured": "Abshirini M, Coad J, Wolber FM, von Hurst P, Miller MR, Tian HS, et al. Effects of Greenshell™ mussel intervention on biomarkers of cartilage metabolism, inflammatory markers and joint symptoms in overweight/obese postmenopausal women: a randomized, double-blind, and placebo-controlled trial. Front Med (Lausanne). 2022;9:1063336.",
+        "journal-title": "Front Med (Lausanne)"
+      },
+      {
+        "key": "700_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "2343",
+        "DOI": "10.3390/s22062343",
+        "volume": "22",
+        "author": "F Zhu-Zhou",
+        "year": "2022",
+        "unstructured": "Zhu-Zhou F, Gil-Pita R, García-Gómez J, Rosa-Zurera M. Robust multi-scenario speech-based emotion recognition system. Sensors (Basel). 2022;22:2343.",
+        "journal-title": "Sensors (Basel)"
+      },
+      {
+        "key": "700_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "25",
+        "DOI": "10.1186/s12859-023-05143-0",
+        "volume": "24",
+        "author": "W Zhu",
+        "year": "2023",
+        "unstructured": "Zhu W, Lévy-Leduc C, Ternès N. Identification of prognostic and predictive biomarkers in high-dimensional data with PPLasso. BMC Bioinformatics. 2023;24:25.",
+        "journal-title": "BMC Bioinformatics"
+      }
+    ],
+    "container-title": [
+      "Pain and Therapy"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s40122-024-00700-8.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1007/s40122-024-00700-8/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s40122-024-00700-8.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          21
+        ]
+      ],
+      "date-time": "2025-01-21T16:44:07Z",
+      "timestamp": 1737477847000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.springer.com/10.1007/s40122-024-00700-8"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          25
+        ]
+      ]
+    },
+    "references-count": 34,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            2
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "700"
+    ],
+    "URL": "https://doi.org/10.1007/s40122-024-00700-8",
+    "relation": {},
+    "ISSN": [
+      "2193-8237",
+      "2193-651X"
+    ],
+    "issn-type": [
+      {
+        "value": "2193-8237",
+        "type": "print"
+      },
+      {
+        "value": "2193-651X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          25
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "7 October 2024",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "11 December 2024",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "25 December 2024",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "The authors (Youzhi Lian, Yinyu Shi, Haibin Shang, and Hongsheng Zhan) declare no conflict of interest.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Conflict of Interest"
+        }
+      },
+      {
+        "value": "This article is based on previously conducted studies and does not contain any new studies with human participants or animals performed by any of the authors. The transcriptomic data of patients with LBP from peripheral immune cells was retrieved from the GEO database (GSE177034). This study utilized transcriptomic data from a human low back pain (LBP) cohort, part of the PainOMICs project (NCT02037763), funded by the European Community under FP7. All procedures performed in those studies involving human participants were approved by the University Hospital of Parma's Ethical Committee (Protocol Number 43543).",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethical Approval"
+        }
+      }
+    ]
+  }
+}

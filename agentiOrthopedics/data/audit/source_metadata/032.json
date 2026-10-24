@@ -1,0 +1,839 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          20
+        ]
+      ],
+      "date-time": "2026-10-20T07:10:41Z",
+      "timestamp": 1792480241456,
+      "version": "4.5.0"
+    },
+    "reference-count": 52,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              3
+            ]
+          ],
+          "date-time": "2026-04-03T00:00:00Z",
+          "timestamp": 1775174400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              3
+            ]
+          ],
+          "date-time": "2026-04-03T00:00:00Z",
+          "timestamp": 1775174400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Ministry of Health & Welfare, Republic of Korea",
+        "award": [
+          "RS-2024-00403047"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "RS-2024-00403047"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Knee Surg &amp; Relat Res"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Background</jats:title>\n                    <jats:p>Artificial intelligence research in orthopedics has grown rapidly, yet a substantial gap remains between technical development and clinical translation. This narrative review summarizes current applications of artificial intelligence in orthopedic practice and highlights barriers to implementation.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Main body</jats:title>\n                    <jats:p>Current work converges on three domains: machine learning for structured perioperative risk prediction, deep learning for standardized musculoskeletal imaging, and large language models for workflow and decision support. Applications such as automated fracture detection, Kellgren–Lawrence grading for osteoarthritis, and transfusion risk modeling are approaching clinical maturity. However, routine adoption is limited by algorithmic opacity, performance degradation in new clinical environments, and poor fit within existing workflows. We argue that progress should shift from increasing model complexity toward rigorous evaluation, including external validation on independent cohorts. In addition, probability calibration and uncertainty estimation are important for trustworthy risk communication. Future directions may include multimodal “digital twin” approaches that integrate electronic medical records, imaging phenotypes, and intraoperative data into patient-specific trajectories.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>The clinical impact of artificial intelligence in orthopedics will depend on life-cycle governance and demonstrated net benefit, prioritizing reliability and implementation science over retrospective benchmark performance.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.1186/s43019-026-00317-5",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          3
+        ]
+      ],
+      "date-time": "2026-04-03T10:59:55Z",
+      "timestamp": 1775213995000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 5,
+    "title": [
+      "Artificial intelligence in orthopedics: current applications, challenges, and future directions"
+    ],
+    "prefix": "10.1186",
+    "volume": "38",
+    "author": [
+      {
+        "given": "Sang Yoon",
+        "family": "Kim",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Byung Sun",
+        "family": "Choi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hyuk-Soo",
+        "family": "Han",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Du Hyun",
+        "family": "Ro",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          3
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "11",
+        "key": "317_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "1107",
+        "DOI": "10.1001/jama.2018.11029",
+        "volume": "320",
+        "author": "WW Stead",
+        "year": "2018",
+        "unstructured": "Stead WW (2018) Clinical implications and challenges of artificial intelligence and deep learning. JAMA 320(11):1107–1108. https://doi.org/10.1001/jama.2018.11029",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "317_CR2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/20552076231184048",
+        "volume": "9",
+        "author": "J Li",
+        "year": "2023",
+        "unstructured": "Li J, Maimaiti A, Fu J et al (2023) Global research landscape on artificial intelligence in arthroplasty: a bibliometric analysis. Digit Health 9:20552076231184048. https://doi.org/10.1177/20552076231184048",
+        "journal-title": "Digit Health"
+      },
+      {
+        "issue": "8067",
+        "key": "317_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "451",
+        "DOI": "10.1038/s41586-025-08869-4",
+        "volume": "642",
+        "author": "D McDuff",
+        "year": "2025",
+        "unstructured": "McDuff D, Schaekermann M, Tu T et al (2025) Towards accurate differential diagnosis with large language models. Nature 642(8067):451–457. https://doi.org/10.1038/s41586-025-08869-4",
+        "journal-title": "Nature"
+      },
+      {
+        "issue": "1",
+        "key": "317_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "31",
+        "DOI": "10.1038/s41591-021-01614-0",
+        "volume": "28",
+        "author": "P Rajpurkar",
+        "year": "2022",
+        "unstructured": "Rajpurkar P, Chen E, Banerjee O et al (2022) AI in health and medicine. Nat Med 28(1):31–38. https://doi.org/10.1038/s41591-021-01614-0",
+        "journal-title": "Nat Med"
+      },
+      {
+        "issue": "11",
+        "key": "317_CR5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0260471",
+        "volume": "16",
+        "author": "SJ Federer",
+        "year": "2021",
+        "unstructured": "Federer SJ, Jones GG (2021) Artificial intelligence in orthopaedics: a scoping review. PLoS ONE 16(11):e0260471. https://doi.org/10.1371/journal.pone.0260471",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "issue": "6",
+        "key": "317_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "1757",
+        "DOI": "10.1007/s00167-019-05602-3",
+        "volume": "28",
+        "author": "C Jo",
+        "year": "2020",
+        "unstructured": "Jo C, Ko S, Shin WC et al (2020) Transfusion after total knee arthroplasty can be predicted using the machine learning algorithm. Knee Surg Sports Traumatol Arthrosc 28(6):1757–1764. https://doi.org/10.1007/s00167-019-05602-3",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc"
+      },
+      {
+        "issue": "1",
+        "key": "317_CR7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s42836-023-00186-3",
+        "volume": "5",
+        "author": "DJ Gould",
+        "year": "2023",
+        "unstructured": "Gould DJ, Bailey JA, Spelman T et al (2023) Predicting 30-day readmission following total knee arthroplasty using machine learning and clinical expertise applied to clinical administrative and research registry data in an Australian cohort. Arthroplasty 5(1):30. https://doi.org/10.1186/s42836-023-00186-3",
+        "journal-title": "Arthroplasty"
+      },
+      {
+        "issue": "1",
+        "key": "317_CR8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-018-20132-7",
+        "volume": "8",
+        "author": "A Tiulpin",
+        "year": "2018",
+        "unstructured": "Tiulpin A, Thevenot J, Rahtu E et al (2018) Automatic knee osteoarthritis diagnosis from plain radiographs: a deep learning-based approach. Sci Rep 8(1):1727. https://doi.org/10.1038/s41598-018-20132-7",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "issue": "2",
+        "key": "317_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "102",
+        "DOI": "10.1016/j.zemedi.2018.11.002",
+        "volume": "29",
+        "author": "AS Lundervold",
+        "year": "2019",
+        "unstructured": "Lundervold AS, Lundervold A (2019) An overview of deep learning in medical imaging focusing on MRI. Z Med Phys 29(2):102–127. https://doi.org/10.1016/j.zemedi.2018.11.002",
+        "journal-title": "Z Med Phys"
+      },
+      {
+        "issue": "1",
+        "key": "317_CR10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12891-022-05818-4",
+        "volume": "23",
+        "author": "X Meng",
+        "year": "2022",
+        "unstructured": "Meng X, Wang Z, Ma X et al (2022) Fully automated measurement on coronal alignment of lower limbs using deep convolutional neural networks on radiographic images. BMC Musculoskelet Disord 23(1):869. https://doi.org/10.1186/s12891-022-05818-4",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "issue": "1",
+        "key": "317_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "177",
+        "DOI": "10.1148/radiol.2018172322",
+        "volume": "288",
+        "author": "B Norman",
+        "year": "2018",
+        "unstructured": "Norman B, Pedoia V, Majumdar S (2018) Use of 2D U-net convolutional neural networks for automated cartilage and meniscus segmentation of knee MR imaging data to determine relaxometry and morphometry. Radiology 288(1):177–185. https://doi.org/10.1148/radiol.2018172322",
+        "journal-title": "Radiology"
+      },
+      {
+        "key": "317_CR12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-023-50210-4",
+        "volume": "13",
+        "author": "SW Pi",
+        "year": "2023",
+        "unstructured": "Pi SW, Lee BD, Lee MS et al (2023) Ensemble deep-learning networks for automated osteoarthritis grading in knee X-ray images. Sci Rep 13:22887. https://doi.org/10.1038/s41598-023-50210-4",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "issue": "2",
+        "key": "317_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "213",
+        "DOI": "10.1302/0301-620X.107B2.BJJ-2024-0791.R1",
+        "volume": "107-B",
+        "author": "Z Zheng",
+        "year": "2025",
+        "unstructured": "Zheng Z, Ryu BY, Kim SE et al (2025) Deep learning for automated hip fracture detection and classification: achieving superior accuracy. Bone Joint J 107-B(2):213–220. https://doi.org/10.1302/0301-620X.107B2.BJJ-2024-0791.R1",
+        "journal-title": "Bone Joint J"
+      },
+      {
+        "issue": "11",
+        "key": "317_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "2482",
+        "DOI": "10.1097/CORR.0000000000000848",
+        "volume": "477",
+        "author": "DWG Langerhuizen",
+        "year": "2019",
+        "unstructured": "Langerhuizen DWG, Janssen SJ, Mallee WH et al (2019) Applications and limitations of artificial intelligence for fracture detection and classification in orthopaedic trauma imaging: a systematic review. Clin Orthop Relat Res 477(11):2482–2491. https://doi.org/10.1097/CORR.0000000000000848",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "issue": "3",
+        "key": "317_CR15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/17453674.2020.1723292",
+        "volume": "91",
+        "author": "PHS Kalmet",
+        "year": "2020",
+        "unstructured": "Kalmet PHS, Sanduleanu S, Primakov S et al (2020) Deep learning in fracture detection: a narrative review. Acta Orthop 91(3):362. https://doi.org/10.1080/17453674.2020.1723292",
+        "journal-title": "Acta Orthop"
+      },
+      {
+        "issue": "8067",
+        "key": "317_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "442",
+        "DOI": "10.1038/s41586-025-08866-7",
+        "volume": "642",
+        "author": "T Tu",
+        "year": "2025",
+        "unstructured": "Tu T, Schaekermann M, Palepu A et al (2025) Towards conversational diagnostic artificial intelligence. Nature 642(8067):442–450. https://doi.org/10.1038/s41586-025-08866-7",
+        "journal-title": "Nature"
+      },
+      {
+        "issue": "10",
+        "key": "317_CR17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamanetworkopen.2024.40969",
+        "volume": "7",
+        "author": "E Goh",
+        "year": "2024",
+        "unstructured": "Goh E, Gallo R, Hom J et al (2024) Large language model influence on diagnostic reasoning: a randomized clinical trial. JAMA Netw Open 7(10):e2440969. https://doi.org/10.1001/jamanetworkopen.2024.40969",
+        "journal-title": "JAMA Netw Open"
+      },
+      {
+        "key": "317_CR18",
+        "unstructured": "OpenAI (2024) GPT-4o system card. https://openai.com/index/gpt-4o-system-card/. Accessed 20 Jan 2026"
+      },
+      {
+        "issue": "7",
+        "key": "317_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "1123",
+        "DOI": "10.1377/hlthaff.2014.0041",
+        "volume": "33",
+        "author": "DW Bates",
+        "year": "2014",
+        "unstructured": "Bates DW, Saria S, Ohno-Machado L et al (2014) Big data in health care: Using analytics to identify and manage high-risk and high-cost patients. Health Aff (Millwood) 33(7):1123–1131. https://doi.org/10.1377/hlthaff.2014.0041",
+        "journal-title": "Health Aff (Millwood)"
+      },
+      {
+        "key": "317_CR20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-025-01700-4",
+        "volume": "8",
+        "author": "A Bodnari",
+        "year": "2025",
+        "unstructured": "Bodnari A, Travis J (2025) Scaling enterprise AI in healthcare: the role of governance in risk mitigation frameworks. NPJ Digit Med 8:272. https://doi.org/10.1038/s41746-025-01700-4",
+        "journal-title": "NPJ Digit Med"
+      },
+      {
+        "issue": "1",
+        "key": "317_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1038/s41597-022-01899-x",
+        "volume": "10",
+        "author": "AEW Johnson",
+        "year": "2023",
+        "unstructured": "Johnson AEW, Bulgarelli L, Shen L et al (2023) MIMIC-IV, a freely accessible electronic health record dataset. Sci Data 10(1):1. https://doi.org/10.1038/s41597-022-01899-x",
+        "journal-title": "Sci Data"
+      },
+      {
+        "issue": "4",
+        "key": "317_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "678",
+        "DOI": "10.4055/cios22240",
+        "volume": "15",
+        "author": "J Jeong",
+        "year": "2023",
+        "unstructured": "Jeong J, Han H, Ro DH et al (2023) Development of prediction model using machine-learning algorithms for nonsteroidal anti-inflammatory drug-induced gastric ulcer in osteoarthritis patients: retrospective cohort study of a nationwide South Korean cohort. Clin Orthop Surg 15(4):678–689. https://doi.org/10.4055/cios22240",
+        "journal-title": "Clin Orthop Surg"
+      },
+      {
+        "key": "317_CR23",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Xie Q, Dai Z, Hovy E, et al (2019) Unsupervised data augmentation for consistency training. arXiv. arXiv:1904.12848. https://doi.org/10.48550/arXiv.1904.12848",
+        "DOI": "10.48550/arXiv.1904.12848"
+      },
+      {
+        "key": "317_CR24",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Chen T, Kornblith S, Norouzi M, et al (2020) A simple framework for contrastive learning of visual representations. arXiv. arXiv:2002.05709. https://doi.org/10.48550/arXiv.2002.05709",
+        "DOI": "10.48550/arXiv.2002.05709"
+      },
+      {
+        "key": "317_CR25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.media.2023.102996",
+        "volume": "91",
+        "author": "S Zhang",
+        "year": "2024",
+        "unstructured": "Zhang S, Metaxas D (2024) Challenges and perspectives of foundation models for medical image analysis. Med Image Anal 91:102996. https://doi.org/10.1016/j.media.2023.102996",
+        "journal-title": "Med Image Anal"
+      },
+      {
+        "key": "317_CR26",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Devlin J, Chang MW, Lee K, et al (2018) BERT: pre-training of deep bidirectional transformers for language understanding. arXiv. arXiv:1810.04805. https://doi.org/10.48550/arXiv.1810.04805",
+        "DOI": "10.48550/arXiv.1810.04805"
+      },
+      {
+        "key": "317_CR27",
+        "doi-asserted-by": "publisher",
+        "unstructured": "OpenAI (2023) GPT-4 technical report. arXiv. arXiv:2303.08774. https://doi.org/10.48550/arXiv.2303.08774",
+        "DOI": "10.48550/arXiv.2303.08774"
+      },
+      {
+        "issue": "5",
+        "key": "317_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "924",
+        "DOI": "10.1038/s41591-022-01772-9",
+        "volume": "28",
+        "author": "B Vasey",
+        "year": "2022",
+        "unstructured": "Vasey B, Nagendran M, Campbell B et al (2022) Reporting guideline for the early-stage clinical evaluation of decision support systems driven by artificial intelligence: DECIDE-AI. Nat Med 28(5):924–933. https://doi.org/10.1038/s41591-022-01772-9",
+        "journal-title": "Nat Med"
+      },
+      {
+        "key": "317_CR29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj.m689",
+        "volume": "368",
+        "author": "M Nagendran",
+        "year": "2020",
+        "unstructured": "Nagendran M, Chen Y, Lovejoy CA et al (2020) Artificial intelligence versus clinicians: systematic review of design, reporting standards, and claims of deep learning studies. BMJ 368:m689. https://doi.org/10.1136/bmj.m689",
+        "journal-title": "BMJ"
+      },
+      {
+        "issue": "1",
+        "key": "317_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "128",
+        "DOI": "10.1097/EDE.0b013e3181c30fb2",
+        "volume": "21",
+        "author": "EW Steyerberg",
+        "year": "2010",
+        "unstructured": "Steyerberg EW, Vickers AJ, Cook NR et al (2010) Assessing the performance of prediction models: a framework for traditional and novel measures. Epidemiology 21(1):128–138. https://doi.org/10.1097/EDE.0b013e3181c30fb2",
+        "journal-title": "Epidemiology"
+      },
+      {
+        "issue": "6",
+        "key": "317_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "565",
+        "DOI": "10.1177/0272989X06295361",
+        "volume": "26",
+        "author": "AJ Vickers",
+        "year": "2006",
+        "unstructured": "Vickers AJ, Elkin EB (2006) Decision curve analysis: a novel method for evaluating prediction models. Med Decis Making 26(6):565–574. https://doi.org/10.1177/0272989X06295361",
+        "journal-title": "Med Decis Making"
+      },
+      {
+        "issue": "1",
+        "key": "317_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "55",
+        "DOI": "10.7326/M14-0697",
+        "volume": "162",
+        "author": "GS Collins",
+        "year": "2015",
+        "unstructured": "Collins GS, Reitsma JB, Altman DG et al (2015) Transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD): the TRIPOD statement. Ann Intern Med 162(1):55–63. https://doi.org/10.7326/M14-0697",
+        "journal-title": "Ann Intern Med"
+      },
+      {
+        "issue": "9",
+        "key": "317_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "1364",
+        "DOI": "10.1038/s41591-020-1034-x",
+        "volume": "26",
+        "author": "X Liu",
+        "year": "2020",
+        "unstructured": "Liu X, Cruz Rivera S, Moher D et al (2020) Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension. Nat Med 26(9):1364–1374. https://doi.org/10.1038/s41591-020-1034-x",
+        "journal-title": "Nat Med"
+      },
+      {
+        "issue": "1",
+        "key": "317_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "120",
+        "DOI": "10.1148/radiol.2021203886",
+        "volume": "300",
+        "author": "L Duron",
+        "year": "2021",
+        "unstructured": "Duron L, Ducarouge A, Gillibert A et al (2021) Assessment of an AI aid in detection of adult appendicular skeletal fractures by emergency physicians and radiologists: a multicenter cross-sectional diagnostic study. Radiology 300(1):120–129. https://doi.org/10.1148/radiol.2021203886",
+        "journal-title": "Radiology"
+      },
+      {
+        "issue": "7",
+        "key": "317_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "1034",
+        "DOI": "10.1136/ard.2007.079020",
+        "volume": "67",
+        "author": "D Schiphof",
+        "year": "2008",
+        "unstructured": "Schiphof D, Boers M, Bierma-Zeinstra SMA (2008) Differences in descriptions of Kellgren and Lawrence grades of knee osteoarthritis. Ann Rheum Dis 67(7):1034–1036. https://doi.org/10.1136/ard.2007.079020",
+        "journal-title": "Ann Rheum Dis"
+      },
+      {
+        "key": "317_CR36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ejrad.2022.110249",
+        "volume": "150",
+        "author": "MW Brejnebøl",
+        "year": "2022",
+        "unstructured": "Brejnebøl MW, Hansen P, Nybing JU et al (2022) External validation of an artificial intelligence tool for radiographic knee osteoarthritis severity classification. Eur J Radiol 150:11024 9. https://doi.org/10.1016/j.ejrad.2022.110249",
+        "journal-title": "Eur J Radiol"
+      },
+      {
+        "key": "317_CR37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compbiomed.2021.104334",
+        "volume": "133",
+        "author": "A Swiecicki",
+        "year": "2021",
+        "unstructured": "Swiecicki A, Li N, O’Donnell J et al (2021) Deep learning-based algorithm for assessment of knee osteoarthritis severity in radiographs matches performance of radiologists. Comput Biol Med 133:104334. https://doi.org/10.1016/j.compbiomed.2021.104334",
+        "journal-title": "Comput Biol Med"
+      },
+      {
+        "issue": "1",
+        "key": "317_CR38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ocarto.2025.100566",
+        "volume": "7",
+        "author": "S Ko",
+        "year": "2025",
+        "unstructured": "Ko S, Choi Y, Han HS, Kim SH, Ro DH (2025) Association of radiographic structure deformity phenotypes of knee OA to clinical symptoms and risk for progression: proposing a modification of Kellgren–Lawrence grade—data from the osteoarthritis initiative and the MOST study. Osteoarth Cartil Open 7(1):100566. https://doi.org/10.1016/j.ocarto.2025.100566",
+        "journal-title": "Osteoarth Cartil Open"
+      },
+      {
+        "issue": "4",
+        "key": "317_CR39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/23259671251331067",
+        "volume": "13",
+        "author": "BY Ryu",
+        "year": "2025",
+        "unstructured": "Ryu BY, Nam JW, Ro DH et al (2025) Automated posterior tibial slope measurement using lateral knee radiographs: a novel landmark-based approach using deep learning. Orthop J Sports Med 13(4):23259671251331067. https://doi.org/10.1177/23259671251331067",
+        "journal-title": "Orthop J Sports Med"
+      },
+      {
+        "issue": "5",
+        "key": "317_CR40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/23259671251333607",
+        "volume": "13",
+        "author": "RK Martin",
+        "year": "2025",
+        "unstructured": "Martin RK, Haaland S, Persson A et al (2025) External validation of a novel landmark-based deep learning automated tibial slope measurement algorithm applied on short radiographs obtained in patients with ACL injuries. Orthop J Sports Med 13(5):23259671251333607. https://doi.org/10.1177/23259671251333607",
+        "journal-title": "Orthop J Sports Med"
+      },
+      {
+        "issue": "1",
+        "key": "317_CR41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s43019-025-00261-w",
+        "volume": "37",
+        "author": "J Park",
+        "year": "2025",
+        "unstructured": "Park J, Chaar O, Narayanakurup J et al (2025) Do knee alignment patterns differ between Middle Eastern and East Asian populations? A propensity-matched analysis using artificial intelligence. Knee Surg Relat Res 37(1):11. https://doi.org/10.1186/s43019-025-00261-w",
+        "journal-title": "Knee Surg Relat Res"
+      },
+      {
+        "issue": "8",
+        "key": "317_CR42",
+        "doi-asserted-by": "publisher",
+        "first-page": "990",
+        "DOI": "10.1016/j.joca.2011.05.004",
+        "volume": "19",
+        "author": "DJ Hunter",
+        "year": "2011",
+        "unstructured": "Hunter DJ, Guermazi A, Lo GH et al (2011) Evolution of semi-quantitative whole joint assessment of knee OA: MOAKS (MRI osteoarthritis knee score). Osteoarth Cartil 19(8):990–1002. https://doi.org/10.1016/j.joca.2011.05.004",
+        "journal-title": "Osteoarth Cartil"
+      },
+      {
+        "issue": "2",
+        "key": "317_CR43",
+        "doi-asserted-by": "publisher",
+        "first-page": "e85",
+        "DOI": "10.3928/01477447-20230922-05",
+        "volume": "47",
+        "author": "HL Hofmann",
+        "year": "2024",
+        "unstructured": "Hofmann HL, Guerra GA, Le JL et al (2024) Rapid development of artificial intelligence: GPT-4 performance on orthopedic surgery board questions. Orthopedics 47(2):e85–e89. https://doi.org/10.3928/01477447-20230922-05",
+        "journal-title": "Orthopedics"
+      },
+      {
+        "issue": "9",
+        "key": "317_CR44",
+        "doi-asserted-by": "publisher",
+        "first-page": "1028",
+        "DOI": "10.1001/jamainternmed.2023.2909",
+        "volume": "183",
+        "author": "E Strong",
+        "year": "2023",
+        "unstructured": "Strong E, DiGiammarino A, Weng Y et al (2023) Chatbot versus medical student performance on free-response clinical reasoning examinations. JAMA Intern Med 183(9):1028–1030. https://doi.org/10.1001/jamainternmed.2023.2909",
+        "journal-title": "JAMA Intern Med"
+      },
+      {
+        "issue": "12",
+        "key": "317_CR45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamanetworkopen.2025.49963",
+        "volume": "8",
+        "author": "S Lee",
+        "year": "2025",
+        "unstructured": "Lee S, Jun S, Lee H et al (2025) Vulnerability of large language models to prompt injection when providing medical advice. JAMA Netw Open 8(12):e2549963. https://doi.org/10.1001/jamanetworkopen.2025.49963",
+        "journal-title": "JAMA Netw Open"
+      },
+      {
+        "issue": "8",
+        "key": "317_CR46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamanetworkopen.2025.26339",
+        "volume": "8",
+        "author": "CF Small",
+        "year": "2025",
+        "unstructured": "Small CF, Austrian JS, O’Donnell L et al (2025) Evaluating hospital course summarization by an electronic health record-based large language model. JAMA Netw Open 8(8):e2526339. https://doi.org/10.1001/jamanetworkopen.2025.26339",
+        "journal-title": "JAMA Netw Open"
+      },
+      {
+        "key": "317_CR47",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Singhal K, Tu T, Gottweis J, et al (2023) Towards expert-level medical question answering with large language models. arXiv. arXiv:2305.09617. https://doi.org/10.48550/arXiv.2305.09617",
+        "DOI": "10.48550/arXiv.2305.09617"
+      },
+      {
+        "key": "317_CR48",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Irvin J, Rajpurkar P, Ko M, et al (2019) CheXpert: a large chest radiograph dataset with uncertainty labels and expert comparison. In: Proceedings of the AAAI conference on artificial intelligence, vol 33. pp 590–597. https://doi.org/10.1609/aaai.v33i01.3301590",
+        "DOI": "10.1609/aaai.v33i01.3301590"
+      },
+      {
+        "key": "317_CR49",
+        "unstructured": "US Food and Drug Administration (2021) Artificial intelligence/machine learning (AI/ML)-based software as a medical device (SaMD) action plan. https://www.fda.gov/media/145022/download. Accessed 20 Jan 2026"
+      },
+      {
+        "key": "317_CR50",
+        "unstructured": "Ministry of Food and Drug Safety (2025) Guideline for approval review of digital medical devices incorporating artificial intelligence technology. https://www.mfds.go.kr/brd/m_1060/view.do?seq=15657. Accessed 20 Jan 2026"
+      },
+      {
+        "key": "317_CR51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.psychres.2023.115466",
+        "volume": "328",
+        "author": "MR MacIntyre",
+        "year": "2023",
+        "unstructured": "MacIntyre MR, Cockerill RG, Mirza OF et al (2023) Ethical considerations for the use of artificial intelligence in medical decision-making capacity assessments. Psychiatry Res 328:115466. https://doi.org/10.1016/j.psychres.2023.115466",
+        "journal-title": "Psychiatry Res"
+      },
+      {
+        "issue": "12",
+        "key": "317_CR52",
+        "doi-asserted-by": "publisher",
+        "first-page": "866",
+        "DOI": "10.7326/M18-1990",
+        "volume": "169",
+        "author": "A Rajkomar",
+        "year": "2018",
+        "unstructured": "Rajkomar A, Hardt M, Howell MD et al (2018) Ensuring fairness in machine learning to advance health equity. Ann Intern Med 169(12):866–872. https://doi.org/10.7326/M18-1990",
+        "journal-title": "Ann Intern Med"
+      }
+    ],
+    "container-title": [
+      "Knee Surgery &amp; Related Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s43019-026-00317-5.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1186/s43019-026-00317-5",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s43019-026-00317-5.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          3
+        ]
+      ],
+      "date-time": "2026-04-03T10:59:57Z",
+      "timestamp": 1775213997000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.springer.com/10.1186/s43019-026-00317-5"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          3
+        ]
+      ]
+    },
+    "references-count": 52,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "317"
+    ],
+    "URL": "https://doi.org/10.1186/s43019-026-00317-5",
+    "relation": {},
+    "ISSN": [
+      "2234-2451"
+    ],
+    "issn-type": [
+      {
+        "value": "2234-2451",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          3
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "22 January 2026",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "20 March 2026",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "3 April 2026",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "14"
+  }
+}

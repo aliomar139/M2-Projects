@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "13",
+    "retmax": "13",
+    "retstart": "0",
+    "idlist": [
+      "42833930",
+      "42513767",
+      "42324476",
+      "41490410",
+      "41987707",
+      "41103258",
+      "40405922",
+      "40153598",
+      "34247828",
+      "32803104",
+      "31807972",
+      "30697024",
+      "19238553"
+    ],
+    "translationset": [],
+    "querytranslation": "(\"Orthopedics\"[MeSH Terms] OR \"Orthopedic Procedures\"[MeSH Terms] OR \"Arthroplasty\"[MeSH Terms] OR \"Osteoarthritis\"[MeSH Terms] OR \"orthop*\"[Title/Abstract] OR \"arthroplast*\"[Title/Abstract] OR \"Osteoarthritis\"[Title/Abstract] OR \"musculoskeletal\"[Title/Abstract] OR \"spine surgery\"[Title/Abstract] OR \"spine care\"[Title/Abstract] OR \"hip arthroscopy\"[Title/Abstract]) AND (\"agentic\"[Title/Abstract] OR \"multi-agent\"[Title/Abstract] OR \"AI agents\"[Title/Abstract] OR \"artificial intelligence agents\"[Title/Abstract]) AND (\"Review\"[Publication Type] OR \"systematic review\"[Title] OR \"scoping review\"[Title] OR \"narrative review\"[Title] OR \"survey\"[Title] OR \"literature review\"[Title]) AND 1800/01/01:2026/10/23[Date - Publication]"
+  }
+}

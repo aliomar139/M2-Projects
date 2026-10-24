@@ -1,0 +1,109 @@
+=== PDF PAGE 1 ===
+KNEE SURGERY, SPORTS TRAUMATOLOGY, ARTHROSCOPY : OFFICIAL JOURNAL OF
+THE ESSKA • 2026.0
+Top 100 Orthopedic AI •
+Rank #34
+Machine learning for predicting outcomes, complications
+and resource utilisation after hip arthroscopy: A
+systematic review.
+Madison Lee, Vera Zakhari, A. Shanmugaraj, Lakshmanan Sivasundaram, N. Horner
+Rocky Vista University College of Osteopathic Medicine, Ivins, Utah, USA.
+Journal:
+Knee surgery, sports
+traumatology, arthroscopy :
+official journal of the ESSKA
+Publication Year:
+2026.0
+Citations:
+2
+DOI:
+10.1002/ksa.70304
+CLINICAL & AGENTIC AI TAKEAWAY
+Machine learning models in hip arthroscopy show variable performance in predicting outcomes and
+complications, with most studies reporting no significant difference to traditional regression.
+ABSTRACT
+Purpose: Machine learning (ML) algorithms are increasingly used to predict outcomes in orthopaedic surgery, but their
+utility in hip arthroscopy remains unclear. This study aimed to (1) evaluate ML models for predicting outcomes,
+complications, and resource use following hip arthroscopy, (2) compare ML performance to traditional statistical methods,
+and (3) critically appraise the quality of existing literature. Methods: A systematic search of PUBMED, MEDLINE,
+EMBASE and the Cochrane Central Register of Controlled Trials was conducted on 4 April 2023. Included studies used
+ML models for clinical prediction in hip arthroscopy. Data on study design, outcomes, model development, validation and
+adherence to TRIPOD guidelines were extracted. Results: Seventeen studies involving 37,549 patients (52.8% female;
+mean age 34.4 ± 6.1 years) were included. ML was used to predict clinical outcomes (47.1%), adverse events (47.1%) and
+resource utilisation (5.9%). The median area under the curve was 0.66 (range 0.5-0.94) for clinical outcomes and 0.7
+(range 0.6-0.9) for adverse events. Resource utilisation was reported with a root-mean-square error of $3800, a logarithmic
+error of 0.2, and R² of 0.8. Only four studies compared ML to traditional regression; two found no difference, while two
+favoured ML. On average, studies met 12.3 of the 22 TRIPOD criteria, with only 29.4% meeting more than two-thirds.
+Conclusion: ML models in hip arthroscopy show variable performance in predicting outcomes and complications.
+Furthermore, most studies comparing ML models to traditional regression did not report any significant difference. Lastly,
+variability in adherence to TRIPOD guidelines highlights the need for future studies to improve transparency and reporting
+in the development of ML algorithms for hip arthroscopy. Given the potential of ML models in enhancing clinical
+decision-making for hip arthroscopy, along with the findings of the current study, their application should be used with
+caution. Level of evidence: Level IV, systematic review of level II-IV studies. © 2026 European Society of Sports
+Traumatology, Knee Surgery and Arthroscopy.
+Keywords: Artificial intelligence, Machine Learning, Hip Arthroscopy, Predictive Modelling, Deep Learning
+
+=== PDF PAGE 2 ===
+Study Overview & Background
+Purpose: Machine learning (ML) algorithms are increasingly used to predict outcomes in orthopaedic surgery, but their
+utility in hip arthroscopy remains unclear. This study aimed to (1) evaluate ML models for predicting outcomes,
+complications, and resource use following hip arthroscopy, (2) compare ML performance to traditional statistical methods,
+and (3) critically appraise the quality of existing literature. Methods: A systematic search of PUBMED, MEDLINE,
+EMBASE and the Cochrane Central Register of Controlled Trials was conducted on 4 April 2023. Included studies used
+ML models for clinical prediction in hip arthroscopy. Data on study design, outcomes, model development, validation and
+adherence to TRIPOD guidelines were extracted. Results: Seventeen studies involving 37,549 patients (52.8% female;
+mean age 34.4 ± 6.1 years) were included. ML was used to predict clinical outcomes (47.1%), adverse events (47.1%) and
+resource utilisation (5.9%). The median area under the curve was 0.66 (range 0.5-0.94) for clinical outcomes and 0.7
+(range 0.6-0.9) for adverse events. Resource utilisation was reported with a root-mean-square error of $3800, a logarithmic
+error of 0.2, and R² of 0.8. Only four studies compared ML to traditional regression; two found no difference, while two
+favoured ML. On average, studies met 12.3 of the 22 TRIPOD criteria, with only 29.4% meeting more than two-thirds.
+Conclusion: ML models in hip arthroscopy show variable performance in predicting outcomes and complications.
+Furthermore, most studies comparing ML models to traditional regression did not report any significant difference. Lastly,
+variability in adherence to TRIPOD guidelines highlights the need for future studies to improve transparency and reporting
+in the development of ML algorithms for hip arthroscopy. Given the potential of ML models in enhancing clinical
+decision-making for hip arthroscopy, along with the findings of the current study, their application should be used with
+caution. Level of evidence: Level IV, systematic review of level II-IV studies. © 2026 European Society of Sports
+Traumatology, Knee Surgery and Arthroscopy.
+Methodology & Clinical Focus
+Study Classification: systematic review. Evaluated under orthopedic machine learning and artificial intelligence decision
+frameworks.
+Key Findings & Analysis
+Machine learning models in hip arthroscopy show variable performance in predicting outcomes and complications, with
+most studies reporting no significant difference to traditional regression.
+Extended Repository Abstract
+Purpose Machine learning (ML) algorithms are increasingly used to predict outcomes in orthopaedic surgery, but their
+utility in hip arthroscopy remains unclear. This study aimed to (1) evaluate ML models for predicting outcomes,
+complications, and resource use following hip arthroscopy, (2) compare ML performance to traditional statistical methods,
+and (3) critically appraise the quality of existing literature. Methods A systematic search of PUBMED, MEDLINE,
+EMBASE and the Cochrane Central Register of Controlled Trials was conducted on 4 April 2023. Included studies used
+ML models for clinical prediction in hip arthroscopy. Data on study design, outcomes, model development, validation and
+adherence to TRIPOD guidelines were extracted. Results Seventeen studies involving 37,549 patients (52.8% female;
+mean age 34.4 ± 6.1 years) were included. ML was used to predict clinical outcomes (47.1%), adverse events (47.1%) and
+resource utilisation (5.9%). The median area under the curve was 0.66 (range 0.5-0.94) for clinical outcomes and 0.7
+(range 0.6-0.9) for adverse events. Resource utilisation was reported with a root-mean-square error of $3800, a logarithmic
+error of 0.2, and R² of 0.8. Only four studies compared ML to traditional regression; two found no difference, while two
+favoured ML. On average, studies met 12.3 of the 22 TRIPOD criteria, with only 29.4% meeting more than two-thirds.
+Conclusion ML models in hip arthroscopy show variable performance in predicting outcomes and complications.
+
+=== PDF PAGE 3 ===
+Furthermore, most studies comparing ML models to traditional regression did not report any significant difference. Lastly,
+variability in adherence to TRIPOD guidelines highlights the need for future studies to improve transparency and reporting
+in the development of ML algorithms for hip arthroscopy. Given the potential of ML models in enhancing clinical
+decision-making for hip arthroscopy, along with the findings of the current study, their application should be used with
+caution. Level of evidence Level IV, systematic review of level II-IV studies.
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+Bibliographic Details & Indexing
+Authors: Madison Lee, Vera Zakhari, A. Shanmugaraj, Lakshmanan Sivasundaram, N. Horner
+Journal / Venue: Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA (2026.0)
+SJR Metric: Quartile 1.0
+Citation Count: 2 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.1002/ksa.70304
+Consensus Evidence Link: https://consensus.app/papers/machine-learning-for-predicting-outcomes-
+complications-lee-zakhari/a612e8e121955f0cb6a628a505966e12/
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1002/ksa.70304 • Consensus Page:
+https://consensus.app/papers/machine-learning-for-predicting-outcomes-complications-lee-
+zakhari/a612e8e121955f0cb6a628a505966e12/ • Verified and rendered via Deep Search & Academic Repositories.

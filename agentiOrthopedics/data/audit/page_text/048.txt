@@ -1,0 +1,69 @@
+=== PDF PAGE 1 ===
+THE JOURNAL OF ARTHROPLASTY • 2022.0 Top 100 Orthopedic AI • Rank #48
+How to Develop and Validate Prediction Models for
+Orthopedic Outcomes
+I. Zaniletti, D. Larson, D. Lewallen, D. Berry, H. Maradit Kremers
+Department of Quantitative Health Sciences, Mayo Clinic, Scottsdale, Arizona.
+Journal:
+The Journal of arthroplasty
+Publication Year:
+2022.0
+Citations:
+13
+DOI:
+10.1016/j.arth.2022.12.032
+CLINICAL & AGENTIC AI TAKEAWAY
+Prediction models can be valuable tools for supporting surgical decision-making in arthroplasty, but require
+robust construction and validation for widespread adoption in clinical practice.
+ABSTRACT
+--- REPOSITORY & PUBLISHER WEB METADATA --- Affiliations: Department of Quantitative Health Sciences, Mayo
+Clinic, Scottsdale, Arizona. Keywords: Model validation, Orthopedics, Arthroplasty, Predictors, Machine Learning, Risk
+Prediction Extended Abstract from Repository: Prediction models are common in medicine for predicting outcomes such
+as mortality, complications, or response to treatment. Despite the growing interest in these models in arthroplasty (and
+orthopaedics in general), few have been adopted in clinical practice. If robustly built and validated, prediction models can
+be excellent tools to support surgical decision making. In this paper, we provide an overview of the statistical concepts
+surrounding prediction models and outline practical steps for prediction model development and validation in arthroplasty
+research. Please visit the followinghttps://www.youtube.com/watch?v=9Yrit23Rkicfor a video that explains the highlights
+of the paper in practical terms.
+Keywords: Model validation, Orthopedics, Arthroplasty, Predictors, Machine Learning, Risk Prediction
+Study Overview & Background
+--- REPOSITORY & PUBLISHER WEB METADATA --- Affiliations: Department of Quantitative Health Sciences, Mayo
+Clinic, Scottsdale, Arizona. Keywords: Model validation, Orthopedics, Arthroplasty, Predictors, Machine Learning, Risk
+Prediction Extended Abstract from Repository: Prediction models are common in medicine for predicting outcomes such
+as mortality, complications, or response to treatment. Despite the growing interest in these models in arthroplasty (and
+orthopaedics in general), few have been adopted in clinical practice. If robustly built and validated, prediction models can
+be excellent tools to support surgical decision making. In this paper, we provide an overview of the statistical concepts
+surrounding prediction models and outline practical steps for prediction model development and validation in arthroplasty
+research. Please visit the followinghttps://www.youtube.com/watch?v=9Yrit23Rkicfor a video that explains the highlights
+of the paper in practical terms.
+Methodology & Clinical Focus
+Study Classification: other. Evaluated under orthopedic machine learning and artificial intelligence decision frameworks.
+
+=== PDF PAGE 2 ===
+Key Findings & Analysis
+Prediction models can be valuable tools for supporting surgical decision-making in arthroplasty, but require robust
+construction and validation for widespread adoption in clinical practice.
+Extended Repository Abstract
+Prediction models are common in medicine for predicting outcomes such as mortality, complications, or response to
+treatment. Despite the growing interest in these models in arthroplasty (and orthopaedics in general), few have been
+adopted in clinical practice. If robustly built and validated, prediction models can be excellent tools to support surgical
+decision making. In this paper, we provide an overview of the statistical concepts surrounding prediction models and
+outline practical steps for prediction model development and validation in arthroplasty research. Please visit the
+followinghttps://www.youtube.com/watch?v=9Yrit23Rkicfor a video that explains the highlights of the paper in practical
+terms.
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+Bibliographic Details & Indexing
+Authors: I. Zaniletti, D. Larson, D. Lewallen, D. Berry, H. Maradit Kremers
+Journal / Venue: The Journal of arthroplasty (2022.0)
+SJR Metric: Quartile 1.0
+Citation Count: 13 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.1016/j.arth.2022.12.032
+Consensus Evidence Link: https://consensus.app/papers/how-to-develop-and-validate-prediction-models-for-
+zaniletti-larson/82d328c8719c59f5a73aa44dde1b9415/
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1016/j.arth.2022.12.032 • Consensus
+Page: https://consensus.app/papers/how-to-develop-and-validate-prediction-models-for-zaniletti-
+larson/82d328c8719c59f5a73aa44dde1b9415/ • Verified and rendered via Deep Search & Academic Repositories.

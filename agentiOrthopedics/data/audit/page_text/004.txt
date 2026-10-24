@@ -1,0 +1,119 @@
+=== PDF PAGE 1 ===
+ARTHROSCOPY : THE JOURNAL OF ARTHROSCOPIC & RELATED SURGERY : OFFICIAL
+PUBLICATION OF THE ARTHROSCOPY ASSOCIATION OF NORTH AMERICA AND THE
+INTERNATIONAL ARTHROSCOPY ASSOCIATION • 2026.0
+Top 100
+Orthopedic AI
+• Rank #4
+Large Language Model Predicts Surgeon
+Recommendations for Imaging and Surgery for Patients
+Presenting for Knee and Shoulder Complaints With 70%
+and 81% Accuracy Using Previsit Questionnaire
+Responses.
+Ryan T. Halvorson, Timothy Keeley, K. Niknam, T. Zack, S. Majumdar, Brian T. Feeley, Alan L. Zhang,
+Drew A. Lansdown
+Department of Orthopaedic Surgery, University of California San Francisco, San Francisco, California, U.S.A.
+Journal:
+Arthroscopy : the journal of
+arthroscopic & related
+surgery : official publication of
+the Arthroscopy Association
+of North America and the
+International Arthroscopy
+Association
+Publication Year:
+2026.0
+Citations:
+1
+DOI:
+10.1002/arj.70016
+CLINICAL & AGENTIC AI TAKEAWAY
+The pretrained large language model accurately predicts orthopaedic surgeon recommendations for imaging
+and surgery using previsit questionnaire responses for knee and shoulder complaints with 70% accuracy and
+81% accuracy when augmented with radiology reports.
+ABSTRACT
+Purpose: To validate the performance of a pretrained large language model (LLM) in predicting orthopaedic surgeon
+recommendations for management of newly referred patients, using free-text previsit questionnaire responses as input.
+Methods: This retrospective cross-sectional study included new patients visiting an orthopaedic sports medicine clinic
+between 2020 and 2023. Using zero-shot prompting, the LLM analyzed previsit questionnaire responses (e.g., "When did
+you start to have pain?") to predict whether patients required advanced imaging and/or surgical intervention. The LLM was
+blinded to all other clinical information, including surgeon notes, physical exams, or referral data. Model predictions were
+evaluated with accuracy, sensitivity, and specificity in comparison to actual surgeon-generated plans. For a subset of
+patients who had undergone advanced imaging, the LLM was augmented with free-text radiology reports and asked to
+provide updated surgical recommendations. Results: In the combined cohort of 1141 patients, the LLM predicted surgeon
+recommendation for advanced imaging with 70% accuracy, 83% sensitivity, and 64% specificity using previsit
+questionnaire responses alone. Imaging predictions were accurate for common diagnoses, including anterior cruciate
+ligament (ACL, 94%), meniscus (85%), and rotator cuff (80%) injuries but poor for knee (54%) and shoulder arthritis
+(66%). When augmented with imaging reports, the LLM predicted recommendations for surgery with 81% accuracy, 88%
+sensitivity, and 72% specificity. Surgical predictions were highly accurate for ACL (93%), meniscus (78%), rotator cuff
+
+=== PDF PAGE 2 ===
+(83%), and shoulder instability related pathologies (78%). Conclusions: Using previsit questionnaire data from new
+orthopaedic patients with knee and shoulder complaints, the pretrained LLM showed 70% accuracy for imaging
+recommendations, and the augmented surgical-decision LLM showed 81% accuracy for surgical recommendations. Level
+of evidence: Level III, retrospective diagnostic case-control study. © 2026 the Arthroscopy Association of North America.
+Study Overview & Background
+Purpose: To validate the performance of a pretrained large language model (LLM) in predicting orthopaedic surgeon
+recommendations for management of newly referred patients, using free-text previsit questionnaire responses as input.
+Methods: This retrospective cross-sectional study included new patients visiting an orthopaedic sports medicine clinic
+between 2020 and 2023. Using zero-shot prompting, the LLM analyzed previsit questionnaire responses (e.g., "When did
+you start to have pain?") to predict whether patients required advanced imaging and/or surgical intervention. The LLM was
+blinded to all other clinical information, including surgeon notes, physical exams, or referral data. Model predictions were
+evaluated with accuracy, sensitivity, and specificity in comparison to actual surgeon-generated plans. For a subset of
+patients who had undergone advanced imaging, the LLM was augmented with free-text radiology reports and asked to
+provide updated surgical recommendations. Results: In the combined cohort of 1141 patients, the LLM predicted surgeon
+recommendation for advanced imaging with 70% accuracy, 83% sensitivity, and 64% specificity using previsit
+questionnaire responses alone. Imaging predictions were accurate for common diagnoses, including anterior cruciate
+ligament (ACL, 94%), meniscus (85%), and rotator cuff (80%) injuries but poor for knee (54%) and shoulder arthritis
+(66%). When augmented with imaging reports, the LLM predicted recommendations for surgery with 81% accuracy, 88%
+sensitivity, and 72% specificity. Surgical predictions were highly accurate for ACL (93%), meniscus (78%), rotator cuff
+(83%), and shoulder instability related pathologies (78%). Conclusions: Using previsit questionnaire data from new
+orthopaedic patients with knee and shoulder complaints, the pretrained LLM showed 70% accuracy for imaging
+recommendations, and the augmented surgical-decision LLM showed 81% accuracy for surgical recommendations. Level
+of evidence: Level III, retrospective diagnostic case-control study. © 2026 the Arthroscopy Association of North America.
+Methodology & Clinical Focus
+Study Classification: theoretical, modeling, or simulation study. Evaluated under orthopedic machine learning and
+artificial intelligence decision frameworks.
+Key Findings & Analysis
+The pretrained large language model accurately predicts orthopaedic surgeon recommendations for imaging and surgery
+using previsit questionnaire responses for knee and shoulder complaints with 70% accuracy and 81% accuracy when
+augmented with radiology reports.
+Extended Repository Abstract
+Purpose To validate the performance of a pretrained large language model (LLM) in predicting orthopaedic surgeon
+recommendations for management of newly referred patients, using free-text previsit questionnaire responses as input.
+Methods This retrospective cross-sectional study included new patients visiting an orthopaedic sports medicine clinic
+between 2020 and 2023. Using zero-shot prompting, the LLM analyzed previsit questionnaire responses (e.g., "When did
+you start to have pain?") to predict whether patients required advanced imaging and/or surgical intervention. The LLM was
+blinded to all other clinical information, including surgeon notes, physical exams, or referral data. Model predictions were
+evaluated with accuracy, sensitivity, and specificity in comparison to actual surgeon-generated plans. For a subset of
+
+=== PDF PAGE 3 ===
+patients who had undergone advanced imaging, the LLM was augmented with free-text radiology reports and asked to
+provide updated surgical recommendations. Results In the combined cohort of 1141 patients, the LLM predicted surgeon
+recommendation for advanced imaging with 70% accuracy, 83% sensitivity, and 64% specificity using previsit
+questionnaire responses alone. Imaging predictions were accurate for common diagnoses, including anterior cruciate
+ligament (ACL, 94%), meniscus (85%), and rotator cuff (80%) injuries but poor for knee (54%) and shoulder arthritis
+(66%). When augmented with imaging reports, the LLM predicted recommendations for surgery with 81% accuracy, 88%
+sensitivity, and 72% specificity. Surgical predictions were highly accurate for ACL (93%), meniscus (78%), rotator cuff
+(83%), and shoulder instability related pathologies (78%). Conclusions Using previsit questionnaire data from new
+orthopaedic patients with knee and shoulder complaints, the pretrained LLM showed 70% accuracy for imaging
+recommendations, and the augmented surgical-decision LLM showed 81% accuracy for surgical recommendations. Level
+of evidence Level III, retrospective diagnostic case-control study.
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+Bibliographic Details & Indexing
+Authors: Ryan T. Halvorson, Timothy Keeley, K. Niknam, T. Zack, S. Majumdar, Brian T. Feeley, Alan L. Zhang,
+Drew A. Lansdown
+Journal / Venue: Arthroscopy : the journal of arthroscopic & related surgery : official publication of the
+Arthroscopy Association of North America and the International Arthroscopy Association (2026.0)
+SJR Metric: Quartile 1.0
+Citation Count: 1 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.1002/arj.70016
+Consensus Evidence Link: https://consensus.app/papers/large-language-model-predicts-surgeon-
+recommendations-halvorson-keeley/6746a55136c3577fad1a705f2dd7215b/
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1002/arj.70016 • Consensus Page:
+https://consensus.app/papers/large-language-model-predicts-surgeon-recommendations-halvorson-
+keeley/6746a55136c3577fad1a705f2dd7215b/ • Verified and rendered via Deep Search & Academic Repositories.

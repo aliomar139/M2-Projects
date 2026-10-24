@@ -1,0 +1,718 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          22
+        ]
+      ],
+      "date-time": "2026-09-22T22:05:27Z",
+      "timestamp": 1790114727755,
+      "version": "4.0.1"
+    },
+    "reference-count": 58,
+    "publisher": "JMIR Publications Inc.",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "JMIR Med Inform"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec sec-type=\"background\">\n                    <jats:title>Background</jats:title>\n                    <jats:p>Foot orthosis prescription is a complex clinical decision-making process that involves selecting and combining multiple structural, functional, and material components based on heterogeneous biomechanical information. In routine outpatient practice, detailed biomechanical assessments are often incomplete, creating substantial variability in prescription decisions, and limiting the applicability of conventional machine learning (ML) models that assume fixed feature availability.</jats:p>\n                  </jats:sec>\n                  <jats:sec sec-type=\"objective\">\n                    <jats:title>Objective</jats:title>\n                    <jats:p>This study aimed to develop and evaluate a hierarchical ML-based clinical decision support framework for foot orthosis prescription that accommodates variable clinical information availability, supports multilabel prescription decisions, and incorporates safety-oriented recommendation strategies for routine outpatient practice.</jats:p>\n                  </jats:sec>\n                  <jats:sec sec-type=\"methods\">\n                    <jats:title>Methods</jats:title>\n                    <jats:p>A retrospective observational study was conducted using 6462 visit-level clinical encounters collected from a single institution between 2015 and 2020. Orthotic prescription was formulated as a multilabel prediction task involving 15 prescription components. A hierarchical modeling framework was implemented, consisting of a basic decision level using routinely available demographic and alignment variables, and an advanced level incorporating subtalar joint inversion and eversion range of motion measurements when available. Tree-based gradient boosting models were evaluated using 5-fold stratified grouped cross-validation. Model performance was assessed using component-wise area under the receiver operating characteristic curve (AUROC), area under the precision-recall curve (AUPRC), positive predictive value (PPV), macro-averaged Hamming loss, Top-K hit, and coverage rates based on probabilities calibrated using internal grouped Platt scaling, and component-specific safety-oriented threshold calibration.</jats:p>\n                  </jats:sec>\n                  <jats:sec sec-type=\"results\">\n                    <jats:title>Results</jats:title>\n                    <jats:p>The hierarchical models demonstrated consistent predictive performance across both decision levels, although precision-recall–based analyses indicated greater variability for low-prevalence prescription components. The Level 4 and Level 8 models achieved mean component-wise AUROC values of 0.792 and 0.816, respectively, with macro-averaged Hamming loss of 0.113 and 0.111. Using component-specific Platt scaling within the 5-fold stratified grouped cross-validation framework, Top-K analysis demonstrated a Top-1 hit rate of 86.7% and a Top-3 hit rate of 97.4%. When all prescribed components were considered, Top-K coverage reached 71.7% at Top-3 and increased to 97.0% at Top-8. Safety-oriented threshold calibration was performed separately for each prescription component, selecting the threshold that achieved the highest sensitivity while maintaining a specificity of at least 95%. Under this component-specific calibration strategy, the aggregated operating profile achieved a microaveraged specificity of 96.00% with a microaveraged sensitivity of 28.71%. Age-stratified analyses revealed distinct feature-importance patterns between pediatric and adult populations.</jats:p>\n                  </jats:sec>\n                  <jats:sec sec-type=\"conclusions\">\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>The proposed hierarchical clinical decision support framework supported multicomponent foot orthosis prescription under variable information availability commonly encountered in outpatient practice. By generating ranked component-wise recommendations and high-confidence threshold-calibrated outputs, the framework may support clinician decision-making in routine orthotic practice. Further prospective validation will be required to determine its clinical utility.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.2196/92831",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          23
+        ]
+      ],
+      "date-time": "2026-08-23T12:15:06Z",
+      "timestamp": 1787487306000
+    },
+    "page": "e92831-e92831",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "A Hierarchical Machine Learning–Based Framework for Clinical Decision Support in Foot Orthosis Prescription: Algorithm Development and Validation Study"
+    ],
+    "prefix": "10.2196",
+    "volume": "14",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-5423-2443",
+        "authenticated-orcid": false,
+        "given": "Ji-Yong",
+        "family": "Jung",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8824-7555",
+        "authenticated-orcid": false,
+        "given": "Wooyeol",
+        "family": "Yang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4338-7615",
+        "authenticated-orcid": false,
+        "given": "Jung-Ja",
+        "family": "Kim",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1010",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          22
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "3",
+        "key": "R1",
+        "doi-asserted-by": "publisher",
+        "first-page": "282",
+        "DOI": "10.1016/s0966-6362(01)00151-5",
+        "article-title": "Foot type classification: a critical review of current methods",
+        "volume": "15",
+        "author": "Razeghi",
+        "journal-title": "Gait Posture"
+      },
+      {
+        "issue": "1",
+        "key": "R2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-025-28935-1",
+        "article-title": "Spatiotemporal and foot kinematic differences during gait in individuals with cavus foot",
+        "volume": "15",
+        "author": "Tovaruela-Carrión",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "key": "R3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.foot.2019.06.004",
+        "article-title": "Parental understanding of intoeing gait - a preliminary study",
+        "volume": "41",
+        "author": "Schulz",
+        "journal-title": "Foot (Edinb)"
+      },
+      {
+        "issue": "1",
+        "key": "R4",
+        "doi-asserted-by": "publisher",
+        "first-page": "68",
+        "DOI": "10.1016/j.gaitpost.2006.07.009",
+        "article-title": "Age-related differences in foot structure and function",
+        "volume": "26",
+        "author": "Scott",
+        "journal-title": "Gait Posture"
+      },
+      {
+        "issue": "3",
+        "key": "R5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0299446",
+        "article-title": "Effect of foot orthoses on balance among individuals with flatfoot: a systematic review and meta-analysis",
+        "volume": "19",
+        "author": "Chinpeerasathian",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "R6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.gaitpost.2020.11.001",
+        "article-title": "Biomechanical effects of three types of foot orthoses in individuals with posterior tibial tendon dysfunction",
+        "volume": "83",
+        "author": "Chicoine",
+        "journal-title": "Gait Posture"
+      },
+      {
+        "issue": "5",
+        "key": "R7",
+        "doi-asserted-by": "publisher",
+        "first-page": "322",
+        "DOI": "10.1136/bjsports-2016-097355",
+        "article-title": "Foot orthoses for plantar heel pain: a systematic review and meta-analysis",
+        "volume": "52",
+        "author": "Whittaker",
+        "journal-title": "Br J Sports Med"
+      },
+      {
+        "key": "R8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.gaitpost.2019.12.016",
+        "article-title": "The effectiveness of foot orthoses in the treatment of medial knee osteoarthritis: a systematic review",
+        "volume": "76",
+        "author": "Zafar",
+        "journal-title": "Gait Posture"
+      },
+      {
+        "issue": "1",
+        "key": "R9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12891-022-06044-8",
+        "article-title": "Foot orthoses for flexible flatfeet in children and adults: a systematic review and meta-analysis of patient-reported outcomes",
+        "volume": "24",
+        "author": "Oerlemans",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "issue": "4",
+        "key": "R10",
+        "doi-asserted-by": "publisher",
+        "first-page": "260",
+        "DOI": "10.1097/JPO.0000000000000452",
+        "article-title": "Immediate impacts of two foot orthotic designs on foot posture index, gait, and comfort in adults with asymptomatic, flexible pes planus",
+        "volume": "35",
+        "author": "Mullen",
+        "journal-title": "J Prosthet Orthot"
+      },
+      {
+        "key": "R11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.gaitpost.2024.01.026",
+        "article-title": "Effectiveness of gait plate insole and lateral sole wedged shoes on foot progression angle in children with in-toeing gait: a prospective randomized control trial",
+        "volume": "109",
+        "author": "Parian",
+        "journal-title": "Gait Posture"
+      },
+      {
+        "issue": "1",
+        "key": "R12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13047-020-00401-3",
+        "article-title": "Effect of different orthotic materials on plantar pressures: a systematic review",
+        "volume": "13",
+        "author": "Gerrard",
+        "journal-title": "J Foot Ankle Res"
+      },
+      {
+        "issue": "3",
+        "key": "R13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jfa2.12047",
+        "article-title": "The experiences of podiatrists prescribing custom foot orthoses and patients using custom foot orthoses for foot pain management in the United Kingdom: a focus group study",
+        "volume": "17",
+        "author": "Leach",
+        "journal-title": "J Foot Ankle Res"
+      },
+      {
+        "key": "R14",
+        "unstructured": "Bishop CM . Pattern Recognition and Machine Learning. Springer; 2006. URL: https://link.springer.com/book/9780387310732 [Accessed 01-09-2026]"
+      },
+      {
+        "key": "R15",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hastie T Tibshirani R Friedman J . The Elements of Statistical Learning. 2nd ed. Springer; 2009. URL: https://link.springer.com/book/10.1007/978-0-387-84858-7 [Accessed 01-09-2026]",
+        "DOI": "10.1007/978-0-387-84858-7"
+      },
+      {
+        "issue": "16",
+        "key": "R16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s20164481",
+        "article-title": "A deep-learning approach for foot-type classification using heterogeneous pressure data",
+        "volume": "20",
+        "author": "Chae",
+        "journal-title": "Sensors (Basel)"
+      },
+      {
+        "key": "R17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fbioe.2023.1239246",
+        "article-title": "A deep learning method for foot-type classification using plantar pressure images",
+        "volume": "11",
+        "author": "Zhao",
+        "journal-title": "Front Bioeng Biotechnol"
+      },
+      {
+        "key": "R18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2022.3192136",
+        "article-title": "Classifying toe walking gait patterns among children diagnosed with idiopathic toe walking using wearable sensors and machine learning algorithms",
+        "volume": "10",
+        "author": "Soangra",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "1",
+        "key": "R19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12916-019-1426-2",
+        "article-title": "Key challenges for delivering clinical impact with artificial intelligence",
+        "volume": "17",
+        "author": "Kelly",
+        "journal-title": "BMC Med"
+      },
+      {
+        "issue": "13",
+        "key": "R20",
+        "doi-asserted-by": "publisher",
+        "first-page": "1317",
+        "DOI": "10.1001/jama.2017.18391",
+        "article-title": "Big data and machine learning in health care",
+        "volume": "319",
+        "author": "Beam",
+        "journal-title": "JAMA"
+      },
+      {
+        "issue": "1",
+        "key": "R21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/79307",
+        "article-title": "Methods for addressing missingness in electronic health record data for clinical prediction models: comparative evaluation",
+        "volume": "13",
+        "author": "Digitale",
+        "journal-title": "JMIR Med Inform"
+      },
+      {
+        "issue": "3",
+        "key": "R22",
+        "doi-asserted-by": "publisher",
+        "first-page": "1287",
+        "DOI": "10.1007/s00431-023-05354-w",
+        "article-title": "The resting calcaneal stance position (RCSP): an old dog, with new tricks",
+        "volume": "183",
+        "author": "Martinez-Sebastian",
+        "journal-title": "Eur J Pediatr"
+      },
+      {
+        "issue": "9",
+        "key": "R23",
+        "doi-asserted-by": "publisher",
+        "first-page": "465",
+        "DOI": "10.7547/87507315-91-9-465",
+        "article-title": "Subtalar joint axis location and rotational equilibrium theory of foot function",
+        "volume": "91",
+        "author": "Kirby",
+        "journal-title": "J Am Podiatr Med Assoc"
+      },
+      {
+        "issue": "1",
+        "key": "R24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13047-017-0204-7",
+        "article-title": "Custom-made foot orthoses: an analysis of prescription characteristics from an Australian commercial orthotic laboratory",
+        "volume": "10",
+        "author": "Menz",
+        "journal-title": "J Foot Ankle Res"
+      },
+      {
+        "key": "R25",
+        "unstructured": "Ke G Meng Q Finley T et al. LightGBM: a highly efficient gradient boosting decision tree. Presented at: 31st Conference on Neural Information Processing Systems (NIPS 2017); Dec 4-9, 2017:3146-3154; Long Beach, CA. [doi: 10.5555/3294996.3295074]"
+      },
+      {
+        "issue": "19",
+        "key": "R26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/ijerph191912484",
+        "article-title": "Decision tree-based foot orthosis prescription for patients with pes planus",
+        "volume": "19",
+        "author": "Jung",
+        "journal-title": "Int J Environ Res Public Health"
+      },
+      {
+        "issue": "2",
+        "key": "R27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jfa2.70044",
+        "article-title": "Custom foot orthoses: a retrospective analysis of 1000 prescriptions from New Zealand podiatrists",
+        "volume": "18",
+        "author": "Jackson",
+        "journal-title": "J Foot Ankle Res"
+      },
+      {
+        "issue": "15",
+        "key": "R28",
+        "doi-asserted-by": "publisher",
+        "first-page": "6638",
+        "DOI": "10.3390/app14156638",
+        "article-title": "XAI-Based clinical decision support systems: a systematic review",
+        "volume": "14",
+        "author": "Kim",
+        "journal-title": "Appl Sci"
+      },
+      {
+        "key": "R29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/62732",
+        "article-title": "Investigating clinicians’ intentions and influencing factors for using an intelligence-enabled diagnostic clinical decision support system in health care systems: cross-sectional survey",
+        "volume": "27",
+        "author": "Zheng",
+        "journal-title": "J Med Internet Res"
+      },
+      {
+        "issue": "21",
+        "key": "R30",
+        "doi-asserted-by": "publisher",
+        "first-page": "2199",
+        "DOI": "10.1001/jama.2018.17163",
+        "article-title": "Clinical decision support in the era of artificial intelligence",
+        "volume": "320",
+        "author": "Shortliffe",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "R31",
+        "unstructured": "Tonekaboni S Joshi S McCradden MD Goldenberg A . What clinicians want: contextualizing explainable machine learning for clinical end use. arXiv. Preprint posted online on Aug 7, 2019. [doi: 10.48550/arXiv.1905.05134]"
+      },
+      {
+        "issue": "1",
+        "key": "R32",
+        "doi-asserted-by": "publisher",
+        "first-page": "198",
+        "DOI": "10.1093/jamia/ocw042",
+        "article-title": "Opportunities and challenges in developing risk prediction models with electronic health records data: a systematic review",
+        "volume": "24",
+        "author": "Goldstein",
+        "journal-title": "J Am Med Inform Assoc"
+      },
+      {
+        "issue": "1",
+        "key": "R33",
+        "first-page": "69",
+        "volume": "47",
+        "author": "Evans",
+        "journal-title": "Eur J Phys Rehabil Med"
+      },
+      {
+        "issue": "4",
+        "key": "R34",
+        "doi-asserted-by": "publisher",
+        "first-page": "2208",
+        "DOI": "10.3390/app13042208",
+        "article-title": "Deep-learning algorithms for prescribing insoles to patients with foot pain",
+        "volume": "13",
+        "author": "Kim",
+        "journal-title": "Appl Sci"
+      },
+      {
+        "key": "R35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2025.3584966",
+        "article-title": "Personalized solutions for foot health: machine learning-based foot condition detection, classification, and recommendation of customized footwear",
+        "volume": "13",
+        "author": "Rajagopal",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "1",
+        "key": "R36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13047-018-0304-z",
+        "article-title": "A survey of foot orthoses prescription habits amongst podiatrists in the UK, Australia and New Zealand",
+        "volume": "11",
+        "author": "Chapman",
+        "journal-title": "J Foot Ankle Res"
+      },
+      {
+        "issue": "1",
+        "key": "R37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12984-022-00987-8",
+        "article-title": "Deep learning approach to estimate foot pressure distribution in walking with application for a cost-effective insole system",
+        "volume": "19",
+        "author": "Mun",
+        "journal-title": "J Neuroeng Rehabil"
+      },
+      {
+        "issue": "18",
+        "key": "R38",
+        "doi-asserted-by": "publisher",
+        "first-page": "10156",
+        "DOI": "10.3390/app151810156",
+        "article-title": "A deep learning-based plantar pressure measurement system for accurate foot arch index estimation",
+        "volume": "15",
+        "author": "Liao",
+        "journal-title": "Appl Sci"
+      },
+      {
+        "key": "R39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fbioe.2025.1579072",
+        "article-title": "Toward automated plantar pressure analysis: machine learning-based segmentation and key point detection across multicenter data",
+        "volume": "13",
+        "author": "Dindorf",
+        "journal-title": "Front Bioeng Biotechnol"
+      },
+      {
+        "issue": "16",
+        "key": "R40",
+        "doi-asserted-by": "publisher",
+        "first-page": "7398",
+        "DOI": "10.1016/j.eswa.2014.06.002",
+        "article-title": "Prediction of gait speed from plantar pressure using artificial neural networks",
+        "volume": "41",
+        "author": "Joo",
+        "journal-title": "Expert Syst Appl"
+      },
+      {
+        "key": "R41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2024.3425907",
+        "article-title": "Prediction of dynamic plantar pressure from insole intervention for diabetic patients based on patch-based multilayer perceptron with localization embedding",
+        "volume": "12",
+        "author": "Zhang",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "R42",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Steyerberg EW . Clinical Prediction Models: A Practical Approach to Development, Validation, and Updating. 2nd ed. Springer; 2019. [doi: 10.1007/978-3-030-16399-0]",
+        "DOI": "10.1007/978-3-030-16399-0"
+      },
+      {
+        "issue": "11",
+        "key": "R43",
+        "doi-asserted-by": "publisher",
+        "first-page": "231",
+        "DOI": "10.3390/technologies12110231",
+        "article-title": "Smart insole-based plantar pressure analysis for healthy and diabetic feet classification: statistical vs. machine learning approaches",
+        "volume": "12",
+        "author": "Agrawal",
+        "journal-title": "Technologies (Basel)"
+      },
+      {
+        "issue": "1",
+        "key": "R44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12938-021-00898-0",
+        "article-title": "Machine-learning-based children’s pathological gait classification with low-cost gait-recognition system",
+        "volume": "20",
+        "author": "Xu",
+        "journal-title": "Biomed Eng Online"
+      },
+      {
+        "key": "R45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2021.3131613",
+        "article-title": "Deep learning-based multimodal abnormal gait classification using a 3D skeleton and plantar foot pressure",
+        "volume": "9",
+        "author": "Jun",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "1",
+        "key": "R46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-020-0221-y",
+        "article-title": "An overview of clinical decision support systems: benefits, risks, and strategies for success",
+        "volume": "3",
+        "author": "Sutton",
+        "journal-title": "NPJ Digit Med"
+      },
+      {
+        "issue": "1",
+        "key": "R47",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-021-87826-3",
+        "article-title": "Machine learning analysis to predict the need for ankle foot orthosis in patients with stroke",
+        "volume": "11",
+        "author": "Choo",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "key": "R48",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fbioe.2023.1272693",
+        "article-title": "Machine-learning-based coordination of powered ankle-foot orthosis and functional electrical stimulation for gait control",
+        "volume": "11",
+        "author": "Jung",
+        "journal-title": "Front Bioeng Biotechnol"
+      },
+      {
+        "issue": "1",
+        "key": "R49",
+        "doi-asserted-by": "publisher",
+        "first-page": "44",
+        "DOI": "10.1038/s41591-018-0300-7",
+        "article-title": "High-performance medicine: the convergence of human and artificial intelligence",
+        "volume": "25",
+        "author": "Topol",
+        "journal-title": "Nat Med"
+      },
+      {
+        "issue": "1",
+        "key": "R50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-020-0253-3",
+        "article-title": "Presenting machine learning model information to clinical end users with model facts labels",
+        "volume": "3",
+        "author": "Sendak",
+        "journal-title": "NPJ Digit Med"
+      },
+      {
+        "issue": "5",
+        "key": "R51",
+        "doi-asserted-by": "publisher",
+        "first-page": "924",
+        "DOI": "10.1038/s41591-022-01772-9",
+        "article-title": "Reporting guideline for the early-stage clinical evaluation of decision support systems driven by artificial intelligence: DECIDE-AI",
+        "volume": "28",
+        "author": "Vasey",
+        "journal-title": "Nat Med"
+      },
+      {
+        "issue": "1",
+        "key": "R52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-023-00955-z",
+        "article-title": "Quantifying the impact of AI recommendations with explanations on prescription decision making",
+        "volume": "6",
+        "author": "Nagendran",
+        "journal-title": "NPJ Digit Med"
+      },
+      {
+        "issue": "20",
+        "key": "R53",
+        "doi-asserted-by": "publisher",
+        "first-page": "10323",
+        "DOI": "10.3390/app122010323",
+        "article-title": "The role of XAI in advice-taking from a clinical decision support system: a comparative user study of feature contribution-based and example-based explanations",
+        "volume": "12",
+        "author": "Du",
+        "journal-title": "Appl Sci"
+      },
+      {
+        "issue": "3",
+        "key": "R54",
+        "doi-asserted-by": "publisher",
+        "first-page": "171",
+        "DOI": "10.1515/icom-2020-0024",
+        "article-title": "Explainable AI and multi-modal causability in medicine",
+        "volume": "19",
+        "author": "Holzinger",
+        "journal-title": "I Com (Berl)"
+      },
+      {
+        "issue": "7494",
+        "key": "R55",
+        "doi-asserted-by": "publisher",
+        "first-page": "765",
+        "DOI": "10.1136/bmj.38398.500764.8F",
+        "article-title": "Improving clinical practice using clinical decision support systems: a systematic review of trials to identify features critical to success",
+        "volume": "330",
+        "author": "Kawamoto",
+        "journal-title": "BMJ"
+      },
+      {
+        "key": "R56",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jacobs M He J Pradier MF et al. Designing AI for trust and collaboration in time-constrained medical decisions: a sociotechnical lens. Presented at: Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems; May 8-13, 2021; Yokohama, Japan. [doi: 10.1145/3411764.3445385]",
+        "DOI": "10.1145/3411764.3445385"
+      },
+      {
+        "issue": "26",
+        "key": "R57",
+        "doi-asserted-by": "publisher",
+        "first-page": "2588",
+        "DOI": "10.1056/NEJMc1906060",
+        "article-title": "Machine learning in medicine",
+        "volume": "380",
+        "author": "Van Calster",
+        "journal-title": "N Engl J Med"
+      },
+      {
+        "issue": "11",
+        "key": "R58",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s24113613",
+        "article-title": "Optimizing rare disease gait classification through data balancing and generative AI: insights from hereditary cerebellar ataxia",
+        "volume": "24",
+        "author": "Trabassi",
+        "journal-title": "Sensors (Basel)"
+      }
+    ],
+    "container-title": [
+      "JMIR Medical Informatics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          22
+        ]
+      ],
+      "date-time": "2026-09-22T21:26:16Z",
+      "timestamp": 1790112376000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://medinform.jmir.org/2026/1/e92831"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          22
+        ]
+      ]
+    },
+    "references-count": 58,
+    "URL": "https://doi.org/10.2196/92831",
+    "relation": {},
+    "ISSN": [
+      "2291-9694"
+    ],
+    "issn-type": [
+      {
+        "value": "2291-9694",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          22
+        ]
+      ]
+    },
+    "article-number": "v14i3e92831"
+  }
+}

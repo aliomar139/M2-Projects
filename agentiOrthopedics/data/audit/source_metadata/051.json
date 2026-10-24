@@ -1,0 +1,628 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          19
+        ]
+      ],
+      "date-time": "2026-10-19T14:15:14Z",
+      "timestamp": 1792419314356,
+      "version": "4.5.0"
+    },
+    "reference-count": 36,
+    "publisher": "Wiley",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              7
+            ]
+          ],
+          "date-time": "2024-11-07T00:00:00Z",
+          "timestamp": 1730937600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              7
+            ]
+          ],
+          "date-time": "2024-11-07T00:00:00Z",
+          "timestamp": 1730937600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              7
+            ]
+          ],
+          "date-time": "2024-11-07T00:00:00Z",
+          "timestamp": 1730937600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              11,
+              7
+            ]
+          ],
+          "date-time": "2024-11-07T00:00:00Z",
+          "timestamp": 1730937600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "clinicalkey.fr",
+        "clinicalkey.jp",
+        "arthroscopyjournal.org",
+        "clinicalkey.es",
+        "clinicalkey.com.au",
+        "clinicalkey.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Arthroscopy"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          3
+        ]
+      ]
+    },
+    "abstract": "<jats:sec>\n                    <jats:title>Purpose</jats:title>\n                    <jats:p>To show the value of custom methods, namely Retrieval Augmented Generation (RAG)‐based Large Language Models (LLMs) and Agentic Augmentation, over standard LLMs in delivering accurate information using an anterior cruciate ligament (ACL) injury case.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>A set of 100 questions and answers based on the 2022 AAOS ACL guidelines were curated. Closed‐source (open AI GPT4/GPT 3.5 and Anthropic’s Claude3) and open‐source models (LLama3 8b/70b and Mistral 8×7b) were asked questions in base form and again with AAOS guidelines embedded into a RAG system. The top‐performing models were further augmented with artificial intelligence (AI) agents and reevaluated. Two fellowship‐trained surgeons blindly evaluated the accuracy of the responses of each cohort. Recall‐Oriented Understudy of Gisting Evaluation and Metric for Evaluation of Translation with Explicit Ordering scores were calculated to assess semantic similarity in the response.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>All noncustom LLM models started below 60% accuracy. Applying RAG improved the accuracy of every model by an average 39.7%. The highest performing model with just RAG was Meta’s open‐source Llama3 70b (94%). The highest performing model with RAG and AI agents was Open AI’s GPT4 (95%).</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>RAG improved accuracy by an average of 39.7%, with the highest accuracy rate of 94% in the Meta Llama3 70b. Incorporating AI agents into a previously RAG‐augmented LLM improved ChatGPT4 accuracy rate to 95%. Thus, Agentic and RAG augmented LLMs can be accurate liaisons of information, supporting our hypothesis.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Clinical Relevance</jats:title>\n                    <jats:p>Despite literature surrounding the use of LLM in medicine, there has been considerable and appropriate skepticism given the variably accurate response rates. This study establishes the groundwork to identify whether custom modifications to LLMs using RAG and agentic augmentation can better deliver accurate information in orthopaedic care. With this knowledge, online medical information commonly sought in popular LLMs, such as ChatGPT, can be standardized and provide relevant online medical information to better support shared decision making between surgeon and patient.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.1016/j.arthro.2024.10.042",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          7
+        ]
+      ],
+      "date-time": "2024-11-07T12:09:18Z",
+      "timestamp": 1730981358000
+    },
+    "page": "565",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 64,
+    "title": [
+      "Custom Large Language Models Improve Accuracy: Comparing Retrieval Augmented Generation and Artificial Intelligence Agents to Noncustom Models for Evidence‐Based Medicine"
+    ],
+    "prefix": "10.1002",
+    "volume": "41",
+    "author": [
+      {
+        "given": "Joshua J.",
+        "family": "Woo",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Brown University/The Warren Alpert School of Brown University Providence Rhode Island U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrew J.",
+        "family": "Yang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Brown University/The Warren Alpert School of Brown University Providence Rhode Island U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Reena J.",
+        "family": "Olsen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Tufts University School of Medicine Boston Massachusetts U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sayyida S.",
+        "family": "Hasan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Rush University Medical College Chicago Illinois U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Danyal H.",
+        "family": "Nawabi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Hospital for Special Surgery New York NY U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Benedict U.",
+        "family": "Nwachukwu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Hospital for Special Surgery New York NY U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "suffix": "III",
+        "given": "Riley J.",
+        "family": "Williams",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Hospital for Special Surgery New York NY U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Prem N.",
+        "family": "Ramkumar",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Commons Clinic Long Beach California U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          7
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_4_2_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jama.291.19.2359"
+      },
+      {
+        "key": "e_1_2_4_3_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3109/02813432.2011.574863"
+      },
+      {
+        "key": "e_1_2_4_4_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11420-017-9568-2"
+      },
+      {
+        "key": "e_1_2_4_5_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11999-014-4071-2"
+      },
+      {
+        "key": "e_1_2_4_6_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2017.09.043"
+      },
+      {
+        "key": "e_1_2_4_7_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41586-023-06291-2"
+      },
+      {
+        "key": "e_1_2_4_8_2",
+        "article-title": "Towards expert‐level medical questions answering with large language models",
+        "volume": "2305",
+        "author": "Singhal K.",
+        "year": "2023",
+        "journal-title": "ArXiv"
+      },
+      {
+        "key": "e_1_2_4_9_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-024-64827-6"
+      },
+      {
+        "key": "e_1_2_4_10_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s40634-023-00700-1"
+      },
+      {
+        "key": "e_1_2_4_11_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2023.04.007"
+      },
+      {
+        "key": "e_1_2_4_12_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41591-023-02594-z"
+      },
+      {
+        "key": "e_1_2_4_13_2",
+        "article-title": "Overcoming LLM challenges using RAG‐driven precision in coffee leaf disease remediation",
+        "volume": "2405",
+        "author": "Kumar S.",
+        "year": "2024",
+        "journal-title": "ArXiv"
+      },
+      {
+        "key": "e_1_2_4_14_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btae238"
+      },
+      {
+        "key": "e_1_2_4_15_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/medicina60030445"
+      },
+      {
+        "key": "e_1_2_4_16_2",
+        "unstructured": "Chatbot Arena Leaderboard Available at:https://huggingface.co/spaces/lmsys/chatbot‐arena‐leaderboard. Accessed July 11 2024."
+      },
+      {
+        "key": "e_1_2_4_17_2",
+        "unstructured": "Open LLM Leaderboard Available at:https://huggingface.co/spaces/open‐llm‐leaderboard/open_llm_leaderboard. Accessed July 11 2024."
+      },
+      {
+        "key": "e_1_2_4_18_2",
+        "article-title": "BooookScore: A systematic exploration of book‐length summarization in the era of LLMs",
+        "volume": "2310",
+        "author": "Chang Y.",
+        "year": "2024",
+        "journal-title": "ArXiv"
+      },
+      {
+        "key": "e_1_2_4_19_2",
+        "article-title": "Is temperature the creativity parameter of large language models?",
+        "volume": "2405",
+        "author": "Peeperkorn M.",
+        "year": "2024",
+        "journal-title": "ArXiv"
+      },
+      {
+        "key": "e_1_2_4_20_2",
+        "unstructured": "S.I.I.Walker.What is the ROUGE score (Recall‐Oriented Understudy for Gisting Evaluation)? KLU.ai Available at:https://klu.ai/glossary/rouge‐score. Accessed July 11 2024."
+      },
+      {
+        "key": "e_1_2_4_21_2",
+        "unstructured": "S.I.I.Walker.What is the METEOR Score (Metric for Evaluation of Translation with Explicit Ordering)? KLU.ai Available at:https://klu.ai/glossary/meteor‐score. Accessed July 11 2024."
+      },
+      {
+        "key": "e_1_2_4_22_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.isci.2024.109713"
+      },
+      {
+        "key": "e_1_2_4_23_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10916-023-01925-4"
+      },
+      {
+        "key": "e_1_2_4_24_2",
+        "article-title": "Comparing the performance of popular large language models on the National Board of Medical Examiners sample questions",
+        "volume": "16",
+        "author": "Abbas A.",
+        "year": "2024",
+        "journal-title": "Cureus"
+      },
+      {
+        "key": "e_1_2_4_25_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-023-07529-2"
+      },
+      {
+        "key": "e_1_2_4_26_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-023-47500-2"
+      },
+      {
+        "key": "e_1_2_4_27_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.23.00395"
+      },
+      {
+        "key": "e_1_2_4_28_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2024.01.029"
+      },
+      {
+        "key": "e_1_2_4_29_2",
+        "article-title": "Development and testing of retrieval augmented generation in large language models—A case study report",
+        "volume": "2402",
+        "author": "Ke Y.",
+        "year": "2024",
+        "journal-title": "Arxiv"
+      },
+      {
+        "key": "e_1_2_4_30_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/58158"
+      },
+      {
+        "key": "e_1_2_4_31_2",
+        "article-title": "Benchmarking retrieval‐augmented generation for medicine",
+        "volume": "2402",
+        "author": "Xiong G.",
+        "year": "2024",
+        "journal-title": "ArXiv"
+      },
+      {
+        "key": "e_1_2_4_32_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10916-024-02045-3"
+      },
+      {
+        "key": "e_1_2_4_33_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/33970"
+      },
+      {
+        "key": "e_1_2_4_34_2",
+        "article-title": "Exploring large language model based intelligent agents: Definitions, methods, and prospects",
+        "volume": "2401",
+        "author": "Cheng Y.",
+        "year": "2024",
+        "journal-title": "ArXiv"
+      },
+      {
+        "key": "e_1_2_4_35_2",
+        "article-title": "Answering real‐world clinical questions using large language model based systems",
+        "volume": "2407",
+        "author": "Low Y.",
+        "year": "2024",
+        "journal-title": "ArXiv"
+      },
+      {
+        "key": "e_1_2_4_36_2",
+        "article-title": "Language models are few‐shot learners",
+        "volume": "2005",
+        "author": "Brown T.",
+        "year": "2020",
+        "journal-title": "ArXiv"
+      },
+      {
+        "key": "e_1_2_4_37_2",
+        "article-title": "Investigating agency of LLMs in human‐AI collaboration tasks",
+        "volume": "2305",
+        "author": "Sharma A.",
+        "year": "2023",
+        "journal-title": "ArXiv"
+      }
+    ],
+    "container-title": [
+      "Arthroscopy"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0749806324008831?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0749806324008831?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://arthroscopyjournals.onlinelibrary.wiley.com/doi/pdf/10.1016/j.arthro.2024.10.042",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://arthroscopyjournals.onlinelibrary.wiley.com/doi/full-xml/10.1016/j.arthro.2024.10.042",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://arthroscopyjournals.onlinelibrary.wiley.com/doi/pdf/10.1016/j.arthro.2024.10.042",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          15
+        ]
+      ],
+      "date-time": "2026-03-15T09:01:07Z",
+      "timestamp": 1773565267000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://arthroscopyjournals.onlinelibrary.wiley.com/doi/10.1016/j.arthro.2024.10.042"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          7
+        ]
+      ]
+    },
+    "references-count": 36,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            3
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1016/j.arthro.2024.10.042"
+    ],
+    "URL": "https://doi.org/10.1016/j.arthro.2024.10.042",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "0749-8063",
+      "1526-3231"
+    ],
+    "issn-type": [
+      {
+        "value": "0749-8063",
+        "type": "print"
+      },
+      {
+        "value": "1526-3231",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          7
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Custom Large Language Models Improve Accuracy: Comparing Retrieval Augmented Generation and Artificial Intelligence Agents to Noncustom Models for Evidence-Based Medicine",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Arthroscopy: The Journal of Arthroscopic & Related Surgery",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.arthro.2024.10.042",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2024 by the Arthroscopy Association of North America",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

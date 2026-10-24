@@ -1,0 +1,574 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          30
+        ]
+      ],
+      "date-time": "2026-09-30T09:32:01Z",
+      "timestamp": 1790760721618,
+      "version": "4.1.0"
+    },
+    "reference-count": 64,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2017-07-01T00:00:00Z",
+          "timestamp": 1498867200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Air Force Dynamic Data-Driven Application System Program"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IEEE J. Biomed. Health Inform."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          7
+        ]
+      ]
+    },
+    "DOI": "10.1109/jbhi.2016.2574857",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          6,
+          2
+        ]
+      ],
+      "date-time": "2016-06-02T13:03:19Z",
+      "timestamp": 1464872599000
+    },
+    "page": "1133-1145",
+    "source": "Crossref",
+    "is-referenced-by-count": 62,
+    "title": [
+      "Discovery and Clinical Decision Support for Personalized Healthcare"
+    ],
+    "prefix": "10.1109",
+    "volume": "21",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-5481-5171",
+        "authenticated-orcid": false,
+        "given": "Jinsung",
+        "family": "Yoon",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Camelia",
+        "family": "Davtyan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mihaela",
+        "family": "van der Schaar",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jmb.2013.08.008"
+      },
+      {
+        "key": "ref38",
+        "article-title": "Feature selection for SVMs",
+        "author": "weston",
+        "year": "2001",
+        "journal-title": "Advances in Neural Information Processing System"
+      },
+      {
+        "key": "ref33",
+        "first-page": "83",
+        "article-title": "New genetic variants improve personalized breast cancer diagnosis",
+        "volume": "2014",
+        "author": "liu",
+        "year": "2014",
+        "journal-title": "AMIA Summits Transl Sci Proc"
+      },
+      {
+        "key": "ref32",
+        "first-page": "87",
+        "article-title": "Leveraging expert knowledge to improve machine-learned decision support systems",
+        "volume": "87",
+        "author": "kuusisto",
+        "year": "2015",
+        "journal-title": "AMIA Summits Transl Sci Proc"
+      },
+      {
+        "key": "ref31",
+        "first-page": "1228",
+        "article-title": "Comparing the value of mammographic features and genetic variants in breast cancer risk prediction",
+        "volume": "2014",
+        "author": "wu",
+        "year": "2014",
+        "journal-title": "J of the American Medical Inform Assoc"
+      },
+      {
+        "key": "ref30",
+        "first-page": "132",
+        "article-title": "Towards personalized medicine: Leveraging patient similarity and drug similarity analytics",
+        "volume": "2014",
+        "author": "zhang",
+        "year": "2014",
+        "journal-title": "AMIA Summits Translational Sci Proc"
+      },
+      {
+        "key": "ref37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSTSP.2015.2402646"
+      },
+      {
+        "key": "ref36",
+        "first-page": "1233",
+        "article-title": "Discovering, learning and exploiting relevance",
+        "author": "tekin",
+        "year": "2014",
+        "journal-title": "Proc Adv Neural Inf Process Syst Conf"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2005.159"
+      },
+      {
+        "key": "ref34",
+        "article-title": "Correlation-based feature selection for machine learning",
+        "author": "hall",
+        "year": "1999"
+      },
+      {
+        "key": "ref60",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/amiajnl-2011-000094"
+      },
+      {
+        "key": "ref62",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1197/jamia.M1534"
+      },
+      {
+        "key": "ref61",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jbi.2005.08.009"
+      },
+      {
+        "key": "ref63",
+        "article-title": "Storing genotypic resistance data and linking to other clinical information",
+        "author": "boulme",
+        "year": "2004",
+        "journal-title": "15th Int AIDS Conf"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/BHI.2012.6211678"
+      },
+      {
+        "key": "ref64",
+        "year": "2016"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1467-9868.2005.00510.x"
+      },
+      {
+        "key": "ref29",
+        "first-page": "1115",
+        "article-title": "An algorithm using twelve properties of antibiotics to find the recommended antibiotics, as in CPGs",
+        "author": "tsopra",
+        "year": "2014",
+        "journal-title": "Proc AMIA Annu Symp Process"
+      },
+      {
+        "key": "ref2",
+        "year": "2015"
+      },
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S1387-2656(08)00015-X"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/amiajnl-2011-000185"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compbiomed.2005.11.002"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.eswa.2007.04.015"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jksuci.2011.09.002"
+      },
+      {
+        "key": "ref23",
+        "first-page": "465",
+        "article-title": "Personal health systems for diabetes management, early diagnosis and prevention",
+        "volume": "1",
+        "author": "zarkogianni",
+        "year": "2015",
+        "journal-title": "Handbook of Research on Trends in the Diagnosis and Treatment of Chronic Conditions"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JBHI.2015.2414934"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.dsp.2006.10.008"
+      },
+      {
+        "key": "ref50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S1470-2045(11)70184-X"
+      },
+      {
+        "key": "ref51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10549-013-2576-0"
+      },
+      {
+        "key": "ref59",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj.38398.500764.8F"
+      },
+      {
+        "key": "ref58",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pmed.1000387"
+      },
+      {
+        "key": "ref57",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2105/AJPH.2014.302164"
+      },
+      {
+        "key": "ref56",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1148/radiology.209.2.9807581"
+      },
+      {
+        "key": "ref55",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.nhtm.2014.11.017"
+      },
+      {
+        "key": "ref54",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1056/NEJMp1006304"
+      },
+      {
+        "key": "ref53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4048/jbc.2012.15.3.265"
+      },
+      {
+        "key": "ref52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1056/NEJMsr1203730"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0020-0255(98)10021-X"
+      },
+      {
+        "key": "ref11",
+        "first-page": "25",
+        "article-title": "Online transfer learning for differential diagnosis determination",
+        "author": "xu",
+        "year": "2014",
+        "journal-title": "Proc AAAI Workshop World Wide Web Public Health Intell"
+      },
+      {
+        "key": "ref40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1200/JCO.2008.16.7841"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JBHI.2015.2406883"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JBHI.2015.2404829"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICoCS.2012.6458611"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IEMBS.2010.5626308"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-16226-3_10"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/HISB.2011.20"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jbi.2005.04.002"
+      },
+      {
+        "key": "ref19",
+        "first-page": "1835",
+        "article-title": "Data model for personalized patient health guidelines: An exploratory study",
+        "volume": "2014",
+        "author": "mcnamara",
+        "year": "2014",
+        "journal-title": "J of the American Medical Inform Assoc"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/978-0-387-38319-4",
+        "author": "berner",
+        "year": "2007",
+        "journal-title": "Clinical Decision Support Systems"
+      },
+      {
+        "key": "ref3",
+        "article-title": "Landmark report urges reform to avert diagnostic errors",
+        "author": "frellick",
+        "year": "2015",
+        "journal-title": "Medscape Medical News"
+      },
+      {
+        "key": "ref6",
+        "author": "shortliffe",
+        "year": "2013",
+        "journal-title": "Biomedical Informatics Computer Applications in Health Care and Biomedicine"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JBHI.2014.2382771"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.artmed.2012.12.003"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0004-3702(97)00063-5"
+      },
+      {
+        "key": "ref49",
+        "first-page": "49",
+        "author": "orell",
+        "year": "2005",
+        "journal-title": "Fine Needle Aspiration Cytology"
+      },
+      {
+        "key": "ref9",
+        "first-page": "644",
+        "article-title": "Clinical practice guidelines for the care and treatment of breast cancer: Adjuvant systemic therapy for node-positive breast cancer (summary of the 2001 update)",
+        "volume": "164",
+        "author": "levine",
+        "year": "2001",
+        "journal-title": "Can Med Assoc J"
+      },
+      {
+        "key": "ref46",
+        "first-page": "1",
+        "article-title": "Secondary use of EHR: Data quality issues and informatics opportunities",
+        "volume": "1",
+        "author": "botsis",
+        "year": "2010",
+        "journal-title": "AMIA Summits Translational Sci Proc"
+      },
+      {
+        "key": "ref45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/001316446002000104"
+      },
+      {
+        "key": "ref48",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/14786440109462720"
+      },
+      {
+        "key": "ref47",
+        "article-title": "UCI machine learning repository",
+        "author": "bache",
+        "year": "2013"
+      },
+      {
+        "key": "ref42",
+        "first-page": "1109",
+        "article-title": "Resourceful contextual bandits",
+        "author": "badanidiyuru",
+        "year": "2014",
+        "journal-title": "Proceedings of The 27th Conference on Learning Theory"
+      },
+      {
+        "key": "ref41",
+        "first-page": "2533",
+        "article-title": "Contextual bandits with similarity information",
+        "volume": "15",
+        "author": "slivkins",
+        "year": "2014",
+        "journal-title": "J Mach Learn Res"
+      },
+      {
+        "key": "ref44",
+        "article-title": "Chemotherapy regimen for breast cancer",
+        "author": "hamel",
+        "year": "2015"
+      },
+      {
+        "key": "ref43",
+        "article-title": "Chemotherapy Medicine",
+        "author": "fleegler",
+        "year": "2015"
+      }
+    ],
+    "container-title": [
+      "IEEE Journal of Biomedical and Health Informatics"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/6221020/7963898/07482682.pdf?arnumber=7482682",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          1,
+          12
+        ]
+      ],
+      "date-time": "2022-01-12T11:40:26Z",
+      "timestamp": 1641987626000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/7482682/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          7
+        ]
+      ]
+    },
+    "references-count": 64,
+    "journal-issue": {
+      "issue": "4"
+    },
+    "URL": "https://doi.org/10.1109/jbhi.2016.2574857",
+    "relation": {},
+    "ISSN": [
+      "2168-2194",
+      "2168-2208"
+    ],
+    "issn-type": [
+      {
+        "value": "2168-2194",
+        "type": "print"
+      },
+      {
+        "value": "2168-2208",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          7
+        ]
+      ]
+    }
+  }
+}

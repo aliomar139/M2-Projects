@@ -1,0 +1,233 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          28
+        ]
+      ],
+      "date-time": "2026-06-28T07:44:35Z",
+      "timestamp": 1782632675724,
+      "version": "3.54.5"
+    },
+    "reference-count": 0,
+    "publisher": "Skyler Publication",
+    "issue": "4S",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              5
+            ]
+          ],
+          "date-time": "2025-03-05T00:00:00Z",
+          "timestamp": 1741132800000
+        },
+        "content-version": "unspecified",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J Neonatal Surg"
+    ],
+    "abstract": "<jats:p>Personalized treatment planning is a critical challenge in clinical decision-making, where traditional heuristic-based approaches often fail to optimize patient-specific outcomes. This study explores the application of Deep Reinforcement Learning (DRL) to automate and enhance treatment recommendations, dynamically adapting medication dosages based on individual patient profiles. We developed a Proximal Policy Optimization (PPO)-based DRL model, trained on 10,000 patient records, and benchmarked it against traditional heuristic methods and supervised machine learning (ML) models (e.g., XGBoost). The PPO model outperformed all baselines, achieving a 91.2% success rate and 10.4 mg/dL Mean Absolute Error (MAE), significantly improving precision in treatment optimization. Furthermore, the model demonstrated strong adaptability across diverse patient groups, particularly in complex cases involving comorbidities, younger patients, and the elderly. SHAP analysis confirmed that the DRL model’s decision-making aligns with clinical intuition, relying primarily on age (32%), blood pressure (27%), BMI (22%), and blood glucose levels (19%). This enhances model transparency, a crucial factor for real-world adoption in healthcare. Despite its success, challenges such as data limitations, computational complexity, and real-world deployment constraints remain. Future research should focus on scaling the model to larger datasets, integrating with Electronic Health Record (EHR) systems, and conducting clinical trials to validate real-world applicability. Our findings highlight the potential of AI-driven personalized medicine, where DRL can serve as a powerful decision-support tool for clinicians, optimizing treatment efficacy, reducing risks, and ultimately improving patient outcomes.</jats:p>",
+    "DOI": "10.52783/jns.v14.1940",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          6
+        ]
+      ],
+      "date-time": "2025-03-06T06:11:32Z",
+      "timestamp": 1741241492000
+    },
+    "page": "1248-1257",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": [
+      "Deep Reinforcement Learning for Personalized Treatment Planning: Integrating AI into Clinical Decision-Making"
+    ],
+    "prefix": "10.63682",
+    "volume": "14",
+    "author": [
+      {
+        "given": "N.",
+        "family": "Vasavya",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Swapnil",
+        "family": "Saurav",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rupali",
+        "family": "Das",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yogesh",
+        "family": "D Akhare",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jhansi",
+        "family": "Rani Ganapa",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Avinash",
+        "family": "Kumar",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "53067",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          5
+        ]
+      ]
+    },
+    "container-title": [
+      "Journal of Neonatal Surgery"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://jneonatalsurg.com/index.php/jns/article/download/1940/1857",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://jneonatalsurg.com/index.php/jns/article/download/1940/1857",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          4,
+          24
+        ]
+      ],
+      "date-time": "2025-04-24T22:26:56Z",
+      "timestamp": 1745533616000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://jneonatalsurg.com/index.php/jns/article/view/1940"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          5
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "4S",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            2,
+            12
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.52783/jns.v14.1940",
+    "relation": {},
+    "ISSN": [
+      "2226-0439"
+    ],
+    "issn-type": [
+      {
+        "value": "2226-0439",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          5
+        ]
+      ]
+    }
+  }
+}

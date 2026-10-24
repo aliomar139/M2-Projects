@@ -1,0 +1,1002 @@
+=== PDF PAGE 1 ===
+Page 1 of 13
+© AME Publishing Company.   Ann Joint 2026;11:6 | https://dx.doi.org/10.21037/aoj-25-38
+Original Article
+Artificial intelligence models cannot yet replace experts in 
+providing patient education for shoulder and elbow orthopaedic 
+pathologies: a systematic review and meta-analysis
+Joshua Dworsky-Fried
+1
+, Matthew Mellon
+1
+, Preksha Rathod
+2
+, James Yan
+2
+, Moin Khan
+2
+^
+1
+Michael DeGroote School of Medicine, McMaster University, Hamilton, ON, Canada; 
+2
+Division of Orthopaedic Surgery, Department of Surgery, 
+McMaster University, Hamilton, ON, Canada
+Contributions: (I) Conception and design: J Yan, M Khan; (II) Administrative support: J Yan, M Khan; (III) Provision of study materials or patients: 
+J Yan, M Khan; (IV) Collection and assembly of data: All authors; (V) Data analysis and interpretation: All authors; (VI) Manuscript writing: All 
+authors; (VII) Final approval of manuscript: All authors.
+Correspondence to: Moin Khan, MD, MSc, FRCSC. Division of Orthopaedic Surgery, Department of Surgery, McMaster University, St. Joseph’s 
+Healthcare, 50 Charlton Avenue East, Hamilton, Ontario, L8N 4A6, Canada. Email: khanmm2@mcmaster.ca.
+Background: AI and machine learning (ML) have diverse applications in orthopedic surgery, such as for 
+diagnosis of disease, surgical assistance, and outcome prediction. When used as adjuncts, AI has a potential 
+to reduce clinical workload, improve workflow and aid in clinical decision making. The objective of this 
+systematic review is to evaluate current literature on artificial intelligence (AI) to assess effectiveness in 
+developing responses to inquiries related to orthopaedic upper extremity pathologies.
+Methods: Three databases (PubMed, MEDLINE, EMBASE) were searched for studies involving AI and 
+questions in shoulder and elbow orthopedics. Inclusion criteria included papers related to shoulder and 
+elbow, human studies, use of AI models, published in English language and at any level of evidence. Data on 
+response accuracy, reliability and quality, as well as area under the curve (AUC) of the given AI algorithm, 
+were recorded. Meta-analyses were conducted on both the accuracy and AUC of AI algorithms on relevant 
+studies. Risk of bias was assessed using the Quality Assessment of Diagnostic Accuracy Studies (QUADAS-2).
+Results: A total of 16 studies were included in this review. Nine studies used a version of ChatGPT , one 
+study used GoogleBard, and the remaining seven studies used a variety of AI learning models. The overall 
+pooled accuracy of responses developed by AI models was 78%, and the pooled mean AUC of included 
+AI algorithms was 86%. AI algorithms performed inferiorly compared to experts. The overall quality and 
+readability of AI responses were poor. 
+Conclusions:  AI algorithms assessed in our study demonstrated a promising degree of accuracy and 
+performance. However, AI responses were found to be inferior to experts and had poor readability, 
+quality, and value to the patient. In its current state of technology, AI is a powerful tool that can be used in 
+conjunction with experts to augment patient education, however, it should not be utilized independently.
+Keywords: Artificial intelligence (AI); large language model (LLM); patient education; upper extremity
+Received: 29 May 2025; Accepted: 27 August 2025; Published online: 22 January 2026.
+doi: 10.21037/aoj-25-38
+View this article at: https://dx.doi.org/10.21037/aoj-25-38
+14
+ 
+^ ORCID: 0000-0002-8237-8095. 
+
+=== PDF PAGE 2 ===
+Annals of Joint, 2026Page 2 of 13
+© AME Publishing Company.   Ann Joint 2026;11:6 | https://dx.doi.org/10.21037/aoj-25-38
+Introduction
+With recent major advances in artificial intelligence (AI) 
+and machine learning (ML), there is significant potential to 
+transform patient care and improve healthcare outcomes. 
+The applications of AI in the field of orthopaedic surgery 
+are diverse; for example, identification of pathologies or 
+issues with implants on radiographs, assisting in doctor-
+patient communication and documentation, predicting 
+clinical outcomes and length of stay, and assisting in real-
+time surgeries, among many others (1,2). While these 
+applications are seemingly endless, particular interest has 
+been garnered regarding the use of large language models 
+(LLMs) in improving accessibility and quality of patient 
+education. A LLM is a deep-learning algorithm, pre-trained 
+with massive datasets and parameters, that uses natural 
+language processing to manage complex tasks (1,3). OpenAI’s 
+Generative Pre-T rained T ransformer (ChatGPT), one of 
+the most popular chatbots, has recently seen rapid growth 
+and development (2). Since the advent of ChatGPT , many 
+other LLMs and ML models have been developed and made 
+publicly accessible, such as Google’s Gemini (formerly known 
+as Bard), Microsoft’s Copilot and XGBoost.
+The ability of LLMs to identify a user’s question, 
+evaluate and integrate vast amounts of information from 
+diverse sources and translate it into a digestible and 
+conversational response demonstrates a promising future 
+for AI in patient education. AI models have been shown 
+to pass the United States Medical Licensing Examination 
+(USMLE) board exams with scores at or above the 
+passing threshold of 60% (4-6). Furthermore, despite 
+demonstrating inferior performance compared to humans, 
+ChatGPT was found to be effective in answering specialty-
+specific information on the American Shoulder and Elbow 
+Surgeons (ASES) maintenance of certification exam (7). AI 
+is already extensively being used in the field of orthopaedic 
+surgery, including in joint replacements, automated image-
+based diagnosis, and predicting clinical outcomes (8). When 
+AI algorithms are utilized as augmentation tools by experts, 
+reported findings demonstrate reduced clinician workload, 
+more efficient workflow, and improved shared decision-
+making with patients, among many other benefits (9-12).  
+However, concern has been raised over the consistent 
+accuracy of ChatGPT’s responses to text inputs; it has been 
+reported to provide incorrect and outdated information and 
+even sometimes ‘hallucinate’ by generating very realistic yet 
+fake information (2,13,14).
+There is yet to be an extensive assessment of the 
+effectiveness and reliability of AI in shoulder and elbow 
+orthopaedic surgery. However, this is a rapidly developing 
+field of research. For example, a recent cross-sectional 
+study provided a comparison of the quality of responses 
+between ChatGPT , Bing Chat, and AskeOE AI chatbots 
+to a range of treatment-related questions across various 
+orthopaedic surgery subspecialties (15). T o understand 
+whether AI will be effective in educating patients on 
+orthopaedic surgery-related topics, it is important to first 
+establish whether responses developed by AI chatbots are 
+consistently accurate, reliable, and easy to understand. 
+If AI is empirically shown to achieve these goals, it may 
+save considerable time and resources for both the surgeon 
+and the patient. This paper is the first to systematically 
+assess how AI can impact patient education in the field of 
+shoulder and elbow orthopaedic surgery and will help to 
+Highlight box
+Key findings
+• Artificial intelligence (AI) demonstrated promising accuracy, 
+but the answers produced were inferior to experts in readability, 
+quality, and patient value. 
+• As AI’s role continues to be defined within the field of orthopedics, 
+this study suggests that it may serve as a useful adjunct, but its 
+independent use should be limited.
+What is known and what is new?
+• AI and machine learning have diverse applications in orthopedic 
+surgery such as for diagnosis of disease, surgical assistance, and 
+outcome prediction. When used as adjuncts, AI has the potential 
+to reduce clinical workload, improve workflow and aid in clinical 
+decision making.
+• This study was the first to assess the role of AI in evaluating the 
+reliability, accuracy, and readability of shoulder and elbow surgery 
+patient education material, finding that AI’s role is useful as an 
+adjunct tool to clinician expertise, rather than as an independent 
+resource.
+What is the implication and what should change now?
+• AI models demonstrate promising accuracy; however, their 
+educational responses lack readability, quality, and patient-
+centered value. The current AI responses are above most patients’ 
+comprehension potential, which limits use in patient education. 
+• The technology cannot yet replace expert opinion due to the 
+presence of poorer readability, the absence of quality standards, 
+and variability. 
+• Future directions include understanding which questions patients 
+value most to shape AI model development, refining AI output 
+algorithms that meet standards of accuracy and readability, and 
+developing guidelines for safe AI use in patient education, as well 
+as training physicians to safely integrate AI into care.
+
+=== PDF PAGE 3 ===
+Annals of Joint, 2026 Page 3 of 13
+© AME Publishing Company.   Ann Joint 2026;11:6 | https://dx.doi.org/10.21037/aoj-25-38
+guide decision-making regarding routinely implementing 
+AI in patient education and care. The authors hypothesized 
+that AI models would produce responses with similar 
+accuracy yet lower readability scores compared to humans. 
+The article follows the Revised Assessment of Multiple 
+Systematic Reviews (R ‐AMSTAR) guidelines (16). We 
+present this article in accordance with the PRISMA 
+reporting checklist (available at https://aoj.amegroups.com/
+article/view/10.21037/aoj-25-38/rc) (17).
+Methods
+Search criteria
+Three online databases (PubMed, MEDLINE, EMBASE) 
+were searched from database inception to June 6, 2024, to 
+identify studies that assessed the accuracy of AI in patient 
+education regarding shoulder and elbow procedures 
+or pathologies. Comprehensive search terms including 
+‘artificial intelligence, ‘upper extremity’, ’shoulder’, ‘elbow’, 
+‘clavicle’, ’scapula’, ‘humerus’, ‘total shoulder replacement’, 
+‘rotator cuff tear’, ‘arthroscopy’, and ‘dislocation’ were used 
+(T able S1). The search terms were verified by the two senior 
+authors (M.K. and J.Y.), who are experienced orthopaedic 
+surgeons. Studies were selected for inclusion if they met 
+the following criteria: (I) included the use of AI models to 
+aid in patient education; (II) related to shoulder and elbow 
+orthopaedics; (III) human studies; (IV) studies published 
+in the English language; and (V) any level of evidence I–
+IV . Exclusion criteria included (I) textbook chapters; (II) 
+case reports; (III) conference abstracts or editorials; and 
+(IV) biomechanical or cadaveric/animal studies. References 
+of included studies and of pertinent review papers were 
+manually searched to ensure that all means of study 
+identification were exhausted.
+Screening
+Title and abstract screening were conducted by two authors 
+(J.D.F . and M.M.) independently, with conflicts resolved 
+through consensus or consultation with a more senior 
+author (P .R.) if no consensus was reached. During the full ‐
+text screening stage, studies were independently screened 
+by the initial two authors, and disagreements were resolved 
+in a similar manner.
+Assessment of agreement
+Inter-reviewer agreement was evaluated using the κ‐statistic 
+for screening. A priori classification was determined using 
+the following criteria: κ of 0.91–0.99 was considered to be 
+almost perfect agreement; κ of 0.71–0.90 was considered to 
+be considerable agreement; κ of 0.61–0.70 was considered 
+to be high agreement; κ of 0.41–0.60 was considered to be 
+moderate agreement; κ of 0.21–0.40 was considered to be 
+fair agreement; and a κ value of 0.20 or less was considered 
+to be no agreement (18).
+Quality assessment
+The Quality Assessment of Diagnostic Accuracy 
+Studies (QUADAS-2) guidelines were used to assess the 
+methodological quality and risk of bias in the studies used 
+for this review (19). These guidelines assign one of three 
+ratings (low risk, high risk, or unclear) to each item. The 
+following factors are assessed: (I) patient selection; (II) index 
+test; (III) reference standard; and (IV) flow and timing. 
+Risk of bias is assessed for all four factors and applicability 
+concerns are assessed for (I), (II), and (III), yielding seven 
+ratings for each study.
+Data extraction
+Data were extracted in an electronic spreadsheet designed 
+a priori (Google Sheets; Google LLC). Extracted data 
+included study characteristics [e.g., author(s), year of 
+publication, level of evidence], demographic data (e.g., 
+sample size, patient age, sex, etc.), AI algorithm used, type 
+of shoulder or elbow pathology assessed, clinical index 
+scores, types of questions asked by patients, area under the 
+curve (AUC) of the AI algorithms and accuracy, readability 
+and quality of responses.
+Outcome reporting and statistical analysis
+The primary outcomes of this review were the accuracy of 
+responses developed by various AI algorithms to a variety 
+of orthopedic surgery-related questions as well as the AUC 
+of the AI algorithm. The AUC is a summary measure of the 
+performance of ML algorithms (20). Meta-analyses were 
+conducted on studies that reported these outcomes and 
+provided corresponding confidence intervals or standard 
+deviation values. The outcomes were pooled and forest plots 
+were generated with a subgroup analysis using DataParty 
+(Hamilton, Ontario, Canada) with a DerSimonian and Laird 
+random effects model for dichotomous variables. The I
+2
+ 
+test was used to assess heterogeneity of the included studies, 
+
+=== PDF PAGE 4 ===
+Annals of Joint, 2026Page 4 of 13
+© AME Publishing Company.   Ann Joint 2026;11:6 | https://dx.doi.org/10.21037/aoj-25-38
+where “Low”, “Moderate”, and “High” values are identified 
+by I
+2
+ values of 25–49%, 50–74%, and >75%, respectively. 
+The secondary outcomes were the quality and validity of 
+AI responses, assessed by Journal of the American Medical 
+Association (JAMA) benchmark score and DISCERN scores 
+(21,22), as well as the readability, assessed by the Flesch 
+Reading Ease Score (FRES) and Flesch-Kincaid Grade 
+Level (FKGL) scales (23). The JAMA score ranges from 0–4 
+points; 0 or 1 point indicates insufficient data, 2 or 3 points 
+indicate partially insufficient data, and 4 points indicate 
+completely sufficient data (24). As per the DISCERN score, 
+the quality levels are categorized as either very poor (20% 
+to 36%), poor (37% to 50%), fair (51% to 64%), good (65% 
+to 79%), or excellent (80% and above) (25). The FRES 
+ranges from 0 to 100, and higher scores indicate an easier 
+readability, whereas the FKGL score indicates the grade 
+level that can appropriately read and comprehend a given 
+text (26).
+Results
+Literature search
+The initial literature search yielded 1,472 studies, of which 
+444 duplicates were removed. Among the remaining 1,028 
+unique articles, 931 were removed following title and 
+abstract screening. Systematic screening and assessment 
+of eligibility yielded 16 full-text studies that satisfied 
+inclusion criteria (Figure 1) (7,27-41). Inter-rater reliability 
+analysis showed that considerable agreement was achieved 
+at both the title and abstract screening stage [k, 0.75; 95% 
+confidence interval (CI): 0.68–0.82] and full-text (k, 0.76; 
+95% CI: 0.60–0.91) stages of screening.
+Study quality
+Among the 16 studies included in this review, 10 (62%) 
+were level IV evidence (7,25,27-30,32,35,36,38) and 6 
+Figure 1 PRISMA flow diagram.
+Identification
+Identification of studies via databases and registers
+ScreeningIncluded
+Records identified from (n=1,472)
+Records screened
+(n=1,028)
+Reports sought for retrieval
+(n=97)
+Reports assessed for eligibility (n=97)
+Studies included in review
+(n=16)
+Reports of included studies
+(n=16)
+Records excluded
+(n=931)
+Records removed before screening:
+•  Duplicate records removed manually (n=2)
+•  Records marked as duplicates by automation 
+tools (n=442)
+Reports not retrieved
+(n=0)
+Reports excluded:
+•  Not upper extremity (n=5)
+•  Imaging study (n=59)
+•  Non-empirical study (n=7)
+•  Unrelated outcomes (n=3)
+•  Not a language model (n=1)
+•  Not related to patient education (n=6)
+
+=== PDF PAGE 5 ===
+Annals of Joint, 2026 Page 5 of 13
+© AME Publishing Company.   Ann Joint 2026;11:6 | https://dx.doi.org/10.21037/aoj-25-38
+(37.5%) were level III evidence (26,31,33,34,37,39). All 16 
+studies underwent appraisal by the QUADAS-2 tool. The 
+majority of studies were found to have an overall low risk of 
+bias (Figure 2).
+Study characteristics
+This review included 16 studies that reported on the use of 
+AI algorithms in answering queries related to orthopaedic 
+surgery. A total of 117,526 patients were included across 
+seven studies that reported values (28,30,34-36,39,41).
+Regarding the AI algorithm used, nine studies used 
+any version of ChatGPT; specifically, one (30), five 
+(7,32,37,38,40), and two (7,29) studies used ChatGPT 3, 
+3.5 and 4, respectively. T wo studies did not specify which 
+version of ChatGPT was used (27,31). One study used 
+Google Bard (37). Seven studies used a variety of other 
+learning models (28,33-36,39,41), outlined in T able 1.
+Characteristics of topics and questions asked
+From the 16 included studies, the most commonly assessed 
+question pertained to rotator cuff (RTC) tears or repairs, 
+followed by shoulder arthroplasty, and upper extremity 
+pathologies in general, as investigated in six (28,30,35,39-41),  
+three (27,34,36), and three studies (7,37,38), respectively.
+The main types of questions posed pertained to 
+predicting clinical outcomes (four studies) (28,33,39,41), 
+diagnostics and management planning (three studies) 
+(29,30,35), general frequently asked questions (three 
+studies) (27,32,40), exam writing (three studies) (7,37,38), 
+and discharge planning (two studies) (34,36) (T able 1).
+Performance
+Fourteen studies reported on the overall mean accuracy of 
+answers to questions asked, defined as the percent of correct 
+responses to questions. Percentages were extrapolated 
+when accuracy was scored using a 4-point Likert scale. 
+Values of accuracy were found to range from 45% to 99%  
+(7,27-30,32-39,41). Eight of these studies reported mean 
+accuracy values of 70% or greater (28,30,32-36,41). The 
+pooled mean accuracy of responses by AI algorithms was 
+78% (0.78) (95% CI: 0.4–1.16%, I
+2
+=0%) (Figure 3). There 
+was no significant difference in pooled mean accuracy 
+between question types (P=0.99, I
+2
+=0%) (Figure 3). T wo 
+studies compared the accuracy of AI responses to that 
+of expert responses and demonstrated that experts were 
+more accurate in both cases (7,38). One study evaluated 
+the similarity in responses between GPT-4 and the 
+anterior shoulder instability (ASI) consensus statement; 
+when assessed by surgeons, similarity was most commonly 
+classified as ‘medium’, and when assessed by GPT-4, 
+similarity was most often classified as ‘high’ (29).
+Four studies reported on the overall mean area under the 
+receiver operating characteristic curve (AUC), with values 
+Figure 2 Quality assessment of included studies.
+Patient selection 
+Index test
+Reference standard
+Flow and timing
+Patient selection
+Index test
+Reference standard
+Cannot assess
+Risk of biasApplicability
+Adelstein (2024)Alaiti (2023) Hurley (2024) Li (2023)Daher (2023) Kane (2021) Lum (2024) Warren (2024)Artamonov (2024) Johns (2024) Lopez (2021) Potty (2023)Fiedler (2024) Kamuta (2020) Ozdag (2024) Zhang (2024)
+Low
+High
+
+=== PDF PAGE 6 ===
+Annals of Joint, 2026Page 6 of 13
+© AME Publishing Company.   Ann Joint 2026;11:6 | https://dx.doi.org/10.21037/aoj-25-38
+Table 1 Study characteristics and patient demographics
+Lead author  
+(year of publication)
+Level of 
+evidence Algorithm used Number of patients Females (%) Mean age, years 
+(SD)
+Adelstein (2024) (27) IV ChatGPT (version NS) NR NR NR
+Alaiti (2023) (28) III Random forest classifier, LightGBM, decision tree 
+classifier; extra trees classifier; logistic regression; 
+XGBoost, KNN classifier; CatBoost classifier
+474 54 57.8 (8.9)
+Artamonov (2024) (29) IV ChatGPT 4.0 NR NR NR
+Daher (2023) (30) IV ChatGPT 3 29 48.3 NR
+Fiedler (2024) (7) IV ChatGPT 3.5, 4 NR NR NR
+Hurley (2024) (31) IV ChatGPT (version NS) NR NR NR
+Johns (2024) (32) IV ChatGPT 3.5 NR NR NR
+Kane (2021) (33) III CAT NR NR NR
+Karnuta (2020) (34) IV ANN 90,792 59.2 69.0 (10.9)
+Li (2023) (35) III Stacking, GBM, bag-ging, random forest, XGBoost, 
+adaptive boosting
+1,684 53.1 49.8 (14.4)
+Lopez (2021) (36) III BDT, ANN 21,544 55.3 69.1 (9.5)
+Lum (2024) (37) IV ChatGPT 3.5, Google BARD NR NR NR
+Ozdag (2024) (38) IV ChatGPT 3.5 NR NR NR
+Potty (2023) (39) III XGBoost 631 42.6 61.5 
+Warren (2024) (40) IV ChatGPT 3.5 NR NR NR
+Zhang (2024) (41) III EV-GCN 2,372 53.9 NR
+ANN, artificial neural network; BDT, boosted decision tree; CAT, computerized adaptive testing; EV-GCN, edge-variational graph 
+convolutional network; GBM, gradient boosting machine; GPT, generative pre-trained transformer; KNN, K-nearest neighbors; NR, no 
+result; NS, not specified; SD, standard deviation; XG, extreme gradient. 
+ranging from 0.72 to 0.92 (28,34-36). The pooled mean 
+AUC of AI algorithms was 86% (0.86) (95% CI: 0.55–1.16, 
+I
+2
+=0%) (Figure 4).
+T wo studies reported on the overall mean quality of 
+answers to questions asked using JAMA and DISCERN 
+scores (31,40). From these studies, all the reported JAMA 
+scores were 0%, and the DISCERN scores ranged from 
+64% to 75%. Three studies reported on the overall mean 
+readability of answers to questions asked using the FKGL 
+and FRES scores (31,32,40). Using FKGL as the outcome, 
+the readability of responses was at a high school reading 
+level in two studies and at a college graduate level in one 
+study. FRES scores were reported in two studies; values of 
+responses ranged from 26.2 to 48.3, representing either a 
+college student or college graduate readability level. Full 
+details regarding outcomes used to assess responses are 
+shown in T able 2.
+Discussion
+The primary finding of this paper demonstrates that 
+AI models answered questions to inquiries pertaining 
+to shoulder and elbow orthopaedic pathologies with a 
+pooled mean accuracy of 78%. No significant difference in 
+accuracy was found across question types. When reported, 
+experts answered questions with a higher level of accuracy 
+when compared to various AI algorithms. Furthermore, 
+this study determined that the pooled mean AUC, a holistic 
+summary measure of AI algorithm performance (20,42), 
+was 86%. This pooled AUC value is comparable to other 
+AUC values of a variety of AI algorithms found in previous 
+studies, which ranged from 80.7% to 95% (20,42-44). 
+The secondary findings of this paper are that JAMA scores 
+accredited to AI algorithms were all zero, indicating that the 
+information provided by AI was insufficient or unhelpful 
+to readers (45). Moreover, readability scores of responses 
+
+=== PDF PAGE 7 ===
+Annals of Joint, 2026 Page 7 of 13
+© AME Publishing Company.   Ann Joint 2026;11:6 | https://dx.doi.org/10.21037/aoj-25-38
+Figure 3 Forest plot of the pooled accuracies of responses developed by AI models, stratified by question type. AI, artificial intelligence; CI, 
+confidence interval.
+Figure 4 Forest plot of the pooled AUC of AI algorithms. AI, artificial intelligence; AUC, area under the curve; CI, confidence interval; 
+GBM, gradient boosting machine; KNN, K-nearest neighbors; XGBoost, eXtreme gradient boosting.
+developed by AI algorithms ranged from high school to 
+college graduate reading level. 
+It is important to note that there was a wide range of 
+values reported across the different studies and algorithms. 
+While the algorithms performed well overall in terms 
+of accuracy and AUC, the overall quality of developed 
+responses was poor, and they performed worse than experts. 
+The majority of patient education material is written at 
+a level too complex, and it has been reported that most 
+patients would find text with readability at a college level 
+difficult to read or comprehend (46). As patient education 
+is highly variable and specific preferences exist along a 
+−3          −2          −1             0             1              2             3             4
+AUC of AI algorithms
+−7.5       −5.0       −2.5         0.0         2.5         5.0          7.5        10.0
+Accuracy of AI responses
+
+=== PDF PAGE 8 ===
+Annals of Joint, 2026Page 8 of 13
+© AME Publishing Company.   Ann Joint 2026;11:6 | https://dx.doi.org/10.21037/aoj-25-38
+Table 2 Characteristics of questions asked and performance outcomes
+Lead author 
+(year of 
+publication)
+Type of upper extremity 
+procedure/pathology Type of question AI accuracy (%) Expert 
+accuracy (%) AUC 
+Quality and 
+validity of 
+responses
+Readability of 
+responses
+Adelstein 
+(2024) (27)
+Total shoulder 
+arthroplasty 
+General FAQs 62.5 NR NR NR NR
+Alaiti (2023) 
+(28)
+RTC repair Predicting clinical 
+outcomes
+Random forest classifier: 
+78; lightGBM: 68; decision 
+tree classifier: 75; extra 
+trees classifier: 73; logistic 
+regression: 66; XGBoost: 60; 
+KNN classifier: 79; CatBoost 
+classifier: 58
+NR Random forest classifier: 
+0.68; lightGBM: 0.67; decision 
+tree classifier: 0.62; extra 
+trees classifier: 0.6; logistic 
+regression: 0.59; XGBoost: 0.6; 
+KNN classifier: 0.58; CatBoost 
+classifier: 0.59
+NR NR
+Artamonov 
+(2024) (29)
+Anterior shoulder 
+instability
+Diagnostics and 
+management 
+planning
+Overall: 58.1. Degree of 
+similarity between GPT-4 and 
+ASI consensus statement
+NR NR NR NR
+Assessed by surgeons: high, 
+25.8; medium, 45.2; low, 29
+Assessed by AI: high, 48.3; 
+medium, 41.9; low, 9.7
+Daher (2023) 
+(30)
+RTC tendinopathies, 
+glenohumeral arthritis, 
+proximal humeral 
+fractures 
+Diagnostics and 
+management 
+planning
+Diagnosis: 93; management: 83 NR NR NR NR
+Fiedler (2024) 
+(7)
+General ASES questions Exam questions ChatGPT 3.5: text-only: 60.8; 
+media-based: NR
+Text-only: 
+76.4; media-
+based: 73.9
+NR NR NR
+ChatGPT 4: text-only, 66.7; 
+media-based, 53.2
+Hurley (2024) 
+(31)
+Shoulder stabilization 
+surgery
+Details surrounding 
+surgery
+NR NR NR JAMA: 0; 
+DISCERN: 60
+FRES: 26.2; FKGL: 
+(NR), college 
+graduate level
+Johns (2024) 
+(32)
+UCL reconstruction General FAQs 75 NR NR NR FKGL: 11.51, 
+high-school level
+Kane (2021) 
+(33)
+Hand and wrist 
+pathologies
+Predicting clinical 
+outcomes
+DASH: 99; QuickDASH: 98 NR NR NR NR
+Karnuta  
+(2020) (34)
+Anatomic and reverse 
+shoulder arthroplasty
+Discharge planning Chronic conditions: overall, 
+76.3; cost, 76.5; LOS, 91.8; 
+patient disposition, 73.1
+NR Chronic conditions: cost, 0.75; 
+LOS, 0.89; patient disposition: 
+0.77
+NR NR
+Table 2 (continued)
+
+=== PDF PAGE 9 ===
+Annals of Joint, 2026 Page 9 of 13
+© AME Publishing Company.   Ann Joint 2026;11:6 | https://dx.doi.org/10.21037/aoj-25-38
+Table 2 (continued)
+Lead author 
+(year of 
+publication)
+Type of upper extremity 
+procedure/pathology Type of question AI accuracy (%) Expert 
+accuracy (%) AUC 
+Quality and 
+validity of 
+responses
+Readability of 
+responses
+Acute injury: overall, 70; 
+cost, 70.3; LOS, 79.1; patient 
+disposition, 72
+Acute injury: cost, 0.72; LOS, 
+0.78; patient disposition, 0.79
+Li (2023) (35) RTC tears Diagnostics and 
+management 
+planning
+Stacking: 81; gradient boosting: 
+81; machine bagging: 83; 
+random forest: 83; XGBoost: 
+85; adaptive boosting: 81
+NR Stacking: 0.9; gradient 
+boosting: 0.87; machine 
+bagging: 0.92; random forest: 
+0.91; XGBoost: 0.92; adaptive 
+boosting: 0.75
+NR NR
+Lopez (2021) 
+(36)
+Total shoulder 
+arthroplasty
+Discharge planning Nonhome discharge: BDT, 90.3; 
+ANN, 89.9
+NR Nonhome discharge: BDT, 
+0.788; ANN, 0.851
+NR NR
+Postoperative complication: 
+BDT: 95.5; ANN: 92.5
+Postoperative complication: 
+BDT, 0.795; ANN, 0.788
+Lum (2024) 
+(37)
+General upper extremity 
+pathologies
+Exam questions OITE questions; ChatGPT: 54.3; 
+BARD: 58.2
+NR NR NR NR
+Ozdag (2024) 
+(38)
+General upper extremity 
+pathologies
+Exam questions 45 PGY1: 51; 
+PGY5: 76
+NR NR NR
+Potty (2023) 
+(39)
+RTC repair Predicting clinical 
+outcomes
+69 NR NR NR NR
+Warren (2024) 
+(40)
+RTC repair General FAQs NR NR NR Fact: JAMA, 0; 
+DISCERN, 51
+Fact: FRES, 48.3; 
+FKGL, 10.3, high-
+school level
+Policy: JAMA, 
+0; DISCERN, 
+53
+Policy: FRES, 42; 
+FKGL, 10.9, high-
+school level
+Value: FRES, 38.4; 
+FKGL, 11.6, high-
+school level
+Zhang (2024) 
+(41)
+RTC retears following 
+repair
+Predicting clinical 
+outcomes
+96.9 NR NR NR NR
+AI, artificial intelligence; ANN, artificial neural network; ASES, American Shoulder and Elbow Surgeons; ASI, anterior shoulder instability; AUC, area under the curve; BDT, boosted 
+decision tree; DASH, Disabilities of the Arm, Shoulder and Hand; FAQ, frequently asked question; FKGL, Flesch-Kincaid Grade Level; FRES, Flesch Reading Ease Score; GBM, 
+gradient boosting machine; GPT, generative pre-trained transformer; JAMA, Journal of the American Medical Association; KNN, k-nearest neighbors; LOS, length of stay; NR, no 
+result; NS, not specified; OITE, orthopaedic in-training examination; PGY , postgraduate year; RTC, rotator cuff; UCL, ulnar collateral ligament; XG, extreme gradient.
+
+=== PDF PAGE 10 ===
+Annals of Joint, 2026Page 10 of 13
+© AME Publishing Company.   Ann Joint 2026;11:6 | https://dx.doi.org/10.21037/aoj-25-38
+continuum (47), AI algorithms must be shown to effectively 
+adapt to meet unique patient learning needs. Therefore, 
+for patient education material to be helpful, answers 
+must meet standards regarding accuracy, readability, and 
+quality. Our study demonstrates that further research and 
+development is required before patients can unilaterally 
+rely on communicating AI models for effective education. 
+Moreover, important insight is gained from understanding 
+what types of questions are most valuable from a 
+patient’s perspective, which will ultimately help guide the 
+development of AI models and their routine use in patient 
+education. While our review assists in achieving this goal, 
+further research should be conducted to better comprehend 
+how to maximize the value of AI for patients.
+A major strength of this study is its focus on shoulder 
+and elbow pathology, as it provides new insight into AI 
+algorithm performance in answering questions in this field. 
+As AI is inevitably continuously improved, this review 
+offers key insight into the models’ real-world applicability 
+as a tool for patient education. Having the knowledge of 
+the types of questions patients are asking can help inform 
+future doctor-patient conversations as well as informational 
+material. Furthermore, this review was conducted with a 
+strong methodology and benefits from quantitative evidence 
+arising from meta-analyses. In addition, our systematic 
+review includes studies that assessed a broad range of AI 
+models, accounting for the rapid growth of AI in patient 
+education. 
+The primary limitation of this study is the wide variability 
+of the outcomes of the included studies. Many of the 
+studies reported on inconsistent outcomes and those with 
+similar outcomes reported a wide range of performances 
+across their respective AI models. As such, while the pooled 
+data show promising measures of accuracy and AUC, the 
+inconsistencies between studies necessitate caution in 
+applying these models. Further, variations in types of AI 
+models used across included studies precluded quantitative 
+analysis to compare the efficacy of each model assessed. 
+Another limitation of our study is that our literature search 
+was conducted from database inception until June 6th, 
+2024; in consideration of the rapidly developing field of AI, 
+it is possible that novel research has been published since 
+our analysis. 
+Future directions of this research study include 
+reassessing ongoing improvements in technology as well 
+as investigating the cost-benefit analysis of implementing 
+AI models throughout the healthcare system. It will 
+be crucial to evaluate the effectiveness of AI models in 
+patient education once integrated into authentic clinical 
+environments. 
+While our study does not fully support replacing 
+experts with AI for guiding patient education, the results 
+show promise for its implementation in the future. As 
+shown in our study, AI models may provide accurate 
+answers and perform with a high AUC; however, there 
+are several limitations for their effective application in 
+patient education. There are already several disciplines 
+across healthcare in which AI performs as well as or even 
+better than clinicians (48-51). For example, if AI models 
+consistently diagnose orthopaedic pathologies more quickly 
+and accurately than experts, overall spending and substantial 
+resources can then be diverted towards improving medical 
+education and clinical training (9). Our analysis is in 
+agreement with other literature, which suggests that, based 
+on our current technology, AI algorithms in isolation do 
+not perform well enough to replace experts; however, 
+performance is increased when expert clinicians use AI 
+as an augment. Thus, orthopaedic surgeons may advise 
+patients to use AI models to guide understanding of simple 
+orthopaedic problems, however, they should not rely on AI 
+responses for definitive answers. Shared decision-making 
+and communication between the patient and surgical team 
+are still necessary to ensure high-quality patient education. 
+The gaps that have been identified in our study should be 
+addressed before AI models are fully integrated into patient 
+education.
+Conclusions
+In conclusion, the performance of AI models in answering 
+questions related to shoulder and elbow orthopaedic 
+pathologies reflected a high degree of accuracy. However, 
+AI responses were found to be inferior to experts and were 
+poor in readability, quality, and value to the patient. AI is a 
+powerful tool that can be used in conjunction with experts 
+to augment patient education, however it cannot yet be 
+utilized independently.
+Acknowledgments
+None.
+Footnote
+Reporting Checklist:  The authors have completed the 
+PRISMA reporting checklist. Available at https://aoj.
+
+=== PDF PAGE 11 ===
+Annals of Joint, 2026 Page 11 of 13
+© AME Publishing Company.   Ann Joint 2026;11:6 | https://dx.doi.org/10.21037/aoj-25-38
+amegroups.com/article/view/10.21037/aoj-25-38/rc
+Peer Review File: Available at https://aoj.amegroups.com/
+article/view/10.21037/aoj-25-38/prf
+Funding: None.
+Conflicts of Interest: All authors have completed the ICMJE 
+uniform disclosure form (available at https://aoj.amegroups.
+com/article/view/10.21037/aoj-25-38/coif). The authors 
+have no conflicts of interest to declare.
+Ethical Statement: The authors are accountable for all 
+aspects of the work in ensuring that questions related 
+to the accuracy or integrity of any part of the work are 
+appropriately investigated and resolved. 
+Open Access Statement: This is an Open Access article 
+distributed in accordance with the Creative Commons 
+Attribution-NonCommercial-NoDerivs 4.0 International 
+License (CC BY-NC-ND 4.0), which permits the non-
+commercial replication and distribution of the article with 
+the strict proviso that no changes or edits are made and the 
+original work is properly cited (including links to both the 
+formal publication through the relevant DOI and the license). 
+See: https://creativecommons.org/licenses/by-nc-nd/4.0/.
+References
+1. Chatterjee S, Bhattacharya M, Pal S, et al. ChatGPT and 
+large language models in orthopedics: from education and 
+surgery to research. J Exp Orthop 2023;10:128.
+2. Cheng K, Sun Z, He Y, et al. The potential impact of 
+ChatGPT/GPT-4 on surgery: will it topple the profession 
+of surgeons? Int J Surg 2023;109:1545-7.
+3. Brown T , Mann B, Ryder N, et al. Language models are 
+few-shot learners. Proceedings of the 34th International 
+Conference on Neural Information Processing Systems 
+2020:1877-901.
+4. Gilson A, Safranek CW, Huang T , et al. How Does 
+ChatGPT Perform on the United States Medical 
+Licensing Examination (USMLE)? The Implications 
+of Large Language Models for Medical Education and 
+Knowledge Assessment. JMIR Med Educ 2023;9:e45312.
+5. Kung TH, Cheatham M, Medenilla A, et al. Performance 
+of ChatGPT on USMLE: Potential for AI-assisted 
+medical education using large language models. PLOS 
+Digit Health 2023;2:e0000198.
+6. Yaneva V , Baldwin P , Jurich DP , et al. Examining 
+ChatGPT Performance on USMLE Sample Items and 
+Implications for Assessment. Acad Med 2024;99:192-7.
+7. Fiedler B, Azua EN, Phillips T , et al. ChatGPT 
+performance on the American Shoulder and Elbow 
+Surgeons maintenance of certification exam. J Shoulder 
+Elbow Surg 2024;33:1888-93.
+8. Farhadi F , Barnes MR, Sugito HR, et al. Applications of 
+artificial intelligence in orthopaedic surgery. Front Med 
+T echnol 2022;4:995526.
+9. Harry A. The Future of Medicine: Harnessing the Power 
+of AI for Revolutionizing Healthcare. Int J Multidiscip Sci 
+Arts 2023;2:36–47.
+10. Huang G, Wei X, T ang H, et al. A systematic review and 
+meta-analysis of diagnostic performance and physicians' 
+perceptions of artificial intelligence (AI)-assisted CT 
+diagnostic technology for the classification of pulmonary 
+nodules. J Thorac Dis 2021;13:4797-811.
+11. Jayakumar P , Moore MLG, Bozic KJ. Value-based 
+Healthcare: Can Artificial Intelligence Provide Value 
+in Orthopaedic Surgery? Clin Orthop Relat Res 
+2019;477:1777-80.
+12. Li D, Pehrson LM, Lauridsen CA, et al. The Added Effect 
+of Artificial Intelligence on Physicians' Performance in 
+Detecting Thoracic Pathologies on CT and Chest X-ray: 
+A Systematic Review. Diagnostics (Basel) 2021;11:2206.
+13. Alkaissi H, McFarlane SI. Artificial Hallucinations in 
+ChatGPT: Implications in Scientific Writing. Cureus 
+2023;15:e35179.
+14. Wen J, Wang W. The future of ChatGPT in academic 
+research and publishing: A commentary for clinical and 
+translational medicine. Clin T ransl Med 2023;13:e1207.
+15. Arora V , Silburt J, Phillips M, et al. A Blinded Comparison 
+of Three Generative Artificial Intelligence Chatbots for 
+Orthopaedic Surgery Therapeutic Questions. Cureus 
+2024;16:e65343.
+16. Kung J, Chiappelli F , Cajulis OO, et al. From Systematic 
+Reviews to Clinical Recommendations for Evidence-Based 
+Health Care: Validation of Revised Assessment of Multiple 
+Systematic Reviews (R-AMSTAR) for Grading of Clinical 
+Relevance. Open Dent J 2010;4:84-91.
+17. Liberati A, Altman DG, T etzlaff J, et al. The PRISMA 
+statement for reporting systematic reviews and meta-
+analyses of studies that evaluate health care interventions: 
+explanation and elaboration. Ann Intern Med 
+2009;151:W65-94.
+18. Landis JR, Koch GG. The measurement of observer 
+agreement for categorical data. Biometrics 1977;33:159-74.
+
+=== PDF PAGE 12 ===
+Annals of Joint, 2026Page 12 of 13
+© AME Publishing Company.   Ann Joint 2026;11:6 | https://dx.doi.org/10.21037/aoj-25-38
+19. Yang B, Mallett S, T akwoingi Y, et al. QUADAS-C: A 
+T ool for Assessing Risk of Bias in Comparative Diagnostic 
+Accuracy Studies. Ann Intern Med 2021;174:1592-9.
+20. Huang J, Ling CX. Using AUC and accuracy in evaluating 
+learning algorithms. IEEE T rans Knowl Data Eng 
+2005;17:299–310.
+21. Charnock D, Shepperd S, Needham G, et al. DISCERN: 
+an instrument for judging the quality of written consumer 
+health information on treatment choices. J Epidemiol 
+Community Health 1999;53:105-11.
+22. Silberg WM, Lundberg GD, Musacchio RA. Assessing, 
+controlling, and assuring the quality of medical 
+information on the Internet: Caveant lector et viewor--Let 
+the reader and viewer beware. JAMA 1997;277:1244-5.
+23. Badarudeen S, Sabharwal S. Readability of patient 
+education materials from the American Academy of 
+Orthopaedic Surgeons and Pediatric Orthopaedic Society 
+of North America web sites. J Bone Joint Surg Am 
+2008;90:199-204.
+24. Altun A, Askin A, Sengul I, et al. Evaluation of Y ouT ube 
+videos as sources of information about complex regional 
+pain syndrome. Korean J Pain 2022;35:319-26.
+25. T ahir M, Usman M, Muhammad F , et al. Evaluation of 
+Quality and Readability of Online Health Information 
+on High Blood Pressure Using DISCERN and Flesch-
+Kincaid T ools. Appl Sci 2020;10:3214.
+26. Foster B, Grampp SJ, Ozdag Y, et al. Assessing the Quality, 
+Content, and Readability of Online Patient Resources on 
+Viscosupplementation. J Orthop Exp Innov. 2024;5:1-8.
+27. Adelstein JM, Sinkler MA, Li L T , et al. Assessing 
+ChatGPT responses to frequently asked questions 
+regarding total shoulder arthroplasty. Semin Arthroplasty 
+JSES 2024;34:416-24.
+28. Alaiti RK, Vallio CS, Assunção JH, et al. Using Machine 
+Learning to Predict Nonachievement of Clinically 
+Significant Outcomes After Rotator Cuff Repair. Orthop J 
+Sports Med 2023;11:23259671231206180.
+29. Artamonov A, Bachar-Avnieli I, Klang E, et al. Responses 
+From ChatGPT-4 Show Limited Correlation With Expert 
+Consensus Statement on Anterior Shoulder Instability. 
+Arthrosc Sports Med Rehabil 2024;6:100923.
+30. Daher M, Koa J, Boufadel P , et al. Breaking barriers: can 
+ChatGPT compete with a shoulder and elbow specialist in 
+diagnosis and management? JSES Int 2023;7:2534-41.
+31. Hurley ET , Mojica ES, Kanakamedala AC, et al. 
+Quadriceps tendon has a lower re-rupture rate than 
+hamstring tendon autograft for anterior cruciate ligament 
+reconstruction - A meta-analysis. J ISAKOS 2022;7:87-93.
+32. Johns WL, Kellish A, Farronato D, et al. ChatGPT 
+Can Offer Satisfactory Responses to Common 
+Patient Questions Regarding Elbow Ulnar Collateral 
+Ligament Reconstruction. Arthrosc Sports Med Rehabil 
+2024;6:100893.
+33. Kane L T , Abboud JA, Plummer OR, et al. Improving 
+Efficiency of Patient-Reported Outcome Collection: 
+Application of Computerized Adaptive T esting to DASH 
+and QuickDASH Outcome Scores. J Hand Surg Am 
+2021;46:278-86.
+34. Karnuta JM, Churchill JL, Haeberle HS, et al. The value 
+of artificial neural networks for predicting length of stay, 
+discharge disposition, and inpatient costs after anatomic 
+and reverse shoulder arthroplasty. J Shoulder Elbow Surg 
+2020;29:2385-94.
+35. Li C, Alike Y, Hou J, et al. Machine learning model 
+successfully identifies important clinical features for 
+predicting outpatients with rotator cuff tears. Knee Surg 
+Sports T raumatol Arthrosc 2023;31:2615-23.
+36. Lopez CD, Constant M, Anderson MJJ, et al. Using 
+machine learning methods to predict nonhome discharge 
+after elective total shoulder arthroplasty. JSES Int 
+2021;5:692-8.
+37. Lum ZC, Collins DP , Dennison S, et al. Generative 
+Artificial Intelligence Performs at a Second-Y ear 
+Orthopedic Resident Level. Cureus 2024;16:e56104.
+38. Ozdag Y, Hayes DS, Makar GS, et al. Comparison 
+of Artificial Intelligence to Resident Performance on 
+Upper-Extremity Orthopaedic In-T raining Examination 
+Questions. J Hand Surg Glob Online 2024;6:164-8.
+39. Potty AG, Potty ASR, Maffulli N, et al. Approaching 
+Artificial Intelligence in Orthopaedics: Predictive 
+Analytics and Machine Learning to Prognosticate 
+Arthroscopic Rotator Cuff Surgical Outcomes. J Clin Med 
+2023;12:2369.
+40. Warren E Jr, Hurley ET , Park CN, et al. Evaluation of 
+information from artificial intelligence on rotator cuff 
+repair surgery. JSES Int 2024;8:53-7.
+41. Zhang Z, Ke C, Zhang Z, et al. Re-tear after arthroscopic 
+rotator cuff repair can be predicted using deep learning 
+algorithm. Front Artif Intell 2024;7:1331853.
+42. Carrington AM, Manuel DG, Fieguth PW, et al. Deep 
+ROC Analysis and AUC as Balanced Average Accuracy, 
+for Improved Classifier Selection, Audit and Explanation. 
+IEEE T rans Pattern Anal Mach Intell 2023;45:329-41.
+43. Baldwin DR, Gustafson J, Pickup L, et al. External 
+
+=== PDF PAGE 13 ===
+Annals of Joint, 2026 Page 13 of 13
+© AME Publishing Company.   Ann Joint 2026;11:6 | https://dx.doi.org/10.21037/aoj-25-38
+validation of a convolutional neural network artificial 
+intelligence tool to predict malignancy in pulmonary 
+nodules. Thorax 2020;75:306-12.
+44. Wu JT , Wong KCL, Gur Y, et al. Comparison of Chest 
+Radiograph Interpretations by Artificial Intelligence 
+Algorithm vs Radiology Residents. JAMA Netw Open 
+2020;3:e2022779.
+45. Zhang S, Fukunaga T , Oka S, et al. Concerns of quality, 
+utility, and reliability of laparoscopic gastrectomy for 
+gastric cancer in public video sharing platform. Ann T ransl 
+Med 2020;8:196.
+46. Wittink H, Oosterhaven J. Patient education and health 
+literacy. Musculoskelet Sci Pract. 2018;38:120-7.
+47. Kennedy D, Wainwright A, Pereira L, et al. A qualitative 
+study of patient education needs for hip and knee 
+replacement. BMC Musculoskelet Disord 2017;18:413.
+48. Johnson KB, Wei WQ, Weeraratne D, et al. Precision 
+Medicine, AI, and the Future of Personalized Health Care. 
+Clin T ransl Sci 2021;14:86-93.
+49. Langerhuizen DWG, Janssen SJ, Mallee WH, et al. 
+What Are the Applications and Limitations of Artificial 
+Intelligence for Fracture Detection and Classification in 
+Orthopaedic T rauma Imaging? A Systematic Review. Clin 
+Orthop Relat Res 2019;477:2482-91.
+50. Rajpurkar P , Chen E, Banerjee O, et al. AI in health and 
+medicine. Nat Med 2022;28:31-8.
+51. T opol EJ. High-performance medicine: the convergence of 
+human and artificial intelligence. Nat Med 2019;25:44-56.
+doi: 10.21037/aoj-25-38
+Cite this article as: Dworsky-Fried J, Mellon M, Rathod P , 
+Yan J, Khan M. Artificial intelligence models cannot yet replace 
+experts in providing patient education for shoulder and elbow 
+orthopaedic pathologies: a systematic review and meta-analysis. 
+Ann Joint 2026;11:6.

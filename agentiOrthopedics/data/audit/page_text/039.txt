@@ -1,0 +1,103 @@
+=== PDF PAGE 1 ===
+EUROPEAN JOURNAL OF ORTHOPAEDIC SURGERY & TRAUMATOLOGY • 2023.0 Top 100 Orthopedic AI • Rank #39
+Initial clinical experience with a predictive clinical decision
+support tool for anatomic and reverse total shoulder
+arthroplasty
+Chelsey Simmons, Jessica Degrasse, S. Polakovic, William R. Aibinder, Thomas W. Throckmorton, Mayo
+Noerdlinger, R. Papandrea, Scott Trenhaile, Bradley S. Schoch, Bruno Gobbato, Howard D. Routman,
+Moby Parsons, Christopher P. Roche
+University of Florida, PO Box 116250, Gainesville, FL, 32605, USA.
+Journal:
+European Journal of
+Orthopaedic Surgery &
+Traumatology
+Publication Year:
+2023.0
+Citations:
+11
+DOI:
+10.1007/s00590-023-03796-4
+CLINICAL & AGENTIC AI TAKEAWAY
+Machine learning-based clinical decision support tools for anatomic and reverse total shoulder arthroplasty
+show potential for improved patient outcomes and surgeon satisfaction when used responsibly.
+ABSTRACT
+Purpose: Clinical decision support tools (CDSTs) are software that generate patient-specific assessments that can be used
+to better inform healthcare provider decision making. Machine learning (ML)-based CDSTs have recently been developed
+for anatomic (aTSA) and reverse (rTSA) total shoulder arthroplasty to facilitate more data-driven, evidence-based decision
+making. Using this shoulder CDST as an example, this external validation study provides an overview of how ML-based
+algorithms are developed and discusses the limitations of these tools. Methods: An external validation for a novel CDST
+was conducted on 243 patients (120F/123M) who received a personalized prediction prior to surgery and had short-term
+clinical follow-up from 3 months to 2 years after primary aTSA (n = 43) or rTSA (n = 200). The outcome score and active
+range of motion predictions were compared to each patient's actual result at each timepoint, with the accuracy quantified
+by the mean absolute error (MAE). Results: The results of this external validation demonstrate the CDST accuracy to be
+similar (within 10%) or better than the MAEs from the published internal validation. A few predictive models were
+observed to have substantially lower MAEs than the internal validation, specifically, Constant (31.6% better), active
+abduction (22.5% better), global shoulder function (20.0% better), active external rotation (19.0% better), and active
+forward elevation (16.2% better), which is encouraging; however, the sample size was small. Conclusion: A greater
+understanding of the limitations of ML-based CDSTs will facilitate more responsible use and build trust and confidence,
+potentially leading to greater adoption. As CDSTs evolve, we anticipate greater shared decision making between the
+patient and surgeon with the aim of achieving even better outcomes and greater levels of patient satisfaction. © 2023. The
+Author(s), under exclusive licence to Springer-Verlag France SAS, part of Springer Nature.
+Keywords: Clinical Outcomes, Machine Learning, Rtsa, Atsa, Cdst
+
+=== PDF PAGE 2 ===
+Study Overview & Background
+Purpose: Clinical decision support tools (CDSTs) are software that generate patient-specific assessments that can be used
+to better inform healthcare provider decision making. Machine learning (ML)-based CDSTs have recently been developed
+for anatomic (aTSA) and reverse (rTSA) total shoulder arthroplasty to facilitate more data-driven, evidence-based decision
+making. Using this shoulder CDST as an example, this external validation study provides an overview of how ML-based
+algorithms are developed and discusses the limitations of these tools. Methods: An external validation for a novel CDST
+was conducted on 243 patients (120F/123M) who received a personalized prediction prior to surgery and had short-term
+clinical follow-up from 3 months to 2 years after primary aTSA (n = 43) or rTSA (n = 200). The outcome score and active
+range of motion predictions were compared to each patient's actual result at each timepoint, with the accuracy quantified
+by the mean absolute error (MAE). Results: The results of this external validation demonstrate the CDST accuracy to be
+similar (within 10%) or better than the MAEs from the published internal validation. A few predictive models were
+observed to have substantially lower MAEs than the internal validation, specifically, Constant (31.6% better), active
+abduction (22.5% better), global shoulder function (20.0% better), active external rotation (19.0% better), and active
+forward elevation (16.2% better), which is encouraging; however, the sample size was small. Conclusion: A greater
+understanding of the limitations of ML-based CDSTs will facilitate more responsible use and build trust and confidence,
+potentially leading to greater adoption. As CDSTs evolve, we anticipate greater shared decision making between the
+patient and surgeon with the aim of achieving even better outcomes and greater levels of patient satisfaction. © 2023. The
+Author(s), under exclusive licence to Springer-Verlag France SAS, part of Springer Nature.
+Methodology & Clinical Focus
+Study Classification: other. Evaluated under orthopedic machine learning and artificial intelligence decision frameworks.
+Key Findings & Analysis
+Machine learning-based clinical decision support tools for anatomic and reverse total shoulder arthroplasty show potential
+for improved patient outcomes and surgeon satisfaction when used responsibly.
+Extended Repository Abstract
+Purpose Clinical decision support tools (CDSTs) are software that generate patient-specific assessments that can be used to
+better inform healthcare provider decision making. Machine learning (ML)-based CDSTs have recently been developed for
+anatomic (aTSA) and reverse (rTSA) total shoulder arthroplasty to facilitate more data-driven, evidence-based decision
+making. Using this shoulder CDST as an example, this external validation study provides an overview of how ML-based
+algorithms are developed and discusses the limitations of these tools. Methods An external validation for a novel CDST
+was conducted on 243 patients (120F/123M) who received a personalized prediction prior to surgery and had short-term
+clinical follow-up from 3 months to 2 years after primary aTSA (n = 43) or rTSA (n = 200). The outcome score and active
+range of motion predictions were compared to each patient's actual result at each timepoint, with the accuracy quantified
+by the mean absolute error (MAE). Results The results of this external validation demonstrate the CDST accuracy to be
+similar (within 10%) or better than the MAEs from the published internal validation. A few predictive models were
+observed to have substantially lower MAEs than the internal validation, specifically, Constant (31.6% better), active
+abduction (22.5% better), global shoulder function (20.0% better), active external rotation (19.0% better), and active
+forward elevation (16.2% better), which is encouraging; however, the sample size was small. Conclusion A greater
+understanding of the limitations of ML-based CDSTs will facilitate more responsible use and build trust and confidence,
+potentially leading to greater adoption. As CDSTs evolve, we anticipate greater shared decision making between the
+patient and surgeon with the aim of achieving even better outcomes and greater levels of patient satisfaction.
+
+=== PDF PAGE 3 ===
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+Bibliographic Details & Indexing
+Authors: Chelsey Simmons, Jessica Degrasse, S. Polakovic, William R. Aibinder, Thomas W. Throckmorton,
+Mayo Noerdlinger, R. Papandrea, Scott Trenhaile, Bradley S. Schoch, Bruno Gobbato, Howard D. Routman, Moby
+Parsons, Christopher P. Roche
+Journal / Venue: European Journal of Orthopaedic Surgery & Traumatology (2023.0)
+SJR Metric: Quartile 1.0
+Citation Count: 11 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.1007/s00590-023-03796-4
+Consensus Evidence Link: https://consensus.app/papers/initial-clinical-experience-with-a-predictive-clinical-
+simmons-degrasse/23903bd5ab4f5bb5a0f9594311fee1b2/
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1007/s00590-023-03796-4 •
+Consensus Page: https://consensus.app/papers/initial-clinical-experience-with-a-predictive-clinical-simmons-
+degrasse/23903bd5ab4f5bb5a0f9594311fee1b2/ • Verified and rendered via Deep Search & Academic Repositories.

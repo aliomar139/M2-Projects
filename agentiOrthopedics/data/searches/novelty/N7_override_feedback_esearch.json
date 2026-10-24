@@ -1,0 +1,17 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "2",
+    "retmax": "2",
+    "retstart": "0",
+    "idlist": [
+      "42842895",
+      "30135392"
+    ],
+    "translationset": [],
+    "querytranslation": "(\"Orthopedics\"[MeSH Terms] OR \"Orthopedic Procedures\"[MeSH Terms] OR \"Arthroplasty\"[MeSH Terms] OR \"Osteoarthritis\"[MeSH Terms] OR \"orthop*\"[Title/Abstract] OR \"arthroplast*\"[Title/Abstract] OR \"Osteoarthritis\"[Title/Abstract] OR \"musculoskeletal\"[Title/Abstract] OR \"spine surgery\"[Title/Abstract] OR \"spine care\"[Title/Abstract] OR \"hip arthroscopy\"[Title/Abstract]) AND ((\"treatment decision\"[Title/Abstract] OR \"decision support\"[Title/Abstract]) AND (\"override\"[Title/Abstract] OR \"feedback loop\"[Title/Abstract])) AND 1800/01/01:2026/10/23[Date - Publication]"
+  }
+}

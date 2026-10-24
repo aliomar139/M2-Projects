@@ -1,0 +1,152 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          26
+        ]
+      ],
+      "date-time": "2025-08-26T00:03:37Z",
+      "timestamp": 1756166617113,
+      "version": "3.44.0"
+    },
+    "reference-count": 0,
+    "publisher": "Scientific Research Publishing, Inc.",
+    "issue": "08",
+    "content-domain": {
+      "domain": [
+        "www.scirp.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "OALib"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "DOI": "10.4236/oalib.1113957",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          25
+        ]
+      ],
+      "date-time": "2025-08-25T08:12:22Z",
+      "timestamp": 1756109542000
+    },
+    "page": "1-20",
+    "update-policy": "https://doi.org/10.4236/scirp.2020.crossmarkpolicy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Personalized Antidepressant Treatment Recommendation Using Reinforcement Learning and Predictive Modelling on Synthetic Patient Data "
+    ],
+    "prefix": "10.4236",
+    "volume": "12",
+    "author": [
+      {
+        "given": "Rocco de",
+        "family": "Filippis",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Abdullah Al",
+        "family": "Foysal",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "2751",
+    "container-title": [
+      "OALib"
+    ],
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          25
+        ]
+      ],
+      "date-time": "2025-08-25T08:12:33Z",
+      "timestamp": 1756109553000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://www.oalib.com/paper/pdf/6868324"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "08",
+      "published-print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.4236/oalib.1113957",
+    "relation": {},
+    "ISSN": [
+      "2333-9721",
+      "2333-9705"
+    ],
+    "issn-type": [
+      {
+        "value": "2333-9721",
+        "type": "print"
+      },
+      {
+        "value": "2333-9705",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    }
+  }
+}

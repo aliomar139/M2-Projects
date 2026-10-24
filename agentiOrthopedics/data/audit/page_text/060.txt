@@ -1,0 +1,527 @@
+=== PDF PAGE 1 ===
+Engineering, Technology & Applied Science Research  Vol. 15, No. 4, 2025, 24698-24704 24698   
+ 
+www.etasr.com Gorrepati & Potla: A Reinforcement Le arning Framework for Real-Time Personalized Treatment … 
+ 
+A Reinforcement Learning Framework for 
+Real-Time Personalized Treatment Planning in 
+Clinical Environments 
+ 
+Leela Prasad Gorrepati 
+Camelot Integrated Solutions Inc, Richmond, Virginia, 23059, USA 
+leelaprasad.gorrepati@gmail.com (corresponding author) 
+ 
+Ravi Teja Potla 
+Slalom Consulting, LLC, Dallas, Texas, 75001, USA 
+raviteja.potla@gmail.com  
+Received: 26 May 2025 | Revised: 9 June 2025 and 20 June 2025 | Accepted: 21 June 2025 
+Licensed under a CC-BY 4.0 license | Copyright (c) by the authors | DOI: https://doi.org/10.48084/etasr.12390 
+ABSTRACT 
+This paper presents a Reinforcement Learning (RL) f ramework for real-time, personalized healthcare, 
+aiming to optimize the treatment strategies for ind ividual patients using longitudinal clinical data. The 
+system models the patient-treatment environment as a Partially Observable Markov Decision Process 
+(POMDP), allowing decision-making under uncertainty  while integrating multimodal patient information, 
+including Electronic Health Records (EHRs), lab tes ts, and imaging data. A deep policy network, traine d 
+through Proximal Policy Optimization (PPO), dynamic ally chooses the optimal interventions by balancing  
+the long-term clinical outcomes, risks, costs, and adherence to medical guidelines. The framework 
+combines a model-based simulator for off-policy dat a augmentation, auxiliary risk predictors to enhanc e 
+the safety-aware optimization, and interpretable me chanisms to facilitate the clinician trust. Evaluat ed on 
+more than 50,000 patient records and simulated envi ronments, the proposed model surpassed the existing  
+methods in accuracy, F1-score, Receiver Operating C haracteristic-Area Under the Curve (ROC-AUC), 
+and treatment efficiency. Specifically, it achieved  93.6% accuracy and a 0.937 F1-score while reducing  the 
+treatment cycles and enhancing safety compliance. T hese findings highlight the potential of RL to offe r 
+adaptive and interpretable decision support in clin ical settings, although more real-world testing is 
+necessary to confirm this result. 
+Keywords-reinforcement learning; personalized healt hcare; treatment optimization; Deep Q-Network (DQN) ; 
+clinical decision-making 
+I.  INTRODUCTION  
+Personalized healthcare aims to enhance the patient  
+outcomes by tailoring the treatment approaches to e ach 
+individual's profile [1]. The clinical decisions ac ross many 
+specialties tend to be population-based, relying on  guidelines 
+and heuristics that overlook the patient-specific d ifferences in 
+genetics, comorbidities, and treatment responses. T his 
+variability leads to inconsistent clinical outcomes  and reduced 
+effectiveness of therapies [2]. The complexity and dynamic 
+nature of human physiology, along with person-speci fic 
+variability in disease progression, further complic ate the 
+formulation of treatment strategies in real-time [3 ]. RL models 
+that enable researchers or clinicians to define the  treatment 
+optimization problem as a Markov Decision Process ( MDP) 
+may provide patients and clinicians with the opport unity to 
+adjust the treatment strategies based on real-time data, thereby 
+enhancing the adaptability and long-term outcomes in the clinic 
+[3]. To enhance the personalized interventions, new  
+computational and clinical challenges arise. Healthcare features 
+high-dimensional, partially observable state spaces that involve 
+complex relationships among physiological, genetic,  and 
+environmental factors [4]. The stochastic nature of  the 
+treatment responses, combined with unmeasured confo unders 
+and limited clinical data, further complicates the learning 
+process [5]. Additionally, medical interventions of ten provide 
+delayed and infrequent feedback, which means that s tandard 
+machine learning convergence methods for optimal po licy 
+learning might not be applicable [6]. Since ethical  and safety 
+constraints can limit the action space, learning pe rsonalized 
+treatment interventions often requires balancing tr adeoffs 
+between exploration and exploitation to reduce the risk of 
+adverse events [7]. 
+Accurate state representation is essential for effe ctive 
+policy learning in RL based models [8]. In healthca re, the 
+patient health states are affected by various multi modal data 
+sources, such as EHRs, genomic data, medical imagin g, 
+continuous physiological signals, and real-time cli nical 
+
+=== PDF PAGE 2 ===
+Engineering, Technology & Applied Science Research  Vol. 15, No. 4, 2025, 24698-24704 24699   
+ 
+www.etasr.com Gorrepati & Potla: A Reinforcement Le arning Framework for Real-Time Personalized Treatment … 
+ 
+observations [9]. This study develops a unified sta te 
+representation by encoding high-dimensional data wi th 
+Variational Autoencoders (VAEs), which reduces the 
+complexity of the state-space while maintaining cli nically 
+important information [10]. Attention mechanisms ar e 
+incorporated to focus on the most informative featu res, 
+enhancing the model's ability to detect complex, ti me-varying 
+dependencies in patient health states [11]. 
+Deep Reinforcement Learning (DRL) leverages deep neural 
+networks to estimate the value functions and policy  mappings 
+for complex tasks [12]. This study uses an actor-cr itic 
+framework, where the value network estimates the ex pected 
+return for each state-action pair, while the policy  network 
+learns the best treatment strategy for patients [13 ]. A recurrent 
+architecture is implemented using Long Short-Term M emory 
+(LSTM) networks to model the temporal dependencies and 
+retain a hidden state representation of past patien t trajectories 
+[14]. A clipped surrogate objective is employed to stabilize 
+learning in the model, while entropy regularization  promotes 
+experimentation with treatment strategies that devi ate from the 
+behavior needed to develop the initial policy for t reatment 
+interventions [15]. This hybrid approach enables th e model to 
+identify patient-level changes in the disease statu s that may 
+result from treatment interactions, providing real- time, 
+personalized treatment recommendations for each ind ividual 
+[16]. 
+Patients' responses to treatment are inherently ran dom and 
+can differ because of genetic, environmental, and c linical 
+factors [17]. A Bayesian uncertainty estimation fra mework is 
+integrated into the Q-value estimate to help the ag ent consider 
+uncertainty when selecting actions. Thompson sampling is used 
+to adjust the level of exploration based on uncerta inty gradient 
+estimates, thereby enhancing the learning efficienc y in sparse 
+and noisy reward environments [18]. 
+II.  METHODOLOGY 
+This section outlines a detailed methodology for de veloping a 
+personalized healthcare framework using reinforceme nt 
+learning. The system is designed to adaptively opti mize the 
+treatment strategies based on individual patient da ta in real-
+time. The present study employs a formalized decisi on-making 
+model with RL in a partially observable environment to address 
+the uncertainty [19], delayed effects, and multimod al clinical 
+data. Figure 1 illustrates the methodology of the p roposed 
+method. 
+Patient Data Collection: This step involves gatheri ng 
+diverse and multimodal patient health data, includi ng EHRs, 
+laboratory test results, and medical imaging scans.  [20] Each 
+contributes to forming the observation vector at ti me step t, 
+representing the patient's current health status: 
+oₜ = {oₜᴱᴴᴿ,oₜᴸᵃᵇ,oₜᴵᵐᵃᵍᵉ}    [1] 
+where o ₜ: Total observation of the patient's condition at t ime 
+step t, oₜᴱᴴᴿ : Observation from EHRs, including demographics, 
+medications, diagnoses, and clinical notes, o ₜᴸᵃᵇ : Observation 
+from laboratory test results, such as blood tests, biomarkers, 
+and biochemical panels, o ₜᴵᵐᵃᵍᵉ : Observations from medical 
+imaging data, such as X-rays, Computed Tomography ( CT) 
+scans, and Magnetic Resonance Imaging (MRIs), are t ypically 
+processed through Convolutional Neural Networks (CNNs). 
+Data Preprocessing: The collected raw data are 
+preprocessed through the imputation of missing valu es and 
+normalization. This guarantees consistent scaling a nd 
+completeness across features, which is essential fo r robust 
+learning. 
+x′ = (x − μ) / σ     (2) 
+where x: Original value of the feature (raw data point), μ: Mean 
+of the feature values in the dataset, σ: Standard deviation of the 
+feature values, x ′: Normalized (standardized) value of the 
+feature. 
+Feature Extraction and Representation: Dimensionali ty 
+reduction techniques, such as PCA, are used to transform high-
+dimensional data into a more concise and informativ e format 
+[21]. An encoder function maps the processed observations into 
+a latent state, which is then fed into the RL model. 
+Z =  XW      (3) 
+where X: Original data matrix of size n × d, n is t he number of 
+samples and d is the number of features, W: Transfo rmation 
+matrix of size d × k, consisting of the top k eigen vectors 
+(principal components) of the covariance matrix of X, Z: 
+Transformed data matrix of size n × k, representing  the lower-
+dimensional representation of the original data. 
+sₜ =  φ(oₜ)     (4) 
+where s ₜ is the latent state at time t, and φ is a nonlinear encoder 
+function that transforms the raw observation o ₜ into a compact 
+state representation. 
+DRL: It is implemented using either policy-based or  value-
+based methods. Policy-based methods learn an optima l policy 
+directly, while value-based methods estimate action -value 
+functions. 
+J(θ) =  E[∑ γᵗ · rₜ]     (5) 
+where J( θ) is the expected cumulative reward objective to be  
+maximized in reinforcement learning, γ is the discount factor 
+(0 < γ ≤ 1), r ₜ is the reward at time t, and θ are the policy 
+parameters. 
+Q(sₜ,aₜ) =  E[∑ γᵏ · rₜ₊ₖ₊₁]    (6) 
+where Q(s ₜ, a ₜ) is the action-value function that represents the 
+expected return after taking action a ₜ in state s ₜ and following 
+the policy afterward. 
+RL Model: The model is formulated as a POMDP, which  
+addresses uncertain and partially observable enviro nments 
+commonly found in healthcare settings. 
+POMDP = (S,A,T,R,γ)    (7) 
+where S is the state space, A is the action space, T is the 
+transition model, R is the reward function, and γ is the discount 
+factor. 
+ 
+ 
+
+=== PDF PAGE 3 ===
+Engineering, Technology & Applied Science Research  Vol. 15, No. 4, 2025, 24698-24704 24700   
+ 
+www.etasr.com Gorrepati & Potla: A Reinforcement Le arning Framework for Real-Time Personalized Treatment … 
+ 
+ 
+Fig. 1.  Methodology of the proposed method. 
+Training Phase: The RL agent chooses actions, gets 
+rewards, and updates its parameters accordingly. Th e rewards 
+are calculated based on patient improvement, cost e fficiency, 
+and treatment safety. 
+aₜ ∼  πθaₜ | sₜ    (8) 
+where the action a ₜ is sampled from the policy distribution πθ , 
+given the current state s ₜ. The policy π is parameterized by θ. 
+rₜ   α₁ΔHealthₜα₂Costₜα₃Riskₜ   (9) 
+where the reward function r ₜ is a weighted combination of the 
+health improvement ( ΔHealth ₜ), treatment cost (Cost ₜ), and 
+treatment risk (Risk ₜ), with α₁, α₂, and α₃ being tunable weights. 
+Policy Update: To update the policy effectively, th e PPO 
+loss is minimized. The advantage estimation assists  in 
+determining how advantageous an action was, compare d to 
+average actions. 
+ρₜθ   πθaₜ|sₜ / πθ oldaₜ|sₜ  (10) 
+where ρₜ(θ) is the ratio of the probability of taking action a ₜ 
+under the new policy πθ  to that under the old policy πθ _old. It 
+is used in PPO to ensure conservative updates. 
+Treatment Recommendation: The optimal action is cho sen 
+according to the learned policy and sent to the Cli nical 
+Decision Support System (CDSS) for implementation. 
+aₜ∗   argmaxₐ πθa | sₜ   (11) 
+where the optimal action a ₜ* is the one with the highest 
+probability according to the current policy πθ , given the state s ₜ. 
+
+
+=== PDF PAGE 4 ===
+Engineering, Technology & Applied Science Research  Vol. 15, No. 4, 2025, 24698-24704 24701   
+ 
+www.etasr.com Gorrepati & Potla: A Reinforcement Le arning Framework for Real-Time Personalized Treatment … 
+ 
+Risk Prediction: An auxiliary classifier forecasts the 
+potential risks, like ICU admission, based on the p atient’s 
+latent state vector. 
+Patient Monitoring: The patient outcomes and clinic ian 
+feedback are monitored in real-time and integrated into the 
+model through online learning for continuous improvement. 
+III.  RESULTS 
+To evaluate the classification performance of the p roposed 
+system on 50,000 patient cases, a confusion matrix was created, 
+as shown in Figure 2. The matrix demonstrates the m odel’s 
+ability to differentiate between correct and incorr ect treatment 
+predictions. The model achieved a sensitivity of 94 .2% and a 
+specificity of 92.7%, confirming its robustness. Fi gure 3 
+illustrates the ROC curve, highlighting the model’s  
+effectiveness in distinguishing between the positiv e and 
+negative treatment results. With an AUC of 0.964, i t 
+outperforms other benchmark models, demonstrating a  strong 
+discriminative power. 
+ 
+ 
+Fig. 2.  Confusion matrix for treatment prediction. 
+ 
+Fig. 3.  ROC curve for model performance evaluation. 
+The training stability was assessed by analyzing th e 
+convergence of the cumulative reward. As portrayed in Figure 
+4, the model gradually converged within 2000 episod es and 
+sustained a consistent learning behavior. The avera ge reward 
+reached 0.934, surpassing baselines like PPO (0.884 ) and Q-
+Learning (0.812). To further assess the practical i mpact of the 
+model, it was measured how the system responds to d ifferent 
+patient profiles. A stratified performance analysis  was 
+performed across subgroups defined by age, gender, number of 
+comorbidities, and disease severity. The proposed m odel 
+consistently achieved F1-scores above 0.930 across all 
+subgroups, indicating its robustness and ability to  generalize. 
+The lowest subgroup performance (F1 = 0.921) was se en in 
+patients over 70 with multiple conditions, yet it s till exceeded 
+all other baseline models in that category. This co nfirms the 
+model's ability to adjust the treatment approaches based on 
+each patient's unique complexities. 
+ 
+ 
+Fig. 4.  Reward convergence across training episodes. 
+Table I provides a comparison of different methods.  The 
+proposed approach outperforms existing algorithms i n several 
+key metrics, including accuracy, F1-score, AUC, and  safety 
+compliance. 
+TABLE I.  COMPARATIVE PERFORMANCE EVALUATION 
+OF DIFFERENT MODELS 
+Model Accuracy F1-
+score 
+ROC-
+AUC 
+Avg. 
+reward 
+Safety 
+compliance 
+Proposed 
+(RL-PPO) 93.6% 0.937 0.964 0.934 96.2% 
+CNN 
+(supervised) 88.7% 0.881 0.912 N/A 87.4% 
+Q-learning 86.9% 0.862 0.902 0.812 84.1% 
+PPO baseline 90.2% 0.902 0.919 0.884 88.6% 
+Rule-based 
+Expert 84.5% 0.833 0.873 N/A 82.3% 
+ 
+A treatment cycle efficiency study was also conduct ed. On 
+average, the proposed model needed 12.6% fewer trea tment 
+cycles to reach the recovery criteria compared to the supervised 
+CNN models and 15.8% fewer cycles than the rule-bas ed 
+systems. This reduction in treatment steps not only  lessens the 
+patient burden, but also results in lower operation al costs in 
+clinical settings. Such efficient metrics are criti cal in resource-
+limited environments and highlight a significant ad vantage of 
+autonomous optimization systems in healthcare. 
+
+
+=== PDF PAGE 5 ===
+Engineering, Technology & Applied Science Research  Vol. 15, No. 4, 2025, 24698-24704 24702   
+ 
+www.etasr.com Gorrepati & Potla: A Reinforcement Le arning Framework for Real-Time Personalized Treatment … 
+ 
+A longitudinal stability assessment was conducted b y 
+examining the policy drift over time. Despite the minor updates 
+and ongoing online learning, the cosine similarity between the 
+policy parameters across consecutive validation epo chs 
+consistently stayed above 0.992, demonstrating strong temporal 
+consistency. This characteristic is essential for c linical 
+deployment, where erratic behavior in treatment policy updates 
+can undermine the clinician trust and safety assurances. 
+To verify scalability, the model's performance was 
+evaluated on a synthetic dataset [22] expanded to 2 00,000 
+patients, using a high-fidelity simulator. The model maintained 
+its performance, with a decrease in accuracy of les s than 1.8% 
+and a drift in reward accumulation of under 3.2%. T he runtime 
+analysis showed linear scaling with the data size, confirming its 
+suitability for large-scale deployments in hospitals and national 
+health systems. 
+An ablation study was conducted to quantify the 
+contribution of individual modules, including entro py 
+regularization, reward shaping, the action mask, an d the 
+auxiliary risk head. Removing entropy regularizatio n resulted 
+in a 4.1% decrease in performance, while eliminatin g the risk-
+aware component led to a 5.6% decrease in safety co mpliance. 
+These results confirm the importance of each archit ectural and 
+algorithmic improvement in achieving high-stake per formance 
+standards. The current work also assessed interpret ability 
+metrics based on clinician feedback on explainabili ty 
+visualizations. Over 94.6% of the physician partici pants rated 
+the explanations as helpful or very helpful in understanding the 
+system’s decisions. Attention heatmaps and SHAP val ue 
+visualizations were ranked as the most effective. T his 
+interpretability was identified as a key factor dri ving the trust 
+and adoption in potential real-world deployments. 
+Figure 5 displays the subgroup analysis based on 
+demographic and clinical features. The proposed mod el 
+consistently achieved high F1-scores across all subgroups, with 
+only a slight decrease observed in elderly patients  and those 
+with comorbidities. This demonstrates the robustnes s of the 
+learned policy and its applicability to vulnerable populations. 
+ 
+ 
+Fig. 5.  F1-score comparison across patient subgroups. 
+As shown in Figure 6, the average number of treatme nt 
+cycles required for patient recovery was significantly lower for 
+the proposed model compared to supervised CNNs and rule-
+based systems. This measure reflects treatment effi ciency, as 
+the introduced model reduces the clinical intervent ions while 
+maintaining or enhancing the outcomes. 
+ 
+ 
+Fig. 6.  Average treatment cycles to achieve recovery. 
+To ensure longitudinal reliability, policy consistency across 
+training epochs was examined, as illustrated in Fig ure 7. The 
+model kept a cosine similarity above 0.992 between successive 
+policy snapshots, indicating a minimal drift and hi gh reliability 
+during continuous learning. 
+ 
+ 
+Fig. 7.  Policy stability measured by cosine similarity over epochs. 
+Figure 8 presents the results of the scalability te st, where 
+the model was evaluated with up to 200,000 syntheti c patient 
+records. The performance decline was minimal, confirming that 
+the framework is suitable for use in large-scale clinical settings 
+without a significant accuracy loss. 
+IV.  CONCLUSIONS 
+This work presents a comprehensive Reinforcement 
+Learning (RL) framework for real-time personalized treatment 
+optimization using deep policy learning in partiall y observable 
+clinical environments. By modeling the patient-trea tment 
+interaction as a Partially Observable Markov Decisi on Process 
+(POMDP), the proposed approach captures the tempora l 
+dependencies, uncertainty, and nonlinear dynamics p resent in 
+medical decision-making. 
+
+
+=== PDF PAGE 6 ===
+Engineering, Technology & Applied Science Research  Vol. 15, No. 4, 2025, 24698-24704 24703   
+ 
+www.etasr.com Gorrepati & Potla: A Reinforcement Le arning Framework for Real-Time Personalized Treatment … 
+ 
+ 
+Fig. 8.  Model accuracy versus dataset size. 
+The proposed architecture combines Proximal Policy 
+Optimization (PPO) with auxiliary risk modeling, en tropy-
+based exploration, and model-based rollouts to ensu re high 
+learning stability, interpretability, and safety co mpliance. An 
+action masking mechanism ensures that medically fea sible 
+actions are taken at each time step, while ongoing learning and 
+feedback adaptation support the long-term policy improvement 
+in live deployment environments. 
+The quantitative results demonstrate the superiorit y of the 
+proposed model over baseline methods. Specifically,  the 
+system achieved a classification accuracy of 93.6%,  an F1-
+score of 0.937, and a Receiver Operating Characteri stic-Area 
+Under the Curve (ROC-AUC) of 0.964 across 50,000 pa tient 
+samples, outperforming the supervised Convolutional  Neural 
+Networks (CNNs) and traditional RL approaches by significant 
+margins. The introduced model also achieved a highe r clinical 
+safety compliance, reduced the average treatment cy cle by 
+12.6%, and maintained stability across diverse subg roups, 
+including the elderly and multi-morbid patients. 
+Furthermore, the model maintained performance in la rge-
+scale simulations with up to 200,000 patients, show ing less 
+than 2% degradation in accuracy and consistent rewa rd 
+convergence. The policy drift analysis confirmed th e temporal 
+consistency (cosine similarity >0.992), and ablatio n studies 
+verified the contribution of each architectural com ponent. The 
+physician review of the model’s decisions indicated  92% 
+clinical alignment and 94.6% explainability approva l, 
+highlighting the model’s trustworthiness and real-w orld 
+relevance. 
+These results not only validate the proposed model’ s 
+effectiveness in precision healthcare, but also dem onstrate its 
+readiness for clinical integration. Future work wil l expand this 
+framework to include multi-agent cooperative settin gs, 
+integration with hospital Electronic Medical Record  (EMR) 
+systems, and validation through real-time clinical trials in 
+intensive care and chronic disease management domains. 
+Data Privacy Statement: All data used in this study , 
+including public and institutional sources, were fu lly de-
+identified to protect patient privacy. No personall y identifiable 
+information was collected or used. Institutional da ta were 
+accessed through data-sharing agreements that meet ethical 
+standards for medical research. 
+REFERENCES 
+[1]  C. Jiang, B. Hu, Y. Wang, and S. Wu, "Reinforcement  learning via 
+nonparametric smoothing in a continuous-time stocha stic setting with 
+noisy data," Statistica Sinica , vol. 35, no. 2, pp. 831–852, 2025, 
+https://doi.org/10.5705/ss.202022.0407. 
+[2]  J. Chai, E. Chen, and J. Fan, "Deep Transfer $Q$-Le arning for Offline 
+Non-Stationary Reinforcement Learning." arXiv, Apr.  11, 2025, 
+https://doi.org/10.48550/arXiv.2501.04870. 
+[3]  R. Zhang et al. , "Embodied AI-Enhanced Vehicular Networks: An 
+Integrated Large Language Models and Reinforcement Learning 
+Method." arXiv, Jan. 02, 2025, 
+https://doi.org/10.48550/arXiv.2501.01141. 
+[4]  M. A. Mubeen, F. Chen, and K. M. U. Rehman, "Optimi zation of Silver 
+Nanocluster Geometries: A Deep Reinforcement Learni ng Approach to 
+Identifying the Most Stable Configurations in Ag15 Cluster," Journal of 
+Chemistry and Environment , vol. 4, no. 1, pp. 1–17, Jun. 2025, 
+https://doi.org/10.56946/jce.v4i1.589. 
+[5]  R. Al-Dmour, H. Al-Dmour, E. Basheer Amin, and A. A l-Dmour, 
+"Impact of AI and big data analytics on healthcare outcomes: An 
+empirical study in Jordanian healthcare institutions," Digital Health , vol. 
+11, May 2025, https://doi.org/10.1177/20552076241311051. 
+[6]  Z. Nicolaou, "Perspective Chapter: Treating Facial Asymmetries – 
+Significant Points to Take into Consideration for O ptimal Results," in 
+Orthodontics - Current Principles and Techniques , IntechOpen, 2025. 
+[7]  M. Mazonakis, E. Tzanis, S. Kachris, E. Lyraraki, a nd J. Damilakis, "A 
+qualitative, quantitative and dosimetric evaluation  of a machine 
+learning-based automatic segmentation method in treatment planning for 
+gastric cancer," Physica Medica: European Journal of Medical Physics , 
+vol. 130, Feb. 2025, https://doi.org/10.1016/j.ejmp.2025.104896. 
+[8]  C. SaiTeja and J. B. Seventline, "A hybrid learning framework for multi-
+modal facial prediction and recognition using impro vised non-linear 
+SVM classifier," AIP Advances , vol. 13, no. 2, Feb. 2023, Art. no. 
+025316, https://doi.org/10.1063/5.0136623. 
+[9]  S. J. Gershman and A. Lak, "Policy Complexity Suppr esses Dopamine 
+Responses," Journal of Neuroscience , vol. 45, no. 9, Feb. 2025, Art. no. 
+e1756242024, https://doi.org/10.1523/JNEUROSCI.1756-24.2024. 
+[10]  W. Zhang et al. , "A Proton Treatment Planning Method for Combining  
+FLASH and Spatially Fractionated Radiation Therapy to Enhance 
+Normal Tissue Protection." arXiv, May 09, 2025, 
+https://doi.org/10.48550/arXiv.2505.06223. 
+[11]  M. Al-Asali, A. Y. Alqutaibi, M. Al-Sarem, and F. S aeed, "Deep 
+learning-based approach for 3D bone segmentation an d prediction of 
+missing tooth region for dental implant planning," Scientific Reports , 
+vol. 14, no. 1, Jun. 2024, Art. no. 13888, https://doi.org/10.1038/s41598-
+024-64609-0. 
+[12]  S. Chopparapu and B. S. Joseph, "A hybrid facial fe atures extraction-
+based classification framework for typhlotic people ," Bulletin of 
+Electrical Engineering and Informatics , vol. 13, no. 1, pp. 338–349, Feb. 
+2024, https://doi.org/10.11591/eei.v13i1.5628. 
+[13]  H. Du et al. , "Enhancing Deep Reinforcement Learning: A Tutoria l on 
+Generative Diffusion Models in Network Optimization ," IEEE 
+Communications Surveys & Tutorials , vol. 26, no. 4, pp. 2611–2646, 
+2024, https://doi.org/10.1109/COMST.2024.3400011. 
+[14]  F.-M. Luo, T. Xu, H. Lai, X.-H. Chen, W. Zhang, and  Y. Yu, "A survey 
+on model-based reinforcement learning," Science China Information 
+Sciences , vol. 67, no. 2, Jan. 2024, Art. no. 121101, 
+https://doi.org/10.1007/s11432-022-3696-5. 
+[15]  A. Mirzaee Moghaddam Kasmaee et al. , "ELRL-MD: a deep learning 
+approach for myocarditis diagnosis using cardiac ma gnetic resonance 
+images with ensemble and reinforcement learning int egration," 
+Physiological Measurement , vol. 45, no. 5, Feb. 2024, Art. no. 055011, 
+https://doi.org/10.1088/1361-6579/ad46e2. 
+[16]  P. Jayaraman, J. Desman, M. Sabounchi, G. N. Nadkar ni, and A. 
+Sakhuja, "A Primer on Reinforcement Learning in Med icine for 
+
+
+=== PDF PAGE 7 ===
+Engineering, Technology & Applied Science Research  Vol. 15, No. 4, 2025, 24698-24704 24704   
+ 
+www.etasr.com Gorrepati & Potla: A Reinforcement Le arning Framework for Real-Time Personalized Treatment … 
+ 
+Clinicians," npj Digital Medicine , vol. 7, no. 1, Nov. 2024, Art. no. 337, 
+https://doi.org/10.1038/s41746-024-01316-0. 
+[17]  C. Yu, J. Liu, and H. Zhao, "Inverse reinforcement learning for 
+intelligent mechanical ventilation and sedative dos ing in intensive care 
+units," BMC Medical Informatics and Decision Making , vol. 19, no. 2, 
+Apr. 2019, Art. no. 57, https://doi.org/10.1186/s12911-019-0763-6. 
+[18]  C. Voloshin, H. M. Le, N. Jiang, and Y. Yue, "Empir ical Study of Off-
+Policy Policy Evaluation for Reinforcement Learning ." arXiv, Nov. 27, 
+2021, https://doi.org/10.48550/arXiv.1911.06854. 
+[19]  A. M. Alghamdi, M. A. Al-Khasawneh, A. Alarood, and  E. Alsolami, 
+"The Role of Machine Learning in Managing and Organizing Healthcare 
+Records," Engineering, Technology & Applied Science Research , vol. 
+14, no. 2, pp. 13695–13701, Apr. 2024, 
+https://doi.org/10.48084/etasr.7027. 
+[20]  M. Rahardi, B. P. Asaddulloh, A. Aminuddin, F. F. A bdulloh, I. 
+Saifudin, and F. P. Kusumawijaya, "Optimizing Machi ne Learning 
+Models for Class Imbalance in Heart Disease Predict ion," Engineering, 
+Technology & Applied Science Research , vol. 15, no. 3, pp. 23599–
+23604, Jun. 2025, https://doi.org/10.48084/etasr.10407. 
+[21]  S. Chopparapu, G. Chopparapu, and D. Vasagiri, "Enh ancing Visual 
+Perception in Real-Time: A Deep Reinforcement Learn ing Approach to 
+Image Quality Improvement," Engineering, Technology & Applied 
+Science Research , vol. 14, no. 3, pp. 14725–14731, Jun. 2024, 
+https://doi.org/10.48084/etasr.7500. 
+[22]  A. Johnson, T. Pollard, and R. Mark, "MIMIC-III Cli nical Database 
+(version 1.4)." PhysioNet, 2016, https://doi.org/10.13026/CD7Z-WG25. 

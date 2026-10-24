@@ -1,0 +1,878 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          23
+        ]
+      ],
+      "date-time": "2026-10-23T13:09:35Z",
+      "timestamp": 1792760975692,
+      "version": "4.5.0"
+    },
+    "reference-count": 55,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              2,
+              14
+            ]
+          ],
+          "date-time": "2025-02-14T00:00:00Z",
+          "timestamp": 1739491200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              2,
+              14
+            ]
+          ],
+          "date-time": "2025-02-14T00:00:00Z",
+          "timestamp": 1739491200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100000024",
+        "name": "Gouvernement du Canada | Canadian Institutes of Health Research",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "PJT 178027"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "PJT 178027"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100000024",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "Libin Cardiovascular Institute PhD Graduate Scholarship Alberta Innovates Graduate Scholarship"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "npj Digit. Med."
+    ],
+    "DOI": "10.1038/s41746-025-01498-1",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          13
+        ]
+      ],
+      "date-time": "2025-02-13T22:42:31Z",
+      "timestamp": 1739486551000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 18,
+    "title": [
+      "Personalized decision making for coronary artery disease treatment using offline reinforcement learning"
+    ],
+    "prefix": "10.1038",
+    "volume": "8",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-1890-0715",
+        "authenticated-orcid": false,
+        "given": "Peyman",
+        "family": "Ghasemi",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Matthew",
+        "family": "Greenberg",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Danielle A.",
+        "family": "Southern",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bing",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5297-4507",
+        "authenticated-orcid": false,
+        "given": "James A.",
+        "family": "White",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Joon",
+        "family": "Lee",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          14
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "1498_CR1",
+        "unstructured": "Shahjehan, R. D. & Bhutta, B. S. Coronary Artery Disease. In: StatPearls (StatPearls Publishing, Treasure Island (FL), 2022)."
+      },
+      {
+        "key": "1498_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "169",
+        "DOI": "10.2991/jegh.k.201217.001",
+        "volume": "11",
+        "author": "U Ralapanawa",
+        "year": "2021",
+        "unstructured": "Ralapanawa, U. & Sivakanesan, R. Epidemiology and the Magnitude of Coronary Artery Disease and Acute Coronary Syndrome: A Narrative Review. J. Epidemiol. Glob. Health 11, 169–177 (2021).",
+        "journal-title": "J. Epidemiol. Glob. Health"
+      },
+      {
+        "key": "1498_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "2133",
+        "DOI": "10.1016/S0140-6736(24)00757-8",
+        "volume": "403",
+        "author": "AJ Ferrari",
+        "year": "2024",
+        "unstructured": "Ferrari, A. J. et al. Global incidence, prevalence, years lived with disability (YLDs), disability-adjusted life-years (DALYs), and healthy life expectancy (HALE) for 371 diseases and injuries in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021. Lancet 403, 2133–2161 (2024).",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "1498_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "527",
+        "DOI": "10.1111/j.1540-8183.2009.00491.x",
+        "volume": "22",
+        "author": "P Garrone",
+        "year": "2009",
+        "unstructured": "Garrone, P. et al. Quantitative Coronary Angiography in the Current Era: Principles and Applications. J. Interventional Cardiol. 22, 527–536 (2009).",
+        "journal-title": "J. Interventional Cardiol."
+      },
+      {
+        "key": "1498_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "195",
+        "DOI": "10.1517/14656566.2010.517522",
+        "volume": "12",
+        "author": "M Magro",
+        "year": "2011",
+        "unstructured": "Magro, M., Garg, S. & Serruys, P. W. Revascularization treatment of stable coronary artery disease. Expert Opin. Pharmacother. 12, 195–212 (2011).",
+        "journal-title": "Expert Opin. Pharmacother."
+      },
+      {
+        "key": "1498_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "2086",
+        "DOI": "10.1001/jama.2013.281718",
+        "volume": "310",
+        "author": "S Deb",
+        "year": "2013",
+        "unstructured": "Deb, S. et al. Coronary artery bypass graft surgery vs percutaneous interventions in coronary revascularization: a systematic review. JAMA 310, 2086–2095 (2013).",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "1498_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "1503",
+        "DOI": "10.1056/NEJMoa070829",
+        "volume": "356",
+        "author": "WE Boden",
+        "year": "2007",
+        "unstructured": "Boden, W. E. et al. Optimal medical therapy with or without PCI for stable coronary disease. N. Engl. J. Med. 356, 1503–1516 (2007).",
+        "journal-title": "N. Engl. J. Med."
+      },
+      {
+        "key": "1498_CR8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "A Randomized Trial of Therapies for Type 2 Diabetes and Coronary Artery Disease. N. Engl. J. Med. 360, 2503–2515 (2009).",
+        "DOI": "10.1056/NEJMoa0805796"
+      },
+      {
+        "key": "1498_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "1291",
+        "DOI": "10.1053/euhj.2001.3075",
+        "volume": "23",
+        "author": "M Sculpher",
+        "year": "2002",
+        "unstructured": "Sculpher, M. Coronary angioplasty versus medical therapy for angina. Health service costs based on the second Randomized Intervention Treatment of Angina (RITA-2) trial. Eur. Heart J. 23, 1291–1300 (2002).",
+        "journal-title": "Eur. Heart J."
+      },
+      {
+        "key": "1498_CR10",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Trial of invasive versus medical therapy in elderly patients with chronic symptomatic coronary-artery disease (TIME): a randomised trial. Lancet 358, 951–957 (2001)",
+        "DOI": "10.1016/S0140-6736(01)06100-1"
+      },
+      {
+        "key": "1498_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "1743",
+        "DOI": "10.1016/j.jacc.2003.08.065",
+        "volume": "43",
+        "author": "W Hueb",
+        "year": "2004",
+        "unstructured": "Hueb, W. et al. The medicine, angioplasty, or surgery study (MASS-II): a randomized, controlled clinical trial of three therapeutic strategies for multivessel coronary artery disease: one-year results. J. Am. Coll. Cardiol. 43, 1743–1751 (2004).",
+        "journal-title": "J. Am. Coll. Cardiol."
+      },
+      {
+        "key": "1498_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "1985",
+        "DOI": "10.1001/jama.297.18.1985",
+        "volume": "297",
+        "author": "P Erne",
+        "year": "2007",
+        "unstructured": "Erne, P. et al. Effects of Percutaneous Coronary Interventions in Silent Ischemia After Myocardial InfarctionThe SWISSI II Randomized Controlled Trial. JAMA 297, 1985–1991 (2007).",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "1498_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "1611",
+        "DOI": "10.1016/S0140-6736(23)00459-2",
+        "volume": "401",
+        "author": "M Gaudino",
+        "year": "2023",
+        "unstructured": "Gaudino, M., Andreotti, F. & Kimura, T. Current concepts in coronary artery revascularisation. Lancet 401, 1611–1628 (2023).",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "1498_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "557",
+        "DOI": "10.1038/nrcardio.2014.121",
+        "volume": "11",
+        "author": "GB Lim",
+        "year": "2014",
+        "unstructured": "Lim, G. B. Cost-effectiveness of CABG surgery versus PCI in complex CAD. Nat. Rev. Cardiol. 11, 557–557 (2014).",
+        "journal-title": "Nat. Rev. Cardiol."
+      },
+      {
+        "key": "1498_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "185",
+        "DOI": "10.1056/NEJMe2117325",
+        "volume": "386",
+        "author": "FGP Welt",
+        "year": "2022",
+        "unstructured": "Welt, F. G. P. CABG versus PCI — End of the Debate? N. Engl. J. Med. 386, 185–187 (2022).",
+        "journal-title": "N. Engl. J. Med."
+      },
+      {
+        "key": "1498_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "1071",
+        "DOI": "10.1016/0735-1097(90)90534-V",
+        "volume": "16",
+        "author": "BR Chaitman",
+        "year": "1990",
+        "unstructured": "Chaitman, B. R. et al. Coronary Artery Surgery Study (CASS): Comparability of 10 year survival in randomized and randomizable patients. J. Am. Coll. Cardiol. 16, 1071–1078 (1990).",
+        "journal-title": "J. Am. Coll. Cardiol."
+      },
+      {
+        "key": "1498_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "506",
+        "DOI": "10.21037/acs.2018.05.17",
+        "volume": "7",
+        "author": "C Spadaccio",
+        "year": "2018",
+        "unstructured": "Spadaccio, C. & Benedetto, U. Coronary artery bypass grafting (CABG) vs. percutaneous coronary intervention (PCI) in the treatment of multivessel coronary disease: quo vadis? —a review of the evidences on coronary artery disease. Ann. Cardiothorac. Surg. 7, 506–515 (2018).",
+        "journal-title": "Ann. Cardiothorac. Surg."
+      },
+      {
+        "key": "1498_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "961",
+        "DOI": "10.1056/NEJMoa0804626",
+        "volume": "360",
+        "author": "PW Serruys",
+        "year": "2009",
+        "unstructured": "Serruys, P. W. et al. Percutaneous coronary intervention versus coronary-artery bypass grafting for severe coronary artery disease. N. Engl. J. Med. 360, 961–972 (2009).",
+        "journal-title": "N. Engl. J. Med."
+      },
+      {
+        "key": "1498_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "215",
+        "DOI": "10.1016/j.ahj.2007.10.012",
+        "volume": "155",
+        "author": "ME Farkouh",
+        "year": "2008",
+        "unstructured": "Farkouh, M. E. et al. Design of the Future REvascularization Evaluation in patients with Diabetes mellitus: Optimal management of Multivessel disease (FREEDOM) Trial. Am. Heart J. 155, 215–223 (2008).",
+        "journal-title": "Am. Heart J."
+      },
+      {
+        "key": "1498_CR20",
+        "first-page": "219",
+        "volume": "1",
+        "author": "G Sianos",
+        "year": "2005",
+        "unstructured": "Sianos, G. et al. The SYNTAX Score: an angiographic tool grading the complexity of coronary artery disease. EuroIntervention 1, 219–227 (2005).",
+        "journal-title": "EuroIntervention"
+      },
+      {
+        "key": "1498_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "639",
+        "DOI": "10.1016/S0140-6736(13)60108-7",
+        "volume": "381",
+        "author": "V Farooq",
+        "year": "2013",
+        "unstructured": "Farooq, V. et al. Anatomical and clinical characteristics to guide decision making between coronary artery bypass surgery and percutaneous coronary intervention for individual patients: development and validation of SYNTAX score II. Lancet 381, 639–650 (2013).",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "1498_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "E229",
+        "DOI": "10.1002/ccd.25907",
+        "volume": "86",
+        "author": "CM Campos",
+        "year": "2015",
+        "unstructured": "Campos, C. M. et al. Risk stratification in 3-vessel coronary artery disease: Applying the SYNTAX Score II in the Heart Team Discussion of the SYNTAX II trial. Catheter Cardiovasc. Inter. 86, E229–E238 (2015).",
+        "journal-title": "Catheter Cardiovasc. Inter."
+      },
+      {
+        "key": "1498_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "111",
+        "DOI": "10.1016/j.ijcard.2015.03.248",
+        "volume": "187",
+        "author": "CM Campos",
+        "year": "2015",
+        "unstructured": "Campos, C. M. et al. Validity of SYNTAX score II for risk stratification of percutaneous coronary interventions: A patient-level pooled analysis of 5,433 patients enrolled in contemporary coronary stent trials. Int. J. Cardiol. 187, 111–115 (2015).",
+        "journal-title": "Int. J. Cardiol."
+      },
+      {
+        "key": "1498_CR24",
+        "first-page": "290",
+        "volume": "30",
+        "author": "SJ Brener",
+        "year": "2018",
+        "unstructured": "Brener, S. J. et al. The SYNTAX II Score Predicts Mortality at 4 Years in Patients Undergoing Percutaneous Coronary Intervention. J. Invasive Cardiol. 30, 290–294 (2018).",
+        "journal-title": "J. Invasive Cardiol."
+      },
+      {
+        "key": "1498_CR25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compbiomed.2019.103346",
+        "volume": "111",
+        "author": "R Alizadehsani",
+        "year": "2019",
+        "unstructured": "Alizadehsani, R. et al. Machine learning-based coronary artery disease diagnosis: A comprehensive review. Comput. Biol. Med. 111, 103346 (2019).",
+        "journal-title": "Comput. Biol. Med."
+      },
+      {
+        "key": "1498_CR26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cmpb.2019.104992",
+        "volume": "179",
+        "author": "M Abdar",
+        "year": "2019",
+        "unstructured": "Abdar, M. et al. A new machine learning technique for an accurate diagnosis of coronary artery disease. Comput. Methods Prog. Biomed. 179, 104992 (2019).",
+        "journal-title": "Comput. Methods Prog. Biomed."
+      },
+      {
+        "key": "1498_CR27",
+        "first-page": "500",
+        "volume": "38",
+        "author": "M Motwani",
+        "year": "2017",
+        "unstructured": "Motwani, M. et al. Machine learning for prediction of all-cause mortality in patients with suspected coronary artery disease: a 5-year multicentre prospective registry analysis. Eur. Heart J. 38, 500–507 (2017).",
+        "journal-title": "Eur. Heart J."
+      },
+      {
+        "key": "1498_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "354",
+        "DOI": "10.1148/radiol.2019182061",
+        "volume": "292",
+        "author": "KM Johnson",
+        "year": "2019",
+        "unstructured": "Johnson, K. M., Johnson, H. E., Zhao, Y., Dowe, D. A. & Staib, L. H. Scoring of Coronary Artery Disease Characteristics on Coronary CT Angiograms by Using Machine Learning. Radiology 292, 354–362 (2019).",
+        "journal-title": "Radiology"
+      },
+      {
+        "key": "1498_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "e33395",
+        "DOI": "10.2196/33395",
+        "volume": "10",
+        "author": "J Wang",
+        "year": "2022",
+        "unstructured": "Wang, J. et al. Risk Prediction of Major Adverse Cardiovascular Events Occurrence Within 6 Months After Coronary Revascularization: Machine Learning Study. JMIR Med. Inform. 10, e33395 (2022).",
+        "journal-title": "JMIR Med. Inform."
+      },
+      {
+        "key": "1498_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "2113",
+        "DOI": "10.1016/j.jacc.2023.09.818",
+        "volume": "82",
+        "author": "K Ninomiya",
+        "year": "2023",
+        "unstructured": "Ninomiya, K. et al. Can Machine Learning Aid the Selection of Percutaneous vs Surgical Revascularization? J. Am. Coll. Cardiol. 82, 2113–2124 (2023).",
+        "journal-title": "J. Am. Coll. Cardiol."
+      },
+      {
+        "key": "1498_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "482",
+        "DOI": "10.1007/s10729-020-09522-4",
+        "volume": "23",
+        "author": "D Bertsimas",
+        "year": "2020",
+        "unstructured": "Bertsimas, D., Orfanoudaki, A. & Weiner, R. B. Personalized treatment for coronary artery disease patients: a machine learning approach. Health Care Manag. Sci. 23, 482–506 (2020).",
+        "journal-title": "Health Care Manag. Sci."
+      },
+      {
+        "key": "1498_CR32",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sutton, R. S. Reinforcement Learning (Springer Science & Business Media, 1992)",
+        "DOI": "10.1007/978-1-4615-3618-5"
+      },
+      {
+        "key": "1498_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "529",
+        "DOI": "10.1038/nature14236",
+        "volume": "518",
+        "author": "V Mnih",
+        "year": "2015",
+        "unstructured": "Mnih, V. et al. Human-level control through deep reinforcement learning. Nature 518, 529–533 (2015).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "1498_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1145/3477600",
+        "volume": "55",
+        "author": "C Yu",
+        "year": "2023",
+        "unstructured": "Yu, C., Liu, J., Nemati, S. & Yin, G. Reinforcement Learning in Healthcare: A Survey. ACM Comput. Surv. 55, 1–36 (2023).",
+        "journal-title": "ACM Comput. Surv."
+      },
+      {
+        "key": "1498_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "3294",
+        "DOI": "10.1002/sim.3720",
+        "volume": "28",
+        "author": "Y Zhao",
+        "year": "2009",
+        "unstructured": "Zhao, Y., Kosorok, M. R. & Zeng, D. Reinforcement learning design for cancer clinical trials. Stat. Med. 28, 3294–3315 (2009).",
+        "journal-title": "Stat. Med."
+      },
+      {
+        "key": "1498_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "4624",
+        "DOI": "10.3390/cancers13184624",
+        "volume": "13",
+        "author": "J-N Eckardt",
+        "year": "2021",
+        "unstructured": "Eckardt, J.-N., Wendt, K., Bornhäuser, M. & Middeke, J. M. Reinforcement Learning for Precision Oncology. Cancers 13, 4624 (2021).",
+        "journal-title": "Cancers"
+      },
+      {
+        "key": "1498_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "214",
+        "DOI": "10.3390/biomedicines9020214",
+        "volume": "9",
+        "author": "G Moreau",
+        "year": "2021",
+        "unstructured": "Moreau, G., François-Lavet, V., Desbordes, P. & Macq, B. Reinforcement Learning for Radiotherapy Dose Fractioning Automation. Biomedicines 9, 214 (2021).",
+        "journal-title": "Biomedicines"
+      },
+      {
+        "key": "1498_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "e4091497",
+        "DOI": "10.1155/2018/4091497",
+        "volume": "2018",
+        "author": "PD Ngo",
+        "year": "2018",
+        "unstructured": "Ngo, P. D., Wei, S., Holubová, A., Muzik, J. & Godtliebsen, F. Control of Blood Glucose for Type-1 Diabetes by Using Reinforcement Learning with Feedforward Algorithm. Computational Math. Methods Med. 2018, e4091497 (2018).",
+        "journal-title": "Computational Math. Methods Med."
+      },
+      {
+        "key": "1498_CR39",
+        "first-page": "239",
+        "volume": "2017",
+        "author": "S Parbhoo",
+        "year": "2017",
+        "unstructured": "Parbhoo, S., Bogojeska, J., Zazzi, M., Roth, V. & Doshi-Velez, F. Combining Kernel and Model Based Learning for HIV Therapy Selection. AMIA Jt Summits Transl. Sci. Proc. 2017, 239–248 (2017).",
+        "journal-title": "AMIA Jt Summits Transl. Sci. Proc."
+      },
+      {
+        "key": "1498_CR40",
+        "doi-asserted-by": "publisher",
+        "first-page": "1716",
+        "DOI": "10.1038/s41591-018-0213-5",
+        "volume": "24",
+        "author": "M Komorowski",
+        "year": "2018",
+        "unstructured": "Komorowski, M., Celi, L. A., Badawi, O., Gordon, A. C. & Faisal, A. A. The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care. Nat. Med. 24, 1716–1720 (2018).",
+        "journal-title": "Nat. Med."
+      },
+      {
+        "key": "1498_CR41",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1038/s41746-021-00388-6",
+        "volume": "4",
+        "author": "A Peine",
+        "year": "2021",
+        "unstructured": "Peine, A. et al. Development and validation of a reinforcement learning algorithm to dynamically optimize mechanical ventilation in critical care. npj Digit. Med. 4, 1–12 (2021).",
+        "journal-title": "npj Digit. Med."
+      },
+      {
+        "key": "1498_CR42",
+        "unstructured": "Prasad, N., Cheng, L.-F., Chivers, C., Draugelis, M. & Engelhardt, B. E. A Reinforcement Learning Approach to Weaning of Mechanical Ventilation in Intensive Care Units. In 33rd Conference on Uncertainty in Artificial Intelligence (2017)."
+      },
+      {
+        "key": "1498_CR43",
+        "first-page": "1225",
+        "volume": "16",
+        "author": "WA Ghali",
+        "year": "2000",
+        "unstructured": "Ghali, W. A. & Knudtson, M. L. Overview of the Alberta Provincial Project for Outcome Assessment in Coronary Heart Disease. On behalf of the APPROACH investigators. Can. J. Cardiol. 16, 1225–1230 (2000).",
+        "journal-title": "Can. J. Cardiol."
+      },
+      {
+        "key": "1498_CR44",
+        "first-page": "441",
+        "volume": "3",
+        "author": "DA Southern",
+        "year": "2018",
+        "unstructured": "Southern, D. A. et al. Expanding the impact of a longstanding Canadian cardiac registry through data linkage: challenges and opportunities. Int. J. Popul Data Sci. 3, 441 (2018).",
+        "journal-title": "Int. J. Popul Data Sci."
+      },
+      {
+        "key": "1498_CR45",
+        "doi-asserted-by": "publisher",
+        "first-page": "6268",
+        "DOI": "10.1109/JBHI.2024.3415115",
+        "volume": "28",
+        "author": "A Shirali",
+        "year": "2024",
+        "unstructured": "Shirali, A., Schubert, A. & Alaa, A. Pruning the Way to Reliable Policies: A Multi-Objective Deep Q-Learning Approach to Critical Care. IEEE J. Biomed. Health Inform. 28, 6268–6279 (2024).",
+        "journal-title": "IEEE J. Biomed. Health Inform."
+      },
+      {
+        "key": "1498_CR46",
+        "doi-asserted-by": "publisher",
+        "first-page": "824",
+        "DOI": "10.1016/S0140-6736(23)02454-6",
+        "volume": "403",
+        "author": "GW Stone",
+        "year": "2024",
+        "unstructured": "Stone, G. W. et al. Intravascular imaging-guided coronary drug-eluting stent implantation: an updated network meta-analysis. Lancet 403, 824–837 (2024).",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "1498_CR47",
+        "doi-asserted-by": "publisher",
+        "first-page": "e078378",
+        "DOI": "10.1136/bmj-2023-078378",
+        "volume": "385",
+        "author": "GS Collins",
+        "year": "2024",
+        "unstructured": "Collins, G. S. et al. TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ 385, e078378 (2024).",
+        "journal-title": "BMJ"
+      },
+      {
+        "key": "1498_CR48",
+        "doi-asserted-by": "publisher",
+        "first-page": "e52896",
+        "DOI": "10.2196/52896",
+        "volume": "12",
+        "author": "P Ghasemi",
+        "year": "2024",
+        "unstructured": "Ghasemi, P. & Lee, J. Unsupervised Feature Selection to Identify Important ICD-10 and ATC Codes for Machine Learning on a Cohort of Patients With Coronary Heart Disease: Retrospective Study. JMIR Med. Inform. 12, e52896 (2024).",
+        "journal-title": "JMIR Med. Inform."
+      },
+      {
+        "key": "1498_CR49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12874-021-01440-5",
+        "volume": "21",
+        "author": "E Bosco",
+        "year": "2021",
+        "unstructured": "Bosco, E., Hsueh, L., McConeghy, K. W., Gravenstein, S. & Saade, E. Major adverse cardiovascular event definitions used in observational analysis of administrative databases: a systematic review. BMC Med. Res. Methodol. 21, 241 (2021).",
+        "journal-title": "BMC Med. Res. Methodol."
+      },
+      {
+        "key": "1498_CR50",
+        "unstructured": "Jiang, N. & Li, L. Doubly Robust Off-policy Value Evaluation for Reinforcement Learning. Int. Conf. Mach. Learn. 48, 652–661 (2016)."
+      },
+      {
+        "key": "1498_CR51",
+        "unstructured": "Gottesman, O. et al. Evaluating Reinforcement Learning Algorithms in Observational Health Settings. Preprint at https://arxiv.org/abs/1805.12298 (2018)."
+      },
+      {
+        "key": "1498_CR52",
+        "unstructured": "Raghu, A. et al. Behaviour Policy Estimation in Off-Policy Policy Evaluation: Calibration Matters. Preprint at http://arxiv.org/abs/1807.01066 (2018)."
+      },
+      {
+        "key": "1498_CR53",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1038/s41746-022-00708-4",
+        "volume": "5",
+        "author": "K Zhang",
+        "year": "2022",
+        "unstructured": "Zhang, K. et al. An interpretable RL framework for pre-deployment modeling in ICU hypotension management. npj Digit. Med. 5, 1–10 (2022).",
+        "journal-title": "npj Digit. Med."
+      },
+      {
+        "key": "1498_CR54",
+        "first-page": "1",
+        "volume": "23",
+        "author": "T Seno",
+        "year": "2022",
+        "unstructured": "Seno, T. & Imai, M. d3rlpy: An Offline Deep Reinforcement Learning Library. J. Mach. Learn. Res. 23, 1–20 (2022).",
+        "journal-title": "J. Mach. Learn. Res."
+      },
+      {
+        "key": "1498_CR55",
+        "first-page": "1179",
+        "volume": "33",
+        "author": "A Kumar",
+        "year": "2020",
+        "unstructured": "Kumar, A., Zhou, A., Tucker, G. & Levine, S. Conservative Q-Learning for Offline Reinforcement Learning. Adv. Neural. Inf. Process. Syst. 33, 1179–1191 (2020).",
+        "journal-title": "Adv. Neural. Inf. Process. Syst."
+      }
+    ],
+    "container-title": [
+      "npj Digital Medicine"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.nature.com/articles/s41746-025-01498-1.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41746-025-01498-1",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41746-025-01498-1.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          14
+        ]
+      ],
+      "date-time": "2025-02-14T10:19:13Z",
+      "timestamp": 1739528353000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/s41746-025-01498-1"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          14
+        ]
+      ]
+    },
+    "references-count": 55,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "1498"
+    ],
+    "URL": "https://doi.org/10.1038/s41746-025-01498-1",
+    "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.21203/rs.3.rs-4911576/v1",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "ISSN": [
+      "2398-6352"
+    ],
+    "issn-type": [
+      {
+        "value": "2398-6352",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          14
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "14 August 2024",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "1 February 2025",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "14 February 2025",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "J.L. is a co-founder and a major shareholder of Symbiotic AI, Inc. J.A.W. is a co-founder and a major shareholder of Cohesic, Inc. All other authors declare no financial or non-financial competing interests.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "99"
+  }
+}

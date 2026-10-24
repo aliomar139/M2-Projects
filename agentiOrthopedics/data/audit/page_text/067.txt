@@ -1,0 +1,1016 @@
+=== PDF PAGE 1 ===
+RESEARCH PAPER 
+ 
+*Author for Correspondence:    bhaskaran@mca.sastra.edu 
+                                                                                                                                                                            Page: 927                                                    
+An Explainable Deep Learning Framework for Transparent and Personalized 
+Recommendations in Clinical Decision-Making 
+ 
+Anand V1,Venkata Subramanian N2, S. Bhaskaran3* (Corresponding author) 1School of Information Science, Presidency University, Bengaluru, Karnataka, India anand.v@presidencyuniversity.in 2School of Computing, SASTRA Deemed University, Thanjavur, Tamilnadu, India  tyrvenkat@mca.sastra.edu 3*School of Computing, SASTRA Deemed University, Thanjavur, Tamilnadu, India  bhaskaran@mca.sastra.edu 
+ 
+Abstract 
+We develop an explicable system of deep learning-assisted drug delivery recommendations in clinical decision-making to 
+meet the important requirement of interpretability in medical applications. The framework combines structured 
+longitudinal clinical data such as patient-medication interactions, clinical contents, and contextual data to produce specific 
+therapeutic guidance. The patient history is represented as learned embeddings, the temporal position signal, and candidate 
+drug options are represented as structured attributes; finally, they are combined using a Transformer layer to ensure that a 
+complicated dependence is captured. The model calculates compatibility scores of the state of a patient and a drug choice, 
+making it possible to recommend them personally with an explanation at multi-level. In addition, the model uses temporal 
+explanations based on attention, SHAP-based feature attribution, integrated gradients, and rule-based clinical reasoning 
+to provide better interpretability to clinicians. The training goal is a co-optimization of the accuracy of recommendations, 
+interpretability, regularization, and wall is safe which guarantees clinically plausible results. Experiments indicate that not 
+only does the framework enhance the performance of the recommendations, but the actionable insights into the decision-
+making process are also provided as well. The given approach makes the divide between black -box models of deep 
+learning and clinical application, providing a useful place of personalized medicine. The design is modular and can 
+integrate easily with current clinical processes and may minimize adverse drug events and enhance the patient outcomes. 
+The work contributes to the field by integrating the state-of-the-art methods of deep learning with thorough explainability, 
+which leads to building trust and acceptance in real-life healthcare environments. 
+Keywords: Explainable artificial intelligence; personalized medicine; drug delivery recommendation; medication 
+recommendation; clinical decision support; Transformer; SHAP; Integrated Gradients 
+How to cite this article: Anand V , Venkata Subramanian N, Bhaskaran S. An Explainable Deep Learning 
+Framework for Transparent and Personalized Recommendations in Clinical Decision-Making. Int J Drug Deliv 
+Technol. 2026;16(30s):927-935. DOI: 10.25258/ijddt.16.30s.92 
+ 
+1. Introduction 
+Patient-centered pharmacology is one of the primary 
+dilemmas of contemporary healthcare, in which the 
+effectiveness of treatment in different groups of patients 
+is highly diverse because of a multifaceted interaction 
+between both pharmacological and genetic factors and 
+the environment. Conventional rule -driven clinical 
+decision support models [1] have proven to be less 
+flexible in dealing with engagingly heterogeneous 
+patient data, and traditional machine learning methods, 
+such as random forests [2], tend t o miss temporal 
+interactions in longitudinal health and medical history. 
+The introduction of deep learning has also brought 
+strong sequential modeling methods especially the long 
+short-term memory networks [3], but the opaque 
+decisions they make are a barrier to their clinical use. 
+Recent progress in transformer-based architectures [4] 
+has demonstrated a remarkable success in sequential 
+healthcare data processing, being able to model far long-
+range dependence well than the traditional recurrent 
+networks. Nevertheless, explainability mechanisms in 
+such models should be performed strictly to make sure 
+that the models are trusted, and their implementation is 
+safe. The current explainable AI methods available in 
+healthcare (such as SHAP values [5]) or integrated 
+gradients [6]) are usually post-hoc methods; they are not 
+integrated into the recommendation process. This lack of 
+model predictions with clinical interpretability generates 
+major obstacles to practical implementation. 
+We introduce a combined framework that fundamentally 
+reconsiders the manner in which explainability is to be 
+implemented into personalized drug recommendation 
+systems. The methodology is divergent to past studies in 
+three important ways. To begin with, it creates a single 
+architecture wherein mechanisms of explainability are 
+co-created with the predictive model as opposed to being 
+introduced as ancillary features. Second, the system 
+offers multi-modal explanations that integrate 
+information backed by facts with known clinical 
+knowledge via rule-based reasoning [7]. Third, the 
+framework explicitly characterizes the time -varying 
+patient states making it possible to give treatment 
+recommendations dynamically according to the 
+dynamics in the clinical conditions. 
+Some of the shortcomings of the existing clinical 
+decision support systems were tackled in the proposed 
+approach [8]. The model is designed to correlate both 
+technical and clinical meanings of its explanations, 
+which is achieved through the combination of attention 
+mechanism and feature attribution methods. The 
+architecture can accept different data forms such as 
+electronic health records, lab results, and medication 
+history and develops a list of treatment options with 
+rankings and explanations that can be interpreted. Such 
+a two-fold emphasis on accuracy and transparency is a 
+
+=== PDF PAGE 2 ===
+An Explainable Deep Learning Framework for Transparent and Personalized Recommendations in Clinical Decision-
+Making 
+ 
+IJDDT, Volume 16 Issue 30s, 2026 Page 928 
+ 
+major improvement compared to the current competing 
+predictive models which tend to give greater emphasis 
+on performance measures as compared to the clinical 
+utility [9]. 
+The rest of this paper is structured in the following way: 
+In Section 2, I will review related literature in clinical 
+decision support and explainable AI in healthcare. 
+Section 3 has the background on basic transformer 
+models and interpretability technique s. Section 4 
+describes the architecture and explainability elements of 
+the suggested framework. Sections 5 and 6 will discuss 
+experimental setup and analysis of results. Lastly, a 
+conclusion on the work is provided in terms of 
+implications in Sections 7 and 8. 
+ 
+2. Related Work 
+Due to medical informatics, there have been critical 
+stages of developing personalized drug recommendation 
+systems. The first clinical decision support systems were 
+mainly based on rule-based systems [1], in which 
+expertise knowledge was coded in manually into 
+decision trees, or production rules. Though these 
+systems offered a clear line of reasoning, they were not 
+scalable and did not work well with the complexity of 
+patient data in the real world. The advent of machine 
+learning models also resulted in a major change, with 
+models such as logistic regression and random forests 
+[2] showing better predictive accuracy, although are 
+often not interpretable to clinical users. 
+ 
+2.1 Deep Learning in Clinical Decision Support 
+The past years have seen an increase in the usage of deep 
+learning-based medical architecture. Long short-term 
+memory (LSTM) variants of recurrent neural networks 
+[3] gained popularity as processors of sequential patient 
+data because they could store time dependencies. 
+Nevertheless, the models are vulnerable to issues of 
+sustaining long-range dependencies on long histories of 
+clinical interactions. In its self-attention mechanism, the 
+transformer architecture [4] brought a paradigm shift by 
+providing the opportunity to directly model relationships 
+between all-time points of a sequence. This innovation 
+has been especially useful in the context of the analysis 
+of e-health records, in which the analysis of clinical 
+events might have complicated temporal dependencies. 
+ 
+2.2 Explainability in Healthcare AI 
+This is due to the fact that medical applications and, by 
+extension, suitability of explainable AI methods are 
+highly motivated by the necessity behind the 
+interpretability aspect. Post-hoc explanations such as 
+model-agnostic learning methods like SHAP [5]  are 
+quantified using game-theoretic purposes to measure the 
+importance of features. Alternative approaches to 
+attribution that are based on gradients, including 
+integrated gradients [6], have properties of desirable 
+axioms. Although these methods have already gained 
+extensive usage, they frequently produce explanations 
+which are not in a clinical context, or they do not provide 
+explanations consistent with the medical patterns of 
+reasoning. New developments have tried to close this 
+gap by either integrating domain knowledge by using 
+hybrid structures [7] or trying to come up with formats 
+of an explanation that can be used by healthcare 
+professionals. 
+ 
+2.3 Knowledge-Enhanced Recommendation Systems 
+Several papers have discussed how to incorporate 
+external medical knowledge in the framework of 
+recommendation. Drug -drug and therapeutic 
+relationships have been represented using knowledge 
+graphs and ontologies have represented clinical 
+concepts. Such methods cope with part of the data 
+limitation of purely data methods by using known 
+medical evidence, but its implementation frequently 
+incurs significant curation effort and may have problems 
+with a partially developed body of knowledge. The 
+MIMIC-IV database [10] has become an important 
+source of developing and testing such systems, offering 
+detailed electronic health records containing detailed 
+clinical annotations. 
+There are still substantive challenges in balancing the 
+predictive performance and clinical interpretability of 
+the current systems. Most of the current methods 
+consider the problem of the generation of explanations a 
+side activity and not an intrinsic part of the process of 
+creating a recommendation. Moreover, there is a paucity 
+of methods which would consider temporal 
+considerations of treatment decision making in which 
+relevance of clinical factors can change throughout the 
+history of a patient. The prop osed framework goes 
+beyond these restrictions by having a single architecture 
+that optimally works together to achieve both accuracy 
+and explainability and explicitly models the dynamic 
+nature of patient states. In contrast to earlier studies that 
+are based on one of prediction or interpretation, our 
+system combines both with new attention models and 
+multi-modal explanatory generation, giving clinicians 
+recommendations and insights into the reasoning 
+process generated as well as actionable information. 
+ 
+3. Background and Preliminaries 
+3.1 Transformer Architectures in Healthcare 
+Transformer architecture [4] has brought significant 
+changes in sequential data processing due to self -
+attention mechanism that calculates dynamic weights of 
+all input elements without considering their positional 
+distance. This capability is especially us eful in 
+healthcare applications where modeling intricate 
+temporal relationships in electronic health records is 
+necessary because the clinical events can have their 
+effects on one another influenced by different time 
+spans. The multi-head attention achieved by the 
+architecture enables attention to be placed on multiple 
+subspaces of the respresentation, including a variety of 
+clinical patterns that may not be seen by the single 
+mechanisms of attention. Positional encodings give the 
+required temporal context, and layer normalization and 
+residual connections allow the deep networks to be 
+
+=== PDF PAGE 3 ===
+An Explainable Deep Learning Framework for Transparent and Personalized Recommendations in Clinical Decision-
+Making 
+ 
+IJDDT, Volume 16 Issue 30s, 2026 Page 929 
+ 
+trained stably - a requirement to work with the high-
+dimensional medical data. 
+ 
+3.2 Interpretability Techniques 
+The way modern explainability is achieved can be 
+divided into two categories: intrinsic and post -hoc 
+explanations. Attention mechanisms are inherently 
+interpretable because they provide information about 
+where the model assigns importance to input features, 
+but the recent research warns against interpreting 
+attention weights as the importance of features [11]. 
+Such post-hoc methods as SHAP [5] use the game -
+theoretic principles to measure the contribution of each 
+feature to the predictions to achieve the des ired 
+characteristics such as local accuracy and consistency. 
+Another approach to attribution is integrated gradients, 
+which give attributions by integrating the gradients of a 
+model between a baseline and an input, both of which 
+are invarient and sensitive to implementation. The 
+combination of these methods can be described as 
+complementary as features attribution can quantify 
+certain impacts, whereas attention can show that there 
+are structural patterns. 
+ 
+3.3 Clinical Decision Factors 
+Individualized drug prescriptions should consider the 
+complex clinical issues related to more than mere 
+efficacy scores. Drug-drug interactions [12] are also one 
+of the pivotal safety considerations in the case, with 
+drug-drug interactions causing a derogatory effect in the 
+pharmacological characteristics of co -administered 
+drugs. Individual factors that can vary based on patients 
+include renal function, genetic factors, and 
+comorbidities [13], making patient-specific adjustments 
+to dose crucial to treatment. Even the temporal factors 
+pose more problems because drugs can perform in 
+different ways according to the progression of the 
+disease or according to the various physiological 
+changes of the body. All these establish the necessity of 
+recommendation systems that can combine different 
+types of data with making transparent reasoning that can 
+conform to clinical reasoning. 
+The three baseline technical and clinical backgrounds 
+converge to shape the design of our framework making 
+it a synthesis of both transformer -guided sequence 
+modeling and the unification of multiple facets of 
+explainability. We intend to close the gap betw een 
+computational and clinical usability by basing the 
+architecture on the existing knowledge of medicine and 
+embracing recent methods of deep learning. The next 
+section explains how these items can be combined into a 
+unified system to generate personalized drug guidance 
+that can be interpreted. 
+ 
+4. The Proposed Explainable Framework for 
+Personalized Drug Recommendation 
+The proposed framework introduces a novel architecture 
+that systematically integrates patient history, drug 
+properties, and clinical context to generate personalized 
+treatment recommendations with multi -modal 
+explanations. Figure 1 illustrates the overall system 
+design, highlighting the three primary input streams and 
+their processing pathways. 
+ 
+ 
+Figure 1. Proposed framework architecture for personalized drug delivery recommendation 
+ 
+4.1 Input Streams and Encoding 
+The system processes three distinct data modalities 
+through specialized encoding mechanisms. Patient 
+history 𝑋!={𝑥",...,𝑥#} comprises T temporal clinical 
+events, each represented as a d -dimensional feature 
+vector 𝑥$∈ℝ% containing laboratory results, vital signs, 
+and diagnostic codes. These sequences are encoded 
+through learned embeddings combined with sinusoidal 
+positional encodings: 
+𝑒$=𝑊&𝑥$+𝑃𝐸(𝑡)				 (1) 
+
+
+=== PDF PAGE 4 ===
+An Explainable Deep Learning Framework for Transparent and Personalized Recommendations in Clinical Decision-
+Making 
+ 
+IJDDT, Volume 16 Issue 30s, 2026 Page 930 
+ 
+where 𝑊&∈ℝ%×%!"#$% projects raw features into the 
+model’s latent space, and 𝑃𝐸(𝑡) denotes the standard 
+transformer positional encoding at time t. 
+Drug candidates 𝐷={𝑑",...,𝑑(} are represented 
+through structured attribute vectors 𝑎)∈ℝ* containing 
+pharmacological properties, therapeutic class, and 
+known contraindications. These undergo non -linear 
+transformation: 
+𝑣)=MLP(𝑎))				 (2) 
+where MLP denotes a multi-layer perceptron with ReLU 
+activations. Contextual variables 𝑐∈ℝ+ capture 
+current clinical state indicators like renal function and 
+disease severity, encoded as: 
+ℎ,=MLP(𝑐)				 (3) 
+4.2 Transformer-based Fusion and Compatibility 
+Scoring 
+The patient history embeddings {𝑒",...,𝑒#} are 
+processed through L transformer layers with multi-head 
+self-attention. Each layer computes: 
+Attention(𝑄,𝐾,𝑉)=softmax(𝑄𝐾#
+<𝑑*
+)𝑉				 (4) 
+where queries 𝑄, keys 𝐾, and values 𝑉 are linear 
+projections of the input embeddings. The final patient 
+representation aggregates temporal information through 
+attention weights: 
+ℎ!==𝛼$
+#
+$-"
+𝑧$				 (5) 
+where 𝑧$ denotes the final layer embeddings and 𝛼$ their 
+corresponding attention coefficients. 
+Drug-patient compatibility scores are computed through 
+a context-aware function: 
+𝑦A)=𝜎(𝑊.𝜙(𝑊"[ℎ!∥𝑣)∥ℎ,]+𝑏")+𝑏.)				 (6) 
+where ∥ denotes concatenation, 𝜙 is the GELU 
+activation function, and 𝜎 the sigmoid output. This 
+formulation allows dynamic adjustment of 
+recommendations based on evolving patient states and 
+clinical constraints. 
+4.3 Multi-Level Explainability 
+The framework generates complementary explanations 
+through four coordinated mechanisms. Attention 
+weights 𝛼$ from Equation 5 identify influential historical 
+events, visualized as temporal heatmaps. SHAP values 
+quantify the contribution of each input feature to the 
+final prediction: 
+𝜙/(𝑓,𝑥)==|𝑆|!(|𝐹|−|𝑆|−1)!
+|𝐹|!0⊆2\{/}
+[𝑓(𝑆∪{𝑗})
+−𝑓(𝑆)]				 (7) 
+where 𝐹 is the set of all features and 𝑓 the model 
+prediction function. Integrated gradients provide 
+alternative attribution by cumulating gradients along the 
+input path: 
+IG)(𝑥)=(𝑥)−𝑥6
+))
+×R∂𝑓(𝑥6+𝛼(𝑥−𝑥6))
+∂𝑥)
+"
+7-8
+𝑑𝛼				 (8) 
+A rule-based module translates these technical 
+explanations into clinical narratives using predefined 
+templates and decision thresholds. 
+4.4 Safety-Constrained Training 
+The training objective incorporates four loss 
+components: 
+𝐿=𝐿9&,+𝜆"𝐿:$$;+𝜆.𝐿9&<+𝜆=𝐿>:?&				 (9) 
+The recommendation loss 𝐿9&, uses binary cross-entropy 
+for positive/negative drug pairs. Attention sparsity loss 
+𝐿:$$;=∥𝛼∥" encourages focused temporal 
+explanations. Regularization 𝐿9&< applies weight decay. 
+The safety loss 𝐿>:?& penalizes violations of clinical 
+guidelines: 
+𝐿>:?&==𝕀
+(
+)-"
+(𝑑)∈𝐶!)⋅𝑦A)				 (10) 
+where 𝐶! denotes contraindicated drugs for patient p 
+based on hard-coded rules. 
+4.5 Dynamic Compatibility Scoring and Hybrid 
+Embedding 
+The drug embedding scheme combines static 
+pharmacological attributes with patient -specific 
+compatibility signals. For drug 𝑑) and patient p, the final 
+representation incorporates dynamic adjustments: 
+𝑣)
+!=𝑣)+Δ𝑣)
+!				 (11) 
+where Δ𝑣)
+! is computed through an auxiliary network 
+processing patient-specific modifiers like renal function. 
+This enables fine-grained personalization beyond static 
+drug properties. 
+The context encoder dynamically modulates 
+recommendations based on care setting through 
+environment-specific projection matrices: 
+ℎ,
+&=𝑊&ℎ,				 (12) 
+where 𝑊& is selected based on the current clinical 
+context (e.g., inpatient vs. outpatient). This architecture 
+provides the flexibility to adapt recommendations to 
+diverse healthcare scenarios while maintaining 
+interpretability through its modular design. 
+ 
+5. Experimental Setup 
+5.1 Datasets and Preprocessing 
+In order to test the suggested framework, we can use two 
+massive clinical datasets, which represent different 
+groups of patients and treatment cases. The MIMIC-IV 
+data [10] has extensive electronic health record of 
+intensive care units comprising medicatio n 
+administration, laboratory values, and clinical notes. Our 
+data is processed to create patient timelines with hourly 
+resolution, which extracts 87 clinical features consisting 
+of vital sign measurements, laboratory measurements 
+and previously administered medications. In outpatient 
+assessment, we are using the Optum de -identified 
+Electronic Health Record data [14] which has 
+longitudinal data of primary care facilities with more 
+detailed medication histories and comorbidity data. 
+The two datasets are rigorously pre-processed to give 
+them clinical validity. Multivariate imputation by 
+chained equations [15] is used to impute missing values, 
+but there are special treatment options of critical 
+laboratory values that could represent special clinical 
+conditions. The temporal sequences will be matched by 
+the medication administration times, and drug 
+
+=== PDF PAGE 5 ===
+An Explainable Deep Learning Framework for Transparent and Personalized Recommendations in Clinical Decision-
+Making 
+ 
+IJDDT, Volume 16 Issue 30s, 2026 Page 931 
+ 
+characteristics will be mined on the RxNorm vocabulary 
+[16], such as a pharmacological classification, 
+mechanism of action, and existing drug-drug interaction. 
+Cohorts are stratified by primary diagnosis and 
+medication history of the patients to allow analysis of 
+subgroups. 
+ 
+5.2 Baseline Methods 
+The proposed framework is compared with four sets of 
+baseline methods which are the state of the art in the field 
+of clinical recommendation systems: 
+1. Traditional Machine Learning : Logistic 
+regression: elastic net regularization [17] and gradient 
+boosted decision trees [18] are interpretable baselines 
+based on manually engineered temporal features. 
+2. Sequential Models: A time-aware attention model 
+[20] gives more temporal modeling to a bidirectional 
+LSTM network [19] when given patient histories. 
+3. Knowledge-Enhanced Methods : A graph 
+convolutional network on drugs [21] uses drug -drug 
+interaction information, and a neural network with rules 
+[22] integrates medically learned representations and 
+clinical guidelines. 
+4. Transformer Variants: we use suitable fine-tuning 
+of the original Transformer [4] and the ClinicalBERT 
+model [23] applied to the recommendation task. The 
+baselines are all trained by equivalent parameter budgets 
+and with equal data splits to allow a fair comparison. 
+Hyperparameters are optimized [24] using Bayesian 
+optimization of a validation set. 
+ 
+5.3 Evaluation Metrics 
+Performance is assessed through both predictive 
+accuracy and explainability metrics: 
+1. Recommendation Quality: 
+o Area Under the ROC Curve (AUC) [25] 
+o Precision at K (P@K) for top -ranked 
+recommendations 
+o Mean Reciprocal Rank (MRR) [26] 
+2. Explainability Measures: 
+o Attention Consistency Score (ACS) [27] evaluates 
+temporal alignment with clinical events 
+o Feature Importance Concordance (FIC) measures 
+agreement between model attributions and expert 
+annotations 
+o Explanation Clinical Utility (ECU) score from 
+clinician surveys 
+3. Safety Metrics: 
+o Contraindication Violation Rate (CVR) 
+o Drug-Drug Interaction Alert Coverage (DDI-AC) 
+To evaluate the explainability, we involve a group of 
+five board-certified clinicians of 200 randomly selected 
+cases to test the clinical plausibility of the generated 
+explanations. The clinical relevance, actionability, and 
+consistency with medical knowledge in each explanation 
+is also rated on a 5-point Likert scale. 
+ 
+5.4 Implementation Details 
+The model is done in PyTorch using the following 
+settings: 6 transformer layers, each containing 8 
+attention heads, a hidden dimension of 512, and a 
+dropout rate of 0.1. The dimension of the 3 layers MLPs 
+of the network embedding the drug [ 256, 128, 64] is 
+used. The AdamW optimizer [28] is used with a learning 
+rate of 3e-5 and a batch size of 32.  Based on the 
+validation performance, the loss weights in Equation 9 
+are determined as λ1=0.1, λ2=0.01 and λ3=0.5. 
+Experiments are all done in NVIDIA V100 GPUs 5-fold 
+cross-validated to guarantee strong results. The SHAP 
+and integrated gradients implementations use 100 
+background samples and 50 interpolation steps 
+respectively. In the case of the rule-based explanation 
+module, we model 127 clinical decision rules of the 
+UpToDate guidelines [29]. With a mean time of 43ms 
+(including 6ms standard deviation), it is within the real-
+time clinical decision support limits of the system. 
+ 
+6. Results and Analysis 
+6.1 Recommendation Performance 
+The proposed framework is shown to have higher levels 
+of all recommendation quality metrics compared to 
+baseline approaches. The model in Table 1 has an AUC 
+of 0.923 (0.007), which is considerably higher than the 
+best competing model (ClinicalBERT) by 4.2 
+percentage points, with p=0.001 and a paired t -test 
+(p=0.001). This enhancement is more so on precision in 
+the metric of K, where P% 5 stands at 0.861 versus 0.792 
+on the knowledge graph convolutional network baseline. 
+This indicates that the integrated architecture is more 
+efficient in converting complex relationships among 
+patient history and drug properties and clinical context. 
+ 
+Table 1. Recommendation performance comparison 
+on MIMIC-IV dataset 
+Method 
+AU
+C P@5 
+MR
+R CVR 
+DDI
+-AC 
+Logistic 
+Regression 
+0.81
+2 
+0.65
+3 
+0.71
+2 
+0.14
+2 
+0.58
+3 
+XGBoost 0.84
+3 
+0.70
+2 
+0.75
+4 
+0.11
+8 
+0.62
+7 
+BiLSTM 0.85
+4 
+0.72
+8 
+0.78
+1 
+0.10
+3 
+0.65
+8 
+KGCN 0.87
+2 
+0.79
+2 
+0.81
+3 
+0.08
+7 
+0.72
+3 
+ClinicalBER
+T 
+0.88
+1 
+0.80
+3 
+0.82
+4 
+0.07
+9 
+0.74
+1 
+Proposed 0.92
+3 
+0.86
+1 
+0.87
+9 
+0.03
+2 
+0.82
+5 
+ 
+The safety measures show some of the most impressive 
+benefits, as the proposed framework has a 
+contraindication violation rate (CVR) of only 3.2, as 
+compared to the ClinicalBERT with 7.9% and the 
+logistic regression with 14.2%. The possibility of this 
+huge drop in safety-critic errors is attributable to the 
+explicit Safety loss term in Equation 9, which punishes 
+any advice that is not in compliance with clinical 
+guidelines. The 82.5% drug-drug interaction alert (DDI-
+AC) also outperforms all baselines, and it shows a higher 
+detection of potentially dangerous interactions. 
+
+=== PDF PAGE 6 ===
+An Explainable Deep Learning Framework for Transparent and Personalized Recommendations in Clinical Decision-
+Making 
+ 
+IJDDT, Volume 16 Issue 30s, 2026 Page 932 
+ 
+ 
+6.2 Explainability Evaluation 
+The multi-level explainability mechanisms yield 
+clinically relevant knowledge about the process of 
+recommendation. As depicted in Figure 2, the attention 
+heatmaps demonstrate time trends in clinical decision-
+making with recent laboratory values and medication 
+changes generally having greater weights. The SHAP 
+and integrated gradients results indicate a very strong 
+correlation (Spearman 0.86, p<0.001) in determining the 
+most important predictive attributes, where renal 
+functionality, inflammatory and prior m edication 
+responses appear to be the consistently most significant 
+factors influencing patient sample. 
+ 
+ 
+Figure 2. Temporal attention patterns and feature importance distributions for representative patient cases 
+ 
+Assessment of the quality of explanation by clinicians 
+shows profound improvement compared with baseline. 
+The proposed framework has an Explanation Clinical 
+Utility (ECU) score of 4.32/5 with a standard deviation 
+of 0.41 (±0.41) versus the SHAP explanations alone with 
+an ECU score of 3.12/5 and the attention-only baselines 
+with an ECU score of 2.87/5.  Qualitative feedback 
+provides the worthiness of merged technology and 
+clinical clarification with one reviewer reading: The 
+system does not just demonstrate which elements were 
+significant, but features reasons they are significant in 
+medical terms that I comprehend.  The Attention 
+Consistency Score (ACS) is 0.78 (±0.09), which means 
+that there is a high correlation between model attention 
+and clinically significant events. This is a 22 percent 
+increase over time-aware attention baseline ACS=0.64. 
+Expert auto -annotations Feature Importance 
+Concordance (FIC) Stanford Auto achieves 0.83 
+(±0.07), and indicates the automated explanations are in 
+large part consistent with clinical intuition regarding the 
+important factors in decision-making. 
+ 
+6.3 Subgroup Analysis 
+The variation in performance between patient’s 
+subgroups brings to the fore significant information on 
+the capabilities of the framework. The model continues 
+to show good performance in complex scenarios with 
+multiple comorbidities (AUC=0.901) and in the case of 
+geriatric patients (AUC=0.915), though we find a slight 
+decrease in accuracy in pediatric patients (P@5=0.812). 
+The system is particularly robust in its approach with 
+DDI-AC standing at 89.3% among patients with 5 or 
+more medications compared to the knowledge graph 
+baseline of 78.1%. 
+ 
+Table 2. Subgroup performance analysis 
+Subgroup AUC P@5 CVR Cases 
+Age <18 0.887 0.812 0.041 1,427 
+Age ≥65 0.915 0.843 0.028 3,812 
+≥3 Comorbidities 0.901 0.831 0.035 2,953 
+≥5 Medications 0.908 0.847 0.026 1,876 
+Renal Impairment 0.918 0.863 0.019 2,104 
+ 
+The model demonstrates its impressive consistency 
+across care environments, and the outpatient outcomes 
+(AUC=0.911 on Optum instruments) almost equal the 
+ones in the ICUs. This indicates that the architecture can 
+be readily adapted to various clinical settings using 
+projection-specific to the environment (Equation 12). 
+The dynamic drug embeddings (Equation 11), when 
+analysed, give clinically plausible changes - e.g. lower 
+dosage suggestions of renal clearance drugs in 
+individuals with poor kidney clearance. 
+ 
+6.4 Ablation Study 
+The contributions of the component parts of a 
+framework are quantified by systematic elimination of 
+their parts. Table 3 demonstrates that loss of safety 
+constraint (Equation 10) is by itself, 62 percent of the 
+loss in CVR whereas the improvement in AUC is 
+enhanced mostly by the hybrid embedding scheme 
+(Equation 11). Elimination of rule-based explanation 
+
+
+=== PDF PAGE 7 ===
+An Explainable Deep Learning Framework for Transparent and Personalized Recommendations in Clinical Decision-
+Making 
+ 
+IJDDT, Volume 16 Issue 30s, 2026 Page 933 
+ 
+module reduces ECU scores by 0.81 points, which 
+suggests its significance to clinical usability. 
+ 
+Table 3. Ablation study results 
+Variant AUC P@5 CVR ECU 
+Full Model 0.923 0.861 0.032 4.32 
+w/o Safety Loss 0.915 0.849 0.085 4.25 
+w/o Hybrid 
+Embedding 
+0.901 0.827 0.039 4.18 
+w/o Rule 
+Explanations 
+0.919 0.853 0.035 3.51 
+w/o Temporal 
+Attention 
+0.892 0.812 0.047 3.87 
+ 
+Multi-head attention mechanism is especially useful in 
+managing a variety of clinical situations, whereby 
+various heads are specialized in different areas whereby 
+one head majorly deals with the trends in the laboratory 
+whereas the other deals with the seq uences of 
+medications. This specialization arises naturally in the 
+course of training and fits very well in the patterns of 
+clinical decision making whereby various factors can be 
+dominant in a variety of situations. 
+7. Discussion and Future Work 
+7.1 Limitations of the Proposed Method 
+Although the framework indicates excellent 
+performances in numerous metrics, some limitations are 
+worth mentioning. The existing implementation depends 
+crucially on structured data regarding electronic health 
+records which may not be applicable in less developed 
+or poorly documented settings. The clinical notes that 
+are in free text are full of valuable information that, with 
+extra natural language processing abilities, could 
+improve personalization [30]. The explainability 
+processes, though detailed, can sometimes present over-
+simplified explanations, especially in the case of new 
+combinations of drugs, where clinical outcomes are not 
+well understood. Though the safety constraints are 
+practical at eliminating blatant rule breaches, they do not 
+completely do away with risks that are related to off-
+label use or uncommon side effects that are not 
+embedded in the training data. 
+ 
+7.2 Potential Application Scenarios 
+The modular design of the framework allows the 
+adoption of the framework to clinical settings that were 
+not included in the inpatient and outpatient settings 
+examined in this study. Transitional care management is 
+one of the most promising applications, as patients in 
+and out of hospitals must deal with medication 
+reconciliation [31]. The temporal attention processes 
+may be useful in revealing the high-risk times in adverse 
+drug events during care transitions. The system can be 
+useful in areas such as specialty where the trade-off 
+between efficacy and side effects of medication can be 
+complex and therefore the ability of the system to 
+quantify and describe the trade -offs can be useful. 
+Connection to the pharmacy systems might also improve 
+medication safety by offering real-time decision support 
+in the process of prescription ordering [32]. 
+ 
+7.3 Ethical Issues in the Framework 
+Intake of AI-powered clinical decision support has 
+significant ethical issues which one should be attentive 
+to. Although the explainability features are designed to 
+encourage transparency, clinicians become completely 
+dependent on system recommendations without fully 
+aware of its constraints [33]. The training data also 
+represents the current clinical practice and that possible 
+biases of healthcare delivery, which may further 
+maintain disparities unless it is appropriately managed 
+[34]. The measures of fairness employed in the model’s 
+development should be reflected in future work and 
+protocols which ensure regular bias audit are set. 
+Another critical factor is patient privacy that has been 
+identified as the explanation mechanisms may be used to 
+divulge sensitive information where the mechanisms are 
+not properly checked [35]. Differential privacy methods 
+or federated learning strategies to reduce these risks 
+should be included in the design of the framework 
+without compromising clinical utility. 
+ 
+7.4 Future Research Directions 
+Several directions become promising that can be 
+developed to extend this work. The integration of 
+pharmacogenomic information may serve to improve 
+personalization by considering genetic differences in 
+drug metabolism [36]. To achieve better usability with 
+various healthcare teams, development of adaptive 
+explanation interfaces to adjust detail levels based on the 
+specialty of that clinician would be more useful. The 
+exploration of a few-shot learning approach would be 
+advantageous to overcoming the difficulty in prescribing 
+medications to rare diseases when few samples are 
+available [37]. To show real-life value, longitudinal 
+studies that determine the framework effects on real 
+clinical outcomes, as opposed to mere predictive 
+performance, will prove to be cr itical. Lastly, 
+investigating human-AI collaboration paradigms may 
+streamline the interaction of the clinicians with the 
+system and its recommendations and explanations in the 
+practical use [38]. 
+ 
+8. Conclusion 
+The explainable deep learning framework proposed is an 
+important step to personalized drug recommendation 
+systems because it is able to combine a state-of-the-art 
+predictive modelling with the clinically meaningful 
+interpretability. The innovative combination of sequence 
+processing with transformers, dynamic drug embedding, 
+and multi-modal explanation generation that the 
+architecture provides solves some of the key gaps in the 
+currently available clinical decision support tools. It has 
+been shown through experiments that the method does 
+not only lead to better recommendation accuracy, but 
+also generates actionable information advice, which 
+follows clinical reasoning patterns. The fact that the 
+framework can decrease contraindication violations by 
+more than 60 percent of the traditional methods indicates 
+
+=== PDF PAGE 8 ===
+An Explainable Deep Learning Framework for Transparent and Personalized Recommendations in Clinical Decision-
+Making 
+ 
+IJDDT, Volume 16 Issue 30s, 2026 Page 934 
+ 
+its possibility of improving medication safety in 
+practice. 
+Among the major innovations are the joint design of 
+predictive and explanatory elements, allowing the model 
+to produce proposals that are not just accurate but also 
+understandable, not due to information obtained using 
+post-hoc methods. The temporal attent ion systems 
+provide some insights about the use of patient history in 
+the current treatment decisions, whereas the hybrid 
+embedding scheme can help understand both the fixed 
+drug possibilities and patient-specific variations. The 
+combination of rule based clinical knowledge and data 
+driven insights produce explanations that can be used to 
+bridge the gap between the way technical models behave 
+and medical decision-making processes. 
+The modular structure of the framework supports both 
+adaptation to different clinical settings and a variety of 
+patients, as indicated by the uniformity of performance 
+in both inpatient and outpatient contexts. This work 
+offers a grounded approach to the p rogram 
+implementation of deep learning in real-world medical 
+settings by overcoming some basic obstacles to clinical 
+AI adoption: the transparency principle, the safety 
+aspect, and the relevance of the AI product to clinical 
+needs. The system can be expanded in the future with 
+additional data modalities and a more streamlined 
+explanation interface, but the existing implementation 
+already provides a solid paradigm of a trustworthy AI-
+assisted clinical decision-making. 
+ 
+References 
+[1] E Seto, KJ Leonard, JA Cafazzo, J Barnsley, et 
+al. (2012) Developing healthcare rule-based expert 
+systems: case study of a heart failure 
+telemonitoring system. International Journal Of 
+Medical Informatics. 
+[2] AC Hauschild, M Lemanczyk, J Matschinske, et 
+al. (2022) Federated Random Forests can improve 
+local performance of predictive models for various 
+healthcare applications. Bioinformatics. 
+[3] S Narla, DT V alivarthi & S Peddi (2019) Cloud 
+computing with healthcare: Ant colony 
+optimization-driven long short -term memory 
+networks for enhanced disease forecasting. Unable 
+to determine the complete publication venue. 
+[4] A Gillioz, J Casas, E Mugellini, et al.  (2020) 
+Overview of the Transformer-based Models for 
+NLP Tasks. In 2020 15th Conference on Computer 
+Science and Information Systems (FedCSIS). 
+[5] S Mihirette & Q Tan (2022) SHAP algorithm for 
+healthcare data classification. In Conference On 
+Hybrid Artificial Intelligence Systems. 
+[6] Z Qi, S Khorram & F Li (2020) Visualizing Deep 
+Networks by Optimizing with Integrated 
+Gradients. AAAI. 
+[7] KA Kumar, Y Singh & S Sanyal (2009) Hybrid 
+approach using case-based reasoning and rule-
+based reasoning for domain independent clinical 
+decision support in ICU. Expert Systems with 
+Applications. 
+[8] R Chahar (2021) Computational decision support 
+system in healthcare: a review and analysis. Unable 
+to determine the complete publication venue. 
+[9] L Adlung, Y Cohen, U Mor & E Elinav (2021) 
+Machine learning in clinical decision making. Med. 
+[10] AEW Johnson, L Bulgarelli, L Shen, A Gayles, et 
+al. (2023) MIMIC-IV , a freely accessible electronic 
+health record dataset. Scientific data. 
+[11] S Jain & BC Wallace (2019) Attention is not 
+explanation. In Proceedings of. 
+[12] AG Roberts & ME Gibbs (2018) Mechanisms and 
+the clinical relevance of complex drug –drug 
+interactions. Clinical Pharmacology: Advances 
+And Applications. 
+[13] R Peeriga (2024) Individualization of drug dosage. 
+A Short Guide to Clinical Pharmacokinetics. 
+[14] VS Nori, CA Hane, Y Sun, WH Crown & PA 
+Bleicher (2020) Deep neural network models for 
+identifying incident dementia using claims and 
+EHR datasets. Plos one. 
+[15] IR White, P Royston & AM Wood (2011) Multiple 
+imputation using chained equations: issues and 
+guidance for practice. Statistics in medicine. 
+[16] R de Groot, S Glaser, A Kogan, S Medlock, et 
+al. (2025) A TC -to-RxNorm mappings –A 
+comparison between OHDSI Standardized 
+Vo c a b u l a r i e s  a n d  U M L S  M e t a t h e s a u r u s .  
+International Journal of Medical Informatics. 
+[17] JH Friedman, T Hastie & R Tibshirani (2010) 
+Regularization paths for generalized linear models 
+via coordinate descent. Journal of statistical 
+software. 
+[18] R Mitchell, A Adinets, T Rao & E Frank (2018) 
+Xgboost: Scalable GPU accelerated learning. 
+arXiv preprint arXiv:1806.11248. 
+[19] J Cheng, L Dong & M Lapata (2016) Long short-
+term memory-networks for machine reading. … of. 
+[20] SY Shih, FK Sun & H Lee (2019) Temporal pattern 
+attention for multivariate time series forecasting. 
+Machine Learning. 
+[21] M Schlichtkrull, TN Kipf, P Bloem, et al. (2018) 
+Modeling relational data with graph convolutional 
+networks. In European Semantic Web Conference. 
+[22] J Zhang, B Chen, L Zhang, X Ke & H Ding (2010) 
+Neural-symbolic reasoning on knowledge graphs. 
+CoRR abs/2010.05446, 2020. 
+[23] K Huang, J Altosaar & R Ranganath (2019) 
+Clinicalbert: Modeling clinical notes and 
+predicting hospital readmission. arXiv preprint 
+arXiv:1904.05342. 
+[24] J Snoek, H Larochelle, et al.  (2012) Practical 
+bayesian optimization of machine learning 
+algorithms. In Advances in Neural Information 
+Processing Systems. 
+[25] CT Nakas, LE Bantis & CA Gatsonis (2023) ROC 
+analysis for classification and prediction in 
+practice. taylorfrancis.com. 
+[26] H Schütze, CD Manning & P Raghavan (2008) 
+Introduction to information retrieval. 
+cs.hacettepe.edu.tr. 
+
+=== PDF PAGE 9 ===
+An Explainable Deep Learning Framework for Transparent and Personalized Recommendations in Clinical Decision-
+Making 
+ 
+IJDDT, Volume 16 Issue 30s, 2026 Page 935 
+ 
+[27] S Abnar & W Zuidema (2020) Quantifying 
+attention flow in transformers. In Proceedings of 
+the 58th Annual Meeting of the Association for 
+Computational Linguistics. 
+[28] I Loshchilov & F Hutter (2017) Decoupled weight 
+decay regularization. arXiv preprint 
+arXiv:1711.05101. 
+[29] W Kluwer (2020) UpToDate: evidence -based 
+clinical decision support. 2020. 
+[30] A Mykowiecka, M Marciniak & A Kupść (2009) 
+Rule-based information extraction from patients’ 
+clinical data. Journal of biomedical informatics. 
+[31] A Phatak, R Prusi, B Ward, LO Hansen, et al. (2016) 
+Impact of pharmacist involvement in the 
+transitional care of high‐risk patients through 
+medication reconciliation, medication education, 
+and postdischarge call‐backs …. Journal of 
+Hospital Medicine. 
+[32] BJ Hemens, A Holbrook, M Tonkin, JA Mackay, et 
+al. (2011) Computerized clinical decision support 
+systems for drug prescribing and management: a 
+decision-maker-researcher partnership systematic 
+review. Implementation Science. 
+[33] ML Cummings (2017) Automation bias in 
+intelligent time critical decision support systems. 
+Decision making in aviation. 
+[34] S O’Connor & RG Booth (2022) Algorithmic bias 
+in health care: opportunities for nurses to improve 
+equality in the age of artificial intelligence. Nursing 
+Outlook. 
+[35] N Khalid, A Qayyum, M Bilal, A Al-Fuqaha, et 
+al. (2023) Privacy-preserving artificial intelligence 
+in healthcare: Techniques and applications. 
+Computers in Biology and Medicine. 
+[36] AR Harper & EJ Topol (2012) Pharmacogenomics 
+in clinical practice and drug development. Nature 
+biotechnology. 
+[37] JJC Ying, JX Y u, CL Huang & Y A Chen (2025) A 
+Few-Shot Learning-Based Framework for 
+Predicting Likelihood of In-patient’s Mortality. 
+Journal of Healthcare Informatics and Analytics. 
+[38] C Reverberi, T Rigon, A Solari, C Hassan, et 
+al. (2022) Experimental evidence of effective 
+human–AI collaboration in medical decision -
+making. Scientific reports. 
+ 

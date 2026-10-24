@@ -1,0 +1,1036 @@
+=== PDF PAGE 1 ===
+Katzmanetal. BMCMedicalResearchMethodology  (2018) 18:24 
+https://doi.org/10.1186/s12874-018-0482-1
+RESEARCH ARTICLE OpenAccess
+DeepSurv:personalizedtreatment
+recommendersystemusingaCox
+proportionalhazardsdeepneuralnetwork
+JaredL.Katzman 1,UriShaham 2,5,9,AlexanderCloninger 3,8,JonathanBates 3,4,5,TingtingJiang 6
+andYuvalKluger 3,6,7*
+Abstract
+Background: Medical practitionersusesurvivalmodelstoexploreandunderstandtherelationshipsbetween
+patients’covariates(e.g.clinicalandgeneticfeatures)andtheeffectivenessofvarioustreatmentoptions.Standard
+survivalmodelslikethelinearCox proportionalhazardsmodelrequireextensivefeatureengineeringorpriormedical
+knowledgetomodeltreatmentinteractionatanindividuallevel.Whilenonlinearsurvivalmethods,suchasneural
+networksandsurvivalforests,caninherentlymodelthesehigh-levelinteractionterms,theyhaveyettobeshownas
+effectivetreatmentrecommendersystems.
+Methods: WeintroduceDeepSurv,aCoxproportionalhazardsdeepneuralnetworkandstate-of-the-artsurvival
+methodformodelinginteractionsbetweenapatient’scovariatesandtreatmenteffectivenessinordertoprovide
+personalizedtreatmentrecommendations.
+Results: WeperformanumberofexperimentstrainingDeepSurvonsimulatedandrealsurvivaldata.We
+demonstratethatDeepSurvperformsaswellasorbetterthanotherstate-of-the-artsurvivalmodelsandvalidatethat
+DeepSurvsuccessfullymodelsincreasinglycomplexrelationshipsbetweenapatient’scovariatesandtheirriskof
+failure.WethenshowhowDeepSurvmodelstherelationshipbetweenapatient’sfeaturesandeffectivenessof
+differenttreatmentoptionstoshowhowDeepSurvcanbeusedtoprovideindividualtreatmentrecommendations.
+Finally,wetrainDeepSurvonrealclinicalstudiestodemonstratehowit’spersonalizedtreatmentrecommendations
+wouldincreasethesurvivaltimeofasetofpatients.
+Conclusions: ThepredictiveandmodelingcapabilitiesofDeepSurvwillenablemedicalresearcherstousedeep
+neuralnetworksasatoolintheirexploration,understanding,andpredictionoftheeffectsofapatient’scharacteristics
+ontheirriskoffailure.
+Keywords: Deeplearning,Survivalanalysis,Treatmentrecommendations
+Background
+Medical researchers use survival models to evaluate the
+significance of prognostic variables in outcomes such
+as death or cancer recurrence and subsequently inform
+patients of their treatment options [1–4]. One standard
+*Correspondence:yuval.kluger@yale.edu
+MajorityofworkwasdonewhileatYaleUniversity
+3AppliedMathematicsProgram,YaleUniversity,51ProspectStreet,06511
+NewHaven,CT,USA
+6InterdepartmentalPrograminComputationalBiologyandBioinformatics,
+YaleUniversity,06511NewHaven,CT,USA
+Fulllistofauthorinformationisavailableattheendofthearticle
+survival model is the Cox proportional hazards model
+(CPH) [5]. The CPH is a semiparametric model that cal-
+culates the effects of observed covariates on the risk of an
+event occurring (e.g. ‘death’). The model assumes that a
+patient’s log-risk of failure is a linear combination of the
+patient’s covariates. This assumption is referred to as the
+linear proportional hazardscondition. However, in many
+applications, such as providing personalized treatment
+recommendations,itmaybetoosimplistictoassumethat
+the log-risk function is linear. As such, a richer family of
+survival models is needed to better fit survival data with
+nonlinearlog-riskfunctions.
+©TheAuthor(s).2018 OpenAccess ThisarticleisdistributedunderthetermsoftheCreativeCommonsAttribution4.0
+InternationalLicense( http://creativecommons.org/licenses/by/4.0/),whichpermitsunrestricteduse,distribution,and
+reproductioninanymedium,providedyougiveappropriatecredittotheoriginalauthor(s)andthesource,providealinktothe
+CreativeCommonslicense,andindicateifchangesweremade. TheCreativeCommonsPublicDomainDedicationwaiver
+(http://creativecommons.org/publicdomain/zero/1.0/)appliestothedatamadeavailableinthisarticle,unlessotherwisestated.
+
+=== PDF PAGE 2 ===
+Katzmanetal. BMCMedicalResearchMethodology  (2018) 18:24 Page2of12
+To model nonlinear survival data, researchers have
+applied three main types of neural networks to the prob-
+lem of survival analysis. These include variants of: (i)
+classification methods (see details in [6, 7]), (ii) time-
+encoded methods (see details in [8, 9]), (iii) and risk-
+predicting methods (see details in [10]). This third type
+is a feed-forward neural network (NN) that estimates an
+individual’sriskoffailure.Infact,Faraggi-Simon’snetwork
+is seen as a nonlinear extension of the Cox proportional
+hazards model.
+Risk neural networks learn highly complex and nonlin-
+earrelationshipsbetweenprognosticfeaturesandanindi-
+vidual’s risk of failure. In application, for example, when
+thesuccessofatreatmentoptionisaffectedbyanindivid-
+ual’sfeatures,theNNlearnstherelationshipwithoutprior
+featureselectionordomainexpertise.Thenetworkisthen
+able to provide a personalized recommendation based on
+thecomputedriskofatreatment.
+However, previous studies have demonstrated mixed
+results on NNs ability to predict risk. For instance,
+researchers have attempted to apply the Faraggi-Simon
+network with various extensions, but they have failed to
+demonstrateimprovementsbeyondthelinearCoxmodel,
+see [11–13]. One possible explanation is that the practice
+of NNs was not as developed as it is today. To the best
+of our knowledge, NNs have not outperformed standard
+methods for survival analysis (e.g. CPH). Our manuscript
+shows that this is no longer the case; with modern tech-
+niques, risk NNs have state-of-the-art performance and
+canbeusedforavarietyofmedicalapplications.
+The goals of this paper are: (i) to show that the appli-
+cation of deep learning to survival analysis performs as
+wellasorbetterthanothersurvivalmethodsinpredicting
+risk; and (ii) to demonstrate that the deep neural network
+can be used as a personalized treatment recommender
+system and a useful framework for further medical
+research.
+We propose a modern Cox proportional hazards deep
+neural network, henceforth referred to as DeepSurv, as
+the basis for a treatment recommender system. We make
+the following contributions. First, we show that Deep-
+Surv performs as well as or better than other survival
+analysis methods on survival data with both linear and
+nonlinear effects from covariates. Second, we include
+an additional categorical variable representing a patient’s
+treatment group to illustrate how the network can learn
+complex relationships between an individual’s covariates
+and the effect of a treatment. Our experiments validate
+that the network successfully models the treatment’s risk
+within a population. Third, we use DeepSurv to pro-
+vide treatment recommendations tailored to a patient’s
+observed features. We confirm our results on real clin-
+ical studies, which further demonstrates the power of
+DeepSurv.Finally,weshowthattherecommendersystem
+supports medical practitioners in providing personal-
+ized treatment recommendations that potentially could
+increasethemediansurvivaltimeforasetofpatients.
+The organization of the manuscript is as follows: in
+“Background” section, we provide a brief background on
+survival analysis. In “Methods” section, we present our
+contributions, including an explanation of our imple-
+mentation of DeepSurv and our proposed recommender
+system. In “Results” section, we describe the experimen-
+tal design and results. “ Conclusion”a n d“Discussion”
+sectionsconcludethemanuscript.
+In this section, we define survival data and the
+approaches for modeling a population’s survival and fail-
+ure rate. Additionally, we discuss linear and nonlinear
+survivalmodelsandtheirlimitations.
+Survivaldata
+Survival data is comprised of three elements: a patient’s
+baselinedata x,afailureeventtime T,andaneventindica-
+torE.Ifaneven t( e.g.death)isobserved,thetimein terval
+T corresponds to the time elapsed between the time in
+which the baseline data was collected and the time of
+the event occurring, and the event indicator isE = 1.
+If an event is not observed, the time intervalT corre-
+sponds to the time elapsed between the collection of the
+baseline data and the last contact with the patient (e.g.
+end of study), and the event indicator isE = 0. In this
+case,thepatientissaidtobe right-censored.Ifoneoptst o
+use standard regression methods, the right-censored data
+is considered to be a type of missing data. This is typi-
+cally discarded which can introduce a bias in the model.
+Therefore, modeling right-censored data requires special
+considerationortheuseofasurvivalmodel.
+Survival and hazard functions are the two fundamen-
+tal functions in survival analysis. The survival function is
+denoted byS(t) = Pr(T > t), which signifies the proba-
+bility that an individual has ‘survived’ beyond timet.T h e
+hazardfunction λ(t)isdefinedas:
+λ(t) = lim
+δ→0
+Pr(t ≤ T < t + δ |T ≥ t)
+δ .( 1 )
+Thehazardfunctionistheprobabilityanindividualwill
+not survive an extra infinitesimal amount of timeδ,g i v e n
+they have already survived up to timet.T h u s ,ag r e a t e r
+hazardsignifiesagreaterriskofdeath.
+Linearsurvivalmodels
+The Cox proportional hazards model is a common
+method for modeling an individual’s survival given their
+baseline data x. In accordance with the standard R sur-
+vivalpackage coxph,weusenotationfrom[ 14]todescribe
+the Cox model. The model assumes that the hazard func-
+tioniscomposedoftwonon-negativefunctions:abaseline
+
+=== PDF PAGE 3 ===
+Katzmanetal. BMCMedicalResearchMethodology  (2018) 18:24 Page3of12
+hazard function, λ0(t),a n dar i s ks c o r e ,r(x) = eh(x),
+definedastheeffectofanindividual’sobservedcovariates
+onthebaselinehazard[ 14].Wedenote h(x)asthelog-risk
+function.Thehazardfunctionisassumedtohavetheform
+λ(t|x) = λ0(t) ·eh(x).( 2)
+TheCPHisaproportionalhazardsmodelthatestimates
+the log-risk function,h(x), by a linear functionˆhβ(x) =
+βTx [or equivalently ˆrβ(x) = eβTx]. To perform Cox
+regression, one tunes the weightsβ to optimize the Cox
+partial likelihood. The partial likelihood is the product of
+the probability at each event timeTi that the event has
+occurredtoindividual i,giventhesetofindividualsstillat
+riskattime Ti.TheCoxpartiallikelihoodisparameterized
+by β anddefinedas
+Lc(β) =
+∏
+i:Ei=1
+ˆrβ(xi)∑
+j∈ℜ(Ti)
+ˆrβ(xj) =
+∏
+i:Ei=1
+exp(ˆhβ(xi))
+∑
+j∈ℜ(Ti)
+exp(ˆhβ(xj))
+,
+(3)
+where the valuesTi, Ei,a n dxi are the respective event
+time,eventindicator,andbaselinedataforthe ith observa-
+tion. The product is defined over the set of patients with
+anobservableevent Ei = 1.Theriskset ℜ(t) ={ i : Ti ≥ t}
+isthesetofpatientsstillatriskoffailureattime t.
+In many applications, for example modeling nonlinear
+gene interactions, we cannot assume the data satisfies the
+linear proportional hazards condition. In this case, the
+CPH model would require computing high-level interac-
+tion terms. This becomes prohibitively expensive as the
+number of features and interactions increases. Therefore,
+amorecomplexnonlinearmodelisneeded.
+Nonlinearsurvivalmodels
+The Faraggi-Simon method is a feed-forward neural net-
+work that provides the basis for a nonlinear proportional
+hazards model. [10] experimented with a single hidden
+l a y e rn e t w o r kw i t ht w oo rt h r e en o d e s .T h e i rm o d e l
+requiresnopriorassumptionofthelog-riskfunction h(x)
+other than continuity. Instead, the NN computes nonlin-
+ear features from the training data and calculates their
+linearcombinationtoestimatethelog-riskfunction.Sim-
+ilar to Cox regression, the network optimizes a modified
+Cox partial likelihood. They replace the linear combina-
+tion of features ˆhβ(x) in Eq. 3 with the output of the
+network ˆhθ(x).
+As previous research suggests, the Faraggi-Simon net-
+work has not been shown to outperform the linear CPH
+[10,12,13].Furthermore,tothebestofourknowledge,we
+were the first to attempt applying modern deep learning
+techniquestotheCoxproportionalhazardslossfunction.
+Another popular machine learning approach to model-
+ingpatients’hazardfunctionistherandomsurvivalforest
+(RSF)[15,16].Therandomsurvivalforestisatreemethod
+that produces an ensemble estimate for the cumulative
+hazardfunction.
+Amorerecentdeeplearningapproachmodelstheevent
+time according to a Weibull distribution with parameters
+given by latent variables generated by a deep exponential
+family[17].
+Methods
+In this section, we describe our methodology for pro-
+viding personalized treatment recommendations using
+DeepSurv. First, we describe the architecture and train-
+ing details of DeepSurv, an open source Python module
+that applies recent deep learning techniques to a nonlin-
+earCoxproportionalhazards network. Second, we define
+DeepSurv as a prognostic model and show how to use the
+network’spredictedlog-riskfunctiontoprovidepersonal-
+izedtreatmentrecommendations.
+DeepSurv
+DeepSurv is a deep feed-forward neural network which
+predicts the effects of a patient’s covariates on their haz-
+ard rate parameterized by the weights of the networkθ.
+Figure 1 illustrates the basic components of DeepSurv.
+Theinputtothenetworkisapatient’sbaselinedata x.The
+hidden layers of the network consist of a fully-connected
+layer of nodes, followed by a dropout layer [18]. The out-
+put of the network ˆhθ (x) is a single node with a linear
+activation which estimates the log-risk function in the
+Cox model (Eq.2). We train the network by setting the
+objective function to be the average negative log partial
+likelihoodofEq. 3withregularization:
+l(θ):=− 1
+NE=1
+∑
+i:Ei=1
+⎛
+⎝ˆhθ(xi) −log
+∑
+j∈ℜ(Ti)
+e
+ˆhθ (xj)
+⎞
+⎠+λ·||θ||2
+2,
+(4)
+where NE=1 i st h en u m b e ro fp a t i e n t sw i t ha no b s e rv a b l e
+event and λ is the 𝓁2 regularization parameter. We then
+use gradient descent optimization to find the weights of
+thenetworkwhichminimizeEq. 4.
+We use modern deep learning techniques to optimize
+the training of the network. These include: standardizing
+the input, Scaled Exponential Linear Units (SELU) [19]
+as the activation function, Adaptive Moment Estimation
+(Adam) [20] for the gradient descent algorithm, Nesterov
+momentum [21] ,a n dl e a r n i n gr a t es c h e d u l i n g[22]. To
+tune the network’s hyper-parameters, we perform a Ran-
+dom hyper-parameter optimization search [23]. For more
+technicaldetails,seeAppendix A.
+
+=== PDF PAGE 4 ===
+Katzmanetal. BMCMedicalResearchMethodology  (2018) 18:24 Page4of12
+Fig.1 DiagramofDeepSurv.DeepSurvisaconfigurablefeed-forward
+deepneuralnetwork.Theinputtothenetworkisthebaselinedata x.
+Thenetworkpropagatestheinputsthroughanumberofhidden
+layerswithweights θ.Thehiddenlayersconsistoffully-connected
+nonlinearactivationfunctionsfollowedbydropout.Thefinallayerisa
+singlenodewhichperformsalinearcombinationofthehidden
+features.Theoutputofthenetworkistakenasthepredictedlog-risk
+function ˆhθ (x).Thehyper-parametersofthenetwork(e.g.numberof
+hiddenlayers,numberofnodesineachlayer,dropoutprobability,
+etc.)weredeterminedfromarandomhyper-parametersearchand
+aredetailedinTable 3
+Treatmentrecommendersystem
+Inaclinicalstudy,patientsaresubjecttodifferentlevelsof
+riskbasedontheirrelevantprognosticfeaturesandwhich
+treatmenttheyundergo.Wegeneralizethisassumptionas
+follows.Letallpatientsinagivenstudybeassignedtoone
+of n treatment groups τ ∈{ 0,1, ... ,n − 1}. We assume
+each treatment i to have an independent risk function
+ehi(x).Collectively,thehazardfunctionbecomes:
+λ(t;x|τ = i) = λ0(t) ·ehi(x).( 5)
+For any patient, the network should be able to accu-
+ratelypredictthelog-risk hi(x)ofbeingprescribedagiven
+treatmenti.Then,basedontheassumptionthateachindi-
+vidual has the same baseline hazard functionλ0(t),w e
+can take the log of the hazards ratio to calculate the per-
+sonal risk-ratio of prescribing one treatment option over
+another. We define this difference of log hazards as the
+recommender functionorrec ij(x):
+recij(x) = log
+( λ(t;x|τ = i)
+λ(t;x|τ = j)
+)
+= log
+(
+λ0(t) ·ehi(x)
+λ0(t) ·ehj(x)
+)
+= hi(x) −hj(x).
+(6)
+Therecommenderfunctioncanbeusedtoprovideper-
+sonalized treatment recommendations. We first pass a
+patient through the network once in treatment group
+i and again in treatment group j and take the differ-
+ence. When a patient receives a positive recommenda-
+tion recij(x), treatmenti leads to a higher risk of death
+than treatmentj. Hence, the patient should be prescribed
+treatmentj. Conversely, a negative recommendation indi-
+cates that treatment i is more effective and leads to a
+lower risk of death than treatmentj, and we recommend
+treatmenti.
+DeepSurv’s architecture holds an advantage over the
+CPH because it calculates the recommender function
+without an a priori specification of treatment interac-
+tion terms. In contrast, the CPH model computes a
+constant recommender function unless treatment inter-
+action terms are added to the model, see AppendixB
+for more details. Discovering relevant interaction terms
+is expensive because it requires extensive experimenta-
+tionorpriorbiologicalknowledgeoftreatmentoutcomes.
+Therefore, DeepSurv is more cost-effective compared
+to CPH.
+Results
+We perform four sets of experiments: (i) simulated sur-
+vival data, (ii) real survival data, (iii) simulated treatment
+data, and (iv) real treatment data. First, we use simu-
+lated data to show how DeepSurv successfully learns the
+true log-risk function of a population. Second, we vali-
+date the network’s predictive ability by training DeepSurv
+on real survival data. Third, we simulate treatment data
+to verify that the network models multiple risk func-
+tions in a population based on the specific treatment a
+patient undergoes. Fourth, we demonstrate how Deep-
+Survprovidestreatmentrecommendationsandshowthat
+DeepSurv’srecommendationsimproveapopulation’ssur-
+vival rate. For more technical details on the experiments,
+seeAppendix A.
+In addition to training DeepSurv on each dataset, we
+run a linear CPH regression for a baseline comparison.
+We also fit a RSF to compare DeepSurv against a state-
+of-the-art nonlinear survival model. Even though we can
+compare the RSF’s predictive accuracy to DeepSurv’s, we
+donotmeasuretheRSF’sperformanceonmodelingasim-
+ulated dataset’s true log-risk functionh(x).T h i si sd u et o
+the fact that the the RSF calculates the cumulative haz-
+ard function /Lambda1(t) =
+∫t
+0 λ(τ)dτ rather than the hazard
+function λ(t).
+
+=== PDF PAGE 5 ===
+Katzmanetal. BMCMedicalResearchMethodology  (2018) 18:24 Page5of12
+Evaluation
+Survivaldata
+To evaluate the models’ predictive accuracy on the sur-
+vival data, we measure the concordance-index (C-index)
+c as outlined by [24]. The C-index is the most common
+metric used in survival analysis and reflects a measure of
+how well a model predicts the ordering of patients’ death
+times. For context, ac = 0.5 is the average C-index of a
+randommodel,whereas c = 1isaperfectrankingofdeath
+times.Weperformbootstrapping[ 25]andsamplethetest
+setwithreplacementtoobtainconfidenceintervals.
+Treatmentrecommendations
+We determine the recommended treatment for each
+patient in the test set using DeepSurv and the RSF.
+We do not calculate the recommended treatment for
+CPH; without preselected treatment-interaction terms,
+the CPH model will compute a constant recommender
+function and recommend the same treatment option for
+all patients. This would effectively be comparing the sur-
+vival rates between the control and experimental groups.
+DeepSurv and the RSF are capable of predicting an indi-
+vidual’s hazard per treatment because each computes
+relevant interaction terms. For DeepSurv, we choose the
+recommendedtreatmentbycalculatingtherecommender
+function (Eq.11). Because the RSF predicts a cumulative
+hazardforeachpatient,wechoosethetreatmentwiththe
+minimumcumulativehazard.
+Once we determine the recommended treatment, we
+identify two subsets of patients: those whose treatment
+group aligns with the model’s recommended treatment
+(Recommendation) and those who do not undergo the
+recommended treatment (Anti-Recommendation). We
+calculatethemediansurvivaltimeofeachsubsettodeter-
+mine if a model’s treatment recommendations increase
+the survival rate of the patients. We then perform a log-
+rank test to validate whether the difference between the
+twosubsetsissignificant.
+Simulatedsurvivaldata
+In this section, we perform two experiments with simu-
+latedsurvivaldata:onewithalinearlog-riskfunctionand
+one with a nonlinear (Gaussian) log-risk function. The
+advantageofusingsimulateddatasetsisthatwecanascer-
+tain whether DeepSurv can successfully model the true
+log-riskfunctioninsteadofoverfittingrandomnoise.
+For each experiment, we generate a training, valida-
+tion, and testing set of N = 4000,1000,1000 obser-
+vations respectively. Each observation x represents a
+patient vector with d = 10 covariates. The ten vari-
+ables are each drawn from a uniform distribution on
+[ −1,1 ). We then generate a patient’s death timeT as
+a function of their covariates by using the exponential
+Coxmodel[ 26]:
+T ∼ Exp(λ(t;x)) = Exp
+(
+λ0 ·eh(x)
+)
+.( 7 )
+In both experiments, the log-risk function h(x) only
+depends on two of the ten covariates. This allows us to
+verifythatDeepSurvdiscernstherelevantcovariatesfrom
+the noise. Next, we choose a censoring time to represent
+the‘endofstudy’suchthat50percentofthepatientshave
+anobservedevent, E = 1,inthedataset.Furtherdetailsof
+thesimulateddatagenerationarefoundinAppendix C.
+Linearexperiment
+We first simulate patients to have a linear log-risk func-
+tion forx ∈ Rd so that the linear proportional hazards
+assumptionholdstrue:
+h(x) = x0 +2x1.( 8)
+Becausethelinearproportionalhazardsassumptionholds
+true, we expect the linear CPH to accurately model the
+log-riskfunctioninEq. 8.
+Our results (see Table1) demonstrate that DeepSurv
+performsaswellasthestandardlinearCoxregressionand
+betterthanRSFinpredictiveability.
+Figure 2 demonstrates how DeepSurv more accurately
+modelsthelog-riskfunctioncomparedtothelinearCPH.
+Figure 2a plots the true log-risk function h(x) for all
+patientsinthetestset.AsshowninFig. 2b,theCPH’sesti-
+mated log-risk function ˆhβ(x) does not perfectly model
+the true log-risk for a patient. In contrast, as shown
+in Fig. 2c, DeepSurv better estimates the true log-risk
+function.
+Toquantifythesedifferences,Fig. 2dandeshowthatthe
+CPH’sestimatedlog-riskhasasignificantlylargerabsolute
+error than that of DeepSurv, specifically for patients with
+a high positive log-risk. We calculate the mean-squared-
+error (MSE) between a model’s predicted log-risk and the
+true log-risk values. The MSEs of CPH and DeepSurv
+are 20.528057878872541 and 0.19268315, respectively.
+Even though DeepSurv and CPH have similar predic-
+tive abilities, this demonstrates that DeepSurv is superior
+than the CPH at modeling the true risk function of the
+population.
+Nonlinearexperiment
+Wesetthelog-riskfunctiontobeaGaussianwith λmax =
+5.0andascalefactorof r = 0.5:
+h(x) = log(λmax) exp
+(
+−x2
+0 +x2
+1
+2r2
+)
+.( 9)
+Thesurfaceofthelog-riskfunctionisdepictedinFig. 3a.
+Because this log-risk function is nonlinear, we do not
+expect the CPH to predict the log-risk function properly
+without adding quadratic terms of the covariates to the
+model. We expect DeepSurv to reconstruct the Gaussian
+log-risk function and successfully predict a patient’s risk.
+
+=== PDF PAGE 6 ===
+Katzmanetal. BMCMedicalResearchMethodology  (2018) 18:24 Page6of12
+Table1 ExperimentalresultsforallexperimentsC-index(95%confidenceinterval)
+Experiment CPH DeepSurv RSF
+SimulatedLinear 0.779239(0.777,0.781) 0.778065(0.776,0.780) 0.757863(0.756,0.760)
+SimulatedNonlinear 0.486728(0.484,0.489) 0.652434(0.650,0.655) 0.626552(0.624,0.629)
+WHAS 0.816025(0.813,0.819) 0.866723(0.863,0.870) 0.892884(0.890,0.895)
+SUPPORT 0.583076(0.581,0.585) 0.618907(0.617,0.621) 0.619302(0.618,0.621)
+METABRIC 0.631674(0.627,0.636) 0.654452(0.650,0.659) 0.619517(0.615,0.624)
+SimulatedTreatment 0.516620(0.514,0.519) 0.575400(0.573,0.578) 0.550298(0.548,0.553)
+Rotterdam&GBSG 0.658773(0.655,0.662) 0.676349(0.673,0.679) 0.647924(0.644,0.651)
+Theboldfacednumberssignifythebestperformingalgorithm
+Lastly,weexpecttheRSFandDeepSurvtoaccuratelyrank
+theorderofpatient’sdeaths.
+The CI results in Table1 shows that DeepSurv outper-
+forms the linear CPH and predicts as well as the RSF.
+Inaddition,DeepSurvcorrectlylearnsnonlinearrelation-
+ships between a patient’s covariates and their log-risk.
+As shown in Fig. 3, DeepSurv is more successful than
+the linear CPH in modeling the true log-risk function.
+Figure 3b demonstrates that the linear CPH regression
+fails to determine the first two covariates as significant.
+TheCPHhasaC-indexof0.486728,whichisequivalentto
+theperformanceofrandomlyrankingdeathtimes.Mean-
+while, Fig. 3c demonstrates that DeepSurv reconstructs
+theGaussianrelationshipbetweenthefirsttwocovariates
+andapatient’slog-risk.
+Realsurvivaldataexperiments
+We compare the performance of the CPH and DeepSurv
+on three datasets from real studies: the Worcester
+Heart Attack Study (WHAS), the Study to Understand
+Prognoses Preferences Outcomes and Risks of Treat-
+ment (SUPPORT), and The Molecular Taxonomy of
+Breast Cancer International Consortium (METABRIC).
+Because previous research shows that neural net-
+works do not outperform the CPH, our goal is to
+demonstrate that DeepSurv does indeed have state-of-
+the-art predictive ability in practice on real survival
+datasets.
+WorcesterHeartAttackStudy(WHAS)
+The Worcester Heart Attack Study (WHAS) investigates
+the effects of a patient’s factors on acute myocardial
+infraction (MI) survival [27]. The dataset consists of 1638
+observations and 5 features: age, sex, body-mass-index
+(BMI), left heart failure complications (CHF), and order
+of MI (MIORD). We reserve 20 percent of the dataset as
+a testing set. A total of 42.12 percent of patients died dur-
+ing the survey with a median death time of 516.0 days.
+Fig.2 SimulatedLinearExperimentalLog-RiskSurfaces.Predictedlog-risksurfacesanderrorsforthesimulatedsurvivaldatawithlinearlog-risk
+functionwithrespecttoapatient’scovariates x0 andx1.aThetruelog-risk h(x) = x0 +2x1 foreachpatient. bThepredictedlog-risksurfaceof
+ˆhβ(x)fromthelinearCPHmodelparameterizedby β.cTheoutputofDeepSurv ˆhθ (x)predictsapatient’slog-risk. dTheabsoluteerrorbetween
+truelog-risk h(x)andCPH’spredictedlog-risk ˆhβ(x).eTheabsoluteerrorbetweentruelog-risk h(x)andDeepSurv’spredictedlog-risk ˆhθ (x)
+
+=== PDF PAGE 7 ===
+Katzmanetal. BMCMedicalResearchMethodology  (2018) 18:24 Page7of12
+Fig.3 SimulatedNonlinearExperimentalLog-RiskSurfaces.Log-risksurfacesofthenonlineartestsetwithrespecttopatient’scovariates x0 andx1.
+aThecalculatedtruelog-risk h(x)(Eq.9)foreachpatient. bThepredictedlog-risksurfaceof ˆhβ(x)fromthelinearCPHmodelparameterizedon β.
+ThelinearCPHpredictsaconstantlog-risk. cTheoutputofDeepSurv ˆhθ (x)istheestimatedlog-riskfunction
+A ss h o w ni nT a b l e1, DeepSurv outperforms the CPH;
+however,theRSFoutperformsDeepSurv.
+StudytoUnderstandPrognosesPreferencesOutcomes
+andRisksofTreatment(SUPPORT)
+The Study to Understand Prognoses Preferences Out-
+comes and Risks of Treatment (SUPPORT) is a larger
+study that researches the survival time of seriously ill
+hospitalized adults [28]. The dataset consists of 9,105
+patientsand14featuresforwhichalmostallpatientshave
+observed entries (age, sex, race, number of comorbidi-
+ties, presence of diabetes, presence of dementia, presence
+of cancer, mean arterial blood pressure, heart rate, respi-
+ration rate, temperature, white blood cell count, serum’s
+sodium, and serum’s creatinine). We drop patients with
+anymissingfeaturesandreserve20percentofthedataset
+as a testing set. A total of 68.10 percent of patients died
+duringthesurveywithamediandeathtimeof58days.
+As shown in Table1,D e e p S u r vp e r f o r m sa sw e l la st h e
+RSFandbetterthantheCPHwithalargerstudy.Thisval-
+idatesDeepSurv’sabilitytopredicttherankingofpatient’s
+risksonrealsurvivaldata.
+MolecularTaxonomyofBreastCancerInternational
+Consortium(METABRIC)
+The Molecular Taxonomy of Breast Cancer International
+Consortium (METABRIC) uses gene and protein expres-
+sionprofilestodeterminenewbreastcancersubgroupsin
+order to help physicians provide better treatment recom-
+mendations.
+The METABRIC dataset consists of gene expression
+data and clinical features for 1,980 patients, and 57.72
+percent have an observed death due to breast cancer
+with a median survival time of 116 months [29]. We
+prepare the dataset in line with the Immunohistochem-
+ical 4 plus Clinical (IHC4+C) test, which is a com-
+mon prognostic tool for evaluating treatment options for
+breast cancer patients [30]. We join the 4 gene indicators
+(MKI67,EGFR,PGR,andERBB2 )withtheapatient’sclin-
+ical features (hormone treatment indicator, radiotherapy
+indicator, chemotherapy indicator, ER-positive indicator,
+age at diagnosis). We then reserved 20 percent of the
+patientsasthetestset.
+Table1showsthatDeepSurvperformsbetterthanboth
+the CPH and RSF. This result demonstrates not only
+DeepSurv’sabilitytomodeltheriskeffectsofgeneexpres-
+sion data but also shows the potential for future research
+of DeepSurv as a comparable prognostic tool to common
+medicaltestssuchastheIHC4+C.
+Treatmentrecommendersystemexperiments
+In this section, we perform two experiments to demon-
+strate the effectiveness of DeepSurv’s treatment rec-
+ommender system. First, we simulate treatment data
+by including an additional covariate to the simulated
+data from “Nonlinear experiment” section. Second, after
+demonstrating DeepSurv’s modeling and recommenda-
+tion capabilities, we apply the recommender system to a
+real dataset used to study the effects of hormone treat-
+ment on breast cancer patients. We show that DeepSurv
+can successfully provide personalized treatment recom-
+mendations. We conclude that if all patients follow the
+network’s recommended treatment options, we would
+gainasignificantincreaseinpatients’lifespans.
+Simulatedtreatmentdata
+We uniformly assign a treatment groupτ ∈{ 0,1 } to each
+simulated patient in the dataset. All of the patients in
+group τ = 0were‘unaffected’bythetreatment(e.g.given
+ap l a c e b o )a n dh a v eac o n s t a n tl o g - r i s kf u n c t i o nh0(x).
+The other groupτ = 1 is prescribed a treatment with
+Gaussian effects (Eq.9) and has a log-risk functionh1(x)
+with λmax = 10and r = 0.5.
+Figure 4 illustrates the network’s success in modeling
+both treatments’ log-risk functions for patients. Figure4a
+plots the true log-risk distribution h(x). As expected,
+Fig. 4b shows that the network models a constant log-
+risk for a patient in treatmentτ = 0, independent of
+a patient’s covariates. Figure 4c shows how DeepSurv
+models the Gaussian effects of a patient’s covariates on
+
+=== PDF PAGE 8 ===
+Katzmanetal. BMCMedicalResearchMethodology  (2018) 18:24 Page8of12
+Fig.4 SimulatedTreatmentLog-RiskSurface.TreatmentLog-RiskSurfacesasafunctionofapatient’srelevantcovariates x0 andx1.aThetrue
+log-riskh1(x)ifallpatientsinthetestsetweregiventreatment τ = 1.Wethenmanuallysetalltreatmentgroupstoeither τ = 0or τ = 1.bThe
+predictedlog-risk ˆh0(x)forpatientswithtreatmentgroup τ = 0.cThenetwork’spredictedlog-risk ˆh1(x)forpatientsintreatmentgroup τ = 1
+theirtreatment log-risk.Tofurther quantify theseresults,
+Table 1 shows that DeepSurv has the largest concor-
+danceindex.Becausethenetworkaccuratelyreconstructs
+the risk function, we expect that it will provide accurate
+treatmentrecommendationsfornewpatients.
+In Fig.5, we plot the Kaplan-Meier survival curves for
+both the Recommendation and Anti-Recommendation
+subset for each method. Figure5a shows that the sur-
+vival curve for the Recommendation subset is shifted to
+the right, which signifies an increase in survival time for
+the population following DeepSurv’s recommendations.
+This is further quantified by the median survival times
+summarizedinTable 2.The p-valueofDeepSurv’srecom-
+mendations is less than 0.000090, and we can reject the
+null hypothesis that DeepSurv’s recommendations would
+not affect the population’s survival time. As shown in
+Table 2, the subset of patients that follow RSF’s recom-
+mendations have a shorter survival time than those who
+do not follow RSF’s recommended treatment. Therefore,
+wecouldtaketheRSF’srecommendationsandprovidethe
+patients with the opposite treatment option to increase
+median survival time; however, Fig.?? shows that that
+improvement would not be statistically valid. While both
+methods of DeepSurv and RSF are able to compute treat-
+ment interaction terms, DeepSurv is more successful in
+recommendingpersonalizedtreatments.
+Rotterdam&GermanBreastCancerStudyGroup(GBSG)
+We first train DeepSurv on breast cancer data from the
+Rotterdam tumor bank [31]. and construct a recom-
+mendersystemtoprovidetreatmentrecommendationsto
+patientsfromastudybytheGermanBreastCancerStudy
+Group (GBSG) [32]. The Rotterdam tumor bank dataset
+contains records for 1546 patients with node-positive
+breast cancer, and nearly 90 percent of the patients have
+an observed death time. The testing data from the GBSG
+contains complete data for 686 patients (56 percent are
+censored) in a randomized clinical trial that studied the
+effects of chemotherapy and hormone treatment on sur-
+vivalrate.Wepreprocessthedataasoutlinedby[ 33].
+Fig.5 SimulatedTreatmentSurvivalCurves.Kaplan-Meierestimatedsurvivalcurveswithconfidenceintervals( α = .05)forthepatientswhowere
+giventhetreatmentconcordantwithamethod’srecommendedtreatment(Recommendation)andthesubsetofpatientswhowerenot
+(Anti-Recommendation).Weperformalog-ranktesttovalidatethesignificancebetweeneachsetofsurvivalcurves. aEffectofDeepSurv’s
+TreatmentRecommendations(SimulatedData), bEffectofRSF’sTreatmentRecommendations(SimulatedData)
+
+=== PDF PAGE 9 ===
+Katzmanetal. BMCMedicalResearchMethodology  (2018) 18:24 Page9of12
+Table2 Experimentalresultsfortreatmentrecommendations:
+mediansurvivaltime(months)
+Experiment DeepSurv RSF
+Rec Anti-Rec Rec Anti-Rec
+Simulated 3.334 2.867 3.270 3.334
+Rotterdam&GBSG 40.099 31.770 39.014 30.752
+Theboldfacednumberssignifythebestperformingalgorithm
+We first validate DeepSurv’s performance against the
+RSF and CPH baseline. We then plot the two survival
+curves: the survival times of those who followed the rec-
+ommended treatment and those who did not. If the rec-
+ommender system is effective, we expect the population
+with the recommended treatments to survive longer than
+thosewhodidnottaketherecommendedtreatment.
+Table1showsthatDeepSurvprovidesanimprovedpre-
+dictive ability relative to the CPH and RSF. In Fig.6,
+we plot the Kaplan-Meier survival curves for both the
+Recommendation subset and the Anti-Recommendation
+subset for each method. Figure6a shows that the sur-
+vival curve for DeepSurv’s Recommendation subset is
+statistically significant from the Anti-recommendation
+subset, and Table2 shows that DeepSurv’s recommenda-
+tionsincreasethemediansurvivaltimeofthepopulation.
+Figure6b demonstrates that RSF is unable to provide sig-
+nificant treatment recommendations, despite an increase
+in median survival times (see Table2). The results of this
+experiment demonstrate not only DeepSurv’s superior
+modeling capabilities but also validate DeepSurv’s abil-
+ityinprovidingpersonalizedtreatmentrecommendations
+on real clinical data. Moreover, we can train DeepSurv
+on survival data from one clinical study and transfer
+the learnings to provide personalized treatment recom-
+mendations to a different population of breast cancer
+patients.
+Conclusion
+Inconclusion,wedemonstratedthattheuseofdeeplearn-
+ing in survival analysis allows for: (i) higher performance
+due to the flexibility of the model, and (ii) effective treat-
+ment recommendations based on the predicted effect of
+treatment options on an individual’s risk. We validated
+that DeepSurv predicts patients’ risk mostly as well as
+or better than other linear and nonlinear survival meth-
+ods. We experimented on increasingly complex survival
+datasetsanddemonstratedthatDeepSurvcomputescom-
+plex and nonlinear features without a priori selection
+or domain expertise. We then demonstrated that Deep-
+Surv is superiorinpredicting personalizedtreatment rec-
+ommendations compared to the state-of-the-art survival
+method of random survival forests. We also released a
+PythonmodulethatimplementsDeepSurvandscriptsfor
+running reproducible experiments in Docker, see [34]f o r
+moredetails.
+Discussion
+The success of DeepSurv’s predictive, modeling,
+and recommending abilities paves the way for
+future research in deep neural networks and survival
+analysis. DeepSurv can lead to various extensions, such
+as the use of convolution neural networks to predict
+risk with medical imaging. With more research at scale,
+DeepSurv has the potential to supplement traditional
+survivalanalysismethodsandbecomeastandardmethod
+for medical practitioners to study and recommend
+personalizedtreatmentoptions.
+AppendixA
+Experimentaldetails
+We run all linear CPH regression, Kaplan-Meier esti-
+mations, c-index statistics, and log-rank tests using the
+Lifelines Python package. DeepSurv is implemented in
+Fig.6 Rotterdam&GermanBreastCancerStudyGroup(GBSG)SurvivalCurves.Kaplan-Meierestimatedsurvivalcurveswithconfidenceintervals
+(α = .05)forthepatientswhoweregiventhetreatmentconcordantwithamethod’srecommendedtreatment(Recommendation)andthesubset
+ofpatientswhowerenot(Anti-Recommendation).Weperformalog-ranktesttovalidatethesignificancebetweeneachsetofsurvivalcurves.
+aEffectofDeepSurv’sTreatmentRecommendations(GBSG), bEffectofRSF’sTreatmentRecommendations(GBSG)
+
+=== PDF PAGE 10 ===
+Katzmanetal. BMCMedicalResearchMethodology  (2018) 18:24 Page10of12
+Theano with the Python package Lasagne. We use the R
+package randomForestSRC to fit RSFs. All experiments
+are run using Docker containers such that the experi-
+ments are easily reproducible. We use the FloydHub base
+imagefortheDeepSurvdockercontainer.
+Thehyper-parametersofthenetworkinclude:thedepth
+and size of the network, learning rate,𝓁2 regularization
+coefficient, dropout rate, exponential learning rate decay
+constant , and momentum. We run the Random hyper-
+parameter optimization search as proposed in [23]u s i n g
+thePythonpackageOptunity.WeusetheSobolsolver[ 35,
+36] to sample each hyper-parameter from a predefined
+range and evaluate the performance of the configuration
+using k-means cross validation (k = 3). We then choose
+the configuration with the largest validation C-index to
+avoid models that overfit. The hyper-parameters we use
+in all experiments are summarized in the next “Model
+Hyper-parameters”section.
+ModelHyper-parameters
+As described in “Experimental details”s e c t i o n ,w et u n e
+DeepSurv’s hyper-parameters by running a random
+hyper-parameter search using the Python package Optu-
+nity. The table below summarizes the hyper-parameters
+weuseforeachexperiment’sDeepSurvnetwork.
+We applied inverse time decay to the learning rate at
+eachepoch:
+decayed_LR := LR
+1 +epoch ·lr_decay_rate. (10)
+AppendixB
+CPHrecommenderfunction
+Let each patient in the dataset have a set ofn features
+xn, in which one feature is a treatment variablex0 = τ.
+The CPH model estimates the log-risk function as a lin-
+ear combination of the patient’s featuresˆhβ(x) = βTx =
+β0τ + β1x1 + ... + βnxn. When we calculate the rec-
+ommender function for the CPH model, we show that
+the model returns a constant function independent of the
+patient’sfeatures:
+recij(x) = log
+( λ(t;x|τ = i)
+λ(t;x|τ = j)
+)
+= log
+( λ0(t) ·eβ0i+β1x1+...+βnxn
+λ0(t) ·eβ0j+β1x1+...+βnxn
+)
+= log
+(
+eβ0i+β1x1+...+βnxn−(β0j+β1x1+...+βnxn)
+)
+= β0i − β0j
+= β0(i −j).
+(11)
+The CPH will recommend all patients to choose the
+same treatment option based on whether the model
+calculates the weight β0 to be positive or negative.
+Thus, the CPH would not be providing personalized
+treatment recommendations. Instead, the CPH deter-
+mines whether the treatment is effective and, if so,
+then recommending it to all patients. In an exper-
+iment, when we calculate which patients took the
+CPH’s recommendation, the Recommendation and Anti-
+Recommendation subgroups will be equal to the control
+and treatment groups. Therefore, calculating treatment
+recommendations using the CPH provides little value
+to the experiments in terms of comparing the models’
+recommendations.
+AppendixC
+Simulateddatageneration
+Each patient’s baseline information x i sd r a w nf r o ma
+uniform distribution on [−1,1 )d. For datasets that also
+involve treatment, the patient’s treatment status τx is
+drawnfromaBernoullidistributionwith p = 0.5.
+The Cox proportional hazard model assumes that the
+baselinehazardfunction λ0(t)issharedacrossallpatients.
+The initial death time is generated according to an expo-
+nential random variable with a meanμ = 5, which we
+denote u ∼ Exp(5). The individual death time is then
+generatedby
+Table3 DeepSurv’sexperimentalhyper-parameters
+Hyper-parameter Simlinear Simnonlinear WHAS SUPPORT METABRIC Simtreatment GBSG
+Optimizer sgd sgd adam adam adam adam adam
+Activation SELU ReLU ReLU SELU SELU SELU SELU
+#Denselayers 1 3 2 1 1 1 1
+#Nodes/Layer 4 17 48 44 41 45 8
+Learningrate(LR) 2.922e −4 3.194e −4 0.067 0.047 0.010 0.026 0.154
+𝓁2 Reg 1.999 4.425 16.094 8.120 10.891 9.722 6.551
+Dropout 0.375 0.401 0.147 0.255 0.160 0.109 0.661
+LRdecay 3.579e−4 3.173e −4 6.494e −4 2.573e −3 4.169e −3 1.636e −45 .667e−3
+Momentum 0.906 0.936 0.863 0.859 0.844 0.845 0.887
+
+=== PDF PAGE 11 ===
+Katzmanetal. BMCMedicalResearchMethodology  (2018) 18:24 Page11of12
+T = u
+eh(x), whenthereisnotreatmentvariable,
+T = u
+eτxh(x), whenthereisatreatmentvariable.
+These times are then right censored at an end time to
+representtheendofatrial.Theendtime T0 ischosensuch
+that90percentofpeoplehaveanobserveddeathtime.
+Because we cannot observe anyT beyond the end time
+threshold,wedenotethefinalobservedoutcometime
+Z = min(T,T0).
+Abbreviations
+BMI:Body-mass-index;C-index:Concordance-index;CHF:Leftheartfailure
+complications;CPH:Coxproportionalhazardsmodel;GBSG:TheGerman
+breastcancerstudygroup;IHC4+C:Immunohistochemical4plusclinical;
+METABRIC:Moleculartaxonomyofbreastcancerinternationalconsortium;MI:
+Acutemyocardialinfraction;MIOR:OrderofMI;MSE:Meansquarederror;NN:
+Neuralnetwork;ReLU:Rectifiedlinearunit;RSF:Randomsurvivalforest;SELU:
+Scaledexponentiallinearunit;SUPPORT:Studytounderstandprognoses
+preferencesoutcomesandrisksoftreatment;WHAS:Theworcesterheart
+attackstudy
+Acknowledgements
+WeexpressourthankstoStevenMaforhiscomments.
+Funding
+ThisresearchwaspartiallyfundedbyaNationalInstitutesofHealthgrant
+[1R01HG008383-01A1toY.K.]andsupportedbyaNationalScience
+FoundationAward[DMS-1402254toA.C.].
+Availabilityofdataandmaterials
+ProjectName: DeepSurv
+Projecthomepage: https://github.com/jaredleekatzman/DeepSurv
+Archivedversion: https://doi.org/10.5281/zenodo.1134133
+Operatingsystem(s): Platformindependent
+Programminglanguage: Python
+Otherrequirements: Theano0.8.2orhigher,Lasagne0.2.dev1orhigher,and
+Lifelines0.9.2orhigher
+License:MIT
+Anyrestrictionstousebynon-academics: Licenceneeded
+Thedatathatsupportthefindingsofthisstudywerepublishedinearlier
+studiesbyothersandarealsoavailableonDeepSurv’sGitHub repository.
+Authors’contributions
+JLK,US,AC,JRB,andYKwereresponsibleforthedesignoftheproject.TJ
+helpedwithdataanalysisinconsultationwithJLKandYK.JLKwroteaninitial
+versionofthemanuscriptandincorporatedcommentsfromUS,AC,JRB,and
+YK.JLKwrotethesoftwareinconsultationwithUSandAC.Allauthorsread
+andapprovedthefinalmanuscript.
+Ethicsapprovalandconsenttoparticipate
+Notapplicable.
+Consentforpublication
+Notapplicable.
+Competinginterests
+Theauthorsdeclarethattheyhavenocompetinginterests.
+Publisher’sNote
+SpringerNatureremainsneutralwithregardtojurisdictionalclaimsin
+publishedmapsandinstitutionalaffiliations.
+Authordetails
+1DepartmentofComputerScience,YaleUniversity,51ProspectStreet,06511
+NewHaven,CT,USA. 2DepartmentofStatistics,YaleUniversity,24Hillhouse
+Avenue,06511NewHaven,CT,USA. 3AppliedMathematicsProgram,Yale
+University,51ProspectStreet,06511NewHaven,CT,USA. 4YaleSchoolof
+Medicine,333CedarStreet,06510NewHaven,CT,USA. 5CenterofOutcomes
+ResearchandEvaluation,Yale-NewHavenHospital,06511NewHaven,CT,
+USA.6InterdepartmentalPrograminComputationalBiologyand
+Bioinformatics,YaleUniversity,06511NewHaven,CT,USA. 7Departmentof
+PathologyandYaleCancerCenter,YaleUniversitySchoolofMedicine,06511
+NewHaven,CT,USA. 8DepartmentofMathematics,UniversityofCalifornia,
+SanDiego,92093LaJolla,CA,USA. 9FinalResearch,Herzliya,Israel.
+Received:3September2017 Accepted:7February2018
+References
+1. RWY, EAS, DJK,etal.Developmentandvalidationofapredictionrule
+forbenefitandharmofdualantiplatelettherapybeyond1yearafter
+percutaneouscoronaryintervention.JAMA.2016;315(16):1735–49.
+https://doi.org/10.1001/jama.2016.3775.
+2. RoystonP, AltmanDG.Externalvalidationofacoxprognosticmodel:
+principlesandmethods.BMCMedResMethodol.2013;13(1):1.
+3. BairE, TibshiraniR.Semi-supervisedmethodstopredictpatientsurvival
+fromgeneexpressiondata.PLoSBiol.2004;2(4):108.
+4. ChengW-Y, YangT-HO, AnastassiouD.Developmentofaprognostic
+modelforbreastcancersurvivalinanopenchallengeenvironment.Sci
+TotalEnviron.2013;5(181):181–5018150.
+5. CoxDR.In: KotzS, JohnsonNL,editors.RegressionModelsand
+Life-Tables.NewYork:Springer;1992,pp.527–41. https://doi.org/10.
+1007/978-1-4612-4380-9 .
+6. LiestblK, AndersenPK, AndersenU.Survivalanalysisandneuralnets.Stat
+Med.1994;13(12):1189–200.
+7. StreetWN.Aneuralnetworkmodelforprognosticprediction.In:
+KaufmannM,editor.ProceedingsoftheFifteenthInternational
+ConferenceonMachineLearning.SanFrancisco;1998. p.540–46.
+8. JerezJM, FrancoL, AlbaE, Llombart-CussacA, LluchA, RibellesN,
+MunárrizB, MartínM.Improvementofbreastcancerrelapsepredictionin
+highriskintervalsusingartificialneuralnetworks.BreastCancerResTreat.
+2005;94(3):265–72.https://doi.org/10.1007/s10549-005-9013-y.
+9. BiganzoliE, BoracchiP, MarianiL, MarubiniE.Feedforwardneural
+networksfortheanalysisofcensoredsurvivaldata:apartiallogistic
+regressionapproach.StatMed.1998;17(10):1169–86.
+10. FaraggiD, SimonR.Aneuralnetworkmodelforsurvivaldata.StatMed.
+1995;14(1):73–82.
+11. SargentDJ.Comparisonofartificialneuralnetworkswithotherstatistical
+approaches.Cancer.2001;91(S8):1636–42.
+12. XiangA, LapuertaP, RyutovA, BuckleyJ, AzenS.Comparisonofthe
+performanceofneuralnetworkmethodsandcoxregressionforcensored
+survivaldata.ComputStatDataAnal.2000;34(2):243–57.
+13. MarianiL, CoradiniD, BiganzoliE, BoracchiP, MarubiniE, PilottiS,
+SalvadoriB, SilvestriniR, VeronesiU, ZucaliR,etal.Prognosticfactorsfor
+metachronouscontralateralbreastcancer:acomparisonofthelinearcox
+regressionmodelanditsartificialneuralnetworkextension.BreastCancer
+ResTreat.1997;44(2):167–78.
+14. TherneauT, GrambschPM.ModelingSurvivalData:ExtendingtheCox
+Model.NewYork:Springer;2000.
+15. IshwaranH, KogalurUB.Randomsurvivalforests for r. R News.2007;7(2):25–31.
+16. IshwaranH, KogalurUB, BlackstoneEH, LauerMS.Randomsurvival
+forests.AnnApplStatist.2008;2(3):841–60.
+17. RanganathR, PerotteA, ElhadadN, BleiD.Deepsurvivalanalysis.In:
+Doshi-VelezF, FacklerJ, KaleD, WallaceB, WeinsJ,editors.Proceedings
+ofthe1stMachineLearningforHealthcareConference.Proceedingsof
+MachineLearningResearch,vol56.NortheasternUniversity,Boston,MA,
+USA:PMLR;2016. p.101–14. http://proceedings.mlr.press/v56/
+Ranganath16.html.
+18. SrivastavaN, HintonG, KrizhevskyA, SutskeverI, SalakhutdinovR.
+Dropout:Asimplewaytopreventneuralnetworksfromoverfitting.
+JMachLearnRes.2014;15(1):1929–58.
+19. KlambauerG, UnterthinerT, MayrA, HochreiterS.Self-normalizing
+neuralnetworks.In:AdvancesinNeuralInformationProcessingSystems;
+2017. p.972–81.arXivpreprint. 1706.02515.
+20. KingmaD, BaJ.Adam:Amethodforstochasticoptimization.
+Proceedingsofthe3rdInternationalConferenceonLearning
+Representations(ICLR2015).2015.arXivpreprintarXiv:1412.6980. https://
+dare.uva.nl/search?identifier=a20791d3-1aff-464a-8544-268383c33a75 .
+
+=== PDF PAGE 12 ===
+Katzmanetal. BMCMedicalResearchMethodology  (2018) 18:24 Page12of12
+21. NesterovY.Gradientmethodsforminimizingcompositefunctions.Math
+Program.2013;140(1):125–61.
+22. SeniorA, HeigoldG, RanzatoM, YangK.Anempiricalstudyoflearning
+ratesindeepneuralnetworksforspeechrecognition.In:Acoustics,
+SpeechandSignalProcessing(ICASSP),2013IEEEInternational
+ConferenceonAcoustics,SpeechandSignalProcessing.IEEE;2013. p.
+6724–8.
+23. BergstraJ, BengioY.Randomsearchforhyper-parameteroptimization.
+JMachLearnRes.2012;13(1):281–305.
+24. HarrellFE, LeeKL, CaliffRM, PryorDB, RosatiRA.Regressionmodeling
+strategiesforimprovedprognosticprediction.StatMed.1984;3(2):143–52.
+25. EfronB, TibshiraniRJ.AnIntroductiontotheBootstrap.NewYork:
+Chapman&Hall;1993.
+26. AustinPC.Generatingsurvivaltimestosimulatecoxproportionalhazards
+modelswithtime-varyingcovariates.StatMed.2012;31(29):3946–58.
+27. HosmerDW, LemeshowS, MayS.AppliedSurvivalAnalysis:Regression
+ModelingofTimetoEventData.2nded.NewYork:Wiley-Interscience;
+2008.
+28. KnausWA, HarrellFE, LynnJ, GoldmanL, PhillipsRS, ConnorsAF,
+DawsonNV, FulkersonWJ, CaliffRM, DesbiensN,etal.Thesupport
+prognosticmodel:objectiveestimatesofsurvivalforseriouslyill
+hospitalizedadults.AnnInternMed.1995;122(3):191–203.
+29. CurtisC, ShahSP, ChinS-F, TurashviliG, RuedaOM, DunningMJ,
+SpeedD, LynchAG, SamarajiwaS, YuanY,etal.Thegenomicand
+transcriptomicarchitectureof2,000breasttumoursrevealsnovel
+subgroups.Nature.2012;486(7403):346–52.
+30. LakhanpalR, SestakI, ShadboltB, BennettGM, BrownM, PhillipsT,
+ZhangY, BullmanA, RezoA.Ihc4scoreplusclinicaltreatmentscore
+predictslocoregionalrecurrenceinearlybreastcancer.TheBreast.
+2016;29:147–52.
+31. FoekensJA, PetersHA, LookMP, PortengenH, SchmittM, KramerMD,
+BrünnerN, JänickeF, Meijer-vanGelderME, Henzen-LogmansSC,etal.
+Theurokinasesystemofplasminogenactivationandprognosisin2780
+breastcancerpatients.CancerRes.2000;60(3):636–43.
+32. SchumacherM, BastertG, BojarH, HuebnerK, OlschewskiM,
+SauerbreiW, SchmoorC, BeyerleC, NeumannR, RauscheckerH.
+Randomized2x2trialevaluatinghormonaltreatmentandtheduration
+ofchemotherapyinnode-positivebreastcancerpatients.germanbreast
+cancerstudygroup.JClinOncol.1994;12(10):2086–93.
+33. AltmanDG, RoystonP.Whatdowemeanbyvalidatingaprognostic
+model?StatMed.2000;19(4):453–73.
+34. KatzmanJL.DeepSurv.GitHub.2017. https://doi.org/10.5281/zenodo.
+1134133.https://github.com/jaredleekatzman/DeepSurv.
+35. SobolIM.Uniformlydistributedsequenceswithanadditionaluniform
+property.USSRComputMathMathPhys.1976;16(5):236–42.
+36. FoxBL.Algorithm647:Implementationandrelativeefficiencyof
+quasirandomsequencegenerators.ACMTransMathSoftw.1986;12(4):
+362–76.https://doi.org/10.1145/22721.356187.
+•  We accept pre-submission inquiries 
+  Our selector tool helps you to ﬁnd the most relevant journal
+  We provide round the clock customer support 
+  Convenient online submission
+  Thorough peer review
+  Inclusion in PubMed and all major indexing services 
+  Maximum visibility for your research
+Submit your manuscript at
+www.biomedcentral.com/submit
+Submit your next manuscript to BioMed Central 
+and we will help you at every step:

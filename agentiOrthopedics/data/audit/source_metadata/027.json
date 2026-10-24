@@ -1,0 +1,812 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          30
+        ]
+      ],
+      "date-time": "2026-04-30T17:12:24Z",
+      "timestamp": 1777569144689,
+      "version": "3.51.4"
+    },
+    "reference-count": 62,
+    "publisher": "MDPI AG",
+    "issue": "10",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              10,
+              12
+            ]
+          ],
+          "date-time": "2022-10-12T00:00:00Z",
+          "timestamp": 1665532800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Italian Ministry of Health—Ricerca Corrente"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "JPM"
+    ],
+    "abstract": "<jats:p>The rise of personalized medicine and its remarkable advancements have revealed new requirements for the availability of appropriate medical decision-making models. Computer science is an area that plays an essential role in the field of personalized medicine, where one of the goals is to provide algorithms and tools to extrapolate knowledge and improve the decision-support process. The minimum clinically important difference (MCID) is the smallest change in PROM scores that patients perceive as meaningful. Treatment that does not achieve the minimum level of improvement is considered inappropriate as well as a potential waste of resources. Using the MCID threshold to identify patients who fail to achieve the minimum change in PROM that results in a meaningful outcome may aid in pre-surgical shared decision-making. The decision tree algorithm is a method for extracting valuable information and providing further meaningful information to the domain expert that supports the decision-making. In the present study, different tools based on machine learning were developed. On the one hand, we compared three XGBoost models to predict the non-achievement of the MCID at six months post-operation in the SF-12 physical score. The prediction score threshold was set to 0.75 to provide three decision-making areas on the basis of the high confidence (HC) intervals; the minority class was re-balanced by weighting the positive class to penalize the loss function (XGBoost cost-sensitive), oversampling the minority class (XGBoost with SMOTE), and re-sampling the negative class (XGBoost with undersampling). On the other hand, we modeled the data through a decision tree (assessment tree), based on different complexity levels, to identify the hidden pattern and to provide a new way to understand possible relationships between the gathered features and the several outcomes. The results showed that all the proposed models were effective as binary classifiers, as they showed moderate predictive performance both regarding the minority or positive class (i.e., our targeted patients, those who will not benefit from surgery) and the negative class. The decision tree visualization can be exploited during the patient assessment status to better understand if those patients will benefit or not from the medical intervention. Both of these tools can come in handy for increasing knowledge about the patient’s psychophysical state and for creating an increasingly specialized assessment of the individual patient.</jats:p>",
+    "DOI": "10.3390/jpm12101706",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          12
+        ]
+      ],
+      "date-time": "2022-10-12T20:53:29Z",
+      "timestamp": 1665608009000
+    },
+    "page": "1706",
+    "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 16,
+    "title": [
+      "Application of Machine Learning to Improve Appropriateness of Treatment in an Orthopaedic Setting of Personalized Medicine"
+    ],
+    "prefix": "10.3390",
+    "volume": "12",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-0522-2804",
+        "authenticated-orcid": false,
+        "given": "Frida",
+        "family": "Milella",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "IRCCS Istituto Ortopedico Galeazzi, Via Cristina Belgioioso 173, 20157 Milano, Italy"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Lorenzo",
+        "family": "Famiglini",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "DISCo, Dipartimento di Informatica, Sistemistica e Comunicazione, University of Milano–Bicocca, Viale Sarca 336, 20126 Milano, Italy"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Giuseppe",
+        "family": "Banfi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "IRCCS Istituto Ortopedico Galeazzi, Via Cristina Belgioioso 173, 20157 Milano, Italy"
+          },
+          {
+            "name": "Faculty of Medicine and Surgery, Università Vita-Salute San Raffaele, 20132 Milano, Italy"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4065-3415",
+        "authenticated-orcid": false,
+        "given": "Federico",
+        "family": "Cabitza",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "IRCCS Istituto Ortopedico Galeazzi, Via Cristina Belgioioso 173, 20157 Milano, Italy"
+          },
+          {
+            "name": "DISCo, Dipartimento di Informatica, Sistemistica e Comunicazione, University of Milano–Bicocca, Viale Sarca 336, 20126 Milano, Italy"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "1968",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          12
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "100561",
+        "DOI": "10.1016/j.imu.2021.100561",
+        "article-title": "Medical decision-making based on the exploration of a personalized medicine dataset",
+        "volume": "23",
+        "author": "Kadi",
+        "year": "2021",
+        "journal-title": "Inform. Med. Unlocked"
+      },
+      {
+        "key": "ref_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "45",
+        "DOI": "10.1007/s10728-017-0347-5",
+        "article-title": "Person Centered Care and Personalized Medicine: Irreconcilable Opposites or Potential Companions?",
+        "volume": "27",
+        "author": "Sandman",
+        "year": "2019",
+        "journal-title": "Health Care Anal."
+      },
+      {
+        "key": "ref_3",
+        "doi-asserted-by": "crossref",
+        "first-page": "226",
+        "DOI": "10.3389/fmed.2017.00226",
+        "article-title": "Integrating patient perspectives into personalized medicine in idiopathic pulmonary fibrosis",
+        "volume": "4",
+        "author": "Moor",
+        "year": "2017",
+        "journal-title": "Front. Med."
+      },
+      {
+        "key": "ref_4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Llamocca, P., López, V., and Santos, M. (2021). Personalized characterization of emotional states in patients with bipolar disorder. Mathematics, 9.",
+        "DOI": "10.3390/math9111174"
+      },
+      {
+        "key": "ref_5",
+        "doi-asserted-by": "crossref",
+        "first-page": "808",
+        "DOI": "10.1002/jor.25125",
+        "article-title": "Development of machine learning algorithms to predict achievement of minimal clinically important difference for the KOOS-PS following total knee arthroplasty",
+        "volume": "40",
+        "author": "Katakam",
+        "year": "2021",
+        "journal-title": "J. Orthop. Res."
+      },
+      {
+        "key": "ref_6",
+        "doi-asserted-by": "crossref",
+        "first-page": "133",
+        "DOI": "10.1007/s10198-019-01070-1",
+        "article-title": "Is the trend of increasing use of patient-reported outcome measures in medical device studies the sign of shift towards value-based purchasing in Europe?",
+        "volume": "20",
+        "author": "Weszl",
+        "year": "2019",
+        "journal-title": "Eur. J. Health Econ."
+      },
+      {
+        "key": "ref_7",
+        "doi-asserted-by": "crossref",
+        "first-page": "432",
+        "DOI": "10.1001/jamasurg.2019.4526",
+        "article-title": "Practical guide to assessment of patient-reported outcomes",
+        "volume": "155",
+        "author": "Davidson",
+        "year": "2020",
+        "journal-title": "JAMA Surg."
+      },
+      {
+        "key": "ref_8",
+        "unstructured": "Goh, G.S., Tarabichi, S., Baker, C.M., Qadiri, Q.S., and Austin, M.S. (2022). Should We Aim to Help Patients “Feel Better” or “Feel Good” After Total Hip Arthroplasty? Determining Factors Affecting the Achievement of the Minimal Clinically Important Difference and Patient Acceptable Symptom State. J. Arthroplast., S0883-5403(22)00754-9."
+      },
+      {
+        "key": "ref_9",
+        "doi-asserted-by": "crossref",
+        "first-page": "945",
+        "DOI": "10.1097/CORR.0000000000000741",
+        "article-title": "Value-based Health Care: Moving Beyond “Minimum Clinically Important Difference” to a Tiered System of Evaluating Successful Clinical Outcomes",
+        "volume": "477",
+        "author": "Bernstein",
+        "year": "2019",
+        "journal-title": "Clin. Orthop. Relat. Res."
+      },
+      {
+        "key": "ref_10",
+        "doi-asserted-by": "crossref",
+        "first-page": "1090",
+        "DOI": "10.1016/j.apmr.2019.12.008",
+        "article-title": "A standard method for determining the minimal clinically important difference for rehabilitation measures",
+        "volume": "101",
+        "author": "Malec",
+        "year": "2020",
+        "journal-title": "Arch. Phys. Med. Rehabil."
+      },
+      {
+        "key": "ref_11",
+        "doi-asserted-by": "crossref",
+        "first-page": "44",
+        "DOI": "10.1016/j.jclinepi.2019.04.017",
+        "article-title": "Minimal clinically important difference of commonly used hip-, knee-, foot-, and ankle-specific questionnaires: A systematic review",
+        "volume": "113",
+        "year": "2019",
+        "journal-title": "J. Clin. Epidemiol."
+      },
+      {
+        "key": "ref_12",
+        "doi-asserted-by": "crossref",
+        "first-page": "1267",
+        "DOI": "10.1097/CORR.0000000000000687",
+        "article-title": "Can Machine Learning Algorithms Predict Which Patients Will Achieve Minimally Clinically Important Differences From Total Joint Arthroplasty?",
+        "volume": "477",
+        "author": "Fontana",
+        "year": "2019",
+        "journal-title": "Clin. Orthop. Relat. Res."
+      },
+      {
+        "key": "ref_13",
+        "doi-asserted-by": "crossref",
+        "first-page": "71",
+        "DOI": "10.1302/2046-3758.15.2000065",
+        "article-title": "Minimal clinically important differences in health-related quality of life after total hip or knee replacement: A systematic review",
+        "volume": "1",
+        "author": "Keurentjes",
+        "year": "2012",
+        "journal-title": "Bone Jt. Res."
+      },
+      {
+        "key": "ref_14",
+        "first-page": "6",
+        "article-title": "Trends in Interactive Knowledge Discovery for Personalized Medicine: Cognitive Science meets Machine Learning",
+        "volume": "15",
+        "author": "Holzinger",
+        "year": "2014",
+        "journal-title": "IEEE Intell. Inform. Bull."
+      },
+      {
+        "key": "ref_15",
+        "doi-asserted-by": "crossref",
+        "first-page": "391",
+        "DOI": "10.1111/nep.13843",
+        "article-title": "Patient-reported outcome measures (PROMs): Making sense of individual PROM scores and changes in PROM scores over time",
+        "volume": "26",
+        "author": "Terwee",
+        "year": "2021",
+        "journal-title": "Nephrology"
+      },
+      {
+        "key": "ref_16",
+        "doi-asserted-by": "crossref",
+        "first-page": "650",
+        "DOI": "10.1037/0033-295X.103.4.650",
+        "article-title": "Reasoning the fast and frugal way: Models of bounded rationality",
+        "volume": "103",
+        "author": "Gigerenzer",
+        "year": "1996",
+        "journal-title": "Psychol. Rev."
+      },
+      {
+        "key": "ref_17",
+        "doi-asserted-by": "crossref",
+        "first-page": "512",
+        "DOI": "10.1016/j.wneu.2020.04.022",
+        "article-title": "Use of machine learning and artificial intelligence to drive personalized medicine approaches for spine care",
+        "volume": "140",
+        "author": "Khan",
+        "year": "2020",
+        "journal-title": "World Neurosurg."
+      },
+      {
+        "key": "ref_18",
+        "doi-asserted-by": "crossref",
+        "first-page": "853",
+        "DOI": "10.1016/j.spinee.2018.11.009",
+        "article-title": "Deep learning-based preoperative predictive analytics for patient-reported outcomes following lumbar discectomy: Feasibility of center-specific modeling",
+        "volume": "19",
+        "author": "Staartjes",
+        "year": "2019",
+        "journal-title": "Spine J."
+      },
+      {
+        "key": "ref_19",
+        "doi-asserted-by": "crossref",
+        "first-page": "866",
+        "DOI": "10.1177/2192568220967643",
+        "article-title": "Applied machine learning for spine surgeons: Predicting outcome for patients undergoing treatment for lumbar disc herniation using PRO data",
+        "volume": "12",
+        "author": "Pedersen",
+        "year": "2022",
+        "journal-title": "Global Spine J."
+      },
+      {
+        "key": "ref_20",
+        "doi-asserted-by": "crossref",
+        "first-page": "2624",
+        "DOI": "10.1007/s00167-021-06642-4",
+        "article-title": "Machine learning algorithms do not outperform preoperative thresholds in predicting clinically meaningful improvements after total knee arthroplasty",
+        "volume": "30",
+        "author": "Zhang",
+        "year": "2022",
+        "journal-title": "Knee Surg. Sport. Traumatol. Arthrosc."
+      },
+      {
+        "key": "ref_21",
+        "doi-asserted-by": "crossref",
+        "first-page": "2119",
+        "DOI": "10.1016/j.arth.2020.03.019",
+        "article-title": "Development of machine learning algorithms to predict clinically meaningful improvement for the patient-reported health state after total hip arthroplasty",
+        "volume": "35",
+        "author": "Kunze",
+        "year": "2020",
+        "journal-title": "J. Arthroplast."
+      },
+      {
+        "key": "ref_22",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1186/s12911-018-0731-6",
+        "article-title": "Predicting patient-reported outcomes following hip and knee replacement surgery using supervised machine learning",
+        "volume": "19",
+        "author": "Huber",
+        "year": "2019",
+        "journal-title": "BMC Med. Inform. Decis. Mak."
+      },
+      {
+        "key": "ref_23",
+        "doi-asserted-by": "crossref",
+        "first-page": "112",
+        "DOI": "10.1016/j.arth.2020.07.026",
+        "article-title": "Can Machine Learning Methods Produce Accurate and Easy-to-Use Preoperative Prediction Models of One-Year Improvements in Pain and Functioning After Knee Arthroplasty?",
+        "volume": "36",
+        "author": "Harris",
+        "year": "2020",
+        "journal-title": "J. Arthroplast."
+      },
+      {
+        "key": "ref_24",
+        "first-page": "130",
+        "article-title": "Decision tree methods: Applications for classification and prediction",
+        "volume": "27",
+        "author": "Song",
+        "year": "2015",
+        "journal-title": "Shanghai Arch. Psychiatry"
+      },
+      {
+        "key": "ref_25",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chen, T., and Guestrin, C. (2016, January 13–17). Xgboost: A scalable tree boosting system. Proceedings of the 22nd acm sigkdd international conference on knowledge discovery and data mining, California, CA, USA.",
+        "DOI": "10.1145/2939672.2939785"
+      },
+      {
+        "key": "ref_26",
+        "first-page": "1937",
+        "article-title": "A comparative analysis of gradient boosting algorithms",
+        "volume": "54",
+        "year": "2020",
+        "journal-title": "Artif. Intell. Rev."
+      },
+      {
+        "key": "ref_27",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mardini, M., Bai, C., Wanigatunga, A., Saldana, S., Casanova, R., and Manini, T. (2021). Age Differences in Estimating Physical Activity by Wrist Accelerometry Using Machine Learning. Sensors, 21.",
+        "DOI": "10.3390/s21103352"
+      },
+      {
+        "key": "ref_28",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang, J., and Gribskov, M. (2019). IRESpy: An XGBoost model for prediction of internal ribosome entry sites. BMC Bioinform., 20.",
+        "DOI": "10.1186/s12859-019-2999-7"
+      },
+      {
+        "key": "ref_29",
+        "first-page": "651",
+        "article-title": "Experimenting XGBoost algorithm for prediction and classification of different datasets",
+        "volume": "9",
+        "author": "Ramraj",
+        "year": "2016",
+        "journal-title": "Int. J. Control. Theory Appl."
+      },
+      {
+        "key": "ref_30",
+        "doi-asserted-by": "crossref",
+        "first-page": "1158",
+        "DOI": "10.2215/CJN.17311120",
+        "article-title": "Predictive Approaches for Acute Dialysis Requirement and Death in COVID-19",
+        "volume": "16",
+        "author": "Vaid",
+        "year": "2021",
+        "journal-title": "Clin. J. Am. Soc. Nephrol."
+      },
+      {
+        "key": "ref_31",
+        "doi-asserted-by": "crossref",
+        "first-page": "819267",
+        "DOI": "10.3389/fcimb.2022.819267",
+        "article-title": "A Comparison of XGBoost, Random Forest, and Nomograph for the Prediction of Disease Severity in Patients With COVID-19 Pneumonia: Implications of Cytokine and Immune Cell Profile",
+        "volume": "12",
+        "author": "Hong",
+        "year": "2022",
+        "journal-title": "Front. Cell. Infect. Microbiol."
+      },
+      {
+        "key": "ref_32",
+        "doi-asserted-by": "crossref",
+        "first-page": "1971",
+        "DOI": "10.1007/s00521-019-04378-4",
+        "article-title": "Research on orthopedic auxiliary classification and prediction model based on XGBoost algorithm",
+        "volume": "32",
+        "author": "Li",
+        "year": "2019",
+        "journal-title": "Neural Comput. Appl."
+      },
+      {
+        "key": "ref_33",
+        "doi-asserted-by": "crossref",
+        "first-page": "2473011421S00122",
+        "DOI": "10.1177/2473011421S00122",
+        "article-title": "Development of a Machine Learning Algorithm for Prediction of Complications after Ankle Arthrodesis",
+        "volume": "7",
+        "author": "Bugarin",
+        "year": "2022",
+        "journal-title": "Foot Ankle Orthop."
+      },
+      {
+        "key": "ref_34",
+        "doi-asserted-by": "crossref",
+        "first-page": "541",
+        "DOI": "10.1016/j.spinee.2007.01.008",
+        "article-title": "Understanding the minimum clinically important difference: A review of concepts and methods",
+        "volume": "7",
+        "author": "Copay",
+        "year": "2007",
+        "journal-title": "Spine J."
+      },
+      {
+        "key": "ref_35",
+        "first-page": "26",
+        "article-title": "Hyperparameter optimization for machine learning models based on Bayesian optimization",
+        "volume": "17",
+        "author": "Wu",
+        "year": "2019",
+        "journal-title": "J. Electron. Sci. Technol."
+      },
+      {
+        "key": "ref_36",
+        "doi-asserted-by": "crossref",
+        "first-page": "20200026",
+        "DOI": "10.1259/bjr.20200026",
+        "article-title": "Comparison of machine learning methods for prediction of osteoradionecrosis incidence in patients with head and neck cancer",
+        "volume": "94",
+        "author": "Patel",
+        "year": "2021",
+        "journal-title": "Br. J. Radiol."
+      },
+      {
+        "key": "ref_37",
+        "doi-asserted-by": "crossref",
+        "first-page": "115222",
+        "DOI": "10.1016/j.eswa.2021.115222",
+        "article-title": "Nested cross-validation when selecting classifiers is overzealous for most practical applications",
+        "volume": "182",
+        "author": "Wainer",
+        "year": "2021",
+        "journal-title": "Expert Syst. Appl."
+      },
+      {
+        "key": "ref_38",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Rajpal, H., Sas, M., Joakim, R., Lockwood, C., Peters, N.S., and Falkenberg, M. (2020, January 13–16). Interpretable XGBoost Based Classification of 12-lead ECGs Applying Information Theory Measures From Neuroscience. Proceedings of the 2020 Computing in Cardiology, Rimini, Italy.",
+        "DOI": "10.22489/CinC.2020.185"
+      },
+      {
+        "key": "ref_39",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tasci, E., Zhuge, Y., Camphausen, K., and Krauze, A.V. (2022). Bias and Class Imbalance in Oncologic Data—Towards Inclusive and Transferrable AI in Large Scale Oncology Data Sets. Cancers, 14.",
+        "DOI": "10.3390/cancers14122897"
+      },
+      {
+        "key": "ref_40",
+        "doi-asserted-by": "crossref",
+        "first-page": "321",
+        "DOI": "10.1613/jair.953",
+        "article-title": "SMOTE: Synthetic Minority Over-sampling Technique",
+        "volume": "16",
+        "author": "Chawla",
+        "year": "2002",
+        "journal-title": "J. Artif. Intell. Res."
+      },
+      {
+        "key": "ref_41",
+        "first-page": "188",
+        "article-title": "Building models for predicting mortality after myocardial infarction in conditions of unbalanced classes, including the influence of weather conditions",
+        "volume": "2790",
+        "author": "Kashirina",
+        "year": "2020",
+        "journal-title": "CEUR Workshop Proc."
+      },
+      {
+        "key": "ref_42",
+        "first-page": "29",
+        "article-title": "Comparison of Two Main Approaches for Handling Imbalanced Data in Churn Prediction Problem",
+        "volume": "12",
+        "author": "Nguyen",
+        "year": "2021",
+        "journal-title": "J. Adv. Inf. Technol."
+      },
+      {
+        "key": "ref_43",
+        "unstructured": "Akarte, M.M., and Hemachandra, N. (2018, January 16–19). Predictive maintenance of air pressure system using boosting trees: A machine learning approach. Proceedings of the ORSI, Mumbai, India."
+      },
+      {
+        "key": "ref_44",
+        "doi-asserted-by": "crossref",
+        "first-page": "012027",
+        "DOI": "10.1088/1742-6596/1714/1/012027",
+        "article-title": "Predictive programmatic re-targeting to improve website conversion rates",
+        "volume": "1714",
+        "author": "Prasad",
+        "year": "2021",
+        "journal-title": "J. Phys. Conf. Ser."
+      },
+      {
+        "key": "ref_45",
+        "doi-asserted-by": "crossref",
+        "first-page": "100690",
+        "DOI": "10.1016/j.imu.2021.100690",
+        "article-title": "Performance analysis of cost-sensitive learning methods with application to imbalanced medical data",
+        "volume": "25",
+        "author": "Mienye",
+        "year": "2021",
+        "journal-title": "Inform. Med. Unlocked"
+      },
+      {
+        "key": "ref_46",
+        "unstructured": "Grandini, M., Bagli, E., and Visani, G. (2020). Metrics for multi-class classification: An overview. arXiv."
+      },
+      {
+        "key": "ref_47",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Keilwagen, J., Grosse, I., and Grau, J. (2014). Area under Precision-Recall Curves for Weighted and Unweighted Data. PLoS ONE, 9.",
+        "DOI": "10.1371/journal.pone.0092209"
+      },
+      {
+        "key": "ref_48",
+        "first-page": "1752",
+        "article-title": "Stochastic optimization of areas under precision-recall curves with provable convergence",
+        "volume": "34",
+        "author": "Qi",
+        "year": "2021",
+        "journal-title": "Adv. Neural Inf. Process. Syst."
+      },
+      {
+        "key": "ref_49",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cabitza, F., Campagner, A., and Famiglini, L. (2022). Global Interpretable Calibration Index, a New Metric to Estimate Machine Learning Models’ Calibration. International Cross-Domain Conference for Machine Learning and Knowledge Extraction, Springer.",
+        "DOI": "10.1007/978-3-031-14463-9_6"
+      },
+      {
+        "key": "ref_50",
+        "doi-asserted-by": "crossref",
+        "first-page": "602",
+        "DOI": "10.1093/jamiaopen/ooaa058",
+        "article-title": "Modeling physician variability to prioritize relevant medical record information",
+        "volume": "3",
+        "author": "Tajgardoon",
+        "year": "2020",
+        "journal-title": "JAMIA Open"
+      },
+      {
+        "key": "ref_51",
+        "unstructured": "Urbanowicz, R.J., Suri, P., Cui, Y., Moore, J.H., Ruth, K., Stolzenberg-Solomon, R., and Lynch, S.M. (2020). A Rigorous Machine Learning Analysis Pipeline for Biomedical Binary Classification: Application in Pancreatic Cancer Nested Case-control Studies with Implications for Bias Assessments. arXiv."
+      },
+      {
+        "key": "ref_52",
+        "unstructured": "Hay, D.C. (1996). Data Model Patterns: Conventions of Thought, Dorset House."
+      },
+      {
+        "key": "ref_53",
+        "doi-asserted-by": "crossref",
+        "first-page": "5",
+        "DOI": "10.1016/S1386-5056(01)00167-8",
+        "article-title": "Knowledge management in healthcare: Towards ‘knowledge-driven’ decision-support services",
+        "volume": "63",
+        "author": "Abidi",
+        "year": "2001",
+        "journal-title": "Int. J. Med. Inform."
+      },
+      {
+        "key": "ref_54",
+        "doi-asserted-by": "crossref",
+        "first-page": "114",
+        "DOI": "10.1109/TSMCC.2003.809869",
+        "article-title": "Pattern discovery: A data driven approach to decision support",
+        "volume": "33",
+        "author": "Wong",
+        "year": "2003",
+        "journal-title": "IEEE Trans. Syst. Man Cybern."
+      },
+      {
+        "key": "ref_55",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wallace, B.C., Small, K., Brodley, C.E., and Trikalinos, T. (2011, January 11–14). Class imbalance, redux. Proceedings of the 2011 IEEE 11th International Conference on Data Mining, Vancouver, BC, Canada.",
+        "DOI": "10.1109/ICDM.2011.33"
+      },
+      {
+        "key": "ref_56",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1080/095281300146272",
+        "article-title": "Distribution-balanced stratified cross-validation for accuracy estimation",
+        "volume": "12",
+        "author": "Zeng",
+        "year": "2000",
+        "journal-title": "J. Exp. Theor. Artif. Intell."
+      },
+      {
+        "key": "ref_57",
+        "doi-asserted-by": "crossref",
+        "first-page": "556",
+        "DOI": "10.1007/s00268-006-0305-0",
+        "article-title": "Postoperative Complications in Obese and Nonobese Patients",
+        "volume": "31",
+        "author": "Bamgbade",
+        "year": "2006",
+        "journal-title": "World J. Surg."
+      },
+      {
+        "key": "ref_58",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tjeertes, E.E., Hoeks, S.S., Beks, S.S., Valentijn, T.T., Hoofwijk, A.G., and Stolker, R.J.R. (2015). Obesity—A risk factor for postoperative complications in general surgery?. BMC Anesthesiol., 15.",
+        "DOI": "10.1186/s12871-015-0096-7"
+      },
+      {
+        "key": "ref_59",
+        "doi-asserted-by": "crossref",
+        "first-page": "S91",
+        "DOI": "10.1016/j.otsr.2013.11.003",
+        "article-title": "Obesity in orthopedics and trauma surgery",
+        "volume": "100",
+        "author": "Parratte",
+        "year": "2014",
+        "journal-title": "Orthop. Traumatol. Surg. Res."
+      },
+      {
+        "key": "ref_60",
+        "doi-asserted-by": "crossref",
+        "first-page": "15",
+        "DOI": "10.1097/BTO.0000000000000412",
+        "article-title": "Perioperative Nutrition Care of Orthopedic Surgery Patient",
+        "volume": "35",
+        "author": "Williams",
+        "year": "2019",
+        "journal-title": "Tech. Orthop."
+      },
+      {
+        "key": "ref_61",
+        "doi-asserted-by": "crossref",
+        "first-page": "416",
+        "DOI": "10.1139/gen-2020-0131",
+        "article-title": "Machine learning for precision medicine",
+        "volume": "64",
+        "author": "MacEachern",
+        "year": "2021",
+        "journal-title": "Genome"
+      },
+      {
+        "key": "ref_62",
+        "unstructured": "Cabitza, F., Campagner, A., Del Zotti, F., and Sternini, A.R.A.F. (2020, January 21–23). All you need is higher accuracy? On the quest for minimum acceptable accuracy for medical artificial intelligence. Proceedings of the e-Health Procedings of the 12th International Conference on e-Health, Online."
+      }
+    ],
+    "container-title": [
+      "Journal of Personalized Medicine"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.mdpi.com/2075-4426/12/10/1706/pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          11
+        ]
+      ],
+      "date-time": "2025-10-11T00:52:54Z",
+      "timestamp": 1760143974000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.mdpi.com/2075-4426/12/10/1706"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          12
+        ]
+      ]
+    },
+    "references-count": 62,
+    "journal-issue": {
+      "issue": "10",
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            10
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "jpm12101706"
+    ],
+    "URL": "https://doi.org/10.3390/jpm12101706",
+    "relation": {},
+    "ISSN": [
+      "2075-4426"
+    ],
+    "issn-type": [
+      {
+        "value": "2075-4426",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          12
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,930 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          7
+        ]
+      ],
+      "date-time": "2026-10-07T21:40:01Z",
+      "timestamp": 1791409201920,
+      "version": "4.3.3"
+    },
+    "reference-count": 32,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              31
+            ]
+          ],
+          "date-time": "2023-03-31T00:00:00Z",
+          "timestamp": 1680220800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              31
+            ]
+          ],
+          "date-time": "2023-03-31T00:00:00Z",
+          "timestamp": 1680220800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01-CA233487"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01-CA233487"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01-CA233487"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01-CA233487"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01-CA233487"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01-CA233487"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01-CA233487"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01-CA233487"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01-CA233487"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01-CA233487"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01-CA233487"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01-CA233487"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01-CA233487"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01-CA233487"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01-CA233487"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01-CA233487"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01-CA233487"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01-CA233487"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01-CA233487"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01-CA233487"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01-CA233487"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01-CA233487"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01-CA233487"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01-CA233487"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Sci Rep"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Involvement of many variables, uncertainty in treatment response, and inter-patient heterogeneity challenge objective decision-making in dynamic treatment regime (DTR) in oncology. Advanced machine learning analytics in conjunction with information-rich dense multi-omics data have the ability to overcome such challenges. We have developed a comprehensive artificial intelligence (AI)-based optimal decision-making framework for assisting oncologists in DTR. In this work, we demonstrate the proposed framework to Knowledge Based Response-Adaptive Radiotherapy (KBR-ART) applications by developing an interactive software tool entitled Adaptive Radiotherapy Clinical Decision Support (ARCliDS). ARCliDS is composed of two main components: Artifcial RT Environment (ARTE) and Optimal Decision Maker (ODM). ARTE is designed as a Markov decision process and modeled via supervised learning. Given a patient’s pre- and during-treatment information, ARTE can estimate treatment outcomes for a selected daily dosage value (radiation fraction size). ODM is formulated using reinforcement learning and is trained on ARTE. ODM can recommend optimal daily dosage adjustments to maximize the tumor local control probability and minimize the side effects. Graph Neural Networks (GNN) are applied to exploit the inter-feature relationships for improved modeling performance and a novel double GNN architecture is designed to avoid nonphysical treatment response. Datasets of size 117 and 292 were available from two clinical trials on adaptive RT in non-small cell lung cancer (NSCLC) patients and adaptive stereotactic body RT (SBRT) in hepatocellular carcinoma (HCC) patients, respectively. For training and validation, dense data with 297 features were available for 67 NSCLC patients and 110 features for 71 HCC patients. To increase the sample size for ODM training, we applied Generative Adversarial Networks to generate 10,000 synthetic patients. The ODM was trained on the synthetic patients and validated on the original dataset. We found that, Double GNN architecture was able to correct the nonphysical dose-response trend and improve ARCliDS recommendation. The average root mean squared difference (RMSD) between ARCliDS recommendation and reported clinical decisions using double GNNs were 0.61 [0.03] Gy/frac (mean [sem]) for adaptive RT in NSCLC patients and 2.96 [0.42] Gy/frac for adaptive SBRT HCC compared to the single GNN’s RMSDs of 0.97 [0.12] Gy/frac and 4.75 [0.16] Gy/frac, respectively. Overall, For NSCLC and HCC, ARCliDS with double GNNs was able to reproduce 36% and 50% of the good clinical decisions (local control and no side effects) and improve 74% and 30% of the bad clinical decisions, respectively. In conclusion, ARCliDS is the first web-based software dedicated to assist KBR-ART with multi-omics data. ARCliDS can learn from the reported clinical decisions and facilitate AI-assisted clinical decision-making for improving the outcomes in DTR.\n</jats:p>",
+    "DOI": "10.1038/s41598-023-32032-6",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          31
+        ]
+      ],
+      "date-time": "2023-03-31T11:06:41Z",
+      "timestamp": 1680260801000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 51,
+    "title": [
+      "A clinical decision support system for AI-assisted decision-making in response-adaptive radiotherapy (ARCliDS)"
+    ],
+    "prefix": "10.1038",
+    "volume": "13",
+    "author": [
+      {
+        "given": "Dipesh",
+        "family": "Niraula",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wenbo",
+        "family": "Sun",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jionghua",
+        "family": "Jin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ivo D.",
+        "family": "Dinov",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kyle",
+        "family": "Cuneo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jamalina",
+        "family": "Jamaluddin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Martha M.",
+        "family": "Matuszak",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yi",
+        "family": "Luo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Theodore S.",
+        "family": "Lawrence",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shruti",
+        "family": "Jolly",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Randall K.",
+        "family": "Ten Haken",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Issam",
+        "family": "El Naqa",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          31
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "32032_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "1442",
+        "DOI": "10.1002/1878-0261.12675",
+        "volume": "14",
+        "author": "M Leech",
+        "year": "2020",
+        "unstructured": "Leech, M., Katz, M. S., Kazmierska, J., McCrossin, J. & Turner, S. Empowering patients in decision-making in radiation oncology - Can we do better?. Mol. Oncol. 14, 1442–1460 (2020).",
+        "journal-title": "Mol. Oncol."
+      },
+      {
+        "key": "32032_CR2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1259/bjr.20220239",
+        "author": "D Niraula",
+        "year": "2022",
+        "unstructured": "Niraula, D. et al. Current status and future developments in predicting outcomes in radiation oncology. Br. J. Radiol.https://doi.org/10.1259/bjr.20220239 (2022).",
+        "journal-title": "Br. J. Radiol."
+      },
+      {
+        "key": "32032_CR3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1200/CCI.18.00002",
+        "author": "I. El Naqa",
+        "year": "2018",
+        "unstructured": "Naqa, I. . El., Kosorok, M. R., Jin, J., Mierzwa, M. & Ten Haken, R. K. Prospects and challenges for clinical decision support in the era of big data. JCO Clin. Cancer Inform.https://doi.org/10.1200/CCI.18.00002 (2018).",
+        "journal-title": "JCO Clin. Cancer Inform."
+      },
+      {
+        "key": "32032_CR4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fonc.2018.00266",
+        "author": "H-H Tseng",
+        "year": "2018",
+        "unstructured": "Tseng, H.-H., Luo, Y., Ten Haken, R. K. & El Naqa, I. The role of machine learning in knowledge-based response-adapted radiotherapy. Front. Oncol.https://doi.org/10.3389/fonc.2018.00266 (2018).",
+        "journal-title": "Front. Oncol."
+      },
+      {
+        "key": "32032_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "23545",
+        "DOI": "10.1038/s41598-021-02910-y",
+        "volume": "11",
+        "author": "D Niraula",
+        "year": "2021",
+        "unstructured": "Niraula, D., Jamaluddin, J., Matuszak, M. M., Ten Haken, R. K. & El Naqa, I. Quantum deep reinforcement learning for clinical decision support in oncology: Application to adaptive radiotherapy. Sci. Rep. 11, 23545. https://doi.org/10.1038/s41598-021-02910-y (2021).",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "32032_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "106927",
+        "DOI": "10.1016/j.cmpb.2022.106927",
+        "volume": "221",
+        "author": "W Sun",
+        "year": "2022",
+        "unstructured": "Sun, W. et al. Precision radiotherapy via information integration of expert human knowledge and AI recommendation to optimize clinical decision making. Comput. Methods Programs Biomed. 221, 106927. https://doi.org/10.1016/j.cmpb.2022.106927 (2022).",
+        "journal-title": "Comput. Methods Programs Biomed."
+      },
+      {
+        "key": "32032_CR7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/1.9781611974188",
+        "volume-title": "Adaptive Treatment Strategies in Practice",
+        "year": "2015",
+        "unstructured": "Kosorok, M. R. & Moodie, E. E. M. (eds) (Society for Industrial and Applied Mathematics, 2015). https://doi.org/10.1137/1.9781611974188."
+      },
+      {
+        "key": "32032_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "447",
+        "DOI": "10.1146/annurev-statistics-022513-115553",
+        "volume": "1",
+        "author": "B Chakraborty",
+        "year": "2014",
+        "unstructured": "Chakraborty, B. & Murphy, S. A. Dynamic treatment regimes. Annu. Rev. Stat. Appl. 1, 447–464. https://doi.org/10.1146/annurev-statistics-022513-115553 (2014).",
+        "journal-title": "Annu. Rev. Stat. Appl."
+      },
+      {
+        "key": "32032_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "R179",
+        "DOI": "10.1088/1361-6560/aa7c55",
+        "volume": "62",
+        "author": "I El Naqa",
+        "year": "2017",
+        "unstructured": "El Naqa, I. et al. Radiogenomics and radiotherapy response modeling. Phys. Med. Biol. 62, R179–R206. https://doi.org/10.1088/1361-6560/aa7c55 (2017).",
+        "journal-title": "Phys. Med. Biol."
+      },
+      {
+        "key": "32032_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "1070",
+        "DOI": "10.1016/j.ijrobp.2018.08.022",
+        "volume": "102",
+        "author": "I El Naqa",
+        "year": "2018",
+        "unstructured": "El Naqa, I. et al. Radiation therapy outcomes models in the era of radiomics and radiogenomics: Uncertainties and validation. Int. J. Radiat. Oncol. Biol. Phys. 102, 1070–1073. https://doi.org/10.1016/j.ijrobp.2018.08.022 (2018).",
+        "journal-title": "Int. J. Radiat. Oncol. Biol. Phys."
+      },
+      {
+        "key": "32032_CR11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1200/PO.18.00034",
+        "author": "SC Kamran",
+        "year": "2018",
+        "unstructured": "Kamran, S. C. & Mouw, K. W. Applying precision oncology principles in radiation oncology. JCO Precis. Oncol.https://doi.org/10.1200/PO.18.00034 (2018).",
+        "journal-title": "JCO Precis. Oncol."
+      },
+      {
+        "key": "32032_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "1054",
+        "DOI": "10.1016/j.ijrobp.2020.10.021",
+        "volume": "109",
+        "author": "CK Glide-Hurst",
+        "year": "2021",
+        "unstructured": "Glide-Hurst, C. K. et al. Adaptive radiation therapy (ART) strategies and technical considerations: A state of the art review from NRG oncology. Int. J. Radiat. Oncol. Biol. Phys. 109, 1054–1075. https://doi.org/10.1016/j.ijrobp.2020.10.021 (2021).",
+        "journal-title": "Int. J. Radiat. Oncol. Biol. Phys."
+      },
+      {
+        "key": "32032_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "1358",
+        "DOI": "10.1001/jamaoncol.2017.0982",
+        "volume": "3",
+        "author": "F-M Kong",
+        "year": "2017",
+        "unstructured": "Kong, F.-M. et al. Effect of midtreatment PET/CT-adapted radiation therapy with concurrent chemotherapy in patients with locally advanced non-small-cell lung cancer. JAMA Oncol. 3, 1358. https://doi.org/10.1001/jamaoncol.2017.0982 (2017).",
+        "journal-title": "JAMA Oncol."
+      },
+      {
+        "key": "32032_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "101",
+        "DOI": "10.1016/j.radonc.2019.07.027",
+        "volume": "141",
+        "author": "WC Jackson",
+        "year": "2019",
+        "unstructured": "Jackson, W. C. et al. A mid-treatment break and reassessment maintains tumor control and reduces toxicity in patients with hepatocellular carcinoma treated with stereotactic body radiation therapy. Radiother. Oncol. 141, 101–107. https://doi.org/10.1016/j.radonc.2019.07.027 (2019).",
+        "journal-title": "Radiother. Oncol."
+      },
+      {
+        "key": "32032_CR15",
+        "unstructured": "USFDA, Artificial Intelligence/Machine Learning (AI/ML)-Based Software as a Medical Device (SaMD) Action Plan (2021). Accessed 19 July 2022. [Online]. Available: https://www.fda.gov/media/145022/download"
+      },
+      {
+        "key": "32032_CR16",
+        "unstructured": "USFDA, Proposed Regulatory Framework for Modifications to Artificial Intelligience/Machine Learning (AI/ML)-Based Software as a Medical Device(SaMD)) (2019). Accessed 19 Juli 2022. [Online]. Available: https://www.fda.gov/media/122535/download"
+      },
+      {
+        "key": "32032_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "6690",
+        "DOI": "10.1002/mp.12625",
+        "volume": "44",
+        "author": "H-H Tseng",
+        "year": "2017",
+        "unstructured": "Tseng, H.-H. et al. Deep reinforcement learning for automated radiation adaptation in lung cancer. Med. Phys. 44, 6690–6705. https://doi.org/10.1002/mp.12625 (2017).",
+        "journal-title": "Med. Phys."
+      },
+      {
+        "key": "32032_CR18",
+        "volume-title": "Deep Learning",
+        "author": "I Goodfellow",
+        "year": "2016",
+        "unstructured": "Goodfellow, I., Bengio, Y. & Courville, A. Deep Learning (MIT Press, 2016)."
+      },
+      {
+        "key": "32032_CR19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-031-01588-5",
+        "volume-title": "Graph Representation Learning",
+        "author": "WL Hamilton",
+        "year": "2020",
+        "unstructured": "Hamilton, W. L. Graph Representation Learning (Morgan and Claypool, 2020)."
+      },
+      {
+        "key": "32032_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "4",
+        "DOI": "10.1109/TNNLS.2020.2978386",
+        "volume": "32",
+        "author": "Z Wu",
+        "year": "2021",
+        "unstructured": "Wu, Z. et al. A Comprehensive Survey on Graph Neural Networks. IEEE Trans. Neural Netw. Learn. Syst. 32, 4–24. https://doi.org/10.1109/TNNLS.2020.2978386 (2021).",
+        "journal-title": "IEEE Trans. Neural Netw. Learn. Syst."
+      },
+      {
+        "key": "32032_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "3980",
+        "DOI": "10.1002/mp.13029",
+        "volume": "45",
+        "author": "Y Luo",
+        "year": "2018",
+        "unstructured": "Luo, Y. et al. A multiobjective Bayesian networks approach for joint prediction of tumor local control and radiation pneumonitis in nonsmall-cell lung cancer (NSCLC) for response-adapted radiotherapy. Med. Phys. 45, 3980–3995. https://doi.org/10.1002/mp.13029 (2018).",
+        "journal-title": "Med. Phys."
+      },
+      {
+        "key": "32032_CR22",
+        "volume-title": "Reinforcement Learning: An Introduction",
+        "author": "RS Sutton",
+        "year": "2018",
+        "unstructured": "Sutton, R. S. & Barto, A. G. Reinforcement Learning: An Introduction (MIT Press, 2018)."
+      },
+      {
+        "key": "32032_CR23",
+        "unstructured": "Gulrajani, I., Ahmed, F., Arjovsky, M., Dumoulin, V., Courville, A. Improved training of wasserstein GANs, in NIPS’17: Proceedings of the 31st International Conference on Neural Information Processing Systems (NIPS Press, 2017)."
+      },
+      {
+        "key": "32032_CR24",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Sousa, F. et al. Re-planning assessment in head and neck cancer radiotherapy: 3 years single institution experience. in Re-planning Assessment in Head and Neck Cancer Radiotherapy: 3 Years Single Institution Experience (ESTRO 2022, 2022). https://doi.org/10.1016/S0167-8140(22)02687-1.",
+        "DOI": "10.1016/S0167-8140(22)02687-1"
+      },
+      {
+        "key": "32032_CR25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fonc.2022.777793",
+        "author": "SAA Gros",
+        "year": "2022",
+        "unstructured": "Gros, S. A. A. et al. Retrospective clinical evaluation of a decision-support software for adaptive radiotherapy of head and neck cancer patients. Front. Oncol.https://doi.org/10.3389/fonc.2022.777793 (2022).",
+        "journal-title": "Front. Oncol."
+      },
+      {
+        "key": "32032_CR26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.17226/12458",
+        "volume-title": "Beyond the HIPAA Privacy Rule",
+        "year": "2009",
+        "unstructured": "Nass, S. J. et al. (eds) (National Academies Press, 2009). https://doi.org/10.17226/12458."
+      },
+      {
+        "key": "32032_CR27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/frai.2021.746497",
+        "author": "MY Topaloglu",
+        "year": "2021",
+        "unstructured": "Topaloglu, M. Y., Morrell, E. M., Rajendran, S. & Topaloglu, U. In the pursuit of privacy: The promises and predicaments of federated learning in healthcare. Front. Artif. Intell.https://doi.org/10.3389/frai.2021.746497 (2021).",
+        "journal-title": "Front. Artif. Intell."
+      },
+      {
+        "key": "32032_CR28",
+        "unstructured": "Mirza, M., Osindero, S. Conditional Generative Adversarial Nets (2014). arXiv:1411.1784"
+      },
+      {
+        "key": "32032_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "1386",
+        "DOI": "10.1118/1.3685447",
+        "volume": "39",
+        "author": "X Allen Li",
+        "year": "2012",
+        "unstructured": "Allen Li, X. et al. The use and QA of biologically related models for treatment planning: Short report of the TG-166 of the therapy physics committee of the AAPM. Med. Phys. 39, 1386–1409. https://doi.org/10.1118/1.3685447 (2012).",
+        "journal-title": "Med. Phys."
+      },
+      {
+        "key": "32032_CR30",
+        "volume-title": "A Guide to Outcome Modeling In Radiotherapy and Oncology: Listening to the Data",
+        "year": "2018",
+        "unstructured": "El Naqa, I. (ed.) (CRC Press, 2018)."
+      },
+      {
+        "key": "32032_CR31",
+        "doi-asserted-by": "crossref",
+        "unstructured": "van Hasselt, H., Guez, A. Silver, D. Deep reinforcement learning with double Q-learning. in Proceedings of the Thirtieth AAAI Conference on Artificial Intelligence 2094–2100 (AAAI Press, 2016).",
+        "DOI": "10.1609/aaai.v30i1.10295"
+      },
+      {
+        "key": "32032_CR32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/9781009023405",
+        "volume-title": "The Principles of Deep Learning Theory",
+        "author": "DA Roberts",
+        "year": "2022",
+        "unstructured": "Roberts, D. A., Yaida, S. & Hanin, B. The Principles of Deep Learning Theory (Cambridge University Press, 2022)."
+      }
+    ],
+    "container-title": [
+      "Scientific Reports"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.nature.com/articles/s41598-023-32032-6.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41598-023-32032-6",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41598-023-32032-6.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          31
+        ]
+      ],
+      "date-time": "2023-03-31T11:15:15Z",
+      "timestamp": 1680261315000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/s41598-023-32032-6"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          31
+        ]
+      ]
+    },
+    "references-count": 32,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "32032"
+    ],
+    "URL": "https://doi.org/10.1038/s41598-023-32032-6",
+    "relation": {},
+    "ISSN": [
+      "2045-2322"
+    ],
+    "issn-type": [
+      {
+        "value": "2045-2322",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          31
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "31 October 2022",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "21 March 2023",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "31 March 2023",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "Software codes used in this study will be made available from the corresponding author on reasonable request.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Code Availability"
+        }
+      },
+      {
+        "value": "I.E.N is on the scientific advisory of Endectra, LLC., act as deputy editor for the journal of Medical Physics and receives funding from NIH and DoD. I.D.D. acknowledges NIH grants R01-MH126137 and T32-GM141746. T.S.L. and R.K.T.H. acknowledge NIH grant P01 CA59827 for funding the clinical trials that produced the datasets. All other authors have no competing interest. A provisional patent application has been filed. Patent Applicant: H Lee Moffitt Cancer Center IP office in conjunction with University of Michigan IP office. Inventors: Dipesh Niraula, Issam El Naqa, Randall K. Ten Haken, Wenbo Sun, Judy Jin, Ivo Dinov, Kyle Cuneo, Martha M Matuszak, and Jamalina Jamaluddin. Application Number: 63272888. Status of Application: Pending. Specific aspect of manuscript covered in patent application: The patent covers the underlying model-based decision-making framework of ARCliDS.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "5279"
+  }
+}

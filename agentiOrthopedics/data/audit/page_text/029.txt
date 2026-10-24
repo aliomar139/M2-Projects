@@ -1,0 +1,1194 @@
+=== PDF PAGE 1 ===
+1
+Supporting Information
+PersonalizedMedicationforChronicDiseasesusingMultimodalData-Driven
+Chain-of-Decisions
+Xiaoli Chu 1, †, Yiheng Ye 2, †, Siqiao Tang 3, †, Miaoru Han 3, †, Guowei Wang 4, †, Shuai
+Lin 5, †, Bingzhen Sun 6, Qingchun Huang 7, Yan Zhang 8, *, Xiaodong Chu 9, *, Kun
+bao 10, *
+1 State Key Laboratory of Traditional Chinese Medicine Syndrome / Department of
+TCM Big Data Research, The 2nd Affiliated Hospital of Guangzhou University of
+ChineseMedicine,Guangdong,China;
+2 School of Information Science, Guangdong University of Finance & Economics,
+Guangdong,China;
+3 State Key Laboratory of Dampness Syndrome of Chinese Medicine, The 2nd
+Affiliated Hospital of Guangzhou University of Chinese Medicine, Guangdong,
+China;
+4 School of Electronic and Information Engineering, South China University of
+Technology,Guangdong,China;
+5 Department of Nephrology, Zhongshan Hospital of Traditional Chinese Medicine
+AffiliatedtoGuangzhouUniversityofChineseMedicine,Guangdong,China;
+6SchoolofEconomicsandManagement,XidianUniversity,Xi’an,China;
+7Department of Rheumatology,The 2ndAffiliated Hospital of GuangzhouUniversity
+ofChineseMedicine,Guangdong,China;
+8 Research Center of Intelligent Computing and Big Data Technology / School of
+Digital Economics, Guangdong University of Finance & Economics, Guangdong,
+China;
+9Cancer Research Institute / College of Pharmacy /The 1stAffiliated Hospital, Jinan
+University,Guangdong,China;
+10StateKeyLaboratoryofDampnessSyndromeofChineseMedicine/Departmentof
+Nephrology, The 2nd Affiliated Hospital of Guangzhou University of Chinese
+Medicine,Guangdong,China
+
+=== PDF PAGE 2 ===
+2
+†Theseauthorscontributedequallytothiswork.
+TABLE OF CONTENTS
+Appendix 1：Datasets.........................................................................................................3
+Appendix 2：MDD-CoDModelArchitectureDiagram.....................................................8
+Appendix 3：TrainingDetails...........................................................................................12
+Appendix 4：EvaluationofIndicators..............................................................................14
+Appendix 5：ComparativeAdvantagesofCoreTechnologiesinMDD-CoD.................16
+Appendix 6：ModelGeneralizabilityBetweenDiseasesandHospitals..........................18
+Appendix 7：MDD-CoD1InterpretabilityStudy.............................................................20
+Appendix 8：AbbreviationofMedication........................................................................21
+
+=== PDF PAGE 3 ===
+3
+Appendix 1：Datasets
+Regarding the generalizability of the model between diseases and hospitals.The
+complete multimodal datasets for these diseases (CKD, MN, RA, CRC,) are rare
+datasets,andthecollectionofclinicalcharacteristicsandpathologicalmechanismsfor
+each disease requires different devices and processes, making the collection and
+analysis of relevant data challenging. To the best of our knowledge, there currently
+exists no publicly available dataset worldwide that simultaneously incorporates
+multimodal clinical data and Chinese and Western medicine data for the chronic
+diseases at a comparable scale. The dataset we have constructed (CKD, MN, RA,
+CRC)fillsthisgap,aidingresearchersinconductingrarediseaseresearch.
+The inclusion and exclusion criteria for data collection are as follows: Inclusion
+criteria: ① Patients with a clear diagnosis and complete medical records of Chronic
+Kidney Disease (CKD), Rheumatoid Arthritis (RA), Colorectal Cancer (CRC); or
+Knee Osteoarthritis (KOA). ② The dataset must include at least one type of
+structured laboratory test or imaging information, as well as medication information.
+Exclusion criteria: ① Severe missing data or insufficient follow-up data; ②
+Patientswithothermajorsystemiccomorbidities.
+Arenal biopsy of histopathological slices was performed by nephrologists from
+Guangdong Provincial Hospital ofTraditional Chinese Medicine and Zhongshan City
+Hospital of Traditional Chinese Medicine for a renal puncture biopsy.
+Histopathological slices of renal biopsies were selected under PAS stain. Colorectal
+biopsy histopathological slides were taken by a specialist from Jinan University who
+performed a gross biopsy of the excised tissue and selected colorectal
+histopathological slides under hematoxylin-eosin (HE) staining. Hamamatsu's
+pathologydigitalslidescannerwasusedtocapturethewholeslideimaging(WSIs)of
+the sample slides, and all the contaminated and poorly stained slides were excluded
+and saved as ‘.ndpi’ data format files. Rheumatoid arthritis joint ultrasound images
+were examined by ultrasound specialists of Guangdong Provincial Hospital of
+Traditional Chinese Medicine (GDHTC) and saved as DCM files, and Sante DICOM
+
+=== PDF PAGE 4 ===
+4
+Viewer Lite (v4.0.2) was used to export each image in the DCM files to a ‘.jpg’
+formatfile.
+TableS1.BaselinecharacteristicsofRAdataset
+Clinical
+Feature
+Numberof
+Cases
+DiseaseActivityScorein28Joints
+χ² P
+Remission
+Low
+Disease
+Activity
+Moderate
+Disease
+Activity
+HighDisease
+Activty
+Age 10.109 0.271
+<50 43(26.7) 5(11.6) 1(2.3) 15(34.9) 22(51.2)
+50~58 43(26.7) 3(7.0) 1(2.3) 15(34.9) 24(55.8)
+58~67 36(22.4) 1(2.8) 1(2.8) 11(30.5) 23(63.9)
+>67 39(24.2) 0(0) 1(2.6) 8(20.5) 30(76.9)
+Gender 1.601 0.65
+Male 22(13.7) 1(4.5) 1(4.5) 8(36.5) 12(54.5)
+Female 139(86.3) 8(5.8) 3(2.2) 41(29.5) 87(62.6)
+5.43 0.796
+0 38(23.6) 1(2.6) 1(2.6) 12(31.6) 24(63.2)
+1 63(39.1) 3(4.8) 1(1.6) 19(30.2) 40(63.5)
+2 45(28.0) 4(8.9) 2(4.4) 11(24.4) 28(62.2)
+3 15(9.3) 1(6.6) 0(0) 7(46.7) 7(46.7)
+Synovial
+blood flow
+4.735 0.881
+0 45(28.0) 3(6.7) 1(2.2) 12(26.7) 29(64.4)
+1 53(32.9) 3(5.7) 1(1.9) 13(24.5) 36(67.9)
+2 43(26.7) 2(4.7) 2(4.7) 16(37.2) 23(53.5)
+3 20(12.4) 1(5.0) 0(0) 8(40.0) 11(55.0)
+Bone
+erosion
+1.23 0.76
+Yes 140(87.0) 9(6.4) 4(2.9) 43(30.7) 84(60.0)
+No 21(13.0) 0(0) 0(0) 6(28.6) 15(71.4)
+As show in Table S1, age was non-normally distributed according to the
+Shapiro–Wilk test and was categorized based on quartiles (Q1=50, Q2=58, Q3=67
+years). Group comparisons were performed using Pearson’s chi-square test.
+Two-sided Pvalues<0.05wereconsideredstatisticallysignificant.
+TableS2.BaselinecharacteristicsofCKDdataset
+ClinicalFeature
+Numberof
+Cases
+CKDStage
+χ² P
+1 2 3~5
+Age 9.07 0.059
+
+=== PDF PAGE 5 ===
+5
+<30 26(23.9) 20(76.9) 2(7.7) 4(15.4)
+30~50 61(56.0) 37(60.7) 16(26.2) 8(13.1)
+≥50 22(20.1) 9(40.9) 6(27.3) 7(31.8)
+Gender 0.051 0.975
+Male 57(52.3) 34(59.7) 13(22.8) 10(17.5)
+Female 52(47.7) 32(61.5) 11(21.2) 9(17.3)
+Pathological Lesion 31.691 0.000
+MildLesion 48(44.0) 41(85.4) 6(12.5) 1(2.1)
+ModerateLesion 48(44.0) 23(47.9) 14(29.2) 11(22.9)
+SevereLesion 13(12.0) 2(15.4) 4(30.8) 7(53.8)
+As show in Table S2, age followed a normal distribution as assessed by the
+Shapiro–Wilk test (P = 0.107). The mean ± standard deviation of age was 40.83 ±
+12.55 years. Age was categorized based on clinically relevant cutoffs into three
+groups: young (<30 years), middle-aged (30–50 years), and elderly (≥50 years).
+PathologicallesionwasassessedaccordingtoKatafuchiScore.
+TableS3.BaselinecharacteristicsofMNdataset
+ClinicalFeature
+Numberof
+Cases
+Ehrenreich-ChurgStage χ² P
+I II III
+Age 3.035 0.899
+<34 20(27.8) 1(5.0) 18(90.0) 1(5.0)
+34~50 16(22.2) 1(6.3) 15(93.8) 0(0)
+50~60 19(26.4) 3(15.8) 15(78.9) 1(5.3)
+>60 17(23.6) 2(11.8) 14(82.4) 1(5.9)
+Gender 0.799 0.851
+Male 49(68.1) 4(8.2) 43(87.8) 2(4.1)
+Female 23(31.9) 3(13) 19(82.6) 1(4.3)
+Risk Assessment 1.921 0.726
+LowRisk 5(6.9) 1(20.0) 4(80.0) 0(0)
+ModerateRisk 28(38.9) 3(10.7) 24(85.7) 1(3.6)
+HighRisk 39(54.2) 3(7.7) 34(87.2) 2(5.1)
+As show in Table S3, age was non-normally distributed according to the
+Shapiro–Wilk test and was categorized based on quartiles (Q1=34, Q2=49.5, Q3=60
+years). Group comparisons were performed using Pearson’s chi-square test.
+Two-sided Pvalues<0.05wereconsideredstatisticallysignificant.Ehrenreich–Churg
+staging was used for membranous nephropathy classification based on electron
+microscopy: Stage I = small subepithelial electron-dense deposits without GBM
+reaction; Stage II = deposits surrounded by projections of GBM forming "spikes" or
+new basement membrane material; Stage III = depositsincorporated withinthickened
+
+=== PDF PAGE 6 ===
+6
+and irregular GBM; Stage IV (not included here) = resolution of deposits with
+persistent GBM alterations. Risk categories (low, moderate, and high) were
+determined based on clinical criteria outlined in the 2021 KDIGO guideline for
+glomerular diseases, considering parameters such as eGFR, proteinuria, serum
+albumin,andanti-PLA2Rantibodylevels.
+TableS4.BaselinecharacteristicsofCRCdataset
+ClinicalFeature NumberofCases Degreeofstenosis χ² P
+<50% >50%
+Age 2.238 0.536
+<57 43(26.9) 27(62.8) 16(37.2)
+57~69 41(25.6) 23(56.1) 18(43.9)
+69~78 41(25.6) 26(63.4) 15(36.6)
+>78 35(21.9) 17(48.6) 18(51.4)
+Gender 1.003 0.317
+Male 105(65.6) 64(61.0) 41(39.0)
+Female 55(34.4) 29(52.7) 26(47.3)
+TNM Stage 5.375 0.068
+I 44(27.5) 32(72.7) 12(27.3)
+II 98(61.2) 52(53.1) 46(46.9)
+III 18(11.3) 9(50.0) 9(50.0)
+Degreeofdifferentiation 8.451 0.038
+Welldifferentiated 24(15.0) 20(83.3) 4(16.7)
+Moderatelydifferentiated 62(38.8) 31(50.0) 31(50.0)
+Poorlydifferentiated 56(35.0) 33(58.9) 23(41.1)
+Undifferentiated 18(11.2) 9(50.0) 9(50.0)
+Survival Time 1.496 0.221
+Alive 49(30.6) 32(65.3) 17(34.7)
+Deceased 111(69.4) 61(55.0) 50(45.0)
+As show in Table S1, age was non-normally distributed according to the
+Shapiro–Wilk test and was categorized based on quartiles (Q1=57, Q2=69, Q3=78
+years). Group comparisons were performed using Pearson’s chi-square test.
+Two-sided P values < 0.05 were considered statistically significant. “Degree of
+stenosis” was determined based on the estimated luminal narrowing rate: <50%
+indicates mild to moderate stenosis, and >50% indicates severe stenosis. TNM stage
+(Tumor–Node–Metastasis classification) was determined according to the 8th edition
+AJCC criteria: Stage I (T1–T2, N0, M0), Stage II (T3–T4, N0, M0), and Stage III
+(any T, N1–2, M0); Stage 0 and IV were not included in this dataset. Tumor
+
+=== PDF PAGE 7 ===
+7
+differentiation was graded histologically as well, moderately, poorly, or
+undifferentiated, based onthe degree towhich tumorcells resemble normal glandular
+epithelium.
+TableS5.BaselinecharacteristicsofKOdataset
+ClinicalFeature
+Numberof
+Cases
+Kellgren-Lawrencegradingsystem χ² P
+0 I II III
+Age 12.897 0.167
+<60 794(25.0) 197(24.8) 315(39.7) 250(31.5) 32(4.0)
+60~67 895(28.2) 185(20.7) 375(41.9) 278(31.1) 57(6.4)
+67~74 714(22.5) 177(24.8) 295(41.3) 204(28.6) 38(5.3)
+>74 770(24.3) 176(22.9) 305(39.6) 236(30.6) 53(6.9)
+Gender 5.876 0.118
+Male 849(26.8) 218(25.7) 338(39.8) 254(29.9) 39(4.6)
+Female 2324(73.2) 517(22.2) 952(41) 714(30.7) 141(6.1)
+As show in Table S5, age was non-normally distributed according to the
+Shapiro–Wilk test and was categorized based on quartiles (Q1=60, Q2=67, Q3=74
+years). Group comparisons were performed using Pearson’s chi-square test.
+Two-sided P values < 0.05 were considered statistically significant. The
+Kellgren–Lawrence grading system was used to assess radiographic severity of
+osteoarthritis:grade0=noradiographicfeaturesofOA,gradeI=doubtfulnarrowing
+of joint space and possible osteophytic lipping, grade II = definite osteophytes and
+possiblejointspacenarrowing,gradeIII=multipleosteophytes,definitenarrowingof
+jointspace,andpossibledeformityofboneends.
+
+=== PDF PAGE 8 ===
+8
+Appendix 2：MDD-CoD Model Architecture Diagram
+The implementation code for the model proposed in this study has been
+open-sourced on GitHub and is publicly available. The repository URL is:
+https://github.com/yhengYE/MDD-CoD. All configuration details, preprocessing
+scripts, and model architecture definitions required for complete experiment
+reproductionareincludedinthisrepository.Thecompletedatasetissubjecttoprivacy
+andethicalrestrictions(IRB: BE2025-098-01,BE2024-325-01,2024ZSZY-LLK-408,
+and JNUKY-2023-0105) and cannot be publicly shared. To obtain the dataset, please
+contact the corresponding author and sign the relevant confidentiality agreement
+before accessing
+it.
+Figure S1. MDD-CoD1 ： The multi-modal feature embedding and multi-task
+prediction model based on Transformer improves the definition of disease
+classification.
+AsshowninFigure S1,amulti-modalfusion frameworkbased onthemulti-task
+thoughtisproposed,whichregardsthefeaturerepresentationprocessofeachmodeas
+a task, and the alignment and fusion of multi-modal features as a global task. This
+framework can be applied to downstream tasks that address the weight of different
+modes in clinical decision making. Specifically, each single mode carries out feature
+learningthroughitsownpre-trainedfeatureextractor,andthencarriesoutinformation
+
+=== PDF PAGE 9 ===
+9
+exchange between modes through the cross-attention mechanism introduced by the
+global task. Finally, the common loss of single mode and multi-mode is synthesized,
+the loss optimization of the overall model is carried out, and comprehensive clinical
+decisionisobtained,andtheproportionofdifferentclinicalmodesindecisionmaking
+isobtained.
+Figure S2. MDD-CoD2: Graph transformer network-based drug marco-micro
+informationfusionmodeltoanalyzethetherapeuticmechanismofdrugcombination.
+As shown in Figure S2, a graph neural network based on the three modalities of
+drug information is constructed. On the one hand, for macro pharmacological modal
+information, BERT-Chinese pre-training model is used to embed text features. In
+addition, a fusion module based on attention mechanism is introduced to merge
+pharmacological information of multiple dimensions to obtain a unified feature
+representation. This feature can represent the macro information of the drug. On the
+otherhand,formicroscopicmodalinformation,ProbBERTpre-trainingmodelisused
+to extract drug target characteristics. The pre-training model has been pre-trained on
+large-scale protein sequence data sets, and can better understand the meaning of
+protein amino acid sequence and give high-quality feature representation. Then we
+enter the attentional mechanism and fuse multiple protein sequences of a single drug
+
+=== PDF PAGE 10 ===
+10
+toobtainauniformrepresentationofproteincharacteristics.Thisfeaturecanrepresent
+the microscopic protein information of the drug. In addition, the
+micro-characterizationalsoincorporatesaprotein-proteininteractionnetwork(PPI)of
+the drug target based on DeepWalk, aiming to build a comprehensive representation
+ofthePPIcharacteristics.
+Macro and micro drug prescription information features (including macro drug,
+micro protein properties, and micro protein network structure) are prepared for
+splicing operation, and a unified macro and micro drug prescription feature
+representation was obtained.Then, a drug prescription is regarded as a subnetwork, a
+drug is a network node, and macro and micro drug prescription features are node
+features. The Gnn-Transformer model is used to reconstruct and aggregate the
+network to obtain the macro and micro representation of drug prescription network
+after fusion based on GNN. After the pooling operation, the macro and micro drug
+prescription network obtains the prescription feature representation, which is sent to
+the VAE module for the alignment of multi-modal data. The input features are
+compressed into a hidden space representation, and the macro and micro drug
+prescriptionfeaturerepresentationsarereconstructed.
+FigureS3.InterpretabilityoftheMDD-CoD2model.
+As shown in Figure S3, Graph neural network interpretable tool GNN-explainer
+is used to get the clinical hints in Chain2. GNN-explainer, through a trainable
+masking mechanism, dynamically identifies the most critical substructures of the
+network for a specific prediction. Specifically, it assigns importance scores to the
+
+=== PDF PAGE 11 ===
+11
+node and edge features in the drug network and, through an optimization process,
+finds a concise subgraph that can reproduce the original prediction results to the
+greatestextentintheGNNmodel.
+FigureS4.MDD-CoD3：Across-modalsharedspacerepresentationmodelbasedon
+contrastlearningfordiseaseandmedicationregimenmatching.
+The above two chain prepare the patient's multi-modal clinical features and
+macro-micromedicationprescriptionfeatures,andthestage3(asshowninFigure S4)
+builds CLIP model based on these two types of features. Specifically, multimodal
+clinicalfeaturesandmacro- microdrugprescriptionfeaturesarepreprocessedandfed
+into the two inputs of the CLIP model, respectively, to embed into a shared semantic
+spaceforconstructingpositiveandnegativesamplepairs.Then,throughtheInfoNCE
+loss optimization model of comparative learning, clinical features and prescription
+features are effectively aligned in semantic space, and accurate correlation modeling
+ofthetwotypesoffeaturesisrealized.
+
+=== PDF PAGE 12 ===
+12
+Appendix 3 ：Training Details
+MDD-CoD1: To conserve computational resources, we first performed
+standalone feature extraction for the imaging modality of patients requiring
+subsequent training, and saved the extracted features as matrix files. As a result, the
+imaging modality model did not participate in parameter updates during subsequent
+training. Since the imaging features were derived using a pre-trained model and this
+model was not integrated into the full pipeline, no further parameter tuning was
+conductedforit.
+To accommodate this design, the MDD-CoD1 model underwent full-parameter
+pre-trainingoftheFT-Transformer,duringwhichallsubsequentlayers—includingthe
+unimodal classification layer, multimodal fusion layer, and multimodal classification
+layer—weretemporarilyfrozen.AftertheFT-Transformerpre-trainingphase,allofits
+layers were permanently frozen, and only the parameters of the unimodal
+classification layer, multimodal fusion layer, and final classification layer were
+updated during the training phase. The key hyperparameters are listed in the table
+below.
+We employed a random split strategy for dataset partitioning, allocating 70% of
+the data to the training set and 30% to the test set. Detailed training hyperparameters
+areprovidedinthetablebelow.
+TableS6.MDD-CoD1Hyperparameter
+Hyperparameter RA MN CRC CKD
+Inputdim 768 768 1536 192
+Epochs 400 300 300 200
+Pretrainepochs 100 70 70 30
+Optimizer AdamW AdamW AdamW AdamW
+Learningrate 1e-4 1e-3 1e-3 1e-4
+Decayweight 2e-3 1e-4 5e-4 1e-4
+MDD-CoD2：For the MDD-CoD2 model, we adopted 4-fold cross-validation
+(K=4), dividing the original dataset into four subsets. In each iteration, three subsets
+were used for training and one for validation, with each subset serving as the
+validation set exactly once.The main evaluation metrics includedAUROC, F1-score,
+
+=== PDF PAGE 13 ===
+13
+andPrecision.Keyhyperparametersarealsosummarizedinthetable.
+TableS7.MDD-CoD2Hyperparameter
+Hyperparameter RA MN CKD
+Batchsize 256 256 256
+Epochs 1000 300 1000
+Optimizer AdamW AdamW AdamW
+Learningrate 1e-3 1e-3 1e-4
+Decayweight 2e-3 2e-3 1e-4
+Scheduler Steplr（70\0.85） Steplr（50\0.85） Steplr（70\0.85）
+Memoryusing 7GB 7GB 7GB
+Trainingtime 6.68h 1.33h 6h
+OverSampler False True False
+MDD-CoD3: Prior to training the MDD-CoD2 model, patient and medication
+features were comprehensively extracted using the preceding two-stage models and
+saved as matrix files. During model development, the dataset was randomly
+partitioned into 70% for training and 30% for testing. The specific training
+hyperparametersarelistedinthetablebelow.
+TableS8.MDD-CoD3Hyperparameter
+Hyperparameter value
+Batchsize 128
+Inputdim 256
+hiddendim 512
+outputdim 128
+Epochs 1000
+Optimizer Adam
+Learningrate 1e-4
+Decayweight 2e-4
+Given the current version of the dataset, we found it unnecessary to use an
+additional validation set for model selection. This is due to the limited dataset size—
+mainly resulting from the difficulty of collecting sufficient data for rare or complex
+diseases. Allocating a separate validation set would reduce the size and diversity of
+the training set, potentially degrading model performance. Our dataset construction
+approachhelpsbridgethecurrent datagapinthisfieldandlays asolidfoundationfor
+futuredeploymentandscalability.
+
+=== PDF PAGE 14 ===
+14
+Appendix 4 ：Evaluation of Indicators
+Theevaluationmetrics employed inthisstudyare standard indicatorscommonly
+used in deep learning-based prediction tasks. The corresponding formulas are
+providedbelow.
+Inclassificationmodelevaluation,TruePositive(TP),TrueNegative(TN),False
+Positive (FP), and False Negative (FN) are fundamental performance indicators used
+todescribe prediction accuracy and error types. Specifically,TPandTN represent the
+number of correctly predicted positive and negative samples, respectively, while FP
+and FN denote the number of incorrectly predicted positive and negative samples,
+respectively.
+For the MDD-CoD1 model, the evaluation metrics included theArea Under the
+Receiver Operating Characteristic Curve (AUROC) and the Area Under the
+Precision-RecallCurve(AUPRC).AUROCisabroadlyapplicablemetricacrossmost
+prediction tasks, while AUPRC is particularly sensitive to class imbalance. Their
+combined use helps mitigate potential biases introduced by using a single metric
+underimbalancedconditions.
+FortheMDD-CoD2model,weemployedAUROC,F1-Score,andPrecision.The
+F1-Score compensates for the limitations of AUROC and Precision when evaluating
+models on imbalanced datasets, with a particular focus on the model’s ability to
+correctlyclassifyminorityclasses.
+For the MDD-CoD3 model, we used Hit@K as the evaluation metric. Hit@K is
+widely used in recommendation systems and information retrieval, and measures
+whether the ground-truth item appears within the top-K predicted items. The
+correspondingformulasareasfollows:
+TPR= TP
+TP+FN
+（1）
+FPR= TP
+TP+FN
+（2）
+AUROC=1
+2
+i=1
+n
+FPRi-FPRi-1 TPRi-TPRi-1 
+（3）
+
+=== PDF PAGE 15 ===
+15
+P= TP
+TP+FP
+（4）
+R= TP
+TP+FN
+（5）
+AURRC=1
+2
+i=1
+n
+Ri-Ri-1 Pi-Pi-1 
+（6）
+F1=2PR
+P+R= 2TP
+2TP+FP+FN
+（7）
+Forasingletestsample,Hit@kisabinarymetric:
+Hit@k= 1,ifthecorrectanswerisamongthetop-kpredictions
+0,otherwise
+（8）
+TheaverageHit@koveratestsetofN samplesiscomputedas:
+Hit@k=1
+N
+i=1
+N
+Hit@k 
+（9）
+
+=== PDF PAGE 16 ===
+16
+Appendix 5：Comparative Advantages of Core Technologies in MDD-CoD
+FT-Transformer’s Superiority in MDD-CoD1. In the MDD-CoD1 model, for
+the medical diagnostic form data, we introduce FT-Transformer as an embedding
+encoderforlaboratory indicators,aimingtoleverageitsglobal dependencymodelling
+capability across feature columns. Taking the RA dataset as an example, the
+category-based features are pain, limitation of movement, stiffness, and swelling of
+joints; and the numerical features are CRP,ESR, RF,AST,andALT.Apriori, there is
+a strong relationship between symptoms such as joint pain, limitation of movement,
+stiffness, and swelling, and inflammatory indicators such as CRPand ESR, in which
+thestrongertheinflammatoryresponse,themoreseverethepatient'ssymptoms.Liver
+indicators such as rheumatoid factor (RF) and AST/ALT can reflect the activity or
+complicationsofrheumatic diseases.The jointmodelingof these featuresthroughthe
+embeddinglayercanfullyreflecttheclinicalcharacteristicsofpatients.
+Multi-attribute medication feature's Superiority in MDD-CoD2.
+Macro-pharmacological characteristics (Properties) ofmedications include the typical
+representative description of the text of the medications, specifically the Chinese
+medicine natures, tastes, and meridian tropisms,as well as the sideeffects ofWestern
+medicines to reflect their macro-pharmacological effects in the field of traditional
+Chinese medicine. Meridian tropisms refer to the effect of the medication on the five
+zang-organs and the six fu-organs, which builds up the scope of application and
+efficacyof themedication.Natures and tastesreflect the nature ofthe medicationand
+thecharacteristicsofitsaction.Theefficacycorrespondstothetherapeuticsymptoms.
+Thiswillserve asthemoreintuitivefunctionalinformationofthemedications.Asthe
+macroscopic pharmacological characteristics of western medications, the side effects
+of western medications stem from the interaction of their chemical components with
+the human body. The selection of this as a pharmacological feature of western
+medications in this study aims to portray the concept of the combination of Chinese
+and western medications to reduce toxicity. The medications' microscopic protein
+
+=== PDF PAGE 17 ===
+17
+network features (PPI) include the protein network composed of the drug target and
+its related proteins, aiming to construct a comprehensive protein network structural
+feature representation, focusing on the interaction network topology of the
+medications' target proteins in the biological system to analyze the target protein's
+pivot,modularity,and functional conductionpathway intheglobal proteininteraction
+network. Medication micro-protein sequence characterization (Protein-Seq) contains
+themedication's target protein sequences that decode features ofprotein structure and
+function.
+DeepWalk’ s Superiority in Structure-Only PPI Network Embedding. In
+graph neural networks (GNNs), the absence of node features reduces neighborhood
+aggregation to mere degree distribution statistics, preventing the extraction of
+high-order semantic information and thereby diminishing the advantages typically
+offeredbyGNNs.
+Metapath2Vec,whichisspecificallydesignedforheterogeneousgraphs,relieson
+predefined metapaths (e.g., "protein-function-protein") to guide random walks.
+However,inthistask,theexistence ofonlyasingle edge type causes thesemetapaths
+to degenerate into simple repeated edge traversals, which ultimately leads to
+suboptimalperformance.
+LINE preserves local structural information by using a degree-based negative
+sampling strategy to optimize first-order (direct neighbor) and second-order (shared
+neighbor) node similarities. However, it tends to treat high-degree nodes as hubs or
+structural centers while overlooking the importance of critical bridge proteins, and
+thus fails to capture the global topological characteristics of protein-protein
+interaction(PPI)networks.
+This study conducts comparative experiments among DeepWalk, Graph Neural
+Networks, Metapath2Vec, and LINE for network embedding. The experimental
+results demonstrate that DeepWalk achieves the best performance in embedding PPI
+features. The strength of DeepWalk lies in its strong compatibility with the
+homogeneous structure of PPI networks. The node co-occurrence distributions
+derived from random walks effectively encode the network’s topology: short walks
+
+=== PDF PAGE 18 ===
+18
+are sufficient to cover most nodes while capturing both hub nodes and crucial bridge
+nodes,thusyieldingsuperiortopologicalrepresentations.
+Appendix 6: Model Generalizability Between Diseases and Hospitals
+To demonstrate the model's (MDD-CoD1) generalizability, we pre-trained it
+using data from one disease and then fine-tuned it using data from another disease
+(25% of the total dataset) to validate its cross-disease transferability. As shown in
+Table S9, in most transfer scenarios, MDD-CoD1 outperformed baseline models
+trained on the full target-domain data. Notably, in the transfer from colorectal cancer
+(CRC) to chronic kidney disease (CKD), both of which share similar image
+modalities, MDD-CoD1 achieved up to a 15% improvement in AUROC. Even in a
+lessfavorablesetting,suchasCRCtorheumatoidarthritis(RA),theperformancegap
+was kept within 3%. These results demonstrate the strong generalization ability of
+MDD-CoD1, with limited target-domain data, the fine-tuned pretrained model can
+surpass baseline models trained from scratch on full data. Most pre-trained models
+achieve performance surpassing the benchmark model trained on the full dataset of
+the target disease after fine-tuning with a small portion (25%) of the target disease
+data. Additionally, we provide the loss curve of MDD-CoD1 on the training set to
+explain the underlying mechanism of this improvement. As shown in Figure S5,
+acrossfour datasets, the losscurves (e.g., the comparison between red andblue lines)
+exhibitlowertraininglossandfasterconvergencerates,indicatingthattheknowledge
+learned by MDD-CoD1 on source domain data facilitates learning for downstream
+tasks,therebyvalidatingthemodel'sgeneralizability.
+Regarding the generalizability across hospitals and different diseases, we agree
+that further hierarchical analysis is needed, along with external validation across
+different hospitals and datasets. In fact, our data already covers multiple hospitals.
+Additionally,weplantofurtherexpandandmaintainthisdatasetinfutureresearch.
+TableS9.Modelperformancecomparisonbetweentransferlearningandfull
+fine-tuningapproaches.
+（Source->Target） AUROC↑ AUPRC↑
+
+=== PDF PAGE 19 ===
+19
+CRC->RA 0.9244（0.8989） 0.8137（0.7481）
+CRC->CKD 0.6889（0.7920） 0.5630（0.5708）
+MN->CRC 0.7231（0.7736） 0.8977（0.9164）
+CKD->MN 0.7136（0.7573） 0.5940（0.6650）
+Where “Source” referstomodelstrainedonthecompletedatasetofthesource
+disease,while “Target” referstomodelstrainedbasedonthesourcedisease.X(Y)
+denotes the test set accuracy on the original dataset (test set accuracy after
+small-sampletransferlearning).
+FigureS5:MDD-CoDdemonstratesexcellentgeneralizationperformanceonmultiple
+datasets. The blue curve represents the original training loss curve, while the red
+curve represents the training loss curve after small-sample transfer learning. On all
+four datasets, MDD-CoD demonstrates lower training loss and faster convergence
+speed.
+
+=== PDF PAGE 20 ===
+20
+Appendix 7: MDD-CoD1 Interpretability Study
+Weused cosine similarity,a standard metric for cross-modal alignment research,
+to construct a modal feature interaction heatmap for interpretability research. By
+analyzing13randomtrainingsamplesfrom twodatasets(CRCandMN),asshownin
+Figure S6:During the initial trainingphase, cross-modal similaritywas generallylow
+(CRC: -0.0363, MN: -0.0772). After training, the multi-modal features of both
+datasets showed an increase in average similarity (CRC: +0.1285, MN: +0.1602).
+This change confirms that the model has successfully established foundational
+semantic association capabilities, effectively validating the efficacy of MDD-CoD in
+cross-modalalignmenttasks.
+Figure S6: Cross-modal feature alignment heatmap on the CRC and MN datasets. A
+modal interaction heatmap based on cosine similarity, showing the evolution of
+cross-modal alignment from initial training (left) to final convergence (right) for 13
+random samples. Blue tones (-0.1 to 0) indicate weak modal correlation, red tones (0
+
+=== PDF PAGE 21 ===
+21
+to0.2)indicatestrongcross-modalalignment.
+Appendix 8: Abbreviation of Medication
+Medication Abbreviation of Medication
+CompoundNephritisTablets CNT
+ZingiberisRhizomaRecens Rhiz.Zing
+CentellaeHerba C.Herba
+JujubaeFructus J.Fructus
+LyciiFructus L.Fructus
+RubiaeRadixEtRhizoma R.Radix
+Aspirin Rad.Rub.
+Cordycepscicadae C.cicadae
+AucklandiaeRadix A.Radix
+Terazosin TER
+PlatycodonisRadix P.Radix
+PoriaeCutis P.Cutis
+RhaponticiRadix R.Radix
+Irbesartan IRB
+DianthiHerba D.Herba
+Pitavastatin PTV
+LophatheriHerba L.Herba
+AmlodipineBesilate AML-B
+Rosuvastatin Rosuv.
+CyperiRhizoma Rhiz.Cyperi
+DioscoreaeHypoglaucaeRhizoma Rhiz.Diosc.Hypogl.
+MicrocosPaniculata Microcos
+Poria Por.
+Pheretima Pher.
+HemocoagulaseInjection Inj.Hemocoag
+ForsythiaeFructus Fruct.Forsyth.
+ValsartanAndAmlodipineTabletsA Tab.Vals.&Amlod.
+BambusaeCaulisInTaenias Caul.Bamb.
+PogostemonisHerba Herb.Pogost.
+SalviaeMiltiorrhizaeRadixEtRhizoma Rad.etRhiz.Salviae
+SanqiOralLiquid Liq.Oral.Notogins
+Jinshuibaopian JSB
+PaeoniaeradixRubra Rad.Paeon.Rub.
+PolygoniMultifloriCaulis Caul.Polyg.Mult.
+AluminumMagnesiumCarbonateAndAspirin Alum.Mag.Carb.&Asp.
+AnemarrhenaeRhizoma Rhiz.Anemarrh.
+
+=== PDF PAGE 22 ===
+22
+ScutellariaeRadix Rad.Scutell.
+TerazosinHydrochloride Teraz.HCl
+FritillariaeThunbergiiBulbus Bulb.Fritill.Thunb
+EuryalesSemen Sem.Euryal.
+ImperataeRhizoma Rhiz.Imper.
+ClematidisRadixEtRhizoma Rad.etRhiz.Clemat.
+Pitavastatin Pitav.
+ChuanxiongRhizoma Rhiz.Chuanx
+AlismatisRhizoma Rhiz.Alism.
+Polyporus Polypor.
+PolyenePhosphatidylcholine Phosph.Polyen.
+SemenArmeniacaeAmarum Sem.Armen.Am.
+GlycyrrhizaeRadixEtRhizomaPraeparataCum
+Melle Rad.etRhiz.Glycyrrh.Praep.
+ZingiberisRhizoma Rhiz.Zingib.
+ScleromitrionDiffusum Scleromit.
+Methylprednisolone Methylpred.
+NelumbinisStamen Stam.Nelumb.
+Carvedilol Carved.
+Torsemide Torsem.
+CorniFructus Fruct.Corni
+Cyclophosphamide Cyclophosph.
+DendrobiumWithFruits Dendrob.c.Fruct.
+BupleuriRadix Rad.Bupl.
+Fluvastatin Fluvast.
+CorniFructus Fruct.Corni
+CuscutaeSemen Sem.Cusc.
+HuangkuiJiaonang HKJN
+AtractylodisMacrocephalaeRhizoma Rhiz.Atract.Macro.
+RecombinantHumanErythropoietin
+Polysaccharide-IronComplexCapsules Caps.EPO-PIC
+ComplexusPolysaccharidi-Ferrosus CPF
+LowMolecularWeightHeparin Heparin.LMWH
+FurosemideTablets Tab.Furos.
+CompoundKetoacidTablets Tab.Ketoacid.Co.
+EucommiaeCortexPraeparatus Cort.Eucomm.Praep.
+LowMolecularWeightHeparinCalcium Heparin.Calc.LMWH
+BisoprololFumarate Bisoprol.Fum.
+Calcitriol Calcitriol.
+Gliclazide Gliclaz.
+Acarbose Acarb.
+AlbiziaeFlos Fl.Albiz.
+CodonopsisRadix Rad.Codon.
+
+=== PDF PAGE 23 ===
+23
+Spironolactone Spironol.
+CalciumCarbonateD3 Calc.Carb.D3
+AsariRadixEtRhizoma Rad.etRhiz.Asari
+Talcum Talc.
+CalciumCarbonateD3 Calc.Carb.D3
+GentianaeMacrophyllaeRadix Rad.Gent.Macroph
+ChaenomelisFructus Fruct.Chaenom.
+CinnamomiRamulus Ram.Cinnam.
+Fluvastatin Fluvast.
+AtractylodisRhizoma Rhiz.Atract
+DiospyrosIotusLinn Diosp.Lot.
+GlycyrrhizaeRadixEtRhizoma Rad.etRhiz.Glycyrrh.
+PolygoniCuspidatiRhizomaEtRadix Rhiz.etRad.Polyg.Cusp.
+AtractylodisMacrocephalaeRhizoma Rhiz.Atract.Macro.
+RaphaniSemen Sem.Raph.
+OryzaeFructusGerminatus Fruct.Oryz.Germ.
+AsiniCoriiColla Coll.Cor.Asin.
+OstreaeConcha Conch.Ostr.
+SchisandraeChinensisFructus Fruct.Schisand.Chin.
+PyrrosiaeFolium Fol.Pyrros.
+UremicClearanceGranule Gran.Urem.Clear.
+Tacrolimus Tacrol.
+LoniceraeJaponicaeFlos Fl.Lonic.Jap.
+CoicisSemenTostum Sem.Coic.Tost.
+CorydalisDecumbentisRhizoma Rhiz.Coryd.Decumb.
+CompoundΑ-KetoAcid Α-KetoAcidCo.
+MagnoliaeOfficinalisCortex Cort.Magn.Off.
+AmomiFructusRotundus Fruct.Amom.Rot.
+Linagliptin Linaglipt.
+Entecavir Entecav.
+MoutanCortex Cort.Moutan
+UncariaeRamulusCumUncis Ram.Unc.c.Unc.
+LycopiHerba Herb.Lycop
+Febuxostat Febux.
+EucommiaeCortex Cort.Eucomm.
+PersicaeSemen Sem.Pers.
+DendrobiiCaulis Caul.Dendrob.
+GardeniaeFructus Fruct.Gard.
+SaposhnikoviaeRadix Rad.Saposhn.
+CassiaeSemen Sem.Cass.
+CurcumaeRhizoma Rhiz.Curc.
+DioscoreaeNipponicaeRhizoma Rhiz.Diosc.Nipp.
+FructusHordeiGerminatus Fruct.Hord.Germ.
+
+=== PDF PAGE 24 ===
+24
+AconitumCarmichaeliiPreparatum Acon.Carm.Prep.
+CarvedilolTablets CT
+CitriReticulataePericarpium Pericarp.Cit.Ret.
+HedysariRadix Rad.Hedys.
+HordeiFructusGerminatus Fruct.Hord.Germ.
+AngelicaeSinensisRadix Rad.Ang.Sin.
+Levothyroxine Levothyrox.
+PolygoniMultifloriRadixPraeparata Rad.Polyg.Mult.Praep.
+SinapisSemen Sem.Sinap.
+RosaeLaevigataeFructus Fruct.Ros.Laevig.
+Valsartan Valsart.
+Atorvastatin Atorvast.
+PolygoniAvicularisHerba Herb.Polyg.Avic.
+EcliptaProstrata Eclipt.
+EpimediiFolium Fol.Epim.
+SpatholobiCaulis Caul.Spath.
+PerillaeFructus Fruct.Perill.
+PolygonatiRhizoma Rhiz.Polygon.
+MetforminHydrochlorideTablets MHC
+PuerariaeLobataeRadix Rad.Puer.Lob.
+Dalteparin DNS
+PaeoniaeRadixAlba Rad.Paeon.Alb.
+PhellodendriChinensisCortex Cort.Phell.Chin.
+ShenyanKangfuPian SKP
+LosartanPotassium LP
+NelumbinisSemen Sem.Nelumb.
+AmomiFructus Fruct.Amom.
+AstragaliRadixPraeparataCumMelle Rad.Astrag.Praep.c.Mel.
+Frusemide Frusem.
+RehmanniaGlutinosa Rehmann.
+Erythropoietin EPO
+Rabeprazole Rabepraz.
+PinelliaeRhizomaPraeparatum Rhiz.Pinell.Praep.
+PanaxNotoginsengPowder Pulv.PanaxNotog.
+AurantiiFructus Fruct.Aurant.
+ZeaMaysStigmas Stigm.Zeae
+CorydalisRhizoma Rhiz.Coryd.
+ArisaemaCumBile Aris.c.Bil.
+CistanchesHerba Herb.Cistan.
+PseudostellariaeRadix Rad.Pseudostell.
+HumanAlbumin Alb.Hum.
+CoicisSemen Sem.Coic.
+ArctiiFructus Fruct.Arct.
+
+=== PDF PAGE 25 ===
+25
+AstragaliRadix Rad.Astrag.
+ChrysanthemiFlos Fl.Chrysanth.
+AspirinEnteric-CoatedTablets AEC
+Liquidambarisfructus Fruct.Liquidamb.
+HaliotidisConcha Conch.Haliot.
+LeonuriHerba Herb.Leon.
+RheumPalmatumL. Rheumpalm.
+GastrodiaeRhizoma Rhiz.Gastrod.
+ValsartanAndAmlodipineTablets Tab.Vals.&Amlod.
+Colchicine Colchic.
+SchizonepetaeSpica Spic.Schizon.
+RehmanniaeRadixPraeparata Rad.Rehmann.Praep.
+SmilacisGlabraeRhizoma Rhiz.Smilac.Glabr.
+FluvastatinSodium Fluvast.Na
+RheiRadixEtRhizoma Rad.etRhiz.Rhei
+SepiaeEndoconcha Endoconch.Sep.
+HumanImmunoglobulin IgHum.
+AsterisRadixEtRhizoma Rad.etRhiz.Aster
+PlantaginisHerba Herb.Plantag.
+PolysaccharideIron FePolysac.
+LigustriLucidiFructus Fruct.Ligust.Luc.
+ArecaePericarpium Pericarp.Arec.
+TrichosanthisRadix Rad.Trichos.
+PlantaginisSemen Sem.Plantag.
+CoptidisRhizoma Rhiz.Copt.
+AchyranthisBidentataeRadix Rad.Achyr.Bident.
+FicusSimplicissima Ficussimpl.
+CornusOfficinalisWithSalt Corn.off.c.Sal.
+OphiopogonisRadix Rad.Ophiopog.
+NotoginsengRadixEtRhizoma Rad.etRhiz.Notogins.
+ArmeniacaeSemenAmarum Sem.Armen.Am.
+Atorvastatincalcium Atorvast.Ca
+MetforminHydrochlorideTablets MHC
+Epo EPO
+SodiumZirconiumCyclosilicate ZrCyclosil.Na
+CorniFructus Fruct.Corni
+CirsiiHerba Herb.Cirs.
+Metoprolol Metoprol.
+RubiFructus Fruct.Rubi
+YishenHuashiGranules YSHG
+MenthaeHaplocalycisHerba Herb.Menth.Haploc.
+FolicAcidTablets FAT
+TorasemideTablets TOR
+
+=== PDF PAGE 26 ===
+26
+MorindaeOfficinalisRadix Rad.Morind.Off.
+MonascusPurpureus Monasc.purp.
+DioscoreaeRhizoma Rhiz.Diosc.
+SodiumBicarbonate SBC
+IguratimodTablets IGUTab.
+LiliiBulbus Lil.Bulb.
+MassaeMedicataeFermentataeTostum M.Medic.Ferr.Tost.
+GardeniaeFructusPraeparatus Gard.Fruct.Praep.
+PhellodendriAmurensisCortex Phell.Amur.Cort.
+EphedraeHerba Eph.Herb.
+GinsengRadixetRhizoma Gins.Rad.Rhiz.
+BaricitinibTablets BaricitinibTab.
+MethotrexateTablets MTXTab.
+MethylprednisoloneTablets MethylprednisoloneTab.
+ParidisRhizoma Parid.Rhiz.
+PrednisoneAcetateTablets PA
+CicadaePeriostracum Cicad.Perios.
+KunXianJiaoNang KXJN
+LeflunomideTablets LEF
+TinosporaeCaulis Tinos.Caul.
+AngelicaePubescentisRadix Ang.Pub.Rad.
+TaxilliHerba Tax.Herb.
+CitriReticulataePericarpium Cit.Ret.Pericarp.
+MillettiaeSpeciosaeRadix Mill.Spec.Rad.
+Coriolus Coriol.
+Scorpio Scorp.
+AngelicaeDahuricaeRadix Ang.Dah.Rad.
+ErigerontisHerba Erig.Herb.
+LeiGongTenDuoGanPian LGTDGP
+CurcumaeLongaeRhizoma Curc.Long.Rhiz.
+StephaniaeTetrandraeRadix Steph.Tet.Rad.
+MoriRamulus MoriRamulus
+SiegesbeckiaeHerba Sieg.Herb.
+ZhengQingFengTongNingHuanShiPian ZQFTNHSP
+CibotiiRhizoma Cib.Rhiz.
+DrynariaeRhizoma Dryn.Rhiz.
+DipsaciRadix Dip.Rad.
+BaiShaoZongGanJiaoNang BSZGJN
+CannabisSemen Cann.Sem.
+KochiaeFructus Koch.Fruct.
+GlehniaeRadix Glehn.Rad.
+SophoraeFlavescentisRadix Soph.Flav.Rad.
+PerillaeFolium Perill.Fol.
+
+=== PDF PAGE 27 ===
+27
+DictamniCortex Dict.Cort.
+CynanchiPaniculatiRadixetRhizoma Cyn.Pan.Rad.Rhiz.
+BiQiJiaoNang BQJN
+TrachelospermiCaulis Trache.Caul.
+PoriaCumRadixPini Por.CumRad.Pin.
+NotopterygiiRhizomaetRadix Notop.Rhiz.Rad.
+GlechomaeHerba Glech.Herb.
+RecombinantHumanTumorNecrosisFactor-α
+ReceptorII:IgGFcFusionProtein TNFR-Fc
+AurantiiFructusImmaturus Aur.Fruct.Imm.
+PolygalaeRadixPraeparata Polyg.Rad.Praep.
+DendrobiiNobileCaulis Dendrob.Nob.Caul.
+Adalimumab ADA
+CitriSarcodactylisFructus Cit.Sarc.Fruct.
+OsDraconis OsDrag.
+EriobotryaeFolium Eriob.Fol.
+CayratiaeHerba Cayr.Herb.
+BenincasaeExocarpium Ben.Exocarp.
+EtoricoxibTablets ETX
+Zaocys Zaoc.
+CyclosporineSoftCapsules CsA
+ErythrinaeCortex Eryth.Cort.
+CelecoxibSoftCapsules CelecoxibCap.
+AchyranthisBidentataeRadixPraeparataCum
+Vino Achyr.Bid.Rad.Praep.Vin.
+PiperisKadsuraeCaulis Pip.Kad.Caul.
+ArcaeConchaPraeparata Arc.Conch.Praep.
+LuffaeFructusRetinervus Luff.Fruct.Ret.
+CimicifugaeRhizoma Cimic.Rhiz.
+ArtemisiaeScopariaeHerba Artem.Scop.Herb.
+EupatoriiHerba Eupat.Herb.
+CrataegusPinnatifida Crataeg.Fruct.Tost.
+GalliGigeriiEndotheliumCorneum Gall.Gig.Endoth.Corn.
+DiclofenacSodiumSustained-releaseTablets DSST
+TofacitinibTablets TFC
+CarthamiFlos Carth.Flos
+ZiziphiSpinosaeSemen Ziziph.Spin.Sem.
+AlbiziaeCortex Alb.Cort.
+NidusVespae Nid.Vesp.
+LoniceraeCaulis Lon.Caul.
+HydroxychloroquineSulfateTablets HCQ
+LycopodiiHerba Lycop.Herb.
+WangBiJiaoNang WBJN
+
+=== PDF PAGE 28 ===
+28
+GlechomaeLongitubaeHerba Glech.Long.Herb.
+SinomeniiCaulis Sinom.Caul.
+PhyllanthiFructus Phyll.Fruct.
+AurantiiFructusImmaturusPraeparatusCum
+Braisiae Aur.Fruct.Imm.Praep.Brais.
+GleditsiaeSpina Gled.Spin.
+CrataegiFructus Crataeg.Fruct.
+MassaeMedicataeFermentatae M.Medic.Ferr.
+MyristicaeSemenPraeparatumCumBraisiae Myrist.Sem.Praep.Brais.
+PsoraleaeFructus Psoral.Fruct.
+MomordicaeFructus Momord.Fruct.
+GossampiniFlos Goss.Flos
+PhragmitisRhizoma Phrag.Rhiz.
+MumeFructus Mum.Fruct.
+CompoundGlycyrrhizinTablets CGT
+ArtemisiaeArgyiFolium Artem.Arg.Fol.
+MicaeLapisAureus Mic.Lap.Aur.
+DiammoniumGlycyrrhizinateEnteric-coated
+Capsules DGEC
+AconitiLateralisRadixPraeparata Acon.Lat.Rad.Praep.
+PeriplocaeCortex Peripl.Cort.
+BombyxBatryticatus Bomb.Batryt.
+AtractylodisMacrocephalaeRhizomaPraeparatum
+CumBraisiae Atr.Macro.Rhiz.Praep.Brais.
+CitriGrandisExocarpiumRubrum Cit.Grand.Exocarp.Rub.
+SarcandraeHerba Sarc.Herb.
+Irisdomestica I.domestica
+Trichosantheskirilowii(Cortex) T.kirilowii
+Commiphoramyrrha(Vinegar-processed) C.myrrha
+Zanthoxylumbungeanum Z.bungeanum
+Boswelliacarterii B.carterii
+Clematisarmandii(Caulis) C.armandii
+Curculigoorchioides C.orchioides
+Prinsepiauniflora P.uniflora
+Eupolyphagasinensis E.sinensis
+Pittosporumglabratum P.glabratum
+GypsumFibrosum G.Fibrosum
+MycophenolateMofetilCapsules MMF
+Coixlacryma-jobivar.ma-yuen(Bran-fried) C.lacryma-jobivar.ma-yuen
+Triticumaestivumvar.aestivum(Blighted) T.aestivumvar.aestivum
+Tribulusterrestris T.terrestris
+Oroxylumindicum O.indicum
+Psoraleacorylifolia(Salt-processed) P.corylifolia
+
+=== PDF PAGE 29 ===
+29
+Lyciumchinense L.chinense
+Stemonasessilifolia S.sessilifolia
+Ephedrasinica(Honey-processed) E.sinica
+Astertataricus(Honey-processed) A.tataricus
+Tussilagofarfara T.farfara
+Schizonepetatenuifolia S.tenuifolia
+Peucedanumpraeruptorum P.praeruptorum
+Oryzasativa(Glutinousriceroot) O.sativa
+Terminaliachebula T.chebula
+Cynanchumstauntonii C.stauntonii
+Diospyroskaki(Persistentcalyx) D.kaki
+Arisaemaerubescens(Processed) A.erubescens
+Prunuspersica(Parchedseed) P.persica
+Zanthoxylumnitidum Z.nitidum
+Rosalaevigata(Fructus,fleshypart) R.laevigata
+EndotheliumCorneumGigeriaeGalli(Stir-fried) E.Corneum
+Scrophularianingpoensis S.ningpoensis
+Cinnamomumcassia C.cassia
+Morusalba(Cortex) M.alba
+Vitexnegundovar.cannabifolia(Fructus) V.negundo
+Ganodermacapense G.capense
+Polygonatumodoratum P.odoratum
+Acorustatarinowii A.tatarinowii
+SemenSojaePraeparatum(Fermentedsoybean) S.Sojae
+Curcumaphaeocaulis C.phaeocaulis
+Sparganiumstoloniferum S.stoloniferum
+Dolichoslablab(Flos) D.lablab
+Magnoliaofficinalis(Flos) M.officinalis
+Myristicafragrans M.fragrans
+Polygonumperfoliatum P.perfoliatum
+Morusalba(Ramulus) M.alba
+Agkistrodon A.spp.
+Polygalatenuifolia(Honey-processed) P.tenuifolia
+Prunellavulgaris P.vulgaris
+Aconitumcarmichaelii(Processed) A.carmichaelii
+Magnoliabiondii M.biondii
+Turpiniaarguta(Folium) T.arguta
+Xanthiumsibiricum(Fructus) X.sibiricum
+TriamcinoloneAcetonideAcetateInjection TAA
+Sterculialychnophora S.lychnophora
+Saussureainvolucrata S.involucrata
+Corydalisyanhusuo(Vinegar-processed) C.yanhusuo
+Panaxginseng(Folium) P.ginseng
+
+=== PDF PAGE 30 ===
+30
+Eriobotryajaponica(Honey-processedFolium) E.japonica
+Oryzasativa(Germinatus) O.sativa
+Polygonumchinense P.chinense
+Platycladusorientalis(Semen) P.orientalis
+Linumusitatissimum(Semen) L.usitatissimum
+ConchaOstreae(Praeparata) C.Ostreae
+Taraxacummongolicum T.mongolicum
+Caesalpiniasappan(Lignum) C.sappan
+Perillafrutescens(Caulis) P.frutescens
+Dimocarpuslongan(Arillus) D.longan
+Chimonanthuspraecox(Flos) C.praecox
+Atractylodesmacrocephala(Stir-fried) A.macrocephala
+Dolichoslablab(Semen) D.lablab
+OsDraconisPraeparata O.Draconis
+Atractylodesmacrocephala(Stir-friedwithclay) A.macrocephala
+Cervusnippon(Cornu,powdered) C.nippon
+Phellodendronamurense(Salt-processed) P.amurense
+Desmodiumstyracifolium D.styracifolium
+Tetrapanaxpapyrifer(Medulla) T.papyrifer
+Agrimoniapilosa A.pilosa
+Sanguisorbaofficinalis(Carbonised) S.officinalis
+Ziziphusjujubavar.spinosa(Stir-friedSemen) Z.jujuba
+Nelumbonucifera(Folium) N.nucifera
+Morusalba(Folium) M.alba
+Diclipterachinensis D.chinensis
+Vitextrifolia(Fructus) V.trifolia
+Cynomoriumsongaricum C.songaricum
+Curcumaaromatica C.aromatica
+Santalumalbum S.album
+Ligusticumsinense L.sinense
+Citrusaurantium(Bran-friedExocarpium) C.aurantium
+Chinemysreevesii(Vinegar-processed) C.reevesii
+Golimumab GLM
+Stauntoniachinensis S.chinensis
+Scolopendrasubspinipes S.subspinipes
+BombyxmoriFaeces B.mori
+SulfasalazineEnteric-coatedTablets SSZ
+Asparaguscochinchinensis A.cochinchinensis
+ZhengqingFengtongningInjection ZQFTN
+Inulajaponica I.japonica
+Haematitum H.spp.
+Arcasubcrenata A.subcrenata
+Trichosantheskirilowii(Semen) T.kirilowii
+
+=== PDF PAGE 31 ===
+31
+Moghaniaphilippinensis M.philippinensis
+Phellodendronamurense(Stir-fried) P.amurense
+Chinemysreevesii(Carapax) C.reevesii
+EtanerceptInjection ETN
+Alpiniaoxyphylla A.oxyphylla
+Polysaccharide-IronComplexCapsules PIC
+Sanguisorbaofficinalis S.officinalis
+Platycladusorientalis P.orientalis
+Linderaaggregata L.aggregata
+Raphanussativus(Tostus) R.sativus
+LuobitongPian L.Bitong
+Bambusaeconcretiosilicea B.concretio
+Crotoncrassifolius C.crassifolius
+Semiliquidambarcathayensis S.cathayensis
+Ardisiagigantifolia A.gigantifolia
+Pinelliaternata(Praeparata) P.ternata
+Acorustatarinowii A.tatarinowii
+Fagopyrumdibotrys F.dibotrys
+PregabalinCapsules PGB
+Cremastraappendiculata C.appendiculata
+UrsodeoxycholicAcidCapsules UDCA
+Methylprednisolone MP
+Prednisone PDN
+CyclosporineCapsules CYC
+Metoprolol MET
+Alfacalcidol ALF
+Scutellariabarbata S.barbata
+Lithospermumerythrorhizon L.erythrorhizon
+ValsartanCapsules VAL
+Juncuseffusus J.effusus
+Hydrochlorothiazide HCTZ
+Mel Mel
+Sophorajaponica S.japonica
+Isatisindigotica I.indigotica
+Panaxquinquefolius P.quinquefolius
+Trionyxsinensis(Praeparata) T.sinensis
+Typhaangustifolia T.angustifolia
+Pulsatillachinensis P.chinensis
+Dioscoreahypoglauca D.hypoglauca
+Magnetitum Magnetitum
+Vignaumbellata V.umbellata
+Cirsiumjaponicum C.japonicum
+Pterismultifida P.multifida
+
+=== PDF PAGE 32 ===
+32
+Pumex Pumex
+Euonymusalatus E.alatus
+Sargassumfusiforme S.fusiforme
+Citrusreticulata(Semen) C.reticulata
+Oryzasativa O.sativa
+Tripterygiumhypoglaucum T.hypoglaucum
+Ganodermalucidum G.lucidum
+Litchichinensis(Semen) L.chinensis
+Nelumbonucifera(Plumula) N.nucifera
+Pyrolacalliantha P.calliantha
+FossiliaDentisMastodi F.Dentis
+Rosarugosa R.rugosa
+Lasiosphaerafenzlii L.fenzlii
+Nelumbonucifera(Nodus) N.nucifera
+BubaliCornu B.Cornu
+Punicagranatum(Pericarpium) P.granatum
+MassaMedicataFermentata M.Fermentata
+Braineainsignis B.insignis
+Cnidiummonnieri C.monnieri
+Violaphilippica V.philippica
+Arecacatechu A.catechu
+Bletillastriata B.striata
+Rehmanniaglutinosa R.glutinosa
+Ilexasprella I.asprella
+Trogopterusxanthipes(Faeces) T.xanthipes
+Alliummacrostemon A.macrostemon
+Alpiniaoxyphylla A.oxyphylla
+MycophenolateMofetil MMF
+RabeprazoleSodiumEnteric-coatedCapsules RAB
+AllisartanIsoproxil ALS
+InsulinLisproProtamineMixedSuspension ILP
+Belimumab BEL
+Metformin MET
+Azathioprine AZA
+NiaodukangHeji NDK
+Repaglinide RPG
+Felodipine FEL
+Aconitumcarmichaelii(Praeparata) A.carmichaelii
+Clopidogrel CLO
+BailingJiaonang B.Jiaonang
+CalciumDobesilate CaD
+Nifedipine NIF
+VitaminBComplex VBC
+
+=== PDF PAGE 33 ===
+33
+Amlodipine AML
+AlendronateSodium ALE
+LiniuHeji L.Heji
+Ezetimibe EZE
+Dapagliflozin DAPA
+OlmesartanMedoxomil OLM
+Fenofibrate FEN
+Dulaglutide DULA
+LanthanumCarbonate LAN
+Tolvaptan TOLV
+Finerenone FIN
+Sacubitril/ValsartanSodium SAC/VAL
+Canagliflozin CANA
+InsulinLisproProtamine ILP
+Cinacalcet CIN
+LosartanPotassium/Hydrochlorothiazide LOS/HCTZ
+Callicarpanudiflora C.nudiflora
+HumanAlbumin(20%) HA
+Esomeprazole EZO
+Benazepril BZP
+IrbesartanTablets IRB
+IrbesartanandHydrochlorothiazideTablets IRB/HCTZ
+EmpagliflozinTablets EMPA
+EntecavirTablets ETV
+FebuxostatTablets FEB
+Fluvastatin FLV
+CalciumTablets CalciumTablets
+HeparinSodium HP
+Puerarialobata(Willd.)Ohwi P.lobata
+MetoprololTartrate MTP
+CanagliflozinAcetateTablets CANA
+CanagliflozinTablets CANA
+EntecavirMaleateTablets ETV
+CalciumCarbonateandVitaminD3Tablets CCDD3
+LepidiumapetalumWilld. TOR
+BenazeprilHydrochlorideTablets BZP
+PrunusarmeniacaL. P.armeniaca
+BenazeprilHydrochlorideTablets BZP
+YiLingKouFuYe YLKFY
+CordycepsMilitarisMyceliumPowderCapsule CMPC
+ZhenqiFuzhengTablet ZQFZT

@@ -1,0 +1,997 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          20
+        ]
+      ],
+      "date-time": "2026-10-20T07:11:03Z",
+      "timestamp": 1792480263112,
+      "version": "4.5.0"
+    },
+    "reference-count": 141,
+    "publisher": "Wiley",
+    "issue": "8",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              26
+            ]
+          ],
+          "date-time": "2025-05-26T00:00:00Z",
+          "timestamp": 1748217600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "onlinelibrary.wiley.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Journal Orthopaedic Research"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          8
+        ]
+      ]
+    },
+    "abstract": "<jats:title>ABSTRACT</jats:title><jats:p>Artificial intelligence (AI) is revolutionizing orthopedic research and clinical practice by enhancing diagnostic accuracy, optimizing treatment strategies, and streamlining clinical workflows. Recent advances in deep learning have enabled the development of algorithms that detect fractures, grade osteoarthritis, and identify subtle pathologies in radiographic and magnetic resonance images with performance comparable to expert clinicians. These AI‐driven systems reduce missed diagnoses and provide objective, reproducible assessments that facilitate early intervention and personalized treatment planning. Moreover, AI has made significant strides in predictive analytics by integrating diverse patient data—including gait and imaging features—to forecast surgical outcomes, implant survivorship, and rehabilitation trajectories. Emerging applications in robotics, augmented reality, digital twin technologies, and exoskeleton control promise to further transform preoperative planning and intraoperative guidance. Despite these promising developments, challenges such as data heterogeneity, algorithmic bias, and the “black box” nature of many models—as well as issues with robust validation—remain. This comprehensive review synthesizes current developments, critically examines limitations, and outlines future directions for integrating AI into musculoskeletal care.</jats:p>",
+    "DOI": "10.1002/jor.26109",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          5,
+          26
+        ]
+      ],
+      "date-time": "2025-05-26T03:14:59Z",
+      "timestamp": 1748229299000
+    },
+    "page": "1508-1527",
+    "update-policy": "https://doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 44,
+    "title": [
+      "AI in Orthopedic Research: A Comprehensive Review"
+    ],
+    "prefix": "10.1002",
+    "volume": "43",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-5270-1429",
+        "authenticated-orcid": false,
+        "given": "Abdulhamit",
+        "family": "Misir",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Orthopedics and Traumatology Bahcesehir University School of Medicine Istanbul Turkey"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ali",
+        "family": "Yuce",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopedics and Traumatology Health Sciences University Prof. Dr. Cemil Tascioglu City Hospital Istanbul Turkey"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          5,
+          26
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_14_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/17453674.2017.1344459"
+      },
+      {
+        "key": "e_1_2_14_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1148/radiol.2018172986"
+      },
+      {
+        "issue": "24",
+        "key": "e_1_2_14_4_1",
+        "first-page": "2328",
+        "article-title": "Deep Neural Network Improves Fracture Detection by Clinicians",
+        "volume": "100",
+        "author": "Lindsey R.",
+        "year": "2018",
+        "journal-title": "Journal of Bone and Joint Surgery. American Volume"
+      },
+      {
+        "key": "e_1_2_14_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.joca.2014.06.029"
+      },
+      {
+        "key": "e_1_2_14_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-024-75628-2"
+      },
+      {
+        "key": "e_1_2_14_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-019-54399-1"
+      },
+      {
+        "key": "e_1_2_14_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41591-018-0316-z"
+      },
+      {
+        "key": "e_1_2_14_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12178-021-09699-3"
+      },
+      {
+        "key": "e_1_2_14_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/app13179768"
+      },
+      {
+        "key": "e_1_2_14_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/ma13020295"
+      },
+      {
+        "key": "e_1_2_14_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.knee.2025.02.018"
+      },
+      {
+        "issue": "5",
+        "key": "e_1_2_14_13_1",
+        "first-page": "383",
+        "article-title": "Artificial Intelligence Approach in Biomechanics of Gait and Sport: A Systematic Literature Review",
+        "volume": "13",
+        "author": "Molavian R.",
+        "year": "2023",
+        "journal-title": "Journal of Biomedical Physics & Engineering"
+      },
+      {
+        "issue": "1",
+        "key": "e_1_2_14_14_1",
+        "first-page": "123",
+        "article-title": "FracAtlas: A Large Publicly Available Dataset for Fracture Classification, Localization, and Segmentation",
+        "volume": "10",
+        "author": "Buda M.",
+        "year": "2023",
+        "journal-title": "Scientific Data"
+      },
+      {
+        "key": "e_1_2_14_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/diagnostics12102420"
+      },
+      {
+        "key": "e_1_2_14_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-018-20132-7"
+      },
+      {
+        "key": "e_1_2_14_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JBHI.2021.3101549"
+      },
+      {
+        "key": "e_1_2_14_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMRB.2020.3031716"
+      },
+      {
+        "key": "e_1_2_14_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12178-024-09888-w"
+      },
+      {
+        "key": "e_1_2_14_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TIM.2021.3134764"
+      },
+      {
+        "key": "e_1_2_14_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.measurement.2023.113648"
+      },
+      {
+        "key": "e_1_2_14_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.medengphy.2023.104088"
+      },
+      {
+        "key": "e_1_2_14_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2020.3005189"
+      },
+      {
+        "key": "e_1_2_14_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2024.3414175"
+      },
+      {
+        "key": "e_1_2_14_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2020.3044355"
+      },
+      {
+        "key": "e_1_2_14_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/cancers15082290"
+      },
+      {
+        "key": "e_1_2_14_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/17453674.2018.1453714"
+      },
+      {
+        "issue": "1098",
+        "key": "e_1_2_14_28_1",
+        "article-title": "Computer vs Human: Deep Learning Versus Perceptual Training for the Interpretation of Hip Fractures on Pelvic Radiographs",
+        "volume": "92",
+        "author": "Adams M.",
+        "year": "2019",
+        "journal-title": "British Journal of Radiology"
+      },
+      {
+        "key": "e_1_2_14_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.crad.2024.08.006"
+      },
+      {
+        "key": "e_1_2_14_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.mex.2023.102295"
+      },
+      {
+        "key": "e_1_2_14_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.media.2012.02.005"
+      },
+      {
+        "key": "e_1_2_14_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-024-75628-2"
+      },
+      {
+        "key": "e_1_2_14_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3368555.3384468"
+      },
+      {
+        "key": "e_1_2_14_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/diagnostics14212451"
+      },
+      {
+        "key": "e_1_2_14_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-019-56527-3"
+      },
+      {
+        "key": "e_1_2_14_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-025-01503-7"
+      },
+      {
+        "key": "e_1_2_14_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ebiom.2020.103106"
+      },
+      {
+        "key": "e_1_2_14_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2020.3012719"
+      },
+      {
+        "key": "e_1_2_14_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.inffus.2024.102719"
+      },
+      {
+        "key": "e_1_2_14_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00256-023-04447-9"
+      },
+      {
+        "key": "e_1_2_14_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2018.2885709"
+      },
+      {
+        "key": "e_1_2_14_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JBHI.2022.3152267"
+      },
+      {
+        "key": "e_1_2_14_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/diagnostics13172760"
+      },
+      {
+        "key": "e_1_2_14_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TIM.2023.3265632"
+      },
+      {
+        "key": "e_1_2_14_45_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/jcm13175180"
+      },
+      {
+        "key": "e_1_2_14_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.20.01640"
+      },
+      {
+        "key": "e_1_2_14_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41698-025-00855-3"
+      },
+      {
+        "key": "e_1_2_14_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.wneu.2022.03.060"
+      },
+      {
+        "key": "e_1_2_14_49_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s13755-025-00343-9"
+      },
+      {
+        "key": "e_1_2_14_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/jcm12134188"
+      },
+      {
+        "key": "e_1_2_14_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/bioengineering10121364"
+      },
+      {
+        "key": "e_1_2_14_52_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S2213-8587(24)00153-0"
+      },
+      {
+        "key": "e_1_2_14_53_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1148/ryai.2020190023"
+      },
+      {
+        "key": "e_1_2_14_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1148/ryai.210212"
+      },
+      {
+        "key": "e_1_2_14_55_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/medicina59040782"
+      },
+      {
+        "key": "e_1_2_14_56_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/acr.24601"
+      },
+      {
+        "key": "e_1_2_14_57_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1148/ryai.220067"
+      },
+      {
+        "key": "e_1_2_14_58_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-020-00328-w"
+      },
+      {
+        "key": "e_1_2_14_59_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5371/hp.2021.33.2.96"
+      },
+      {
+        "key": "e_1_2_14_60_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s41205-023-00189-5"
+      },
+      {
+        "key": "e_1_2_14_61_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/jpm13121642"
+      },
+      {
+        "key": "e_1_2_14_62_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.heliyon.2023.e17718"
+      },
+      {
+        "key": "e_1_2_14_63_1",
+        "first-page": "3699",
+        "article-title": "Machine Learning in Biomaterials, Biomechanics/Mechanobiology, and Biofabrication: State of the Art and Perspective",
+        "volume": "31",
+        "author": "Wu C.",
+        "year": "2024",
+        "journal-title": "Archives of Computational Methods in Engineering"
+      },
+      {
+        "key": "e_1_2_14_64_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/app13031629"
+      },
+      {
+        "key": "e_1_2_14_65_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/medicina60091485"
+      },
+      {
+        "key": "e_1_2_14_66_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s24227363"
+      },
+      {
+        "key": "e_1_2_14_67_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s19040887"
+      },
+      {
+        "issue": "9",
+        "key": "e_1_2_14_68_1",
+        "first-page": "220",
+        "article-title": "Wearable Movement Sensors for Rehabilitation: A Focused Review of Technological and Clinical Advances",
+        "volume": "10",
+        "author": "Porciuncula F.",
+        "year": "2018",
+        "journal-title": "PM & R: The Journal of Injury, Function, and Rehabilitation"
+      },
+      {
+        "key": "e_1_2_14_69_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11042-024-19092-0"
+      },
+      {
+        "key": "e_1_2_14_70_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2217/pgs-2018-0008"
+      },
+      {
+        "key": "e_1_2_14_71_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/pharmaceutics16030332"
+      },
+      {
+        "issue": "9",
+        "key": "e_1_2_14_72_1",
+        "article-title": "Revolutionizing Orthopedic Healthcare: The Role of Robotics",
+        "volume": "15",
+        "author": "Ram P. R.",
+        "year": "2023",
+        "journal-title": "Cureus"
+      },
+      {
+        "key": "e_1_2_14_73_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1302/2046-3758.127.BJR-2023-0111.R1"
+      },
+      {
+        "key": "e_1_2_14_74_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fmedt.2022.995526"
+      },
+      {
+        "key": "e_1_2_14_75_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compbiomed.2025.109943"
+      },
+      {
+        "key": "e_1_2_14_76_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fsurg.2022.952539"
+      },
+      {
+        "key": "e_1_2_14_77_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.engappai.2024.108326"
+      },
+      {
+        "key": "e_1_2_14_78_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.media.2023.103027"
+      },
+      {
+        "key": "e_1_2_14_79_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jhsa.2021.09.008"
+      },
+      {
+        "key": "e_1_2_14_80_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.amsu.2022.104734"
+      },
+      {
+        "key": "e_1_2_14_81_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2022.3212748"
+      },
+      {
+        "key": "e_1_2_14_82_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-023-49883-8"
+      },
+      {
+        "key": "e_1_2_14_83_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/20552076221074128"
+      },
+      {
+        "key": "e_1_2_14_84_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s23249799"
+      },
+      {
+        "key": "e_1_2_14_85_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fbioe.2022.740507"
+      },
+      {
+        "key": "e_1_2_14_86_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2023.3282453"
+      },
+      {
+        "key": "e_1_2_14_87_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0309364615605373"
+      },
+      {
+        "key": "e_1_2_14_88_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12984-022-01019-1"
+      },
+      {
+        "key": "e_1_2_14_89_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s20113029"
+      },
+      {
+        "issue": "9",
+        "key": "e_1_2_14_90_1",
+        "article-title": "An Overview of Machine Learning Applications in Sports Injury Prediction",
+        "volume": "15",
+        "author": "Amendolara A.",
+        "year": "2023",
+        "journal-title": "Cureus"
+      },
+      {
+        "key": "e_1_2_14_91_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s24010119"
+      },
+      {
+        "key": "e_1_2_14_92_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s21093141"
+      },
+      {
+        "key": "e_1_2_14_93_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S2589-7500(20)30192-8"
+      },
+      {
+        "key": "e_1_2_14_94_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-019-09186-x"
+      },
+      {
+        "key": "e_1_2_14_95_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/07391102.2022.2117738"
+      },
+      {
+        "key": "e_1_2_14_96_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-024-83767-9"
+      },
+      {
+        "key": "e_1_2_14_97_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ejmech.2020.112982"
+      },
+      {
+        "key": "e_1_2_14_98_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/biom11030406"
+      },
+      {
+        "key": "e_1_2_14_99_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/biomimetics8050442"
+      },
+      {
+        "key": "e_1_2_14_100_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.bioactmat.2024.11.021"
+      },
+      {
+        "key": "e_1_2_14_101_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/rb/rbae033"
+      },
+      {
+        "key": "e_1_2_14_102_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1148/radiol.211785"
+      },
+      {
+        "key": "e_1_2_14_103_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/jcm12247730"
+      },
+      {
+        "key": "e_1_2_14_104_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compbiomed.2018.05.011"
+      },
+      {
+        "key": "e_1_2_14_105_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00330-018-5846-8"
+      },
+      {
+        "key": "e_1_2_14_106_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/healthcare12191906"
+      },
+      {
+        "key": "e_1_2_14_107_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.csbr.2024.100006"
+      },
+      {
+        "key": "e_1_2_14_108_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1302/2633-1462.55.BJO-2024-0030.R1"
+      },
+      {
+        "key": "e_1_2_14_109_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2024.12.014"
+      },
+      {
+        "key": "e_1_2_14_110_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2024.01.042"
+      },
+      {
+        "key": "e_1_2_14_111_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/s25010139"
+      },
+      {
+        "key": "e_1_2_14_112_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10278-021-00525-3"
+      },
+      {
+        "key": "e_1_2_14_113_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/app14020675"
+      },
+      {
+        "key": "e_1_2_14_114_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.media.2025.103497"
+      },
+      {
+        "key": "e_1_2_14_115_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10462-023-10638-6"
+      },
+      {
+        "key": "e_1_2_14_116_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11604-023-01474-3"
+      },
+      {
+        "key": "e_1_2_14_117_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s13042-023-02083-2"
+      },
+      {
+        "key": "e_1_2_14_118_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12559-023-10179-8"
+      },
+      {
+        "key": "e_1_2_14_119_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11063-025-11732-2"
+      },
+      {
+        "key": "e_1_2_14_120_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fradi.2023.1241651"
+      },
+      {
+        "key": "e_1_2_14_121_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0302539"
+      },
+      {
+        "key": "e_1_2_14_122_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fdgth.2024.1330160"
+      },
+      {
+        "key": "e_1_2_14_123_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pdig.0000022"
+      },
+      {
+        "key": "e_1_2_14_124_1",
+        "first-page": "83",
+        "article-title": "Explainable AI for Surgical Decision‐Making: Trust, Transparency, and Clinical Workflow",
+        "volume": "6",
+        "author": "Shen Y.",
+        "year": "2023",
+        "journal-title": "NPJ Digital Medicine"
+      },
+      {
+        "key": "e_1_2_14_125_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13018-020-02002-z"
+      },
+      {
+        "key": "e_1_2_14_126_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jeo2.70084"
+      },
+      {
+        "key": "e_1_2_14_127_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ksa.12627"
+      },
+      {
+        "key": "e_1_2_14_128_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-025-01507-3"
+      },
+      {
+        "key": "e_1_2_14_129_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-024-01413-0"
+      },
+      {
+        "key": "e_1_2_14_130_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fbioe.2021.722275"
+      },
+      {
+        "key": "e_1_2_14_131_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fbioe.2024.1347720"
+      },
+      {
+        "key": "e_1_2_14_132_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/diagnostics12051121"
+      },
+      {
+        "key": "e_1_2_14_133_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.media.2018.08.005"
+      },
+      {
+        "key": "e_1_2_14_134_1",
+        "article-title": "Deep Learning Based High‐Resolution Reconstruction of Trabecular Bone Microstructures From Low‐Resolution CT Scans Using GAN‐CIRCLE",
+        "volume": "11317",
+        "author": "Guha I.",
+        "year": "2020",
+        "journal-title": "Proceedings of SPIE– The International Society for Optical Engineering"
+      },
+      {
+        "key": "e_1_2_14_135_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2340/17453674.2024.40182"
+      },
+      {
+        "key": "e_1_2_14_136_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/59607"
+      },
+      {
+        "key": "e_1_2_14_137_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/10225536241268789"
+      },
+      {
+        "issue": "2",
+        "key": "e_1_2_14_138_1",
+        "article-title": "ChatGPT Is Moderately Accurate in Providing a General Overview of Orthopaedic Conditions",
+        "volume": "9",
+        "author": "Sparks C. A.",
+        "year": "2024",
+        "journal-title": "JB & JS Open Access"
+      },
+      {
+        "key": "e_1_2_14_139_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2020.09.029"
+      },
+      {
+        "key": "e_1_2_14_140_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamanetworkopen.2021.1728"
+      },
+      {
+        "key": "e_1_2_14_141_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.inffus.2021.07.016"
+      },
+      {
+        "key": "e_1_2_14_142_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.heliyon.2024.e26297"
+      }
+    ],
+    "container-title": [
+      "Journal of Orthopaedic Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/jor.26109",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          14
+        ]
+      ],
+      "date-time": "2025-07-14T13:50:47Z",
+      "timestamp": 1752501047000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://onlinelibrary.wiley.com/doi/10.1002/jor.26109"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          5,
+          26
+        ]
+      ]
+    },
+    "references-count": 141,
+    "journal-issue": {
+      "issue": "8",
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            8
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1002/jor.26109"
+    ],
+    "URL": "https://doi.org/10.1002/jor.26109",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "0736-0266",
+      "1554-527X"
+    ],
+    "issn-type": [
+      {
+        "value": "0736-0266",
+        "type": "print"
+      },
+      {
+        "value": "1554-527X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          5,
+          26
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2025-03-06",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-05-11",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-05-26",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

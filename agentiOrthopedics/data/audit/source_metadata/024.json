@@ -1,0 +1,673 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          13
+        ]
+      ],
+      "date-time": "2026-10-13T09:17:49Z",
+      "timestamp": 1791883069794,
+      "version": "4.3.4"
+    },
+    "reference-count": 38,
+    "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+    "issue": "10",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Clin Orthop Relat Res"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          10
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n          <jats:sec>\n            <jats:title>Background</jats:title>\n            <jats:p>Machine learning techniques can identify complex relationships in large healthcare datasets and build prediction models that better inform physicians in ways that can assist in patient treatment decision-making. In the domain of shoulder arthroplasty, machine learning appears to have the potential to anticipate patients’ results after surgery, but this has not been well explored.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Questions/purposes</jats:title>\n            <jats:p>(1) What is the accuracy of machine learning to predict the American Shoulder and Elbow Surgery (ASES), University of California Los Angeles (UCLA), Constant, global shoulder function, and VAS pain scores, as well as active abduction, forward flexion, and external rotation at 1 year, 2 to 3 years, 3 to 5 years, and more than 5 years after anatomic total shoulder arthroplasty (aTSA) or reverse total shoulder arthroplasty (rTSA)? (2) What is the accuracy of machine learning to identify whether a patient will achieve clinical improvement that exceeds the minimum clinically important difference (MCID) threshold for each outcome measure? (3) What is the accuracy of machine learning to identify whether a patient will achieve clinical improvement that exceeds the substantial clinical benefit threshold for each outcome measure?</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Methods</jats:title>\n            <jats:p>A machine learning analysis was conducted on a database of 7811 patients undergoing shoulder arthroplasty of one prosthesis design to create predictive models for multiple clinical outcome measures. Excluding patients with revisions, fracture indications, and hemiarthroplasty resulted in 6210 eligible primary aTSA and rTSA patients, of whom 4782 patients with 11,198 postoperative follow-up visits had sufficient preoperative, intraoperative, and postoperative data to train and test the predictive models. Preoperative clinical data from 1895 primary aTSA patients and 2887 primary rTSA patients were analyzed using three commercially available supervised machine learning techniques: linear regression, XGBoost, and Wide and Deep, to train and test predictive models for the ASES, UCLA, Constant, global shoulder function, and VAS pain scores, as well as active abduction, forward flexion, and external rotation. Our primary study goal was to quantify the accuracy of three machine learning techniques to predict each outcome measure at multiple postoperative timepoints after aTSA and rTSA using the mean absolute error between the actual and predicted values. Our secondary study goals were to identify whether a patient would experience clinical improvement greater than the MCID and substantial clinical benefit anchor-based thresholds of patient satisfaction for each outcome measure as quantified by the model classification parameters of precision, recall, accuracy, and area under the receiver operating curve.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Results</jats:title>\n            <jats:p>Each machine learning technique demonstrated similar accuracy to predict each outcome measure at each postoperative point for both aTSA and rTSA, though small differences in prediction accuracy were observed between techniques. Across all postsurgical timepoints, the Wide and Deep technique was associated with the smallest mean absolute error and predicted the postoperative ASES score to ± 10.1 to 11.3 points, the UCLA score to ± 2.5 to 3.4, the Constant score to ± 7.3 to 7.9, the global shoulder function score to ± 1.0 to 1.4, the VAS pain score to ± 1.2 to 1.4, active abduction to ± 18 to 21°, forward elevation to ± 15 to 17°, and external rotation to ± 10 to 12°. These models also accurately identified the patients who did and did not achieve clinical improvement that exceeded the MCID (93% to 99% accuracy for patient-reported outcome measures (PROMs) and 85% to 94% for pain, function, and ROM measures) and substantial clinical benefit (82% to 93% accuracy for PROMs and 78% to 90% for pain, function, and ROM measures) thresholds.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Conclusions</jats:title>\n            <jats:p>Machine learning techniques can use preoperative data to accurately predict clinical outcomes at multiple postoperative points after shoulder arthroplasty and accurately risk-stratify patients by preoperatively identifying who may and who may not achieve MCID and substantial clinical benefit improvement thresholds for each outcome measure.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Clinical Relevance</jats:title>\n            <jats:p>Three different commercially available machine learning techniques were used to train and test models that predicted clinical outcomes after aTSA and rTSA; this device-type comparison was performed to demonstrate how predictive modeling techniques can be used in the near future to help answer unsolved clinical questions and augment decision-making to improve outcomes after shoulder arthroplasty.</jats:p>\n          </jats:sec>",
+    "DOI": "10.1097/corr.0000000000001263",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          4,
+          25
+        ]
+      ],
+      "date-time": "2020-04-25T06:04:50Z",
+      "timestamp": 1587794690000
+    },
+    "page": "2351-2363",
+    "source": "Crossref",
+    "is-referenced-by-count": 90,
+    "title": [
+      "What Is the Accuracy of Three Different Machine Learning Techniques to Predict Clinical Outcomes After Shoulder Arthroplasty?"
+    ],
+    "prefix": "10.1097",
+    "volume": "478",
+    "author": [
+      {
+        "given": "Vikas",
+        "family": "Kumar",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Christopher",
+        "family": "Roche",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Steven",
+        "family": "Overman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ryan",
+        "family": "Simovitch",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pierre-Henri",
+        "family": "Flurin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thomas",
+        "family": "Wright",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Joseph",
+        "family": "Zuckerman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Howard",
+        "family": "Routman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ankur",
+        "family": "Teredesai",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "276",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          4,
+          20
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "R1-20230814",
+        "first-page": "1",
+        "article-title": "Interpretable machine learning in healthcare",
+        "volume": "1",
+        "author": "Ahmad",
+        "year": "2018",
+        "journal-title": "IEEE Intelligent Informatics Bulletin"
+      },
+      {
+        "key": "R2-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "516",
+        "DOI": "10.1515/cclm-2017-0287",
+        "article-title": "Machine learning in laboratory medicine: waiting for the flood?",
+        "volume": "56",
+        "author": "Cabitza",
+        "year": "2018",
+        "journal-title": "Clin Chem Lab Med"
+      },
+      {
+        "key": "R3-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "75",
+        "DOI": "10.3389/fbioe.2018.00075",
+        "article-title": "Machine learning in orthopedics: a literature review",
+        "volume": "6",
+        "author": "Cabitza",
+        "year": "2018",
+        "journal-title": "Front Bioeng Biotechnol"
+      },
+      {
+        "key": "R4-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "856",
+        "DOI": "10.1016/j.arth.2013.07.002",
+        "article-title": "Predictors of early complications of total shoulder arthroplasty",
+        "volume": "29",
+        "author": "Chalmers",
+        "year": "2014",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "R5-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "34",
+        "DOI": "10.1097/BOT.0000000000001026",
+        "article-title": "Prediction Model of In-Hospital Mortality After Hip Fracture Surgery",
+        "volume": "32",
+        "author": "Endo",
+        "year": "2018",
+        "journal-title": "J Orthop Trauma"
+      },
+      {
+        "key": "R6-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "557",
+        "DOI": "10.1016/j.jse.2010.11.005",
+        "article-title": "Factors predicting complication rates after primary shoulder arthroplasty",
+        "volume": "20",
+        "author": "Farng",
+        "year": "2011",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "key": "R7-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "1267",
+        "DOI": "10.1097/CORR.0000000000000687",
+        "article-title": "Can machine learning algorithms predict which patients will achieve minimally clinically important differences from total joint arthroplasty?",
+        "volume": "477",
+        "author": "Fontana",
+        "year": "2019",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "R8-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "1264",
+        "DOI": "10.1007/s11999.0000000000000270",
+        "article-title": "Are age and patient gender associated with different rates and magnitudes of clinical improvement after reverse shoulder arthroplasty?",
+        "volume": "476",
+        "author": "Friedman",
+        "year": "2018",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "R9-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "266",
+        "DOI": "10.1016/j.jses.2019.09.010",
+        "article-title": "Preoperative parameters that predict postoperative patient reported outcome measures and range of motion with anatomic and reverse total shoulder arthroplasty",
+        "volume": "3",
+        "author": "Friedman",
+        "year": "2019",
+        "journal-title": "JSES Open Access"
+      },
+      {
+        "key": "R10-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "1839",
+        "DOI": "10.2106/JBJS.G.01095",
+        "article-title": "Defining substantial clinical benefit following lumbar spine arthrodesis",
+        "volume": "90",
+        "author": "Glassman",
+        "year": "2008",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "key": "R11-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "248",
+        "DOI": "10.1186/1471-2474-15-248",
+        "article-title": "A prospective study of the association of patient expectations with changes in health-related quality of life outcomes, following total joint replacement",
+        "volume": "15",
+        "author": "Gonzalez Saenz de Tejada",
+        "year": "2014",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "key": "R12-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "447",
+        "DOI": "10.1111/j.1524-4733.2009.00685.x",
+        "article-title": "Patient expectations and health-related quality of life outcomes following total joint replacement",
+        "volume": "13",
+        "author": "Gonzalez Sáenz de Tejada",
+        "year": "2010",
+        "journal-title": "Value Health"
+      },
+      {
+        "key": "R13-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.2307/2074954",
+        "article-title": "Applied logistic regression",
+        "volume": "23",
+        "author": "Gortmaker",
+        "year": "1994",
+        "journal-title": "Contemp Sociol"
+      },
+      {
+        "key": "R14-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "e410",
+        "DOI": "10.1016/j.jse.2019.05.017",
+        "article-title": "Construct validation of machine learning in the prediction of short-term postoperative complications following total shoulder arthroplasty",
+        "volume": "28",
+        "author": "Gowd",
+        "year": "2019",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "key": "R15-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "452",
+        "DOI": "10.1097/CORR.0000000000000601",
+        "article-title": "Can machine learning methods produce accurate and easy-to-use prediction models of 30-day complications and mortality after knee or hip arthroplasty?",
+        "volume": "477",
+        "author": "Harris",
+        "year": "2019",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "R17-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "407",
+        "DOI": "10.1016/0197-2456(89)90005-6",
+        "article-title": "Measurement of health status. Ascertaining the minimal clinically important difference",
+        "volume": "10",
+        "author": "Jaeschke",
+        "year": "1989",
+        "journal-title": "Control Clin Trials"
+      },
+      {
+        "key": "R18-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "819",
+        "DOI": "10.1007/s00198-016-3828-8",
+        "article-title": "Clinical fracture risk evaluated by hierarchical agglomerative clustering",
+        "volume": "28",
+        "author": "Kruse",
+        "year": "2017",
+        "journal-title": "Osteoporos Int"
+      },
+      {
+        "key": "R19-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "348",
+        "DOI": "10.1007/s00223-017-0238-7",
+        "article-title": "Machine learning principles can improve hip fracture prediction",
+        "volume": "100",
+        "author": "Kruse",
+        "year": "2017",
+        "journal-title": "Calcif Tissue Int"
+      },
+      {
+        "key": "R20-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "929",
+        "DOI": "10.1007/s11999-017-5253-5",
+        "article-title": "Editorial: The minimum clinically important difference-The least we can do",
+        "volume": "475",
+        "author": "Leopold",
+        "year": "2017",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "R21-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "e71",
+        "DOI": "10.1016/j.jse.2016.08.001",
+        "article-title": "Total shoulder arthroplasty: risk factors for intraoperative and postoperative complications in patients with primary arthritis",
+        "volume": "26",
+        "author": "Leschinger",
+        "year": "2017",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "key": "R22-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "31",
+        "DOI": "10.1145/3236386.3241340",
+        "article-title": "The mythos of model interpretability",
+        "volume": "16",
+        "author": "Lipton",
+        "year": "2018",
+        "journal-title": "Queue"
+      },
+      {
+        "key": "R23-20230814",
+        "first-page": "1273",
+        "article-title": "The importance of patient expectations in predicting functional outcomes after total joint arthroplasty",
+        "volume": "29",
+        "author": "Mahomed",
+        "year": "2002",
+        "journal-title": "J Rheumatol"
+      },
+      {
+        "key": "R24-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "2496",
+        "DOI": "10.1007/s11999-016-4990-1",
+        "article-title": "What factors are predictive of patient-reported outcomes? A prospective study of 337 shoulder arthroplasties",
+        "volume": "474",
+        "author": "Matsen",
+        "year": "2016",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "R25-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "725",
+        "DOI": "10.1016/j.apmr.2012.11.011",
+        "article-title": "Defining substantial clinical benefit for patient-rated outcome tools for shoulder impingement syndrome",
+        "volume": "94",
+        "author": "Michener",
+        "year": "2013",
+        "journal-title": "Arch Phys Med Rehabil"
+      },
+      {
+        "key": "R26-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "1216",
+        "DOI": "10.1056/NEJMp1606181",
+        "article-title": "Predicting the future - big data, machine learning, and clinical medicine",
+        "volume": "375",
+        "author": "Obermeyer",
+        "year": "2016",
+        "journal-title": "N Engl J Med"
+      },
+      {
+        "key": "R27-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "53",
+        "DOI": "10.1186/1471-2474-15-53",
+        "article-title": "Determinants of satisfaction 1 year after total hip arthroplasty: the role of expectations fulfilment",
+        "volume": "15",
+        "author": "Palazzo",
+        "year": "2014",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "key": "R28-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "174",
+        "DOI": "10.1016/j.jses.2019.07.004",
+        "article-title": "Patient-reported outcomes of reverse total shoulder arthroplasty: a comparative risk factor analysis of improved versus unimproved cases",
+        "volume": "3",
+        "author": "Parsons",
+        "year": "2019",
+        "journal-title": "JSES Open Access"
+      },
+      {
+        "key": "R29-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "632",
+        "DOI": "10.1016/j.arth.2018.12.030",
+        "article-title": "Development and validation of a machine learning algorithm after primary total hip arthroplasty: Applications to length of stay and payment models",
+        "volume": "34",
+        "author": "Ramkumar",
+        "year": "2019",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "R30-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "1647",
+        "DOI": "10.1016/j.jse.2014.04.015",
+        "article-title": "Complication rates comparing primary with revision reverse total shoulder arthroplasty",
+        "volume": "23",
+        "author": "Saltzman",
+        "year": "2014",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "key": "R31-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "1289",
+        "DOI": "10.1016/j.jse.2013.12.032",
+        "article-title": "Factors that predict postoperative motion in patients treated with reverse shoulder arthroplasty",
+        "volume": "23",
+        "author": "Schwartz",
+        "year": "2014",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "key": "R32-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "973",
+        "DOI": "10.1016/j.jbiomech.2005.01.011",
+        "article-title": "Using support vector machines to optimally classify rotator cuff strength data and quantify post-operative strength in rotator cuff tear patients",
+        "volume": "39",
+        "author": "Silver",
+        "year": "2006",
+        "journal-title": "J Biomech"
+      },
+      {
+        "key": "R33-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "298",
+        "DOI": "10.1016/j.jse.2017.09.013",
+        "article-title": "Quantifying success after total shoulder arthroplasty: the minimal clinically important difference",
+        "volume": "27",
+        "author": "Simovitch",
+        "year": "2018",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "key": "R34-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "903",
+        "DOI": "10.1016/j.jse.2017.12.014",
+        "article-title": "Quantifying success after total shoulder arthroplasty: the substantial clinical benefit",
+        "volume": "27",
+        "author": "Simovitch",
+        "year": "2018",
+        "journal-title": "J Shoulder Elbow Surg"
+      },
+      {
+        "key": "R35-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "1801",
+        "DOI": "10.2106/JBJS.16.01387",
+        "article-title": "Rate of improvement in clinical outcomes with anatomic and reverse total shoulder arthroplasty",
+        "volume": "99",
+        "author": "Simovitch",
+        "year": "2017",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "key": "R37-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "2040",
+        "DOI": "10.1097/CORR.0000000000000433",
+        "article-title": "Can machine-learning techniques be used for 5-year survival prediction of patients with chondrosarcoma?",
+        "volume": "476",
+        "author": "Thio",
+        "year": "2018",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "R38-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.1007/s40708-017-0065-7",
+        "article-title": "Machine learning–XGBoost analysis of language networks to classify patients with epilepsy",
+        "volume": "4",
+        "author": "Torlay",
+        "year": "2017",
+        "journal-title": "Brain Inform"
+      },
+      {
+        "key": "R39-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "2624",
+        "DOI": "10.1016/j.arth.2019.06.007",
+        "article-title": "Clinical and statistical validation of a probabilistic prediction tool of total knee arthroplasty outcome",
+        "volume": "34",
+        "author": "Twiggs",
+        "year": "2019",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "R40-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "1606",
+        "DOI": "10.1109/TII.2017.2785963",
+        "article-title": "Wide and deep convolutional neural networks for electricity-theft detection to secure smart grids",
+        "volume": "14",
+        "author": "Zheng",
+        "year": "2017",
+        "journal-title": "IEEE Transactions on Industrial Informatics"
+      }
+    ],
+    "container-title": [
+      "Clinical Orthopaedics &amp; Related Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.lww.com/10.1097/CORR.0000000000001263",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          8,
+          14
+        ]
+      ],
+      "date-time": "2023-08-14T05:22:55Z",
+      "timestamp": 1691990575000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.lww.com/10.1097/CORR.0000000000001263"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          4,
+          20
+        ]
+      ]
+    },
+    "references-count": 38,
+    "journal-issue": {
+      "issue": "10",
+      "published-print": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1097/corr.0000000000001263",
+    "relation": {},
+    "ISSN": [
+      "0009-921X",
+      "1528-1132"
+    ],
+    "issn-type": [
+      {
+        "value": "0009-921X",
+        "type": "print"
+      },
+      {
+        "value": "1528-1132",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          4,
+          20
+        ]
+      ]
+    }
+  }
+}

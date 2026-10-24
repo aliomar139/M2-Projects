@@ -1,0 +1,819 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          18
+        ]
+      ],
+      "date-time": "2026-09-18T19:15:55Z",
+      "timestamp": 1789758955922,
+      "version": "4.0.1"
+    },
+    "reference-count": 56,
+    "publisher": "Frontiers Media SA",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              20
+            ]
+          ],
+          "date-time": "2023-06-20T00:00:00Z",
+          "timestamp": 1687219200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100008899",
+        "name": "University of South Carolina",
+        "doi-asserted-by": "publisher",
+        "award": [
+          " "
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              " "
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100008899",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "frontiersin.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Front. Digit. Health"
+    ],
+    "abstract": "<jats:sec>\n                    <jats:title>Background</jats:title>\n                    <jats:p>A core set of requirements for designing AI-based Health Recommender Systems (HRS) is a thorough understanding of human factors in a decision-making process. Patient preferences regarding treatment outcomes can be one important human factor. For orthopaedic medicine, limited communication may occur between a patient and a provider during the short duration of a clinical visit, limiting the opportunity for the patient to express treatment outcome preferences (TOP). This may occur despite patient preferences having a significant impact on achieving patient satisfaction, shared decision making and treatment success. Inclusion of patient preferences during patient intake and/or during the early phases of patient contact and information gathering can lead to better treatment recommendations.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Aim</jats:title>\n                    <jats:p>We aim to explore patient treatment outcome preferences as significant human factors in treatment decision making in orthopedics. The goal of this research is to design, build, and test an app that collects baseline TOPs across orthopaedic outcomes and reports this information to providers during a clinical visit. This data may also be used to inform the design of HRSs for orthopaedic treatment decision making.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>We created a mobile app to collect TOPs using a direct weighting (DW) technique. We used a mixed methods approach to pilot test the app with 23 first-time orthopaedic visit patients presenting with joint pain and/or function deficiency by presenting the app for utilization and conducting qualitative interviews and quantitative surveys post utilization.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>The study validated five core TOP domains, with most users dividing their 100-point DW allocation across 1–3 domains. The tool received moderate to high usability scores. Thematic analysis of patient interviews provides insights into TOPs that are important to patients, how they can be communicated effectively, and incorporated into a clinical visit with meaningful patient-provider communication that leads to shared decision making.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusion</jats:title>\n                    <jats:p>Patient TOPs may be important human factors to consider in determining treatment options that may be helpful for automating patient treatment recommendations. We conclude that inclusion of patient TOPs to inform the design of HRSs results in creating more robust patient treatment profiles in the EHR thus enhancing opportunities for treatment recommendations and future AI applications.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.3389/fdgth.2023.1137066",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          20
+        ]
+      ],
+      "date-time": "2023-06-20T05:26:37Z",
+      "timestamp": 1687238797000
+    },
+    "update-policy": "https://doi.org/10.3389/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 9,
+    "title": [
+      "Patient preferences as human factors for health data recommender systems and shared decision making in orthopaedic practice"
+    ],
+    "prefix": "10.3389",
+    "volume": "5",
+    "author": [
+      {
+        "given": "Akanksha",
+        "family": "Singh",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Benjamin",
+        "family": "Schooley",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sarah B.",
+        "family": "Floyd",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stephen G.",
+        "family": "Pill",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "John M.",
+        "family": "Brooks",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1965",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          20
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "B1",
+        "doi-asserted-by": "crossref",
+        "first-page": "795",
+        "DOI": "10.1007/978-3-030-58721-5_24",
+        "article-title": "Clinical decision-support systems",
+        "volume-title": "Biomedical informatics.",
+        "author": "Musen",
+        "year": "2021"
+      },
+      {
+        "key": "B2",
+        "doi-asserted-by": "publisher",
+        "first-page": "161",
+        "DOI": "10.1016/0010-4825(85)90057-5",
+        "article-title": "Answer justification in medical decision support systems based on Bayesian classification",
+        "volume": "15",
+        "author": "Reggia",
+        "year": "1985",
+        "journal-title": "Comput Biol Med"
+      },
+      {
+        "key": "B3",
+        "doi-asserted-by": "publisher",
+        "first-page": "35",
+        "DOI": "10.2307/2981737",
+        "article-title": "Statistical and knowledge-based approaches to clinical decision-support systems, with an application in gastroenterology",
+        "volume": "147",
+        "author": "Spiegelhalter",
+        "year": "1984",
+        "journal-title": "J R Stat Soc Ser A"
+      },
+      {
+        "key": "B4",
+        "doi-asserted-by": "publisher",
+        "first-page": "61",
+        "DOI": "10.1001/jama.1987.03400010065029",
+        "article-title": "Computer programs to support clinical decision making",
+        "volume": "258",
+        "author": "Shortliffe",
+        "year": "1987",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "B5",
+        "doi-asserted-by": "publisher",
+        "first-page": "385",
+        "DOI": "10.1016/j.dss.2007.05.003",
+        "article-title": "Recommendation systems for decision support: an editorial introduction",
+        "volume": "45",
+        "author": "Liang",
+        "year": "2008",
+        "journal-title": "Decis Support Syst"
+      },
+      {
+        "key": "B6",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1007/978-0-387-85820-3_1",
+        "article-title": "Introduction to recommender systems handbook",
+        "volume-title": "Recommender systems handbook",
+        "author": "Ricci",
+        "year": "2011"
+      },
+      {
+        "key": "B7",
+        "doi-asserted-by": "publisher",
+        "first-page": "11",
+        "DOI": "10.3390/ijerph110302580",
+        "article-title": "Health recommender systems: concepts, requirements, technical basics and challenges",
+        "volume": "11",
+        "author": "Wiesner",
+        "year": "2014",
+        "journal-title": "Int J Environ Res Public Heal"
+      },
+      {
+        "key": "B8",
+        "author": "Gyrard",
+        "year": ""
+      },
+      {
+        "key": "B9",
+        "first-page": "377",
+        "author": "Han",
+        "year": "2018"
+      },
+      {
+        "key": "B10",
+        "first-page": "481",
+        "author": "Han",
+        "year": "2019"
+      },
+      {
+        "key": "B11",
+        "first-page": "563",
+        "article-title": "Explainable AI: a brief survey on history, research areas, approaches and challenges",
+        "volume-title": "Lecture notes in computer science (including subseries lecture notes in artificial intelligence and lecture notes in bioinformatics)",
+        "author": "Xu",
+        "year": "2019"
+      },
+      {
+        "key": "B12",
+        "doi-asserted-by": "crossref",
+        "first-page": "41",
+        "DOI": "10.1007/978-3-030-28954-6_3",
+        "article-title": "Interpretability in intelligent systems—a new concept?",
+        "volume-title": "Explainable AI: Interpreting, explaining and visualizing deep learning lecture notes in computer science",
+        "author": "Hansen",
+        "year": "2019"
+      },
+      {
+        "key": "B13",
+        "doi-asserted-by": "publisher",
+        "first-page": "206",
+        "DOI": "10.1038/s42256-019-0048-x",
+        "article-title": "Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead",
+        "volume": "1",
+        "author": "Rudin",
+        "year": "2019",
+        "journal-title": "Nat Mach Intell"
+      },
+      {
+        "key": "B14",
+        "doi-asserted-by": "publisher",
+        "first-page": "48",
+        "DOI": "10.1109/MIC.2020.3013683",
+        "article-title": "Knowledge graphs to empower humanity-inspired AI systems",
+        "volume": "24",
+        "author": "Purohit",
+        "year": "2020",
+        "journal-title": "IEEE Internet Comput"
+      },
+      {
+        "key": "B15",
+        "doi-asserted-by": "publisher",
+        "first-page": "e225",
+        "DOI": "10.1016/j.jse.2020.07.042",
+        "article-title": "Using machine learning to predict clinical outcomes after shoulder arthroplasty with a minimal feature set",
+        "volume": "30",
+        "author": "Kumar",
+        "year": "2021",
+        "journal-title": "J Shoulder Elb Surg"
+      },
+      {
+        "key": "B16",
+        "doi-asserted-by": "publisher",
+        "first-page": "e12519",
+        "DOI": "10.1111/exsy.12519",
+        "article-title": "A survey on semanticized and personalized health recommender systems",
+        "volume": "37",
+        "author": "Çelik Ertuğrul",
+        "year": "2020",
+        "journal-title": "Expert Syst"
+      },
+      {
+        "key": "B17",
+        "doi-asserted-by": "publisher",
+        "first-page": "e18035",
+        "DOI": "10.2196/18035",
+        "article-title": "Health recommender systems: systematic review",
+        "volume": "23",
+        "author": "De Croon",
+        "year": "2021",
+        "journal-title": "J Med Internet Res"
+      },
+      {
+        "key": "B18",
+        "author": "Su",
+        "year": ""
+      },
+      {
+        "key": "B19",
+        "doi-asserted-by": "publisher",
+        "first-page": "593",
+        "DOI": "10.1093/jamia/ocx100",
+        "article-title": "Effects of computerized decision support system implementations on patient outcomes in inpatient care: a systematic review",
+        "volume": "25",
+        "author": "Varghese",
+        "year": "2018",
+        "journal-title": "J Am Med Informatics Assoc"
+      },
+      {
+        "key": "B20",
+        "doi-asserted-by": "publisher",
+        "first-page": "81",
+        "DOI": "10.1007/978-3-319-00372-6_5",
+        "article-title": "Toward the next generation of recommender systems: applications and research challenges",
+        "volume": "24",
+        "author": "Felfernig",
+        "year": "2013",
+        "journal-title": "Smart Innov Syst Technol"
+      },
+      {
+        "key": "B21",
+        "doi-asserted-by": "publisher",
+        "first-page": "181",
+        "DOI": "10.1016/j.jviscsurg.2019.04.014",
+        "article-title": "From informed consent to shared decision-making in surgery",
+        "volume": "156",
+        "author": "Slim",
+        "year": "2019",
+        "journal-title": "J Visc Surg"
+      },
+      {
+        "key": "B22",
+        "doi-asserted-by": "publisher",
+        "first-page": "1375",
+        "DOI": "10.1007/s11999-016-4813-4",
+        "article-title": "Value-based healthcare: patient-reported outcomes in clinical decision making",
+        "volume": "474",
+        "author": "Baumhauer",
+        "year": "2016",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "B23",
+        "doi-asserted-by": "publisher",
+        "first-page": "441",
+        "DOI": "10.1001/jama.1990.03440030128037",
+        "article-title": "Anatomy of a decision",
+        "volume": "263",
+        "author": "Eddy",
+        "year": "1990",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "B24",
+        "doi-asserted-by": "publisher",
+        "first-page": "328",
+        "DOI": "10.1016/j.injury.2006.01.030",
+        "article-title": "Incorporating patient preferences into orthopaedic practice: should the orthopaedic encounter change?",
+        "volume": "37",
+        "author": "Bryant",
+        "year": "2006",
+        "journal-title": "Injury"
+      },
+      {
+        "key": "B25",
+        "doi-asserted-by": "publisher",
+        "first-page": "114",
+        "DOI": "10.1007/s11606-006-5006-8",
+        "article-title": "Patients’ preferences for risk disclosure and role in decision making for invasive medical procedures",
+        "volume": "12",
+        "author": "Mazur",
+        "year": "1997",
+        "journal-title": "J Gen Intern Med"
+      },
+      {
+        "key": "B26",
+        "doi-asserted-by": "publisher",
+        "first-page": "271",
+        "DOI": "10.1093/rheumatology/kew409",
+        "article-title": "Hierarchical structure and importance of patients’ reasons for treatment choices in knee and hip osteoarthritis: a concept mapping study",
+        "volume": "56",
+        "author": "Selten",
+        "year": "2017",
+        "journal-title": "Rheumatol"
+      },
+      {
+        "key": "B27",
+        "doi-asserted-by": "publisher",
+        "first-page": "524",
+        "DOI": "10.1111/jep.13321",
+        "article-title": "The use of PROMs and shared decision-making in medical encounters with patients: an opportunity to deliver value-based health care to patients",
+        "volume": "26",
+        "author": "Damman",
+        "year": "2020",
+        "journal-title": "J Eval Clin Pr"
+      },
+      {
+        "key": "B28",
+        "doi-asserted-by": "publisher",
+        "first-page": "123",
+        "DOI": "10.1186/1471-2474-9-123",
+        "article-title": "Management of chronic knee pain: a survey of patient preferences and treatment received",
+        "volume": "9",
+        "author": "Mitchell",
+        "year": "2008",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "key": "B29",
+        "doi-asserted-by": "publisher",
+        "first-page": "1414",
+        "DOI": "10.1002/jor.24614",
+        "article-title": "Advanced decision-making using patient-reported outcome measures in total joint replacement",
+        "volume": "38",
+        "author": "Jayakumar",
+        "year": "2020",
+        "journal-title": "J Orthop Res"
+      },
+      {
+        "key": "B30",
+        "doi-asserted-by": "publisher",
+        "first-page": "e3790",
+        "DOI": "10.1097/MD.0000000000003790",
+        "article-title": "Surgical innovation: the ethical agenda: a systematic review",
+        "volume": "95",
+        "author": "Broekman",
+        "year": "2016",
+        "journal-title": "Medicine"
+      },
+      {
+        "key": "B31",
+        "doi-asserted-by": "publisher",
+        "first-page": "813",
+        "DOI": "10.1001/jamasurg.2017.1572",
+        "article-title": "Appropriateness, health care reform, and the surgeon: perspectives from the surgical outcomes club",
+        "volume": "152",
+        "author": "Weissman",
+        "year": "2017",
+        "journal-title": "JAMA Surg"
+      },
+      {
+        "key": "B32",
+        "doi-asserted-by": "publisher",
+        "first-page": "e1918663",
+        "DOI": "10.1001/jamanetworkopen.2019.18663",
+        "article-title": "Association of surgical treatment with adverse events and mortality among medicare beneficiaries with proximal humerus fracture",
+        "volume": "3",
+        "author": "Floyd",
+        "year": "2020",
+        "journal-title": "JAMA Netw Open"
+      },
+      {
+        "key": "B33",
+        "doi-asserted-by": "publisher",
+        "first-page": "1030",
+        "DOI": "10.1016/j.jhsa.2018.03.036",
+        "article-title": "Patients should define value in health care: a conceptual framework",
+        "volume": "43",
+        "author": "Kamal",
+        "year": "2018",
+        "journal-title": "J Hand Surg Am"
+      },
+      {
+        "key": "B34",
+        "doi-asserted-by": "publisher",
+        "first-page": "357",
+        "DOI": "10.1001/jama.2016.18719",
+        "article-title": "Surgical decision making: challenging dogma and incorporating patient preferences",
+        "volume": "317",
+        "author": "Chhabra",
+        "year": "2017",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "B35",
+        "doi-asserted-by": "publisher",
+        "first-page": "e20.00034",
+        "DOI": "10.5435/JAAOSGlobal-D-20-00034",
+        "article-title": "Integration of patient-reported outcomes in a total joint arthroplasty program at a high-volume academic medical center",
+        "volume": "4",
+        "author": "Bhatt",
+        "year": "2020",
+        "journal-title": "JAAOS Glob Res Rev"
+      },
+      {
+        "key": "B36",
+        "doi-asserted-by": "publisher",
+        "first-page": "436",
+        "DOI": "10.2106/JBJS.17.00608",
+        "article-title": "Patient-reported outcomes in orthopaedics",
+        "volume": "100",
+        "author": "Christensen",
+        "year": "2018",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "key": "B37",
+        "doi-asserted-by": "publisher",
+        "first-page": "23",
+        "DOI": "10.2147/PPA.S227207",
+        "article-title": "Decision aid implementation and patients’ preferences for hip and knee osteoarthritis treatment: insights from the high value healthcare collaborative",
+        "volume": "14",
+        "author": "Hurley",
+        "year": "2020",
+        "journal-title": "Patient Prefer Adherence"
+      },
+      {
+        "key": "B38",
+        "doi-asserted-by": "crossref",
+        "first-page": "8",
+        "DOI": "10.17294/2330-0698.1718",
+        "article-title": "Surgeons’ views on shared decision-making",
+        "volume": "7",
+        "author": "Kannan",
+        "year": "2020",
+        "journal-title": "J Patient Cent Res Rev"
+      },
+      {
+        "key": "B39",
+        "doi-asserted-by": "publisher",
+        "first-page": "230",
+        "DOI": "10.17294/2330-0698.1718",
+        "article-title": "Implementing patient-reported outcomes in clinical decision-making within knee and hip osteoarthritis: an explorative review",
+        "volume": "20",
+        "author": "Sorensen",
+        "year": "2019",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "key": "B40",
+        "doi-asserted-by": "publisher",
+        "first-page": "2098",
+        "DOI": "10.1002/jor.23604",
+        "article-title": "Patient reported outcomes in orthopaedics",
+        "volume": "35",
+        "author": "Gagnier",
+        "year": "2017",
+        "journal-title": "J Orthop Res"
+      },
+      {
+        "key": "B41",
+        "doi-asserted-by": "publisher",
+        "first-page": "1688",
+        "DOI": "10.1016/j.arth.2016.12.052",
+        "article-title": "A systematic review of measurement properties of patient-reported outcome measures used in patients undergoing total knee arthroplasty",
+        "volume": "32",
+        "author": "Gagnier",
+        "year": "2017",
+        "journal-title": "J Arthroplast"
+      },
+      {
+        "key": "B42",
+        "doi-asserted-by": "publisher",
+        "first-page": "301",
+        "DOI": "10.1023/A:1018423124390",
+        "article-title": "Development of a direct weighting procedure for quality of life domains",
+        "volume": "6",
+        "author": "Browne",
+        "year": "1997",
+        "journal-title": "Qual Life Res"
+      },
+      {
+        "key": "B43",
+        "doi-asserted-by": "publisher",
+        "first-page": "737",
+        "DOI": "10.1007/s11136-009-9490-2",
+        "article-title": "The use, feasibility and psychometric properties of an individualised quality-of-life instrument: a systematic review of the SEIQoL-DW",
+        "volume": "18",
+        "author": "Wettergren",
+        "year": "2009",
+        "journal-title": "Qual Life Res"
+      },
+      {
+        "key": "B44",
+        "doi-asserted-by": "publisher",
+        "first-page": "641",
+        "DOI": "10.1007/s11136-008-9325-6",
+        "article-title": "Individual quality of life: adaptive conjoint analysis as an alternative for direct weighting?",
+        "volume": "17",
+        "author": "Stiggelbout",
+        "year": "2008",
+        "journal-title": "Qual Life Res"
+      },
+      {
+        "key": "B45",
+        "doi-asserted-by": "publisher",
+        "first-page": "e11500",
+        "DOI": "10.2196/11500",
+        "article-title": "The mhealth app usability questionnaire (MAUQ): development and validation study",
+        "volume": "7",
+        "author": "Zhou",
+        "year": "2019",
+        "journal-title": "JMIR mHealth uHealth"
+      },
+      {
+        "key": "B46",
+        "doi-asserted-by": "publisher",
+        "first-page": "755",
+        "DOI": "10.1016/j.jcot.2018.08.008",
+        "article-title": "Patient expectations and satisfaction in orthopaedic surgery: a review of the literature",
+        "volume": "10",
+        "author": "Swarup",
+        "year": "2019",
+        "journal-title": "J Clin Orthop Trauma"
+      },
+      {
+        "key": "B47",
+        "doi-asserted-by": "publisher",
+        "first-page": "2377",
+        "DOI": "10.1007/s00167-019-05824-5",
+        "article-title": "Patients undergoing shoulder surgery have high preoperative expectations",
+        "volume": "28",
+        "author": "Nadarajah",
+        "year": "2020",
+        "journal-title": "Knee Surg Sport Traumatol Arthrosc"
+      },
+      {
+        "key": "B48",
+        "doi-asserted-by": "publisher",
+        "first-page": "S35",
+        "DOI": "10.4103/joacp.JOACP_35_18",
+        "article-title": "Enhanced recovery pathways in orthopedic surgery",
+        "volume": "35",
+        "author": "Kaye",
+        "year": "2019",
+        "journal-title": "J Anaesthesiol Clin Pharmacol"
+      },
+      {
+        "key": "B49",
+        "doi-asserted-by": "publisher",
+        "first-page": "139",
+        "DOI": "10.1177/1947603518816429",
+        "article-title": "Articular cartilage injuries of the knee: patient health literacy, expectations for management, and clinical outcomes",
+        "volume": "12",
+        "author": "Cole",
+        "year": "2021",
+        "journal-title": "Cartilage"
+      },
+      {
+        "key": "B50",
+        "doi-asserted-by": "publisher",
+        "first-page": "31",
+        "DOI": "10.1002/9781119413936.ch6",
+        "article-title": "Value-based orthopedics",
+        "author": "O’Hara",
+        "year": "2021",
+        "journal-title": "Evidence-Based Orthop"
+      },
+      {
+        "key": "B51",
+        "doi-asserted-by": "publisher",
+        "first-page": "45",
+        "DOI": "10.3389/fdgth.2021.635112",
+        "article-title": "Grand challenges in human factors and digital health",
+        "volume": "3",
+        "author": "Schueller",
+        "year": "2021",
+        "journal-title": "Front Digit Health"
+      },
+      {
+        "key": "B52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/14651858.CD001431.pub5",
+        "article-title": "Decision aids for people facing health treatment or screening decisions",
+        "volume": "2017",
+        "author": "Stacey",
+        "year": "2017",
+        "journal-title": "Cochrane Database Syst Rev"
+      },
+      {
+        "key": "B53",
+        "doi-asserted-by": "publisher",
+        "first-page": "309",
+        "DOI": "10.1097/BRS.0000000000004134",
+        "article-title": "Comparison of patient preference, understanding, and sentiment for minimally invasive versus open spine surgery",
+        "volume": "47",
+        "author": "White",
+        "year": "2022",
+        "journal-title": "Spine (Phila Pa 1976)"
+      },
+      {
+        "key": "B54",
+        "doi-asserted-by": "publisher",
+        "first-page": "e19661",
+        "DOI": "10.2196/19661",
+        "article-title": "Mobile health usage, preferences, barriers, and eHealth literacy in rheumatology: patient survey study",
+        "volume": "8",
+        "author": "Knitza",
+        "year": "2020",
+        "journal-title": "JMIR Mhealth Uhealth"
+      },
+      {
+        "key": "B55",
+        "doi-asserted-by": "publisher",
+        "first-page": "183",
+        "DOI": "10.3389/fpubh.2019.00183",
+        "article-title": "Factors associated with patient satisfaction in outpatient department of Suva sub-divisional health center, Fiji, 2018: a mixed method study",
+        "volume": "7",
+        "author": "Chandra",
+        "year": "2019",
+        "journal-title": "Front Public Health"
+      },
+      {
+        "key": "B56",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4172/2472-1654.100146",
+        "article-title": "Trust and communication in a doctor- patient relationship: a literature review",
+        "volume": "3",
+        "author": "Chandra",
+        "year": "2018",
+        "journal-title": "J Healthc Commun"
+      }
+    ],
+    "container-title": [
+      "Frontiers in Digital Health"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://www.frontiersin.org/articles/10.3389/fdgth.2023.1137066/full",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          20
+        ]
+      ],
+      "date-time": "2023-06-20T05:26:43Z",
+      "timestamp": 1687238803000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.frontiersin.org/articles/10.3389/fdgth.2023.1137066/full"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          20
+        ]
+      ]
+    },
+    "references-count": 56,
+    "alternative-id": [
+      "10.3389/fdgth.2023.1137066"
+    ],
+    "URL": "https://doi.org/10.3389/fdgth.2023.1137066",
+    "relation": {},
+    "ISSN": [
+      "2673-253X"
+    ],
+    "issn-type": [
+      {
+        "value": "2673-253X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          20
+        ]
+      ]
+    },
+    "article-number": "1137066"
+  }
+}

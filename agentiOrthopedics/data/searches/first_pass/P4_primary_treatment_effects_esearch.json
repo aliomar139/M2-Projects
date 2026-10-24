@@ -1,0 +1,27 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "12",
+    "retmax": "12",
+    "retstart": "0",
+    "idlist": [
+      "42497355",
+      "42201990",
+      "42066358",
+      "41807759",
+      "40313312",
+      "39321119",
+      "37392619",
+      "33567121",
+      "32144896",
+      "31446581",
+      "17723787",
+      "11380637"
+    ],
+    "translationset": [],
+    "querytranslation": "(\"orthop*\"[Title/Abstract] OR \"arthroplast*\"[Title/Abstract] OR \"osteoarthritis\"[Title/Abstract] OR \"musculoskeletal\"[Title/Abstract]) AND (\"causal forest\"[Title/Abstract] OR \"doubly robust\"[Title/Abstract] OR \"individualized treatment effect\"[Title/Abstract] OR \"individualised treatment effect\"[Title/Abstract] OR \"heterogeneous treatment effect\"[Title/Abstract] OR \"optimal treatment regime\"[Title/Abstract]) AND 1800/01/01:2026/10/23[Date - Publication]"
+  }
+}

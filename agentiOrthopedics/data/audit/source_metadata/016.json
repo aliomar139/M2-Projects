@@ -1,0 +1,338 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          8
+        ]
+      ],
+      "date-time": "2026-10-08T16:18:44Z",
+      "timestamp": 1791476324287,
+      "version": "4.3.4"
+    },
+    "reference-count": 25,
+    "publisher": "JMIR Publications Inc.",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "JMIR Form Res"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec sec-type=\"background\">\n                    <jats:title>Background</jats:title>\n                    <jats:p>Effective diabetes management requires individualized treatment strategies tailored to patients’ clinical characteristics. With recent advances in artificial intelligence, large language models (LLMs) offer new opportunities to enhance clinical decision support, particularly in generating personalized recommendations.</jats:p>\n                  </jats:sec>\n                  <jats:sec sec-type=\"objective\">\n                    <jats:title>Objective</jats:title>\n                    <jats:p>This study aimed to develop and evaluate an LLM-based outpatient treatment support system for diabetes and examine its potential value in routine clinical decision-making.</jats:p>\n                  </jats:sec>\n                  <jats:sec sec-type=\"methods\">\n                    <jats:title>Methods</jats:title>\n                    <jats:p>Three compact LLMs (Llama 3.1-8B, Qwen3-8B, and GLM4-9B) were fine-tuned on deidentified outpatient electronic health records using a parameter-efficient low-rank adaptation approach. The optimized models were embedded into a prototype hospital information system via a retrieval-augmented generation framework to generate individualized treatment recommendations, laboratory test suggestions, and medication prompts based on demographic and clinical data.</jats:p>\n                  </jats:sec>\n                  <jats:sec sec-type=\"results\">\n                    <jats:title>Results</jats:title>\n                    <jats:p>Among the models evaluated, the fine-tuned GLM4-9B demonstrated the strongest performance, producing clinically reasonable treatment plans and appropriate laboratory test recommendations and medication suggestions. It achieved a mean Bilingual Evaluation Understudy for 4-grams score of 67.93 (SD 2.74) and mean scores of 44.30 (SD 3.91) for Recall-Oriented Understudy for Gisting Evaluation for overlap of unigrams, 27.34 (SD 1.85) for Recall-Oriented Understudy for Gisting Evaluation for overlap of bigrams, and 37.67 (SD 2.88) for Recall-Oriented Understudy for Gisting Evaluation for Longest Common Subsequence.</jats:p>\n                  </jats:sec>\n                  <jats:sec sec-type=\"conclusions\">\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>The fine-tuned GLM4-9B shows strong potential as a clinical decision support tool for personalized diabetes care. It can provide reference recommendations that may improve clinician efficiency and support decision quality. Future work should focus on enhancing medication guidance, expanding data sources, and improving adaptability in cases involving complex comorbidities.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.2196/71541",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          9
+        ]
+      ],
+      "date-time": "2026-02-09T21:23:16Z",
+      "timestamp": 1770672196000
+    },
+    "page": "e71541-e71541",
+    "source": "Crossref",
+    "is-referenced-by-count": 5,
+    "title": [
+      "Personalized Diabetes Treatment Support Using Large Language Models Fine-Tuned on Electronic Health Records: Development and Evaluation Study"
+    ],
+    "prefix": "10.2196",
+    "volume": "10",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0001-1224-6580",
+        "authenticated-orcid": false,
+        "given": "Shengyang",
+        "family": "He",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0003-7293-0290",
+        "authenticated-orcid": false,
+        "given": "Yu",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9820-8461",
+        "authenticated-orcid": false,
+        "given": "Jiaxi",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1010",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          9
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "8",
+        "key": "R1",
+        "doi-asserted-by": "publisher",
+        "first-page": "1987",
+        "DOI": "10.3390/molecules25081987",
+        "article-title": "Type 2 diabetes mellitus: a review of multi-target drugs",
+        "volume": "25",
+        "author": "Artasensi",
+        "journal-title": "Molecules"
+      },
+      {
+        "key": "R2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tayyab SL Seher W Hussain K Murtaza I . Diabetes: a global health concern and potential strategies to reduce its prevalence. In: Integrated Science for Sustainable Development Goal 3. Springer; 2024:329-348. [doi: 10.1007/978-3-031-64288-3_14]",
+        "DOI": "10.1007/978-3-031-64288-3_14"
+      },
+      {
+        "issue": "S 01",
+        "key": "R3",
+        "doi-asserted-by": "publisher",
+        "first-page": "S73",
+        "DOI": "10.1055/a-1018-9106",
+        "article-title": "Therapy of type 2 diabetes",
+        "volume": "127",
+        "author": "Landgraf",
+        "journal-title": "Exp Clin Endocrinol Diabetes"
+      },
+      {
+        "issue": "8",
+        "key": "R4",
+        "doi-asserted-by": "publisher",
+        "first-page": "793",
+        "DOI": "10.1177/0954411919853394",
+        "article-title": "A Markov decision process for modeling adverse drug reactions in medication treatment of type 2 diabetes",
+        "volume": "233",
+        "author": "Eghbali-Zarch",
+        "journal-title": "Proc Inst Mech Eng H"
+      },
+      {
+        "key": "R5",
+        "unstructured": "Eloundou T Manning S Mishkin P Rock D . GPTs are GPTs: an early look at the labor market impact potential of large language models. arXiv. Preprint posted online on Mar 17, 2023. [doi: 10.48550/arXiv.2303.10130]"
+      },
+      {
+        "key": "R6",
+        "unstructured": "Liu Z Huang Y Yu X et al. DeID-GPT: zero-shot medical text de-identification by GPT-4. arXiv. Preprint posted online on Mar 20, 2023. [doi: 10.48550/arXiv.2303.11032]"
+      },
+      {
+        "issue": "7",
+        "key": "R7",
+        "doi-asserted-by": "publisher",
+        "first-page": "1237",
+        "DOI": "10.1093/jamia/ocad072",
+        "article-title": "Using AI-generated suggestions from ChatGPT to optimize clinical decision support",
+        "volume": "30",
+        "author": "Liu",
+        "journal-title": "J Am Med Inform Assoc"
+      },
+      {
+        "key": "R8",
+        "unstructured": "Nori H King N McKinney SM Carignan D Horvitz E . Capabilities of GPT-4 on medical challenge problems. arXiv. Preprint posted online on Mar 20, 2023. [doi: 10.48550/arXiv.2303.13375]"
+      },
+      {
+        "key": "R9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/45312",
+        "article-title": "How does ChatGPT perform on the United States Medical Licensing Examination (USMLE)? The implications of large language models for medical education and knowledge assessment",
+        "volume": "9",
+        "author": "Gilson",
+        "journal-title": "JMIR Med Educ"
+      },
+      {
+        "issue": "4",
+        "key": "R10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/36481",
+        "article-title": "Big data health care platform with multisource heterogeneous data integration and massive high-dimensional data governance for large hospitals: design, development, and application",
+        "volume": "10",
+        "author": "Wang",
+        "journal-title": "JMIR Med Inform"
+      },
+      {
+        "key": "R11",
+        "unstructured": "He Z Shu W Ge X et al. Llama scope: extracting millions of features from Llama-3.1-8B with sparse autoencoders. arXiv. Preprint posted online on Oct 27, 2024. [doi: 10.48550/arXiv.2410.20526]"
+      },
+      {
+        "key": "R12",
+        "unstructured": "Yang A Li A Yang B et al. Qwen3 technical report. arXiv. Preprint posted online on May 14, 2025. [doi: 10.48550/arXiv.2505.09388]"
+      },
+      {
+        "key": "R13",
+        "unstructured": "Team GLM. ChatGLM: a family of large language models from GLM-130B to GLM-4 all tools. arXiv. Preprint posted online on Jun 18, 2024. [doi: 10.48550/arXiv.2406.12793]"
+      },
+      {
+        "key": "R14",
+        "unstructured": "Hu EJ Shen Y Wallis P et al. Lora: low-rank adaptation of large language models. Presented at: Proceedings of the International Conference on Learning Representations; Apr 25-29, 2022. URL: https://openreview.net/pdf?id=nZeVKeeFYf9 [Accessed 18-01-2026]"
+      },
+      {
+        "key": "R15",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Post M . A call for clarity in reporting BLEU scores. Presented at: Proceedings of the Third Conference on Machine Translation; Oct 31 to Nov 1, 2018; Brussels, Belgium. [doi: 10.18653/v1/W18-6319]",
+        "DOI": "10.18653/v1/W18-6319"
+      },
+      {
+        "key": "R16",
+        "unstructured": "Lin CY . ROUGE: a package for automatic evaluation of summaries. Presented at: Text Summarization Branches Out; Jul 25-26, 2004; Barcelona, Spain. URL: https://aclanthology.org/W04-1013/ [Accessed 27-01-2026]"
+      },
+      {
+        "issue": "4",
+        "key": "R17",
+        "doi-asserted-by": "publisher",
+        "first-page": "396",
+        "DOI": "10.9734/BJAST/2015/14975",
+        "article-title": "Likert scale: explored and explained",
+        "volume": "7",
+        "author": "Joshi",
+        "journal-title": "Br J Appl Sci Technol"
+      },
+      {
+        "key": "R18",
+        "unstructured": "Lewis P Perez E Piktus A et al. Retrieval-augmented generation for knowledge-intensive NLP tasks. Presented at: Proceedings of the 34th International Conference on Neural Information Processing Systems; Dec 6-12, 2020; Vancouver, BC. [doi: 10.5555/3495724.3496517]"
+      },
+      {
+        "key": "R19",
+        "unstructured": "Suenghataiphorn T Tribuddharat N Danpanichkul P Kulthamrongsri N . Bias in large language models across clinical applications: a systematic review. arXiv. Preprint posted online on Apr 3, 2025. [doi: 10.48550/arXiv.2504.02917]"
+      },
+      {
+        "key": "R20",
+        "unstructured": "Zhou Y Cheng L Di Eugenio B . Unveiling performance challenges of large language models in low-resource healthcare: a demographic fairness perspective. Presented at: Proceedings of the 31st International Conference on Computational Linguistics; Jan 19-24, 2025; Abu Dhabi, UAE. URL: https://aclanthology.org/2025.coling-main.485/ [Accessed 18-01-2026]"
+      },
+      {
+        "issue": "6",
+        "key": "R21",
+        "doi-asserted-by": "publisher",
+        "first-page": "631",
+        "DOI": "10.3390/bioengineering12060631",
+        "article-title": "Large language models in healthcare and medical applications: a review",
+        "volume": "12",
+        "author": "Maity",
+        "journal-title": "Bioengineering (Basel)"
+      },
+      {
+        "key": "R22",
+        "unstructured": "Guo D Yang D Zhang H et al. DeepSeek-R1: incentivizing reasoning capability in LLMs via reinforcement learning. arXiv. Preprint posted online on Jan 22, 2025. [doi: 10.48550/arXiv.2501.12948]"
+      },
+      {
+        "issue": "4",
+        "key": "R23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.xops.2023.100324",
+        "article-title": "Evaluating the performance of ChatGPT in ophthalmology: an analysis of its successes and shortcomings",
+        "volume": "3",
+        "author": "Antaki",
+        "journal-title": "Ophthalmol Sci"
+      },
+      {
+        "key": "R24",
+        "unstructured": "Sellergren A Kazemzadeh S Jaroensri T et al. MedGemma technical report. arXiv. Preprint posted online on Jul 7, 2025. [doi: 10.48550/arXiv.2507.05201]"
+      },
+      {
+        "key": "R25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/65537",
+        "article-title": "Large language model-driven knowledge graph construction in sepsis care using multicenter clinical databases: development and usability study",
+        "volume": "27",
+        "author": "Yang",
+        "journal-title": "J Med Internet Res"
+      }
+    ],
+    "container-title": [
+      "JMIR Formative Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://formative.jmir.org/2026/1/e71541",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          30
+        ]
+      ],
+      "date-time": "2026-06-30T18:00:59Z",
+      "timestamp": 1782842459000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://formative.jmir.org/2026/1/e71541"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          9
+        ]
+      ]
+    },
+    "references-count": 25,
+    "URL": "https://doi.org/10.2196/71541",
+    "relation": {},
+    "ISSN": [
+      "2561-326X"
+    ],
+    "issn-type": [
+      {
+        "value": "2561-326X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          9
+        ]
+      ]
+    },
+    "article-number": "v10i8e71541"
+  }
+}

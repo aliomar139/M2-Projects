@@ -1,0 +1,327 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          27
+        ]
+      ],
+      "date-time": "2026-03-27T16:16:22Z",
+      "timestamp": 1774628182848,
+      "version": "3.50.1"
+    },
+    "reference-count": 0,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "Supplement_2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2026-03-01T00:00:00Z",
+          "timestamp": 1772323200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://academic.oup.com/pages/standard-publication-reuse-rights"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          27
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Background</jats:title>\n                    <jats:p>Machine learning (ML) is increasingly applied in orthopaedics for outcome prediction. This project aimed to develop and internally validate supervised ML models that predict clinically important improvement after primary hip and knee arthroplasty using NHS PROMs database, assess whether these data can reliably predict postoperative PROMs for policy making, and to evaluate the association of comorbidities with postoperative improvement.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>We analysed anonymised NHS England PROMs data from 2018/2019, including 37 725 hip and 43 639 knee replacements. Predictors included demographics, symptom duration, living arrangements, comorbidities, and baseline PROMs (Oxford Hip Score [OHS], Oxford Knee Score [OKS], EQ-5D-3L, and EQ-5D VAS). The primary outcome was OHS/OKS improvement, defined as ≥10 points or postoperative score ≥40. Five ML Models were tested with cross-validation.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>In hips, all models achieved high precision (0.91), recall (1.00), and F1 (0.95). ROC-AUC values ranged 0.67–0.70. For knees, precision was 0.81–0.82, recall 0.99–1.00, and F1 0.89–0.90, with ROC-AUC 0.64–0.66. SHAP analysis identified key predictors: pre-disability, baseline OHS, and limping for hips; and baseline OKS score, EQ-VAS, and disability for knees.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>ML models predicted hip outcomes moderately well but had lower discrimination for knees. The NHS PROMs dataset shows potential for ML and policy applications, though data quality improvements are needed, including standardised PROMs collection, better comorbidity coding, and separating unicompartmental from total knee outcomes. Preoperative anxiety and depression were linked with reduced likelihood of meaningful improvement and future studies should investigate the biological link underlying this correlation.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.1093/bjs/znag018.105",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          27
+        ]
+      ],
+      "date-time": "2026-03-27T15:39:14Z",
+      "timestamp": 1774625954000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "SRS108 - Predicting patient-reported outcome measures and evaluating the impact of pre-operative comorbidities on outcomes of hip and knee arthroplasty using supervised machine learning"
+    ],
+    "prefix": "10.1093",
+    "volume": "113",
+    "author": [
+      {
+        "given": "Ibrahim",
+        "family": "Abdelrahman",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "university Hospitals of Northamptonshire , Northampton ,",
+            "place": [
+              "UK"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Amr",
+        "family": "Selim",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Robert Jones and Agnes Hunt Orthopaedic Hospital , Oswestry ,",
+            "place": [
+              "UK"
+            ]
+          },
+          {
+            "name": "Keele University , Staffordshire ,",
+            "place": [
+              "UK"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Samantha",
+        "family": "Davies",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Robert Jones and Agnes Hunt Orthopaedic Hospital , Oswestry ,",
+            "place": [
+              "UK"
+            ]
+          },
+          {
+            "name": "Keele University , Staffordshire ,",
+            "place": [
+              "UK"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Andrew",
+        "family": "Roberts",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Robert Jones and Agnes Hunt Orthopaedic Hospital , Oswestry ,",
+            "place": [
+              "UK"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Geraint",
+        "family": "Thomas",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Robert Jones and Agnes Hunt Orthopaedic Hospital , Oswestry ,",
+            "place": [
+              "UK"
+            ]
+          },
+          {
+            "name": "Keele University , Staffordshire ,",
+            "place": [
+              "UK"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Paul",
+        "family": "Cool",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Robert Jones and Agnes Hunt Orthopaedic Hospital , Oswestry ,",
+            "place": [
+              "UK"
+            ]
+          },
+          {
+            "name": "Keele University , Staffordshire ,",
+            "place": [
+              "UK"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          27
+        ]
+      ]
+    },
+    "container-title": [
+      "British Journal of Surgery"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://academic.oup.com/bjs/article-pdf/113/Supplement_2/znag018.105/67601794/znag018.105.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://academic.oup.com/bjs/article-pdf/113/Supplement_2/znag018.105/67601794/znag018.105.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          27
+        ]
+      ],
+      "date-time": "2026-03-27T15:39:14Z",
+      "timestamp": 1774625954000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://academic.oup.com/bjs/article/doi/10.1093/bjs/znag018.105/8551138"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          3
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "Supplement_2",
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            27
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1093/bjs/znag018.105",
+    "relation": {},
+    "ISSN": [
+      "0007-1323",
+      "1365-2168"
+    ],
+    "issn-type": [
+      {
+        "value": "0007-1323",
+        "type": "print"
+      },
+      {
+        "value": "1365-2168",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published-other": {
+      "date-parts": [
+        [
+          2026,
+          3
+        ]
+      ]
+    },
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          3
+        ]
+      ]
+    },
+    "article-number": "znag018.105"
+  }
+}

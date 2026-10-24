@@ -1,0 +1,848 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          26
+        ]
+      ],
+      "date-time": "2026-09-26T04:58:31Z",
+      "timestamp": 1790398711348,
+      "version": "4.1.0"
+    },
+    "reference-count": 68,
+    "publisher": "BMJ",
+    "issue": "16",
+    "funder": [
+      {
+        "DOI": "10.13039/501100009459",
+        "name": "Hvidovre Hospital",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100009459",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "bmj.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Br J Sports Med"
+    ],
+    "accepted": {
+      "date-parts": [
+        [
+          2023,
+          2,
+          24
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          8
+        ]
+      ]
+    },
+    "abstract": "<jats:sec><jats:title>Objective</jats:title><jats:p>Although hip arthroscopy is a widely adopted treatment option for hip-related pain, it is unknown whether preoperative clinical information can be used to assist surgical decision-making to avoid offering surgery to patients with limited potential for a successful outcome. We aimed to develop and validate clinical prediction models to identify patients more likely to have an unsuccessful or successful outcome 1 year post hip arthroscopy based on the patient acceptable symptom state.</jats:p></jats:sec><jats:sec><jats:title>Methods</jats:title><jats:p>Patient records were extracted from the Danish Hip Arthroscopy Registry (DHAR). A priori, 26 common clinical variables from DHAR were selected as prognostic factors, including demographics, radiographic parameters of hip morphology and self-reported measures. We used 1082 hip arthroscopy patients (surgery performed 25 April 2012 to 4 October 2017) to develop the clinical prediction models based on logistic regression analyses. The development models were internally validated using bootstrapping and shrinkage before temporal external validation was performed using 464 hip arthroscopy patients (surgery performed 5 October 2017 to 13 May 2019).</jats:p></jats:sec><jats:sec><jats:title>Results</jats:title><jats:p>The prediction model for unsuccessful outcomes showed best and acceptable predictive performance on the external validation dataset for all multiple imputations (Nagelkerke R<jats:sup>2</jats:sup>range: 0.25–0.26) and calibration (intercept range: −0.10 to −0.11; slope range: 1.06–1.09), and acceptable discrimination (area under the curve range: 0.76–0.77). The prediction model for successful outcomes did not calibrate well, while also showing poor discrimination.</jats:p></jats:sec><jats:sec><jats:title>Conclusion</jats:title><jats:p>Common clinical variables including demographics, radiographic parameters of hip morphology and self-reported measures were able to predict the probability of having an unsuccessful outcome 1 year after hip arthroscopy, while the model for successful outcome showed unacceptable accuracy. The externally validated prediction model can be used to support clinical evaluation and shared decision making by informing the orthopaedic surgeon and patient about the risk of an unsuccessful outcome, and thus when surgery may not be appropriate.</jats:p></jats:sec>",
+    "DOI": "10.1136/bjsports-2022-105534",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          31
+        ]
+      ],
+      "date-time": "2023-03-31T17:22:45Z",
+      "timestamp": 1680283365000
+    },
+    "page": "1025-1034",
+    "update-policy": "https://doi.org/10.1136/crossmarkpolicy",
+    "source": "Crossref",
+    "is-referenced-by-count": 9,
+    "title": [
+      "Stratified care in hip arthroscopy: can we predict successful and unsuccessful outcomes? Development and external temporal validation of multivariable prediction models"
+    ],
+    "prefix": "10.1136",
+    "volume": "57",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-2716-6567",
+        "authenticated-orcid": false,
+        "given": "Lasse",
+        "family": "Ishøi",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9102-4515",
+        "authenticated-orcid": false,
+        "given": "Kristian",
+        "family": "Thorborg",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thomas",
+        "family": "Kallemose",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9234-1923",
+        "authenticated-orcid": false,
+        "given": "Joanne L",
+        "family": "Kemp",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4557-3446",
+        "authenticated-orcid": false,
+        "given": "Michael P",
+        "family": "Reiman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4211-3516",
+        "authenticated-orcid": false,
+        "given": "Mathias Fabricius",
+        "family": "Nielsen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2098-0272",
+        "authenticated-orcid": false,
+        "given": "Per",
+        "family": "Hölmich",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "239",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          31
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2024051422400191000_57.16.1025.1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bjsports-2019-101453"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bjsports-2016-096743"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.3",
+        "doi-asserted-by": "crossref",
+        "first-page": "35",
+        "DOI": "10.1177/0363546520970914",
+        "article-title": "Incidence of femoroacetabular impingement and surgical management trends over time",
+        "volume": "49",
+        "author": "Hale",
+        "year": "2021",
+        "journal-title": "Am J Sports Med"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.4",
+        "doi-asserted-by": "crossref",
+        "first-page": "112",
+        "DOI": "10.1097/01.blo.0000096804.78689.c2",
+        "article-title": "Femoroacetabular impingement: a cause for osteoarthritis of the hip",
+        "author": "Ganz",
+        "year": "2003",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.5",
+        "doi-asserted-by": "crossref",
+        "first-page": "1975",
+        "DOI": "10.1007/s00167-017-4484-z",
+        "article-title": "Important clinical descriptors to include in the examination and assessment of patients with femoroacetabular impingement syndrome: an international and multi-disciplinary delphi survey",
+        "volume": "25",
+        "author": "Reiman",
+        "year": "2017",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2519/jospt.2016.0605"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bjsports-2016-096618"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.8",
+        "doi-asserted-by": "crossref",
+        "first-page": "1140",
+        "DOI": "10.1002/acr.24234",
+        "article-title": "Effectiveness of hip arthroscopy on treatment of femoroacetabular impingement syndrome: a meta-analysis of randomized controlled trials",
+        "volume": "73",
+        "author": "Casartelli",
+        "year": "2021",
+        "journal-title": "Arthritis Care Res (Hoboken)"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.9",
+        "doi-asserted-by": "crossref",
+        "first-page": "1011",
+        "DOI": "10.1016/j.arthro.2020.10.001",
+        "article-title": "Mid- to long-term outcomes of hip arthroscopy: A systematic review",
+        "volume": "37",
+        "author": "Kyin",
+        "year": "2021",
+        "journal-title": "Arthroscopy"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.10",
+        "doi-asserted-by": "crossref",
+        "first-page": "2607",
+        "DOI": "10.1177/0363546518786971",
+        "article-title": "Patient-reported outcomes within the first year after hip arthroscopy and rehabilitation for femoroacetabular impingement and/or labral injury: the difference between getting better and getting back to normal",
+        "volume": "46",
+        "author": "Thorborg",
+        "year": "2018",
+        "journal-title": "Am J Sports Med"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj.l185"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.12",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1186/s40798-020-0234-8",
+        "article-title": "Physical activity following hip arthroscopy in young and middle-aged adults: A systematic review",
+        "volume": "6",
+        "author": "Jones",
+        "year": "2020",
+        "journal-title": "Sports Med Open"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.13",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1177/2325967121995267",
+        "article-title": "How many patients achieve an acceptable symptom state after hip arthroscopy for femoroacetabular impingement syndrome? A cross-sectional study including PASS cutoff values for the HAGOS and ihot-33",
+        "volume": "9",
+        "author": "Ishøi",
+        "year": "2021",
+        "journal-title": "Orthop J Sports Med"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.14",
+        "doi-asserted-by": "crossref",
+        "first-page": "2578",
+        "DOI": "10.1177/0363546518789070",
+        "article-title": "Return to sport and performance after hip arthroscopy for femoroacetabular impingement in 18- to 30-year-old athletes: A cross-sectional cohort study of 189 athletes",
+        "volume": "46",
+        "author": "Ishøi",
+        "year": "2018",
+        "journal-title": "Am J Sports Med"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bjsports-2018-099154"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bjsports-2017-098696"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.17",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1177/2325967119848982",
+        "article-title": "Predictors of outcomes after hip arthroscopic surgery for femoroacetabular impingement: A systematic review",
+        "volume": "7",
+        "author": "Sogbein",
+        "year": "2019",
+        "journal-title": "Orthop J Sports Med"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.18",
+        "doi-asserted-by": "crossref",
+        "first-page": "1608",
+        "DOI": "10.1177/0363546520914942",
+        "article-title": "A multicenter study of radiographic measures predicting failure of arthroscopy in borderline hip dysplasia: beware of the Tönnis angle",
+        "volume": "48",
+        "author": "McQuivey",
+        "year": "2020",
+        "journal-title": "Am J Sports Med"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.19",
+        "doi-asserted-by": "crossref",
+        "first-page": "822",
+        "DOI": "10.1302/0301-620X.102B7.BJJ-2020-0031.R1",
+        "article-title": "Patient-related risk factors associated with less favourable outcomes following hip arthroscopy",
+        "volume": "102-B",
+        "author": "Kuroda",
+        "year": "2020",
+        "journal-title": "Bone Joint J"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pmed.1001381"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.21",
+        "doi-asserted-by": "crossref",
+        "first-page": "112",
+        "DOI": "10.1177/0363546520968896",
+        "article-title": "Predictors of clinical outcomes after hip arthroscopy: 5-year follow-up analysis of 1038 patients",
+        "volume": "49",
+        "author": "Domb",
+        "year": "2021",
+        "journal-title": "Am J Sports Med"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pmed.1001380"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.23",
+        "doi-asserted-by": "crossref",
+        "first-page": "2910",
+        "DOI": "10.1177/0363546520950743",
+        "article-title": "Radiographic indices are not predictive of clinical outcomes among 1735 patients indicated for hip arthroscopic surgery: A machine learning analysis",
+        "volume": "48",
+        "author": "Ramkumar",
+        "year": "2020",
+        "journal-title": "Am J Sports Med"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.24",
+        "doi-asserted-by": "crossref",
+        "first-page": "1192",
+        "DOI": "10.1177/0363546521993829",
+        "article-title": "Risk of conversion to arthroplasty after hip arthroscopy: validation of a published risk score using an independent, prospectively collected database",
+        "volume": "49",
+        "author": "Hevesi",
+        "year": "2021",
+        "journal-title": "Am J Sports Med"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.25",
+        "doi-asserted-by": "crossref",
+        "first-page": "415",
+        "DOI": "10.1177/0363546519892905",
+        "article-title": "Application of machine learning for predicting clinically meaningful outcome after arthroscopic femoroacetabular impingement surgery",
+        "volume": "48",
+        "author": "Nwachukwu",
+        "year": "2020",
+        "journal-title": "Am J Sports Med"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.26",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1186/s12891-018-2030-x",
+        "article-title": "Developing a risk prediction model for the functional outcome after hip arthroscopy",
+        "volume": "19",
+        "author": "Stephan",
+        "year": "2018",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.27",
+        "doi-asserted-by": "crossref",
+        "first-page": "2538",
+        "DOI": "10.1007/s11999-017-5437-z",
+        "article-title": "What factors predict conversion to THA after arthroscopy?",
+        "volume": "475",
+        "author": "Redmond",
+        "year": "2017",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.28",
+        "doi-asserted-by": "crossref",
+        "first-page": "1055",
+        "DOI": "10.2106/JBJS.20.01640",
+        "article-title": "Machine learning algorithms predict functional improvement after hip arthroscopy for femoroacetabular impingement syndrome in athletes",
+        "volume": "103",
+        "author": "Kunze",
+        "year": "2021",
+        "journal-title": "Journal of Bone and Joint Surgery"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.29",
+        "doi-asserted-by": "crossref",
+        "first-page": "1488",
+        "DOI": "10.1016/j.arthro.2021.01.005",
+        "article-title": "Development and internal validation of supervised machine learning algorithms for predicting clinically significant functional improvement in a mixed population of primary hip arthroscopy",
+        "volume": "37",
+        "author": "Kunze",
+        "year": "2021",
+        "journal-title": "Arthroscopy"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.30",
+        "doi-asserted-by": "crossref",
+        "first-page": "1143",
+        "DOI": "10.1016/j.arthro.2020.11.027",
+        "article-title": "Machine learning algorithms predict clinically significant improvements in satisfaction after hip arthroscopy",
+        "volume": "37",
+        "author": "Kunze",
+        "year": "2021",
+        "journal-title": "Arthroscopy"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.31",
+        "doi-asserted-by": "crossref",
+        "first-page": "2668",
+        "DOI": "10.1177/03635465211024964",
+        "article-title": "Predicting the risk of subsequent hip surgery before primary hip arthroscopy for femoroacetabular impingement syndrome: A machine learning analysis of preoperative risk factors in hip preservation",
+        "volume": "49",
+        "author": "Haeberle",
+        "year": "2021",
+        "journal-title": "Am J Sports Med"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/art.22110"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj.e5595"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7326/M14-0698"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj.g7594"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7326/M18-1376"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/jhps/hnw004"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.38",
+        "doi-asserted-by": "crossref",
+        "first-page": "1340",
+        "DOI": "10.1007/s00167-020-06135-w",
+        "article-title": "Clinical outcomes after revision hip arthroscopy in patients with femoroacetabular impingement syndrome (FAIS) are inferior compared to primary procedures. results from the danish hip arthroscopy registry (DHAR)",
+        "volume": "29",
+        "author": "Mygind-Klavsen",
+        "year": "2021",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.39",
+        "doi-asserted-by": "crossref",
+        "first-page": "825",
+        "DOI": "10.2147/CLEP.S264683",
+        "article-title": "The danish hip arthroscopy registry: registration completeness and patient characteristics between responders and non-responders",
+        "volume": "12",
+        "author": "Poulsen",
+        "year": "2020",
+        "journal-title": "Clin Epidemiol"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.40",
+        "doi-asserted-by": "crossref",
+        "first-page": "413",
+        "DOI": "10.1016/j.jsams.2018.10.004",
+        "article-title": "Is hip muscle strength normalised in patients with femoroacetabular impingement syndrome one year after surgery?",
+        "volume": "22",
+        "author": "Kierkegaard",
+        "year": "2019",
+        "journal-title": "Journal of Science and Medicine in Sport"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.csm.2011.01.001"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.42",
+        "doi-asserted-by": "crossref",
+        "first-page": "2519",
+        "DOI": "10.1007/s00167-017-4676-6",
+        "article-title": "Similar views on rehabilitation following hip arthroscopy among physiotherapists and surgeons in scandinavia: a specialized care survey",
+        "volume": "26",
+        "author": "Wörner",
+        "year": "2018",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bjsm.2010.080937"
+      },
+      {
+        "issue": "Suppl 2",
+        "key": "2024051422400191000_57.16.1025.44",
+        "doi-asserted-by": "crossref",
+        "first-page": "43",
+        "DOI": "10.2106/JBJS.19.01496",
+        "article-title": "An updated description of more than 5,000 procedures from the danish hip arthroscopy registry",
+        "volume": "102",
+        "author": "Mygind-Klavsen",
+        "year": "2020",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.45",
+        "doi-asserted-by": "crossref",
+        "first-page": "97",
+        "DOI": "10.1177/0363546520974374",
+        "article-title": "Can patient-reported outcomes predict the need for secondary surgeries after hip arthroscopy?",
+        "volume": "49",
+        "author": "Shapira",
+        "year": "2021",
+        "journal-title": "Am J Sports Med"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.46",
+        "doi-asserted-by": "crossref",
+        "first-page": "272",
+        "DOI": "10.1093/jhps/hnaa015",
+        "article-title": "Does failure to meet threshold scores for mhhs and ihot-12 correlate to secondary operations following hip arthroscopy?",
+        "volume": "7",
+        "author": "Rosinsky",
+        "year": "2020",
+        "journal-title": "J Hip Preserv Surg"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.47",
+        "doi-asserted-by": "crossref",
+        "first-page": "104",
+        "DOI": "10.1177/0363546520968562",
+        "article-title": "Hip arthroscopy for femoroacetabular impingement: 1-year outcomes predict 5-year outcomes",
+        "volume": "49",
+        "author": "Akpinar",
+        "year": "2021",
+        "journal-title": "Am J Sports Med"
+      },
+      {
+        "issue": "Suppl 3",
+        "key": "2024051422400191000_57.16.1025.48",
+        "first-page": "iii40",
+        "article-title": "Minimal clinically important improvement/difference (MCII/MCID) and patient acceptable symptom state (PASS): what do these concepts mean?",
+        "volume": "66 Suppl 3",
+        "author": "Kvien",
+        "year": "2007",
+        "journal-title": "Ann Rheum Dis"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.49",
+        "doi-asserted-by": "crossref",
+        "first-page": "5281",
+        "DOI": "10.1007/s00330-020-06822-9",
+        "article-title": "The lisbon agreement on femoroacetabular impingement imaging-part 1: overview",
+        "volume": "30",
+        "author": "Mascarenhas",
+        "year": "2020",
+        "journal-title": "Eur Radiol"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj.m441"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/sim.6787"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jclinepi.2021.02.011"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jclinepi.2019.02.004"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.54",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1471-2288-14-137"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.55",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/EDE.0b013e3181c30fb2"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.56",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12916-019-1466-7"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.57",
+        "doi-asserted-by": "crossref",
+        "first-page": "207",
+        "DOI": "10.1016/j.jclinepi.2020.01.028",
+        "article-title": "ROC curves for clinical prediction models part 1. ROC plots showed no added value above the AUC when evaluating the performance of clinical prediction models",
+        "volume": "126",
+        "author": "Verbakel",
+        "year": "2020",
+        "journal-title": "J Clin Epidemiol"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.58",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jclinepi.2015.12.005"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.59",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj.e5793"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.60",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7326/0003-4819-134-9_Part_2-200105011-00016"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.61",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bjsports-2019-101458"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.62",
+        "doi-asserted-by": "crossref",
+        "first-page": "1110",
+        "DOI": "10.1016/j.jsams.2021.05.006",
+        "article-title": "Maximal hip muscle strength and rate of torque development 6-30 months after hip arthroscopy for femoroacetabular impingement syndrome: A cross-sectional study",
+        "volume": "24",
+        "author": "Ishøi",
+        "year": "2021",
+        "journal-title": "J Sci Med Sport"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.63",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bjsports-2019-101690"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.64",
+        "doi-asserted-by": "crossref",
+        "first-page": "947",
+        "DOI": "10.2519/jospt.2016.6577",
+        "article-title": "Patients with chondrolabral pathology have bilateral functional impairments 12 to 24 months after unilateral hip arthroscopy: A cross-sectional study",
+        "volume": "46",
+        "author": "Kemp",
+        "year": "2016",
+        "journal-title": "J Orthop Sports Phys Ther"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.65",
+        "doi-asserted-by": "crossref",
+        "first-page": "S62",
+        "DOI": "10.1016/j.jsams.2019.08.263",
+        "article-title": "Patient factors predict severity of hip symptoms to a greater extent than abnormal bony hip morphology in femoroacetabular impingement syndrome",
+        "volume": "22",
+        "author": "Diamond",
+        "year": "2019",
+        "journal-title": "Journal of Science and Medicine in Sport"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.66",
+        "doi-asserted-by": "crossref",
+        "first-page": "2617",
+        "DOI": "10.1177/0363546519861088",
+        "article-title": "Demographic and radiographic factors associated with intra-articular hip cartilage injury: A cross-sectional study of 1511 hip arthroscopy procedures",
+        "volume": "47",
+        "author": "Ishøi",
+        "year": "2019",
+        "journal-title": "Am J Sports Med"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.67",
+        "doi-asserted-by": "crossref",
+        "first-page": "124",
+        "DOI": "10.1093/jhps/hnz017",
+        "article-title": "The association between specific sports activities and sport performance following hip arthroscopy for femoroacetabular impingement syndrome: A secondary analysis of A cross-sectional cohort study including 184 athletes",
+        "volume": "6",
+        "author": "Ishøi",
+        "year": "2019",
+        "journal-title": "J Hip Preserv Surg"
+      },
+      {
+        "key": "2024051422400191000_57.16.1025.68",
+        "unstructured": "EQ-5D-3L – EQ-5D . Available: https://euroqol.org/eq-5d-instruments/eq-5d-3l-about/"
+      }
+    ],
+    "container-title": [
+      "British Journal of Sports Medicine"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1136/bjsports-2022-105534",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          17
+        ]
+      ],
+      "date-time": "2024-10-17T13:24:22Z",
+      "timestamp": 1729171462000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://bjsm.bmj.com/lookup/doi/10.1136/bjsports-2022-105534"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          31
+        ]
+      ]
+    },
+    "references-count": 68,
+    "journal-issue": {
+      "issue": "16",
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            31
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            8
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1136/bjsports-2022-105534"
+    ],
+    "URL": "https://doi.org/10.1136/bjsports-2022-105534",
+    "relation": {},
+    "ISSN": [
+      "0306-3674",
+      "1473-0480"
+    ],
+    "issn-type": [
+      {
+        "value": "0306-3674",
+        "type": "print"
+      },
+      {
+        "value": "1473-0480",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          31
+        ]
+      ]
+    }
+  }
+}

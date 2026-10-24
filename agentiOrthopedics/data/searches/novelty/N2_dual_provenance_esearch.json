@@ -1,0 +1,28 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "13",
+    "retmax": "13",
+    "retstart": "0",
+    "idlist": [
+      "42045085",
+      "35442752",
+      "29350555",
+      "26882927",
+      "23780547",
+      "23758875",
+      "22613245",
+      "21214358",
+      "18977792",
+      "18541604",
+      "17636656",
+      "16391248",
+      "10796418"
+    ],
+    "translationset": [],
+    "querytranslation": "(\"Orthopedics\"[MeSH Terms] OR \"Orthopedic Procedures\"[MeSH Terms] OR \"Arthroplasty\"[MeSH Terms] OR \"Osteoarthritis\"[MeSH Terms] OR \"orthop*\"[Title/Abstract] OR \"arthroplast*\"[Title/Abstract] OR \"Osteoarthritis\"[Title/Abstract] OR \"musculoskeletal\"[Title/Abstract] OR \"spine surgery\"[Title/Abstract] OR \"spine care\"[Title/Abstract] OR \"hip arthroscopy\"[Title/Abstract]) AND ((\"treatment\"[Title/Abstract] OR \"recommendation\"[Title/Abstract]) AND (\"provenance\"[Title/Abstract] OR \"traceability\"[Title/Abstract] OR \"citation\"[Title/Abstract]) AND (\"causal\"[Title/Abstract] OR \"treatment effect\"[Title/Abstract])) AND 1800/01/01:2026/10/23[Date - Publication]"
+  }
+}

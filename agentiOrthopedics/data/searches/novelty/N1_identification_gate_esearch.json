@@ -1,0 +1,21 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "0",
+    "retmax": "0",
+    "retstart": "0",
+    "idlist": [],
+    "translationset": [],
+    "querytranslation": "(\"Orthopedics\"[MeSH Terms] OR \"Orthopedic Procedures\"[MeSH Terms] OR \"Arthroplasty\"[MeSH Terms] OR \"Osteoarthritis\"[MeSH Terms] OR \"orthop*\"[Title/Abstract] OR \"arthroplast*\"[Title/Abstract] OR \"Osteoarthritis\"[Title/Abstract] OR \"musculoskeletal\"[Title/Abstract] OR \"spine surgery\"[Title/Abstract] OR \"spine care\"[Title/Abstract] OR \"hip arthroscopy\"[Title/Abstract]) AND ((\"causal\"[Title/Abstract] OR \"counterfactual\"[Title/Abstract]) AND (\"agentic\"[Title/Abstract] OR \"large language model\"[Title/Abstract] OR \"large language models\"[Title/Abstract]) AND (\"positivity\"[Title/Abstract] OR \"overlap\"[Title/Abstract] OR \"identifiability\"[Title/Abstract])) AND 1800/01/01:2026/10/23[Date - Publication]",
+    "warninglist": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [],
+      "outputmessages": [
+        "No items found."
+      ]
+    }
+  }
+}

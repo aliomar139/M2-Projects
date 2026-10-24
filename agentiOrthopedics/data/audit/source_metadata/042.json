@@ -1,0 +1,648 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          22
+        ]
+      ],
+      "date-time": "2026-10-22T23:14:35Z",
+      "timestamp": 1792710875575,
+      "version": "4.5.0"
+    },
+    "reference-count": 22,
+    "publisher": "Elsevier BV",
+    "issue": "10",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2021-10-01T00:00:00Z",
+          "timestamp": 1633046400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2021-10-01T00:00:00Z",
+          "timestamp": 1633046400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2021-10-01T00:00:00Z",
+          "timestamp": 1633046400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2021-10-01T00:00:00Z",
+          "timestamp": 1633046400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2021-10-01T00:00:00Z",
+          "timestamp": 1633046400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2021-10-01T00:00:00Z",
+          "timestamp": 1633046400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2021-10-01T00:00:00Z",
+          "timestamp": 1633046400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000892",
+        "name": "Prostate Cancer Foundation",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100000892",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000054",
+        "name": "National Cancer Institute",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "P30 CA008748"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "P30 CA008748"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000054",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000054",
+        "name": "National Cancer Institute",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "P50-CA92629"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "P50-CA92629"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000054",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "clinicalkey.com",
+        "clinicalkey.com.au",
+        "clinicalkey.es",
+        "clinicalkey.fr",
+        "clinicalkey.jp",
+        "thespinejournalonline.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "The Spine Journal"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.spinee.2021.02.024",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          3,
+          7
+        ]
+      ],
+      "date-time": "2021-03-07T09:07:51Z",
+      "timestamp": 1615108071000
+    },
+    "page": "1643-1648",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 390,
+    "title": [
+      "Decision curve analysis to evaluate the clinical benefit of prediction models"
+    ],
+    "prefix": "10.1016",
+    "volume": "21",
+    "author": [
+      {
+        "given": "Andrew J.",
+        "family": "Vickers",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ford",
+        "family": "Holland",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "5",
+        "key": "10.1016/j.spinee.2021.02.024_bib0001",
+        "doi-asserted-by": "crossref",
+        "first-page": "956",
+        "DOI": "10.1016/j.urology.2012.12.010",
+        "article-title": "Clinicians versus nomogram: predicting future technetium-99m bone scan positivity in patients with rising prostate-specific antigen after radical prostatectomy for prostate cancer",
+        "volume": "81",
+        "author": "Kattan",
+        "year": "2013",
+        "journal-title": "Urology"
+      },
+      {
+        "issue": "15",
+        "key": "10.1016/j.spinee.2021.02.024_bib0002",
+        "doi-asserted-by": "crossref",
+        "first-page": "2696",
+        "DOI": "10.1016/j.ejca.2010.04.025",
+        "article-title": "Spine metastases: current treatments and future directions",
+        "volume": "46",
+        "author": "Harel",
+        "year": "2010",
+        "journal-title": "Eur J Cancer"
+      },
+      {
+        "issue": "22",
+        "key": "10.1016/j.spinee.2021.02.024_bib0003",
+        "doi-asserted-by": "crossref",
+        "first-page": "3072",
+        "DOI": "10.1200/JCO.2010.34.3897",
+        "article-title": "Spinal instability neoplastic score: an analysis of reliability and validity from the spine oncology study group",
+        "volume": "29",
+        "author": "Fourney",
+        "year": "2011",
+        "journal-title": "J Clin Oncol"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.spinee.2021.02.024_bib0004",
+        "doi-asserted-by": "crossref",
+        "first-page": "W1",
+        "DOI": "10.7326/M14-0698",
+        "article-title": "Transparent Reporting of a multivariable prediction model for Individual Prognosis or Diagnosis (TRIPOD): explanation and elaboration",
+        "volume": "162",
+        "author": "Moons",
+        "year": "2015",
+        "journal-title": "Ann Intern Med"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.spinee.2021.02.024_bib0005",
+        "doi-asserted-by": "crossref",
+        "first-page": "230",
+        "DOI": "10.1186/s12916-019-1466-7",
+        "article-title": "Calibration: the Achilles heel of predictive analytics",
+        "volume": "17",
+        "author": "Van Calster",
+        "year": "2019",
+        "journal-title": "BMC Med"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.spinee.2021.02.024_bib0006",
+        "doi-asserted-by": "crossref",
+        "first-page": "656",
+        "DOI": "10.1097/BOT.0000000000001851",
+        "article-title": "Development and internal validation of a prediction model for in-hospital mortality in geriatric hip fracture patients",
+        "volume": "34",
+        "author": "Schuijt",
+        "year": "2020",
+        "journal-title": "J Orthop Trauma"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.spinee.2021.02.024_bib0007",
+        "doi-asserted-by": "crossref",
+        "first-page": "565",
+        "DOI": "10.1177/0272989X06295361",
+        "article-title": "Decision curve analysis: a novel method for evaluating prediction models",
+        "volume": "26",
+        "author": "Vickers",
+        "year": "2006",
+        "journal-title": "Med Decis Making"
+      },
+      {
+        "key": "10.1016/j.spinee.2021.02.024_bib0008",
+        "doi-asserted-by": "crossref",
+        "first-page": "18",
+        "DOI": "10.1186/s41512-019-0064-7",
+        "article-title": "A simple, step-by-step guide to interpreting decision curve analysis",
+        "volume": "3",
+        "author": "Vickers",
+        "year": "2019",
+        "journal-title": "Diagn Progn Res"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.spinee.2021.02.024_bib0009",
+        "doi-asserted-by": "crossref",
+        "first-page": "482",
+        "DOI": "10.1097/ALN.0b013e3181e08e97",
+        "article-title": "Anemia and patient blood management in hip and knee surgery: a systematic review of the literature",
+        "volume": "113",
+        "author": "Spahn",
+        "year": "2010",
+        "journal-title": "Anesthesiology"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.spinee.2021.02.024_bib0010",
+        "doi-asserted-by": "crossref",
+        "first-page": "578",
+        "DOI": "10.1177/1060028016647977",
+        "article-title": "Strategies for the management of postoperative anemia in elective orthopedic surgery",
+        "volume": "50",
+        "author": "Steuber",
+        "year": "2016",
+        "journal-title": "Ann Pharmacother"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.spinee.2021.02.024_bib0011",
+        "doi-asserted-by": "crossref",
+        "first-page": "e94917",
+        "DOI": "10.1371/journal.pone.0094917",
+        "article-title": "Predicting rotator cuff tears using data mining and Bayesian likelihood ratios",
+        "volume": "9",
+        "author": "Lu",
+        "year": "2014",
+        "journal-title": "PLoS One"
+      },
+      {
+        "issue": "11",
+        "key": "10.1016/j.spinee.2021.02.024_bib0012",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1371/journal.pone.0225242",
+        "article-title": "Metastasis risk prediction model in osteosarcoma using metabolic imaging phenotypes: a multivariable radiomics model",
+        "volume": "14",
+        "author": "Sheen",
+        "year": "2019",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "10.1016/j.spinee.2021.02.024_bib0013",
+        "doi-asserted-by": "crossref",
+        "first-page": "27",
+        "DOI": "10.1016/j.ebiom.2018.07.006",
+        "article-title": "Survival prediction in high-grade osteosarcoma using radiomics of diagnostic computed tomography",
+        "volume": "34",
+        "author": "Wu",
+        "year": "2018",
+        "journal-title": "EBioMedicine"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.spinee.2021.02.024_bib0014",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1093/neuros/nyz070",
+        "article-title": "Predicting 90-day and 1-year mortality in spinal metastatic disease: development and internal validation",
+        "volume": "85",
+        "author": "Karhade",
+        "year": "2019",
+        "journal-title": "Neurosurgery"
+      },
+      {
+        "key": "10.1016/j.spinee.2021.02.024_bib0015",
+        "article-title": "Assessing the clinical utility of genetic profiling in fracture risk prediction: a decision curve analysis",
+        "author": "Ho-Le",
+        "year": "2020",
+        "journal-title": "Osteoporos Int"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.spinee.2021.02.024_bib0016",
+        "doi-asserted-by": "crossref",
+        "first-page": "1235",
+        "DOI": "10.1016/j.ebiom.2015.07.022",
+        "article-title": "Lessons of war: turning data into decisions",
+        "volume": "2",
+        "author": "Forsberg",
+        "year": "2015",
+        "journal-title": "EBioMedicine"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.spinee.2021.02.024_bib0017",
+        "doi-asserted-by": "crossref",
+        "first-page": "409",
+        "DOI": "10.1001/jama.2015.37",
+        "article-title": "Decision curve analysis",
+        "volume": "313",
+        "author": "Fitzgerald",
+        "year": "2015",
+        "journal-title": "JAMA"
+      },
+      {
+        "issue": "21",
+        "key": "10.1016/j.spinee.2021.02.024_bib0018",
+        "doi-asserted-by": "crossref",
+        "first-page": "2534",
+        "DOI": "10.1200/JCO.2015.65.5654",
+        "article-title": "Assessing the clinical impact of risk prediction models with decision curves: guidance for correct interpretation and appropriate use",
+        "volume": "34",
+        "author": "Kerr",
+        "year": "2016",
+        "journal-title": "J Clin Oncol"
+      },
+      {
+        "key": "10.1016/j.spinee.2021.02.024_bib0019",
+        "doi-asserted-by": "crossref",
+        "first-page": "i6",
+        "DOI": "10.1136/bmj.i6",
+        "article-title": "Net benefit approaches to the evaluation of prediction models, molecular markers, and diagnostic tests",
+        "volume": "352",
+        "author": "Vickers",
+        "year": "2016",
+        "journal-title": "Bmj"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.spinee.2021.02.024_bib0020",
+        "doi-asserted-by": "crossref",
+        "first-page": "294",
+        "DOI": "10.7326/0003-4819-157-4-201208210-00014",
+        "article-title": "Beyond the usual prediction accuracy metrics: reporting results for clinical decision making",
+        "volume": "157",
+        "author": "Localio",
+        "year": "2012",
+        "journal-title": "Ann Intern Med"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.spinee.2021.02.024_bib0021",
+        "doi-asserted-by": "crossref",
+        "first-page": "493",
+        "DOI": "10.1177/0272989X19832881",
+        "article-title": "A systematic review of the literature demonstrates some errors in the use of decision curve analysis but generally correct interpretation of findings",
+        "volume": "39",
+        "author": "Capogrosso",
+        "year": "2019",
+        "journal-title": "Med Decis Making"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.spinee.2021.02.024_bib0022",
+        "doi-asserted-by": "crossref",
+        "first-page": "796",
+        "DOI": "10.1016/j.eururo.2018.08.038",
+        "article-title": "Reporting and interpreting decision curve analysis: a guide for investigators",
+        "volume": "74",
+        "author": "Van Calster",
+        "year": "2018",
+        "journal-title": "Eur Urol"
+      }
+    ],
+    "container-title": [
+      "The Spine Journal"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1529943021001121?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1529943021001121?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          26
+        ]
+      ],
+      "date-time": "2025-10-26T21:34:45Z",
+      "timestamp": 1761514485000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1529943021001121"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          10
+        ]
+      ]
+    },
+    "references-count": 22,
+    "journal-issue": {
+      "issue": "10",
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            10
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S1529943021001121"
+    ],
+    "URL": "https://doi.org/10.1016/j.spinee.2021.02.024",
+    "relation": {},
+    "ISSN": [
+      "1529-9430"
+    ],
+    "issn-type": [
+      {
+        "value": "1529-9430",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          10
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Decision curve analysis to evaluate the clinical benefit of prediction models",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "The Spine Journal",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.spinee.2021.02.024",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2021 Elsevier Inc. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

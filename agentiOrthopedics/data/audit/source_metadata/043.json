@@ -1,0 +1,699 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          22
+        ]
+      ],
+      "date-time": "2026-10-22T01:43:18Z",
+      "timestamp": 1792633398418,
+      "version": "4.5.0"
+    },
+    "reference-count": 38,
+    "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+    "issue": "9",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          5,
+          6
+        ]
+      ]
+    },
+    "abstract": "<jats:p>\n                    <jats:list list-type=\"plain\">\n                      <jats:list-item>\n                        <jats:p>➤ Artificial intelligence (AI) provides machines with the ability to perform tasks using algorithms governed by pattern recognition and self-correction on large amounts of data to narrow options in order to avoid errors.</jats:p>\n                      </jats:list-item>\n                      <jats:list-item>\n                        <jats:p>➤ The 4 things necessary for AI in medicine include big data sets, powerful computers, cloud computing, and open source algorithmic development.</jats:p>\n                      </jats:list-item>\n                      <jats:list-item>\n                        <jats:p>➤ The use of AI in health care continues to expand, and its impact on orthopaedic surgery can already be found in diverse areas such as image recognition, risk prediction, patient-specific payment models, and clinical decision-making.</jats:p>\n                      </jats:list-item>\n                      <jats:list-item>\n                        <jats:p>➤ Just as the business of medicine was once considered outside the domain of the orthopaedic surgeon, emerging technologies such as AI warrant ownership, leverage, and application by the orthopaedic surgeon to improve the care that we provide to the patients we serve.</jats:p>\n                      </jats:list-item>\n                      <jats:list-item>\n                        <jats:p>➤ AI could provide solutions to factors contributing to physician burnout and medical mistakes. However, challenges regarding the ethical deployment, regulation, and the clinical superiority of AI over traditional statistics and decision-making remain to be resolved.</jats:p>\n                      </jats:list-item>\n                    </jats:list>\n                  </jats:p>",
+    "DOI": "10.2106/jbjs.19.01128",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          6
+        ]
+      ],
+      "date-time": "2020-02-06T17:49:28Z",
+      "timestamp": 1581011368000
+    },
+    "page": "830-840",
+    "source": "Crossref",
+    "is-referenced-by-count": 231,
+    "title": [
+      "Artificial Intelligence and Orthopaedics"
+    ],
+    "prefix": "10.2106",
+    "volume": "102",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-3545-2333",
+        "authenticated-orcid": false,
+        "given": "Thomas G.",
+        "family": "Myers",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Divisions of Adult Reconstruction (T.G.M. and B.F.R.) and Hand and Upper Extremity Surgery (C.K.), Department of Orthopaedics and Rehabilitation, University of Rochester Medical Center, Rochester, New York"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1704-9156",
+        "authenticated-orcid": false,
+        "given": "Prem N.",
+        "family": "Ramkumar",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Machine Learning Arthroplasty Laboratory, Cleveland Clinic Foundation, Cleveland, Ohio"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9384-4840",
+        "authenticated-orcid": false,
+        "given": "Benjamin F.",
+        "family": "Ricciardi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Divisions of Adult Reconstruction (T.G.M. and B.F.R.) and Hand and Upper Extremity Surgery (C.K.), Department of Orthopaedics and Rehabilitation, University of Rochester Medical Center, Rochester, New York"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4511-1308",
+        "authenticated-orcid": false,
+        "given": "Kenneth L.",
+        "family": "Urish",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedics and The Bone and Joint Center, Magee Women’s Hospital of the University of Pittsburgh Medical Center, Pittsburgh, Pennsylvania"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8138-0855",
+        "authenticated-orcid": false,
+        "given": "Jens",
+        "family": "Kipper",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Philosophy, University of Rochester, Rochester, New York"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4535-9079",
+        "authenticated-orcid": false,
+        "given": "Constantinos",
+        "family": "Ketonis",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Divisions of Adult Reconstruction (T.G.M. and B.F.R.) and Hand and Upper Extremity Surgery (C.K.), Department of Orthopaedics and Rehabilitation, University of Rochester Medical Center, Rochester, New York"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "276",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          6
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "1",
+        "key": "bib3-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "70",
+        "DOI": "10.1097/SLA.0000000000002693",
+        "article-title": "Artificial intelligence in surgery: promises and perils",
+        "volume": "268",
+        "author": "Hashimoto",
+        "year": "2018 Jul",
+        "journal-title": "Ann Surg."
+      },
+      {
+        "issue": "11",
+        "key": "bib4-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "1099",
+        "DOI": "10.1001/jama.2018.11103",
+        "article-title": "On the prospects for a (deep) learning health care system",
+        "volume": "320",
+        "author": "Naylor",
+        "year": "2018",
+        "journal-title": "JAMA."
+      },
+      {
+        "issue": "8",
+        "key": "bib8-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "2358",
+        "DOI": "10.1016/j.arth.2018.02.067",
+        "article-title": "Artificial intelligence, machine learning, deep learning, and cognitive computing: what do these terms mean and how will they impact health care?",
+        "volume": "33",
+        "author": "Bini",
+        "year": "2018",
+        "journal-title": "J Arthroplasty."
+      },
+      {
+        "key": "bib11-20230811",
+        "article-title": "Understanding the impact of artificial intelligence on orthopaedic surgery",
+        "author": "Reznik",
+        "year": "2018",
+        "journal-title": "American Academy of Orthopaedic Surgeons (AAOS Now)."
+      },
+      {
+        "key": "bib12-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "75",
+        "DOI": "10.3389/fbioe.2018.00075",
+        "article-title": "Machine learning in orthopedics: a literature review",
+        "volume": "6",
+        "author": "Cabitza",
+        "year": "2018",
+        "journal-title": "Front Bioeng Biotechnol."
+      },
+      {
+        "issue": "1",
+        "key": "bib13-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "e1044",
+        "DOI": "10.1002/jsp2.1044",
+        "article-title": "Artificial intelligence and machine learning in spine research",
+        "volume": "2",
+        "author": "Galbusera",
+        "year": "2019",
+        "journal-title": "JOR Spine."
+      },
+      {
+        "issue": "10",
+        "key": "bib15-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "1550",
+        "DOI": "10.1016/j.joca.2013.06.007",
+        "article-title": "T2 texture index of cartilage can predict early symptomatic OA progression: data from the osteoarthritis initiative",
+        "volume": "21",
+        "author": "Urish",
+        "year": "2013",
+        "journal-title": "Osteoarthritis Cartilage."
+      },
+      {
+        "issue": "13",
+        "key": "bib16-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "1317",
+        "DOI": "10.1001/jama.2017.18391",
+        "article-title": "Big data and machine learning in health care",
+        "volume": "319",
+        "author": "Beam",
+        "year": "2018",
+        "journal-title": "JAMA."
+      },
+      {
+        "key": "bib17-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "71",
+        "DOI": "10.1016/j.ijmedinf.2017.03.006",
+        "article-title": "Decaying relevance of clinical data towards future decisions in data-driven inpatient clinical order sets",
+        "volume": "102",
+        "author": "Chen",
+        "year": "2017",
+        "journal-title": "Int J Med Inform."
+      },
+      {
+        "issue": "11",
+        "key": "bib18-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "993",
+        "DOI": "10.1590/1414-431X20132948",
+        "article-title": "Artificial neural network models for predicting 1-year mortality in elderly patients with intertrochanteric fractures in China",
+        "volume": "46",
+        "author": "Shi",
+        "year": "2013",
+        "journal-title": "Braz J Med Biol Res."
+      },
+      {
+        "issue": "10",
+        "key": "bib19-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "2228",
+        "DOI": "10.1016/j.arth.2019.04.055",
+        "article-title": "Preoperative prediction of value metrics and a patient-specific payment model for primary total hip arthroplasty: development and validation of a deep learning model",
+        "volume": "34",
+        "author": "Ramkumar",
+        "year": "2019",
+        "journal-title": "J Arthroplasty."
+      },
+      {
+        "issue": "7553",
+        "key": "bib20-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "436",
+        "DOI": "10.1038/nature14539",
+        "article-title": "Deep learning",
+        "volume": "521",
+        "author": "LeCun",
+        "year": "2015",
+        "journal-title": "Nature."
+      },
+      {
+        "issue": "6243",
+        "key": "bib21-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "37",
+        "DOI": "10.1126/science.aab1328",
+        "article-title": "Health care policy. Ten things we have to do to achieve precision medicine",
+        "volume": "349",
+        "author": "Kohane",
+        "year": "2015",
+        "journal-title": "Science."
+      },
+      {
+        "issue": "2",
+        "key": "bib25-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "418",
+        "DOI": "10.3390/s17020418",
+        "article-title": "Data collection and analysis using wearable sensors for monitoring knee range of motion after total knee arthroplasty",
+        "volume": "17",
+        "author": "Chiang",
+        "year": "2017",
+        "journal-title": "Sensors (Basel)."
+      },
+      {
+        "issue": "4",
+        "key": "bib28-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "1058",
+        "DOI": "10.1016/j.arth.2016.11.019",
+        "article-title": "Open mHealth architecture: a primer for tomorrow’s orthopedic surgeon and introduction to its use in lower extremity arthroplasty",
+        "volume": "32",
+        "author": "Ramkumar",
+        "year": "2017",
+        "journal-title": "J Arthroplasty."
+      },
+      {
+        "issue": "1",
+        "key": "bib30-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "4",
+        "DOI": "10.1109/JBHI.2016.2636665",
+        "article-title": "Deep learning for health informatics",
+        "volume": "21",
+        "author": "Ravi",
+        "year": "2017",
+        "journal-title": "IEEE J Biomed Health Inform."
+      },
+      {
+        "issue": "10",
+        "key": "bib31-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "2253",
+        "DOI": "10.1016/j.arth.2019.05.021",
+        "article-title": "Remote patient monitoring using mobile health for total knee arthroplasty: validation of a wearable and machine learning-based surveillance platform",
+        "volume": "34",
+        "author": "Ramkumar",
+        "year": "2019",
+        "journal-title": "J Arthroplasty."
+      },
+      {
+        "issue": "7",
+        "key": "bib32-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "1198",
+        "DOI": "10.1016/j.jse.2018.01.013",
+        "article-title": "Mobile technology and telemedicine for shoulder range of motion: validation of a motion-based machine-learning software development kit",
+        "volume": "27",
+        "author": "Ramkumar",
+        "year": "2018",
+        "journal-title": "J Shoulder Elbow Surg."
+      },
+      {
+        "issue": "10",
+        "key": "bib33-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "2204",
+        "DOI": "10.1016/j.arth.2019.06.018",
+        "article-title": "Artificial intelligence and arthroplasty at a single institution: real-world applications of machine learning to big data, value-based care, mobile health, and remote patient monitoring",
+        "volume": "34",
+        "author": "Ramkumar",
+        "year": "2019",
+        "journal-title": "J Arthroplasty."
+      },
+      {
+        "key": "bib37-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "12",
+        "DOI": "10.1016/j.jclinepi.2019.02.004",
+        "article-title": "A systematic review shows no performance benefit of machine learning over logistic regression for clinical prediction models",
+        "volume": "110",
+        "author": "Christodoulou",
+        "year": "2019",
+        "journal-title": "J Clin Epidemiol."
+      },
+      {
+        "issue": "6",
+        "key": "bib38-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "479",
+        "DOI": "10.1016/j.cardfail.2019.01.018",
+        "article-title": "Predictive abilities of machine learning techniques may be limited by dataset characteristics: insights from the UNOS database",
+        "volume": "25",
+        "author": "Miller",
+        "year": "2019",
+        "journal-title": "J Card Fail."
+      },
+      {
+        "issue": "6",
+        "key": "bib39-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "484",
+        "DOI": "10.1016/j.cardfail.2019.04.006",
+        "article-title": "The promise of machine learning: when will it be delivered?",
+        "volume": "25",
+        "author": "Akbilgic",
+        "year": "2019",
+        "journal-title": "J Card Fail."
+      },
+      {
+        "issue": "7",
+        "key": "bib41-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "e196700",
+        "DOI": "10.1001/jamanetworkopen.2019.6700",
+        "article-title": "Quantifying sex bias in clinical studies at scale with automated data extraction",
+        "volume": "2",
+        "author": "Feldman",
+        "year": "2019",
+        "journal-title": "JAMA Netw Open."
+      },
+      {
+        "issue": "12",
+        "key": "bib42-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "e1001918",
+        "DOI": "10.1371/journal.pmed.1001918",
+        "article-title": "Diversity in clinical and biomedical research: a promise yet to be fulfilled",
+        "volume": "12",
+        "author": "Oh",
+        "year": "2015",
+        "journal-title": "PLoS Med."
+      },
+      {
+        "issue": "6433",
+        "key": "bib44-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "1287",
+        "DOI": "10.1126/science.aaw4399",
+        "article-title": "Adversarial attacks on medical machine learning",
+        "volume": "363",
+        "author": "Finlayson",
+        "year": "2019",
+        "journal-title": "Science."
+      },
+      {
+        "key": "bib45-20230811",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1001/jama.2019.16842",
+        "article-title": "Lifecycle regulation of artificial intelligence- and machine learning-based software devices in medicine",
+        "author": "Hwang",
+        "year": "2019",
+        "journal-title": "JAMA."
+      },
+      {
+        "issue": "6",
+        "key": "bib46-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "517",
+        "DOI": "10.1001/jama.2017.7797",
+        "article-title": "Unintended consequences of machine learning in medicine",
+        "volume": "318",
+        "author": "Cabitza",
+        "year": "2017",
+        "journal-title": "JAMA."
+      },
+      {
+        "issue": "10",
+        "key": "bib47-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "3104",
+        "DOI": "10.1007/s00586-016-4426-3",
+        "article-title": "Three-dimensional morphology study of surgical adolescent idiopathic scoliosis patient from encoded geometric models",
+        "volume": "25",
+        "author": "Thong",
+        "year": "2016",
+        "journal-title": "Eur Spine J."
+      },
+      {
+        "issue": "6",
+        "key": "bib48-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "581",
+        "DOI": "10.1080/17453674.2017.1344459",
+        "article-title": "Artificial intelligence for analyzing orthopedic trauma radiographs",
+        "volume": "88",
+        "author": "Olczak",
+        "year": "2017",
+        "journal-title": "Acta Orthop."
+      },
+      {
+        "issue": "4",
+        "key": "bib49-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "348",
+        "DOI": "10.1007/s00223-017-0238-7",
+        "article-title": "Machine learning principles can improve hip fracture prediction",
+        "volume": "100",
+        "author": "Kruse",
+        "year": "2017",
+        "journal-title": "Calcif Tissue Int."
+      },
+      {
+        "issue": "9",
+        "key": "bib50-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "e0183755",
+        "DOI": "10.1371/journal.pone.0183755",
+        "article-title": "Machine learning techniques for the optimization of joint replacements: application to a short-stem hip implant",
+        "volume": "12",
+        "author": "Cilla",
+        "year": "2017",
+        "journal-title": "PloS One."
+      },
+      {
+        "key": "bib51-20230811",
+        "article-title": "Predictive software helps optimize efficient care for older patients with orthopedic fractures. NYU Langone Health",
+        "author": "Konda",
+        "journal-title": "Orthopedic Surgery 2018 Year in Review."
+      },
+      {
+        "issue": "7",
+        "key": "bib52-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "324",
+        "DOI": "10.1097/BOT.0000000000001454",
+        "article-title": "Bundled care for hip fractures: a machine-learning approach to an untenable patient-specific payment model",
+        "volume": "33",
+        "author": "Karnuta",
+        "year": "2019",
+        "journal-title": "J Orthop Trauma"
+      },
+      {
+        "issue": "10",
+        "key": "bib53-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "2210",
+        "DOI": "10.1016/j.arth.2019.07.022",
+        "article-title": "Variation in the thickness of knee cartilage. The use of a novel machine learning algorithm for cartilage segmentation of magnetic resonance images",
+        "volume": "34",
+        "author": "Shah",
+        "year": "2019 Oct",
+        "journal-title": "J Arthroplasty."
+      },
+      {
+        "issue": "2",
+        "key": "bib54-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "452",
+        "DOI": "10.1097/CORR.0000000000000601",
+        "article-title": "Can machine learning methods produce accurate and easy-to-use prediction models of 30-day complications and mortality after knee or hip arthroplasty?",
+        "volume": "477",
+        "author": "Harris",
+        "year": "2019 Feb",
+        "journal-title": "Clin Orthop Relat Res."
+      },
+      {
+        "issue": "6",
+        "key": "bib56-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "1267",
+        "DOI": "10.1097/CORR.0000000000000687",
+        "article-title": "Can machine learning algorithms predict which patients will achieve minimally clinically important differences from total joint arthroplasty?",
+        "volume": "477",
+        "author": "Fontana",
+        "year": "2019",
+        "journal-title": "Clin Orthop Relat Res."
+      },
+      {
+        "issue": "6",
+        "key": "bib57-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "1262",
+        "DOI": "10.1097/CORR.0000000000000787",
+        "article-title": "Editor’s Spotlight/Take 5: Can machine learning algorithms predict which patients will achieve minimally clinically important differences from total joint arthroplasty?",
+        "volume": "477",
+        "author": "Leopold",
+        "year": "2019",
+        "journal-title": "Clin Orthop Rel Res."
+      },
+      {
+        "issue": "24",
+        "key": "bib58-20230811",
+        "doi-asserted-by": "crossref",
+        "first-page": "2167",
+        "DOI": "10.2106/JBJS.19.00661",
+        "article-title": "Natural language processing for the identification of surgical site infections in orthopaedics",
+        "volume": "101",
+        "author": "Thirukumaran",
+        "year": "2019",
+        "journal-title": "J Bone Joint Surg Am."
+      }
+    ],
+    "container-title": [
+      "Journal of Bone and Joint Surgery"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.ovid.com/10.2106/JBJS.19.01128",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          26
+        ]
+      ],
+      "date-time": "2026-08-26T13:45:33Z",
+      "timestamp": 1787751933000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.ovid.com/10.2106/JBJS.19.01128"
+      }
+    },
+    "subtitle": [
+      "An Introduction for Clinicians"
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          6
+        ]
+      ]
+    },
+    "references-count": 38,
+    "journal-issue": {
+      "issue": "9",
+      "published-print": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.2106/jbjs.19.01128",
+    "relation": {},
+    "ISSN": [
+      "0021-9355",
+      "1535-1386"
+    ],
+    "issn-type": [
+      {
+        "value": "0021-9355",
+        "type": "print"
+      },
+      {
+        "value": "1535-1386",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          6
+        ]
+      ]
+    }
+  }
+}

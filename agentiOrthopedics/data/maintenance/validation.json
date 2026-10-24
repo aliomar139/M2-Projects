@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-24",
+  "local_links_checked": 919,
+  "retained_source_hash_checks": 268,
+  "script_syntax_checks": 17,
+  "survey_records": 85,
+  "survey_main_text_available": 57,
+  "legacy_citations": 100,
+  "legacy_main_text_available": 61,
+  "dimension_cells": 3485,
+  "prisma_unique_pmids": 1839,
+  "errors": [],
+  "status": "passed"
+}

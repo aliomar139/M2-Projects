@@ -1,0 +1,809 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          25
+        ]
+      ],
+      "date-time": "2026-08-25T06:55:08Z",
+      "timestamp": 1787640908555,
+      "version": "build-2736575974"
+    },
+    "reference-count": 42,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              13
+            ]
+          ],
+          "date-time": "2026-04-13T00:00:00Z",
+          "timestamp": 1776038400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              13
+            ]
+          ],
+          "date-time": "2026-04-13T00:00:00Z",
+          "timestamp": 1776038400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Curr Rev Musculoskelet Med"
+    ],
+    "DOI": "10.1007/s12178-026-10019-w",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          13
+        ]
+      ],
+      "date-time": "2026-04-13T04:30:47Z",
+      "timestamp": 1776054647000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": [
+      "Artificial Intelligence and its Current Role in Clinical Outcome Prediction, Musculoskeletal Imaging, and Economic and Ethical Considerations within Orthopedics and Sports Medicine"
+    ],
+    "prefix": "10.1007",
+    "volume": "19",
+    "author": [
+      {
+        "given": "Emmett",
+        "family": "O’Malley",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bryan",
+        "family": "Soth",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alex",
+        "family": "Capitano",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alessandro",
+        "family": "Bensa",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Joshua",
+        "family": "Eskew",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Malik",
+        "family": "Dancy",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Benedict",
+        "family": "Nwachukwu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          13
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "9",
+        "key": "10019_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "830",
+        "DOI": "10.2106/jbjs.19.01128",
+        "volume": "102",
+        "author": "TG Myers",
+        "year": "2020",
+        "unstructured": "Myers TG, Ramkumar PN, Ricciardi BF, Urish KL, Kipper J, Ketonis C. Artificial intelligence and orthopaedics: an introduction for clinicians. J Bone Joint Surg Am. 2020;102(9):830–40. https://doi.org/10.2106/jbjs.19.01128.",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "issue": "10",
+        "key": "10019_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "1938",
+        "DOI": "10.1016/j.arth.2023.08.043",
+        "volume": "38",
+        "author": "S Padash",
+        "year": "2023",
+        "unstructured": "Padash S, Mickley JP, Vera Garcia DV, Nugen F, Khosravi B, Erickson BJ, et al. An overview of machine learning in orthopedic surgery: an educational paper. J Arthroplasty. 2023;38(10):1938–42. https://doi.org/10.1016/j.arth.2023.08.043.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "issue": "3",
+        "key": "10019_CR3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/15563316251339660",
+        "volume": "21",
+        "author": "MM Girod",
+        "year": "2025",
+        "unstructured": "Girod MM, Saniei S, Ulrich MN, Bukowiec LG, Mulford KL, Taunton MJ, et al. Artificial intelligence in the diagnosis and prognostication of the musculoskeletal patient. HSS Journal®: The Musculoskeletal Journal of Hospital for Special Surgery. 2025;15563316251339660. https://doi.org/10.1177/15563316251339660.",
+        "journal-title": "HSS Journal®: The Musculoskeletal Journal of Hospital for Special Surgery"
+      },
+      {
+        "issue": "2",
+        "key": "10019_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "484",
+        "DOI": "10.52312/jdrs.2022.57906",
+        "volume": "33",
+        "author": "O Atik",
+        "year": "2022",
+        "unstructured": "Atik O. Artificial intelligence, machine learning, and deep learning in orthopedic surgery. Jt Dis Relat Surg. 2022;33(2):484–5. https://doi.org/10.52312/jdrs.2022.57906.",
+        "journal-title": "Jt Dis Relat Surg"
+      },
+      {
+        "issue": "10",
+        "key": "10019_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "e415",
+        "DOI": "10.5435/jaaos-d-19-00688",
+        "volume": "28",
+        "author": "VM Wang",
+        "year": "2020",
+        "unstructured": "Wang VM, Cheung CA, Kozar AJ, Huang B. Machine learning applications in orthopaedic imaging. J Am Acad Orthop Surg. 2020;28(10):e415-7. https://doi.org/10.5435/jaaos-d-19-00688.",
+        "journal-title": "J Am Acad Orthop Surg"
+      },
+      {
+        "issue": "12",
+        "key": "10019_CR6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/23259671231215820",
+        "volume": "11",
+        "author": "Y Lu",
+        "year": "2023",
+        "unstructured": "Lu Y, Pareek A, Yang L, Rouzrokh P, Khosravi B, Okoroha KR, et al. Deep learning artificial intelligence tool for automated radiographic determination of posterior tibial slope in patients with ACL injury. Orthop J Sports Med. 2023;11(12):23259671231215820. https://doi.org/10.1177/23259671231215820.",
+        "journal-title": "Orthop J Sports Med"
+      },
+      {
+        "issue": "11",
+        "key": "10019_CR7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/23259671241291920",
+        "volume": "12",
+        "author": "K Vasavada",
+        "year": "2024",
+        "unstructured": "Vasavada K, Vasavada V, Moran J, Devana S, Lee C, Hame SL, et al. A novel machine learning model to predict revision ACL reconstruction failure in the MARS cohort. Orthop J Sports Med. 2024;12(11):23259671241291920. https://doi.org/10.1177/23259671241291920.",
+        "journal-title": "Orthop J Sports Med"
+      },
+      {
+        "issue": "10",
+        "key": "10019_CR8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/23259671231206180",
+        "volume": "11",
+        "author": "RK Alaiti",
+        "year": "2023",
+        "unstructured": "Alaiti RK, Vallio CS, Assunção JH, de Andra ESFB, Gracitelli MEC, Neto AAF, et al. Using machine learning to predict nonachievement of clinically significant outcomes after rotator cuff repair. Orthop J Sports Med. 2023;11(10):23259671231206180. https://doi.org/10.1177/23259671231206180.",
+        "journal-title": "Orthop J Sports Med"
+      },
+      {
+        "issue": "10",
+        "key": "10019_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "2351",
+        "DOI": "10.1097/corr.0000000000001263",
+        "volume": "478",
+        "author": "V Kumar",
+        "year": "2020",
+        "unstructured": "Kumar V, Roche C, Overman S, Simovitch R, Flurin PH, Wright T, et al. What is the accuracy of three different machine learning techniques to predict clinical outcomes after shoulder arthroplasty? Clin Orthop Relat Res. 2020;478(10):2351–63. https://doi.org/10.1097/corr.0000000000001263.",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "issue": "6",
+        "key": "10019_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "185",
+        "DOI": "10.1007/s12178-024-09893-z",
+        "volume": "17",
+        "author": "SJ Jang",
+        "year": "2024",
+        "unstructured": "Jang SJ, Rosenstadt J, Lee E, Kunze KN. Artificial intelligence for clinically meaningful outcome prediction in orthopedic research: current applications and limitations. Curr Rev Musculoskelet Med. 2024;17(6):185–206. https://doi.org/10.1007/s12178-024-09893-z.",
+        "journal-title": "Curr Rev Musculoskelet Med"
+      },
+      {
+        "issue": "11",
+        "key": "10019_CR11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/2325967120963046",
+        "volume": "8",
+        "author": "JM Karnuta",
+        "year": "2020",
+        "unstructured": "Karnuta JM, Luu BC, Haeberle HS, Saluan PM, Frangiamore SJ, Stearns KL, et al. Machine learning outperforms regression analysis to predict next-season Major League Baseball player injuries: epidemiology and validation of 13,982 player-years from performance and injury profile trends, 2000–2017. Orthop J Sports Med. 2020;8(11):2325967120963046. https://doi.org/10.1177/2325967120963046.",
+        "journal-title": "Orthop J Sports Med"
+      },
+      {
+        "issue": "13",
+        "key": "10019_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "3593",
+        "DOI": "10.1177/03635465221124275",
+        "volume": "50",
+        "author": "KN Kunze",
+        "year": "2022",
+        "unstructured": "Kunze KN, Kaidi A, Madjarova S, Polce EM, Ranawat AS, Nawabi DH, et al. External validation of a machine learning algorithm for predicting clinically meaningful functional improvement after arthroscopic hip preservation surgery. Am J Sports Med. 2022;50(13):3593–9. https://doi.org/10.1177/03635465221124275.",
+        "journal-title": "Am J Sports Med"
+      },
+      {
+        "issue": "12",
+        "key": "10019_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "1055",
+        "DOI": "10.2106/jbjs.20.01640",
+        "volume": "103",
+        "author": "KN Kunze",
+        "year": "2021",
+        "unstructured": "Kunze KN, Polce EM, Clapp I, Nwachukwu BU, Chahla J, Nho SJ. Machine learning algorithms predict functional improvement after hip arthroscopy for femoroacetabular impingement syndrome in athletes. J Bone Joint Surg Am. 2021;103(12):1055–62. https://doi.org/10.2106/jbjs.20.01640.",
+        "journal-title": "J Bone Joint Surg Am"
+      },
+      {
+        "issue": "12",
+        "key": "10019_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "2910",
+        "DOI": "10.1177/0363546520950743",
+        "volume": "48",
+        "author": "PN Ramkumar",
+        "year": "2020",
+        "unstructured": "Ramkumar PN, Karnuta JM, Haeberle HS, Sullivan SW, Nawabi DH, Ranawat AS, et al. Radiographic indices are not predictive of clinical outcomes among 1735 patients indicated for hip arthroscopic surgery: a machine learning analysis. Am J Sports Med. 2020;48(12):2910–8. https://doi.org/10.1177/0363546520950743.",
+        "journal-title": "Am J Sports Med"
+      },
+      {
+        "issue": "5",
+        "key": "10019_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "1488",
+        "DOI": "10.1016/j.arthro.2021.01.005",
+        "volume": "37",
+        "author": "KN Kunze",
+        "year": "2021",
+        "unstructured": "Kunze KN, Polce EM, Nwachukwu BU, Chahla J, Nho SJ. Development and internal validation of supervised machine learning algorithms for predicting clinically significant functional improvement in a mixed population of primary hip arthroscopy. Arthroscopy. 2021;37(5):1488–97. https://doi.org/10.1016/j.arthro.2021.01.005.",
+        "journal-title": "Arthroscopy"
+      },
+      {
+        "issue": "10",
+        "key": "10019_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "2668",
+        "DOI": "10.1177/03635465211024964",
+        "volume": "49",
+        "author": "HS Haeberle",
+        "year": "2021",
+        "unstructured": "Haeberle HS, Ramkumar PN, Karnuta JM, Sullivan S, Sink EL, Kelly BT, et al. Predicting the risk of subsequent hip surgery before primary hip arthroscopy for femoroacetabular impingement syndrome: a machine learning analysis of preoperative risk factors in hip preservation. Am J Sports Med. 2021;49(10):2668–76. https://doi.org/10.1177/03635465211024964.",
+        "journal-title": "Am J Sports Med"
+      },
+      {
+        "issue": "2",
+        "key": "10019_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "189",
+        "DOI": "10.1016/j.xrrt.2022.12.006",
+        "volume": "3",
+        "author": "P Gupta",
+        "year": "2023",
+        "unstructured": "Gupta P, Haeberle HS, Zimmer ZR, Levine WN, Williams RJ, Ramkumar PN. Artificial intelligence-based applications in shoulder surgery leaves much to be desired: a systematic review. JSES Rev Rep Tech. 2023;3(2):189–200. https://doi.org/10.1016/j.xrrt.2022.12.006.",
+        "journal-title": "JSES Rev Rep Tech"
+      },
+      {
+        "key": "10019_CR18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/frai.2024.1477447",
+        "volume": "7",
+        "author": "JA Balch",
+        "year": "2024",
+        "unstructured": "Balch JA, Chatham AH, Hong PKW, Manganiello L, Baskaran N, Bihorac A, et al. Predicting patient reported outcome measures: a scoping review for the artificial intelligence-guided patient preference predictor. Front Artif Intell. 2024;7:1477447. https://doi.org/10.3389/frai.2024.1477447.",
+        "journal-title": "Front Artif Intell"
+      },
+      {
+        "issue": "4",
+        "key": "10019_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "997",
+        "DOI": "10.1007/s00264-024-06088-6",
+        "volume": "48",
+        "author": "A Velasquez Garcia",
+        "year": "2024",
+        "unstructured": "Velasquez Garcia A, Bukowiec LG, Yang L, Nishikawa H, Fitzsimmons JS, Larson AN, et al. Artificial intelligence-based three-dimensional templating for total joint arthroplasty planning: a scoping review. Int Orthop. 2024;48(4):997–1010. https://doi.org/10.1007/s00264-024-06088-6.",
+        "journal-title": "Int Orthop"
+      },
+      {
+        "key": "10019_CR20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/jcm14093111",
+        "author": "B De Simone",
+        "year": "2025",
+        "unstructured": "De Simone B, Deeken G, Catena F. Balancing ethics and innovation: can artificial intelligence safely transform emergency surgery? A narrative perspective. J Clin Med. 2025. https://doi.org/10.3390/jcm14093111.",
+        "journal-title": "J Clin Med"
+      },
+      {
+        "issue": "3",
+        "key": "10019_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "758",
+        "DOI": "10.1007/s00167-021-06838-8",
+        "volume": "30",
+        "author": "S Ko",
+        "year": "2022",
+        "unstructured": "Ko S, Pareek A, Ro DH, Lu Y, Camp CL, Martin RK, et al. Artificial intelligence in orthopedics: three strategies for deep learning with orthopedic specific imaging. Knee Surg Sports Traumatol Arthrosc. 2022;30(3):758–61. https://doi.org/10.1007/s00167-021-06838-8.",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc"
+      },
+      {
+        "issue": "11",
+        "key": "10019_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "e523",
+        "DOI": "10.5435/jaaos-d-23-00831",
+        "volume": "32",
+        "author": "A Bozzo",
+        "year": "2024",
+        "unstructured": "Bozzo A, Tsui JMG, Bhatnagar S, Forsberg J. Deep learning and multimodal artificial intelligence in orthopaedic surgery. J Am Acad Orthop Surg. 2024;32(11):e523-32. https://doi.org/10.5435/jaaos-d-23-00831.",
+        "journal-title": "J Am Acad Orthop Surg"
+      },
+      {
+        "issue": "6",
+        "key": "10019_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "e2033",
+        "DOI": "10.1016/j.asmr.2021.10.013",
+        "volume": "3",
+        "author": "Y Lu",
+        "year": "2021",
+        "unstructured": "Lu Y, Kunze K, Cohn MR, Lavoie-Gagne O, Polce E, Nwachukwu BU, et al. Artificial intelligence predicts cost after ambulatory anterior cruciate ligament reconstruction. Arthrosc Sports Med Rehabil. 2021;3(6):e2033–45. https://doi.org/10.1016/j.asmr.2021.10.013.",
+        "journal-title": "Arthrosc Sports Med Rehabil"
+      },
+      {
+        "key": "10019_CR24",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Lavoie-Gagne O, Woo JJ, Williams RJ 3rd, Nwachukwu BU, Kunze KN, Ramkumar PN. Artificial intelligence as a tool to mitigate administrative burden, optimize billing, reduce insurance- and credentialing-related expenses, and improve quality assurance within health care systems. Arthroscopy. 2025;41(8):3270–5. https://doi.org/10.1016/j.arthro.2025.02.038.",
+        "DOI": "10.1016/j.arthro.2025.02.038"
+      },
+      {
+        "key": "10019_CR25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fsurg.2023.1284015",
+        "volume": "10",
+        "author": "R Giorgino",
+        "year": "2023",
+        "unstructured": "Giorgino R, Alessandri-Bonetti M, Luca A, Migliorini F, Rossi N, Peretti GM, et al. ChatGPT in orthopedics: a narrative review exploring the potential of artificial intelligence in orthopedic practice. Front Surg. 2023;10:1284015. https://doi.org/10.3389/fsurg.2023.1284015.",
+        "journal-title": "Front Surg"
+      },
+      {
+        "issue": "3",
+        "key": "10019_CR26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/15563316251341314",
+        "volume": "21",
+        "author": "KN Kunze",
+        "year": "2025",
+        "unstructured": "Kunze KN. Artificial intelligence and digital applications in musculoskeletal healthcare: ready or not, here it comes! HSS Journal®: The Musculoskeletal Journal of Hospital for Special Surgery. 2025;15563316251341314. https://doi.org/10.1177/15563316251341314.",
+        "journal-title": "HSS Journal®: The Musculoskeletal Journal of Hospital for Special Surgery"
+      },
+      {
+        "issue": "3",
+        "key": "10019_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "565",
+        "DOI": "10.1016/j.arthro.2024.10.042",
+        "volume": "41",
+        "author": "JJ Woo",
+        "year": "2025",
+        "unstructured": "Woo JJ, Yang AJ, Olsen RJ, Hasan SS, Nawabi DH, Nwachukwu BU, et al. Custom large language models improve accuracy: comparing retrieval augmented generation and artificial intelligence agents to noncustom models for evidence-based medicine. Arthroscopy. 2025;41(3):565-73.e6. https://doi.org/10.1016/j.arthro.2024.10.042.",
+        "journal-title": "Arthroscopy"
+      },
+      {
+        "issue": "11",
+        "key": "10019_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "4928",
+        "DOI": "10.1016/j.arthro.2025.03.066",
+        "volume": "41",
+        "author": "KN Kunze",
+        "year": "2025",
+        "unstructured": "Kunze KN, Gerhold C, Dave U, Abunnur N, Mamonov A, Nwachukwu BU, et al. Large language model use cases in health care research are redundant and often lack appropriate methodological conduct: a scoping review and call for improved practices. Arthroscopy. 2025;41(11):4928-45.e2. https://doi.org/10.1016/j.arthro.2025.03.066.",
+        "journal-title": "Arthroscopy"
+      },
+      {
+        "issue": "3",
+        "key": "10019_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "547",
+        "DOI": "10.1016/j.arthro.2024.12.010",
+        "volume": "41",
+        "author": "KN Kunze",
+        "year": "2025",
+        "unstructured": "Kunze KN, Nwachukwu BU, Cote MP, Ramkumar PN. Large language models applied to health care tasks may improve clinical efficiency, value of care rendered, research, and medical education. Arthroscopy. 2025;41(3):547–56. https://doi.org/10.1016/j.arthro.2024.12.010.",
+        "journal-title": "Arthroscopy"
+      },
+      {
+        "issue": "7",
+        "key": "10019_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "447",
+        "DOI": "10.1302/2046-3758.127.Bjr-2023-0111.R1",
+        "volume": "12",
+        "author": "AB Lisacek-Kiosoglous",
+        "year": "2023",
+        "unstructured": "Lisacek-Kiosoglous AB, Powling AS, Fontalis A, Gabr A, Mazomenos E, Haddad FS. Artificial intelligence in orthopaedic surgery. Bone Joint Res. 2023;12(7):447–54. https://doi.org/10.1302/2046-3758.127.Bjr-2023-0111.R1.",
+        "journal-title": "Bone Joint Res"
+      },
+      {
+        "issue": "4",
+        "key": "10019_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "1203",
+        "DOI": "10.1007/s00167-022-07272-0",
+        "volume": "31",
+        "author": "JA Pruneski",
+        "year": "2023",
+        "unstructured": "Pruneski JA, Pareek A, Nwachukwu BU, Martin RK, Kelly BT, Karlsson J, et al. Natural language processing: using artificial intelligence to understand human language in orthopedics. Knee Surg Sports Traumatol Arthrosc. 2023;31(4):1203–11. https://doi.org/10.1007/s00167-022-07272-0.",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc"
+      },
+      {
+        "issue": "9",
+        "key": "10019_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "2767",
+        "DOI": "10.1016/j.arthro.2022.05.010",
+        "volume": "38",
+        "author": "IJ Wellington",
+        "year": "2022",
+        "unstructured": "Wellington IJ, Cote MP. Editorial commentary: machine learning in orthopaedics: venturing into the valley of despair. Arthroscopy. 2022;38(9):2767–8. https://doi.org/10.1016/j.arthro.2022.05.010.",
+        "journal-title": "Arthroscopy"
+      },
+      {
+        "issue": "3",
+        "key": "10019_CR33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/15563316251340303",
+        "volume": "21",
+        "author": "LV Kiwinda",
+        "year": "2025",
+        "unstructured": "Kiwinda LV, Kocher SD, Bryniarski AR, Pean CA. Bioethical considerations of deploying artificial intelligence in clinical orthopedic settings: a narrative review. HSS Journal®: The Musculoskeletal Journal of Hospital for Special Surgery. 2025;15563316251340303. https://doi.org/10.1177/15563316251340303.",
+        "journal-title": "HSS Journal®: The Musculoskeletal Journal of Hospital for Special Surgery"
+      },
+      {
+        "issue": "3",
+        "key": "10019_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "1577",
+        "DOI": "10.3233/wor-240187",
+        "volume": "79",
+        "author": "A Karaibrahimoglu",
+        "year": "2024",
+        "unstructured": "Karaibrahimoglu A, İnce F, Hassanzadeh G, Alizadeh A, Bagheri K, Yucel I, et al. Ethical considerations in telehealth and artificial intelligence for work related musculoskeletal disorders: a scoping review. Work. 2024;79(3):1577–88. https://doi.org/10.3233/wor-240187.",
+        "journal-title": "Work"
+      },
+      {
+        "issue": "8",
+        "key": "10019_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "3541",
+        "DOI": "10.1007/s00402-024-05408-0",
+        "volume": "144",
+        "author": "J Pawelczyk",
+        "year": "2024",
+        "unstructured": "Pawelczyk J, Kraus M, Eckl L, Nehrer S, Aurich M, Izadpanah K, et al. Attitude of aspiring orthopaedic surgeons towards artificial intelligence: a multinational cross-sectional survey study. Arch Orthop Trauma Surg. 2024;144(8):3541–52. https://doi.org/10.1007/s00402-024-05408-0.",
+        "journal-title": "Arch Orthop Trauma Surg"
+      },
+      {
+        "key": "10019_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "4011",
+        "DOI": "10.2147/jmdh.S482757",
+        "volume": "17",
+        "author": "Z Shang",
+        "year": "2024",
+        "unstructured": "Shang Z, Chauhan V, Devi K, Patil S. Artificial intelligence, the digital surgeon: unravelling its emerging footprint in healthcare - the narrative review. J Multidiscip Healthc. 2024;17:4011–22. https://doi.org/10.2147/jmdh.S482757.",
+        "journal-title": "J Multidiscip Healthc"
+      },
+      {
+        "issue": "3",
+        "key": "10019_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "617",
+        "DOI": "10.1007/s00264-024-06102-x",
+        "volume": "48",
+        "author": "AF Mavrogenis",
+        "year": "2024",
+        "unstructured": "Mavrogenis AF, Hernigou P, Scarlat MM. Artificial intelligence, natural stupidity or artificial stupidity: who is today the winner in orthopaedics? What is true and what is fraud? What legal barriers exist for scientific writing? Int Orthop. 2024;48(3):617–23. https://doi.org/10.1007/s00264-024-06102-x.",
+        "journal-title": "Int Orthop"
+      },
+      {
+        "issue": "6",
+        "key": "10019_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "1137",
+        "DOI": "10.1002/jor.25566",
+        "volume": "41",
+        "author": "SS Leopold",
+        "year": "2023",
+        "unstructured": "Leopold SS, Haddad FS, Sandell LJ, Swiontkowski M. Artificial intelligence applications and scholarly publication in orthopedic surgery. J Orthop Res. 2023;41(6):1137–8. https://doi.org/10.1002/jor.25566.",
+        "journal-title": "J Orthop Res"
+      },
+      {
+        "issue": "4",
+        "key": "10019_CR39",
+        "doi-asserted-by": "publisher",
+        "first-page": "S90",
+        "DOI": "10.47391/jpma.Aku-9s-14",
+        "volume": "74",
+        "author": "U Banatwala",
+        "year": "2024",
+        "unstructured": "Banatwala U, Ibrahim MT, Shaikh RH, Shahzad H, Hoodbhoy Z, Noordin S. A comprehensive exploration of artificial intelligence in orthopaedics within lower-middle-income countries: a narrative review. J Pak Med Assoc. 2024;74(4):S90–6. https://doi.org/10.47391/jpma.Aku-9s-14.",
+        "journal-title": "J Pak Med Assoc"
+      },
+      {
+        "issue": "7",
+        "key": "10019_CR40",
+        "doi-asserted-by": "publisher",
+        "first-page": "1497",
+        "DOI": "10.1097/corr.0000000000001679",
+        "volume": "479",
+        "author": "MP Murphy",
+        "year": "2021",
+        "unstructured": "Murphy MP, Brown NM. Corr synthesis: when should the orthopaedic surgeon use artificial intelligence, machine learning, and deep learning? Clin Orthop Relat Res. 2021;479(7):1497–505. https://doi.org/10.1097/corr.0000000000001679.",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "10019_CR41",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Pruneski JA, Williams RJ 3rd, Nwachukwu BU, Ramkumar PN, Kiapour AM, Martin RK, et al. The development and deployment of machine learning models. Knee Surg Sports Traumatol Arthrosc. 2022;30(12):3917–23. https://doi.org/10.1007/s00167-022-07155-4.",
+        "DOI": "10.1007/s00167-022-07155-4"
+      },
+      {
+        "issue": "4",
+        "key": "10019_CR42",
+        "doi-asserted-by": "publisher",
+        "first-page": "1166",
+        "DOI": "10.1177/03635465211008648",
+        "volume": "50",
+        "author": "PN Ramkumar",
+        "year": "2022",
+        "unstructured": "Ramkumar PN, Luu BC, Haeberle HS, Karnuta JM, Nwachukwu BU, Williams RJ. Sports medicine and artificial intelligence: a primer. Am J Sports Med. 2022;50(4):1166–74. https://doi.org/10.1177/03635465211008648.",
+        "journal-title": "Am J Sports Med"
+      }
+    ],
+    "container-title": [
+      "Current Reviews in Musculoskeletal Medicine"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s12178-026-10019-w.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1007/s12178-026-10019-w",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s12178-026-10019-w.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          13
+        ]
+      ],
+      "date-time": "2026-04-13T04:30:53Z",
+      "timestamp": 1776054653000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.springer.com/10.1007/s12178-026-10019-w"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          13
+        ]
+      ]
+    },
+    "references-count": 42,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10019"
+    ],
+    "URL": "https://doi.org/10.1007/s12178-026-10019-w",
+    "relation": {},
+    "ISSN": [
+      "1935-9748"
+    ],
+    "issn-type": [
+      {
+        "value": "1935-9748",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          13
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "23 October 2025",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "20 February 2026",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "13 April 2026",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      },
+      {
+        "value": "Statement: Below are the healthcare industry relationships reported by Dr. Nwachukwu as of July 8, 2025. BICMD - Co-founder, Ownership InterestFigur8 - Advisory BoardHSS West Side ASC - Ownership Interest Medbridge- Advisory Board Quantum - Advisory Board Stryker Corporation - Consultant",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Disclosure statement"
+        }
+      }
+    ],
+    "article-number": "33"
+  }
+}

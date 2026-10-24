@@ -1,0 +1,96 @@
+=== PDF PAGE 1 ===
+JOURNAL OF CONSULTING AND CLINICAL PSYCHOLOGY • 2021.0 Top 100 Orthopedic AI • Rank #81
+Prospective evaluation of a clinical decision support
+system in psychological therapy.
+W. Lutz, Anne-Katharina Deisenhofer, Julian A. Rubel, Björn Bennemann, Julia Giesemann, Kaitlyn
+Poster, Brian Schwartz
+Department of Psychology.
+Journal:
+Journal of consulting and
+clinical psychology
+Publication Year:
+2021.0
+Citations:
+120
+DOI:
+10.1037/ccp0000642
+CLINICAL & AGENTIC AI TAKEAWAY
+A clinical decision support system in psychological therapy can enhance patient outcomes when successfully
+implemented and incorporated into clinical practice.
+ABSTRACT
+Objective: Thus far, most applications in precision mental health have not been evaluated prospectively. This article
+presents the results of a prospective randomized-controlled trial investigating the effects of a digital decision support and
+feedback system, which includes two components of patient-specific recommendations: (a) a clinical strategy
+recommendation and (b) adaptive recommendations for patients at risk for treatment failure. Method: Therapist-patient
+dyads (N = 538) in a cognitive behavioral therapy outpatient clinic were randomized to either having access to a decision
+support system (intervention group; n = 335) or not (treatment as usual; n = 203). First, treatment strategy
+recommendations (problem-solving, motivation-oriented, or a mix of both strategies) for the first 10 sessions were
+evaluated. Second, the effect of psychometric feedback enhanced with clinical problem-solving tools on treatment outcome
+was investigated. Results: The prospective evaluation showed a differential effect size of about 0.3 when therapists
+followed the recommended treatment strategy in the first 10 sessions. Moreover, the linear mixed models revealed
+therapist symptom awareness and therapist attitude and confidence as significant predictors of an outcome as well as
+therapist-rated usefulness of feedback as a significant moderator of the feedback-outcome and the not on track-outcome
+associations. However, no main effects were found for feedback. Conclusions: The results demonstrate the importance of
+prospective studies and the high-quality implementation of digital decision support tools in clinical practice. Therapists
+seem to be able to learn from such systems and incorporate them into their clinical practice to enhance patient outcomes,
+but only when implementation is successful. (PsycInfo Database Record (c) 2022 APA, all rights reserved).
+Study Overview & Background
+Objective: Thus far, most applications in precision mental health have not been evaluated prospectively. This article
+presents the results of a prospective randomized-controlled trial investigating the effects of a digital decision support and
+feedback system, which includes two components of patient-specific recommendations: (a) a clinical strategy
+recommendation and (b) adaptive recommendations for patients at risk for treatment failure. Method: Therapist-patient
+dyads (N = 538) in a cognitive behavioral therapy outpatient clinic were randomized to either having access to a decision
+
+=== PDF PAGE 2 ===
+support system (intervention group; n = 335) or not (treatment as usual; n = 203). First, treatment strategy
+recommendations (problem-solving, motivation-oriented, or a mix of both strategies) for the first 10 sessions were
+evaluated. Second, the effect of psychometric feedback enhanced with clinical problem-solving tools on treatment outcome
+was investigated. Results: The prospective evaluation showed a differential effect size of about 0.3 when therapists
+followed the recommended treatment strategy in the first 10 sessions. Moreover, the linear mixed models revealed
+therapist symptom awareness and therapist attitude and confidence as significant predictors of an outcome as well as
+therapist-rated usefulness of feedback as a significant moderator of the feedback-outcome and the not on track-outcome
+associations. However, no main effects were found for feedback. Conclusions: The results demonstrate the importance of
+prospective studies and the high-quality implementation of digital decision support tools in clinical practice. Therapists
+seem to be able to learn from such systems and incorporate them into their clinical practice to enhance patient outcomes,
+but only when implementation is successful. (PsycInfo Database Record (c) 2022 APA, all rights reserved).
+Methodology & Clinical Focus
+Study Classification: rct. Evaluated under orthopedic machine learning and artificial intelligence decision frameworks.
+Key Findings & Analysis
+A clinical decision support system in psychological therapy can enhance patient outcomes when successfully implemented
+and incorporated into clinical practice.
+Extended Repository Abstract
+Objective Thus far, most applications in precision mental health have not been evaluated prospectively. This article
+presents the results of a prospective randomized-controlled trial investigating the effects of a digital decision support and
+feedback system, which includes two components of patient-specific recommendations: (a) a clinical strategy
+recommendation and (b) adaptive recommendations for patients at risk for treatment failure. Method Therapist-patient
+dyads ( N = 538) in a cognitive behavioral therapy outpatient clinic were randomized to either having access to a decision
+support system (intervention group; n = 335) or not (treatment as usual; n = 203). First, treatment strategy
+recommendations (problem-solving, motivation-oriented, or a mix of both strategies) for the first 10 sessions were
+evaluated. Second, the effect of psychometric feedback enhanced with clinical problem-solving tools on treatment outcome
+was investigated. Results The prospective evaluation showed a differential effect size of about 0.3 when therapists
+followed the recommended treatment strategy in the first 10 sessions. Moreover, the linear mixed models revealed
+therapist symptom awareness and therapist attitude and confidence as significant predictors of an outcome as well as
+therapist-rated usefulness of feedback as a significant moderator of the feedback-outcome and the not on track-outcome
+associations. However, no main effects were found for feedback. Conclusions The results demonstrate the importance of
+prospective studies and the high-quality implementation of digital decision support tools in clinical practice. Therapists
+seem to be able to learn from such systems and incorporate them into their clinical practice to enhance patient outcomes,
+but only when implementation is successful. (PsycInfo Database Record (c) 2022 APA, all rights reserved).
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+
+=== PDF PAGE 3 ===
+Bibliographic Details & Indexing
+Authors: W. Lutz, Anne-Katharina Deisenhofer, Julian A. Rubel, Björn Bennemann, Julia Giesemann, Kaitlyn
+Poster, Brian Schwartz
+Journal / Venue: Journal of consulting and clinical psychology (2021.0)
+SJR Metric: Quartile 1.0
+Citation Count: 120 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.1037/ccp0000642
+Consensus Evidence Link: https://consensus.app/papers/prospective-evaluation-of-a-clinical-decision-support-
+lutz-deisenhofer/cf5623d8c14c562da54fcb40f49cf840/
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1037/ccp0000642 • Consensus Page:
+https://consensus.app/papers/prospective-evaluation-of-a-clinical-decision-support-lutz-deisenhofer/cf5623d8c14c562da54fcb40f49cf840/
+• Verified and rendered via Deep Search & Academic Repositories.

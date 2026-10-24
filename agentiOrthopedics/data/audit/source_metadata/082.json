@@ -1,0 +1,583 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          22
+        ]
+      ],
+      "date-time": "2026-09-22T12:42:50Z",
+      "timestamp": 1790080970631,
+      "version": "4.0.1"
+    },
+    "reference-count": 27,
+    "publisher": "Elsevier BV",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2017-12-01T00:00:00Z",
+          "timestamp": 1512086400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "thegreenjournal.com",
+        "clinicalkey.jp",
+        "clinicalkey.com",
+        "clinicalkey.es",
+        "clinicalkey.fr",
+        "clinicalkey.com.au",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Radiotherapy and Oncology"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.radonc.2017.10.014",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          20
+        ]
+      ],
+      "date-time": "2017-11-20T19:16:15Z",
+      "timestamp": 1511205375000
+    },
+    "page": "392-397",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 100,
+    "title": [
+      "Clinical decision support of radiotherapy treatment planning: A data-driven machine learning strategy for patient-specific dosimetric decision making"
+    ],
+    "prefix": "10.1016",
+    "volume": "125",
+    "author": [
+      {
+        "given": "Gilmer",
+        "family": "Valdes",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "suffix": "II",
+        "given": "Charles B.",
+        "family": "Simone",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Josephine",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alexander",
+        "family": "Lin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sue S.",
+        "family": "Yom",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Adam J.",
+        "family": "Pattison",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Colin M.",
+        "family": "Carpenter",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Timothy D.",
+        "family": "Solberg",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0005",
+        "doi-asserted-by": "crossref",
+        "first-page": "376",
+        "DOI": "10.1016/j.radonc.2011.05.028",
+        "article-title": "Comparison of intensity-modulated radiotherapy, adaptive radiotherapy, proton radiotherapy, and adaptive proton radiotherapy for treatment of locally advanced head and neck cancer",
+        "volume": "101",
+        "author": "Simone",
+        "year": "2011",
+        "journal-title": "Radiother Oncol"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0010",
+        "doi-asserted-by": "crossref",
+        "first-page": "1223",
+        "DOI": "10.1001/jama.293.10.1223",
+        "article-title": "Effects of computerized clinical decision support systems on practitioner performance and patient outcomes: a systematic review",
+        "volume": "293",
+        "author": "Garg",
+        "year": "2005",
+        "journal-title": "Jama"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0015",
+        "doi-asserted-by": "crossref",
+        "first-page": "663",
+        "DOI": "10.1148/radiol.2513081346",
+        "article-title": "Probabilistic computer model developed from clinical data in national mammography database format to classify mammographic findings 1",
+        "volume": "251",
+        "author": "Burnside",
+        "year": "2009",
+        "journal-title": "Radiology"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0020",
+        "doi-asserted-by": "crossref",
+        "first-page": "37854",
+        "DOI": "10.1038/srep37854",
+        "article-title": "MediBoost: a patient stratification tool for interpretable decision making in the era of precision medicine",
+        "volume": "6",
+        "author": "Valdes",
+        "year": "2016",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0025",
+        "unstructured": "Caruana, R., et al. Intelligible models for healthcare: Predicting pneumonia risk and hospital 30-day readmission. in Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. 201ACM."
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0030",
+        "doi-asserted-by": "crossref",
+        "first-page": "84",
+        "DOI": "10.1111/nyas.13215",
+        "article-title": "Predictive time-series modeling using artificial neural networks for Linac beam symmetry: an empirical study",
+        "volume": "1387",
+        "author": "Li",
+        "year": "2017",
+        "journal-title": "Ann N Y Acad Sci"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0035",
+        "doi-asserted-by": "crossref",
+        "first-page": "4323",
+        "DOI": "10.1118/1.4953835",
+        "article-title": "A mathematical framework for virtual IMRT QA using machine learning",
+        "volume": "43",
+        "author": "Valdes",
+        "year": "2016",
+        "journal-title": "Med Phys"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0040",
+        "doi-asserted-by": "crossref",
+        "first-page": "5363",
+        "DOI": "10.1120/jacmp.v16i4.5363",
+        "article-title": "Use of TrueBeam developer mode for imaging QA",
+        "volume": "16",
+        "author": "Valdes",
+        "year": "2015",
+        "journal-title": "J Appl Clin Med Phys"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0045",
+        "doi-asserted-by": "crossref",
+        "first-page": "6105",
+        "DOI": "10.1088/0031-9155/61/16/6105",
+        "article-title": "Using machine learning to predict radiation pneumonitis in patients with stage I non-small cell lung cancer treated with stereotactic body radiation therapy",
+        "volume": "61",
+        "author": "Valdes",
+        "year": "2016",
+        "journal-title": "Phys Med Biol"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0050",
+        "doi-asserted-by": "crossref",
+        "first-page": "1363",
+        "DOI": "10.3109/02841861003649224",
+        "article-title": "Datamining approaches for modeling tumor control probability",
+        "volume": "49",
+        "author": "El Naqa",
+        "year": "2010",
+        "journal-title": "Acta Oncol"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0055",
+        "doi-asserted-by": "crossref",
+        "first-page": "S9",
+        "DOI": "10.1088/0031-9155/54/18/S02",
+        "article-title": "Predicting radiotherapy outcomes using statistical learning techniquesPart of this work was first presented at the Seventh International Conference on Machine Learning and Applications, San Diego, CA, USA, 11–13 December 2008",
+        "volume": "54",
+        "author": "El Naqa",
+        "year": "2009",
+        "journal-title": "Phys Med Biol"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0060",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.1016/j.radonc.2013.07.007",
+        "article-title": "Rapid Learning health care in oncology’–an approach towards decision support systems enabling customised radiotherapy",
+        "volume": "109",
+        "author": "Lambin",
+        "year": "2013",
+        "journal-title": "Radiother Oncol"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0065",
+        "doi-asserted-by": "crossref",
+        "first-page": "37",
+        "DOI": "10.1016/j.radonc.2014.04.012",
+        "article-title": "A prospective study comparing the predictions of doctors versus models for treatment outcome of lung cancer patients: a step toward individualized care and shared decision making",
+        "volume": "112",
+        "author": "Oberije",
+        "year": "2014",
+        "journal-title": "Radiother Oncol"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0070",
+        "doi-asserted-by": "crossref",
+        "first-page": "719",
+        "DOI": "10.1118/1.3539749",
+        "article-title": "A planning quality evaluation tool for prostate adaptive IMRT based on machine learning",
+        "volume": "38",
+        "author": "Zhu",
+        "year": "2011",
+        "journal-title": "Med Phys"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0075",
+        "doi-asserted-by": "crossref",
+        "first-page": "545",
+        "DOI": "10.1016/j.ijrobp.2010.11.030",
+        "article-title": "Experience-based quality control of clinical intensity-modulated radiotherapy planning",
+        "volume": "81",
+        "author": "Moore",
+        "year": "2011",
+        "journal-title": "Int J Radiat Oncol Biol Phys"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0080",
+        "doi-asserted-by": "crossref",
+        "first-page": "176",
+        "DOI": "10.1016/j.ijrobp.2013.03.015",
+        "article-title": "A knowledge-based approach to improving and homogenizing intensity modulated radiation therapy planning quality among treatment centers: an example application to prostate cancer planning",
+        "volume": "87",
+        "author": "Good",
+        "year": "2013",
+        "journal-title": "Int J Radiat Oncol Biol Phys"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0085",
+        "doi-asserted-by": "crossref",
+        "first-page": "612",
+        "DOI": "10.1016/j.ijrobp.2014.11.014",
+        "article-title": "Evaluation of a knowledge-based planning solution for head and neck cancer",
+        "volume": "91",
+        "author": "Tol",
+        "year": "2015",
+        "journal-title": "Int J Radiat Oncol Biol Phys"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0090",
+        "article-title": "Using overlap volume histogram and IMRT plan data to guide and automate VMAT planning: a head‐and‐neck case study",
+        "volume": "40",
+        "author": "Wu",
+        "year": "2013",
+        "journal-title": "Med Phys"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0095",
+        "series-title": "Springer series in statistics",
+        "article-title": "The elements of statistical learning",
+        "author": "Friedman",
+        "year": "2001"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0100",
+        "doi-asserted-by": "crossref",
+        "first-page": "1189",
+        "DOI": "10.1214/aos/1013203451",
+        "article-title": "Greedy function approximation: a gradient boosting machine",
+        "author": "Friedman",
+        "year": "2001",
+        "journal-title": "Ann Stat"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0105",
+        "doi-asserted-by": "crossref",
+        "first-page": "e19956",
+        "DOI": "10.1371/journal.pone.0019956",
+        "article-title": "Estimating survival in patients with operable skeletal metastases: an application of a bayesian belief network",
+        "volume": "6",
+        "author": "Forsberg",
+        "year": "2011",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0110",
+        "doi-asserted-by": "crossref",
+        "first-page": "381",
+        "DOI": "10.1016/j.radonc.2016.08.022",
+        "article-title": "Toward a model-based patient selection strategy for proton therapy: external validation of photon-derived normal tissue complication probability models in a head and neck proton therapy cohort",
+        "volume": "121",
+        "author": "Blanchard",
+        "year": "2016",
+        "journal-title": "Radiother Oncol"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0115",
+        "doi-asserted-by": "crossref",
+        "first-page": "267",
+        "DOI": "10.1016/j.radonc.2013.05.007",
+        "article-title": "Selection of patients for radiotherapy with protons aiming at reduction of side effects: the model-based approach",
+        "volume": "107",
+        "author": "Langendijk",
+        "year": "2013",
+        "journal-title": "Radiother Oncol"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0120",
+        "doi-asserted-by": "crossref",
+        "first-page": "433",
+        "DOI": "10.1016/j.ijrobp.2013.10.028",
+        "article-title": "Interactive decision-support tool for risk-based radiation therapy plan comparison for Hodgkin lymphoma",
+        "volume": "88",
+        "author": "Brodin",
+        "year": "2014",
+        "journal-title": "Int J Radiat Oncol Biol Phys"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0125",
+        "doi-asserted-by": "crossref",
+        "first-page": "281",
+        "DOI": "10.1016/j.radonc.2015.12.029",
+        "article-title": "Development and evaluation of an online three-level proton vs photon decision support prototype for head and neck cancer–comparison of dose, toxicity and cost-effectiveness",
+        "volume": "118",
+        "author": "Cheng",
+        "year": "2016",
+        "journal-title": "Radiother Oncol"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0130",
+        "doi-asserted-by": "crossref",
+        "first-page": "2785",
+        "DOI": "10.1088/0031-9155/53/11/002",
+        "article-title": "How many plans are needed in an IMRT multi-objective plan database?",
+        "volume": "53",
+        "author": "Craft",
+        "year": "2008",
+        "journal-title": "Phys Med Biol"
+      },
+      {
+        "key": "10.1016/j.radonc.2017.10.014_b0135",
+        "doi-asserted-by": "crossref",
+        "first-page": "292",
+        "DOI": "10.1016/j.radonc.2007.06.020",
+        "article-title": "A new concept for interactive radiotherapy planning with multicriteria optimization: first clinical evaluation",
+        "volume": "85",
+        "author": "Thieke",
+        "year": "2007",
+        "journal-title": "Radiother Oncol"
+      }
+    ],
+    "container-title": [
+      "Radiotherapy and Oncology"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0167814017326543?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0167814017326543?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          6,
+          28
+        ]
+      ],
+      "date-time": "2018-06-28T03:40:19Z",
+      "timestamp": 1530157219000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0167814017326543"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          12
+        ]
+      ]
+    },
+    "references-count": 27,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2017,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0167814017326543"
+    ],
+    "URL": "https://doi.org/10.1016/j.radonc.2017.10.014",
+    "relation": {},
+    "ISSN": [
+      "0167-8140"
+    ],
+    "issn-type": [
+      {
+        "value": "0167-8140",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          12
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Clinical decision support of radiotherapy treatment planning: A data-driven machine learning strategy for patient-specific dosimetric decision making",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Radiotherapy and Oncology",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.radonc.2017.10.014",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2017 Published by Elsevier Ireland Ltd.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

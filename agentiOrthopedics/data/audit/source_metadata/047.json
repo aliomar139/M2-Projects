@@ -1,0 +1,848 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          17
+        ]
+      ],
+      "date-time": "2026-10-17T12:37:17Z",
+      "timestamp": 1792240637969,
+      "version": "4.4.0"
+    },
+    "reference-count": 56,
+    "publisher": "Elsevier BV",
+    "issue": "5",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2021-05-01T00:00:00Z",
+          "timestamp": 1619827200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2021-05-01T00:00:00Z",
+          "timestamp": 1619827200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "arthroplastyjournal.org",
+        "clinicalkey.com",
+        "clinicalkey.com.au",
+        "clinicalkey.es",
+        "clinicalkey.fr",
+        "clinicalkey.jp",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "The Journal of Arthroplasty"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.arth.2020.10.053",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          11,
+          6
+        ]
+      ],
+      "date-time": "2020-11-06T02:17:47Z",
+      "timestamp": 1604629067000
+    },
+    "page": "1832-1845.e1",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 19,
+    "title": [
+      "Clinical Decision Support Tools for Predicting Outcomes in Patients Undergoing Total Knee Arthroplasty: A Systematic Review"
+    ],
+    "prefix": "10.1016",
+    "volume": "36",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-8259-0478",
+        "authenticated-orcid": false,
+        "given": "Jodie A.",
+        "family": "Cochrane",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Traci",
+        "family": "Flynn",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Adrian",
+        "family": "Wills",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Frederick R.",
+        "family": "Walker",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Nilsson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sarah J.",
+        "family": "Johnson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib1",
+        "series-title": "Demographics of Hip, Knee and Shoulder Arthroplasty Supplementary Report 2018,”",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib2",
+        "series-title": "Northern Ireland and the Isle of Man 15th Annual Report,”",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib3",
+        "doi-asserted-by": "crossref",
+        "first-page": "624",
+        "DOI": "10.2106/JBJS.M.00285",
+        "article-title": "Impact of the economic downturn on total joint replacement demand in the United States: updated projections to 2021",
+        "volume": "96",
+        "author": "Kurtz",
+        "year": "2014",
+        "journal-title": "JBJS"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib4",
+        "doi-asserted-by": "crossref",
+        "first-page": "1455",
+        "DOI": "10.2106/JBJS.17.01617",
+        "article-title": "Projected volume of primary total joint arthroplasty in the US, 2014 to 2030",
+        "volume": "100",
+        "author": "Sloan",
+        "year": "2018",
+        "journal-title": "JBJS"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib5",
+        "doi-asserted-by": "crossref",
+        "first-page": "1654",
+        "DOI": "10.1016/j.arth.2016.02.003",
+        "article-title": "Development of a prognostic nomogram for predicting the probability of nonresponse to total knee arthroplasty 1 Year after surgery",
+        "volume": "31",
+        "author": "Dowsey",
+        "year": "2016",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib6",
+        "doi-asserted-by": "crossref",
+        "first-page": "90",
+        "DOI": "10.1186/s12891-019-2411-9",
+        "article-title": "The projected burden of primary total knee and hip replacement for osteoarthritis in Australia to the year 2030",
+        "volume": "20",
+        "author": "Ackerman",
+        "year": "2019",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib7",
+        "doi-asserted-by": "crossref",
+        "first-page": "3381",
+        "DOI": "10.1038/s41598-018-21714-1",
+        "article-title": "Development and validation of a clinical prediction model for patient-reported pain and function after primary total knee replacement surgery",
+        "volume": "8",
+        "author": "Sanchez-Santos",
+        "year": "2018",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib8",
+        "doi-asserted-by": "crossref",
+        "first-page": "2660",
+        "DOI": "10.1016/j.arth.2016.06.004",
+        "article-title": "A new prediction model for patient satisfaction after total knee arthroplasty",
+        "volume": "31",
+        "author": "Van Onsem",
+        "year": "2016",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib9",
+        "unstructured": "E. Ditton, S. Johnson, N. Hodyl, T. Flynn, M. Pollack, F. R. Walker, et al, “Improving patient outcomes following total knee arthroplasty: using precision medicine to predict individual recovery trajectories and inform rehabilitation interventions based on modifiable psychological risk and resilience factors,” Front Psychol. 11, 1061."
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib10",
+        "doi-asserted-by": "crossref",
+        "first-page": "286",
+        "DOI": "10.1007/s10926-015-9614-1",
+        "article-title": "Clinical decision support tools for selecting interventions for patients with disabling musculoskeletal disorders: a scoping review",
+        "volume": "26",
+        "author": "Gross",
+        "year": "2016",
+        "journal-title": "J Occup Rehabil"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib11",
+        "series-title": "Machine Learning: A Probabilistic Perspective",
+        "author": "Murphy",
+        "year": "2012"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib12",
+        "doi-asserted-by": "crossref",
+        "first-page": "352",
+        "DOI": "10.1016/S1532-0464(03)00034-0",
+        "article-title": "Logistic regression and artificial neural network classification models: a methodology review",
+        "volume": "35",
+        "author": "Dreiseitl",
+        "year": "2002",
+        "journal-title": "J Biomed Inform"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib13",
+        "doi-asserted-by": "crossref",
+        "first-page": "264",
+        "DOI": "10.7326/0003-4819-151-4-200908180-00135",
+        "article-title": "Preferred reporting items for systematic reviews and meta-analyses: the PRISMA statement",
+        "volume": "151",
+        "author": "Moher",
+        "year": "2009",
+        "journal-title": "Ann Intern Med"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib14",
+        "doi-asserted-by": "crossref",
+        "first-page": "299",
+        "DOI": "10.1186/1471-2474-15-299",
+        "article-title": "Prediction of poor outcomes six months following total knee arthroplasty in patients awaiting surgery",
+        "volume": "15",
+        "author": "Lungu",
+        "year": "2014",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib15",
+        "doi-asserted-by": "crossref",
+        "first-page": "57",
+        "DOI": "10.1007/s11999-009-1119-9",
+        "article-title": "Patient satisfaction after total knee arthroplasty: who is satisfied and who is not?",
+        "volume": "468",
+        "author": "Bourne",
+        "year": "2010",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib16",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.arth.2019.04.021",
+        "article-title": "External validity of a new prediction model for patient satisfaction after total knee arthroplasty",
+        "author": "Calkins",
+        "year": "2019",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib17",
+        "doi-asserted-by": "crossref",
+        "first-page": "861",
+        "DOI": "10.1007/s00590-019-02375-w",
+        "article-title": "Patient dissatisfaction following total knee arthroplasty: external validation of a new prediction model",
+        "volume": "29",
+        "author": "Zabawa",
+        "year": "2019",
+        "journal-title": "Eur J Orthop Surg Traumatol"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib18",
+        "doi-asserted-by": "crossref",
+        "first-page": "389",
+        "DOI": "10.1016/j.joca.2004.02.001",
+        "article-title": "“OMERACT-OARSI initiative: osteoarthritis Research Society International set of responder criteria for osteoarthritis clinical trials revisited",
+        "volume": "12",
+        "author": "Pham",
+        "year": "2004",
+        "journal-title": "Osteoarthritis Cartilage"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib19",
+        "doi-asserted-by": "crossref",
+        "first-page": "791",
+        "DOI": "10.1200/JCO.2002.20.3.791",
+        "article-title": "Postoperative nomogram for 12-year sarcoma-specific death",
+        "volume": "20",
+        "author": "Kattan",
+        "year": "2002",
+        "journal-title": "J Clin Oncol"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib20",
+        "doi-asserted-by": "crossref",
+        "first-page": "503",
+        "DOI": "10.1016/j.apmr.2012.10.008",
+        "article-title": "Preliminary prediction model for fear-induced activity limitation after total knee arthroplasty in people 60 Years and older: prospective cohort study",
+        "volume": "94",
+        "author": "Pua",
+        "year": "2013",
+        "journal-title": "Arch Phys Med Rehabil"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib21",
+        "doi-asserted-by": "crossref",
+        "first-page": "43",
+        "DOI": "10.1093/geronb/53B.1.P43",
+        "article-title": "Fear of falling and activity restriction: the survey of activities and fear of falling in the elderly (SAFE)",
+        "volume": "53",
+        "author": "Lachman",
+        "year": "1998",
+        "journal-title": "Journals Gerontol Ser B: Psychol Sci Soc Sci"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib22",
+        "doi-asserted-by": "crossref",
+        "first-page": "419",
+        "DOI": "10.3899/jrheum.150724",
+        "article-title": "Development of a prediction model to estimate the risk of walking limitations in patients with total knee arthroplasty",
+        "volume": "43",
+        "author": "Pua",
+        "year": "2016",
+        "journal-title": "J Rheumatol"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib23",
+        "doi-asserted-by": "crossref",
+        "first-page": "179",
+        "DOI": "10.1080/17453674.2018.1560647",
+        "article-title": "Predicting individual knee range of motion, knee pain, and walking limitation outcomes following total knee arthroplasty",
+        "volume": "90",
+        "author": "Pua",
+        "year": "2019",
+        "journal-title": "Acta Orthop"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib24",
+        "doi-asserted-by": "crossref",
+        "first-page": "rky021",
+        "DOI": "10.1093/rap/rky021",
+        "article-title": "Development of a clinical risk score for pain and function following total knee arthroplasty: results from the TRIO study",
+        "volume": "2",
+        "author": "Shim",
+        "year": "2018",
+        "journal-title": "Rheumatol Adv Pract"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib25",
+        "doi-asserted-by": "crossref",
+        "first-page": "463",
+        "DOI": "10.1002/acr.22692",
+        "article-title": "Self-reported knee instability before and after total knee replacement surgery",
+        "volume": "68",
+        "author": "Fleeton",
+        "year": "2016",
+        "journal-title": "Arthritis Care Res"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib26",
+        "doi-asserted-by": "crossref",
+        "first-page": "663",
+        "DOI": "10.1016/j.arth.2018.12.020",
+        "article-title": "Internal validation of a predictive model for satisfaction after primary total knee arthroplasty",
+        "volume": "34",
+        "author": "Kunze",
+        "year": "2019",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib27",
+        "doi-asserted-by": "crossref",
+        "first-page": "3380",
+        "DOI": "10.1038/s41598-018-21713-2",
+        "article-title": "Development of a model predicting non-satisfaction 1 year after primary total knee replacement in the UK and transportation to Switzerland",
+        "volume": "8",
+        "author": "Garriga",
+        "year": "2018",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib28",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "DOI": "10.1186/s12911-018-0731-6",
+        "article-title": "Predicting patient-reported outcomes following hip and knee replacement surgery using supervised machine learning",
+        "volume": "19",
+        "author": "Huber",
+        "year": "2019",
+        "journal-title": "BMC Med Inform Decis Mak"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib30",
+        "doi-asserted-by": "crossref",
+        "first-page": "2497",
+        "DOI": "10.1007/s11136-017-1599-0",
+        "article-title": "Use of large-scale HRQoL datasets to generate individualised predictions and inform patients about the likely benefit of surgery",
+        "volume": "26",
+        "author": "Gutacker",
+        "year": "2017",
+        "journal-title": "Qual Life Res"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib31",
+        "doi-asserted-by": "crossref",
+        "first-page": "1805",
+        "DOI": "10.1002/jor.22140",
+        "article-title": "Predicting poor physical performance after total knee arthroplasty",
+        "volume": "30",
+        "author": "Bade",
+        "year": "2012",
+        "journal-title": "J Orthop Res"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib32",
+        "doi-asserted-by": "crossref",
+        "first-page": "2624",
+        "DOI": "10.1016/j.arth.2019.06.007",
+        "article-title": "Clinical and statistical validation of a probabilistic prediction tool of total knee arthroplasty outcome",
+        "volume": "34",
+        "author": "Twiggs",
+        "year": "2019",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib34",
+        "doi-asserted-by": "crossref",
+        "first-page": "187",
+        "DOI": "10.1111/j.2517-6161.1972.tb00899.x",
+        "article-title": "“Regression models and life-tables",
+        "volume": "34",
+        "author": "Cox",
+        "year": "1972",
+        "journal-title": "J R Stat Soc Ser B"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib35",
+        "doi-asserted-by": "crossref",
+        "first-page": "766",
+        "DOI": "10.1093/jnci/90.10.766",
+        "article-title": "A preoperative nomogram for disease recurrence following radical prostatectomy for prostate cancer",
+        "volume": "90",
+        "author": "Kattan",
+        "year": "1988",
+        "journal-title": "J Natl Cancer Inst"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib36",
+        "doi-asserted-by": "crossref",
+        "first-page": "549",
+        "DOI": "10.1146/annurev.psych.58.110405.085530",
+        "article-title": "Missing data analysis: making it work in the real world",
+        "volume": "60",
+        "author": "Graham",
+        "year": "2009",
+        "journal-title": "Annu Rev Psychol"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib37",
+        "doi-asserted-by": "crossref",
+        "first-page": "231",
+        "DOI": "10.1007/BF02032362",
+        "article-title": "A preliminary evaluation of the dimensionality and clinical importance of pain and disability in osteoarthritis of the hip and knee",
+        "volume": "5",
+        "author": "Bellamy",
+        "year": "1986",
+        "journal-title": "Clin Rheumatol"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib38",
+        "series-title": "WOMAC Osteoarthritis Index: A User’s Guide IX",
+        "author": "Bellamy",
+        "year": "2008"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib39",
+        "series-title": "Regression modeling strategies with applications to linear models, logistic and ordinal regression, and survival analysis",
+        "author": "Harrell",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib40",
+        "doi-asserted-by": "crossref",
+        "first-page": "45",
+        "DOI": "10.1177/0272989X0102100106",
+        "article-title": "Prognostic modeling with logistic regression analysis: in search of a sensible strategy in small data sets",
+        "volume": "21",
+        "author": "Steyerberg",
+        "year": "2001",
+        "journal-title": "Med Decis Making"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib41",
+        "author": "Kuhn"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib42",
+        "author": "Glen"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib43",
+        "doi-asserted-by": "crossref",
+        "first-page": "130",
+        "DOI": "10.1016/j.ejca.2017.10.027",
+        "article-title": "C-statistic: a brief explanation of its construction, interpretation and limitations",
+        "volume": "90",
+        "author": "Caetano",
+        "year": "2018",
+        "journal-title": "Eur J Cancer"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib44",
+        "doi-asserted-by": "crossref",
+        "first-page": "1225",
+        "DOI": "10.1016/S0895-4356(96)00002-9",
+        "article-title": "Advantages and disadvantages of using artificial neural networks versus logistic regression for predicting medical outcomes",
+        "volume": "49",
+        "author": "Tu",
+        "year": "1996",
+        "journal-title": "J Clin Epidemiol"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib45",
+        "author": "Flom"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib46",
+        "doi-asserted-by": "crossref",
+        "first-page": "339",
+        "DOI": "10.3348/kjr.2016.17.3.339",
+        "article-title": "How to develop, validate, and compare clinical prediction models involving radiological parameters: study design and statistical methods",
+        "volume": "17",
+        "author": "Han",
+        "year": "2016",
+        "journal-title": "Korean J Radiol"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib47",
+        "doi-asserted-by": "crossref",
+        "first-page": "367",
+        "DOI": "10.1016/S0167-9473(01)00065-2",
+        "article-title": "Stochastic gradient boosting",
+        "volume": "38",
+        "author": "Friedman",
+        "year": "2002",
+        "journal-title": "Comput Stat Data Anal"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib48",
+        "doi-asserted-by": "crossref",
+        "first-page": "3221",
+        "DOI": "10.1242/jeb.01762",
+        "article-title": "Assessing physiological complexity",
+        "volume": "208",
+        "author": "Burggren",
+        "year": "2005",
+        "journal-title": "J Exp Biol"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib49",
+        "doi-asserted-by": "crossref",
+        "first-page": "199",
+        "DOI": "10.1016/0168-8510(90)90421-9",
+        "article-title": "EuroQol-a new facility for the measurement of health-related quality of life",
+        "volume": "16",
+        "year": "1990",
+        "journal-title": "Health Policy"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib50",
+        "doi-asserted-by": "crossref",
+        "first-page": "1727",
+        "DOI": "10.1007/s11136-011-9903-x",
+        "article-title": "Development and preliminary testing of the new five-level version of EQ-5D (EQ-5D-5L)",
+        "volume": "20",
+        "author": "Herdman",
+        "year": "2011",
+        "journal-title": "Qual Life Res"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib51",
+        "doi-asserted-by": "crossref",
+        "first-page": "361",
+        "DOI": "10.1111/j.1600-0447.1983.tb09716.x",
+        "article-title": "The hospital anxiety and depression scale",
+        "volume": "67",
+        "author": "Zigmond",
+        "year": "1983",
+        "journal-title": "Acta Psychiatr Scand"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib52",
+        "doi-asserted-by": "crossref",
+        "first-page": "88",
+        "DOI": "10.2519/jospt.1998.28.2.88",
+        "article-title": "“Knee injury and osteoarthritis outcome score (KOOS)—development of a self-administered outcome measure",
+        "volume": "28",
+        "author": "Roos",
+        "year": "1998",
+        "journal-title": "J Orthop Sports Phys Ther"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib53",
+        "doi-asserted-by": "crossref",
+        "first-page": "1132",
+        "DOI": "10.2106/00004623-199808000-00006",
+        "article-title": "Development of a patient-reported measure of function of the knee",
+        "volume": "80",
+        "author": "Irrgang",
+        "year": "1998",
+        "journal-title": "JBJS"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib54",
+        "doi-asserted-by": "crossref",
+        "first-page": "13",
+        "DOI": "10.1097/00003086-198911000-00004",
+        "article-title": "Rationale of the Knee Society clinical rating system",
+        "volume": "248",
+        "author": "Insall",
+        "year": "1989",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib55",
+        "doi-asserted-by": "crossref",
+        "first-page": "1010",
+        "DOI": "10.1302/0301-620X.89B8.19424",
+        "article-title": "“The use of the Oxford hip and knee scores”",
+        "volume": "89",
+        "author": "Murray",
+        "year": "2007",
+        "journal-title": "J Bone Joint Surg Br"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib56",
+        "doi-asserted-by": "crossref",
+        "first-page": "220",
+        "DOI": "10.1097/00005650-199603000-00003",
+        "article-title": "“A 12-Item Short-Form Health Survey: construction of scales and preliminary tests of reliability and validity”",
+        "author": "Ware",
+        "year": "1996",
+        "journal-title": "Med Care"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib57",
+        "doi-asserted-by": "crossref",
+        "first-page": "473",
+        "DOI": "10.1097/00005650-199206000-00002",
+        "article-title": "The MOS 36-item short-form health survey (SF-36): I. Conceptual framework and item selection",
+        "author": "Ware",
+        "year": "1992",
+        "journal-title": "Med Care"
+      },
+      {
+        "key": "10.1016/j.arth.2020.10.053_bib58",
+        "first-page": "1833",
+        "article-title": "Validation study of WOMAC: a health status instrument for measuring clinically important patient relevant outcomes to antirheumatic drug therapy in patients with osteoarthritis of the hip or knee",
+        "volume": "15",
+        "author": "Bellamy",
+        "year": "1988",
+        "journal-title": "J Rheumatol"
+      }
+    ],
+    "container-title": [
+      "The Journal of Arthroplasty"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0883540320311529?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0883540320311529?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          10
+        ]
+      ],
+      "date-time": "2025-10-10T18:34:53Z",
+      "timestamp": 1760121293000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0883540320311529"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          5
+        ]
+      ]
+    },
+    "references-count": 56,
+    "journal-issue": {
+      "issue": "5",
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            5
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0883540320311529"
+    ],
+    "URL": "https://doi.org/10.1016/j.arth.2020.10.053",
+    "relation": {},
+    "ISSN": [
+      "0883-5403"
+    ],
+    "issn-type": [
+      {
+        "value": "0883-5403",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          5
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Clinical Decision Support Tools for Predicting Outcomes in Patients Undergoing Total Knee Arthroplasty: A Systematic Review",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "The Journal of Arthroplasty",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.arth.2020.10.053",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2020 Elsevier Inc. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

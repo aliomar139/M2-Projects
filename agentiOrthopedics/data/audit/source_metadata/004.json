@@ -1,0 +1,506 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          8
+        ]
+      ],
+      "date-time": "2026-10-08T15:52:04Z",
+      "timestamp": 1791474724389,
+      "version": "4.3.4"
+    },
+    "reference-count": 20,
+    "publisher": "Wiley",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              2
+            ]
+          ],
+          "date-time": "2026-03-02T00:00:00Z",
+          "timestamp": 1772409600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 60,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2026-01-01T00:00:00Z",
+          "timestamp": 1767225600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              2
+            ]
+          ],
+          "date-time": "2026-03-02T00:00:00Z",
+          "timestamp": 1772409600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 60,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2026-01-01T00:00:00Z",
+          "timestamp": 1767225600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "arthroscopyjournals.onlinelibrary.wiley.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Arthroscopy"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:sec>\n                    <jats:title>Purpose</jats:title>\n                    <jats:p>To validate the performance of a pretrained large language model (LLM) in predicting orthopaedic surgeon recommendations for management of newly referred patients, using free‐text previsit questionnaire responses as input.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>This retrospective cross‐sectional study included new patients visiting an orthopaedic sports medicine clinic between 2020 and 2023. Using zero‐shot prompting, the LLM analyzed previsit questionnaire responses (e.g., “When did you start to have pain?”) to predict whether patients required advanced imaging and/or surgical intervention. The LLM was blinded to all other clinical information, including surgeon notes, physical exams, or referral data. Model predictions were evaluated with accuracy, sensitivity, and specificity in comparison to actual surgeon‐generated plans. For a subset of patients who had undergone advanced imaging, the LLM was augmented with free‐text radiology reports and asked to provide updated surgical recommendations.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>In the combined cohort of 1141 patients, the LLM predicted surgeon recommendation for advanced imaging with 70% accuracy, 83% sensitivity, and 64% specificity using previsit questionnaire responses alone. Imaging predictions were accurate for common diagnoses, including anterior cruciate ligament (ACL, 94%), meniscus (85%), and rotator cuff (80%) injuries but poor for knee (54%) and shoulder arthritis (66%). When augmented with imaging reports, the LLM predicted recommendations for surgery with 81% accuracy, 88% sensitivity, and 72% specificity. Surgical predictions were highly accurate for ACL (93%), meniscus (78%), rotator cuff (83%), and shoulder instability related pathologies (78%).</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>Using previsit questionnaire data from new orthopaedic patients with knee and shoulder complaints, the pretrained LLM showed 70% accuracy for imaging recommendations, and the augmented surgical‐decision LLM showed 81% accuracy for surgical recommendations.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Level of Evidence</jats:title>\n                    <jats:p>Level III, retrospective diagnostic case‐control study.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.1002/arj.70016",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          8
+        ]
+      ],
+      "date-time": "2026-03-08T20:40:31Z",
+      "timestamp": 1773002431000
+    },
+    "page": "185-193",
+    "update-policy": "https://doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "Large Language Model Predicts Surgeon Recommendations for Imaging and Surgery for Patients Presenting for Knee and Shoulder Complaints With 70% and 81% Accuracy Using Previsit Questionnaire Responses"
+    ],
+    "prefix": "10.1002",
+    "volume": "42",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-6237-1718",
+        "authenticated-orcid": false,
+        "given": "Ryan T.",
+        "family": "Halvorson",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery University of California San Francisco  San Francisco California U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0504-7858",
+        "authenticated-orcid": false,
+        "given": "Timothy",
+        "family": "Keeley",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Medicine University of California San Francisco  San Francisco California U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kian",
+        "family": "Niknam",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Medicine University of California San Francisco  San Francisco California U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Travis",
+        "family": "Zack",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Medicine University of California San Francisco  San Francisco California U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sharmila",
+        "family": "Majumdar",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Radiology University of California San Francisco  San Francisco California U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Brian T.",
+        "family": "Feeley",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery University of California San Francisco  San Francisco California U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4957-9992",
+        "authenticated-orcid": false,
+        "given": "Alan L.",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery University of California San Francisco  San Francisco California U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8086-6776",
+        "authenticated-orcid": false,
+        "given": "Drew A.",
+        "family": "Lansdown",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery University of California San Francisco  San Francisco California U.S.A."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          2
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_8_2_1",
+        "unstructured": "Medical Expenditures Panel Survey (MEPS).Agency for healthcare research and quality U.S. department of health and human services. T8.6.3: Annual all‐cause and incremental direct costs for arthritis and joint pain in current and 2014 dollars United States 1996‐2014. Accessed November 14 2024. doi:meps.ahrq.gov/mepsweb/"
+      },
+      {
+        "key": "e_1_2_8_3_1",
+        "unstructured": "Agency for Healthcare Research and Quality.T1.9.1: Number of musculoskeletal diagnoses for care received all care facilities United States 2013. Source: Healthcare cost and utilization project (HCUP). Accessed November 14 2024. doi:hcup‐us.ahrq.gov/"
+      },
+      {
+        "key": "e_1_2_8_4_1",
+        "unstructured": "Centers for Disease Control.National ambulatory medical care survey: 2012 state and national summary tables. Published 2015. Accessed November 15 2024.https://archive.cdc.gov/www_cdc_gov/nchs/data/ahcd/namcs_summary/2012_namcs_web_tables.pdf"
+      },
+      {
+        "key": "e_1_2_8_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmjoq-2020-001287"
+      },
+      {
+        "key": "e_1_2_8_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0065560"
+      },
+      {
+        "key": "e_1_2_8_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0241645"
+      },
+      {
+        "key": "e_1_2_8_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jse.2004.08.002"
+      },
+      {
+        "key": "e_1_2_8_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12911-024-02459-6"
+      },
+      {
+        "key": "e_1_2_8_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/cancers15143717"
+      },
+      {
+        "key": "e_1_2_8_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ajem.2023.03.027"
+      },
+      {
+        "key": "e_1_2_8_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2024.06.021"
+      },
+      {
+        "key": "e_1_2_8_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamanetworkopen.2024.8895"
+      },
+      {
+        "key": "e_1_2_8_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-023-00988-4"
+      },
+      {
+        "key": "e_1_2_8_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/jamiaopen/ooad045"
+      },
+      {
+        "key": "e_1_2_8_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01621459.1927.10502953"
+      },
+      {
+        "key": "e_1_2_8_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/eb-2012-100645"
+      },
+      {
+        "key": "e_1_2_8_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12178-008-9031-6"
+      },
+      {
+        "key": "e_1_2_8_19_1",
+        "first-page": "e172",
+        "article-title": "The rotator cuff healing index (RoHI): A new scoring system to predict rotator cuff healing after surgical repair",
+        "volume": "26",
+        "author": "Oh JH",
+        "year": "2017",
+        "journal-title": "JSES."
+      },
+      {
+        "key": "e_1_2_8_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bjsports-2020-103742"
+      },
+      {
+        "key": "e_1_2_8_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.M.00399"
+      }
+    ],
+    "container-title": [
+      "Arthroscopy"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://arthroscopyjournals.onlinelibrary.wiley.com/doi/pdf/10.1002/arj.70016",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://arthroscopyjournals.onlinelibrary.wiley.com/doi/full-xml/10.1002/arj.70016",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://arthroscopyjournals.onlinelibrary.wiley.com/doi/pdf/10.1002/arj.70016",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          13
+        ]
+      ],
+      "date-time": "2026-04-13T00:53:46Z",
+      "timestamp": 1776041626000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://arthroscopyjournals.onlinelibrary.wiley.com/doi/10.1002/arj.70016"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "references-count": 20,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1002/arj.70016"
+    ],
+    "URL": "https://doi.org/10.1002/arj.70016",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "0749-8063",
+      "1526-3231"
+    ],
+    "issn-type": [
+      {
+        "value": "0749-8063",
+        "type": "print"
+      },
+      {
+        "value": "1526-3231",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2025-02-12",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-07-23",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2026-03-02",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

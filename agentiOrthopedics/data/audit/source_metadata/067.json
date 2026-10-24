@@ -1,0 +1,184 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          22
+        ]
+      ],
+      "date-time": "2026-05-22T13:05:53Z",
+      "timestamp": 1779455153134,
+      "version": "3.53.1"
+    },
+    "reference-count": 0,
+    "publisher": "Dr. Yashwant Research Labs Pvt. Ltd.",
+    "issue": "30s",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IJDDT"
+    ],
+    "abstract": "<jats:p>We develop an explicable system of deep learning-assisted drug delivery recommendations in clinical decision-making to\nmeet the important requirement of interpretability in medical applications. The framework combines structured\nlongitudinal clinical data such as patient-medication interactions, clinical contents, and contextual data to produce specific\ntherapeutic guidance. The patient history is represented as learned embeddings, the temporal position signal, and candidate\ndrug options are represented as structured attributes; finally, they are combined using a Transformer layer to ensure that a\ncomplicated dependence is captured. The model calculates compatibility scores of the state of a patient and a drug choice,\nmaking it possible to recommend them personally with an explanation at multi-level. In addition, the model uses temporal\nexplanations based on attention, SHAP-based feature attribution, integrated gradients, and rule-based clinical reasoning\nto provide better interpretability to clinicians. The training goal is a co-optimization of the accuracy of recommendations,\ninterpretability, regularization, and wall is safe which guarantees clinically plausible results. Experiments indicate that not\nonly does the framework enhance the performance of the recommendations, but the actionable insights into the decisionmaking process are also provided as well. The given approach makes the divide between black-box models of deep\nlearning and clinical application, providing a useful place of personalized medicine. The design is modular and can\nintegrate easily with current clinical processes and may minimize adverse drug events and enhance the patient outcomes.\nThe work contributes to the field by integrating the state-of-the-art methods of deep learning with thorough explainability,\nwhich leads to building trust and acceptance in real-life healthcare environments.</jats:p>",
+    "DOI": "10.25258/ijddt.16.30s.92",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          22
+        ]
+      ],
+      "date-time": "2026-05-22T12:15:20Z",
+      "timestamp": 1779452120000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "An Explainable Deep Learning Framework for Transparent and Personalized Recommendations in Clinical Decision-Making"
+    ],
+    "prefix": "10.25258",
+    "volume": "16",
+    "author": [
+      {
+        "given": "Anand",
+        "family": "V",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Information Science, Presidency University, Bengaluru, Karnataka, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Venkata Subramanian",
+        "family": "N",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computing, SASTRA Deemed University, Thanjavur, Tamilnadu, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "S.",
+        "family": "Bhaskaran",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computing, SASTRA Deemed University, Thanjavur, Tamilnadu, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "10897",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          19
+        ]
+      ]
+    },
+    "container-title": [
+      "International Journal of Drug Delivery Technology"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://impactfactor.org/PDF/IJDDT/16/IJDDT,Vol16,Issue30s,Article92.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          22
+        ]
+      ],
+      "date-time": "2026-05-22T12:15:21Z",
+      "timestamp": 1779452121000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://impactfactor.org/PDF/IJDDT/16/IJDDT,Vol16,Issue30s,Article92.pdf"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          19
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "30s",
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            19
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.25258/ijddt.16.30s.92",
+    "relation": {},
+    "ISSN": [
+      "0975-4415"
+    ],
+    "issn-type": [
+      {
+        "value": "0975-4415",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          19
+        ]
+      ]
+    }
+  }
+}

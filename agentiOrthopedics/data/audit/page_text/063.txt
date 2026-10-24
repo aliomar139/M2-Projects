@@ -1,0 +1,74 @@
+=== PDF PAGE 1 ===
+2026 9TH INTERNATIONAL CONFERENCE ON INTELLIGENT COMPUTING AND
+CONTROL SYSTEMS (ICICCS) • 2026.0
+Top 100 Orthopedic AI •
+Rank #63
+Personalized Medical Recommendation System Using
+Collaborative Filtering
+P. S, Maturu Thrissaptha Reddy, Ethakota Sruthi, Bhagath Kalyani, Mohamed Sithik M, R. S
+Journal:
+2026 9th International
+Conference on Intelligent
+Computing and Control
+Systems (ICICCS)
+Publication Year:
+2026.0
+Citations:
+0
+DOI:
+10.1109/iciccs67901.2026.11502878
+CLINICAL & AGENTIC AI TAKEAWAY
+This personalized medical recommendation system using collaborative filtering and supervised machine
+learning algorithms helps clinicians select effective treatment plans by suggesting treatment options based on
+similar past cases.
+ABSTRACT
+The complexity of patient information and inconsistencies in treatment results are becoming a challenge to clinical
+decision-making in healthcare. This paper introduces an individualized medical recommendation system based on
+collaborative filtering and supervised machine learning algorithms to help clinicians select effective treatment plans.
+Anonymized clinical data, including demographic features, diagnostic codes, lab results, and treatment outcomes, is
+analyzed to compute patient similarity based on clinically weighted similarity measures. A combined collaborative filtering
+system is used to create treatment suggestions using effective results that have been seen in related patient profiles. Parallel
+to this, the prediction of the disease through the use of supervised classification models is used to enhance the accuracy of
+the diagnosis. The suggested system makes recommendations explainable as the suggestions are associated with evidence
+of similar cases in history. It is experimentally demonstrated that the disease prediction model has an accuracy of 96% with
+the help of a Support Vector Classifier and the recommendation module has F1-scores of up to 0.50. The suggested system
+is used to support clinical decisionmaking as it suggests treatment options based on the results of clinically comparable
+past occurrences.
+Study Overview & Background
+The complexity of patient information and inconsistencies in treatment results are becoming a challenge to clinical
+decision-making in healthcare. This paper introduces an individualized medical recommendation system based on
+collaborative filtering and supervised machine learning algorithms to help clinicians select effective treatment plans.
+Anonymized clinical data, including demographic features, diagnostic codes, lab results, and treatment outcomes, is
+analyzed to compute patient similarity based on clinically weighted similarity measures. A combined collaborative filtering
+system is used to create treatment suggestions using effective results that have been seen in related patient profiles. Parallel
+to this, the prediction of the disease through the use of supervised classification models is used to enhance the accuracy of
+the diagnosis. The suggested system makes recommendations explainable as the suggestions are associated with evidence
+of similar cases in history. It is experimentally demonstrated that the disease prediction model has an accuracy of 96% with
+
+=== PDF PAGE 2 ===
+the help of a Support Vector Classifier and the recommendation module has F1-scores of up to 0.50. The suggested system
+is used to support clinical decisionmaking as it suggests treatment options based on the results of clinically comparable
+past occurrences.
+Methodology & Clinical Focus
+Study Classification: theoretical, modeling, or simulation study. Evaluated under orthopedic machine learning and
+artificial intelligence decision frameworks.
+Key Findings & Analysis
+This personalized medical recommendation system using collaborative filtering and supervised machine learning
+algorithms helps clinicians select effective treatment plans by suggesting treatment options based on similar past cases.
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+Bibliographic Details & Indexing
+Authors: P. S, Maturu Thrissaptha Reddy, Ethakota Sruthi, Bhagath Kalyani, Mohamed Sithik M, R. S
+Journal / Venue: 2026 9th International Conference on Intelligent Computing and Control Systems (ICICCS)
+(2026.0)
+SJR Metric: Quartile N/A
+Citation Count: 0 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.1109/iciccs67901.2026.11502878
+Consensus Evidence Link: https://consensus.app/papers/personalized-medical-recommendation-system-using-s-
+reddy/c95bec05c63d593ab343733d4f4f1240/
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1109/iciccs67901.2026.11502878 •
+Consensus Page: https://consensus.app/papers/personalized-medical-recommendation-system-using-s-
+reddy/c95bec05c63d593ab343733d4f4f1240/ • Verified and rendered via Deep Search & Academic Repositories.

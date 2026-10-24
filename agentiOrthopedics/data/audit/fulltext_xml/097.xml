@@ -1,0 +1,803 @@
+
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.4 20241031//EN" "JATS-archivearticle1-4-mathml3.dtd">
+<article id="jeo270477" xml:lang="en" article-type="research-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">J Exp Orthop</journal-id><journal-id journal-id-type="iso-abbrev">J Exp Orthop</journal-id><journal-id journal-id-type="pmc-domain-id">2776</journal-id><journal-id journal-id-type="pmc-domain">jexporth</journal-id><journal-id journal-id-type="nlm-id">101653750</journal-id><journal-id journal-id-type="publisher-id">JEO2</journal-id><journal-title-group><journal-title>Journal of Experimental Orthopaedics</journal-title></journal-title-group><issn pub-type="epub">2197-1153</issn><?publisher_abbrev blackwell?><publisher><publisher-name>Wiley</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC12576341</article-id><article-id pub-id-type="pmcid-ver">PMC12576341.1</article-id><article-id pub-id-type="pmcaid">12576341</article-id><article-id pub-id-type="pmcaiid">12576341</article-id><article-id pub-id-type="pmid">41180556</article-id><article-id pub-id-type="doi">10.1002/jeo2.70477</article-id><article-id pub-id-type="publisher-id">JEO270477</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="overline"><subject>Original Paper</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Paper</subject></subj-group></article-categories><title-group><article-title>Evaluation of centre‐specific machine learning models in predicting 2‐year outcomes of hip arthroscopy for mixed femoracetabular impingement syndrome</article-title></title-group><contrib-group><contrib id="jeo270477-cr-0001" contrib-type="author"><name name-style="western"><surname>Yang</surname><given-names initials="G">Gang</given-names></name><xref rid="jeo270477-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jeo270477-cr-0002" contrib-type="author"><name name-style="western"><surname>Kang</surname><given-names initials="J">Jiali</given-names></name><xref rid="jeo270477-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="jeo270477-cr-0003" contrib-type="author"><name name-style="western"><surname>Hu</surname><given-names initials="F">Fan</given-names></name><xref rid="jeo270477-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="jeo270477-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="jeo270477-cr-0004" contrib-type="author"><name name-style="western"><surname>Pei</surname><given-names initials="Y">Yin</given-names></name><xref rid="jeo270477-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jeo270477-cr-0005" contrib-type="author"><name name-style="western"><surname>Liu</surname><given-names initials="D">Dingge</given-names></name><xref rid="jeo270477-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jeo270477-cr-0006" contrib-type="author"><name name-style="western"><surname>Zhang</surname><given-names initials="Z">Zhihua</given-names></name><xref rid="jeo270477-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jeo270477-cr-0007" contrib-type="author"><name name-style="western"><surname>Liu</surname><given-names initials="K">Kaiping</given-names></name><xref rid="jeo270477-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jeo270477-cr-0008" contrib-type="author"><name name-style="western"><surname>Wang</surname><given-names initials="L">Langran</given-names></name><xref rid="jeo270477-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jeo270477-cr-0009" contrib-type="author"><name name-style="western"><surname>Gong</surname><given-names initials="X">Xi</given-names></name><xref rid="jeo270477-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jeo270477-cr-0010" contrib-type="author"><name name-style="western"><surname>Wang</surname><given-names initials="H">Haijun</given-names></name><xref rid="jeo270477-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jeo270477-cr-0011" contrib-type="author"><name name-style="western"><surname>Deng</surname><given-names initials="S">Shuangshuang</given-names></name><xref rid="jeo270477-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jeo270477-cr-0012" contrib-type="author"><name name-style="western"><surname>Liu</surname><given-names initials="R">Ruijie</given-names></name><xref rid="jeo270477-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jeo270477-cr-0013" contrib-type="author" corresp="yes"><name name-style="western"><surname>Zhang</surname><given-names initials="X">Xin</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0009-0000-6975-4730</contrib-id><xref rid="jeo270477-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><address><email>Xinzhang0805@bjmu.edu.cn</email></address></contrib></contrib-group><aff id="jeo270477-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">Beijing Key Laboratory of Sports Injuries, Department of Sports Medicine, Peking University Third Hospital</named-content>
+<institution>Institute of Sports Medicine of Peking University</institution>
+<city>Beijing</city>
+<named-content content-type="country-part">Haidian</named-content>
+<country country="CN">China</country>
+</aff><aff id="jeo270477-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">Department of Epidemiology and Biostatistics, School of Public Health</named-content>
+<institution>Peking University Health Science Centre</institution>
+<city>Beijing</city>
+<country country="CN">China</country>
+</aff><aff id="jeo270477-aff-0003">
+<label>
+<sup>3</sup>
+</label>
+<institution>Tianjin University of Sport</institution>
+<city>Tianjin</city>
+<country country="CN">China</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>
+<bold>Correspondence</bold> Xin Zhang, Beijing Key Laboratory of Sports Injuries, Department of Sports Medicine, Peking University Third Hospital, Institute of Sports Medicine of Peking University, 49 North Road Garden, Beijing 100191, Haidian, China.<break/>
+Email: <email>Xinzhang0805@bjmu.edu.cn</email>
+<break/>
+</corresp></author-notes><pub-date pub-type="epub"><day>31</day><month>10</month><year>2025</year></pub-date><pub-date pub-type="collection"><month>10</month><year>2025</year></pub-date><volume>12</volume><issue seq="26">4</issue><issue-id pub-id-type="pmc-issue-id">497705</issue-id><issue-id pub-id-type="doi">10.1002/jeo2.v12.4</issue-id><elocation-id>e70477</elocation-id><history>
+<date date-type="rev-recd"><day>13</day><month>8</month><year>2025</year></date>
+<date date-type="received"><day>02</day><month>7</month><year>2025</year></date>
+<date date-type="accepted"><day>15</day><month>8</month><year>2025</year></date>
+</history><pub-history><event event-type="pmc-release"><date><day>31</day><month>10</month><year>2025</year></date></event><event event-type="pmc-live"><date><day>01</day><month>11</month><year>2025</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2026-09-25 20:21:57.693"><day>25</day><month>09</month><year>2026</year></date></event></pub-history><permissions><copyright-statement content-type="article-copyright">© 2025 The Author(s). <italic toggle="yes">Journal of Experimental Orthopaedics</italic> published by John Wiley &amp; Sons Ltd on behalf of European Society of Sports Traumatology, Knee Surgery and Arthroscopy.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="JEO2-12-e70477.pdf"><?pdf-name JEO2-12-e70477.pdf?><?pdf-size 1903953?><?pdf-md5 c8d87504fac8d2ee1ae198db4e24a341?><?pdf-image-server-status NEVER_LOAD?><?pdf-cloudpmc-urn urn:app:5bf6/12576341/c8d87504fac8/JEO2-12-e70477.pdf?></self-uri><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pdf" xlink:href="file:JEO2-12-e70477.pdf"/><abstract><title>Abstract</title><sec id="jeo270477-sec-0010"><title>Purpose</title><p>To construct a centre‐specific machine learning (ML) prediction model based on preoperative factors. It was hypothesised that the ML prediction model would accurately predict whether patient‐reported outcome scores (PROs) over at least 2 years would reach the minimal clinically important difference (MCID).</p></sec><sec id="jeo270477-sec-0020"><title>Methods</title><p>A retrospective analysis was performed on mixed‐type femoroacetabular impingement syndrome (FAIS) patients who had hip arthroscopy at our institution between 2016 and 2018. The primary outcome was the rate of achieving MCID in PROs assessed at least 2 years after surgery, PROs included the hip outcome score‐activities of daily living (HOS‐ADL), modified Harris Hip Score (mHHS), visual analogue scale (VAS) for pain and international hip outcome tool‐12 (iHOT‐12), assessed at a minimum of 2 years postoperatively. Preoperative patient features were selected using the least absolute shrinkage and selection operator (LASSO) algorithm. Three ML models were constructed using balanced sample data and optimal feature subsets: logistic regression (LR), support vector machine (SVM) and random forest (RF). Model performance was assessed using the area under the receiver operating characteristic curve (AUROC) and the concordance index (C‐index). Model interpretations were conducted using the SHapley Additive explanation (SHAP) method.</p></sec><sec id="jeo270477-sec-0030"><title>Results</title><p>A total of 210 patients (48.1% female) were included. The LR, SVM, RF models had AUROC 0.76 (0.61–0.83), 0.89 (0.80–0.94), 0.99 (0.98–1.00), respectively, and C‐index 0.74 (0.65–0.82), 0.86 (0.81–0.90), 0.95 (0.93–0.96), respectively. Preoperative symptom duration, preoperative HOS‐ADL, hip joint space and preoperative alpha angle were identified as the most important predictors.</p></sec><sec id="jeo270477-sec-0040"><title>Conclusion</title><p>Among the three ML prediction models, RF performed best in predicting whether PROs reached MCID, demonstrating excellent discriminative ability, calibration and robustness. This indicates that individualised and robust ML prediction models for outcome prediction based on preoperative factors are feasible even with limited amounts of centre‐specific data.</p></sec><sec id="jeo270477-sec-0050"><title>Level of Evidence</title><p>Level III.</p></sec></abstract><kwd-group><kwd id="jeo270477-kwd-0001">femoroacetabular impingement syndrome</kwd><kwd id="jeo270477-kwd-0002">hip arthroscopy</kwd><kwd id="jeo270477-kwd-0003">machine learning prediction models</kwd><kwd id="jeo270477-kwd-0004">patient‐reported outcomes scores</kwd><kwd id="jeo270477-kwd-0005">preoperative factors</kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source>
+<institution-wrap><institution>National Natural Science Foundation of China</institution><institution-id institution-id-type="doi">10.13039/501100001809</institution-id></institution-wrap>
+</funding-source><award-id>82172447</award-id><award-id>82472459</award-id></award-group><award-group id="funding-0002"><funding-source>
+<institution-wrap><institution>Beijing Natural Science Foundation Haidian Joint Project</institution></institution-wrap>
+</funding-source><award-id>24L20439</award-id></award-group><award-group id="funding-0003"><funding-source>
+<institution-wrap><institution>Research and translational application of clinical characteristic diagnosis and treatment technologies in Beijing</institution></institution-wrap>
+</funding-source><award-id>Z22111000740000</award-id></award-group></funding-group><counts><fig-count count="3"/><table-count count="4"/><page-count count="11"/><word-count count="6339"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>October 2025</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.6.4 mode:remove_FC converted:31.10.2025</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="jeo270477-cit-0048">
+<string-name name-style="western">
+<surname>Yang</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kang</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hu</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pei</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>Z</given-names>
+</string-name>, et al. <article-title>Evaluation of centre‐specific machine learning models in predicting 2‐year outcomes of hip arthroscopy for mixed femoracetabular impingement syndrome</article-title>. <source>J Exp Orthop</source>. <year>2025</year>;<volume>12</volume>:<elocation-id>e70477</elocation-id>. <pub-id pub-id-type="doi">10.1002/jeo2.70477</pub-id>
+<pub-id pub-id-type="pmcid">PMC12576341</pub-id><pub-id pub-id-type="pmid">41180556</pub-id></mixed-citation>
+</p><fn-group><fn id="jeo270477-note-0001"><p>Gang Yang, Jiali Kang and Fan Hu contributed equally.</p></fn></fn-group></notes></front><body><def-list list-content="abbreviations"><title>Abbreviations</title><def-item><term>3D</term><def><p>three‐dimensional</p></def></def-item><def-item><term>AL</term><def><p>anterolateral</p></def></def-item><def-item><term>AP</term><def><p>anteroposterior</p></def></def-item><def-item><term>AUROC</term><def><p>area under the receiver operating characteristic curve</p></def></def-item><def-item><term>C‐index</term><def><p>concordance index</p></def></def-item><def-item><term>CT</term><def><p>computed tomography</p></def></def-item><def-item><term>FAIS</term><def><p>femoroacetabular impingement syndrome</p></def></def-item><def-item><term>FNR</term><def><p>false negative rate</p></def></def-item><def-item><term>HOS‐ADL</term><def><p>hip outcome score‐activities of daily living</p></def></def-item><def-item><term>iHOT‐12</term><def><p>international hip outcome tool‐12</p></def></def-item><def-item><term>LASSO</term><def><p>least absolute shrinkage and selection operator</p></def></def-item><def-item><term>LCEA</term><def><p>lateral central‐edge angle</p></def></def-item><def-item><term>LR</term><def><p>logistic regression</p></def></def-item><def-item><term>MAP</term><def><p>midanterior portal</p></def></def-item><def-item><term>MCID</term><def><p>minimal clinically important differences</p></def></def-item><def-item><term>mHHS</term><def><p>modified Harris Hip Score</p></def></def-item><def-item><term>ML</term><def><p>machine learning</p></def></def-item><def-item><term>MRI</term><def><p>magnetic resonance imaging</p></def></def-item><def-item><term>OA</term><def><p>osteoarthritis</p></def></def-item><def-item><term>PROs</term><def><p>patient‐reported outcomes scores</p></def></def-item><def-item><term>RF</term><def><p>random forest</p></def></def-item><def-item><term>SHAP</term><def><p>SHapley Additive explanation</p></def></def-item><def-item><term>SMOTE</term><def><p>synthetic minority oversampling technique</p></def></def-item><def-item><term>SVM</term><def><p>support vector machine</p></def></def-item><def-item><term>VAS</term><def><p>visual analogue scale</p></def></def-item></def-list><sec id="jeo270477-sec-0060"><title>INTRODUCTION</title><p>Femoroacetabular impingement syndrome (FAIS) is the leading cause of hip pain in young adults. In addition, FAIS is also a significant contributor to hip osteoarthritis (OA) [<xref rid="jeo270477-bib-0007" ref-type="bibr">7</xref>, <xref rid="jeo270477-bib-0037" ref-type="bibr">37</xref>, <xref rid="jeo270477-bib-0042" ref-type="bibr">42</xref>]. FAIS is typically categorised into cam type, pincer type or mixed type [<xref rid="jeo270477-bib-0002" ref-type="bibr">2</xref>, <xref rid="jeo270477-bib-0007" ref-type="bibr">7</xref>, <xref rid="jeo270477-bib-0047" ref-type="bibr">47</xref>]. Labral and cartilage injuries in the hip can be treated with arthroscopic surgery, and for normalising the anatomical morphology of the hip joint in mixed FAIS, intraoperative cam resection and pincer resection are essential [<xref rid="jeo270477-bib-0012" ref-type="bibr">12</xref>, <xref rid="jeo270477-bib-0013" ref-type="bibr">13</xref>].</p><p>Minimal clinically important difference (MCID) is an important marker of surgical success, it is the minimal beneficial change that can be perceived by patients, and patient‐reported outcome score (PROS) is a widely used outcome tool [<xref rid="jeo270477-bib-0025" ref-type="bibr">25</xref>, <xref rid="jeo270477-bib-0032" ref-type="bibr">32</xref>, <xref rid="jeo270477-bib-0040" ref-type="bibr">40</xref>, <xref rid="jeo270477-bib-0044" ref-type="bibr">44</xref>]. For surgeons, one of their key goals is to improve the MCID attainment rate of postoperative patients by various means. In addition to efforts to improve the surgical technique of surgeons, measures such as optimising patient screening and prehabilitation can be used to improve MCID attainment rate [<xref rid="jeo270477-bib-0024" ref-type="bibr">24</xref>, <xref rid="jeo270477-bib-0036" ref-type="bibr">36</xref>]. Prediction models for PROs can improve shared decision‐making and patient counselling [<xref rid="jeo270477-bib-0014" ref-type="bibr">14</xref>]. Meanwhile, machine learning (ML) techniques have attracted interest in the field of predictive analytics in medicine. Currently, the ML prediction model has been recognised as capable of predicting patients' postoperative PROs, thereby improving and optimising the quality of medical services [<xref rid="jeo270477-bib-0009" ref-type="bibr">9</xref>]. Various ML techniques and simple neural networks provide higher predictive power compared to more traditional modelling techniques [<xref rid="jeo270477-bib-0039" ref-type="bibr">39</xref>]. The preoperative ability to predict which patients with FAIS will achieve the MCID after hip arthroscopy helps determine the appropriateness and timing of surgery, so as to help doctors and patients choose more appropriate treatment time and method [<xref rid="jeo270477-bib-0009" ref-type="bibr">9</xref>].</p><p>Prediction models based on multicentre clinical data usually have the characteristics of large sample size and strong versatility, which can provide a reference for all surgeons. However, patient characteristics and surgical techniques vary among centres. Thus, surgeons can train and apply centre‐specific prediction models to more accurately predict outcomes after hip arthroscopy for better clinical decision making. The aim of this study was to develop centre‐specific ML prediction models based on preoperative factors, to predict at least 2‐year postoperative outcomes for patients with mixed‐type FAIS after hip arthroscopy. It was hypothesised that a centre‐specific ML prediction model would accurately predict whether PROs over at least 2 years would reach MCID.</p></sec><sec sec-type="materials-and-methods" id="jeo270477-sec-0070"><title>MATERIALS AND METHODS</title><sec id="jeo270477-sec-0080"><title>Patient selection</title><p>Approval for the study was granted through the institutional review board (IRB) of Peking University Third Hospital (Number: M2019193). Patients who underwent primary hip arthroscopic surgery for FAIS at our institution between August 2016 and December 2018 were retrospectively analysed. All arthroscopic surgeries were performed by two senior authors (X.Z. and J‐Q.W.). Each of them performs more than 50 hip arthroscopic procedures annually.</p><p>Inclusion criteria were as follows: (1) patients underwent primary hip arthroscopy due to FAIS; (2) patients were followed up for at least 2 years. Exclusion criteria were as follows: (1) Previous history of ipsilateral hip surgery. (2) History of contralateral hip surgery during follow‐up. (3) Preoperative lateral central‐edge angle (LCEA) &lt; 25°, moderate to advanced OA (Tönnis grade ≥2). (4) Incomplete preoperative X‐ray and medical records. Arthroscopic surgery was performed in 434 hips. After exclusions, a total of 251 hips were deemed eligible. Ultimately, 210 hips were followed for at least 2 years and included in the study (Figure <xref rid="jeo270477-fig-0001" ref-type="fig">1</xref>), either by telephone or in response to questions on the scale.</p><fig position="float" fig-type="Figure" id="jeo270477-fig-0001" orientation="portrait"><label>Figure 1</label><caption><p>Patient selection. A total of 210 patients who met the inclusion criteria and complete data at least 2 years of follow‐up were included in the study. FAIS, femoroacetabular impingement syndrome.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-1" orientation="portrait" xlink:href="JEO2-12-e70477-g001.jpg"><?image-name JEO2-12-e70477-g001.jpg?><?image-size 60798?><?image-md5 b18a65120c647fe6e4cacf8678e22fdd?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 659?><?image-original-width 913?><?image-scaled-height 439?><?image-scaled-width 608?><?image-cloudpmc-urn urn:cdn:blobs/5bf6/12576341/b18a65120c64/JEO2-12-e70477-g001.jpg?><?thumb-name JEO2-12-e70477-g001.gif?><?thumb-size 10861?><?thumb-md5 445de6418b50140db2804d14451dccfd?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 79?><?thumb-scaled-width 110?><?thumb-cloudpmc-urn urn:cdn:blobs/5bf6/12576341/445de6418b50/JEO2-12-e70477-g001.gif?></graphic></fig></sec><sec id="jeo270477-sec-0090"><title>Radiographic examination</title><p>All patients underwent anteroposterior (AP) pelvic and 45° Dunn lateral radiography, unilateral hip computed tomography (CT) and magnetic resonance imaging (MRI). A picture archiving and communication system (PACS; GE Healthcare) was used; The images were independently evaluated by an experienced radiologist, and all measurements were confirmed by a senior author (X.Z.). The LCEA and alpha angle were measured on AP pelvic radiographs. While the alpha angle was measured on 45° Dunn lateral radiographs. Cam deformity was defined as an alpha angle &gt;55° [<xref rid="jeo270477-bib-0026" ref-type="bibr">26</xref>]. Additionally, the LCEA was measured on AP pelvic radiographs, with pincer deformity defined as an LCEA ≥ 40° or a crossing sign [<xref rid="jeo270477-bib-0047" ref-type="bibr">47</xref>]. Labral and articular cartilage were evaluate using 3.0‐T MRI. Cam deformity was assessed before and after operation using three‐dimensional (3D) CT.</p></sec><sec id="jeo270477-sec-0100"><title>Surgical technique</title><p>The patient was positioned in a modified supine position on a standard hip traction table, with perineum protection during limb traction. Labral tears have been treated with debridement, repair, or reconstruction, depending on the extent of the injury: Labral tears were repaired using suture anchor fixation (Smith &amp; Nephew) when possible. In cases of irreparable labral tears, autograft gracilis transplantation could be considered for labral reconstruction. Acetabuloplasty was performed using a motorised bur, to create a bleeding bone bed for labral healing. Chondroplasty was performed for partial‐thickness cartilage lesions and chondral flaps, using an arthroscopic shaver and/or electrocautery device (Smith &amp; Nephew). Subspine impingement was diagnosed based on preoperative imaging and confirmed with a preoperative subspine blocking test guided by ultrasound. Resection of the subspine deformity back to the level of the acetabular sourcil was typically performed. After addressing central compartment pathologies, the arthroscope was introduced into the peripheral compartment to decompress cam deformities using a high‐speed bur (Smith &amp; Nephew). Adequate resection of the cam deformity was confirmed through dynamic examination and fluoroscopic imaging. Finally, the joint capsule of all patients was routinely full closure at the end of the procedure using nonabsorbable Orthocord (DePuy Mitek).</p></sec><sec id="jeo270477-sec-0110"><title>Postoperative rehabilitation</title><p>With well supervision from our physical therapy team, all patients followed a standardised prescribed rehabilitation protocol [<xref rid="jeo270477-bib-0046" ref-type="bibr">46</xref>]. The rehabilitation was divided into four phases. The first phase of the rehabilitation protocol emphasised isometric contractions and passive range of motion exercises. The second phase focused on establishing a regular gait pattern and restoring full range of motion. The emphasis of the third phase shifted towards rebuilding lower extremity strength and normal functional activities. The final phase of rehabilitation centred on reintegrating preinjury higher‐level activities.</p></sec><sec id="jeo270477-sec-0120"><title>Assessment of PROs</title><p>PROs included scores for the hip outcome score‐activities of daily living (HOS‐ADL), modified Harris Hip Score (mHHS), visual analogue scale (VAS) for pain, international hip outcome tool‐12 (iHOT‐12) and hip outcome score‐sports subscale (HOS‐SS) [<xref rid="jeo270477-bib-0025" ref-type="bibr">25</xref>, <xref rid="jeo270477-bib-0044" ref-type="bibr">44</xref>]. However, in this study, half of the patients did not exercise regularly, so HOS‐SS was not calculated. Patients completed surveys at the hospital before surgery and via a telephone interview after surgery. All assessments were performed in the patient's native language. Additionally, MCID and patient acceptable symptom state (PASS) were calculated to identify meaningful outcome improvements [<xref rid="jeo270477-bib-0017" ref-type="bibr">17</xref>]. The MCID values used in this study were determined based on previous research: [<xref rid="jeo270477-bib-0001" ref-type="bibr">1</xref>, <xref rid="jeo270477-bib-0022" ref-type="bibr">22</xref>, <xref rid="jeo270477-bib-0033" ref-type="bibr">33</xref>] 1.5 points for VAS pain, 8.7 points for mHHS, 8.3 points for HOS‐ADL, and 13.0 points for iHOT‐12. The PASS cutoffs were 1.91 for VAS pain, 83.3 for mHHS, 88.2 for HOS‐ADL, and 72.2 for iHOT‐12.</p></sec><sec id="jeo270477-sec-0130"><title>Development of ML prediction models</title><p>Initially, descriptive statistics assessed the overall sample characteristics. Next, feature screening utilised the Least Absolute Shrinkage and Selection Operator (LASSO) [<xref rid="jeo270477-bib-0045" ref-type="bibr">45</xref>]. Using the balanced data from the optimal feature subset, three ML models were constructed—logistic regression (LR) [<xref rid="jeo270477-bib-0028" ref-type="bibr">28</xref>], support vector machine (SVM) [<xref rid="jeo270477-bib-0006" ref-type="bibr">6</xref>] and random forest (RF) [<xref rid="jeo270477-bib-0003" ref-type="bibr">3</xref>], to predict whether the four PROs reach the MCID. And model interpretation and knowledge mining were performed based on the SHapley Additive exPlanations (SHAP) method [<xref rid="jeo270477-bib-0019" ref-type="bibr">19</xref>]. SPSS (version 24.0) facilitated the initial data description, while Python (version 3.8.10) supported all subsequent analyses. The code and supporting documents used to generate the model can be accessed at <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://github.com/ailiwood/ML-FAIS-MCID/tree/main" ext-link-type="uri">https://github.com/ailiwood/ML-FAIS-MCID/tree/main</ext-link>.</p></sec><sec id="jeo270477-sec-0140"><title>Statistical analysis</title><p>The primary outcome of this study was the performance of the prediction model, and the secondary outcomes were the preoperative factors affecting the postoperative outcomes of patients. Continuous variables fitting a normal distribution, such as age and BMI, were presented using mean ± standard deviation. Those not fitting a normal distribution were presented using median (interquartile range). Categorical variables, such as gender, were shown using frequency (percentage). Statistical comparisons of PROs, LCEA and alpha angles before and after surgery utilised a two‐tailed paired Student t‐test. A <italic toggle="yes">p</italic>‐value below 0.05 was deemed statistically significant.</p><p>To address the common issue of overfitting in ML and align with prior studies [<xref rid="jeo270477-bib-0015" ref-type="bibr">15</xref>], the LASSO model was used for feature selection. This approach helps remove irrelevant or redundant features, reducing modelling time and potential noise, thereby enhancing model accuracy [<xref rid="jeo270477-bib-0038" ref-type="bibr">38</xref>]. The lasso was designed to predict changes in PROs scores pre‐ and postoperatively (change values were the basis for determining MCID). Parameters were optimised using a grid search algorithm to develop an optimal model for each PROs score, selecting the feature subset for the predictive model.</p><p>Since imbalance reduces the predictive performance and generalisation ability of the model, sample balancing is performed before formal modelling. The ratio of positive samples in the raw data is more than 9:1, and downsampling would result in a significant loss of information. Therefore, the synthetic minority oversampling technique (SMOTE) is used [<xref rid="jeo270477-bib-0027" ref-type="bibr">27</xref>]. Then ML models were developed.</p><p>In the model training and evaluation phases, GridSearchCV was used to identify optimal hyperparameter combinations [<xref rid="jeo270477-bib-0035" ref-type="bibr">35</xref>]. And a 10‐fold cross‐validation method for model evaluation.</p><p>Due to the highly imbalanced nature of the original dataset, accuracy alone does not fully capture the model's precision. Consequently, the F1 score and the false negative rate (FNR) were also reported. For discrimination, the area under the receiver operating characteristic curve (AUROC) and the concordance index (C‐index) were evaluated. While AUC assesses the model's overall ability to distinguish between positive and negative cases, the C‐index more specifically evaluates the relative risk ranking among samples. Additionally, this study includes the Brier score to gauge and compare the calibration of clinical prediction models. The Brier score measures the mean square deviation between the predicted probability and the actual outcome; thus, a lower Brier score indicates a better predictive ability of the model.</p><p>In the phases of model interpretation and knowledge mining, SHAP was used. A key advantage of SHAP values is their consistency, which ensures the reliability of the feature importance assessment. The robustness and transparency of Shap have facilitated its widespread adoption in various research areas [<xref rid="jeo270477-bib-0010" ref-type="bibr">10</xref>, <xref rid="jeo270477-bib-0018" ref-type="bibr">18</xref>].</p></sec></sec><sec sec-type="results" id="jeo270477-sec-0150"><title>RESULTS</title><sec id="jeo270477-sec-0160"><title>Patient characteristics</title><p>A total of 210 patients (51.90% male vs. 48.10% female) were included in the final analysis. The patients' basic information, physical examination findings and hip pain history. Statistically significant differences were observed between preoperative and postoperative alpha angles (65.85 ± 8.15 vs. 44.11 ± 5.11; <italic toggle="yes">p</italic> &lt; 0.001) and between preoperative and postoperative LCEA (33.26 ± 6.46 vs. 31.17 ± 5.52; <italic toggle="yes">p</italic> &lt; 0.001). Throughout the follow‐up period, there was a significant increase in mHHS (62.51 ± 7.22 vs. 89.09 ± 8.97, <italic toggle="yes">p</italic> &lt; 0.001), HOS‐ADL (64.01 ± 8.21 vs. 89.27 ± 8.67; <italic toggle="yes">p</italic> &lt; 0.001), iHOT‐12 (41.02 ± 6.79 vs. 73.39 ± 10.33, <italic toggle="yes">p</italic> &lt; 0.001) and a significant decrease in VAS pain scores (6.00 ± 1.37 vs. 1.72 ± 1.45; <italic toggle="yes">p</italic> &lt; 0.001) (Table <xref rid="jeo270477-tbl-0001" ref-type="table">1</xref>).</p><table-wrap position="float" id="jeo270477-tbl-0001" content-type="Table" orientation="portrait"><label>Table 1</label><caption><p>Characteristics of the study cohort (<italic toggle="yes">N</italic> = 210 hips).</p></caption><table frame="hsides" rules="groups"><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><thead valign="bottom"><tr style="border-bottom:solid 1px #000000" valign="bottom"><th align="left" valign="bottom" rowspan="1" colspan="1">Characteristics</th><th align="left" valign="bottom" rowspan="1" colspan="1">Mean ± SD or <italic toggle="yes">n</italic> (%)</th></tr></thead><tbody valign="top"><tr><td align="left" valign="top" rowspan="1" colspan="1">Age, years</td><td align="left" valign="top" rowspan="1" colspan="1">37.58 (±9.64)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Sex</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Male</td><td align="left" valign="top" rowspan="1" colspan="1">109 (51.90%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Female</td><td align="left" valign="top" rowspan="1" colspan="1">101 (48.10%)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Height, cm</td><td align="left" valign="top" rowspan="1" colspan="1">169.59 (±7.96)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Weight, kg</td><td align="left" valign="top" rowspan="1" colspan="1">67.83 (±12.49)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">BMI</td><td align="left" valign="top" rowspan="1" colspan="1">23.45 (±3.17)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Symptom duration, months</td><td align="left" valign="top" rowspan="1" colspan="1">17.67 (±15.43)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Tönnis grade</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">0</td><td align="left" valign="top" rowspan="1" colspan="1">130 (61.90%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">1</td><td align="left" valign="top" rowspan="1" colspan="1">80 (38.10%)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Joint space, mm</td><td align="left" valign="top" rowspan="1" colspan="1">4.53 (±0.80)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Diameter of femoral head, mm</td><td align="left" valign="top" rowspan="1" colspan="1">52.51 (±5.60)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Preoperative symptom duration &gt;2 year</td><td align="left" valign="top" rowspan="1" colspan="1">29(13.81%)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Follow‐up time, months</td><td align="left" valign="top" rowspan="1" colspan="1">38.68 (±7.94)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Alpha angle, deg</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Preoperative</td><td align="left" valign="top" rowspan="1" colspan="1">65.85 ± 8.15</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Postoperative</td><td align="left" valign="top" rowspan="1" colspan="1">44.11 ± 5.11</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">LCEA, deg</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Preoperative</td><td align="left" valign="top" rowspan="1" colspan="1">33.26 ± 6.46</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Postoperative</td><td align="left" valign="top" rowspan="1" colspan="1">31.17 ± 5.52</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">mHHS</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Preoperative</td><td align="left" valign="top" rowspan="1" colspan="1">62.51 ± 7.22</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Postoperative</td><td align="left" valign="top" rowspan="1" colspan="1">89.09 ± 8.97</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Achievement of PASS</td><td align="left" valign="top" rowspan="1" colspan="1">163 (77.61%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Achievement of MCID</td><td align="left" valign="top" rowspan="1" colspan="1">199 (94.76%)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">HOS‐ADL</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Preoperative</td><td align="left" valign="top" rowspan="1" colspan="1">64.01 ± 8.21</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Postoperative</td><td align="left" valign="top" rowspan="1" colspan="1">89.27 ± 8.67</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Achievement of PASS</td><td align="left" valign="top" rowspan="1" colspan="1">141 (67.14%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Achievement of MCID</td><td align="left" valign="top" rowspan="1" colspan="1">198 (94.28%)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">iHOT‐12</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Preoperative</td><td align="left" valign="top" rowspan="1" colspan="1">41.02 ± 6.79</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Postoperative</td><td align="left" valign="top" rowspan="1" colspan="1">73.39 ± 10.33</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Achievement of PASS</td><td align="left" valign="top" rowspan="1" colspan="1">121 (57.62%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Achievement of MCID</td><td align="left" valign="top" rowspan="1" colspan="1">197 (93.80%)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">VAS</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Preoperative</td><td align="left" valign="top" rowspan="1" colspan="1">6.00 ± 1.37</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Postoperative</td><td align="left" valign="top" rowspan="1" colspan="1">1.72 ± 1.45</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Achievement of PASS</td><td align="left" valign="top" rowspan="1" colspan="1">113 (53.81%)</td></tr><tr><td style="padding-left:10%" align="left" valign="top" rowspan="1" colspan="1">Achievement of MCID</td><td align="left" valign="top" rowspan="1" colspan="1">195 (92.86%)</td></tr></tbody></table><table-wrap-foot><fn id="jeo270477-tbl1-note-0001"><p>Abbreviations: BMI, body mass index; HOS‐ADL, hip outcome score activities of daily living; iHOT12, international hip outcome tool‐12; LCEA, lateral centre‐edge angle; MCID, minimal clinically important difference; mHHS, modified Harris Hip Score; PASS, patient acceptable symptom state; VAS, visual analogue scale.</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &amp; Sons, Ltd.</copyright-holder></permissions></table-wrap></sec><sec id="jeo270477-sec-0170"><title>Variable screening</title><p>Table <xref rid="jeo270477-tbl-0002" ref-type="table">2</xref> presents the results of variable selection performed using LASSO for each of the four patient‐reported outcomes. A check mark (‘√’) indicates that the variable was retained in the optimal subset for that outcome, signifying its potential importance in predicting whether the MCID would be achieved. These selected feature subsets served as the inputs for subsequent ML model training and performance comparison. Variables in bold were consistently selected across all four outcomes, highlighting predictors of broad clinical relevance.</p><table-wrap position="float" id="jeo270477-tbl-0002" content-type="Table" orientation="portrait"><label>Table 2</label><caption><p>Results of variable screening for LASSO.</p></caption><table frame="hsides" rules="groups"><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><thead valign="bottom"><tr style="border-bottom:solid 1px #000000" valign="bottom"><th align="left" valign="bottom" rowspan="1" colspan="1">Characteristics</th><th align="center" valign="bottom" rowspan="1" colspan="1">mHHS</th><th align="center" valign="bottom" rowspan="1" colspan="1">HOS‐ADL</th><th align="center" valign="bottom" rowspan="1" colspan="1">iHOT‐12</th><th align="center" valign="bottom" rowspan="1" colspan="1">VAS</th></tr></thead><tbody valign="top"><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Age, years</bold>
+</td><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Sex</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Height, cm</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Weight, kg</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="center" valign="top" rowspan="1" colspan="1">√</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">BMI</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Diameter of femoral head, mm</bold>
+</td><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Joint Space, mm</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="center" valign="top" rowspan="1" colspan="1">√</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Tonnis grade</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Symptom duration, months</bold>
+</td><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Preoperative symptom duration &gt;2 year</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Preoperative alpha angle, deg</bold>
+</td><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Preoperative LCEA, deg</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="center" valign="top" rowspan="1" colspan="1">√</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Preoperative mHHS</bold>
+</td><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Preoperative HOS‐ADL</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Preoperative iHOT‐12</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="center" valign="top" rowspan="1" colspan="1">√</td><td align="center" valign="top" rowspan="1" colspan="1">√</td></tr></tbody></table><table-wrap-foot><fn id="jeo270477-tbl2-note-0001"><p>
+<italic toggle="yes">Note</italic>: Bold characteristics, indicating significance for all PROs.</p></fn><fn id="jeo270477-tbl2-note-0002"><p>Abbreviations: BMI, body mass index; HOS‐ADL, hip outcome score activities of daily living; iHOT12, international hip outcome tool‐12; LASSO, least absolute shrinkage and selection operator; LCEA, lateral centre‐edge angle; mHHS, modified Harris Hip Score; VAS, visual analogue scale.</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &amp; Sons, Ltd.</copyright-holder></permissions></table-wrap></sec><sec id="jeo270477-sec-0180"><title>Model comparison</title><p>The RF model outperformed the LR and SVM on all metrics, consistently achieving the highest C index (mean 0.94555) and AUC (mean 0.989043) (Table <xref rid="jeo270477-tbl-0003" ref-type="table">3</xref> and Figure <xref rid="jeo270477-fig-0002" ref-type="fig">2</xref>). In contrast, the LR model exhibited the poorest results, with the highest FNR (mean 0.226875) and a missed diagnosis rate 4.51 times higher than that of SVM and 8.19 times higher than that of RF. The RF model also attained the lowest Brier score, indicating superior model calibration. Further analysis of standard deviation in model evaluation metrics confirms the robustness of the RF model, which consistently exhibits the lowest variability across datasets. Considering its superior discriminatory power and stability, the RF model is recommended for predicting MCID in the clinical setting.</p><table-wrap position="float" id="jeo270477-tbl-0003" content-type="Table" orientation="portrait"><label>Table 3</label><caption><p>Performance comparison of the three models on the four datasets.</p></caption><table frame="hsides" rules="groups"><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="char" char="." style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="char" char="." style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="char" char="." style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="char" char="." style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="char" char="." style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="char" char="." style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="char" char="." style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="char" char="." style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><thead valign="bottom"><tr style="border-bottom:solid 1px #000000" valign="bottom"><th colspan="2" align="left" valign="bottom" rowspan="1">Data</th><th align="left" colspan="2" valign="bottom" rowspan="1">mHHS</th><th align="left" colspan="2" valign="bottom" rowspan="1">HOS‐ADL</th><th align="left" colspan="2" valign="bottom" rowspan="1">iHOT‐12</th><th align="left" colspan="2" valign="bottom" rowspan="1">VAS</th></tr><tr style="border-bottom:solid 1px #000000" valign="bottom"><th align="left" valign="bottom" rowspan="1" colspan="1">Model</th><th align="left" valign="bottom" rowspan="1" colspan="1">Metric</th><th align="char" valign="bottom" rowspan="1" colspan="1">Mean</th><th align="char" valign="bottom" rowspan="1" colspan="1">STD</th><th align="char" valign="bottom" rowspan="1" colspan="1">Mean</th><th align="char" valign="bottom" rowspan="1" colspan="1">STD</th><th align="char" valign="bottom" rowspan="1" colspan="1">Mean</th><th align="char" valign="bottom" rowspan="1" colspan="1">STD</th><th align="char" valign="bottom" rowspan="1" colspan="1">Mean</th><th align="char" valign="bottom" rowspan="1" colspan="1">STD</th></tr></thead><tbody valign="top"><tr><td rowspan="4" valign="middle" align="left" colspan="1">LR</td><td align="left" valign="top" rowspan="1" colspan="1">F1 score</td><td align="char" valign="top" rowspan="1" colspan="1">0.73</td><td align="char" valign="top" rowspan="1" colspan="1">0.07</td><td align="char" valign="top" rowspan="1" colspan="1">0.81</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td><td align="char" valign="top" rowspan="1" colspan="1">0.65</td><td align="char" valign="top" rowspan="1" colspan="1">0.10</td><td align="char" valign="top" rowspan="1" colspan="1">0.76</td><td align="char" valign="top" rowspan="1" colspan="1">0.05</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">FNR</td><td align="char" valign="top" rowspan="1" colspan="1">0.28</td><td align="char" valign="top" rowspan="1" colspan="1">0.09</td><td align="char" valign="top" rowspan="1" colspan="1">0.12</td><td align="char" valign="top" rowspan="1" colspan="1">0.08</td><td align="char" valign="top" rowspan="1" colspan="1">0.31</td><td align="char" valign="top" rowspan="1" colspan="1">0.11</td><td align="char" valign="top" rowspan="1" colspan="1">0.20</td><td align="char" valign="top" rowspan="1" colspan="1">0.10</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">C‐index</td><td align="char" valign="top" rowspan="1" colspan="1">0.74</td><td align="char" valign="top" rowspan="1" colspan="1">0.07</td><td align="char" valign="top" rowspan="1" colspan="1">0.82</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td><td align="char" valign="top" rowspan="1" colspan="1">0.65</td><td align="char" valign="top" rowspan="1" colspan="1">0.10</td><td align="char" valign="top" rowspan="1" colspan="1">0.76</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Brier score</td><td align="char" valign="top" rowspan="1" colspan="1">0.26</td><td align="char" valign="top" rowspan="1" colspan="1">0.07</td><td align="char" valign="top" rowspan="1" colspan="1">0.18</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td><td align="char" valign="top" rowspan="1" colspan="1">0.35</td><td align="char" valign="top" rowspan="1" colspan="1">0.10</td><td align="char" valign="top" rowspan="1" colspan="1">0.24</td><td align="char" valign="top" rowspan="1" colspan="1">0.05</td></tr><tr><td rowspan="4" valign="middle" align="left" colspan="1">SVM</td><td align="left" valign="top" rowspan="1" colspan="1">F1 score</td><td align="char" valign="top" rowspan="1" colspan="1">0.89</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td><td align="char" valign="top" rowspan="1" colspan="1">0.80</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td><td align="char" valign="top" rowspan="1" colspan="1">0.84</td><td align="char" valign="top" rowspan="1" colspan="1">0.07</td><td align="char" valign="top" rowspan="1" colspan="1">0.89</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">FNR</td><td align="char" valign="top" rowspan="1" colspan="1">0.01</td><td align="char" valign="top" rowspan="1" colspan="1">0.03</td><td align="char" valign="top" rowspan="1" colspan="1">0.10</td><td align="char" valign="top" rowspan="1" colspan="1">0.06</td><td align="char" valign="top" rowspan="1" colspan="1">0.05</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td><td align="char" valign="top" rowspan="1" colspan="1">0.05</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">C‐index</td><td align="char" valign="top" rowspan="1" colspan="1">0.90</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td><td align="char" valign="top" rowspan="1" colspan="1">0.81</td><td align="char" valign="top" rowspan="1" colspan="1">0.05</td><td align="char" valign="top" rowspan="1" colspan="1">0.85</td><td align="char" valign="top" rowspan="1" colspan="1">0.07</td><td align="char" valign="top" rowspan="1" colspan="1">0.89</td><td align="char" valign="top" rowspan="1" colspan="1">0.03</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Brier score</td><td align="char" valign="top" rowspan="1" colspan="1">0.10</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td><td align="char" valign="top" rowspan="1" colspan="1">0.19</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td><td align="char" valign="top" rowspan="1" colspan="1">0.15</td><td align="char" valign="top" rowspan="1" colspan="1">0.06</td><td align="char" valign="top" rowspan="1" colspan="1">0.11</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td></tr><tr><td rowspan="4" valign="middle" align="left" colspan="1">RF</td><td align="left" valign="top" rowspan="1" colspan="1">F1 score</td><td align="char" valign="top" rowspan="1" colspan="1">0.95</td><td align="char" valign="top" rowspan="1" colspan="1">0.03</td><td align="char" valign="top" rowspan="1" colspan="1">0.93</td><td align="char" valign="top" rowspan="1" colspan="1">0.03</td><td align="char" valign="top" rowspan="1" colspan="1">0.96</td><td align="char" valign="top" rowspan="1" colspan="1">0.03</td><td align="char" valign="top" rowspan="1" colspan="1">0.93</td><td align="char" valign="top" rowspan="1" colspan="1">0.03</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">FNR</td><td align="char" valign="top" rowspan="1" colspan="1">0.02</td><td align="char" valign="top" rowspan="1" colspan="1">0.02</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td><td align="char" valign="top" rowspan="1" colspan="1">0.06</td><td align="char" valign="top" rowspan="1" colspan="1">0.02</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td><td align="char" valign="top" rowspan="1" colspan="1">0.03</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">C‐index</td><td align="char" valign="top" rowspan="1" colspan="1">0.95</td><td align="char" valign="top" rowspan="1" colspan="1">0.03</td><td align="char" valign="top" rowspan="1" colspan="1">0.93</td><td align="char" valign="top" rowspan="1" colspan="1">0.03</td><td align="char" valign="top" rowspan="1" colspan="1">0.96</td><td align="char" valign="top" rowspan="1" colspan="1">0.03</td><td align="char" valign="top" rowspan="1" colspan="1">0.93</td><td align="char" valign="top" rowspan="1" colspan="1">0.02</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Brier score</td><td align="char" valign="top" rowspan="1" colspan="1">0.05</td><td align="char" valign="top" rowspan="1" colspan="1">0.03</td><td align="char" valign="top" rowspan="1" colspan="1">0.07</td><td align="char" valign="top" rowspan="1" colspan="1">0.03</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td><td align="char" valign="top" rowspan="1" colspan="1">0.03</td><td align="char" valign="top" rowspan="1" colspan="1">0.07</td><td align="char" valign="top" rowspan="1" colspan="1">0.03</td></tr></tbody></table><table-wrap-foot><fn id="jeo270477-tbl3-note-0001"><p>Abbreviations: C‐index, concordance index; FNR, false negative rate; HOS‐ADL, hip outcome score activities of daily living; iHOT12, international hip outcome tool‐12; LR, logistic regression; MCID, minimal clinically important difference; mHHS, modified Harris Hip Score; RF, random forest; SVM, support vector machine; VAS, visual analogue scale.</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &amp; Sons, Ltd.</copyright-holder></permissions></table-wrap><fig position="float" fig-type="Figure" id="jeo270477-fig-0002" orientation="portrait"><label>Figure 2</label><caption><p>The ROC curves for the three models on the four datasets and reports the AUC. (a–d) The results on the four datasets mHHS, HOS‐ADL, iHOT‐12 and VAS, respectively. AUC, area under the ROC curve; HOS‐ADL, hip outcome score‐activities of daily living; iHOT‐12, international hip outcome tool‐12; LR, logistic regression; mHHS, modified Harris Hip Score; RF, random forest; SVM, support vector machine; VAS, visual analogue scale.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-3" orientation="portrait" xlink:href="JEO2-12-e70477-g003.jpg"><?image-name JEO2-12-e70477-g003.jpg?><?image-size 93241?><?image-md5 4ba2ff379b5f9f8a09288a78d209d09a?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 979?><?image-original-width 1054?><?image-scaled-height 652?><?image-scaled-width 702?><?image-cloudpmc-urn urn:cdn:blobs/5bf6/12576341/4ba2ff379b5f/JEO2-12-e70477-g003.jpg?><?thumb-name JEO2-12-e70477-g003.gif?><?thumb-size 3680?><?thumb-md5 c6bb205bdf02ec8bb666d742674d76a0?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 93?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/5bf6/12576341/c6bb205bdf02/JEO2-12-e70477-g003.gif?></graphic></fig></sec><sec id="jeo270477-sec-0190"><title>Model interpretation and preoperative predictors analysis</title><p>The results of ranking the importance of features in the random forest model using SHAP, displaying the top five most important scores (Table <xref rid="jeo270477-tbl-0004" ref-type="table">4</xref>). The SHAP Heat map, with each line representing a feature and the horizontally extended colour bar indicating the feature's impact on a sample (Figure <xref rid="jeo270477-fig-0003" ref-type="fig">3</xref>). Factors on the left vertical axis are arranged from top to bottom according to predicted strength; each narrow vertical strip (one pixel wide) represents one patient. The strip's horizontal position is that patient's SHAP value for the predictor. Colour encodes the same sign—red for positive, blue for negative—while colour intensity is proportional to the magnitude of influence. Taking ‘age’ as an example, red pixels on the right indicate that, for those older patients, age increases the likelihood of MCID, whereas blue pixels on the left show the opposite effect for younger patients.</p><table-wrap position="float" id="jeo270477-tbl-0004" content-type="Table" orientation="portrait"><label>Table 4</label><caption><p>Importance ranking of features based on SHAP.</p></caption><table frame="hsides" rules="groups"><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="left" style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col align="char" char="." style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><thead valign="bottom"><tr style="border-bottom:solid 1px #000000" valign="bottom"><th align="left" valign="bottom" rowspan="1" colspan="1">Targets</th><th align="left" valign="bottom" rowspan="1" colspan="1">Feature</th><th align="left" valign="bottom" rowspan="1" colspan="1">SHAP importance</th></tr></thead><tbody valign="top"><tr><td rowspan="5" valign="middle" align="left" colspan="1">mHHS‐MCID</td><td align="left" valign="top" rowspan="1" colspan="1">Preoperative mHHS</td><td align="char" valign="top" rowspan="1" colspan="1">0.18</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Symptom duration</td><td align="char" valign="top" rowspan="1" colspan="1">0.13</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Preoperative alpha angle</td><td align="char" valign="top" rowspan="1" colspan="1">0.09</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Age</td><td align="char" valign="top" rowspan="1" colspan="1">0.07</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Diameter of femoral head</td><td align="char" valign="top" rowspan="1" colspan="1">0.05</td></tr><tr><td rowspan="5" valign="middle" align="left" colspan="1">HOS‐ADL‐MCID</td><td align="left" valign="top" rowspan="1" colspan="1">Preoperative HOS‐ADL</td><td align="char" valign="top" rowspan="1" colspan="1">0.14</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Age</td><td align="char" valign="top" rowspan="1" colspan="1">0.09</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Preoperative mHHS</td><td align="char" valign="top" rowspan="1" colspan="1">0.07</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Preoperative alpha angle</td><td align="char" valign="top" rowspan="1" colspan="1">0.06</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Diameter of femoral head</td><td align="char" valign="top" rowspan="1" colspan="1">0.06</td></tr><tr><td rowspan="5" valign="middle" align="left" colspan="1">iHOT12‐MCID</td><td align="left" valign="top" rowspan="1" colspan="1">Preoperative mHHS</td><td align="char" valign="top" rowspan="1" colspan="1">0.08</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Symptom duration</td><td align="char" valign="top" rowspan="1" colspan="1">0.08</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Preoperative iHOT12</td><td align="char" valign="top" rowspan="1" colspan="1">0.08</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Preoperative alpha angle</td><td align="char" valign="top" rowspan="1" colspan="1">0.06</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Preoperative HOS‐ADL</td><td align="char" valign="top" rowspan="1" colspan="1">0.05</td></tr><tr><td rowspan="5" valign="middle" align="left" colspan="1">VAS‐MCID</td><td align="left" valign="top" rowspan="1" colspan="1">Preoperative alpha angle</td><td align="char" valign="top" rowspan="1" colspan="1">0.10</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Preoperative mHHS</td><td align="char" valign="top" rowspan="1" colspan="1">0.09</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Age</td><td align="char" valign="top" rowspan="1" colspan="1">0.09</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Joint space</td><td align="char" valign="top" rowspan="1" colspan="1">0.08</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Diameter of femoral head</td><td align="char" valign="top" rowspan="1" colspan="1">0.04</td></tr></tbody></table><table-wrap-foot><fn id="jeo270477-tbl4-note-0001"><p>Abbreviations: HOS‐ADL, hip outcome score activities of daily living; iHOT12, international hip outcome tool‐12; MCID, minimal clinically important difference; mHHS, modified Harris Hip Score; SHAP, SHapley Additive exPlanations; VAS, visual analogue scale.</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &amp; Sons, Ltd.</copyright-holder></permissions></table-wrap><fig position="float" fig-type="Figure" id="jeo270477-fig-0003" orientation="portrait"><label>Figure 3</label><caption><p>SHapley Additive explanation (SHAP) heat map. Predictors are ordered by importance (top‐to‐bottom). Each thin vertical stripe represents one patient; its horizontal position is that patient's SHAP value. Stripes right of zero (red) raise, and left of zero (blue) lower, the probability of achieving minimal clinically important differences (MCID); darker shades indicate stronger influence. HOS‐ADL, hip outcome score‐activities of daily living; iHOT‐12, international hip outcome tool‐12; mHHS, modified Harris Hip Score; VAS, visual analogue scale.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-5" orientation="portrait" xlink:href="JEO2-12-e70477-g002.jpg"><?image-name JEO2-12-e70477-g002.jpg?><?image-size 92792?><?image-md5 9e229437d2a5b8ab6964e8ff0ce66b71?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 718?><?image-original-width 1054?><?image-scaled-height 478?><?image-scaled-width 702?><?image-cloudpmc-urn urn:cdn:blobs/5bf6/12576341/9e229437d2a5/JEO2-12-e70477-g002.jpg?><?thumb-name JEO2-12-e70477-g002.gif?><?thumb-size 5709?><?thumb-md5 fe01d4e528b1e45971ba667aa786cc52?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 80?><?thumb-scaled-width 117?><?thumb-cloudpmc-urn urn:cdn:blobs/5bf6/12576341/fe01d4e528b1/JEO2-12-e70477-g002.gif?></graphic></fig></sec></sec><sec sec-type="discussion" id="jeo270477-sec-0200"><title>DISCUSSION</title><p>The most important finding of this study is that by applying ML methods, accurate personalised prediction models can be derived even from small single‐centre cohorts. Three ML prediction models were developed based on patient preoperative factors to predict the outcome of mixed‐type FAIS patients at least 2 years after hip arthroscopy. Among them, the RF ML model has the best performance, with an AUROC of 0.99 and a C‐index of 0.95. And preoperative mHHS, preoperative HOS‐ADL, preoperative mHHS and preoperative alpha angle were identified as the most influential factors affecting the attainment of MCID for mHHS, HOS‐ADL, iHOT12 and VAS scores, respectively.</p><p>The main clinical significance of this study is that it provides a strategy for the development and application of FAIS personalised prediction tools. By developing a centre‐specific ML prediction model, surgeons can accurately and reliably inform patients about the possibility of symptom improvement before the surgery. This not only helps patients make inquiries and participate in decision‐making, but also contributes to improving the cost‐effectiveness of FAIS treatment. Different from the traditional way that surgeons tell patients the general success rate of treatment based on traditional experience, this model can predict the postoperative outcome of patients individually according to the previous data of the centre. By applying this model, it is expected to reduce the proportion of patients undergoing unnecessary surgery. Based on individualised predictive analysis, it may even help hospitals better understand their own cost‐effectiveness and find ways to avoid unnecessary surgeries.</p><p>Compared with multicentre and large‐sample studies, the prediction model in this study significantly improves the prediction power and interpretability [<xref rid="jeo270477-bib-0021" ref-type="bibr">21</xref>, <xref rid="jeo270477-bib-0034" ref-type="bibr">34</xref>]. Pettit et al. [<xref rid="jeo270477-bib-0034" ref-type="bibr">34</xref>] developed and used a ML model for predicting MCID attainment in iHOT‐12 after hip arthroscopy based on 1917 patients from the UK's Non‐Arthroplasty Hip Registry. Despite the high quality of the study design and implementation, the AUROC showed that the accuracy of the five prediction models in predicting MCID at 6 months after surgery was fair or poor. The main reason for this is that less than 37% of FAIS patients in this sample data who underwent arthroscopy completed the defined primary outcome, limiting the data set for model development, and of these 37%, many had missing data on baseline patient variables. Martin et al. [<xref rid="jeo270477-bib-0021" ref-type="bibr">21</xref>] reported similar findings, they used 5581 patients from the Danish Hip Arthroscopy Registry to predict progression to revision arthroscopy after primary hip arthroscopy, and they concluded that their models had limited clinical utility due to wide discrimination confidence intervals. Perhaps the preferred approach would be to develop a predictive model with data from tens of thousands of patients that could potentially be broadly applicable and also have good accuracy in external data [<xref rid="jeo270477-bib-0008" ref-type="bibr">8</xref>]. However, it often requires complex, expensive data collection and sacrifices individualised accuracy. Surgeons in different centres are exposed to different patient characteristics and use different diagnostic criteria, imaging measurements, surgical techniques and postoperative rehabilitation techniques. Therefore, it is still recommended that each centre develop personalised prediction models based on its own clinical data.</p><p>Among the prediction models used in this study, LR and SVM are common models used for binary classification tasks in disease prognosis prediction. Introducing the RF model enriches predictive models and confirms its effectiveness, advancing FAIS prognosis prediction. This study pioneers the use of the SHAP method in FAIS prognostic research. The results highlight the importance of factors like patient age and imaging characteristics in surgical intervention effectiveness. SHAP enhances model interpretability, aiding clinical decision‐making. This study significantly improves both predictive capability and interpretability, contributing to FAIS prognostic research.</p><p>Among the preoperative patient characteristics, age, femoral head diameter, duration of symptoms, preoperative alpha angle and preoperative mHHS were found to influence the attainment of MCID for all PROs. Specifically, preoperative mHHS, preoperative HOS‐ADL, preoperative mHHS and preoperative alpha angle emerged as the most influential factors determining whether mHHS, HOS‐ADL, iHOT12 and VAS scores reached MCID, respectively. Previous studies have consistently demonstrated that younger age and shorter symptom duration are significantly associated with improved PROs [<xref rid="jeo270477-bib-0017" ref-type="bibr">17</xref>, <xref rid="jeo270477-bib-0020" ref-type="bibr">20</xref>, <xref rid="jeo270477-bib-0023" ref-type="bibr">23</xref>, <xref rid="jeo270477-bib-0025" ref-type="bibr">25</xref>]. Therefore, patients should pay attention to their symptoms and do not delay in seeking medical treatment. An increased alpha angle has generally been linked to poorer clinical outcomes in previous research [<xref rid="jeo270477-bib-0016" ref-type="bibr">16</xref>, <xref rid="jeo270477-bib-0041" ref-type="bibr">41</xref>]. In our study, both alpha angle and femoral head diameter emerged as important predictors of PROs, indicating that femur‐related factors exert a greater influence on MCID in imaging. The mHHS demonstrates a high predictive power for each PRO, underscoring its reliability as a hip evaluation tool applicable in clinical practice.</p><p>In this study, patients exhibited significant reductions in alpha angle (65.85 vs. 44.11, <italic toggle="yes">p</italic> &lt; 0.001) and LCEA (33.26 vs. 31.17, <italic toggle="yes">p</italic> &lt; 0.001) postoperatively. Prior studies have indicated that after cam resection, impingement typically ceases at an alpha angle of 42°–43° [<xref rid="jeo270477-bib-0005" ref-type="bibr">5</xref>, <xref rid="jeo270477-bib-0030" ref-type="bibr">30</xref>], consistent with the postoperative alpha angle observed in our study. The normal range of LCEA is generally considered to be 25°–35° [<xref rid="jeo270477-bib-0004" ref-type="bibr">4</xref>, <xref rid="jeo270477-bib-0029" ref-type="bibr">29</xref>], consistent with our findings. Previous follow‐up studies at 2 and 5 years after hip arthroscopy in patients with various types of FAIS patients have demonstrated favourable PROs, with younger age and shorter symptom duration associated with better outcomes [<xref rid="jeo270477-bib-0011" ref-type="bibr">11</xref>, <xref rid="jeo270477-bib-0020" ref-type="bibr">20</xref>, <xref rid="jeo270477-bib-0031" ref-type="bibr">31</xref>, <xref rid="jeo270477-bib-0043" ref-type="bibr">43</xref>]. In our study, patients with mixed FAIS similarly experienced significant improvements in PROs posthip arthroscopy, with the majority achieving PASS and MCID. These results are not only statistically significant but also clinically meaningful.</p><p>This study has several limitations. First, all patients were obtained from the single institution, which makes external validation difficult, and the results need to be interpreted with caution. Our models have high internal validity and may be accurate only in patients with mixed FAIS undergoing hip arthroscopy at our centre, as surgical techniques and imaging measurement details such as the alpha angle may have centre‐specific characteristics. Second, the limited number of available predictive factors constrains comprehensive analysis. For instance, the absence of information on patients' daily activity habits hinders understanding their potential impacts and providing targeted recommendations. Thirdly, sample imbalance may overestimate the model's performance, requiring careful interpretation of its classification capabilities. While the SMOTE algorithm aims to balance minority samples, its application may not fully reflect real‐world scenarios.</p></sec><sec sec-type="conclusions" id="jeo270477-sec-0210"><title>CONCLUSION</title><p>Three ML prediction models were developed to predict the outcomes of patients with mixed‐type FAIS after hip arthroscopy. Among them, RF performed best in predicting whether PROs reached MCID, demonstrating excellent discriminative ability, calibration and robustness. This indicates that individualised and robust ML prediction models for outcome prediction based on preoperative factors are feasible even with limited amounts of centre‐specific data. Surgeons can use the clinical data of their own centres to establish centre‐specific prediction models, so as to make accurate prediction of postoperative outcomes for their patients.</p></sec><sec id="jeo270477-sec-0220"><title>AUTHOR CONTRIBUTIONS</title><p>Conceptualisation was permormed by Gang Yang, Jiali Kang, Fan Hu and Xin Zhang. Material preparation, data collection and analysis were performed by Yin Pei, Dingge Liu, Zhihua Zhang, Kaiping Liu, Langran Wang, Xi Gong, Haijun Wang, Shuangshuang Deng, Ruijie Liu and Jiali Kang; The first draft of the manuscript was written by Gang Yang, Jiali Kang, Fan Hu, Xin Zhang and all authors commented on previous versions of the manuscript. All authors read and approved the final manuscript.</p></sec><sec sec-type="COI-statement" id="jeo270477-sec-0240"><title>CONFLICT OF INTEREST STATEMENT</title><p>The authors declare no conflict of interest.</p></sec><sec id="jeo270477-sec-0270"><title>ETHICS STATEMENT</title><p>Approval for the study was granted through the Peking University Third Hospital review board IRB (Number: M2019193).</p></sec></body><back><ack id="jeo270477-sec-0230"><title>ACKNOWLEDGEMENTS</title><p>This work was supported by National Natural Science Foundation of China (Grant Nos. 82172447, 82472459), Beijing Natural Science Foundation Haidian Joint Project (Grant No. 24L20439), Research and translational application of clinical characteristic diagnosis and treatment technologies in Beijing (Program No. Z22111000740000). During the preparation of this work the authors used ChatGPT 3.5 in order to improve language and readability. After using this tool, the authors reviewed and edited the content as needed and take full responsibility for the content of the publication.</p></ack><sec sec-type="data-availability" id="jeo270477-sec-0260"><title>DATA AVAILABILITY STATEMENT</title><p>The data that support the findings of this study are available from the corresponding author upon reasonable request.</p></sec><ref-list content-type="cited-references" id="jeo270477-bibl-0001"><title>REFERENCES</title><ref id="jeo270477-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="jeo270477-cit-0001">
+<string-name name-style="western">
+<surname>Beck</surname>
+<given-names>EC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nwachukwu</surname>
+<given-names>BU</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mehta</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jan</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Okoroha</surname>
+<given-names>KR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rasio</surname>
+<given-names>J</given-names>
+</string-name>, et al. <article-title>Defining meaningful functional improvement on the visual analog scale for satisfaction at 2 years after hip arthroscopy for femoroacetabular impingement syndrome</article-title>. <source>Arthrosc J Arthrosc Rel Surg</source>. <year>2020</year>;<volume>36</volume>:<fpage>734</fpage>–<lpage>742.e2</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arthro.2019.09.028</pub-id><pub-id pub-id-type="pmid">31735577</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="jeo270477-cit-0002">
+<string-name name-style="western">
+<surname>Beck</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kalhor</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Leunig</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ganz</surname>
+<given-names>R</given-names>
+</string-name>. <article-title>Hip morphology influences the pattern of damage to the acetabular cartilage: femoroacetabular impingement as a cause of early osteoarthritis of the hip</article-title>. <source>J Bone Jt Surg Br</source>. <year>2005</year>;<volume>87</volume>:<fpage>1012</fpage>–<lpage>1018</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1302/0301-620X.87B7.15203</pub-id><pub-id pub-id-type="pmid">15972923</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="jeo270477-cit-0003">
+<string-name name-style="western">
+<surname>Breiman</surname>
+<given-names>L</given-names>
+</string-name>. <article-title>Random forests</article-title>. <source>Mach Learn</source>. <year>2001</year>;<volume>45</volume>:<fpage>5</fpage>–<lpage>32</lpage>.</mixed-citation></ref><ref id="jeo270477-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="jeo270477-cit-0004">
+<string-name name-style="western">
+<surname>Casartelli</surname>
+<given-names>NC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Maffiuletti</surname>
+<given-names>NA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Valenzuela</surname>
+<given-names>PL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Grassi</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ferrari</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>van Buuren</surname>
+<given-names>MMA</given-names>
+</string-name>, et al. <article-title>Is hip morphology a risk factor for developing hip osteoarthritis? A systematic review with meta‐analysis</article-title>. <source>Osteoarthr Cartil</source>. <year>2021</year>;<volume>29</volume>:<fpage>1252</fpage>–<lpage>1264</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.joca.2021.06.007</pub-id><pub-id pub-id-type="pmid">34171473</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="jeo270477-cit-0005">
+<string-name name-style="western">
+<surname>Clohisy</surname>
+<given-names>JC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Carlisle</surname>
+<given-names>JC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Beaulé</surname>
+<given-names>PE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kim</surname>
+<given-names>YJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Trousdale</surname>
+<given-names>RT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sierra</surname>
+<given-names>RJ</given-names>
+</string-name>, et al. <article-title>A systematic approach to the plain radiographic evaluation of the young adult hip</article-title>. <source>J Bone Jt Surg</source>. <year>2008</year>;<volume>90</volume>(<issue>Suppl 4</issue>):<fpage>47</fpage>–<lpage>66</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.2106/JBJS.H.00756</pub-id><pub-id pub-id-type="pmcid">PMC2682767</pub-id><pub-id pub-id-type="pmid">18984718</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="jeo270477-cit-0006">
+<string-name name-style="western">
+<surname>Cortes</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vapnik</surname>
+<given-names>V</given-names>
+</string-name>. <article-title>Support‐vector networks</article-title>. <source>Mach Learn</source>. <year>1995</year>;<volume>20</volume>:<fpage>273</fpage>–<lpage>297</lpage>.</mixed-citation></ref><ref id="jeo270477-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="jeo270477-cit-0007">
+<string-name name-style="western">
+<surname>Ganz</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Parvizi</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Beck</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Leunig</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nötzli</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Siebenrock</surname>
+<given-names>KA</given-names>
+</string-name>. <article-title>Femoroacetabular impingement: a cause for osteoarthritis of the hip</article-title>. <source>Clin Orthop Rel Res</source>. <year>2003</year>;<volume>417</volume>:<fpage>112</fpage>–<lpage>120</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1097/01.blo.0000096804.78689.c2</pub-id><pub-id pub-id-type="pmid">14646708</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="jeo270477-cit-0008">
+<string-name name-style="western">
+<surname>Harris</surname>
+<given-names>JD</given-names>
+</string-name>. <article-title>Editorial commentary: artificial intelligence analysis of biomedical, large, clinical registry data using machine learning requires tens of thousands of subjects and a focus on substantial clinical benefit: minimal clinically important difference is too low a bar</article-title>. <source>Arthrosc J Arthrosc Rel Surg</source>. <year>2024</year>;<volume>40</volume>:<fpage>1164</fpage>–<lpage>1167</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arthro.2023.10.035</pub-id><pub-id pub-id-type="pmid">38219135</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="jeo270477-cit-0009">
+<string-name name-style="western">
+<surname>Harris</surname>
+<given-names>JD</given-names>
+</string-name>. <article-title>Editorial commentary: personalized hip arthroscopy outcome prediction using machine learning‐the future is here</article-title>. <source>Arthrosc J Arthrosc Rel Surg</source>. <year>2021</year>;<volume>37</volume>:<fpage>1498</fpage>–<lpage>1502</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arthro.2021.02.032</pub-id><pub-id pub-id-type="pmid">33896503</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="jeo270477-cit-0010">
+<string-name name-style="western">
+<surname>Hu</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Xu</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jiang</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mao</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Feng</surname>
+<given-names>L</given-names>
+</string-name>, et al. <article-title>Identification and validation of an explainable prediction model of acute kidney injury with prognostic implications in critically ill children: a prospective multicenter cohort study</article-title>. <source>EClinicalMedicine</source>. <year>2024</year>;<volume>68</volume>:<elocation-id>102409</elocation-id>.<pub-id pub-id-type="pmid">38273888</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.eclinm.2023.102409</pub-id><pub-id pub-id-type="pmcid">PMC10809096</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="jeo270477-cit-0011">
+<string-name name-style="western">
+<surname>Huang</surname>
+<given-names>HJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dang</surname>
+<given-names>HH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mamtimin</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yang</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>JQ</given-names>
+</string-name>. <article-title>Hip arthroscopy for femoroacetabular impingement syndrome shows good outcomes and low revision rates, with young age and low postoperative pain score predicting excellent 5‐year outcomes</article-title>. <source>Arthrosc J Arthrosc Rel Surg</source>. <year>2023</year>;<volume>39</volume>:<fpage>285</fpage>–<lpage>292</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arthro.2022.03.024</pub-id><pub-id pub-id-type="pmid">35367300</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="jeo270477-cit-0012">
+<string-name name-style="western">
+<surname>Khanduja</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Villar</surname>
+<given-names>RN</given-names>
+</string-name>. <article-title>The arthroscopic management of femoroacetabular impingement</article-title>. <source>Knee Surg Sports Traumatol Arthrosc</source>. <year>2007</year>;<volume>15</volume>:<fpage>1035</fpage>–<lpage>1040</lpage>.<pub-id pub-id-type="pmid">17534600</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00167-007-0319-7</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="jeo270477-cit-0013">
+<string-name name-style="western">
+<surname>Khanduja</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Villar</surname>
+<given-names>RN</given-names>
+</string-name>. <article-title>Arthroscopic surgery of the hip: current concepts and recent advances</article-title>. <source>J Bone Jt Surg Br</source>. <year>2006</year>;<volume>88</volume>:<fpage>1557</fpage>–<lpage>1566</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1302/0301-620X.88B12.18584</pub-id><pub-id pub-id-type="pmid">17159164</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="jeo270477-cit-0014">
+<string-name name-style="western">
+<surname>Khor</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lavallee</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cizik</surname>
+<given-names>AM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bellabarba</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chapman</surname>
+<given-names>JR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Howe</surname>
+<given-names>CR</given-names>
+</string-name>, et al. <article-title>Development and validation of a prediction model for pain and functional outcomes after lumbar spine surgery</article-title>. <source>JAMA Surg</source>. <year>2018</year>;<volume>153</volume>:<fpage>634</fpage>–<lpage>642</lpage>.<pub-id pub-id-type="pmid">29516096</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1001/jamasurg.2018.0072</pub-id><pub-id pub-id-type="pmcid">PMC5875305</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="jeo270477-cit-0015">
+<string-name name-style="western">
+<surname>Kunze</surname>
+<given-names>KN</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Polce</surname>
+<given-names>EM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Clapp</surname>
+<given-names>IM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Alter</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nho</surname>
+<given-names>SJ</given-names>
+</string-name>. <article-title>Association between preoperative patient factors and clinically meaningful outcomes after hip arthroscopy for femoroacetabular impingement syndrome: a machine learning analysis</article-title>. <source>Am J Sports Med</source>. <year>2022</year>;<volume>50</volume>:<fpage>746</fpage>–<lpage>756</lpage>.<pub-id pub-id-type="pmid">35006010</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/03635465211067546</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="jeo270477-cit-0016">
+<string-name name-style="western">
+<surname>Lansdown</surname>
+<given-names>DA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kunze</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ukwuani</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Waterman</surname>
+<given-names>BR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nho</surname>
+<given-names>SJ</given-names>
+</string-name>. <article-title>The importance of comprehensive cam correction: radiographic parameters are predictive of patient‐reported outcome measures at 2 years after hip arthroscopy</article-title>. <source>Am J Sports Med</source>. <year>2018</year>;<volume>46</volume>:<fpage>2072</fpage>–<lpage>2078</lpage>.<pub-id pub-id-type="pmid">29927617</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/0363546518780311</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="jeo270477-cit-0017">
+<string-name name-style="western">
+<surname>Levy</surname>
+<given-names>DM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kuhns</surname>
+<given-names>BD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chahal</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Philippon</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kelly</surname>
+<given-names>BT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nho</surname>
+<given-names>SJ</given-names>
+</string-name>. <article-title>Hip arthroscopy outcomes with respect to patient acceptable symptomatic state and minimal clinically important difference</article-title>. <source>Arthrosc J Arthrosc Rel Surg</source>. <year>2016</year>;<volume>32</volume>:<fpage>1877</fpage>–<lpage>1886</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arthro.2016.05.014</pub-id><pub-id pub-id-type="pmid">27324968</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="jeo270477-cit-0018">
+<string-name name-style="western">
+<surname>Lewin‐Epstein</surname>
+<given-names>O</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Baruch</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hadany</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Stein</surname>
+<given-names>GY</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Obolski</surname>
+<given-names>U</given-names>
+</string-name>. <article-title>Predicting antibiotic resistance in hospitalized patients by applying machine learning to electronic medical records</article-title>. <source>Clin Infect Dis</source>. <year>2021</year>;<volume>72</volume>:<fpage>e848</fpage>–<lpage>e855</lpage>.<pub-id pub-id-type="pmid">33070171</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/cid/ciaa1576</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0019"><label>19</label><mixed-citation publication-type="miscellaneous" id="jeo270477-cit-0019">
+<string-name name-style="western">
+<surname>Lundberg</surname>
+<given-names>SM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lee</surname>
+<given-names>SI</given-names>
+</string-name>. A unified approach to interpreting model predictions. <year>2017</year>. <italic toggle="yes">ArXiv</italic>. <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://arxiv.org/abs/1705.07874" ext-link-type="uri">https://arxiv.org/abs/1705.07874</ext-link>.</mixed-citation></ref><ref id="jeo270477-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="jeo270477-cit-0020">
+<string-name name-style="western">
+<surname>Maimaitimin</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yang</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Huang</surname>
+<given-names>HJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Xu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ao</surname>
+<given-names>Y</given-names>
+</string-name>, et al. <article-title>Outcomes after hip arthroscopy for femoroacetabular impingement syndrome in chinese patients: a minimum 2‐year follow‐up study</article-title>. <source>Orthop J Sports Med</source>. <year>2022</year>;<volume>10</volume>:<elocation-id>23259671221135218</elocation-id>.<pub-id pub-id-type="pmid">36458109</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/23259671221135218</pub-id><pub-id pub-id-type="pmcid">PMC9706056</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="jeo270477-cit-0021">
+<string-name name-style="western">
+<surname>Martin</surname>
+<given-names>RK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wastvedt</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lange</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pareek</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wolfson</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lund</surname>
+<given-names>B</given-names>
+</string-name>. <article-title>Limited clinical utility of a machine learning revision prediction model based on a national hip arthroscopy registry</article-title>. <source>Knee Surg Sports Traumatol Arthrosc</source>. <year>2023</year>;<volume>31</volume>:<fpage>2079</fpage>–<lpage>2089</lpage>.<pub-id pub-id-type="pmid">35947158</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00167-022-07054-8</pub-id><pub-id pub-id-type="pmcid">PMC10183422</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="jeo270477-cit-0022">
+<string-name name-style="western">
+<surname>Martin</surname>
+<given-names>RL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kivlan</surname>
+<given-names>BR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Christoforetti</surname>
+<given-names>JJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wolff</surname>
+<given-names>AB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nho</surname>
+<given-names>SJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Salvo</surname>
+<suffix>Jr.</suffix>
+<given-names>JP</given-names>
+</string-name>, et al. <article-title>Defining variations in outcomes of hip arthroscopy for femoroacetabular impingement using the 12‐item international hip outcome tool (iHOT‐12)</article-title>. <source>Am J Sports Med</source>. <year>2020</year>;<volume>48</volume>:<fpage>1175</fpage>–<lpage>1180</lpage>.<pub-id pub-id-type="pmid">32130022</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/0363546520906408</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="jeo270477-cit-0023">
+<string-name name-style="western">
+<surname>McCormick</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nwachukwu</surname>
+<given-names>BU</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Alpaugh</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Martin</surname>
+<given-names>SD</given-names>
+</string-name>. <article-title>Predictors of hip arthroscopy outcomes for labral tears at minimum 2‐year follow‐up: the influence of age and arthritis</article-title>. <source>Arthrosc J Arthrosc Rel Surg</source>. <year>2012</year>;<volume>28</volume>:<fpage>1359</fpage>–<lpage>1364</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arthro.2012.04.059</pub-id><pub-id pub-id-type="pmid">22906757</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="jeo270477-cit-0024">
+<string-name name-style="western">
+<surname>Mullins</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Filan</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Carton</surname>
+<given-names>P</given-names>
+</string-name>. <article-title>Early MCID achievement is associated with better long‐term outcomes following arthroscopy for femoroacetabular impingement</article-title>. <source>Knee Surg Sports Traumatol Arthrosc</source>. <year>2025</year>;<volume>33</volume>:<fpage>2633</fpage>–<lpage>2641</lpage>.<pub-id pub-id-type="pmid">40387164</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/ksa.12695</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="jeo270477-cit-0025">
+<string-name name-style="western">
+<surname>Mullins</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Filan</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Carton</surname>
+<given-names>P</given-names>
+</string-name>. <article-title>High survivorship and excellent 5‐year outcomes in patients older than 40 years undergoing arthroscopy for femoroacetabular impingement</article-title>. <source>Knee Surg Sports Traumatol Arthrosc</source>. <year>2023</year>;<volume>31</volume>:<fpage>2123</fpage>–<lpage>2130</lpage>.<pub-id pub-id-type="pmid">36912924</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00167-023-07369-0</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="jeo270477-cit-0026">
+<string-name name-style="western">
+<surname>Musielak</surname>
+<given-names>BJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kubicka</surname>
+<given-names>AM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Woźniak</surname>
+<given-names>Ł</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jóźwiak</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>RW</given-names>
+</string-name>. <article-title>Is cam morphology found in ancient and medieval populations in addition to modern populations?</article-title>
+<source>Clin Orthop Rel Res</source>. <year>2021</year>;<volume>479</volume>:<fpage>1830</fpage>–<lpage>1838</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1097/CORR.0000000000001771</pub-id><pub-id pub-id-type="pmcid">PMC8277248</pub-id><pub-id pub-id-type="pmid">33930002</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="jeo270477-cit-0027">
+<string-name name-style="western">
+<surname>Napierała</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Stefanowski</surname>
+<given-names>J</given-names>
+</string-name>. <article-title>Addressing imbalanced data with argument based rule learning</article-title>. <source>Expert Syst Appl</source>. <year>2015</year>;<volume>42</volume>:<fpage>9468</fpage>–<lpage>9481</lpage>.</mixed-citation></ref><ref id="jeo270477-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="jeo270477-cit-0028">
+<string-name name-style="western">
+<surname>Nelder</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wedderburn</surname>
+<given-names>RWM</given-names>
+</string-name>. <article-title>Generalized linear models</article-title>. <source>J R Stat Soc Ser A</source>. <year>1972</year>;<volume>135</volume>:<elocation-id>370+</elocation-id>.</mixed-citation></ref><ref id="jeo270477-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="jeo270477-cit-0029">
+<string-name name-style="western">
+<surname>Nepple</surname>
+<given-names>JJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Brophy</surname>
+<given-names>RH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Matava</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wright</surname>
+<given-names>RW</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Clohisy</surname>
+<given-names>JC</given-names>
+</string-name>. <article-title>Radiographic findings of femoroacetabular impingement in National Football League Combine athletes undergoing radiographs for previous hip or groin pain</article-title>. <source>Arthrosc J Arthrosc Rel Surg</source>. <year>2012</year>;<volume>28</volume>:<fpage>1396</fpage>–<lpage>1403</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arthro.2012.03.005</pub-id><pub-id pub-id-type="pmid">22698961</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="jeo270477-cit-0030">
+<string-name name-style="western">
+<surname>Neumann</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cui</surname>
+<given-names>Q</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Siebenrock</surname>
+<given-names>KA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Beck</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>Impingement‐free hip motion: the ‘normal’ angle alpha after osteochondroplasty</article-title>. <source>Clin Orthop Rel Res</source>. <year>2009</year>;<volume>467</volume>:<fpage>699</fpage>–<lpage>703</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s11999-008-0616-6</pub-id><pub-id pub-id-type="pmcid">PMC2635435</pub-id><pub-id pub-id-type="pmid">19018605</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="jeo270477-cit-0031">
+<string-name name-style="western">
+<surname>Nikou</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sandlund</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lindman</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Johansson</surname>
+<given-names>PE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Öhlin</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Karlsson</surname>
+<given-names>L</given-names>
+</string-name>, et al. <article-title>Ten‐year outcomes of hip arthroscopy for femoroacetabular impingement with osteoarthritis: sustained functional benefits but high conversion to total hip arthroplasty</article-title>. <source>Knee Surg Sports Traumatol Arthrosc</source>. <year>2025</year>;<volume>33</volume>:<fpage>2655</fpage>–<lpage>2663</lpage>.<pub-id pub-id-type="pmid">40420819</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/ksa.12709</pub-id><pub-id pub-id-type="pmcid">PMC12205409</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="jeo270477-cit-0032">
+<string-name name-style="western">
+<surname>Nikou</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sturesson</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lindman</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Karlsson</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Öhlin</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Senorski</surname>
+<given-names>EH</given-names>
+</string-name>, et al. <article-title>Arthroscopic treatment for femoroacetabular impingement yields favourable patient‐reported outcomes and method survivorship at 10‐year follow‐up</article-title>. <source>Knee Surg Sports Traumatol Arthrosc</source>. <year>2025</year>;<volume>33</volume>:<fpage>1104</fpage>–<lpage>1111</lpage>.<pub-id pub-id-type="pmid">39435605</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/ksa.12511</pub-id><pub-id pub-id-type="pmcid">PMC11848980</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="jeo270477-cit-0033">
+<string-name name-style="western">
+<surname>Nwachukwu</surname>
+<given-names>BU</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Beck</surname>
+<given-names>EC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kunze</surname>
+<given-names>KN</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chahla</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rasio</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nho</surname>
+<given-names>SJ</given-names>
+</string-name>. <article-title>Defining the clinically meaningful outcomes for arthroscopic treatment of femoroacetabular impingement syndrome at minimum 5‐year follow‐up</article-title>. <source>Am J Sports Med</source>. <year>2020</year>;<volume>48</volume>:<fpage>901</fpage>–<lpage>907</lpage>.<pub-id pub-id-type="pmid">32167843</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/0363546520902736</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0034"><label>34</label><mixed-citation publication-type="journal" id="jeo270477-cit-0034">
+<string-name name-style="western">
+<surname>Pettit</surname>
+<given-names>MH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hickman</surname>
+<given-names>SHM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Malviya</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Khanduja</surname>
+<given-names>V</given-names>
+</string-name>. <article-title>Development of machine‐learning algorithms to predict attainment of minimal clinically important difference after hip arthroscopy for femoroacetabular impingement yield fair performance and limited clinical utility</article-title>. <source>Arthrosc J Arthrosc Rel Surg</source>. <year>2024</year>;<volume>40</volume>:<fpage>1153</fpage>–<lpage>1163.e2</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arthro.2023.09.023</pub-id><pub-id pub-id-type="pmid">37816399</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0035"><label>35</label><mixed-citation publication-type="book" id="jeo270477-cit-0035">
+<string-name name-style="western">
+<surname>Pirjatullah</surname>
+<given-names>KD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nugrahadi</surname>
+<given-names>DT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Muliadi</surname>
+<given-names>FA</given-names>
+</string-name>. <part-title>Hyperparameter tuning using gridsearchCV on the comparison of the activation function of the ELM method to the classification of pneumonia in toddlers</part-title>. <source>2021 4th International Conference of Computer and Informatics Engineering (IC2IE)</source>. <year>2021</year>:<fpage>390</fpage>–<lpage>395</lpage>.</mixed-citation></ref><ref id="jeo270477-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="jeo270477-cit-0036">
+<string-name name-style="western">
+<surname>Punnoose</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Claydon‐Mueller</surname>
+<given-names>LS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Weiss</surname>
+<given-names>O</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rushton</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Khanduja</surname>
+<given-names>V</given-names>
+</string-name>. <article-title>Prehabilitation for patients undergoing orthopedic surgery: a systematic review and meta‐analysis</article-title>. <source>JAMA Netw Open</source>. <year>2023</year>;<volume>6</volume>:<elocation-id>e238050</elocation-id>.<pub-id pub-id-type="pmid">37052919</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1001/jamanetworkopen.2023.8050</pub-id><pub-id pub-id-type="pmcid">PMC10102876</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="jeo270477-cit-0037">
+<string-name name-style="western">
+<surname>Reid</surname>
+<given-names>GD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Reid</surname>
+<given-names>CG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Widmer</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Munk</surname>
+<given-names>PL</given-names>
+</string-name>. <article-title>Femoroacetabular impingement syndrome: an underrecognized cause of hip pain and premature osteoarthritis?</article-title>
+<source>J Rheumatol</source>. <year>2010</year>;<volume>37</volume>:<fpage>1395</fpage>–<lpage>1404</lpage>.<pub-id pub-id-type="pmid">20516017</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3899/jrheum.091186</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="jeo270477-cit-0038">
+<string-name name-style="western">
+<surname>Remeseiro</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bolon‐Canedo</surname>
+<given-names>V</given-names>
+</string-name>. <article-title>A review of feature selection methods in medical applications</article-title>. <source>Comput Biol Med</source>. <year>2019</year>;<volume>112</volume>:<elocation-id>103375</elocation-id>.<pub-id pub-id-type="pmid">31382212</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.compbiomed.2019.103375</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="jeo270477-cit-0039">
+<string-name name-style="western">
+<surname>Senders</surname>
+<given-names>JT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Arnaout</surname>
+<given-names>O</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Karhade</surname>
+<given-names>AV</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dasenbrock</surname>
+<given-names>HH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gormley</surname>
+<given-names>WB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Broekman</surname>
+<given-names>ML</given-names>
+</string-name>, et al. <article-title>Natural and artificial intelligence in neurosurgery: a systematic review</article-title>. <source>Neurosurgery</source>. <year>2018</year>;<volume>83</volume>:<fpage>181</fpage>–<lpage>192</lpage>.<pub-id pub-id-type="pmid">28945910</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/neuros/nyx384</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="jeo270477-cit-0040">
+<string-name name-style="western">
+<surname>Shankar</surname>
+<given-names>DS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bi</surname>
+<given-names>AS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lan</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Buzin</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Youm</surname>
+<given-names>T</given-names>
+</string-name>. <article-title>Reprint of: class i obesity delays achievement of patient‐acceptable symptom state but not minimum clinically important difference or substantial clinical benefit after primary hip arthroscopy for femoroacetabular impingement syndrome</article-title>. <source>Arthrosc J Arthrosc Rel Surg</source>. <year>2023</year>;<volume>39</volume>:<fpage>1971</fpage>–<lpage>1979</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arthro.2023.06.028</pub-id><pub-id pub-id-type="pmid">37543382</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0041"><label>41</label><mixed-citation publication-type="journal" id="jeo270477-cit-0041">
+<string-name name-style="western">
+<surname>Stone</surname>
+<given-names>AV</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Beck</surname>
+<given-names>EC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Malloy</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chahla</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nwachukwu</surname>
+<given-names>BU</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Neal</surname>
+<given-names>WH</given-names>
+</string-name>, et al. <article-title>Preoperative predictors of achieving clinically significant athletic functional status after hip arthroscopy for femoroacetabular impingement at minimum 2‐year follow‐up</article-title>. <source>Arthrosc J Arthrosc Rel Surg</source>. <year>2019</year>;<volume>35</volume>:<fpage>3049</fpage>–<lpage>3056.e1</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arthro.2019.05.022</pub-id><pub-id pub-id-type="pmid">31395395</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="jeo270477-cit-0042">
+<string-name name-style="western">
+<surname>Tönnis</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Heinecke</surname>
+<given-names>A</given-names>
+</string-name>. <article-title>Current concepts review ‐ acetabular and femoral anteversion: relationship with osteoarthritis of the hip*</article-title>. <source>J Bone Jt Surg</source>. <year>1999</year>;<volume>81</volume>:<fpage>1747</fpage>–<lpage>1770</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.2106/00004623-199912000-00014</pub-id><pub-id pub-id-type="pmid">10608388</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0043"><label>43</label><mixed-citation publication-type="journal" id="jeo270477-cit-0043">
+<string-name name-style="western">
+<surname>Uzun</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ferrer‐Rivero</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lizano</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cabello</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gürsu</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pons</surname>
+<given-names>MT</given-names>
+</string-name>. <article-title>High satisfaction and low conversion rate to total hip arthroplasty after hip arthroscopy for femoroacetabular impingement syndrome and risk factors affecting survival at long‐term follow‐up</article-title>. <source>Knee Surg Sports Traumatol Arthrosc</source>. <year>2025</year>;<volume>33</volume>:<fpage>1507</fpage>–<lpage>1514</lpage>.<pub-id pub-id-type="pmid">39749742</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/ksa.12563</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0044"><label>44</label><mixed-citation publication-type="journal" id="jeo270477-cit-0044">
+<string-name name-style="western">
+<surname>Vogel</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wright‐Chisem</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Alvero</surname>
+<given-names>AB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chan</surname>
+<given-names>JJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chapman</surname>
+<given-names>RS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nho</surname>
+<given-names>SJ</given-names>
+</string-name>. <article-title>The promising 2‐year performance of the patient‐reported outcomes measurement information system in primary hip arthroscopy for femoroacetabular impingement syndrome</article-title>. <source>Am J Sports Med</source>. <year>2024</year>;<volume>52</volume>:<fpage>998</fpage>–<lpage>1004</lpage>.<pub-id pub-id-type="pmid">38353059</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/03635465241227181</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0045"><label>45</label><mixed-citation publication-type="journal" id="jeo270477-cit-0045">
+<string-name name-style="western">
+<surname>Yamada</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jitkrittum</surname>
+<given-names>W</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sigal</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Xing</surname>
+<given-names>EP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sugiyama</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>High‐dimensional feature selection by feature‐wise kernelized Lasso</article-title>. <source>Neural Comput</source>. <year>2014</year>;<volume>26</volume>:<fpage>185</fpage>–<lpage>207</lpage>.<pub-id pub-id-type="pmid">24102126</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1162/NECO_a_00537</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0046"><label>46</label><mixed-citation publication-type="journal" id="jeo270477-cit-0046">
+<string-name name-style="western">
+<surname>Yang</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mamtimin</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Duan</surname>
+<given-names>YP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sun</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Xu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>X</given-names>
+</string-name>, et al. <article-title>Volume of gluteus maximus and minimus increases after hip arthroscopy for femoroacetabular impingement syndrome</article-title>. <source>Arthrosc J Arthrosc Rel Surg</source>. <year>2021</year>;<volume>37</volume>:<fpage>862</fpage>–<lpage>870</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arthro.2020.10.049</pub-id><pub-id pub-id-type="pmid">33524479</pub-id></mixed-citation></ref><ref id="jeo270477-bib-0047"><label>47</label><mixed-citation publication-type="journal" id="jeo270477-cit-0047">
+<string-name name-style="western">
+<surname>Zhou</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Melugin</surname>
+<given-names>HP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hale</surname>
+<given-names>RF</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Leland</surname>
+<given-names>DP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bernard</surname>
+<given-names>CD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Levy</surname>
+<given-names>BA</given-names>
+</string-name>, et al. <article-title>The prevalence of radiographic findings of structural hip deformities for femoroacetabular impingement in patients with hip pain</article-title>. <source>Am J Sports Med</source>. <year>2020</year>;<volume>48</volume>:<fpage>647</fpage>–<lpage>653</lpage>.<pub-id pub-id-type="pmid">31922893</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/0363546519896355</pub-id></mixed-citation></ref></ref-list></back></article>

@@ -1,0 +1,606 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          23
+        ]
+      ],
+      "date-time": "2026-08-23T16:14:30Z",
+      "timestamp": 1787501670938,
+      "version": "build-2736575974"
+    },
+    "reference-count": 24,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              11,
+              28
+            ]
+          ],
+          "date-time": "2023-11-28T00:00:00Z",
+          "timestamp": 1701129600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              11,
+              28
+            ]
+          ],
+          "date-time": "2023-11-28T00:00:00Z",
+          "timestamp": 1701129600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100005626",
+        "name": "Universität Regensburg",
+        "doi-asserted-by": "crossref",
+        "id": [
+          {
+            "id": "10.13039/501100005626",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J Orthop Traumatol"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Background</jats:title>\n                    <jats:p>The spread of artificial intelligence (AI) has led to transformative advancements in diverse sectors, including healthcare. Specifically, generative writing systems have shown potential in various applications, but their effectiveness in clinical settings has been barely investigated. In this context, we evaluated the proficiency of ChatGPT-4 in diagnosing gonarthrosis and coxarthrosis and recommending appropriate treatments compared with orthopaedic specialists.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>A retrospective review was conducted using anonymized medical records of 100 patients previously diagnosed with either knee or hip arthrosis. ChatGPT-4 was employed to analyse these historical records, formulating both a diagnosis and potential treatment suggestions. Subsequently, a comparative analysis was conducted to assess the concordance between the AI’s conclusions and the original clinical decisions made by the physicians.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>\n                      In diagnostic evaluations, ChatGPT-4 consistently aligned with the conclusions previously drawn by physicians. In terms of treatment recommendations, there was an 83% agreement between the AI and orthopaedic specialists. The therapeutic concordance was verified by the calculation of a Cohen’s Kappa coefficient of 0.580 (\n                      <jats:italic>p</jats:italic>\n                       &lt; 0.001). This indicates a moderate-to-good level of agreement. In recommendations pertaining to surgical treatment, the AI demonstrated a sensitivity and specificity of 78% and 80%, respectively. Multivariable logistic regression demonstrated that the variables reduced quality of life (OR 49.97,\n                      <jats:italic>p</jats:italic>\n                       &lt; 0.001) and start-up pain (OR 12.54,\n                      <jats:italic>p</jats:italic>\n                       = 0.028) have an influence on ChatGPT-4’s recommendation for a surgery.\n                    </jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusion</jats:title>\n                    <jats:p>This study emphasises ChatGPT-4’s notable potential in diagnosing conditions such as gonarthrosis and coxarthrosis and in aligning its treatment recommendations with those of orthopaedic specialists. However, it is crucial to acknowledge that AI tools such as ChatGPT-4 are not meant to replace the nuanced expertise and clinical judgment of seasoned orthopaedic surgeons, particularly in complex decision-making scenarios regarding treatment indications. Due to the exploratory nature of the study, further research with larger patient populations and more complex diagnoses is necessary to validate the findings and explore the broader potential of AI in healthcare.</jats:p>\n                    <jats:p>\n                      <jats:italic>Level of Evidence</jats:italic>\n                      : Level III evidence.\n                    </jats:p>\n                  </jats:sec>",
+    "DOI": "10.1186/s10195-023-00740-4",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          28
+        ]
+      ],
+      "date-time": "2023-11-28T11:02:58Z",
+      "timestamp": 1701169378000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 45,
+    "title": [
+      "Arthrosis diagnosis and treatment recommendations in clinical practice: an exploratory investigation with the generative AI model GPT-4"
+    ],
+    "prefix": "10.1186",
+    "volume": "24",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0006-6721-7564",
+        "authenticated-orcid": false,
+        "given": "Stefano",
+        "family": "Pagano",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sabrina",
+        "family": "Holzapfel",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tobias",
+        "family": "Kappenschneider",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Matthias",
+        "family": "Meyer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Günther",
+        "family": "Maderbacher",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Joachim",
+        "family": "Grifka",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dominik Emanuel",
+        "family": "Holzapfel",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          28
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "740_CR1",
+        "doi-asserted-by": "publisher",
+        "unstructured": "OpenAI (2023) PREPRINT GPT-4 Technical report (arXiv:2303.08774). arXiv. https://doi.org/10.48550/arXiv.2303.08774",
+        "DOI": "10.48550/arXiv.2303.08774"
+      },
+      {
+        "key": "740_CR2",
+        "unstructured": "Eloundou T, Manning S, Mishkin P, Rock D (2023) PREPRINT GPTs are GPTs: an early look at the labor market impact potential of large language models (arXiv:2303.10130). arXiv. http://arxiv.org/abs/2303.10130"
+      },
+      {
+        "issue": "5",
+        "key": "740_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "868",
+        "DOI": "10.1007/s10439-023-03172-7",
+        "volume": "51",
+        "author": "SS Biswas",
+        "year": "2023",
+        "unstructured": "Biswas SS (2023) Role of chat GPT in public health. Ann Biomed Eng 51(5):868–869. https://doi.org/10.1007/s10439-023-03172-7",
+        "journal-title": "Ann Biomed Eng"
+      },
+      {
+        "issue": "2",
+        "key": "740_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "e32875",
+        "DOI": "10.2196/32875",
+        "volume": "10",
+        "author": "E Sezgin",
+        "year": "2022",
+        "unstructured": "Sezgin E, Sirrianni J, Linwood SL (2022) Operationalizing and implementing pretrained, large artificial intelligence linguistic models in the US health care system: outlook of generative pretrained transformer 3 (GPT-3) as a service model. JMIR Med Inform 10(2):e32875. https://doi.org/10.2196/32875",
+        "journal-title": "JMIR Med Inform"
+      },
+      {
+        "key": "740_CR5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/JS9.0000000000000521",
+        "author": "K Cheng",
+        "year": "2023",
+        "unstructured": "Cheng K, Wu C, Gu S, Lu Y, Wu H, Li C (2023) WHO declares end of COVID-19 global health emergency: lessons and recommendations from the perspective of ChatGPT/GPT-4. Int J Surg (London, England). https://doi.org/10.1097/JS9.0000000000000521",
+        "journal-title": "Int J Surg (London, England)"
+      },
+      {
+        "issue": "6",
+        "key": "740_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "887",
+        "DOI": "10.3390/healthcare11060887",
+        "volume": "11",
+        "author": "M Sallam",
+        "year": "2023",
+        "unstructured": "Sallam M (2023) ChatGPT utility in healthcare education, research, and practice: systematic review on the promising perspectives and valid concerns. Healthcare (Basel, Switzerland) 11(6):887. https://doi.org/10.3390/healthcare11060887",
+        "journal-title": "Healthcare (Basel, Switzerland)"
+      },
+      {
+        "key": "740_CR7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2023.08.043",
+        "author": "S Padash",
+        "year": "2023",
+        "unstructured": "Padash S, Mickley JP, Vera-Garcia DV, Nugen F, Khosravi B, Erickson BJ, Wyles CC, Taunton MJ (2023) An overview of machine learning in orthopedic surgery: an educational paper. J Arthroplasty. https://doi.org/10.1016/j.arth.2023.08.043",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "740_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "205520762311840",
+        "DOI": "10.1177/20552076231184048",
+        "volume": "9",
+        "author": "Z Li",
+        "year": "2023",
+        "unstructured": "Li Z, Maimaiti Z, Fu J, Chen JY, Xu C (2023) Global research landscape on artificial intelligence in arthroplasty: a bibliometric analysis. Digital health 9:20552076231184050. https://doi.org/10.1177/20552076231184048",
+        "journal-title": "Digital health"
+      },
+      {
+        "key": "740_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "373",
+        "DOI": "10.3238/arztebl.m2023.0113",
+        "volume": "120",
+        "author": "LB Jung",
+        "year": "2023",
+        "unstructured": "Jung LB, Gudera JA, Wiegand TLT, Allmendinger S, Dimitriadis K, Koerte IK (2023) ChatGPT passes German state examination in medicine with picture questions omitted. Dtsch Arztebl Int 120:373–374. https://doi.org/10.3238/arztebl.m2023.0113",
+        "journal-title": "Dtsch Arztebl Int"
+      },
+      {
+        "issue": "2",
+        "key": "740_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "e0000198",
+        "DOI": "10.1371/journal.pdig.0000198",
+        "volume": "2",
+        "author": "TH Kung",
+        "year": "2023",
+        "unstructured": "Kung TH, Cheatham M, Medenilla A, Sillos C, De Leon L, Elepaño C, Madriaga M, Aggabao R, Diaz-Candido G, Maningo J, Tseng V (2023) Performance of ChatGPT on USMLE: Potential for AI-assisted medical education using large language models. PLOS Digit Health 2(2):e0000198. https://doi.org/10.1371/journal.pdig.0000198",
+        "journal-title": "PLOS Digit Health"
+      },
+      {
+        "issue": "7",
+        "key": "740_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "1366",
+        "DOI": "10.1007/s10439-023-03207-z",
+        "volume": "51",
+        "author": "K Cheng",
+        "year": "2023",
+        "unstructured": "Cheng K, Li Z, Li C, Xie R, Guo Q, He Y, Wu H (2023) The potential of GPT-4 as an AI-powered virtual assistant for surgeons specialized in joint arthroplasty. Ann Biomed Eng 51(7):1366–1370. https://doi.org/10.1007/s10439-023-03207-z",
+        "journal-title": "Ann Biomed Eng"
+      },
+      {
+        "issue": "7",
+        "key": "740_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "1323",
+        "DOI": "10.1136/annrheumdis-2013-204763",
+        "volume": "73",
+        "author": "M Cross",
+        "year": "2014",
+        "unstructured": "Cross M, Smith E, Hoy D, Nolte S, Ackerman I, Fransen M, Bridgett L, Williams S, Guillemin F, Hill CL, Laslett LL, Jones G, Cicuttini F, Osborne R, Vos T, Buchbinder R, Woolf A, March L (2014) The global burden of hip and knee osteoarthritis: estimates from the global burden of disease 2010 study. Ann Rheum Dis 73(7):1323–1330. https://doi.org/10.1136/annrheumdis-2013-204763",
+        "journal-title": "Ann Rheum Dis"
+      },
+      {
+        "issue": "4",
+        "key": "740_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "494",
+        "DOI": "10.1136/ard.16.4.494",
+        "volume": "16",
+        "author": "JH Kellgren",
+        "year": "1957",
+        "unstructured": "Kellgren JH, Lawrence JS (1957) Radiological assessment of osteo-arthrosis. Ann Rheum Dis 16(4):494–502. https://doi.org/10.1136/ard.16.4.494",
+        "journal-title": "Ann Rheum Dis"
+      },
+      {
+        "issue": "2",
+        "key": "740_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "155",
+        "DOI": "10.1016/j.jcm.2016.02.012",
+        "volume": "15",
+        "author": "TK Koo",
+        "year": "2016",
+        "unstructured": "Koo TK, Li MY (2016) A guideline of selecting and reporting intraclass correlation coefficients for reliability research. J Chiropr Med 15(2):155–163. https://doi.org/10.1016/j.jcm.2016.02.012",
+        "journal-title": "J Chiropr Med"
+      },
+      {
+        "issue": "3",
+        "key": "740_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "276",
+        "DOI": "10.11613/BM.2012.031",
+        "volume": "22",
+        "author": "ML McHugh",
+        "year": "2012",
+        "unstructured": "McHugh ML (2012) Interrater reliability: the kappa statistic. Biochemia medica 22(3):276–282",
+        "journal-title": "Biochemia medica"
+      },
+      {
+        "key": "740_CR16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/2023.02.21.23285886",
+        "author": "A Rao",
+        "year": "2023",
+        "unstructured": "Rao A, Pang M, Kim J, Kamineni M, Lie W, Prasad AK, Landman A, Dreyer KJ, Succi MD (2023) Preprint assessing the utility of ChatGPT throughout the entire clinical workflow. medRxiv. https://doi.org/10.1101/2023.02.21.23285886",
+        "journal-title": "medRxiv"
+      },
+      {
+        "key": "740_CR17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/2023.03.25.23285475",
+        "author": "RE Harskamp",
+        "year": "2023",
+        "unstructured": "Harskamp RE, Clercq De, L. (2023) Performance of ChatGPT as an AI-assisted decision support tool in medicine: a proof-of-concept study for interpreting symptoms and management of common cardiac conditions (AMSTELHEART-2). MedRxiv. https://doi.org/10.1101/2023.03.25.23285475",
+        "journal-title": "MedRxiv"
+      },
+      {
+        "key": "740_CR18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/2023.02.25.23286451",
+        "author": "AJ Nastasi",
+        "year": "2023",
+        "unstructured": "Nastasi AJ, Courtright KR, Halpern SD, Weissman GE (2023) Does ChatGPT provide appropriate and equitable medical advice?: A vignette-based, clinical evaluation across care contexts. MedRxiv. https://doi.org/10.1101/2023.02.25.23286451",
+        "journal-title": "MedRxiv"
+      },
+      {
+        "key": "740_CR19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/21925682231195783",
+        "author": "R Rajjoub",
+        "year": "2023",
+        "unstructured": "Rajjoub R, Arroyave JS, Zaidat B, Ahmed W, Mejia MR, Tang J, Kim JS, Cho SK (2023) ChatGPT and its role in the decision-making for the diagnosis and treatment of lumbar spinal stenosis: a comparative analysis and narrative review. Glob Spine J. https://doi.org/10.1177/21925682231195783",
+        "journal-title": "Glob Spine J"
+      },
+      {
+        "key": "740_CR20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-023-07529-2",
+        "author": "J Kaarre",
+        "year": "2023",
+        "unstructured": "Kaarre J, Feldt R, Keeling LE, Dadoo S, Zsidai B, Hughes JD, Samuelsson K, Musahl V (2023) Exploring the potential of ChatGPT as a supplementary tool for providing orthopaedic information. Knee Surg Sports Traumatol Arthrosc. https://doi.org/10.1007/s00167-023-07529-2.",
+        "journal-title": "Knee Surg Sports Traumatol Arthrosc"
+      },
+      {
+        "issue": "1",
+        "key": "740_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "125",
+        "DOI": "10.1186/s12911-021-01488-9",
+        "volume": "21",
+        "author": "S Secinaro",
+        "year": "2021",
+        "unstructured": "Secinaro S, Calandra D, Secinaro A, Muthurangu V, Biancone P (2021) The role of artificial intelligence in healthcare: a structured literature review. BMC Med Inform Decis Mak 21(1):125. https://doi.org/10.1186/s12911-021-01488-9",
+        "journal-title": "BMC Med Inform Decis Mak"
+      },
+      {
+        "issue": "2",
+        "key": "740_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "94",
+        "DOI": "10.7861/futurehosp.6-2-94",
+        "volume": "6",
+        "author": "T Davenport",
+        "year": "2019",
+        "unstructured": "Davenport T, Kalakota R (2019) The potential for artificial intelligence in healthcare. Future Healthc J 6(2):94–98. https://doi.org/10.7861/futurehosp.6-2-94",
+        "journal-title": "Future Healthc J"
+      },
+      {
+        "issue": "4",
+        "key": "740_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "e25759",
+        "DOI": "10.2196/25759",
+        "volume": "23",
+        "author": "J Yin",
+        "year": "2021",
+        "unstructured": "Yin J, Ngiam KY, Teo HH (2021) Role of artificial intelligence applications in real-life clinical practice: systematic review. J Med Internet Res 23(4):e25759. https://doi.org/10.2196/25759",
+        "journal-title": "J Med Internet Res"
+      },
+      {
+        "key": "740_CR24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.23.00209",
+        "author": "AP Mika",
+        "year": "2023",
+        "unstructured": "Mika AP, Martin JR, Engstrom SM, Polkowski GG, Wilson JM (2023) Assessing ChatGPT responses to common patient questions regarding total hip arthroplasty. J Bone Jt Surg Am. https://doi.org/10.2106/JBJS.23.00209",
+        "journal-title": "J Bone Jt Surg Am"
+      }
+    ],
+    "container-title": [
+      "Journal of Orthopaedics and Traumatology"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s10195-023-00740-4.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1186/s10195-023-00740-4/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s10195-023-00740-4.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          28
+        ]
+      ],
+      "date-time": "2023-11-28T11:03:03Z",
+      "timestamp": 1701169383000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://jorthoptraumatol.springeropen.com/articles/10.1186/s10195-023-00740-4"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          28
+        ]
+      ]
+    },
+    "references-count": 24,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "740"
+    ],
+    "URL": "https://doi.org/10.1186/s10195-023-00740-4",
+    "relation": {},
+    "ISSN": [
+      "1590-9999"
+    ],
+    "issn-type": [
+      {
+        "value": "1590-9999",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          28
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "8 September 2023",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "5 November 2023",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "28 November 2023",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "The study was conducted upon approval from the Ethics Committee of the University of Regensburg (protocol no. 23-3404-104).",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethics approval and consent to participate"
+        }
+      },
+      {
+        "value": "Not applicable.",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Consent for publication"
+        }
+      },
+      {
+        "value": "The authors declare that they have no competing interests.",
+        "order": 4,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "61"
+  }
+}

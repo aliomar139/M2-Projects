@@ -1,0 +1,1496 @@
+=== PDF PAGE 1 ===
+Academic Editors: Michał Strzelecki,
+Adam Piórkowski, Karolina
+Nurzynska and Rafał Obuchowicz
+Received: 5 February 2026
+Revised: 20 February 2026
+Accepted: 22 February 2026
+Published: 25 February 2026
+Copyright: © 2026 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license.
+Review
+Artificial Intelligence in Orthopaedics: Clinical Performance,
+Limitations, and Translational Readiness—A Review
+Wojciech Michał Glinkowski 1,2, *
+ , Antonina Spali ´ nska3
+ , Agnieszka Wołk 2 and Krzysztof Wołk 2,*
+1 Center of Excellence “TeleOrto” for Telediagnostics and Treatment of Disorders and Injuries of the Locomotor
+System, Department of Medical Informatics and Telemedicine, Medical University of Warsaw,
+02-091 Warsaw, Poland
+2 The Polish Telemedicine and eHealth Society, Targowa 39A/5, 03-728 Warsaw, Poland;
+agnieszka.wolk@telemedycyna.org
+3 Department of Biostatistics and Research Methodology, Faculty of Medicine, Cardinal Stefan Wyszy ´ nski
+University, 01-938 Warsaw, Poland
+* Correspondence: w.glinkowski@gmail.com (W.M.G.); krzysztof@wolk.pl (K.W.)
+Abstract
+Background/Objectives: Musculoskeletal disorders and their surgical treatment signifi-
+cantly affect global disability, healthcare utilization, and costs. Artificial intelligence (AI) is
+a key enabler of data-driven musculoskeletal care. Their applications include diagnostic
+imaging, surgical planning, risk prediction, rehabilitation, and digital health ecosystems.
+This narrative review synthesizes current evidence on the use of AI in orthopaedics and
+musculoskeletal care across five areas: diagnostic imaging, surgical planning and intraop-
+erative augmentation, predictive analytics and patient-reported outcomes, rehabilitation
+intelligence and teleorthopaedics, and system-level management. An additional task is to
+identify translational gaps and priorities for safe, ethical, and equitable implementation
+of AI. Methods: A structured narrative review was conducted using targeted searches
+in PubMed, Scopus, and Web of Science supplemented by semantic and citation-based
+explorations in Semantic Scholar, OpenAlex, and Google Scholar. The main search period
+was January 2019 to December 2025. The retrieved peer-reviewed articles were analyzed for
+clinical relevance to human musculoskeletal care, quantitative outcomes, and the transla-
+tional implications of the results. From the broader pool of eligible publications, 40 clinically
+relevant studies were selected for detailed synthesis covering imaging, surgical planning,
+predictive modeling, rehabilitation, and system-level applications. Owing to the signifi-
+cant heterogeneity in the model architectures, datasets, and endpoints, the results were
+organized into five predefined thematic areas. Results: The most mature evidence is for
+AI-assisted detection of bone fractures on radiographs, identification of implants, and use
+of sizing templates in preoperative planning for arthroplasty, where deep learning systems
+have achieved expert-level diagnostic performance (e.g., fracture detection sensitivity of ap-
+proximately 90% and specificity of approximately 92% and implant identification accuracy
+of 97–99%) and improved the accuracy of preoperative planning compared to conventional
+templating. AI-based planning increases the likelihood of reducing intraoperative correc-
+tions, shortening surgery time, reducing blood loss, and improving the final functional
+outcomes. Predictive models can support the stratification of risk for complications, rehos-
+pitalizations, and patient-reported outcomes, although external validation remains limited
+and is often single-center at this stage of research. Emerging applications in rehabilitation
+and teleorthopaedics, including sensor-based monitoring and learning systems integrated
+with Patient-Reported Outcome Measures (PROMs), are conceptually promising, but are
+mainly limited to feasibility or pilot studies. Conclusions: AI is beginning to influence mus-
+culoskeletal care, moving beyond pattern recognition toward integrated, patient-centered
+J. Clin. Med. 2026, 15, 1751 https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 2 ===
+J. Clin. Med. 2026, 15, 1751 2 of 26
+decision support throughout the perioperative and rehabilitation periods. Its widespread
+use remains constrained by limited multicenter validation, dataset bias, algorithmic opacity,
+and immature regulatory and governance frameworks. Future work should prioritize
+prospective multicenter impact studies, repeatable revalidation of local models, integration
+of PROM and teleorthopedic data with health learning systems, and adaptation to changing
+regulatory requirements to enable safe, ethical, effective, and equitable implementation in
+routine orthopedic practice.
+Keywords: artificial intelligence; orthopaedic imaging; arthroplasty; osteoarthritis;predictive
+analytics; rehabilitation intelligence; patient-reported outcomes; clinical implementation
+1. Introduction
+Musculoskeletal disorders and injuries are among the leading causes of pain and
+disability worldwide, leading to a significant demand for imaging services for urgent and
+elective surgeries and rehabilitation, thereby placing a considerable burden on healthcare
+systems [1–5]. Clinical decision-making in this field involves comprehensive radiological
+assessment, determination of surgical indications, postoperative observation, and long-
+term functional monitoring. The increased interest in data-driven tools for the digital
+transformation process stems from their potential to improve the consistency, scalability,
+and decision support throughout the orthopedic care process [ 6–9]. Orthopaedics is a
+unique field because of the importance of visual data (X-rays, CT scans, and MRIs) and
+biomechanical measurements. This makes it ideal for computer vision applications that use
+deep learning models to automatically extract features from pixel data, unlike traditional
+machine learning methods that require manual feature definition.
+It has been observed that artificial intelligence (AI), especially deep learning and
+other machine learning-based methods, is advancing rapidly from theoretical concepts
+to practical applications in orthopaedics [8,10–20]. It has already been demonstrated that
+convolutional neural networks can achieve high accuracy in fracture detection, comparable
+to that of musculoskeletal radiology specialists, with overall sensitivities and specificities of
+approximately 90% and 92%, respectively [21–25]. Systems supporting elective orthopedic
+surgery with implant placement achieve 97–99% accuracy and can significantly speed up
+the planning of complex revision arthroplasty procedures [26–28]. AI-assisted arthroplasty
+planning improves implant sizing compared to conventional two-dimensional templat-
+ing (manual or digital “overlaying” of implant templates onto standard two-dimensional
+radiographs to estimate the size and positioning of components before surgery) [29–31].
+Compared with traditional methods, this results in a more efficient procedure, shorter oper-
+ating times, reduced blood loss during surgery, and fewer intraoperative corrections in hip
+and knee arthroplasty [32–35]. In addition to imaging and templating, AI-based predictive
+models are increasingly used to assess the risks of venous thromboembolism, dislocation,
+readmission, and patient-reported satisfaction [36–38]. Integrating imaging, clinical data,
+signals from wearable sensors, and patient-reported outcomes (PROMs) to support per-
+sonalized treatment pathways creates opportunities for multimodal structures [39,40]. The
+simultaneous use of teleorthopaedics and AI-assisted rehabilitation tools aims to extend
+specialized care to patients’ homes through remote monitoring, automatic motion analysis,
+and adaptive exercise guidance [41–43]. Despite this promising progress, clinical imple-
+mentation of AI-based systems remains inconsistent. Many such systems are trained on
+data from a single center or demographically homogeneous datasets [44–47], lack robust
+multicenter external validation, exhibit algorithmic opacity, undermine clinician trust, and
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 3 ===
+J. Clin. Med. 2026, 15, 1751 3 of 26
+raise concerns regarding fairness and accountability. Workflow integration with picture
+archiving and communication systems (PACS), electronic health records, and surgical
+planning platforms is often incomplete [ 44,46]. Regulatory and ethical frameworks for
+adaptive data-driven tools are still under development. Existing reviews typically focus on
+single domains, such as fracture detection or arthroplasty planning, and rarely combine
+diagnostic, surgical, prognostic, rehabilitation, and systemic perspectives into a unified
+picture of orthopedic healthcare [22,23,48–52].
+Technical Foundations of AI in Orthopaedics
+To enhance the understanding, it is essential to outline the core AI techniques that
+are relevant to this field. Deep learning (DL), a subset of ML, uses neural networks with
+multiple layers to learn hierarchical features from data and has driven major advances
+in medical image analysis [ 53]. In imaging, convolutional neural networks (CNNs) are
+predominant for tasks such as fracture detection because they excel in processing grid-like
+data such as radiographs [54]. For the predictive analytics of tabular clinical data, models
+such as random forests or gradient boosting machines (e.g., XGBoost) are employed for
+risk stratification and effectively handle structured inputs [55]. These techniques typically
+require large labeled datasets for training, which are often augmented via transfer learning
+to mitigate data scarcity in orthopaedics.
+In addition to these established model families, emerging architectures such as vision
+transformers (ViT) and hybrid CNN–transformer pipelines are increasingly employed for
+image classification and segmentation, particularly when long-range contextual relation-
+ships or multiview integration are crucial [56–59]. In practice, the selection of architecture
+involves trade-offs between data requirements, robustness, and interpretability [ 60,61].
+CNNs typically excel in tasks characterized by high contrast and well-defined geometry
+(e.g., implant identification) [ 62,63], whereas osteoarthritis grading often entails subtle,
+spatially heterogeneous changes that benefit from precisely constrained regions of interest,
+multiscale feature extraction, and rigorous external validation [ 64–66]. For structured
+clinical datasets, gradient-boosting models frequently remain competitive owing to their
+efficacy with tabular inputs, superior calibration of uncertainty, and more accessible feature
+attribution than deep neural networks [67]. However, they may underperform when the
+predictive signal is embedded in high-dimensional imaging or multimodal data [67,68].
+This structured narrative review synthesizes current evidence on AI in orthopedic and
+musculoskeletal practice across diagnostic imaging, surgical planning and intraoperative
+augmentation, predictive analysis and precision stratification, rehabilitation intelligence
+and teleorthopaedics, and system-level management using digital ecosystems. This study
+aimed to characterize the technological maturity and clinical utility of current applications,
+identify key translational gaps, and outline a research and implementation agenda to
+support the safe, ethical, equitable, and patient-centered implementation of AI in modern
+musculoskeletal healthcare.
+2. Materials and Methods
+2.1. Study Design
+This study was a structured narrative review that combined a targeted literature
+database search with expert interpretation in the clinical and methodological domains. The
+synthesis was based on two complementary streams of evidence: (1) a targeted set of clinical
+studies on AI in orthopedic imaging, surgical planning, and predictive modeling, and (2) a
+thematic analysis of emerging areas, including PROM–AI integration, teleorthopaedics,
+and digital rehabilitation.
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 4 ===
+J. Clin. Med. 2026, 15, 1751 4 of 26
+2.2. Search Strategy
+This expert review synthesizes current evidence on the clinical applications of AI in
+orthopaedics and the broad treatment of musculoskeletal disorders. The search covered
+the period from January 2019 to December 2025, during which deep learning techniques
+matured into clinically applicable tools and the first regulatory approval for AI-based
+imaging systems was obtained [ 69]. This timeframe was deliberately chosen to include
+studies that reflected actual translational readiness rather than early concept verification.
+A comprehensive literature search was conducted using PubMed, Scopus, and Web of
+Science databases. To increase coverage and minimize database bias, targeted semantic-
+and citation-based searches were performed using Semantic Scholar, OpenAlex, and Google
+Scholar databases. The search strategies combined controlled vocabulary and text terms
+related to AI, machine learning, deep learning, orthopaedics, musculoskeletal disorders,
+fracture detection, osteoarthritis, arthroplasty, spine surgery, outcome prediction, patient-
+reported outcome measures (PROMs), PROMIS, telemedicine, teleorthopaedics, and digi-
+tal rehabilitation.
+2.3. Eligibility Criteria and Study Selection
+Eligible articles comprised original research evaluating AI-based tools or models
+with direct applicability to clinical practice in orthopaedics, including diagnostic imaging,
+preoperative planning, risk prediction, rehabilitation, and outcome assessment. Both retro-
+spective and prospective clinical studies were deemed eligible for inclusion. Exclusions
+were made for conference abstracts, editorials, articles focused solely on algorithm develop-
+ment without clinical validation, and publications in languages other than English. Titles
+and abstracts were screened to exclude studies outside the scope of clinical orthopaedics
+and musculoskeletal patient care. Animal studies, investigations focused purely on engi-
+neering without a clinical framework, studies on robotics or navigation systems lacking
+elements pertinent to clinical decision-making, and image-processing studies without
+clinical validation were excluded from the review. Some included articles, particularly
+review articles, were used to inform contextual synthesis but were not subjected to primary
+quantitative data extraction.
+The main reasons for full-text exclusion after eligibility assessment are summarised
+in Supplementary Table S1. The categorisation in Supplementary Table S1 reflects the
+dominant reason for excluding each full-text article; when multiple exclusion criteria were
+applied, studies were assigned to the most clinically relevant category.
+The reference lists of the included articles and recent high-quality reviews were
+manually screened to identify additional relevant studies not captured by the electronic
+search. Full-text articles were assessed for conceptual relevance, availability of quantita-
+tive performance data, and translational implications of the results. Rather than applying
+rigid eligibility thresholds, a priority-based approach was adopted that emphasized
+clinical relevance. Preference was given to studies reporting diagnostic performance
+metrics (e.g., sensitivity, specificity, area under the curve), benefits in surgical planning
+compared with conventional methods, predictive differentiation of outcomes or com-
+plications, measurable impact on clinical workflow, or conceptually robust frameworks
+for rehabilitation and precision medicine. The included studies demonstrated broad
+geographical representation, with research conducted in the United States, Europe, and
+Asia (including Sweden, Austria, France, The Netherlands, China, Thailand, India, Japan,
+and Singapore). Sample sizes varied widely, ranging from small proof-of-concept co-
+horts ( n = 12) to large-scale systematic reviews encompassing more than one million
+implants. Study quality was assessed using the modified Methodological Index for Non-
+Randomized Studies (MINORS) or the Newcastle–Ottawa Scale for non-randomized
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 5 ===
+J. Clin. Med. 2026, 15, 1751 5 of 26
+studies [70]. These instruments were applied qualitatively to contextualize the strength
+of evidence and recurrent sources of bias across study designs rather than to gener-
+ate pooled scores or exclude studies based on numerical thresholds. From the pool
+of eligible publications, 40 studies were selected as the evidence base for a detailed
+narrative synthesis.
+2.4. Data Extraction and Synthesis
+Each selected study was analyzed in terms of the area of AI application (diagnostic
+imaging, surgical planning, predictive analytics, rehabilitation, or system-level), orthope-
+dic specialty, anatomical area, basic AI methodologies, data modality, study design and
+validation level, quantitative performance metrics, and patient-reported clinical outcomes
+or workflow impact. A structured organization of predefined data elements was used.
+All collected information was verified by the authors and placed in context to ensure the
+clinical accuracy and interpretability of the data.
+In this study, it was not possible to combine quantitative data due to significant het-
+erogeneity in model architectures, datasets, and endpoints. The results were synthesized
+in narrative form, with greater interpretive weight given to empirically verified clinical
+trials and feasibility studies than to other studies. Simultaneously, new and rapidly evolv-
+ing ideas, such as integrating patient-reported outcomes (PROMs) with AI, developing
+tele-orthopedic teaching systems, modeling biological responses, and using digital twin
+technologies, have been considered preliminary or exploratory. In other words, these
+concepts were treated as areas that generated hypotheses that required further research
+and validation before being translated into clinical practice.
+2.5. Organization and Evaluation of Evidence
+The results were categorized into five thematic areas to facilitate coherent synthesis
+and identify translational gaps: (1) AI-based diagnostic imaging; (2) surgical planning and
+intraoperative augmentation; (3) predictive analytics and precision stratification; (4) reha-
+bilitation intelligence and remote monitoring; and (5) system-level management, ethics,
+and future research directions. The study identification, selection, and inclusion processes
+are summarized in a PRISMA-inspired flow diagram (Figure 1).
+No formal quantitative grading of evidence (e.g., GRADE or AMSTAR) was conducted
+because the primary objective was comparative clinical interpretation rather than effect-size
+aggregation. Instead, studies were qualitatively assessed based on the strength of their
+clinical signals, with a clear distinction between empirical outcome studies, feasibility
+studies supported by empirical results, and conceptual or framework-based contributions
+to the literature.
+A formal meta-analysis was not performed due to substantial heterogeneity across
+study designs, data sources, AI architectures, outcome measures, and validation strate-
+gies. Consequently, the results were synthesized narratively, with an emphasis on
+clinical performance indicators, validation levels, generalizability, and implementa-
+tion readiness.
+The main reasons for excluding full texts are summarized in Supplementary Table S1.
+Because this work is a structured narrative review, the flow diagram is intended
+to increase transparency in the identification and selection of studies. However, the
+review did not claim formal PRISMA compliance and did not provide a quantitative
+meta-analytic synthesis.
+Grammarly and PaperPal were used for grammatical and stylistic corrections.
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 6 ===
+J. Clin. Med. 2026, 15, 1751 6 of 26
+Figure 1. PRISMA-inspired flow diagram. The diagram summarizes the identification, screening,
+eligibility assessment, and inclusion of studies in the narrative synthesis: 450 records were identified
+through database searches and 30 via reference lists; after the removal of duplicates, 420 records were
+screened by title and abstract, 100 full-text articles were assessed for eligibility, and 40 studies were
+included in the final synthesis.
+3. Results
+3.1. Evidence-Based Review
+A narrative synthesis of 40 studies was conducted to reflect the current scope, ma-
+turity, and complexity of artificial intelligence applications in orthopaedics. Qualitative
+assessment using the modified Methodological Index for Non-Randomized Studies (MI-
+NORS) and Newcastle–Ottawa Scale revealed that the overall methodological quality of the
+included studies was predominantly moderate. Approximately two-thirds of the studies
+met the basic criteria for internal validity, whereas only seven of 40 (17.5%) satisfied the key
+criteria for a prospective design or external multicenter validation. A qualitative overview
+of the recurrent methodological strengths and limitations identified using these tools is
+presented in Supplementary Table S2.
+Regarding study design, seven studies (17.5%) utilized prospective or multicenter
+validation approaches, including randomized controlled trials and clinical trials. The
+remaining evidence was predominantly composed of retrospective, single-center studies,
+and development or internal validation cohorts. Common methodological limitations
+included small sample sizes, lack of prospective validation, incomplete reporting of model
+calibration, uncertainty, and failure modes.
+The evidence base comprised systematic reviews and meta-analyses, cohort and
+validation studies, randomized controlled trials, and clinically oriented feasibility studies.
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 7 ===
+J. Clin. Med. 2026, 15, 1751 7 of 26
+As summarized in Table 1, most studies have focused on diagnostic imaging and surgical
+planning, with a small but growing body of evidence on predictive modeling, rehabilitation,
+and system-level applications.
+Table 1. Characteristics of the included studies on AI in orthopaedics.
+Study
+Was the Full Text
+Used for Data
+Extraction?
+Study Type Primary AI Application Anatomical Region
+D. Langerhuizen et al., 2019 [50] Yes Systematic review Fracture
+detection/classification
+Ankle, hand, hip, spine,
+wrist, proximal humerus
+Xiang Zhang et al., 2022 [8] No Systematic
+review/meta-analysis Fracture diagnosis Multiple (fractures)
+J. Karnuta et al., 2023 [71] No Validation study Knee implant identification Knee
+Jakub Olczak et al., 2017 [17] Yes Validation study Fracture detection Wrist, hand, ankle
+Lok Sze Lee et al., 2022 [72] Yes Narrative review OA diagnosis, TKA outcome
+prediction Knee
+M. Ren et al., 2021 [73] No Systematic review Implant identification Not specified
+Adriaan Lambrechts et al., 2022 [74] Yes Development study TKA preoperative planning Knee
+B. Gurung et al., 2022 [75] No Systematic review THA/TKA image analysis Hip, knee
+P . Hernigou et al., 2022 [76] No Systematic review of
+review Dislocation risk prediction Hip
+Florent Bernard de Villeneuve et al.,
+2022 [77] No Development study Lower limb alignment
+analysis Lower limb
+Aakash K. Shah et al., 2023 [78] Yes Systematic review TJA implant analysis Hip, knee
+Songlin Li et al., 2023 [79] Yes Retrospective cohort TKA preoperative
+planning/PSI Knee
+Anjali Tiwari et al., 2022 [80] Yes Validation study Knee OA grading Knee
+Xi Chen et al., 2022 [81] Yes Prospective cohort THA preoperative planning Hip
+M. Bonnin et al., 2023 [82] No Development/validation TKA radiographic analysis Knee
+J. Karnuta et al., 2021 [83] No Validation study Knee implant identification Knee
+Di Xue et al., 2025 [11] No Systematic
+review/meta-analysis THA preoperative planning Hip
+Jichuan Wang et al., 2024 [84] Yes Proof-of-concept Screw reconstruction
+planning Pelvis
+U. Longo et al., 2025 [85] Yes Systematic review THA outcome prediction Hip
+Nalin Zadoo et al., 2025 [86] No Validation study Pediatric bone age
+assessment Hand/wrist
+Anna Lind et al., 2021 [87] Yes Validation study Knee fracture classification Knee
+Pengran Liu et al., 2021 [88] No Validation study Tibial plateau fracture
+diagnosis Knee
+O. Musbahi et al., 2025 [89] No Systematic
+review/meta-analysis
+OA classification and
+prognosis Not specified
+J. Karnuta et al., 2023 [90] No Validation study THA implant identification Hip
+M. Smolle et al., 2022 [91] Yes Controlled trial Knee OA assessment Knee
+Dong Wu et al., 2020 [92] No Clinical trial THA preoperative planning Hip
+Farid Al Zoubi et al., 2022 [93] No Cohort study OR efficiency optimization Hip, knee
+D. Houserman et al., 2022 [94] No Validation study Arthroplasty candidacy
+prediction Knee
+Davood Dalil et al., 2025 [95] No Systematic review VTE prediction Hip, knee
+Rosmarie Breu et al., 2024 [96] Yes Retrospective study Distal radius fracture
+detection Wrist
+P . Passias et al., 2022 [97] No Retrospective cohort Spinal deformity surgery Spine
+Rayane Benhenneda et al., 2023 [98] No Diagnostic study Arthroscopic LHB diagnosis Shoulder
+Adeel Anwar et al., 2024 [31] No Prospective study THA preoperative planning Hip
+Xi Chen et al., 2022 [99] No Prospective study THA PSI-assisted surgery Hip
+Qing Lan et al., 2024 [30] Yes Retrospective cohort TKA preoperative planning Knee
+Nikolas J. Wilhelm et al., 2024 [100] No Multicenter validation Lower extremity alignment Knee
+Michael P . Murphy et al., 2023 [101] Yes Retrospective cohort Cup orientation
+measurement Hip
+Phichai Udombuathong et al.,
+2022 [102] Yes Retrospective diagnostic Hip fracture diagnosis Hip
+Gang Zhang et al., 2024 [103] No RCT THA preoperative planning Hip
+Bingshi Zhang et al., 2023 [104] No Retrospective cohort THA preoperative planning Hip
+“Yes” indicates studies from which quantitative performance data or outcome measures were extracted. “No” indi-
+cates studies included for contextual or conceptual synthesis only (e.g., systematic reviews or narrative reviews).
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 8 ===
+J. Clin. Med. 2026, 15, 1751 8 of 26
+3.2. Diagnostic Imaging Using AI
+The most mature and clinically relevant evidence concerns the use of AI in muscu-
+loskeletal imaging, particularly in the radiographic detection of fractures[25,47,49,51,52,54,55],
+implant identification [56–58], and osteoarthritis classification [105,106]. In many studies,
+deep learning systems have achieved a fracture detection sensitivity of approximately 90%
+and specificity of approximately 92%, with area under the curve values approaching 0.97,
+matching those of experienced clinicians, outperforming less experienced specialists, and
+providing millisecond-level inference times [107].
+The differences in results across individual studies can be attributed to several
+factors, including differences in image acquisition and preprocessing protocols, case
+diversity, and disease prevalence, the method used to determine objective truth (whether
+through expert consensus or clinical observation/CT), and discrepancies in external
+validation strategies.
+AI algorithms for orthopaedic implant identification demonstrate even higher per-
+formance, with reported accuracies of 97–99%, and can substantially accelerate the
+planning of complex revision arthroplasty procedures [ 73,108]. In contrast, AI-based
+classification of knee osteoarthritis, which is clinically useful and associated with im-
+proved inter-observer agreement compared with manual assessment, generally achieves
+lower performance, with reported accuracies of up to 93% [ 105,109,110]. However, deep
+learning models must be trained in the selected areas of interest. Otherwise, they lack
+precision and struggle to identify significant changes that are indicative of osteoarthri-
+tis [111]. This discrepancy seems to stem not from the sophistication of the algorithms
+but from the fundamental differences in image characteristics and task structure. Ortho-
+pedic implants are characterized by smooth, well-defined edges, high signal contrast,
+and a limited set of repetitive shapes, which closely match the strengths of convolutional
+neural networks in detecting high-contrast global patterns [ 112]. In addition, image
+preprocessing strategies, such as contrast enhancement, may further improve recognition
+in challenging scenarios, including cases of cement adhering to implant surfaces [ 113]. In
+contrast, osteoarthritic changes are spatially heterogeneous, gradually evolving, and lack
+clear geometric boundaries, rendering reliable classification inherently more complex
+and sensitive to disease stage and imaging variability [ 114]. Notably, many imaging
+models continue to rely on single-center datasets and have limited external multicenter
+validation, further limiting their generalizability.
+3.3. Surgical Planning and Intraoperative Augmentation
+Evidence confirms the significant benefits of AI-assisted planning for hip and knee
+arthroplasties and their early application in spinal deformity surgeries. In total hip arthro-
+plasty, AI-based preoperative templates and segmentation improved component sizing
+and positioning compared to manual planning, increasing the acetabular component fit
+from approximately 30 to 57% to 66% to 90% and enabling the prediction of tibial and
+femoral components in total knee arthroplasty with an accuracy of approximately 92.9%
+compared to approximately 45% for manual planning [ 31,81,115]. AI-assisted planning
+is associated with shorter operating times (approximately 12 min), reduced blood loss
+during surgery (approximately 50 mL), and a 40% reduction in intraoperative revisions,
+with a slight improvement in postoperative functional outcomes [ 115,116]. In contrast,
+preliminary data on spinal surgery suggest a potential reduction in blood loss and length
+of hospital stay in these patients.
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 9 ===
+J. Clin. Med. 2026, 15, 1751 9 of 26
+3.4. Predictive Analysis and Precise Stratification
+Predictive models in orthopaedics address postoperative complications, readmissions,
+eligibility for arthroplasty, and patient-reported outcomes, such as satisfaction and return
+to functional fitness [117–119]. The reported area under the curve values for venous throm-
+boembolism (VTE) after endoprosthesis replacement range from approximately 0.71 to
+0.982, indicating moderate to excellent discriminatory ability [ 95,120]. Models predict-
+ing the risk of dislocation after hip arthroplasty achieved approximately 95% accuracy,
+while eligibility models achieved approximately 87.8% accuracy, with AUC values of
+0.97–0.98 [76,121]. Despite these promising indicators, most predictive models have been
+developed and validated internally in single-center cohorts with limited external valida-
+tion, and virtually no prospective impact studies have been conducted. The conceptual
+framework for predicting biological responses in regenerative orthopaedics remains in the
+hypothesis-generation phase.
+3.5. Rehabilitation Intelligence and Teleorthopaedics
+The applications of AI in rehabilitation [14,41,122] and teleorthopaedics demonstrate
+that orthopedic care can extend beyond hospitals to patients’ homes and communities [123].
+Computer vision systems applied to video recordings can quantify gait asymmetry and
+joint range of motion [124]. Platforms based on wearable sensors and AI algorithms are
+being explored for adaptive rehabilitation planning, adherence monitoring, and early de-
+tection of suboptimal recovery [125–127]. However, the current evidence is limited, largely
+due to the small number of pilot studies with limited links to long-term outcomes. Tele-
+consultation platforms that integrate simple AI-based tools to measure range of motion or
+medical segregation may improve access to care in underserved regions but raise concerns
+about digital exclusion, data security, and clinical accountability for remotely supervised
+programs [128,129]. The feasibility of thermal imaging applications is still in its early stages
+of development.
+3.6. System-Level Governance, Ethics, and Future Trajectories
+In addition to individual applications, the literature highlights significant system-
+level barriers related to data quality, interoperability, regulatory oversight, and clinician
+trust. Many orthopedic AI systems have been developed using data from a single center
+or homogeneous datasets, which limits their overall utility and may exacerbate bias if
+underrepresented populations are not adequately included [ 130,131]. The lack of ex-
+plainability and the “black box” nature of algorithms often constitute significant barriers
+to their acceptance in high-risk decision-making environments. In addition, the imple-
+mentation of such solutions is hampered by fragmented clinical workflows, changing
+regulations on software as a medical device, and insufficient systematic postmarket
+surveillance. This highlights the need for multicenter training datasets, methods that are
+easy to explain to clinicians, implementation of science research, and long-term concepts,
+such as learning teleorthopedic systems and “digital twins” of patients [ 12,132]. Table 1
+summarizes the study types, primary AI applications, and anatomical regions of the
+40 included studies.
+Systematic reviews were included for contextual synthesis, and primary quantitative
+extraction focused on original clinical studies.
+A summary of diagnostic AI applications in orthopaedics is presented in Table 2.
+AI-assisted-surgical planning and intraoperative augmentation are shown in Table 3.
+The predictive analytics and precision stratification in orthopaedics are presented in
+Table 4.
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 10 ===
+J. Clin. Med. 2026, 15, 1751 10 of 26
+Table 2. Evidence summary of AI applications in orthopedic diagnosis.
+Application Domain Model Types Reported Performance Clinical Benefit Key Limitations
+Fracture detection
+CNNs (ResNet,
+DenseNet, VGG),
+transfer learning
+Sensitivity 90%,
+specificity 92%
+Reduced diagnostic error;
+fast execution (<1 s/image)
+Mostly single-centre
+training; limited
+external validation
+Distal radius fracture
+analysis
+Deep learning
+radiograph
+interpreters
+↑ Sensitivity 80→87%;
+↓ error 14→9%
+Performance boost for
+non-experts
+Trust and liability
+concerns; data
+heterogeneity
+Implant identification
+CNN classifiers &
+radiograph feature
+extractors
+Accuracy 97–99% Faster revision planning;
+component sourcing
+Limited integration
+into PACS/theatre
+workflow
+Osteoarthritis
+grading (KL, MRI)
+CNNs/ensemble
+learning
+Accuracy up to 93%;
+improved
+inter-observer
+agreement
+Standardisation,
+reproducibility
+However, the black
+box” reasoning remains
+unexplained in this
+study.
+Thermal imaging for
+inflammation
+AI segmentation &
+pattern recognition Early feasibility only Potential remote
+monitoring tool
+Lacks robust clinical
+validation
+Arrow up—increase; arrow down—decrease, arrow right—result.
+Table 3. Evidence summary of AI in surgical planning and execution.
+Surgical Area Key Functions Evidence of Benefit Magnitude of Effect Constraints
+THA planning Component templating,
+segmentation, sizing
+More accurate sizing
+vs. manual
+Acetabular matching↑
+from 30–57% to 66–90%
+AI platform integration
+into conventional
+OR planning
+THA operative
+metrics
+Pre-op planning
+support
+Improved
+intraoperative
+performance
+−12 min OR time,−50 mL
+blood loss,↓ correction rate
+by 40%, HHS + 1.42
+Lack of prospective
+trials
+TKA templating Femoral & tibial sizing Higher accuracy
+vs. manual 92.9% vs. ~45% Variability between
+centres
+Segmentation/
+PSI creation
+Accelerated 3D
+workflow
+Reduced processing
+time
+Segmentation 129→ 4 min;
+PSI planning 160→ 35 min
+Workflow dependency
+on vendor systems
+Spine deformity
+surgery
+Intraoperative decision
+support
+Fewer complications
+and shorter stay
+↓ blood loss (p = 0.001),↓
+LOS (p = 0.012)
+No standard
+regulatory pathway
+Surgical navigation
+Automated positioning
+and orientation
+calculations.
+Real-time validation Cup angle calculation in
+0.22 s Explainability gaps
+Arrow up—increase; arrow down—decrease, arrow right—result.
+Table 4. Predictive AI models and clinical outcome decision support.
+Predictive Target Performance Reported Clinical Utility Validation Maturity
+VTE risk after arthroplasty AUC 0.71–0.982 Tailored prophylaxis
+evaluation Limited external validation
+THA dislocation risk Accuracy 95% Component alignment
+strategy
+Minimal generalisability
+studies
+Arthroplasty candidacy
+prediction
+Accuracy 87.8%;
+AUC 0.97–0.98
+Supports shared
+decision-making No prospective testing
+Satisfaction/recovery
+modeling Feasibility demonstrated Early expectation
+management Feature attribution unclear
+Biologic responder prediction
+(conceptual) Theoretical modeling Precision orthobiologics No validated clinical tool
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 11 ===
+J. Clin. Med. 2026, 15, 1751 11 of 26
+AI-enabled rehabilitation and teleorthopaedics are listed in Table 5.
+Table 6 presents the system-level, governance, and implementation frameworks for
+orthopaedic AI.
+The future research agenda derived from expert synthesis is presented in Table 7 below.
+Table 5. AI in rehabilitation, monitoring, and teleorthopaedics.
+Function Use Case Evidence Strength Benefits Barriers
+Computer vision gait
+analysis
+Asymmetry detection,
+movement scoring
+Moderately strong
+feasibility
+Remote access,
+reproducibility
+No RCT linking to
+outcomes
+Adaptive rehab
+planning
+Wearables + AI
+coaching Emerging Personalisation + early
+detection Adherence variability
+Remote triage/ROM
+assessment
+Teleconsultation
+screening
+Early clinical
+deployment Improved access Digital divide
+Thermal imaging
+monitoring
+Diabetic foot,
+inflammation Conceptual translation Non-invasive early
+alerts Needs validation trials
+Table 6. Systems, Ethics, and Regulatory Landscape for AI in Orthopaedics.
+Issue Evidence Described Implication Research Need
+Explainability gap A barrier to surgeon trust Slows adoption XAI models for planning + diagnostics
+Data heterogeneity Single-centre datasets Poor generalisability Multicentre training datasets
+Workflow fragmentation Lack of PACS/robotics
+interoperability Translation gap Implementation science
+Algorithmic bias Risk of unequal access Ethical hazard Bias detection frameworks
+Undefined liability No clear accountability Legal risk Regulatory standards
+Table 7. Future research agenda derived from expert synthesis.
+Priority Area Rationale Target Outcome
+Digital twins Surgery simulation before intervention Individualised pre-trial planning
+PROMIS–AI fusion Underused dataset for modeling Phenotype-driven rehab + decision aids
+Precision orthobiologics Variable outcomes of PRP/IAHA Algorithmic responder identification
+Teleorthopaedics learning loops Continuous monitoring data streams Real-time model updating
+Fair-AI governance Safety > accuracy Bias-safe clinical deployment
+Table 8 presents a comparative analysis of outcomes from conventional image inter-
+pretation and those enabled by AI support. The data in Table 8 indicate that AI contributes
+to enhanced performance, improved accuracy, training standardization, and expedited
+workflows. Nevertheless, the implementation of AI remains dependent on its validation
+and integration. The reported time metrics correspond to values observed under study-
+specific or experimental conditions and should not be misconstrued as representing the
+total duration of clinical workflows.
+It is essential to differentiate between the inference time and the entire clinical work-
+flow duration, which includes image transfer, result evaluation, management of false
+positives, and subsequent clinical decision-making.
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 12 ===
+J. Clin. Med. 2026, 15, 1751 12 of 26
+Table 8. Comparative performance: AI vs. traditional clinical workflows.
+Domain Conventional AI-Enhanced Observed Gain
+Fracture detection
+0.5–3.0 min (average
+1.2–1.5 min)/
+X-ray [133,134]
+0.5–2.5 min (average
+1.0–1.3 min)/X-ray [135,136]
+Significant efficiency boost with reduced
+missed fractures. Improved sensitivity, 29%
+fewer missed fractures, and optimized
+working time through AI-supported
+prioritization rather than raw
+interpretation speed alone.
+Distal radius
+interpretation accuracy
+80% sensitivity; 14%
+error [137,138]
+87% sensitivity; 9% error
+[139,140]
+↑ precision, especially for non-expert
+readers. Improved sensitivity and fewer
+missed fractures, particularly with
+segmentation-based AI support.
+Implant identification
+~60–80% accuracy;
+time-consuming, and
+operator-
+dependent [141]
+~96–99% accuracy
+(manufacturer + model),
+AUROC≈ 0.99 [142]
+Rapid revision planning;
+reduced uncertainty
+Arthroplasty
+templating accuracy
+~40–60% exact size
+match [143,144]
+~70–90% exact size match;
+~3–4× higher odds of correct
+sizing vs. manual 2D [143,145]
+Improved implant size prediction and
+positioning, enabling better THA planning
+and potentially shorter operative time.
+CT segmentation for
+TKA/PSI
+129 min
+processing [79,146] 4 min with AI [79,146]
+Reduction in CT processing time
+(≈20–30×), enabling rapid 3D planning
+and PSI generation without compromising
+segmentation accuracy. Processing time
+refers to computational segmentation time
+and does not represent total clinical
+workflow duration
+PSI planning time 160 min [147] 35 min [147]
+Improved scheduling, accelerated PSI
+planning and prototyping (substantially
+shortened planning time) while
+maintaining sub-millimetric accuracy of
+cutting guides.
+Spinal surgery
+complication reduction
+Standard complication
+risk and length of stay
+(e.g., transfusions ~28%,
+LOS ~5.1 days in short
+lumbar fusions) [148]
+↓ complications with AI
+(p = 0.021)
+lower rate of selected
+complications (e.g.,
+transfusions 23% vs. 28%) and
+shorter hospital stays (4.8 vs.
+5.1 days),↑ accuracy in screw
+placement and fewer
+reoperations [149,150]
+Lower complication rates and shorter stay
+with AI-supported navigation and risk
+prediction, enhancing safety in
+spine surgery
+Teleorthopaedic triage
+In-person review
+required; manual ROM
+goniometry; limited
+reach [151–154]
+Remote screening + ROM
+estimation [155]
+Expanded access, triage efficiency, and
+early feasibility evidence
+Arrow up—increase; arrow down—decrease.
+4. Discussion
+4.1. Key Findings and Maturity of Evidence
+The key message of this review is that AI in orthopaedics can provide the greatest clin-
+ical value when applied to well-defined, standardized tasks with clear validation pathways,
+thereby augmenting physicians [156]. By contrast, performance and reliability decline as
+clinical complexity, contextual variability, and the diffusion of responsibility across care
+processes increase in the healthcare system. This narrative review indicates that AI in
+orthopaedics is the most clinically mature in diagnostic imaging [8,45,52,98,131,157–161]
+and arthroplasty planning [11,35,74,115,162,163], where deep learning systems consistently
+achieve expert-level performance in fracture detection [ 25,50,52,88,159,160,164–166], im-
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 13 ===
+J. Clin. Med. 2026, 15, 1751 13 of 26
+plant identification [73,167–171], and component template creation [29–31]. AI can reduce
+diagnostic delays [161], planning errors [147,161,169], and perioperative burdens [130]. In
+contrast, predictive analytics [93,112,172,173], rehabilitation intelligence [116,122,174–176],
+and digital ecosystem concepts (Figure 2), such as learning systems [ 173,177] or digital
+twins [157,178], remain at an earlier stage of development, supported mainly by proof-of-
+concept studies with limited multicenter validation or prospective impact data.
+Figure 2. Orthopaedic AI ecosystem flowchart. The conceptual flowchart depicts how imaging
+data, clinical variables, PROMs, and sensor-derived signals feed AI-assisted diagnostics, arthroplasty
+planning, outcome prediction, and rehabilitation monitoring, with real-world outcomes fed back into
+model updates, thereby forming a learning health system for musculoskeletal care.
+4.2. Comparison with Previous Works
+Previous reviews have typically focused on individual elements of the ortho-
+pedic care pathway, such as radiographic analysis [ 61,127,132,141,142], knee or hip
+arthroplasty planning [ 26,91,124,143–145], and general machine-learning-based predic-
+tive models [179]. In contrast, this review integrates AI applications in diagnostic imag-
+ing [8,48,180,181], surgical planning [12,28,35,44,84,182], risk prediction [173,174,183–185],
+rehabilitation [5,14,41,43,181], and system-level management. It explicitly links these to
+PROM integration [7,14,153], teleorthopaedics [ 154,186], and new concepts in learning-
+based healthcare systems, thereby highlighting the maturity of each area. Many previous
+reviews have focused on the application of AI in various orthopedic subspecialties. In con-
+trast, this synthesis emphasizes the degree of translational readiness, which is influenced
+more by task structure and validation feasibility than algorithmic complexity.
+4.3. Technical Challenges in AI Implementation
+Despite significant advances, several technical hurdles impede the translation of
+AI into routine orthopaedic practice. One major issue is overfitting owing to relatively
+small or biased datasets, underscoring the need for approaches such as federated learning
+to pool data across institutions without sharing sensitive patient information [ 156,157].
+Additionally, the “black-box” nature of many AI models raises concerns; explainable AI
+(XAI) techniques (e.g., SHAP value analysis or LIME) are required to interpret model
+decisions, thereby enhancing clinician trust in AI outputs [187].
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 14 ===
+J. Clin. Med. 2026, 15, 1751 14 of 26
+4.4. Clinical and Healthcare System Implications
+For clinicians, the most immediate opportunities arise from implementing AI to
+streamline existing processes in radiology and arthroplasty planning [20], where tools can
+standardize templates [29], prioritize cases, and support less-experienced readers without
+replacing human judgment.
+AI-based teleorthopedic pathways can improve remote medical triage [188,189], range-
+of-motion assessment [155], and rehabilitation monitoring [41,189,190]. However, imple-
+menting these systems requires establishing a robust governance and accountability frame-
+work to ensure data security and support digital inclusion [171–173], thereby mitigating
+the risk transferred from institutions to patients and physicians [191,192].
+From a healthcare perspective, AI-based risk stratification [ 148] and PROM-
+based prediction models [ 159] may ultimately support personalized thromboprophy-
+laxis [36,37,109], joint decision-making regarding arthroplasty candidates [ 20,193,194],
+and more efficient resource allocation. In contrast, teleorthopedic and rehabilitation
+applications remain constrained by limited validation, contextual variability, and un-
+resolved questions regarding digital equity, data security, and clinical responsibility in
+remote care models [ 161,179]. The results emphasize that the effective use of AI in or-
+thopaedics depends not only on the sophistication of the algorithms themselves, but also
+on clearly defined tasks, robust validation strategies, and effective integration of these
+tools into existing clinical and organizational frameworks. Even more important than
+the “sophistication” of the models is whether we know exactly what they are supposed
+to be used for, how reliably we check their performance, and how we fit them into a
+real-world workflow. Expanding the use of AI beyond narrowly defined tasks without
+adequate validation and oversight can undermine physician trust in these systems and
+ultimately harm the quality of care. Although quantitative data pooling (meta-analysis)
+was infeasible owing to study heterogeneity, we deliberately prioritized the qualitative
+synthesis of AI model architectures and use cases. This approach provides technical
+insights that are often missing from clinical reviews.
+4.5. Economic and Implementation Considerations
+Current evidence on the cost-effectiveness of artificial intelligence (AI) in orthopaedics
+remains limited and highly context-dependent [195–197]. Although imaging triage and
+arthroplasty planning tools have the potential to mitigate delays, reduce rework, and
+decrease planning variability, the overall economic impact is influenced by the local base-
+line performance [198,199], case volume, and degree of workflow integration, including
+PACS/EHR [112], reporting, and liability pathways [79,195]. Initial costs, such as licensing,
+integration, cybersecurity, and staff training, as well as ongoing maintenance expenses, in-
+cluding monitoring, model updates, and post-market surveillance, are often underreported,
+thereby constraining comprehensive health technology assessments [26,79,195,200–202].
+From an institutional standpoint, the business case for AI is generally most com-
+pelling when it demonstrably alleviates bottlenecks, such as radiology turnaround time
+and revision planning time, or standardizes performance for less-experienced practition-
+ers [74,196,201,203,204]. However, financial incentives may be misaligned if cost savings
+benefit one stakeholder while another incurs implementation costs. Consequently, future
+evaluations should incorporate economic endpoints alongside clinical outcomes, encom-
+passing resource utilization, time-to-decision, complication-related costs, and patient-
+reported values [205,206].
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 15 ===
+J. Clin. Med. 2026, 15, 1751 15 of 26
+4.6. Strengths and Limitations of This Review
+The structured narrative, broad thematic scope covering the entire spectrum of ortho-
+pedic patient care from imaging, surgery planning, prognosis, rehabilitation, and treatment
+within a single coherent structure, and the adoption of clear performance indicators and
+clinically relevant endpoints can be considered strengths of our review.
+However, this was not a formal systematic review and did not constitute exhaustive or
+quantitative synthesis. The evidence base remains dominated by retrospective single-center
+studies based on carefully selected datasets with limited demographic and institutional
+diversity. The review was based solely on English-language literature and did not consider
+studies from gray literature or other languages. Consequently, residual selection and
+classification biases cannot be excluded. The impact of incomplete consideration of relevant
+evidence, particularly in areas with heterogeneous imaging protocols, variable annotation
+standards, and limited external validation, cannot be ruled out.
+Several additional limitations of this study should be considered when interpreting
+these results. Studies vary considerably in terms of the input data, reference standards,
+outcome definitions, and reporting practices. Image acquisition parameters, real-world
+annotation strategies, and performance metrics have not been analyzed in sufficient de-
+tail, making it difficult to compare models and meaningfully aggregate results. In many
+areas, the reported accuracy likely reflects optimization for specific tasks rather than
+the actual clinical performance. Few studies have included rigorous external validation,
+prospective evaluation, or direct comparison with established clinical processes. It can
+also be assumed that high algorithm performance does not necessarily translate into bet-
+ter patient outcomes, greater efficiency, or better decision quality. This gap is particularly
+evident in predictive analytics, rehabilitation intelligence, and teleorthopaedic applica-
+tions, where long-term outcomes and contextual factors are critical. In addition, many
+studies have provided limited information on transparency, explainability, fairness, and
+other ethical issues. Despite growing regulatory and ethical expectations, there is a lack
+of systematic assessment of bias, interpretability, and failure modes, making it difficult
+to predict unintended consequences and potentially undermining clinicians’ trust in AI.
+This may be particularly relevant when AI systems are deployed outside of narrowly
+defined use cases. Overall, the current literature reflects an evolving, methodologically
+heterogeneous field, and the reported results should be interpreted with caution when
+extrapolating to routine clinical practice.
+Another concern is the apparent optimism in many early-stage studies, often authored
+by the same teams that developed the evaluated algorithms. Although these studies
+often demonstrate high performance under controlled conditions, they may be biased by
+optimism resulting from the favorable selection of datasets, task formulation, or evaluation
+protocols tailored to the strengths of the proposed methods. Consequently, the actual
+performance in heterogeneous clinical settings with unknown data distribution and daily
+workflow constraints may be significantly lower than previously reported. This highlights
+the need for independent validation, external replication, and prospective evaluation to
+distinguish true clinical utility from proof-of-concept results and to avoid overestimating
+the capabilities of current AI systems that can be safely delivered in practice.
+4.7. Generative AI
+Emerging Generative AI tools warrant consideration in orthopaedics. Although
+current applications are dominated by discriminative models (for classification or segmen-
+tation), generative approaches, including large language models (LLMs), are beginning to
+assist with clinical documentation and decision support. For example [207], preliminary
+studies have shown that LLMs can draft discharge summaries and operative reports signif-
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 16 ===
+J. Clin. Med. 2026, 15, 1751 16 of 26
+icantly faster than clinicians, while maintaining comparable quality. These models could
+reduce administrative burdens and improve patient communication, although issues such
+as content ‘hallucinations’ and the need for rigorous validation currently limit their clinical
+deployment [208].
+4.8. Directions for the Future
+Future research should prioritize the prospective multicenter validation of imaging
+and preoperative planning algorithms. However, the current body of evidence has been
+limited by insufficient external validation. Therefore, future studies should employ prag-
+matic designs, such as stepped-wedge cluster-randomized trials or multicenter prospective
+cohort studies, to assess the real-world clinical impact of routine workflows.
+The evaluation should extend beyond the diagnostic accuracy. Key outcomes include
+patient-reported outcome measures, complications and safety endpoints, time-to-decision,
+workflow efficiency, downstream healthcare utilization (e.g., additional imaging or re-
+consultations), and economic outcomes relevant to hospitals and payers.
+Validation should not rely solely on a single test. Regular local reevaluation at indi-
+vidual centers is necessary to account for dataset shifts, evolving practice patterns, and
+changes in the patient population. Research should transition from isolated case reports
+to implementation-focused studies that assess the impact of AI on treatment outcomes,
+clinician behavior, and resource utilization.
+In the fields of rehabilitation and teleorthopedics, robust prospective studies are
+required to determine whether remote monitoring and AI-supported adaptive therapy can
+enhance clinical outcomes and improve patient safety. At the health-system level, future
+work should address regulatory adaptation, transparent and interpretable model design,
+continuous post-market oversight, and the integration of patient-reported outcomes and
+real-world evidence into learning health systems to ensure the safe, ethical, and equitable
+deployment of AI technologies.
+At the system level, it is critical to adapt to changing regulations; develop transparent
+and understandable models; conduct ongoing oversight after innovations are introduced
+to the market; and integrate patient-reported outcomes (PROMs) and real-world evidence
+into health education systems to ensure the safe, ethical, and equitable implementation of
+these solutions.
+5. Conclusions
+AI in orthopaedics and in the care of patients with musculoskeletal disorders has
+reached clinical maturity in terms of diagnostic imaging and arthroplasty planning. In
+these areas, algorithms can consistently achieve expert-level results, leading to measurable
+improvements in efficiency and perioperative decision-making. In contrast, areas such as
+predictive analytics, rehabilitation intelligence, and teleorthopaedic applications are still
+at an early stage of translational readiness. However, their development is hampered by
+limited external validation, biased or narrowly representative datasets, and a lack of trans-
+parency in algorithmic decision-making processes. The transition from proof-of-concept
+implementations to reliable clinical services will rely, to some extent, on further improve-
+ments in the algorithm performance. However, to a large extent, implementation will
+require robust multicenter prospective evaluations, repeatable local validations, systematic
+assessments of fairness and explainability, and clinically meaningful integration of PROM
+and sensor data. Under these conditions, AI is well-positioned to complement, rather than
+replace, orthopedic knowledge, thereby supporting more consistent, patient-centered, and
+value-based musculoskeletal care.
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 17 ===
+J. Clin. Med. 2026, 15, 1751 17 of 26
+Supplementary Materials: The following supporting information can be downloaded at: https://
+www.mdpi.com/article/10.3390/jcm15051751/s1, Table S1: Full-text articles excluded after eligibility
+assessment, and reasons for exclusion; Table S2: Qualitative summary of methodological quality of
+included studies.
+Author Contributions: Conceptualization, W.M.G.; methodology, W.M.G., A.S., A.W. and K.W.;
+validation, W.M.G., A.S., A.W. and K.W.; formal analysis, W.M.G., A.S., A.W. and K.W.; investigation,
+W.M.G., A.S., A.W. and K.W.; resources, W.M.G., A.S., A.W. and K.W.; data curation, W.M.G., A.S.,
+A.W. and K.W.; writing—original draft preparation, W.M.G., A.S., A.W. and K.W.; writing—review
+and editing, W.M.G., A.S., A.W. and K.W.; visualization, W.M.G., A.S., A.W. and K.W.; supervision,
+W.M.G.; project administration, W.M.G., A.S., A.W. and K.W.; funding acquisition, W.M.G., A.S., A.W.
+and K.W. All authors have read and agreed to the published version of the manuscript.
+Funding: This study received no external funding.
+Institutional Review Board Statement: Not applicable.
+Informed Consent Statement: Not applicable.
+Data Availability Statement: Data supporting the reported results are available from the authors
+upon request.
+Acknowledgments: Grammarly and PaperPal were used for grammatical and stylistic corrections.
+Conflicts of Interest: The authors declare no conflicts of interest.
+References
+1. Nguyen, A.; Lee, P .; Rodriguez, E.K.; Chahal, K.; Freedman, B.R.; Nazarian, A. Addressing the growing burden of musculoskeletal
+diseases in the ageing US population: Challenges and innovations. Lancet Healthy Longev. 2025, 6, 100707. [CrossRef]
+2. Malik, K.M.; Beckerly, R.; Imani, F. Musculoskeletal Disorders a Universal Source of Pain and Disability Misunderstood and
+Mismanaged: A Critical Analysis Based on the U.S. Model of Care. Anesth. Pain Med. 2018, 8, e85532. [CrossRef]
+3. Kumar, R.; Marla, K.; Sporn, K.; Paladugu, P .; Khanna, A.; Gowda, C.; Ngo, A.; Waisberg, E.; Jagadeesan, R.; Tavakkoli, A.
+Emerging Diagnostic Approaches for Musculoskeletal Disorders: Advances in Imaging, Biomarkers, and Clinical Assessment.
+Diagnostics 2025, 15, 1648. [CrossRef]
+4. Gill, T.K.; Tabish, M. Global, regional, and national burden of other musculoskeletal disorders, 1990–2020, and projections to 2050:
+A systematic analysis of the Global Burden of Disease Study 2021. Lancet Rheumatol. 2023, 5, e670–e682. [CrossRef]
+5. Lee, Y.K.; Yoon, E.-J.; Kim, T.H.; Kim, J.-I.; Kim, J.-H. Musculoskeletal Digital Therapeutics and Digital Health Rehabilitation: A
+Global Paradigm Shift in Orthopedic Care. JCM 2025, 14, 8467. [CrossRef] [PubMed]
+6. Meara, J.G.; Leather, A.J.M.; Hagander, L.; Alkire, B.C.; Alonso, N.; Ameh, E.A.; Bickler, S.W.; Conteh, L.; Dare, A.J.; Davies, J.;
+et al. Global Surgery 2030: Evidence and solutions for achieving health, welfare, and economic development. Lancet 2015, 386,
+569–624. [CrossRef] [PubMed]
+7. Zarghami, A. Role of Artificial Intelligence in Surgical Decision-Making: A Comprehensive Review: Role of AI in SDM. Galen
+Med. J. 2024, 13, e3332. [CrossRef]
+8. Zhang, X.; Yang, Y.; Shen, Y.W.; Zhang, K.R.; Jiang, Z.K.; Ma, L.T.; Ding, C.; Wang, B.Y.; Meng, Y.; Liu, H. Diagnostic accuracy and
+potential covariates of artificial intelligence for diagnosing orthopedic fractures: A systematic literature review and meta-analysis.
+Eur. Radiol. 2022, 32, 7196–7216. [CrossRef]
+9. Liu, Y.; Wu, X.; Sang, Y.; Zhao, C.; Wang, Y.; Shi, B.; Fan, Y. Evolution of Surgical Robot Systems Enhanced by Artificial Intelligence:
+A Review. Adv. Intell. Syst. 2024, 6, 2300268. [CrossRef]
+10. Yuan, D.; Zhang, H.; Tong, L.; Chen, D. Artificial Intelligence for Bone: Theory, Methods, and Applications.Adv. Intell. Discov.
+2025, 3, 202500070. [CrossRef]
+11. Xue, D.; Wang, K.; He, H.; Wang, L.; Dai, Y.; Shen, G.; Chen, Y.; Chen, J.; Yang, Y.; Chen, Z.; et al. Comparison of Artificial
+Intelligence and Traditional Methods in Preoperative Planning for Primary Total Hip Arthroplasty: A Systematic Review and
+Meta-Analysis. Orthop. Surg. 2025, 17, 2823–2834. [CrossRef] [PubMed]
+12. Vaishya, R.; Sibal, A.; Kar, S.; Reddy, S. Integrating artificial intelligence into orthopedics: Opportunities, challenges, and future
+directions. J. Hand Microsurg. 2025, 17, 100257. [CrossRef]
+13. Tian, C.; Gao, Y.; Rui, C.; Qin, S.; Shi, L.; Rui, Y. Artificial intelligence in orthopaedic trauma. EngMedicine 2024, 1, 100020.
+[CrossRef]
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 18 ===
+J. Clin. Med. 2026, 15, 1751 18 of 26
+14. Song, J.; Wang, G.C.; Wang, S.C.; He, C.R.; Zhang, Y.Z.; Chen, X.; Su, J.C. Artificial intelligence in orthopedics: Fundamentals,
+current applications, and future perspectives. Mil. Med. Res. 2025, 12, 42. [CrossRef]
+15. Sharma, S. Artificial intelligence for fracture diagnosis in orthopedic X-rays: Current developments and future potential. SICOT-J
+2023, 9, 21. [CrossRef]
+16. Sharaf, Y. Application of Artificial Intelligence in Pediatric Orthopaedic. SVOAOR 2023, 3, 88811–88858. [CrossRef]
+17. Olczak, J.; Fahlberg, N.; Maki, A.; Razavian, A.S.; Jilert, A.; Stark, A.; Sköldenberg, O.; Gordon, M. Artificial intelligence for
+analyzing orthopedic trauma radiographs. Acta Orthop. 2017, 88, 581–586. [CrossRef] [PubMed]
+18. Lakhani, A. Revolutionizing orthopedic care: The impact of ai in predictive analysis, surgical precision, and personalized
+rehabilitation. JCHM 2024, 11, 120–132. [CrossRef]
+19. Kumar, R.; Sporn, K.; Ong, J.; Waisberg, E.; Paladugu, P .; Vaja, S.; Hage, T.; Sekhar, T.C.; Vadhera, A.S.; Ngo, A.; et al. Integrating
+Artificial Intelligence in Orthopedic Care: Advancements in Bone Care and Future Directions. Bioengineering 2025, 12, 513.
+[CrossRef]
+20. Bak˙I, H. Transforming Orthopedic Decision-Making and Patient Care Through Artificial Intelligence. JMS 2025, 94, 94–95.
+[CrossRef]
+21. Hansen, V .; Jensen, J.; Kusk, M.W.; Gerke, O.; Tromborg, H.B.; Lysdahlgaard, S. Deep learning performance compared to
+healthcare experts in detecting wrist fractures from radiographs: A systematic review and meta-analysis. Eur. J. Radiol. 2024, 174,
+111399. [CrossRef]
+22. Tieu, A.; Kroen, E.; Kadish, Y.; Liu, Z.; Patel, N.; Zhou, A.; Yilmaz, A.; Lee, S.; Deyer, T. The Role of Artificial Intelligence in the
+Identification and Evaluation of Bone Fractures. Bioengineering 2024, 11, 338. [CrossRef]
+23. Zech, J.R.; Santomartino, S.M.; Yi, P .H. Artificial Intelligence (AI) for Fracture Diagnosis: An Overview of Current Products and
+Considerations for Clinical Adoption, From the AJR Special Series on AI Applications. Am. J. Roentgenol. 2022, 219, 869–878.
+[CrossRef]
+24. Debs, P .; Fayad, L.M. The promise and limitations of artificial intelligence in musculoskeletal imaging. Front. Radiol. 2023, 3,
+1242902. [CrossRef] [PubMed]
+25. Elkohail, A.; Soffar, A.; Paul, A.; Radu, L.; Wasim Shaffe Ahamed, M.; Swealem, A.; Mohideen Ahamed Sha, A.A.; Mandoth
+Veetil, H.H.; Millat, M.S.; Shah, R. Artificial Intelligence in Bone Fracture Detection: A Review of Evidence, Limitations, and
+Clinical Integration. Cureus 2025, 17, e97674. [CrossRef]
+26. Sayed, A.; Elkohail, A.; Soffar, A.; Elbanna, M.; Radu, L.; Wasim Shaffe Ahamed, M.; Shah, R. Current Concepts in Artificial
+Intelligence-Assisted Arthroplasty: A Review of the Perioperative Pathway. Cureus 2025, 17, e99946. [CrossRef]
+27. Li, P .; Wang, Y.; Zhao, R.; Hao, L.; Chai, W.; Jiying, C.; Feng, Z.; Ji, Q.; Zhang, G. The Application of artificial intelligence in
+periprosthetic joint infection. J. Adv. Res. 2026, 79, 633–659. [CrossRef]
+28. Zampogna, B.; Torre, G.; Zampoli, A.; Parisi, F.; Ferrini, A.; Shanmugasundaram, S.; Franceschetti, E.; Papalia, R. Can machine
+learning predict the accuracy of preoperative planning for total hip arthroplasty, basing on patient-related factors? An explorative
+investigation on Supervised machine learning classification models. J. Clin. Orthop. Trauma. 2024, 53, 102470. [CrossRef]
+29. Min, M.; Wang, X.; Urba, R.; Zhang, W.; Gao, J.; Fan, L. Comparison of traditional template measurements and artificial
+intelligence preoperative planning in total knee arthroplasty. Front. Surg. 2025, 12, 1573148. [CrossRef] [PubMed]
+30. Lan, Q.; Li, S.; Zhang, J.; Guo, H.; Yan, L.; Tang, F. Reliable prediction of implant size and axial alignment in AI-based 3D
+preoperative planning for total knee arthroplasty. Sci. Rep. 2024, 14, 16971. [CrossRef] [PubMed]
+31. Anwar, A.; Zhang, Y.; Zhang, Z.; Li, J. Artificial intelligence technology improves the accuracy of preoperative planning in
+primary total hip arthroplasty. Asian J. Surg. 2024, 47, 2999–3006. [CrossRef]
+32. Wongsak, S.; Janyawongchot, T.; Sri-Utenchai, N.; Owasirikul, D.; Jaovisidha, S.; Woratanarat, P .; Sa-Ngasoongsong, P . Develop-
+ment of a Deep Learning Model for Hip Arthroplasty Templating Using Anteroposterior Hip Radiograph. JCM 2025, 14, 8689.
+[CrossRef]
+33. Hu, Y.; Fan, Y.; Sun, Z.; Song, H. AI-assisted preoperative planning combined with robotic-assisted total knee arthroplasty vs.
+conventional surgery: A retrospective controlled study. BMC Musculoskelet. Disord. 2026, 27, 129. [CrossRef] [PubMed]
+34. Li, S.; Jiang, J.; Zhang, J.; Yan, L.; Guo, H.; Tang, F. Advantages and effectiveness of AI three-dimensional reconstruction
+technology in the preoperative planning of total hip arthroplasty. Sci. Rep. 2025, 15, 24630. [CrossRef]
+35. Velasquez Garcia, A.; Bukowiec, L.G.; Yang, L.; Nishikawa, H.; Fitzsimmons, J.S.; Larson, A.N.; Taunton, M.J.; Sanchez-Sotelo, J.;
+O’Driscoll, S.W.; Wyles, C.C. Artificial intelligence–based three-dimensional templating for total joint arthroplasty planning: A
+scoping review. Int. Orthop. (SICOT) 2024, 48, 997–1010. [CrossRef] [PubMed]
+36. Gu, Y.; Yang, Y.; Gao, X.; Wang, Y.; Yang, L.; Wei, Y. Application of artificial intelligence in risk assessment and management of
+venous thromboembolism: Scoping review. Front. Physiol. 2025, 16, 1664470. [CrossRef]
+37. Danilatou, V .; Dimopoulos, D.; Kostoulas, T.; Douketis, J. Machine Learning-Based Predictive Models for Patients with Venous
+Thromboembolism: A Systematic Review. Thromb. Haemost. 2024, 124, 1040–1052. [CrossRef]
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 19 ===
+J. Clin. Med. 2026, 15, 1751 19 of 26
+38. Naser, A.M.; Vyas, R.; Morgan, A.A.; Kalaiger, A.M.; Kharawala, A.; Nagraj, S.; Agarwal, R.; Maliha, M.; Mangeshkar, S.; Singh,
+N.; et al. Role of Artificial Intelligence in the Diagnosis and Management of Pulmonary Embolism: A Comprehensive Review.
+Diagnostics 2025, 15, 889. [CrossRef]
+39. Simon, B.D.; Ozyoruk, K.B.; Gelikman, D.G.; Harmon, S.A.; Türkbey, B. The future of multimodal artificial intelligence models for
+integrating imaging and clinical metadata: A narrative review. Diagn. Interv. Radiol. 2025, 31, 303–312. [CrossRef]
+40. Federer, S.J.; Jones, G.G. Artificial intelligence in orthopaedics: A scoping review. PLoS ONE 2021, 16, e0260471. [CrossRef]
+[PubMed]
+41. Luo, Z.; Wang, Y.; Zhang, T.; Wang, J. Effectiveness of AI-assisted rehabilitation for musculoskeletal disorders: A network
+meta-analysis of pain, range of motion, and functional outcomes. Front. Bioeng. Biotechnol. 2025, 13, 1660524. [CrossRef] [PubMed]
+42. Moldovan, F.; Moldovan, L. An Innovative Assessment Framework for Remote Care in Orthopedics. Healthcare 2025, 13, 736.
+[CrossRef]
+43. Olawade, D.B.; Adeleye, K.K.; Egbon, E.; Nwabuoku, U.S.; Clement David-Olawade, A.; Boussios, S.; Vanderbloemen, L.
+Enhancing home rehabilitation through AI-driven virtual assistants: A narrative review. Ann. Transl. Med. 2025, 13, 61. [CrossRef]
+44. Han, F.; Huang, X.; Wang, X.; Chen, Y.f.; Lu, C.; Li, S.; Lu, L.; Zhang, D.W. Artificial Intelligence in Orthopedic Surgery: Current
+Applications, Challenges, and Future Directions. MedComm 2025, 6, e70260. [CrossRef]
+45. Guo, T.-Y.; Deng, J.-H.; Zhou, Z.-M.; Chen, J.-Y.; Zhou, H.-F.; Zhang, X.; Qi, T.-T.; Zeng, H.; Yu, F. Advancements in deep
+learning-based image screening for orthopedic conditions: Emphasis on osteoporosis, osteoarthritis, and bone tumors. Ageing
+Res. Rev. 2025, 111, 102840. [CrossRef]
+46. Alzubaidi, L.; Al-Dulaimi, K.; Salhi, A.; Alammar, Z.; Fadhel, M.A.; Albahri, A.S.; Alamoodi, A.H.; Albahri, O.S.; Hasan, A.F.; Bai,
+J.; et al. Comprehensive review of deep learning in orthopaedics: Applications, challenges, trustworthiness, and fusion. Artif.
+Intell. Med. 2024, 155, 102935. [CrossRef]
+47. Luiken, I.; Lemke, T.; Komenda, A.; Marka, A.W.; Kim, S.H.; Graf, M.M.; Ziegelmayer, S.; Weller, D.; Mertens, C.J.; Bressem, K.K.;
+et al. Evaluation of commercial AI algorithms for the detection of fractures, effusions, and dislocations on real-world clinical data:
+A prospective registry study. Radiography 2025, 31, 103189. [CrossRef] [PubMed]
+48. Ruitenbeek, H.C.; Oei, E.H.G.; Visser, J.J.; Kijowski, R. Artificial intelligence in musculoskeletal imaging: Realistic clinical
+applications in the next decade. Skelet. Radiol. 2024, 53, 1849–1868. [CrossRef]
+49. Nowroozi, A.; Salehi, M.A.; Shobeiri, P .; Agahi, S.; Momtazmanesh, S.; Kaviani, P .; Kalra, M.K. Artificial intelligence diagnostic
+accuracy in fracture detection from plain radiographs and comparing it with clinicians: A systematic review and meta-analysis.
+Clin. Radiol. 2024, 79, 579–588. [CrossRef] [PubMed]
+50. Langerhuizen, D.W.G.; Janssen, S.J.; Mallee, W.H.; van den Bekerom, M.P .J.; Ring, D.; Kerkhoffs, G.; Jaarsma, R.L.; Doornberg, J.N.
+What Are the Applications and Limitations of Artificial Intelligence for Fracture Detection and Classification in Orthopaedic
+Trauma Imaging? A Systematic Review. Clin. Orthop. Relat. Res. 2019, 477, 2482–2491. [CrossRef]
+51. Kutbi, M. Artificial Intelligence-Based Applications for Bone Fracture Detection Using Medical Images: A Systematic Review.
+Diagnostics 2024, 14, 1879. [CrossRef]
+52. Kuo, R.Y.L.; Harrison, C.; Curran, T.A.; Jones, B.; Freethy, A.; Cussons, D.; Stewart, M.; Collins, G.S.; Furniss, D. Artificial
+Intelligence in Fracture Detection: A Systematic Review and Meta-Analysis. Radiology 2022, 304, 50–62. [CrossRef]
+53. Litjens, G.; Kooi, T.; Bejnordi, B.E.; Setio, A.A.A.; Ciompi, F.; Ghafoorian, M.; van der Laak, J.; van Ginneken, B.; Sánchez, C.I. A
+survey on deep learning in medical image analysis. Med. Image Anal. 2017, 42, 60–88. [CrossRef]
+54. Mienye, I.D.; Swart, T.G.; Obaido, G.; Jordan, M.; Ilono, P . Deep Convolutional Neural Networks in Medical Image Analysis: A
+Review. Information 2025, 16, 195. [CrossRef]
+55. Al-Nafjan, A.; Aljuhani, A.; Alshebel, A.; Alharbi, A.; Alshehri, A. Artificial Intelligence in Predictive Healthcare: A Systematic
+Review. JCM 2025, 14, 6752. [CrossRef]
+56. Kus, I.; Kocak, C.; Keles, A. A systematic review of vision transformer and explainable AI advances in multimodal facial
+expression recognition. Intell. Syst. Appl. 2026, 29, 200615. [CrossRef]
+57. Halder, A.; Gharami, S.; Sadhu, P .; Singh, P .K.; Wo´ zniak, M.; Ijaz, M.F. Implementing vision transformer for classifying 2D
+biomedical images. Sci. Rep. 2024, 14, 12567. [CrossRef] [PubMed]
+58. Tang, H.; Chen, Y.; Wang, T.; Zhou, Y.; Zhao, L.; Gao, Q.; Du, M.; Tan, T.; Zhang, X.; Tong, T. HTC-Net: A hybrid CNN-transformer
+framework for medical image segmentation. Biomed. Signal Process. Control 2024, 88, 105605. [CrossRef]
+59. Aburass, S.; Dorgham, O.; Al Shaqsi, J.; Abu Rumman, M.; Al-Kadi, O. Vision Transformers in Medical Imaging: A Comprehensive
+Review of Advancements and Applications Across Multiple Diseases. J. Imaging Inform. Med. 2025, 38, 3928–3971. [CrossRef]
+[PubMed]
+60. Yao, W.; Bai, J.; Liao, W.; Chen, Y.; Liu, M.; Xie, Y. From CNN to Transformer: A Review of Medical Image Segmentation Models.
+J. Imaging Inform. Med. 2024, 37, 1529–1547. [CrossRef]
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 20 ===
+J. Clin. Med. 2026, 15, 1751 20 of 26
+61. Jang, R.; Kim, N.; Jang, M.; Lee, K.H.; Lee, S.M.; Lee, K.H.; Noh, H.N.; Seo, J.B. Assessment of the Robustness of Convolutional
+Neural Networks in Labeling Noise by Using Chest X-Ray Images From Multiple Centers. JMIR Med. Inform. 2020, 8, e18089.
+[CrossRef]
+62. Gong, Z.; Fu, Y.; He, M.; Fu, X. Automated identification of hip arthroplasty implants using artificial intelligence. Sci. Rep. 2022,
+12, 12179. [CrossRef] [PubMed]
+63. Patel, R.; Thong, E.H.E.; Batta, V .; Bharath, A.A.; Francis, D.; Howard, J. Automated Identification of Orthopedic Implants on
+Radiographs Using Deep Learning. Radiol. Artif. Intell. 2021, 3, e200183. [CrossRef]
+64. Wang, C.-T.; Huang, B.; Thogiti, N.; Zhu, W.-X.; Chang, C.-H.; Pao, J.-L.; Lai, F. Successful real-world application of an
+osteoarthritis classification deep-learning model using 9210 knees—An orthopedic surgeon’s view. J. Orthop. Res. 2023, 41,
+737–746. [CrossRef]
+65. Pi, S.-W.; Lee, B.-D.; Lee, M.S.; Lee, H.J. Ensemble deep-learning networks for automated osteoarthritis grading in knee X-ray
+images. Sci. Rep. 2023, 13, 22887. [CrossRef]
+66. Kijowski, R.; Fritz, J.; Deniz, C.M. Deep learning applications in osteoarthritis imaging. Skelet. Radiol. 2023, 52, 2225–2238.
+[CrossRef]
+67. Shwartz-Ziv, R.; Armon, A. Tabular data: Deep learning is not all you need. Inf. Fusion 2022, 81, 84–90. [CrossRef]
+68. Sun, Z.; Lin, M.; Zhu, Q.; Xie, Q.; Wang, F.; Lu, Z.; Peng, Y. A scoping review on multimodal deep learning in biomedical images
+and texts. J. Biomed. Inform. 2023, 146, 104482. [CrossRef]
+69. Obuchowicz, R.; Lasek, J.; Wodzi ´ nski, M.; Piórkowski, A.; Strzelecki, M.; Nurzynska, K. Artificial Intelligence-Empowered
+Radiology-Current Status and Critical Review. Diagnostics 2025, 15, 282. [CrossRef] [PubMed]
+70. Slim, K.; Nini, E.; Forestier, D.; Kwiatkowski, F.; Panis, Y.; Chipponi, J. Methodological index for non-randomized studies (minors):
+Development and validation of a new instrument. ANZ J. Surg. 2003, 73, 712–716. [CrossRef]
+71. Karnuta, J.M.; Shaikh, H.J.F.; Murphy, M.P .; Brown, N.M.; Pearle, A.D.; Nawabi, D.H.; Chen, A.F.; Ramkumar, P .N. Artificial
+Intelligence for Automated Implant Identification in Knee Arthroplasty: A Multicenter External Validation Study Exceeding 3.5
+Million Plain Radiographs. J. Arthroplast. 2023, 38, 2004–2008. [CrossRef]
+72. Lee, L.S.; Chan, P .K.; Wen, C.; Fung, W.C.; Cheung, A.; Chan, V .W.K.; Cheung, M.H.; Fu, H.; Yan, C.H.; Chiu, K.Y. Artificial
+intelligence in diagnosis of knee osteoarthritis and prediction of arthroplasty outcomes: A review. Arthroplasty 2022, 4, 16.
+[CrossRef]
+73. Ren, M.; Yi, P .H. Artificial intelligence in orthopedic implant model classification: A systematic review.Skelet. Radiol. 2022, 51,
+407–416. [CrossRef] [PubMed]
+74. Lambrechts, A.; Wirix-Speetjens, R.; Maes, F.; Van Huffel, S. Artificial Intelligence Based Patient-Specific Preoperative Planning
+Algorithm for Total Knee Arthroplasty.Front. Robot. AI 2022, 9, 840282. [CrossRef] [PubMed]
+75. Gurung, B.; Liu, P .; Harris, P .D.R.; Sagi, A.; Field, R.E.; Sochart, D.H.; Tucker, K.; Asopa, V . Artificial intelligence for image analysis
+in total hip and total knee arthroplasty. Bone Jt. J. 2022, 104-B, 929–937. [CrossRef]
+76. Hernigou, P .; Barbier, O.; Chenaie, P . Hip arthroplasty dislocation risk calculator: Evaluation of one million primary implants and
+twenty-five thousand dislocations with deep learning artificial intelligence in a systematic review of reviews. Int. Orthop. 2023,
+47, 557–571. [CrossRef]
+77. Bernard de Villeneuve, F.; Jacquet, C.; El Kadim, B.; Donnez, M.; Coue, O.; Poujade, T.; Khakha, R.; Argenson, J.-N.; Ollivier, M.
+An artificial intelligence based on a convolutional neural network allows a precise analysis of the alignment of the lower limb. Int.
+Orthop. (SICOT) 2022, 47, 511–518. [CrossRef] [PubMed]
+78. Shah, A.K.; Lavu, M.S.; Hecht, C.J.; Burkhart, R.J.; Kamath, A.F. Understanding the use of artificial intelligence for implant
+analysis in total joint arthroplasty: A systematic review. Arthroplasty 2023, 5, 54. [CrossRef]
+79. Li, S.; Liu, X.; Chen, X.; Xu, H.; Zhang, Y.; Qian, W. Development and Validation of an Artificial Intelligence Preoperative Planning
+and Patient-Specific Instrumentation System for Total Knee Arthroplasty.Bioengineering 2023, 10, 1417. [CrossRef]
+80. Tiwari, A.; Poduval, M.; Bagaria, V . Evaluation of artificial intelligence models for osteoarthritis of the knee using deep learning
+algorithms for orthopedic radiographs. World J. Orthop. 2022, 13, 603–614. [CrossRef]
+81. Chen, X.; Liu, X.; Wang, Y.; Ma, R.; Zhu, S.; Li, S.; Li, S.; Dong, X.; Li, H.; Wang, G.; et al. Development and Validation of an
+Artificial Intelligence Preoperative Planning System for Total Hip Arthroplasty.Front. Med. 2022, 9, 841202. [CrossRef]
+82. Bonnin, M.; Müller-Fouarge, F.; Estienne, T.; Bekadar, S.; Pouchy, C.; Ait Si Selmi, T. Artificial Intelligence Radiographic Analysis
+Tool for Total Knee Arthroplasty.J. Arthroplast. 2023, 38, S199–S207.e192. [CrossRef] [PubMed]
+83. Karnuta, J.M.; Luu, B.C.; Roth, A.L.; Haeberle, H.S.; Chen, A.F.; Iorio, R.; Schaffer, J.L.; Mont, M.A.; Patterson, B.M.; Krebs, V .E.;
+et al. Artificial Intelligence to Identify Arthroplasty Implants From Radiographs of the Knee. J. Arthroplast. 2021, 36, 935–940.
+[CrossRef]
+84. Wang, J.; Zhao, Z.; Liang, H.; Zhang, R.; Liu, X.; Zhang, J.; Singh, S.; Guo, W.; Yan, T.; Hoang, B.H.; et al. Artificial intelligence
+assisted preoperative planning and 3D-printing guiding frame for percutaneous screw reconstruction in periacetabular metastatic
+cancer patients. Front. Bioeng. Biotechnol. 2024, 12, 1404937. [CrossRef]
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 21 ===
+J. Clin. Med. 2026, 15, 1751 21 of 26
+85. Longo, U.G.; De Salvatore, S.; Piccolomini, A.; Ullman, N.S.; Salvatore, G.; D’Hooghe, M.; Saccomanno, M.; Samuelsson, K.;
+Papalia, R.; Pareek, A. Revolutionizing total hip arthroplasty: The role of artificial intelligence and machine learning. J. Exp.
+Orthop. 2025, 12, e70195. [CrossRef]
+86. Zadoo, N.; Tak, N.; Reddy, A.J.; Patel, R. Enhancing Pediatric Bone Age Assessment Using Artificial Intelligence: Implications for
+Orthopedic Surgery. Cureus 2025, 17, e79507. [CrossRef] [PubMed]
+87. Lind, A.; Akbarian, E.; Olsson, S.; Nåsell, H.; Sköldenberg, O.; Razavian, A.S.; Gordon, M. Artificial intelligence for the
+classification of fractures around the knee in adults according to the 2018 AO/OTA classification system. PLoS ONE 2021, 16,
+e0248809. [CrossRef]
+88. Liu, P .-R.; Zhang, J.-Y.; Xue, M.-D.; Duan, Y.-Y.; Hu, J.-L.; Liu, S.-X.; Xie, Y.; Wang, H.-L.; Wang, J.-W.; Huo, T.-T.; et al. Artificial
+Intelligence to Diagnose Tibial Plateau Fractures: An Intelligent Assistant for Orthopedic Physicians. Curr. Med. Sci. 2021, 41,
+1158–1164. [CrossRef]
+89. Musbahi, O.; Ahmed, A.; Hall, T.; Kutyla, K.; Sadiq, M.; Cobb, J.; Bottle, A.; Van Arkel, R.; Jones, G. Deep learning classification
+models demonstrate high accuracy and clinical potential in radiograph interpretation in the arthroplasty clinical pathway: A
+systematic review and meta-analysis. J. Exp. Orthop. 2025, 12, e70342. [CrossRef]
+90. Karnuta, J.M.; Murphy, M.P .; Luu, B.C.; Ryan, M.J.; Haeberle, H.S.; Brown, N.M.; Iorio, R.; Chen, A.F.; Ramkumar, P .N. Artificial
+Intelligence for Automated Implant Identification in Total Hip Arthroplasty: A Multicenter External Validation Study Exceeding
+Two Million Plain Radiographs. J. Arthroplast. 2023, 38, 1998–2003.e1991. [CrossRef] [PubMed]
+91. Smolle, M.A.; Goetz, C.; Maurer, D.; Vielgut, I.; Novak, M.; Zier, G.; Leithner, A.; Nehrer, S.; Paixao, T.; Ljuhar, R.; et al. Artificial
+intelligence-based computer-aided system for knee osteoarthritis assessment increases experienced orthopaedic surgeons’
+agreement rate and accuracy. Knee Surg. Sports Traumatol. Arthrosc. 2022, 31, 1053–1062. [CrossRef]
+92. Wu, D.; Liu, X.; Zhang, Y.; Chen, J.; Tang, P .; Chai, W. Research and application of artificial intelligence based three-dimensional
+preoperative planning system for total hip arthroplasty. Chin. J. Reparative Reconstr. Surg. 2020, 34, 1077. [CrossRef]
+93. Al Zoubi, F.; Gold, R.; Poitras, S.; Kreviazuk, C.; Brillinger, J.; Fallavollita, P .; Beaulé, P .E. Artificial intelligence-driven prescriptive
+model to optimize team efficiency in a high-volume primary arthroplasty practice. Int. Orthop. (SICOT) 2022, 47, 343–350.
+[CrossRef] [PubMed]
+94. Houserman, D.J.; Berend, K.R.; Lombardi, A.V ., Jr.; Fischetti, C.E.; Duhaime, E.P .; Jain, A.; Crawford, D.A. The Viability of an
+Artificial Intelligence/Machine Learning Prediction Model to Determine Candidates for Knee Arthroplasty. J. Arthroplast. 2023,
+38, 2075–2080. [CrossRef] [PubMed]
+95. Dalil, D.; Esmaeili, S.; Safaee, E.; Asgari, S.; Kejani, N. The Prediction of Venous Thromboembolism Using Artificial Intelligence
+and Machine Learning in Lower Extremity Arthroplasty: A Systematic Review. Arthroplast. Today 2025, 33, 101672. [CrossRef]
+96. Breu, R.; Avelar, C.; Bertalan, Z.; Grillari, J.; Redl, H.; Ljuhar, R.; Quadlbauer, S.; Hausner, T. Artificial intelligence in traumatology.
+Bone Jt. Res. 2024, 13, 588–595. [CrossRef]
+97. Passias, P .G.; Tretiakov, P .; Williamson, T.; Krol, O.; Imbo, B.; Joujon-Roche, R.; McFarland, K.; Passfall, L.; Diebo, B.G.; Vira, S.N.;
+et al. 141. Comparative analysis of utilization of artificial intelligence in minimally invasive adult spinal deformity surgery. Spine
+J. 2022, 22, S74–S75. [CrossRef]
+98. Benhenneda, R.; Brouard, T.; Charousset, C.; Berhouet, J. Can artificial intelligence help decision-making in arthroscopy? Part 2:
+The IA-RTRHO model—A decision-making aid for long head of the biceps diagnoses in small rotator cuff tears.Orthop. Traumatol.
+Surg. Res. 2023, 109, 103652. [CrossRef]
+99. Chen, X.; Li, S.; Wang, Y.; Liu, X.; Zhang, Y.; Qiu, G.; Qian, W. Artificially Intelligent Three-Dimensionally-Printed Patient-Specific
+Instrument Improves Total Hip Arthroplasty Accuracy.J. Arthroplast. 2023, 38, 2060–2067.e2061. [CrossRef]
+100. Wilhelm, N.J.; von Schacky, C.E.; Lindner, F.J.; Feucht, M.J.; Ehmann, Y.; Pogorzelski, J.; Haddadin, S.; Neumann, J.; Hinterwimmer,
+F.; von Eisenhart-Rothe, R.; et al. Multicentric development and validation of a multi-scale and multi-task deep learning model
+for comprehensive lower extremity alignment analysis. Artif. Intell. Med. 2024, 150, 102843. [CrossRef]
+101. Murphy, M.P .; Killen, C.J.; Winfrey, S.R.; Schmitt, D.R.; Hopkinson, W.J.; Wu, K.; Brown, N.M. Artificial Intelligence Autonomously
+Measures Cup Orientation, Corrects for Pelvis Orientation, and Identifies Retroversion From Antero-Posterior Pelvis Radiographs.
+J. Arthroplast. 2023, 38, S319–S323. [CrossRef]
+102. Udombuathong, P .; Srisawasdi, R.; Kesornsukhon, W.; Ratanasanya, S. Application of Artificial Intelligence to Assist Hip Fracture
+Diagnosis Using Plain Radiographs. J. Southeast Asian Med. Res. 2022, 6, e0111. [CrossRef]
+103. Zhang, G.; Liu, Z.; Wang, D.; Tian, Z.; Yao, Q. The advantages of artificial intelligence-assisted total hip arthroplasty: A
+randomized controlled trial followed by 12 months. Heliyon 2024, 10, e39664. [CrossRef]
+104. Zhang, B.; Li, W.; Li, M.; Ding, X.; Huo, J.; Wu, T.; Han, Y. The role of 3-dimensional preoperative planning for primary total hip
+arthroplasty based on artificial intelligence technology to different surgeons: A retrospective cohort study.Medicine 2023, 102,
+e34113. [CrossRef]
+105. Humayun, A.; Rehman, M.; Zainulabideen, M. Artificial intelligence in knee osteoarthritis imaging and total knee arthroplasty:
+Advances, challenges, and segmentation methods—A review. Knee 2026, 60, 104327. [CrossRef]
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 22 ===
+J. Clin. Med. 2026, 15, 1751 22 of 26
+106. Ou, J.; Zhang, J.; Alswadeh, M.; Zhu, Z.; Tang, J.; Sang, H.; Lu, K. Advancing osteoarthritis research: The role of AI in clinical,
+imaging and omics fields. Bone Res. 2025, 13, 48. [CrossRef] [PubMed]
+107. Alwzwazy, H.A.; Alzubaidi, L.; Zhao, Z.; Gu, Y. FracNet: An end-to-end deep learning framework for bone fracture detection.
+Pattern Recognit. Lett. 2025, 190, 1–7. [CrossRef]
+108. Antonson, N.W.; Buckner, B.C.; Konigsberg, B.S.; Hartman, C.W.; Garvin, K.L.; Kildow, B.J. Novel Technique for the Identification
+of Hip Implants Using Artificial Intelligence. J. Arthroplast. 2024, 39, 1178–1183. [CrossRef] [PubMed]
+109. Amjad, J.; Sajid, M.Z.; Amjad, A.; Hamid, M.F.; Youssef, A.; Sharif, M.I. Knee Osteoarthritis Detection and Classification Using
+Autoencoders and Extreme Learning Machines. AI 2025, 6, 151. [CrossRef]
+110. Belton, N.; Lawlor, A.; Curran, K.M. An AI system for continuous knee osteoarthritis severity grading: An anomaly detection
+inspired approach with few labels. Artif. Intell. Med. 2025, 167, 103138. [CrossRef]
+111. Nurzynska, K.; Wodzinski, M.; Piórkowski, A.; Strzelecki, M.; Obuchowicz, R.; Kami ´ nski, P . Automated determination of hip
+arthrosis on the Kellgren-Lawrence scale in pelvic digital radiographs scans using machine learning. Comput. Methods Programs
+Biomed. 2025, 266, 108742. [CrossRef]
+112. Misir, A.; Yuce, A. AI in Orthopedic Research: A Comprehensive Review. J. Orthop. Res. 2025, 43, 1508–1527. [CrossRef]
+113. Ariateja, D.; Ardiyanto, I.; Soesanti, I. A Review of Contrast Enhancement Techniques in Digital Image Processing. In Proceedings
+of the 2018 4th International Conference on Science and Technology (ICST), Yogyakarta, Indonesia, 7–8 August 2018; IEEE:
+New York, NY, USA, 2018; pp. 1–6.
+114. Smolikowska, A.; Kami ´ nski, P .; Obuchowicz, R.; Piórkowski, A.Effect of Adaptive Histogram Equalization of Orthopedic Radiograph
+Images on the Accuracy of Implant Delineation Using Active Contours ; Springer International Publishing: Cham, Germany, 2021;
+pp. 136–144.
+115. Mozafari, J.K.; Moshtaghioon, S.A.; Mahdavi, S.M.; Ghaznavi, A.; Behjat, M.; Yeganeh, A. The role of artificial intelligence in
+preoperative planning for Total Hip Arthroplasty: A systematic review. Front. Artif. Intell. 2024, 7, 1417729. [CrossRef] [PubMed]
+116. Tafat, W.; Budka, M.; McDonald, D.; Wainwright, T.W. Artificial intelligence in orthopaedic surgery: A comprehensive review of
+current innovations and future directions. Comput. Struct. Biotechnol. Rep. 2024, 1, 100006. [CrossRef]
+117. Sharma, A.C.; Azeem, A.; Omari, I.H.; Premkumar, A. Artificial Intelligence for Predicting Postoperative Complications in
+Orthopedics: A Review of Clinical Applications, Challenges, and Future Directions. Cureus 2025, 17, e100254. [CrossRef]
+118. Hofer, I.S.; Wax, D.B. Unveiling the Future of Postoperative Outcomes Prediction: The Role of Machine Learning and Trust in
+Healthcare. J. Med. Syst. 2024, 48, 91. [CrossRef]
+119. Zaniletti, I.; Larson, D.R.; Lewallen, D.G.; Berry, D.J.; Maradit Kremers, H. How to Develop and Validate Prediction Models for
+Orthopedic Outcomes. J. Arthroplast. 2023, 38, 627–633. [CrossRef] [PubMed]
+120. Chiasakul, T.; Lam, B.D.; McNichol, M.; Robertson, W.; Rosovsky, R.P .; Lake, L.; Vlachos, I.S.; Adamski, A.; Reyes, N.; Abe, K.;
+et al. Artificial intelligence in the prediction of venous thromboembolism: A systematic review and pooled analysis. Eur. J.
+Haematol. 2023, 111, 951–962. [CrossRef]
+121. Rouzrokh, P .; Ramazanian, T.; Wyles, C.C.; Philbrick, K.A.; Cai, J.C.; Taunton, M.J.; Maradit Kremers, H.; Lewallen, D.G.; Erickson,
+B.J. Deep Learning Artificial Intelligence Model for Assessment of Hip Dislocation Risk Following Primary Total Hip Arthroplasty
+From Postoperative Radiographs. J. Arthroplast. 2021, 36, 2197–2203.e2193. [CrossRef] [PubMed]
+122. Ye, M.; Zhang, H.; Li, L. Research on Data Mining Application of Orthopedic Rehabilitation Information for Smart Medical. IEEE
+Access 2019, 7, 177137–177147. [CrossRef]
+123. Liu, H.; Xie, Q. Applications of artificial intelligence in rehabilitation: Technological innovation and transformation of clinical
+practice. SLAS Technol. 2025, 35, 100360. [CrossRef]
+124. Han, X.; Guffanti, D.; Brunete, A. A Comprehensive Review of Vision-Based Sensor Systems for Human Gait Analysis. Sensors
+2025, 25, 498. [CrossRef]
+125. Shajari, S.; Kuruvinashetti, K.; Komeili, A.; Sundararaj, U. The Emergence of AI-Based Wearable Sensors for Digital Health
+Technology: A Review. Sensors 2023, 23, 9498. [CrossRef]
+126. Mahajan, A.; Heydari, K.; Powell, D. Wearable AI to enhance patient safety and clinical decision-making. npj Digit. Med. 2025, 8,
+176. [CrossRef]
+127. Wei, S.; Wu, Z. The Application of Wearable Sensors and Machine Learning Algorithms in Rehabilitation Training: A Systematic
+Review. Sensors 2023, 23, 7667. [CrossRef] [PubMed]
+128. Rossi, M.; Rehman, S. Integrating Artificial Intelligence Into Telemedicine: Evidence, Challenges, and Future Directions. Cureus
+2025, 17, e90829. [CrossRef]
+129. Chaturvedi, U.; Chauhan, S.B.; Singh, I. The impact of artificial intelligence on remote healthcare: Enhancing patient engagement,
+connectivity, and overcoming challenges. Intell. Pharm. 2025, 3, 323–329. [CrossRef]
+130. Eskandar, K. The role of artificial intelligence in orthopedic surgery: Current applications and future perspectives—A systematic
+review of the literature. Rev. Esp. Cir. Ortop. Traumatol. 2025, in press. [CrossRef]
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 23 ===
+J. Clin. Med. 2026, 15, 1751 23 of 26
+131. Aydın, M.; Orhan, F. Evaluating the Impact of AI in Orthopedics: A Quantitative Analysis of Advancements and Challenges.
+Bratisl. Med. J. 2025, 126, 1858–1875. [CrossRef]
+132. Reddy, S. Global Harmonization of Artificial Intelligence-Enabled Software as a Medical Device Regulation: Addressing
+Challenges and Unifying Standards. Mayo Clin. Proc. Digit. Health 2025, 3, 100191. [CrossRef] [PubMed]
+133. Abozeed, M.; Junck, K.; Lirette, S.; Kimpe, T.; Xthona, A.; Tridandapani, S.; Perchik, J. Interpretation time efficiency with
+radiographs: A comparison study between standard 6 and 12 MP high-resolution display monitors. J. Med. Imaging 2024, 11,
+035502. [CrossRef]
+134. Fleishon, H.B.; Bhargavan, M.; Meghea, C. Radiologists’ Reading Times Using PACS and Using Films: One Practice’s Experience.
+Acad. Radiol. 2006, 13, 453–460. [CrossRef]
+135. Bachmann, R.; Gunes, G.; Hangaard, S.; Nexmann, A.; Lisouski, P .; Boesen, M.; Lundemann, M.; Baginski, S.G. Improving
+traumatic fracture detection on radiographs with artificial intelligence support: A multi-reader study. BJR|Open 2024, 6, tzae011.
+[CrossRef]
+136. Qin, H.; Ding, Y.; Ju, J.; Qu, Z.; Peng, L. Enhanced fracture detection on radiographs with AI assistance for clinicians: A systematic
+review and meta-analysis. Ann. Med. 2026, 58, 2610079. [CrossRef] [PubMed]
+137. Ramadanov, N.; John, P .; Hable, R.; Schreyer, A.G.; Shabo, S.; Prill, R.; Salzmann, M. Artificial intelligence-guided distal radius
+fracture detection on plain radiographs in comparison with human raters. J. Orthop. Surg. Res. 2025, 20, 468. [CrossRef] [PubMed]
+138. Elbahi, M.K.; Muhammed, A.; Fadlelmola Abdalla Mohamednour, M.; Mukhtar, F.S. Artificial Intelligence in Fracture Diagnosis
+on Radiographs: Evidence, Pitfalls, and Pathways for Clinical Integration (2020–2025). Cureus 2025, 17, e93124. [CrossRef]
+139. Anttila, T.T.; Karjalainen, T.V .; Mäkelä, T.O.; Waris, E.M.; Lindfors, N.C.; Leminen, M.M.; Ryhänen, J.O. Detecting Distal Radius
+Fractures Using a Segmentation-Based Deep Learning Model. J. Digit. Imaging 2023, 36, 679–687. [CrossRef] [PubMed]
+140. Russe, M.F.; Rebmann, P .; Tran, P .H.; Kellner, E.; Reisert, M.; Bamberg, F.; Kotter, E.; Kim, S. AI-based X-ray fracture analysis of
+the distal radius: Accuracy between representative classification, detection and segmentation deep learning models for clinical
+practice. BMJ Open 2024, 14, e076954. [CrossRef]
+141. Tiwari, A.; Yadav, A.K.; Bagaria, V . Application of deep learning algorithm in automated identification of knee arthroplasty
+implants from plain radiographs using transfer learning models: Are algorithms better than humans? J. Orthop. 2022, 32, 139–145.
+[CrossRef]
+142. Sharma, S.; Batta, V .; Chidambaranathan, M.; Mathialagan, P .; Mani, G.; Kiruthika, M.; Datta, B.; Kamineni, S.; Reddy, G.;
+Masilamani, S.; et al. Knee Implant Identification by Fine-Tuning Deep Learning Models. Indian J. Orthop. 2021, 55, 1295–1305.
+[CrossRef]
+143. Huo, J.; Huang, G.; Han, D.; Wang, X.; Bu, Y.; Chen, Y.; Cai, D.; Zhao, C. Value of 3D preoperative planning for primary total hip
+arthroplasty based on artificial intelligence technology. J. Orthop. Surg. Res. 2021, 16, 156. [CrossRef]
+144. Ding, X.; Zhang, B.; Li, W.; Huo, J.; Liu, S.; Wu, T.; Han, Y. Value of preoperative three-dimensional planning software (AI-HIP) in
+primary total hip arthroplasty: A retrospective study. J. Int. Med. Res. 2021, 49, 03000605211058874. [CrossRef] [PubMed]
+145. Al-Zubaidi, O.; Alzuabidi, A.; Alkurdi, B.; Alkurdi, D.; Aslam-Pervez, N. Accuracy of AI-Assisted Methods in Preoperative
+Templating Compared to the Standard X-Ray-Based Surgeon-Performed Templating in Total Hip Replacement Surgery: A
+Systematic Review and Meta-Analysis. Cureus 2025, 17, e95328. [CrossRef]
+146. Song, P .; Fan, Z.; Zhi, X.; Cao, Z.; Min, S.; Liu, X.; Zhang, Y.; Kong, X.; Chai, W. Study on the accuracy of automatic segmentation
+of knee CT images based on deep learning. Chin. J. Reparative Reconstr. Surg. 2022, 36, 534–539. [CrossRef]
+147. Marsilio, L.; Moglia, A.; Rossi, M.; Manzotti, A.; Mainardi, L.; Cerveri, P . Combined Edge Loss UNet for Optimized Segmentation
+in Total Knee Arthroplasty Preoperative Planning. Bioengineering 2023, 10, 1433. [CrossRef] [PubMed]
+148. Sing, D.; Cummins, D.D.; Burch, S.; Theologis, A.A. Computer-assisted Navigation in Lumbar Spine Instrumented Fusions:
+Comparison of In-hospital and 30-Day Postoperative Complications With Nonnavigated Fusions in a National Database. J. Am.
+Acad. Orthop. Surg. 2023, 31, e638–e644. [CrossRef] [PubMed]
+149. Orosz, L.D.; Poulter, G.T.; Haines, C.M.; Lee, N.J.; Rafiqzad, Y.; Lerebo, W.T.; Roy, R.T.; Jazini, E.; Gum, J.L.; Lehman, R.A.; et al.
+Comprehensive Outcomes Following Navigated Robotics in Thoracolumbar Spine Surgery: The PRoGRSS Final Analysis. Glob.
+Spine J. 2026, 21925682261421190. [CrossRef]
+150. Tragaris, T.; Benetos, I.S.; Vlamis, J.; Pneumaticos, S. Machine Learning Applications in Spine Surgery.Cureus 2023, 15, e48078.
+[CrossRef]
+151. Kuchtaruk, A.; Yu, S.S.Y.; Iansavichene, A.; Davidson, J.; Wilson, C.A.; Symonette, C. Telerehabilitation Technology Used for
+Remote Wrist/Finger Range of Motion Evaluation: A Scoping Review. Plast. Reconstr. Surg. Glob. Open 2023, 11, e5147. [CrossRef]
+152. Livingston, N.; Khurana, N.; Chouman, A.; McConnell, J.; Latack, K.; Lindahl, A.; Day, C.S. Do teleconsultations increase patient
+access to orthopaedic care? Digit. Health 2025, 11, 20552076251390575. [CrossRef]
+153. Capodici, A.; Noci, F.; Nuti, S.; Emdin, M.; Dalmiani, S.; Passino, C.; Hernandez-Boussard, T.; Giannoni, A. Reducing outpatient
+wait times through telemedicine: A systematic review and quantitative analysis. BMJ Open 2025, 15, e088153. [CrossRef]
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 24 ===
+J. Clin. Med. 2026, 15, 1751 24 of 26
+154. Glinkowski, W.M. Telemedicine Orthopedic Consultations Duration and Timing in Outpatient Clinical Practice During the
+COVID-19 Pandemic. Telemed. e-Health 2023, 29, 778–787. [CrossRef]
+155. Meng, Y.; Lee, M.; Clark, H.-J.Y.; Nguyen, C.; Kwon, S.; Schultz, S.; Pham, N.S.; Schirmer, D.; Roh, E.Y. Evaluation of range of
+motion using vision artificial intelligence (AI) in musculoskeletal medicine. J. Med. Artif. Intell. 2024, 7, 22. [CrossRef]
+156. Obuchowicz, R.; Piórkowski, A.; Nurzy ´ nska, K.; Obuchowicz, B.; Strzelecki, M.; Bielecka, M. Will AI Replace Physicians in the
+Near Future? AI Adoption Barriers in Medicine. Diagnostics 2026, 16, 396. [CrossRef]
+157. Yu, X. Progress and Future Direction of Artificial Intelligence-assisted 3D MRI Analysis in Orthopedics.TNS 2025, 128, 14–20.
+[CrossRef]
+158. González-Pola, R.; Herrera-Lozano, A.; Graham-Nieto, L.F.; Zermeño-García, G. Deep learning applications in orthopaedics: A
+systematic review and future directions. Acta Ortop. Mex. 2025, 39, 152–163. [CrossRef]
+159. Gitto, S.; Serpi, F.; Albano, D.; Risoleo, G.; Fusco, S.; Messina, C.; Sconfienza, L.M. AI applications in musculoskeletal imaging: A
+narrative review. Eur. Radiol. Exp. 2024, 8, 22. [CrossRef] [PubMed]
+160. Chen, K.; Stotter, C.; Klestil, T.; Nehrer, S. Artificial Intelligence in Orthopedic Radiography Analysis: A Narrative Review.
+Diagnostics 2022, 12, 2235. [CrossRef] [PubMed]
+161. Baghbani, S.; Mehrabi, Y.; Movahedinia, M.; Babaeinejad, E.; Joshaghanian, M.; Amiri, S.; Shahrezaee, M. The revolutionary
+impact of artificial intelligence in orthopedics: Comprehensive review of current benefits and challenges. J. Robot. Surg. 2025, 19,
+511. [CrossRef] [PubMed]
+162. Lu, Z.; Yuan, C.; Xu, Q.; Feng, Y.; Xia, Q.; Wang, X.; Zhu, J.; Wu, J.; Wang, T.; Chen, J.; et al. AI-assisted 3D versus conventional
+2D preoperative planning in total hip arthroplasty for Crowe type II-IV high hip dislocation: A two-year retrospective study. J.
+Orthop. Surg. Res. 2025, 20, 777. [CrossRef]
+163. Cho, S.-H.; Kim, Y.-S. An overview of artificial intelligence and machine learning in shoulder surgery.Clin. Shoulder Elb. 2025, 28,
+242–250. [CrossRef]
+164. Salimi, M.; Parry, J.A.; Shahrokhi, R.; Mosalamiaghili, S. Application of artificial intelligence in trauma orthopedics: Limitation
+and prospects. World J. Clin. Cases 2023, 11, 4231–4240. [CrossRef]
+165. Bousson, V .; Benoist, N.; Guetat, P .; Attané, G.; Salvat, C.; Perronne, L. Application of artificial intelligence to imaging in-
+terpretations in the musculoskeletal area: Where are we? Where are we going? Jt. Bone Spine 2023, 90, 105493. [CrossRef]
+[PubMed]
+166. Bhatnagar, A.; Kekatpure, A.L.; Velagala, V .R.; Kekatpure, A. A Review on the Use of Artificial Intelligence in Fracture Detection.
+Cureus 2024, 16, 58364. [CrossRef] [PubMed]
+167. Yi, P .H.; Mutasa, S.; Fritz, J. AI MSK clinical applications: Orthopedic implants. Skelet. Radiol. 2021, 51, 305–313. [CrossRef]
+168. Mishra, A.; Ramanathan, A.; Batta, V .; Malathy, C.; Kundu, S.S.; Gayathri, M.; Vathana, D.; Kamineni, S. Harnessing the Potential
+of Deep Learning for Total Shoulder Implant Classification: A Comparative Study. In Lecture Notes in Computer Science; Springer
+Nature: Cham, Switzerland, 2023; pp. 119–132.
+169. Ghose, S.; Datta, S.; Batta, V .; Malathy, C.; M, G.Artificial Intelligence Based Identification of Total Knee Arthroplasty Implants; IEEE:
+New York, NY, USA, 2020; pp. 302–307.
+170. Andriollo, L.; Picchi, A.; Iademarco, G.; Fidanza, A.; Perticarini, L.; Rossi, S.M.P .; Logroscino, G.; Benazzo, F. The Role of Artificial
+Intelligence and Emerging Technologies in Advancing Total Hip Arthroplasty.JPM 2025, 15, 21. [CrossRef]
+171. Ali, S.M.; Nara, S.; Ramanathan, A.; Malathy, C.; Athilakshmi, R.; Gayathri, M.; Batta, V .Automatic Identification of Make and Model
+of Ankle Implants Using Artificial Intelligence; IEEE: New York, NY, USA, 2023; pp. 1–7.
+172. P , P .; Mandal, P .K.; Hussain, D.; Roy, D.; Chakraborty, M.; Khan, A.; Sarkar, S. Intersection of Orthopaedics and Artificial
+Intelligence: A Review. SSR-IIJLS 2024, 10, 5544–5552. [CrossRef]
+173. Kumar Yadav, A.; Joshi, P .; Tiwari, A.; Watarkar, S.; Paul, I.; Bhandari, G. From data to precision: The transformative role of AI
+and machine learning in modern orthopaedic practice. J. Clin. Orthop. Trauma 2025, 69, 103101. [CrossRef]
+174. Yick, H.T.V .; Chan, P .K.; Wen, C.; Fung, W.C.; Yan, C.H.; Chiu, K.Y. Artificial intelligence reshapes current understanding and
+management of osteoarthritis: A narrative review. J. Orthop. Trauma Rehabil. 2022, 29, 22104917221082315. [CrossRef]
+175. Lisacek-Kiosoglous, A.B.; Powling, A.S.; Fontalis, A.; Gabr, A.; Mazomenos, E.; Haddad, F.S. Artificial intelligence in orthopaedic
+surgery. Bone Jt. Res. 2023, 12, 447–454. [CrossRef] [PubMed]
+176. G, B.; M.P , M.; H. B, R.; Kumar, G.; S, C. An Examination of the Use of Artificial Intelligence in Orthopaedic Surgery.Int. J. Innov.
+Sci. Res. Technol. (IJISRT) 2024, 9, 2054–2058. [CrossRef]
+177. Laur, O.; Wang, B. Musculoskeletal trauma and artificial intelligence: Current trends and projections. Skelet. Radiol. 2021, 51,
+257–269. [CrossRef]
+178. Dean, M.C.; Oeding, J.F.; Diniz, P .; Seil, R.; Samuelsson, K. Leveraging digital twins for improved orthopaedic evaluation and
+treatment. J. Exp. Orthop. 2024, 11, e70084. [CrossRef]
+179. Liang, W.; Zhou, C.; Bai, J.; Zhang, H.; Jiang, B.; Wang, J.; Fu, L.; Long, H.; Huang, X.; Zhao, J.; et al. Current advancements in
+therapeutic approaches in orthopedic surgery: A review of recent trends. Front. Bioeng. Biotechnol. 2024, 12, 1328997. [CrossRef]
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 25 ===
+J. Clin. Med. 2026, 15, 1751 25 of 26
+180. The European Federation Of Radiographer Societies. Artificial Intelligence and the Radiographer/Radiological Technologist
+Profession: A joint statement of the International Society of Radiographers and Radiological Technologists and the European
+Federation of Radiographer Societies. Radiography 2020, 26, 93–95. [CrossRef]
+181. Dubey, A.; Uldin, H.; Khan, Z.; Panchal, H.; Iyengar, K.P .; Botchu, R. Role of Artificial Intelligence in Musculoskeletal Interventions.
+Cancers 2025, 17, 1615. [CrossRef]
+182. Khojastehnezhad, M.A.; Youseflee, P .; Moradi, A.; Ebrahimzadeh, M.H.; Jirofti, N. Artificial Intelligence and the State of the Art of
+Orthopedic Surgery. Arch. Bone Jt. Surg. 2025, 13, 17–22. [CrossRef] [PubMed]
+183. Woodward, C.; Green, J.; Reed, M.R.; Beard, D.J.; Williams, P .R. Risk stratification in hip and knee replacement using Artificial
+Intelligence: A dual centre study to support the utility of high-volume low-complexity hubs and ambulatory surgery centres.
+Intell.-Based Med. 2025, 12, 100256. [CrossRef]
+184. Nathan, L.; Muthusamy, V . Uses, benefits and future of artificial intelligence (AI) in orthopedics.Indian J. Med Sci. 2024, 76, 95–96.
+[CrossRef]
+185. Hornung, A.L.; Hornung, C.M.; Mallow, G.M.; Barajas, J.N.; Rush, A., III; Sayari, A.J.; Galbusera, F.; Wilke, H.-J.; Colman, M.;
+Phillips, F.M.; et al. Artificial intelligence in spine care: Current applications and future utility. Eur. Spine J. 2022, 31, 2057–2081.
+[CrossRef]
+186. Foni, N.O.; Costa, L.A.V .; Velloso, L.M.R.; Pedrotti, C.H.S. Telemedicine: Is It a Tool for Orthopedics?Curr. Rev. Musculoskelet.
+Med. 2020, 13, 797–801. [CrossRef] [PubMed]
+187. Rudin, C. Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead. Nat.
+Mach. Intell. 2019, 1, 206–215. [CrossRef] [PubMed]
+188. Lowe, C.; Sephton, R.; Marsh, W.; Morrissey, D. Evaluation of a Musculoskeletal Digital Assessment Routing Tool (DART):
+Crossover Noninferiority Randomized Pilot Trial. JMIR Form. Res. 2024, 8, e56715. [CrossRef]
+189. Pawelczyk, J.; Kraus, M.; Voigtlaender, S.; Siebenlist, S.; Rupp, M.-C. Advancing Musculoskeletal Care Using AI and Digital
+Health Applications: A Review of Commercial Solutions. HSS J.® Musculoskelet. J. Hosp. Spec. Surg. 2025, 21, 331–341. [CrossRef]
+190. Johnson, M.A.; Khilnani, T.; Hyun, A.; Amen, T.B.; Varady, N.H.; Nwachukwu, B.U.; Dines, J.S. The State of Telemedicine,
+Telerehabilitation, and Virtual Care in Musculoskeletal Health: A Narrative Review.Hss J. 2025, 21, 15563316251341229. [CrossRef]
+191. Kim, J.Y.; Hasan, A.; Kueper, J.; Tang, T.; Hayes, C.; Fine, B.; Balu, S.; Sendak, M. Establishing organizational AI governance in
+healthcare: A case study in Canada. npj Digit. Med. 2025, 8, 522. [CrossRef]
+192. Bodnari, A.; Travis, J. Scaling enterprise AI in healthcare: The role of governance in risk mitigation frameworks. npj Digit. Med.
+2025, 8, 272. [CrossRef]
+193. Simo, J.K.; Patel, A.V .; White, R.C.; Bustamante, G.C.; Dopirak, M.R.; Wilson, S.; Barnett, J.S.; Todd, C.P .; Bishop, J.Y.; Cvetanovich,
+G.L.; et al. Emerging trends and future directions of machine learning in arthroplasty: A narrative review. AIH 2025, 2, 11.
+[CrossRef]
+194. Lopez, C.D.; Gazgalis, A.; Boddapati, V .; Shah, R.P .; Cooper, H.J.; Geller, J.A. Artificial Learning and Machine Learning Decision
+Guidance Applications in Total Hip and Knee Arthroplasty: A Systematic Review. Arthroplast. Today 2021, 11, 103–112. [CrossRef]
+195. Farhadi, F.; Barnes, M.R.; Sugito, H.R.; Sin, J.M.; Henderson, E.R.; Levy, J.J. Applications of artificial intelligence in orthopaedic
+surgery. Front. Med. Technol. 2022, 4, 995526. [CrossRef] [PubMed]
+196. Oettl, F.C.; Zsidai, B.; Oeding, J.F.; Samuelsson, K. Artificial Intelligence and Musculoskeletal Surgical Applications. HSS J.®
+Musculoskelet. J. Hosp. Spec. Surg. 2025, 21, 267–273. [CrossRef] [PubMed]
+197. Burnham, J.M.; Meta, F.; Lizzio, V .; Makhni, E.C.; Bozic, K.J. Technology assessment and cost-effectiveness in orthopedics: How to
+measure outcomes and deliver value in a constantly changing healthcare environment. Curr. Rev. Musculoskelet. Med. 2017, 10,
+233–239. [CrossRef]
+198. Jayakumar, P .; Moore, M.L.G.; Bozic, K.J. Value-based Healthcare: Can Artificial Intelligence Provide Value in Orthopaedic
+Surgery? Clin. Orthop. Relat. Res. 2019, 477, 1777–1780. [CrossRef]
+199. El Arab, R.A.; Al Moosa, O.A. Systematic review of cost effectiveness and budget impact of artificial intelligence in healthcare.
+npj Digit. Med. 2025, 8, 548. [CrossRef]
+200. Shah, R.; Bozic, K.J.; Jayakumar, P . Artificial Intelligence in Value-Based Health Care.HSS J.® Musculoskelet. J. Hosp. Spec. Surg.
+2025, 21, 307–313. [CrossRef]
+201. Tordjman, M.; Fritz, J.; Regnard, N.E.; Kijowski, R.; Mihoubi, F.; Taouli, B.; Mei, X.; Huang, M.; Guermazi, A. Artificial intelligence
+in musculoskeletal radiology: Practical aspects and latest perspectives. BJR Open 2025, 7, tzaf029. [CrossRef]
+202. Guermazi, A.; Omoumi, P .; Tordjman, M.; Fritz, J.; Kijowski, R.; Regnard, N.E.; Carrino, J.; Kahn, C.E., Jr.; Knoll, F.; Rueckert, D.;
+et al. How AI May Transform Musculoskeletal Imaging. Radiology 2024, 310, e230764. [CrossRef]
+203. Mahe, P .; Shank, S.; de Gast, A.; Reynier, M. Auto-planning in preoperative shoulder arthroplasty software reduces implant
+planning time and number of actions. Digit. Health 2026, 12, 20552076261418902. [CrossRef]
+https://doi.org/10.3390/jcm15051751
+
+=== PDF PAGE 26 ===
+J. Clin. Med. 2026, 15, 1751 26 of 26
+204. Thompson, Y.L.E.; Fergus, J.; Chung, J.; Delfino, J.G.; Chen, W.; Levine, G.M.; Samuelson, F.W. Impact of Artificial Intelligence
+Triage on Radiologist Report Turnaround Time: Real-World Time Savings and Insights From Model Predictions. J. Am. Coll.
+Radiol. 2026, 23, 63–73. [CrossRef] [PubMed]
+205. Razavian, N.; Batchu-Green, P .; Chowdhry, V .; Elemento, O.; Rajpurkar, P .; Saria, S.; Shah, N.H.; Topol, E.J. Catalyzing Health AI
+by Fixing Payment Systems. NEJM AI 2025, 2, aipc2500871. [CrossRef] [PubMed]
+206. Kakatum Rao, S.; Gupta, P .; Mohammed, A.; Zakhmi, K.; Ranjan Mohanty, M.; Prasad Jalaja, P . The Impact of Artificial Intelligence
+on Financial Systems in Healthcare: A Systematic Review of Economic Evaluation Studies. Cureus 2025, 17, e86279. [CrossRef]
+[PubMed]
+207. Clusmann, J.; Kolbinger, F.R.; Muti, H.S.; Carrero, Z.I.; Eckardt, J.N.; Laleh, N.G.; Löffler, C.M.L.; Schwarzkopf, S.C.; Unger, M.;
+Veldhuizen, G.P .; et al. The future landscape of large language models in medicine. Commun. Med. 2023, 3, 141. [CrossRef]
+[PubMed]
+208. Sánchez-Rosenberg, G.; Magnéli, M.; Barle, N.; Kontakis, M.G.; Müller, A.M.; Wittauer, M.; Gordon, M.; Brodén, C. ChatGPT-4
+generates orthopedic discharge documents faster than humans maintaining comparable quality: A pilot study of 6 cases. Acta
+Orthop. 2024, 95, 152–156. [CrossRef] [PubMed]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.
+https://doi.org/10.3390/jcm15051751

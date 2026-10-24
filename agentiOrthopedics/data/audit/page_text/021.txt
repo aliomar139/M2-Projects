@@ -1,0 +1,1692 @@
+=== PDF PAGE 1 ===
+Prior-informed optimization of treatment recommendation via
+bandit algorithms trained on large language model-processed
+historical records
+Saman Nessari, Ali Bozorgi-Amiri∗,
+School of Industrial Engineering, College of Engineering, University of Tehran, Tehran, Iran
+Abstract
+Current medical practice depends on standardized treatment frameworks and empirical method-
+ologies that neglect individual patient variations, leading to suboptimal health outcomes. We de-
+velop a comprehensive system integrating Large Language Models (LLMs), Conditional Tabular
+Generative Adversarial Networks (CTGAN), T-learner counterfactual models, and contextual ban-
+dit approaches to provide customized, data-informed clinical recommendations. The approach
+utilizes LLMs to process unstructured medical narratives into structured datasets (93.2% accu-
+racy), uses CTGANs to produce realistic synthetic patient data (55% accuracy via two-sample ver-
+ification), deploys T-learners to forecast patient-specific treatment responses (84.3% accuracy),
+andintegratesprior-informedcontextualbanditstoenhanceonlinetherapeuticselectionbyeffec-
+tively balancing exploration of new possibilities with exploitation of existing knowledge. Testing
+on stage III colon cancer datasets revealed that our KernelUCB approach obtained 0.60-0.61 aver-
+age reward scores across 5,000 rounds, exceeding other reference methods. This comprehensive
+systemovercomescold-startlimitationsinonlinelearningenvironments, improvescomputational
+effectiveness, andconstitutesnotableprogresstowardindividualizedmedicineadaptedtospecific
+patient characteristics.
+Keywords:Personalized medicine; Treatment recommendation; Contextual bandits; Large lan-
+guage models; Counterfactual inference.
+1 Introduction
+Current healthcare delivery largely employs an experimental treatment model, applying generic
+clinicalprotocolsthatdisregardpatient-specificfactorsandindividualdifferences. Thisstandardized
+∗Corresponding author.
+Email addresses:saman.nesari@ut.ac.ir(S. Nessari),alibozorgi@ut.ac.ir(A. Bozorgi-Amiri)
+1
+arXiv:2510.19014v1  [cs.LG]  21 Oct 2025
+
+=== PDF PAGE 2 ===
+methodology requires patients to experience multiple treatment cycles that frequently lack efficacy,
+thereby prolonging patient discomfort, amplifying medical costs, and delaying positive health out-
+comesacrossdiversespecialtiesrangingfrommentalhealthtocancertreatment. AlthoughElectronic
+Health Records (EHRs) have become ubiquitous in healthcare settings, therapeutic decision-making
+continuestooperateindependentlyfrompreviouslyrecordedtreatmentoutcomesandcrucialclinical
+insights embedded within unstructured clinical documentation that conventional analytical methods
+cannot effectively interpret. Healthcare providers must depend on their individual expertise and es-
+tablished clinical guidelines instead of systematically extracting knowledge from thousands of com-
+parable patient cases, resulting in a significant disconnect between the potential of personalized,
+evidence-based medicine and actual clinical implementation. This deficiency highlights the critical
+necessity for more personalized, evidence-based therapeutic recommendation frameworks (Bhuyan
+et al., 2025; Esmaeilzadeh, 2024).
+Individual patients exhibit distinct characteristics and demonstrate varied responses to treat-
+ments, while conventional protocols based on extensive clinical studies frequently cannot accom-
+modate such variability, resulting in inadequate therapeutic outcomes or preventable adverse effects
+(Goktas & Grzybowski, 2025; Kumar, Chauhan, & Awasthi, 2023; Xian et al., 2024). Sophisticated
+computational methodologies, especially machine learning approaches, present a viable pathway
+by identifying subtle patterns and therapy-response correlations within extensive historical clinical
+datasets (Bhuyan et al., 2025; Xian et al., 2024). Reinforcement learning (RL) and multi-armed
+bandit frameworks, particularly, are appropriately designed to enhance therapeutic approaches pro-
+gressivelythroughlearningfrompatientresults(Kumaretal.,2023;Villar,Bowden,&Wason,2015).
+In contrast to fixed randomized controlled trials, these dynamic systems improve decision-making
+by maintaining equilibrium between investigating novel therapies and utilizing established effective
+treatments, positioning them as optimal solutions for evolving clinical settings (Jayaraman, Desman,
+Sabounchi, Nadkarni, & Sakhuja, 2024; Varatharajah & Berry, 2022).
+Recent developments in medical artificial intelligence demonstrate an expanding use of RL and
+bandit methodologies to enhance clinical decision-making processes (Jayaraman et al., 2024). These
+approaches show particular effectiveness in sequential decision scenarios, including treatment se-
+lection and dosage modification, through their capacity to integrate feedback mechanisms and cus-
+tomize responses based on individual patient profiles (Zhalechian, Keyvanshokooh, Shi, & Van Oyen,
+2022). Multi-armed bandit frameworks effectively navigate the exploration-exploitation tension by
+evaluating emerging treatment modalities while giving precedence to therapies with established
+success rates (Varatharajah & Berry, 2022). This responsive capacity is particularly vital in learn-
+ing health systems, where ethical principles require emphasizing validated therapeutic interventions
+2
+
+=== PDF PAGE 3 ===
+while preserving continuous advancement in clinical decision support (Villar et al., 2015).
+Concurrently, Large Language Models (LLMs) including GPT-4 have revolutionized the analysis
+of unstructured EHR information, enabling the derivation of significant insights from clinical doc-
+umentation, patient records, and discharge reports (Chung, 2025; P. Zhang, Shi, & Kamel Boulos,
+2024). These capabilities have been successfully applied to critical clinical prediction tasks, such as
+predicting hospital admissions from emergency department patient data (Pasquadibisceglie, Appice,
+Malerba,&Fiameni,2025). Throughtheabilitytosynthesizepatientbackgroundsanddetectimpor-
+tant clinical indicators, LLMs deliver comprehensive contextual data that can strengthen treatment
+recommendationsystems(Xianetal.,2024;Xu, Chen, Hu,&Li,2025). Emergingstudiesproposein-
+tegrating LLMs with bandit methodologies, leveraging LLMs to process raw textual data and produce
+informative features that guide personalized treatment strategies, thus minimizing early exploratory
+phases (Alamdari, Cao, & Wilson, 2024).
+These developments notwithstanding, substantial obstacles remain. In bandit algorithms, the
+cold-start challenge emerges when making initial treatment decisions for previously unseen patients
+or novel therapies without historical data, potentially resulting in suboptimal choices and creating
+safety concerns in clinical environments. Additionally, incorporating unstructured data into bandit
+systems presents complexity, as LLM-generated outputs may contain extraneous information that
+must be carefully filtered to maintain dependability in critical decision-making scenarios. The devel-
+opment of frameworks that effectively merge LLM-derived insights with conventional clinical vari-
+ables continues to be an unresolved challenge.
+Surmounting these barriers presents considerable potential benefits. An integrated framework
+that combines reinforcement learning algorithms with LLM-augmented clinical record interpreta-
+tion would facilitate continuous improvement via patient response data, enhancing the probability
+of treatment efficacy. Through provision of personalized therapeutic recommendations based on
+individual patient narratives, this methodology could reduce futile intervention attempts while im-
+proving health outcomes such as disease stabilization and patient quality of life (Alamdari et al.,
+2024; Xian et al., 2024). This framework would also streamline healthcare delivery by supporting
+swift, evidence-based clinical choices, especially vital in acute care environments, while minimizing
+superfluous diagnostics and preventable hospital returns. As an evolving medical learning platform,
+it would continuously integrate fresh clinical insights, including results from new therapeutic inter-
+ventions, ensuring sustained improvement in treatment recommendations. This methodology could
+effectively unite algorithmic healthcare solutions with frontline medical practice, ensuring appropri-
+ate therapies reach suitable patients at the optimal moment.
+Enabling continuous improvement through experience is accomplished by simulating the prob-
+3
+
+=== PDF PAGE 4 ===
+lem in online decision-making algorithms with LLMs-processed data. The proposed online person-
+alized recommendation with continuous improvement emphasizes the importance of considering
+patient needs, moving beyond what traditional approaches can achieve. The remainder of the paper
+is structured as follows: Section 2 discusses the existing related literature. Section 3 defines the
+problem. Section 3 presents the methodology applied to the problem. Section 4 presents our case
+study. Section 5 reports the experimental results and evaluates the performance of the RL-based
+method. Section 6 concludes the paper and introduces directions for future work.
+2 Literature Review
+Recentadvancesinclinicaldecisionsciencehaveevolvedalongthreecriticaldimensions: dynamic
+treatmentregimens,usingunstructuredEHRsandcomputationalmethodsformakingdecisions. Our
+proposed framework sits at the intersection of these research streams, addressing fundamental gaps
+in each while creating a novel synthesis that promises to transform how patient history informs real-
+time treatment decisions and recommendation.
+The design of modern clinical trials has rapidly evolved from fixed-randomization protocols to
+sophisticated adaptive strategies that seek both to improve patient outcomes during the trial and to
+yield more informative post-trial inferences. Early work in oncology and other fields highlighted the
+inefficiencies of one-size-fits-all trials, where average effects often mask critical heterogeneity across
+patients (Yankeelov et al., 2024). In response, researchers have proposed mathematical frameworks
+that convert each patient into their own personalized trial, leveraging biology-based models, dig-
+ital twins, optimal control theory, and data assimilation to continually refine treatment protocols
+(Yankeelov et al., 2024).
+This methodological evolution has brought response-adaptive randomization (RAR) to the fore-
+front as a key technique, implemented via multi-armed bandit algorithms. Norwood, Davidian, and
+Laber (2024) were the first to create Thompson sampling RAR approaches for sequential multiple
+assignment randomized trials. Their research revealed that when randomization probabilities reflect
+current treatment performance beliefs, patients experience improved outcomes during the trial pe-
+riod while researchers maintain strong statistical power for later analyses. Aslanyan et al. (2025)
+took a different approach by focusing on Bayesian RAR for continuous outcomes while paying special
+attention to covariate adjustment, and their results showed that when covariates are properly ad-
+justed, RAR successfully assigns more patients to better treatments while keeping important baseline
+characteristics balanced across groups.
+Acknowledging the essential requirement to identify heterogeneous treatment effects, Wei, Ma,
+4
+
+=== PDF PAGE 5 ===
+and Wang (2025) established a comprehensive frequentist approach for adaptive experimental de-
+signs that progressively adjust both treatment allocation probabilities and subgroup enrichment ra-
+tios. Through conceptualizing subgroup detection as an optimal-arm identification challenge within
+a large-deviation framework, they showed enhanced performance and diminished winner’s-curse ef-
+fects relative to static experimental designs across simulated e-commerce and medical applications.
+Dynamic treatment regimens have been developed to overcome the limitations of static, one-size-
+fits-all clinical trial protocols by conceptualizing medical decision-making as an adaptive, individu-
+alized sequence of choices. Within this framework, optimal treatment is not represented by a single
+therapeutic option but rather by a decision-making algorithm that connects a patient’s changing
+clinical profile to subsequent interventions, thus incorporating time-dependent variables and treat-
+ment response delays. RL constitutes an effective computational framework by casting treatment
+selection as a Markov Decision Process, where states characterize patient conditions, actions signify
+medical treatments, and rewards measure therapeutic success. Distinguished from supervised learn-
+ing paradigms, RL fundamentally tackles the exploration-exploitation challenge, formulating poli-
+cies that simultaneously optimize clinical outcomes and enhance the precision of future treatment
+choices. Oh, Park, Lee, Kang, and Mo (2022) illustrated the potential of contextual bandits for dia-
+betes care management utilizing South Korean electronic health record datasets. Their meticulously
+calibrated Thompson-sampling-based contextual bandit algorithm expanded the dimensionality of
+state and action spaces well beyond the capacity of conventional MDPs, producing individualized
+medication protocols that exceeded the performance of standard algorithms in retrospective analy-
+sis.
+Complementing policy learning, contextual bandits have been adapted for operational challenges
+such as appointment scheduling and resource allocation. Zhalechian et al. (2022) introduced an al-
+gorithm combining adversarial-robust resource-allocation with Bayesian bandit learning under feed-
+back delays. This approach strikes a three-way balance—exploration of poorly-understood decision
+options, exploitation of known high-reward assignments, and hedging against uncertain future de-
+mand—demonstrating superior performance in both simulated settings and a clinical appointment
+dataset from a major health system.
+Berrevoets, Verboven, and Verbeke (2022) confront the issue of non-stationary treatment effects
+byredesigningupliftmodelingtoprioritizeindividualtreatmenteffectoptimization. Theirtechnique
+modifies the optimization target to boost uplift estimate precision in streaming, non-i.i.d. conditions,
+implementing adaptively tuned allocation probabilities to respond to changing patient-treatment
+response mechanisms. Empirical testing on synthetic and real datasets shows that their uplifted
+bandit framework successfully navigates concept drift and delivers improved performance against
+5
+
+=== PDF PAGE 6 ===
+static conditional average treatment effect estimators in time-varying environments.
+The multi-armed bandit framework has long provided a principled way to balance exploration
+and exploitation in sequential decision problems, and its extension to continuum-armed settings
+has made it directly applicable to dose-finding in early-stage clinical trials. Chen and Khademi
+(2024) introduced nonparametric, continuum-armed bandit algorithms that simultaneously learn
+dose-efficacy and dose-toxicity curves—assumed unimodal and monotonic, respectively—without
+imposing rigid parametric forms. They proved regret bounds for both a dose-escalation-stop-and-
+commitstrategyandabisection-search-plus-upper-confidence-boundalgorithm,showingsubstantial
+improvements over traditional 3+3 and equal-randomization designs.
+Varatharajah and Berry (2022) studied personalized treatment assignment by treating trial al-
+locations as contextual multi-armed bandits, using patient data to inform Thompson sampling or
+upper confidence bound algorithms that learn treatment effectiveness. When evaluated retrospec-
+tively against the International Stroke Trial dataset, their contextual bandit produced 72.6% more
+participants receiving optimal therapy than standard randomization, and 64.3% more than non-
+contextual bandits, showing the value of incorporating patient context into treatment decisions. The
+applicability of contextual bandits spans additional healthcare domains, as illustrated by Parvin,
+Chessa, Kaptein, and Paternò (2019), who developed a contextual multi-armed bandit framework
+for behavioral anomaly identification and customized health recommendation provision in ambient-
+assistedlivingsystemsforelderlyusers,revealingthewide-rangingutilityofcontext-informedbandit
+strategies in healthcare environments.
+A remaining challenge for all bandit methods is the cold-start problem: how to avoid random ini-
+tial assignments that waste opportunities to benefit early participants (Qian, Wang, & Zhao, 2025).
+Alamdarietal.(2024)proposedacontextualbanditsalgorithm, usinglargelanguagemodelstogen-
+erate synthetic user-arm preference data. By prompting LLMs for approximated human responses,
+they pretrained contextual bandits that, when fine-tuned online, reduced early regret by 14-20%
+across both simulated and real-world conjoint-survey settings—even under partial context obfusca-
+tion. Complementing this LLM-based approach, Badreddine and Spranger (2019) showed how to
+inject rich, symbolic prior knowledge directly via Logic Tensor Networks—first-order logic grounded
+inneurallayers—augmentingpixel-baseddeepreinforcementlearningagentswithfactsaboutobject
+semantics and task structure to accelerate learning in grid-world tasks.
+The advent of LLMs has transformed clinical information extraction, enabling zero-shot and few-
+shot approaches that bypass the need for extensive labeled corpora. del Moral-González, Gómez-
+Adorno, and Ramos-Flores (2025) demonstrate that instruction-fine-tuned open-access models like
+Llama 2 and Mistral outperform base and chat-tuned variants on zero-shot clinical named entity
+6
+
+=== PDF PAGE 7 ===
+recognition—achieving up to 71.3 F1—yet still trailing specialized supervised models by nearly 20
+points. Hsu and Roberts (2025) additionally demonstrate that LLMs can produce weak supervision
+signals for subsequent BERT architectures, where Llama2-13B-driven frameworks achieve perfor-
+mance levels that match or surpass fully supervised benchmarks even under conditions of limited
+gold-standard labeling. This body of research highlights the potential of LLMs for efficiently convert-
+ingunstructuredclinicaldocumentationintostructuredformats,whilesimultaneouslyexposingtheir
+vulnerability to generating hallucinated content and requiring substantial computational resources,
+thereby emphasizing the critical importance of developing uncertainty estimation approaches when
+such model outputs inform clinical decision-making frameworks.
+Retrieval-augmented generation methodologies have shown considerable promise for simultane-
+ously improving computational efficiency and extraction performance in clinical applications. Lopez
+et al. (2025) developed a system that employs medical entity extraction to guide the retrieval mech-
+anism, delivering a 70% decrease in both token consumption and computational time relative to
+conventional full-note retrieval-augmented generation approaches, while concurrently attaining an
+average F1 score of 0.90. In parallel work, Gu et al. (2025) investigated the effectiveness of pub-
+licly available open-source LLMs for social determinants of health extraction from EHRs, report-
+ing mention-level accuracy enhancements of up to 40% relative to baseline pattern-matching ap-
+proaches. Althoughthesecombinedextractionmethodologiesprovidemarkedperformanceimprove-
+ments, they fall short of incorporating the extracted features into subsequent treatment optimization
+pipelines or establishing patient-specific probabilistic priors.
+Xie et al. (2025) develop Me-LLaMA—continuously pretrained on 129 billion biomedical tokens
+and instruction-tuned on clinical notes—outperforming both general LLaMA2 and other open medi-
+cal LLMs in zero-shot and supervised settings, and rivaling GPT-4 on complex diagnosis benchmarks.
+Akbasli, Birbilen,andTeksam(2025)similarlyfine-tuneGPT-3onTurkishpediatricelectronichealth
+records, achieving 99.9% named entity recognition accuracy on respiratory infection labels and
+matching domain experts. These efforts illustrate how continual pretraining and instruction tun-
+ing enrich LLM knowledge, yet they rarely align extracted representations with sequential decision
+frameworks or quantify epistemic uncertainty when used in high-stakes contexts.
+In the realm of decision support, pretrained LLMs have begun to inform predictive analytics
+directly from clinical records. Alba, Xue, Abraham, Kannampallil, and Lu (2025) show that self-
+supervised fine-tuning of ClinicalBERT and bioGPT on perioperative notes increases AUROC by up to
+38% for six postoperative risks, compared to traditional embeddings. Z. Zhang and Ni (2025)’s tech-
+nical note further highlights LLMs’ capacity to predict sepsis and generate discharge summaries in
+critical care, streamlining workflows and flagging subtle trends in electronic health records. Despite
+7
+
+=== PDF PAGE 8 ===
+these advances, such models predominantly focus on static risk estimation rather than on dynamic
+treatment recommendation, and they lack mechanisms to incorporate structured priors derived from
+narrative data.
+Within the domain of clinical decision support, pretrained LLMs have started to directly enhance
+predictiveanalyticsusingclinicaldocumentation. Albaetal.(2025)demonstratethatself-supervised
+fine-tuning of ClinicalBERT and bioGPT on perioperative documentation results in improvements of
+up to 38% across six postoperative risk categories when compared to conventional embedding ap-
+proaches. Z. Zhang and Ni (2025)’s technical report additionally underscores the ability of LLMs to
+forecast sepsis occurrence and produce discharge summaries in critical care environments, thereby
+optimizing clinical workflows and identifying nuanced patterns within EHRs. However, these devel-
+opments primarily concentrate on static risk assessment rather than dynamic treatment guidance,
+and they do not provide mechanisms for integrating structured priors extracted from narrative clin-
+ical data.RetryClaude can make mistakes. Please double-check responses.
+Modern treatment effect estimation increasingly relies on counterfactual reasoning frameworks,
+which directly tackle the fundamental question of "what results would have emerged under different
+treatment choices?" rather than simply documenting patterns found in existing data (Prosperi et al.,
+2020; Wu, Shi, Choudhary, & Wang, 2024). This evolution reflects an understanding that medical
+decision-making necessarily involves choosing from multiple available interventions, though only the
+consequencesoftheselectedinterventioncanbedirectlyobserved. Throughthestructuredmodeling
+of hypothetical outcomes across various treatment alternatives, counterfactual approaches support
+both improved policy analysis and the creation of decision-support technologies that can identify
+optimal treatment pathways for specific patients.
+Wu et al. (2024) present a bootstrapping-based counterfactual inference method specifically con-
+structed for observational clinical data, establishing a policy evaluation framework where therapeu-
+tic decisions constitute actions and patient medical trajectories form the contextual environment.
+By merging bootstrap uncertainty estimation with adversarial learning mechanisms for off-policy
+optimization, their technique achieves a 30% variance reduction in counterfactual policy estimates
+and delivers reward improvements reaching 3% compared to standard baseline algorithms. This
+study exemplifies how systematic counterfactual analysis can strengthen the credibility and safety
+of data-driven clinical decision-making in environments where real-time experimental validation is
+not viable.
+Researchers have developed hybrid AI methodologies that incorporate domain expertise to im-
+prove counterfactual prediction performance. Huang, Niazmand, and Vidal (2024) introduce a
+knowledge graph-driven approach that systematically represents patient characteristics, therapeutic
+8
+
+=== PDF PAGE 9 ===
+interventions, and clinical outcomes within an organized semantic framework, facilitating counter-
+factual reasoning through integrated graph-based computation and machine learning techniques.
+Although this method enables tailored counterfactual predictions while minimizing dependence on
+extensive experimental data, its performance is heavily influenced by the reliability and complete-
+ness of the knowledge graph foundation and the effectiveness of graph expansion protocols.
+Graphical causal models offer another complementary path. Kyrimi et al. (2025) demonstrate
+how causal Bayesian networks can support counterfactual reasoning in healthcare governance con-
+texts—such as morbidity and mortality review—by explicitly modeling treatment pathways and pa-
+tient states across multiple stages of care. Their framework enables retrospective queries like "what
+would patient outcomes have been under an alternative treatment protocol?", but it requires careful
+elicitation of causal structure and probabilities from domain experts.
+Despite significant progress in dynamic treatment regimens, some limitations of the current liter-
+ature continue. Table 1 provides an overview of the literature review. While existing methods have
+online decision-making, and LLM-driven decision support system, they often operate independently,
+lacking integration of unstructured clinical data with sequential decision-making frameworks. Cur-
+rent dynamic treatment approaches, such as reinforcement learning or contextual bandits, typically
+depend on structured data and struggle with the cold-start problem, resulting in inefficient initial
+treatment assignments. In addition, Counterfactual models like T-learners estimate individualized
+treatment effects but rarely incorporate real-time, adaptive policy learning. Our research overcomes
+these limitations through the following key contributions:
+•Leveraging LLMs to extract clinically relevant features from unstructured electronic health
+records;
+•Using these features to train T-learner models that predict treatment effects under alternative
+interventions;
+•EmployingConditionalTabularGenerativeAdversarialNetworks(CTGAN)togeneraterealistic
+synthetic patient data to enhance dataset robustness to tackle the cold-start problem;
+•Initializing bandit algorithms with prior knowledge from counterfactual models for efficient
+learning via simulation; and
+•Conducting a case study focused on stage III colon cancer treatment optimization transitioning
+from manual assignments to digital solutions.
+9
+
+=== PDF PAGE 10 ===
+Table 1: Literature Review Table
+Ref. Setting Method. focus
+LLM
+Clinical notes
+Counterfactual
+T-Learner
+Bandit
+Personalized
+Cold-Start Problem
+Prior-Informed
+Simulation
+Real-World Case
+(Norwood et al.,
+2024)
+Clinical trials Thompson-sampling
+RAR
+✓ ✓ ✓
+(Aslanyan et al.,
+2025)
+RCT Covariate-adjusted
+Bayesian RAR
+✓ ✓ ✓
+(Wei et al., 2025) Clinical trials Subgroup-adaptive
+best-arm ID
+✓ ✓
+(Chen & Khademi,
+2024)
+Dose finding Continuum non-
+parametric bandit
+✓
+(Liberali et al.,
+2025)
+RCT Real-time Gittins in-
+dex
+✓ ✓ ✓ ✓
+(Varatharajah &
+Berry, 2022)
+Medical recom-
+mendations
+Contextual
+Thompson-sampling
+bandit
+✓ ✓ ✓
+(Oh et al., 2022) Medical recom-
+mendations
+Contextual bandit✓ ✓ ✓ ✓
+(Berrevoets et al.,
+2022)
+Clinical trial Uplifted contextual
+bandit
+✓ ✓ ✓
+(Alamdari et al.,
+2024)
+Recommendation
+systems
+LLM-initialized con-
+textual bandit
+✓ ✓ ✓ ✓ ✓ ✓
+(Badreddine &
+Spranger, 2019)
+- Transfer learning
+in Reinforcement
+Learning
+✓ ✓ ✓ ✓ ✓
+(Wu et al., 2024) Treatment recom-
+mendation
+Bootstrap off-policy
+optimization
+✓ ✓ ✓ ✓
+(Xie et al., 2025) Clinical text anal-
+ysis tasks
+LLM pre-training✓ ✓
+(Hsu & Roberts,
+2025)
+Labeling clinical
+notes
+LLM-generated la-
+bels
+✓ ✓
+(Lopez et al., 2025) Clinical informa-
+tion extraction
+Entity-guided RAG✓ ✓
+(Gu et al., 2025) Clinical informa-
+tion extraction
+Prompt engineered
+LLM
+✓ ✓ ✓
+(del Moral-González
+et al., 2025)
+Labeling entities
+in clinical notes
+Zero-shot learning
+LLM
+✓
+This studyTreatment recom-
+mendation
+LLM + T-learner +
+Prior-informed con-
+textual bandit
+✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓
+10
+
+=== PDF PAGE 11 ===
+3 Methodology
+Our methodological framework tackles the essential problem of delivering individualized thera-
+peutic guidance in healthcare environments where observational data is constrained. This approach
+combines multiple synergistic methods to convert raw clinical documentation into practical treat-
+ment decisions while considering intervention outcomes. The overall system design is illustrated in
+Figure 1.
+We begin by processing unstructured clinical notes through a few-shot learning approach with
+open-source LLMs. This process transforms rich but unstructured patient information into a struc-
+tured dataset suitable for algorithmic processing. To address the inherent data scarcity in clinical
+applications, we implement a CTGAN to generate synthetic data instances that preserve the statisti-
+cal properties and relationships in the original clinical data to help generating patients for the sim-
+ulation process. With this expanded dataset, we formulate a counterfactual estimation framework
+employing the T-learner methodology to measure therapeutic effects across varied patient segments.
+This system permits the generation of predicted clinical outcomes under different treatment pro-
+tocols, forming a simulation base for subsequent reinforcement learning strategies. The ultimate
+methodological component integrates contextual bandit algorithms to enhance treatment selection
+optimization. We evaluate three differentiated computational approaches: The Linear Upper Confi-
+dence Bound (LinUCB), which postulates linear connections between context variables and outcome
+rewards; The Kernel Upper Confidence Bound (KernelUCB), which manages non-linear interactions
+via kernel-based solutions; and NeuralBandit, which applies deep learning networks to represent
+complex data relationships within clinical environments. Each bandit algorithm incorporates prior-
+informed optimization strategies that integrate domain expertise extracted from historical clinical
+data. Collectively, these elements constitute an integrated pipeline that converts unstructured clini-
+cal documentation into an evidence-based treatment recommendation framework capable of main-
+taining equilibrium between exploring innovative therapeutic options and leveraging established ef-
+fective treatments for particular patient populations. This methodology synthesizes the capabilities
+of natural language processing, synthetic data augmentation, causal inference, and reinforcement
+learning to tackle the challenges of individualized medicine within resource-limited settings.
+3.1 LLM-Processed Clinical Notes
+Our method starts by converting unstructured clinical documents into structured datasets ap-
+propriate for computational analysis. This conversion utilizes a systematic data extraction frame-
+work that employs LLMs through few-shot learning approaches. Open-source language models offer
+11
+
+=== PDF PAGE 12 ===
+System Architecture: Prior-Informed Optimization of Treatment Recommendation via Bandit Algorithms
+Data Collection and Processing
+Historical Clinical Notes
+Raw, unstructured records
+containing patient symptoms,
+treatments, outcomes, and
+clinical observations
+LLM Processing
+Few-shot learning approach
+using LLMs to extract
+structured information
+Structured Data
+(Limited Volume)
+Data Augmentation
+(CTGAN)
+Generate Synthetic Medical
+Data
+Counterfactual Modeling
+Combined Dataset
+(Real + Synthetic)
+Patient Features, Treatments
+& Outcome
+T-Learner Model
+Estimates treatment effects by
+modeling potential outcomes for
+each treatment option
+Treatment Outcome Simulator
+Simulates real-World response
+based on counterfactual model
+Bandit Optimization through Simulation
+Patient Generation
+(CTGAN)
+Bandit Agent
+Action Selection Mechanism
+Reward Observation
+Policy Update
+Treatment Recommendation
+Personalized patient treatment
+optimized for expected outcomes
+Continuous Learning
+Policy refinement and adapts to
+observations
+Online Learning
+Online policy refinement and
+adapts to new Observations
+Reward
+Prior-Informed Bandit Agent
+New Real Incoming PatientsPrior-Informed Bandit Agent
+Simulation Environment
+Real-World Environment
+Fig. 1.Treatment Recommendation System Architecture
+powerful textual analysis capabilities that can be configured for specialized tasks. Although these
+general-purposemodelsexhibitremarkablelinguisticproficiencyacrossdiversedomains, theygener-
+ally possess limited expertise in medical vocabulary, clinical decision-making processes, and health-
+carerecordformattingstandards. Insteadofpursuingcomputationallyexpensivefine-tuningofthese
+models exclusively for clinical data extraction tasks, we implemented a few-shot learning strategy
+thatexploitstheintrinsicpatternidentificationabilitiesofLLMsviastrategicallydesignedexemplars.
+Few-shot learning represents a streamlined approach to domain adaptation by leveraging a mini-
+mal set of exemplary demonstrations. This strategy empowers the open-source LLM to comprehend
+the designated extraction procedure without requiring extensive parameter fine-tuning or special-
+ized domain-oriented training. Through the presentation of sample medical records accompanied by
+their corresponding structured representations, we enable the model to detect information arrange-
+ment patterns within clinical documentation and apply these conversion processes to previously un-
+12
+
+=== PDF PAGE 13 ===
+encountered medical texts.
+As illustrated in Figure 2, we initially developed a clinical data processing pipeline designed to
+identifyandextractpertinentinformationfromhistoricalmedicalrecords. Thisprocessencompasses
+multiple interconnected stages that collaborate to transform raw clinical text into structured, usable
+data.
+The preprocessing of clinical documentation establishes the core foundation of our pipeline sys-
+tem. These prompts incorporated comprehensive extraction parameters that articulated the essen-
+tial data fields, supported by 3-5 thoughtfully curated representative pairs of clinical notes and their
+aligned structured outputs. We also embedded specialized handling mechanisms for medical ab-
+breviations and clinical jargon particular to the healthcare sector. This few-shot approach enabled
+the model to develop proficiency in the extraction process without requiring intensive fine-tuning
+methodologies.
+For the LLM implementation, we employed an open-source model architecture containing 8B pa-
+rameters. The model was set up with an 8,192-token context window to handle extended clinical
+documentation. We configured the temperature parameter at 0.2 to encourage consistent extraction
+performance, and utilized greedy decoding as the sampling approach to ensure maximum repro-
+ducibility in our extraction results.
+A comprehensive data extraction framework was designed with hierarchical connections between
+diverseclinicalcomponents. Theframeworkencompassedpatientdemographiccharacteristics, med-
+ical backgrounds, current clinical evaluations, therapeutic protocols, and outcome assessments. This
+organized methodology facilitated systematic collection and arrangement of all relevant clinical in-
+formation.
+TheextractionimplementationphaseentailedprocessingclinicaldocumentationthroughtheLLM
+pipelineusingbatchesof8. Weemployedparallelprocessingacrossmultiplecomputationalinstances
+to enhance throughput and operational efficiency. Each document was processed using identical
+pipeline procedures to maintain consistency in extraction approach.
+After extraction, the structured data was harmonized to maintain consistency across all records.
+This harmonization encompassed the standardization of measurement units, normalization of treat-
+ment terminology, temporal synchronization of treatment and outcome observations, and the reso-
+lution of conflicting or redundant information. This harmonization procedure was essential for gen-
+erating a unified dataset from heterogeneous clinical documentation approaches. This LLM-driven
+extraction methodology facilitated the conversion of thousands of historical clinical notes into struc-
+tured data components ready for subsequent modeling processes. The final dataset constituted the
+basis for our treatment recommendation system, encapsulating the intricate patterns of historical
+13
+
+=== PDF PAGE 14 ===
+treatment decisions and their corresponding outcomes.
+Few-Shot Learning for Clinical Data
+Extraction
+LLMClinical Note
+Extraction Prompt
+## Task Definition
+Extract structured data from
+clinical patient descriptions
+...
+## Field Definitions
+adherence: [Yes/No]
+age: [number]
+arms, histology, ecog...
+## Example 1
+"55-year-old female with well-
+differentiated histology,
+Oxaliplatin treatment..."
+## Expected Values
+{"adherence": "No", "age":
+55.0...}
+New patients description:
+"Patient is a 63-year-old..."
+Structured Data
+Extraction
+Extracted Data:
+{
+"adherence": "No",
+"age": 63.0,
+"treatment": "Oxaliplatin +
+5-fluorouracil/Leucovorin",
+"race": "white",
+"sex": "female",
+"bmi": 20.97
+...
+}
+1. Pattern
+Recognition
+Model learns from example
+2. Information
+Extraction
+Model identifies key fields
+3. Structured
+Output
+Standardized data format
+Few-shot learning enables structured data extraction without model fine-tuning
+Fig. 2.Clinical Few-shot Learning Process
+3.2 Conditional Tabular Generative Adversarial Network
+FollowingthetransformationofunstructuredclinicalnotesintostructureddataviaourLLM-based
+extraction framework, we faced a prevalent issue in clinical research: limited data availability for
+certain treatment-outcome pairings. To overcome this constraint, we employed CTGAN to enhance
+our dataset with synthetically created instances that maintain the statistical characteristics of the
+original data.
+CTGANbuildsuponconventionalGANarchitecturebyincorporatingspecializedmodulestailored
+for processing tabular data containing both categorical and continuous variables. The system com-
+prises a generator networkGand a discriminator networkDparticipating in an adversarial training
+procedure.
+ThegeneratorGseekstocreatesyntheticpatientrecordsthatareindistinguishablefromauthentic
+clinical data, while the discriminatorDstrives to distinguish between genuine and synthetic records.
+This adversarial procedure is expressed through the following minimax objective function:
+min
+G
+max
+D
+V(D,G) =E x∼pdata(x)[logD(x)] +E z∼pz(z)[log(1−D(G(z)))](1)
+14
+
+=== PDF PAGE 15 ===
+Wherep data(x)signifies the actual clinical data distribution,pz(z)denotes a prior distribution (usu-
+ally Gaussian noise),D(x)reflects the discriminator’s judgment of data genuineness, andG(z)rep-
+resents the generator’s resulting output from noise inputz.
+To adequately address the diverse data types characteristic of clinical records, we implemented
+targeted normalization strategies for continuous variables and conditional generation methods for
+categorical variables. For continuous features, we deployed variational Gaussian mixture models to
+characterize multimodal distributions:
+p(x) =
+X
+i
+πiN(x|µi,σ 2
+i )(2)
+Whereπ i reflects the weight of thei-th mixture component, andN(x|µi,σ 2
+i )denotes a Gaussian
+distribution with meanµi and varianceσ 2
+i.
+For categorical variables, we adopted conditional vector embedding and structured the generator
+to deliver one-hot encoded representations. The conditional generation was established through
+feature-wiseconditioning,wherethegeneratordevelopsoutputsbasedonpredeterminedcategorical
+features:
+G(z,c)→ˆx(3)
+Wherecrepresents the conditional vector encoding specific categorical features.
+The CTGAN training process involved several key modifications to enhance stability and quality
+of synthetic data:
+•Gradient penalty regularization term to enforce Lipschitz continuity
+•Mode-specific normalization to handle multimodal continuous features
+•Training-by-sampling to address imbalanced categorical distributions
+3.3 T-learner Counterfactual Modeling
+Subsequently to dataset enhancement using the CTGAN framework, we utilized a T-learner ap-
+proach for counterfactual modeling to estimate individual treatment effects, as demonstrated in Fig-
+ure 4. The T-learner constitutes a primary technique in causal inference that enables us to calculate
+the potential outcomes under different treatment regimens for each patient.
+The T-learner framework necessitates constructing separate prediction models for each treatment
+condition, allowing us to deduce what would have occurred under alternative treatment scenarios.
+15
+
+=== PDF PAGE 16 ===
+CTGAN Architecture
+Tabular Data
+Preprocessing
+Encoding & Normalization Training Process
+GAN Architecture
+Generator
+Random Noise Conditional Vector
+Synthetic Data
+Discriminator
+Real DataSynthetic Data
+Real/Fake Prediction
+Final CTGAN Model Generate & Evaluate
+Synthetic Data
+Feedback
+Fig. 3.Workflow of the CTGAN Model
+This approach is especially beneficial for our clinical recommendation system as it captures complex,
+non-linear interactions between patient characteristics and treatment effectiveness.
+For our implementation, we denote the potential outcome for a patient with featuresXunder
+treatmenttasY(t). With multiple possible treatmentsT=t 1,t 2,...,t k, the T-learner trainsksepa-
+rate modelsµt, each estimatingE[Y|X,T=t]for a specific treatmentt. The formal representation
+of our T-learner framework can be expressed as:
+µt(x) =E[Y|X=x,T=t](4)
+For each treatment optiont, we train a dedicated modelµt using only the subset of data where
+treatmenttwas administered. The models are trained to minimize the empirical risk:
+min
+µt
+X
+i:Ti=t
+L(µt(Xi),Yi)(5)
+WhereLrepresents the loss function, which in our case was mean squared error for continuous
+outcomes and cross-entropy loss for categorical outcomes. For each patient with featuresx, the
+predicted outcome under each treatmenttis given byµt(x). This provides us with a complete set of
+counterfactual outcomes:
+Predicted Outcomes(x) =µt1(x),µt2(x),...,µ tk (x)(6)
+16
+
+=== PDF PAGE 17 ===
+Theseindividualtreatmentoutcomepredictionsallowustoestimatewhatwouldhappentoaspe-
+cific patient under each available treatment option, providing the foundation for treatment selection
+and recommendation. To implement the T-learner, we developed a model for each treatment arm
+using four different machine learning algorithms: XGBoost, Random Forest, Neural Networks, and
+Support Vector Machines (SVM). This diverse approach helped capture both structured relationships
+and complex interactions in the data
+To address potential selection bias in the observational data, we implemented inverse probability
+of treatment weighting (IPTW) during model training. The propensity scoree t(x)for receiving
+treatmenttwas estimated using a separate gradient-boosted classifier:
+et(x) =P(T=t|X=x)(7)
+The inverse probability weights were then calculated as:
+wi = I(Ti =t)
+et(Xi) (8)
+WhereI(T i =t)is an indicator function that equals 1 when patientireceived treatmenttand 0
+otherwise.
+These weights effectively create statistical copies of observations, generating a pseudo-population
+where the covariate distributions are balanced across treatment groups. This reweighting procedure
+increases the sample size while ensuring that treatment assignment is no longer confounded by
+patient characteristics.
+These weights were incorporated into the loss function during T-learner training to mitigate se-
+lection bias:
+min
+µt
+X
+i:Ti=t
+wi·L(µt(Xi),Yi)(9)
+The trained T-learner models provided us with a robust mechanism to estimate counterfactual
+outcomes for each treatment arm, effectively simulating what would happen to a patient under each
+potential treatment option. These individual treatment outcome estimates formed the foundation
+for our subsequent bandit algorithms, enabling them to learn from simulated feedback in scenarios
+where real-world experimentation would be impractical or unethical.
+17
+
+=== PDF PAGE 18 ===
+Training Data
+Split Data by
+Treatment Status
+Treatment Group 0 Data
+T=0
+Treatment Group 1 Data
+T=1
+Model 0
+Trained on T=0 Data
+Model 1
+Trained on T=1 Data
+Predicted Outcome Y ₀ (X) Predicted Outcome Y ₁ (X)
+Treatment Group K Data
+T=K
+Model K
+Trained on T=K Data
+Predicted Outcome Y ₖ (X)
+...
+...
+...
+Fig. 4.Structure of the T-Learner Approach
+3.4 Contextual Bandit Framework
+After constructing our counterfactual model, we adopted a contextual bandit framework to im-
+prove treatment recommendations. Contextual bandits present a sophisticated approach to the
+exploration-exploitation challenge inherent in sequential decision-making tasks, particularly appro-
+priate for our clinical recommendation setting where each patient constitutes a unique situation
+demanding tailored treatment selection.
+The contextual bandit framework operates on the principle of learning optimal policies through
+environmental interaction. In our implementation, the bandit agent examines patient features (con-
+text), chooses a treatment (action), and receives feedback on the treatment’s performance (reward).
+This approach can be represented as follows:
+At each time stept:
+1. The agent observes a contextxt∈Xrepresenting a patient’s clinical features
+2. Based on contextxt, the agent selects an actionat∈Afrom the set of available treatments
+3. The environment (simulated by our T-learner counterfactual model) returns a rewardrt
+4. The agent updates its policy based on the observed triplet(xt,at,rt)
+18
+
+=== PDF PAGE 19 ===
+The objective of the contextual bandit is to maximize the cumulative reward over time, expressed
+mathematically as:
+maxE
+" TX
+t=1
+rt
+#
+(10)
+The expected reward for a given context-action pair is defined as:
+µ(x,a) =E[r|x,a](11)
+And the optimal policyπ∗ selects actions that maximize this expected reward:
+π∗(x) = arg max
+a∈A
+µ(x,a)(12)
+To efficiently manage the exploration-exploitation trade-off, we deployed multiple bandit algo-
+rithms incorporating prior-informed adaptations. These algorithms compute the anticipated reward
+for each treatment alternative while preserving uncertainty estimates to direct exploration. Below,
+we outline our implementations of LinUCB, KernelUCB, and NeuralBandit algorithms.
+3.4.1 LinUCB
+The LinUCB algorithm assumes a linear relationship between the context-action features and the
+expected reward. For our clinical recommendation system, we implemented LinUCB with prior-
+informed modifications to incorporate domain knowledge, as shown in Algorithm 1.
+In LinUCB, the expected reward is modeled as:
+µ(x,a) =θ T
+aϕ(x,a)(13)
+Whereθ a represents the unknown parameter vector for actiona, andϕ(x,a)is a feature mapping of
+the context-action pair.
+For each actiona, the algorithm maintains a parameter estimateˆθa and a confidence matrixAa.
+The upper confidence bound is computed as:
+UCB(x,a) = ˆθT
+aϕ(x,a) +α
+q
+ϕ(x,a)TA−1a ϕ(x,a)(14)
+Whereαis an exploration parameter controlling the width of the confidence interval.
+The algorithm selects the action with the highest upper confidence bound:
+19
+
+=== PDF PAGE 20 ===
+at = arg max
+a∈A
+UCB(xt,a)(15)
+After observing rewardrt, the parameter estimates are updated using ridge regression:
+Aa←A a +ϕ(xt,at)ϕ(xt,at)T (16)
+ba←b a +rt·ϕ(xt,at)(17)
+ˆθa←A−1
+a ba (18)
+To incorporate prior knowledge derived from historical clinical data, we modified the initial pa-
+rameter estimates and confidence matrices:
+Aa =λ a·I+
+X
+i∈Dprior
+ϕ(xi,a)ϕ(xi,a)T (19)
+ba =
+X
+i∈Dprior
+ri·ϕ(xi,a)(20)
+WhereDprior represents a carefully curated subset of historical data points, andλa is a prior-specific
+regularization parameter.
+Algorithm 1LinUCB Algorithm
+Require:Regularization parameterλ>0, exploration parameterα>0, dimensiond, time horizon
+T
+1:InitializeA 0 =λI d ▷d×dregularization matrix
+2:Initializeb 0 =0 d ▷d-dimensional zero vector
+3:fort= 1,2,...,Tdo
+4:Observe context featuresx t,a∈R d for all armsa∈A t
+5:Compute ˆθt−1 =A−1
+t−1bt−1 ▷Ridge regression estimate
+6:foreach arma∈A t do
+7:p t,a =x⊤
+t,aˆθt−1 +α
+q
+x⊤
+t,aA−1
+t−1xt,a ▷UCB score
+8:end for
+9:Select arma t = arg maxa∈Atpt,a
+10:Observe rewardr t
+11:A t =A t−1 +xt,atx⊤
+t,at ▷Update precision matrix
+12:b t =b t−1 +rtxt,at ▷Update weighted context sum
+13:end for
+20
+
+=== PDF PAGE 21 ===
+3.4.2 KernelUCB
+TheKernelUCBalgorithmexpandsuponLinUCBbyincorporatingnon-linearrelationshipsthrough
+kernel methods, as described in Algorithm 2. This methodology is especially beneficial for modeling
+complex interactions between patient characteristics and treatment responses. KernelUCB employs
+a kernel functionK(·,·)to implicitly transform context-action pairs into a high-dimensional feature
+space. The expected reward is represented as:
+µ(x,a) =f a(ϕ(x,a))(21)
+Wheref a belongs to a reproducing kernel Hilbert space defined by kernelK.
+The upper confidence bound is computed as:
+UCB(x,a) =k t(x,a)T (Kt +λI)−1yt +βt
+q
+k(x,a,x,a)−k t(x,a)T (Kt +λI)−1kt(x,a)(22)
+Where:
+•k t(x,a) = [K((x 1,a 1),(x,a)),...,K((x t−1,at−1),(x,a))] T
+•K t is the kernel matrix with entriesKt[i,j] =K((x i,ai),(xj,aj))
+•y t = [r 1,...,r t−1]T
+•β t is the exploration parameter at timet
+We implemented KernelUCB with a Gaussian kernel function:
+K((x,a),(x ′,a′)) =I(a=a ′)·exp(−γ∥x−x ′∥2)(23)
+Whereγis the kernel bandwidth parameter andI(·)is an indicator function ensuring that kernel
+computations are only performed between identical actions.
+To incorporate prior knowledge, we initialized the kernel matrixK0 and reward vectory0 using
+historical data:
+K0[i,j] =K((x i,ai),(xj,aj))for alli,j∈D prior (24)
+y0 = [ri]i∈Dprior (25)
+21
+
+=== PDF PAGE 22 ===
+Algorithm 2Kernel Bandit Algorithm
+Require:Kernel functionk(·,·), exploration parameterβ >0, action setA, time horizonT
+1:InitializeD 0 =∅▷Empty dataset
+2:fort= 1,2,...,Tdo
+3:Compute posterior mean and variance using kernel regression:
+4:µ t−1(a) =k t(a)T (Kt +λI)−1yt for alla∈A
+5:σ 2
+t−1(a) =k(a,a)−k t(a)T (Kt +λI)−1kt(a)for alla∈A
+6:Select actiona t = arg maxa∈Aµt−1(a) +βσ t−1(a)▷Upper Confidence Bound
+7:Observe rewardr t
+8:Update datasetD t =D t−1∪{(at,rt)}
+9:Update kernel matrixK t and vectorkt(a)for alla∈A
+10:end for
+3.4.3 NeuralBandit
+The NeuralBandit framework exploits deep neural networks to represent the complex interde-
+pendencies between patient contexts, treatments, and outcomes, as depicted in Algorithm 3. This
+technique provides remarkable flexibility in detecting highly non-linear structures within clinical
+data.
+Our NeuralBandit implementation utilizes a neural network architecture to determineQ(x,a),
+the estimated reward for context-action pairs. The network consists of shared representation layers
+followed by action-specific output heads:
+Q(x,a) =f a(g(x))(26)
+Whereg(x)represents shared feature extraction layers andfa represents the action-specific output
+head for actiona.
+To balance exploration and exploitation, we implemented a Bayesian neural network approach
+usingdropoutasaBayesianapproximation. Duringdecision-making,weperformedmultipleforward
+passes with dropout enabled to obtain a distribution of reward estimates:
+{Q1(x,a),Q 2(x,a),...,Q M (x,a)}(27)
+The upper confidence bound was then computed as:
+UCB(x,a) =mean({Q j(x,a)}M
+j=1) +α·std({Q j(x,a)}M
+j=1)(28)
+Where mean(·)and std(·)represent the mean and standard deviation of the dropout samples, and
+αis an exploration parameter.
+TheNeuralBanditarchitectureconsistedofthreesharedhiddenlayers(128, 64, 32neurons)with
+22
+
+=== PDF PAGE 23 ===
+ReLU activations and batch normalization, followed by treatment-specific heads with two hidden
+layers (16, 8 neurons).
+To incorporate prior knowledge, we pre-trained the neural network on historical data before
+initiating the online learning process:
+min
+θ
+X
+(x,a,r)∈Dprior
+(Qθ(x,a)−r) 2 +λ∥θ∥ 2 (29)
+WhereQ θ represents the neural network with parametersθ, andλis a regularization parameter.
+This Prior-Informed Optimization approach across all three bandit algorithms enabled effective
+leveraging of historical clinical knowledge while maintaining the adaptability needed for personal-
+ized treatment recommendations.
+Algorithm 3Neural Bandit Algorithm
+Require:Neural networkf θ, exploration parameterα>0, action setA, time horizonT, batch size
+B, training epochsE
+1:Initialize neural network parametersθrandomly
+2:Initialize replay bufferD=∅
+3:fort= 1,2,...,Tdo
+4:GenerateMMonte Carlo dropout samples{ ˆfθm(a)}M
+m=1 for alla∈A
+5:Compute mean:µ t(a) = 1
+M
+PM
+m=1 ˆfθm(a)for alla∈A
+6:Compute variance:σ 2
+t (a) = 1
+M
+PM
+m=1( ˆfθm(a)−µ t(a))2 for alla∈A
+7:Select actiona t = arg maxa∈Aµt(a) +ασt(a)▷Neural UCB
+8:Observe rewardr t
+9:Add(a t,rt)to replay bufferD
+10:iftmodB== 0then▷Train network everyBsteps
+11:fore= 1,2,...,Edo
+12:Sample mini-batch fromD
+13:Updateθby minimizing MSE loss on mini-batch
+14:end for
+15:end if
+16:end for
+4 Real-World Case Study
+This case study investigates the enhancement of treatment methodologies for stage III colon can-
+cer patients within healthcare institutions that are transitioning from traditional treatment decision-
+making practices to more structured systems. Presently, the healthcare institution employs conven-
+tional clinician-centered treatment selection mechanisms.. Medical oncologists manage therapeutic
+decisions through patient case evaluations during multidisciplinary team discussions, typically re-
+lying on clinical judgment and standardized treatment protocols without incorporating extensive
+23
+
+=== PDF PAGE 24 ===
+data synthesis or predictive analytical tools. This approach, although maintaining clinical validity,
+demands considerable resources, remains vulnerable to individual practitioner biases, and becomes
+progressively more challenging to refine as therapeutic options continue to expand. Furthermore,
+the healthcare institution encounters variations in treatment outcomes, especially in complex cases
+where several therapeutic pathways are viable, resulting in inefficient resource allocation and vari-
+able patient outcomes.
+Toaddressthesechallenges,healthcarefacilitiescanimplementamoresophisticatedandexpand-
+able methodology for treatment selection. Instead of depending exclusively on clinical judgment and
+uniform protocols, medical practices can integrate an AI-powered treatment advisory system into
+their operational processes. This system is engineered to provide support for critical treatment se-
+lection decisions, including determining optimal therapeutic regimens, forecasting patient responses
+according to individual characteristics, refining its decision-making algorithms, and choosing the
+most appropriate treatment protocols. Through analysis of past treatment data and patient out-
+comes, the AI framework can facilitate more accurate, data-driven treatment choices compared to
+conventional decision-making approaches. This transition is anticipated to enhance therapeutic ef-
+fectiveness, minimize adverse reactions, and provide better alignment with patient-specific require-
+ments and preferences
+As part of this transition, clinics can also aim to modernize the treatment decision-making process
+(as shown in Figure 5). It is developing a system that allows clinicians to input comprehensive pa-
+tientdata andreceive real-timetreatmentrecommendations tailoredto eachpatient’s uniqueclinical
+profile. This digital interface will enhance clinical decision-making capabilities, increase treatment
+precision, andensurethattherapeuticchoicesaccountforbothclinicalindicatorsandpatient-specific
+factors from the outset.
+This case study emphasized post-surgical adjuvant chemotherapy guidance for patients after suc-
+cessful curative resection procedures. The recommendation challenge encompassed choosing from
+six therapeutic options: ARM A (oxaliplatin combined with fluorouracil/leucovorin), ARM B (irinote-
+can hydrochloride combined with fluorouracil/leucovorin), ARM C (sequential ARM A then ARM B),
+ARM D (ARM A with cetuximab), ARM E (ARM B with cetuximab), and ARM F (ARM C with cetux-
+imab), with ARM G (locally directed therapy) subsequently incorporated for patients harboring mu-
+tant KRAS. The framework was designed to identify the most suitable treatment protocol based on
+individual patient parameters such as age, tumor features, lymph node status, and biomarker char-
+acteristics, thereby illustrating its capacity to individualize oncological treatment decisions within a
+clinically applicable context.
+24
+
+=== PDF PAGE 25 ===
+Request: Patient data
+Request: A treatment
+Response: Final treatment
+Response: Patient data
+Request: 
+Treatment selection
+Response: Optimal treatment
+Request: A treatment
+Response: A treatment based on experience
+Modern Agent-based Treatment Recommendation
+Traditional Treatment Recommendation
+AI Agent
+Patient health database
+Patient
+Patient
+1
+2
+1
+2
+3
+4
+5
+6
+Doctor
+Doctor
+Fig. 5.Comparison workflow of traditional and modern treatment recommendation
+25
+
+=== PDF PAGE 26 ===
+5 Result
+5.1 Clinical Note Structuring Performance
+The accurate transformation of unstructured clinical notes into structured tabular data is founda-
+tional to our treatment recommendation framework. We evaluated two open-source LLMs for this
+task: Llama 3.1 (8B parameters) and DeepSeek-R1 (8B parameters). Both models were assessed
+on their ability to extract relevant clinical features through few-shot learning approaches using an
+identical prompt structure with 3-5 examples.
+The evaluation employed a reference standard dataset consisting of 25 manually curated clinical
+documents. Assessment was centered on accuracy as the main evaluation criterion, operational-
+ized as the ratio of correctly identified fields to total fields. This metric selection corresponds to the
+dichotomous nature of the extraction task—where each field represents a correct or incorrect iden-
+tification—thus providing accuracy as an immediate measure of the comprehensive reliability of the
+structured data extraction process.
+Llama 3.1 attained an accuracy of 82.7%, showing competent performance but encountering dif-
+ficulties with implicit clinical context and ambiguous medical language, which resulted in extraction
+inaccuracies and omissions across certain fields. In contrast, DeepSeek-R1 exhibited superior perfor-
+mance with 93.2% accuracy, indicating enhanced capability in correctly identifying and excluding
+relevant fields relative to Llama 3.1. The model’s advanced reasoning functionality facilitated im-
+proved comprehension of specialized medical patterns and complex clinical associations. Neverthe-
+less, DeepSeek-R1 experienced occasional extraction failures, particularly when processing heavily
+condensed clinical abbreviations.
+Regarding computational efficiency, Llama 3.1 processed clinical notes approximately 35% faster
+on average, with a mean processing time of 28 seconds per note compared to DeepSeek-R1’s 43
+seconds when evaluated on identical hardware. This difference in processing time can be attributed
+to DeepSeek-R1’s more complex reasoning architecture, which, while contributing to higher accu-
+racy, inherently requires more computational resources per inference step. This efficiency difference,
+while modest, becomes significant when scaling to large clinical datasets.
+Both models produced structured data of sufficient quality for downstream tasks. DeepSeek-R1
+was selected for subsequent phases due to its higher accuracy in extracting the clinical information,
+ensuring a more reliable structured dataset for our treatment optimization pipeline.
+These results validate the feasibility of using open-source LLMs with few-shot learning for clinical
+information extraction without requiring domain-specific fine-tuning, which forms the critical first
+step in our treatment optimization framework.
+26
+
+=== PDF PAGE 27 ===
+5.2 Synthetic Data Generation and Validation
+After successfully structuring the clinical notes, we tackled the issue of limited data availability
+by generating synthetic data using a Conditional Tabular Generative Adversarial Network (CTGAN).
+This section outlines the outcomes of our synthetic data generation approach and the validation
+methods that followed.
+5.2.1 CTGAN Training Performance
+Our LLM pipeline’s extracted structured clinical data served as the training dataset for the CT-
+GAN model. The training loss progression across epochs is depicted in Figure 6. The generator loss,
+shown by the blue curve, initiates at a positive value before rapidly transitioning to negative val-
+ues, reflecting the generator’s enhanced capacity to synthesize realistic data. This downward trend
+in generator loss persists steadily until stabilizing at approximately -3, signifying the generator’s
+continuous advancement in producing data capable of effectively fooling the discriminator.
+0 50 100 150 200 250 300
+Epoch
+−3.0
+−2.5
+−2.0
+−1.5
+−1.0
+−0.5
+0.0
+0.5
+Loss
+CTGAN Training Loss
+Generator Loss
+Discriminator Loss
+Fig. 6.CTGAN training loss
+The orange curve depicts the discriminator (critic) loss, which oscillates around zero throughout
+the training process. This pattern is characteristic of the Wasserstein GAN with gradient penalty
+(WGAN-GP) framework employed in our CTGAN implementation. The discriminator’s relatively
+27
+
+=== PDF PAGE 28 ===
+stablelosspattern,withminoroscillations,indicatesthatitmaintainsabalancedabilitytodistinguish
+between real and synthetic data while engaging in the adversarial training process.
+The dynamics between these loss curves offer significant insights into the model’s training behav-
+ior. In analyzing these adversarial loss patterns, three distinct phases emerge: In the initial phase,
+the generator creates suboptimal synthetic data while the discriminator experiences difficulty in
+distinguishing between authentic and generated samples. During the progression of training, the
+generator’s progressively more negative loss values indicate its enhanced performance, while the dis-
+criminator must continually improve its detection capabilities to sustain steady performance levels.
+In the final phase, once the generator loss reaches stability at a negative value with the discrimi-
+nator loss maintaining proximity to zero, it can be determined that the generator has successfully
+optimized its capacity to generate synthetic data that closely mirrors the authentic clinical records.
+The stabilization of both loss curves following approximately epoch 100 indicates that the model
+achieved effective convergence at this juncture, with negligible additional enhancement in later
+epochs. This training behavior demonstrates that the CTGAN model effectively maintained equi-
+librium in the adversarial dynamics between generator and discriminator, producing a robust model
+with the capability to generate data that is statistically comparable to our original clinical dataset.
+5.2.2 Validation of Synthetic Data
+To rigorously evaluate the quality of the synthetic data, we employed a machine learning-based
+two-sample test. This approach involved labeling real clinical data instances as class 1 and synthetic
+data instances as class 0, then training a Random Forest classifier to distinguish between these two
+classes. In an ideal scenario, a high-quality synthetic dataset would be indistinguishable from real
+data, resulting in classification performance near random chance.
+Figure 7 presents the receiver-operating-characteristic (ROC) curve obtained from this classifier.
+The curve plots the true-positive rate (proportion of synthetic rows correctly labeled as synthetic)
+againstthefalse-positiverate(proportionofrealrowsincorrectlylabeledassynthetic)asthedecision
+threshold is swept from strict to lenient. The dashed 45°line represents random guessing; a model
+that cannot exploit any systematic differences between the two samples would trace this diagonal
+exactly.
+The area under the ROC curve stands at 0.55, which represents only a slight elevation above the
+random chance threshold of 0.50. This demonstrates that the classifier possesses merely a 55% like-
+lihood of correctly ranking a randomly selected synthetic sample higher than a randomly selected
+authentic sample—scarcely superior to random guessing. Put differently, the ensemble model can-
+not identify robust, reliable patterns that distinguish between the two distributions. This outcome
+28
+
+=== PDF PAGE 29 ===
+implies that the synthetic generator replicates the joint distribution structure of the authentic data
+with substantial accuracy; any remaining discrepancies are minor and may result from limited sam-
+ple size effects or slight distributional shifts rather than fundamental deficiencies in the generation
+methodology. The horizontal axis of the ROC curve depicts the False Positive Rate (FPR), repre-
+senting the proportion of authentic data misclassified as synthetic. The vertical axis shows the True
+Positive Rate (TPR), indicating the proportion of synthetic data accurately identified as synthetic.
+The blue curve emerges from plotting these two metrics across different decision thresholds. These
+thresholds constitute the decision boundaries employed by the random forest classifier to distinguish
+data as either authentic or synthetic. The classifier assigns each data point a probability score re-
+flecting its likelihood of being synthetic; when this score surpasses the threshold value, the point
+receives a synthetic classification. As the threshold decreases, additional data points are labeled as
+synthetic, leading to simultaneous increases in both FPR and TPR. This produces a step-like curve
+that originates at the coordinate (0,0) and advances toward the endpoint (1,1).
+The stepwise pattern of the curve results from the discrete threshold values and the classifier’s
+behavior at these decision points. With the score distributions of real and synthetic data being nearly
+superimposed here, the curve tracks closely along the diagonal with minimal variations. These small
+departures indicate the subtle patterns the model identifies while trying to differentiate between the
+two data categories. The results demonstrate that the synthetic data maintains substantial similarity
+to the real data, representing a favorable outcome for synthetic data generation approaches. Nev-
+ertheless, the classification performance indicates potential for enhancement in achieving complete
+indistinguishability between synthetic and real data, especially in regions where the model exhibits
+modest yet systematic discrimination.
+5.2.3 Dimensional Analysis and Visualization
+The t-distributed Stochastic Neighbor Embedding (t-SNE) analysis shown in Figure 8 provides
+a two-dimensional visualization that contrasts the distributions of original and synthetic datasets.
+This dimensionality reduction method maintains the local structure of high-dimensional data by
+keeping neighboring points in close proximity within the reduced space while separating distant
+observations. The visualization employs blue circles to denote authentic data points and orange
+triangles to indicate synthetically generated samples.
+Theanalysisdemonstratesconsiderableoverlapbetweenauthenticandgenerateddatapoints, ex-
+hibitingsimilarclusteringbehavioranddensitydistributionsacrossthemanifoldstructure. Thiscolor
+intermixingsuggeststhattheCTGANhaseffectivelylearnedthecomplex, multidimensionalrelation-
+ships that characterize distinct patient populations. Critical clinical cohorts, especially those distin-
+29
+
+=== PDF PAGE 30 ===
+0.0 0.2 0.4 0.6 0.8 1.0
+False Positive Rate
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0True Positive Rate
+ROC Curve for Two-Sample Test
+ROC curve (AUC = 0.55)
+Random Guessing
+Fig. 7.ROC curve for two sample test
+guished by particular therapeutic sequences and comorbidity profiles, maintain consistent grouping
+behaviors in both datasets. In regions where concentrated bands, curves, or clusters of original data
+emerge, generated samples reliably coincide with these patterns, evidencing the model’s capacity to
+accurately represent the underlying data distribution.
+A limited number of micro-regions exhibit noticeable chromatic imbalances—brief extensions or
+boundary portions where orange predominates or blue becomes sparse—indicating modest distri-
+butional shifts rather than substantial model deficiencies. These minor discrepancies underscore
+regions where the model may have either overlooked uncommon patient characteristics or exces-
+sively reproduced certain features. Notwithstanding these slight variations, the general assessment
+supports that an observer reviewing this visualization without access to the legend would find it
+challenging to distinguish between the two datasets visually, reinforcing the approximately random
+AUC documented in our random-forest classifier evaluation.
+The t-SNE plot has several important uses in our validation work. It gives us a visual method to
+check how similar the synthetic and real data distributions are, backing up our statistical results.
+The plot also lets us find places where the original dataset has gaps that synthetic data points might
+cover, demonstrating that the CTGAN can produce reasonable data even in areas where we have
+limited real examples from the clinical feature space.
+30
+
+=== PDF PAGE 31 ===
+It should be emphasized that t-SNE represents a qualitative approach and exhibits sensitivity to
+hyperparameter settings (perplexity, learning rate, random seed). Although it accurately maintains
+local structural relationships, it may alter global geometric properties, meaning that overlapping dis-
+tributions constitute a necessary but insufficient condition for establishing distributional equivalence.
+However, when considered alongside our ROC analysis, this visual convergence offers strong support
+that our synthetic data preserves the essential statistical characteristics of the authentic cohort while
+generating only minimal, localized variations.
+This comprehensive validation approach, combining quantitative classifier-based testing with di-
+mensional visualization, provides strong confidence that the expanded dataset created through syn-
+thetic data generation maintains the statistical integrity needed for reliable counterfactual outcome
+modeling and bandit algorithm training, while addressing the original data scarcity issues without
+compromising clinical validity.
+−75 −50 −25 0 25 50 75
+Component 1
+−60
+−40
+−20
+0
+20
+40
+60
+Component 2
+t-SNE Visualization: Real vs Synthetic Data
+Real Data
+Synthetic Data
+Fig. 8.t-SNE visualization for patient data
+5.3 Counterfactual Outcome Modeling Results
+The creation of precise counterfactual outcome models stands as a vital element for establishing
+effective treatment recommendation systems. Throughout this research, we leveraged a T-learner
+configuration to determine treatment effects by predicting potential outcomes across diverse treat-
+31
+
+=== PDF PAGE 32 ===
+ment pathways. This section examines the performance metrics of various machine learning algo-
+rithms incorporated into our T-learner structure.
+5.3.1 Model Performance Comparison
+We examined four machine learning algorithms as base learners within the T-learner approach:
+Support Vector Machines (SVM), Random Forest, XGBoost, and Neural Networks. Each algorithm
+was developed to predict counterfactual outcomes for patients under varying treatment scenarios,
+following the T-learner framework that builds distinct models for each treatment condition. The
+performance metrics for each algorithm across all treatment groups are presented in Table 2. Model
+performance was evaluated using conventional prediction accuracy measures, including accuracy,
+precision, recall, and F1-score, which assessed the models’ ability to predict observed outcomes on
+a reserved test dataset.
+Table 2: Performance Comparison of Machine Learning Algorithms in T-learner Framework
+Algorithm Accuracy (%) Precision (%) Recall (%) F1-Score (%)
+XGBoost 84.3 89.2 80.1 84.5
+Random Forest 82.6 86.7 77.0 81.6
+Neural Network 80.2 82.3 74.4 78.2
+SVM 79.3 80.5 72.8 76.4
+5.3.2 Evaluation Methodology
+Our evaluation focused on direct prediction accuracy of potential outcomes, as this most directly
+impacts the subsequent bandit algorithm’s ability to make optimal treatment decisions. We used
+80% of our combined original and synthetic dataset for training and the remaining 20% for testing.
+For each treatment arm, we trained separate predictors following the T-learner approach and
+evaluated how accurately they could predict the observed outcomes in cases where that treatment
+was actually administered. This allows us to assess the models’ accuracy in the factual setting before
+relying on them for counterfactual estimates.
+The accuracy percentage denotes the ratio of cases where the predicted outcome value aligned
+with the observed outcome within a clinically permissible error range. Complementary metrics such
+as precision, recall, and F1-score deliver a comprehensive analysis of model performance across
+multiple evaluation criteria.
+32
+
+=== PDF PAGE 33 ===
+5.3.3 Model-Specific Insights
+XGBoostshowedthebestperformanceachievinganoverallaccuracyof84.3%acrossalltreatment
+conditions. Its superior predictive capacity results from its adept processing of complex relationships
+between patient attributes and treatment effects, combined with its stability when handling the
+heterogeneous feature types present in our structured clinical data.
+Random Forest ranked second in performance with an accuracy of 82.6%. It showed remarkable
+aptitude in handling the categorical variables that represented clinical categorizations and discrete
+patient attributes.
+The Neural Network model produced an accuracy of 80.2%. Although neural networks have
+the capacity to learn complex non-linear relationships, the relatively limited dataset size may have
+restricted their performance effectiveness.
+SVMmodelsregisteredthepoorestaccuracy(79.3%)comparedtootheralgorithmstested,demon-
+strating limited ability to model the non-linear relationships between patient characteristics and
+treatment outcomes found within our clinical dataset. This performance differential between SVM
+and ensemble-based approaches reveals that treatment effect estimation requires capturing sophis-
+ticated interactions, which tree-based ensemble methods accomplish more effectively.
+5.3.4 Implications for Bandit-Based Treatment Recommendations
+The variations in model performance have significant ramifications for the implementation of
+the bandit algorithm that follows. XGBoost’s enhanced predictive accuracy indicates it would yield
+the most trustworthy counterfactual estimates for directing optimal treatment allocation. Operating
+within the T-learner architecture to predict potential outcomes across different treatment alterna-
+tives, these performance benefits result in superior treatment effect estimation precision, thereby
+establishing the cornerstone of the contextual bandit reward structure.
+Given these findings, we chose the XGBoost algorithm as the main model for generating counter-
+factual outcome predictions to underpin the bandit-driven treatment recommendation framework
+outlined in the following sections. The strong performance characteristics of this model guarantee
+that the bandit algorithms can depend on precise estimates of potential outcomes during treatment
+decision-making processes.
+5.4 Bandit Algorithms Training and Evaluation
+This section presents the results of training and evaluating various bandit algorithms for treat-
+ment recommendation, assessing their performance in optimizing patient outcomes based on the
+33
+
+=== PDF PAGE 34 ===
+counterfactual models developed in the previous section.
+5.4.1 Bandit Algorithm Hyperparameter Optimization
+We implemented thorough hyperparameter analysis for both KernelUCB and NeuralBandit con-
+textual bandit methods. Figure 9 depicts KernelUCB’s performance sensitivity across 20 configura-
+tions obtained via complete grid search over exploration parameterα∈{0.1,0.5}, kernel functions
+∈{RBF, polynomial, linear}, bandwidthγ∈{0.1,0.5}for RBF kernels, polynomial degree∈{2,3},
+regularizationλ reg = 0.01, and sample memory limits∈{100,500}. The trajectories in Figure 9
+show cumulative average rewards for each configuration throughout 500 rounds, exhibiting three
+distinguishable learning phases.
+First, an initial exploration phase (rounds 0-20) where confidence intervals in the UCB optimism
+term cause nearly random arm sampling, producing volatile rewards occasionally dropping to≈
+0.16. Hyperparameter choice has minimal influence during this initial evidence-gathering phase.
+Second, a rapid exploitation phase (rounds 20-120) where rewards climb steeply to 0.45-0.52 as
+initial posterior estimates form. Key patterns emerge during this phase: RBF kernels begin to dom-
+inate, confirming the underlying reward surface is smoothly non-linear; configurations with larger
+exploration coefficient (α= 0.5) converge faster by encouraging broader early sampling; and con-
+figurations with larger replay memory (max_samples = 500) gain advantage after approximately
+80 rounds. Finally, an asymptotic plateau phase (rounds 120-500) where uncertainty shrinks and
+behavior becomes nearly greedy, with performance settling between 0.49 and 0.55. The optimal
+configuration—RBF kernel,α= 0.5,λ reg = 0.01, max_samples = 500,γ= 0.1—maintains a con-
+sistent 0.03-0.05 performance advantage over the weakest settings (typically polynomial degree 3
+with limited sample memory).
+OurhyperparameterevaluationdemonstratedthatRBFkernelsconsistentlysurpassedbothlinear
+and polynomial variants, suggesting an underlying smooth, non-linear reward structure. A more
+restrictive bandwidth (γ= 0.1) more effectively captured local patterns while avoiding overfitting,
+whereas an elevated exploration coefficient altered the trade-off toward identifying optimal arms
+during initial phases, resulting in enhanced long-term performance despite early reward penalties.
+Figure10displaysthehyperparametertuningprocessforNeuralBandit, showingaveragerewards
+for 24 different configurations with parameters drawn from hidden_size∈{32,64,128}, exploration
+parameterβ∈{0.5,1.0}, batch_size∈{32,64}, and learning-rate∈{10 −3,10−2}.
+The NeuralBandit optimization curves demonstrate three learning phases: a warm-up period
+(rounds 0-15) characterized by near-random network weights and high exploration noise; a fast
+adaptation phase (rounds 15-120) where mini-batch gradient updates encode useful feature repre-
+34
+
+=== PDF PAGE 35 ===
+sentations and push rewards toward 0.40-0.44; and a steady improvement phase (rounds 120-500)
+where agents converge to performance between 0.45 and 0.50.
+Our examination demonstrated that expanded networks (hidden_size = 128) and reduced batch
+sizes (32) exhibited accelerated learning through increased parameter updates per iteration. The
+superior NeuralBandit setup — hidden_size = 128,β= 0.5, batch_size = 32, learning-rate = 0.01
+— attained a terminal reward of roughly 0.50, sustaining a 0.04-0.05 advantage over inferior con-
+figurations.
+KernelUCB with RBF kernels outperformed NeuralBandit in our experiments, where the reward
+function was smooth and moderately low-dimensional. The RBF kernel’sγ= 0.1parameter proved
+well-suited to this structure, permitting closed-form Bayesian-like updates and faster convergence.
+NeuralBandit, however, hadtolearntherewardstructurefromscratchusinggradientdescent, which
+took longer and never matched KernelUCB’s final performance during our evaluation period.
+0 100 200 300 400 500
+Rounds
+0.15
+0.20
+0.25
+0.30
+0.35
+0.40
+0.45
+0.50
+0.55Average Reward
+KernelUCB Parameter Configurations
+Fig. 9.Hyperparameter tuning process for KernelBandit
+5.4.2 Comparative Performance Evaluation
+After completing hyperparameter tuning, we performed an extensive comparative analysis of six
+treatment recommendation algorithms: Random policy (serving as our baseline), Epsilon-Greedy,
+UCB (Upper Confidence Bound), LinUCB, KernelUCB, and NeuralBandit. This evaluation utilized a
+35
+
+=== PDF PAGE 36 ===
+0 100 200 300 400 500
+Rounds
+0.25
+0.30
+0.35
+0.40
+0.45
+0.50
+0.55Average Reward
+NeuralBandit Parameter Configurations
+Fig. 10.Hyperparameter tuning process for NeuralBandit
+simulation environment in which patient cases were produced through our validated CTGAN model,
+treatment recommendations were generated by each respective algorithm, and treatment outcomes
+were modeled using the XGBoost-based T-learner counterfactual framework.
+Figure 11 presents the learning curves of all six algorithms over 1,000 interaction rounds. Each
+curve represents the time-window-smoothed mean reward, with the surrounding ribbon denoting
+±1 standard deviation computed from ten independent runs. All algorithms exhibit an initial phase
+of high variance and rapid growth during the first 30-50 rounds, where exploration dominates and
+reward estimates remain highly uncertain. As experience accumulates, the ribbons contract and the
+curves flatten, indicating convergence toward stable exploitation policies; by approximately round
+400, additional gains become marginal for all algorithms.
+KernelUCB shows the best overall results, reaching the maximum reward level (≃0.56) with
+the steepest learning trajectory. This advantage comes from the kernel-enhanced Bayesian linear
+structure that can model intricate context-reward interactions while systematically diminishing un-
+certainty estimates. NeuralBandit performs reasonably well (≃0.53) but exhibits wider fluctua-
+tion bands throughout the learning process, due to the probabilistic nature of gradient descent and
+stronger dependence on starting weight configurations.
+LinUCB exhibits gradual improvement toward a moderate performance level (≃0.36). Although
+36
+
+=== PDF PAGE 37 ===
+its linear framework facilitates rapid learning when reward functions have linear characteristics, it
+struggles when non-linear patterns become prevalent in the reward structure. The context-free UCB
+method, which maintains optimistic exploration until uncertainty decreases, achieves roughly 0.26
+with limited variance beyond 200 rounds, indicating stable performance once its confidence bounds
+converge.
+By comparison, Epsilon-Greedy with fixedε= 0.20levels off at roughly 0.21 but keeps a wide
+ribbon throughout—since every fifth action is random, outcomes differ significantly across runs and
+performance suffers from constant exploration. The random policy stays predictably close to the
+overall arm mean (≃0.20), with its ribbon shrinking as expected under the law of large numbers.
+The empirical patterns suggest that the reward surface in our treatment recommendation task
+is highly non-linear but locally smooth—conditions that favor kernel methods over both deep and
+strictly linear alternatives. The KernelUCB algorithm with an RBF kernel exploits this structure ex-
+ceptionally well: the RBF prior encodes the assumption that treatments with similar context vectors
+should yield similar rewards, allowing the posterior to quickly concentrate around promising regions
+of the context space.
+0 200 400 600 800 1000
+Rounds
+0.0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6Average Reward
+Performance of Algorithms
+Random Policy
+LinUCB
+Epsilon-Greedy (=0.2)
+UCB
+KernelUCB
+NeuralBandit
+Fig. 11.Comparative performance of bandit algorithms over 1,000 rounds
+37
+
+=== PDF PAGE 38 ===
+5.4.3 Long-Term Performance Analysis
+To assess the algorithms’ performance trajectory over extended use, we conducted a longer-term
+evaluation over 5,000 recommendation rounds, illustrated in Figure 12. This extended evaluation
+reveals several important patterns in both mean performance and variability while maintaining the
+same qualitative ordering of algorithms: KernelUCB > NeuralBandit > LinUCB > UCB > Epsilon-
+Greedy > Random.
+KernelUCB maintains its upward trajectory past 1,000 rounds, stabilizing around 0.60-0.61 and
+capturing about four additional percentage points in mean reward. NeuralBandit experiences more
+substantial gains from the extended data, climbing to≃0.56-0.57and narrowing its performance
+difference with the kernel approach, though it doesn’t catch up. This reveals that neural bandits re-
+quire substantial sample sizes before their representational flexibility becomes worthwhile, whereas
+the RBF kernel’s smoothness bias lets KernelUCB extract important structure from smaller datasets.
+ForLinUCBandthecontext-freebaselines,thelearningcurvesflattenmuchearlier,demonstrating
+diminishing returns for simpler models. LinUCB inches from≃0.36to≃0.35-0.36, indicating that
+almost all linearly explainable signal was already exploited within the first thousand interactions.
+UCB makes a modest additional gain, stabilizing near 0.25-0.26, while the Epsilon-Greedy policy
+remains fixed at≃0.21, its performance limited by the constant 20% exploration rate regardless of
+horizon length. The random baseline, as expected, stays at≃0.20, with its ribbon shrinking further
+under the law of large numbers.
+The standard deviation ribbons are uniformly narrower than in the 1,000-round plot, reflecting
+lower run-to-run variance after prolonged learning. This contraction is most pronounced for Ker-
+nelUCB and UCB, whose uncertainty-driven exploration schedules progressively eliminate epistemic
+variance. NeuralBanditretainsaslightlywiderbandduetoSGDstochasticity, whileEpsilon-Greedy’s
+ribbon levels off rather than vanishing because fresh randomness is injected every round.
+These extended results confirm that KernelUCB with an RBF kernel provides the best trade-off
+between sample efficiency and asymptotic reward in our clinical treatment recommendation task.
+It not only reaches the highest performance but also converges quickly enough that additional in-
+teraction time yields only marginal improvements. Despite NeuralBandit’s improved performance
+with extensive data, the kernel method maintains its advantage throughout 5,000 rounds. LinUCB’s
+performance is intrinsically constrained by its linear modeling framework, and after a few hundred
+iterations, additional data cannot rectify the core model mismatch.
+In conclusion, our assessment reveals that non-linear, context-sensitive approaches are superior
+for this treatment recommendation problem, where kernel-based methods perform optimally with
+limited data resources while deep learning models need extensive interaction to achieve their max-
+38
+
+=== PDF PAGE 39 ===
+imum capabilities. Basic linear or context-independent methods reach their performance plateau
+rapidly and fail to capture significant remaining potential.
+0 1000 2000 3000 4000 5000
+Rounds
+0.0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8Average Reward
+Performance of Algorithms
+Random Policy
+LinUCB
+Epsilon-Greedy (=0.2)
+UCB
+KernelUCB
+NeuralBandit
+Fig. 12.Comparative performance of bandit algorithms over 5,000 rounds
+6 Conclusion
+This study introduced a comprehensive framework for optimizing treatment recommendations
+through a prior-informed method, utilizing bandit algorithms that were trained on historical data
+processed by large language models. The framework’s practical utility and effectiveness were val-
+idated via a case study that concentrated on optimizing adjuvant chemotherapy protocols follow-
+ing surgery for stage-III colon cancer patients. Our main goal was to tackle the challenge of treat-
+ment personalization in clinical environments, especially when confronted with sparse observational
+datasets and the necessity to convert unstructured clinical documentation into actionable infor-
+mation. The approach combined LLM-driven data structuring, synthetic data generation through
+CTGAN, counterfactual outcome prediction using T-learners, and prior-informed contextual bandit
+methodologies.
+Our results confirm the effectiveness of this multi-stage methodology. We determined that few-
+shot learning utilizing open-source LLMs, particularly DeepSeek-R1, can effectively structure narra-
+39
+
+=== PDF PAGE 40 ===
+tiveclinicaldocumentationwithconsiderableprecision(93.2%accuracy), surpassingperformanceof
+comparable models such as Llama 3.1. The subsequent application of CTGAN demonstrated success
+inexpandingthestructureddataset, producingsyntheticpatientrecordsthataccuratelyreflectedthe
+statistical characteristics of the original data, as confirmed through a two-sample test (AUC of 0.55)
+and t-SNE visualizations. In terms of counterfactual modeling, XGBoost proved to be the most reli-
+able algorithm within the T-learner framework, attaining 84.3% accuracy in forecasting treatment
+outcomes. This provided a solid foundation for simulating rewards during the bandit learning stage.
+The central aim of our work involved assessing how different bandit algorithm approaches per-
+formed in practice. Through experimental comparison using simulated patient data, we determined
+that contextual bandits enhanced with prior domain knowledge dramatically outperformed tradi-
+tional baseline methods. KernelUCB showed particularly impressive results, exploiting its kernel-
+based structure to recognize intricate non-linear relationships and benefiting from warm initializa-
+tion with expert insights, which delivered excellent outcomes that rapidly secured an average reward
+of about 0.56 during the first 1,000 rounds and evolved to approximately 0.60-0.61 over the full
+5,000-round assessment period.This performance exceeded both NeuralBandit (≃0.57 after 5,000
+rounds) and LinUCB (≃0.36 after 5,000 rounds), demonstrating the critical value of incorporating
+non-linear modeling capabilities and leveraging prior knowledge effectively within this clinical do-
+main. The outcomes reveal how online learning methodologies can progressively refine and enhance
+treatment decision-making processes while maintaining sample efficiency.
+While these findings show promise, several limitations warrant consideration. First, the evalua-
+tions were performed entirely in-silico; prospective clinical validation is required prior to real-world
+implementation. Second, although the framework’s applicability is demonstrated for stage-III colon
+cancer, its generalizability to other diseases with different data characteristics and reward structures
+needsfurtherinvestigation. Third, althoughLLM-basedfew-shotlearningfordataextractiondemon-
+strates effectiveness, it may not fully capture the breadth of clinical nuances that would be obtained
+through complete fine-tuning, and it carries the risk of incorporating biases present in the few-shot
+examples or the base LLM. There is also concern regarding the propagation of semantic errors from
+LLM extraction into the bandit priors. Finally, the single-objective reward function employed here
+represents a simplification of the complex, multi-criteria decision-making processes that characterize
+actual clinical practice.
+Future research should emphasize prospective, adaptive medical recommendations to verify and
+improve these prior-informed bandit systems within actual clinical settings. These investigations
+should incorporate multi-dimensional reward structures that consider therapeutic effectiveness, ad-
+verse event profiles, financial implications, and patient well-being metrics across diverse patient co-
+40
+
+=== PDF PAGE 41 ===
+horts. From a methodological perspective, LLM integration would benefit from research into inter-
+active data extraction frameworks incorporating clinician-in-the-loop validation and approaches for
+measuring and transmitting uncertainty from LLM outputs to bandit priors. Regarding synthetic
+data generation, improving CTGANs through formal differential privacy protections and techniques
+that better maintain rare clinical subgroups represents a critical advancement. Exploring hybrid
+frameworks that combine offline reinforcement learning with online bandit adaptation may better
+leverage comprehensive historical data both before deployment and throughout active deployment
+phases. Furthermore, researchingfederatedlearningmethodologiesforCTGANsynthesisandbandit
+optimization across distributed healthcare organizations could enable privacy-preserving collabora-
+tive model improvement.
+In conclusion, this research outlines a practical pathway for developing more responsive and in-
+dividualized healthcare frameworks. Through the strategic integration of LLM-based knowledge
+extraction, synthetic data enhancement, rigorous counterfactual modeling, and systematic online
+learning via contextual bandits, we have established a workable methodology for creating evidence-
+based treatment recommendation systems.
+CRediT authorship contribution statement
+Saman Nessari:Conceptualization, Methodology, Formal analysis, Software, Data curation,
+Writing – original draft, Writing – review & editing.Ali Bozorgi-Amiri:Conceptualization, Su-
+pervision, Resources, Validation, Writing – review & editing.
+Declaration of competing interest
+The authors declare that they have no competing interests.
+Data availability
+The data that support the findings of this study are available on request from the corresponding
+author. The data are not publicly available due to privacy/ethical restrictions.
+Acknowledgments
+Theauthorswouldliketoexpresstheirsinceregratitudetoallthosewhosupportedthemthrough-
+out the course of this work. This project was completed without any external funding, relying solely
+41
+
+=== PDF PAGE 42 ===
+on personal commitment and available resources.
+References
+Akbasli, I. T., Birbilen, A. Z., & Teksam, O. (2025). Leveraging large language models to mimic
+domain expert labeling in unstructured text-based electronic healthcare records in non-english
+languages.BMC Medical Informatics and Decision Making,25(1), 154.
+Alamdari, P. A., Cao, Y., & Wilson, K. H. (2024). Jump starting bandits with llm-generated prior
+knowledge.arXiv preprint arXiv:2406.19317.
+Alba, C., Xue, B., Abraham, J., Kannampallil, T., & Lu, C. (2025). The foundational capabilities
+of large language models in predicting postoperative risks using clinical notes.npj Digital
+Medicine,8(1), 95.
+Aslanyan, V., Pickering, T., Nuño, M., Renfro, L. A., Pa, J., & Mack, W. J. (2025). Bayesian response
+adaptive randomization for randomized clinical trials with continuous outcomes: The role of
+covariate adjustment.Pharmaceutical Statistics,24(2), e2443.
+Badreddine, S., & Spranger, M. (2019). Injecting prior knowledge for transfer learning into rein-
+forcement learning algorithms using logic tensor networks.arXiv preprint arXiv:1906.06576.
+Berrevoets, J., Verboven, S., & Verbeke, W. (2022). Treatment effect optimisation in dynamic envi-
+ronments.Journal of Causal Inference,10(1), 106–122.
+Bhuyan, S. S., Sateesh, V., Mukul, N., Galvankar, A., Mahmood, A., Nauman, M., ... Samuel, J.
+(2025). Generativeartificialintelligenceuseinhealthcare: Opportunitiesforclinicalexcellence
+and administrative efficiency.Journal of Medical Systems,49(1), 10.
+Chen, N., & Khademi, A. (2024). Adaptive seamless dose-finding trials.Manufacturing & Service
+Operations Management,26(5), 1656–1673.
+Chung, D. (2025). Artificial intelligence in healthcare and medicine technology development review.
+Engineering Applications of Artificial Intelligence,143, 109801.
+del Moral-González, R., Gómez-Adorno, H., & Ramos-Flores, O. (2025). Comparative analysis of
+generative llms for labeling entities in clinical notes.Genomics & Informatics,23, 3.
+Esmaeilzadeh, P. (2024). Challenges and strategies for wide-scale artificial intelligence (ai) deploy-
+ment in healthcare practices: A perspective for healthcare organizations.Artificial Intelligence
+in Medicine,151, 102861.
+Goktas, P., & Grzybowski, A. (2025). Shaping the future of healthcare: Ethical clinical challenges
+and pathways to trustworthy ai.Journal of Clinical Medicine,14(5), 1605.
+Gu, B., Shao, V., Liao, Z., Carducci, V., Brufau, S. R., Yang, J., & Desai, R. J. (2025). Scalable
+42
+
+=== PDF PAGE 43 ===
+information extraction from free text electronic health records using large language models.
+BMC Medical Research Methodology,25(1), 23.
+Hsu, E., & Roberts, K. (2025). Leveraging large language models for knowledge-free weak supervi-
+sion in clinical natural language processing.Scientific Reports,15(1), 8241.
+Huang, H., Niazmand, E., & Vidal, M.-E. (2024). Hybrid ai approach for counterfactual prediction
+over knowledge graphs for personal healthcare. InArtificial intelligence and data science for
+healthcare: Bridging data-centric ai and people-centric healthcare.
+Jayaraman, P., Desman, J., Sabounchi, M., Nadkarni, G. N., & Sakhuja, A. (2024). A primer on
+reinforcement learning in medicine for clinicians.NPJ Digital Medicine,7(1), 337.
+Kumar, P., Chauhan, S., & Awasthi, L. K. (2023). Artificial intelligence in healthcare: review, ethics,
+trust challenges & future research directions.Engineering Applications of Artificial Intelligence,
+120, 105894.
+Kyrimi, E., Mossadegh, S., Wohlgemut, J. M., Stoner, R. S., Tai, N. R., & Marsh, W. (2025). Counter-
+factualreasoningusingcausalbayesiannetworksasahealthcaregovernancetool.International
+journal of medical informatics,193, 105681.
+Liberali, G., Boersma, E., Lingsma, H., Brugts, J., Dippel, D., Tijssen, J., & Hauser, J. (2025). Real-
+time adaptive randomization of clinical trials.Journal of Clinical Epidemiology,178, 111612.
+Lopez, I., Swaminathan, A., Vedula, K., Narayanan, S., Nateghi Haredasht, F., Ma, S. P., ... Chen,
+J. H. (2025). Clinical entity augmented retrieval for clinical information extraction [Article].
+npj Digital Medicine,8(1). (Cited by: 3; All Open Access, Gold Open Access)
+Norwood, P., Davidian, M., & Laber, E. (2024). Adaptive randomization methods for sequential
+multiple assignment randomized trials (smarts) via thompson sampling.Biometrics,80(4),
+ujae152.
+Oh, S. H., Park, J., Lee, S. J., Kang, S., & Mo, J. (2022). Reinforcement learning-based expanded
+personalizeddiabetestreatmentrecommendationusingsouthkoreanelectronichealthrecords.
+Expert Systems with Applications,206, 117932.
+Parvin, P., Chessa, S., Kaptein, M., & Paternò, F. (2019). Personalized real-time anomaly detection
+and health feedback for older adults.Journal of ambient intelligence and smart environments,
+11(5), 453–469.
+Pasquadibisceglie, V., Appice, A., Malerba, D., & Fiameni, G. (2025). Leveraging a large language
+model (llm) to predict hospital admissions of emergency department patients.Expert Systems
+with Applications, 128224.
+Prosperi, M., Guo, Y., Sperrin, M., Koopman, J., Min, J., He, X., ... Bian, J. (2020).Causal inference
+and counterfactual prediction in machine learning for actionable healthcare. nat mach intell 2:
+43
+
+=== PDF PAGE 44 ===
+369–375.
+Qian, S., Wang, J., & Zhao, S. (2025). A personalized active learning strategy with enhanced user
+satisfaction for recommender systems.Expert Systems with Applications, 128765.
+Varatharajah, Y., & Berry, B. (2022). A contextual-bandit-based approach for informed decision-
+making in clinical trials.Life,12(8), 1277.
+Villar, S. S., Bowden, J., & Wason, J. (2015). Multi-armed bandit models for the optimal design
+of clinical trials: benefits and challenges.Statistical science: a review journal of the Institute of
+Mathematical Statistics,30(2), 199.
+Wei, W., Ma, X., & Wang, J. (2025). Adaptive experiments toward learning treatment effect hetero-
+geneity.Journal of the Royal Statistical Society Series B: Statistical Methodology, qkaf006.
+Wu, H., Shi, W., Choudhary, A.,&Wang, M.D. (2024). Clinicaldecisionmakingunderuncertainty: a
+bootstrappedcounterfactualinferenceapproach.BMCMedicalInformaticsandDecisionMaking,
+24(1), 275.
+Xian, S., Grabowska, M. E., Kullo, I. J., Luo, Y., Smoller, J. W., Wei, W.-Q., ... Crosslin, D. (2024).
+Language-model-based patient embedding using electronic health records facilitates pheno-
+typing, disease forecasting, and progression analysis.Research Square, rs–3.
+Xie, Q., Chen, Q., Chen, A., Peng, C., Hu, Y., Lin, F., ... Bian, J. (2025). Medical foundation large
+language models for comprehensive text analysis and beyond [Article].npj Digital Medicine,
+8(1). (Cited by: 1)
+Xu, T., Chen, L., Hu, Z.,&Li, B. (2025). Staf-llm: Ascalableandtask-adaptivefine-tuningframework
+for large language models in medical domain.Expert Systems with Applications,281, 127582.
+Yankeelov, T. E., Hormuth, D. A., Lima, E. A., Lorenzo, G., Wu, C., Okereke, L. C., ... Chung, C.
+(2024). Designing clinical trials for patients who are not average.Iscience,27(1).
+Zhalechian, M., Keyvanshokooh, E., Shi, C., & Van Oyen, M. P. (2022). Online resource allocation
+with personalized learning.Operations Research,70(4), 2138–2161.
+Zhang, P., Shi, J., & Kamel Boulos, M. N. (2024). Generative ai in medicine and healthcare: Moving
+beyond the ‘peak of inflated expectations’.Future Internet,16(12), 462.
+Zhang, Z., & Ni, H. (2025). Critical care studies using large language models based on electronic
+healthcare records: A technical note.Journal of Intensive Medicine,5(02), 137–150.
+44

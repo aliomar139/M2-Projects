@@ -1,0 +1,810 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          19
+        ]
+      ],
+      "date-time": "2026-09-19T00:19:17Z",
+      "timestamp": 1789777157466,
+      "version": "4.0.1"
+    },
+    "reference-count": 47,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              2,
+              15
+            ]
+          ],
+          "date-time": "2021-02-15T00:00:00Z",
+          "timestamp": 1613347200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              2,
+              15
+            ]
+          ],
+          "date-time": "2021-02-15T00:00:00Z",
+          "timestamp": 1613347200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100003243",
+        "name": "Ministerstvo Zdravotnictví Ceské Republiky",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "NU20-06-00269"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "NU20-06-00269"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100003243",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J Transl Med"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:sec><jats:title>Background</jats:title><jats:p>The burden of chronic and societal diseases is affected by many risk factors that can change over time. The minimalisation of disease-associated risk factors may contribute to long-term health. Therefore, new data-driven health management should be used in clinical decision-making in order to minimise future individual risks of disease and adverse health effects.</jats:p></jats:sec><jats:sec><jats:title>Methods</jats:title><jats:p>We aimed to develop a health trajectories (HT) management methodology based on electronic health records (EHR) and analysing overlapping groups of patients who share a similar risk of developing a particular disease or experiencing specific adverse health effects. Formal concept analysis (FCA) was applied to identify and visualise overlapping patient groups, as well as for decision-making. To demonstrate its capabilities, the theoretical model presented uses genuine data from a local total knee arthroplasty (TKA) register (a total of 1885 patients) and shows the influence of step by step changes in five lifestyle factors (BMI, smoking, activity, sports and long-distance walking) on the risk of early reoperation after TKA.</jats:p></jats:sec><jats:sec><jats:title>Results</jats:title><jats:p>The theoretical model of HT management demonstrates the potential of using EHR data to make data-driven recommendations to support both patients’ and physicians’ decision-making. The model example developed from the TKA register acts as a clinical decision-making tool, built to show surgeons and patients the likelihood of early reoperation after TKA and how the likelihood changes when factors are modified. The presented data-driven tool suits an individualised approach to health management because it quantifies the impact of various combinations of factors on the early reoperation rate after TKA and shows alternative combinations of factors that may change the reoperation risk.</jats:p></jats:sec><jats:sec><jats:title>Conclusion</jats:title><jats:p>This theoretical model introduces future HT management as an understandable way of conceiving patients’ futures with a view to positively (or negatively) changing their behaviour. The model’s ability to influence beneficial health care decision-making to improve patient outcomes should be proved using various real-world data from EHR datasets.</jats:p></jats:sec>",
+    "DOI": "10.1186/s12967-021-02714-8",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          2,
+          17
+        ]
+      ],
+      "date-time": "2021-02-17T14:23:12Z",
+      "timestamp": 1613571792000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 30,
+    "title": [
+      "A theoretical model of health management using data-driven decision-making: the future of precision medicine and health"
+    ],
+    "prefix": "10.1186",
+    "volume": "19",
+    "author": [
+      {
+        "given": "Eva",
+        "family": "Kriegova",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Milos",
+        "family": "Kudelka",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Martin",
+        "family": "Radvansky",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7424-8653",
+        "authenticated-orcid": false,
+        "given": "Jiri",
+        "family": "Gallo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2021,
+          2,
+          15
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2714_CR1",
+        "volume-title": "The Future of the Public's Health in the 21st Century",
+        "author": "Institute of Medicine",
+        "year": "2003",
+        "unstructured": "Institute of Medicine. The Future of the Public’s Health in the 21st Century. Washington D.C.: The National Academies Press; 2003."
+      },
+      {
+        "key": "2714_CR2",
+        "unstructured": "Agency for Healthcare Research and Quality (AHRQ): National healthcare disparities report, 2018. Rockville (MD): U.S. Department of Health and Human Services, AHRQ; 2018."
+      },
+      {
+        "key": "2714_CR3",
+        "unstructured": "Ehrenstein V, Kharrazi, H., Lehman, H., Taylor, C.O.: Obtaining Data From Electronic Health Records. In Tools and Technologies for Registry Interoperability, Registries for Evaluating Patient Outcomes: A User’s Guide, 3rd Edition, Addendum 2 [Internet]. Edited by Gliklich RE, Leavy, M.B., Dreyer, N.A. Rockville, MD: Agency for Healthcare Research and Quality U.S. Department of Health and Human Services; 2019"
+      },
+      {
+        "key": "2714_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "211",
+        "DOI": "10.1515/dx-2017-0012",
+        "volume": "4",
+        "author": "ML Graber",
+        "year": "2017",
+        "unstructured": "Graber ML, Byrne C, Johnston D. The impact of electronic health records on diagnosis. Diagnosis (Berl). 2017;4:211–23.",
+        "journal-title": "Diagnosis (Berl)"
+      },
+      {
+        "key": "2714_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "934",
+        "DOI": "10.1186/s12913-019-4763-0",
+        "volume": "19",
+        "author": "TR Schopf",
+        "year": "2019",
+        "unstructured": "Schopf TR, Nedrebo B, Hufthammer KO, Daphu IK, Laerum H. How well is the electronic health record supporting the clinical tasks of hospital physicians? A survey of physicians at three Norwegian hospitals. BMC Health Serv Res. 2019;19:934.",
+        "journal-title": "BMC Health Serv Res"
+      },
+      {
+        "key": "2714_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "44",
+        "DOI": "10.1186/s12967-019-1795-5",
+        "volume": "17",
+        "author": "E Capobianco",
+        "year": "2019",
+        "unstructured": "Capobianco E. Data-driven clinical decision processes: it’s time. J Transl Med. 2019;17:44.",
+        "journal-title": "J Transl Med"
+      },
+      {
+        "key": "2714_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "17",
+        "DOI": "10.1038/s41746-020-0221-y",
+        "volume": "3",
+        "author": "RT Sutton",
+        "year": "2020",
+        "unstructured": "Sutton RT, Pincock D, Baumgart DC, Sadowski DC, Fedorak RN, Kroeker KI. An overview of clinical decision support systems: benefits, risks, and strategies for success. NPJ Digit Med. 2020;3:17.",
+        "journal-title": "NPJ Digit Med"
+      },
+      {
+        "key": "2714_CR8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4324/9781498757461",
+        "volume-title": "Improving Outcomes with Clinical Decision Support: An Implementer's Guide, Second Edition (HIMSS Book Series)",
+        "author": "J Osheroff",
+        "year": "2012",
+        "unstructured": "Osheroff J, Teich J, Levick D, Saldana L, Velasco F, Sittig D, Rogers K, Jenders R. Improving Outcomes with Clinical Decision Support: An Implementer’s Guide, Second Edition (HIMSS Book Series). Chicago: HIMSS Publishing; 2012."
+      },
+      {
+        "key": "2714_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "2116",
+        "DOI": "10.3389/fimmu.2020.02116",
+        "volume": "11",
+        "author": "S Dramburg",
+        "year": "2020",
+        "unstructured": "Dramburg S, Marchante Fernandez M, Potapova E, Matricardi PM. The potential of clinical decision support systems for prevention, diagnosis, and monitoring of allergic diseases. Front Immunol. 2020;11:2116.",
+        "journal-title": "Front Immunol"
+      },
+      {
+        "key": "2714_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "1452",
+        "DOI": "10.1056/NEJMra1615014",
+        "volume": "379",
+        "author": "MA Haendel",
+        "year": "2018",
+        "unstructured": "Haendel MA, Chute CG, Robinson PN. Classification, ontology, and precision medicine. N Engl J Med. 2018;379:1452–62.",
+        "journal-title": "N Engl J Med"
+      },
+      {
+        "key": "2714_CR11",
+        "first-page": "S103",
+        "volume": "Suppl 1",
+        "author": "B Middleton",
+        "year": "2016",
+        "unstructured": "Middleton B, Sittig DF, Wright A. Clinical decision support: a 25 year retrospective and a 25 year vision. Yearb Med Inform. 2016;Suppl 1:S103-116.",
+        "journal-title": "Yearb Med Inform"
+      },
+      {
+        "key": "2714_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "977",
+        "DOI": "10.1093/jamia/ocz036",
+        "volume": "26",
+        "author": "G Fang",
+        "year": "2019",
+        "unstructured": "Fang G, Annis IE, Elston-Lafata J, Cykert S. Applying machine learning to predict real-world individual treatment effects: insights from a virtual patient cohort. J Am Med Inform Assoc. 2019;26:977–88.",
+        "journal-title": "J Am Med Inform Assoc"
+      },
+      {
+        "key": "2714_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "1900339",
+        "DOI": "10.1183/13993003.00339-2019",
+        "volume": "53",
+        "author": "J Bousquet",
+        "year": "2019",
+        "unstructured": "Bousquet J. Electronic clinical decision support system (eCDSS) in the management of asthma: from theory to practice. Eur Respir J. 2019;53:1900339.",
+        "journal-title": "Eur Respir J"
+      },
+      {
+        "key": "2714_CR14",
+        "first-page": "1633",
+        "volume": "264",
+        "author": "LC Lopes",
+        "year": "2019",
+        "unstructured": "Lopes LC, de Fatima FBS. Clinical decision support system for evaluation of patients with musculoskeletal disorders. Stud Health Technol Inform. 2019;264:1633–4.",
+        "journal-title": "Stud Health Technol Inform"
+      },
+      {
+        "key": "2714_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "52",
+        "DOI": "10.1073/pnas.1917285117",
+        "volume": "117",
+        "author": "D Qi",
+        "year": "2020",
+        "unstructured": "Qi D, Majda AJ. Using machine learning to predict extreme events in complex systems. Proc Natl Acad Sci USA. 2020;117:52–9.",
+        "journal-title": "Proc Natl Acad Sci USA"
+      },
+      {
+        "key": "2714_CR16",
+        "doi-asserted-by": "crossref",
+        "first-page": "11878",
+        "DOI": "10.1073/pnas.1815601116",
+        "volume": "116",
+        "author": "S Papadimitriou",
+        "year": "2019",
+        "unstructured": "Papadimitriou S, Gazzo A, Versbraegen N, Nachtegael C, Aerts J, Moreau Y, Van Dooren S, Nowe A, Smits G, Lenaerts T. Predicting disease-causing variant combinations. Proc Natl Acad Sci USA. 2019;116:11878–87.",
+        "journal-title": "Proc Natl Acad Sci USA"
+      },
+      {
+        "key": "2714_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "1545",
+        "DOI": "10.1016/j.arth.2020.01.056",
+        "volume": "35",
+        "author": "J Gallo",
+        "year": "2020",
+        "unstructured": "Gallo J, Kriegova E, Kudelka M, Lostak J, Radvansky M. Gender differences in contribution of smoking, low physical activity, and high BMI to increased risk of early reoperation after TKA. J Arthroplasty. 2020;35:1545–57.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "2714_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "11",
+        "DOI": "10.1186/s13326-018-0178-9",
+        "volume": "9",
+        "author": "M Zhao",
+        "year": "2018",
+        "unstructured": "Zhao M, Zhang S, Li W, Chen G. Matching biomedical ontologies based on formal concept analysis. J Biomed Semantics. 2018;9:11.",
+        "journal-title": "J Biomed Semantics"
+      },
+      {
+        "key": "2714_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "107002",
+        "DOI": "10.1016/j.ress.2020.107002",
+        "volume": "202",
+        "author": "CM Rocco",
+        "year": "2020",
+        "unstructured": "Rocco CM, Hernandez-Perdomo E, Mun J. Introduction to formal concept analysis and its applications in reliability engineering. Reliabil Eng Syst Safet. 2020;202:107002.",
+        "journal-title": "Reliabil Eng Syst Safet"
+      },
+      {
+        "key": "2714_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "631",
+        "DOI": "10.1142/S0218194020500229",
+        "volume": "30",
+        "author": "YH Chen",
+        "year": "2020",
+        "unstructured": "Chen YH, Lu EJL, Cheng YW. Categorization of Multiple Documents Using Fuzzy Overlapping Clustering Based on Formal Concept Analysis. Int J Software Eng Knowl Eng. 2020;30:631–47.",
+        "journal-title": "Int J Software Eng Knowl Eng"
+      },
+      {
+        "key": "2714_CR21",
+        "doi-asserted-by": "crossref",
+        "first-page": "245",
+        "DOI": "10.1007/978-3-319-09259-1_8",
+        "volume-title": "Partitional Clustering Algorithms",
+        "author": "CEB N’Cir",
+        "year": "2015",
+        "unstructured": "N’Cir CEB, Cleuziou G, Essoussi N. Overview of overlapping partional clustering methods. In: Celebi ME, editor. Partitional Clustering Algorithms. Cham: Springer; 2015. p. 245–75."
+      },
+      {
+        "key": "2714_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "12",
+        "DOI": "10.1016/j.eswa.2016.09.025",
+        "volume": "67",
+        "author": "S Khanmohammadi",
+        "year": "2017",
+        "unstructured": "Khanmohammadi S, Adibeig N, Shanehbandy S. An improved overlapping k-means clustering method for medical applications. Expert Syst Appl. 2017;67:12–8.",
+        "journal-title": "Expert Syst Appl"
+      },
+      {
+        "key": "2714_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "237",
+        "DOI": "10.1007/978-3-642-01815-2_18",
+        "volume": "5548",
+        "author": "C Carpineto",
+        "year": "2009",
+        "unstructured": "Carpineto C, Michini C, Nicolussi R. A concept lattice-based kernel for SVM text classification. Formal Concept Analy. 2009;5548:237–50.",
+        "journal-title": "Formal Concept Analy"
+      },
+      {
+        "key": "2714_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "281",
+        "DOI": "10.1080/713827122",
+        "volume": "17",
+        "author": "JH Correia",
+        "year": "2003",
+        "unstructured": "Correia JH, Stumme G, Wille R, Wille U. Conceptual knowledge discovery - A human-centered approach. Appl Artific Intell. 2003;17:281–302.",
+        "journal-title": "Appl Artific Intell"
+      },
+      {
+        "key": "2714_CR25",
+        "first-page": "926",
+        "volume": "10",
+        "author": "B Ganter",
+        "year": "2004",
+        "unstructured": "Ganter B, Stumme G, Wille R. Formal concept analysis: theory and applications–j ucs special issue. J Univer Comput Sci. 2004;10:926–926.",
+        "journal-title": "J Univer Comput Sci"
+      },
+      {
+        "key": "2714_CR26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.inffus.2020.11.004",
+        "author": "DX Chen",
+        "year": "2020",
+        "unstructured": "Chen DX, Li JJ, Lin RD. Formal concept analysis of multi-scale formal context. J Ambient Intell Human Comput. 2020. https://doi.org/10.1016/j.inffus.2020.11.004.",
+        "journal-title": "J Ambient Intell Human Comput"
+      },
+      {
+        "key": "2714_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "547",
+        "DOI": "10.1016/j.arth.2005.09.004",
+        "volume": "21",
+        "author": "PE Beaule",
+        "year": "2006",
+        "unstructured": "Beaule PE, Dorey FJ, Hoke R, Le Duff M, Amstutz HC. The value of patient activity level in the outcome of total hip arthroplasty. J Arthroplasty. 2006;21:547–52.",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "2714_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "685",
+        "DOI": "10.1016/S0140-6736(19)31893-8",
+        "volume": "394",
+        "author": "R Gupta",
+        "year": "2019",
+        "unstructured": "Gupta R, Wood DA. Primary prevention of ischaemic heart disease: populations, individuals, and health professionals. Lancet. 2019;394:685–96.",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "2714_CR29",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sacarea C, Sotropa D, Troanca D. Formal concept analysis grounded knowledge discovery in electronic health record systems. 2018 20th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (Synasc 2018) 2019:266–271.",
+        "DOI": "10.1109/SYNASC.2018.00049"
+      },
+      {
+        "key": "2714_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "2327",
+        "DOI": "10.1007/s12652-018-0831-2",
+        "volume": "10",
+        "author": "K Sumangali",
+        "year": "2019",
+        "unstructured": "Sumangali K, Kumar CA. Concept lattice simplification in formal concept analysis using attribute clustering. J Ambient Intell Human Comput. 2019;10:2327–43.",
+        "journal-title": "J Ambient Intell Human Comput"
+      },
+      {
+        "key": "2714_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "369",
+        "DOI": "10.1186/s12967-020-02540-4",
+        "volume": "18",
+        "author": "A Erdemir",
+        "year": "2020",
+        "unstructured": "Erdemir A, Mulugeta L, Ku JP, Drach A, Horner M, Morrison TM, Peng GCY, Vadigepalli R, Lytton WW, Myers JG Jr. Credible practice of modeling and simulation in healthcare: ten rules from a multidisciplinary perspective. J Transl Med. 2020;18:369.",
+        "journal-title": "J Transl Med"
+      },
+      {
+        "key": "2714_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "354",
+        "DOI": "10.1186/s12891-018-2270-9",
+        "volume": "19",
+        "author": "R Pinedo-Villanueva",
+        "year": "2018",
+        "unstructured": "Pinedo-Villanueva R, Khalid S, Wylde V, Gooberman-Hill R, Soni A, Judge A. Identifying individuals with chronic pain after knee replacement: a population-cohort, cluster-analysis of Oxford knee scores in 128,145 patients from the English National Health Service. BMC Musculoskelet Disord. 2018;19:354.",
+        "journal-title": "BMC Musculoskelet Disord"
+      },
+      {
+        "key": "2714_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "1185",
+        "DOI": "10.7150/ijms.10001",
+        "volume": "11",
+        "author": "Y Wu",
+        "year": "2014",
+        "unstructured": "Wu Y, Ding Y, Tanaka Y, Zhang W. Risk factors contributing to type 2 diabetes and recent advances in the treatment and prevention. Int J Med Sci. 2014;11:1185–200.",
+        "journal-title": "Int J Med Sci"
+      },
+      {
+        "key": "2714_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "49",
+        "DOI": "10.1136/jech-2015-205988",
+        "volume": "70",
+        "author": "Bernabe-Ortiz A, Carrillo-Larco RM, Gilman RH, Checkley W, Smeeth L, Miranda JJ, Group CCS",
+        "year": "2016",
+        "unstructured": "Bernabe-Ortiz A, Carrillo-Larco RM, Gilman RH, Checkley W, Smeeth L, Miranda JJ, Group CCS. Contribution of modifiable risk factors for hypertension and type-2 diabetes in Peruvian resource-limited settings. J Epidemiol Community Health. 2016;70:49–55.",
+        "journal-title": "J Epidemiol Community Health"
+      },
+      {
+        "key": "2714_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "795",
+        "DOI": "10.1016/S0140-6736(19)32008-2",
+        "volume": "395",
+        "author": "S Yusuf",
+        "year": "2020",
+        "unstructured": "Yusuf S, Joseph P, Rangarajan S, Islam S, Mente A, Hystad P, Brauer M, Kutty VR, Gupta R, Wielgosz A, et al. Modifiable risk factors, cardiovascular disease, and mortality in 155 722 individuals from 21 high-income, middle-income, and low-income countries (PURE): a prospective cohort study. Lancet. 2020;395:795–808.",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "2714_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "20",
+        "DOI": "10.1016/j.amjcard.2020.10.019",
+        "volume": "138",
+        "author": "ATH Nguyen",
+        "year": "2020",
+        "unstructured": "Nguyen ATH, Saeed A, Bambs CE, Swanson J, Emechebe N, Mansuri F, Talreja K, Reis SE, Kip KE. Usefulness of The American Heart association’s ideal cardiovascular health measure to predict long-term major adverse cardiovascular events (from the heart score study). Am J Cardiol. 2020;138:20–5.",
+        "journal-title": "Am J Cardiol"
+      },
+      {
+        "key": "2714_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "18",
+        "DOI": "10.1016/j.bpobgyn.2019.11.006",
+        "volume": "65",
+        "author": "MA Thorat",
+        "year": "2020",
+        "unstructured": "Thorat MA, Balasubramanian R. Breast cancer prevention in high-risk women. Best Pract Res Clin Obstet Gynaecol. 2020;65:18–31.",
+        "journal-title": "Best Pract Res Clin Obstet Gynaecol"
+      },
+      {
+        "key": "2714_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "255",
+        "DOI": "10.1158/1940-6207.CAPR-16-0254",
+        "volume": "11",
+        "author": "S Borgquist",
+        "year": "2018",
+        "unstructured": "Borgquist S, Hall P, Lipkus I, Garber JE. Towards prevention of breast cancer: what are the clinical challenges? Cancer Prev Res. 2018;11:255–64.",
+        "journal-title": "Cancer Prev Res"
+      },
+      {
+        "key": "2714_CR39",
+        "doi-asserted-by": "publisher",
+        "first-page": "P7",
+        "DOI": "10.1164/rccm.19010P7",
+        "volume": "190",
+        "author": "C Slatore",
+        "year": "2014",
+        "unstructured": "Slatore C, Sockrider M. Lung cancer prevention. Am J Respir Crit Care Med. 2014;190:P7-8.",
+        "journal-title": "Am J Respir Crit Care Med"
+      },
+      {
+        "key": "2714_CR40",
+        "doi-asserted-by": "publisher",
+        "first-page": "e1920362",
+        "DOI": "10.1001/jamanetworkopen.2019.20362",
+        "volume": "3",
+        "author": "RJ Volk",
+        "year": "2020",
+        "unstructured": "Volk RJ, Lowenstein LM, Leal VB, Escoto KH, Cantor SB, Munden RF, Rabius VA, Bailey L, Cinciripini PM, Lin H, et al. Effect of a patient decision aid on lung cancer screening decision-making by persons who smoke: a randomized clinical trial. JAMA Netw Open. 2020;3:e1920362.",
+        "journal-title": "JAMA Netw Open"
+      },
+      {
+        "key": "2714_CR41",
+        "doi-asserted-by": "publisher",
+        "first-page": "955",
+        "DOI": "10.1038/s41562-018-0465-6",
+        "volume": "2",
+        "author": "DP McGovern",
+        "year": "2018",
+        "unstructured": "McGovern DP, Hayes A, Kelly SP, O’Connell RG. Reconciling age-related changes in behavioural and neural indices of human perceptual decision-making. Nat Hum Behav. 2018;2:955–66.",
+        "journal-title": "Nat Hum Behav"
+      },
+      {
+        "key": "2714_CR42",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Houari A, Ayadi W, Ben Yahia S: NBF. An FCA-based Algorithm to Identify Negative Correlation Biclusters of DNA Microarray Data. Proceedings 2018 IEEE 32nd International Conference on Advanced Information Networking and Applications (Aina) 2018:1003–1010.",
+        "DOI": "10.1109/AINA.2018.00146"
+      },
+      {
+        "key": "2714_CR43",
+        "doi-asserted-by": "publisher",
+        "first-page": "715",
+        "DOI": "10.1007/s10115-018-1252-4",
+        "volume": "60",
+        "author": "A Formica",
+        "year": "2019",
+        "unstructured": "Formica A. Similarity reasoning in formal concept analysis: from one- to many-valued contexts. Knowl Inf Syst. 2019;60:715–39.",
+        "journal-title": "Knowl Inf Syst"
+      },
+      {
+        "key": "2714_CR44",
+        "doi-asserted-by": "publisher",
+        "first-page": "394",
+        "DOI": "10.1186/s12967-020-02547-x",
+        "volume": "18",
+        "author": "T Bahls",
+        "year": "2020",
+        "unstructured": "Bahls T, Pung J, Heinemann S, Hauswaldt J, Demmer I, Blumentritt A, Rau H, Drepper J, Wieder P, Groh R, et al. Designing and piloting a generic research architecture and workflows to unlock German primary care data for secondary use. J Transl Med. 2020;18:394.",
+        "journal-title": "J Transl Med"
+      },
+      {
+        "key": "2714_CR45",
+        "doi-asserted-by": "publisher",
+        "first-page": "694",
+        "DOI": "10.1377/hlthaff.2017.1624",
+        "volume": "37",
+        "author": "GS Ginsburg",
+        "year": "2018",
+        "unstructured": "Ginsburg GS, Phillips KA. Precision medicine: from science to value. Health Aff. 2018;37:694–701.",
+        "journal-title": "Health Aff"
+      },
+      {
+        "key": "2714_CR46",
+        "doi-asserted-by": "publisher",
+        "first-page": "306",
+        "DOI": "10.1016/j.jacc.2020.05.043",
+        "volume": "76",
+        "author": "TA Pearson",
+        "year": "2020",
+        "unstructured": "Pearson TA, Califf RM, Roper R, Engelgau MM, Khoury MJ, Alcantara C, Blakely C, Boyce CA, Brown M, Croxton TL, et al. Precision health analytics with predictive analytics and implementation research: JACC State-of-the-Art review. J Am Coll Cardiol. 2020;76:306–20.",
+        "journal-title": "J Am Coll Cardiol"
+      },
+      {
+        "key": "2714_CR47",
+        "doi-asserted-by": "publisher",
+        "first-page": "369",
+        "DOI": "10.1111/joim.12395",
+        "volume": "278",
+        "author": "L Wang",
+        "year": "2015",
+        "unstructured": "Wang L, Wang FS, Gershwin ME. Human autoimmune diseases: a comprehensive update. J Intern Med. 2015;278:369–95.",
+        "journal-title": "J Intern Med"
+      }
+    ],
+    "container-title": [
+      "Journal of Translational Medicine"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1186/s12967-021-02714-8.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/article/10.1186/s12967-021-02714-8/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1186/s12967-021-02714-8.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          10,
+          21
+        ]
+      ],
+      "date-time": "2023-10-21T09:59:11Z",
+      "timestamp": 1697882351000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://translational-medicine.biomedcentral.com/articles/10.1186/s12967-021-02714-8"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          2,
+          15
+        ]
+      ]
+    },
+    "references-count": 47,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "2714"
+    ],
+    "URL": "https://doi.org/10.1186/s12967-021-02714-8",
+    "relation": {},
+    "ISSN": [
+      "1479-5876"
+    ],
+    "issn-type": [
+      {
+        "value": "1479-5876",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          2,
+          15
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "31 October 2020",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "22 January 2021",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "15 February 2021",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "The hospital management approved the use of the clinical register of joint replacements, and its administration is regulated by the amended ethical and legal protocol. The local ethics committee approved this study in accordance with the Helsinki Declaration. All the enrolled patients agreed to the use of their anonymised data for the purpose of this study.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethics approval and consent to participate"
+        }
+      },
+      {
+        "value": "Not applicable.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Consent for publication"
+        }
+      },
+      {
+        "value": "The authors declare no competing financial interests in relation to the work described.",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "68"
+  }
+}

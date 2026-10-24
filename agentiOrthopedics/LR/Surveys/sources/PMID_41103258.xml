@@ -1,0 +1,1018 @@
+
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.4 20241031//EN" "JATS-archivearticle1-4-mathml3.dtd">
+<article id="ksa70109" xml:lang="en" article-type="research-article" dtd-version="1.4"><?da-xref-anchor-style autodetect?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Knee Surg Sports Traumatol Arthrosc</journal-id><journal-id journal-id-type="iso-abbrev">Knee Surg Sports Traumatol Arthrosc</journal-id><journal-id journal-id-type="pmc-domain-id">379</journal-id><journal-id journal-id-type="pmc-domain">blackwellopen</journal-id><journal-id journal-id-type="nlm-id">9314730</journal-id><journal-id journal-id-type="publisher-id">KSA</journal-id><journal-title-group><journal-title>Knee Surgery, Sports Traumatology, Arthroscopy</journal-title></journal-title-group><issn pub-type="ppub">0942-2056</issn><issn pub-type="epub">1433-7347</issn><?publisher_abbrev blackwell?><custom-meta-group><custom-meta><meta-name>pmc-is-collection-domain</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-collection-title</meta-name><meta-value>Wiley Open Access Collection</meta-value></custom-meta></custom-meta-group></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC12684344</article-id><article-id pub-id-type="pmcid-ver">PMC12684344.1</article-id><article-id pub-id-type="pmcaid">12684344</article-id><article-id pub-id-type="pmcaiid">12684344</article-id><article-id pub-id-type="pmid">41103258</article-id><article-id pub-id-type="doi">10.1002/ksa.70109</article-id><article-id pub-id-type="publisher-id">KSA70109</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="overline"><subject>Artificial Intelligence</subject></subj-group><subj-group subj-group-type="heading"><subject>Artificial Intelligence</subject></subj-group></article-categories><title-group><article-title>Artificial intelligence agents in orthopaedics: Concepts, capabilities and the road ahead</article-title><alt-title alt-title-type="right-running-head">AI AGENTS IN ORTHOPAEDICS</alt-title></title-group><contrib-group><contrib id="ksa70109-cr-0001" contrib-type="author"><name name-style="western"><surname>Oettl</surname><given-names initials="FC">Felix C.</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0001-9721-685X</contrib-id><xref rid="ksa70109-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="ksa70109-cr-0002" contrib-type="author"><name name-style="western"><surname>Pruneski</surname><given-names initials="J">James</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-8645-9386</contrib-id><xref rid="ksa70109-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="ksa70109-cr-0003" contrib-type="author"><name name-style="western"><surname>Zsidai</surname><given-names initials="B">Balint</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-5697-6577</contrib-id><xref rid="ksa70109-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref><xref rid="ksa70109-aff-0004" ref-type="aff">
+<sup>4</sup>
+</xref><xref rid="ksa70109-aff-0005" ref-type="aff">
+<sup>5</sup>
+</xref></contrib><contrib id="ksa70109-cr-0004" contrib-type="author"><name name-style="western"><surname>Yu</surname><given-names initials="Y">Yinan</given-names></name><xref rid="ksa70109-aff-0006" ref-type="aff">
+<sup>6</sup>
+</xref></contrib><contrib id="ksa70109-cr-0005" contrib-type="author"><name name-style="western"><surname>Cong</surname><given-names initials="T">Ting</given-names></name><xref rid="ksa70109-aff-0007" ref-type="aff">
+<sup>7</sup>
+</xref></contrib><contrib id="ksa70109-cr-0006" contrib-type="author"><name name-style="western"><surname>Feldt</surname><given-names initials="R">Robert</given-names></name><xref rid="ksa70109-aff-0006" ref-type="aff">
+<sup>6</sup>
+</xref></contrib><contrib id="ksa70109-cr-0007" contrib-type="author"><name name-style="western"><surname>Winkler</surname><given-names initials="PW">Philipp W.</given-names></name><xref rid="ksa70109-aff-0008" ref-type="aff">
+<sup>8</sup>
+</xref></contrib><contrib id="ksa70109-cr-0008" contrib-type="author"><name name-style="western"><surname>Hirschmann</surname><given-names initials="MT">Michael T.</given-names></name><xref rid="ksa70109-aff-0009" ref-type="aff">
+<sup>9</sup>
+</xref><xref rid="ksa70109-aff-0010" ref-type="aff">
+<sup>10</sup>
+</xref></contrib><contrib id="ksa70109-cr-0009" contrib-type="author" corresp="yes"><name name-style="western"><surname>Samuelsson</surname><given-names initials="K">Kristian</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0001-5383-3370</contrib-id><xref rid="ksa70109-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref><xref rid="ksa70109-aff-0004" ref-type="aff">
+<sup>4</sup>
+</xref><xref rid="ksa70109-aff-0011" ref-type="aff">
+<sup>11</sup>
+</xref><address><email>kristian.samuelsson@gu.se</email></address></contrib><contrib id="ksa70109-cr-0010" contrib-type="author"><collab collab-type="authors">ESSKA Artificial Intelligence Working Group</collab></contrib></contrib-group><aff id="ksa70109-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">Department of Orthopedic Surgery, Balgrist University Hospital</named-content>
+<institution>University of Zürich</institution>
+<city>Zurich</city>
+<country country="CH">Switzerland</country>
+</aff><aff id="ksa70109-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">Department of Orthopaedic Surgery</named-content>
+<institution>Tripler Army Medical Center</institution>
+<city>Honolulu</city>
+<named-content content-type="country-part">Hawaii</named-content>
+<country country="US">USA</country>
+</aff><aff id="ksa70109-aff-0003">
+<label>
+<sup>3</sup>
+</label>
+<institution>Sahlgrenska Sports Medicine Center</institution>
+<city>Gothenburg</city>
+<country country="SE">Sweden</country>
+</aff><aff id="ksa70109-aff-0004">
+<label>
+<sup>4</sup>
+</label>
+<named-content content-type="organisation-division">Department of Orthopaedics, Institute of Clinical Sciences, Sahlgrenska Academy</named-content>
+<institution>University of Gothenburg</institution>
+<city>Gothenburg</city>
+<country country="SE">Sweden</country>
+</aff><aff id="ksa70109-aff-0005">
+<label>
+<sup>5</sup>
+</label>
+<named-content content-type="organisation-division">Department of Orthopedics</named-content>
+<institution>Skåne University Hospital</institution>
+<city>Malmö/Lund</city>
+<country country="SE">Sweden</country>
+</aff><aff id="ksa70109-aff-0006">
+<label>
+<sup>6</sup>
+</label>
+<named-content content-type="organisation-division">Department of Computer Science and Engineering</named-content>
+<institution>Chalmers University of Technology</institution>
+<city>Gothenburg</city>
+<country country="SE">Sweden</country>
+</aff><aff id="ksa70109-aff-0007">
+<label>
+<sup>7</sup>
+</label>
+<named-content content-type="organisation-division">Department of Orthopaedic Surgery</named-content>
+<institution>University of Pittsburgh</institution>
+<city>Pittsburgh</city>
+<named-content content-type="country-part">Pennsylvania</named-content>
+<country country="US">USA</country>
+</aff><aff id="ksa70109-aff-0008">
+<label>
+<sup>8</sup>
+</label>
+<named-content content-type="organisation-division">Department for Orthopaedics and Traumatology, Kepler University Hospital GmbH</named-content>
+<institution>Johannes Kepler University Linz</institution>
+<city>Linz</city>
+<country country="AT">Austria</country>
+</aff><aff id="ksa70109-aff-0009">
+<label>
+<sup>9</sup>
+</label>
+<named-content content-type="organisation-division">Department of Orthopaedic Surgery and Traumatology</named-content>
+<institution>Kantonsspital Baselland</institution>
+<city>Bruderholz</city>
+<country country="CH">Switzerland</country>
+</aff><aff id="ksa70109-aff-0010">
+<label>
+<sup>10</sup>
+</label>
+<institution>University of Basel</institution>
+<city>Basel</city>
+<country country="CH">Switzerland</country>
+</aff><aff id="ksa70109-aff-0011">
+<label>
+<sup>11</sup>
+</label>
+<named-content content-type="organisation-division">Department for Orthopaedics</named-content>
+<institution>Sahlgrenska University Hospital</institution>
+<city>Mölndal</city>
+<country country="SE">Sweden</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>
+<bold>Correspondence</bold> Kristian Samuelsson, University of Gothenburg, Göteborgsvägen 31, 431 80 Mölndal, Sweden.<break/>
+Email: <email>kristian.samuelsson@gu.se</email>
+<break/>
+</corresp></author-notes><pub-date pub-type="epub"><day>17</day><month>10</month><year>2025</year></pub-date><pub-date pub-type="ppub"><month>12</month><year>2025</year></pub-date><volume>33</volume><issue seq="360">12</issue><issue-id pub-id-type="pmc-issue-id">502031</issue-id><issue-id pub-id-type="doi">10.1002/ksa.v33.12</issue-id><fpage>4475</fpage><lpage>4483</lpage><history>
+<date date-type="rev-recd"><day>13</day><month>8</month><year>2025</year></date>
+<date date-type="received"><day>17</day><month>5</month><year>2025</year></date>
+<date date-type="accepted"><day>07</day><month>9</month><year>2025</year></date>
+</history><pub-history><event event-type="pmc-release"><date><day>08</day><month>12</month><year>2025</year></date></event><event event-type="pmc-live"><date><day>09</day><month>12</month><year>2025</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2025-12-09 10:25:13.050"><day>09</day><month>12</month><year>2025</year></date></event></pub-history><permissions><copyright-statement content-type="article-copyright">© 2025 The Author(s). <italic toggle="yes">Knee Surgery, Sports Traumatology, Arthroscopy</italic> published by John Wiley &amp; Sons Ltd on behalf of European Society of Sports Traumatology, Knee Surgery and Arthroscopy.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="KSA-33-4475.pdf"><?pdf-name KSA-33-4475.pdf?><?pdf-size 1517683?><?pdf-md5 3ba88469cb2493fb46cdee384358e22e?><?pdf-image-server-status NEVER_LOAD?><?pdf-cloudpmc-urn urn:app:7944/12684344/3ba88469cb24/KSA-33-4475.pdf?></self-uri><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pdf" xlink:href="file:KSA-33-4475.pdf"/><abstract><title>Abstract</title><p>Artificial intelligence (AI) is increasingly used in orthopaedics, yet current models are often limited to narrow, isolated tasks like analysing an X‐ray or predicting a single outcome. This paper introduces AI agents—a new class of AI systems designed to overcome these limitations. Unlike traditional AI, agents can autonomously manage complex, multistep processes that mirror the complete patient journey. They can coordinate tasks from initial diagnosis and surgical scheduling to postoperative monitoring and rehabilitation, acting as intelligent assistants for clinical teams. This review explains what distinguishes AI agents from conventional AI, explores their potential applications in orthopaedic practice—including perioperative workflow optimisation, research acceleration and intelligent physician support—and discusses the significant implementation and ethical challenges that must be addressed. For the orthopaedic surgeon, understanding AI agents is becoming essential, as these systems offer a transformative potential to enhance efficiency, improve patient outcomes and shape the future of clinical leadership in a technologically advancing field.</p><sec id="ksa70109-sec-0020"><title>Level of Evidence</title><p>Level V.</p></sec></abstract><kwd-group><kwd id="ksa70109-kwd-0001">agentic AI</kwd><kwd id="ksa70109-kwd-0002">artificial intelligence</kwd><kwd id="ksa70109-kwd-0003">clinical decision support</kwd><kwd id="ksa70109-kwd-0004">medical ethics</kwd><kwd id="ksa70109-kwd-0005">multiagent systems</kwd><kwd id="ksa70109-kwd-0007">surgical workflow</kwd></kwd-group><counts><fig-count count="2"/><table-count count="1"/><page-count count="9"/><word-count count="5014"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>December 2025</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.6.6 mode:remove_FC converted:08.12.2025</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="ksa70109-cit-0056">
+<string-name name-style="western">
+<surname>Oettl</surname>
+<given-names>FC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pruneski</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zsidai</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cong</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Feldt</surname>
+<given-names>R</given-names>
+</string-name>, et al. <article-title>Artificial intelligence agents in orthopaedics: concepts, capabilities and the road ahead</article-title>. <source>Knee Surg Sports Traumatol Arthrosc</source>. <year>2025</year>;<volume>33</volume>:<fpage>4475</fpage>–<lpage>4483</lpage>. <pub-id pub-id-type="doi">10.1002/ksa.70109</pub-id>
+<pub-id pub-id-type="pmcid">PMC12684344</pub-id><pub-id pub-id-type="pmid">41103258</pub-id></mixed-citation>
+</p></notes></front><body><def-list list-content="abbreviations"><title>Abbreviations</title><def-item><term>AI</term><def><p>artificial intelligence</p></def></def-item><def-item><term>API</term><def><p>advanced programming interfaces</p></def></def-item><def-item><term>EHR</term><def><p>electronic health record</p></def></def-item><def-item><term>EMA</term><def><p>European Medicines Agency</p></def></def-item><def-item><term>FDA</term><def><p>Food and Drug Administration</p></def></def-item><def-item><term>HRL</term><def><p>hierarchical reinforcement learning</p></def></def-item><def-item><term>LLM</term><def><p>large language model</p></def></def-item><def-item><term>MAS</term><def><p>multiagent systems</p></def></def-item><def-item><term>ML</term><def><p>machine learning</p></def></def-item><def-item><term>NLP</term><def><p>natural language processing</p></def></def-item><def-item><term>RL</term><def><p>reinforcement learning</p></def></def-item></def-list><sec id="ksa70109-sec-0030"><title>INTRODUCTION</title><p>The use of artificial intelligence (AI) in orthopaedic practice and research has increased dramatically in recent years, with use cases to include image analysis [<xref rid="ksa70109-bib-0018" ref-type="bibr">18</xref>, <xref rid="ksa70109-bib-0024" ref-type="bibr">24</xref>, <xref rid="ksa70109-bib-0045" ref-type="bibr">45</xref>] and outcome prediction [<xref rid="ksa70109-bib-0006" ref-type="bibr">6</xref>, <xref rid="ksa70109-bib-0023" ref-type="bibr">23</xref>, <xref rid="ksa70109-bib-0036" ref-type="bibr">36</xref>]. Machine learning (ML), natural language processing (NLP) and deep learning have become valuable tools for gaining insight into musculoskeletal injury and recovery [<xref rid="ksa70109-bib-0007" ref-type="bibr">7</xref>, <xref rid="ksa70109-bib-0031" ref-type="bibr">31</xref>, <xref rid="ksa70109-bib-0037" ref-type="bibr">37</xref>, <xref rid="ksa70109-bib-0038" ref-type="bibr">38</xref>, <xref rid="ksa70109-bib-0055" ref-type="bibr">55</xref>]. However, the integration of these technologies into routine practice has been slow [<xref rid="ksa70109-bib-0002" ref-type="bibr">2</xref>, <xref rid="ksa70109-bib-0005" ref-type="bibr">5</xref>, <xref rid="ksa70109-bib-0008" ref-type="bibr">8</xref>], partly because current AI models are often fragmented, addressing single problems in isolation.</p><p>Orthopaedics presents unique clinical challenges that traditional AI struggles to address comprehensively. The longitudinal nature of musculoskeletal conditions requires continuous monitoring and adaptive treatment planning over extended timeframes. Furthermore, effective orthopaedic decision‐making relies on integrating multimodal data—including imaging, patient‐reported outcomes, clinical assessments and biomechanical measurements—which exceeds the capabilities of most single‐purpose AI models. This personalised approach, tailored to each patient's unique anatomy and recovery, demands more sophisticated technological solutions.</p><p>The emergence of AI agents represents a paradigm shift in healthcare technology. AI agents are software systems designed to perceive their environment, reason, make decisions and act autonomously to achieve specific goals [<xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>, <xref rid="ksa70109-bib-0050" ref-type="bibr">50</xref>]. Unlike traditional AI models that execute predefined tasks, agents possess defining features like autonomy and adaptability [<xref rid="ksa70109-bib-0005" ref-type="bibr">5</xref>, <xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>, <xref rid="ksa70109-bib-0019" ref-type="bibr">19</xref>, <xref rid="ksa70109-bib-0022" ref-type="bibr">22</xref>]. By harnessing ML, NLP and predictive analytics, they can emulate human cognitive functions, processing vast amounts of data to manage complex, goal‐oriented processes [<xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>, <xref rid="ksa70109-bib-0042" ref-type="bibr">42</xref>]. A particularly powerful capability of AI agents is their potential to operate collaboratively in what has been called a ‘society of mind’ [<xref rid="ksa70109-bib-0054" ref-type="bibr">54</xref>]. This orchestration of multiple specialised agents enables the handling of complex, multimodal data while maintaining transparency through natural language interfaces—characteristics especially valuable for the multifaceted decision‐making required in orthopaedics.</p><p>Outside of orthopaedics, AI agents have been used for drug discovery [<xref rid="ksa70109-bib-0026" ref-type="bibr">26</xref>], designing novel viral nanobodies [<xref rid="ksa70109-bib-0046" ref-type="bibr">46</xref>], outcome prediction [<xref rid="ksa70109-bib-0016" ref-type="bibr">16</xref>] and even modelling hospital care [<xref rid="ksa70109-bib-0025" ref-type="bibr">25</xref>]. Beyond healthcare, agentic AI is being utilised for finance, cybersecurity and manufacturing tasks as well [<xref rid="ksa70109-bib-0030" ref-type="bibr">30</xref>, <xref rid="ksa70109-bib-0052" ref-type="bibr">52</xref>, <xref rid="ksa70109-bib-0053" ref-type="bibr">53</xref>]. Despite these advances in other domains, there remains a paucity of literature describing specific use cases for AI agents within orthopaedics, where their capabilities could address the field's unique longitudinal, multimodal and personalised care requirements.</p><p>Accordingly, the purpose of the current review was to examine the current state and near‐future potential of AI agents, in orthopaedics, providing a framework for understanding potential use‐cases, limitations and implementation pathways.</p></sec><sec id="ksa70109-sec-0040"><title>FUNDAMENTALS OF AGENTIC AI</title><p>Agentic AI systems utilise a composite architecture with components that function in tandem. An agent typically uses a foundation model (often a large language model, or LLM) as its central reasoning engine. This is augmented with memory mechanisms to preserve contextual information and planning modules that decompose complex goals into executable subtasks. Interactions with external data sources are achieved by leveraging advanced programming interfaces (APIs), while self‐reflection mechanisms enable metacognitive evaluation and iterative improvement through experiential learning.</p><p>Concisely, the essential feature of contemporary agentic AI is the synchronous implementation of multiple components where the foundation model acts as a meta‐controller that orchestrates complex workflows through recursive self‐monitoring. Further characteristics that distinguish AI agents from conventional AI systems include autonomy, goal‐oriented capacity, adaptability and social ability [<xref rid="ksa70109-bib-0049" ref-type="bibr">49</xref>].</p><p>While traditional ML models are often trained on large, labelled datasets using supervised learning to perform specific classification or prediction tasks [<xref rid="ksa70109-bib-0029" ref-type="bibr">29</xref>], agentic AI systems are typically built on foundations such as reinforcement learning (RL) and NLP using LLMs [<xref rid="ksa70109-bib-0001" ref-type="bibr">1</xref>]. With RL, agents learn to maximise rewards by interacting with their environment to achieve goals through trial‐and‐error. Traditional models in orthopaedics, such as those developed for detecting fractures from X‐rays [<xref rid="ksa70109-bib-0014" ref-type="bibr">14</xref>, <xref rid="ksa70109-bib-0027" ref-type="bibr">27</xref>] or assisting in preoperative planning [<xref rid="ksa70109-bib-0040" ref-type="bibr">40</xref>, <xref rid="ksa70109-bib-0044" ref-type="bibr">44</xref>, <xref rid="ksa70109-bib-0051" ref-type="bibr">51</xref>], represent isolated, task‐specific systems. In contrast, AI agents integrate such capabilities into broader, goal‐directed workflows. For example, an agent might use an image analysis model as a tool, then reason about the findings, access patient records, consult clinical guidelines, propose a treatment plan and initiate scheduling or documentation [<xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>, <xref rid="ksa70109-bib-0034" ref-type="bibr">34</xref>]. This orchestration mirrors how medical professionals navigate patient care.</p><p>The distinction between agentic behaviour and agentic implementation is crucial for healthcare. Agentic behaviour refers to what the system does—the observable actions and capabilities of a system, including autonomous operation, goal pursuit, adaptation to changing circumstances, and varying degrees of proactiveness or reactiveness [<xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>, <xref rid="ksa70109-bib-0050" ref-type="bibr">50</xref>]. This is the external manifestation of agency. A system might exhibit agentic behaviour even if its internal architecture isn′t strictly agent‐based [<xref rid="ksa70109-bib-0004" ref-type="bibr">4</xref>, <xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>]. Agentic Implementation refers to how the system is built. Is it designed using agent‐oriented principles, potentially with explicit goals, beliefs, planning capabilities and learning mechanisms? Architectures can range from simple reactive agents (responding directly to stimuli) to more complex deliberative or learning agents that maintain internal models and plan ahead. A simple classification scheme has been proposed for AI agents and is summarised in Table <xref rid="ksa70109-tbl-0001" ref-type="table">1</xref> [<xref rid="ksa70109-bib-0019" ref-type="bibr">19</xref>, <xref rid="ksa70109-bib-0035" ref-type="bibr">35</xref>, <xref rid="ksa70109-bib-0041" ref-type="bibr">41</xref>].</p><table-wrap position="float" id="ksa70109-tbl-0001" content-type="Table" orientation="portrait"><label>Table 1</label><caption><p>An overview of different types of agents.</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" align="left" span="1"/><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" align="left" span="1"/><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" align="left" span="1"/><thead valign="bottom"><tr valign="bottom" style="border-bottom:solid 1px #000000"><th align="left" valign="bottom" rowspan="1" colspan="1">Type of agent</th><th align="left" valign="bottom" rowspan="1" colspan="1">Description</th><th align="left" valign="bottom" rowspan="1" colspan="1">Examples</th></tr></thead><tbody valign="top"><tr><td align="left" valign="top" rowspan="1" colspan="1">Simple reflex</td><td align="left" valign="top" rowspan="1" colspan="1">Operate on condition‐action or if‐then rules without memory. Simple, fast, widely used.</td><td align="left" valign="top" rowspan="1" colspan="1">An alert system on a smart cast that immediately notifies staff if a preset temperature threshold (indicating potential infection or pressure issues) is crossed and recommends further treatment.</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Model‐based reflex</td><td align="left" valign="top" rowspan="1" colspan="1">Exist in an environment, abide by rules, and consider previous perceptions from their environment</td><td align="left" valign="top" rowspan="1" colspan="1">A gait analysis sensor that flags deviations from a patient's established baseline walking pattern stored in its memory and instructs therapists and patients.</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Goal‐based</td><td align="left" valign="top" rowspan="1" colspan="1">Plan and execute to achieve specified goals. Always choose the optimal path</td><td align="left" valign="top" rowspan="1" colspan="1">A navigation system used during joint replacement surgery that dynamically guides the surgeon to achieve the preplanned implant position goal, despite changes in the environment.</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Utility‐based</td><td align="left" valign="top" rowspan="1" colspan="1">Uses a utility function to choose actions to maximise expected utility, balancing conflicting goals</td><td align="left" valign="top" rowspan="1" colspan="1">Software recommending the optimal rehabilitation protocol by weighing factors like predicted recovery speed, cost, patient tolerance and desired functional outcome utility.</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Learning</td><td align="left" valign="top" rowspan="1" colspan="1">Continuously improve strategies based on experience, becoming more autonomous. Can be utility‐ or goal‐based.</td><td align="left" valign="top" rowspan="1" colspan="1">An artificial intelligence (AI) tool analysing patient‐reported outcome measures and therapy logs over time to continuously refine personalised physical therapy recommendations.</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Problem‐solving</td><td align="left" valign="top" rowspan="1" colspan="1">Employ search algorithms to achieve desired outcomes.</td><td align="left" valign="top" rowspan="1" colspan="1">Preoperative planning software using search algorithms to determine the optimal sequence of corrective osteotomies for complex limb deformity correction.</td></tr></tbody></table><permissions><copyright-holder>John Wiley &amp; Sons, Ltd.</copyright-holder></permissions></table-wrap></sec><sec id="ksa70109-sec-0050"><title>CORE COMPONENTS OF AN AI AGENT</title><p>The agent's core requires inputs in order to understand, plan and execute complex tasks. Perception system and sensors collect data from the environment (e.g., patient data, medical images, real‐time device data, text input) [<xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>]. This information is then processed and forwarded to the central decision‐making engine. The decision‐making engine responsible for reasoning and planning might be called the ‘brain’ of the agent. It processes information, uses logic, accesses knowledge bases (memory), plans actions and makes decisions to achieve goals, which often involves LLMs, RL, or other AI models [<xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>, <xref rid="ksa70109-bib-0022" ref-type="bibr">22</xref>]. The memory of an agent is an important module as it stores past experiences and knowledge to learn and improve performance over time. The interaction with the environment is then facilitated through the action system driven by effectors. This module executes the decision into an action to interact with the environment (e.g., updating a schedule, sending an alert, controlling a robotic arm) [<xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>, <xref rid="ksa70109-bib-0022" ref-type="bibr">22</xref>] (Figure <xref rid="ksa70109-fig-0001" ref-type="fig">1</xref>).</p><fig position="float" fig-type="Figure" id="ksa70109-fig-0001" orientation="portrait"><label>Figure 1</label><caption><p>Sample Architecture of an artificial intelligence (AI) agent. This figure illustrates the core components of a typical AI agent. The perception system gathers raw data from the environment (e.g., patient information, sensor readings). This data are processed and sent to the reasoning &amp; decision‐making engine (the ‘Brain’), which uses logic and AI models to create an action plan based on the agent's overarching goals and objectives. The engine accesses memory (a knowledge base of past experiences) to improve its decisions. The resulting action plan is sent to the action system, which uses effectors to interact with and modify the external environment (e.g., updating a clinical schedule or controlling a device). This entire process forms a continuous loop, allowing the agent to learn and adapt.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-1" orientation="portrait" xlink:href="KSA-33-4475-g002.jpg"><?image-name KSA-33-4475-g002.jpg?><?image-size 70104?><?image-md5 2332fe6d4db9a70c3d1600385c3efb4a?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1114?><?image-original-width 1054?><?image-scaled-height 742?><?image-scaled-width 702?><?image-cloudpmc-urn urn:cdn:blobs/7944/12684344/2332fe6d4db9/KSA-33-4475-g002.jpg?><?thumb-name KSA-33-4475-g002.gif?><?thumb-size 3389?><?thumb-md5 67e48a4a9f279a8bc40c96cf462c8e2e?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 106?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/7944/12684344/67e48a4a9f27/KSA-33-4475-g002.gif?></graphic></fig><p>High agentic behaviour (autonomy) necessitates high trust. This trust is better supported by a robust agentic implementation that allows for explainability, predictability and validation [<xref rid="ksa70109-bib-0034" ref-type="bibr">34</xref>]. Common architectural approaches for implementing agentic AI include multiagent systems (MAS), hierarchical reinforcement learning (HRL) and goal‐oriented modular architectures (Figure <xref rid="ksa70109-fig-0002" ref-type="fig">2</xref>) [<xref rid="ksa70109-bib-0001" ref-type="bibr">1</xref>]. In MAS, tasks are divided amongst multiple autonomous agents with a common goal [<xref rid="ksa70109-bib-0003" ref-type="bibr">3</xref>]. In contrast, decision making is structured hierarchically in HRL, where high‐level agents define subgoals, which are executed by low‐level agents [<xref rid="ksa70109-bib-0039" ref-type="bibr">39</xref>]. In goal‐oriented modular architectures, agent functions are modular, where each module specialises in specific aspects of a task [<xref rid="ksa70109-bib-0010" ref-type="bibr">10</xref>]. These implementations can help enhance transparency, as interactions between components or agents are often structured and observable.</p><fig position="float" fig-type="Figure" id="ksa70109-fig-0002" orientation="portrait"><label>Figure 2</label><caption><p>Illustration of three common architectures for implementing agentic artificial intelligence (AI). Multiagent systems (MAS) use multiple autonomous agents working towards a shared goal. Hierarchical reinforcement learning (HRL) structures decision‐making into levels, where higher levels set subgoals for lower levels. Goal‐oriented modular architectures divide a process into specialised modules, each responsible for a specific part of the task.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-3" orientation="portrait" xlink:href="KSA-33-4475-g001.jpg"><?image-name KSA-33-4475-g001.jpg?><?image-size 40726?><?image-md5 4218ec6438f802f7b79a5d5195443d22?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 609?><?image-original-width 1054?><?image-scaled-height 406?><?image-scaled-width 702?><?image-cloudpmc-urn urn:cdn:blobs/7944/12684344/4218ec6438f8/KSA-33-4475-g001.jpg?><?thumb-name KSA-33-4475-g001.gif?><?thumb-size 2998?><?thumb-md5 a09c09d3d4266d1e0eee78d6da679062?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 80?><?thumb-scaled-width 138?><?thumb-cloudpmc-urn urn:cdn:blobs/7944/12684344/a09c09d3d426/KSA-33-4475-g001.gif?></graphic></fig></sec><sec id="ksa70109-sec-0060"><title>CLINICAL APPLICATIONS AND FUTURE DIRECTIONS OF AGENTIC AI IN ORTHOPAEDICS</title><sec id="ksa70109-sec-0070"><title>Perioperative workflow optimisation</title><p>Perioperative care represents one of the most promising applications for AI agents in orthopaedics, where these systems can coordinate and optimise complex workflows across clinical management pathways. Through the analysis of historical case durations, surgeon availability and patient needs, scheduling optimisation AI agents can reduce delays, prevent overbooking and maximise operating room utilisation—addressing a critical inefficiency particularly relevant in orthopaedics, where procedures vary dramatically in duration and resource requirements [<xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>, <xref rid="ksa70109-bib-0015" ref-type="bibr">15</xref>, <xref rid="ksa70109-bib-0034" ref-type="bibr">34</xref>]. The complexity of these systems increases significantly in high‐acuity settings such as trauma services, where hierarchical decision‐making processes must accommodate rapid changes to OR schedules, prioritise emergent cases and redistribute resources in real‐time based on patient condition and surgical urgency. Practical implementations are emerging through MAS dedicated to each phase of the perioperative process: preoperative, intraoperative and postoperative. A preoperative MAS might incorporate multiple specialised agents, including a Risk Stratification Agent utilising predictive analytics to assess surgical risks, a scheduling optimisation agent applying ML to maximise resource efficiency—including interdepartmental OR sharing and a preoperative communication agent facilitating seamless information flow between patients, surgical teams and administrative staff [<xref rid="ksa70109-bib-0022" ref-type="bibr">22</xref>, <xref rid="ksa70109-bib-0034" ref-type="bibr">34</xref>]. These specialised agents may operate under the coordination of a preoperative master orchestrator agent that integrates data inputs and optimises decision‐making for surgical preparation. Similar multigent architectures for intraoperative and postoperative phases create a comprehensive system spanning the entire care continuum, potentially transforming efficiency and outcomes in orthopaedic surgery through intelligent automation and coordination [<xref rid="ksa70109-bib-0004" ref-type="bibr">4</xref>, <xref rid="ksa70109-bib-0022" ref-type="bibr">22</xref>].</p></sec></sec><sec id="ksa70109-sec-0080"><title>RESEARCH ACCELERATION</title><p>AI agents may soon be capable of transforming research across various domains, however, they still lack strategic, purposeful implementation [<xref rid="ksa70109-bib-0009" ref-type="bibr">9</xref>, <xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>, <xref rid="ksa70109-bib-0013" ref-type="bibr">13</xref>]. The literature demonstrates that these systems can autonomously search, read and synthesise thousands of studies—moving beyond simple keyword searching to understanding conceptual relationships and clinical implications, thereby identifying patterns, contradictions and knowledge gaps with unprecedented efficiency [<xref rid="ksa70109-bib-0009" ref-type="bibr">9</xref>, <xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>]. In experimental design and optimisation, AI agents could recommend optimal methodologies, sample sizes and measurement approaches for biomechanical studies, clinical trials, or basic science experiments based on specific research questions and available resources [<xref rid="ksa70109-bib-0009" ref-type="bibr">9</xref>, <xref rid="ksa70109-bib-0012" ref-type="bibr">12</xref>, <xref rid="ksa70109-bib-0022" ref-type="bibr">22</xref>]. In data analysis and interpretation, these agents can assist in both traditional statistical approaches, while also identifying complex patterns in research data, suggesting novel hypotheses and even generating preliminary manuscripts based on findings [<xref rid="ksa70109-bib-0012" ref-type="bibr">12</xref>]. These capabilities represent a significant advancement over current research tools, potentially accelerating both the pace of discovery and clinical translation in orthopaedics by automating labour and time‐intensive tasks while uncovering insights that might otherwise remain hidden within the growing volume of scientific literature and research data.</p></sec><sec id="ksa70109-sec-0090"><title>INTELLIGENT CLINICAL AND SURGICAL SUPPORT</title><p>The future landscape of agentic AI in orthopaedics likely extends beyond what is currently envisioned, with numerous applications still to be discovered. Among the more apparent opportunities on the horizon are intelligent assistant agents which could function as copilots for healthcare providers, reducing cognitive burden and administrative workload by retrieving information, drafting documentation, managing alerts, summarising patient histories and facilitating routine patient communications [<xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>, <xref rid="ksa70109-bib-0034" ref-type="bibr">34</xref>]. These systems will evolve alongside advanced decision support tools that integrate comprehensive datasets spanning radiomics, wearable technology and outcomes metrics to deliver increasingly personalised predictions regarding implant success and complication risks in both perioperative and outpatient contexts [<xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>].</p><p>Further developments are anticipated in patient management optimisation, with AI agents intelligently prioritising cases based on acuity, complexity and resource availability while dynamically adjusting clinical and surgical schedules to enhance efficiency without compromising care quality [<xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>, <xref rid="ksa70109-bib-0034" ref-type="bibr">34</xref>]. Real‐time procedural guidance represents another frontier, particularly in surgical settings where hybrid AI models may provide intraoperative decision support [<xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>, <xref rid="ksa70109-bib-0022" ref-type="bibr">22</xref>, <xref rid="ksa70109-bib-0034" ref-type="bibr">34</xref>]. Additionally, remote monitoring capabilities will expand through AI systems that continuously analyse data from wearable devices and patient‐reported outcomes, identifying concerning trends and coordinating interventions before complications manifest, thereby extending the reach of orthopaedic care beyond traditional clinical boundaries.</p></sec><sec id="ksa70109-sec-0100"><title>THE CONTINUUM OF SOFTWARE AND ROBOTIC AGENTS</title><p>The landscape of agentic AI encompasses diverse implementation approaches, with software‐based agents representing the major category. These digital entities analyse clinical data, generate recommendations and streamline workflows without physical intervention capabilities [<xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>, <xref rid="ksa70109-bib-0034" ref-type="bibr">34</xref>, <xref rid="ksa70109-bib-0050" ref-type="bibr">50</xref>]. Their digital nature enables rapid deployment and iteration, making them useful for clinical decision support systems, research assistance tools and administrative process optimisation. In contrast, robotic systems with agentic components may merge computational intelligence with physical capabilities, improving on largely passive surgical robots to such that will precisely execute surgeon commands to more advanced systems which will be capable of adapting to changing conditions during procedures. Rather than representing distinct categories, these implementations will exist along a continuum where many promising applications combine elements of both—resulting in intelligent software agents that enhance planning for robotic procedures or increasingly autonomous robotic systems guided by sophisticated agentic software.</p><p>The healthcare field has much to gain from MAS, with applications emerging across diagnostics, collaborative decision support, prehospital emergency response and automated insurance justifications [<xref rid="ksa70109-bib-0004" ref-type="bibr">4</xref>, <xref rid="ksa70109-bib-0012" ref-type="bibr">12</xref>, <xref rid="ksa70109-bib-0034" ref-type="bibr">34</xref>]. These systems feature multiple specialised agents working in concert through collaboration or negotiation protocols [<xref rid="ksa70109-bib-0004" ref-type="bibr">4</xref>, <xref rid="ksa70109-bib-0011" ref-type="bibr">11</xref>, <xref rid="ksa70109-bib-0034" ref-type="bibr">34</xref>]. Notable examples include MD Agents, which leverages large language models within a multiagent framework for medical decision‐making and systems applying the MAS approach to modular healthcare data analysis [<xref rid="ksa70109-bib-0021" ref-type="bibr">21</xref>]. Such architectures may simulate healthcare team collaboration, analyse complex data streams and perform other tasks requiring distributed intelligence—pointing toward future systems where specialised digital agents collaborate much like human healthcare teams to deliver comprehensive orthopaedic care.</p></sec><sec id="ksa70109-sec-0110"><title>IMPLEMENTATION CONSIDERATIONS</title><p>The implementation of agentic AI in orthopaedics faces numerous challenges, not entirely unique compared to other medical specialties and also other industries. Seamless integration with existing electronic health records (EHRs) and imaging systems remains an initial hurdle, as these agents must function within established clinical workflows. Data quality presents another obstacle—as up to 80% of the EHR consists of unstructured data [<xref rid="ksa70109-bib-0020" ref-type="bibr">20</xref>, <xref rid="ksa70109-bib-0028" ref-type="bibr">28</xref>], which is prone to human error [<xref rid="ksa70109-bib-0043" ref-type="bibr">43</xref>, <xref rid="ksa70109-bib-0047" ref-type="bibr">47</xref>]. This necessitates either algorithms capable of standardising diverse inputs or a transition to more compatible information systems. Additionally, these applications must achieve real‐time performance with minimal latency while processing complex, multimodal data streams, not only for intraoperative use cases, but already in administrative tasks, as multiple patients might be requesting help simultaneously.</p><p>Beyond these technical considerations, the successful deployment of AI agents in orthopaedics depends on establishing appropriate validation metrics and explainability for clinical performance—a critical step for both regulatory approval and physician confidence [<xref rid="ksa70109-bib-0032" ref-type="bibr">32</xref>, <xref rid="ksa70109-bib-0033" ref-type="bibr">33</xref>]. Economic factors will inevitably influence adoption rates, as practices must weigh implementation costs against potential efficiency gains and improved outcomes. Accordingly, evaluation of these agents, currently limited to accuracy/task completion metrics, should include cost‐effectiveness measures to facilitate practical deployment in resource‐limited environments [<xref rid="ksa70109-bib-0017" ref-type="bibr">17</xref>]. Perhaps most importantly, these systems must earn acceptance from both patients and healthcare providers, who may harbour reservations about AI agents. As the field progresses, addressing these implementation barriers will be essential for realising the full potential of agentic AI in orthopaedic practice.</p></sec><sec id="ksa70109-sec-0120"><title>ETHICAL AND LEGAL FRAMEWORK</title><p>The ethical and legal landscape surrounding agentic AI in orthopaedics presents significant challenges. Regulatory frameworks remain underdeveloped, with bodies like the US Food and Drug Administration (FDA) and European Medicines Agency (EMA) still establishing pathways for evaluating adaptive AI technologies [<xref rid="ksa70109-bib-0048" ref-type="bibr">48</xref>]. This uncertainty is compounded by complex questions of liability. When an autonomous agent contributes to an adverse outcome, determining responsibility—whether it lies with the developer, the healthcare provider, or the institution—becomes legally and ethically fraught, particularly when the agent's decision‐making process is not fully transparent.</p><p>Privacy and data governance represent another critical dimension. Agents that continuously learn from clinical data challenge traditional notions of patient consent and confidentiality, while the immense volumes of sensitive data they require raise questions about storage and access. Furthermore, equity considerations loom large. There is an inherent risk that biases present in training data (e.g., from specific patient demographics) could be amplified, exacerbating health disparities. Similarly, these advanced technologies might become disproportionately available in well‐resourced settings, widening the gap in care quality. Addressing these challenges requires thoughtful collaboration between clinicians, scientists, ethicists and policymakers to ensure that the benefits of AI are realised responsibly.</p></sec><sec sec-type="conclusions" id="ksa70109-sec-0130"><title>CONCLUSION</title><p>AI agents, representing a generational improvement upon traditional AI, present a potentially practice‐changing shift in orthopaedic practice. While promising applications are already possible in perioperative optimisation, research acceleration and workflow management, implementation faces significant technical, ethical and regulatory challenges. As orthopaedics navigates this frontier, success will depend on thoughtful integration that augments, rather than replaces, human expertise. For the orthopaedic surgeon, engaging with these technologies is no longer a niche interest but a professional necessity. Understanding the principles of agentic AI will be crucial for leading clinical teams, shaping the future of surgical practice and ensuring that these powerful tools are implemented safely and effectively to the ultimate benefit of the patient.</p></sec><sec id="ksa70109-sec-0140"><title>AUTHOR CONTRIBUTIONS</title><p>All listed authors have contributed substantially to this work. F.C.O., J.P. and B.Z. performed literature review. F.C.O. performed primary manuscript preparation. Editing and final manuscript preparation were performed by J.P., B.Z., Y.Y., T.C., R.F., P.W.W., M.T.H. and K.S. All authors read and approved the final manuscript.</p></sec><sec sec-type="COI-statement" id="ksa70109-sec-0160"><title>CONFLICTS OF INTEREST STATEMENT</title><p>Prof. Kristian Samuelsson is a board member of Getinge AB. The remaining authors declare no conflict of interest.</p></sec><sec id="ksa70109-sec-0190"><title>ETHICS STATEMENT</title><p>The authors have nothing to report.</p></sec></body><back><ack id="ksa70109-sec-0150"><title>ACKNOWLEDGEMENTS</title><p>The authors have nothing to report.</p></ack><sec sec-type="data-availability" id="ksa70109-sec-0180"><title>DATA AVAILABILITY STATEMENT</title><p>Data sharing is not applicable to this article as no datasets were generated or analysed during the current study.</p></sec><ref-list content-type="cited-references" id="ksa70109-bibl-0001"><title>REFERENCES</title><ref id="ksa70109-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="ksa70109-cit-0001">
+<string-name name-style="western">
+<surname>Acharya</surname>
+<given-names>DB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kuppan</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Divya</surname>
+<given-names>B</given-names>
+</string-name>. <article-title>Agentic AI: autonomous intelligence for complex goals—A comprehensive survey</article-title>. <source>IEEE Access</source>. <year>2025</year>;<volume>13</volume>:<fpage>18912</fpage>–<lpage>18936</lpage>.</mixed-citation></ref><ref id="ksa70109-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="ksa70109-cit-0002">
+<string-name name-style="western">
+<surname>Ahmed</surname>
+<given-names>MI</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Spooner</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Isherwood</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lane</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Orrock</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dennison</surname>
+<given-names>A</given-names>
+</string-name>. <article-title>A systematic review of the barriers to the implementation of artificial intelligence in healthcare</article-title>. <source>Cureus</source>. <year>2023</year>;<volume>15</volume>:<elocation-id>e46454</elocation-id>.<pub-id pub-id-type="pmid">37927664</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.7759/cureus.46454</pub-id><pub-id pub-id-type="pmcid">PMC10623210</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="ksa70109-cit-0003">
+<string-name name-style="western">
+<surname>Cardoso</surname>
+<given-names>RC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ferrando</surname>
+<given-names>A</given-names>
+</string-name>. <article-title>A review of agent‐based programming for multi‐agent systems</article-title>. <source>Computers</source>. <year>2021</year>;<volume>10</volume>:<fpage>16</fpage>.</mixed-citation></ref><ref id="ksa70109-bib-0004"><label>4</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0004">
+<string-name name-style="western">
+<surname>Chen</surname>
+<given-names>Y‐J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Albarqawi</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>C‐S</given-names>
+</string-name>. Reinforcing clinical decision support through multi‐agent systems and ethical AI governance; arXiv:2504.03699; <year>2025</year>. Available from: <pub-id pub-id-type="doi">10.48550/arXiv:2504.03699</pub-id>; <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://ui.adsabs.harvard.edu/abs/2025arXiv250403699C" ext-link-type="uri">https://ui.adsabs.harvard.edu/abs/2025arXiv250403699C</ext-link>
+</mixed-citation></ref><ref id="ksa70109-bib-0005"><label>5</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0005">
+<string-name name-style="western">
+<surname>Cheng</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Meng</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hong</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>W</given-names>
+</string-name>, et al. Exploring large language model based intelligent agents: definitions, methods, and prospects; arXiv:2401.03428; <year>2024</year>. Available from: <pub-id pub-id-type="doi">10.48550/arXiv.2401.03428:arXiv</pub-id>; <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://ui.adsabs.harvard.edu/abs/2024arXiv240103428C" ext-link-type="uri">https://ui.adsabs.harvard.edu/abs/2024arXiv240103428C</ext-link>
+</mixed-citation></ref><ref id="ksa70109-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="ksa70109-cit-0006">
+<string-name name-style="western">
+<surname>Domb</surname>
+<given-names>BG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ouyang</surname>
+<given-names>VW</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Go</surname>
+<given-names>CC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gornbein</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shapira</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Meghpara</surname>
+<given-names>MB</given-names>
+</string-name>, et al. <article-title>Personalized medicine using predictive analytics: a machine learning‐based prognostic model for patients undergoing hip arthroscopy</article-title>. <source>Am J Sports Med</source>. <year>2022</year>;<volume>50</volume>:<fpage>1900</fpage>–<lpage>1908</lpage>.<pub-id pub-id-type="pmid">35536218</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/03635465221091847</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="ksa70109-cit-0007">
+<string-name name-style="western">
+<surname>Eckhardt</surname>
+<given-names>CM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Madjarova</surname>
+<given-names>SJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Williams</surname>
+<given-names>RJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ollivier</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Karlsson</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pareek</surname>
+<given-names>A</given-names>
+</string-name>, et al. <article-title>Unsupervised machine learning methods and emerging applications in healthcare</article-title>. <source>Knee Surg Sports Traumatol Arthrosc</source>. <year>2023</year>;<volume>31</volume>(<issue>2</issue>):<fpage>376</fpage>–<lpage>381</lpage>.<pub-id pub-id-type="pmid">36378293</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00167-022-07233-7</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="ksa70109-cit-0008">
+<string-name name-style="western">
+<surname>Familiari</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Saithna</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Martinez‐Cano</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chahla</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Castillo</surname>
+<given-names>JMD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>DePhillipo</surname>
+<given-names>NN</given-names>
+</string-name>, et al. <article-title>Exploring artificial intelligence in orthopaedics: a collaborative survey from the ISAKOS young professional task force</article-title>. <source>J Exp Orthop</source>. <year>2025</year>;<volume>12</volume>:<elocation-id>e70181</elocation-id>.<pub-id pub-id-type="pmid">39996084</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jeo2.70181</pub-id><pub-id pub-id-type="pmcid">PMC11848192</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0009"><label>9</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0009">
+<string-name name-style="western">
+<surname>Gao</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fang</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Huang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Giunchiglia</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Noori</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Schwarz</surname>
+<given-names>JR</given-names>
+</string-name>, et al. Empowering biomedical discovery with AI agents; arXiv:2404.02831; <year>2024</year>. Available from: <pub-id pub-id-type="doi">10.48550/arXiv.2404.02831</pub-id>; <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://ui.adsabs.harvard.edu/abs/2024arXiv240402831G" ext-link-type="uri">https://ui.adsabs.harvard.edu/abs/2024arXiv240402831G</ext-link>. Accessed April 01, 2024.<pub-id pub-id-type="pmid">39486399</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="ksa70109-cit-0010">
+<string-name name-style="western">
+<surname>Getu</surname>
+<given-names>TM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kaddoum</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bennis</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>A survey on goal‐oriented semantic communication: techniques, challenges, and future directions</article-title>. <source>IEEE Access</source>. <year>2024</year>;<volume>12</volume>:<fpage>51223</fpage>–<lpage>51274</lpage>.</mixed-citation></ref><ref id="ksa70109-bib-0011"><label>11</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0011">
+<string-name name-style="western">
+<surname>Google</surname>
+<given-names>D</given-names>
+</string-name>. What is an AI agent?; <year>2025</year>. Available from: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://cloud.google.com/discover/what-are-ai-agents?hl=en" ext-link-type="uri">https://cloud.google.com/discover/what-are-ai-agents?hl=en</ext-link>
+</mixed-citation></ref><ref id="ksa70109-bib-0012"><label>12</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0012">
+<string-name name-style="western">
+<surname>Gottweis</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Weng</surname>
+<given-names>W‐H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Daryin</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tu</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Palepu</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sirkovic</surname>
+<given-names>P</given-names>
+</string-name>, et al. Towards an AI co‐scientist; arXiv:2502.18864; <year>2025</year>. Available from: <pub-id pub-id-type="doi">10.48550/arXiv.2502.18864</pub-id>, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://ui.adsabs.harvard.edu/abs/2025arXiv250218864G" ext-link-type="uri">https://ui.adsabs.harvard.edu/abs/2025arXiv250218864G</ext-link>
+</mixed-citation></ref><ref id="ksa70109-bib-0013"><label>13</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0013">
+<string-name name-style="western">
+<surname>Gridach</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nanavati</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zine El Abidine</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mendes</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mack</surname>
+<given-names>C</given-names>
+</string-name>. Agentic AI for scientific discovery: a survey of progress, challenges, and future directions; arXiv:2503.08979; <year>2025</year>. Available from: <pub-id pub-id-type="doi">10.48550/arXiv.2503.08979</pub-id>; <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://ui.adsabs.harvard.edu/abs/2025arXiv250308979G" ext-link-type="uri">https://ui.adsabs.harvard.edu/abs/2025arXiv250308979G</ext-link>
+</mixed-citation></ref><ref id="ksa70109-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="ksa70109-cit-0014">
+<string-name name-style="western">
+<surname>Guermazi</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Omoumi</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tordjman</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fritz</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kijowski</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Regnard</surname>
+<given-names>NE</given-names>
+</string-name>, et al. <article-title>How AI may transform musculoskeletal imaging</article-title>. <source>Radiology</source>. <year>2024</year>;<volume>310</volume>:<elocation-id>e230764</elocation-id>.<pub-id pub-id-type="pmid">38165245</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1148/radiol.230764</pub-id><pub-id pub-id-type="pmcid">PMC10831478</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="ksa70109-cit-0015">
+<string-name name-style="western">
+<surname>Huang</surname>
+<given-names>KA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Choudhary</surname>
+<given-names>HK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kuo</surname>
+<given-names>PC</given-names>
+</string-name>. <article-title>Artificial intelligent agent architecture and clinical decision‐making in the healthcare sector</article-title>. <source>Cureus</source>. <year>2024</year>;<volume>16</volume>:<elocation-id>e64115</elocation-id>.<pub-id pub-id-type="pmid">39119387</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.7759/cureus.64115</pub-id><pub-id pub-id-type="pmcid">PMC11309744</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="ksa70109-cit-0016">
+<string-name name-style="western">
+<surname>Jiang</surname>
+<given-names>LY</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>XC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nejatian</surname>
+<given-names>NP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nasir‐Moin</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Abidin</surname>
+<given-names>A</given-names>
+</string-name>, et al. <article-title>Health system‐scale language models are all‐purpose prediction engines</article-title>. <source>Nature</source>. <year>2023</year>;<volume>619</volume>:<fpage>357</fpage>–<lpage>362</lpage>.<pub-id pub-id-type="pmid">37286606</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41586-023-06160-y</pub-id><pub-id pub-id-type="pmcid">PMC10338337</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0017"><label>17</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0017">
+<string-name name-style="western">
+<surname>Kapoor</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Stroebl</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Siegel</surname>
+<given-names>ZS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nadgir</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Narayanan</surname>
+<given-names>A</given-names>
+</string-name>. Ai agents that matter. arXiv preprint arXiv:2407.01502; 2024.</mixed-citation></ref><ref id="ksa70109-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="ksa70109-cit-0018">
+<string-name name-style="western">
+<surname>Karnuta</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Murphy</surname>
+<given-names>MP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Luu</surname>
+<given-names>BC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ryan</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Haeberle</surname>
+<given-names>HS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Brown</surname>
+<given-names>NM</given-names>
+</string-name>, et al. <article-title>Artificial intelligence for automated implant identification in total hip arthroplasty: a multicenter external validation study exceeding two million plain radiographs</article-title>. <source>J Arthroplasty</source>. <year>2023</year>;<volume>38</volume>:<fpage>1998</fpage>–<lpage>2003</lpage>.<pub-id pub-id-type="pmid">35271974</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arth.2022.03.002</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="ksa70109-cit-0019">
+<string-name name-style="western">
+<surname>Karunanayake</surname>
+<given-names>N</given-names>
+</string-name>. <article-title>Next‐generation agentic AI for transforming healthcare</article-title>. <source>Inform Health</source>. <year>2025</year>;<volume>2</volume>:<fpage>73</fpage>–<lpage>83</lpage>.</mixed-citation></ref><ref id="ksa70109-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="ksa70109-cit-0020">
+<string-name name-style="western">
+<surname>Kim</surname>
+<given-names>JS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vivas</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Arvind</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lombardi</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Reidler</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zuckerman</surname>
+<given-names>SL</given-names>
+</string-name>, et al. <article-title>Can natural language processing and artificial intelligence automate the generation of billing codes from operative note dictations?</article-title>
+<source>Glob Spine J</source>. <year>2023</year>;<volume>13</volume>:<fpage>1946</fpage>–<lpage>1955</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/21925682211062831</pub-id><pub-id pub-id-type="pmcid">PMC10556904</pub-id><pub-id pub-id-type="pmid">35225694</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0021"><label>21</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0021">
+<string-name name-style="western">
+<surname>Kim</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Park</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jeong</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chan</surname>
+<given-names>YS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Xu</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>McDuff</surname>
+<given-names>D</given-names>
+</string-name>, et al. MDAgents: an adaptive collaboration of LLMs for medical decision‐making; arXiv:2404.15155; <year>2024</year>. Available from: <pub-id pub-id-type="doi">10.48550/arXiv.2404.15155</pub-id>; <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://ui.adsabs.harvard.edu/abs/2024arXiv240415155K" ext-link-type="uri">https://ui.adsabs.harvard.edu/abs/2024arXiv240415155K</ext-link>
+</mixed-citation></ref><ref id="ksa70109-bib-0022"><label>22</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0022">
+<string-name name-style="western">
+<surname>Krishnan</surname>
+<given-names>N</given-names>
+</string-name>. AI agents: evolution, architecture, and real‐world applications; arXiv:2503.12687; <year>2025</year>. Available from: <pub-id pub-id-type="doi">10.48550/arXiv.2503.12687</pub-id>; <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://ui.adsabs.harvard.edu/abs/2025arXiv250312687K" ext-link-type="uri">https://ui.adsabs.harvard.edu/abs/2025arXiv250312687K</ext-link>
+</mixed-citation></ref><ref id="ksa70109-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="ksa70109-cit-0023">
+<string-name name-style="western">
+<surname>Kunze</surname>
+<given-names>KN</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kaidi</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Madjarova</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Polce</surname>
+<given-names>EM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ranawat</surname>
+<given-names>AS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nawabi</surname>
+<given-names>DH</given-names>
+</string-name>, et al. <article-title>External validation of a machine learning algorithm for predicting clinically meaningful functional improvement after arthroscopic hip preservation surgery</article-title>. <source>Am J Sports Med</source>. <year>2022</year>;<volume>50</volume>:<fpage>3593</fpage>–<lpage>3599</lpage>.<pub-id pub-id-type="pmid">36135373</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/03635465221124275</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="ksa70109-cit-0024">
+<string-name name-style="western">
+<surname>Kunze</surname>
+<given-names>KN</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rossi</surname>
+<given-names>DM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>White</surname>
+<given-names>GM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Karhade</surname>
+<given-names>AV</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Deng</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Williams</surname>
+<given-names>BT</given-names>
+</string-name>, et al. <article-title>Diagnostic performance of artificial intelligence for detection of anterior cruciate ligament and meniscus tears: a systematic review</article-title>. <source>Arthrosc J Arthrosc Rel Surg</source>. <year>2021</year>;<volume>37</volume>:<fpage>771</fpage>–<lpage>781</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arthro.2020.09.012</pub-id><pub-id pub-id-type="pmid">32956803</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0025"><label>25</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0025">
+<string-name name-style="western">
+<surname>Li</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lai</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>W</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ren</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kang</surname>
+<given-names>X</given-names>
+</string-name>, et al. Agent hospital: a simulacrum of hospital with evolvable medical agents. arXiv preprint arXiv:2405.02957; 2024.</mixed-citation></ref><ref id="ksa70109-bib-0026"><label>26</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0026">
+<string-name name-style="western">
+<surname>Liu</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hu</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhao</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lu</surname>
+<given-names>Y</given-names>
+</string-name>, et al. Drugagent: automating AI‐aided drug discovery programming through llm multi‐agent collaboration. arXiv preprint arXiv:2411.15692; 2024.</mixed-citation></ref><ref id="ksa70109-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="ksa70109-cit-0027">
+<string-name name-style="western">
+<surname>Lu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yang</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mulford</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Grove</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kaji</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pareek</surname>
+<given-names>A</given-names>
+</string-name>, et al. <article-title>AKIRA: deep learning tool for image standardization, implant detection and arthritis grading to establish a radiographic registry in patients with anterior cruciate ligament injuries</article-title>. <source>Knee Surg Sports Traumatol Arthrosc</source>. <year>2025</year>. Available from: <pub-id pub-id-type="doi">10.1002/ksa.12618</pub-id>
+<pub-id pub-id-type="pmid">39925136</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="ksa70109-cit-0028">
+<string-name name-style="western">
+<surname>Martin‐Sanchez</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Verspoor</surname>
+<given-names>K</given-names>
+</string-name>. <article-title>Big data in medicine is driving big changes</article-title>. <source>Yearb Med Inform</source>. <year>2014</year>;<volume>23</volume>:<fpage>14</fpage>–<lpage>20</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.15265/IY-2014-0020</pub-id><pub-id pub-id-type="pmcid">PMC4287083</pub-id><pub-id pub-id-type="pmid">25123716</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="ksa70109-cit-0029">
+<string-name name-style="western">
+<surname>Matsuo</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>LeCun</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sahani</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Precup</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Silver</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sugiyama</surname>
+<given-names>M</given-names>
+</string-name>, et al. <article-title>Deep learning, reinforcement learning, and world models</article-title>. <source>Neural Net</source>. <year>2022</year>;<volume>152</volume>:<fpage>267</fpage>–<lpage>275</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.neunet.2022.03.037</pub-id><pub-id pub-id-type="pmid">35569196</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0030"><label>30</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0030">
+<string-name name-style="western">
+<surname>Mosca</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Such</surname>
+<given-names>J</given-names>
+</string-name>. ELVIRA: an explainable agent for value and utility‐driven multiuser privacy. Paper presented at: International Conference on Autonomous Agents and Multiagent Systems (AAMAS); 2021.</mixed-citation></ref><ref id="ksa70109-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="ksa70109-cit-0031">
+<string-name name-style="western">
+<surname>Oeding</surname>
+<given-names>JF</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Williams</surname>
+<given-names>RJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nwachukwu</surname>
+<given-names>BU</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Martin</surname>
+<given-names>RK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kelly</surname>
+<given-names>BT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Karlsson</surname>
+<given-names>J</given-names>
+</string-name>, et al. <article-title>A practical guide to the development and deployment of deep learning models for the Orthopedic surgeon: part II</article-title>. <source>Knee Surg Sports Traumatol Arthrosc</source>. <year>2023</year>;<volume>31</volume>(<issue>5</issue>):<fpage>1635</fpage>–<lpage>1643</lpage>.<pub-id pub-id-type="pmid">36773057</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00167-023-07338-7</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="ksa70109-cit-0032">
+<string-name name-style="western">
+<surname>Oettl</surname>
+<given-names>FC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Oeding</surname>
+<given-names>JF</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Samuelsson</surname>
+<given-names>K</given-names>
+</string-name>. <article-title>Explainable artificial intelligence in orthopedic surgery</article-title>. <source>J Exp Orthop</source>. <year>2024</year>;<volume>11</volume>(<issue>3</issue>):<elocation-id>e12103</elocation-id>.<pub-id pub-id-type="pmid">39021892</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jeo2.12103</pub-id><pub-id pub-id-type="pmcid">PMC11252490</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="ksa70109-cit-0033">
+<string-name name-style="western">
+<surname>Oettl</surname>
+<given-names>FC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pareek</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Winkler</surname>
+<given-names>PW</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zsidai</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pruneski</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Senorski</surname>
+<given-names>EH</given-names>
+</string-name>, et al. <article-title>A practical guide to the implementation of AI in orthopaedic research, Part 6: how to evaluate the performance of AI research?</article-title>
+<source>J Exp Orthop</source>. <year>2024</year>;<volume>11</volume>(<issue>3</issue>):<elocation-id>e12039</elocation-id>.<pub-id pub-id-type="pmid">38826500</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jeo2.12039</pub-id><pub-id pub-id-type="pmcid">PMC11141501</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0034"><label>34</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0034">
+<string-name name-style="western">
+<surname>Pandey</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Amod</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shivang</surname>
+</string-name>. Advancing healthcare automation: multi‐agent system for medical necessity justification; arXiv:2404.17977; <year>2024</year>; Available from: <pub-id pub-id-type="doi">10.48550/arXiv.2404.17977</pub-id>; <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://ui.adsabs.harvard.edu/abs/2024arXiv240417977P" ext-link-type="uri">https://ui.adsabs.harvard.edu/abs/2024arXiv240417977P</ext-link>
+</mixed-citation></ref><ref id="ksa70109-bib-0035"><label>35</label><mixed-citation publication-type="journal" id="ksa70109-cit-0035">
+<string-name name-style="western">
+<surname>Petrova‐Dimitrova</surname>
+<given-names>VS</given-names>
+</string-name>. <article-title>Classifications of intelligence agents and their applications</article-title>. <source>J Fundament Sci Appl</source>. <year>2022</year>;<volume>28</volume>.</mixed-citation></ref><ref id="ksa70109-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="ksa70109-cit-0036">
+<string-name name-style="western">
+<surname>Polce</surname>
+<given-names>EM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kunze</surname>
+<given-names>KN</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fu</surname>
+<given-names>MC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Garrigues</surname>
+<given-names>GE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Forsythe</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nicholson</surname>
+<given-names>GP</given-names>
+</string-name>, et al. <article-title>Development of supervised machine learning algorithms for prediction of satisfaction at 2 years following total shoulder arthroplasty</article-title>. <source>J Shoulder Elbow Surg</source>. <year>2021</year>;<volume>30</volume>:<fpage>e290</fpage>–<lpage>e299</lpage>.<pub-id pub-id-type="pmid">33010437</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jse.2020.09.007</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="ksa70109-cit-0037">
+<string-name name-style="western">
+<surname>Pruneski</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pareek</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kunze</surname>
+<given-names>KN</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Martin</surname>
+<given-names>RK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Karlsson</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Oeding</surname>
+<given-names>JF</given-names>
+</string-name>, et al. <article-title>Supervised machine learning and associated algorithms: applications in orthopedic surgery</article-title>. <source>Knee Surg Sports Traumatol Arthrosc</source>. <year>2023</year>;<volume>31</volume>(<issue>4</issue>):<fpage>1196</fpage>–<lpage>1202</lpage>.<pub-id pub-id-type="pmid">36222893</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00167-022-07181-2</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="ksa70109-cit-0038">
+<string-name name-style="western">
+<surname>Pruneski</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pareek</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nwachukwu</surname>
+<given-names>BU</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Martin</surname>
+<given-names>RK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kelly</surname>
+<given-names>BT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Karlsson</surname>
+<given-names>J</given-names>
+</string-name>, et al. <article-title>Natural language processing: using artificial intelligence to understand human language in orthopedics</article-title>. <source>Knee Surg Sports Traumatol Arthrosc</source>. <year>2023</year>;<volume>31</volume>(<issue>4</issue>):<fpage>1203</fpage>–<lpage>1211</lpage>.<pub-id pub-id-type="pmid">36477347</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00167-022-07272-0</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0039"><label>39</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0039">
+<string-name name-style="western">
+<surname>Putta</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mills</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Garg</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Motwani</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Finn</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Garg</surname>
+<given-names>D</given-names>
+</string-name>, et al. Agent q: advanced reasoning and learning for autonomous ai agents. arXiv preprint arXiv:2408.07199; 2024.</mixed-citation></ref><ref id="ksa70109-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="ksa70109-cit-0040">
+<string-name name-style="western">
+<surname>Rouzrokh</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Khosravi</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mickley</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Erickson</surname>
+<given-names>BJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Taunton</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wyles</surname>
+<given-names>CC</given-names>
+</string-name>. <article-title>THA‐Net: a deep learning solution for next‐generation templating and patient‐specific surgical execution</article-title>. <source>J Arthroplasty</source>. <year>2024</year>;<volume>39</volume>:<fpage>727</fpage>–<lpage>733.e4</lpage>.<pub-id pub-id-type="pmid">37619804</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.arth.2023.08.063</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0041"><label>41</label><mixed-citation publication-type="book" id="ksa70109-cit-0041">
+<string-name name-style="western">
+<surname>Russell</surname>
+<given-names>SJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Norvig</surname>
+<given-names>P</given-names>
+</string-name>. <source>Artificial intelligence: a modern approach</source>. <publisher-name>Pearson</publisher-name>; <year>2016</year>.</mixed-citation></ref><ref id="ksa70109-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="ksa70109-cit-0042">
+<string-name name-style="western">
+<surname>Gaurav Samdani</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kabita Paul</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Flavia Saldanha</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>Agentic AI in the age of hyper‐automation</article-title>. <source>World J Adv Eng Technol Sci</source>. <year>2023</year>;<volume>8</volume>:<fpage>416</fpage>–<lpage>427</lpage>.</mixed-citation></ref><ref id="ksa70109-bib-0043"><label>43</label><mixed-citation publication-type="journal" id="ksa70109-cit-0043">
+<string-name name-style="western">
+<surname>Sanders</surname>
+<given-names>TL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pareek</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Desai</surname>
+<given-names>VS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hewett</surname>
+<given-names>TE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Levy</surname>
+<given-names>BA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Stuart</surname>
+<given-names>MJ</given-names>
+</string-name>, et al. <article-title>Low accuracy of diagnostic codes to identify anterior cruciate ligament tear in orthopaedic database research</article-title>. <source>Am J Sports Med</source>. <year>2018</year>;<volume>46</volume>:<fpage>2894</fpage>–<lpage>2898</lpage>.<pub-id pub-id-type="pmid">30125126</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/0363546518790507</pub-id><pub-id pub-id-type="pmcid">PMC6407707</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0044"><label>44</label><mixed-citation publication-type="journal" id="ksa70109-cit-0044">
+<string-name name-style="western">
+<surname>Siddiqui</surname>
+<given-names>IA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Littlefield</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Carlson</surname>
+<given-names>LA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gong</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chhabra</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Menezes</surname>
+<given-names>Z</given-names>
+</string-name>, et al. <article-title>Fair AI‐powered orthopedic image segmentation: addressing bias and promoting equitable healthcare</article-title>. <source>Sci Rep</source>. <year>2024</year>;<volume>14</volume>:<elocation-id>16105</elocation-id>.<pub-id pub-id-type="pmid">38997335</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41598-024-66873-6</pub-id><pub-id pub-id-type="pmcid">PMC11245517</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0045"><label>45</label><mixed-citation publication-type="journal" id="ksa70109-cit-0045">
+<string-name name-style="western">
+<surname>Suzuki</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Maki</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yamazaki</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wakita</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Toguchi</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Horii</surname>
+<given-names>M</given-names>
+</string-name>, et al. <article-title>Detecting distal radial fractures from wrist radiographs using a deep convolutional neural network with an accuracy comparable to hand orthopedic surgeons</article-title>. <source>J Digit Imaging</source>. <year>2022</year>;<volume>35</volume>:<fpage>39</fpage>–<lpage>46</lpage>.<pub-id pub-id-type="pmid">34913132</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s10278-021-00519-1</pub-id><pub-id pub-id-type="pmcid">PMC8854542</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0046"><label>46</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0046">
+<string-name name-style="western">
+<surname>Swanson</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wu</surname>
+<given-names>W</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bulaong</surname>
+<given-names>NL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pak</surname>
+<given-names>JE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zou</surname>
+<given-names>J</given-names>
+</string-name>. The virtual lab: AI agents design new SARS‐CoV‐2 nanobodies with experimental validation. bioRxiv 2024.2011. 2011.623004; 2024.</mixed-citation></ref><ref id="ksa70109-bib-0047"><label>47</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0047">
+<string-name name-style="western">
+<surname>Tavabi</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Singh</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pruneski</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kiapour</surname>
+<given-names>AM</given-names>
+</string-name>. Systematic evaluation of common natural language processing techniques to codify clinical notes. medRxiv;2010.2010.22280852; 2022. <pub-id pub-id-type="doi">10.1101/2022.10.10.22280852</pub-id>
+<pub-id pub-id-type="pmcid">PMC10919678</pub-id><pub-id pub-id-type="pmid">38451905</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0048"><label>48</label><mixed-citation publication-type="journal" id="ksa70109-cit-0048">
+<string-name name-style="western">
+<surname>Winkler</surname>
+<given-names>PW</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zsidai</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hamrin Senorski</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pruneski</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hirschmann</surname>
+<given-names>MT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ley</surname>
+<given-names>C</given-names>
+</string-name>, et al. <article-title>A practical guide to the implementation of AI in orthopaedic research—Part 7: risks, limitations, safety and verification of medical AI systems</article-title>. <source>J Exp Orthop</source>. <year>2025</year>;<volume>12</volume>:<elocation-id>e70247</elocation-id>.<pub-id pub-id-type="pmid">40276496</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jeo2.70247</pub-id><pub-id pub-id-type="pmcid">PMC12019299</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0049"><label>49</label><mixed-citation publication-type="book" id="ksa70109-cit-0049">
+<string-name name-style="western">
+<surname>Wooldridge</surname>
+<given-names>M</given-names>
+</string-name>. <source>An introduction to multiagent systems</source>, <publisher-name>John Wiley &amp; Sons</publisher-name>; <year>2009</year>.</mixed-citation></ref><ref id="ksa70109-bib-0050"><label>50</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0050">
+<string-name name-style="western">
+<surname>Yao</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhao</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yu</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Du</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shafran</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Narasimhan</surname>
+<given-names>K</given-names>
+</string-name>, et al. ReAct: synergizing reasoning and acting in language models; arXiv:2210.03629; <year>2022</year>; Available from: <pub-id pub-id-type="doi">10.48550/arXiv.2210.03629</pub-id>; <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://ui.adsabs.harvard.edu/abs/2022arXiv221003629Y" ext-link-type="uri">https://ui.adsabs.harvard.edu/abs/2022arXiv221003629Y</ext-link>
+</mixed-citation></ref><ref id="ksa70109-bib-0051"><label>51</label><mixed-citation publication-type="journal" id="ksa70109-cit-0051">
+<string-name name-style="western">
+<surname>Yao</surname>
+<given-names>SY</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>XZ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Podder</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wu</surname>
+<given-names>CT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chan</surname>
+<given-names>YS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Berco</surname>
+<given-names>D</given-names>
+</string-name>, et al. <article-title>Enhanced reliability and time efficiency of deep learning‐based posterior tibial slope measurement over manual techniques</article-title>. <source>Knee Surg Sports Traumatol Arthrosc</source>. <year>2025</year>;<volume>33</volume>:<fpage>59</fpage>–<lpage>69</lpage>.<pub-id pub-id-type="pmid">38796728</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/ksa.12241</pub-id></mixed-citation></ref><ref id="ksa70109-bib-0052"><label>52</label><mixed-citation publication-type="journal" id="ksa70109-cit-0052">
+<string-name name-style="western">
+<surname>Yun</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>L</given-names>
+</string-name>. <article-title>Explainable multi‐agent deep reinforcement learning for real‐time demand response towards sustainable manufacturing</article-title>. <source>Appl Energy</source>. <year>2023</year>;<volume>347</volume>:<elocation-id>121324</elocation-id>.</mixed-citation></ref><ref id="ksa70109-bib-0053"><label>53</label><mixed-citation publication-type="journal" id="ksa70109-cit-0053">
+<string-name name-style="western">
+<surname>Zheng</surname>
+<given-names>X‐l</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhu</surname>
+<given-names>M‐y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>Q‐b</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>C‐c</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tan</surname>
+<given-names>Y‐c</given-names>
+</string-name>. <article-title>FinBrain: when finance meets AI 2.0</article-title>. <source>Front Inform Technol Electr Eng</source>. <year>2019</year>;<volume>20</volume>:<fpage>914</fpage>–<lpage>924</lpage>.</mixed-citation></ref><ref id="ksa70109-bib-0054"><label>54</label><mixed-citation publication-type="miscellaneous" id="ksa70109-cit-0054">
+<string-name name-style="western">
+<surname>Zhuge</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Faccio</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ashley</surname>
+<given-names>DR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Csordás</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gopalakrishnan</surname>
+<given-names>A</given-names>
+</string-name>, et al. Mindstorms in natural language‐based societies of mind; arXiv:2305.17066; <year>2023</year>; Available from: <pub-id pub-id-type="doi">10.48550/arXiv.2305.17066</pub-id>; <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://ui.adsabs.harvard.edu/abs/2023arXiv230517066Z" ext-link-type="uri">https://ui.adsabs.harvard.edu/abs/2023arXiv230517066Z</ext-link>
+</mixed-citation></ref><ref id="ksa70109-bib-0055"><label>55</label><mixed-citation publication-type="journal" id="ksa70109-cit-0055">
+<string-name name-style="western">
+<surname>Zsidai</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kaarre</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Narup</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hamrin Senorski</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pareek</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Grassi</surname>
+<given-names>A</given-names>
+</string-name>, et al. <article-title>A practical guide to the implementation of artificial intelligence in orthopaedic research—Part 2: a technical introduction</article-title>. <source>J Exp Orthop</source>. <year>2024</year>;<volume>11</volume>:<elocation-id>e12025</elocation-id>.<pub-id pub-id-type="pmid">38715910</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jeo2.12025</pub-id><pub-id pub-id-type="pmcid">PMC11076014</pub-id></mixed-citation></ref></ref-list></back></article>

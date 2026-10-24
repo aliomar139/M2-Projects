@@ -1,0 +1,79 @@
+=== PDF PAGE 1 ===
+DISCOVER ARTIFICIAL INTELLIGENCE • 2026.0 Top 100 Orthopedic AI • Rank #68
+A survey on deep reinforcement learning for personalized
+treatment featuring challenges and a theoretical
+framework
+Bipasha Kaul, Rashmi Naveen Raj, Veena Mayya, Ramya D. Shetty
+Journal:
+Discover Artificial Intelligence
+Publication Year:
+2026.0
+Citations:
+0
+DOI:
+10.1007/s44163-026-01733-y
+CLINICAL & AGENTIC AI TAKEAWAY
+Deep reinforcement learning can optimize personalized treatment planning by balancing clinical and non-
+clinical objectives, enhancing safety in healthcare applications.
+ABSTRACT
+Personalized treatment is a paradigm shift in the medical field that provides individualized treatment strategies based on
+comprehensive patient data including habitat, genomic, and medical profile, etc. Integrating this into the conventional
+clinical process involves collaborative strategic planning with stakeholders from diverse sectors. The scope of this survey
+is limited to studies that apply reinforcement learning, deep reinforcement learning, and multi-objective deep
+reinforcement learning to sequential decision making in personalized treatment. The review addresses these main
+questions: Why are reinforcement learning and its variants suitable for personalized treatment?How are these algorithms
+applied in clinical settings of various domains? How are states, actions and rewards defined? What are the requirements,
+challenges at every stage of model development for deploying these models in safety-critical healthcare applications?
+Early studies primarily focused on reinforcement learning with single objective, while more works have increasingly
+adopted deep variants to manage high-dimensional state-action spaces, and a sparse literature exists with multi-objective
+approach to address conflicting treatment options. Most existing research is concentrated on using publicly available
+MIMIC- III /IV dataset in ICU settings, oncology related resources including, The Cancer Genome Atlas, Genomics of
+Drug Sensitivity in Cancer, The Catalogue of Somatic Mutations In Cancer. To the best of our knowledge, this is the first
+survey to emphasize: (i) the need for multi-objective optimization with sequential personalized treatment planning, (ii) the
+integration of non-clinical objectives such as patient preferences, hospital infrastructure, insurance coverage, etc., and
+stake-holders into decision framework, (iii) the theoretical and conceptual model of a multi-modal multi-objective deep
+reinforcement learning aiming at optimizing the treatment regimes using a newly introduced time-weighted reward
+integration block to balance multiple, potentially conflicting clinical as well as non-clinical objectives.
+Study Overview & Background
+Personalized treatment is a paradigm shift in the medical field that provides individualized treatment strategies based on
+comprehensive patient data including habitat, genomic, and medical profile, etc. Integrating this into the conventional
+clinical process involves collaborative strategic planning with stakeholders from diverse sectors. The scope of this survey
+is limited to studies that apply reinforcement learning, deep reinforcement learning, and multi-objective deep
+reinforcement learning to sequential decision making in personalized treatment. The review addresses these main
+
+=== PDF PAGE 2 ===
+questions: Why are reinforcement learning and its variants suitable for personalized treatment?How are these algorithms
+applied in clinical settings of various domains? How are states, actions and rewards defined? What are the requirements,
+challenges at every stage of model development for deploying these models in safety-critical healthcare applications?
+Early studies primarily focused on reinforcement learning with single objective, while more works have increasingly
+adopted deep variants to manage high-dimensional state-action spaces, and a sparse literature exists with multi-objective
+approach to address conflicting treatment options. Most existing research is concentrated on using publicly available
+MIMIC- III /IV dataset in ICU settings, oncology related resources including, The Cancer Genome Atlas, Genomics of
+Drug Sensitivity in Cancer, The Catalogue of Somatic Mutations In Cancer. To the best of our knowledge, this is the first
+survey to emphasize: (i) the need for multi-objective optimization with sequential personalized treatment planning, (ii) the
+integration of non-clinical objectives such as patient preferences, hospital infrastructure, insurance coverage, etc., and
+stake-holders into decision framework, (iii) the theoretical and conceptual model of a multi-modal multi-objective deep
+reinforcement learning aiming at optimizing the treatment regimes using a newly introduced time-weighted reward
+integration block to balance multiple, potentially conflicting clinical as well as non-clinical objectives.
+Methodology & Clinical Focus
+Study Classification: literature review. Evaluated under orthopedic machine learning and artificial intelligence decision
+frameworks.
+Key Findings & Analysis
+Deep reinforcement learning can optimize personalized treatment planning by balancing clinical and non-clinical
+objectives, enhancing safety in healthcare applications.
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+Bibliographic Details & Indexing
+Authors: Bipasha Kaul, Rashmi Naveen Raj, Veena Mayya, Ramya D. Shetty
+Journal / Venue: Discover Artificial Intelligence (2026.0)
+SJR Metric: Quartile 1.0
+Citation Count: 0 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.1007/s44163-026-01733-y
+Consensus Evidence Link: https://consensus.app/papers/a-survey-on-deep-reinforcement-learning-for-
+personalized-kaul-raj/2b925f41c4e15e71bc5f97ecd208c94c/
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1007/s44163-026-01733-y •
+Consensus Page: https://consensus.app/papers/a-survey-on-deep-reinforcement-learning-for-personalized-kaul-
+raj/2b925f41c4e15e71bc5f97ecd208c94c/ • Verified and rendered via Deep Search & Academic Repositories.

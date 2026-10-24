@@ -1,0 +1,662 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          20
+        ]
+      ],
+      "date-time": "2026-10-20T12:30:01Z",
+      "timestamp": 1792499401046,
+      "version": "4.5.0"
+    },
+    "reference-count": 42,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              1,
+              8
+            ]
+          ],
+          "date-time": "2014-01-08T00:00:00Z",
+          "timestamp": 1389139200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.plosone.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PLoS ONE"
+    ],
+    "DOI": "10.1371/journal.pone.0083875",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2014,
+          1,
+          8
+        ]
+      ],
+      "date-time": "2014-01-08T21:49:45Z",
+      "timestamp": 1389217785000
+    },
+    "page": "e83875",
+    "update-policy": "https://doi.org/10.1371/journal.pone.corrections_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 385,
+    "title": [
+      "The Personalized Advantage Index: Translating Research on Prediction into Individualized Treatment Recommendations. A Demonstration"
+    ],
+    "prefix": "10.1371",
+    "volume": "9",
+    "author": [
+      {
+        "given": "Robert J.",
+        "family": "DeRubeis",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zachary D.",
+        "family": "Cohen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nicholas R.",
+        "family": "Forand",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jay C.",
+        "family": "Fournier",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lois A.",
+        "family": "Gelfand",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lorenzo",
+        "family": "Lorenzo-Luaces",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "340",
+    "published-online": {
+      "date-parts": [
+        [
+          2014,
+          1,
+          8
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "crossref",
+        "first-page": "301",
+        "DOI": "10.1056/NEJMp1006304",
+        "article-title": "The Path to Personalized Medicine",
+        "volume": "363",
+        "author": "MA Hamburg",
+        "year": "2010",
+        "journal-title": "New England Journal of Medicine"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "crossref",
+        "first-page": "1149",
+        "DOI": "10.2217/pgs.10.97",
+        "article-title": "Realities and expectations of pharmacogenomics and personalized medicine: impact of translating genetic knowledge into clinical practice",
+        "volume": "11",
+        "author": "A Squassina",
+        "year": "2010",
+        "journal-title": "Pharmacogenomics"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "crossref",
+        "first-page": "277",
+        "DOI": "10.1097/YIC.0b013e3283306a2f",
+        "article-title": "The role of pharmacogenetics in the treatment of depression and anxiety disorders",
+        "volume": "24",
+        "author": "A Schosser",
+        "year": "2009",
+        "journal-title": "International Clinical Psychopharmacology"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "crossref",
+        "first-page": "1445",
+        "DOI": "10.1176/appi.ajp.2010.09111680",
+        "article-title": "Personalized medicine for depression: can we match patients with treatments?",
+        "volume": "167",
+        "author": "GE Simon",
+        "year": "2010",
+        "journal-title": "Am J Psychiatry"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "crossref",
+        "first-page": "76",
+        "DOI": "10.1038/mp.2009.89",
+        "article-title": "Genome-wide pharmacogenomic analysis of response to treatment with antipsychotics",
+        "volume": "16",
+        "author": "JL McClay",
+        "year": "2011",
+        "journal-title": "Mol Psychiatry"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "crossref",
+        "first-page": "760",
+        "DOI": "10.1038/mp.2011.146",
+        "article-title": "Pharmacogenetics in psychiatry: translating research into clinical practice",
+        "volume": "17",
+        "author": "AK Malhotra",
+        "year": "2012",
+        "journal-title": "Mol Psychiatry"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "crossref",
+        "first-page": "1092",
+        "DOI": "10.1002/hbm.20450",
+        "article-title": "Predicting the brain response to treatment using a Bayesian hierarchical model with application to a study of schizophrenia",
+        "volume": "29",
+        "author": "Y Guo",
+        "year": "2008",
+        "journal-title": "Hum Brain Mapp"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "crossref",
+        "first-page": "1497",
+        "DOI": "10.1016/j.neuroimage.2010.11.079",
+        "article-title": "Prognostic prediction of therapeutic response in depression using high-field MR imaging",
+        "volume": "55",
+        "author": "Q Gong",
+        "year": "2011",
+        "journal-title": "NeuroImage"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "crossref",
+        "first-page": "507",
+        "DOI": "10.1016/j.neuropharm.2012.04.021",
+        "article-title": "The neurobiology of the EEG biomarker as a predictor of treatment response in depression",
+        "volume": "63",
+        "author": "A Baskaran",
+        "year": "2012",
+        "journal-title": "Neuropharmacology"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "crossref",
+        "first-page": "267",
+        "DOI": "10.1037/0022-006X.75.2.267",
+        "article-title": "Progressive resistance to a selective serotonin reuptake inhibitor but not to cognitive therapy in the treatment of major depression",
+        "volume": "75",
+        "author": "Y Leykin",
+        "year": "2007",
+        "journal-title": "J Consult Clin Psychol"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "crossref",
+        "first-page": "124",
+        "DOI": "10.1192/bjp.bp.107.037234",
+        "article-title": "Antidepressant medications v. cognitive therapy in people with depression with or without personality disorder",
+        "volume": "192",
+        "author": "JC Fournier",
+        "year": "2008",
+        "journal-title": "The British Journal of Psychiatry"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "crossref",
+        "first-page": "775",
+        "DOI": "10.1037/a0015401",
+        "article-title": "Prediction of response to medication and cognitive therapy in the treatment of moderate to severe depression",
+        "volume": "77",
+        "author": "JC Fournier",
+        "year": "2009",
+        "journal-title": "J Consult Clin Psychol"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "crossref",
+        "first-page": "431",
+        "DOI": "10.1001/archpsyc.56.5.431",
+        "article-title": "Treatment of atypical depression with cognitive therapy or phenelzine: a double-blind, placebo-controlled trial",
+        "volume": "56",
+        "author": "RB Jarrett",
+        "year": "1999",
+        "journal-title": "Arch Gen Psychiatry"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "crossref",
+        "first-page": "1668",
+        "DOI": "10.1126/science.2648573",
+        "article-title": "Clinical versus actuarial judgment",
+        "volume": "243",
+        "author": "RM Dawes",
+        "year": "1989",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "crossref",
+        "first-page": "951",
+        "DOI": "10.1037/0022-006X.64.5.951",
+        "article-title": "The role of avoidance and obsessiveness in matching patients to cognitive and interpersonal psychotherapy: Empirical findings from the Treatment for Depression Collaborative Research Program",
+        "volume": "64",
+        "author": "JP Barber",
+        "year": "1996",
+        "journal-title": "J Consult Clin Psychol"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "crossref",
+        "first-page": "409",
+        "DOI": "10.1001/archpsyc.62.4.409",
+        "article-title": "Cognitive therapy vs medications in the treatment of moderate to severe depression",
+        "volume": "62",
+        "author": "RJ DeRubeis",
+        "year": "2005",
+        "journal-title": "Arch Gen Psychiatry"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "crossref",
+        "first-page": "417",
+        "DOI": "10.1001/archpsyc.62.4.417",
+        "article-title": "Prevention of relapse following cognitive therapy vs medications in moderate to severe depression",
+        "volume": "62",
+        "author": "SD Hollon",
+        "year": "2005",
+        "journal-title": "Arch Gen Psychiatry"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "crossref",
+        "first-page": "56",
+        "DOI": "10.1136/jnnp.23.1.56",
+        "article-title": "A rating scale for depression",
+        "volume": "23",
+        "author": "M Hamilton",
+        "year": "1960",
+        "journal-title": "J Neurol Neurosurg Psychiatry"
+      },
+      {
+        "key": "ref19",
+        "unstructured": "National Institute for Clinical Excellence (2004) Depression: Management of Depression in Primary and Secondary Care. London, England: National Institute for Clinical Excellence."
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "crossref",
+        "first-page": "e45",
+        "DOI": "10.1371/journal.pmed.0050045",
+        "article-title": "Initial severity and antidepressant benefits: a meta-analysis of data submitted to the Food and Drug Administration",
+        "volume": "5",
+        "author": "I Kirsch",
+        "year": "2008",
+        "journal-title": "PLoS Med"
+      },
+      {
+        "key": "ref21",
+        "unstructured": "Draper NR, Smith H (2003) Applied regression analysis. Singapore: John Wiley and Sons."
+      },
+      {
+        "key": "ref22",
+        "unstructured": "Hollon SD, Beck AT (1986) Predicting outcome versus differential response: Matching clients to treatment. Rockville, MD."
+      },
+      {
+        "key": "ref23",
+        "unstructured": "Zachary RA, Western Psychological Services Firm (1991) Shipley Institute of Living Scale. Los Angeles, CA: WPS, Western Psychological Services."
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "crossref",
+        "first-page": "141",
+        "DOI": "10.1002/mpr.170",
+        "article-title": "Centring in regression analyses: a strategy to prevent errors in statistical inference",
+        "volume": "13",
+        "author": "H Kraemer",
+        "year": "2004",
+        "journal-title": "International Journal of Methods in Psychiatric Research"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "crossref",
+        "first-page": "36",
+        "DOI": "10.1080/00031305.1983.10483087",
+        "article-title": "A leisurely look at the bootstrap, the jackknife, and cross-validation",
+        "volume": "37",
+        "author": "B Efron",
+        "year": "1983",
+        "journal-title": "The American Statistician"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "crossref",
+        "first-page": "361",
+        "DOI": "10.1002/(SICI)1097-0258(19960229)15:4<361::AID-SIM168>3.0.CO;2-4",
+        "article-title": "Tutorial in biostatistics multivariable prognostic models: issues in developing models, evaluating assumptions and adequacy, and measuring and reducing errors",
+        "volume": "15",
+        "author": "FE Harrell",
+        "year": "1996",
+        "journal-title": "Stat Med"
+      },
+      {
+        "key": "ref27",
+        "unstructured": "Abdi H, Williams LJ (2010) Jackknife. In Salkind NJ, Dougherty DM, Frey B, editors. Encyclopedia of Research Design. Thousand Oaks, CA: Sage Publications, Incorporated. pp. 655–60."
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "crossref",
+        "first-page": "252",
+        "DOI": "10.1056/NEJMsa065779",
+        "article-title": "Selective Publication of Antidepressant Trials and Its Influence on Apparent Efficacy",
+        "volume": "358",
+        "author": "EH Turner",
+        "year": "2008",
+        "journal-title": "N Engl J Med"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "crossref",
+        "first-page": "97",
+        "DOI": "10.1192/bjp.bp.111.096594",
+        "article-title": "Putting the efficacy of psychiatric and general medicine medication into perspective: review of meta-analyses",
+        "volume": "200",
+        "author": "S Leucht",
+        "year": "2012",
+        "journal-title": "The British Journal of Psychiatry"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "crossref",
+        "first-page": "788",
+        "DOI": "10.1038/nrn2345",
+        "article-title": "Cognitive therapy versus medication for depression: treatment outcomes and neural mechanisms",
+        "volume": "9",
+        "author": "RJ DeRubeis",
+        "year": "2008",
+        "journal-title": "Nat Rev Neurosci"
+      },
+      {
+        "key": "ref31",
+        "doi-asserted-by": "crossref",
+        "first-page": "203",
+        "DOI": "10.1016/j.neuron.2007.11.017",
+        "article-title": "Polymorphisms in the Drug Transporter Gene ABCB1 Predict Antidepressant Treatment Response in Depression",
+        "volume": "57",
+        "author": "M Uhr",
+        "year": "2008",
+        "journal-title": "Neuron"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "crossref",
+        "unstructured": "McGrath CL, Kelley ME, Holtzheimer PE, Dunlop BW, Craighead WE, <etal>et al</etal>.. (2013) Toward a Neuroimaging Treatment Selection Biomarker for Major Depressive Disorder. JAMA Psychiatry: 1–9. doi:10.1001/jamapsychiatry.2013.143.",
+        "DOI": "10.1001/jamapsychiatry.2013.143"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "crossref",
+        "first-page": "966",
+        "DOI": "10.1001/archgenpsychiatry.2009.95",
+        "article-title": "A genomewide association study points to multiple loci that predict antidepressant drug treatment outcome in depression",
+        "volume": "66",
+        "author": "M Ising",
+        "year": "2009",
+        "journal-title": "Arch Gen Psychiatry"
+      },
+      {
+        "key": "ref34",
+        "doi-asserted-by": "crossref",
+        "first-page": "1130",
+        "DOI": "10.1093/schbul/sbn114",
+        "article-title": "Pharmacogenetics in Psychiatry: Are We Ready for Widespread Clinical Use?",
+        "volume": "34",
+        "author": "MJ Arranz",
+        "year": "2008",
+        "journal-title": "Schizophrenia Bulletin"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "crossref",
+        "first-page": "1076",
+        "DOI": "10.1038/mp.2011.63",
+        "article-title": "Translating biomarkers to clinical practice",
+        "volume": "16",
+        "author": "RH Perlis",
+        "year": "2011",
+        "journal-title": "Mol Psychiatry"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "crossref",
+        "first-page": "109",
+        "DOI": "10.3109/10673229.2011.586551",
+        "article-title": "Genes, environment, and individual differences in responding to treatment for depression",
+        "volume": "19",
+        "author": "R Uher",
+        "year": "2011",
+        "journal-title": "Harvard review of psychiatry"
+      },
+      {
+        "key": "ref37",
+        "volume": "13",
+        "unstructured": "Dunlop BW, Binder EB, Cubells JF, Goodman MG, Kelley ME, <etal>et al</etal>.. (2012) Predictors of Remission in Depression to Individual and Combined Treatments (PReDICT): Study Protocol for a Randomized Controlled Trial. Trials <volume>13</volume> . doi:10.1186/1745-6215-13-106."
+      },
+      {
+        "key": "ref38",
+        "doi-asserted-by": "crossref",
+        "first-page": "877",
+        "DOI": "10.1001/archpsyc.59.10.877",
+        "article-title": "Mediators and moderators of treatment effects in randomized clinical trials",
+        "volume": "59",
+        "author": "HC Kraemer",
+        "year": "2002",
+        "journal-title": "Arch Gen Psychiatry"
+      },
+      {
+        "key": "ref39",
+        "doi-asserted-by": "crossref",
+        "first-page": "1286",
+        "DOI": "10.1001/jama.296.10.1286",
+        "article-title": "Moderators of treatment outcomes: clinical, research, and policy importance",
+        "volume": "296",
+        "author": "HC Kraemer",
+        "year": "2006",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "ref40",
+        "doi-asserted-by": "crossref",
+        "first-page": "445",
+        "DOI": "10.1016/0021-9681(77)90037-6",
+        "article-title": "Selecting optimal treatment in clinical trials using covariate information",
+        "volume": "30",
+        "author": "DP Byar",
+        "year": "1977",
+        "journal-title": "J Chronic Dis"
+      },
+      {
+        "key": "ref41",
+        "doi-asserted-by": "crossref",
+        "first-page": "255",
+        "DOI": "10.1002/sim.4780040304",
+        "article-title": "Assessing apparent treatment—covariate interactions in randomized clinical trials",
+        "volume": "4",
+        "author": "DP Byar",
+        "year": "1985",
+        "journal-title": "Stat Med"
+      },
+      {
+        "key": "ref42",
+        "doi-asserted-by": "crossref",
+        "first-page": "1575",
+        "DOI": "10.1002/sim.4780131508",
+        "article-title": "The choice of cancer treatment based on covariate information",
+        "volume": "13",
+        "author": "A Yakovlev",
+        "year": "1994",
+        "journal-title": "Stat Med"
+      }
+    ],
+    "container-title": [
+      "PLoS ONE"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://dx.plos.org/10.1371/journal.pone.0083875",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          22
+        ]
+      ],
+      "date-time": "2024-05-22T18:42:27Z",
+      "timestamp": 1716403347000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dx.plos.org/10.1371/journal.pone.0083875"
+      }
+    },
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "William C. S.",
+        "family": "Cho",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "editor"
+          }
+        ]
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          1,
+          8
+        ]
+      ]
+    },
+    "references-count": 42,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2014,
+            1,
+            8
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1371/journal.pone.0083875",
+    "relation": {},
+    "ISSN": [
+      "1932-6203"
+    ],
+    "issn-type": [
+      {
+        "value": "1932-6203",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2014,
+          1,
+          8
+        ]
+      ]
+    }
+  }
+}

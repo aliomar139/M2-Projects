@@ -1,60 +1,33 @@
-# Agentic Orthopedics: AI/ML in Orthopedic Treatment Recommendation
+﻿# Agentic Orthopedics
 
-Research exploration and literature review evaluating whether historical clinical records, imaging, and Patient-Reported Outcome Measures (PROMs) can guide individualized orthopedic treatment decisions (conservative vs. operative, surgical technique selection, and recovery tracking).
+Master's thesis research on AI-supported orthopedic treatment decisions, patient outcomes and evidence-grounded agents.
 
----
+**Start with [LR/README.md](LR/README.md).** It lists the professor's tasks, the files to read and what is still unfinished.
 
-## Quick Navigation
+## Where things are
 
-- [Master Literature Review & System Design](./LITERATURE_REVIEW.md)
-- [Research Progress & Thesis Milestones](./RESEARCH_PROGRESS.md)
-- [100-Paper Full-Text PDF Corpus](./top_100_papers/README.md)
-- [Paper Processing & Verification Registry](./Orthopedic_AI_Literature_Review/Paper_Processing_Status.md)
+| Folder | What you will find | When to open it |
+|---|---|---|
+| [LR](LR/README.md) | Current deliverables: dimensions, proposed new dimensions, PRISMA and your writing worksheet | Your main working folder |
+| [LR/Surveys](LR/Surveys/README.md) | Review-paper library, article readers, comparison tables and missing-paper list | Reading and comparing reviews |
+| [research](research/README.md) | Thesis direction, evidence audit and methodological notes | Understanding the research question and its limits |
+| [papers](papers/README.md) | Index of the earlier 100-citation collection and its retained original sources | Looking up a paper from that collection |
+| [data](data/README.md) | Search exports, citation records, extraction tables and audit evidence | Checking a count or tracing a claim |
+| [scripts](scripts/README.md) | Utilities that search, inspect sources and rebuild tables/figures | Reproducing or updating the analysis |
+| [archive](archive/README.md) | Superseded drafts, old workbooks and generated/incorrect source files | Consulting earlier work; these are not current deliverables |
 
----
+## Files you will probably use most
 
-## Streamlined Repository Structure
+- [Review dimensions](LR/Surveys/dimensions.md)
+- [Candidate new dimensions](LR/new_dimensions.md)
+- [PRISMA analysis and diagram](LR/prisma.md)
+- [Paper writing worksheet](LR/paper.md)
+- [Proposed thesis contribution](research/audit/THESIS_CONTRIBUTION.md)
 
-```text
-agentiOrthopedics/
-├── README.md                                # Project overview and repository navigation
-├── LITERATURE_REVIEW.md                     # Master Deliverable: Abstract, 7 SOTA tiers, Top 30 dossier, Gaps, 5-Agent CDSS
-├── RESEARCH_PROGRESS.md                     # Thesis focus, causal ITR formulation, and milestone tracking
-├── Orthopedic_AI_Literature_Review_Master.xlsx # Master workbook of all 100 reviewed papers
-│
-├── top_100_papers/                          # Complete full-text PDF collection (100 papers)
-│   ├── 001_Closed-Loop_digital_...pdf       # Standardized indexed PDFs (001 to 100)
-│   ├── manifest.csv                         # DOIs, download sources, file sizes, verification flags
-│   ├── README.md                            # Table index with direct PDF links
-│   └── orthopedic_ai_papers_summary.md      # Comprehensive summaries of all 100 papers
-│
-├── Orthopedic_AI_Literature_Review/         # Audit logs and historical review archive
-│   ├── Paper_Processing_Status.md           # Full corpus verification registry
-│   └── archive_raw_reports/                 # Preserved raw paper extraction drafts and synthesis sheets
-│
-└── archive/                                 # Historical search datasets (CSV)
-    ├── top_100_orthopedic_ai_papers.csv     # Scored and ranked dataset
-    ├── AgenticAi.csv                        # Initial search on agentic healthcare systems
-    └── CrossDomain.csv                      # Initial search on cross-domain treatment recommendation
-```
+The survey library has 85 working records, with main text available for 57. Screening and appraisal remain incomplete. Proposed new dimensions are candidates, not established first-in-literature claims. The abstract and introduction worksheet remains blank under the professor's no-AI-writing instruction.
 
----
+## Keeping the structure tidy
 
-## Core Focus Areas
+Put current deliverables in `LR/`, new research notes in `research/`, and source/search evidence in `data/`. Keep review articles in `LR/Surveys/sources/`. Move superseded drafts into `archive/` instead of mixing them with current work.
 
-1. **Individualized Treatment Recommendation (ITR)**: Moving past predicting historical surgeon choices (imitation) to estimate counterfactual, patient-specific treatment benefit (optimization).
-2. **Clinical Decision Support Systems (CDSS)**: Preoperative risk assessment, complication avoidance, and surgical triage using tabular clinical registries and PROMs.
-3. **Agentic Workflows & LLMs**: Evaluating autonomous clinical agents, Retrieval-Augmented Generation (RAG) for clinical guidelines, and automated note extraction.
-
----
-
-## Deliverables Summary
-
-| Deliverable | Location | What It Contains |
-| :--- | :--- | :--- |
-| **Unified Master Review** | [`LITERATURE_REVIEW.md`](./LITERATURE_REVIEW.md) | Single master document containing the full 100-paper synthesis: abstract, 7 translational tiers, Top 30 core dossier, 10 evidence gaps, and the 5-agent CDSS architecture. |
-| **Research Progress Tracker** | [`RESEARCH_PROGRESS.md`](./RESEARCH_PROGRESS.md) | Problem formulation ($X \to \hat{A}$ vs $\arg\max_a \mathbb{E}[Y(a)\|X]$), 4 foundational anchor papers, and active Master's thesis milestones. |
-| **Corpus PDF Library** | [`top_100_papers/README.md`](./top_100_papers/README.md) | Directory table linking all 100 full-text PDFs on disk with metadata. |
-| **Corpus Paper Dossier** | [`top_100_papers/orthopedic_ai_papers_summary.md`](./top_100_papers/orthopedic_ai_papers_summary.md) | Ranked technical summaries for all 100 papers. |
-| **Verification Registry** | [`Orthopedic_AI_Literature_Review/Paper_Processing_Status.md`](./Orthopedic_AI_Literature_Review/Paper_Processing_Status.md) | 100% full-text PDF verification audit and DOI cross-references. |
-| **Preserved Raw Archive** | [`Orthopedic_AI_Literature_Review/archive_raw_reports/`](./Orthopedic_AI_Literature_Review/archive_raw_reports/) | Subfolder preserving the 10 raw decomposed drafts and feature matrices for complete auditability. |
+The [cleanup record](data/maintenance/README.md) explains moved files and removed duplicates. Unique papers, earlier notes and search evidence were preserved. The initial collection contained generated summary PDFs and wrong documents; those files are clearly separated in the archive and must not be treated as original research articles.

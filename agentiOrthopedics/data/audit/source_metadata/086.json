@@ -1,0 +1,811 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          15
+        ]
+      ],
+      "date-time": "2026-10-15T22:41:48Z",
+      "timestamp": 1792104108647,
+      "version": "4.4.0"
+    },
+    "reference-count": 72,
+    "publisher": "Wiley",
+    "issue": "20",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              18
+            ]
+          ],
+          "date-time": "2022-06-18T00:00:00Z",
+          "timestamp": 1655510400000
+        },
+        "content-version": "am",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              18
+            ]
+          ],
+          "date-time": "2022-06-18T00:00:00Z",
+          "timestamp": 1655510400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01AG069895"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01AG069895"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01AG065636"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01AG065636"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01AG074858"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01AG074858"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "U01AG073079"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "U01AG073079"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01GM126002"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01GM126002"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000001",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "DMS‐1952539"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "DMS‐1952539"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000001",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "onlinelibrary.wiley.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Statistics in Medicine"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          10
+        ]
+      ]
+    },
+    "abstract": "<jats:p>In precision medicine, the ultimate goal is to recommend the most effective treatment to an individual patient based on patient‐specific molecular and clinical profiles, possibly high‐dimensional. To advance cancer treatment, large‐scale screenings of cancer cell lines against chemical compounds have been performed to help better understand the relationship between genomic features and drug response; existing machine learning approaches use exclusively supervised learning, including penalized regression and recommender systems. However, it would be more efficient to apply reinforcement learning to sequentially learn as data accrue, including selecting the most promising therapy for a patient given individual molecular and clinical features and then collecting and learning from the corresponding data. In this article, we propose a novel personalized ranking system called Proximal Policy Optimization Ranking (PPORank), which ranks the drugs based on their predicted effects per cell line (or patient) in the framework of deep reinforcement learning (DRL). Modeled as a Markov decision process, the proposed method learns to recommend the most suitable drugs sequentially and continuously over time. As a proof‐of‐concept, we conduct experiments on two large‐scale cancer cell line data sets in addition to simulated data. The results demonstrate that the proposed DRL‐based PPORank outperforms the state‐of‐the‐art competitors based on supervised learning. Taken together, we conclude that novel methods in the framework of DRL have great potential for precision medicine and should be further studied.</jats:p>",
+    "DOI": "10.1002/sim.9491",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2022-06-18T09:20:44Z",
+      "timestamp": 1655544044000
+    },
+    "page": "4034-4056",
+    "update-policy": "https://doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 73,
+    "title": [
+      "Deep reinforcement learning for personalized treatment recommendation"
+    ],
+    "prefix": "10.1002",
+    "volume": "41",
+    "author": [
+      {
+        "given": "Mingyang",
+        "family": "Liu",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Statistics University of Minnesota  Minneapolis Minnesota USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1300-1451",
+        "authenticated-orcid": false,
+        "given": "Xiaotong",
+        "family": "Shen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Statistics University of Minnesota  Minneapolis Minnesota USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1159-0582",
+        "authenticated-orcid": false,
+        "given": "Wei",
+        "family": "Pan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Division of Biostatistics University of Minnesota  Minneapolis Minnesota USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          6,
+          18
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_7_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev-statistics-030718-105251"
+      },
+      {
+        "key": "e_1_2_7_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0061318"
+      },
+      {
+        "key": "e_1_2_7_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature11003"
+      },
+      {
+        "key": "e_1_2_7_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cell.2016.06.017"
+      },
+      {
+        "key": "e_1_2_7_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/ng.2764"
+      },
+      {
+        "key": "e_1_2_7_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nbt.2877"
+      },
+      {
+        "key": "e_1_2_7_8_1",
+        "first-page": "63",
+        "volume-title": "Systematic Assessment of Analytical Methods for Drug Sensitivity Prediction from Cancer Cell Line Data",
+        "author": "Jang IS",
+        "year": "2014"
+      },
+      {
+        "issue": "5",
+        "key": "e_1_2_7_9_1",
+        "first-page": "820",
+        "article-title": "Computational models for predicting drug responses in cancer research",
+        "volume": "18",
+        "author": "Azuaje F",
+        "year": "2017",
+        "journal-title": "Brief Bioinform"
+      },
+      {
+        "key": "e_1_2_7_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/btw449"
+      },
+      {
+        "key": "e_1_2_7_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/srep23857"
+      },
+      {
+        "issue": "1",
+        "key": "e_1_2_7_12_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "85",
+        "DOI": "10.1093/bioinformatics/btv529",
+        "article-title": "Improved large‐scale prediction of growth inhibition patterns using the NCI60 cancer cell line panel",
+        "volume": "32",
+        "author": "Cortés‐Ciriano I",
+        "year": "2016",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "e_1_2_7_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12885-017-3500-5"
+      },
+      {
+        "key": "e_1_2_7_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/bty452"
+      },
+      {
+        "key": "e_1_2_7_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/bty132"
+      },
+      {
+        "key": "e_1_2_7_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1158/1541‐7786.MCR‐17‐0378"
+      },
+      {
+        "key": "e_1_2_7_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-016-0001-8"
+      },
+      {
+        "key": "e_1_2_7_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598‐018‐27214‐6"
+      },
+      {
+        "key": "e_1_2_7_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/03610929408831393"
+      },
+      {
+        "key": "e_1_2_7_20_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "RobinsJM.Causal inference from complex longitudinal data; 1997:69‐117; Springer.",
+        "DOI": "10.1007/978-1-4612-1842-5_4"
+      },
+      {
+        "key": "e_1_2_7_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/1467-9868.00389"
+      },
+      {
+        "key": "e_1_2_7_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/sim.3720"
+      },
+      {
+        "key": "e_1_2_7_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1541-0420.2011.01572.x"
+      },
+      {
+        "key": "e_1_2_7_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01621459.2014.937488"
+      },
+      {
+        "key": "e_1_2_7_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev-clinpsy-032511-143152"
+      },
+      {
+        "key": "e_1_2_7_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/cjs.11162"
+      },
+      {
+        "key": "e_1_2_7_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/biomet/ast014"
+      },
+      {
+        "key": "e_1_2_7_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01621459.2017.1345743"
+      },
+      {
+        "key": "e_1_2_7_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/13-STS450"
+      },
+      {
+        "key": "e_1_2_7_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01621459.2012.695674"
+      },
+      {
+        "key": "e_1_2_7_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/sta4.343"
+      },
+      {
+        "key": "e_1_2_7_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01621459.2015.1093947"
+      },
+      {
+        "key": "e_1_2_7_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/biomet/asy043"
+      },
+      {
+        "key": "e_1_2_7_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01621459.2018.1537919"
+      },
+      {
+        "key": "e_1_2_7_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.artmed.2020.101964"
+      },
+      {
+        "key": "e_1_2_7_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3477600"
+      },
+      {
+        "key": "e_1_2_7_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.media.2021.102193"
+      },
+      {
+        "key": "e_1_2_7_38_1",
+        "unstructured": "SchulmanJ WolskiF DhariwalP RadfordA KlimovO.Proximal policy optimization algorithms. arXiv preprint arXiv:1707.06347 2017."
+      },
+      {
+        "key": "e_1_2_7_39_1",
+        "unstructured": "Figueiredo PrudencioR MaximoMR LunaCE.A survey on offline reinforcement learning: taxonomy review and open problems. arXiv e‐prints 2022: arXiv–2203."
+      },
+      {
+        "key": "e_1_2_7_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/18477"
+      },
+      {
+        "key": "e_1_2_7_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/sim.2022"
+      },
+      {
+        "key": "e_1_2_7_42_1",
+        "unstructured": "HumphreyK.Using Reinforcement Learning to Personalize Dosing Strategies in a Simulated Cancer Trial with High Dimensional Data[Master's Theses]. The University of Arizona; 2017."
+      },
+      {
+        "key": "e_1_2_7_43_1",
+        "unstructured": "YauneyG ShahP.Reinforcement learning with action‐derived rewards for chemotherapy and clinical trial dosing regimen selection; 2018:161‐226; PMLR."
+      },
+      {
+        "key": "e_1_2_7_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/mp.12625"
+      },
+      {
+        "key": "e_1_2_7_45_1",
+        "volume-title": "Improving Sepsis Treatment Strategies by Combining Deep and Kernel‐Based Reinforcement Learning",
+        "author": "Peng X",
+        "year": "2018"
+      },
+      {
+        "key": "e_1_2_7_46_1",
+        "unstructured": "WengWH GaoM HeZ YanS SzolovitsP.Representation and reinforcement learning for personalized glycemic control in septic patients. arXiv preprint arXiv:1712.00654; 2017."
+      },
+      {
+        "key": "e_1_2_7_47_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "WangL ZhangW HeX ZhaH.Supervised reinforcement learning with recurrent neural network for dynamic treatment recommendation. Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining; 2018:2447‐2456; ACM New York.",
+        "DOI": "10.1145/3219819.3219961"
+      },
+      {
+        "key": "e_1_2_7_48_1",
+        "unstructured": "PrasadN ChengLF ChiversC DraugelisM EngelhardtBE.A reinforcement learning approach to weaning of mechanical ventilation in intensive care units. arXiv preprint arXiv:1704.06300 2017."
+      },
+      {
+        "key": "e_1_2_7_49_1",
+        "volume-title": "Reinforcement Learning: An Introduction",
+        "author": "Sutton RS",
+        "year": "2018"
+      },
+      {
+        "key": "e_1_2_7_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/582415.582418"
+      },
+      {
+        "key": "e_1_2_7_51_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "WeiZ XuJ LanY GuoJ ChengX.Reinforcement learning to rank with Markov decision process. Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval; 2017:945‐948; ACM New York.",
+        "DOI": "10.1145/3077136.3080685"
+      },
+      {
+        "key": "e_1_2_7_52_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "ClarkeCL KollaM CormackGV et al.Novelty and diversity in information retrieval evaluation. Proceedings of the 31st Annual International ACM SIGIR Conference on Research and Development in Information Retrieval; 2008:659‐666; ACM New York.",
+        "DOI": "10.1145/1390334.1390446"
+      },
+      {
+        "key": "e_1_2_7_53_1",
+        "first-page": "1057",
+        "volume-title": "Advances in Neural Information Processing Systems",
+        "author": "Sutton RS",
+        "year": "2000"
+      },
+      {
+        "key": "e_1_2_7_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3124749.3124754"
+      },
+      {
+        "key": "e_1_2_7_55_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "ChoK Van MerriënboerB GulcehreC et al.Learning phrase representations using RNN encoder‐decoder for statistical machine translation. arXiv preprint arXiv:1406.1078 2014.",
+        "DOI": "10.3115/v1/D14-1179"
+      },
+      {
+        "key": "e_1_2_7_56_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "ZhangW DuT WangJ.Deep learning over multi‐field categorical data. Proceedings of the European Conference on Information Retrieval; 2016:45‐57; Springer New York.",
+        "DOI": "10.1007/978-3-319-30671-1_4"
+      },
+      {
+        "key": "e_1_2_7_57_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "GuoH TangR YeY LiZ HeX.DeepFM: a factorization‐machine based neural network for CTR prediction. arXiv preprint arXiv:1703.04247 2017.",
+        "DOI": "10.24963/ijcai.2017/239"
+      },
+      {
+        "key": "e_1_2_7_58_1",
+        "unstructured": "MikolovT ChenK CorradoG DeanJ.Efficient estimation of word representations in vector space. arXiv preprint arXiv:1301.3781 2013."
+      },
+      {
+        "key": "e_1_2_7_59_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/nar/gkv951"
+      },
+      {
+        "key": "e_1_2_7_60_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/srep36812"
+      },
+      {
+        "key": "e_1_2_7_61_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature11005"
+      },
+      {
+        "key": "e_1_2_7_62_1",
+        "unstructured": "HeadT CarcinomaNSC.Broad institute TCGA genome data analysis center. Firehose Stddata__2016_01_28 run 2016."
+      },
+      {
+        "key": "e_1_2_7_63_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-017-00388-9"
+      },
+      {
+        "key": "e_1_2_7_64_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1101/gr.221077.117"
+      },
+      {
+        "key": "e_1_2_7_65_1",
+        "volume-title": "Machine Learning: A Probabilistic Perspective",
+        "author": "Murphy KP",
+        "year": "2012"
+      },
+      {
+        "key": "e_1_2_7_66_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10791‐009‐9124‐x"
+      },
+      {
+        "key": "e_1_2_7_67_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/bioinformatics/bty277"
+      },
+      {
+        "key": "e_1_2_7_68_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1158/0008-5472.CAN-15-3278"
+      },
+      {
+        "key": "e_1_2_7_69_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature11412"
+      },
+      {
+        "key": "e_1_2_7_70_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1200/JCO.2007.14.0590"
+      },
+      {
+        "key": "e_1_2_7_71_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0140-6736(10)60892-6"
+      },
+      {
+        "key": "e_1_2_7_72_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/bjc.2016.41"
+      },
+      {
+        "key": "e_1_2_7_73_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1158/2159-8290.CD-15-0235"
+      }
+    ],
+    "container-title": [
+      "Statistics in Medicine"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/sim.9491",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/sim.9491",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/sim.9491",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/sim.9491",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          8,
+          23
+        ]
+      ],
+      "date-time": "2023-08-23T14:47:16Z",
+      "timestamp": 1692802036000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://onlinelibrary.wiley.com/doi/10.1002/sim.9491"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          6,
+          18
+        ]
+      ]
+    },
+    "references-count": 72,
+    "journal-issue": {
+      "issue": "20",
+      "published-print": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            10
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1002/sim.9491"
+    ],
+    "URL": "https://doi.org/10.1002/sim.9491",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "0277-6715",
+      "1097-0258"
+    ],
+    "issn-type": [
+      {
+        "value": "0277-6715",
+        "type": "print"
+      },
+      {
+        "value": "1097-0258",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          6,
+          18
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2021-09-14",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2022-05-25",
+        "order": 1,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2022-06-18",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

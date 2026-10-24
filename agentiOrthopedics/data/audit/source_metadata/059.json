@@ -1,0 +1,481 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          1
+        ]
+      ],
+      "date-time": "2026-10-01T00:29:37Z",
+      "timestamp": 1790814577994,
+      "version": "4.1.0"
+    },
+    "reference-count": 28,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "7",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              29
+            ]
+          ],
+          "date-time": "2025-07-29T00:00:00Z",
+          "timestamp": 1753747200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.plosone.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PLoS One"
+    ],
+    "abstract": "<jats:p>Clinical gait analysis (CGA) has historically relied on clinician experience and judgment, leading to modest, stagnant, and unpredictable outcomes. This paper introduces <jats:italic>Evidence-Based Gait Analysis Interpretation Tools</jats:italic> (EB-GAIT), a novel framework leveraging machine learning to support treatment decisions. The core of EB-GAIT consists of two key components: (1) <jats:italic>treatment recommendation models</jats:italic>, which are models that estimate the probability of specific surgeries based on historical standard-of-practice (SOP), and (2) <jats:italic>treatment outcome models</jats:italic>, which predict changes in patient characteristics following treatment or natural history. Using Bayesian Additive Regression Trees (BART), we developed and validated treatment recommendation models for 12 common surgeries that account for more than 95% of the surgery recorded in our CGA center’s database. These models demonstrated high balanced accuracy, sensitivity, and specificity. We used Shapley values for the models to enhances interpretability and allow clinicians and patients to understand the factors driving treatment recommendations. We also developed treatment outcome models for over 20 common outcome measures. These models were found to be unbiased, with reliable prediction intervals and accuracy comparable to experimental measurement error. We illustrated the application of EB-GAIT through a case study, showcasing its utility in providing treatment recommendations and outcome predictions. We then use simulations to show that combining recommendation and outcome models offers the possibility to improve outcomes for treated limbs, maintain outcomes for untreated limbs, and reduce the number of surgeries performed. For example, under the counterfactual situation where femoral derotation osteotomies are administered only when they align with historical standard of practice (&gt; 50% probability of surgery) and are predicted to improve the Gait Deviation Index (change &gt; 7.5 points), the model predicts a 11 percentage point reduction in surgeries (26% limbs currently, 15% limbs simulated), a 6 point improvement in Gait Deviation Index among treated limbs (6 currently, 12 simulated), and no change in Gait Deviation Index for untreated limbs (2 currently, 2 simulated). EB-GAIT represents a significant step toward precision medicine in CGA, offering a promising tool to enhance treatment outcomes and patient care. The EB-GAIT approach addresses the limitations of the conventional CGA interpretation method, offering a more structured and data-driven decision-making process. EB-GAIT is not intended to replace clinical judgment but to supplement it, providing clinicians with a second opinion grounded in historical data and predictive analytics. While the models perform well, their effectiveness is constrained by historical variability in treatment decisions and the inherent complexity of patient outcomes. Future efforts should focus on refining model inputs, incorporating surgical details, and pooling data from multiple centers to improve generalizability.</jats:p>",
+    "DOI": "10.1371/journal.pone.0328036",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          29
+        ]
+      ],
+      "date-time": "2025-07-29T17:36:51Z",
+      "timestamp": 1753810611000
+    },
+    "page": "e0328036",
+    "update-policy": "https://doi.org/10.1371/journal.pone.corrections_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": [
+      "Evidence Based Gait Analysis Interpretation Tools (EB-GAIT) treatment recommendation and outcome prediction models to support decision-making based on clinical gait analysis data"
+    ],
+    "prefix": "10.1371",
+    "volume": "20",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-3388-7413",
+        "authenticated-orcid": true,
+        "given": "Michael H.",
+        "family": "Schwartz",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3624-8273",
+        "authenticated-orcid": true,
+        "given": "Andrew G.",
+        "family": "Georgiadis",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "340",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          29
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "6",
+        "key": "pone.0328036.ref001",
+        "doi-asserted-by": "crossref",
+        "first-page": "759",
+        "DOI": "10.1097/01241398-200011000-00012",
+        "article-title": "Variability in gait analysis interpretation",
+        "volume": "20",
+        "author": "DL Skaggs",
+        "year": "2000",
+        "journal-title": "J Pediatr Orthop"
+      },
+      {
+        "issue": "6",
+        "key": "pone.0328036.ref002",
+        "doi-asserted-by": "crossref",
+        "first-page": "710",
+        "DOI": "10.1111/dmcn.14051",
+        "article-title": "Interobserver reliability in the interpretation of three-dimensional gait analysis in children with gait disorders",
+        "volume": "61",
+        "author": "KK Wang",
+        "year": "2019",
+        "journal-title": "Dev Med Child Neurol"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0328036.ref003",
+        "doi-asserted-by": "crossref",
+        "first-page": "778",
+        "DOI": "10.1016/j.gaitpost.2013.10.016",
+        "article-title": "Femoral derotational osteotomy: surgical indications and outcomes in children with cerebral palsy",
+        "volume": "39",
+        "author": "MH Schwartz",
+        "year": "2014",
+        "journal-title": "Gait Posture"
+      },
+      {
+        "issue": "4",
+        "key": "pone.0328036.ref004",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1371/journal.pone.0301230",
+        "article-title": "Demonstrating the utility of Instrumented Gait Analysis in the treatment of children with cerebral palsy",
+        "volume": "19",
+        "author": "MH Schwartz",
+        "year": "2024",
+        "journal-title": "PLoS One"
+      },
+      {
+        "issue": "12",
+        "key": "pone.0328036.ref005",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1371/journal.pone.0270731",
+        "article-title": "A model for understanding the causes and consequences of walking impairments",
+        "volume": "17",
+        "author": "MH Schwartz",
+        "year": "2022",
+        "journal-title": "PLoS One"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0328036.ref006",
+        "doi-asserted-by": "crossref",
+        "first-page": "7818",
+        "DOI": "10.1038/s41598-022-11875-5",
+        "article-title": "Short-term causal effects of common treatments in ambulatory children and young adults with cerebral palsy: three machine learning estimates",
+        "volume": "12",
+        "author": "MH Schwartz",
+        "year": "2022",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "issue": "4",
+        "key": "pone.0328036.ref007",
+        "doi-asserted-by": "crossref",
+        "first-page": "473",
+        "DOI": "10.1016/j.gaitpost.2012.08.016",
+        "article-title": "Predicting the outcome of intramuscular psoas lengthening in children with cerebral palsy using preoperative gait data and the random forest algorithm",
+        "volume": "37",
+        "author": "MH Schwartz",
+        "year": "2013",
+        "journal-title": "Gait Posture"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0328036.ref008",
+        "doi-asserted-by": "crossref",
+        "first-page": "100",
+        "DOI": "10.1016/j.gaitpost.2009.03.008",
+        "article-title": "Predicting outcomes of rectus femoris transfer surgery",
+        "volume": "30",
+        "author": "JA Reinbolt",
+        "year": "2009",
+        "journal-title": "Gait Posture"
+      },
+      {
+        "key": "pone.0328036.ref009",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1101/2021.03.04.21252476",
+        "volume-title": "Estimating causal treatment effects of femoral and tibial derotational osteotomies on foot progression in children with cerebral palsy",
+        "author": "MH Schwartz",
+        "year": "2021"
+      },
+      {
+        "key": "pone.0328036.ref010",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/j.gaitpost.2021.04.039",
+        "article-title": "The importance of a consistent workflow to estimate muscle-tendon lengths based on joint angles from the conventional gait model",
+        "volume": "88",
+        "author": "H Kainz",
+        "year": "2021",
+        "journal-title": "Gait Posture"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0328036.ref011",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1214/09-AOAS285",
+        "article-title": "BART: Bayesian additive regression trees",
+        "volume": "4",
+        "author": "HA Chipman",
+        "year": "2010",
+        "journal-title": "Ann Appl Stat"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0328036.ref012",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1214/18-STS667",
+        "article-title": "Automated versus Do-It-Yourself Methods for Causal Inference: Lessons Learned from a Data Analysis Competition",
+        "volume": "34",
+        "author": "V Dorie",
+        "year": "2019",
+        "journal-title": "Statist Sci"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0328036.ref013",
+        "doi-asserted-by": "crossref",
+        "first-page": "224",
+        "DOI": "10.1002/cjs.11248",
+        "article-title": "Prediction with missing data via Bayesian Additive Regression Trees",
+        "volume": "43",
+        "author": "A Kapelner",
+        "year": "2015",
+        "journal-title": "Can J Statistics"
+      },
+      {
+        "issue": "4",
+        "key": "pone.0328036.ref014",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.18637/jss.v070.i04",
+        "article-title": "bartMachine: Machine Learning with Bayesian Additive Regression Trees",
+        "volume": "70",
+        "author": "A Kapelner",
+        "year": "2016",
+        "journal-title": "J Stat Soft"
+      },
+      {
+        "key": "pone.0328036.ref015",
+        "doi-asserted-by": "crossref",
+        "first-page": "279",
+        "DOI": "10.1007/978-3-319-98074-4_11",
+        "article-title": "Learning from Imbalanced Data Streams",
+        "author": "A Fernández",
+        "year": "2018",
+        "journal-title": "Learning from Imbalanced Data Sets"
+      },
+      {
+        "key": "pone.0328036.ref016",
+        "author": "Institute NNC",
+        "year": "2024"
+      },
+      {
+        "issue": "23",
+        "key": "pone.0328036.ref017",
+        "doi-asserted-by": "crossref",
+        "first-page": "2576",
+        "DOI": "10.1001/jama.2016.3332",
+        "article-title": "Screening for Colorectal Cancer: Updated Evidence Report and Systematic Review for the US Preventive Services Task Force",
+        "volume": "315",
+        "author": "JS Lin",
+        "year": "2016",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "pone.0328036.ref018",
+        "author": "Institute NNC",
+        "year": "2024"
+      },
+      {
+        "key": "pone.0328036.ref019",
+        "doi-asserted-by": "crossref",
+        "first-page": "118",
+        "DOI": "10.1016/j.ijid.2021.07.010",
+        "article-title": "Diagnostic accuracy of a SARS-CoV-2 rapid antigen test in real-life clinical settings",
+        "volume": "109",
+        "author": "S Jegerlehner",
+        "year": "2021",
+        "journal-title": "Int J Infect Dis"
+      },
+      {
+        "key": "pone.0328036.ref020",
+        "doi-asserted-by": "crossref",
+        "first-page": "99",
+        "DOI": "10.1016/j.canep.2017.12.002",
+        "article-title": "Estimating the sensitivity of a prostate cancer screening programme for different PSA cut-off levels: A UK case study",
+        "volume": "52",
+        "author": "J Leal",
+        "year": "2018",
+        "journal-title": "Cancer Epidemiol"
+      },
+      {
+        "key": "pone.0328036.ref021",
+        "volume-title": "Psychodiagnosis",
+        "author": "PE Meehl",
+        "year": "1973"
+      },
+      {
+        "issue": "5",
+        "key": "pone.0328036.ref022",
+        "doi-asserted-by": "crossref",
+        "first-page": "206",
+        "DOI": "10.1038/s42256-019-0048-x",
+        "article-title": "Stop Explaining Black Box Machine Learning Models for High Stakes Decisions and Use Interpretable Models Instead",
+        "volume": "1",
+        "author": "C Rudin",
+        "year": "2019",
+        "journal-title": "Nat Mach Intell"
+      },
+      {
+        "issue": "5",
+        "key": "pone.0328036.ref023",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1214/aos/1013203451",
+        "article-title": "Greedy function approximation: A gradient boosting machine.",
+        "volume": "29",
+        "author": "JH Friedman",
+        "year": "2001",
+        "journal-title": "Ann Statist"
+      },
+      {
+        "key": "pone.0328036.ref024",
+        "author": "LS Shapley",
+        "year": "1951"
+      },
+      {
+        "key": "pone.0328036.ref025",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1101/2021.06.12.21258826",
+        "volume-title": "A patient-reported measure of locomotor function derived from the functional assessment questionnaire",
+        "author": "MH Schwartz",
+        "year": "2021"
+      },
+      {
+        "key": "pone.0328036.ref026",
+        "volume-title": "National data infrastructure to inform treatment in cerebral palsy. #MRFFRDII000028: Australian Medical Research Future Fund - National Critical Research Infrastructure Grant",
+        "author": "C Carty",
+        "year": "2022"
+      },
+      {
+        "issue": "5",
+        "key": "pone.0328036.ref027",
+        "doi-asserted-by": "crossref",
+        "first-page": "561",
+        "DOI": "10.1111/dmcn.15075",
+        "article-title": "Long-term effects of spasticity treatment, including selective dorsal rhizotomy, for individuals with cerebral palsy",
+        "volume": "64",
+        "author": "BA MacWilliams",
+        "year": "2022",
+        "journal-title": "Dev Med Child Neurol"
+      },
+      {
+        "key": "pone.0328036.ref028",
+        "volume-title": "Quarto: R interface to ’quarto’ markdown publishing system",
+        "author": "J Allaire",
+        "year": "2024"
+      }
+    ],
+    "container-title": [
+      "PLOS One"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://dx.plos.org/10.1371/journal.pone.0328036",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          29
+        ]
+      ],
+      "date-time": "2025-07-29T17:36:58Z",
+      "timestamp": 1753810618000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dx.plos.org/10.1371/journal.pone.0328036"
+      }
+    },
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Yaodong",
+        "family": "Gu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "editor"
+          }
+        ]
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          29
+        ]
+      ]
+    },
+    "references-count": 28,
+    "journal-issue": {
+      "issue": "7",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            29
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1371/journal.pone.0328036",
+    "relation": {},
+    "ISSN": [
+      "1932-6203"
+    ],
+    "issn-type": [
+      {
+        "value": "1932-6203",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          29
+        ]
+      ]
+    }
+  }
+}

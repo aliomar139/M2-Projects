@@ -1,0 +1,583 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          1
+        ]
+      ],
+      "date-time": "2026-07-01T13:45:06Z",
+      "timestamp": 1782913506609,
+      "version": "3.54.5"
+    },
+    "reference-count": 43,
+    "publisher": "National Medical Research Center For Rehabilitation And Balneology",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              23
+            ]
+          ],
+          "date-time": "2026-06-23T00:00:00Z",
+          "timestamp": 1782172800000
+        },
+        "content-version": "unspecified",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-sa/4.0"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journals.eco-vector.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Bulletin of Rehabilitation Medicine"
+    ],
+    "abstract": "<jats:p>INTRODUCTION. Artificial intelligence (AI) and machine learning represent a promising approach in the rehabilitation of trauma and orthopedic patients. The integration of predictive models and adaptive algorithms into rehabilitation practices enables personalized rehabilitation treatment and improves functional outcomes.\r\nAIM. To systematize and assess the evidence base for the use of AI technologies in the rehabilitation of patients following orthopedic and trauma interventions, including joint replacement, fracture fixation, and spinal surgery.\r\nМATERIALS AND METHODS. A narrative review of publications devoted to the use of machine learning algorithms, deep learning, convolutional and recurrent neural networks in the rehabilitation of traumatological and orthopedic patients was carried out. The search for sources was carried out between June 2025 and January 2026 in the international databases PubMed/MEDLINE, Scopus and Web of Science Core Collection for the period from January 2014 to February 2024. Studies were analyzed that included predictive models of functional outcomes, motion monitoring systems, and the prediction of complications and hospital stay. A primary search yielded 1247 publications, after removing duplicates and sequentially selecting by inclusion and exclusion criteria, 43 sources were selected for the final analysis, which formed the basis of this review.\r\nМAIN CONTENT OF THE REVIEW. Machine learning algorithms demonstrated high predictive accuracy in predicting functional outcomes after hip and knee arthroplasty (AUC 0.852–0.98), assessing fracture union (accuracy up to 0.98), predicting postoperative complications (AUC 0.810–0.835), and length of hospital stay (AUC 0.82–0.98). Hybrid CNN-RNN architectures outperformed traditional machine learning methods in predicting rehabilitation success: the weighted F1 score increased from 65 % to 74 %, and the mean absolute error decreased by 12 %. Random forest models achieved 90 % accuracy in predicting patient discharge. Wearable sensors with AI platforms provide personalized monitoring of motor patterns in real time.\r\nСONCLUSION. Artificial intelligence technologies in the rehabilitation of trauma and orthopedic patients have moved beyond experimental development and demonstrated real clinical value. The most significant predictors of functional recovery are age, functional status, range of motion, and cognitive status of the patient. Large-scale prospective studies with a high level of methodological rigor are needed for widespread clinical implementation.</jats:p>",
+    "DOI": "10.38025/2078-1962-2026-25-3-83-92",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          1
+        ]
+      ],
+      "date-time": "2026-07-01T12:42:47Z",
+      "timestamp": 1782909767000
+    },
+    "page": "83-92",
+    "update-policy": "https://doi.org/10.38025/crossmarkpolicy2023",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "AI in physical rehabilitation of traumatological and orthopedic patients: existing technologies and their clinical effectiveness. A review"
+    ],
+    "prefix": "10.38025",
+    "volume": "25",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-3026-5814",
+        "authenticated-orcid": false,
+        "given": "Radik Z.",
+        "family": "Nurlygayanov",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Bashkir State Medical University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3420-8400",
+        "authenticated-orcid": false,
+        "given": "Lira T.",
+        "family": "Gilmutdinova",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Bashkir State Medical University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1886-124X",
+        "authenticated-orcid": false,
+        "given": "Larisa A.",
+        "family": "Marchenkova",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "National Medical Research Center for Rehabilitation and Balneology"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0001-5195-6729",
+        "authenticated-orcid": false,
+        "given": "Julia A.",
+        "family": "Bogdanova",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Bashkir State Medical University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2119-1737",
+        "authenticated-orcid": false,
+        "given": "Bulat R.",
+        "family": "Gilmutdinov",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Bashkir State Medical University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0872-6124",
+        "authenticated-orcid": false,
+        "given": "Aydar R.",
+        "family": "Gilmutdinov",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Bashkir State Medical University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3021-1808",
+        "authenticated-orcid": false,
+        "given": "Elvira R.",
+        "family": "Faizova",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Bashkir State Medical University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4714-6053",
+        "authenticated-orcid": false,
+        "given": "Evgenia V.",
+        "family": "Semenova",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Kazan (Volga Region) Federal University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8896-6875",
+        "authenticated-orcid": false,
+        "given": "Dinara R.",
+        "family": "Nurlygayanova",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Kazan (Volga Region) Federal University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "25087",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          23
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Николаев Н.С., Преображенская Е.В., Петрова Р.В., Андреева В.Э. Полный цикл медицинской реабилитации пациентов после травматолого-ортопедических операций на примере профильного федерального центра. Национальное здравоохранение. 2023; 4(4): 23–36. https://doi.org/10.47093/2713-069X.2023.4.4.23-36 [Nikolaev N.S., Preobrazhenskaya E.V., Petrova R.V., Andreeva V.E. Full Cycle of Medical Rehabilitation of Patients after Traumatological and Orthopedic Operations on the Example of a Specialized Federal Center. National Health Care. 2023; 4(4): 23–36. https://doi.org/10.47093/2713-069X.2023.4.4.23-36 (In Russ.).]",
+        "DOI": "10.47093/2713-069X.2023.4.4.23-36"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Васильева В.А., Марченкова Л.А., Ответчикова Д.И. и др. Медицинская реабилитация после травм нижних конечностей у пациентов с сахарным диабетом: обзор литературы. Вестник восстановительной медицины. 2024; 23(3): 61–68. https://doi.org/10.38025/2078-1962-2024-23-3-61-68 [Vasileva V.A., Marchenkova L.A., Otvetchikova D.I., et al. Medical Rehabilitation after Lower Limb Injuries in Patients with Diabetes Mellitus: a Review. Bulletin of Rehabilitation Medicine. 2024; 23(3): 61–68. https://doi.org/10.38025/2078-1962-2024-23-3-61-68 (In Russ.).]",
+        "DOI": "10.38025/2078-1962-2024-23-3-61-68"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "GBD 2021 Other Musculoskeletal Disorders Collaborators. Global, regional, and national burden of other musculoskeletal disorders, 1990–2020, and projections to 2050: a systematic analysis of the Global Burden of Disease Study 2021. Lancet Rheumatol. 2023; 5(11): e670–e682. https://doi.org/10.1016/S2665-9913(23)00232-1",
+        "DOI": "10.1016/S2665-9913(23)00232-1"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Миронов С.П., Еськин Н.А., Андреева Т.М. и др. Динамика травматизма среди взрослого населения Российской Федерации. Вестник травматологии и ортопедии им. Н.Н. Приорова. 2019; 3: 5–13. [Mironov S.P., Eskin N.A., Andreeva T.M., et al. Dynamics of Injuries among the Adult Population of the Russian Federation. N.N. Priorov Journal of Traumatology and Orthopedics. 2019; 3: 5–13 (In Russ.).]",
+        "DOI": "10.17116/vto20190315"
+      },
+      {
+        "key": "ref5",
+        "unstructured": "Нурлыгаянова Д.Р., Нурлыгаянов Р.З., Нурлыгаянова А.М. и др. Возможности использования искусственного интеллекта в медицине. Медицина. Социология. Философия. Прикладные исследования. 2024; 3: 125–131. [Nurlygayanova D.R., Nurlygayanov R.Z., Nurlygayanova A.M., et al. Possibilities of Using Artificial Intelligence in Medicine. Medicine. Sociology. Philosophy. Applied Research. 2024; 3: 125–131 (In Russ.).]"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Багаутдинов К.Ф., Гильмутдинова Л.Т., Ахметшин Р.З. и др. Функциональная электростимуляция в медицинской реабилитации пациентов после эндопротезирования суставов нижних конечностей: обзор. Вестник восстановительной медицины. 2025; 24(6): 100–109. [Bagautdinov K.F., Gilmutdinova L.T., Akhmetshin R.Z., et al. Functional Electrical Stimulation in Medical Rehabilitation of Patients after Arthroplasty of the Lower Limb Joints: a Review. Bulletin of Rehabilitation Medicine. 2025; 24(6): 100–109 (In Russ.).]",
+        "DOI": "10.38025/2078-1962-2025-24-6-100-109"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang J., Shi L., Ni M., et al. Artificial intelligence in postoperative orthopedic rehabilitation: a scoping review. Front Digit Health. 2025; 7: 1746552. https://doi.org/10.3389/fdgth.2025.1746552",
+        "DOI": "10.3389/fdgth.2025.1746552"
+      },
+      {
+        "key": "ref8",
+        "unstructured": "Chen C.F., He D.D., Liang J.C., He Z.J. Predicting the possibility of blood transfusion after total knee arthroplasty based on machine learning algorithm. Chinese Journal of Tissue Engineering Research. 2021; 25(36): 5792–5797."
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lee D.W., Han H.S., Lee M.C., Ro D.H. Prediction of postoperative gait speed change after bilateral primary total knee arthroplasty in female patients using a machine learning algorithm. Orthop Traumatol Surg Res. 2024; 110(7): 103842. https://doi.org/10.1016/j.otsr.2024.103842",
+        "DOI": "10.1016/j.otsr.2024.103842"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chen D.Y., Lin C.H., Chen Y.F., et al. Predicting postoperative delirium after hip arthroplasty for elderly patients using machine learning. Aging Clin Exp Res. 2023; 35(6): 1241–1251. https://doi.org/10.1007/s40520-023-02399-7",
+        "DOI": "10.1007/s40520-023-02399-7"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Polus J.S., Yen S.C., Tay A., et al. Machine learning predicts the fall risk of total hip arthroplasty patients based on wearable sensor instrumented performance tests. J Arthroplasty. 2021; 36(2): 573–578. https://doi.org/10.1016/j.arth.2020.08.034",
+        "DOI": "10.1016/j.arth.2020.08.034"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wang H.M., Lin Y.P. Deep learning-based postoperative recovery and nursing of total hip arthroplasty. Comput Math Methods Med. 2022; 2022: 7811200. https://doi.org/10.1155/2022/7811200",
+        "DOI": "10.1155/2022/7811200"
+      },
+      {
+        "key": "ref13",
+        "unstructured": "Wang H., Zhou Y., Guo Y., et al. Application effect of remote intelligent rehabilitation system in rehabilitation of patients with rotator cuff injury following minimally invasive arthroscopic surgery. Chin J Traumatol. 2023; 39(10): 876–884. https://doi.org/10.3760/cma.j.cn501098-20230522-00292"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Fujii J., Aoyama S., Tezuka T., et al. Prediction of change in pelvic tilt after total hip arthroplasty using machine learning. J Arthroplasty. 2023; 38(10): 2009–2016. https://doi.org/10.1016/j.arth.2022.06.020",
+        "DOI": "10.1016/j.arth.2022.06.020"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bonnin M., Müller-Fouarge F., Estienne T., et al. Artificial intelligence radiographic analysis tool for total knee arthroplasty. J Arthroplasty. 2023; 38(7): S199–S207.e2. https://doi.org/10.1016/j.arth.2023.02.053",
+        "DOI": "10.1016/j.arth.2023.02.053"
+      },
+      {
+        "key": "ref16",
+        "unstructured": "Чушинская М.М. Общие принципы реабилитации переломов конечностей. Scientist. 2020; 4(14): 20. [Chushinskaya M.M. General Principles of Rehabilitation of Limb Fractures. Scientist. 2020; 4(14): 20 (In Russ.).]"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Urakawa T., Tanaka Y., Goto S., et al. Artificial intelligence in fracture detection: transfer learning from deep convolutional neural networks. Clin Radiol. 2019; 74(5): 413–421. https://doi.org/10.1016/j.crad.2017.11.015",
+        "DOI": "10.1016/j.crad.2017.11.015"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mutasa S., Varada S., Goel A., et al. Advanced deep learning techniques applied to automated femoral neck fracture detection and classification. J Digit Imaging. 2020; 33(5): 1209–1217. https://doi.org/10.1007/s10278-020-00364-8",
+        "DOI": "10.1007/s10278-020-00364-8"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Li Y.Y., Wang J.J., Huang S.H., et al. Implementation of a machine learning application in preoperative risk assessment for hip repair surgery. BMC Anesthesiol. 2022; 22(1): 116. https://doi.org/10.1186/s12871-022-01648-y",
+        "DOI": "10.1186/s12871-022-01648-y"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Song Y., Zhang D., Wang Q., et al. Prediction models for postoperative delirium in elderly patients with machine-learning algorithms and SHapley Additive exPlanations. Transl Psychiatry. 2024; 14(1): 57. https://doi.org/10.1038/s41398-024-02762-w",
+        "DOI": "10.1038/s41398-024-02762-w"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tian C.W., Chen X.X., Shi L., et al. Machine learning applications for the prediction of extended length of stay in geriatric hip fracture patients. World J Orthop. 2023; 14(10): 741–753. https://doi.org/10.5312/wjo.v14.i10.741",
+        "DOI": "10.5312/wjo.v14.i10.741"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jawed A.M., Zhang L., Zhang Z., et al. Artificial intelligence and machine learning in spine care: Advancing precision diagnosis, treatment, and rehabilitation. World J Orthop. 2025; 16(8): 107064. https://doi.org/10.5312/wjo.v16.i8.107064",
+        "DOI": "10.5312/wjo.v16.i8.107064"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Khan O., Badhiwala J.H., Akbar M.A., Fehlings M.G. Prediction of worse functional status after surgery for degenerative cervical myelopathy: a machine learning approach. Neurosurgery. 2021; 88(2): E1–E9. https://doi.org/10.1093/neuros/nyaa477",
+        "DOI": "10.1093/neuros/nyaa477_S106"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kim K.H., Jeong J., Ko M., et al. Using artificial intelligence in the comprehensive management of spinal cord injury. Korean J Neurotrauma. 2024; 20: 215–224. https://doi.org/10.13004/kjnt.2024.20.e43",
+        "DOI": "10.13004/kjnt.2024.20.e43"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Abbas G.H., Speksnijder C., Ramnarain D., et al. AI-driven rehabilitation robotics: advancements in and impacts on patient recovery. Cureus. 2025; 17(10): e94273. https://doi.org/10.7759/cureus.94273",
+        "DOI": "10.7759/cureus.94273"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Veerbeek J.M., Langbroek-Amersfoort A.C., van Wegen E.E., et al. Effects of robot-assisted therapy for the upper limb after stroke. Neurorehabil Neural Repair. 2017; 31(2): 107–121. https://doi.org/10.1177/1545968316666957",
+        "DOI": "10.1177/1545968316666957"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bertani R., Melegari C., De Cola M.C., et al. Effects of robot-assisted upper limb rehabilitation in stroke patients: a systematic review with meta-analysis. Neurol Sci. 2017; 38(9): 1561–1569. https://doi.org/10.1007/s10072-017-2995-5",
+        "DOI": "10.1007/s10072-017-2995-5"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Егоров А.В., Яковлева С.К., Петрова Р.В., Преображенская Е.В. Эффективность комплекса с биологической обратной связью в лечении детей с детским церебральным параличом: рандомизированное контролируемое исследование. Вестник восстановительной медицины. 2025; 24(2): 8–19. [Egorov A.V., Yakovleva S.K., Petrova R.V., Preobrazhenskaya E.V. Effectiveness of Biofeedback Complex in the Treatment of Children with Cerebral Palsy: a Randomized Controlled Trial. Bulletin of Rehabilitation Medicine. 2025; 24(2): 8–19 (In Russ.).]",
+        "DOI": "10.38025/2078-1962-2025-24-2-8-19"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Khalid S., Alnajjar F., Gochoo M., et al. Robotic assistive and rehabilitation devices leading to motor recovery in upper limb: a systematic review. Disabil Rehabil Assist Technol. 2023; 18(4): 658–672. https://doi.org/10.1080/17483107.2021.1906960",
+        "DOI": "10.1080/17483107.2021.1906960"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mikołajewska E., Masiak J., Mikołajewski D. Applications of artificial intelligence-based patient digital twins in decision support in rehabilitation and physical therapy. Electronics. 2024; 13(24): 4994. https://doi.org/10.3390/electronics13244994",
+        "DOI": "10.3390/electronics13244994"
+      },
+      {
+        "key": "ref31",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Adlakha S., Chhabra D., Shukla P. Effectiveness of gamification for the rehabilitation of neurodegenerative disorders. Chaos Solitons Fractals. 2020; 140: 110192. https://doi.org/10.1016/j.chaos.2020.110192",
+        "DOI": "10.1016/j.chaos.2020.110192"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sumner J., Lim H.W., Chong L.S., et al. Artificial intelligence in physical rehabilitation: a systematic review. Artif Intell Med. 2023; 146: 102693. https://doi.org/10.1016/j.artmed.2023.102693",
+        "DOI": "10.1016/j.artmed.2023.102693"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bettger J.P., Green C.L., Holmes D.N., et al. Effects of virtual exercise rehabilitation in-home therapy compared with traditional care after total knee arthroplasty: VERITAS, a randomized controlled trial. J Bone Joint Surg Am. 2020; 102(2): 101–109. https://doi.org/10.2106/JBJS.19.00695",
+        "DOI": "10.2106/JBJS.19.00695"
+      },
+      {
+        "key": "ref34",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kuether J., Moore A., Kahan J., et al. Telerehabilitation for total hip and knee arthroplasty patients: a pilot series with high patient satisfaction. HSS J. 2019; 15(3): 221–225. https://doi.org/10.1007/s11420-019-09715-w",
+        "DOI": "10.1007/s11420-019-09715-w"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lim J.Y., Yu H.J., Kim S.H., et al. Effectiveness of in-home, augmented reality-based telerehabilitation after anterior cruciate ligament reconstruction: a randomized controlled trial. Orthop J Sports Med. 2024; 12(10): 23259671241271729. https://doi.org/10.1177/23259671241271729",
+        "DOI": "10.1177/23259671241271729"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhang B., Fang Z., Nian K., et al. The effects of telemedicine on rotator cuff-related shoulder function and pain symptoms: a meta-analysis of randomized clinical trials. J Orthop Surg Res. 2024; 19(1): 478. https://doi.org/10.1186/s13018-024-04954-8",
+        "DOI": "10.1186/s13018-024-04986-4"
+      },
+      {
+        "key": "ref37",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Correia F.D., Nogueira A., Magalhães I., et al. Medium-term outcomes of digital versus conventional home-based rehabilitation after total knee arthroplasty: prospective, parallel-group feasibility study. JMIR Rehabil Assist Technol. 2019; 6(1): e13111. https://doi.org/10.2196/13111",
+        "DOI": "10.2196/13111"
+      },
+      {
+        "key": "ref38",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ramkumar P.N., Haeberle H.S., Ramanathan D., et al. Remote patient monitoring using mobile health for total knee arthroplasty: validation of a wearable and machine learning-based surveillance platform. J Arthroplasty. 2019; 34(10): 2253–2259. https://doi.org/10.1016/j.arth.2019.05.021",
+        "DOI": "10.1016/j.arth.2019.05.021"
+      },
+      {
+        "key": "ref39",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jawed A.M., Zhang L., Zhang Z., et al. Artificial intelligence and machine learning in spine care: Advancing precision diagnosis, treatment, and rehabilitation. World J Orthop. 2025; 16(8): 107064. https://doi.org/10.5312/wjo.v16.i8.107064",
+        "DOI": "10.5312/wjo.v16.i8.107064"
+      },
+      {
+        "key": "ref40",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kunze K.N., Varady N.H., Mazzucco M., et al. The large language model ChatGPT-4 exhibits excellent triage capabilities and diagnostic performance for patients presenting with various causes of knee pain. Arthroscopy. 2024; 40(11): 2748–2757. https://doi.org/10.1016/j.arthro.2024.04.028",
+        "DOI": "10.1016/j.arthro.2024.06.021"
+      },
+      {
+        "key": "ref41",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Buscarini L., Romano P., Cocco E.S., et al. Enhancing patient rehabilitation outcomes: artificial intelligence-driven predictive modeling for home discharge in neurological and orthopedic conditions. J Neuroeng Rehabil. 2025; 22(1): 117. https://doi.org/10.1186/s12984-025-01654-4",
+        "DOI": "10.1186/s12984-025-01654-4"
+      },
+      {
+        "key": "ref42",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mahmoud Y., Horvath K., Zhou Y. Deep learning for predicting rehabilitation success: advancing clinical and patient-reported outcome modeling. Electronics. 2025; 14(6): 1082. https://doi.org/10.3390/electronics14061082",
+        "DOI": "10.3390/electronics14061082"
+      },
+      {
+        "key": "ref43",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lanotte F., O’Brien M.K., Jayaraman A. AI in rehabilitation medicine: opportunities and challenges. Ann Rehabil Med. 2023; 47(6): 444–458. https://doi.org/10.5535/arm.23131",
+        "DOI": "10.5535/arm.23131"
+      }
+    ],
+    "container-title": [
+      "Bulletin of Rehabilitation Medicine"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://journals.eco-vector.com/2078-1962/article/viewFile/705046/225000",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.eco-vector.com/2078-1962/article/viewFile/705046/225000",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          1
+        ]
+      ],
+      "date-time": "2026-07-01T12:51:10Z",
+      "timestamp": 1782910270000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.eco-vector.com/2078-1962/article/view/705046"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          23
+        ]
+      ]
+    },
+    "references-count": 43,
+    "journal-issue": {
+      "issue": "3",
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            23
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.38025/2078-1962-2026-25-3-83-92",
+    "relation": {},
+    "ISSN": [
+      "2713-2625",
+      "2078-1962"
+    ],
+    "issn-type": [
+      {
+        "value": "2713-2625",
+        "type": "electronic"
+      },
+      {
+        "value": "2078-1962",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          23
+        ]
+      ]
+    }
+  }
+}

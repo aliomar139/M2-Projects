@@ -1,0 +1,582 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          24
+        ]
+      ],
+      "date-time": "2026-09-24T12:25:24Z",
+      "timestamp": 1790252724348,
+      "version": "4.1.0"
+    },
+    "reference-count": 53,
+    "publisher": "Wiley",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              14
+            ]
+          ],
+          "date-time": "2025-11-14T00:00:00Z",
+          "timestamp": 1763078400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 44,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2025-10-01T00:00:00Z",
+          "timestamp": 1759276800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "esskajournals.onlinelibrary.wiley.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "J. exp. orthop."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          10
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Purpose</jats:title>\n                    <jats:p>Artificial intelligence (AI) in orthopaedic surgery is increasingly applied to analyse clinical data, triage patients and interpret imaging with high accuracy. Orthopaedics surgery faces unique challenges, including high patient volumes, complex cases and prolonged waiting lists, highlighting the need for efficiency and decision support. To justify implementation, AI must demonstrate performance comparable to surgeons. This systematic review evaluates AI's performance relative to surgeons to determine its value as a complementary tool in orthopaedic practice.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>This systematic review was conducted using OVID Medline. Relevant studies published up to 13 August 2025 were identified. Included studies were categorised into decision making, management plans, clinical knowledge, quality control, and answering patients' frequently asked questions (FAQs).</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>Of 419 identified studies, 16 were eligible. ChatGPT showed high sensitivity in identifying patients achieving clinically meaningful improvements (97% vs. 90% for surgeons) but lower specificity (33% vs. 63%) and accuracy (65% vs. 76%). AI demonstrates comparable or superior performance to surgeons in emergency scenarios and answering patient FAQs, scoring higher across empathy, accuracy, completeness and overall quality (4.4 vs. 3.5–3.7). Residents outperformed AI in examinations (74.2% vs. 47.2%). AI showed limited accuracy in knee osteoarthritis radiographic staging (35% vs. &gt;80%).</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>AI demonstrates the potential to support clinical efficiency and patient communication in orthopaedics. However, concerns about bias, quality risks, overconfidence and reliance on outdated information prevent it from replacing human expertise. Clinician‐led design and validation are required to ensure safe and effective integration into clinical practice.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Level of Evidence</jats:title>\n                    <jats:p>Level IV.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.1002/jeo2.70548",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          14
+        ]
+      ],
+      "date-time": "2025-11-14T11:25:56Z",
+      "timestamp": 1763119556000
+    },
+    "update-policy": "https://doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "Artificial intelligence fails to outperform orthopaedic surgeons: A systematic review"
+    ],
+    "prefix": "10.1002",
+    "volume": "12",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0009-0014-4390",
+        "authenticated-orcid": false,
+        "given": "Jemima",
+        "family": "Russell",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Surgery and Cancer MSk Lab—Imperial College London London UK"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0005-7505-6871",
+        "authenticated-orcid": false,
+        "given": "Jamie",
+        "family": "Rosen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Surgery and Cancer MSk Lab—Imperial College London London UK"
+          },
+          {
+            "name": "Warwick Medical School University of Warwick Coventry UK"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3284-7236",
+        "authenticated-orcid": false,
+        "given": "Martinique",
+        "family": "Vella‐Baldacchino",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Surgery and Cancer MSk Lab—Imperial College London London UK"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          14
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_12_2_1",
+        "volume-title": "Management of hip fractures in older adults: evidence‐based clinical practice guideline",
+        "author": "American Academy of Orthopaedic Surgeons",
+        "year": "2021"
+      },
+      {
+        "key": "e_1_2_12_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.23.00473"
+      },
+      {
+        "key": "e_1_2_12_4_1",
+        "first-page": "1877",
+        "article-title": "Language models are few‐shot learners",
+        "volume": "33",
+        "author": "Brown T",
+        "year": "2020",
+        "journal-title": "Adv Neural Inf Process Syst"
+      },
+      {
+        "key": "e_1_2_12_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmjopen-2023-076484"
+      },
+      {
+        "key": "e_1_2_12_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.otsr.2019.10.004"
+      },
+      {
+        "issue": "128",
+        "key": "e_1_2_12_7_1",
+        "first-page": "1",
+        "article-title": "ChatGPT and large language models in orthopedics: from education and surgery to research",
+        "volume": "10",
+        "author": "Chatterjee S",
+        "year": "2023",
+        "journal-title": "J Exp Orthop"
+      },
+      {
+        "key": "e_1_2_12_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/BPO.0000000000002781"
+      },
+      {
+        "key": "e_1_2_12_9_1",
+        "unstructured": "ChiuKL CollinsA AlexanderR. Detecting hate speech with GPT‐3 [preprint]. arXiv [Internet]. 2021; arXiv:2103.12407. Available from:https://arxiv.org/abs/2103.12407"
+      },
+      {
+        "key": "e_1_2_12_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/CORR.0000000000003234"
+      },
+      {
+        "key": "e_1_2_12_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-023-07355-6"
+      },
+      {
+        "key": "e_1_2_12_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-025-93794-9"
+      },
+      {
+        "key": "e_1_2_12_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/hsr2.70312"
+      },
+      {
+        "key": "e_1_2_12_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2020.07.076"
+      },
+      {
+        "key": "e_1_2_12_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/JS9.0000000000002223"
+      },
+      {
+        "issue": "1",
+        "key": "e_1_2_12_16_1",
+        "first-page": "25",
+        "article-title": "Evidence and the drivers of variation in orthopaedic surgical work: a mixed method systematic review",
+        "volume": "3",
+        "author": "Grove AL",
+        "year": "2016",
+        "journal-title": "Health Syst Policy Res"
+      },
+      {
+        "key": "e_1_2_12_17_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "GuptaNK ChaudharyA SinghR SinghR. ChatGPT: exploring the capabilities and limitations of a large language model for conversational AI. In:Proceedings of the IEEE International Conference on Artificial Intelligence and Computer Applications; 2023 23–24 November 2023 Faridabad India. Piscataway (NJ): IEEE; 2023. p. 139–142.",
+        "DOI": "10.1109/ICAICCIT60255.2023.10465811"
+      },
+      {
+        "key": "e_1_2_12_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jsurg.2024.08.002"
+      },
+      {
+        "key": "e_1_2_12_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.knee.2024.06.006"
+      },
+      {
+        "key": "e_1_2_12_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.N.00658"
+      },
+      {
+        "key": "e_1_2_12_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ksa.12014"
+      },
+      {
+        "key": "e_1_2_12_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ksa.12628"
+      },
+      {
+        "key": "e_1_2_12_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arthro.2021.12.030"
+      },
+      {
+        "key": "e_1_2_12_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.knee.2025.03.005"
+      },
+      {
+        "key": "e_1_2_12_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.injury.2025.112297"
+      },
+      {
+        "key": "e_1_2_12_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/CORR.0000000000002704"
+      },
+      {
+        "key": "e_1_2_12_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2024.02.023"
+      },
+      {
+        "key": "e_1_2_12_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5435/JAAOS-D-23-00396"
+      },
+      {
+        "key": "e_1_2_12_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5435/JAAOS-D-24-01072"
+      },
+      {
+        "key": "e_1_2_12_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.55248/gengpi.2022.31261"
+      },
+      {
+        "key": "e_1_2_12_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pdig.0000349"
+      },
+      {
+        "key": "e_1_2_12_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.knee.2024.08.015"
+      },
+      {
+        "issue": "8",
+        "key": "e_1_2_12_33_1",
+        "article-title": "Can large language models (LLMs) predict the appropriate treatment of acute hip fractures in older adults? Comparing appropriate use criteria with recommendations from ChatGPT",
+        "volume": "8",
+        "author": "Nietsch KS",
+        "year": "2024",
+        "journal-title": "J Am Acad Orthop Surg Glob Res Rev"
+      },
+      {
+        "key": "e_1_2_12_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3928/01477447-20250123-03"
+      },
+      {
+        "key": "e_1_2_12_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2023.08.047"
+      },
+      {
+        "key": "e_1_2_12_36_1",
+        "unstructured": "OpenAI. How ChatGPT and our foundation models are developed. OpenAI Help Center.2025. Available from:https://help.openai.com/en/articles/6783457-how-chatgpt-and-our-foundation-models-are-developed"
+      },
+      {
+        "key": "e_1_2_12_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jhsg.2023.10.013"
+      },
+      {
+        "key": "e_1_2_12_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.surg.2024.04.003"
+      },
+      {
+        "key": "e_1_2_12_39_1",
+        "unstructured": "RadfordA KleinmanZ. ChatGPT can now access up‐to‐date information. BBC News. 2023. Available from:https://www.bbc.com/news/technology-66608944"
+      },
+      {
+        "key": "e_1_2_12_40_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "RahamanMS AhsanMMT AnjumN RahmanMM RahmanMN. The AI race is on! Google's Bard and OpenAI's ChatGPT head to head: an opinion article. SSRN. 2023. Available from:https://ssrn.com/abstract=4351785",
+        "DOI": "10.2139/ssrn.4351785"
+      },
+      {
+        "key": "e_1_2_12_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.48175/IJARSCT-15087"
+      },
+      {
+        "key": "e_1_2_12_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jeo2.12080"
+      },
+      {
+        "key": "e_1_2_12_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmjopen-2024-092624"
+      },
+      {
+        "key": "e_1_2_12_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jisako.2024.100376"
+      },
+      {
+        "issue": "4",
+        "key": "e_1_2_12_45_1",
+        "first-page": "987",
+        "article-title": "Generative artificial intelligence: evolving technology, growing societal impact, and opportunities for information systems research",
+        "volume": "27",
+        "author": "Storey VC",
+        "year": "2025",
+        "journal-title": "Inf Syst Front"
+      },
+      {
+        "key": "e_1_2_12_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-025-01543-z"
+      },
+      {
+        "key": "e_1_2_12_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41591-018-0300-7"
+      },
+      {
+        "key": "e_1_2_12_48_1",
+        "unstructured": "TriggleN. The NHS backlog: who are the 7 million? BBC News. 2022 [cited 2025 Nov 3]. Available from:https://www.bbc.co.uk/news/health-63905269"
+      },
+      {
+        "key": "e_1_2_12_49_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/phar.2151"
+      },
+      {
+        "key": "e_1_2_12_50_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.52312/jdrs.2025.1958"
+      },
+      {
+        "key": "e_1_2_12_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jse.2024.04.021"
+      },
+      {
+        "key": "e_1_2_12_52_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2025.03.049"
+      },
+      {
+        "key": "e_1_2_12_53_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "ZhengY FuD HuX CaiX YeL LuP et al. DeepResearcher: scaling deep research via reinforcement learning in real‐world environments [preprint]. arXiv [Internet]. 2025 Apr 7 [cited 2025 Nov 3]. Available from:https://arxiv.org/abs/2504.03160/",
+        "DOI": "10.18653/v1/2025.emnlp-main.22"
+      },
+      {
+        "key": "e_1_2_12_54_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ksa.12639"
+      }
+    ],
+    "container-title": [
+      "Journal of Experimental Orthopaedics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/jeo2.70548",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/full-xml/10.1002/jeo2.70548",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/jeo2.70548",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          19
+        ]
+      ],
+      "date-time": "2026-09-19T18:23:14Z",
+      "timestamp": 1789842194000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/10.1002/jeo2.70548"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          10
+        ]
+      ]
+    },
+    "references-count": 53,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1002/jeo2.70548"
+    ],
+    "URL": "https://doi.org/10.1002/jeo2.70548",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "2197-1153",
+      "2197-1153"
+    ],
+    "issn-type": [
+      {
+        "value": "2197-1153",
+        "type": "print"
+      },
+      {
+        "value": "2197-1153",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          10
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2025-08-25",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-10-10",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-11-14",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ],
+    "article-number": "e70548"
+  }
+}

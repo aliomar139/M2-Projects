@@ -1,0 +1,831 @@
+=== PDF PAGE 1 ===
+Hofstetter et al. 
+Diagnostic and Prognostic Research            (2025) 9:16  
+https://doi.org/10.1186/s41512-025-00200-z
+PROTOCOL Open Access
+© The Author(s) 2025. Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 
+International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long 
+as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if 
+you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or 
+parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated 
+otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not 
+permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To 
+view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+Diagnostic and
+Prognostic Research
+Predicting patient outcomes and risk 
+for revision surgery after hip and knee 
+replacement surgery: study protocol 
+for a comparison of modelling approaches 
+using the Swiss National Joint Registry (SIRIS)
+Léonie Hofstetter1,2,3, Nathalie Schweyckart1, Christof Seiler4,5,6, Christian Brand7, Laura C. Rosella8, 
+Mazda Farshad3, Milo A. Puhan2 and Cesar A. Hincapié1,2,3*   
+Abstract 
+Background Prediction of postoperative patient-reported outcomes and risk for revision surgery after total hip 
+arthroplasty (THA) or total knee arthroplasty (TKA) can inform clinical decision-making, health resource allocation, 
+and care planning. Machine learning (ML) algorithms are increasingly used as an alternative to traditional logistic 
+regression (LR) prediction, but there is uncertainty about their superiority in overall model performance. The aim 
+of this study is to compare the predictive performance of LR with different ML approaches for predicting patient out-
+comes and risk for revision surgery after THA and TKA.
+Methods A population-based historical cohort study will be developed using routinely collected data from all 
+primary and revision THA and TKA procedures performed in Switzerland and registered in the Swiss National Joint 
+Registry (SIRIS). Patients of age ≥ 18 years with surgery for primary osteoarthritis from 01 January 2015 up to 31 
+December 2023 will be included. Outcomes of interest will be (1) 12-month postoperative poor pain outcome 
+(defined as < 50% improvement of pain or < 3 absolute reduction in pain on a 11-point (0 to 10) numeric rating scale) 
+and poor satisfaction outcome, and (2) early revision within 5 years after primary surgery. Prespecified predictor vari-
+ables will include demographic characteristics, comorbidity score, patient-reported health status measures, and surgi-
+cal variables. Measures of overall predictive accuracy, discrimination, and calibration will be used to compare predic-
+tive performance, and decision curve analysis performed to evaluate the clinical usefulness of models. The models will 
+be internally validated using cross-validation and externally validated using geographical validation. Development 
+of the models will be informed by the updated Transparent Reporting of a multivariable prediction model for Indi-
+vidual Prognosis or Diagnosis (TRIPOD + AI) statement.
+Discussion This study will develop, validate, and compare prediction models for postoperative patient-reported 
+outcomes and risk for revision surgery after THA and TKA using SIRIS data.
+*Correspondence:
+Cesar A. Hincapié
+cesar.hincapie@uzh.ch
+Full list of author information is available at the end of the article
+
+=== PDF PAGE 2 ===
+Page 2 of 9Hofstetter et al. Diagnostic and Prognostic Research            (2025) 9:16 
+Keywords Hip arthroplasty, Knee arthroplasty, Prognostic modelling, Model development, Risk prediction, Machine 
+learning, Decision support techniques
+Background
+Total hip arthroplasty (THA) and total knee arthro -
+plasty (TKA) are commonly performed surgical 
+procedures in Switzerland [1 ]. When conservative, 
+non-surgical treatments prove ineffective in managing 
+arthritis symptoms, these procedures provide patients 
+with improved quality of life and function [2 ]. The 
+Swiss National Joint Registry (SIRIS) was implemented 
+in 2012, and now records about 98% of all hip and knee 
+arthroplasties and accounts for an estimated 22,000 hip 
+joint and 18,000 knee joint replacements each year [3 ]. 
+While joint replacements typically have an expected 
+lifespan of at least 25 years on average, a small propor -
+tion will fail within a shorter time frame and result in 
+poor response outcome or require revision surgery [4 , 
+5]. Despite being highly successful with respect to pros -
+thesis-related outcomes, about 7% to 23% of patients 
+report unfavorable pain outcome after THA, and 10% 
+to 34% after TKA [6 ]. Premature revision surgery 
+imposes significant challenges for both patients, health 
+systems, and society [7 ].
+Shared decision-making, where clinicians and patients 
+share available evidence and preferences to support 
+upcoming treatment decisions, is known to improve 
+care and costs [8]. Providing patients and clinicians with 
+useful and accurate predictions of postoperative out -
+comes can facilitate communication and shared deci -
+sion-making. By capturing patient perspectives on their 
+health status in a standardized way, patient-reported 
+outcome measures (PROMs) are considered important 
+tools to evaluate treatment outcomes [9] and promote 
+healthcare quality improvement [10]. Predicting PROMs 
+and the risk of revision surgery may enhance a patient’s 
+awareness of potential risks associated with elective sur -
+gery, and also facilitate clinicians’ and hospitals’ ability 
+to anticipate postoperative courses, healthcare burden, 
+resource allocation, and care planning [11, 12].
+There is growing interest in the development and use 
+of clinical prediction models where decisions regard -
+ing treatment choices and plans of management are 
+informed by an individual’s profile of prognostic factors 
+[13]. While traditional regression-based risk prediction 
+models, for example logistic regression (LR), are widely 
+used, machine learning approaches are increasingly being 
+used as an alternative method [14, 15]. Machine learning 
+models can directly and automatically learn from new 
+data and make decisions or predictions without being 
+explicitly programmed to perform specific tasks [16].
+Supervised machine learning models use algorithms 
+that are trained to learn from data in  situations when 
+the outcome of interest is specified and then make deci -
+sions based on similar characteristics or variables from 
+new data [17]. They are considered powerful tools that 
+may support clinical decision-making by their ability to 
+integrate a large amount of data and to identify com -
+plex patterns [18]. Despite the possible advantages of 
+machine learning models, there is uncertainty whether 
+they have superior predictive performance compared 
+to traditional methods such as logistic regression, and 
+more research with better reporting of both types of 
+algorithms are needed to better compare their per -
+formance [19]. It has been estimated that only 40% of 
+machine learning models developed for predicting out -
+comes after THA or TKA have been evaluated in the 
+context of traditional statistical prediction techniques 
+such as logistic regression, and only 30% of studies used 
+external validation [20].
+Among machine learning approaches, random forest 
+(RF) and gradient-boosted machines such as extreme 
+gradient boosting (XGBoost)—both regression-based 
+decision trees—are most commonly used in the area 
+of THA and TKA prediction modelling and are well 
+known for their good predictive performance [20]. 
+Despite possible advantages, there is little evidence 
+for their adoption in clinical practice [21]. Some limi -
+tations are that concepts such as machine learning are 
+still novel to many health researchers and clinicians, 
+leading to skepticism about their practical application.
+A recently updated Cochrane review on the effective -
+ness of decision support tools showed that they can 
+largely increase patients’ knowledge of options, feeling 
+informed and clear about what matters most to them, 
+and their active role in decision-making [22]. With bet -
+ter insights into the risk of experiencing a poor outcome 
+or early revision, patients with an elevated risk for a poor 
+outcome may be identified and benefit from more inten -
+sive follow-up and care processes after THA or TKA. 
+Clinical decision-making and health communication 
+might also be improved. To the best of our knowledge, no 
+study has compared RF and XGBoost with LR for predic -
+tion modelling of patient-reported outcomes and risk for 
+revision surgery in the orthopaedic literature.
+In this study, we aim to compare the predictive 
+performance of LR with different machine learning 
+approaches for predicting patient outcomes and risk for 
+revision surgery after THA and TKA.
+
+=== PDF PAGE 3 ===
+Page 3 of 9
+Hofstetter et al. Diagnostic and Prognostic Research            (2025) 9:16 
+ 
+Our specific objectives are:
+1) To compare the performance of random forest and 
+extreme gradient boosting algorithms with a logistic 
+regression‐based model for predicting risk for poor 
+patient-reported outcomes (pain intensity and satis -
+faction) one year after THA or TKA.
+2) To compare the performance of random forest and 
+extreme gradient boosting algorithms with a logistic 
+regression‐based model for predicting risk for revi -
+sion surgery within 5 years after THA or TKA.
+Methods
+Prediction modelling
+Our study will be informed by the prognosis research 
+study (PROGRESS) framework [13], and reported 
+according to the Strengthening the Reporting of Obser -
+vational Studies in Epidemiology (STROBE) statement 
+[23] and the updated Transparent Reporting of a Mul -
+tivariable Prediction Model for Individual Prognosis or 
+Diagnosis (TRIPOD + AI) statement, which provides 
+guidance for reporting clinical prediction models that use 
+regression or machine learning methods [24, 25].
+Study design and data source
+A population-based historical cohort study will be con -
+ducted using routinely collected data from all primary 
+and revision hip and knee arthroplasty procedures per -
+formed in Switzerland and registered in SIRIS. To ensure 
+the completeness and consistency of SIRIS data, system -
+atic software-generated validation tests are conducted 
+on the received data. Additionally, on a quarterly basis, 
+the registry’s statistician employs an automated analysis 
+script to generate master files and lists identifying poten -
+tial data errors. These findings are then reviewed by the 
+data monitoring team, which conducts root cause analy -
+ses for confirmed issues and provides feedback to the 
+respective hospitals.
+Eligibility criteria
+The study population will consist of patients of 
+age ≥ 40  years at the time of surgery who were regis -
+tered in the SIRIS as having undergone total hip or knee 
+arthroplasty for primary osteoarthritis from 01 January 
+2015 up to 31 December 2023.
+Outcome measures and variables
+Objective 1: 12-month postoperative patient-reported 
+outcomes of pain intensity and satisfaction will be the 
+outcome measures for objective 1. Since 2019, all hos -
+pitals receiving public funding for elective hip and 
+knee arthroplasties in the Canton of Zurich must col -
+lect the Swiss orthopaedic minimal dataset (MDS) [26, 
+27] consisting of the 5-dimension, 5-level version of 
+the EuroQol health-related quality of life measure (EQ-
+5D-5L) and a small selection of additional questions on 
+joint-specific pain and patient satisfaction. Question -
+naires are collected approximately 1  week preopera -
+tively and 12  months postoperatively. Self-rated health 
+is assessed using the visual analogue scale (VAS) of the 
+EQ-5D-5L ranging from 0 (worst imaginable health) to 
+100 (best imaginable health). Joint-specific pain inten -
+sity (average over last week) is measured on an 11-point 
+numeric rating scale (NRS; 0 being “no pain, ” and 10 
+being “the worst pain I can imagine”). Joint-specific sat -
+isfaction is assessed on a 5-item scale (1 being “very satis-
+fied, ” and 5 being “very dissatisfied”).
+In the absence of consensus for a dichotomous defi -
+nition of poor response after THA and TKA [28], we 
+were guided by the recommendations of an international 
+Delphi study and defined poor responders for satisfac -
+tion outcome as those who answered “very unsatisfied, ” 
+“unsatisfied, ” or “neither satisfied nor unsatisfied” [29]. 
+For pain outcome, we defined poor responders as those 
+who reported either a relative change of < 50% improve-
+ment in pain intensity from preoperative to 1–year post -
+operative measurement, or < 3 absolute reduction in pain 
+intensity on the 11-point NRS.
+Objective 2: The outcome of interest for objective 2 will 
+be early revision after THA or TKA. This is defined as 
+revision surgery for any indication within five years after 
+primary surgery.
+Predictor variables
+To prespecify a set of predictor variables, we followed the 
+approach recommended by Steyerberg et  al. [30]. First, 
+candidate predictor variables were identified from the 
+available relevant literature. Then, the candidate predic -
+tor variables were shared with and discussed in the inter -
+disciplinary research group. Final selection of predictor 
+variables was made through discussion and consensus of 
+all collaborators. The predictor variables that were identi-
+fied and that will be included in the model are summa -
+rised in Tables  1 and 2. For objective 2, PROMs will not 
+be included because they are only collected since 2019, 
+which would lead to a substantial decrease of the sample 
+size. Nominal categorical variables will be transformed 
+to dummy variables using one-hot encoding, and ordinal 
+categorical variables will be transformed to numerical 
+variables.
+Development and external validation cohorts
+For poor patient-reported outcome prediction modelling, 
+the development and validation cohorts will be formed 
+based on the 12 districts of Canton Zurich. The develop -
+ment cohort will include the districts of Zürich, Affoltern, 
+
+=== PDF PAGE 4 ===
+Page 4 of 9Hofstetter et al. Diagnostic and Prognostic Research            (2025) 9:16 
+and Dietikon. The external validation cohort will include 
+the districts of Horgen, Meilen, Uster, Hinwil, Dielsdorf, 
+Bülach, Pfäffikon, Winterthur, and Andelfingen.
+For revision risk, the development and validation 
+cohorts will be formed based on the seven major regions 
+of Switzerland using Nomenclature of Territorial Units 
+for Statistics (NUTS) [50]. All cantons of NUTS regions 
+03–07 (Northwestern Switzerland, Zurich, Eastern Swit -
+zerland, Central Switzerland and Ticino) and Lichten -
+stein will form the development cohort, while all cantons 
+of NUTS regions 01 and 02 (Lake Geneva region and 
+Espace Mittelland) will form the external validation 
+cohort.
+Sample size
+Following Riley et  al. [51], we calculated the minimum 
+sample size using the R package pmsampsize . As rec -
+ommended, we set Nagelkerke’s R2 = 0.15 (Cox-Snell’s 
+adjusted R2 = 0.09) and the assumed shrinkage factor 
+equal to 0.9.
+For the prediction of poor patient-reported outcome 
+after THA, with an observed prevalence of approximately 
+9.8% for pain and 7.2% for satisfaction in our study popu-
+lation and 20 predictor parameters, 2434 participants are 
+required for poor pain outcome and 2850 for poor satis -
+faction outcome.
+For the prediction of poor patient-reported outcome 
+after TKA, with an observed prevalence of approximately 
+16.3% for pain and 15.1% for satisfaction and 20 predictor 
+parameters, 1944 participants are required for poor pain 
+outcome and 1992 for poor satisfaction outcome.
+For the prediction of revision surgery within 5  years 
+after THA, with an observed prevalence of approxi -
+mately 2.7% and 23 predictor parameters, 6158 partici -
+pants are required. For the prediction of revision surgery 
+within 5 years after TKA, with an observed prevalence of 
+approximately 3.9% and 25 predictor parameters, 5232 
+participants are required.
+Our fixed sample sizes exceed these minimum require -
+ments for the development cohorts. Therefore, we 
+expect our study to be adequately powered. For exter -
+nal validation studies of prognostic models, it has been 
+recommended that the validation cohort has a mini -
+mum of 100 (or better 200) events [30, 52]. All validation 
+Table 1 Summary of selected predictor variables for patient outcomes one year after THA and TKA
+Predictor variable Definition Variable type Unit/categories Evidence
+Age Age at intervention date Continuous Years  [31, 32]
+Sex Sex Binary 1 = female
+2 = male
+ [31–33]
+BMI BMI Continuous kg/m2
+Comorbidities ASA score Categorical (ordinal) 1 = no disturbance
+2 = mild/moderate disturbance
+3 = severe disturbance
+4 = life-threatening
+5 = moribund
+ [31, 33, 34]
+Preoperative walking ability Charnley class Categorical (nominal) 1 = unilaterally diseased
+2 = bilaterally diseased
+3 = bilaterally diseased, oppo-
+site hip or knee prosthesis
+4 = other condition affecting 
+walking
+ [35, 36]
+Surgeon volume Number of surgeries performed 
+by the treating surgeon in the calen-
+dar year before the index date
+Continuous Surgeries/year  [37]
+Previous surgery of the affected joint Previous surgery of the affected joint Binary 0 = no
+1 = yes
+Socioeconomic status Education level Categorical (ordinal) 1 = low
+2 = middle
+3 = high
+ [38]
+Preoperative pain intensity Pain intensity (average over last 
+week)
+Continuous 0–10, 10 = worst  [33, 39]
+Preoperative joint-specific satisfaction Preoperative joint-specific satisfac-
+tion
+Categorical (ordinal) 1 = very satisfied
+2 = somewhat satisfied
+3 = neither satisfied nor dissatisfied
+4 = somewhat dissatisfied
+5 = very dissatisfied
+Preoperative general health Self-perceived general health Continuous 0–100
+
+=== PDF PAGE 5 ===
+Page 5 of 9
+Hofstetter et al. Diagnostic and Prognostic Research            (2025) 9:16 
+ 
+Table 2 Summary of selected predictor variables for revision surgery within 5 years after THA and TKA
+Predictor variable Definition Variable type Unit/categories Evidence
+Age Age at intervention date Continuous Years  [40, 41]
+Sex Sex Binary 1 = female
+2 = male
+ [40–42]
+BMI BMI Continuous kg/m2  [40, 41]
+Comorbidities ASA score Categorical (ordinal) 1 = no disturbance
+2 = mild/moderate disturbance
+3 = severe disturbance
+4 = life-threatening
+5 = moribund
+ [41, 43]
+Preoperative walking ability Charnley class Categorical (nominal) 1 = unilaterally diseased
+2 = bilaterally diseased
+3 = bilaterally diseased, opposite hip 
+prosthesis
+4 = other condition affecting walking
+ [41]
+Surgeon volume Number of surgeries performed 
+by the treating surgeon in the calen-
+dar year before the index date
+Continuous Surgeries/year  [37, 42]
+Previous surgery of the affected joint Previous surgery of the affected joint Binary 0 = no, 1 = yes  [41]
+Surgical variables: THA
+Approach Surgical approach Categorical (nominal) 1 = anterior
+2 = anterolateral
+3 = lateral
+4 = posterior
+5 = transfemoral
+6 = other approach
+7 = trochanter osteotomy
+ [44–46]
+Component fixation Fixation of surgical components Categorical (nominal) 1 = all cemented
+2 = all uncemented
+3 = acetabular component (AC) 
+uncemented, femoral component 
+(FC) cemented
+4 = AC cemented, FC uncemented
+5 = reinforcement ring, FC cemented
+6 = reinforcement ring, FC unce-
+mented
+ [46]
+Surgical variables: TKA
+Prosthesis Type of prosthesis Categorical (nominal) 1 = bicruciate retaining
+2 = posterior cruciate retaining
+3 = cruciate sacrificing/ultracongru-
+ent (UCOR)
+4 = posterior stabilized
+5 = medial pivot
+6 = semi-constrained/constrained
+7 = hinge type
+8 = other arthroplasty
+ [47]
+Subtype Bearing of prosthesis Binary 1 = mobile bearing
+2 = fixed bearing
+ [47]
+Patellar component Patella resurfacing Categorical (nominal) 1 = yes
+2 = no
+3 = prior patellectomy
+ [48]
+Component fixation Fixation of surgical components Categorical (nominal) 1 = femur + tibia cemented
+2 = femur + tibia uncemented
+3 = femur uncemented, tibia 
+cemented
+4 = femur cemented, tibia unce-
+mented
+ [49]
+
+=== PDF PAGE 6 ===
+Page 6 of 9Hofstetter et al. Diagnostic and Prognostic Research            (2025) 9:16 
+cohorts exceed the recommended number of events for 
+validation.
+Missing data
+If an outcome measurement is missing, the patient 
+data will be excluded from the analysis. Around 60% of 
+patients had to be excluded because of missing pain or 
+satisfaction outcome. All populations with or without 
+patient-reported outcome were comparable (see Supple -
+mentary appendix eTables 1 and 2). Predictors with miss-
+ingness exceeding 30% will be excluded. Missing data 
+among the remaining predictors will be assumed missing 
+at random. We will perform multiple imputations using 
+the mice package in R, which imputes incomplete multi -
+variate data by chained equations algorithm [30, 53]. Five 
+imputed datasets will be generated. The model will be 
+developed in each imputed dataset and averaged over the 
+estimated predictions.
+Since for some patients the study ends before poten -
+tially undergoing revision surgery, the data will include 
+right-censored observations. To address this, Kaplan–
+Meier imputation will be performed using the CondiS 
+package in R. This method imputes survival times for 
+censored cases based on their conditional survival distri -
+butions, derived from the Kaplan–Meier estimator [54].
+Model development
+We will develop the prediction models based on the “full 
+model approach, ” which is using the pre-selected prog -
+nostic factors without any being excluded at a later stage. 
+To avoid loss of prognostic information, continuous vari-
+ables will be kept continuous and not categorised [55].
+LR model
+We will use multivariable logistic regression to develop 
+a prediction model for the incidence of revision surgery 
+within 5 years after primary surgery. For predicting poor 
+patient-reported outcome, outcomes of interest will be 
+dichotomized.
+To account for the risk of overfitting, an additional 
+penalized logistic regression model will be developed 
+using the glmnet package in R. Elastic Net regression, a 
+combination of Ridge and least absolute shrinkage and 
+selection operator (LASSO) regression, will be used.
+RF and XGBoost model
+Both RF and XGBoost algorithms are commonly used 
+for prediction modelling in the area of THA and TKA 
+[20]. RF operates by constructing a multitude of decision 
+trees during the training phase, each using a subset of the 
+development data. The individual predictions of all trees 
+are aggregated to produce the final output. Compared 
+to RF, XGBoost creates decision trees sequentially, with 
+each new tree aiming to correct the errors made by the 
+previous ensemble. It uses a gradient-based optimization 
+approach to guide the tree-building process. Grid search 
+will be used for hyperparameter tuning.
+Internal validation
+Five-fold repeated cross-validation will be used to 
+account for optimism due to model overfitting [56]. After 
+splitting development cohort data into five equally big 
+parts, four parts are used as training set, and one part 
+retained for testing model performance once model 
+training is finished. This will be iterated until each of the 
+parts will have been used for validation once. Random 
+seeds will be set to make results reproducible.
+Evaluation and comparison of model performance
+The predictive performance of the developed models 
+will be assessed and compared using measures of over -
+all performance, calibration, and discrimination. To 
+quantify overall classification performance, the distance 
+between the predicted and actual outcomes will be evalu-
+ated using accuracy calculated in the confusion matrix. 
+We define accuracy as the proportion of the predictions 
+that are correct. The calibration ability of the developed 
+model for the agreement between the estimated prob -
+abilities of the outcome and the observed outcome’s pro -
+portion will be assessed via a calibration plot with loess 
+smoother. To explore the model’s ability to discriminate 
+between those with and those without the outcome, the 
+concordance (c) statistic will be used. For prediction 
+models with binary outcomes, c is identical to the area 
+under the receiver operating characteristic curve (ROC). 
+The area under the curve (AUC) can be understood as 
+the probability that the model assigns a higher probability 
+of the outcome to a patient with the outcome compared 
+to a randomly selected patient without the outcome [57]. 
+Variable importance will be used to indicate how much 
+each variable contributes to the predictive performance 
+of all models using the varImp function from the caret 
+package in R.
+All analyses will be performed using R version 4.3.0 (R 
+Foundation for Statistical Computing) [58].
+Clinical usefulness of prediction models
+We will perform decision curve analysis to evaluate the 
+clinical utility and better understand whether the clini -
+cal use of a prediction model would do more good than 
+harm [59]. By examining model performance against 
+standardized net benefit and risk thresholds, one can 
+assess how deciding to perform an intervention for an 
+individual patient at their specific risk level, as indicated 
+by the prediction model, compares with other manage -
+ment options such as performing an intervention for all 
+
+=== PDF PAGE 7 ===
+Page 7 of 9
+Hofstetter et al. Diagnostic and Prognostic Research            (2025) 9:16 
+ 
+patients or no patients [60]. Our decision curve analysis 
+will consider two clinically relevant scenarios: (1) Should 
+total joint replacement surgery be recommended to 
+patients who are at the decision point for surgical inter -
+vention? (2) Should patients who undergo total joint 
+replacement surgery be provided more intense rehabilita-
+tion (e.g., increased pre- and postoperative rehabilitation 
+programs) as a preventive measure to mitigate the risk for 
+poor outcomes? Our decision curves will present the net 
+benefit of our prediction model versus two default deci -
+sions that should always be present in a decision curve: 
+treating none (with a net benefit of zero) and treating all.
+External validation
+We will externally validate our models using geographi -
+cal validation as described before [30]. The performance 
+of the models in the external validation cohorts will be 
+assessed using measures of overall performance, discrim -
+ination, and calibration.
+Model presentation
+The final regression model consisting of the development 
+and validation cohort will be presented using intercept 
+to present baseline risk, regression coefficients, and odds 
+ratios with 95% confidence intervals.
+Discussion
+We have described a protocol for developing, validat -
+ing, and comparing traditional LR with different machine 
+learning approaches for predicting patient outcomes 
+and risk for revision surgery after THA and TKA using 
+a large population-based cohort derived from a Swiss 
+national joint registry. Prediction models as decision sup-
+port tools may support preoperative clinical decision-
+making, health resource allocation, and care planning. 
+To our knowledge, no risk prediction model using Swiss 
+national data has been published in this area, and other 
+studies comparing the predictive performance of ML 
+algorithms are poorly reported [19].
+A key strength of our study using registry data is the 
+availability of relevant and comprehensive routine clini -
+cal data across a wide population, which enhances the 
+generalizability and robustness of the prediction models. 
+Limitations include the use of retrospective data collec -
+tion, which limits the type of information that can be 
+considered and included in the prediction models. Since 
+patient-reported outcomes are only collected since 2019 
+in Canton Zurich, the study population for prediction of 
+poor patient-reported outcomes will be limited to this 
+population.
+Supplementary Information
+The online version contains supplementary material available at https:// doi. 
+org/ 10. 1186/ s41512- 025- 00200-z.
+Additional file 1: Appendix.
+Authors’ contributions
+LH and CAH will have full access to the data and will take responsibility for 
+data integrity and accuracy of data analysis. LH and CAH led the conception 
+and design of the protocol, with inputs from MAP , CB, CS, LR, MF and NS. LH 
+and CAH drafted the protocol. All authors were involved in reviewing and 
+revising the protocol. All authors read, provided feedback, and approved 
+the final protocol. CAH had final responsibility for the decision to submit for 
+publication.
+Funding
+This work was funded in part by grant G-42320–10-01 through the University 
+of Zurich Population Research Centre’s Seed Grants program, supported by 
+the University of Zurich Transform funding line.
+Data availability
+The data that will be used and analyzed in this study are available only 
+through the Swiss National Joint Registry. Restrictions apply to the availability 
+of these data, which were used under license for the current study, and so are 
+not publicly available.
+Declarations
+Ethics approval and consent to participate
+The local ethics committee of Canton Zurich was consulted to assess the need 
+for ethics approval (BASEC-Nr: 2024–01188). According to the ethics commit-
+tee, this project was not subject to ethics approval given that the research 
+group exclusively processed anonymous data. This is a register-based study 
+where all data are anonymised and thus there is no ability to directly consent 
+patients/participants.
+Consent for publication
+Not applicable.
+Competing interests
+The authors declare no competing interests.
+Author details
+1 Musculoskeletal Epidemiology Research Group, University of Zurich and Bal-
+grist University Hospital, Forchstrasse 340, Zurich 8008, Switzerland. 2 Epidemi-
+ology, Biostatistics and Prevention Institute (EBPI), University of Zurich, Zurich, 
+Switzerland. 3 University Spine Centre Zurich (UWZH), Balgrist University 
+Hospital, University of Zurich, Zurich, Switzerland. 4 Department of Advanced 
+Computing Sciences, Maastricht University, Maastricht, the Netherlands. 
+5 Mathematics Centre Maastricht, Maastricht University, Maastricht, the Nether-
+lands. 6 Center of Experimental Rheumatology, Department of Rheumatology, 
+University Hospital Zurich, University of Zurich, Zurich, Switzerland. 7 Institute 
+of Social and Preventive Medicine (ISPM), University of Bern, Bern, Switzerland. 
+8 ICES, Toronto, ON, Canada. 
+Received: 9 September 2024   Accepted: 20 June 2025
+References
+ 1. National Association for the Development of Quality in Swiss Hospitals 
+and Clinics. Annual report of the SIRIS registry hip & knee, 2012 – 2021 
+[Internet]. 2022 [cited 2023 Oct 2]. Available from: https:// swiss- medte ch. 
+ch/ en/ news/ siris- report- 2022
+ 2. Ethgen O, Bruyère O, Richy F, Dardennes C, Reginster JY. Health-related 
+quality of life in total hip and total knee arthroplasty: a qualitative and 
+systematic review of the literature. JBJS. 2004;86(5):963.
+
+=== PDF PAGE 8 ===
+Page 8 of 9Hofstetter et al. Diagnostic and Prognostic Research            (2025) 9:16 
+ 3. SIRIS foundation. National registry for hip and knee replacement: 
+organization and function [Internet]. 2018. Available from: https:// www. 
+siris- impla nt. ch/ en/ Downl oads& categ ory= 20
+ 4. Evans JT, Walker RW, Evans JP , Blom AW, Sayers A, Whitehouse MR. How 
+long does a knee replacement last? A systematic review and meta-analy-
+sis of case series and national registry reports with more than 15 years of 
+follow-up. Lancet. 2019;393(10172):655–63.
+ 5. Evans JT, Evans JP , Walker RW, Blom AW, Whitehouse MR, Sayers A. How 
+long does a hip replacement last? A systematic review and meta-analysis 
+of case series and national registry reports with more than 15 years of 
+follow-up. Lancet. 2019;393(10172):647–54.
+ 6. Beswick AD, Wylde V, Gooberman-Hill R, Blom A, Dieppe P . What propor-
+tion of patients report long-term pain after total hip or knee replace-
+ment for osteoarthritis? A systematic review of prospective studies in 
+unselected patients. BMJ Open. 2012;2(1):e000435.
+ 7. Bhandari M, Smith J, Miller LE, Block JE. Clinical and economic burden 
+of revision knee arthroplasty. Clin Med Insights Arthritis Musculoskelet 
+Disord. 2012;5(5):89–94.
+ 8. Oshima Lee E, Emanuel EJ. Shared decision making to improve care and 
+reduce costs. N Engl J Med. 2013;368(1):6–8.
+ 9. Ahmed S, Berzon RA, Revicki DA, Lenderking WR, Moinpour CM, Basch 
+E, et al. The use of patient-reported outcomes (PRO) within comparative 
+effectiveness research: implications for clinical practice and health care 
+policy. Med Care. 2012;50(12):1060–70.
+ 10. Greenhalgh J, Dalkin S, Gibbons E, Wright J, Valderas JM, Meads D, et al. 
+How do aggregated patient-reported outcome measures data stimulate 
+health care improvement? A realist synthesis. J Health Serv Res Policy. 
+2018;23(1):57–65.
+ 11. Entezari B, Koucheki R, Abbas A, Toor J, Wolfstadt JI, Ravi B, et al. Improv-
+ing resource utilization for arthroplasty care by leveraging machine 
+learning and optimization: a systematic review. Arthroplasty Today. 
+2023;9(20):101116.
+ 12. Aram P , Trela-Larsen L, Sayers A, Hills AF, Blom AW, McCloskey EV, et al. 
+Estimating an individual’s probability of revision surgery after knee 
+replacement: a comparison of modeling approaches using a national 
+data set. Am J Epidemiol. 2018;187(10):2252–62.
+ 13. Steyerberg EW, Moons KGM, van der Windt DA, Hayden JA, Perel P , 
+Schroter S, et al. Prognosis research strategy (PROGRESS) 3: prognostic 
+model research. PLOS Med. 2013;10(2):e1001381.
+ 14. Fontana MA, Lyman S, Sarker GK, Padgett DE, MacLean CH. Can machine 
+learning algorithms predict which patients will achieve minimally clini-
+cally important differences from total joint arthroplasty? Clin Orthop 
+Relat Res. 2019;477(6):1267.
+ 15. Klemt C, Uzosike AC, Esposito JG, Harvey MJ, Yeo I, Subih M, et al. The 
+utility of machine learning algorithms for the prediction of patient-
+reported outcome measures following primary hip and knee total joint 
+arthroplasty. Arch Orthop Trauma Surg. 2023;143(4):2235–45.
+ 16. Mitchell T, Buchanan B, DeJong G, Dietterich T, Rosenbloom P , Waibel A. 
+Machine learning. Annu Rev Comput Sci. 1990;4:417–33.
+ 17. Alanazi A. Using machine learning for healthcare challenges and oppor-
+tunities. Inform Med Unlocked. 2022;1(30):100924.
+ 18. Lopez CD, Gazgalis A, Boddapati V, Shah RP , Cooper HJ, Geller JA. Artificial 
+learning and machine learning decision guidance applications in total 
+hip and knee arthroplasty: a systematic review. Arthroplasty Today. 
+2021;3(11):103–12.
+ 19. Christodoulou E, Ma J, Collins GS, Steyerberg EW, Verbakel JY, Van Calster 
+B. A systematic review shows no performance benefit of machine 
+learning over logistic regression for clinical prediction models. J Clin 
+Epidemiol. 2019;1(110):12–22.
+ 20. Karlin EA, Lin CC, Meftah M, Slover JD, Schwarzkopf R. The impact of 
+machine learning on total joint arthroplasty patient outcomes: a systemic 
+review. J Arthroplasty. 2023;38(10):2085–95.
+ 21. Hinterwimmer F, Lazic I, Suren C, Hirschmann MT, Pohlig F, Rueckert D, 
+et al. Machine learning in knee arthroplasty: specific data are key—a sys-
+tematic review. Knee Surg Sports Traumatol Arthrosc. 2022;30(2):376–88.
+ 22. Stacey D, Lewis KB, Smith M, Carley M, Volk R, Douglas EE, et al. Decision 
+aids for people facing health treatment or screening decisions. Cochrane 
+Database Syst Rev. 2024 [cited 2024 Mar 4];(1). Available from: https:// doi. 
+org/ 10. 1002/ 14651 858. CD001 431. pub6/ full.
+ 23. von Elm E, Altman DG, Egger M, Pocock SJ, Gøtzsche PC, Vandenbroucke 
+JP , et al. The Strengthening the Reporting of Observational Studies in 
+Epidemiology (STROBE) statement: guidelines for reporting observational 
+studies. Int J Surg Lond Engl. 2014;12(12):1495–9.
+ 24. Collins GS, Reitsma JB, Altman DG, Moons KG. Transparent reporting of 
+a multivariable prediction model for individual prognosis or diagnosis 
+(TRIPOD): the TRIPOD Statement. BMC Med. 2015;6(13):1.
+ 25. Collins GS, Moons KGM, Dhiman P , Riley RD, Beam AL, Calster BV, et al. 
+TRIPOD+AI statement: updated guidance for reporting clinical predic-
+tion models that use regression or machine learning methods. BMJ. 
+2024;16(385):e078378.
+ 26. Jentzsch T, Dora C, Müller U, Farshad M. Swiss orthopaedics mini-
+mal dataset: first pilot report of reliability and validity. Adv Orthop. 
+2020;30(2020):e6673175.
+ 27. Kanton Zürich Gesundheitsdirektion, swiss orthopaedics, SIRIS. Projek-
+tinformation der Gesundheitsdirektion Zürich. 2019 [cited 2024 Jan 29]; 
+Available from: https:// www. zh. ch/ de/ gesun dheit/ spita eler- klini ken/ quali 
+taet- liste nspit aeler. html# 20336 59348. 
+ 28. te Molder MEM, Dowsey MM, Smolders JMH, van Steenbergen LN, van 
+den Ende CHM, Heesterbeek PJC. Inadequate classification of poor 
+response after total knee arthroplasty: a comparative analysis of 15 defini-
+tions using data from the Dutch arthroplasty register and the osteoarthri-
+tis initiative database. J Arthroplasty [Internet]. 2024 [cited 2024 May 19]; 
+Available from: https:// www. scien cedir ect. com/ scien ce/ artic le/ pii/ S0883 
+54032 40047 90. 
+ 29. te Molder MEM, van Onsem S, Smolders JMH, Dowsey MM, Rolfson O, 
+Singh JA, et al. International consensus-based ranking of definitions for 
+poor response to TKA: a Delphi study [Internet] [Thesis]. Submitted for 
+publication [cited 2024 May 20]. Available from: https:// www. maart enskl 
+iniek. nl/ media/ bh2eq ew5/ smk_ proef schri ft- mtm_ webve rsie. pdf. 
+ 30. Steyerberg EW. Clinical prediction models: a practical approach to devel-
+opment, validation, and updating [Internet]. Cham: Springer International 
+Publishing; 2019 [cited 2024 Jan 29]. (Statistics for Biology and Health). 
+Available from: https:// doi. org/ 10. 1007/ 978-3- 030- 16399-0. 
+ 31. Okafor L, Chen AF. Patient satisfaction and total hip arthroplasty: a review. 
+Arthroplasty. 2019;1(1):6.
+ 32. Kahlenberg CA, Nwachukwu BU, McLawhorn AS, Cross MB, Cornell CN, 
+Padgett DE. Patient satisfaction after total knee replacement: a systematic 
+review. HSS J. 2018;14(2):192–201.
+ 33. Zhang B, Rao S, Mekkawy KL, Rahman R, Sarfraz A, Hollifield L, et al. Risk 
+factors for pain after total hip arthroplasty: a systematic review. Arthro-
+plasty Lond Engl. 2023;5(1):19.
+ 34. Mannion AF, Nauer S, Arsoy D, Impellizzeri FM, Leunig M. The association 
+between comorbidity and the risks and early benefits of total hip arthro-
+plasty for hip osteoarthritis. J Arthroplasty. 2020;35(9):2480–7.
+ 35. Greene ME, Rolfson O, Gordon M, Garellick G, Nemes S. Standard comor-
+bidity measures do not predict patient-reported outcomes 1 year after 
+total hip arthroplasty. Clin Orthop. 2015;473(11):3370–9.
+ 36. Rolfson O, Dahlberg LE, Nilsson J å, Malchau H, Garellick G. Variables 
+determining outcome in total hip replacement surgery. J Bone Joint Surg 
+Br. 2009;91-B(2):157–61.
+ 37. Malik AT, Jain N, Scharschmidt TJ, Li M, Glassman AH, Khan SN. Does sur-
+geon volume affect outcomes following primary total hip arthroplasty? A 
+systematic review J Arthroplasty. 2018;33(10):3329–42.
+ 38. Greene ME, Rolfson O, Nemes S, Gordon M, Malchau H, Garellick G. 
+Education attainment is associated with patient-reported outcomes: 
+findings from the Swedish hip arthroplasty register. Clin Orthop Relat Res. 
+2014;472(6):1868.
+ 39. Olsen U, Lindberg MF, Rose C, Denison E, Gay C, Aamodt A, et al. Factors 
+correlated with pain after total knee arthroplasty: A systematic review 
+and meta-analysis. PLoS ONE. 2023;18(3):e0283446.
+ 40. Bottle A, Parikh S, Aylin P , Loeffler M. Risk factors for early revision after 
+total hip and knee arthroplasty: national observational study from a 
+surgeon and population perspective. PLoS ONE. 2019;14(4):e0214855.
+ 41. Peters RM, van Steenbergen LN, Stewart RE, Stevens M, Rijk PC, Bulstra SK, 
+et al. Patient characteristics influence revision rate of total hip arthro-
+plasty: American Society of Anesthesiologists score and body mass index 
+were the strongest predictors for short-term revision after primary total 
+hip arthroplasty. J Arthroplasty. 2020;35(1):188-192.e2.
+ 42. Marsh JD, McClure JA, Lanting B, Vasarhelyi E, MacDonald S, Naudie D, 
+et al. Predictors of undergoing revision within five years of total knee 
+arthroplasty: a population-based study. J Arthroplasty [Internet]. 2023 
+
+=== PDF PAGE 9 ===
+Page 9 of 9
+Hofstetter et al. Diagnostic and Prognostic Research            (2025) 9:16 
+ 
+[cited 2023 Sep 25]; Available from: https:// www. scien cedir ect. com/ scien 
+ce/ artic le/ pii/ S0883 54032 30093 12. 
+ 43. Ferguson RJ, Silman AJ, Combescure C, Bulow E, Odin D, Hannouche D, 
+et al. ASA class is associated with early revision and reoperation after total 
+hip arthroplasty: an analysis of the Geneva and Swedish hip arthroplasty 
+registries. Acta Orthop. 2019;90(4):324–30.
+ 44. Angerame MR, Fehring TK, Masonis JL, Mason JB, Odum SM, Springer BD. 
+Early failure of primary total hip arthroplasty: is surgical approach a risk 
+factor? J Arthroplasty. 2018;33(6):1780–5.
+ 45. Hoskins W, Bingham R, Lorimer M, Hatton A, de Steiger RN. Early rate of 
+revision of total hip arthroplasty related to surgical approach: an analysis 
+of 122,345 primary total hip arthroplasties. JBJS. 2020;102(21):1874.
+ 46. Prokopetz JJ, Losina E, Bliss RL, Wright J, Baron JA, Katz JN. Risk factors 
+for revision of primary total hip arthroplasty: a systematic review. BMC 
+Musculoskelet Disord. 2012;13(1):251.
+ 47. Wagner A, Wittig U, Leitner L, Vielgut I, Hauer G, Ortmaier R, et al. Com-
+parison of revision rates and epidemiological data of a single total knee 
+arthroplasty system of different designs (cruciate retaining, posterior 
+stabilized, mobile bearing, and fixed bearing): a meta-analysis and sys-
+tematic review of clinical trials and national arthroplasty registries. Arch 
+Orthop Trauma Surg. 2024. https:// doi. org/ 10. 1007/ s00402- 024- 05286-6.
+ 48. Liu L, Li J, Wang Y, Li X, Han P , Li X. Different modalities of patellar manage-
+ment in primary total knee arthroplasty: a Bayesian network meta-analy-
+sis of randomized controlled trials. J Orthop Surg. 2024;17(19):74.
+ 49. Jasper LL, Jones CA, Mollins J, Pohar SL, Beaupre LA. Risk factors for 
+revision of total knee arthroplasty: a scoping review. BMC Musculoskelet 
+Disord. 2016;17(1):182.
+ 50. Background - NUTS - Nomenclature of territorial units for statistics - Euro-
+stat [Internet]. [cited 2021 Oct 2]. Available from: https:// ec. europa. eu/ 
+euros tat/ web/ nuts/ backg round. 
+ 51. Riley RD, Snell KI, Ensor J, Burke DL, Harrell FE, Moons KG, et al. Minimum 
+sample size for developing a multivariable prediction model: PART II - 
+binary and time-to-event outcomes. Stat Med. 2019;38(7):1276–96.
+ 52. Collins GS, Ogundimu EO, Altman DG. Sample size considerations for the 
+external validation of a multivariable prognostic model: a resampling 
+study. Stat Med. 2016;35(2):214–26.
+ 53. van Buuren S, Groothuis-Oudshoorn K. Mice: multivariate imputation by 
+chained equations in R. J Stat Softw. 2011;12(45):1–67.
+ 54. Wang Y, Flowers CR, Li Z, Huang X. CondiS: A conditional survival 
+distribution-based method for censored data imputation overcoming 
+the hurdle in machine learning-based survival analysis. J Biomed Inform. 
+2022;1(131):104117.
+ 55. Moons KGM, Altman DG, Reitsma JB, Ioannidis JPA, Macaskill P , Steyerberg 
+EW, et al. Transparent reporting of a multivariable prediction model for 
+individual prognosis or diagnosis (TRIPOD): explanation and elaboration. 
+Ann Intern Med. 2015;162(1):W1-73.
+ 56. Harrell FE Jr, Lee KL, Mark DB. Multivariable prognostic models: issues in 
+developing models, evaluating assumptions and adequacy, and measur-
+ing and reducing errors. Stat Med. 1996;15(4):361–87.
+ 57. Austin PC, Steyerberg EW. Graphical assessment of internal and external 
+calibration of logistic regression models by using loess smoothers. Stat 
+Med. 2014;33(3):517–35.
+ 58. R: the R project for statistical computing. [cited 2021 Feb 3]. Available 
+from: https:// www.r- proje ct. org/. 
+ 59. Vickers AJ, Elkin EB. Decision curve analysis: a novel method for 
+evaluating prediction models. Med Decis Mak Int J Soc Med Decis Mak. 
+2006;26(6):565–74.
+ 60. Vickers AJ, Holland F. Decision curve analysis to evaluate the clinical 
+benefit of prediction models. Spine J. 2021;21(10):1643–8.
+Publisher’s Note
+Springer Nature remains neutral with regard to jurisdictional claims in pub-
+lished maps and institutional affiliations.

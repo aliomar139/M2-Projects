@@ -1,0 +1,765 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          17
+        ]
+      ],
+      "date-time": "2026-07-17T20:31:42Z",
+      "timestamp": 1784320302603,
+      "version": "3.55.0"
+    },
+    "reference-count": 31,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              3,
+              2
+            ]
+          ],
+          "date-time": "2022-03-02T00:00:00Z",
+          "timestamp": 1646179200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              3,
+              2
+            ]
+          ],
+          "date-time": "2022-03-02T00:00:00Z",
+          "timestamp": 1646179200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100003130",
+        "name": "Fonds Wetenschappelijk Onderzoek",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "1S39119N"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "1S39119N"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100003130",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100003130",
+        "name": "Fonds Wetenschappelijk Onderzoek",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "G0F8316N"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "G0F8316N"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100003130",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000038",
+        "name": "U.S. Food and Drug Administration",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01FD005724"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01FD005724"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000038",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000060",
+        "name": "National Institute of Allergy and Infectious Diseases",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "K24AI150349"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "K24AI150349"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000060",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001322",
+        "name": "South African Medical Research Council",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100001322",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "Department of Science and Innovation - National Research Foundation, South Africa"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "BMC Med Inform Decis Mak"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          12
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:sec>\n                <jats:title>Background</jats:title>\n                <jats:p>Personalized medicine tailors care based on the patient’s or pathogen’s genotypic and phenotypic characteristics. An automated Clinical Decision Support System (CDSS) could help translate the genotypic and phenotypic characteristics into optimal treatment and thus facilitate implementation of individualized treatment by less experienced physicians.\n</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Methods</jats:title>\n                <jats:p>We developed a hybrid knowledge- and data-driven treatment recommender CDSS. Stakeholders and experts first define the knowledge base by identifying and quantifying drug and regimen features for the prototype model input. In an iterative manner, feedback from experts is harvested to generate model training datasets, machine learning methods are applied to identify complex relations and patterns in the data, and model performance is assessed by estimating the precision at one, mean reciprocal rank and mean average precision. Once the model performance no longer iteratively increases, a validation dataset is used to assess model overfitting.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Results</jats:title>\n                <jats:p>We applied the novel methodology to develop a treatment recommender CDSS for individualized treatment of drug resistant tuberculosis as a proof of concept. Using input from stakeholders and three rounds of expert feedback on a dataset of 355 patients with 129 unique drug resistance profiles, the model had a 95% precision at 1 indicating that the highest ranked treatment regimen was considered appropriate by the experts in 95% of cases. Use of a validation data set however suggested substantial model overfitting, with a reduction in precision at 1 to 78%.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Conclusion</jats:title>\n                <jats:p>Our novel and flexible hybrid knowledge- and data-driven treatment recommender CDSS is a first step towards the automation of individualized treatment for personalized medicine. Further research should assess its value in fields other than drug resistant tuberculosis, develop solid statistical approaches to assess model performance, and evaluate their accuracy in real-life clinical settings.</jats:p>\n              </jats:sec>",
+    "DOI": "10.1186/s12911-022-01790-0",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          2
+        ]
+      ],
+      "date-time": "2022-03-02T16:03:03Z",
+      "timestamp": 1646236983000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 28,
+    "title": [
+      "A treatment recommender clinical decision support system for personalized medicine: method development and proof-of-concept for drug resistant tuberculosis"
+    ],
+    "prefix": "10.1186",
+    "volume": "22",
+    "author": [
+      {
+        "given": "Lennert",
+        "family": "Verboven",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Toon",
+        "family": "Calders",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Steven",
+        "family": "Callens",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "John",
+        "family": "Black",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gary",
+        "family": "Maartens",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kelly E.",
+        "family": "Dooley",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Samantha",
+        "family": "Potgieter",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Robin M.",
+        "family": "Warren",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kris",
+        "family": "Laukens",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Annelies",
+        "family": "Van Rie",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          2
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "7023",
+        "key": "1790_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "71",
+        "DOI": "10.1136/bmj.312.7023.71",
+        "volume": "312",
+        "author": "DL Sackett",
+        "year": "1996",
+        "unstructured": "Sackett DL, et al. Evidence based medicine: what it is and what it isn’t. BMJ. 1996;312(7023):71–2.",
+        "journal-title": "BMJ"
+      },
+      {
+        "issue": "10092",
+        "key": "1790_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "415",
+        "DOI": "10.1016/S0140-6736(16)31592-6",
+        "volume": "390",
+        "author": "B Djulbegovic",
+        "year": "2017",
+        "unstructured": "Djulbegovic B, Guyatt GH. Progress in evidence-based medicine: a quarter century on. Lancet. 2017;390(10092):415–23.",
+        "journal-title": "Lancet"
+      },
+      {
+        "issue": "1",
+        "key": "1790_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "E4",
+        "DOI": "10.1208/ps020104",
+        "volume": "2",
+        "author": "L Mancinelli",
+        "year": "2000",
+        "unstructured": "Mancinelli L, Cronin M, Sadee W. Pharmacogenomics: the promise of personalized medicine. AAPS PharmSci. 2000;2(1):E4.",
+        "journal-title": "AAPS PharmSci"
+      },
+      {
+        "key": "1790_CR4",
+        "unstructured": "Academy of Medical Sciences, Stratified, personalised or P4 medicine: a new direction for placing the patient at the Centre of Healthcare and Health Education. 2015."
+      },
+      {
+        "key": "1790_CR5",
+        "first-page": "14073",
+        "volume": "144",
+        "author": "PE Beeler",
+        "year": "2014",
+        "unstructured": "Beeler PE, Bates DW, Hug BL. Clinical decision support systems. Swiss Med Wkly. 2014;144:14073.",
+        "journal-title": "Swiss Med Wkly"
+      },
+      {
+        "key": "1790_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "8659460",
+        "DOI": "10.1155/2017/8659460",
+        "volume": "2017",
+        "author": "F Grasser",
+        "year": "2017",
+        "unstructured": "Grasser F, et al. Therapy decision support based on recommender system methods. J Healthc Eng. 2017;2017:8659460.",
+        "journal-title": "J Healthc Eng"
+      },
+      {
+        "key": "1790_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "3",
+        "DOI": "10.1007/978-0-387-38319-4_1",
+        "volume-title": "Clinical decision support systems: theory and practice",
+        "author": "ES Berner",
+        "year": "2007",
+        "unstructured": "Berner ES, La Lande TJ. Overview of clinical decision support systems. In: Berner ES, editor. Clinical decision support systems: theory and practice. New York: Springer; 2007. p. 3–22."
+      },
+      {
+        "key": "1790_CR8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhu N, et al. A decision support system with intelligent recommendation for multi-disciplinary medical treatment. ACM Trans Multimed Comput Commun Appl. 2020;16(1s):Article 33.",
+        "DOI": "10.1145/3352573"
+      },
+      {
+        "key": "1790_CR9",
+        "unstructured": "Wang M, et al. Safe medicine recommendation via medical knowledge graph embedding; 2017. arXiv 1710.05980."
+      },
+      {
+        "key": "1790_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "30",
+        "DOI": "10.1016/j.future.2015.12.001",
+        "volume": "66",
+        "author": "Y Zhang",
+        "year": "2017",
+        "unstructured": "Zhang Y, et al. iDoctor: personalized and professionalized medical recommendations based on hybrid matrix factorization. Futur Gener Comput Syst. 2017;66:30–5.",
+        "journal-title": "Futur Gener Comput Syst"
+      },
+      {
+        "issue": "1",
+        "key": "1790_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "24",
+        "DOI": "10.1186/s12874-018-0482-1",
+        "volume": "18",
+        "author": "JL Katzman",
+        "year": "2018",
+        "unstructured": "Katzman JL, et al. DeepSurv: personalized treatment recommender system using a Cox proportional hazards deep neural network. BMC Med Res Methodol. 2018;18(1):24.",
+        "journal-title": "BMC Med Res Methodol"
+      },
+      {
+        "issue": "4",
+        "key": "1790_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "688",
+        "DOI": "10.1016/j.clinthera.2015.12.001",
+        "volume": "38",
+        "author": "Y Chen",
+        "year": "2016",
+        "unstructured": "Chen Y, Elenee Argentinis JD, Weber G. IBM Watson: how cognitive computing can be applied to big data challenges in life sciences research. Clin Ther. 2016;38(4):688–701.",
+        "journal-title": "Clin Ther"
+      },
+      {
+        "issue": "15_suppl",
+        "key": "1790_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "e17653",
+        "DOI": "10.1200/jco.2014.32.15_suppl.e17653",
+        "volume": "32",
+        "author": "MG Zauderer",
+        "year": "2014",
+        "unstructured": "Zauderer MG, et al. Piloting IBM Watson Oncology within Memorial Sloan Kettering’s regional network. J Clin Oncol. 2014;32(15_suppl):e17653.",
+        "journal-title": "J Clin Oncol"
+      },
+      {
+        "key": "1790_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "317",
+        "DOI": "10.1007/978-1-4842-4859-1_8",
+        "volume-title": "Practical data science with python 3: synthesizing actionable insights from data",
+        "author": "E Varga",
+        "year": "2019",
+        "unstructured": "Varga E. Recommender Systems. In: Practical data science with python 3: synthesizing actionable insights from data. Berkeley: Apress; 2019. p. 317–39."
+      },
+      {
+        "issue": "5",
+        "key": "1790_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1145/3407190",
+        "volume": "53",
+        "author": "Y Deldjoo",
+        "year": "2020",
+        "unstructured": "Deldjoo Y, et al. Recommender systems leveraging multimedia content. ACM Comput Surv. 2020;53(5):1–38.",
+        "journal-title": "ACM Comput Surv"
+      },
+      {
+        "key": "1790_CR16",
+        "unstructured": "Breese JS, Heckerman D, Kadie C. Empirical analysis of predictive algorithms for collaborative filtering. In: Proceedings of the fourteenth conference on uncertainty in artificial intelligence. Madison: Morgan Kaufmann; 1998. p. 43–52."
+      },
+      {
+        "key": "1790_CR17",
+        "volume-title": "Recommender systems handbook",
+        "author": "F Ricci",
+        "year": "2009",
+        "unstructured": "Ricci F, Rokac L, Shapira B. Recommender systems handbook. Berlin: Springer; 2009."
+      },
+      {
+        "key": "1790_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "93",
+        "DOI": "10.1016/j.ijhcs.2018.03.003",
+        "volume": "121",
+        "author": "C Musto",
+        "year": "2019",
+        "unstructured": "Musto C, et al. Linked open data-based explanations for transparent recommender systems. Int J Hum Comput Stud. 2019;121:93–107.",
+        "journal-title": "Int J Hum Comput Stud"
+      },
+      {
+        "key": "1790_CR19",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ngo T, Kunkel J, Ziegler J. Exploring mental models for transparent and controllable recommender systems: a qualitative study. In: Proceedings of the 28th ACM conference on user modeling, adaptation and personalization. Genoa: Association for Computing Machinery; 2020. p. 183–91.",
+        "DOI": "10.1145/3340631.3394841"
+      },
+      {
+        "key": "1790_CR20",
+        "unstructured": "Howe J. The rise of crowdsourcing, in Wired. 2006."
+      },
+      {
+        "key": "1790_CR21",
+        "unstructured": "Netflix. Netflix Prize. [cited 2021 02/02/2021]. https://netflixprize.com/."
+      },
+      {
+        "issue": "2",
+        "key": "1790_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "134",
+        "DOI": "10.5588/ijtld.20.0598",
+        "volume": "25",
+        "author": "E De Vos",
+        "year": "2021",
+        "unstructured": "De Vos E, et al. Management of rifampicin-resistant TB: programme indicators and care cascade analysis in South Africa. Int J Tuberc Lung Dis. 2021;25(2):134–41.",
+        "journal-title": "Int J Tuberc Lung Dis"
+      },
+      {
+        "issue": "Suppl 2",
+        "key": "1790_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "S2",
+        "DOI": "10.1186/1472-6947-13-S2-S2",
+        "volume": "13",
+        "author": "A Coulter",
+        "year": "2013",
+        "unstructured": "Coulter A, et al. A systematic development process for patient decision aids. BMC Med Inform Decis Mak. 2013;13(Suppl 2):S2.",
+        "journal-title": "BMC Med Inform Decis Mak"
+      },
+      {
+        "key": "1790_CR24",
+        "volume-title": "Model selection and multimodel inference",
+        "author": "KP Burnham",
+        "year": "2002",
+        "unstructured": "Burnham KP, Anderson DR. Model selection and multimodel inference. Berlin: Springer; 2002."
+      },
+      {
+        "issue": "1",
+        "key": "1790_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "5",
+        "DOI": "10.1023/A:1010933404324",
+        "volume": "45",
+        "author": "L Breiman",
+        "year": "2001",
+        "unstructured": "Breiman L. Random forests. Mach Learn. 2001;45(1):5–32.",
+        "journal-title": "Mach Learn"
+      },
+      {
+        "key": "1790_CR26",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hastie T, Tibshirani R, Friedman J. Random forests. In: The elements of statistical learning: data mining, inference, and prediction. New York: Springer; 2009. p. 587–604.",
+        "DOI": "10.1007/978-0-387-84858-7_15"
+      },
+      {
+        "key": "1790_CR27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/CBO9780511809071",
+        "volume-title": "Introduction to information retrieval",
+        "author": "CD Manning",
+        "year": "2008",
+        "unstructured": "Manning CD, Raghavan P, Schutze H. Introduction to information retrieval. Cambridge University Press; 2008."
+      },
+      {
+        "key": "1790_CR28",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Voorhees EM. Proceedings of the 8th text retrieval conference; 1999.",
+        "DOI": "10.6028/NIST.SP.500-246"
+      },
+      {
+        "key": "1790_CR29",
+        "volume-title": "Recall, precision and average precision",
+        "author": "M Zhu",
+        "year": "2004",
+        "unstructured": "Zhu M. Recall, precision and average precision. University of Waterloo; 2004."
+      },
+      {
+        "issue": "3",
+        "key": "1790_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "239",
+        "DOI": "10.5588/ijtld.17.0660",
+        "volume": "22",
+        "author": "A Van Deun",
+        "year": "2018",
+        "unstructured": "Van Deun A, et al. Principles for constructing a tuberculosis treatment regimen: the role and definition of core and companion drugs. Int J Tuberc Lung Dis. 2018;22(3):239–45.",
+        "journal-title": "Int J Tuberc Lung Dis"
+      },
+      {
+        "key": "1790_CR31",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wazny K. Applications of crowdsourcing in health: an overview. J Glob Health. 2018;8(1):010502.",
+        "DOI": "10.7189/jogh.08.010502"
+      }
+    ],
+    "container-title": [
+      "BMC Medical Informatics and Decision Making"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s12911-022-01790-0.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1186/s12911-022-01790-0/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s12911-022-01790-0.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          2
+        ]
+      ],
+      "date-time": "2022-03-02T16:03:45Z",
+      "timestamp": 1646237025000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-022-01790-0"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          2
+        ]
+      ]
+    },
+    "references-count": 31,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2022,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "1790"
+    ],
+    "URL": "https://doi.org/10.1186/s12911-022-01790-0",
+    "relation": {},
+    "ISSN": [
+      "1472-6947"
+    ],
+    "issn-type": [
+      {
+        "value": "1472-6947",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          2
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2 February 2021",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "22 February 2022",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "2 March 2022",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "The research was performed in accordance with the Declaration of Helsinki. Collection of the clinical strains and the determination of the genotypic drug resistance profile was approved by appropriate ethics committees. For the training dataset, ethical approval was obtained from the Human Research Ethics Committee of the University of the Witwatersrand in South Africa and the Institutional Review Board of the University of North Carolina at Chapel Hill in the United States (reference numbers M111139 and 11-2273). Approval of study activities was also obtained from relevant health authorities. Participants gave verbal informed consent by phone (recorded). The Research Ethics Committee or Institutional Review Board of Human Research Ethics Committee of the University of the Witwatersrand in South Africa (M111139) and the Institutional Review Board of the University of North Carolina at Chapel Hill in the United States (11-2273) waived the need of informed consent for patients who had died or were lost to follow-up from TB care prior to study enrolment and could not be contacted despite multiple attempts. For the validation dataset, ethical clearance was obtained from Stellenbosch University Health Research Ethics Committee. This ethics approval (ref number N09/11/269) has a waiver of informed consent. The study titled \"a personalized recommender system for whole genome sequencing-based individualized treatment for drug resistant tuberculosis\" reported in this manuscript was approved by the Ethics Committee of the University Hospital Antwerp and the University of Antwerp (ref number 2107101).",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethics approval and consent to participate"
+        }
+      },
+      {
+        "value": "Not applicable.",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Consent for publication"
+        }
+      },
+      {
+        "value": "Not applicable.",
+        "order": 4,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "56"
+  }
+}

@@ -1,0 +1,560 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          14
+        ]
+      ],
+      "date-time": "2026-09-14T22:44:51Z",
+      "timestamp": 1789425891859,
+      "version": "build-2803163510"
+    },
+    "reference-count": 51,
+    "publisher": "SAGE Publications",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              5,
+              20
+            ]
+          ],
+          "date-time": "2025-05-20T00:00:00Z",
+          "timestamp": 1747699200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journals.sagepub.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "HSS Journal®: The Musculoskeletal Journal of Hospital for Special Surgery"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          8
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Artificial intelligence (AI) has emerged as a transformative force in orthopedic surgery. Potentially encompassing pre-, intra-, and postoperative processes, it can process complex medical imaging, provide real-time surgical guidance, and analyze large datasets for outcome prediction and optimization. AI has shown improvements in surgical precision, efficiency, and patient outcomes across orthopedic subspecialties, and large language models and agentic AI systems are expanding AI utility beyond surgical applications into areas such as clinical documentation, patient education, and autonomous decision support. The successful implementation of AI in orthopedic surgery requires careful attention to validation, regulatory compliance, and healthcare system integration. As these technologies continue to advance, maintaining the balance between innovation and patient safety remains crucial, with the ultimate goal of achieving more personalized, efficient, and equitable healthcare delivery while preserving the essential role of human clinical judgment. This review examines the current landscape and future trajectory of AI applications in orthopedic surgery, highlighting both technological advances and their clinical impact. Studies have suggested that AI-assisted procedures achieve higher accuracy and better functional outcomes compared to conventional methods, while reducing operative times and complications. However, these technologies are designed to augment rather than replace clinical expertise, serving as sophisticated tools to enhance surgeons’ capabilities and improve patient care.</jats:p>",
+    "DOI": "10.1177/15563316251339596",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          5,
+          20
+        ]
+      ],
+      "date-time": "2025-05-20T07:35:53Z",
+      "timestamp": 1747726553000
+    },
+    "page": "267-273",
+    "update-policy": "https://doi.org/10.1177/sage-journals-update-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 20,
+    "title": [
+      "Artificial Intelligence and Musculoskeletal Surgical Applications"
+    ],
+    "prefix": "10.1177",
+    "volume": "21",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-9721-685X",
+        "authenticated-orcid": false,
+        "given": "Felix C.",
+        "family": "Oettl",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Orthopedic Surgery, Balgrist University Hospital, University of Zürich, Zurich, Switzerland"
+          },
+          {
+            "name": "Hospital for Special Surgery, New York, NY, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bálint",
+        "family": "Zsidai",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedics, Institute of Clinical Sciences, Sahlgrenska Academy, University of Gothenburg, Gothenburg, Sweden"
+          },
+          {
+            "name": "Sahlgrenska Sports Medicine Center, Göteborg, Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4562-4373",
+        "authenticated-orcid": false,
+        "given": "Jacob F.",
+        "family": "Oeding",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedics, Institute of Clinical Sciences, Sahlgrenska Academy, University of Gothenburg, Gothenburg, Sweden"
+          },
+          {
+            "name": "Mayo Clinic Alix School of Medicine, Mayo Clinic, Rochester, MN, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kristian",
+        "family": "Samuelsson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedics, Institute of Clinical Sciences, Sahlgrenska Academy, University of Gothenburg, Gothenburg, Sweden"
+          },
+          {
+            "name": "Sahlgrenska Sports Medicine Center, Göteborg, Sweden"
+          },
+          {
+            "name": "Department of Health and Rehabilitation, Institute of Neuroscience and Physiology, Sahlgrenska Academy, University of Gothenburg, Gothenburg, Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "179",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          5,
+          20
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_2_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-022-26647-4"
+      },
+      {
+        "key": "e_1_3_2_3_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.21037/jss-20-687"
+      },
+      {
+        "key": "e_1_3_2_4_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmjopen-2023-076484"
+      },
+      {
+        "key": "e_1_3_2_5_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3630106.3658948"
+      },
+      {
+        "key": "e_1_3_2_6_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s40634-023-00700-1"
+      },
+      {
+        "key": "e_1_3_2_7_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/frai.2023.1169595"
+      },
+      {
+        "key": "e_1_3_2_8_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamasurg.2021.3012"
+      },
+      {
+        "key": "e_1_3_2_9_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0314991"
+      },
+      {
+        "key": "e_1_3_2_10_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/prosthesis6040052"
+      },
+      {
+        "key": "e_1_3_2_11_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/diagnostics14121253"
+      },
+      {
+        "key": "e_1_3_2_12_2",
+        "article-title": "LLM multi-agent systems: challenges and open problems",
+        "volume": "2024",
+        "author": "Han S",
+        "year": "2024",
+        "unstructured": "Han S, Zhang Q, Yao Y, Jin W, Xu Z, He C. LLM multi-agent systems: challenges and open problems [preprint]. arXiV. 2024;2024:arXiv:2402.03578.",
+        "journal-title": "arXiV"
+      },
+      {
+        "key": "e_1_3_2_13_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-022-14006-2"
+      },
+      {
+        "key": "e_1_3_2_14_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fsurg.2023.1247527"
+      },
+      {
+        "key": "e_1_3_2_15_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/app132111709"
+      },
+      {
+        "key": "e_1_3_2_16_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2020.2980025"
+      },
+      {
+        "key": "e_1_3_2_17_2",
+        "first-page": "7205",
+        "article-title": "U-NetPlus: a modified encoder-decoder u-net architecture for semantic and instance segmentation of surgical instruments from laparoscopic images",
+        "volume": "2019",
+        "author": "Kamrul Hasan SM",
+        "year": "2019",
+        "unstructured": "Kamrul Hasan SM, Linte CA. U-NetPlus: a modified encoder-decoder u-net architecture for semantic and instance segmentation of surgical instruments from laparoscopic images. Annu Int Conf IEEE Eng Med Biol Soc. 2019;2019:7205–7211.",
+        "journal-title": "Annu Int Conf IEEE Eng Med Biol Soc"
+      },
+      {
+        "key": "e_1_3_2_18_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/diagnostics14171879"
+      },
+      {
+        "key": "e_1_3_2_19_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-024-67276-3"
+      },
+      {
+        "key": "e_1_3_2_20_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-024-71654-2"
+      },
+      {
+        "key": "e_1_3_2_21_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/rcs.2300"
+      },
+      {
+        "issue": "3",
+        "key": "e_1_3_2_22_2",
+        "first-page": "1123",
+        "article-title": "Real-time surgical tool detection in computer-aided surgery based on enhanced feature-fusion convolutional neural network",
+        "volume": "9",
+        "author": "Liu K",
+        "year": "2022",
+        "unstructured": "Liu K, Zhao Z, Shi P, Li F, Song H. Real-time surgical tool detection in computer-aided surgery based on enhanced feature-fusion convolutional neural network. J Comput Des Eng. 2022;9(3):1123–1134.",
+        "journal-title": "J Comput Des Eng"
+      },
+      {
+        "key": "e_1_3_2_23_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1049/htl2.12072"
+      },
+      {
+        "key": "e_1_3_2_24_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.artd.2021.11.001"
+      },
+      {
+        "key": "e_1_3_2_25_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.artd.2021.07.012"
+      },
+      {
+        "key": "e_1_3_2_26_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12891-024-08052-2"
+      },
+      {
+        "key": "e_1_3_2_27_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3171/2022.1.FOCUS21721"
+      },
+      {
+        "key": "e_1_3_2_28_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1155/2021/6112671"
+      },
+      {
+        "key": "e_1_3_2_29_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.F.00386"
+      },
+      {
+        "key": "e_1_3_2_30_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.eclinm.2021.101252"
+      },
+      {
+        "key": "e_1_3_2_31_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jama.2011.1204"
+      },
+      {
+        "key": "e_1_3_2_32_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jeo2.12103"
+      },
+      {
+        "key": "e_1_3_2_33_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/jeo2.12039"
+      },
+      {
+        "key": "e_1_3_2_34_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.pmrj.2018.06.013"
+      },
+      {
+        "key": "e_1_3_2_35_2",
+        "unstructured": "Radford A Narasimhan K Salimans T et al. Improving Language Understanding by Generative Pre-Training. 2018."
+      },
+      {
+        "key": "e_1_3_2_36_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1155/bmri/9554590"
+      },
+      {
+        "key": "e_1_3_2_37_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.fas.2024.12.003"
+      },
+      {
+        "key": "e_1_3_2_38_2",
+        "volume-title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+        "author": "Ronneberger O",
+        "year": "2015",
+        "unstructured": "Ronneberger O, Fischer P, Brox T. U-Net: Convolutional Networks for Biomedical Image Segmentation. Cham: Springer International Publishing; 2015."
+      },
+      {
+        "key": "e_1_3_2_39_2",
+        "article-title": "Capabilities of gemini models in medicine",
+        "volume": "2024",
+        "author": "Saab K",
+        "year": "2024",
+        "unstructured": "Saab K, Tu T, Weng W-H, et al. Capabilities of gemini models in medicine [preprint]. arXiv. 2024;2024:arXiv:2404.18416.",
+        "journal-title": "arXiv"
+      },
+      {
+        "key": "e_1_3_2_40_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4103/jcvjs.JCVJS_48_20"
+      },
+      {
+        "key": "e_1_3_2_41_2",
+        "article-title": "LlamaCare: a large medical language model for enhancing healthcare knowledge sharing",
+        "volume": "2024",
+        "author": "Sun M.",
+        "year": "2024",
+        "unstructured": "Sun M. LlamaCare: a large medical language model for enhancing healthcare knowledge sharing [preprint]. arXiv. 2024;2024:arXiv:2406.02350.",
+        "journal-title": "arXiv"
+      },
+      {
+        "key": "e_1_3_2_42_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1056/CAT.23.0404"
+      },
+      {
+        "key": "e_1_3_2_43_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12891-024-07355-8"
+      },
+      {
+        "key": "e_1_3_2_44_2",
+        "article-title": "Mathematics of multi-agent learning systems at the interface of game theory and artificial intelligence",
+        "volume": "2024",
+        "author": "Wang L",
+        "year": "2024",
+        "unstructured": "Wang L, Fu F, Chen X. Mathematics of multi-agent learning systems at the interface of game theory and artificial intelligence [preprint]. arXiv. 2024;2024:arXiv:2403.07017.",
+        "journal-title": "arXiv"
+      },
+      {
+        "key": "e_1_3_2_45_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4108/eetpht.10.5150"
+      },
+      {
+        "key": "e_1_3_2_46_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.52312/jdrs.2023.1076"
+      },
+      {
+        "key": "e_1_3_2_47_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.52312/jdrs.2023.1059"
+      },
+      {
+        "key": "e_1_3_2_48_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/medicina60091485"
+      },
+      {
+        "key": "e_1_3_2_49_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/17453674.2021.1891512"
+      },
+      {
+        "key": "e_1_3_2_50_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.heliyon.2024.e39664"
+      },
+      {
+        "key": "e_1_3_2_51_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/jcm12237382"
+      },
+      {
+        "issue": "9",
+        "key": "e_1_3_2_52_2",
+        "first-page": "855",
+        "article-title": "[Early gait analysis after total knee arthroplasty based on artificial intelligence dynamic image recognition]",
+        "volume": "37",
+        "author": "Zhang M",
+        "year": "2024",
+        "unstructured": "Zhang M, Sui YN, Wang C, et al. [Early gait analysis after total knee arthroplasty based on artificial intelligence dynamic image recognition]. Zhongguo Gu Shang. 2024;37(9):855–861.",
+        "journal-title": "Zhongguo Gu Shang"
+      }
+    ],
+    "container-title": [
+      "HSS Journal®: The Musculoskeletal Journal of Hospital for Special Surgery"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/15563316251339596",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/15563316251339596",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/15563316251339596",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          29
+        ]
+      ],
+      "date-time": "2026-04-29T08:43:17Z",
+      "timestamp": 1777452197000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.sagepub.com/doi/10.1177/15563316251339596"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          5,
+          20
+        ]
+      ]
+    },
+    "references-count": 51,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            8
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1177/15563316251339596"
+    ],
+    "URL": "https://doi.org/10.1177/15563316251339596",
+    "relation": {},
+    "ISSN": [
+      "1556-3316",
+      "1556-3324"
+    ],
+    "issn-type": [
+      {
+        "value": "1556-3316",
+        "type": "print"
+      },
+      {
+        "value": "1556-3324",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          5,
+          20
+        ]
+      ]
+    }
+  }
+}

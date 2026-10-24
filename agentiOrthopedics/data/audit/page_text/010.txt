@@ -1,0 +1,343 @@
+=== PDF PAGE 1 ===
+CLINICAL ORTHOPAEDICS AND RELATED RESEARCH • 2024.0 Top 100 Orthopedic AI • Rank #10
+“Dr. AI Will See You Now”: How Do ChatGPT-4 Treatment
+Recommendations Align With Orthopaedic Clinical
+Practice Guidelines?
+Tanios Dagher, Emma Dwyer, Hayden P. Baker, S. Kalidoss, Jason A. Strelzow
+Department of Orthopaedic Surgery, The University of Chicago, Chicago, IL, USA.
+Journal:
+Clinical Orthopaedics and
+Related Research
+Publication Year:
+2024.0
+Citations:
+32
+DOI:
+10.1097/corr.0000000000003234
+CLINICAL & AGENTIC AI TAKEAWAY
+ChatGPT-4 can generate accurate treatment plans aligned with clinical practice guidelines, but can make
+mistakes when integrating multiple patient factors and understanding disease severity and progression.
+ABSTRACT
+Background: Artificial intelligence (AI) is engineered to emulate tasks that have historically required human interaction
+and intellect, including learning, pattern recognition, decision-making, and problem-solving. Although AI models like
+ChatGPT-4 have demonstrated satisfactory performance on medical licensing exams, suggesting a potential for supporting
+medical diagnostics and decision-making, no study of which we are aware has evaluated the ability of these tools to make
+treatment recommendations when given clinical vignettes and representative medical imaging of common orthopaedic
+conditions. As AI continues to advance, a thorough understanding of its strengths and limitations is necessary to inform
+safe and helpful integration into medical practice. Questions/purposes: (1) What is the concordance between ChatGPT-4-
+generated treatment recommendations for common orthopaedic conditions with both the American Academy of
+Orthopaedic Surgeons (AAOS) clinical practice guidelines (CPGs) and an orthopaedic attending physician's treatment
+plan? (2) In what specific areas do the ChatGPT-4-generated treatment recommendations diverge from the AAOS CPGs?
+Methods: Ten common orthopaedic conditions with associated AAOS CPGs were identified: carpal tunnel syndrome,
+distal radius fracture, glenohumeral joint osteoarthritis, rotator cuff injury, clavicle fracture, hip fracture, hip osteoarthritis,
+knee osteoarthritis, ACL injury, and acute Achilles rupture. For each condition, the medical records of 10 deidentified
+patients managed at our facility were used to construct clinical vignettes that each had an isolated, single diagnosis with
+adequate clarity. The vignettes also encompassed a range of diagnostic severity to evaluate more thoroughly adherence to
+the treatment guidelines outlined by the AAOS. These clinical vignettes were presented alongside representative
+radiographic imaging. The model was prompted to provide a single treatment plan recommendation. Each treatment plan
+was compared with established AAOS CPGs and to the treatment plan documented by the attending orthopaedic surgeon
+treating the specific patient. Vignettes where ChatGPT-4 recommendations diverged from CPGs were reviewed to identify
+patterns of error and summarized. Results: ChatGPT-4 provided treatment recommendations in accordance with the AAOS
+CPGs in 90% (90 of 100) of clinical vignettes. Concordance between ChatGPT-generated plans and the plan recommended
+by the treating orthopaedic attending physician was 78% (78 of 100). One hundred percent (30 of 30) of ChatGPT-4
+recommendations for fracture vignettes and hip and knee arthritis vignettes matched with CPG recommendations, whereas
+the model struggled most with recommendations for carpal tunnel syndrome (3 of 10 instances demonstrated discordance).
+ChatGPT-4 recommendations diverged from AAOS CPGs for three carpal tunnel syndrome vignettes; two ACL injury,
+
+=== PDF PAGE 2 ===
+rotator cuff injury, and glenohumeral joint osteoarthritis vignettes; as well as one acute Achilles rupture vignette. In these
+situations, ChatGPT-4 most often struggled to correctly interpret injury severity and progression, incorporate patient
+factors (such as lifestyle or comorbidities) into decision-making, and recognize a contraindication to surgery. Conclusion:
+ChatGPT-4 can generate accurate treatment plans aligned with CPGs but can also make mistakes when it is required to
+integrate multiple patient factors into decision-making and understand disease severity and progression. Physicians must
+critically assess the full clinical picture when using AI tools to support their decision-making. Clinical relevance:
+ChatGPT-4 may be used as an on-demand diagnostic companion, but patient-centered decision-making should continue to
+remain in the hands of the physician. Copyright © 2024 by the Association of Bone and Joint Surgeons.
+Tanios Dagher,BSE
+Emma P Dwyer,MD
+Hayden P Baker,MD
+Senthooran Kalidoss,BS
+Jason A Strelzow,MD
+T. Dagher ✉ , The University of Chicago Department of Orthopaedic Surgery, 5758 S. Maryland Avenue, Dept. 4B,
+Chicago, IL 60637, USA, Email:tanios.dagher@uchicagomedicine.org
+Corresponding author.
+Received 2024 Apr 3; Accepted 2024 Aug 2; Issue date 2024 Dec.
+Abstract
+Background
+Artificial intelligence (AI) is engineered to emulate tasks that have historically required human interaction and intellect,
+including learning, pattern recognition, decision-making, and problem-solving. Although AI models like ChatGPT-4 have
+demonstrated satisfactory performance on medical licensing exams, suggesting a potential for supporting medical
+diagnostics and decision-making, no study of which we are aware has evaluated the ability of these tools to make treatment
+recommendations when given clinical vignettes and representative medical imaging of common orthopaedic conditions. As
+AI continues to advance, a thorough understanding of its strengths and limitations is necessary to inform safe and helpful
+integration into medical practice.
+Questions/purposes
+(1) What is the concordance between ChatGPT-4-generated treatment recommendations for common orthopaedic
+conditions with both the American Academy of Orthopaedic Surgeons (AAOS) clinical practice guidelines (CPGs) and an
+orthopaedic attending physician’s treatment plan? (2) In what specific areas do the ChatGPT-4-generated treatment
+recommendations diverge from the AAOS CPGs?
+Methods
+Ten common orthopaedic conditions with associated AAOS CPGs were identified: carpal tunnel syndrome, distal radius
+fracture, glenohumeral joint osteoarthritis, rotator cuff injury, clavicle fracture, hip fracture, hip osteoarthritis, knee
+osteoarthritis, ACL injury, and acute Achilles rupture. For each condition, the medical records of 10 deidentified patients
+
+=== PDF PAGE 3 ===
+managed at our facility were used to construct clinical vignettes that each had an isolated, single diagnosis with adequate
+clarity. The vignettes also encompassed a range of diagnostic severity to evaluate more thoroughly adherence to the
+treatment guidelines outlined by the AAOS. These clinical vignettes were presented alongside representative radiographic
+imaging. The model was prompted to provide a single treatment plan recommendation. Each treatment plan was compared
+with established AAOS CPGs and to the treatment plan documented by the attending orthopaedic surgeon treating the
+specific patient. Vignettes where ChatGPT-4 recommendations diverged from CPGs were reviewed to identify patterns of
+error and summarized.
+Results
+ChatGPT-4 provided treatment recommendations in accordance with the AAOS CPGs in 90% (90 of 100) of clinical
+vignettes. Concordance between ChatGPT-generated plans and the plan recommended by the treating orthopaedic
+attending physician was 78% (78 of 100). One hundred percent (30 of 30) of ChatGPT-4 recommendations for fracture
+vignettes and hip and knee arthritis vignettes matched with CPG recommendations, whereas the model struggled most with
+recommendations for carpal tunnel syndrome (3 of 10 instances demonstrated discordance). ChatGPT-4 recommendations
+diverged from AAOS CPGs for three carpal tunnel syndrome vignettes; two ACL injury, rotator cuff injury, and
+glenohumeral joint osteoarthritis vignettes; as well as one acute Achilles rupture vignette. In these situations, ChatGPT-4
+most often struggled to correctly interpret injury severity and progression, incorporate patient factors (such as lifestyle or
+comorbidities) into decision-making, and recognize a contraindication to surgery.
+Conclusion
+ChatGPT-4 can generate accurate treatment plans aligned with CPGs but can also make mistakes when it is required to
+integrate multiple patient factors into decision-making and understand disease severity and progression. Physicians must
+critically assess the full clinical picture when using AI tools to support their decision-making.
+Clinical Relevance
+ChatGPT-4 may be used as an on-demand diagnostic companion, but patient-centered decision-making should continue to
+remain in the hands of the physician.
+Introduction
+Artificial intelligence (AI) is engineered to emulate tasks that typically necessitate human intellect, including learning,
+decision-making, and complex problem-solving. The field has progressed substantially since the 1960s, with recent
+breakthroughs in AI-driven chatbots [18]. These chatbots, such as ChatGPT, Google Gemini, and Claude, have earned
+public commendation for their ability to condense and collate available information, produce fluent conversation, respond
+to complex inquiries, and generate a variety of digital content [11,22,26]. Even within a specific chatbot, new versions
+demonstrate considerable improvements in their learning and enhancements, as seen between version 3 and version 4 of
+ChatGPT from 2020 to 2023. Despite the fact that they are seeing wider use in many settings, the swift adoption of AI
+chatbots across multiple industries has been met with both anticipation and skepticism, particularly concerning the
+reflection of historical biases and hallucinations in their outputs [28]. The utility of AI chatbots has been scrutinized across
+numerous professional fields, and they have demonstrated a level of competence by passing stringent exams like the
+Uniform Bar Exam and the United States Medical Licensing Exam [17,24]. Their performance in such tests suggests AI’s
+potential for supporting medical diagnostics, documentation, and decision-making processes. When used to help create
+clinical visit documentation, ChatGPT created higher quality patient histories than physician dictations [14].
+In orthopaedic surgery, a profession that heavily depends on medical imaging and clinical history for diagnosis and
+treatment, AI chatbots’ analytical support could benefit healthcare professionals. As a result, these chatbots are being used
+more often to support clinical care in the absence of scientific evidence of their efficacy. Few orthopaedic studies exist that
+
+=== PDF PAGE 4 ===
+analyze use cases for ChatGPT-4 in orthopaedic surgery. One investigation pitted ChatGPT-4’s performance on
+orthopaedic assessments against that of orthopaedic residents [16,20,23], with noteworthy results in decision-making,
+diagnosis, and treatment recommendations for patients with lumbar spinal stenosis [27]. Another harnessed ChatGPT-4’s
+capabilities to address patient queries regarding total hip, elbow, and shoulder arthroplasty, illustrating its expanding role in
+patient education and care [25,30]. However, ChatGPT-4’s ability to generate accurate and comprehensive
+recommendations for the management of orthopaedic conditions is unknown. Although many use cases can be conceived,
+including assisting on-call residents with consideration of management options or acting as an “AI colleague” for an
+orthopaedic attending planning a case, it is crucial to develop a thorough understanding of its strengths and limitations to
+inform safe and helpful integration into medical practice.
+We therefore asked: (1) What is the concordance between ChatGPT-4-generated treatment recommendations for common
+orthopaedic conditions with both the American Academy of Orthopaedic Surgeons (AAOS) clinical practice guidelines
+(CPGs) and an orthopaedic attending physician’s treatment plan? (2) In what specific areas do the ChatGPT-4-generated
+treatment recommendations diverge from the AAOS CPGs?
+Materials and Methods
+We identified 10 common orthopaedic conditions that are covered in the established, evidence-based AAOS CPGs [10].
+These conditions were as follows: carpal tunnel syndrome [2], distal radius fracture [3], glenohumeral joint osteoarthritis
+[4], rotator cuff injury [8], clavicle fracture [9], hip fracture [5], hip osteoarthritis [6], knee osteoarthritis [7], ACL injury
+[1], and acute Achilles rupture [19]. We chose these conditions to encompass a broad range of orthopaedic conditions so as
+to provide a comprehensive evaluation of ChatGPT-4’s performance. For each condition, we constructed 10 clinical
+vignettes drawn from patients managed at our institution, a tertiary-care, urban Level 1 trauma center in Chicago, IL, USA.
+The patients were identified through a chart review of physicians’ clinic schedules, and their protected health information
+was deidentified. We chose the clinical vignettes based on the following: diagnosis with an established and published
+AAOS CPG guideline and clinical documentation demonstrates an isolated, single diagnosis with adequate clarity. A
+clinical vignette was not included if the medical documentation did not provide the necessary patient information needed
+to arrive at the appropriate diagnosis and treatment as outlined by the AAOS CPG specific to that patient’s pathology. Also,
+a broad range of disease severity was selected to mimic the stepwise and disease severity–specific treatment suggestions
+outlined by the AAOS guidelines.
+We constructed clinical vignettes from the patient’s initial history and clinical visit note. They included the history of
+present illness, medical history, surgical history, medications, social history, imaging interpretation, and physical exam. If
+the history and physical were found to provide insufficient information, additional content was added from the emergency
+medicine history and physical note to provide ChatGPT-4 with the necessary information to make the correct diagnosis.
+We stripped all protected health information and clinician identifying information from the vignettes to protect
+confidentiality. The assessment and plan section of each note were intentionally excluded to prevent biasing ChatGPT-4’s
+recommendations. Patient imaging associated with the condition was not used because of confidentiality concerns.
+ChatGPT-4 was therefore provided with a characteristic radiograph or MRI image pathognomonic for the patient’s
+pathology obtained from publicly available Google Images. After integration of the imaging and vignette, ChatGPT-4 was
+prompted to provide a single recommendation for treatment at the level of an orthopaedic attending. If it presented
+multiple treatment options, we continued to prompt the model until a single suggestion was generated. Prompt templates
+were used for both the initial and follow-up prompts to mitigate prompt-related variability (Supplemental Digital Content
+1;http://links.lww.com/CORR/B327). In total, we presented 100 patient scenarios to ChatGPT-4, 10 clinical vignettes for
+each orthopaedic condition.
+
+=== PDF PAGE 5 ===
+Primary and Secondary Study Outcomes
+Our primary goal was to assess the concordance between ChatGPT-4-generated treatment recommendations, AAOS CPGs,
+and orthopaedic attending treatment plans. Since the AAOS guidelines have established clear-cut recommendations, we
+marked concordance of ChatGPT-4 responses with these recommendations as either “satisfactory” or “not satisfactory.”
+We marked concordance similarly between the documented treating orthopaedic attending’s management plan and the
+ChatGPT-4-generated recommendations. Then, we tallied the number of ChatGPT-4 recommendations that aligned with
+the AAOS CPGs and the orthopaedic attending treatment plan for each condition. Our secondary study goal was to identify
+areas in which ChatGPT-4-generated treatment recommendations diverged from the AAOS CPGs. We manually reviewed
+cases of divergence and qualitative reporting of errors in ChatGPT-4’s evaluation of the patient vignette and treatment
+options, which may explain its recommendation of a treatment plan that was not aligned with the CPGs.
+Ethical Approval
+We obtained ethical approval for this study from the institutional review board at The University of Chicago, Chicago, IL,
+USA (IRB23-0462).
+Use of AI in This Work
+We did not use AI or any LLM in any part of the process of writing or creation of this manuscript. LLM use was restricted
+to the experiment as we described it; it was not used in any way during the writing, editing, or revision of this manuscript.
+Results
+Concordance Between ChatGPT-4, AAOS CPGs, and the Physician’s Treatment Plan
+ChatGPT-4 provided treatment recommendations in accordance with AAOS CPGs in 90% (90 of 100) of patient scenarios
+(Table1). The ChatGPT-4 recommendations matched the physician treatment plan proposed in 78% (78 of 100) of
+scenarios. All 30 ChatGPT recommendations for fracture vignettes as well as hip and knee arthritis vignettes were aligned
+with the AAOS CPGs. The model provided the highest proportion (3 of 10) of incorrect recommendations for carpal tunnel
+syndrome cases.
+Proportion of treatment recommendations from ChatGPT-4 that aligned with AAOS CPGs and the treatment plan
+documented by the orthopaedic attending
+Divergence of ChatGPT-4 and AAOS CPG Treatment Plans
+ChatGPT-4 recommendations diverged from AAOS CPGs for 3 of 10 cases of carpal tunnel syndrome; 2 of 10 clinical
+vignettes of ACL injury, rotator cuff injury, and glenohumeral joint osteoarthritis; as well as 1 of 10 vignettes of acute
+Achilles rupture (Table2). For the three patients with carpal tunnel syndrome, ChatGPT-4 had difficulty deciding between
+nonoperative and surgical management, choosing nonoperative management in two patients with severe carpal tunnel (as
+determined by electromyography) and operative management in a patient with mild symptoms and an equivocal physical
+exam. In the two vignettes describing young, active patients with ACL tears, ChatGPT failed to recognize the patients’
+activity levels as an indication for operative management. Furthermore, for a patient with glenohumeral joint osteoarthritis
+because of cuff tear arthropathy, ChatGPT-4 recommended rotator cuff repair, which is not in agreement with the AAOS
+CPG. In the two clinical vignettes of rotator cuff tears, ChatGPT-4 failed to consider the size and progression of the injury,
+recommending operative repair of a small rotator cuff tear that was improving with therapy and nonoperative management
+for a patient with a large, acute tear. Finally, in the vignettes of acute Achilles tendon tear, ChatGPT-4 suggested operative
+repair, failing to account for the increased surgical risk posed by the patient’s uncontrolled diabetes. There were also 22
+clinical vignettes in which ChatGPT recommendations differed from the orthopaedic attending treatment plan (Table3). In
+some of these vignettes, both recommendations were acceptable under the AAOS CPGs.
+
+=== PDF PAGE 6 ===
+Comparison of ChatGPT-4 recommendations with AAOS CPGs for all recommendations out of alignment with guidelines
+Clinical scenarios in which the recommendations by ChatGPT-4 and the physician diverged
+Discussion
+AI-driven chatbots have seen wider use in medical practice recently, as they have showcased their ability to respond to
+complex inquiries and demonstrate complex problem-solving skills. Breakthroughs in this software could have vast
+applications in improving and supporting care for patients with orthopaedic conditions. As AI models become more
+heavily integrated into healthcare systems and decision-making, it is crucial that their accuracy is evaluated and that their
+strengths and weaknesses are characterized. This study aimed to assess ChatGPT-4’s ability to discern common
+orthopaedic diagnoses from clinical presentations and compare ChatGPT-4’s treatment recommendations for these
+diagnoses to evidence-based clinical practice guidelines and orthopaedic surgeon treatment plans. Overall, most of
+ChatGPT-4’s treatment recommendations were in accordance with the AAOS CPG. Although our findings suggest that
+ChatGPT-4 can provide accurate and detailed suggestions for patient care, they also highlight its inability to consistently
+integrate patient factors into care plans and comprehend disease severity and progression. Although this study provides
+support for the use of ChatGPT-4 as an adjunct to clinical decision-making, clinician users must make their own
+independent decisions that factor in patient preferences, with an understanding that AI-generated recommendations may
+fail to encompass the full picture. Thus, the physician’s responsibility remains paramount, with AI acting as a virtual
+colleague rather than a physician replacement.
+Limitations
+This study has several important limitations. Although an understanding of large language models (LLM) at their current
+level of development is important, the broader questions regarding continued improvements in modeling and knowledge
+are inevitable. The current study is solely a snapshot of the current available capabilities of LLM models. Even though we
+expect the accuracy of AI to naturally improve over time, our goal, more broadly, was to demonstrate current use cases for
+these tools to inform clinician users; identify areas in which LLMs struggle in making complex decisions; and demonstrate
+the importance of partnership with these tools to identify, advise, and improve adherence with evidence-based guidelines
+rather than replace physicians. As AI models continue to improve, it is likely that patient-centered decision-making and
+nuanced understanding of disease severity will continue to pose challenges. In addition, ChatGPT-4’s response is entirely
+dependent on the specific prompt provided. Prompt engineering remains an important aspect of interacting with LLM
+models as small changes in the wording can result in considerable change to output. ChatGPT-4’s treatment
+recommendations may change if given slight variations to the prompt provided. This was an important consideration
+during this study. However, the authors experimented with the prompt template to improve the generation of detailed and
+decisive responses. Furthermore, the weaknesses we have noted are in the model’s inability to accommodate multiple
+factors, which is unlikely to be significantly mitigated through alternative prompting. Nevertheless, prompt engineering
+will remain a critical component of improving LLM applications in healthcare settings. The results of our study also
+depended on the quality of the orthopaedic surgeon–written clinical note. Although they introduced variability, these notes
+were used to most accurately capture the considerations being made by the orthopaedic surgeon. Furthermore, if the
+history of the present illness was found to be inadequate, it was supplemented using information from the emergency
+department professional’s note. In addition, the use of representative images instead of patient imaging may have also
+influenced ChatGPT-4’s recommended plan. This was done to protect patient confidentiality, and we chose images that
+closely matched the patient’s pathology. As a result, it is unlikely that the use of representative (rather than each patient’s
+actual) imaging would account for differences in ChatGPT-4’s treatment plan.
+Notably, there were several vignettes in which ChatGPT-4 and the physician recommendations did not match, although
+both remained in agreement with the CPGs. This discrepancy is possible because the CPGs often provide more than one
+appropriate treatment option for a given condition. For example, when a patient sustains a valgus impacted femoral neck
+
+=== PDF PAGE 7 ===
+fracture, CPGs state that multiple treatment options are acceptable: “Stable femoral neck fractures: In patients with stable
+(impacted/nondisplaced) femoral neck fractures, hemiarthroplasty, internal fixation or non-operative care may be
+considered” [5]. Also, for displaced femoral neck fractures, both hemiarthroplasty and THA are acceptable treatments:
+“Unstable femoral neck fractures—total arthroplasty vs hemi arthroplasty: In properly selected patients with unstable
+(displaced) femoral neck fractures, there may be a functional benefit to total hip arthroplasty over hemi arthroplasty at the
+risk of increasing complications” [5]. This CPG leaves it up to the discretion of the surgeon to determine hemiarthroplasty
+versus THA. This flexibility creates instances in which both ChatGPT-4 and physician recommendations were satisfactory
+but not in alignment, highlighting the presence of nuances in the decision-making process that only the physician can
+thoroughly discern and individually apply to each patient’s situation. Thus, the physician should continue to be at the
+center of patient-physician decision-making, but they can use AI as treatment adjuvants rather than physician
+replacements.
+Although choosing conditions associated with CPGs provided an objective standard for comparison, it did not allow us to
+capture ChatGPT-4’s performance for injuries with less consensus on best practices for management. Evaluation of AI
+management of these conditions will require more sophisticated methods of determining satisfactory recommendations.
+However, analysis of ChatGPT-4 performance on injuries in which management is more standardized acts as a reasonable
+start in understanding its aptitude. Additionally, the clinical vignettes were drawn from patients at a single institution and
+may not comprehensively test ChatGPT-4’s aptitude in managing a wide variety of presentations of a single condition.
+However, the vignettes were drawn from a variety of orthopaedic attendings, and we ensured that there was a diversity of
+disease severity and presentation among the 10 vignettes for each condition.
+Concordance Between ChatGPT-4, AAOS CPGs, and the Physician’s Treatment Plan
+ChatGPT-4 accurately provided recommendations across all 10 orthopaedic conditions, with 90 of 100 recommendations
+in accordance with AAOS CPGs. This suggests that, when given access to relevant patient information and imaging, AI
+can play a supportive role in suggesting evidence-based treatment pathways. In addition to providing recommendations
+that aligned with CPGs in most clinical vignettes, ChatGPT-4 also commented on some of the technical nuances of
+surgery. When describing a treatment plan for a displaced hip fracture in an active patient (a 65-year-old man), ChatGPT
+not only correctly recommended a THA, but also recommended a cemented femoral and press-fit acetabular component
+[15]. When describing percutaneous pinning for a nondisplaced femoral neck fracture, it correctly suggested the inverted
+triangle configuration when placing screws [12]. It also appropriately described how a sliding hip screw was not an
+appropriate construct for an unstable (reverse oblique) intertrochanteric femur fracture and instead stated a
+cephalomedullary nail was the preferred implant [21,29]. For ACL reconstructions, it suggested using either a hamstring
+autograft or a patella tendon autograft [13]. These recommended surgical techniques for these various orthopaedic injuries
+are in accordance with the evidence and are a testament to the potential of AI to generate detailed surgical plans. Further
+research may help characterize the ability of newer AI models to make recommendations for these conditions as well as
+injuries without established practice guidelines.
+Divergence of ChatGPT-4 and AAOS CPG Treatment Plans
+The 10 clinical vignettes where ChatGPT-4’s recommendations diverged from the AAOS CPGs offer valuable insights into
+the current limitations and areas for improvement of AI in clinical settings. In these cases, ChatGPT-4 most often struggled
+to correctly interpret injury severity and progression to decide between operative and nonoperative treatment. It also had
+difficulty incorporating other patient factors, including lifestyle and comorbidities, to analyze operative risk and determine
+an appropriate treatment course. In one vignette, ChatGPT-4 even failed to recognize a contraindication and
+inappropriately recommended surgery. As a result, it is critical that clinicians who use ChatGPT-4 for decision-making
+understand that its recommendations may fail to account for patient factors and that it even has the potential to recommend
+contraindicated interventions. We encourage those who are using this tool to make their own independent patient-care
+decisions using ChatGPT-4 as an AI colleague. Further research may elucidate prompt factors, such as the length and
+
+=== PDF PAGE 8 ===
+structure of the prompt, that facilitate generation of the most accurate and useful clinical recommendations. The aptitude of
+newer AI models and their ability to weigh multiple factors may also be investigated.
+Conclusion
+The current study has demonstrated the ability of LLM and AI, specifically ChatGPT-4, to generate accurate and
+comprehensive treatment plans based on available evidence-based information. However, it also revealed the shortcomings
+of this technology, which had difficulty integrating multiple patient factors into decision-making and understanding disease
+severity and progression. Our findings suggest that AI may be useful as a virtual colleague, providing trainees with a
+discussion of how the case relates to clinical practice guidelines or double-checking a physician’s reasoning. However,
+physicians must ultimately rely on their own critical thinking to factor nuances into the decision-making process. Future
+investigation aimed at understanding and improving AI-aided decision-making has the potential to guide AI integration
+into orthopaedic practice. This may involve experimentation on prompt engineering frameworks that improve ChatGPT-4’s
+decision-making capabilities. For example, in our trial of different prompts, we noted that asking ChatGPT to draw from
+existing guidelines generated higher quality responses. In the future, quantitative analyses of different prompt lengths and
+structures would provide clinicians with guidance on how to best utilize AI tools. Additionally, ChatGPT-4’s ability to
+provide recommendations for more complicated clinical vignettes regarding conditions without established guidelines
+would be useful in better characterizing ChatGPT-4’s utility in a broader set of clinical scenarios. Finally, a comparison of
+recommendations generated by a wider set of LLMs, including Gemini and Claude, would assist clinicians in deciding
+which tool to use in their practices [11,26].
+Supplementary Material
+Footnotes
+Each author certifies that there are no funding or commercial associations (consultancies, stock ownership, equity interest,
+patent/licensing arrangements, etc.) that might pose a conflict of interest in connection with the submitted article related to
+the author or any immediate family members.
+All ICMJE Conflict of Interest Forms for authors andClinical Orthopaedics and Related Research®editors and board
+members are on file with the publication and can be viewed on request.
+Ethical approval for this study was obtained from the institutional review board at The University of Chicago, Chicago, IL,
+USA (IRB23-0462).
+Contributor Information
+Emma P. Dwyer, Email: emma.dwyer@uchicagomedicine.org.
+Hayden P. Baker, Email: hayden.baker@uchicagomedicine.org.
+Senthooran Kalidoss, Email: Senthooran.Kalidoss@uchicagomedicine.org.
+Jason A. Strelzow, Email: jstrelzow@bsd.uchicago.edu.
+References
+Articles from Clinical Orthopaedics and Related Research are provided here courtesy ofThe Association of Bone and Joint
+Surgeons
+
+=== PDF PAGE 9 ===
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1097/corr.0000000000003234 •
+Consensus Page: https://consensus.app/papers/%E2%80%9Cdr-ai-will-see-you-now%E2%80%9D-how-do-chatgpt4-treatment-dagher-
+dwyer/e45f163f66fa5618ab007992218e5d9c/ • Verified and rendered via Deep Search & Academic Repositories.

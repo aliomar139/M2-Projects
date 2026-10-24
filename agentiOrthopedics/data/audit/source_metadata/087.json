@@ -1,0 +1,775 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          22
+        ]
+      ],
+      "date-time": "2026-10-22T03:18:25Z",
+      "timestamp": 1792639105559,
+      "version": "4.5.0"
+    },
+    "reference-count": 43,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              12,
+              7
+            ]
+          ],
+          "date-time": "2021-12-07T00:00:00Z",
+          "timestamp": 1638835200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              12,
+              7
+            ]
+          ],
+          "date-time": "2021-12-07T00:00:00Z",
+          "timestamp": 1638835200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "R01-CA233487"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "R01-CA233487"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Sci Rep"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Subtle differences in a patient’s genetics and physiology may alter radiotherapy (RT) treatment responses, motivating the need for a more personalized treatment plan. Accordingly, we have developed a novel quantum deep reinforcement learning (qDRL) framework for clinical decision support that can estimate an individual patient’s dose response mid-treatment and recommend an optimal dose adjustment. Our framework considers patients’ specific information including biological, physical, genetic, clinical, and dosimetric factors. Recognizing that physicians must make decisions amidst uncertainty in RT treatment outcomes, we employed indeterministic quantum states to represent human decision making in a real-life scenario. We paired quantum decision states with a model-based deep q-learning algorithm to optimize the clinical decision-making process in RT. We trained our proposed qDRL framework on an institutional dataset of 67 stage III non-small cell lung cancer (NSCLC) patients treated on prospective adaptive protocols and independently validated our framework in an external multi-institutional dataset of 174 NSCLC patients. For a comprehensive evaluation, we compared three frameworks: DRL, qDRL trained in a Qiskit quantum computing simulator, and qDRL trained in an IBM quantum computer. Two metrics were considered to evaluate our framework: (1) similarity score, defined as the root mean square error between retrospective clinical decisions and the AI recommendations, and (2) self-evaluation scheme that compares retrospective clinical decisions and AI recommendations based on the improvement in the observed clinical outcomes. Our analysis shows that our framework, which takes into consideration individual patient dose response in its decision-making, can potentially improve clinical RT decision-making by at least about 10% compared to unaided clinical practice. Further validation of our novel quantitative approach in a prospective study will provide a necessary framework for improving the standard of care in personalized RT.</jats:p>",
+    "DOI": "10.1038/s41598-021-02910-y",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          12,
+          7
+        ]
+      ],
+      "date-time": "2021-12-07T11:02:38Z",
+      "timestamp": 1638874958000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 61,
+    "title": [
+      "Quantum deep reinforcement learning for clinical decision support in oncology: application to adaptive radiotherapy"
+    ],
+    "prefix": "10.1038",
+    "volume": "11",
+    "author": [
+      {
+        "given": "Dipesh",
+        "family": "Niraula",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jamalina",
+        "family": "Jamaluddin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Martha M.",
+        "family": "Matuszak",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Randall K. Ten",
+        "family": "Haken",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Issam El",
+        "family": "Naqa",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2021,
+          12,
+          7
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2910_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "963",
+        "DOI": "10.1158/1055-9965.EPI-16-1023",
+        "volume": "26",
+        "author": "AK Bryant",
+        "year": "2017",
+        "unstructured": "Bryant, A. K. et al. Trends in radiation therapy among cancer survivors in the United States, 2000–2030. Cancer Epidemiol. Biomark. Prev. 26, 963–970. https://doi.org/10.1158/1055-9965.EPI-16-1023 (2017).",
+        "journal-title": "Cancer Epidemiol. Biomark. Prev."
+      },
+      {
+        "key": "2910_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1200/CCI.18.00002",
+        "volume": "2",
+        "author": "I El Naqa",
+        "year": "2018",
+        "unstructured": "El Naqa, I., Kosorok, M. R., Jin, J., Mierzwa, M. & Ten Haken, R. K. Prospects and challenges for clinical decision support in the era of big data. JCO Clin. Cancer Inform. 2, 1–12. https://doi.org/10.1200/CCI.18.00002 (2018).",
+        "journal-title": "JCO Clin. Cancer Inform."
+      },
+      {
+        "key": "2910_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "266",
+        "DOI": "10.3389/fonc.2018.00266",
+        "volume": "8",
+        "author": "H-H Tseng",
+        "year": "2018",
+        "unstructured": "Tseng, H.-H., Luo, Y., Ten Haken, R. K. & El Naqa, I. The role of machine learning in knowledge-based response-adapted radiotherapy. Front. Oncol. 8, 266. https://doi.org/10.3389/fonc.2018.00266 (2018).",
+        "journal-title": "Front. Oncol."
+      },
+      {
+        "key": "2910_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "94",
+        "DOI": "10.1016/j.semradonc.2009.11.003",
+        "volume": "20",
+        "author": "JJ Sonke",
+        "year": "2010",
+        "unstructured": "Sonke, J. J. & Belderbos, J. Adaptive radiotherapy for lung cancer. Semin. Radiat. Oncol. 20, 94–106. https://doi.org/10.1016/j.semradonc.2009.11.003 (2010).",
+        "journal-title": "Semin. Radiat. Oncol."
+      },
+      {
+        "key": "2910_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1186/s41199-019-0046-z",
+        "volume": "5",
+        "author": "HE Morgan",
+        "year": "2020",
+        "unstructured": "Morgan, H. E. & Sher, D. J. Adaptive radiotherapy for head and neck cancer. Cancers Head Neck 5, 1. https://doi.org/10.1186/s41199-019-0046-z (2020).",
+        "journal-title": "Cancers Head Neck"
+      },
+      {
+        "key": "2910_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "3",
+        "DOI": "10.1016/j.prro.2015.02.012/attachment/62dd00cb-5dc0-4627-943a-235110d60303/mmc1.pdf",
+        "volume": "5",
+        "author": "G Rodrigues",
+        "year": "2015",
+        "unstructured": "Rodrigues, G. et al. Definitive and adjuvant radiotherapy in locally advanced non-small cell lung cancer: An American Society for Radiation Oncology (ASTRO) evidence-based clinical practice guideline. Pract. Radiat. Oncol. 5, 3. https://doi.org/10.1016/j.prro.2015.02.012/attachment/62dd00cb-5dc0-4627-943a-235110d60303/mmc1.pdf (2015).",
+        "journal-title": "Pract. Radiat. Oncol."
+      },
+      {
+        "key": "2910_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "436",
+        "DOI": "10.1038/nature14539",
+        "volume": "521",
+        "author": "Y LeCun",
+        "year": "2015",
+        "unstructured": "LeCun, Y., Bengio, Y. & Hinton, G. Deep learning. Nature 521, 436–444. https://doi.org/10.1038/nature14539 (2015).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "2910_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "53",
+        "DOI": "10.1186/s40537-021-00444-8",
+        "volume": "8",
+        "author": "L Alzubaidi",
+        "year": "2021",
+        "unstructured": "Alzubaidi, L. et al. Review of deep learning: Concepts, CNN architectures, challenges, applications, future directions. J. Big Data 8, 53. https://doi.org/10.1186/s40537-021-00444-8 (2021).",
+        "journal-title": "J. Big Data"
+      },
+      {
+        "key": "2910_CR9",
+        "volume-title": "Reinforcement Learning: An Introduction",
+        "author": "RS Sutton",
+        "year": "2018",
+        "unstructured": "Sutton, R. S. & Barto, A. G. Reinforcement Learning: An Introduction (The MIT Press, 2018)."
+      },
+      {
+        "key": "2910_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "529",
+        "DOI": "10.1038/nature14236",
+        "volume": "518",
+        "author": "V Mnih",
+        "year": "2015",
+        "unstructured": "Mnih, V. et al. Human-level control through deep reinforcement learning. Nature 518, 529–533 (2015).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "2910_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "354",
+        "DOI": "10.1038/nature24270",
+        "volume": "550",
+        "author": "D Silver",
+        "year": "2017",
+        "unstructured": "Silver, D. et al. Mastering the game of Go without human knowledge. Nature 550, 354–359. https://doi.org/10.1038/nature24270 (2017).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "2910_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "6690",
+        "DOI": "10.1002/mp.12625",
+        "volume": "44",
+        "author": "HH Tseng",
+        "year": "2017",
+        "unstructured": "Tseng, H. H. et al. Deep reinforcement learning for automated radiation adaptation in lung cancer. Med. Phys. 44, 6690–6705 (2017).",
+        "journal-title": "Med. Phys."
+      },
+      {
+        "key": "2910_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "3980",
+        "DOI": "10.1002/mp.13029",
+        "volume": "45",
+        "author": "Y Luo",
+        "year": "2018",
+        "unstructured": "Luo, Y. et al. A multiobjective Bayesian networks approach for joint prediction of tumor local control and radiation pneumonitis in nonsmall-cell lung cancer (NSCLC) for response-adapted radiotherapy. Med. Phys. 45, 3980–3995 (2018).",
+        "journal-title": "Med. Phys."
+      },
+      {
+        "issue": "4157",
+        "key": "2910_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "1124",
+        "DOI": "10.1126/science.185.4157.1124",
+        "volume": "185",
+        "author": "A Tversky",
+        "year": "1974",
+        "unstructured": "Tversky, A. & Kahneman, D. Judgment under uncertainty: Heuristics and biases. Science 185(4157), 1124–1131. https://doi.org/10.1126/science.185.4157.1124 (1974).",
+        "journal-title": "Science"
+      },
+      {
+        "key": "2910_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "46",
+        "DOI": "10.1037/h0031207",
+        "volume": "89",
+        "author": "S Lichtenstein",
+        "year": "1971",
+        "unstructured": "Lichtenstein, S. & Slovic, P. Reversals of preference between bids and choices in gambling decisions. J. Exp. Psychol. 89, 46–55 (1971).",
+        "journal-title": "J. Exp. Psychol."
+      },
+      {
+        "key": "2910_CR16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/CBO9780511997716",
+        "volume-title": "Quantum Models of Cognition and Decision",
+        "author": "JR Busemeyer",
+        "year": "2012",
+        "unstructured": "Busemeyer, J. R. & Bruza, P. Quantum Models of Cognition and Decision (Cambridge University, 2012)."
+      },
+      {
+        "key": "2910_CR17",
+        "volume-title": "The Foundation of Statistics",
+        "author": "LJ Savage",
+        "year": "1954",
+        "unstructured": "Savage, L. J. The Foundation of Statistics (Wiley, 1954)."
+      },
+      {
+        "key": "2910_CR18",
+        "unstructured": "Finetti B. De, in International Encyclopedia of the Social Sciences, (ed. D. E. Sills), 12, 496–504. (Macmillan, 1968)"
+      },
+      {
+        "key": "2910_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "449",
+        "DOI": "10.1016/0010-0285(92)90015-T",
+        "volume": "24",
+        "author": "E Shafir",
+        "year": "1992",
+        "unstructured": "Shafir, E. & Tversky, A. Thinking through uncertainty: Non-consequential reasoning and choice. Cogn. Psychol. 24, 449–474. https://doi.org/10.1016/0010-0285(92)90015-T (1992).",
+        "journal-title": "Cogn. Psychol."
+      },
+      {
+        "issue": "1665",
+        "key": "2910_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "2171",
+        "DOI": "10.1098/rspb.2009.0121",
+        "volume": "276",
+        "author": "EM Pothos",
+        "year": "2009",
+        "unstructured": "Pothos, E. M. & Busemeyer, J. R. A quantum probability explanation for violations of ‘rational’ decision theory. Proc. Biol. Sci. 276(1665), 2171–2178. https://doi.org/10.1098/rspb.2009.0121 (2009).",
+        "journal-title": "Proc. Biol. Sci."
+      },
+      {
+        "key": "2910_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "0100",
+        "DOI": "10.1098/rsta.2015.0100",
+        "volume": "374",
+        "author": "VI Yukalov",
+        "year": "2016",
+        "unstructured": "Yukalov, V. I. & Sornette, D. Quantum probability and quantum decision-making. Phil. Trans. R. Soc. A 374, 0100. https://doi.org/10.1098/rsta.2015.0100 (2016).",
+        "journal-title": "Phil. Trans. R. Soc. A"
+      },
+      {
+        "key": "2910_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "16225",
+        "DOI": "10.1038/s41598-018-34531-3",
+        "volume": "8",
+        "author": "A Khrennikov",
+        "year": "2018",
+        "unstructured": "Khrennikov, A. et al. Quantum probability in decision making from quantum information representation of neuronal states. Sci. Rep. 8, 16225. https://doi.org/10.1038/s41598-018-34531-3 (2018).",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "2910_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "1207",
+        "DOI": "10.1109/TSMCB.2008.925743",
+        "volume": "38",
+        "author": "D Dong",
+        "year": "2008",
+        "unstructured": "Dong, D., Chen, C., Li, H. & Tarn, T.-J. Quantum reinforcement learning. IEEE Trans. Syst. Man Cybern. Part B Cybern. 38, 1207–1220 (2008).",
+        "journal-title": "IEEE Trans. Syst. Man Cybern. Part B Cybern."
+      },
+      {
+        "key": "2910_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "86",
+        "DOI": "10.1109/TMECH.2010.2090896",
+        "volume": "17",
+        "author": "D Dong",
+        "year": "2012",
+        "unstructured": "Dong, D., Chen, C., Chu, J. & Tarn, T.-J. Robust quantum-inspired reinforcement learning for robot navigation. IEEE/ASME Trans. Mechatron. 17, 86–97 (2012).",
+        "journal-title": "IEEE/ASME Trans. Mechatron."
+      },
+      {
+        "key": "2910_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "294",
+        "DOI": "10.1038/s41562-019-0804-2",
+        "volume": "4",
+        "author": "J-A Li",
+        "year": "2020",
+        "unstructured": "Li, J.-A. et al. Quantum reinforcement learning during human decision-making. Nat. Hum. Behav. 4, 294–307 (2020).",
+        "journal-title": "Nat. Hum. Behav."
+      },
+      {
+        "key": "2910_CR26",
+        "unstructured": "Asfaw, A. et al. Learn Quantum Computation Using Qiskit, http://community.qiskit.org/textbook (2020)."
+      },
+      {
+        "key": "2910_CR27",
+        "unstructured": "IBM Q team, IBM Q 16 Melbourne backend specification V2.3.3, Retrieved from https://quantum-computing.ibm.com. (2020)."
+      },
+      {
+        "key": "2910_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "187",
+        "DOI": "10.1016/s1470-2045(14)71207-0",
+        "volume": "16",
+        "author": "JD Bradley",
+        "year": "2015",
+        "unstructured": "Bradley, J. D. et al. Standard-dose versus high-dose conformal radiotherapy with concurrent and consolidation carboplatin plus paclitaxel with or without cetuximab for patients with stage IIIA or IIIB non-small-cell lung cancer (RTOG 0617): A randomised, two-by-two factorial phase 3 study. Lancet Oncol. 16, 187–199. https://doi.org/10.1016/s1470-2045(14)71207-0 (2015).",
+        "journal-title": "Lancet Oncol."
+      },
+      {
+        "key": "2910_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "124",
+        "DOI": "10.1159/000512172",
+        "volume": "99",
+        "author": "TJ Netherton",
+        "year": "2021",
+        "unstructured": "Netherton, T. J., Cardenas, C. E., Rhee, D. J., Court, L. E. & Beadle, B. M. The emergence of artificial intelligence within radiation oncology treatment planning. Oncology 99, 124–134. https://doi.org/10.1159/000512172 (2021).",
+        "journal-title": "Oncology"
+      },
+      {
+        "key": "2910_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "605",
+        "DOI": "10.1038/s41571-021-00541-w",
+        "volume": "18",
+        "author": "I El Naqa",
+        "year": "2021",
+        "unstructured": "El Naqa, I. Prospective clinical deployment of machine learning in radiation oncology. Nat. Rev. Clin. Oncol. 18, 605–606. https://doi.org/10.1038/s41571-021-00541-w (2021).",
+        "journal-title": "Nat. Rev. Clin. Oncol."
+      },
+      {
+        "key": "2910_CR31",
+        "unstructured": "Watkins, C. J. C. H. Learning from Delayed Rewards, PhD Thesis, King’s College, University of Cambridge, England (1989). http://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf"
+      },
+      {
+        "key": "2910_CR32",
+        "unstructured": "van Hassekt, H., Guez, A. & Silver, D. Deep Reinforcement Learning with Double Q-learning. Preprint at. https://arxiv.org/abs/1509.06461 (2015)."
+      },
+      {
+        "key": "2910_CR33",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Grover, L. K. A fast quantum mechanical algorithm for database search, Preprint at https://arxiv.org/abs/quant-ph/9605043 (1996).",
+        "DOI": "10.1145/237814.237866"
+      },
+      {
+        "key": "2910_CR34",
+        "volume-title": "Quantum Computation and Quantum Information",
+        "author": "MA Nielsen",
+        "year": "2010",
+        "unstructured": "Nielsen, M. A. & Chuang, I. L. Quantum Computation and Quantum Information (Cambridge University Press, 2010)."
+      },
+      {
+        "key": "2910_CR35",
+        "unstructured": "Gilliam, A., Pistoia, M. & Gonciulea, C. Optimizing Quantum Search Using a Generalized Version of Grover’s Algorithm, Preprint at https://arxiv.org/abs/2005.06468 (2020)."
+      },
+      {
+        "key": "2910_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "672",
+        "DOI": "10.1038/315672a0",
+        "volume": "315",
+        "author": "A Luster",
+        "year": "1985",
+        "unstructured": "Luster, A., Unkeless, J. & Ravetch, J. γ-Interferon transcriptionally regulates an early-response gene containing homology to platelet proteins. Nature 315, 672–676 (1985).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "2910_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "3195",
+        "DOI": "10.4049/jimmunol.168.7.3195",
+        "volume": "168",
+        "author": "JH Dufour",
+        "year": "2002",
+        "unstructured": "Dufour, J. H. et al. IFN-gamma-inducible protein 10 (IP-10; CXCL10)-deficient mice reveal a role for IP-10 in effector T cell generation and tracking. J. Immunol. 168, 3195–3204 (2002).",
+        "journal-title": "J. Immunol."
+      },
+      {
+        "key": "2910_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "155",
+        "DOI": "10.1084/jem.182.1.155",
+        "volume": "182",
+        "author": "AL Angiolillo",
+        "year": "1995",
+        "unstructured": "Angiolillo, A. L. et al. Human interferon-inducible protein 10 is a potent inhibitor of angiogenesis in vivo. J. Exp. Med. 182, 155–162 (1995).",
+        "journal-title": "J. Exp. Med."
+      },
+      {
+        "key": "2910_CR39",
+        "unstructured": "Vallieres, M. C. Radiomics: enabling factors towards precision medicine, Phd Thesis, McGill University at https://escholarship.mcgill.ca/concern/theses/4f16c513z (2018)."
+      },
+      {
+        "key": "2910_CR40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1201/9780429452659",
+        "volume-title": "A Guide to Outcome Modeling in Radiotherapy and Oncology: Listening to the Data",
+        "author": "I El Naqa",
+        "year": "2018",
+        "unstructured": "El Naqa, I. A Guide to Outcome Modeling in Radiotherapy and Oncology: Listening to the Data (CRC Press, 2018)."
+      },
+      {
+        "key": "2910_CR41",
+        "doi-asserted-by": "publisher",
+        "first-page": "e12402",
+        "DOI": "10.1371/journal.pone.0012402",
+        "volume": "5",
+        "author": "MAT Hildebrandt",
+        "year": "2010",
+        "unstructured": "Hildebrandt, M. A. T. et al. Genetic variants in inflammation-related genes are associated with radiation-induced toxicity following treatment for non-small cell lung cancer. PLoS ONE 5, e12402 (2010).",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "key": "2910_CR42",
+        "unstructured": "Borghesi, A., Baldo, F., & Milano, M. Improving Deep Learning Models via Constraint-Based Domain Knowledge: A Brief Survey, Preprint at https://arxiv.org/abs/2005.10691 (2020)."
+      },
+      {
+        "key": "2910_CR43",
+        "unstructured": "Gulrajani, I. et al. Improved Training Wasserstein GANs, Preprint at https://arxiv.org/abs/1704.00028 (2017)."
+      }
+    ],
+    "updated-by": [
+      {
+        "DOI": "10.1038/s41598-023-28810-x",
+        "type": "correction",
+        "label": "Correction",
+        "source": "publisher",
+        "updated": {
+          "date-parts": [
+            [
+              2023,
+              2,
+              9
+            ]
+          ],
+          "date-time": "2023-02-09T00:00:00Z",
+          "timestamp": 1675900800000
+        }
+      }
+    ],
+    "container-title": [
+      "Scientific Reports"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.nature.com/articles/s41598-021-02910-y.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41598-021-02910-y",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41598-021-02910-y.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          12
+        ]
+      ],
+      "date-time": "2024-07-12T08:19:30Z",
+      "timestamp": 1720772370000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/s41598-021-02910-y"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          12,
+          7
+        ]
+      ]
+    },
+    "references-count": 43,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2021,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "2910"
+    ],
+    "URL": "https://doi.org/10.1038/s41598-021-02910-y",
+    "relation": {
+      "correction": [
+        {
+          "id-type": "doi",
+          "id": "10.1038/s41598-023-28810-x",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "ISSN": [
+      "2045-2322"
+    ],
+    "issn-type": [
+      {
+        "value": "2045-2322",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          12,
+          7
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "20 August 2021",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "24 November 2021",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "7 December 2021",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "9 February 2023",
+        "order": 4,
+        "name": "change_date",
+        "label": "Change Date",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "Correction",
+        "order": 5,
+        "name": "change_type",
+        "label": "Change Type",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "A Correction to this paper has been published:",
+        "order": 6,
+        "name": "change_details",
+        "label": "Change Details",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "https://doi.org/10.1038/s41598-023-28810-x",
+        "URL": "https://doi.org/10.1038/s41598-023-28810-x",
+        "order": 7,
+        "name": "change_details",
+        "label": "Change Details",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "23545"
+  }
+}

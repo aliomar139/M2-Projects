@@ -1,0 +1,25 @@
+{
+  "header": {
+    "type": "esearch",
+    "version": "0.3"
+  },
+  "esearchresult": {
+    "count": "10",
+    "retmax": "10",
+    "retstart": "0",
+    "idlist": [
+      "42417852",
+      "33620822",
+      "32469294",
+      "30480012",
+      "26681351",
+      "24980585",
+      "24980584",
+      "24980581",
+      "24980578",
+      "19530638"
+    ],
+    "translationset": [],
+    "querytranslation": "(\"Orthopedics\"[MeSH Terms] OR \"Orthopedic Procedures\"[MeSH Terms] OR \"Arthroplasty\"[MeSH Terms] OR \"Osteoarthritis\"[MeSH Terms] OR \"orthop*\"[Title/Abstract] OR \"arthroplast*\"[Title/Abstract] OR \"Osteoarthritis\"[Title/Abstract] OR \"musculoskeletal\"[Title/Abstract] OR \"spine surgery\"[Title/Abstract] OR \"spine care\"[Title/Abstract] OR \"hip arthroscopy\"[Title/Abstract]) AND ((\"policy\"[Title/Abstract] OR \"recommendation\"[Title/Abstract]) AND (\"temporal drift\"[Title/Abstract] OR \"model update\"[Title/Abstract] OR \"guideline update\"[Title/Abstract] OR \"guideline updates\"[Title/Abstract])) AND 1800/01/01:2026/10/23[Date - Publication]"
+  }
+}

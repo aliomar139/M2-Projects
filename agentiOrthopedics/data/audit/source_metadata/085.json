@@ -1,0 +1,797 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          2
+        ]
+      ],
+      "date-time": "2026-10-02T07:01:13Z",
+      "timestamp": 1790924473154,
+      "version": "4.1.0"
+    },
+    "reference-count": 108,
+    "publisher": "JMIR Publications Inc.",
+    "issue": "3",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "JMIR Med Inform"
+    ],
+    "abstract": "<jats:sec>\n                    <jats:title>Background</jats:title>\n                    <jats:p>Modern clinical care in intensive care units is full of rich data, and machine learning has great potential to support clinical decision-making. The development of intelligent machine learning–based clinical decision support systems is facing great opportunities and challenges. Clinical decision support systems may directly help clinicians accurately diagnose, predict outcomes, identify risk events, or decide treatments at the point of care.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Objective</jats:title>\n                    <jats:p>We aimed to review the research and application of machine learning–enabled clinical decision support studies in intensive care units to help clinicians, researchers, developers, and policy makers better understand the advantages and limitations of machine learning–supported diagnosis, outcome prediction, risk event identification, and intensive care unit point-of-care recommendations.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>We searched papers published in the PubMed database between January 1980 and October 2020. We defined selection criteria to identify papers that focused on machine learning–enabled clinical decision support studies in intensive care units and reviewed the following aspects: research topics, study cohorts, machine learning models, analysis variables, and evaluation metrics.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>A total of 643 papers were collected, and using our selection criteria, 97 studies were found. Studies were categorized into 4 topics—monitoring, detection, and diagnosis (13/97, 13.4%), early identification of clinical events (32/97, 33.0%), outcome prediction and prognosis assessment (46/97, 47.6%), and treatment decision (6/97, 6.2%). Of the 97 papers, 82 (84.5%) studies used data from adult patients, 9 (9.3%) studies used data from pediatric patients, and 6 (6.2%) studies used data from neonates. We found that 65 (67.0%) studies used data from a single center, and 32 (33.0%) studies used a multicenter data set; 88 (90.7%) studies used supervised learning, 3 (3.1%) studies used unsupervised learning, and 6 (6.2%) studies used reinforcement learning. Clinical variable categories, starting with the most frequently used, were demographic (n=74), laboratory values (n=59), vital signs (n=55), scores (n=48), ventilation parameters (n=43), comorbidities (n=27), medications (n=18), outcome (n=14), fluid balance (n=13), nonmedicine therapy (n=10), symptoms (n=7), and medical history (n=4). The most frequently adopted evaluation metrics for clinical data modeling studies included area under the receiver operating characteristic curve (n=61), sensitivity (n=51), specificity (n=41), accuracy (n=29), and positive predictive value (n=23).</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusions</jats:title>\n                    <jats:p>Early identification of clinical and outcome prediction and prognosis assessment contributed to approximately 80% of studies included in this review. Using new algorithms to solve intensive care unit clinical problems by developing reinforcement learning, active learning, and time-series analysis methods for clinical decision support will be greater development prospects in the future.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.2196/28781",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          3
+        ]
+      ],
+      "date-time": "2022-03-03T10:45:37Z",
+      "timestamp": 1646304337000
+    },
+    "page": "e28781",
+    "source": "Crossref",
+    "is-referenced-by-count": 75,
+    "title": [
+      "State of the Art of Machine Learning–Enabled Clinical Decision Support in Intensive Care Units: Literature Review"
+    ],
+    "prefix": "10.2196",
+    "volume": "10",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-6798-1761",
+        "authenticated-orcid": false,
+        "given": "Na",
+        "family": "Hong",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2337-2264",
+        "authenticated-orcid": false,
+        "given": "Chun",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6358-4117",
+        "authenticated-orcid": false,
+        "given": "Jianwei",
+        "family": "Gao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1441-0847",
+        "authenticated-orcid": false,
+        "given": "Lin",
+        "family": "Han",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4389-6260",
+        "authenticated-orcid": false,
+        "given": "Fengxiang",
+        "family": "Chang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8197-6643",
+        "authenticated-orcid": false,
+        "given": "Mengchun",
+        "family": "Gong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0942-2870",
+        "authenticated-orcid": false,
+        "given": "Longxiang",
+        "family": "Su",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1010",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          3
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref1",
+        "unstructured": "PierreLisonAn introduction to machine learningLanguage Technology Group (LTG)20152022-02-03https://studylib.net/doc/11539838/an-introduction-to-machine-learning-pierre-lison--languag"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12931-020-01588-6"
+      },
+      {
+        "key": "ref3",
+        "first-page": "636",
+        "volume": "2020",
+        "author": "Srinivasan, S",
+        "year": "2020",
+        "journal-title": "AMIA Jt Summits Transl Sci Proc"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12911-019-0763-6"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/EMBC.2016.7591355"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12911-020-1120-5"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41591-018-0213-5"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/EMBC.2019.8857295"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1055/s-0040-1719037"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/00003246-200102000-00038"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/CCM.0000000000004397"
+      },
+      {
+        "key": "ref12",
+        "first-page": "379",
+        "author": "Eshelman, LJ",
+        "year": "2008",
+        "journal-title": "AMIA Annu Symp Proc"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2008.191"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cmpb.2005.01.003"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jbi.2008.03.011"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.artmed.2004.02.005"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3414/ME17-02-0012"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compbiomed.2018.04.016"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.clinph.2017.02.025"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/diagnostics10100773"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fnhum.2019.00076"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12028-007-0043-7"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.amsu.2016.04.023"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00134-016-4603-1"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13054-016-1416-0"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3233/SHTI190245"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/PCC.0000000000000750"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1089/sur.2008.057"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/CCM.0000000000002936"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compbiomed.2017.08.015"
+      },
+      {
+        "key": "ref31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0211057"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compbiomed.2019.103395"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4419-5913-3_9"
+      },
+      {
+        "key": "ref34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/medinform.5909"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmjopen-2017-017833"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1471-2431-9-72"
+      },
+      {
+        "key": "ref37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/amiajnl-2013-001854"
+      },
+      {
+        "key": "ref38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12879-016-1803-9"
+      },
+      {
+        "key": "ref39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/ppul.24342"
+      },
+      {
+        "key": "ref40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/CCE.0000000000000175"
+      },
+      {
+        "key": "ref41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jcrc.2020.07.019"
+      },
+      {
+        "key": "ref42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1475-925X-12-S1-S4"
+      },
+      {
+        "key": "ref43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4187/respcare.02527"
+      },
+      {
+        "key": "ref44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/YIC.0b013e32832bb078"
+      },
+      {
+        "key": "ref45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0198921"
+      },
+      {
+        "key": "ref46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4187/respcare.05481"
+      },
+      {
+        "key": "ref47",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cmpb.2019.05.009"
+      },
+      {
+        "key": "ref48",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1089/dia.2019.0252"
+      },
+      {
+        "key": "ref49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3233/SHTI200125"
+      },
+      {
+        "key": "ref50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/17648"
+      },
+      {
+        "key": "ref51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jbi.2020.103394"
+      },
+      {
+        "key": "ref52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijmedinf.2012.11.017"
+      },
+      {
+        "key": "ref53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/1076029619897827"
+      },
+      {
+        "key": "ref54",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/nicc.12048"
+      },
+      {
+        "key": "ref55",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/cc4847"
+      },
+      {
+        "key": "ref56",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3414/ME12-01-0093"
+      },
+      {
+        "key": "ref57",
+        "first-page": "56",
+        "volume": "214",
+        "author": "Ghose, S",
+        "year": "2015",
+        "journal-title": "Stud Health Technol Inform"
+      },
+      {
+        "key": "ref58",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/EMBC.2017.8037382"
+      },
+      {
+        "key": "ref59",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S1726-4901(10)70028-9"
+      },
+      {
+        "key": "ref60",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3107411.3107445"
+      },
+      {
+        "key": "ref61",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0206862"
+      },
+      {
+        "key": "ref62",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jcrc.2014.06.009"
+      },
+      {
+        "key": "ref63",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compbiomed.2013.12.012"
+      },
+      {
+        "key": "ref64",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jcrc.2017.09.006"
+      },
+      {
+        "key": "ref65",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/jgs.15888"
+      },
+      {
+        "key": "ref66",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00134-019-05853-1"
+      },
+      {
+        "key": "ref67",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/CCM.0000000000001762"
+      },
+      {
+        "key": "ref68",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/eb-2014-101903"
+      },
+      {
+        "key": "ref69",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/CCM.0000000000000106"
+      },
+      {
+        "key": "ref70",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/cc3054"
+      },
+      {
+        "key": "ref71",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.artmed.2014.03.004"
+      },
+      {
+        "key": "ref72",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2975167.2975202"
+      },
+      {
+        "key": "ref73",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/hdi.12532"
+      },
+      {
+        "key": "ref74",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3233/SHTI190264"
+      },
+      {
+        "key": "ref75",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12871-020-01046-2"
+      },
+      {
+        "key": "ref76",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S2468-1253(16)30007-3"
+      },
+      {
+        "key": "ref77",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4254/wjh.v12.i6.298"
+      },
+      {
+        "key": "ref78",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jcrc.2012.08.017"
+      },
+      {
+        "key": "ref79",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jcrc.2019.10.015"
+      },
+      {
+        "key": "ref80",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13613-018-0386-6"
+      },
+      {
+        "key": "ref81",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1212/WNL.0000000000007504"
+      },
+      {
+        "key": "ref82",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ejcts.2011.01.081"
+      },
+      {
+        "key": "ref83",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/eci.13318"
+      },
+      {
+        "key": "ref84",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13054-019-2656-6"
+      },
+      {
+        "key": "ref85",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/qjmed/hcp036"
+      },
+      {
+        "key": "ref86",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj.322.7297.1274"
+      },
+      {
+        "key": "ref87",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jcrc.2015.01.011"
+      },
+      {
+        "key": "ref88",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1472-6947-9-2"
+      },
+      {
+        "key": "ref89",
+        "first-page": "371",
+        "volume": "2016",
+        "author": "Che, Z",
+        "year": "2016",
+        "journal-title": "AMIA Annu Symp Proc"
+      },
+      {
+        "key": "ref90",
+        "first-page": "192",
+        "volume": "2010",
+        "author": "Ebadollahi, S",
+        "year": "2010",
+        "journal-title": "AMIA Annu Symp Proc"
+      },
+      {
+        "key": "ref91",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4187/respcare.07561"
+      },
+      {
+        "key": "ref92",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/1472-6947-6-11"
+      },
+      {
+        "key": "ref93",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1203/01.PDR.0000129658.55746.3C"
+      },
+      {
+        "key": "ref94",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/s1010-7940(03)00269-0"
+      },
+      {
+        "key": "ref95",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.athoracsur.2015.07.004"
+      },
+      {
+        "key": "ref96",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.31744/einstein_journal/2020AO5476"
+      },
+      {
+        "key": "ref97",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmjopen-2018-025925"
+      },
+      {
+        "key": "ref98",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0218942"
+      },
+      {
+        "key": "ref99",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ebiom.2020.102785"
+      },
+      {
+        "key": "ref100",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0182881"
+      },
+      {
+        "key": "ref101",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-019-38491-0"
+      },
+      {
+        "key": "ref102",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1039/d0lc00373e"
+      },
+      {
+        "key": "ref103",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.chest.2018.04.037"
+      },
+      {
+        "key": "ref104",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jama.2019.16489"
+      },
+      {
+        "key": "ref105",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj.m441"
+      },
+      {
+        "key": "ref106",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/bjs.9736"
+      },
+      {
+        "key": "ref107",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.patter.2020.100129"
+      },
+      {
+        "key": "ref108",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S2589-7500(20)30186-2"
+      }
+    ],
+    "container-title": [
+      "JMIR Medical Informatics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://medinform.jmir.org/2022/3/e28781",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          30
+        ]
+      ],
+      "date-time": "2026-06-30T17:42:22Z",
+      "timestamp": 1782841342000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://medinform.jmir.org/2022/3/e28781"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          3
+        ]
+      ]
+    },
+    "references-count": 108,
+    "journal-issue": {
+      "issue": "3",
+      "published-online": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.2196/28781",
+    "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.2196/preprints.28781",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "ISSN": [
+      "2291-9694"
+    ],
+    "issn-type": [
+      {
+        "value": "2291-9694",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          3
+        ]
+      ]
+    }
+  }
+}

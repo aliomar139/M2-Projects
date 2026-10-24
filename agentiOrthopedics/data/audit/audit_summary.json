@@ -1,0 +1,70 @@
+{
+  "audit_date": "2026-10-23",
+  "manifest_rows": 100,
+  "pdf_files": 100,
+  "document_classes": {
+    "publisher_like_pdf_identity_pending": 58,
+    "local_summary_sheet": 38,
+    "wrong_document_confirmed": 3,
+    "supplement_only": 1
+  },
+  "duplicate_dois": {},
+  "duplicate_file_hashes": {
+    "960780209cf82d5a2321c3d45eae3f75799ce89f7fbb7dcb66bbd58fdec57aac": 2
+  },
+  "missing_doi_ranks": [
+    "100"
+  ],
+  "archive_inventory": {
+    "AgenticAi.csv": {
+      "rows": 117,
+      "columns": [
+        "Title",
+        "Takeaway",
+        "Authors",
+        "Year",
+        "Citations",
+        "Abstract",
+        "Study Type",
+        "Journal",
+        "Journal SJR Quartile",
+        "DOI",
+        "Consensus Link"
+      ]
+    },
+    "CrossDomain.csv": {
+      "rows": 96,
+      "columns": [
+        "Title",
+        "Takeaway",
+        "Authors",
+        "Year",
+        "Citations",
+        "Abstract",
+        "Study Type",
+        "Journal",
+        "Journal SJR Quartile",
+        "DOI",
+        "Consensus Link"
+      ]
+    },
+    "top_100_orthopedic_ai_papers.csv": {
+      "rows": 100,
+      "columns": [
+        "Rank",
+        "Relevance Score",
+        "Title",
+        "Authors",
+        "Year",
+        "Journal",
+        "Journal SJR Quartile",
+        "Study Type",
+        "Citations",
+        "Takeaway",
+        "Abstract",
+        "DOI",
+        "Consensus Link"
+      ]
+    }
+  }
+}

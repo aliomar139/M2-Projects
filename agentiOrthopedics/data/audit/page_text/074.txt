@@ -1,0 +1,1070 @@
+=== PDF PAGE 1 ===
+Vol.:(0123456789)
+Pain Ther (2025) 14:359–373 
+https://doi.org/10.1007/s40122-024-00700-8
+ORIGINAL RESEARCH
+Predicting Treatment Outcomes in Patients with Low 
+Back Pain Using Gene Signature‑Based Machine 
+Learning Models
+Youzhi Lian · Yinyu Shi · Haibin Shang · Hongsheng Zhan
+Received: October 7, 2024 / Accepted: December 11, 2024 / Published online: December 25, 2024 
+© The Author(s) 2024
+ABSTRACT
+Introduction: Low back pain (LBP) is a sig-
+nificant global health burden, with variable 
+treatment outcomes and an unclear underlying 
+molecular mechanism. Effective prediction of 
+treatment responses remains a challenge. In this 
+study, we aimed to develop gene signature-based 
+machine learning models using transcriptomic 
+data from peripheral immune cells to predict 
+treatment outcomes in patients with LBP.
+Methods: The transcriptomic data of patients 
+with LBP from peripheral immune cells were 
+retrieved from the GEO database. Patients with 
+LBP were recruited, and treatment outcomes 
+were assessed after 3 months. Patients were clas-
+sified into two groups: those with resolved pain 
+and those with persistent pain. Differentially 
+expressed genes (DEGs) between the two groups 
+were identified through bioinformatic analy-
+sis. Key genes were selected using five machine 
+learning models, including Lasso, Elastic Net, 
+Random Forest, SVM, and GBM. These key genes 
+were then used to train 45 machine learning 
+models by combining nine different algorithms: 
+Logistic Regression, K-Nearest Neighbors, Sup-
+port Vector Machine, Decision Tree, Random 
+Forest, Gradient Boosting Machine, Multilayer 
+Perceptron, Naive Bayes, and Linear Discrimi -
+nant Analysis. Five-fold cross-validation was 
+employed to ensure robust model evaluation 
+and minimize overfitting. In each fold, the data-
+set was split into training and validation sets, 
+with model performance assessed using multi-
+ple metrics including accuracy, precision, recall, 
+and F1 score. The final model performance was 
+reported as the mean and standard deviation 
+across all five folds, providing a more reliable 
+estimate of the models’ ability to predict LBP 
+treatment outcomes using gene expression data 
+from peripheral immune cells.
+Results: A total of 61 DEGs were identified 
+between patients with resolved and persistent 
+pain. From these genes, 45 machine learn-
+ing models were constructed using different 
+Supplementary Information The online version 
+contains supplementary material available at 
+https:// doi. org/ 10. 1007/ s40122- 024- 00700-8.
+Y. Lian · H. Shang 
+Baoshan Hospital Affiliated to Shanghai University 
+of Chinese Medicine, Shanghai 201999, China
+Y. Lian · H. Shang 
+Baoshan District Integrated Traditional Chinese 
+and Western Medicine Hospital, Shanghai 201999, 
+China
+Y. Shi · H. Zhan (*) 
+Shanghai University of Traditional Chinese 
+Medicine Affiliated Shuguang Hospital, 
+Shanghai 200021, China
+e-mail: Shgsyjs@139.com
+Y. Shi · H. Zhan 
+Shi’s Orthopedic Medical Center, Shanghai 200021, 
+China
+
+=== PDF PAGE 2 ===
+360 Pain Ther (2025) 14:359–373
+combinations of feature selection methods and 
+classification algorithms. The Elastic Net with 
+Logistic Regression achieved the highest accu-
+racy of 88.7% ± 8.0% (mean ± standard devia-
+tion), followed closely by Elastic Net with Linear 
+Discriminant Analysis (88.7% ± 7.5%) and Lasso 
+with Multilayer Perceptron (87.7% ± 6.7%). Over-
+all, 15 models demonstrated robust performance 
+with accuracy > 80%, suggesting the reliability 
+of our machine learning approach in predicting 
+LBP treatment outcomes. The SHapley Additive 
+exPlanations (SHAP) method was used to visual-
+ize the contribution of core genes to model per-
+formance, highlighting their roles in predicting 
+treatment outcomes.
+Conclusion: The study demonstrates the 
+potential of using transcriptomic data from 
+peripheral immune cells and machine learn-
+ing models to predict treatment outcomes in 
+patients with LBP. The identification of key 
+genes and the high accuracy of certain models 
+provide a basis for future personalized treatment 
+strategies in LBP management. Visualizing gene 
+importance with SHAP adds interpretability to 
+the predictive models, enhancing their clinical 
+relevance.
+Keywords: Low back pain; Treatment 
+prediction; Gene signature; Machine learning; 
+Transcriptomics; Peripheral immune cells; SHAP
+Key Summary Points 
+Why carry out this study?
+Low back pain (LBP) is a leading cause of dis-
+ability worldwide, contributing to substantial 
+economic and healthcare burdens. Current 
+treatment outcomes are highly variable, 
+and the molecular mechanisms influencing 
+response to treatment remain unclear
+There is an unmet need for personalized 
+treatment strategies in LBP management to 
+predict which patients will benefit from spe-
+cific interventions
+This study aimed to develop machine learn-
+ing models based on gene expression signa-
+tures from peripheral immune cells to predict 
+treatment outcomes in patients with LBP
+What was learned from the study?
+The study identified key genes associated 
+with treatment outcomes and demonstrated 
+that certain machine learning models 
+achieved high accuracy in predicting whether 
+patients with LBP would experience persis-
+tent or resolved pain
+The results indicate that gene signature-based 
+models hold promise for informing personal-
+ized treatment strategies in LBP management. 
+Even if some models underperformed, the 
+identification of key molecular markers has 
+the potential to improve future research and 
+clinical interventions in chronic pain man-
+agement
+INTRODUCTION
+Low back pain (LBP) is a leading cause of disabil-
+ity and affects millions of individuals worldwide, 
+representing a substantial public health burden 
+[1]. It is estimated that over 80% of the popula-
+tion will experience LBP at some point in their 
+lives, with a significant proportion developing 
+chronic or recurrent pain [2 ]. The multifaceted 
+components of the lumbar spine, including soft 
+tissues, vertebrae, zygapophyseal and sacroiliac 
+joints, intervertebral discs, and neurovascular 
+structures, are susceptible to diverse stressors 
+that can, individually or synergistically, precipi-
+tate LBP [3]. According to the Global Burden of 
+Disease Study, LBP has consistently ranked as 
+one of the top causes of years lived with disabil-
+ity (YLDs) globally, contributing to both direct 
+healthcare costs and indirect costs related to 
+lost productivity and reduced quality of life [4 ]. 
+The prevalence of LBP increases with age, and 
+as the global population continues to age, the 
+economic and social impact of LBP is expected 
+to rise further [5].
+Despite its high prevalence and burden, 
+the etiology of LBP remains complex and 
+
+=== PDF PAGE 3 ===
+361Pain Ther (2025) 14:359–373 
+multifactorial, encompassing a wide range of 
+biological, psychological, and social factors 
+[6, 7]. LBP can be caused by structural issues 
+such as herniated discs, spinal stenosis, and 
+degenerative disc disease, but in many cases, 
+the exact underlying cause remains unclear 
+[8]. This uncertainty in diagnosis and the 
+variability in patient response to treatments 
+complicate the management of LBP. Current 
+treatment strategies for LBP include physical 
+therapy, pharmacological interventions, and, 
+in severe cases, surgical options [9 ]. However, 
+these treatments often yield mixed results, and 
+a significant proportion of patients continue 
+to experience persistent pain despite interven -
+tion. The unpredictable nature of treatment 
+outcomes for LBP underscores the need for 
+personalized approaches to pain management. 
+While certain patients may respond well to 
+conventional treatments, others may experi-
+ence little to no improvement, suggesting that 
+individual biological factors play a critical role 
+in determining treatment efficacy. Understand-
+ing the molecular mechanisms underlying LBP 
+and identifying biomarkers that can predict 
+treatment response are key challenges in the 
+field.
+Advances in bioinformatics and machine 
+learning techniques offer new opportunities 
+to address these challenges by analyzing large-
+scale molecular data to uncover the biological 
+signatures associated with different pain tra-
+jectories [10, 11]. One promising avenue for 
+research is the analysis of transcriptomic data 
+from peripheral immune cells. Increasing evi-
+dence suggests that the immune system plays a 
+crucial role in the pathophysiology of chronic 
+pain, including LBP [12]. Immune cells, particu-
+larly those involved in inflammatory processes, 
+can modulate pain pathways through the release 
+of cytokines and other signaling molecules [13, 
+14]. By studying the gene expression profiles of 
+peripheral immune cells, researchers can gain 
+insights into the molecular mechanisms that 
+may contribute to the persistence or resolu-
+tion of pain in patients with LBP. Additionally, 
+using machine learning models to analyze gene 
+expression data has the potential to identify key 
+genes associated with treatment response, pav-
+ing the way for the development of predictive 
+models that can inform personalized treatment 
+strategies for LBP.
+Given the significant global burden of LBP 
+and the variability in treatment outcomes, this 
+study aims to develop a gene signature-based 
+machine learning model using transcriptomic 
+data from peripheral immune cells to predict 
+treatment outcomes in patients with LBP. In this 
+study, we developed a comprehensive machine 
+learning approach to predict treatment out-
+comes in patients with LBP using transcrip-
+tomic data from peripheral immune cells. The 
+overall workflow consisted of several key steps. 
+First, patients with LBP were classified into two 
+groups based on their response to treatment 
+after 3 months: those whose pain resolved and 
+those with persistent pain. Differential gene 
+expression analysis was performed to iden-
+tify key genes associated with these treatment 
+outcomes. Next, five machine learning mod-
+els—Lasso, Elastic Net, Random Forest, Support 
+Vector Machine (SVM), and Gradient Boosting 
+Machine (GBM)—were employed to select core 
+genes for model construction. These core genes 
+were then used in combination with nine dif-
+ferent machine learning algorithms, including 
+Logistic Regression, K-Nearest Neighbors, Deci-
+sion Tree, Random Forest, and others, resulting 
+in a total of 45 model combinations. The predic-
+tive performance of these models was evaluated 
+based on accuracy, and SHapley Additive exPla-
+nations (SHAP) analysis was used to interpret the 
+contribution of each gene to the model’s pre -
+dictions. This scheme allowed us to systemati-
+cally identify the key genetic factors influencing 
+treatment outcomes in patients with LBP and 
+provided a robust framework for building pre-
+dictive models to inform personalized treatment 
+strategies. The detailed procedure is illustrated 
+in Fig. 1.
+METHODS
+Data Source
+The transcriptomic data of patients with LBP 
+from peripheral immune cells was retrieved 
+from the GEO database (GSE177034). This 
+
+=== PDF PAGE 4 ===
+362 Pain Ther (2025) 14:359–373
+study utilized transcriptomic data from a 
+human low back pain (LBP) cohort, part of the 
+PainOMICs project (NCT02037763), funded 
+by the European Community under FP7. The 
+primary aim was to examine associations 
+between genome-wide transcriptomics and 
+the development of persistent chronic LBP. A 
+retrospective selection of the first 50 patients 
+with resolved pain and 50 patients with per-
+sistent pain, all white adults, was made. Inclu-
+sion criteria included acute LBP (pain level ≥ 4 
+on NRS) of < 6-week duration, while exclusion 
+criteria ruled out a recent history of persistent 
+chronic LBP, spinal fractures, and unstable dis-
+ease. Patients received standardized treatment, 
+including non-steroidal anti-inflammatory 
+drug (NSAID), steroids, and opioids, based on 
+clinical signs. Follow-up at 3 months classi-
+fied patients into “resolved pain” (NRS < 4) 
+or “persistent pain” (NRS ≥ 4) groups. The 
+researcher conducting transcriptomic analy -
+sis was blinded to patient group assignment.
+Ethical Approval
+This article is based on previously conducted 
+studies and does not contain any new studies 
+with human participants or animals performed 
+by any of the authors. The transcriptomic data 
+of patients with LBP from peripheral immune 
+cells were retrieved from the GEO database 
+(GSE177034). This study utilized transcrip-
+tomic data from a human low back pain 
+(LBP) cohort, part of the PainOMICs project 
+(NCT02037763), funded by the European Com-
+munity under FP7. All procedures performed 
+in those studies involving human participants 
+were approved by the University Hospital of 
+Parma’s Ethics Committee (protocol number 
+43543).
+Differentially Expressed Gene Analysis
+To identify differentially expressed genes (DEGs) 
+between the persistent and resolved pain groups, 
+we performed a differential expression analy-
+sis using the normalized gene expression data 
+[15]. First, the raw transcriptomic data from the 
+GSE177034 dataset were imported and normal-
+ized using the normalizeBetweenArrays function 
+from the limma package to ensure comparability 
+across samples. We then created a grouping vari-
+able (group_info) that labeled samples as either 
+"Control" (persistent pain) or “Test” (resolved 
+pain) based on their clinical status. A linear 
+model was fitted to the normalized expression 
+data using the lmFit function from the limma 
+package, followed by empirical Bayes modera -
+tion with the eBayes function to improve the 
+statistical power of the analysis [16]. Finally, the 
+topTable function was used to extract the list of 
+DEGs, applying the Benjamini-Hochberg (BH) 
+method for multiple testing correction. Genes 
+with an adjusted p -value (p.adj) < 0.1 were con-
+sidered differentially expressed. The analyses 
+were conducted in R (version 4.3.3).
+Key Genes Selected
+To identify key genes for model construc-
+tion, we employed multiple machine learning 
+Fig. 1  Flowchart of machine learning model for predict -
+ing treatment outcomes in LBP patients based on gene 
+signatures. DEG differentially expressed gene, GEO  Gene 
+Expression Omnibus, SHAP , SHapley Additive exPlana -
+tions
+
+=== PDF PAGE 5 ===
+363Pain Ther (2025) 14:359–373 
+techniques for feature selection using the 
+expression data. The dataset was split into 
+training and testing sets with an 80:20 ratio 
+[17]. The gene expression data were stand-
+ardized using the StandardScaler function to 
+ensure that features were on a comparable 
+scale. We applied five machine learning mod-
+els—Lasso, Elastic Net, Random Forest, Support 
+Vector Machine (SVM), and Gradient Boosting 
+Machine (GBM)—to select the most important 
+genes. The models were trained on the stand-
+ardized training data, and feature selection was 
+performed using the SelectFromModel function 
+[18]. For Lasso and Elastic Net, hyperparam -
+eters were set with alpha  = 0.01 to ensure regu -
+larization, while Elastic Net had an l1_ratio of 
+0.5 to balance L1 and L2 penalties. Random 
+Forest and GBM were implemented with 100 
+estimators, and SVM was used with a linear 
+kernel to perform gene selection. Each model 
+identified a set of genes that were important 
+for classifying patients with LBP into “resolved 
+pain” or “persistent pain” groups. Ultimately, 
+these genes were designated as the core features 
+for the subsequent predictive model construc-
+tion. The final list of key genes was saved for 
+further analysis. The analyses were conducted 
+in Python (version 3.12).
+Machine Learning Modeling
+To predict treatment outcomes in patients with 
+LBP, we applied nine different machine learn-
+ing classifiers to the gene sets selected by five 
+feature selection methods. The classifiers used 
+were Logistic Regression, K-Nearest Neighbors, 
+Support Vector Machine (SVM), Decision Tree, 
+Random Forest, Gradient Boosting Machine 
+(GBM), Multilayer Perceptron (MLP), Naive 
+Bayes, and Linear Discriminant Analysis (LDA). 
+This resulted in a total of 45 machine learning 
+model combinations. For each feature selection 
+method, the gene subsets were extracted, and 
+the corresponding gene expression values were 
+used as input features for model training. To 
+ensure robust model evaluation and minimize 
+overfitting, we implemented five-fold cross-
+validation. In this process, the dataset was ran-
+domly divided into five equal parts, with each 
+part serving as the validation set once while the 
+remaining four parts were used for training. The 
+features were standardized using StandardScaler 
+to ensure that each feature had a mean of 0 and 
+a standard deviation of 1. Each classifier was 
+then trained on the standardized training data, 
+and the models were evaluated on the test set. 
+The analyses were conducted in Python (version 
+3.12).
+Machine Learning Models Evaluation
+The performance of each model was measured 
+using accuracy, precision, recall, and F1 score 
+[19]. This comprehensive machine learning 
+modeling approach allowed us to systematically 
+compare the performance of different models in 
+predicting LBP treatment outcomes based on the 
+selected gene signatures. The SHapley Additive 
+exPlanations (SHAP) method was used to visual-
+ize the contribution of core genes to the model 
+of the first fold cross performance, highlighting 
+their roles in predicting treatment outcomes 
+[20]. The confusion matrix was used to visual-
+ize the predictive performance of the model of 
+the first fold cross on the validation set.
+RESULTS
+Analysis of Differentially Expressed Genes 
+and Screening of Key Genes
+As illustrated in Fig. 2A, a total of 61 DEGs were 
+identified between patients with resolved and 
+persistent pain.
+Following the application of five machine 
+learning models—Lasso, Elastic Net, Random 
+Forest, Support Vector Machine (SVM), and 
+Gradient Boosting Machine (GBM)—a set of 
+core genes was identified for each feature selec-
+tion method. These models were applied to 
+select key genes from the transcriptomic data 
+of patients with resolved and persistent LBP. 
+The results showed that certain genes, such as 
+DNASE1L2, CCDC85B, and PTTG1, were con-
+sistently selected across multiple methods, 
+indicating their potential significance in distin-
+guishing between the two groups. For example, 
+
+=== PDF PAGE 6 ===
+364 Pain Ther (2025) 14:359–373
+DNASE1L2 was identified as a key gene by all 
+five feature selection methods, while CCDC85B 
+was selected by four of the models (Elastic Net, 
+SVM, GBM, and Lasso). Other genes, such as 
+SLC7A9 and H2AX, were identified by Lasso, 
+Elastic Net, and SVM, suggesting their possible 
+role in influencing treatment outcomes. The 
+detailed results of the selected genes from each 
+model are provided in Table 1 and Fig. 2B. These 
+core genes were subsequently used in the con-
+struction of machine learning models to predict 
+LBP treatment outcomes, forming the basis for 
+the predictive analysis in the next phase of the 
+study.
+Machine Learning Models Evaluation
+A total of 45 machine learning model combina-
+tions were constructed by combining five feature 
+selection methods (Lasso, Elastic Net, Random 
+Forest, Support Vector Machine, and Gradient 
+Boosting Machine) with nine different classi-
+fiers: Logistic Regression, K-Nearest Neighbors, 
+Support Vector Machine, Decision Tree, Random 
+Forest, Gradient Boosting Machine, Multilayer 
+Perceptron, Naive Bayes, and Linear Discrimi -
+nant Analysis. These models were evaluated 
+based on four performance metrics: accuracy, 
+precision, recall, and F1 score.
+As illustrated in Fig. 3, the results of our five-
+fold cross-validation showed that certain model 
+combinations performed significantly better 
+than others. The combination of Elastic Net 
+with Logistic Regression achieved the highest 
+accuracy of 88.7% (± 8.0%), followed closely by 
+Elastic Net with Linear Discriminant Analysis 
+at 88.7% (± 7.5%), indicating strong and stable 
+predictive power. The Lasso and Elastic Net fea-
+ture selection methods, when combined with 
+Multilayer Perceptron, both achieved accura-
+cies of 87.7%, with standard deviations of ± 6.7% 
+and ± 9.2% respectively.
+The top-performing models demonstrated 
+robust performance across all folds, suggesting 
+reliable generalization capability. For instance, 
+the Lasso with Linear Discriminant Analysis 
+showed consistent performance with an accu-
+racy of 87.7% (±  5.1%), exhibiting the lowest 
+standard deviation among the top models, indi-
+cating stable predictive power. Notably, Multi-
+layer Perceptron consistently appeared among 
+the top performers when combined with vari-
+ous feature selection methods (Lasso, Elastic Net, 
+and SVM), achieving accuracies > 85%.
+In contrast, some models showed less effec -
+tive performance, particularly those involving 
+Decision Trees and K-Nearest Neighbors, with 
+accuracies ranging from 63.9 to 77.4%. The 
+combination of SVM with Decision Tree showed 
+the lowest accuracy at 63.9% (± 13.6%), with 
+Fig. 2  Screening of differentially expressed genes and key 
+genes. A Differentially expressed genes between patients 
+with resolved and persistent pain. B Results of key gene 
+selection across different models. SVM  support vector 
+machine, GBM gradient boosting machine
+
+=== PDF PAGE 7 ===
+365Pain Ther (2025) 14:359–373 
+high variability across folds. This variability 
+highlights the importance of selecting appro-
+priate classifier and feature selection method 
+combinations.
+Overall, our cross-validation results revealed 
+that Elastic Net-based and Lasso-based mod-
+els, particularly when combined with Logistic 
+Regression, Linear Discriminant Analysis, or 
+Multilayer Perceptron, provided the most reli-
+able predictions for low back pain treatment 
+outcomes. The consistent performance across 
+multiple folds suggests these models could be 
+effective tools for predicting clinical responses in 
+patients with LBP. The detailed results of model 
+performance across all combinations are pro-
+vided in Fig. 4 and Supplementary Table 1.
+T able 1  Detailed content of key genes in different models
+Lasso Elastic net Random forest SVM GBM
+DNASE1L2 DNASE1L2 DNASE1L2 DNASE1L2 DNASE1L2
+H2AX H2AX NDUFS6 PTTG1 CCDC85B
+PTTG1 PTTG1 PHKA2 CCDC85B SDF2L1
+CCDC85B CCDC85B PSMC3 SLC7A9 FAM184B
+SLC7A9 SLC7A9 MRPL23 SPIDR DHRS4-AS1
+SDF2L1 SDF2L1 PTTG1 FAM184B PDCL3
+MTFP1 DHRS4-AS1 SLC7A9 LRRC20 DOHH
+DHRS4-AS1 CLK4 SDF2L1 DHRS4-AS1 TBRG1
+CLK4 ALG13 FAM184B PDCL3 HDDC3
+ALG13 TBRG1 THAP11 ALG13 NIPBL-DT
+CTU2 C17orf49 DOHH TBRG1 EPOP
+HDDC3 CTU2 TBRG1 C17orf49 MIR3164
+BOLA3 HDDC3 C17orf49 HDDC3 LOC100996506
+NPEPPSP1 BOLA3 LINC00266-1 BOLA3 LOC106780825
+NIPBL-DT NIPBL-DT ZNF431 NIPBL-DT LOC107984754
+EPOP MIR3164 HDDC3 EPOP
+MIR3164 LOC100996506 PTMAP11 MIR3164
+LOC100996506 LOC101930307 EPOP LOC100996506
+A TP6V0D1-DT UFD1-AS1 MIR3164 LOC101930307
+LOC101930307 LOC106780825 A TP6V0D1-DT UFD1-AS1
+UFD1-AS1 LOC107984754 LOC106780825 LOC106780825
+LOC106780825 ARHGAP27P1-
+BPTFP1-KPNA2P3
+LOC107984433 LOC107984754
+LOC107984433 LOC107984754 ARHGAP27P1-BPTFP1-KPNA2P3
+LOC107984754
+ARHGAP27P1-BPTFP1-KPNA2P3
+
+=== PDF PAGE 8 ===
+366 Pain Ther (2025) 14:359–373
+
+
+=== PDF PAGE 9 ===
+367Pain Ther (2025) 14:359–373 
+Contribution of Core Genes to Model 
+Performance
+The SHAP method was used to visualize the con-
+tribution of core genes to model performance (as 
+illustrated in Fig.  5). The SHAP analysis across 
+13 top-performing machine learning models 
+identified key genes consistently contributing 
+to predictions of low back pain (LBP) treatment 
+outcomes. Genes such as DNASE1L2, CCDC85B, 
+SDF2L1, UFD1-AS1, and H2AX were repeatedly 
+highlighted across models, suggesting their roles 
+in immune regulation, cellular stress, and DNA 
+repair processes, all of which are likely critical in 
+distinguishing between patients with resolved 
+and persistent pain. These genes serve as poten-
+tial biomarkers for predicting treatment out-
+comes, offering opportunities for personalized 
+interventions in LBP management. Addition-
+ally, model-specific genes like NIPBL-DT further 
+emphasize the molecular diversity involved in 
+pain persistence. This comprehensive analysis 
+provides a strong foundation for future research 
+into tailored pain treatments. The ability to 
+accurately predict LBP treatment outcomes using 
+gene signatures from peripheral immune cells 
+opens avenues for personalized medicine. Iden-
+tifying patients likely to experience persistent 
+pain could lead to early intervention and tai -
+lored treatment strategies, potentially improving 
+clinical outcomes and reducing healthcare costs.
+DISCUSSION
+The Elastic Net with Logistic Regression 
+achieved the highest accuracy of 88.7% ± 8.0% 
+(mean ± standard deviation), followed closely 
+by Elastic Net with Linear Discriminant Analy-
+sis (88.7% ± 7.5%) and Lasso with Multilayer 
+Perceptron (87.7% ± 6.7%). These models effec-
+tively predicted treatment outcomes and dis-
+tinguishing between patients who responded 
+to treatment and those with persistent pain. 
+Furthermore, SHAP analysis provided valu-
+able insights into the contribution of individ-
+ual genes to model predictions, revealing that 
+core genes like DNASE1L2, CCDC85B, SDF2L1, 
+UFD1-AS1, and H2AX had significant impacts 
+on model performance. These findings under-
+score the potential of gene expression data and 
+machine learning models in advancing personal-
+ized medicine for LBP, enabling earlier interven-
+tion and tailored treatment strategies.
+The consistent selection of certain genes 
+across multiple machine learning methods indi-
+cates their potential biological importance in 
+distinguishing between patients with resolved 
+and persistent pain. Of particular significance, 
+DNASE1L2 was identified by all five feature 
+selection methods, suggesting a robust role in 
+the underlying pathophysiology of pain resolu-
+tion. DNASE1L2, a member of the DNase fam-
+ily, is involved in apoptotic DNA degradation 
+and plays a crucial role in the clearance of cell 
+debris during inflammation, which is particu -
+larly relevant as efficient clearance of inflam-
+matory mediators is essential for preventing 
+chronic inflammation and subsequent pain 
+persistence [21, 22]. CCDC85B and PTTG1, 
+selected by four methods, represent another 
+layer of molecular complexity in pain chronic-
+ity. CCDC85B has been implicated in the regu-
+lation of Wnt signaling and NF-κ B pathways, 
+both central to inflammatory responses and pain 
+sensitization, while PTTG1, primarily known as 
+a securin protein involved in cell cycle regula-
+tion, has recently been linked to immune cell 
+proliferation and cytokine production [23– 26]. 
+Additionally, our analysis identified several 
+genes involved in immune cell function and 
+inflammation resolution, such as CD28 and 
+ICOS for T-cell activation and differentiation, 
+and IL1R1 and TNFRSF members for cytokine 
+signaling pathways, emphasizing the critical role 
+of immune-mediated inflammation in deter -
+mining pain outcomes [27–29]. The selection of 
+genes involved in cellular stress responses and 
+tissue repair (including heat shock protein fam-
+ily members and growth factor-related genes) 
+suggests that the capacity for cellular adapta-
+tion and tissue homeostasis may be key determi-
+nants in pain resolution [30–32]. Pathway anal-
+ysis of the identified genes reveals enrichment 
+Fig. 3  Different model combinations evaluated. SVM sup-
+port vector machine, GBM gradient boosting machine
+◂
+
+=== PDF PAGE 10 ===
+368 Pain Ther (2025) 14:359–373
+in several key biological processes, including 
+inflammatory response regulation, cellular stress 
+response and adaptation, immune cell activa-
+tion and differentiation, apoptotic regulation, 
+tissue repair, and cytokine signaling modulation. 
+These core genes likely represent key molecu -
+lar signatures that could offer insights into the 
+immune mechanisms driving chronic pain or 
+its resolution, with their identification through 
+multiple machine learning approaches not only 
+validating their biological significance but also 
+highlighting the utility of transcriptomic data 
+in uncovering biological pathways and mark-
+ers that are not immediately apparent through 
+traditional clinical assessments. The conver-
+gence of multiple feature selection methods on 
+these genes strengthens the evidence for their 
+importance in pain chronicity and suggests 
+potential therapeutic targets for intervention in 
+chronic pain conditions.
+Furthermore, the study demonstrated that 
+certain machine learning model combinations 
+performed exceptionally well, particularly those 
+involving Elastic Net and Lasso combined with 
+Logistic Regression, Linear Discriminant Analy-
+sis, and Multilayer Perceptron. Through five-
+fold cross-validation, these models consistently 
+achieved accuracies > 87%, with relatively low 
+Fig. 4  Evaluation of different machine learning models. A 
+Support vector machine with Lasso. B Randon Forest with 
+Lasso. C Logistic Regression with Elastic Net. D Support 
+V ector Machine with Elastic Net. E Decision T ree with 
+Elastic Net. F Multilayer Perceptron with Elastic Net. G 
+Support V ector Machine with SVM. H Naive Bayes with 
+SVN. I Logistic Regression with GBM. J K-Nearest Neigh-
+bors with GBM. K Support V ector Machine with GBM. L 
+Multilayer Perceptron with GBM. M Linear Discriminant 
+Analysis with GBM. SVM  support vector machine, GBM  
+gradient boosting machine
+
+=== PDF PAGE 11 ===
+369Pain Ther (2025) 14:359–373 
+standard deviations, indicating robust and reli-
+able performance in predicting treatment out-
+comes based on gene expression data. The abil-
+ity to accurately classify patients into those who 
+will experience persistent pain versus those who 
+will achieve pain resolution is of great clinical 
+significance, as it could help clinicians tailor 
+interventions more effectively. The success of 
+Fig. 5  The SHAP analysis of machine learning models 
+for core gene selection. A Decision T ree with Elastic Net. 
+B Logistic Regression with Elastic Net. C Multilayer Per -
+ceptron with Elastic Net. D Support V ector Machine with 
+Elastic Net. E Nearest Neighbors with GBM. F Linear 
+Discriminant Analysis with GBM. G Logistic Regression 
+with GBM. H Multilayer Perceptron with GBM. I Sup -
+port V ector Machine with GBM. J Naive Bayes with SVM. 
+K Support V ector Machine with SVM. L Support V ector 
+Machine with Lasson. M Random Forest with Lasso. SVM  
+support vector machine, GBM  gradient boosting machine, 
+SHAP SHapley Additive exPlanations
+
+=== PDF PAGE 12 ===
+370 Pain Ther (2025) 14:359–373
+the Elastic Net and Logistic Regression com -
+bination (88.7% ± 8.0%) can be attributed to 
+Elastic Net’s ability to perform variable selec-
+tion while handling correlated features, effec-
+tively identifying the most relevant genes, and 
+Logistic Regression’s capacity to provide stable, 
+interpretable results with good generalization 
+[33, 34]. Similarly, the strong performance of 
+Elastic Net with Linear Discriminant Analysis 
+(88.7% ± 7.5%) suggests that these methods are 
+particularly effective at capturing the underly-
+ing patterns in gene expression data that pre-
+dict clinical outcomes in LBP. The Multilayer 
+Perceptron showed consistent high performance 
+when combined with different feature selection 
+methods, including Lasso (87.7% ± 6.7%), Elas-
+tic Net (87.7% ± 9.2%), and SVM (85.7% ± 8.5%), 
+demonstrating its robust capability in handling 
+complex gene expression patterns. This consist-
+ency across different feature selection methods 
+suggests that neural network-based approaches 
+might be particularly suited for capturing sub-
+tle relationships in transcriptomic data. On the 
+other hand, models involving Decision Trees 
+and K-Nearest Neighbors consistently under-
+performed, with accuracies ranging from 63.9 to 
+77.4%. Decision Tree-based models showed par-
+ticularly high variability in performance, with 
+standard deviations > 13% in some cases, high-
+lighting their instability with high-dimensional 
+gene expression data. This notable difference in 
+performance underscores the critical importance 
+of selecting appropriate machine learning algo-
+rithms when working with transcriptomic data 
+for clinical prediction tasks.
+The high accuracy and robustness of certain 
+models, combined with the biological relevance 
+of the identified genes, suggest that these gene 
+signature-based models could have significant 
+clinical applications. In practice, such models 
+could be used as part of a diagnostic tool to pre-
+dict whether a patient is likely to respond to a 
+given treatment or whether their pain is likely 
+to persist, allowing for more personalized treat-
+ment strategies. For example, patients predicted 
+to have persistent pain could be offered more 
+aggressive or targeted interventions early in 
+their treatment course, potentially preventing 
+chronic pain development. In contrast, those 
+predicted to have resolved pain might benefit 
+from a more conservative approach, minimizing 
+unnecessary treatments and reducing health-
+care costs. The integration of gene expression 
+data with machine learning models represents a 
+significant step towards personalized medicine 
+in the context of LBP. By identifying specific 
+molecular signatures associated with treatment 
+outcomes, clinicians could move away from the 
+current “one-size-fits-all” approach to a more 
+tailored method of pain management. This 
+would enable the design of individualized treat-
+ment plans that consider each patient’s unique 
+molecular profile, leading to improved outcomes 
+and a reduction in the burden of chronic pain.
+Limitations
+Several limitations must be acknowledged. First, 
+while the use of gene expression data from 
+peripheral immune cells offers valuable insights 
+into the molecular mechanisms of low back pain 
+(LBP), this approach is limited by the inherent 
+complexity of LBP as a multifactorial condition. 
+The study focused primarily on immune-related 
+gene signatures, potentially overlooking other 
+biological processes and tissue-specific pathways, 
+such as those related to the musculoskeletal sys-
+tem, that could also play significant roles in pain 
+persistence and resolution. Second, the sample 
+size, although adequate for initial exploration, 
+may limit the generalizability of the findings. 
+The relatively small number of patients in each 
+group (resolved vs. persistent pain) may have 
+reduced the statistical power to detect subtle, 
+yet clinically important, gene-expression differ-
+ences. Larger, independent cohorts are needed 
+to validate the identified gene signatures and 
+the predictive accuracy of the machine learning 
+models. Third, the study exclusively included 
+white patients, which limits the generalizability 
+of the findings to other ethnic groups. Genetic 
+diversity across populations can influence both 
+gene expression patterns and the effectiveness of 
+predictive models. Future studies should include 
+more diverse populations to assess whether the 
+identified gene signatures are universally appli-
+cable or population-specific. Fourth, while mul-
+tiple machine learning models were employed 
+to predict treatment outcomes, there is a risk 
+
+=== PDF PAGE 13 ===
+371Pain Ther (2025) 14:359–373 
+of overfitting, particularly with more complex 
+models such as Random Forest and Gradient 
+Boosting Machine. Overfitting can lead to mod-
+els that perform well on training data but fail 
+to generalize to new, unseen data. Although we 
+applied cross-validation to mitigate this, further 
+validation on independent datasets is necessary. 
+Lastly, the study focused on predicting outcomes 
+after 3 months of treatment. While this time -
+frame is relevant for assessing short- to mid-
+term responses, it does not capture long-term 
+outcomes or the potential for pain recurrence, 
+which is common in LBP. Longitudinal studies 
+are needed to evaluate whether these gene sig-
+natures can predict sustained treatment success 
+over longer periods.
+CONCLUSION
+This study provides a robust framework for using 
+transcriptomic data and machine learning mod-
+els to predict treatment outcomes in patients 
+with LBP. The identification of key genes and the 
+development of highly accurate predictive mod-
+els highlight the potential for these approaches 
+to be integrated into clinical practice. As further 
+validation is conducted and models are refined, 
+this work paves the way for more personalized 
+and effective treatments for LBP, ultimately 
+improving patient care and outcomes.
+ACKNOWLEDGEMENTS 
+We thank the participants of the study.
+Author Contributions. All authors contrib-
+uted to the study conception and design; meth-
+odology, Youzhi Lian; software, Youzhi Lian; val-
+idation, Haibin Shang; formal analysis, Haibin 
+Shang; writing—original draft preparation, You-
+zhi Lian; writing—review and editing, Yinyu Shi; 
+visualization, Yinyu Shi; supervision, Hongsheng 
+Zhan; project administration, Hongsheng Zhan; 
+funding acquisition, Hongsheng Zhan. All 
+authors have read and agreed to the published 
+version of the manuscript.
+Funding. The journal’s Rapid Service Fee 
+was funded by the National Natural Science 
+Foundation of China (81973871, 82074466); 
+Three-Year Clinical Action Plan of Shang-
+hai Shenkang Hospital Development Center 
+(SHDC2020CR1051B).
+Data Availability. The datasets used and/or 
+analyzed during the current study are available 
+from the corresponding author on reasonable 
+request. The transcriptomic data of patients with 
+LBP from peripheral immune cells was retrieved 
+from the GEO database (https:// www. ncbi. nlm. 
+nih. gov/ geo/ query/ acc. cgi? acc= GSE17 7034). We 
+fully support open science and transparency in 
+research. As suggested, we have made our com-
+plete codebase publicly available in the Supple-
+mentary Materials. This includes all scripts used 
+for data processing and analysis, allowing for 
+full reproducibility of our results.
+Declarations 
+Conflict of Interest. The authors (Youzhi 
+Lian, Yinyu Shi, Haibin Shang, and Hongsheng 
+Zhan) declare no conflict of interest.
+Ethical Approval. This article is based on 
+previously conducted studies and does not con-
+tain any new studies with human participants 
+or animals performed by any of the authors. The 
+transcriptomic data of patients with LBP from 
+peripheral immune cells was retrieved from the 
+GEO database (GSE177034). This study utilized 
+transcriptomic data from a human low back 
+pain (LBP) cohort, part of the PainOMICs project 
+(NCT02037763), funded by the European Com-
+munity under FP7. All procedures performed in 
+those studies involving human participants were 
+approved by the University Hospital of Parma’s 
+Ethical Committee (Protocol Number 43543).
+Open Access.  This article is licensed under a 
+Creative Commons Attribution-NonCommercial 
+4.0 International License, which permits any 
+non-commercial use, sharing, adaptation, distri-
+bution and reproduction in any medium or for-
+mat, as long as you give appropriate credit to the 
+original author(s) and the source, provide a link 
+
+=== PDF PAGE 14 ===
+372 Pain Ther (2025) 14:359–373
+to the Creative Commons licence, and indicate 
+if changes were made. The images or other third 
+party material in this article are included in the 
+article’s Creative Commons licence, unless indi-
+cated otherwise in a credit line to the material. 
+If material is not included in the article’s Crea-
+tive Commons licence and your intended use is 
+not permitted by statutory regulation or exceeds 
+the permitted use, you will need to obtain per-
+mission directly from the copyright holder. To 
+view a copy of this licence, visit http:// creat iveco 
+mmons. org/ licen ses/ by- nc/4. 0/.
+REFERENCES
+ 1. Negrini S, Pollet J, Ranica G, Donzelli S, Vanossi 
+M, Piovanelli B, et al. Movement analysis could 
+help in the assessment of chronic low back pain 
+patients: results from a preliminary explora-
+tive study. Int J Environ Res Public Health. 
+2022;19:9033.
+ 2. Lin C-Y, Liu Y-H, Chen S-M, Cheng S-C, Liu M-F. 
+The effectiveness of group-based core stability 
+exercise and educational booklet for hospital 
+workers in Taiwan with nonspecific low back 
+pain: a preliminary study. Int J Environ Res Public 
+Health. 2022;19:3324.
+ 3. Knezevic NN, Candido KD, Vlaeyen JWS, Zundert 
+JV , Cohen SP. Low back pain. The Lancet. 
+2021;398:78–92.
+ 4. Gorasso V , Van der Heyden J, De Pauw R, Pelgrims 
+I, De Clercq EM, De Ridder K, et al. The health and 
+economic burden of musculoskeletal disorders in 
+Belgium from 2013 to 2018. Popul Health Metr. 
+2023;21:4.
+ 5. Bryndal A, Glowinski S, Majchrzycki M. Influence 
+of pregnancy on the occurrence of lumbar spine 
+pain in polish women: a retrospective study. J Pers 
+Med. 2022;12:357.
+ 6. Liu H, Li H, Huang L, Tian H, Wu J, Guan Q, et al. 
+The link between childhood physical activity 
+enjoyment and adult kinesiophobia in individuals 
+with chronic low back pain. BMC Public Health. 
+2024;24:2557.
+ 7. Zhang T, Firouzabadi A, Yang D, Liu S, Schmidt 
+H. Age-dependent flexion relaxation phenomenon 
+in chronic low back pain patients. Front Bioeng 
+Biotechnol. 2024;12:1388229.
+ 8. Chou R. Low back pain. Ann Intern Med. 
+2021;174:ITC113–28.
+ 9. Vlaeyen JWS, Maher CG, Wiech K, Van Zundert 
+J, Meloto CB, Diatchenko L, et al. Low back pain. 
+Nat Rev Dis Primers. 2018;4:52.
+ 10. Rashid J, Batool S, Kim J, Wasif Nisar M, Hussain 
+A, Juneja S, et al. An augmented artificial intel-
+ligence approach for chronic diseases prediction. 
+Front Public Health. 2022;10: 860396.
+ 11. Zhang X, Zhang H, Fan C, Hildesjö C, Shen B, Sun 
+X-F. Loss of CHGA protein as a potential biomarker 
+for colon cancer diagnosis: a study on biomarker 
+discovery by machine learning and confirmation 
+by immunohistochemistry in colorectal cancer tis-
+sue microarrays. Cancers (Basel). 2022;14:2664.
+ 12. Singh SK, Krukowski K, Laumet GO, Weis D, Alex-
+ander JF, Heijnen CJ, et al. CD8+ T cell–derived 
+IL-13 increases macrophage IL-10 to resolve neu-
+ropathic pain. JCI Insight. 2022;7:e154194.
+ 13. Bermudez-Lekerika P, Crump KB, Tseranidou S, 
+Nüesch A, Kanelis E, Alminnawi A, et al. Immuno-
+modulatory effects of intervertebral disc cells. 
+Front Cell Dev Biol. 2022;10: 924692.
+ 14. Artero NA, Manchope MF, Carvalho TT, Saraiva-
+Santos T, Bertozzi MM, Carneiro JA, et al. Hesperi-
+din methyl chalcone reduces the arthritis caused 
+by  TiO2 in mice: targeting inflammation, oxidative 
+stress, cytokine production, and nociceptor sen-
+sory neuron activation. Molecules. 2023;28:872.
+ 15. Bresciani E, Squillace N, Orsini V , Piolini R, Rizzi 
+L, Molteni L, et al. miRNA expression profiling 
+in subcutaneous adipose tissue of monozygotic 
+twins discordant for HIV infection: validation of 
+differentially expressed miRNA and bioinformatic 
+analysis. Int J Mol Sci. 2022;23:3486.
+ 16. Alvarez M, Benhammou JN, Darci-Maher N, French 
+SW, Han SB, Sinsheimer JS, et al. Human liver sin-
+gle nucleus and single cell RNA sequencing iden-
+tify a hepatocellular carcinoma-associated cell-
+type affecting survival. Genome Med. 2022;14:50.
+ 17. Poongavanam V , Kölling F, Giese A, Göller AH, 
+Lehmann L, Meibom D, et al. Predictive modeling 
+of PROTAC cell permeability with machine learn-
+ing. ACS Omega. 2023;8:5901–16.
+ 18. Shaik S, Singh A, Suresh A, Ahmed N. Genome 
+Informatics and machine learning-based iden-
+tification of antimicrobial resistance-encoding 
+features and virulence attributes in Escherichia 
+coli genomes representing globally prevalent line-
+ages, including high-risk clonal complexes. MBio. 
+2022;13: e03796-21.
+ 19. Ahmad B, Sun J, You Q, Palade V , Mao Z. Brain 
+tumor classification using a combination of 
+
+=== PDF PAGE 15 ===
+373Pain Ther (2025) 14:359–373 
+variational autoencoders and generative adver-
+sarial networks. Biomedicines. 2022;10:223.
+ 20. Divate M, Tyagi A, Richard DJ, Prasad PA, Gowda 
+H, Nagaraj SH. Deep learning-based pan-cancer 
+classification model reveals tissue-of-origin spe -
+cific gene expression signatures. Cancers (Basel). 
+2022;14:1185.
+ 21. Delfino D, Mori G, Rivetti C, Grigoletto A, Bizzotto 
+G, Cavozzi C, et al. Actin-resistant DNase1L2 as a 
+potential therapeutics for CF lung disease. Biomol-
+ecules. 2021;11:410.
+ 22. Wu Z, Liu Q. Effects of repetitive transcranial mag -
+netic stimulation combined with acupuncture 
+on NLRP3 inflammasome and protease levels in 
+patients with neuropathic pain. Am J Transl Res. 
+2023;15:4699–708.
+ 23. Feng Y, Gao Y, Yu J, Jiang G, Zhang X, Lin X, et al. 
+CCDC85B promotes non-small cell lung cancer 
+cell proliferation and invasion. Mol Carcinog. 
+2019;58:126–34.
+ 24. Colloca L, Mocci E, Wang Y, Massalee R, Chen S, 
+White J, et al. Transcriptomic profiles associated 
+with experimental placebo effects in chronic pain. 
+Clin Pharmacol Ther. 2024;116:380–9.
+ 25. Park S, Kim S, Kim M-Y, Lee SS, Choi J. Pituitary 
+tumor-transforming gene 1 regulates the senes-
+cence and apoptosis of oral squamous cell carci-
+noma in a p21-dependent DNA damage response 
+manner. Oncol Rep. 2024;52:135.
+ 26. Wu H, Li D, Zhang C-Y, Huang L-L, Zeng Y-J, Chen 
+T-G, et al. Restoration of ARA metabolic disorders 
+in vascular smooth muscle cells alleviates intimal 
+hyperplasia. Eur J Pharmacol. 2024;983: 176824.
+ 27. Sankaranarayanan I, Tavares-Ferreira D, Mwir -
+igi JM, Mejia GL, Burton MD, Price TJ. Induc-
+ible co-stimulatory molecule (ICOS) alleviates 
+paclitaxel-induced neuropathic pain via an IL-
+10-mediated mechanism in female mice. J Neuro-
+inflammation. 2023;20:32.
+ 28. Orvain C, Cauvet A, Prudent A, Guignabert C, 
+Thuillet R, Ottaviani M, et al. Acazicolcept (ALPN-
+101), a dual ICOS/CD28 antagonist, demonstrates 
+efficacy in systemic sclerosis preclinical mouse 
+models. Arthritis Res Ther. 2022;24:13.
+ 29. Kang C, Yun F, Shi L, Jia Y, Liu X. Landscape of 
+costimulatory molecule signature in breast cancer 
+and its prognostic significance. Ann Transl Med. 
+2023;11:59.
+ 30. Besednova NN, Andryukov BG, Zaporozhets TS, 
+Kuznetsova TA, Kryzhanovsky SP, Ermakova SP, 
+et al. Molecular targets of brown algae phlorotan-
+nins for the therapy of inflammatory processes of 
+various origins. Mar Drugs. 2022;20:243.
+ 31. Żywień U, Barczyk-Pawelec K, Sipko T. Associated 
+risk factors with low back pain in white-collar 
+workers—a cross-sectional study. J Clin Med. 
+2022;11:1275.
+ 32. Abshirini M, Coad J, Wolber FM, von Hurst P, 
+Miller MR, Tian HS, et al. Effects of Greenshell™ 
+mussel intervention on biomarkers of cartilage 
+metabolism, inflammatory markers and joint 
+symptoms in overweight/obese postmenopau-
+sal women: a randomized, double-blind, and 
+placebo-controlled trial. Front Med (Lausanne). 
+2022;9:1063336.
+ 33. Zhu-Zhou F, Gil-Pita R, García-Gómez J, Rosa-
+Zurera M. Robust multi-scenario speech-based 
+emotion recognition system. Sensors (Basel). 
+2022;22:2343.
+ 34. Zhu W, Lévy-Leduc C, Ternès N. Identification 
+of prognostic and predictive biomarkers in high-
+dimensional data with PPLasso. BMC Bioinformat-
+ics. 2023;24:25.

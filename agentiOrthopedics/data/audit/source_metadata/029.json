@@ -1,0 +1,812 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          29
+        ]
+      ],
+      "date-time": "2026-08-29T15:20:50Z",
+      "timestamp": 1788016850047,
+      "version": "build-2784847793"
+    },
+    "reference-count": 65,
+    "publisher": "Wiley",
+    "issue": "40",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              11
+            ]
+          ],
+          "date-time": "2025-08-11T00:00:00Z",
+          "timestamp": 1754870400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              11
+            ]
+          ],
+          "date-time": "2025-08-11T00:00:00Z",
+          "timestamp": 1754870400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "72301082"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "72301082"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100021171",
+        "name": "Basic and Applied Basic Research Foundation of Guangdong Province",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "2022A1515110703"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "2022A1515110703"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100021171",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100002858",
+        "name": "China Postdoctoral Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "2025M773863"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "2025M773863"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100002858",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "advanced.onlinelibrary.wiley.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Advanced Science"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          10
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>The precise matching of medication regimens to individual patients, known as personalized medication, is critical for the effective management of chronic diseases. Traditional machine learning‐based models for personalized medication regimens typically rely solely on either clinical macro‐phenotypes or molecular‐level drug characteristics. It remains challenging to capture the patient‐medication relationship from a comprehensive perspective that integrates individual patient characteristics with macro‐ and micro‐level properties of the medication. Determining patient‐medication relationships constitutes a three‐stage sequential decision process from a clinical decision‐making perspective. Therefore, inspired by Chain‐of‐Thought prompting, which simulates the decision‐making process of human experts, a Multimodal Data‐Driven Chain‐of‐Decisions (MDD‐CoD) framework is proposed, where three‐stage deep learning tasks are sequentially organized to reflect upstream–downstream logical dependencies, thereby forming a coherent clinical decision‐making process. The model incorporates multimodal clinical phenotype data, multi‐attribute medication data, and insights from clinical experts. Performance evaluation of the model involved comprehensive experiments utilizing five datasets covering four chronic diseases sourced from three hospitals. The dataset comprises information from chronic kidney disease (CKD), membranous nephropathy (MN), rheumatoid arthritis (RA), colorectal cancer (CRC), and knee osteoarthritis (KOA), totaling 3173 unimodal, 502 multimodal, and 2187 medication records from 3675 patients. Experimental results demonstrate that the framework achieves enhanced predictive performance in personalized medication decision‐making based on individual patient disease characteristics, surpassing the strongest baseline across all tasks. This framework serves as a foundational model for clinical mixed data, with improved generalization and interpretability in cross‐disease personalized decision‐making tasks. It offers a scalable solution for the implementation of personalized medication regimens for chronic diseases.</jats:p>",
+    "DOI": "10.1002/advs.202504079",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          11
+        ]
+      ],
+      "date-time": "2025-08-11T13:08:23Z",
+      "timestamp": 1754917703000
+    },
+    "update-policy": "https://doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 7,
+    "title": [
+      "Personalized Medication for Chronic Diseases Using Multimodal Data‐Driven Chain‐of‐Decisions"
+    ],
+    "prefix": "10.1002",
+    "volume": "12",
+    "author": [
+      {
+        "given": "Xiaoli",
+        "family": "Chu",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "State Key Laboratory of Traditional Chinese Medicine Syndrome/Big Data Research Center of Chinese Medicine The 2nd Affiliated Hospital of Guangzhou University of Chinese Medicine Guangdong 510120 China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yiheng",
+        "family": "Ye",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Information Science Guangdong University of Finance &amp;Economics Guangdong 510145 China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Siqiao",
+        "family": "Tang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "State Key Laboratory of Dampness Syndrome of Chinese Medicine The 2nd Affiliated Hospital of Guangzhou University of Chinese Medicine Guangdong 510120 China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Miaoru",
+        "family": "Han",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "State Key Laboratory of Dampness Syndrome of Chinese Medicine The 2nd Affiliated Hospital of Guangzhou University of Chinese Medicine Guangdong 510120 China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Guowei",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Electronic and Information Engineering South China University of Technology Guangdong 510000 China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shuai",
+        "family": "Lin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Nephrology Zhongshan Hospital of Traditional Chinese Medicine Affiliated to Guangzhou University of Traditional Chinese Medicine Guangdong 528400 China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bingzhen",
+        "family": "Sun",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Economics and Management Xidian University Xi'an 710071 China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Qingchun",
+        "family": "Huang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Rheumatology The 2nd Affiliated Hospital of Guangzhou University of Chinese Medicine Guangdong 510120 China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yan",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Research Center of Intelligent Computing and Big Data Technology/ School of Digital Economics Guangdong University of Finance &amp;Economics Guangdong 510145 China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6515-8026",
+        "authenticated-orcid": false,
+        "given": "Xiaodong",
+        "family": "Chu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Cancer Research Institute/College of Pharmacy/The 1st Affiliated Hospital Jinan University Guangdong 510632 China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2681-4611",
+        "authenticated-orcid": false,
+        "given": "Kun",
+        "family": "Bao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "State Key Laboratory of Dampness Syndrome of Chinese Medicine/Department of Nephrology The 2nd Affiliated Hospital of Guangzhou University of Chinese Medicine Guangdong 510120 China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          11
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_10_1_1",
+        "unstructured": "Centers for Medicare and Medicaid Services Cms identifies 15 chronic conditions for medicare Technical report Centers for Medicare and Medicaid Services USA 2008."
+      },
+      {
+        "key": "e_1_2_10_2_1",
+        "unstructured": "World Health Organization Noncommunicable diseases Technical report World Health Organization Geneva Switzerland 2024."
+      },
+      {
+        "key": "e_1_2_10_3_1",
+        "unstructured": "N. H.Commission China health statistical yearbook Annual report National Health Commission China 2023."
+      },
+      {
+        "key": "e_1_2_10_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/art.27584"
+      },
+      {
+        "key": "e_1_2_10_5_1",
+        "unstructured": "R.Busse Tackling Chronic Disease in Europe: Strategies Interventions and Challenges 20. WHO Regional Office Europe 2010."
+      },
+      {
+        "key": "e_1_2_10_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-020-0274-y"
+      },
+      {
+        "key": "e_1_2_10_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijpharm.2015.12.071"
+      },
+      {
+        "key": "e_1_2_10_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.addr.2021.113857"
+      },
+      {
+        "key": "e_1_2_10_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamanetworkopen.2024.39837"
+      },
+      {
+        "key": "e_1_2_10_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/annrheumdis-2015-208941"
+      },
+      {
+        "key": "e_1_2_10_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/his.15287"
+      },
+      {
+        "key": "e_1_2_10_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.lungcan.2022.07.014"
+      },
+      {
+        "key": "e_1_2_10_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/DSS.0000000000003213"
+      },
+      {
+        "key": "e_1_2_10_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.pathol.2023.02.001"
+      },
+      {
+        "key": "e_1_2_10_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.kint.2021.06.028"
+      },
+      {
+        "key": "e_1_2_10_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/rmdopen-2018-000870"
+      },
+      {
+        "key": "e_1_2_10_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/ard-2022-223356"
+      },
+      {
+        "key": "e_1_2_10_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/3468.844354"
+      },
+      {
+        "key": "e_1_2_10_19_1",
+        "unstructured": "J.Wei X.Wang D.Schuurmans M.Bosma b.ichter F.Xia E.Chi Q. V.Le D.Zhou inAdvances in Neural Information Processing Systems Curran Associates Inc. 2022 pp.24824–24837."
+      },
+      {
+        "key": "e_1_2_10_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.bbe.2025.04.002"
+      },
+      {
+        "key": "e_1_2_10_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.artmed.2025.103078"
+      },
+      {
+        "key": "e_1_2_10_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ajic.2024.11.009"
+      },
+      {
+        "key": "e_1_2_10_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/67056"
+      },
+      {
+        "key": "e_1_2_10_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMI.2024.3485120"
+      },
+      {
+        "key": "e_1_2_10_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0735-1097(25)02623-3"
+      },
+      {
+        "key": "e_1_2_10_26_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "F.Zhang Y.Ling J.Yang P.Zhang G.Zhang in2024 IEEE International Conference on Bioinformatics and Biomedicine (BIBM) 2024 6574–6581.",
+        "DOI": "10.1109/BIBM62325.2024.10822266"
+      },
+      {
+        "key": "e_1_2_10_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-019-05614-z"
+      },
+      {
+        "key": "e_1_2_10_28_1",
+        "author": "Styrkársdóttir U.",
+        "year": "2021",
+        "journal-title": "Arthritis. Rheumatol."
+      },
+      {
+        "key": "e_1_2_10_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41598-024-54186-7"
+      },
+      {
+        "key": "e_1_2_10_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41591-024-03118-z"
+      },
+      {
+        "key": "e_1_2_10_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMI.2024.3386108"
+      },
+      {
+        "key": "e_1_2_10_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s42256-020-00285-9"
+      },
+      {
+        "key": "e_1_2_10_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41591-024-03215-z"
+      },
+      {
+        "key": "e_1_2_10_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s42256-023-00633-5"
+      },
+      {
+        "key": "e_1_2_10_35_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Y.Chen S.Zhu Z.Fang C.Liu B.Zou L.Qiu Y.Wang S.Chang F.Jia F.Qin J.Fan Y.Peng C.Wang inICASSP 2025‐2025 IEEE International Conference on Acoustics Speech and Signal Processing (ICASSP) 2025 pp.1–5.",
+        "DOI": "10.1109/ICASSP49660.2025.10888363"
+      },
+      {
+        "key": "e_1_2_10_36_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "X.Su P.Hu Z.‐H.You P. S.Yu L.Hu inNo. 1 Proceedings of the AAAI conference on artificial intelligence 2024 249–256.",
+        "DOI": "10.1609/aaai.v38i1.27777"
+      },
+      {
+        "key": "e_1_2_10_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/frai.2024.1408843"
+      },
+      {
+        "key": "e_1_2_10_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/curroncol28060447"
+      },
+      {
+        "key": "e_1_2_10_39_1",
+        "first-page": "2D",
+        "volume": "22",
+        "author": "Benson A. B.",
+        "year": "2024",
+        "journal-title": "J. Natl. Compr. Canc. Netw."
+      },
+      {
+        "key": "e_1_2_10_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/0886022X.2022.2143378"
+      },
+      {
+        "key": "e_1_2_10_41_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "P.Hager M. J.Menten D.Rueckert inProceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2023 23924–23935.",
+        "DOI": "10.1109/CVPR52729.2023.02291"
+      },
+      {
+        "key": "e_1_2_10_42_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "S.Mai H.Hu S.Xing inProceedings of the AAAI conference on artificial intelligence 2020 pp.164–172.",
+        "DOI": "10.1609/aaai.v34i01.5347"
+      },
+      {
+        "key": "e_1_2_10_43_1",
+        "unstructured": "A.Zadeh M.Chen S.Poria E.Cambria L.‐P.Morency arXiv preprint arXiv:1707.072502017."
+      },
+      {
+        "key": "e_1_2_10_44_1",
+        "unstructured": "T. N.Kipf M.Welling arXiv preprint arXiv:1609.029072016."
+      },
+      {
+        "key": "e_1_2_10_45_1",
+        "volume": "30",
+        "author": "Hamilton W.",
+        "year": "2017",
+        "journal-title": "Adv. Neural. Inf. Process. Syst."
+      },
+      {
+        "key": "e_1_2_10_46_1",
+        "unstructured": "P.Veličković G.Cucurull A.Casanova A.Romero P.Lio Y.Bengio arXiv preprint arXiv:1710.109032017."
+      },
+      {
+        "key": "e_1_2_10_47_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Y.Dong N. V.Chawla A.Swami inProceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining 2017 pp.135–144.",
+        "DOI": "10.1145/3097983.3098036"
+      },
+      {
+        "key": "e_1_2_10_48_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "J.Tang M.Qu M.Wang M.Zhang J.Yan Q.Mei inProceedings of the 24th International Conference on World Wide Web 2015 pp.1067–1077.",
+        "DOI": "10.1145/2736277.2741093"
+      },
+      {
+        "key": "e_1_2_10_49_1",
+        "volume": "36",
+        "author": "Li Y.",
+        "year": "2023",
+        "journal-title": "Adv. Neural. Inf. Process. Syst."
+      },
+      {
+        "key": "e_1_2_10_50_1",
+        "unstructured": "Z.Chu J.Chen Q.Chen W.Yu T.He H.Wang W.Peng M.Liu B.Qin T.Liu arXiv preprint ARXIV.2309.154022023."
+      },
+      {
+        "key": "e_1_2_10_51_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S2589-7500(23)00095-X"
+      },
+      {
+        "key": "e_1_2_10_52_1",
+        "first-page": "1",
+        "author": "Yoo S.‐K.",
+        "year": "2025",
+        "journal-title": "Nat. Med."
+      },
+      {
+        "key": "e_1_2_10_53_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/advs.202412775"
+      },
+      {
+        "key": "e_1_2_10_54_1",
+        "unstructured": "Y.Bai K.Gu Y.Sun W.Wang arXiv preprint arXiv:2006.140022020."
+      },
+      {
+        "key": "e_1_2_10_55_1",
+        "author": "Lyu T.",
+        "year": "2021",
+        "journal-title": "IJCAI"
+      },
+      {
+        "key": "e_1_2_10_56_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/advs.202404671"
+      },
+      {
+        "key": "e_1_2_10_57_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/sciadv.adh0215"
+      },
+      {
+        "key": "e_1_2_10_58_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-024-01195-5"
+      },
+      {
+        "key": "e_1_2_10_59_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0140-6736(24)02617-5"
+      },
+      {
+        "key": "e_1_2_10_60_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Z.Zhao Y.Jing F.Feng J.Wu C.Gao X.He inProceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval 2024 pp.533–542.",
+        "DOI": "10.1145/3626772.3657785"
+      },
+      {
+        "key": "e_1_2_10_61_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41586-024-07441-w"
+      },
+      {
+        "key": "e_1_2_10_62_1",
+        "unstructured": "R. J.Chen C.Chen Y.Li T. Y.Chen A. D.Trister R. G.Krishnan F.Mahmood inProc. IEEE/CVF conference on computer vision and pattern recognition 2022 pp.16144–16155."
+      },
+      {
+        "key": "e_1_2_10_63_1",
+        "volume": "34",
+        "author": "Gorishniy Y.",
+        "year": "2021",
+        "journal-title": "Adv. Neural. Inf. Process. Syst."
+      },
+      {
+        "key": "e_1_2_10_64_1",
+        "unstructured": "Y.Shi Z.Huang W.Wang H.Zhong S.Feng Y.Sun ArXiv2020 abs/2009.03509."
+      },
+      {
+        "key": "e_1_2_10_65_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "T.‐Y.Lin P.Goyal R.Girshick K.He P.Dollár in2017 IEEE International Conference on Computer Vision (ICCV) 2017 pp.2999–3007.",
+        "DOI": "10.1109/ICCV.2017.324"
+      }
+    ],
+    "container-title": [
+      "Advanced Science"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.202504079",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://advanced.onlinelibrary.wiley.com/doi/full-xml/10.1002/advs.202504079",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/advs.202504079",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          8
+        ]
+      ],
+      "date-time": "2026-03-08T16:29:33Z",
+      "timestamp": 1772987373000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202504079"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          11
+        ]
+      ]
+    },
+    "references-count": 65,
+    "journal-issue": {
+      "issue": "40",
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            10
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1002/advs.202504079"
+    ],
+    "URL": "https://doi.org/10.1002/advs.202504079",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "2198-3844",
+      "2198-3844"
+    ],
+    "issn-type": [
+      {
+        "value": "2198-3844",
+        "type": "print"
+      },
+      {
+        "value": "2198-3844",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          11
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2025-03-10",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-08-11",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ],
+    "article-number": "e04079"
+  }
+}

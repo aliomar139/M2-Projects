@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-23",
+  "new_search_occurrences": 1196,
+  "new_search_unique_pmids": 1189,
+  "new_search_repeat_occurrences": 7,
+  "merged_pubmed_metadata_records": 1843,
+  "new_queries": [
+    {
+      "search_id": "R1_ai_treatment_reviews",
+      "total_hits": "1141"
+    },
+    {
+      "search_id": "R2_causal_reviews",
+      "total_hits": "42"
+    },
+    {
+      "search_id": "R3_orthopedic_agent_reviews",
+      "total_hits": "13"
+    }
+  ]
+}

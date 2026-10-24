@@ -1,0 +1,1066 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          24
+        ]
+      ],
+      "date-time": "2026-09-24T16:12:55Z",
+      "timestamp": 1790266375837,
+      "version": "4.1.0"
+    },
+    "reference-count": 53,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              2,
+              10
+            ]
+          ],
+          "date-time": "2025-02-10T00:00:00Z",
+          "timestamp": 1739145600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              2,
+              10
+            ]
+          ],
+          "date-time": "2025-02-10T00:00:00Z",
+          "timestamp": 1739145600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100015590",
+        "name": "Ramsay Health Care",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "2018/PRE/0001"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "2018/PRE/0001"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100015590",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Sci Rep"
+    ],
+    "DOI": "10.1038/s41598-025-88560-w",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          10
+        ]
+      ],
+      "date-time": "2025-02-10T10:13:58Z",
+      "timestamp": 1739182438000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 10,
+    "title": [
+      "Biopsychosocial based machine learning models predict patient improvement after total knee arthroplasty"
+    ],
+    "prefix": "10.1038",
+    "volume": "15",
+    "author": [
+      {
+        "given": "Karen",
+        "family": "Ribbons",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jodie",
+        "family": "Cochrane",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sarah",
+        "family": "Johnson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Adrian",
+        "family": "Wills",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Elizabeth",
+        "family": "Ditton",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David",
+        "family": "Dewar",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Matthew",
+        "family": "Broadhead",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ian",
+        "family": "Chan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Dixon",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Christopher",
+        "family": "Dunkley",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Richard",
+        "family": "Harbury",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Aleksandar",
+        "family": "Jovanovic",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Anthony",
+        "family": "Leong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peter",
+        "family": "Summersell",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chad",
+        "family": "Todhunter",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Richard",
+        "family": "Verheul",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Pollack",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rohan",
+        "family": "Walker",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Nilsson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          10
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "1",
+        "key": "88560_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "82",
+        "DOI": "10.3109/17453671003685442",
+        "volume": "81",
+        "author": "O Robertsson",
+        "year": "2010",
+        "unstructured": "Robertsson, O. et al. Knee arthroplasty in Denmark, Norway, and Sweden. A pilot from the Nordic Arthroplasty Register Association. Acta Orthop. 81(1), 82–89. https://doi.org/10.3109/17453671003685442 (2010).",
+        "journal-title": "Acta Orthop."
+      },
+      {
+        "key": "88560_CR2",
+        "unstructured": "Australian Orthopaedic Association National Joint Replacement Registry (AOANJRR). Hip, Knee, and Shoulder Arthroplasty: Annual Report 2022. Adelaide, SA: AOA."
+      },
+      {
+        "issue": "9",
+        "key": "88560_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "1134",
+        "DOI": "10.3899/jrheum.170990",
+        "volume": "46",
+        "author": "JA Singh",
+        "year": "2019",
+        "unstructured": "Singh, J. A., Yu, S., Chen, L. & Clevland, J. D. Rates of total joint replacement in the United States: Future projections to 2020–2040 using the national inpatient sample. J. Rheumatol. 46(9), 1134–1140. https://doi.org/10.3899/jrheum.170990 (2019).",
+        "journal-title": "J. Rheumatol."
+      },
+      {
+        "issue": "7",
+        "key": "88560_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "e0288561",
+        "DOI": "10.1371/journal.pone.0288561",
+        "volume": "18",
+        "author": "X Chen",
+        "year": "2023",
+        "unstructured": "Chen, X., Tang, H., Lin, J. & Zeng, R. Temporal trends in the disease burden of osteoarthritis from 1990 to 2019, and projections until 2030. Plos One 18(7), e0288561. https://doi.org/10.1371/journal.pone.0288561 (2023).",
+        "journal-title": "Plos One"
+      },
+      {
+        "key": "88560_CR5",
+        "doi-asserted-by": "publisher",
+        "unstructured": "Shichman, I., Roof, M., Askew, N., Nherera, L., Rozell, J. C., Seyler, T.M., Schwarzkopf R. Projections and epidemiology of primary hip and knee arthroplasty in medicare patients to 2040–2060. JBJS Open Access e22.00112 (2023). https://doi.org/10.2106/JBJS.OA.22.00112",
+        "DOI": "10.2106/JBJS.OA.22.00112"
+      },
+      {
+        "key": "88560_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "594",
+        "DOI": "10.1016/j.arth.2022.10.011",
+        "volume": "38",
+        "author": "MJ DeFrance",
+        "year": "2023",
+        "unstructured": "DeFrance, M. J. & Scuderi, G. R. Are 20% of patients actually dissatisfied following total knee arthroplasty? A systematic review of the literature. J. Arthroplasty 38, 594–599. https://doi.org/10.1016/j.arth.2022.10.011 (2023).",
+        "journal-title": "J. Arthroplasty"
+      },
+      {
+        "key": "88560_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "192",
+        "DOI": "10.1007/s11420-018-9614-8",
+        "volume": "14",
+        "author": "CA Kahlenberg",
+        "year": "2018",
+        "unstructured": "Kahlenberg, C. A. et al. Patient satisfaction after total knee replacement: A systematic review. HSS J. 14, 192–201. https://doi.org/10.1007/s11420-018-9614-8 (2018).",
+        "journal-title": "HSS J."
+      },
+      {
+        "key": "88560_CR8",
+        "unstructured": "Saber, A. Y., Marappa-Ganeshan, R., Mabrouk, A. Robotic-Assisted Total Knee Arthroplasty. [Updated 2023 Apr 22]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2023 Jan-. Available from: https://www.ncbi.nlm.nih.gov/books/NBK564396/"
+      },
+      {
+        "key": "88560_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "1567",
+        "DOI": "10.1111/os.12826",
+        "volume": "12",
+        "author": "Z-X Gao",
+        "year": "2020",
+        "unstructured": "Gao, Z.-X. et al. Comparison of kinematic alignment and mechanical alignment in total knee arthroplasty: A meta-analysis of randomized controlled clinical trials. Orthop. Surg. 12, 1567–1578. https://doi.org/10.1111/os.12826 (2020).",
+        "journal-title": "Orthop. Surg."
+      },
+      {
+        "issue": "9",
+        "key": "88560_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "587",
+        "DOI": "10.31128/AJGP-03-20-5297",
+        "volume": "49",
+        "author": "L Sattler",
+        "year": "2020",
+        "unstructured": "Sattler, L., Hing, W. & Vertullo, C. Changes to rehabilitation after total knee replacement. Austr. J. Gen. Pract. 49(9), 587–591. https://doi.org/10.31128/AJGP-03-20-5297 (2020).",
+        "journal-title": "Austr. J. Gen. Pract."
+      },
+      {
+        "key": "88560_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.3389/fpsyg.2020.01061",
+        "volume": "11",
+        "author": "E Ditton",
+        "year": "2020",
+        "unstructured": "Ditton, E. et al. Improving patient outcomes following total knee arthroplasty: Identifying rehabilitation pathways based on modifiable psychological risk and resillience factors. Front. Psychol. 11, 1–15 (2020).",
+        "journal-title": "Front. Psychol."
+      },
+      {
+        "issue": "3",
+        "key": "88560_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "e0283446",
+        "DOI": "10.1371/journal.pone.0283446",
+        "volume": "18",
+        "author": "MF Olsen Lindberg",
+        "year": "2023",
+        "unstructured": "Olsen Lindberg, M. F. et al. Factors correlated with pain after total knee arthroplasty: A systematic review and meta-analysis. Plos One 18(3), e0283446 (2023).",
+        "journal-title": "Plos One"
+      },
+      {
+        "issue": "6",
+        "key": "88560_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "250",
+        "DOI": "10.5694/mja16.01362",
+        "volume": "207",
+        "author": "JM Naylor",
+        "year": "2017",
+        "unstructured": "Naylor, J. M., Hart, A., Mittal, R., Harris, I. & Xuan, W. The value of inpatient rehabilitation after uncomplicated knee arthroplasty: A propensity score analysis. Med. J. Australia 207(6), 250–255. https://doi.org/10.5694/mja16.01362 (2017).",
+        "journal-title": "Med. J. Australia"
+      },
+      {
+        "key": "88560_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "71",
+        "DOI": "10.1016/j.knee.2022.11.013",
+        "volume": "40",
+        "author": "M Bravi",
+        "year": "2023",
+        "unstructured": "Bravi, M. et al. upervised versus unsupervised rehabilitation following knee arthroplasty: A systematic review and meta-analysis. The Knee 40, 71–89. https://doi.org/10.1016/j.knee.2022.11.013 (2023).",
+        "journal-title": "The Knee"
+      },
+      {
+        "key": "88560_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1111/jan.15421",
+        "volume": "16",
+        "author": "Y Shan",
+        "year": "2022",
+        "unstructured": "Shan, Y. et al. Predictors of psychological resilience trajectories in patients with knee arthroplasty: A longitudinal study. J. Adv. Nurs. 16, 1–13. https://doi.org/10.1111/jan.15421 (2022).",
+        "journal-title": "J. Adv. Nurs."
+      },
+      {
+        "issue": "3",
+        "key": "88560_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "481",
+        "DOI": "10.1007/s10865-022-00287-5",
+        "volume": "45",
+        "author": "JK Cremeans-Smith",
+        "year": "2022",
+        "unstructured": "Cremeans-Smith, J. K., Greene, K. & Delahanty, D. L. Resilience and recovery from total knee arthroplasty (TKA): A pathway for optimizing patient outcomes. J. Behav. Med. 45(3), 481–489. https://doi.org/10.1007/s10865-022-00287-5 (2022).",
+        "journal-title": "J. Behav. Med."
+      },
+      {
+        "key": "88560_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "S46",
+        "DOI": "10.1016/j.arth.2020.01.002",
+        "volume": "35",
+        "author": "BD Springer",
+        "year": "2020",
+        "unstructured": "Springer, B. D. & Sotile, W. M. The psychology of total joint arthroplasty. J. Arthroplasty 35, S46–S49. https://doi.org/10.1016/j.arth.2020.01.002 (2020).",
+        "journal-title": "J. Arthroplasty"
+      },
+      {
+        "key": "88560_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "1744",
+        "DOI": "10.2106/JBJS.20.01479",
+        "volume": "103",
+        "author": "GS Kazarian",
+        "year": "2021",
+        "unstructured": "Kazarian, G. S., Anthony, C. A., Lawrie, C. M. & Barrack, R. L. The impact of psychological factors and their treatment on the results of total knee arthroplasty. J. Bone Joint Surg. Am. 103, 1744–1756. https://doi.org/10.2106/JBJS.20.01479 (2021).",
+        "journal-title": "J. Bone Joint Surg. Am."
+      },
+      {
+        "issue": "4",
+        "key": "88560_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "369",
+        "DOI": "10.1093/pm/pnac154",
+        "volume": "24",
+        "author": "V Ashoorion",
+        "year": "2023",
+        "unstructured": "Ashoorion, V. et al. Predictors of persistent post-surgical pain following total knee arthroplasty: A systematic review and meta-analysis of observational studies. Pain Med. 24(4), 369–381 (2023).",
+        "journal-title": "Pain Med."
+      },
+      {
+        "key": "88560_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "2461",
+        "DOI": "10.1007/s00264-022-05542-7",
+        "volume": "46",
+        "author": "A Hardy",
+        "year": "2022",
+        "unstructured": "Hardy, A. et al. Pain catastrophizing and pre-operative psychological state are predictive of chronic pain after joint arthroplasty of the hip, knee or shoulder: Results of a prospective, comparative study at one year follow up. Int. Orthop. 46, 2461–2469. https://doi.org/10.1007/s00264-022-05542-7 (2022).",
+        "journal-title": "Int. Orthop."
+      },
+      {
+        "key": "88560_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "42",
+        "DOI": "10.1016/j.genhosppsych.2022.07.001",
+        "volume": "78",
+        "author": "JC Sorel",
+        "year": "2022",
+        "unstructured": "Sorel, J. C. et al. Do symptoms of anxiety and/or depression and pain intensity before primary total knee arthroplasty influence reason for revision? Results of an observational study from eh Dutch arthroplasty register in 56,233 patients. General Hosp. Psychiatry 78, 42–49. https://doi.org/10.1016/j.genhosppsych.2022.07.001 (2022).",
+        "journal-title": "General Hosp. Psychiatry"
+      },
+      {
+        "key": "88560_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "136",
+        "DOI": "10.1186/s12955-021-01772-2",
+        "volume": "19",
+        "author": "VC Nwankwo",
+        "year": "2021",
+        "unstructured": "Nwankwo, V. C. et al. Resilience and pain catastrophizing among patients with total knee arthroplasty: A cohort study to examine psychological constructs as predictors of post-operative outcomes. Health Qual. Life Outcomes 19, 136. https://doi.org/10.1186/s12955-021-01772-2 (2021).",
+        "journal-title": "Health Qual. Life Outcomes"
+      },
+      {
+        "key": "88560_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "1520",
+        "DOI": "10.1016/j.arth.2020.11.032",
+        "volume": "36",
+        "author": "JQ Trinh",
+        "year": "2021",
+        "unstructured": "Trinh, J. Q. et al. Resilience and depression influence clinical outcomes following primary total joint arthroplasty. J. Arthroplasty 36, 1520–1526. https://doi.org/10.1016/j.arth.2020.11.032 (2021).",
+        "journal-title": "J. Arthroplasty"
+      },
+      {
+        "key": "88560_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "79",
+        "DOI": "10.1136/bjsports-2018-099878",
+        "volume": "54",
+        "author": "I Lin",
+        "year": "2020",
+        "unstructured": "Lin, I. et al. What does best practice care for musculoskeletal pain look like? Eleven consistent recommendations from high-quality clinical practice guidelines: Systematic review. Br. J. Sports Med. 54, 79–86. https://doi.org/10.1136/bjsports-2018-099878 (2020).",
+        "journal-title": "Br. J. Sports Med."
+      },
+      {
+        "key": "88560_CR25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.artd.2023.101116",
+        "volume": "20",
+        "author": "B Entezari",
+        "year": "2023",
+        "unstructured": "Entezari, B. et al. Improving resource utilization for arthroplasty care by leveraging machine learning and optimization: A systematic review. Arthroplasty Today 20, 101116. https://doi.org/10.1016/j.artd.2023.101116 (2023).",
+        "journal-title": "Arthroplasty Today"
+      },
+      {
+        "key": "88560_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "165",
+        "DOI": "10.1186/s13643-022-02039-7",
+        "volume": "11",
+        "author": "W-J Chang",
+        "year": "2022",
+        "unstructured": "Chang, W.-J., Naylor, J., Nararajan, P., Liu, V. & Adie, S. Evaluating methodological quality of prognostic prediction models on patient reported outcome measures after total hip replacement and total knee replacement surgery: A systematic review protocol. Syst. Rev. 11, 165. https://doi.org/10.1186/s13643-022-02039-7 (2022).",
+        "journal-title": "Syst. Rev."
+      },
+      {
+        "issue": "1",
+        "key": "88560_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "40",
+        "DOI": "10.1186/s42836-023-00189-0",
+        "volume": "5",
+        "author": "AP Kurmis",
+        "year": "2023",
+        "unstructured": "Kurmis, A. P. A role for artificial intelligence applications insides and outside of the operating theatre: A review of contemporary use associated with total knee arthroplasty. Arthroplasty 5(1), 40. https://doi.org/10.1186/s42836-023-00189-0 (2023).",
+        "journal-title": "Arthroplasty"
+      },
+      {
+        "issue": "5",
+        "key": "88560_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "1832",
+        "DOI": "10.1016/j.arth.2020.10.053",
+        "volume": "36",
+        "author": "JA Cochrane",
+        "year": "2021",
+        "unstructured": "Cochrane, J. A. et al. Clinical decision support tools for predicting outcomes in patients undergoing total knee arthroplasty: A systematic review. J. Arthroplasty 36(5), 1832–1845 (2021).",
+        "journal-title": "J. Arthroplasty"
+      },
+      {
+        "key": "88560_CR29",
+        "volume-title": "Machine learning: a probabilistic perspective",
+        "author": "KP Murphy",
+        "year": "2012",
+        "unstructured": "Murphy, K. P. Machine learning: a probabilistic perspective (MIT Press, 2012)."
+      },
+      {
+        "key": "88560_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "2917",
+        "DOI": "10.1007/s11136-015-1042-3",
+        "volume": "24",
+        "author": "FD Naal",
+        "year": "2015",
+        "unstructured": "Naal, F. D. et al. Clinical improvement and satisfaction after total joint replacement: A prospective 12-month evaluation on the patients’ perspective. Qual. Life Res. 24, 2917–2925. https://doi.org/10.1007/s11136-015-1042-3 (2015).",
+        "journal-title": "Qual. Life Res."
+      },
+      {
+        "key": "88560_CR31",
+        "unstructured": "Cochrane JA, Wills A, Johnson SJ. Divide, Conquer, Combine Bayesian Decision Tree Sampling. arXiv preprint arXiv:2403.18147. 2024 Mar 26."
+      },
+      {
+        "key": "88560_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "e48801",
+        "DOI": "10.2196/48801",
+        "volume": "12",
+        "author": "K Ribbons",
+        "year": "2023",
+        "unstructured": "Ribbons, K. et al. Using pre-surgical biopsychosocial features to develop an advanced clinical decision-making support tool for predicting recovery trajectories in patients undergoing total knee arthroplasty (SuPeR Knee – Support, Predict, Recover): Protocol for a prospective observational study. JMIR Res. Protocols 12, e48801 (2023).",
+        "journal-title": "JMIR Res. Protocols"
+      },
+      {
+        "issue": "12",
+        "key": "88560_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "1373",
+        "DOI": "10.1016/s0895-4356(96)00236-3",
+        "volume": "49",
+        "author": "P Peduzzi",
+        "year": "1996",
+        "unstructured": "Peduzzi, P., Concato, J., Kemper, E., Holford, T. R. & Feinstein, A. R. A simulation study of the number of events per variable in logistic regression analysis. J. Clin. Epidemiol. 49(12), 1373–1379. https://doi.org/10.1016/s0895-4356(96)00236-3 (1996).",
+        "journal-title": "J. Clin. Epidemiol."
+      },
+      {
+        "key": "88560_CR34",
+        "unstructured": "Australian Government, Department of Health and Aged Care. Modified Monash Model. Canberra, Australia: Australian Government, Department of Health and Aged Care; 2021. https://www.health.gov.au/health-topics/rural-health-workforce/classifications/mmm. Accessed October 2, 2022"
+      },
+      {
+        "key": "88560_CR35",
+        "unstructured": "Australian Government Department of Health and Aged Care. 29 July 2021. www.https/health.gov.au/topics/overweight-and-obesity/bmi-and-waist"
+      },
+      {
+        "issue": "1",
+        "key": "88560_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "67",
+        "DOI": "10.1016/j.amepre.2010.10.009",
+        "volume": "40",
+        "author": "A Paxton",
+        "year": "2011",
+        "unstructured": "Paxton, A., Strycker, L., Toobert, D., Ammerman, A. & Glasgow, R. Starting the conversation performance of a brief dietary assessment, and intervention tool for health professionals. Am. J. Prev. Med. 40(1), 67–71. https://doi.org/10.1016/j.amepre.2010.10.009 (2011).",
+        "journal-title": "Am. J. Prev. Med."
+      },
+      {
+        "issue": "16",
+        "key": "88560_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "1789",
+        "DOI": "10.1001/archinte.158.16.1789",
+        "volume": "158",
+        "author": "K Bush",
+        "year": "1998",
+        "unstructured": "Bush, K., Kivlahan, D. R., McDonell, M. B., Fihn, S. D. & Bradley, K. A. The AUDIT alcohol consumption questions (AUDIT-C): An effective brief screening test for problem drinking. Ambulatory Care of Quality Improvement (ACQUIP). Alcohol use disorders identification test. Arch. Intern Med. 158(16), 1789–1795. https://doi.org/10.1001/archinte.158.16.1789 (1998).",
+        "journal-title": "Arch. Intern Med."
+      },
+      {
+        "key": "88560_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "2849",
+        "DOI": "10.1007/s11136-014-0741-5",
+        "volume": "23",
+        "author": "L Holden",
+        "year": "2014",
+        "unstructured": "Holden, L., Lee, C., Hockey, R., Ware, R. S. & Dobson, A. J. Validation of the MOS Social-Support Survey 6-item (MOS-SSS-6) measure with two large population-based samples of Australian women. Qual. Life Res. 23, 2849–2853. https://doi.org/10.1007/s11136-014-0741-5 (2014).",
+        "journal-title": "Qual. Life Res."
+      },
+      {
+        "key": "88560_CR39",
+        "doi-asserted-by": "publisher",
+        "first-page": "677",
+        "DOI": "10.1002/ejp.589",
+        "volume": "19",
+        "author": "L McCracken",
+        "year": "2015",
+        "unstructured": "McCracken, L., Chilcot, J. & Norton, S. Further development in the assessment of psychological flexibility: A shortened Committed Action Questionnaire (CAQ-8). Eur. J. Pain 19, 677–685. https://doi.org/10.1002/ejp.589 (2015).",
+        "journal-title": "Eur. J. Pain"
+      },
+      {
+        "issue": "4",
+        "key": "88560_CR40",
+        "doi-asserted-by": "publisher",
+        "first-page": "524",
+        "DOI": "10.1037/1040-3590.7.4.524",
+        "volume": "7",
+        "author": "MJL Sullivan",
+        "year": "1995",
+        "unstructured": "Sullivan, M. J. L., Bishop, S. R. & Pivik, J. The Pain Catastrophizing Scale: Development and validation. Psychol. Assess. 7(4), 524–532 (1995).",
+        "journal-title": "Psychol. Assess."
+      },
+      {
+        "issue": "4",
+        "key": "88560_CR41",
+        "doi-asserted-by": "publisher",
+        "first-page": "423",
+        "DOI": "10.1093/ageing/afr051",
+        "volume": "40",
+        "author": "HC Roberts",
+        "year": "2011",
+        "unstructured": "Roberts, H. C. et al. A review of the measurement of grip strength in clinical and epidemiological studies: Towards a standardised approach. Age Ageing 40(4), 423–429. https://doi.org/10.1093/ageing/afr051 (2011).",
+        "journal-title": "Age Ageing"
+      },
+      {
+        "issue": "5",
+        "key": "88560_CR42",
+        "doi-asserted-by": "publisher",
+        "first-page": "453",
+        "DOI": "10.1002/1529-0131(200110)45:5<453::AID-ART365>3.0.CO;2-W",
+        "volume": "45",
+        "author": "S McConnell",
+        "year": "2001",
+        "unstructured": "McConnell, S., Kolopack, P. & Davis, A. M. The Western Onatrio and McMaster Universities Osteoarthritis Index (WOMAC): A review of its utility and measurement properties. Arthritis Rheum. 45(5), 453–461 (2001).",
+        "journal-title": "Arthritis Rheum."
+      },
+      {
+        "key": "88560_CR43",
+        "doi-asserted-by": "publisher",
+        "first-page": "1654e60",
+        "DOI": "10.1016/j.arth.2016.02.003",
+        "volume": "31",
+        "author": "MM Dowsey",
+        "year": "2016",
+        "unstructured": "Dowsey, M. M., Spelman, T. & Choong, P. F. Development of a prognostic nomogram for predicting the probability of nonresponse to total knee arthroplasty 1 Year after surgery. J. Arthroplasty 31, 1654e60 (2016).",
+        "journal-title": "J. Arthroplasty"
+      },
+      {
+        "key": "88560_CR44",
+        "doi-asserted-by": "publisher",
+        "first-page": "3380",
+        "DOI": "10.1038/s41598-018-21713-2",
+        "volume": "8",
+        "author": "C Garriga",
+        "year": "2018",
+        "unstructured": "Garriga, C. et al. Development of a model predicting non-satisfaction 1 year after primary total knee replacement in the UK and transportation to Switzerland. Sci. Rep. 8, 3380 (2018).",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "issue": "3",
+        "key": "88560_CR45",
+        "doi-asserted-by": "publisher",
+        "first-page": "335",
+        "DOI": "10.1016/0005-7967(94)00075-U",
+        "volume": "33",
+        "author": "PF Lovibond",
+        "year": "1995",
+        "unstructured": "Lovibond, P. F. & Lovibond, S. H. The structure of negative emotional states: Comparison of the depression anxiety stress scales (DASS) with the beck depression and anxiety inventories. Behav. Res. Ther. 33(3), 335–343 (1995).",
+        "journal-title": "Behav. Res. Ther."
+      },
+      {
+        "key": "88560_CR46",
+        "doi-asserted-by": "publisher",
+        "first-page": "316",
+        "DOI": "10.1111/ans.18250",
+        "volume": "93",
+        "author": "Y Zhou",
+        "year": "2023",
+        "unstructured": "Zhou, Y., Dowsey, M., Spelman, T., Choong, P. & Schilling, C. SMART choice (knee) tool: A patient-focused predictive model to predict improvement in health-related quality of life after total knee arthroplasty. ANZ J. Surg. 93, 316–327 (2023).",
+        "journal-title": "ANZ J. Surg."
+      },
+      {
+        "key": "88560_CR47",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1080/09593985.2023.2211716",
+        "volume": "10",
+        "author": "Y Ohyama",
+        "year": "2023",
+        "unstructured": "Ohyama, Y., Iwamura, T., Hshino, T. & Miyata, K. Prognostic models of quality of life after total knee replacement: A systematic review. Physiother. Theory Pract. 10, 1–12. https://doi.org/10.1080/09593985.2023.2211716 (2023).",
+        "journal-title": "Physiother. Theory Pract."
+      },
+      {
+        "issue": "1",
+        "key": "88560_CR48",
+        "doi-asserted-by": "publisher",
+        "first-page": "68",
+        "DOI": "10.1186/s12891-018-1991-0",
+        "volume": "19",
+        "author": "SN Hofstede",
+        "year": "2018",
+        "unstructured": "Hofstede, S. N. et al. The influence of preoperative determinants on quality of life, functioning and pain after total knee and hip replacement: A pooled analysis of Dutch cohorts. BMC Musculoskeletal Disord. 19(1), 68. https://doi.org/10.1186/s12891-018-1991-0 (2018).",
+        "journal-title": "BMC Musculoskeletal Disord."
+      },
+      {
+        "issue": "4",
+        "key": "88560_CR49",
+        "doi-asserted-by": "publisher",
+        "first-page": "663",
+        "DOI": "10.1097/j.pain.0000000000001134",
+        "volume": "159",
+        "author": "J Lin",
+        "year": "2018",
+        "unstructured": "Lin, J., Klatt, L.-I., McCracken, L. M. & Baumeister, H. Psychological flexibility mediates the effect of an online-based acceptance and commitment therapy for chronic pain: An investigation of change processes. Pain J. Online 159(4), 663–672. https://doi.org/10.1097/j.pain.0000000000001134 (2018).",
+        "journal-title": "Pain J. Online"
+      },
+      {
+        "key": "88560_CR50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jpsychores.2020.110250",
+        "volume": "138",
+        "author": "MK Roddy",
+        "year": "2020",
+        "unstructured": "Roddy, M. K. et al. One-day acceptance and commitment therapy workshop for preventing persistent post-surgical pain and dysfunction in at-risk veterans: A randomized controlled trial protocol. J. Psychom. Res. 138, 110250. https://doi.org/10.1016/j.jpsychores.2020.110250 (2020).",
+        "journal-title": "J. Psychom. Res."
+      },
+      {
+        "key": "88560_CR51",
+        "doi-asserted-by": "publisher",
+        "first-page": "313",
+        "DOI": "10.1136/rapm-2020-102258",
+        "volume": "46",
+        "author": "A Buvanendran",
+        "year": "2021",
+        "unstructured": "Buvanendran, A. et al. Preoperative cognitive-behavioural therapy for reducing pain catastrophizing and improving pain outcomes after total knee replacement: A randomized clinical trial. Reg. Anesth. Pain Med. 46, 313–321. https://doi.org/10.1136/rapm-2020-102258 (2021).",
+        "journal-title": "Reg. Anesth. Pain Med."
+      },
+      {
+        "issue": "5",
+        "key": "88560_CR52",
+        "doi-asserted-by": "publisher",
+        "first-page": "E39",
+        "DOI": "10.1097/NNR.0000000000000602",
+        "volume": "71",
+        "author": "AAO Buus",
+        "year": "2022",
+        "unstructured": "Buus, A. A. O. et al. Patient -reported outcomes for function and pain in total knee arthroplasty patients. Nurs. Res. Online 71(5), E39–E47. https://doi.org/10.1097/NNR.0000000000000602 (2022).",
+        "journal-title": "Nurs. Res. Online"
+      },
+      {
+        "key": "88560_CR53",
+        "doi-asserted-by": "publisher",
+        "first-page": "50",
+        "DOI": "10.1016/j.jor.2022.01.002",
+        "volume": "29",
+        "author": "D Kuklinski",
+        "year": "2022",
+        "unstructured": "Kuklinski, D. et al. Thresholds for meaningful improvement in WOMAC scores need to be adjusted to patient characteristics after hip and knee replacement. J. Orthop. 29, 50–59. https://doi.org/10.1016/j.jor.2022.01.002 (2022).",
+        "journal-title": "J. Orthop."
+      }
+    ],
+    "container-title": [
+      "Scientific Reports"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.nature.com/articles/s41598-025-88560-w.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41598-025-88560-w",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41598-025-88560-w.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          10
+        ]
+      ],
+      "date-time": "2025-02-10T10:14:10Z",
+      "timestamp": 1739182450000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/s41598-025-88560-w"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          10
+        ]
+      ]
+    },
+    "references-count": 53,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "88560"
+    ],
+    "URL": "https://doi.org/10.1038/s41598-025-88560-w",
+    "relation": {},
+    "ISSN": [
+      "2045-2322"
+    ],
+    "issn-type": [
+      {
+        "value": "2045-2322",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          10
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "29 July 2024",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "29 January 2025",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "10 February 2025",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      },
+      {
+        "value": "Ethics approval was granted by the University of Newcastle Human Research Ethics Committee (approval ID: H-2019-0109) on June 21, 2019.",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethics approval"
+        }
+      },
+      {
+        "value": "Informed consent was obtained from all participants who took part in this study.",
+        "order": 4,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Consent to participate"
+        }
+      }
+    ],
+    "article-number": "4926"
+  }
+}

@@ -1,0 +1,609 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          11
+        ]
+      ],
+      "date-time": "2026-06-11T06:01:13Z",
+      "timestamp": 1781157673030,
+      "version": "3.54.1"
+    },
+    "reference-count": 38,
+    "publisher": "Frontiers Media SA",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              6,
+              11
+            ]
+          ],
+          "date-time": "2026-06-11T00:00:00Z",
+          "timestamp": 1781136000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "frontiersin.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Front. Rehabil. Sci."
+    ],
+    "abstract": "<jats:sec>\n                    <jats:title>Objective</jats:title>\n                    <jats:p>Static, one-size-fits-all protocols in postoperative orthopedic rehabilitation fail to adapt to individual recovery dynamics, potentially leading to suboptimal rehabilitation efficiency or an elevated risk of secondary injury. To address this critical gap, we propose and provide a simulation-based proof-of-concept validation for a novel closed-loop management system that deeply integrates patient-generated health data (PGHD) with deep reinforcement learning (DRL), offering a potential technical pathway for real-time personalized optimization of rehabilitation regimens and continuous prediction of long-term functional outcomes.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Methods</jats:title>\n                    <jats:p>\n                      A three-tier system architecture was constructed, comprising an intelligent sensing layer, an AI decision-making and prediction layer, and an interactive feedback layer. Through wearable inertial measurement units (IMUs) and surface electromyography (sEMG) devices, the system continuously collected multi-dimensional PGHD, including movement quality, training intensity, adherence, and pain feedback. These heterogeneous data were encoded into a comprehensive “patient state space” through a standardized feature engineering pipeline. A proximal policy optimization (PPO) algorithm was employed to train a DRL agent to learn the optimal policy for dynamically adjusting the next-cycle rehabilitation prescription (including exercise type, intensity, frequency, and progression pace). The agent aimed to maximize a hierarchical cumulative reward function that integrates short-term safety (\n                      <jats:italic>Δ</jats:italic>\n                      VAS pain score monitoring), mid-term adherence (training completion rate), and long-term functional improvement. Critically, a temporal convolutional network (TCN) prognostic module was deeply coupled with the DRL agent, providing prospective predictions of future functional recovery curves that inform the agent's long-term reward calculation, equipping the system with the capability of “making decisions based on predictions.”\n                    </jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>A proof-of-concept validation was conducted in a simulated environment for a post-operative anterior cruciate ligament reconstruction (ACLR) scenario. The trained DRL agent demonstrated the ability to generate differentiated rehabilitation strategies: in stratified analysis, it prescribed distinct progression paces for virtual patients with fast vs. slow recovery trajectories. Under this simulation setting, compared with a static conservative protocol, the DRL-driven strategy reduced the simulated time to “safe return to light activity” by an average of 15% and, compared with a static aggressive protocol, relatively decreased simulated “re-injury” events by 40%. The mean absolute errors (MAEs) of the TCN prognostic module for predicting functional scores at 2, 4, and 8 weeks into the future were 3.2, 4.8, and 6.5 points (on a 100-point scale), respectively, outperforming the ARIMA, LSTM, and GRU baseline models. An ablation study confirmed the TCN module's independent contribution, as its removal led to a relative increase in the simulated re-injury rate.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Conclusion</jats:title>\n                    <jats:p>This proof-of-concept study provides foundational evidence for the technical feasibility of a DRL-based closed-loop rehabilitation system. The proposed framework uniquely couples a wearable sensing layer with a symbiotic DRL-TCN architecture, demonstrating the potential to safely and dynamically personalize rehabilitation strategies in a simulated environment. These findings lay the groundwork for future prospective clinical trials, which are the necessary next step to validate safety, efficacy, and clinical utility in real-world settings.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.3389/fresc.2026.1822939",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          11
+        ]
+      ],
+      "date-time": "2026-06-11T05:47:04Z",
+      "timestamp": 1781156824000
+    },
+    "update-policy": "https://doi.org/10.3389/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Closed-Loop digital therapeutics empowered by deep reinforcement learning and wearable sensing for precision orthopedic rehabilitation: a simulation-based proof-of-concept study"
+    ],
+    "prefix": "10.3389",
+    "volume": "7",
+    "author": [
+      {
+        "given": "Jiahao",
+        "family": "Dong",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "First Clinical Medical College, Yunnan University of Traditional Chinese Medicine",
+            "place": [
+              "Kunming, China"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tao",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Yunnan Provincial Hospital of Chinese Medicine",
+            "place": [
+              "Kunming, China"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhongyu",
+        "family": "Peng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Yunnan Provincial Hospital of Chinese Medicine",
+            "place": [
+              "Kunming, China"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1965",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          11
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "B1",
+        "first-page": "189",
+        "article-title": "Advances in the application of wearable technology in orthopedic rehabilitation",
+        "volume": "21",
+        "author": "Yue",
+        "year": "2024",
+        "journal-title": "Prac Jo Clin Med"
+      },
+      {
+        "key": "B2",
+        "first-page": "160",
+        "article-title": "Application and progress of wearable devices in orthopedic rehabilitation",
+        "volume": "38",
+        "author": "Lu",
+        "year": "2023",
+        "journal-title": "China Medical Devices"
+      },
+      {
+        "key": "B3",
+        "first-page": "1122",
+        "article-title": "Application of wearable devices in home-based exercise rehabilitation for patients with knee osteoarthritis",
+        "volume": "49",
+        "author": "Wang",
+        "year": "2025",
+        "journal-title": "Heilongjiang Med J"
+      },
+      {
+        "key": "B4",
+        "doi-asserted-by": "publisher",
+        "first-page": "4790",
+        "DOI": "10.1109/TNSRE.2023.3338226",
+        "article-title": "Effectiveness of repetitive transcranial magnetic stimulation combined with transspinal electrical stimulation on corticospinal excitability for individuals with incomplete spinal cord injury: a pilot study",
+        "volume": "31",
+        "author": "Lin",
+        "year": "2023",
+        "journal-title": "IEEE Trans Neural Syst Rehabil Eng"
+      },
+      {
+        "key": "B5",
+        "doi-asserted-by": "publisher",
+        "first-page": "e087399",
+        "DOI": "10.1136/bmjopen-2024-087399",
+        "article-title": "Modified tai chi movement training based on sEMG and movement analysis on improving upper extremities motor function: a protocol for a clinical randomised controlled trial",
+        "volume": "14",
+        "author": "Li",
+        "year": "2024",
+        "journal-title": "BMJ Open"
+      },
+      {
+        "key": "B6",
+        "doi-asserted-by": "publisher",
+        "first-page": "102811",
+        "DOI": "10.1016/j.artmed.2024.102811",
+        "article-title": "Clinical knowledge-guided deep reinforcement learning for sepsis antibiotic dosing recommendations",
+        "volume": "150",
+        "author": "Wang",
+        "year": "2024",
+        "journal-title": "Artif Intell Med"
+      },
+      {
+        "key": "B7",
+        "doi-asserted-by": "publisher",
+        "first-page": "bbae071",
+        "DOI": "10.1093/bib/bbae071",
+        "article-title": "Deep reinforcement learning identifies personalized intermittent androgen deprivation therapy for prostate cancer",
+        "volume": "25",
+        "author": "Lu",
+        "year": "2024",
+        "journal-title": "Brief Bioinform"
+      },
+      {
+        "key": "B8",
+        "first-page": "873",
+        "article-title": "Methods for interpretability analysis of deep learning in image interpretation",
+        "volume": "51",
+        "author": "Gong",
+        "year": "2022",
+        "journal-title": "Acta Geodaetica et Cartographica Sinica"
+      },
+      {
+        "key": "B9",
+        "first-page": "25",
+        "article-title": "A review of deep reinforcement learning applications in autonomous driving systems",
+        "volume": "42",
+        "author": "Han",
+        "year": "2023",
+        "journal-title": "J Xihua Univ(Natural Science Edition)"
+      },
+      {
+        "key": "B10",
+        "first-page": "50",
+        "article-title": "Research on data security risk identification based on explainable artificial intelligence",
+        "author": "Jia",
+        "year": "2024",
+        "journal-title": "Inform Syst Eng"
+      },
+      {
+        "key": "B11",
+        "doi-asserted-by": "publisher",
+        "first-page": "1506688",
+        "DOI": "10.3389/fsurg.2024.1506688",
+        "article-title": "The use of patient-generated health data in the management of low anterior resection syndrome: a qualitative study",
+        "volume": "11",
+        "author": "Monton",
+        "year": "2024",
+        "journal-title": "Front Surg"
+      },
+      {
+        "key": "B12",
+        "doi-asserted-by": "publisher",
+        "first-page": "1682",
+        "DOI": "10.1093/jamia/ocae138",
+        "article-title": "Patient-centered clinical decision support challenges and opportunities identified from workflow execution models",
+        "volume": "31",
+        "author": "Sittig",
+        "year": "2024",
+        "journal-title": "J Am Med Inform Assoc"
+      },
+      {
+        "key": "B13",
+        "doi-asserted-by": "publisher",
+        "first-page": "4716",
+        "DOI": "10.1109/JBHI.2025.3542583",
+        "article-title": "Data knee pads: a lower limb motion capture system based on heterogeneous sensors",
+        "volume": "29",
+        "author": "Ding",
+        "year": "2025",
+        "journal-title": "IEEE J Biomed Health Inform"
+      },
+      {
+        "key": "B14",
+        "doi-asserted-by": "publisher",
+        "first-page": "1019",
+        "DOI": "10.55730/1300-0144.5667",
+        "article-title": "Current developments in surface electromyography",
+        "volume": "53",
+        "author": "Alcan",
+        "year": "2023",
+        "journal-title": "Turk J Med Sci"
+      },
+      {
+        "key": "B15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/2325967124S00288",
+        "article-title": "Patient acceptable symptom state 2 years after anterior cruciate ligament reconstruction reflects knee loading patterns associated with worse outcomes",
+        "volume": "12",
+        "author": "He",
+        "year": "2024",
+        "journal-title": "Orthop J Sports Med"
+      },
+      {
+        "key": "B16",
+        "doi-asserted-by": "publisher",
+        "first-page": "e741",
+        "DOI": "10.1097/pq9.0000000000000741",
+        "article-title": "A quality initiative to improve appropriate medication dosing in pediatric patients with obesity",
+        "volume": "9",
+        "author": "Cloyd",
+        "year": "2024",
+        "journal-title": "Pediatr Qual Saf"
+      },
+      {
+        "key": "B17",
+        "doi-asserted-by": "publisher",
+        "first-page": "9428",
+        "DOI": "10.1109/TCYB.2021.3051456",
+        "article-title": "Authentic boundary proximal policy optimization",
+        "volume": "52",
+        "author": "Cheng",
+        "year": "2022",
+        "journal-title": "IEEE Trans Cybern"
+      },
+      {
+        "key": "B18",
+        "doi-asserted-by": "publisher",
+        "first-page": "8757",
+        "DOI": "10.1109/TNNLS.2024.3411166",
+        "article-title": "Residual temporal convolutional network with dual attention mechanism for multilead-time interpretable runoff forecasting",
+        "volume": "36",
+        "author": "Sheng",
+        "year": "2025",
+        "journal-title": "IEEE Trans Neural Netw Learn Syst"
+      },
+      {
+        "key": "B19",
+        "doi-asserted-by": "publisher",
+        "first-page": "e0320368",
+        "DOI": "10.1371/journal.pone.0320368",
+        "article-title": "Network traffic prediction based on transformer and temporal convolutional network",
+        "volume": "20",
+        "author": "Wang",
+        "year": "2025",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "B20",
+        "doi-asserted-by": "publisher",
+        "first-page": "784",
+        "DOI": "10.7507/1001-5515.202210007",
+        "article-title": "Research progress on digital twin technology of human skeletal muscle",
+        "volume": "40",
+        "author": "Liu",
+        "year": "2023",
+        "journal-title": "J Biomed Eng"
+      },
+      {
+        "key": "B21",
+        "doi-asserted-by": "publisher",
+        "first-page": "106248",
+        "DOI": "10.1016/j.isci.2023.106248",
+        "article-title": "Symbiotic electroneural and musculoskeletal framework to encode proprioception via neurostimulation",
+        "volume": "26",
+        "author": "Cimolato",
+        "year": "2023",
+        "journal-title": "ProprioStim. IScience"
+      },
+      {
+        "key": "B22",
+        "doi-asserted-by": "publisher",
+        "first-page": "e81297",
+        "DOI": "10.7759/cureus.81297",
+        "article-title": "Realistic 3D-printed lumbar spine model for non-cadaveric surgical training: a proof of concept study",
+        "volume": "17",
+        "author": "Bogdanov",
+        "year": "2025",
+        "journal-title": "Cureus"
+      },
+      {
+        "key": "B23",
+        "doi-asserted-by": "publisher",
+        "first-page": "165",
+        "DOI": "10.1080/21655979.2023.2184546",
+        "article-title": "Construction of a virtual reality platform for computer-aided navigation lingnan bone setting technique",
+        "volume": "14",
+        "author": "Huang",
+        "year": "2023",
+        "journal-title": "Bioengineered"
+      },
+      {
+        "key": "B24",
+        "doi-asserted-by": "publisher",
+        "first-page": "e233341",
+        "DOI": "10.1148/radiol.233341",
+        "article-title": "Interobserver agreement and performance of concurrent AI assistance for radiographic evaluation of knee osteoarthritis",
+        "volume": "312",
+        "author": "Brejnebøl",
+        "year": "2024",
+        "journal-title": "Radiology"
+      },
+      {
+        "key": "B25",
+        "doi-asserted-by": "publisher",
+        "first-page": "4",
+        "DOI": "10.5152/j.aott.2024.23065",
+        "article-title": "Comparison of artificial intelligence algorithm for the diagnosis of hip fracture on plain radiography with decision-making physicians: a validation study",
+        "volume": "58",
+        "author": "Beyaz",
+        "year": "2024",
+        "journal-title": "Acta Orthop Traumatol Turc"
+      },
+      {
+        "key": "B26",
+        "doi-asserted-by": "publisher",
+        "first-page": "6647",
+        "DOI": "10.1109/TPAMI.2020.3021756",
+        "article-title": "MS-TCN++: multi-stage temporal convolutional network for action segmentation",
+        "volume": "45",
+        "author": "Li",
+        "year": "2023",
+        "journal-title": "IEEE Trans Pattern Anal Mach Intell"
+      },
+      {
+        "key": "B27",
+        "doi-asserted-by": "publisher",
+        "first-page": "4738",
+        "DOI": "10.1109/TIP.2024.3446228",
+        "article-title": "Spatio-temporal convolutional neural network for enhanced inter prediction in video coding",
+        "volume": "33",
+        "author": "Merkle",
+        "year": "2024",
+        "journal-title": "IEEE Trans Image Process"
+      },
+      {
+        "key": "B28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1741-2552/adb90c",
+        "article-title": "Explainable multiscale temporal convolutional neural network model for sleep stage detection based on electroencephalogram activities",
+        "volume": "22",
+        "author": "Phang",
+        "year": "2025",
+        "journal-title": "J Neural Eng"
+      },
+      {
+        "key": "B29",
+        "doi-asserted-by": "publisher",
+        "first-page": "10580",
+        "DOI": "10.1038/s41598-025-95604-8",
+        "article-title": "Constructing an early warning model for elderly sepsis patients based on machine learning",
+        "volume": "15",
+        "author": "Ma",
+        "year": "2025",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "key": "B30",
+        "doi-asserted-by": "publisher",
+        "first-page": "2678",
+        "DOI": "10.62347/MMNQ1017",
+        "article-title": "Value of using blood routine indicators combined with artificial intelligence in sepsis patients",
+        "volume": "17",
+        "author": "Chen",
+        "year": "2025",
+        "journal-title": "Am J Transl Res"
+      },
+      {
+        "key": "B31",
+        "doi-asserted-by": "publisher",
+        "first-page": "eadz7312",
+        "DOI": "10.1126/sciadv.adz7312",
+        "article-title": "Lightweight multiscale early warning system for influenza A spillovers",
+        "volume": "11",
+        "author": "Alfonsi",
+        "year": "2025",
+        "journal-title": "Sci Adv"
+      },
+      {
+        "key": "B32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s44196-024-00631-4",
+        "article-title": "Optimized tiny machine learning and explainable AI for trustable and energy-efficient fog-enabled healthcare decision support system",
+        "volume": "17",
+        "author": "Arthi",
+        "year": "2024",
+        "journal-title": "Int J Comput Intell Syst"
+      },
+      {
+        "key": "B33",
+        "doi-asserted-by": "publisher",
+        "first-page": "108978",
+        "DOI": "10.1016/j.compbiomed.2024.108978",
+        "article-title": "Insights from explainable AI in oesophageal cancer team decisions",
+        "volume": "180",
+        "author": "Thavanesan",
+        "year": "2024",
+        "journal-title": "Comput Biol Med"
+      },
+      {
+        "key": "B34",
+        "doi-asserted-by": "publisher",
+        "first-page": "7",
+        "DOI": "10.3390/info16010007",
+        "article-title": "Towards transparent diabetes prediction: combining AutoML and explainable AI for improved clinical insights",
+        "volume": "16",
+        "author": "Hasan",
+        "year": "2024",
+        "journal-title": "Information"
+      },
+      {
+        "key": "B35",
+        "doi-asserted-by": "publisher",
+        "first-page": "e46700",
+        "DOI": "10.2196/46700",
+        "article-title": "Mhealth systems need a privacy-by-design approach: commentary on “federated machine learning, privacy-enhancing technologies, and data protection laws in medical research: scoping review”",
+        "volume": "25",
+        "author": "Tewari",
+        "year": "2023",
+        "journal-title": "J Med Internet Res"
+      },
+      {
+        "key": "B36",
+        "doi-asserted-by": "publisher",
+        "first-page": "2527",
+        "DOI": "10.1109/TCE.2023.3318509",
+        "article-title": "AP2FL: auditable privacy-preserving federated learning framework for electronics in healthcare",
+        "volume": "70",
+        "author": "Yazdinejad",
+        "year": "2024",
+        "journal-title": "IEEE Trans Consum Electron"
+      },
+      {
+        "key": "B37",
+        "doi-asserted-by": "publisher",
+        "first-page": "136",
+        "DOI": "10.1016/j.csbj.2024.02.014",
+        "article-title": "Privacy-preserving federated machine learning on FAIR health data: a real-world application",
+        "volume": "24",
+        "author": "Sinaci",
+        "year": "2024",
+        "journal-title": "Comput Struct Biotechnol J"
+      },
+      {
+        "key": "B38",
+        "doi-asserted-by": "publisher",
+        "first-page": "325",
+        "DOI": "10.1186/s13063-024-08177-8",
+        "article-title": "Effectiveness of artificial intelligence vs. Human coaching in diabetes prevention: a study protocol for a randomized controlled trial",
+        "volume": "25",
+        "author": "Abusamaan",
+        "year": "2024",
+        "journal-title": "Trials"
+      }
+    ],
+    "container-title": [
+      "Frontiers in Rehabilitation Sciences"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://www.frontiersin.org/articles/10.3389/fresc.2026.1822939/full",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          11
+        ]
+      ],
+      "date-time": "2026-06-11T05:47:07Z",
+      "timestamp": 1781156827000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.frontiersin.org/articles/10.3389/fresc.2026.1822939/full"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          11
+        ]
+      ]
+    },
+    "references-count": 38,
+    "alternative-id": [
+      "10.3389/fresc.2026.1822939"
+    ],
+    "URL": "https://doi.org/10.3389/fresc.2026.1822939",
+    "relation": {},
+    "ISSN": [
+      "2673-6861"
+    ],
+    "issn-type": [
+      {
+        "value": "2673-6861",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          11
+        ]
+      ]
+    },
+    "article-number": "1822939"
+  }
+}

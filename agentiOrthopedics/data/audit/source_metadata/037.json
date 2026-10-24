@@ -1,0 +1,838 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          17
+        ]
+      ],
+      "date-time": "2026-09-17T20:41:47Z",
+      "timestamp": 1789677707242,
+      "version": "4.0.1"
+    },
+    "reference-count": 48,
+    "publisher": "Wiley",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              11,
+              16
+            ]
+          ],
+          "date-time": "2023-11-16T00:00:00Z",
+          "timestamp": 1700092800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 319,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2023-01-01T00:00:00Z",
+          "timestamp": 1672531200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              11,
+              16
+            ]
+          ],
+          "date-time": "2023-11-16T00:00:00Z",
+          "timestamp": 1700092800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 319,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100005760",
+        "name": "University of Gothenburg",
+        "doi-asserted-by": "crossref",
+        "id": [
+          {
+            "id": "10.13039/501100005760",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100005760",
+        "name": "Göteborgs Universitet",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100005760",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J. exp. orthop."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Artificial intelligence (AI) has the potential to transform medical research by improving disease diagnosis, clinical decision‐making, and outcome prediction. Despite the rapid adoption of AI and machine learning (ML) in other domains and industry, deployment in medical research and clinical practice poses several challenges due to the inherent characteristics and barriers of the healthcare sector. Therefore, researchers aiming to perform AI‐intensive studies require a fundamental understanding of the key concepts, biases, and clinical safety concerns associated with the use of AI. Through the analysis of large, multimodal datasets, AI has the potential to revolutionize orthopaedic research, with new insights regarding the optimal diagnosis and management of patients affected musculoskeletal injury and disease. The article is the first in a series introducing fundamental concepts and best practices to guide healthcare professionals and researcher interested in performing AI‐intensive orthopaedic research studies. The vast potential of AI in orthopaedics is illustrated through examples involving disease‐ or injury‐specific outcome prediction, medical image analysis, clinical decision support systems and digital twin technology. Furthermore, it is essential to address the role of human involvement in training unbiased, generalizable AI models, their explainability in high‐risk clinical settings and the implementation of expert oversight and clinical safety measures for failure. In conclusion, the opportunities and challenges of AI in medicine are presented to ensure the safe and ethical deployment of AI models for orthopaedic research and clinical application.</jats:p><jats:p><jats:bold>Level of evidence</jats:bold> IV</jats:p>",
+    "DOI": "10.1186/s40634-023-00683-z",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          15
+        ]
+      ],
+      "date-time": "2023-11-15T23:34:54Z",
+      "timestamp": 1700091294000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 62,
+    "title": [
+      "A practical guide to the implementation of AI in orthopaedic research – part 1: opportunities in clinical application and overcoming existing challenges"
+    ],
+    "prefix": "10.1002",
+    "volume": "10",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-5697-6577",
+        "authenticated-orcid": false,
+        "given": "Bálint",
+        "family": "Zsidai",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Sahlgrenska Sports Medicine Center Gothenburg Sweden"
+          },
+          {
+            "name": "Department of Orthopaedics Institute of Clinical Sciences Sahlgrenska Academy University of Gothenburg Gothenburg Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ann‐Sophie",
+        "family": "Hilkert",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science and Engineering Chalmers University of Technology Gothenburg Sweden"
+          },
+          {
+            "name": "Medfield Diagnostics AB Gothenburg Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Janina",
+        "family": "Kaarre",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Sahlgrenska Sports Medicine Center Gothenburg Sweden"
+          },
+          {
+            "name": "Department of Orthopaedics Institute of Clinical Sciences Sahlgrenska Academy University of Gothenburg Gothenburg Sweden"
+          },
+          {
+            "name": "Department of Orthopaedic Surgery UPMC Freddie Fu Sports Medicine Center University of Pittsburgh Pittsburgh USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Eric",
+        "family": "Narup",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Sahlgrenska Sports Medicine Center Gothenburg Sweden"
+          },
+          {
+            "name": "Department of Orthopaedics Institute of Clinical Sciences Sahlgrenska Academy University of Gothenburg Gothenburg Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Eric Hamrin",
+        "family": "Senorski",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Sahlgrenska Sports Medicine Center Gothenburg Sweden"
+          },
+          {
+            "name": "Department of Health and Rehabilitation Institute of Neuroscience and Physiology Sahlgrenska Academy University of Gothenburg Gothenburg Sweden"
+          },
+          {
+            "name": "Sportrehab Sports Medicine Clinic Gothenburg Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alberto",
+        "family": "Grassi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedics Institute of Clinical Sciences Sahlgrenska Academy University of Gothenburg Gothenburg Sweden"
+          },
+          {
+            "name": "IIa Clinica Ortopedica E Traumatologica IRCCS Istituto Ortopedico Rizzoli Bologna Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Christophe",
+        "family": "Ley",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Mathematics University of Luxembourg Esch‐Sur‐Alzette Luxembourg"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Umile Giuseppe",
+        "family": "Longo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic and Trauma Surgery Campus Bio‐Medico University Rome Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Elmar",
+        "family": "Herbst",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Trauma Hand and Reconstructive Surgery University Hospital Münster Münster Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael T.",
+        "family": "Hirschmann",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopedic Surgery and Traumatology Head Knee Surgery and DKF Head of Research Kantonsspital Baselland 4101 Bruderholz Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sebastian",
+        "family": "Kopf",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Center of Orthopaedics and Traumatology University Hospital Brandenburg a.d.H. Brandenburg Medical School Theodor Fontane 14770 Brandenburg a.d.H. Germany"
+          },
+          {
+            "name": "Faculty of Health Sciences Brandenburg Brandenburg Medical School Theodor Fontane 14770 Brandenburg a.d.H. Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Romain",
+        "family": "Seil",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery Centre Hospitalier Luxembourg and Luxembourg Institute of Health Luxembourg Luxembourg"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thomas",
+        "family": "Tischer",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Clinic for Orthopaedics and Trauma Surgery Malteser Waldkrankenhaus St. Marien Erlangen Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kristian",
+        "family": "Samuelsson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Sahlgrenska Sports Medicine Center Gothenburg Sweden"
+          },
+          {
+            "name": "Department of Orthopaedics Institute of Clinical Sciences Sahlgrenska Academy University of Gothenburg Gothenburg Sweden"
+          },
+          {
+            "name": "Department of Orthopaedics Sahlgrenska University Hospital Mölndal Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Robert",
+        "family": "Feldt",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedics Institute of Clinical Sciences Sahlgrenska Academy University of Gothenburg Gothenburg Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "name": "ESSKA Artificial Intelligence Working Group",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          16
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_11_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.inffus.2021.05.008"
+      },
+      {
+        "key": "e_1_2_11_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41591-022-01981-2"
+      },
+      {
+        "key": "e_1_2_11_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/003355303322552801"
+      },
+      {
+        "key": "e_1_2_11_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3501714.3501743"
+      },
+      {
+        "key": "e_1_2_11_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41746-020-00324-0"
+      },
+      {
+        "key": "e_1_2_11_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pmed.1002699"
+      },
+      {
+        "key": "e_1_2_11_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5435/JAAOS-D-19-00395"
+      },
+      {
+        "key": "e_1_2_11_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13073-019-0701-3"
+      },
+      {
+        "key": "e_1_2_11_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ejca.2019.05.023"
+      },
+      {
+        "key": "e_1_2_11_11_1",
+        "unstructured": "BurnsC YeH KleinD SteinhardtJ(2022)Discovering latent knowledge in language models without supervision. arXiv preprint arXiv:2212.03827"
+      },
+      {
+        "key": "e_1_2_11_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s42256-022-00563-8"
+      },
+      {
+        "key": "e_1_2_11_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmjqs-2018-008370"
+      },
+      {
+        "key": "e_1_2_11_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmjopen-2020-048008"
+      },
+      {
+        "key": "e_1_2_11_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S2589-7500(20)30219-3"
+      },
+      {
+        "key": "e_1_2_11_16_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "DahmenJ KayaalpME OllivierM PareekA HirschmannMT KarlssonJ et al. (2023) Artificial intelligence bot ChatGPT in medical research: the potential game changer as a double-edged sword.Knee Surg Sports Traumatol Arthrosc;https://doi.org/10.1007/s00167-023-07355-6",
+        "DOI": "10.1007/s00167-023-07355-6"
+      },
+      {
+        "key": "e_1_2_11_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00256-020-03410-2"
+      },
+      {
+        "key": "e_1_2_11_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1148/radiol.210937"
+      },
+      {
+        "key": "e_1_2_11_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bjsports-2018-100024"
+      },
+      {
+        "key": "e_1_2_11_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00264-021-05175-2"
+      },
+      {
+        "key": "e_1_2_11_21_1",
+        "volume-title": "Stanford - Vienna Transatlantic Technology Law Forum Transatlantic Antitrust and IPR Developments",
+        "author": "Kop M",
+        "year": "2021"
+      },
+      {
+        "key": "e_1_2_11_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-022-33128-9"
+      },
+      {
+        "key": "e_1_2_11_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-022-06896-6"
+      },
+      {
+        "key": "e_1_2_11_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj.m3164"
+      },
+      {
+        "key": "e_1_2_11_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2019.2949286"
+      },
+      {
+        "key": "e_1_2_11_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-021-06741-2"
+      },
+      {
+        "key": "e_1_2_11_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/jisakos-2020-000572"
+      },
+      {
+        "key": "e_1_2_11_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2106/JBJS.21.00113"
+      },
+      {
+        "key": "e_1_2_11_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00167-021-06828-w"
+      },
+      {
+        "key": "e_1_2_11_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1302/0301-620X.103B9.BJJ-2021-0192.R1"
+      },
+      {
+        "key": "e_1_2_11_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00256-020-03599-2"
+      },
+      {
+        "key": "e_1_2_11_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s42256-022-00559-4"
+      },
+      {
+        "key": "e_1_2_11_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.dsp.2017.10.011"
+      },
+      {
+        "key": "e_1_2_11_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2022.3170108"
+      },
+      {
+        "key": "e_1_2_11_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1302/2633-1462.210.BJO-2021-0133"
+      },
+      {
+        "key": "e_1_2_11_36_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "OllivierM PareekA DahmenJ KayaalpME WinklerPW HirschmannMT et al. (2023) A deeper dive into ChatGPT: history use and future perspectives for orthopaedic research.Knee Surg Sports Traumatol Arthrosc;https://doi.org/10.1007/s00167-023-07372-5",
+        "DOI": "10.1007/s00167-023-07372-5"
+      },
+      {
+        "key": "e_1_2_11_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compbiomed.2020.103792"
+      },
+      {
+        "key": "e_1_2_11_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41591-021-01614-0"
+      },
+      {
+        "key": "e_1_2_11_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/03635465211008648"
+      },
+      {
+        "key": "e_1_2_11_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2020.2976199"
+      },
+      {
+        "key": "e_1_2_11_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S2589-7500(21)00106-0"
+      },
+      {
+        "key": "e_1_2_11_42_1",
+        "unstructured": "SinghalK AziziS TuT MahdaviSS WeiJ ChungHW et al. (2022)Large Language Models Encode Clinical Knowledge. arXiv preprint arXiv:2212.13138"
+      },
+      {
+        "key": "e_1_2_11_43_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41569-020-00503-2"
+      },
+      {
+        "key": "e_1_2_11_44_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41591-020-0941-1"
+      },
+      {
+        "key": "e_1_2_11_45_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S1470-2045(19)30738-7"
+      },
+      {
+        "key": "e_1_2_11_46_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jama.2017.18152"
+      },
+      {
+        "key": "e_1_2_11_47_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00330-022-08923-z"
+      },
+      {
+        "key": "e_1_2_11_48_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s40634-021-00346-x"
+      },
+      {
+        "key": "e_1_2_11_49_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj-2022-070904"
+      }
+    ],
+    "container-title": [
+      "Journal of Experimental Orthopaedics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s40634-023-00683-z.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/article/10.1186/s40634-023-00683-z/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1186/s40634-023-00683-z.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      },
+      {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/pdf/10.1186/s40634-023-00683-z",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          16
+        ]
+      ],
+      "date-time": "2025-10-16T14:09:23Z",
+      "timestamp": 1760623763000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://esskajournals.onlinelibrary.wiley.com/doi/10.1186/s40634-023-00683-z"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          1
+        ]
+      ]
+    },
+    "references-count": 48,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1186/s40634-023-00683-z"
+    ],
+    "URL": "https://doi.org/10.1186/s40634-023-00683-z",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "2197-1153",
+      "2197-1153"
+    ],
+    "issn-type": [
+      {
+        "value": "2197-1153",
+        "type": "print"
+      },
+      {
+        "value": "2197-1153",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          1
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "24 July 2023",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "21 October 2023",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "16 November 2023",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "Not applicable.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethics approval and consent to participate"
+        }
+      },
+      {
+        "value": "ASH is an industrial PhD student at Medfield Diagnostics AB, funded by the Wallenberg AI, Autonomous Systems and Software Program (WASP). MTH is a consultant for Medacta, Symbios and Depuy Synthess. KS is a member on the board of directors for Getinge AB (publ). RF is Chief Technology Officer and founder in Accelerandium AB, a software consultancy company.",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "117"
+  }
+}

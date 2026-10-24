@@ -1,0 +1,721 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          4
+        ]
+      ],
+      "date-time": "2026-05-04T06:44:29Z",
+      "timestamp": 1777877069314,
+      "version": "3.51.4"
+    },
+    "reference-count": 56,
+    "publisher": "SAGE Publications",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2026-01-01T00:00:00Z",
+          "timestamp": 1767225600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2026-01-01T00:00:00Z",
+          "timestamp": 1767225600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001771",
+        "name": "University of Newcastle Australia",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100001771",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100010754",
+        "name": "National Healthcare Group",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100010754",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "journals.sagepub.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Therapeutic Advances in Musculoskeletal"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Knee osteoarthritis (KOA) presents heterogeneous phenotypes, motivating a need for clinicians to deliver targeted therapies. There is a plethora of options that can be encompassed in KOA treatment regimes. Clinical decision support (CDS) tools that incorporate individual patient data have the capacity to tailor treatments to meet a patient’s individual needs and assist with clinical decision-making. We aim to identify and evaluate CDS tools for individuals with KOA that use individualised prediction models to guide intervention decisions. A scoping review of the literature. A systematic search of six electronic databases, including Ovid Embase, Ovid Medline, Cochrane, CHINAL Ultimate, Scopus and Web of Science, was conducted for articles published between January 1, 2010 and May 17, 2024. Two reviewers independently screened articles and extracted data on study design, tool implementation and underlying prediction models. Eligible studies implemented personalised decision aids, designed to support clinical decisions regarding KOA interventions. The search yielded 5376 publications, of which 2445 were duplicates, leaving 2931 for screening. After title/abstract and full-text reviews, 14 studies were included in the final analysis, with one added through citation searching. Ten distinct decision aids were identified across the included studies. Most studies originated from the United States. Fewer than half of the decision aids included personalised information about non-surgical alternatives. Outcomes such as knee pain and physical function were the most commonly addressed, while psychosocial and financial impacts were rarely reported. Limited details were provided about the development and functionality of the underlying prediction models. Personalised decision aids for KOA show promise in supporting patient-centred decision-making. However, their clinical utility is constrained by limited transparency in model development and implementation. Future studies should emphasise the inclusion of non-surgical treatment options, early-stage KOA patients and personalised outcomes beyond pain and function to enhance their relevance and impact in clinical practice.</jats:p>",
+    "DOI": "10.1177/1759720x251407070",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          19
+        ]
+      ],
+      "date-time": "2026-01-19T07:36:41Z",
+      "timestamp": 1768808201000
+    },
+    "update-policy": "https://doi.org/10.1177/sage-journals-update-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": [
+      "Implementation of clinical decision support tools for treatment selection in knee osteoarthritis: a scoping review"
+    ],
+    "prefix": "10.1177",
+    "volume": "18",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-8259-0478",
+        "authenticated-orcid": false,
+        "given": "Jodie A.",
+        "family": "Cochrane",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Centre for Rehab Innovations, University of Newcastle, Callaghan, NSW, Australia"
+          },
+          {
+            "name": "Hunter Medical Research Institute, New Lambton Heights, NSW, Australia"
+          },
+          {
+            "name": "College of Engineering, Science and Environment, University of Newcastle, Callaghan, NSW, Australia"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0001-3677-9146",
+        "authenticated-orcid": false,
+        "given": "Oliver",
+        "family": "Roberts",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Rehabilitation Research Institute of Singapore, Nanyang Technological University, Lee Kong Chian School of Medicine, #14-03, 11 Mandalay Rd, Singapore 308232, Singapore"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Karen",
+        "family": "Ribbons",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Centre for Rehab Innovations, University of Newcastle, Callaghan, NSW, Australia"
+          },
+          {
+            "name": "Hunter Medical Research Institute, New Lambton Heights, NSW, Australia"
+          },
+          {
+            "name": "College of Health, Medicine and Wellbeing, University of Newcastle, Callaghan, NSW, Australia"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Ross",
+        "family": "Clark",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Health and Sports Science, University of the Sunshine Coast, Sippy Downs, QLD, Australia"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Yong Hao",
+        "family": "Pua",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Physiotherapy, Singapore General Hospital, Singapore, Singapore"
+          },
+          {
+            "name": "Duke-NUS Medical School, Singapore, Singapore"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Tong Leng",
+        "family": "Tan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery, Tan Tock Seng Hospital, Singapore, Singapore"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Lynn",
+        "family": "Thwin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Orthopaedic Surgery, Tan Tock Seng Hospital, Singapore, Singapore"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8492-6342",
+        "authenticated-orcid": false,
+        "given": "Ying Ying",
+        "family": "Leung",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Duke-NUS Medical School, Singapore, Singapore"
+          },
+          {
+            "name": "Department of Rheumatology and Immunology, Singapore General Hospital, Singapore, Singapore"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Ming Han Lincoln",
+        "family": "Liow",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Duke-NUS Medical School, Singapore, Singapore"
+          },
+          {
+            "name": "Department of Orthopaedic Surgery, Singapore General Hospital, Singapore, Singapore"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Bryan Yijia",
+        "family": "Tan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Rehabilitation Research Institute of Singapore (RRIS), Nanyang Technological University, Singapore, Singapore"
+          },
+          {
+            "name": "Lee Kong Chian School of Medicine, Nanyang Technological University, Singapore, Singapore"
+          },
+          {
+            "name": "Department of Orthopaedic Surgery, Woodlands Health, Singapore, Singapore"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Nilsson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Centre for Rehab Innovations, University of Newcastle, Callaghan, NSW, Australia"
+          },
+          {
+            "name": "Hunter Medical Research Institute, New Lambton Heights, NSW, Australia"
+          },
+          {
+            "name": "College of Health, Medicine and Wellbeing, University of Newcastle, Callaghan, NSW, Australia"
+          },
+          {
+            "name": "Rehabilitation Research Institute of Singapore (RRIS), Nanyang Technological University, Singapore, Singapore"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "179",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          18
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_4_2_2",
+        "unstructured": "World Health Organization (WHO). Osteoarthritis https://www.who.int/news-room/fact-sheets/detail/osteoarthritis (2023 accessed 26 March 2025)."
+      },
+      {
+        "key": "e_1_3_4_3_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fmed.2024.1476853"
+      },
+      {
+        "key": "e_1_3_4_4_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S2665-9913(23)00163-7"
+      },
+      {
+        "key": "e_1_3_4_5_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41584-018-0123-4"
+      },
+      {
+        "key": "e_1_3_4_6_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1056/NEJMoa2403664"
+      },
+      {
+        "key": "e_1_3_4_7_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3109/17453671003685442"
+      },
+      {
+        "key": "e_1_3_4_8_2",
+        "unstructured": "Australian Orthopaedic Association National Joint Replacement Registry (AOANJRR). Lay summary: supplementary report in hip knee & shoulder arthroplasty. 2022 Annual report. Adelaide: Australian Orthopaedic Association National Joint Replacement Registry (AOANJRR) 2022 pp.1–36."
+      },
+      {
+        "key": "e_1_3_4_9_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.joca.2023.05.015"
+      },
+      {
+        "key": "e_1_3_4_10_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fragi.2025.1458983"
+      },
+      {
+        "key": "e_1_3_4_11_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.rehab.2016.01.007"
+      },
+      {
+        "key": "e_1_3_4_12_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0140-6736(20)32230-3"
+      },
+      {
+        "key": "e_1_3_4_13_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fmed.2025.1523027"
+      },
+      {
+        "key": "e_1_3_4_14_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10926-015-9614-1"
+      },
+      {
+        "key": "e_1_3_4_15_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s40290-024-00515-0"
+      },
+      {
+        "key": "e_1_3_4_16_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13643-023-02178-5"
+      },
+      {
+        "key": "e_1_3_4_17_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.7326/M18-0850"
+      },
+      {
+        "key": "e_1_3_4_18_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/rmdopen-2021-001998"
+      },
+      {
+        "key": "e_1_3_4_19_2",
+        "unstructured": "The EndNote Team. Endnote https://web.endnote.com/ (2013) (Accessed June 1st 2025)."
+      },
+      {
+        "key": "e_1_3_4_20_2",
+        "unstructured": "Veritas Health Innovation. Covidence systematic review software www.covidence.org (2024) (Accessed June 1st 2025)."
+      },
+      {
+        "key": "e_1_3_4_21_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamanetworkopen.2020.37107"
+      },
+      {
+        "key": "e_1_3_4_22_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4103/jfmpc.jfmpc_2188_21"
+      },
+      {
+        "key": "e_1_3_4_23_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12891-015-0473-x"
+      },
+      {
+        "key": "e_1_3_4_24_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/humanfactors.8568"
+      },
+      {
+        "key": "e_1_3_4_25_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11136-020-02557-8"
+      },
+      {
+        "key": "e_1_3_4_26_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12891-022-05764-1"
+      },
+      {
+        "key": "e_1_3_4_27_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/jep.13887"
+      },
+      {
+        "key": "e_1_3_4_28_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2019.06.007"
+      },
+      {
+        "key": "e_1_3_4_29_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/hex.13505"
+      },
+      {
+        "key": "e_1_3_4_30_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1001/jamanetworkopen.2024.0890"
+      },
+      {
+        "key": "e_1_3_4_31_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/acr.23572"
+      },
+      {
+        "key": "e_1_3_4_32_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/cts.2019.443"
+      },
+      {
+        "key": "e_1_3_4_33_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ocarto.2022.100286"
+      },
+      {
+        "key": "e_1_3_4_34_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/jep.13804"
+      },
+      {
+        "key": "e_1_3_4_35_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12891-019-2434-2"
+      },
+      {
+        "key": "e_1_3_4_36_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/ans.18250"
+      },
+      {
+        "key": "e_1_3_4_37_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/art.22670"
+      },
+      {
+        "key": "e_1_3_4_38_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/cts.2019.380"
+      },
+      {
+        "issue": "1",
+        "key": "e_1_3_4_39_2",
+        "article-title": "Patients’ views on AI for risk prediction in shared decision-making for knee replacement surgery: qualitative interview study",
+        "volume": "25",
+        "author": "Gould DJ",
+        "year": "2023",
+        "unstructured": "Gould DJ, Dowsey MM, Glanville-Hearst M, et al. Patients’ views on AI for risk prediction in shared decision-making for knee replacement surgery: qualitative interview study. J Med Internet Res 2023; 25(1): e43632.",
+        "journal-title": "J Med Internet Res"
+      },
+      {
+        "key": "e_1_3_4_40_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ocarto.2024.100497"
+      },
+      {
+        "key": "e_1_3_4_41_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/art.42089"
+      },
+      {
+        "key": "e_1_3_4_42_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.joca.2020.10.002"
+      },
+      {
+        "key": "e_1_3_4_43_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj-2024-081554"
+      },
+      {
+        "key": "e_1_3_4_44_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0272989X211035681"
+      },
+      {
+        "key": "e_1_3_4_45_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmj-2023-078378"
+      },
+      {
+        "key": "e_1_3_4_46_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2020.10.053"
+      },
+      {
+        "key": "e_1_3_4_47_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2017.07.021"
+      },
+      {
+        "key": "e_1_3_4_48_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2015.10.021"
+      },
+      {
+        "key": "e_1_3_4_49_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00402-023-05136-x"
+      },
+      {
+        "key": "e_1_3_4_50_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmjopen-2019-030060"
+      },
+      {
+        "key": "e_1_3_4_51_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.arth.2017.06.014"
+      },
+      {
+        "issue": "17",
+        "key": "e_1_3_4_52_2",
+        "first-page": "566",
+        "article-title": "Evaluation of a digital decision aid for knee replacement surgery",
+        "volume": "121",
+        "author": "Lützner J",
+        "year": "2024",
+        "unstructured": "Lützner J, Deckert S, Beyer F, et al. Evaluation of a digital decision aid for knee replacement surgery. Dtsch Ärztebl Int 2024; 121(17): 566–572.",
+        "journal-title": "Dtsch Ärztebl Int"
+      },
+      {
+        "key": "e_1_3_4_53_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1503/cjs.012322"
+      },
+      {
+        "key": "e_1_3_4_54_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmjopen-2023-078531"
+      },
+      {
+        "key": "e_1_3_4_55_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1302/0301-620X.98B10.BJJ-2016-0432.R1"
+      },
+      {
+        "key": "e_1_3_4_56_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1136/bmjopen-2021-055933"
+      },
+      {
+        "key": "e_1_3_4_57_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13063-022-07039-5"
+      }
+    ],
+    "container-title": [
+      "Therapeutic Advances in Musculoskeletal Disease"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/1759720X251407070",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/1759720X251407070",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/1759720X251407070",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          30
+        ]
+      ],
+      "date-time": "2026-04-30T22:40:23Z",
+      "timestamp": 1777588823000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.sagepub.com/doi/10.1177/1759720X251407070"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "references-count": 56,
+    "alternative-id": [
+      "10.1177/1759720X251407070"
+    ],
+    "URL": "https://doi.org/10.1177/1759720x251407070",
+    "relation": {},
+    "ISSN": [
+      "1759-720X",
+      "1759-7218"
+    ],
+    "issn-type": [
+      {
+        "value": "1759-720X",
+        "type": "print"
+      },
+      {
+        "value": "1759-7218",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          1
+        ]
+      ]
+    },
+    "article-number": "1759720X251407070"
+  }
+}

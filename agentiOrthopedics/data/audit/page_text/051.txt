@@ -1,0 +1,124 @@
+=== PDF PAGE 1 ===
+ARTHROSCOPY : THE JOURNAL OF ARTHROSCOPIC & RELATED SURGERY : OFFICIAL
+PUBLICATION OF THE ARTHROSCOPY ASSOCIATION OF NORTH AMERICA AND THE
+INTERNATIONAL ARTHROSCOPY ASSOCIATION • 2024.0
+Top 100
+Orthopedic AI
+• Rank #51
+Custom Large Language Models Improve Accuracy:
+Comparing Retrieval Augmented Generation and Artificial
+Intelligence Agents to Non-Custom Models for Evidence-
+Based Medicine.
+Joshua J. Woo, Andrew J Yang, Reena J. Olsen, Sayyida S. Hasan, D. Nawabi, Benedict U. Nwachukwu,
+Riley J. Williams, Prem N. Ramkumar
+Brown University/The Warren Alpert School of Brown University, Providence, Rhode Island, U.S.A.
+Journal:
+Arthroscopy : the journal of
+arthroscopic & related
+surgery : official publication of
+the Arthroscopy Association
+of North America and the
+International Arthroscopy
+Association
+Publication Year:
+2024.0
+Citations:
+55
+DOI:
+10.1016/j.arthro.2024.10.042
+CLINICAL & AGENTIC AI TAKEAWAY
+Custom Large Language Models (LLMs) using Retrieval Augmented Generation (RAG) and Agentic
+Augmentation improve accuracy in delivering accurate information in orthopaedic care.
+ABSTRACT
+--- REPOSITORY & PUBLISHER WEB METADATA --- Affiliations: Brown University/The Warren Alpert School of
+Brown University, Providence, Rhode Island, U.S.A. Extended Abstract from Repository: Purpose To show the value of
+custom methods, namely Retrieval Augmented Generation (RAG)-based Large Language Models (LLMs) and Agentic
+Augmentation, over standard LLMs in delivering accurate information using an anterior cruciate ligament (ACL) injury
+case. Methods A set of 100 questions and answers based on the 2022 AAOS ACL guidelines were curated. Closed-source
+(open AI GPT4/GPT 3.5 and Anthropic's Claude3) and open-source models (LLama3 8b/70b and Mistral 8×7b) were
+asked questions in base form and again with AAOS guidelines embedded into a RAG system. The top-performing models
+were further augmented with artificial intelligence (AI) agents and reevaluated. Two fellowship-trained surgeons blindly
+evaluated the accuracy of the responses of each cohort. Recall-Oriented Understudy of Gisting Evaluation and Metric for
+Evaluation of Translation with Explicit Ordering scores were calculated to assess semantic similarity in the response.
+Results All noncustom LLM models started below 60% accuracy. Applying RAG improved the accuracy of every model
+by an average 39.7%. The highest performing model with just RAG was Meta's open-source Llama3 70b (94%). The
+highest performing model with RAG and AI agents was Open AI's GPT4 (95%). Conclusions RAG improved accuracy by
+an average of 39.7%, with the highest accuracy rate of 94% in the Meta Llama3 70b. Incorporating AI agents into a
+previously RAG-augmented LLM improved ChatGPT4 accuracy rate to 95%. Thus, Agentic and RAG augmented LLMs
+can be accurate liaisons of information, supporting our hypothesis. Clinical relevance Despite literature surrounding the
+
+=== PDF PAGE 2 ===
+use of LLM in medicine, there has been considerable and appropriate skepticism given the variably accurate response
+rates. This study establishes the groundwork to identify whether custom modifications to LLMs using RAG and agentic
+augmentation can better deliver accurate information in orthopaedic care. With this knowledge, online medical information
+commonly sought in popular LLMs, such as ChatGPT, can be standardized and provide relevant online medical
+information to better support shared decision making between surgeon and patient.
+Study Overview & Background
+--- REPOSITORY & PUBLISHER WEB METADATA --- Affiliations: Brown University/The Warren Alpert School of
+Brown University, Providence, Rhode Island, U.S.A. Extended Abstract from Repository: Purpose To show the value of
+custom methods, namely Retrieval Augmented Generation (RAG)-based Large Language Models (LLMs) and Agentic
+Augmentation, over standard LLMs in delivering accurate information using an anterior cruciate ligament (ACL) injury
+case. Methods A set of 100 questions and answers based on the 2022 AAOS ACL guidelines were curated. Closed-source
+(open AI GPT4/GPT 3.5 and Anthropic's Claude3) and open-source models (LLama3 8b/70b and Mistral 8×7b) were
+asked questions in base form and again with AAOS guidelines embedded into a RAG system. The top-performing models
+were further augmented with artificial intelligence (AI) agents and reevaluated. Two fellowship-trained surgeons blindly
+evaluated the accuracy of the responses of each cohort. Recall-Oriented Understudy of Gisting Evaluation and Metric for
+Evaluation of Translation with Explicit Ordering scores were calculated to assess semantic similarity in the response.
+Results All noncustom LLM models started below 60% accuracy. Applying RAG improved the accuracy of every model
+by an average 39.7%. The highest performing model with just RAG was Meta's open-source Llama3 70b (94%). The
+highest performing model with RAG and AI agents was Open AI's GPT4 (95%). Conclusions RAG improved accuracy by
+an average of 39.7%, with the highest accuracy rate of 94% in the Meta Llama3 70b. Incorporating AI agents into a
+previously RAG-augmented LLM improved ChatGPT4 accuracy rate to 95%. Thus, Agentic and RAG augmented LLMs
+can be accurate liaisons of information, supporting our hypothesis. Clinical relevance Despite literature surrounding the
+use of LLM in medicine, there has been considerable and appropriate skepticism given the variably accurate response
+rates. This study establishes the groundwork to identify whether custom modifications to LLMs using RAG and agentic
+augmentation can better deliver accurate information in orthopaedic care. With this knowledge, online medical information
+commonly sought in popular LLMs, such as ChatGPT, can be standardized and provide relevant online medical
+information to better support shared decision making between surgeon and patient.
+Methodology & Clinical Focus
+Study Classification: theoretical, modeling, or simulation study. Evaluated under orthopedic machine learning and
+artificial intelligence decision frameworks.
+Key Findings & Analysis
+Custom Large Language Models (LLMs) using Retrieval Augmented Generation (RAG) and Agentic Augmentation
+improve accuracy in delivering accurate information in orthopaedic care.
+Extended Repository Abstract
+Purpose To show the value of custom methods, namely Retrieval Augmented Generation (RAG)-based Large Language
+Models (LLMs) and Agentic Augmentation, over standard LLMs in delivering accurate information using an anterior
+cruciate ligament (ACL) injury case. Methods A set of 100 questions and answers based on the 2022 AAOS ACL
+guidelines were curated. Closed-source (open AI GPT4/GPT 3.5 and Anthropic's Claude3) and open-source models
+
+=== PDF PAGE 3 ===
+(LLama3 8b/70b and Mistral 8×7b) were asked questions in base form and again with AAOS guidelines embedded into a
+RAG system. The top-performing models were further augmented with artificial intelligence (AI) agents and reevaluated.
+Two fellowship-trained surgeons blindly evaluated the accuracy of the responses of each cohort. Recall-Oriented
+Understudy of Gisting Evaluation and Metric for Evaluation of Translation with Explicit Ordering scores were calculated
+to assess semantic similarity in the response. Results All noncustom LLM models started below 60% accuracy. Applying
+RAG improved the accuracy of every model by an average 39.7%. The highest performing model with just RAG was
+Meta's open-source Llama3 70b (94%). The highest performing model with RAG and AI agents was Open AI's GPT4
+(95%). Conclusions RAG improved accuracy by an average of 39.7%, with the highest accuracy rate of 94% in the Meta
+Llama3 70b. Incorporating AI agents into a previously RAG-augmented LLM improved ChatGPT4 accuracy rate to 95%.
+Thus, Agentic and RAG augmented LLMs can be accurate liaisons of information, supporting our hypothesis. Clinical
+relevance Despite literature surrounding the use of LLM in medicine, there has been considerable and appropriate
+skepticism given the variably accurate response rates. This study establishes the groundwork to identify whether custom
+modifications to LLMs using RAG and agentic augmentation can better deliver accurate information in orthopaedic care.
+With this knowledge, online medical information commonly sought in popular LLMs, such as ChatGPT, can be
+standardized and provide relevant online medical information to better support shared decision making between surgeon
+and patient.
+Clinical Decision Support & Synthesis
+Artificial intelligence and machine learning applications in orthopedic surgery demonstrate significant potential for
+standardizing clinical pathways, augmenting surgical decision-making, and personalizing post-operative rehabilitation.
+Continuous validation against prospective clinical datasets and multidisciplinary oversight remain paramount for ethical
+and safe clinical deployment.
+Bibliographic Details & Indexing
+Authors: Joshua J. Woo, Andrew J Yang, Reena J. Olsen, Sayyida S. Hasan, D. Nawabi, Benedict U. Nwachukwu,
+Riley J. Williams, Prem N. Ramkumar
+Journal / Venue: Arthroscopy : the journal of arthroscopic & related surgery : official publication of the
+Arthroscopy Association of North America and the International Arthroscopy Association (2024.0)
+SJR Metric: Quartile 1.0
+Citation Count: 55 citations recorded
+Digital Object Identifier (DOI): https://doi.org/10.1016/j.arthro.2024.10.042
+Consensus Evidence Link: https://consensus.app/papers/custom-large-language-models-improve-accuracy-
+comparing-woo-yang/08801f63c7f45c33ad7be27b2bbd565e/
+Source & Provenance: Curated for Agentic Orthopedics Research Collection • DOI: https://doi.org/10.1016/j.arthro.2024.10.042 •
+Consensus Page: https://consensus.app/papers/custom-large-language-models-improve-accuracy-comparing-woo-
+yang/08801f63c7f45c33ad7be27b2bbd565e/ • Verified and rendered via Deep Search & Academic Repositories.

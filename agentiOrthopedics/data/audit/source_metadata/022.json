@@ -1,0 +1,693 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          21
+        ]
+      ],
+      "date-time": "2026-10-21T17:00:42Z",
+      "timestamp": 1792602042248,
+      "version": "4.5.0"
+    },
+    "reference-count": 45,
+    "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+    "issue": "6",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Clin Orthop Relat Res"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          6
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n          <jats:sec>\n            <jats:title>Background</jats:title>\n            <jats:p>Identifying patients at risk of not achieving meaningful gains in long-term postsurgical patient-reported outcome measures (PROMs) is important for improving patient monitoring and facilitating presurgical decision support. Machine learning may help automatically select and weigh many predictors to create models that maximize predictive power. However, these techniques are underused among studies of total joint arthroplasty (TJA) patients, particularly those exploring changes in postsurgical PROMs.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Question/purposes</jats:title>\n            <jats:p>(1) To evaluate whether machine learning algorithms, applied to hospital registry data, could predict patients who would not achieve a minimally clinically important difference (MCID) in four PROMs 2 years after TJA; (2) to explore how predictive ability changes as more information is included in modeling; and (3) to identify which variables drive the predictive power of these models.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Methods</jats:title>\n            <jats:p>Data from a single, high-volume institution’s TJA registry were used for this study. We identified 7239 hip and 6480 knee TJAs between 2007 and 2012, which, for at least one PROM, patients had completed both baseline and 2-year followup surveys (among 19,187 TJAs in our registry and 43,313 total TJAs). In all, 12,203 registry TJAs had valid SF-36 physical component scores (PCS) and mental component scores (MCS) at baseline and 2 years; 7085 and 6205 had valid Hip and Knee Disability and Osteoarthritis Outcome Scores for joint replacement (HOOS JR and KOOS JR scores), respectively. Supervised machine learning refers to a class of algorithms that links a mapping of inputs to an output based on many input-output examples. We trained three of the most popular such algorithms (logistic least absolute shrinkage and selection operator (LASSO), random forest, and linear support vector machine) to predict 2-year postsurgical MCIDs. We incrementally considered predictors available at four time points: (1) before the decision to have surgery, (2) before surgery, (3) before discharge, and (4) immediately after discharge. We evaluated the performance of each model using area under the receiver operating characteristic (AUROC) statistics on a validation sample composed of a random 20% subsample of TJAs excluded from modeling. We also considered abbreviated models that only used baseline PROMs and procedure as predictors (to isolate their predictive power). We further directly evaluated which variables were ranked by each model as most predictive of 2-year MCIDs.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Results</jats:title>\n            <jats:p>The three machine learning algorithms performed in the poor-to-good range for predicting 2-year MCIDs, with AUROCs ranging from 0.60 to 0.89. They performed virtually identically for a given PROM and time point. AUROCs for the logistic LASSO models for predicting SF-36 PCS 2-year MCIDs at the four time points were: 0.69, 0.78, 0.78, and 0.78, respectively; for SF-36 MCS 2-year MCIDs, AUROCs were: 0.63, 0.89, 0.89, and 0.88; for HOOS JR 2-year MCIDs: 0.67, 0.78, 0.77, and 0.77; for KOOS JR 2-year MCIDs: 0.61, 0.75, 0.75, and 0.75. Before-surgery models performed in the fair-to-good range and consistently ranked the associated baseline PROM as among the most important predictors. Abbreviated LASSO models performed worse than the full before-surgery models, though they retained much of the predictive power of the full before-surgery models.</jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Conclusions</jats:title>\n            <jats:p>Machine learning has the potential to improve clinical decision-making and patient care by helping to prioritize resources for postsurgical monitoring and informing presurgical discussions of likely outcomes of TJA. Applied to presurgical registry data, such models can predict, with fair-to-good ability, 2-year postsurgical MCIDs. Although we report all parameters of our best-performing models, they cannot simply be applied off-the-shelf without proper testing. Our analyses indicate that machine learning holds much promise for predicting orthopaedic outcomes. </jats:p>\n          </jats:sec>\n          <jats:sec>\n            <jats:title>Level of Evidence</jats:title>\n            <jats:p>Level III, diagnostic study.</jats:p>\n          </jats:sec>",
+    "DOI": "10.1097/corr.0000000000000687",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          5,
+          16
+        ]
+      ],
+      "date-time": "2019-05-16T11:14:54Z",
+      "timestamp": 1558005294000
+    },
+    "page": "1267-1279",
+    "source": "Crossref",
+    "is-referenced-by-count": 191,
+    "title": [
+      "Can Machine Learning Algorithms Predict Which Patients Will Achieve Minimally Clinically Important Differences From Total Joint Arthroplasty?"
+    ],
+    "prefix": "10.1097",
+    "volume": "477",
+    "author": [
+      {
+        "given": "Mark Alan",
+        "family": "Fontana",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stephen",
+        "family": "Lyman",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gourab K.",
+        "family": "Sarker",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Douglas E.",
+        "family": "Padgett",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Catherine H.",
+        "family": "MacLean",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "276",
+    "published-online": {
+      "date-parts": [
+        [
+          2019,
+          5,
+          15
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "R1-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "1058",
+        "DOI": "10.1302/0301-620X.94B8.28786",
+        "article-title": "The effect of surgical factors on early patient-reported outcome measures (PROMS) following total knee replacement",
+        "volume": "94",
+        "author": "Baker",
+        "year": "2012",
+        "journal-title": "J Bone Joint. Surg Br."
+      },
+      {
+        "key": "R2-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "1359",
+        "DOI": "10.1302/0301-620X.95B10.32281",
+        "article-title": "Patient satisfaction with total knee replacement cannot be predicted from pre-operative variables alone: a cohort study from the national joint registry for England and Wales",
+        "volume": "95B",
+        "author": "Baker",
+        "year": "2013",
+        "journal-title": "Bone Joint. J."
+      },
+      {
+        "key": "R3-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "73",
+        "DOI": "10.1016/j.jclinepi.2014.08.009",
+        "article-title": "Meaningful changes for the Oxford hip and knee scores after joint replacement surgery",
+        "volume": "68",
+        "author": "Beard",
+        "year": "2015",
+        "journal-title": "J Clin Epidemiol"
+      },
+      {
+        "key": "R4-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "109",
+        "DOI": "10.1097/00002281-200203000-00006",
+        "article-title": "Many faces of the minimal clinically important difference (MCID): a literature review and directions for future research",
+        "volume": "14",
+        "author": "Beaton",
+        "year": "2002",
+        "journal-title": "Curr Opin Rheumatol"
+      },
+      {
+        "key": "R5-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "321",
+        "DOI": "10.1007/s11999-015-4350-6",
+        "article-title": "John Charnley Award: preoperative patient-reported outcome measures predict clinically meaningful improvement in function after THA",
+        "volume": "474",
+        "author": "Berliner",
+        "year": "2016",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "R6-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "149",
+        "DOI": "10.1007/s11999-016-4770-y",
+        "article-title": "Can preoperative patient-reported outcome measures be used to predict meaningful improvement in function after TKA?",
+        "volume": "475",
+        "author": "Berliner",
+        "year": "2017",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "R7-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "57",
+        "DOI": "10.1007/s11999-009-1119-9",
+        "article-title": "Patient satisfaction after total knee arthroplasty: who is satisfied and who is not?",
+        "volume": "468",
+        "author": "Bourne",
+        "year": "2010",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "R8-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "2279",
+        "DOI": "10.1080/02664763.2017.1414166",
+        "article-title": "Predicting risk for adverse health events using random forest",
+        "volume": "45",
+        "author": "Cafri",
+        "year": "2018",
+        "journal-title": "J Appl Stat"
+      },
+      {
+        "key": "R9-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "469",
+        "DOI": "10.1038/nature26000",
+        "article-title": "DNA methylation-based classification of central nervous system tumours",
+        "volume": "555",
+        "author": "Capper",
+        "year": "2018",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "R11-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "361",
+        "DOI": "10.1093/jamia/ocw112",
+        "article-title": "Using recurrent neural network models for early detection of heart failure onset",
+        "volume": "24",
+        "author": "Choi",
+        "year": "2017",
+        "journal-title": "J Am Med Inform Assoc"
+      },
+      {
+        "key": "R12-20230814",
+        "first-page": "3",
+        "article-title": "Improved risk prediction following surgery using machine learning algorithms",
+        "volume": "5",
+        "author": "Ehlers",
+        "year": "2017",
+        "journal-title": "EGEMS (Wash DC)"
+      },
+      {
+        "key": "R13-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "2199",
+        "DOI": "10.1001/jama.2017.14585",
+        "article-title": "Diagnostic assessment of deep learning algorithms for detection of lymph node metastases in women with breast cancer",
+        "volume": "318",
+        "author": "Ehteshami Bejnordi",
+        "year": "2017",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "R14-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "34",
+        "DOI": "10.1097/BOT.0000000000001026",
+        "article-title": "Prediction model of in-hospital mortality after hip fracture surgery",
+        "volume": "32",
+        "author": "Endo",
+        "year": "2018",
+        "journal-title": "J Orthop Trauma"
+      },
+      {
+        "key": "R15-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "273",
+        "DOI": "10.1016/j.joca.2006.09.001",
+        "article-title": "Responsiveness and clinically important differences for the WOMAC and SF-36 after total knee replacement",
+        "volume": "15",
+        "author": "Escobar",
+        "year": "2007",
+        "journal-title": "Osteoarthritis Cartilage"
+      },
+      {
+        "key": "R16-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "115",
+        "DOI": "10.1038/nature21056",
+        "article-title": "Dermatologist-level classification of skin cancer with deep neural networks",
+        "volume": "542",
+        "author": "Esteva",
+        "year": "2017",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "R17-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "229",
+        "DOI": "10.1016/j.jbi.2015.05.016",
+        "article-title": "A comparison of models for predicting early hospital readmissions",
+        "volume": "56",
+        "author": "Futoma",
+        "year": "2015",
+        "journal-title": "J Biomed Inform"
+      },
+      {
+        "key": "R18-20230814",
+        "first-page": "A7015",
+        "article-title": "Development and implementation of a machine-learning algorithm for early identification of sepsis in a multi-hospital academic healthcare system",
+        "volume": "195",
+        "author": "Giannini",
+        "year": "2017",
+        "journal-title": "Am J Respir Crit Care Med"
+      },
+      {
+        "key": "R19-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "2402",
+        "DOI": "10.1001/jama.2016.17216",
+        "article-title": "Development and validation of a deep learning algorithm for detection of diabetic retinopathy in retinal fundus photographs",
+        "volume": "316",
+        "author": "Gulshan",
+        "year": "2016",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "R20-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "e002525",
+        "DOI": "10.1136/bmjopen-2012-002525",
+        "article-title": "What determines patient satisfaction with surgery? A prospective cohort study of 4709 patients following total joint replacement",
+        "volume": "3",
+        "author": "Hamilton",
+        "year": "2013",
+        "journal-title": "BMJ Open"
+      },
+      {
+        "key": "R21-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "e0140271",
+        "DOI": "10.1371/journal.pone.0140271",
+        "article-title": "Development, validation and deployment of a real time 30 day hospital readmission risk assessment tool in the Maine healthcare information exchange",
+        "volume": "10",
+        "author": "Hao",
+        "year": "2015",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "R22-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "452",
+        "DOI": "10.1097/CORR.0000000000000601",
+        "article-title": "Can machine learning methods produce accurate and easy-to-use prediction models of 30-day complications and mortality after knee or hip arthroplasty",
+        "volume": "477",
+        "author": "Harris",
+        "year": "2019",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "R23-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "911",
+        "DOI": "10.1177/1071100716665113",
+        "article-title": "Preoperative PROMIS scores predict postoperative success in foot and ankle patients",
+        "volume": "37",
+        "author": "Ho",
+        "year": "2016",
+        "journal-title": "Foot Ankle Int"
+      },
+      {
+        "key": "R24-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "e0174708",
+        "DOI": "10.1371/journal.pone.0174708",
+        "article-title": "Creating an automated trigger for sepsis clinical decision support at emergency department triage using machine learning",
+        "volume": "12",
+        "author": "Horng",
+        "year": "2017",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "R25-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "71",
+        "DOI": "10.1302/2046-3758.15.2000065",
+        "article-title": "Minimal clinically important differences in health-related quality of life after total hip or knee replacement: A systematic review",
+        "volume": "1",
+        "author": "Keurentjes",
+        "year": "2012",
+        "journal-title": "Bone Joint Res"
+      },
+      {
+        "key": "R26-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "634",
+        "DOI": "10.1001/jamasurg.2018.0072",
+        "article-title": "Development and validation of a prediction model for pain and functional outcomes after lumbar spine surgery",
+        "volume": "153",
+        "author": "Khor",
+        "year": "2018",
+        "journal-title": "JAMA Surg"
+      },
+      {
+        "key": "R27-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "929",
+        "DOI": "10.1007/s11999-017-5253-5",
+        "article-title": "Editorial: the minimum clinically important difference—the least we can do",
+        "volume": "475",
+        "author": "Leopold",
+        "year": "2017",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "R28-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "2432",
+        "DOI": "10.1097/CORR.0000000000000456",
+        "article-title": "What are the minimal and substantial improvements in the HOOS and KOOS and JR versions after total joint replacement?",
+        "volume": "476",
+        "author": "Lyman",
+        "year": "2018",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "R29-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "74",
+        "DOI": "10.3414/ME00-01-0052",
+        "article-title": "Probability machines: consistent probability estimation using nonparametric learning machines",
+        "volume": "51",
+        "author": "Malley",
+        "year": "2012",
+        "journal-title": "Methods Inf Med"
+      },
+      {
+        "key": "R30-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "933",
+        "DOI": "10.1007/s11999-016-5204-6",
+        "article-title": "Statistics in brief: minimum clinically important difference—availability of reliable estimates",
+        "volume": "475",
+        "author": "Maltenfort",
+        "year": "2017",
+        "journal-title": "Clin Orthop Relat Res"
+      },
+      {
+        "key": "R31-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "357",
+        "DOI": "10.3171/2016.11.SPINE16526",
+        "article-title": "An analysis from the quality outcomes database, part 1. Disability, quality of life, and pain outcomes following lumbar spine surgery: predicting likely individual patient outcomes for shared decision-making",
+        "volume": "27",
+        "author": "McGirt",
+        "year": "2017",
+        "journal-title": "J Neurosurg Spine"
+      },
+      {
+        "key": "R32-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "E13",
+        "DOI": "10.3171/2015.8.FOCUS15338",
+        "article-title": "Prediction model for outcome after low-back surgery: individualized likelihood of complication, hospital readmission, return to work, and 12-month improvement in functional disability",
+        "volume": "39",
+        "author": "McGirt",
+        "year": "2015",
+        "journal-title": "Neurosurg Focus"
+      },
+      {
+        "key": "R33-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "426",
+        "DOI": "10.1302/0301-620X.80B3.0800426",
+        "article-title": "Pain in the assessment of total knee replacement",
+        "volume": "80",
+        "author": "Murray",
+        "year": "1998",
+        "journal-title": "J Bone Joint. Surg Br"
+      },
+      {
+        "key": "R35-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "13",
+        "DOI": "10.1111/jep.12603",
+        "article-title": "Development and validation of a shared decision-making instrument for health-related quality of life one year after total hip replacement based on quality registries data",
+        "volume": "24",
+        "author": "Nemes",
+        "year": "2018",
+        "journal-title": "J Eval Clin Pract"
+      },
+      {
+        "key": "R36-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "158",
+        "DOI": "10.1038/s41551-018-0195-0",
+        "article-title": "Prediction of cardiovascular risk factors from retinal fundus photographs via deep learning",
+        "volume": "2",
+        "author": "Poplin",
+        "year": "2018",
+        "journal-title": "Nat Biomed Eng"
+      },
+      {
+        "key": "R37-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "1076",
+        "DOI": "10.1016/j.joca.2005.06.012",
+        "article-title": "Responsiveness and clinically important differences for the WOMAC and SF-36 after hip joint replacement",
+        "volume": "13",
+        "author": "Quintana",
+        "year": "2005",
+        "journal-title": "Osteoarthritis Cartilage"
+      },
+      {
+        "key": "R38-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "18",
+        "DOI": "10.1038/s41746-018-0029-1",
+        "article-title": "Scalable and accurate deep learning with electronic health records",
+        "volume": "1",
+        "author": "Rajkomar",
+        "year": "2018",
+        "journal-title": "NPJ Digit Med"
+      },
+      {
+        "key": "R40-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "921",
+        "DOI": "10.1007/s11606-018-4316-y",
+        "article-title": "Development and validation of machine learning models for prediction of 1-year mortality utilizing electronic medical record data available at the end of hospitalization in multicondition patients: a proof-of-concept study",
+        "volume": "33",
+        "author": "Sahni",
+        "year": "2018",
+        "journal-title": "J Gen Intern Med"
+      },
+      {
+        "key": "R41-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "3381",
+        "DOI": "10.1038/s41598-018-21714-1",
+        "article-title": "Development and validation of a clinical prediction model for patient-reported pain and function after primary total knee replacement surgery",
+        "volume": "8",
+        "author": "Sanchez-Santos",
+        "year": "2018",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "key": "R42-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "1253",
+        "DOI": "10.1302/0301-620X.92B9.24394",
+        "article-title": "Predicting dissatisfaction following total knee replacement: a prospective study of 1217 patients",
+        "volume": "92",
+        "author": "Scott",
+        "year": "2010",
+        "journal-title": "J Bone Joint Surg Br"
+      },
+      {
+        "key": "R43-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "176",
+        "DOI": "10.1016/j.arth.2014.09.026",
+        "article-title": "Responsiveness of patient reported outcome measures in total joint arthroplasty patients",
+        "volume": "30",
+        "author": "SooHoo",
+        "year": "2015",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "R44-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "26",
+        "DOI": "10.1186/s12874-016-0128-0",
+        "article-title": "Comparison of predictive modeling approaches for 30-day all-cause non-elective readmission risk",
+        "volume": "16",
+        "author": "Tong",
+        "year": "2016",
+        "journal-title": "BMC Med Res Methodol"
+      },
+      {
+        "key": "R45-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "2660",
+        "DOI": "10.1016/j.arth.2016.06.004",
+        "article-title": "A new prediction model for patient satisfaction after total knee arthroplasty",
+        "volume": "31",
+        "author": "Van",
+        "year": "2016",
+        "journal-title": "J Arthroplasty"
+      },
+      {
+        "key": "R46-20230814",
+        "article-title": "Using kernel methods and model selection for prediction of preterm birth",
+        "author": "Vovsha",
+        "year": "2016",
+        "journal-title": "Proc Mach Learn Healthc"
+      },
+      {
+        "key": "R47-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "209",
+        "DOI": "10.1016/j.jbi.2015.12.008",
+        "article-title": "Classification of hospital acquired complications using temporal clinical information from a large electronic health record",
+        "volume": "59",
+        "author": "Warner",
+        "year": "2016",
+        "journal-title": "J Biomed Inf"
+      },
+      {
+        "key": "R48-20230814",
+        "doi-asserted-by": "crossref",
+        "first-page": "210",
+        "DOI": "10.1016/j.arth.2007.12.001",
+        "article-title": "Patient-reported outcomes after total hip and knee arthroplasty: comparison of midterm results",
+        "volume": "24",
+        "author": "Wylde",
+        "year": "2009",
+        "journal-title": "J Arthroplasty"
+      }
+    ],
+    "container-title": [
+      "Clinical Orthopaedics &amp; Related Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.lww.com/00003086-201906000-00003",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          8,
+          14
+        ]
+      ],
+      "date-time": "2023-08-14T05:35:49Z",
+      "timestamp": 1691991349000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.lww.com/00003086-201906000-00003"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          5,
+          15
+        ]
+      ]
+    },
+    "references-count": 45,
+    "journal-issue": {
+      "issue": "6",
+      "published-print": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1097/corr.0000000000000687",
+    "relation": {},
+    "ISSN": [
+      "0009-921X"
+    ],
+    "issn-type": [
+      {
+        "value": "0009-921X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          5,
+          15
+        ]
+      ]
+    }
+  }
+}

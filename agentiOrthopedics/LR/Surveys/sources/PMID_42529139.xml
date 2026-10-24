@@ -1,0 +1,737 @@
+
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.4 20241031//EN" "JATS-archivearticle1-4-mathml3.dtd">
+<article xml:lang="en" article-type="review-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Front Bioeng Biotechnol</journal-id><journal-id journal-id-type="iso-abbrev">Front Bioeng Biotechnol</journal-id><journal-id journal-id-type="pmc-domain-id">2507</journal-id><journal-id journal-id-type="pmc-domain">frontbb</journal-id><journal-id journal-id-type="nlm-id">101632513</journal-id><journal-id journal-id-type="publisher-id">Front. Bioeng. Biotechnol.</journal-id><journal-title-group><journal-title>Frontiers in Bioengineering and Biotechnology</journal-title></journal-title-group><issn pub-type="epub">2296-4185</issn><?publisher_abbrev frontiers?><publisher><publisher-name>Frontiers Media SA</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC13416322</article-id><article-id pub-id-type="pmcid-ver">PMC13416322.1</article-id><article-id pub-id-type="pmcaid">13416322</article-id><article-id pub-id-type="pmcaiid">13416322</article-id><article-id pub-id-type="pmid">42529139</article-id><article-id pub-id-type="doi">10.3389/fbioe.2026.1899487</article-id><article-id pub-id-type="publisher-id">1899487</article-id><article-version-alternatives><article-version article-version-type="pmc-version">1</article-version><article-version article-version-type="Version of Record" vocab="NISO-RP-8-2008"/></article-version-alternatives><article-categories><subj-group subj-group-type="heading"><subject>Mini Review</subject></subj-group></article-categories><title-group><article-title>Artificial intelligence and big data for precision regenerative medicine in knee osteoarthritis: endotyping, responder prediction, and clinical translation</article-title><alt-title alt-title-type="left-running-head">Zheng et al.</alt-title><alt-title alt-title-type="right-running-head">
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://doi.org/10.3389/fbioe.2026.1899487" ext-link-type="uri">10.3389/fbioe.2026.1899487</ext-link>
+</alt-title></title-group><contrib-group><contrib contrib-type="author" equal-contrib="yes"><name name-style="western"><surname>Zheng</surname><given-names initials="L">Lichuan</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="fn001" ref-type="author-notes">
+<sup>†</sup>
+</xref><uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://loop.frontiersin.org/people/3506360"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/Writing - review &amp; editing/">Writing - review and editing</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing - original draft</role></contrib><contrib contrib-type="author" equal-contrib="yes"><name name-style="western"><surname>Li</surname><given-names initials="J">Jiayi</given-names></name><xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref><xref rid="fn001" ref-type="author-notes">
+<sup>†</sup>
+</xref><uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://loop.frontiersin.org/people/3496546"/><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/Writing - review &amp; editing/">Writing - review and editing</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing - original draft</role></contrib><contrib contrib-type="author"><name name-style="western"><surname>Wang</surname><given-names initials="H">Hai</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/Writing - review &amp; editing/">Writing - review and editing</role></contrib><contrib contrib-type="author"><name name-style="western"><surname>Zhou</surname><given-names initials="J">Jiahui</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/Writing - review &amp; editing/">Writing - review and editing</role></contrib><contrib contrib-type="author"><name name-style="western"><surname>Zhao</surname><given-names initials="P">Pengfei</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/Writing - review &amp; editing/">Writing - review and editing</role></contrib><contrib contrib-type="author"><name name-style="western"><surname>Li</surname><given-names initials="Q">Qi</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/Writing - review &amp; editing/">Writing - review and editing</role></contrib><contrib contrib-type="author"><name name-style="western"><surname>Zhang</surname><given-names initials="Y">Yikui</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/Writing - review &amp; editing/">Writing - review and editing</role></contrib><contrib contrib-type="author" corresp="yes"><name name-style="western"><surname>Zheng</surname><given-names initials="Y">Yong</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="c001" ref-type="corresp">*</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/Writing - review &amp; editing/">Writing - review and editing</role></contrib></contrib-group><aff id="aff1">
+<label>1</label>
+<institution>Department of Orthopedics, BingTuanSiShi Hospital</institution>, <city>Yining City</city>, <country country="CN">China</country>
+</aff><aff id="aff2">
+<label>2</label>
+<institution>School of Medicine, Nankai University</institution>, <city>Tianjin</city>, <country country="CN">China</country>
+</aff><author-notes><corresp id="c001">
+<label>*</label>Correspondence: Yong Zheng, <email xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mailto:54083588@qq.com">54083588@qq.com</email>
+</corresp><fn fn-type="equal" id="fn001"><label>†</label><p>These authors have contributed equally to this work and share first authorship</p></fn></author-notes><pub-date publication-format="electronic" date-type="pub" iso-8601-date="2026-07-15"><day>15</day><month>7</month><year>2026</year></pub-date><pub-date publication-format="electronic" date-type="collection"><year>2026</year></pub-date><volume>14</volume><issue-id pub-id-type="pmc-issue-id">506024</issue-id><elocation-id>1899487</elocation-id><history><date date-type="received"><day>03</day><month>6</month><year>2026</year></date><date date-type="rev-recd"><day>25</day><month>6</month><year>2026</year></date><date date-type="accepted"><day>26</day><month>6</month><year>2026</year></date></history><pub-history><event event-type="pmc-release"><date><day>15</day><month>07</month><year>2026</year></date></event><event event-type="pmc-live"><date><day>30</day><month>07</month><year>2026</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2026-08-22 19:25:20.090"><day>22</day><month>08</month><year>2026</year></date></event></pub-history><permissions><copyright-statement>Copyright © 2026 Zheng, Li, Wang, Zhou, Zhao, Li, Zhang and Zheng.</copyright-statement><copyright-year>2026</copyright-year><copyright-holder>Zheng, Li, Wang, Zhou, Zhao, Li, Zhang and Zheng</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense" start_date="2026-07-15">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open-access article distributed under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License (CC BY)</ext-link>. The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="fbioe-14-1899487.pdf"><?pdf-name fbioe-14-1899487.pdf?><?pdf-size 2177787?><?pdf-md5 a5af12d117377da52f8e2f64e7ac95af?><?pdf-image-server-status NEVER_LOAD?><?pdf-cloudpmc-urn urn:app:c18b/13416322/a5af12d11737/fbioe-14-1899487.pdf?></self-uri><abstract><p>Knee osteoarthritis (KOA) is a heterogeneous whole-joint disease, and regenerative and orthobiologic therapies such as platelet-rich plasma (PRP), mesenchymal stem cells (MSCs), bone marrow aspirate concentrate (BMAC), microfragmented adipose tissue (MFAT), and extracellular vesicles (EVs) show variable clinical effects. This variability reflects a dual heterogeneity: patients differ in structural damage, inflammation, metabolism, biomechanics, pain mechanisms, and molecular endotypes, while therapeutic products differ in composition, dose, viability, secretome, and manufacturing protocols. This Mini Review discusses how multimodal characterization of both patients and products may provide the data foundation for precision regenerative medicine in KOA. Imaging, radiomics, biomechanics, multi-omics, and product-quality attributes can be integrated to define meaningful endotypes and support responder prediction. We critically evaluate current artificial intelligence (AI) applications and demonstrate that, although AI has advanced automated imaging assessment and KOA progression prediction, direct evidence for regenerative treatment-response prediction remains scarce. Existing models are largely limited to PRP, whereas validated AI models for MSC-, BMAC-, MFAT-, and EV-based therapies are lacking. Clinical translation will require more than high discrimination metrics. Explainable AI, calibration, uncertainty estimation, external and prospective validation, standardized product reporting, and clinical decision support integration are essential. Future progress depends on matched patient–product–outcome cohorts that enable adaptive, explainable, and clinically actionable treatment selection.</p></abstract><kwd-group><kwd>clinical decision support systems</kwd><kwd>knee osteoarthritis</kwd><kwd>machine learning</kwd><kwd>multimodal data</kwd><kwd>orthobiologics</kwd><kwd>platelet-rich plasma</kwd><kwd>precision medicine</kwd></kwd-group><funding-group><award-group id="gs1"><funding-source id="sp1">
+<institution-wrap><institution>Anhui Medical University</institution><institution-id institution-id-type="doi" vocab="open-funder-registry" vocab-identifier="10.13039/open_funder_registry">10.13039/501100002947</institution-id></institution-wrap>
+</funding-source><award-id rid="sp1">2022xkj249</award-id></award-group><funding-statement>The author(s) declared that financial support was received for this work and/or its publication. This work was supported by Anhui Medical University Foundation (2022xkj249).</funding-statement></funding-group><counts><fig-count count="1"/><table-count count="1"/><equation-count count="0"/><ref-count count="60"/><page-count count="9"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta><custom-meta><meta-name>section-at-acceptance</meta-name><meta-value>Tissue Engineering and Regenerative Medicine</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec sec-type="intro" id="s1"><label>1</label><title>Introduction</title><p>Knee osteoarthritis (KOA) is increasingly recognized as a heterogeneous whole-joint disease involving structural, inflammatory, metabolic, biomechanical, and pain-related mechanisms (<xref rid="B50" ref-type="bibr">Tang et al., 2025</xref>). Although total knee arthroplasty remains effective for end-stage disease, there is a substantial unmet need for earlier interventions capable of modifying the intra-articular environment and potentially slowing structural deterioration. Consequently, orthobiologic and cell-based therapies, including platelet-rich plasma (PRP), mesenchymal stem cells (MSCs), bone marrow aspirate concentrate (BMAC), microfragmented adipose tissue (MFAT), and extracellular vesicles (EVs), have attracted considerable interest. Rather than merely suppressing pain, these interventions aim to modulate inflammation, promote joint homeostasis, and support tissue repair (<xref rid="B1" ref-type="bibr">Andia et al., 2025</xref>; <xref rid="B23" ref-type="bibr">Goulian et al., 2025</xref>).</p><p>Despite a strong biological rationale, the clinical translation of regenerative therapies for KOA is limited by highly inconsistent outcomes across trials and patient populations. For example, the RESTORE randomized clinical trial showed that intra-articular PRP was not superior to saline placebo for 12-month symptom improvement or medial tibial cartilage volume preservation in mild-to-moderate KOA (<xref rid="B4" ref-type="bibr">Bennell et al., 2021</xref>). This result highlights the gap between biological plausibility and reproducible clinical efficacy, particularly when heterogeneous patients are treated under variable protocols and assessed using different outcome measures (<xref rid="B47" ref-type="bibr">Saltzman et al., 2020</xref>). More importantly, it suggests the core clinical question is not whether a given regenerative therapy is universally successful, but rather which specific patients will respond to a particular product under defined biological or biomechanical conditions.</p><p>A major contributor to this uncertainty is the dual heterogeneity of both the patient and the therapeutic product. Patient-level variability encompasses disease stage, inflammatory phenotype, metabolic status, mechanical loading, structural damage patterns, comorbidities, and molecular endotypes (<xref rid="B2" ref-type="bibr">Arbeeva et al., 2023</xref>; <xref rid="B50" ref-type="bibr">Tang et al., 2025</xref>). Product-level variability is equally complex. PRP preparations differ in platelet concentration, leukocyte content, and activation methods. Similarly, cellular products such as MSCs, BMAC, and MFAT vary significantly in tissue source, cell dose, viability, and secretome profiles. Furthermore, EV-based therapies require rigorous characterization of particle number, cargo, surface markers, and isolation methods to improve reproducibility, comparability, and biological interpretation (<xref rid="B55" ref-type="bibr">Welsh et al., 2024</xref>). Population-level evidence and conventional eligibility criteria often fail to capture this high-dimensional variability, thereby perpetuating empirical, trial-and-error clinical practices.</p><p>Artificial intelligence (AI) and big data analytics offer a methodological framework to transition KOA regenerative medicine from empirical protocols to precision care. By integrating multimodal data spanning clinical variables, quantitative imaging, biomechanics, multi-omics, and product attributes, AI models may help identify mechanism-based endotypes and estimate individual response probabilities (<xref rid="B2" ref-type="bibr">Arbeeva et al., 2023</xref>). Currently, AI applications in KOA are largely focused on automated imaging assessment and disease progression prediction. Direct responder-prediction models for orthobiologic therapies remain scarce and generally require independent external validation and prospective clinical evaluation (<xref rid="B40" ref-type="bibr">Oettl et al., 2025</xref>).</p><p>This Mini Review explores AI-guided precision regenerative medicine for KOA. We first discuss how patient and product heterogeneity contribute to inconsistent treatment responses. Next, we examine multimodal characterization as the foundational data source for endotyping and responder prediction. Finally, we evaluate key translational barriers, including model interpretability, workflow integration, and reporting standards such as TRIPOD + AI (<xref rid="B10" ref-type="bibr">Collins et al., 2024</xref>). We also outline future directions toward dynamic prediction models, clinical decision support systems, and patient-specific digital twins. The overall conceptual framework of patient–product–response matching is summarized in <xref rid="F1" ref-type="fig">Figure 1</xref>.</p><fig position="float" id="F1" orientation="portrait"><label>FIGURE 1</label><caption><p>Conceptual framework for AI-guided precision regenerative medicine in knee osteoarthritis. KOA heterogeneity and variable treatment responses arise from patient- and product-level variability. Multimodal characterization of patient data and orthobiologic product attributes can support AI-enabled endotyping, responder prediction, and precision treatment selection, while clinical translation remains limited by data quality, product standardization, validation, interpretability, and ethical governance.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="fbioe-14-1899487-g001.jpg"><?image-name fbioe-14-1899487-g001.jpg?><?image-size 153696?><?image-md5 7e427a2b1755d30df90d756f7abe51a7?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1146?><?image-original-width 1772?><?image-scaled-height 458?><?image-scaled-width 708?><?image-cloudpmc-urn urn:cdn:blobs/c18b/13416322/7e427a2b1755/fbioe-14-1899487-g001.jpg?><?thumb-name fbioe-14-1899487-g001.gif?><?thumb-size 17525?><?thumb-md5 368b5e94c587b231233e164afc24f843?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 80?><?thumb-scaled-width 123?><?thumb-cloudpmc-urn urn:cdn:blobs/c18b/13416322/368b5e94c587/fbioe-14-1899487-g001.gif?><alt-text content-type="machine-generated">Infographic detailing AI-enabled clinical tasks for knee osteoarthritis (KOA) treatment selection. It shows response and KOA heterogeneity, patient and product data sources, AI tasks including endotyping, responder prediction, risk stratification, uncertainty, and explainability, leading to precision treatment choices. Translational challenges include data quality, product standardization, external validation, interpretability, and ethics and privacy. Graphic icons illustrate each concept.</alt-text></graphic></fig></sec><sec id="s2"><label>2</label><title>Response heterogeneity in KOA regenerative medicine</title><p>Clinical trial evidence clearly illustrates response heterogeneity in KOA regenerative medicine. Earlier systematic reviews and meta-analyses support the potential of MSC-based approaches for pain, function, and selected cartilage-related outcomes, but also emphasize substantial heterogeneity in cell source, preparation, comparators, and outcome assessment (<xref rid="B22" ref-type="bibr">Gong et al., 2021</xref>; <xref rid="B32" ref-type="bibr">Maheshwer et al., 2021</xref>). However, rigorously designed trials have produced inconsistent or non-superior results compared with established comparators. For instance, the phase 3 MILES trial found that no orthobiologic intervention was superior to corticosteroid injection at 1 year (<xref rid="B33" ref-type="bibr">Mautner et al., 2023</xref>). Similarly, the ADIPOA2 phase 2b randomized trial did not establish clear superiority of intra-articular adipose-derived mesenchymal stromal cells over placebo for pain and function (<xref rid="B42" ref-type="bibr">Pers et al., 2025</xref>). A randomized comparison between MFAT and PRP showed clinically meaningful improvements in both groups but no clear superiority of one biologic product over the other (<xref rid="B3" ref-type="bibr">Baria et al., 2022</xref>). These findings suggest that average treatment effects in heterogeneous trial populations may obscure distinct responder and non-responder subgroups, rather than disproving the biological rationale of regenerative medicine.</p><p>Patient-level variability helps explain these inconsistent outcomes. Baseline demographic and clinical factors, including age, sex, disease stage, pain sensitization, inflammatory phenotype, metabolic status, and mechanical loading, may influence therapeutic response. Clinical evidence generally suggests that early-to-moderate KOA without severe malalignment may be more amenable to biologic modulation than advanced disease characterized by extensive structural derangement or severe joint damage. Emerging subgroup analyses also suggest potential demographic modifiers. For example, male patients, particularly those younger than 60 years, may exhibit more favorable responses to autologous cell injections than to corticosteroids (<xref rid="B34" ref-type="bibr">Mautner et al., 2025</xref>). However, such findings remain hypothesis-generating. They underscore the need for responder-based analyses but do not yet provide validated multidimensional selection criteria for clinical practice.</p><p>Product-level and methodological heterogeneity introduce further complexity and often remain inadequately controlled in trial designs. Orthobiologics are not monolithic entities. PRP preparations vary substantially in platelet dose, leukocyte content, activation strategy, and growth-factor profiles. Mechanistic clinical studies suggest that PRP may alter the synovial inflammatory milieu, matrix-degradation markers, angiogenic growth factors, and selected serum biomarkers, but these changes remain exploratory and have not yet produced standardized responder definitions (<xref rid="B28" ref-type="bibr">Lacko et al., 2021</xref>; <xref rid="B51" ref-type="bibr">Tucker et al., 2021</xref>). The clinical significance of leukocyte content also remains inconsistent across studies (<xref rid="B41" ref-type="bibr">Park et al., 2021</xref>; <xref rid="B14" ref-type="bibr">Di Martino et al., 2022</xref>; <xref rid="B6" ref-type="bibr">Berrigan et al., 2025</xref>). Similarly, cell-based therapies differ substantially in source tissue, cellular composition, viability, senescence, and secretome dynamics (<xref rid="B49" ref-type="bibr">Sun et al., 2024</xref>). These biological variations are further amplified by disparate eligibility criteria, injection protocols, and outcome metrics (<xref rid="B47" ref-type="bibr">Saltzman et al., 2020</xref>). Without precise product characterization, defining an equivalent “dose” or “intervention” remains elusive.</p><p>Taken together, response heterogeneity arises from the complex interaction of patient phenotypes, product attributes, and study designs. Traditional population-level analyses are poorly suited to untangle this high-dimensional variability, providing a clear rationale for AI-guided precision regenerative medicine.</p></sec><sec id="s3"><label>3</label><title>Multimodal patient and product characterization</title><p>Overcoming response heterogeneity requires moving beyond empirical clinical grading toward high-resolution multimodal characterization. On the patient side, deep phenotyping integrates molecular profiling, quantitative imaging, and biomechanical data to capture disease activity often invisible on conventional radiographs. Synovial multi-omics identify alterations in energy metabolism, collagen turnover, and osteogenic proteins as candidate signatures of KOA activity (<xref rid="B20" ref-type="bibr">Ge et al., 2025</xref>). Systemically, integrating gut metagenomics with serum and plasma omics links gut–joint axis dysregulation to MRI-detected synovitis (<xref rid="B54" ref-type="bibr">Wang et al., 2026</xref>). Spatial omics further classify synovitis into distinct immune–metabolic trajectories, indicating that inflammation requires subclassification beyond simple presence or absence (<xref rid="B59" ref-type="bibr">Zhu et al., 2025</xref>).</p><p>Quantitative imaging and biomechanics provide complementary structural and functional dimensions. MRI-based radiomics extracts sub-visual texture features to quantify cartilage integrity, subchondral bone remodeling, and early matrix-level changes. In particular, cartilage T2 mapping-based radiomics provides a quantitative route to characterize biochemical cartilage degeneration before gross morphologic loss becomes apparent (<xref rid="B57" ref-type="bibr">Xue et al., 2022</xref>; <xref rid="B12" ref-type="bibr">Davey et al., 2024</xref>; <xref rid="B19" ref-type="bibr">Gao et al., 2024</xref>; <xref rid="B18" ref-type="bibr">Fu et al., 2025</xref>). AI-based 3D MRI analysis has further linked AI-determined KL grade with medial meniscus extrusion and regional cartilage thickness, showing how automated imaging can quantify structural heterogeneity beyond conventional radiographic grading (<xref rid="B48" ref-type="bibr">Sekiya et al., 2023</xref>). Furthermore, biomechanical measures such as gait kinematics, joint loading, and wearable-derived activity data may explain why patients with similar molecular phenotypes respond differently to localized interventions.</p><p>Product-side profiling should convert orthobiologics from loosely defined biological suspensions into quantifiable therapeutic inputs, but these attributes should not be treated as equally validated predictors of clinical response. For PRP, platelet concentration and total platelet dose currently have the strongest preliminary outcome-linked support, with recent meta-analyses suggesting that higher platelet doses may be associated with more durable pain relief and functional improvement in KOA (<xref rid="B5" ref-type="bibr">Bensa et al., 2025</xref>; <xref rid="B6" ref-type="bibr">Berrigan et al., 2025</xref>). For cell-based therapies, cell dose is also a critical product attribute, although its relationship with clinical outcomes appears non-linear and product-dependent. BMAC dose-escalation data suggest that cellular dosage may influence radiological outcomes, whereas recent MSC dose-focused analyses indicate that dose optimization, rather than simple dose escalation, may be more clinically relevant (<xref rid="B36" ref-type="bibr">Muthu et al., 2024</xref>; <xref rid="B44" ref-type="bibr">Rahmadian et al., 2025</xref>). Beyond cell counts, functional potency attributes such as viability, stemness, and senescence burden may help explain cell-product heterogeneity and have shown exploratory correlations with autologous treatment outcomes (<xref rid="B49" ref-type="bibr">Sun et al., 2024</xref>).</p><p>Other product parameters remain clinically relevant but lack consistent outcome associations. For instance, PRP leukocyte content should be recorded because of its potential influence on local inflammatory activity and post-injection tolerability, yet randomized trials have not consistently demonstrated the superiority of either leukocyte-rich or leukocyte-poor formulations (<xref rid="B14" ref-type="bibr">Di Martino et al., 2022</xref>; <xref rid="B46" ref-type="bibr">Romandini et al., 2024</xref>). Growth factor and broader secretome profiles may provide additional biological and exploratory clinical information, but their predictive value remains less established than platelet dose-related measures (<xref rid="B41" ref-type="bibr">Park et al., 2021</xref>; <xref rid="B13" ref-type="bibr">Del Amo et al., 2022</xref>). Broader preparation-, donor-, and manufacturing-related variables, including activation strategies, fibrin architecture, donor immune profiles, tissue source, culture conditions, and manufacturing protocols, remain largely mechanistic or standardization attributes rather than validated clinical predictors (<xref rid="B39" ref-type="bibr">Niemann et al., 2023</xref>; <xref rid="B24" ref-type="bibr">Grieco et al., 2025</xref>; <xref rid="B43" ref-type="bibr">Ragni et al., 2025</xref>). For EV-based products, particle number, size distribution, purity, cargo composition including miRNAs, surface markers, isolation methods, storage conditions, and potency assays are central for quality control and regulatory translation; however, their direct associations with clinical response in KOA remain largely unvalidated (<xref rid="B55" ref-type="bibr">Welsh et al., 2024</xref>; <xref rid="B16" ref-type="bibr">Figueroa-Valdes et al., 2025</xref>). Consequently, future AI-driven therapeutic matching should prioritize evidence-weighted product attributes, integrating clinically supported, unresolved, and mechanistically plausible variables into matched patient–product–outcome datasets rather than treating all product descriptors as equivalent inputs.</p></sec><sec id="s4"><label>4</label><title>AI-enabled endotyping and responder prediction</title><p>AI-enabled precision regenerative medicine must be organized around specific clinical tasks rather than algorithm categories. In KOA, the most relevant tasks for informing biological treatment selection are endotype discovery, imaging-based risk stratification, and direct treatment-response prediction.</p><sec id="s4-1"><label>4.1</label><title>Endotyping: from heterogeneous KOA to treatable subgroups</title><p>AI-enabled endotyping aims to identify biologically, structurally, or mechanically coherent KOA subgroups that may differ in progression risk and therapeutic responsiveness. Data-driven biclustering of Osteoarthritis Initiative data has revealed potential KOA phenotypes with distinct symptom, functional, and structural trajectories (<xref rid="B38" ref-type="bibr">Nelson et al., 2022</xref>). Molecular phenotyping studies further support this concept, showing that metabolic and inflammatory profiles can define clinically relevant subgroups and that cytokine–outcome associations may be more informative when analyzed within phenotype-defined groups (<xref rid="B7" ref-type="bibr">Calvet et al., 2023</xref>; <xref rid="B8" ref-type="bibr">Calvet et al., 2024</xref>). More recently, multimodal deep learning using plasma, synovial fluid, and urine multi-omics identified three distinct KOA endotypes and improved classification of post-arthroplasty pain and function (<xref rid="B45" ref-type="bibr">Rockel et al., 2025</xref>). Although these models do not yet directly assign regenerative therapies, they provide a useful methodological template for identifying treatable endotypes that could later be linked to orthobiologic response.</p></sec><sec id="s4-2"><label>4.2</label><title>Radiomics and imaging-derived risk stratification</title><p>Regenerative therapies are unlikely to act uniformly across patients with divergent structural burdens. For example, DeepKOA used multimodal knee MRI from the Osteoarthritis Initiative to predict KOA progression over 24–48 months, illustrating how high-dimensional structural information may support progression enrichment before irreversible joint damage occurs (<xref rid="B26" ref-type="bibr">Hu et al., 2023</xref>). Interpretable automated machine learning models have also been developed to predict rapid KOA progression, with particular emphasis on young patients and early-stage disease (<xref rid="B9" ref-type="bibr">Castagno et al., 2025</xref>). Recent systematic reviews affirm the promise of these progression models but note substantial heterogeneity in outcome definitions, dataset sources, and validation strategies (<xref rid="B30" ref-type="bibr">Liu et al., 2025</xref>). Although these studies provide indirect evidence for regenerative medicine, progression-enrichment models are clinically relevant because they may help identify patients who are more suitable for early intra-articular biologic intervention before structural deterioration becomes irreversible.</p></sec><sec id="s4-3"><label>4.3</label><title>Responder prediction: direct evidence remains scarce</title><p>The most direct evidence for AI-guided regenerative therapy currently comes from PRP responder prediction. Recent models by Oettl et al. and Zhang et al. both showed promising ability to predict 6-month clinical responses after PRP treatment, but they differed substantially in feature selection and modeling strategy. Oettl et al. developed a PROM-centered model based mainly on baseline clinical and patient-reported variables and used an inherently interpretable explainable boosting machine (EBM). The EBM achieved an AUC of 0.81, with PROMIS Mental, PROMIS Physical, and KOOS JR scores emerging as influential predictors of clinically meaningful improvement (<xref rid="B40" ref-type="bibr">Oettl et al., 2025</xref>). In contrast, Zhang et al. constructed a biomarker-enriched model incorporating baseline clinical and blood-derived features, including anthropometric, metabolic, lipid, hepatic, renal, and biochemical indices. They selected a gradient boosting classifier, a less inherently interpretable ensemble method, and applied SHAP analysis for <italic toggle="yes">post hoc</italic> interpretation, identifying osmotic pressure, lipoprotein(a), and uric acid as major contributors to 6-month PRP response (<xref rid="B58" ref-type="bibr">Zhang et al., 2026</xref>). These studies suggest that both patient-reported baseline phenotypes and systemic biochemical markers may carry predictive weight. However, their clinical translation remains constrained by single-center retrospective designs, reliance on internal validation, modest sample sizes, and the absence of product-level characterization (<xref rid="B40" ref-type="bibr">Oettl et al., 2025</xref>; <xref rid="B58" ref-type="bibr">Zhang et al., 2026</xref>).</p><p>AI responder-prediction evidence for MSC-, BMAC-, MFAT-, and EV-based therapies remains largely absent. Existing clinical studies provide subgroup signals, dose-response observations, or product-quality associations but do not yet constitute validated AI models for individualized treatment allocation. This distinction is important because a clinically actionable prediction model should estimate treatment-specific response probabilities while integrating patient phenotypes, product attributes, treatment protocols, and longitudinal outcomes. Until matched patient–product–outcome datasets become available, evidence for AI-guided treatment selection beyond PRP should be regarded as hypothesis-generating.</p></sec></sec><sec id="s5"><label>5</label><title>Clinical decision support and translational bottlenecks</title><p>The evidence summarized in <xref rid="T1" ref-type="table">Table 1</xref> indicates that model development has outpaced clinical implementation. For KOA regenerative medicine, an accurate prediction model is only an intermediate step. Its clinical value depends on whether it can be translated into a usable clinical decision support system (CDSS).</p><table-wrap position="float" id="T1" orientation="portrait"><label>TABLE 1</label><caption><p>Evidence map of AI-relevant studies for KOA stratification and regenerative treatment selection.</p></caption><table frame="hsides" rules="groups"><thead valign="top"><tr><th align="left" rowspan="1" colspan="1">Study</th><th align="left" rowspan="1" colspan="1">Evidence category</th><th align="left" rowspan="1" colspan="1">Data</th><th align="left" rowspan="1" colspan="1">Therapy relevance</th><th align="left" rowspan="1" colspan="1">Product-level data</th><th align="left" rowspan="1" colspan="1">Validation</th><th align="left" rowspan="1" colspan="1">Limitation</th></tr></thead><tbody valign="top"><tr><td align="left" rowspan="1" colspan="1">
+<xref rid="B58" ref-type="bibr">Zhang et al. (2026)</xref>
+</td><td align="left" rowspan="1" colspan="1">Direct PRP responder prediction; gradient boosting classifier with SHAP interpretation</td><td align="left" rowspan="1" colspan="1">Baseline clinical and blood-derived features, including anthropometric, metabolic, lipid, hepatic, renal, and biochemical indices; 6-month NRS pain responder</td><td align="left" rowspan="1" colspan="1">PRP response prediction</td><td align="left" rowspan="1" colspan="1">No; PRP composition and dose data not included</td><td align="left" rowspan="1" colspan="1">Internal cross-validation</td><td align="left" rowspan="1" colspan="1">Single-center; lacks PRP product-level characterization</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<xref rid="B40" ref-type="bibr">Oettl et al. (2025)</xref>
+</td><td align="left" rowspan="1" colspan="1">Direct PRP responder prediction; explainable boosting machine</td><td align="left" rowspan="1" colspan="1">Baseline clinical and PROM-centered features, including PROMIS, KOOS JR, pain scores, and radiographic grade; MCID achievement</td><td align="left" rowspan="1" colspan="1">PRP response prediction</td><td align="left" rowspan="1" colspan="1">No; PRP composition and dose data not included</td><td align="left" rowspan="1" colspan="1">Internal cross-validation</td><td align="left" rowspan="1" colspan="1">Retrospective; relies mainly on patient-reported baseline features; lacks PRP product-level characterization</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<xref rid="B45" ref-type="bibr">Rockel et al. (2025)</xref>
+</td><td align="left" rowspan="1" colspan="1">Molecular endotyping</td><td align="left" rowspan="1" colspan="1">Biofluid multi-omics; post-TKA WOMAC response</td><td align="left" rowspan="1" colspan="1">Precision stratification</td><td align="left" rowspan="1" colspan="1">N/A; no orthobiologic treatment exposure was modeled</td><td align="left" rowspan="1" colspan="1">Internal validation</td><td align="left" rowspan="1" colspan="1">Predicts arthroplasty response, not biologic therapy response</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<xref rid="B9" ref-type="bibr">Castagno et al. (2025)</xref>
+</td><td align="left" rowspan="1" colspan="1">Progression prediction</td><td align="left" rowspan="1" colspan="1">Clinical, MRI, biochemical data; rapid progression</td><td align="left" rowspan="1" colspan="1">Early intervention targeting</td><td align="left" rowspan="1" colspan="1">N/A; disease-progression model</td><td align="left" rowspan="1" colspan="1">External validation</td><td align="left" rowspan="1" colspan="1">Based mainly on public cohorts; not treatment-specific</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<xref rid="B38" ref-type="bibr">Nelson et al. (2022)</xref>
+</td><td align="left" rowspan="1" colspan="1">Data-driven phenotyping</td><td align="left" rowspan="1" colspan="1">OAI clinical and radiographic data; 96-month trajectories</td><td align="left" rowspan="1" colspan="1">Trial subgrouping</td><td align="left" rowspan="1" colspan="1">N/A; phenotyping model without treatment exposure</td><td align="left" rowspan="1" colspan="1">Exploratory internal analysis</td><td align="left" rowspan="1" colspan="1">Lacks treatment-response modeling</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<xref rid="B26" ref-type="bibr">Hu et al. (2023)</xref>
+</td><td align="left" rowspan="1" colspan="1">Imaging-derived risk stratification</td><td align="left" rowspan="1" colspan="1">Multimodal knee MRI; 24–48-month KOA progression</td><td align="left" rowspan="1" colspan="1">Trial enrichment</td><td align="left" rowspan="1" colspan="1">N/A; disease-progression model</td><td align="left" rowspan="1" colspan="1">Internal cross-validation</td><td align="left" rowspan="1" colspan="1">Predicts natural progression rather than treatment response</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<xref rid="B10" ref-type="bibr">Collins et al. (2024)</xref>
+</td><td align="left" rowspan="1" colspan="1">Reporting framework</td><td align="left" rowspan="1" colspan="1">TRIPOD + AI</td><td align="left" rowspan="1" colspan="1">All prediction models</td><td align="left" rowspan="1" colspan="1">N/A; reporting framework</td><td align="left" rowspan="1" colspan="1">Guideline</td><td align="left" rowspan="1" colspan="1">General AI reporting framework, not KOA-specific</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<xref rid="B35" ref-type="bibr">Moons et al. (2025)</xref>
+</td><td align="left" rowspan="1" colspan="1">Bias and applicability assessment</td><td align="left" rowspan="1" colspan="1">PROBAST + AI</td><td align="left" rowspan="1" colspan="1">All prediction models</td><td align="left" rowspan="1" colspan="1">N/A; assessment framework</td><td align="left" rowspan="1" colspan="1">Guideline</td><td align="left" rowspan="1" colspan="1">Requires methodological expertise to apply accurately</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<xref rid="B53" ref-type="bibr">Vasey et al. (2022)</xref>
+</td><td align="left" rowspan="1" colspan="1">Early clinical evaluation framework</td><td align="left" rowspan="1" colspan="1">DECIDE-AI; human factors, safety, utility</td><td align="left" rowspan="1" colspan="1">Clinical AI-CDSS</td><td align="left" rowspan="1" colspan="1">N/A; clinical AI evaluation framework</td><td align="left" rowspan="1" colspan="1">Guideline</td><td align="left" rowspan="1" colspan="1">Focuses on early deployment rather than long-term efficacy</td></tr></tbody></table><table-wrap-foot><fn><p>
+<bold>Abbreviations:</bold> AI, artificial intelligence; CDSS, clinical decision support system; DECIDE-AI, developmental and exploratory clinical investigations of decision support systems driven by artificial intelligence; KOA, knee osteoarthritis; KOOS JR, knee injury and osteoarthritis outcome score for joint replacement; MCID, minimal clinically important difference; MRI, magnetic resonance imaging; N/A, not applicable; NRS, numeric rating scale; OAI, osteoarthritis initiative; PRP, platelet-rich plasma; PROM, patient-reported outcome measure; PROMIS, Patient-Reported Outcomes Measurement Information System; PROBAST + AI, Prediction Model Risk Of Bias Assessment Tool + Artificial Intelligence; SHAP, shapley additive explanations; TKA, total knee arthroplasty; TRIPOD + AI, Transparent Reporting of a Multivariable Prediction Model for Individual Prognosis or Diagnosis + Artificial Intelligence; WOMAC, Western Ontario and McMaster Universities Osteoarthritis Index.</p></fn></table-wrap-foot></table-wrap><sec id="s5-1"><label>5.1</label><title>CDSS design and clinically actionable outputs</title><p>A CDSS should not provide simple binary instructions. Useful outputs include treatment-specific response probabilities, the likelihood of achieving the minimal clinically important difference (MCID), uncertainty estimates, contraindications, alternative options, and follow-up recommendations. In musculoskeletal AI, uncertainty quantification has been proposed as a way to flag low-confidence or out-of-distribution predictions, which is essential before applying model outputs to treatment decisions (<xref rid="B52" ref-type="bibr">Vahdani et al., 2025</xref>).</p></sec><sec id="s5-2"><label>5.2</label><title>Explainable AI and clinician trust</title><p>Black-box algorithms are difficult to use for treatment allocation. Explainable AI methods can help clinicians understand why a model predicts benefit or non-response. Common approaches include Shapley additive explanations (SHAP), local interpretable model-agnostic explanations (LIME), feature importance, and explainable boosting machines. In KOA regenerative therapy, explanations should clarify whether predictions are associated with baseline pain, systemic biomarkers, synovitis, structural burden, or product-related features. Existing PRP response models illustrate this principle: Oettl et al. used an explainable boosting machine to predict clinically meaningful improvement after PRP injection, whereas Zhang et al. used SHAP analysis to identify baseline blood and clinical variables associated with PRP response (<xref rid="B40" ref-type="bibr">Oettl et al., 2025</xref>; <xref rid="B58" ref-type="bibr">Zhang et al., 2026</xref>). However, interpretability does not prove causality. Model explanations should remain biologically plausible and prospectively testable before being used for treatment allocation (<xref rid="B60" ref-type="bibr">Zsidai et al., 2023</xref>).</p></sec><sec id="s5-3"><label>5.3</label><title>External validation and prospective testing</title><p>Validation is the main barrier between prediction and clinical use. Many KOA and orthopedic AI models are based on retrospective cohorts, single-center data, or internal cross-validation, which increases the risk of overfitting and limited generalizability. In regenerative medicine, performance may also vary with imaging protocols, rehabilitation pathways, injection techniques, and product preparation methods. External validation should therefore include geographic, temporal, and multicenter testing, together with calibration, decision-curve analysis, subgroup performance, and missing-data assessment. Reporting should follow TRIPOD + AI, and risk of bias and applicability should be assessed using PROBAST + AI (<xref rid="B10" ref-type="bibr">Collins et al., 2024</xref>; <xref rid="B35" ref-type="bibr">Moons et al., 2025</xref>). For early live clinical evaluation, DECIDE-AI provides guidance on human–AI interaction, workflow, safety, and clinical utility (<xref rid="B53" ref-type="bibr">Vasey et al., 2022</xref>). Randomized evaluations should align with SPIRIT-AI and CONSORT-AI extensions (<xref rid="B11" ref-type="bibr">Cruz Rivera et al., 2020</xref>; <xref rid="B29" ref-type="bibr">Liu et al., 2020</xref>).</p></sec><sec id="s5-4"><label>5.4</label><title>Regulatory oversight and workflow integration</title><p>Even validated models may fail if they cannot fit clinical practice. A KOA regenerative CDSS would require governance for data privacy, accountability, model updating, performance monitoring, and local recalibration. Orthobiologic therapies add another difficulty because PRP, MSC, BMAC, MFAT, and EV preparations differ across centers, devices, donors, processing protocols, and release criteria. A model trained on one product formulation may not generalize to another. Integration with electronic health records, imaging systems, laboratory data, product-quality reporting, and longitudinal outcome tracking is therefore essential. Recent orthopedic and musculoskeletal AI reviews emphasize that deployment requires workflow compatibility, monitoring for algorithm drift, adaptive governance, and prospective evaluation rather than accuracy metrics alone (<xref rid="B31" ref-type="bibr">Loftus et al., 2023</xref>; <xref rid="B21" ref-type="bibr">Glinkowski et al., 2026</xref>).</p><p>The implementation threshold is therefore not a higher AUC alone. A useful KOA regenerative CDSS must show that its predictions are explainable, calibrated, generalizable, safe in live settings, and linked to standardized product characterization.</p></sec></sec><sec id="s6"><label>6</label><title>Future directions</title><p>Future progress in AI-guided regenerative medicine for KOA will depend less on building increasingly complex algorithms than on creating datasets that connect clinically meaningful variables. The immediate priority is to establish matched patient–product–outcome cohorts that capture clinical phenotype, PROMs, radiomics, biomechanics, molecular biomarkers, orthobiologic product attributes, treatment protocols, adverse events, and longitudinal outcomes. Such datasets would allow future models to test whether specific inflammatory, metabolic, structural, or biomechanical endotypes respond preferentially to defined PRP, MSC, BMAC, MFAT, or EV formulations. An analogous template is provided by the IMI-APPROACH study, which used machine-learning-assisted recruitment to enrich OA trials with patients more likely to experience structural or symptomatic progression (<xref rid="B56" ref-type="bibr">Widera et al., 2023</xref>). Precision orthobiologics frameworks have emphasized the need to move from diagnosis-based intervention toward biomarker-informed regenerative strategies, but prospective therapy-matching datasets remain limited (<xref rid="B37" ref-type="bibr">Navani et al., 2025</xref>).</p><p>A second direction is dynamic prediction. Most current models estimate response before treatment, whereas KOA evolves over time across pain, function, structure, and inflammation. Future systems should update response probabilities using serial PROMs, quantitative MRI, biomarkers, wearable-derived gait or activity data, and early post-treatment response. This approach could support decisions such as whether to repeat PRP, switch to another orthobiologic product, intensify rehabilitation, or discontinue ineffective biological treatment. AI-enabled KOA decision aids using PROMs and clinical data have already shown the feasibility of personalized decision support, while longitudinal modeling frameworks from related rheumatic diseases provide templates for tracking response trajectories (<xref rid="B15" ref-type="bibr">Falck et al., 2024</xref>; <xref rid="B27" ref-type="bibr">Jayakumar et al., 2025</xref>).</p><p>Digital twins and virtual trials represent a longer-term extension of this framework. Quantitative MRI-based digital twin models are beginning to link deep-learning segmentation, imaging biomarkers, OA incidence, and knee replacement risk, providing a structural basis for individualized disease simulation (<xref rid="B25" ref-type="bibr">Hoyer et al., 2025</xref>). In regenerative medicine, such systems could eventually simulate expected trajectories under different product types, doses, and retreatment schedules. However, this remains aspirational until models incorporate real-world orthobiologic exposure and undergo multicenter validation.</p><p>Reinforcement learning may further support adaptive treatment strategies by learning sequential decisions from longitudinal data. In principle, it could help optimize combinations of biologics, rehabilitation, analgesia, and monitoring intervals. However, current clinical reinforcement learning evidence is concentrated outside KOA and regenerative musculoskeletal care, and major barriers remain in reward definition, safety, interpretability, and data requirements (<xref rid="B17" ref-type="bibr">Frommeyer et al., 2025</xref>). Therefore, reinforcement learning should be framed as a future research direction rather than a near-term clinical tool. The broader aim is to move from static responder prediction toward adaptive, explainable, and prospectively validated precision regenerative care.</p></sec></body><back><fn-group><fn fn-type="edited-by"><p>
+<bold>Edited by:</bold>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://loop.frontiersin.org/people/493724/overview" ext-link-type="uri">Zufu Lu</ext-link>, The University of Sydney, Australia</p></fn><fn fn-type="reviewed-by"><p>
+<bold>Reviewed by:</bold>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://loop.frontiersin.org/people/2756341/overview" ext-link-type="uri">Wan’an Xiao</ext-link>, Shengjing Hospital of China Medical University, China</p></fn></fn-group><sec sec-type="author-contributions" id="s7"><title>Author contributions</title><p>LZ: Writing – review and editing, Writing – original draft. JL: Writing – review and editing, Writing – original draft. HW: Writing – review and editing. JZ: Writing – review and editing. PZ: Writing – review and editing. QL: Writing – review and editing. YiZ: Writing – review and editing. YoZ: Writing – review and editing.</p></sec><sec sec-type="COI-statement" id="s9"><title>Conflict of interest</title><p>The author(s) declared that this work was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p></sec><sec sec-type="ai-statement" id="s10"><title>Generative AI statement</title><p>The author(s) declared that generative AI was used in the creation of this manuscript. zGenerative AI tools, including ChatGPT (OpenAI, GPT-5.5 Thinking) and Doubao (ByteDance, Doubao-Seedream-5.0-lite), were used to assist with language polishing and preliminary schematic figure design. The authors reviewed, edited, and verified all scientific content, references, and figure elements.</p><p>Any alternative text (alt text) provided alongside figures in this article has been generated by Frontiers with the support of artificial intelligence and reasonable efforts have been made to ensure accuracy, including review by the authors wherever possible. If you identify any issues, please contact us.</p></sec><sec sec-type="disclaimer" id="s11"><title>Publisher’s note</title><p>All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.</p></sec><ref-list><title>References</title><ref id="B1"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Andia</surname><given-names>I.</given-names></name>
+<name name-style="western"><surname>Silvestre</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Del Amo</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Eymard</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Bard</surname><given-names>H.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>The platelet-rich plasma research ecosystem: from mechanistic insights to precision treatment in knee osteoarthritis</article-title>. <source>Regen. Ther.</source>
+<volume>30</volume>, <fpage>1036</fpage>–<lpage>1045</lpage>. <pub-id pub-id-type="doi">10.1016/j.reth.2025.10.017</pub-id>
+<pub-id pub-id-type="pmid">41282491</pub-id>
+<pub-id pub-id-type="pmcid">PMC12636882</pub-id></mixed-citation></ref><ref id="B2"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Arbeeva</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Minnig</surname><given-names>M. C.</given-names></name>
+<name name-style="western"><surname>Yates</surname><given-names>K. A.</given-names></name>
+<name name-style="western"><surname>Nelson</surname><given-names>A. E.</given-names></name>
+</person-group> (<year>2023</year>). <article-title>Machine learning approaches to the prediction of osteoarthritis phenotypes and outcomes</article-title>. <source>Curr. Rheumatol. Rep.</source>
+<volume>25</volume> (<issue>11</issue>), <fpage>213</fpage>–<lpage>225</lpage>. <pub-id pub-id-type="doi">10.1007/s11926-023-01114-9</pub-id>
+<pub-id pub-id-type="pmid">37561315</pub-id>
+<pub-id pub-id-type="pmcid">PMC10592147</pub-id></mixed-citation></ref><ref id="B3"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Baria</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Pedroza</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Kaeding</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Durgam</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Duerr</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Flanigan</surname><given-names>D.</given-names></name>
+<etal/>
+</person-group> (<year>2022</year>). <article-title>Platelet-rich plasma Versus microfragmented adipose tissue for knee osteoarthritis: a randomized controlled trial</article-title>. <source>Orthop. J. Sports Med.</source>
+<volume>10</volume> (<issue>9</issue>), <fpage>23259671221120678</fpage>. <pub-id pub-id-type="doi">10.1177/23259671221120678</pub-id>
+<pub-id pub-id-type="pmid">36147791</pub-id>
+<pub-id pub-id-type="pmcid">PMC9486262</pub-id></mixed-citation></ref><ref id="B4"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Bennell</surname><given-names>K. L.</given-names></name>
+<name name-style="western"><surname>Paterson</surname><given-names>K. L.</given-names></name>
+<name name-style="western"><surname>Metcalf</surname><given-names>B. R.</given-names></name>
+<name name-style="western"><surname>Duong</surname><given-names>V.</given-names></name>
+<name name-style="western"><surname>Eyles</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Kasza</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>Effect of intra-articular platelet-rich plasma vs placebo injection on pain and medial tibial cartilage volume in patients with knee osteoarthritis: the RESTORE randomized clinical trial</article-title>. <source>JAMA</source>
+<volume>326</volume> (<issue>20</issue>), <fpage>2021</fpage>–<lpage>2030</lpage>. <pub-id pub-id-type="doi">10.1001/jama.2021.19415</pub-id>
+<pub-id pub-id-type="pmid">34812863</pub-id>
+<pub-id pub-id-type="pmcid">PMC8611484</pub-id></mixed-citation></ref><ref id="B5"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Bensa</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Previtali</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Sangiorgio</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Boffa</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Salerno</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Filardo</surname><given-names>G.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>PRP injections for the treatment of knee osteoarthritis: the improvement is clinically significant and influenced by platelet concentration: a meta-analysis of randomized controlled trials</article-title>. <source>Am. J. Sports Med.</source>
+<volume>53</volume> (<issue>3</issue>), <fpage>745</fpage>–<lpage>754</lpage>. <pub-id pub-id-type="doi">10.1177/03635465241246524</pub-id>
+<pub-id pub-id-type="pmid">39751394</pub-id>
+<pub-id pub-id-type="pmcid">PMC11874499</pub-id></mixed-citation></ref><ref id="B6"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Berrigan</surname><given-names>W. A.</given-names></name>
+<name name-style="western"><surname>Bailowitz</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Park</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Reddy</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Liu</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Lansdown</surname><given-names>D.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>A greater platelet dose may yield better clinical outcomes for platelet-rich plasma in the treatment of knee osteoarthritis: a systematic review</article-title>. <source>Arthroscopy</source>
+<volume>41</volume> (<issue>3</issue>), <fpage>809</fpage>–<lpage>817 e802</lpage>. <pub-id pub-id-type="doi">10.1016/j.arthro.2024.03.018</pub-id>
+<pub-id pub-id-type="pmid">38513880</pub-id>
+</mixed-citation></ref><ref id="B7"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Calvet</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Berenguer-Llergo</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Orellana</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Garcia Sirera</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Llop</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Galisteo Lencastre</surname><given-names>C.</given-names></name>
+<etal/>
+</person-group> (<year>2023</year>). <article-title>Metabolic and inflammatory profiles define phenotypes with clinical relevance in female knee osteoarthritis patients with joint effusion</article-title>. <source>Rheumatology</source>
+<volume>62</volume> (<issue>12</issue>), <fpage>3875</fpage>–<lpage>3885</lpage>. <pub-id pub-id-type="doi">10.1093/rheumatology/kead135</pub-id>
+<pub-id pub-id-type="pmid">36944271</pub-id>
+<pub-id pub-id-type="pmcid">PMC10691929</pub-id></mixed-citation></ref><ref id="B8"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Calvet</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Berenguer-Llergo</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Orellana</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>García-Manrique</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Rusiñol</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Garcia-Cirera</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>Specific-cytokine associations with outcomes in knee osteoarthritis subgroups: breaking Down disease heterogeneity with phenotyping</article-title>. <source>Arthritis Res. and Ther.</source>
+<volume>26</volume>, <fpage>19</fpage>. <pub-id pub-id-type="doi">10.1186/s13075-023-03244-y</pub-id>
+<pub-id pub-id-type="pmid">38212829</pub-id>
+<pub-id pub-id-type="pmcid">PMC10782658</pub-id></mixed-citation></ref><ref id="B9"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Castagno</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Birch</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>van der Schaar</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>McCaskie</surname><given-names>A.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>Predicting rapid progression in knee osteoarthritis: a novel and interpretable automated machine learning approach, with specific focus on young patients and early disease</article-title>. <source>Ann. Rheum. Dis.</source>
+<volume>84</volume> (<issue>1</issue>), <fpage>124</fpage>–<lpage>135</lpage>. <pub-id pub-id-type="doi">10.1136/ard-2024-225872</pub-id>
+<pub-id pub-id-type="pmid">39874226</pub-id>
+</mixed-citation></ref><ref id="B10"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Collins</surname><given-names>G. S.</given-names></name>
+<name name-style="western"><surname>Moons</surname><given-names>K. G. M.</given-names></name>
+<name name-style="western"><surname>Dhiman</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Riley</surname><given-names>R. D.</given-names></name>
+<name name-style="western"><surname>Beam</surname><given-names>A. L.</given-names></name>
+<name name-style="western"><surname>Van Calster</surname><given-names>B.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods</article-title>. <source>BMJ</source>
+<volume>385</volume>, <fpage>e078378</fpage>. <pub-id pub-id-type="doi">10.1136/bmj-2023-078378</pub-id>
+<pub-id pub-id-type="pmid">38626948</pub-id>
+<pub-id pub-id-type="pmcid">PMC11019967</pub-id></mixed-citation></ref><ref id="B11"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Cruz Rivera</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Liu</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Chan</surname><given-names>A. W.</given-names></name>
+<name name-style="western"><surname>Denniston</surname><given-names>A. K.</given-names></name>
+<name name-style="western"><surname>Calvert</surname><given-names>M. J.</given-names></name>
+<name name-style="western"><surname>Spirit</surname><given-names>A. I.</given-names></name>
+<etal/>
+</person-group> (<year>2020</year>). <article-title>Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension</article-title>. <source>Nat. Med.</source>
+<volume>26</volume> (<issue>9</issue>), <fpage>1351</fpage>–<lpage>1363</lpage>. <pub-id pub-id-type="doi">10.1038/s41591-020-1037-7</pub-id>
+<pub-id pub-id-type="pmid">32908284</pub-id>
+<pub-id pub-id-type="pmcid">PMC7598944</pub-id></mixed-citation></ref><ref id="B12"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Davey</surname><given-names>M. S.</given-names></name>
+<name name-style="western"><surname>Davey</surname><given-names>M. G.</given-names></name>
+<name name-style="western"><surname>Kenny</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Gheiti</surname><given-names>A. J. C.</given-names></name>
+</person-group> (<year>2024</year>). <article-title>The use of radiomic analysis of magnetic resonance imaging findings in predicting features of early osteoarthritis of the knee-a systematic review and meta-analysis</article-title>. <source>Ir. J. Med. Sci.</source>
+<volume>193</volume> (<issue>5</issue>), <fpage>2525</fpage>–<lpage>2530</lpage>. <pub-id pub-id-type="doi">10.1007/s11845-024-03714-5</pub-id>
+<pub-id pub-id-type="pmid">38822185</pub-id>
+<pub-id pub-id-type="pmcid">PMC11450002</pub-id></mixed-citation></ref><ref id="B13"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Del Amo</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Perez-Valle</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Atilano</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Andia</surname><given-names>I.</given-names></name>
+</person-group> (<year>2022</year>). <article-title>Unraveling the signaling secretome of platelet-rich plasma: towards a better understanding of its therapeutic potential in knee osteoarthritis</article-title>. <source>J. Clin. Med.</source>
+<volume>11</volume> (<issue>3</issue>), <fpage>473</fpage>. <pub-id pub-id-type="doi">10.3390/jcm11030473</pub-id>
+<pub-id pub-id-type="pmid">35159924</pub-id>
+<pub-id pub-id-type="pmcid">PMC8836812</pub-id></mixed-citation></ref><ref id="B14"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Di Martino</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Boffa</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Andriolo</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Romandini</surname><given-names>I.</given-names></name>
+<name name-style="western"><surname>Altamura</surname><given-names>S. A.</given-names></name>
+<name name-style="western"><surname>Cenacchi</surname><given-names>A.</given-names></name>
+<etal/>
+</person-group> (<year>2022</year>). <article-title>Leukocyte-rich versus leukocyte-poor platelet-rich plasma for the treatment of knee osteoarthritis: a double-blind randomized trial</article-title>. <source>Am. J. Sports Med.</source>
+<volume>50</volume> (<issue>3</issue>), <fpage>609</fpage>–<lpage>617</lpage>. <pub-id pub-id-type="doi">10.1177/03635465211064303</pub-id>
+<pub-id pub-id-type="pmid">35103547</pub-id>
+</mixed-citation></ref><ref id="B15"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Falck</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Zhu</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Ghalebikesabi</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Kormaksson</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Vandemeulebroecke</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>C.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>A framework for longitudinal latent factor modelling of treatment response in clinical trials with applications to psoriatic arthritis and rheumatoid arthritis</article-title>. <source>J. Biomed. Inf.</source>
+<volume>154</volume>, <fpage>104641</fpage>. <pub-id pub-id-type="doi">10.1016/j.jbi.2024.104641</pub-id>
+<pub-id pub-id-type="pmid">38642627</pub-id></mixed-citation></ref><ref id="B16"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Figueroa-Valdes</surname><given-names>A. I.</given-names></name>
+<name name-style="western"><surname>Luz-Crawford</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Herrera-Luna</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Georges-Calderon</surname><given-names>N.</given-names></name>
+<name name-style="western"><surname>Garcia</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Tobar</surname><given-names>H. E.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Clinical-grade extracellular vesicles derived from umbilical cord mesenchymal stromal cells: preclinical development and first-in-human intra-articular validation as therapeutics for knee osteoarthritis</article-title>. <source>J. Nanobiotechnology</source>
+<volume>23</volume> (<issue>1</issue>), <fpage>13</fpage>. <pub-id pub-id-type="doi">10.1186/s12951-024-03088-x</pub-id>
+<pub-id pub-id-type="pmid">39806427</pub-id>
+<pub-id pub-id-type="pmcid">PMC11730155</pub-id></mixed-citation></ref><ref id="B17"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Frommeyer</surname><given-names>T. C.</given-names></name>
+<name name-style="western"><surname>Gilbert</surname><given-names>M. M.</given-names></name>
+<name name-style="western"><surname>Fursmidt</surname><given-names>R. M.</given-names></name>
+<name name-style="western"><surname>Park</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Khouzam</surname><given-names>J. P.</given-names></name>
+<name name-style="western"><surname>Brittain</surname><given-names>G. V.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Reinforcement learning and its clinical applications within healthcare: a systematic review of precision medicine and dynamic treatment regimes</article-title>. <source>Healthc. (Basel)</source>
+<volume>13</volume> (<issue>14</issue>), <fpage>1752</fpage>. <pub-id pub-id-type="doi">10.3390/healthcare13141752</pub-id>
+<pub-id pub-id-type="pmcid">PMC12295150</pub-id><pub-id pub-id-type="pmid">40724777</pub-id></mixed-citation></ref><ref id="B18"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Fu</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Mu</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Dong</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Li</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Miao</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Huai</surname><given-names>X.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>An MRI-Based radiomics framework for early identification and progression stratification in knee osteoarthritis: data from the osteoarthritis initiative</article-title>. <source>BMC Musculoskelet. Disord.</source>
+<volume>26</volume> (<issue>1</issue>), <fpage>1018</fpage>. <pub-id pub-id-type="doi">10.1186/s12891-025-09234-2</pub-id>
+<pub-id pub-id-type="pmid">41174627</pub-id>
+<pub-id pub-id-type="pmcid">PMC12577384</pub-id></mixed-citation></ref><ref id="B19"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Gao</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Peng</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>G.</given-names></name>
+<name name-style="western"><surname>Deng</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Liu</surname><given-names>X.</given-names></name>
+</person-group> (<year>2024</year>). <article-title>Cartilage T2 mapping-based radiomics in knee osteoarthritis research: status, progress and future outlook</article-title>. <source>Eur. J. Radiol.</source>
+<volume>181</volume>, <fpage>111826</fpage>. <pub-id pub-id-type="doi">10.1016/j.ejrad.2024.111826</pub-id>
+<pub-id pub-id-type="pmid">39522425</pub-id>
+</mixed-citation></ref><ref id="B20"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Ge</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Sun</surname><given-names>W.</given-names></name>
+<name name-style="western"><surname>Xu</surname><given-names>T.</given-names></name>
+<name name-style="western"><surname>Yang</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Li</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Multi-omics analysis of synovial tissue and fluid reveals differentially expressed proteins and metabolites in osteoarthritis</article-title>. <source>J. Transl. Med.</source>
+<volume>23</volume> (<issue>1</issue>), <fpage>285</fpage>. <pub-id pub-id-type="doi">10.1186/s12967-025-06310-y</pub-id>
+<pub-id pub-id-type="pmid">40050855</pub-id>
+<pub-id pub-id-type="pmcid">PMC11887128</pub-id></mixed-citation></ref><ref id="B21"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Glinkowski</surname><given-names>W. M.</given-names></name>
+<name name-style="western"><surname>Spalinska</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Wolk</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Wolk</surname><given-names>K.</given-names></name>
+</person-group> (<year>2026</year>). <article-title>Artificial intelligence in orthopaedics: clinical performance, limitations, and translational Readiness-A review</article-title>. <source>J. Clin. Med.</source>
+<volume>15</volume> (<issue>5</issue>), <fpage>1751</fpage>. <pub-id pub-id-type="doi">10.3390/jcm15051751</pub-id>
+<pub-id pub-id-type="pmid">41827166</pub-id>
+<pub-id pub-id-type="pmcid">PMC12985454</pub-id></mixed-citation></ref><ref id="B22"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Gong</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Fairley</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Cicuttini</surname><given-names>F. M.</given-names></name>
+<name name-style="western"><surname>Hussain</surname><given-names>S. M.</given-names></name>
+<name name-style="western"><surname>Vashishtha</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Chou</surname><given-names>L.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>Effect of stem cell injections on osteoarthritis-related structural outcomes: a systematic review</article-title>. <source>J. Rheumatol.</source>
+<volume>48</volume> (<issue>4</issue>), <fpage>585</fpage>–<lpage>597</lpage>. <pub-id pub-id-type="doi">10.3899/jrheum.200021</pub-id>
+<pub-id pub-id-type="pmid">33004537</pub-id>
+</mixed-citation></ref><ref id="B23"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Goulian</surname><given-names>A. J.</given-names></name>
+<name name-style="western"><surname>Goldstein</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Saad</surname><given-names>M. A.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>Advancements in regenerative therapies for orthopedics: a comprehensive review of platelet-rich plasma, mesenchymal stem cells, peptide therapies, and biomimetic applications</article-title>. <source>J. Clin. Med.</source>
+<volume>14</volume> (<issue>6</issue>), <fpage>2061</fpage>. <pub-id pub-id-type="doi">10.3390/jcm14062061</pub-id>
+<pub-id pub-id-type="pmid">40142869</pub-id>
+<pub-id pub-id-type="pmcid">PMC11943164</pub-id></mixed-citation></ref><ref id="B24"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Grieco</surname><given-names>G.</given-names></name>
+<name name-style="western"><surname>Piccolo</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Ragni</surname><given-names>E.</given-names></name>
+<name name-style="western"><surname>de Girolamo</surname><given-names>L.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>Secretome and extracellular vesicle signatures in bone marrow-derived mesenchymal stromal cells after expansion in standard and next-generation media</article-title>. <source>Extracell. Vesicles Circ. Nucl. Acids</source>
+<volume>6</volume> (<issue>2</issue>), <fpage>195</fpage>–<lpage>215</lpage>. <pub-id pub-id-type="doi">10.20517/evcna.2024.99</pub-id>
+<pub-id pub-id-type="pmid">40852593</pub-id>
+<pub-id pub-id-type="pmcid">PMC12367461</pub-id></mixed-citation></ref><ref id="B25"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Hoyer</surname><given-names>G.</given-names></name>
+<name name-style="western"><surname>Gao</surname><given-names>K. T.</given-names></name>
+<name name-style="western"><surname>Gassert</surname><given-names>F. G.</given-names></name>
+<name name-style="western"><surname>Luitjens</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Jiang</surname><given-names>F.</given-names></name>
+<name name-style="western"><surname>Majumdar</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Foundations of a knee joint digital twin from qMRI biomarkers for osteoarthritis and knee replacement</article-title>. <source>NPJ Digit. Med.</source>
+<volume>8</volume> (<issue>1</issue>), <fpage>118</fpage>. <pub-id pub-id-type="doi">10.1038/s41746-025-01507-3</pub-id>
+<pub-id pub-id-type="pmid">39984725</pub-id>
+<pub-id pub-id-type="pmcid">PMC11845592</pub-id></mixed-citation></ref><ref id="B26"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Hu</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Zheng</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Yu</surname><given-names>Q.</given-names></name>
+<name name-style="western"><surname>Zhong</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Yu</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Chen</surname><given-names>Y.</given-names></name>
+<etal/>
+</person-group> (<year>2023</year>). <article-title>DeepKOA: a deep-learning model for predicting progression in knee osteoarthritis using multimodal magnetic resonance images from the osteoarthritis initiative</article-title>. <source>Quant. Imaging Med. Surg.</source>
+<volume>13</volume> (<issue>8</issue>), <fpage>4852</fpage>–<lpage>4866</lpage>. <pub-id pub-id-type="doi">10.21037/qims-22-1251</pub-id>
+<pub-id pub-id-type="pmid">37581080</pub-id>
+<pub-id pub-id-type="pmcid">PMC10423358</pub-id></mixed-citation></ref><ref id="B27"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Jayakumar</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Rathouz</surname><given-names>P. J.</given-names></name>
+<name name-style="western"><surname>Lin</surname><given-names>E.</given-names></name>
+<name name-style="western"><surname>Trutner</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Uhler</surname><given-names>L. M.</given-names></name>
+<name name-style="western"><surname>Andrawis</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Shared decision making using digital twins in knee osteoarthritis care: a randomized clinical trial of an AI-enabled decision aid versus education alone on decision quality, physical function, and user experience</article-title>. <source>EClinicalMedicine</source>
+<volume>89</volume>, <fpage>103545</fpage>. <pub-id pub-id-type="doi">10.1016/j.eclinm.2025.103545</pub-id>
+<pub-id pub-id-type="pmid">41112505</pub-id>
+<pub-id pub-id-type="pmcid">PMC12528923</pub-id></mixed-citation></ref><ref id="B28"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Lacko</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Harvanova</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Slovinska</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Matuska</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Balog</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Lackova</surname><given-names>A.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>Effect of intra-articular injection of platelet-rich plasma on the serum levels of osteoarthritic biomarkers in patients with unilateral knee osteoarthritis</article-title>. <source>J. Clin. Med.</source>
+<volume>10</volume> (<issue>24</issue>), <fpage>5801</fpage>. <pub-id pub-id-type="doi">10.3390/jcm10245801</pub-id>
+<pub-id pub-id-type="pmid">34945097</pub-id>
+<pub-id pub-id-type="pmcid">PMC8706559</pub-id></mixed-citation></ref><ref id="B29"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Liu</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Cruz Rivera</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Moher</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Calvert</surname><given-names>M. J.</given-names></name>
+<name name-style="western"><surname>Denniston</surname><given-names>A. K.</given-names></name>
+<name name-style="western"><surname>Spirit</surname><given-names>A. I.</given-names></name>
+<etal/>
+</person-group> (<year>2020</year>). <article-title>Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension</article-title>. <source>Nat. Med.</source>
+<volume>26</volume> (<issue>9</issue>), <fpage>1364</fpage>–<lpage>1374</lpage>. <pub-id pub-id-type="doi">10.1038/s41591-020-1034-x</pub-id>
+<pub-id pub-id-type="pmid">32908283</pub-id>
+<pub-id pub-id-type="pmcid">PMC7598943</pub-id></mixed-citation></ref><ref id="B30"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Liu</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Xiao</surname><given-names>G.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Jia</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Xie</surname><given-names>A.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Predictive value of machine learning in knee osteoarthritis progression: systematic review and meta-analysis</article-title>. <source>J. Med. Internet Res.</source>
+<volume>27</volume>, <fpage>e80430</fpage>. <pub-id pub-id-type="doi">10.2196/80430</pub-id>
+<pub-id pub-id-type="pmid">41468605</pub-id>
+<pub-id pub-id-type="pmcid">PMC12753132</pub-id></mixed-citation></ref><ref id="B31"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Loftus</surname><given-names>T. J.</given-names></name>
+<name name-style="western"><surname>Altieri</surname><given-names>M. S.</given-names></name>
+<name name-style="western"><surname>Balch</surname><given-names>J. A.</given-names></name>
+<name name-style="western"><surname>Abbott</surname><given-names>K. L.</given-names></name>
+<name name-style="western"><surname>Choi</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Marwaha</surname><given-names>J. S.</given-names></name>
+<etal/>
+</person-group> (<year>2023</year>). <article-title>Artificial intelligence-enabled decision support in surgery: state-Of-The-Art and future directions</article-title>. <source>Ann. Surg.</source>
+<volume>278</volume> (<issue>1</issue>), <fpage>51</fpage>–<lpage>58</lpage>. <pub-id pub-id-type="doi">10.1097/SLA.0000000000005853</pub-id>
+<pub-id pub-id-type="pmid">36942574</pub-id>
+<pub-id pub-id-type="pmcid">PMC12292512</pub-id></mixed-citation></ref><ref id="B32"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Maheshwer</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Polce</surname><given-names>E. M.</given-names></name>
+<name name-style="western"><surname>Paul</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Williams</surname><given-names>B. T.</given-names></name>
+<name name-style="western"><surname>Wolfson</surname><given-names>T. S.</given-names></name>
+<name name-style="western"><surname>Yanke</surname><given-names>A.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>Regenerative potential of mesenchymal stem cells for the treatment of knee osteoarthritis and chondral defects: a systematic review and meta-analysis</article-title>. <source>Arthroscopy</source>
+<volume>37</volume> (<issue>1</issue>), <fpage>362</fpage>–<lpage>378</lpage>. <pub-id pub-id-type="doi">10.1016/j.arthro.2020.05.037</pub-id>
+<pub-id pub-id-type="pmid">32497658</pub-id>
+</mixed-citation></ref><ref id="B33"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Mautner</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Gottschalk</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Boden</surname><given-names>S. D.</given-names></name>
+<name name-style="western"><surname>Akard</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Bae</surname><given-names>W. C.</given-names></name>
+<name name-style="western"><surname>Black</surname><given-names>L.</given-names></name>
+<etal/>
+</person-group> (<year>2023</year>). <article-title>Cell-based versus corticosteroid injections for knee pain in osteoarthritis: a randomized phase 3 trial</article-title>. <source>Nat. Med.</source>
+<volume>29</volume> (<issue>12</issue>), <fpage>3120</fpage>–<lpage>3126</lpage>. <pub-id pub-id-type="doi">10.1038/s41591-023-02632-w</pub-id>
+<pub-id pub-id-type="pmid">37919438</pub-id>
+<pub-id pub-id-type="pmcid">PMC10719084</pub-id></mixed-citation></ref><ref id="B34"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Mautner</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Kaiser</surname><given-names>J. M.</given-names></name>
+<name name-style="western"><surname>Boggess</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Hackel</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Kurtenbach</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Noonan</surname><given-names>B.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Autologous cell injections for knee osteoarthritis display greater responsiveness than allogenic cellular products and corticosteroids in a sex-dependent manner</article-title>. <source>Am. J. Sports Med.</source>
+<volume>53</volume> (<issue>12</issue>), <fpage>2889</fpage>–<lpage>2897</lpage>. <pub-id pub-id-type="doi">10.1177/03635465251365521</pub-id>
+<pub-id pub-id-type="pmid">41014273</pub-id>
+</mixed-citation></ref><ref id="B35"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Moons</surname><given-names>K. G. M.</given-names></name>
+<name name-style="western"><surname>Damen</surname><given-names>J. A. A.</given-names></name>
+<name name-style="western"><surname>Kaul</surname><given-names>T.</given-names></name>
+<name name-style="western"><surname>Hooft</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Andaur Navarro</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Dhiman</surname><given-names>P.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods</article-title>. <source>BMJ</source>
+<volume>388</volume>, <fpage>e082505</fpage>. <pub-id pub-id-type="doi">10.1136/bmj-2024-082505</pub-id>
+<pub-id pub-id-type="pmid">40127903</pub-id>
+<pub-id pub-id-type="pmcid">PMC11931409</pub-id></mixed-citation></ref><ref id="B36"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Muthu</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Ramanathan</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Alagar Yadav</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Jha</surname><given-names>S. K.</given-names></name>
+<name name-style="western"><surname>Ranjan</surname><given-names>R.</given-names></name>
+</person-group> (<year>2024</year>). <article-title>Effect of cellular dosage of bone marrow aspiration concentrate on the radiological outcomes in knee osteoarthritis: a phase I dose-escalation study</article-title>. <source>Indian J. Orthop.</source>
+<volume>58</volume> (<issue>8</issue>), <fpage>1035</fpage>–<lpage>1042</lpage>. <pub-id pub-id-type="doi">10.1007/s43465-024-01201-8</pub-id>
+<pub-id pub-id-type="pmid">39087044</pub-id>
+<pub-id pub-id-type="pmcid">PMC11286885</pub-id></mixed-citation></ref><ref id="B37"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Navani</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Jeyaraman</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Jeyaraman</surname><given-names>N.</given-names></name>
+<name name-style="western"><surname>Ramasubramanian</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Nallakumarasamy</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Azzini</surname><given-names>G.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Precision medicine in orthobiologics: a paradigm shift in regenerative therapies</article-title>. <source>Bioeng. (Basel)</source>
+<volume>12</volume> (<issue>9</issue>), <fpage>908</fpage>. <pub-id pub-id-type="doi">10.3390/bioengineering12090908</pub-id>
+<pub-id pub-id-type="pmcid">PMC12467657</pub-id><pub-id pub-id-type="pmid">41007153</pub-id></mixed-citation></ref><ref id="B38"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Nelson</surname><given-names>A. E.</given-names></name>
+<name name-style="western"><surname>Keefe</surname><given-names>T. H.</given-names></name>
+<name name-style="western"><surname>Schwartz</surname><given-names>T. A.</given-names></name>
+<name name-style="western"><surname>Callahan</surname><given-names>L. F.</given-names></name>
+<name name-style="western"><surname>Loeser</surname><given-names>R. F.</given-names></name>
+<name name-style="western"><surname>Golightly</surname><given-names>Y. M.</given-names></name>
+<etal/>
+</person-group> (<year>2022</year>). <article-title>Biclustering reveals potential knee OA phenotypes in exploratory analyses: data from the osteoarthritis initiative</article-title>. <source>PLoS One</source>
+<volume>17</volume> (<issue>5</issue>), <fpage>e0266964</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0266964</pub-id>
+<pub-id pub-id-type="pmid">35609053</pub-id>
+<pub-id pub-id-type="pmcid">PMC9129051</pub-id></mixed-citation></ref><ref id="B39"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Niemann</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Ort</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Lauterbach</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Streitz</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Wilhelm</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Grutz</surname><given-names>G.</given-names></name>
+<etal/>
+</person-group> (<year>2023</year>). <article-title>Individual immune cell and cytokine profiles determine platelet-rich plasma composition</article-title>. <source>Arthritis Res. Ther.</source>
+<volume>25</volume> (<issue>1</issue>), <fpage>6</fpage>. <pub-id pub-id-type="doi">10.1186/s13075-022-02969-6</pub-id>
+<pub-id pub-id-type="pmid">36627721</pub-id>
+<pub-id pub-id-type="pmcid">PMC9830842</pub-id></mixed-citation></ref><ref id="B40"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Oettl</surname><given-names>F. C.</given-names></name>
+<name name-style="western"><surname>Madrazo Ibarra</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Fontana</surname><given-names>M. A.</given-names></name>
+<name name-style="western"><surname>Loblack</surname><given-names>O.</given-names></name>
+<name name-style="western"><surname>Dagli</surname><given-names>M. M.</given-names></name>
+<name name-style="western"><surname>Otero</surname><given-names>M.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Development of explainable machine learning models to predict outcomes after platelet-rich plasma injections for knee osteoarthritis</article-title>. <source>Orthop. J. Sports Med.</source>
+<volume>13</volume> (<issue>8</issue>), <fpage>23259671251349743</fpage>. <pub-id pub-id-type="doi">10.1177/23259671251349743</pub-id>
+<pub-id pub-id-type="pmid">40786915</pub-id>
+<pub-id pub-id-type="pmcid">PMC12332376</pub-id></mixed-citation></ref><ref id="B41"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Park</surname><given-names>Y. B.</given-names></name>
+<name name-style="western"><surname>Kim</surname><given-names>J. H.</given-names></name>
+<name name-style="western"><surname>Ha</surname><given-names>C. W.</given-names></name>
+<name name-style="western"><surname>Lee</surname><given-names>D. H.</given-names></name>
+</person-group> (<year>2021</year>). <article-title>Clinical efficacy of platelet-rich plasma injection and its association with growth factors in the treatment of mild to moderate knee osteoarthritis: a randomized double-blind controlled clinical trial as compared with hyaluronic acid</article-title>. <source>Am. J. Sports Med.</source>
+<volume>49</volume> (<issue>2</issue>), <fpage>487</fpage>–<lpage>496</lpage>. <pub-id pub-id-type="doi">10.1177/0363546520986867</pub-id>
+<pub-id pub-id-type="pmid">33523756</pub-id>
+</mixed-citation></ref><ref id="B42"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Pers</surname><given-names>Y. M.</given-names></name>
+<name name-style="western"><surname>Schrezenmeier</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Fleury-Cappellesso</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Noth</surname><given-names>U.</given-names></name>
+<name name-style="western"><surname>Rackwitz</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Ferreira</surname><given-names>R.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Effect of intra-articular adipose-derived mesenchymal stromal cell versus placebo injection on pain and function in patients with knee osteoarthritis: the ADIPOA2 phase 2b randomised clinical trial</article-title>. <source>Ann. Rheum. Dis.</source>
+<volume>84</volume> (<issue>12</issue>), <fpage>2103</fpage>–<lpage>2114</lpage>. <pub-id pub-id-type="doi">10.1016/j.ard.2025.07.026</pub-id>
+<pub-id pub-id-type="pmid">40885690</pub-id>
+</mixed-citation></ref><ref id="B43"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Ragni</surname><given-names>E.</given-names></name>
+<name name-style="western"><surname>Papait</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Taiana</surname><given-names>M. M.</given-names></name>
+<name name-style="western"><surname>De Luca</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Grieco</surname><given-names>G.</given-names></name>
+<name name-style="western"><surname>Vertua</surname><given-names>E.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Cell culture expansion media choice affects secretory, protective and immuno-modulatory features of adipose mesenchymal stromal cell-derived secretomes for orthopaedic applications</article-title>. <source>Regen. Ther.</source>
+<volume>28</volume>, <fpage>481</fpage>–<lpage>497</lpage>. <pub-id pub-id-type="doi">10.1016/j.reth.2025.01.016</pub-id>
+<pub-id pub-id-type="pmid">39980717</pub-id>
+<pub-id pub-id-type="pmcid">PMC11840939</pub-id></mixed-citation></ref><ref id="B44"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Rahmadian</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Ariliusra</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Kusuma</surname><given-names>K. R. A.</given-names></name>
+<name name-style="western"><surname>Ali</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Raymond</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Meksiko</surname><given-names>R.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>Efficacy of a single intra-articular injection of mesenchymal stem cells for knee osteoarthritis: a dose-focused meta-analysis of randomized controlled trials</article-title>. <source>J. Orthop. Surg. Res.</source>
+<volume>20</volume> (<issue>1</issue>), <fpage>812</fpage>. <pub-id pub-id-type="doi">10.1186/s13018-025-06190-4</pub-id>
+<pub-id pub-id-type="pmid">40886001</pub-id>
+<pub-id pub-id-type="pmcid">PMC12398016</pub-id></mixed-citation></ref><ref id="B45"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Rockel</surname><given-names>J. S.</given-names></name>
+<name name-style="western"><surname>Sharma</surname><given-names>D.</given-names></name>
+<name name-style="western"><surname>Espin-Garcia</surname><given-names>O.</given-names></name>
+<name name-style="western"><surname>Hueniken</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Kapoor</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Pastrello</surname><given-names>C.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Deep learning-based clustering for endotyping and post-arthroplasty response classification using knee osteoarthritis multiomic data</article-title>. <source>Ann. Rheumatic Dis.</source>
+<volume>84</volume> (<issue>5</issue>), <fpage>844</fpage>–<lpage>855</lpage>. <pub-id pub-id-type="doi">10.1016/j.ard.2025.01.012</pub-id>
+<pub-id pub-id-type="pmid">39948003</pub-id></mixed-citation></ref><ref id="B46"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Romandini</surname><given-names>I.</given-names></name>
+<name name-style="western"><surname>Boffa</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Di Martino</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Andriolo</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Cenacchi</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Sangiorgi</surname><given-names>E.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>Leukocytes do not influence the safety and efficacy of platelet-rich plasma injections for the treatment of knee osteoarthritis: a double-blind randomized controlled trial</article-title>. <source>Am. J. Sports Med.</source>
+<volume>52</volume> (<issue>13</issue>), <fpage>3212</fpage>–<lpage>3222</lpage>. <pub-id pub-id-type="doi">10.1177/03635465241283500</pub-id>
+<pub-id pub-id-type="pmid">39394763</pub-id>
+<pub-id pub-id-type="pmcid">PMC11542329</pub-id></mixed-citation></ref><ref id="B47"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Saltzman</surname><given-names>B. M.</given-names></name>
+<name name-style="western"><surname>Frank</surname><given-names>R. M.</given-names></name>
+<name name-style="western"><surname>Davey</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Cotter</surname><given-names>E. J.</given-names></name>
+<name name-style="western"><surname>Redondo</surname><given-names>M. L.</given-names></name>
+<name name-style="western"><surname>Naveen</surname><given-names>N.</given-names></name>
+<etal/>
+</person-group> (<year>2020</year>). <article-title>Lack of standardization among clinical trials of injection therapies for knee osteoarthritis: a systematic review</article-title>. <source>Physician Sportsmed.</source>
+<volume>48</volume> (<issue>3</issue>), <fpage>266</fpage>–<lpage>289</lpage>. <pub-id pub-id-type="doi">10.1080/00913847.2020.1726716</pub-id>
+<pub-id pub-id-type="pmid">32027200</pub-id>
+</mixed-citation></ref><ref id="B48"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Sekiya</surname><given-names>I.</given-names></name>
+<name name-style="western"><surname>Katano</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Guermazi</surname><given-names>A.</given-names></name>
+<name name-style="western"><surname>Miura</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Okanouchi</surname><given-names>N.</given-names></name>
+<name name-style="western"><surname>Tomita</surname><given-names>M.</given-names></name>
+<etal/>
+</person-group> (<year>2023</year>). <article-title>Association of AI-determined kellgren-lawrence grade with medial meniscus extrusion and cartilage thickness by AI-based 3D MRI analysis in early knee osteoarthritis</article-title>. <source>Sci. Rep.</source>
+<volume>13</volume> (<issue>1</issue>), <fpage>20093</fpage>. <pub-id pub-id-type="doi">10.1038/s41598-023-46953-9</pub-id>
+<pub-id pub-id-type="pmid">37973855</pub-id>
+<pub-id pub-id-type="pmcid">PMC10654518</pub-id></mixed-citation></ref><ref id="B49"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Sun</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Zhai</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Han</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Ma</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Tan</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Li</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>Clinical outcomes of autologous adipose-derived mesenchymal stem cell combined with high tibial osteotomy for knee osteoarthritis are correlated with stem cell stemness and senescence</article-title>. <source>J. Transl. Med.</source>
+<volume>22</volume> (<issue>1</issue>), <fpage>1039</fpage>. <pub-id pub-id-type="doi">10.1186/s12967-024-05814-3</pub-id>
+<pub-id pub-id-type="pmid">39558365</pub-id>
+<pub-id pub-id-type="pmcid">PMC11575038</pub-id></mixed-citation></ref><ref id="B50"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Tang</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Zhang</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Oo</surname><given-names>W. M.</given-names></name>
+<name name-style="western"><surname>Fu</surname><given-names>K.</given-names></name>
+<name name-style="western"><surname>Risberg</surname><given-names>M. A.</given-names></name>
+<name name-style="western"><surname>Bierma-Zeinstra</surname><given-names>S. M.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Osteoarthritis</article-title>. <source>Nat. Rev. Dis. Prim.</source>
+<volume>11</volume> (<issue>1</issue>), <fpage>10</fpage>. <pub-id pub-id-type="doi">10.1038/s41572-025-00594-6</pub-id>
+<pub-id pub-id-type="pmid">39948092</pub-id>
+</mixed-citation></ref><ref id="B51"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Tucker</surname><given-names>J. D.</given-names></name>
+<name name-style="western"><surname>Goetz</surname><given-names>L. L.</given-names></name>
+<name name-style="western"><surname>Duncan</surname><given-names>M. B.</given-names></name>
+<name name-style="western"><surname>Gilman</surname><given-names>J. B.</given-names></name>
+<name name-style="western"><surname>Elmore</surname><given-names>L. W.</given-names></name>
+<name name-style="western"><surname>Sell</surname><given-names>S. A.</given-names></name>
+<etal/>
+</person-group> (<year>2021</year>). <article-title>Randomized, placebo-controlled analysis of the knee synovial environment following platelet-rich plasma treatment for knee osteoarthritis</article-title>. <source>PM R.</source>
+<volume>13</volume> (<issue>7</issue>), <fpage>707</fpage>–<lpage>719</lpage>. <pub-id pub-id-type="doi">10.1002/pmrj.12561</pub-id>
+<pub-id pub-id-type="pmid">33492733</pub-id>
+</mixed-citation></ref><ref id="B52"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Vahdani</surname><given-names>A. M.</given-names></name>
+<name name-style="western"><surname>Shariatnia</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Rajpurkar</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Pareek</surname><given-names>A.</given-names></name>
+</person-group> (<year>2025</year>). <article-title>Towards trustworthy artificial intelligence in musculoskeletal medicine: a narrative review on uncertainty quantification</article-title>. <source>Knee Surg. Sports Traumatol. Arthrosc.</source>
+<volume>33</volume> (<issue>9</issue>), <fpage>3418</fpage>–<lpage>3437</lpage>. <pub-id pub-id-type="doi">10.1002/ksa.12737</pub-id>
+<pub-id pub-id-type="pmid">40719310</pub-id>
+</mixed-citation></ref><ref id="B53"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Vasey</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Nagendran</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Campbell</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Clifton</surname><given-names>D. A.</given-names></name>
+<name name-style="western"><surname>Collins</surname><given-names>G. S.</given-names></name>
+<name name-style="western"><surname>Denaxas</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group> (<year>2022</year>). <article-title>Reporting guideline for the early stage clinical evaluation of decision support systems driven by artificial intelligence: DECIDE-AI</article-title>. <source>BMJ</source>
+<volume>377</volume>, <fpage>e070904</fpage>. <pub-id pub-id-type="doi">10.1136/bmj-2022-070904</pub-id>
+<pub-id pub-id-type="pmid">35584845</pub-id>
+<pub-id pub-id-type="pmcid">PMC9116198</pub-id></mixed-citation></ref><ref id="B54"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Wang</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Liu</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Sun</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Li</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Lu</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Huang</surname><given-names>J.</given-names></name>
+<etal/>
+</person-group> (<year>2026</year>). <article-title>Multi-omics reveal the dysregulated gut-joint axis in knee synovitis: data from two osteoarthritis studies in China</article-title>. <source>Adv. Sci. (Weinh)</source>
+<volume>13</volume> (<issue>7</issue>), <fpage>e12020</fpage>. <pub-id pub-id-type="doi">10.1002/advs.202512020</pub-id>
+<pub-id pub-id-type="pmid">41354462</pub-id>
+<pub-id pub-id-type="pmcid">PMC12866873</pub-id></mixed-citation></ref><ref id="B55"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Welsh</surname><given-names>J. A.</given-names></name>
+<name name-style="western"><surname>Goberdhan</surname><given-names>D. C. I.</given-names></name>
+<name name-style="western"><surname>O'Driscoll</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Buzas</surname><given-names>E. I.</given-names></name>
+<name name-style="western"><surname>Blenkiron</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Bussolati</surname><given-names>B.</given-names></name>
+<etal/>
+</person-group> (<year>2024</year>). <article-title>Minimal information for studies of extracellular vesicles (MISEV2023): from basic to advanced approaches</article-title>. <source>J. Extracell. Vesicles</source>
+<volume>13</volume> (<issue>2</issue>), <fpage>e12404</fpage>. <pub-id pub-id-type="doi">10.1002/jev2.12404</pub-id>
+<pub-id pub-id-type="pmid">38326288</pub-id>
+<pub-id pub-id-type="pmcid">PMC10850029</pub-id></mixed-citation></ref><ref id="B56"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Widera</surname><given-names>P.</given-names></name>
+<name name-style="western"><surname>Welsing</surname><given-names>P. M. J.</given-names></name>
+<name name-style="western"><surname>Danso</surname><given-names>S. O.</given-names></name>
+<name name-style="western"><surname>Peelen</surname><given-names>S.</given-names></name>
+<name name-style="western"><surname>Kloppenburg</surname><given-names>M.</given-names></name>
+<name name-style="western"><surname>Loef</surname><given-names>M.</given-names></name>
+<etal/>
+</person-group> (<year>2023</year>). <article-title>Development and validation of a machine learning-supported strategy of patient selection for osteoarthritis clinical trials: the IMI-APPROACH study</article-title>. <source>Osteoarthr. Cartil. Open</source>
+<volume>5</volume> (<issue>4</issue>), <fpage>100406</fpage>. <pub-id pub-id-type="doi">10.1016/j.ocarto.2023.100406</pub-id>
+<pub-id pub-id-type="pmid">37649530</pub-id>
+<pub-id pub-id-type="pmcid">PMC10463256</pub-id></mixed-citation></ref><ref id="B57"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Xue</surname><given-names>Z.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Sun</surname><given-names>Q.</given-names></name>
+<name name-style="western"><surname>Xu</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Liu</surname><given-names>Y.</given-names></name>
+<name name-style="western"><surname>Ai</surname><given-names>S.</given-names></name>
+<etal/>
+</person-group> (<year>2022</year>). <article-title>Radiomics analysis using MR imaging of subchondral bone for identification of knee osteoarthritis</article-title>. <source>J. Orthop. Surg. Res.</source>
+<volume>17</volume> (<issue>1</issue>), <fpage>414</fpage>. <pub-id pub-id-type="doi">10.1186/s13018-022-03314-y</pub-id>
+<pub-id pub-id-type="pmid">36104732</pub-id>
+<pub-id pub-id-type="pmcid">PMC9476345</pub-id></mixed-citation></ref><ref id="B58"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Zhang</surname><given-names>H.</given-names></name>
+<name name-style="western"><surname>Yang</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Geng</surname><given-names>T.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>R.</given-names></name>
+<name name-style="western"><surname>Li</surname><given-names>G.</given-names></name>
+</person-group> (<year>2026</year>). <article-title>Machine learning predicts clinical response to platelet-rich plasma therapy in knee osteoarthritis</article-title>. <source>Front. Med. (Lausanne)</source>
+<volume>13</volume>, <fpage>1787872</fpage>. <pub-id pub-id-type="doi">10.3389/fmed.2026.1787872</pub-id>
+<pub-id pub-id-type="pmid">42058405</pub-id>
+<pub-id pub-id-type="pmcid">PMC13120951</pub-id></mixed-citation></ref><ref id="B59"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Zhu</surname><given-names>L.</given-names></name>
+<name name-style="western"><surname>Diao</surname><given-names>X.</given-names></name>
+<name name-style="western"><surname>Yuan</surname><given-names>C.</given-names></name>
+<name name-style="western"><surname>Lau</surname><given-names>C. M. L.</given-names></name>
+<name name-style="western"><surname>Wang</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Wu</surname><given-names>W.</given-names></name>
+<etal/>
+</person-group> (<year>2025</year>). <article-title>Integrative spatially resolved proteomic and metabolomic imaging reveals synovitis endotypes implicated in osteoarthritis progression</article-title>. <source>Theranostics</source>
+<volume>15</volume> (<issue>18</issue>), <fpage>9729</fpage>–<lpage>9741</lpage>. <pub-id pub-id-type="doi">10.7150/thno.117788</pub-id>
+<pub-id pub-id-type="pmid">41041046</pub-id>
+<pub-id pub-id-type="pmcid">PMC12486396</pub-id></mixed-citation></ref><ref id="B60"><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<name name-style="western"><surname>Zsidai</surname><given-names>B.</given-names></name>
+<name name-style="western"><surname>Hilkert</surname><given-names>A. S.</given-names></name>
+<name name-style="western"><surname>Kaarre</surname><given-names>J.</given-names></name>
+<name name-style="western"><surname>Narup</surname><given-names>E.</given-names></name>
+<name name-style="western"><surname>Senorski</surname><given-names>E. H.</given-names></name>
+<name name-style="western"><surname>Grassi</surname><given-names>A.</given-names></name>
+<etal/>
+</person-group> (<year>2023</year>). <article-title>A practical guide to the implementation of AI in orthopaedic research - part 1: opportunities in clinical application and overcoming existing challenges</article-title>. <source>J. Exp. Orthop.</source>
+<volume>10</volume> (<issue>1</issue>), <fpage>117</fpage>. <pub-id pub-id-type="doi">10.1186/s40634-023-00683-z</pub-id>
+<pub-id pub-id-type="pmid">37968370</pub-id>
+<pub-id pub-id-type="pmcid">PMC10651597</pub-id></mixed-citation></ref></ref-list></back></article>

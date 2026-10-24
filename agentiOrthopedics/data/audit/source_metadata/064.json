@@ -1,0 +1,1000 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          13
+        ]
+      ],
+      "date-time": "2026-05-13T17:17:09Z",
+      "timestamp": 1778692629676,
+      "version": "3.51.4"
+    },
+    "reference-count": 71,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              3,
+              30
+            ]
+          ],
+          "date-time": "2026-03-30T00:00:00Z",
+          "timestamp": 1774828800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              5,
+              11
+            ]
+          ],
+          "date-time": "2026-05-11T00:00:00Z",
+          "timestamp": 1778457600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 42,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Manipal Academy of Higher Education, Manipal"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Discov Artif Intell"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Personalized Treatment Recommendation Systems (PTRS) are increasingly central to precision medicine, enabling data-driven selection of therapies tailored to individual patient characteristics, including clinical history, biological markers, and behavioral context. Despite rapid methodological advances, existing research remains fragmented, with limited consensus on evaluation practices and insufficient consideration of real-world deployment constraints. This survey provides a systematic and critical review of 60 peer-reviewed studies published between 2019 and 2024, selected using a PRISMA guided protocol from major scholarly databases. The reviewed literature is organized into a unified taxonomy encompassing content-based, collaborative filtering, knowledge-based, and hybrid treatment recommendation paradigms, with emphasis on their clinical applicability and algorithmic design. Recent advances in deep learning and reinforcement learning are examined for their role in improving adaptability and treatment personalization. To enable meaningful cross-study comparison, this work introduces a multidimensional benchmarking rubric that evaluates PTRS beyond predictive performance, incorporating criteria such as algorithmic rigor, clinical relevance, validation depth, data transparency, scalability, and explainability. The analysis reveals persistent challenges related to model interpretability, population generalizability, data privacy, and ethical compliance, which continue to hinder clinical adoption. Emerging solutions, including federated learning, explainable AI, and privacy-preserving architectures, are discussed as promising pathways toward trustworthy deployment. By synthesizing methodological trends, practical limitations, and evaluation gaps, this survey offers a structured foundation and forward-looking perspective for the development of robust, transparent, and clinically viable PTRS in modern healthcare.</jats:p>",
+    "DOI": "10.1007/s44163-026-01187-2",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          30
+        ]
+      ],
+      "date-time": "2026-03-30T15:44:23Z",
+      "timestamp": 1774885463000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "AI-augmented personalized treatment in healthcare a comprehensive survey of models benchmarking and deployment challenges"
+    ],
+    "prefix": "10.1007",
+    "volume": "6",
+    "author": [
+      {
+        "given": "Vijayalaxmi N.",
+        "family": "Rathod",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "R. H.",
+        "family": "Goudar",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Geetabai S",
+        "family": "Hukkeri",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          30
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "6",
+        "key": "1187_CR1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/18035",
+        "volume": "23",
+        "author": "R De Croon",
+        "year": "2021",
+        "unstructured": "De Croon R, Van Houdt L, Htun NN, Štiglic G, Vanden Abeele V, Verbert K. Health recommender systems: systematic review. J Med Internet Res. 2021;23(6):e18035. https://doi.org/10.2196/18035.",
+        "journal-title": "J Med Internet Res"
+      },
+      {
+        "key": "1187_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "303",
+        "DOI": "10.1162/DINT_A_00197",
+        "volume": "5",
+        "author": "Z Ali",
+        "year": "2023",
+        "unstructured": "Ali Z, Huang Y, Ullah I, Qi G. Deep learning for medication recommendation: a review. Data Intelligence. 2023;5:303–54. https://doi.org/10.1162/DINT_A_00197.",
+        "journal-title": "Data Intelligence"
+      },
+      {
+        "issue": "1",
+        "key": "1187_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1145/3477600",
+        "volume": "55",
+        "author": "C Yu",
+        "year": "2023",
+        "unstructured": "Yu C, Liu J, Nemati S, Yin G. Reinforcement learning in healthcare: a survey. ACM Comput Surv. 2023;55(1):1–36. https://doi.org/10.1145/3477600.",
+        "journal-title": "ACM Comput Surv"
+      },
+      {
+        "key": "1187_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "126678",
+        "DOI": "10.1016/j.eswa.2025.126678",
+        "volume": "272",
+        "author": "K K",
+        "year": "2025",
+        "unstructured": "K K, Katlam SKSRS Content-based medical retrieval systems with evidence-based diagnosis for enhanced clinical decision support. Expert Syst Appl. 2025;272:126678. . https://doi.org/10.1016/j.eswa.2025.126678.",
+        "journal-title": "Expert Syst Appl"
+      },
+      {
+        "key": "1187_CR5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Fauziah MR, Utari DT. Content-based filtering for drug recommendation systems: Exploring drug characteristics for personalized treatment recommendations. In: The 4th International Seminar on Science and Technology (ISSTEC). Yogyakarta, Indonesia; 2025. p. 040012.",
+        "DOI": "10.1063/5.0236682"
+      },
+      {
+        "key": "1187_CR6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Patil J, Ranjan NM, Dange P, Patil A. A Multimodal approach to personalized stress alleviation: integrating EEG-guided music recommendation for enhanced therapeutic outcomes. In: 2023 IEEE International Conference on Blockchain and Distributed Systems Security (ICBDS). New Raipur, India: IEEE; 2023. p. 1–5.",
+        "DOI": "10.1109/ICBDS58040.2023.10346306"
+      },
+      {
+        "key": "1187_CR7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chen J, He P, Pan F. A Preferred music recommendation method for tinnitus personalized treatment based on signal processing and random forest. In: 2021 6th International Conference on Intelligent Computing and Signal Processing (ICSP). Xi’an, China: IEEE; 2021. p. 470–473.",
+        "DOI": "10.1109/ICSP51882.2021.9408902"
+      },
+      {
+        "key": "1187_CR8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "S SK, Mayya V, R P. A Probabilistic precision information retrieval model for personalized clinical trial recommendation based on heterogeneous data. In: 2021 12th International Conference on Computing Communication and Networking Technologies (ICCCNT). Kharagpur, India: IEEE; 2021. p. 1–5.",
+        "DOI": "10.1109/ICCCNT51525.2021.9579891"
+      },
+      {
+        "issue": "2",
+        "key": "1187_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "1017",
+        "DOI": "10.25258/ijpqa.15.2.72",
+        "volume": "15",
+        "author": "PK Ugemuge",
+        "year": "2024",
+        "unstructured": "Ugemuge PK, Khandalkar GG, Ingle RG Artificial Intelligence could be the personalized treatment strategy for cancer. Int J Pharm Qual Assur. 2024;15(2):1017–22. . https://doi.org/10.25258/ijpqa.15.2.72.",
+        "journal-title": "Int J Pharm Qual Assur"
+      },
+      {
+        "key": "1187_CR10",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Upadhyay K, Zhang J, Lloyd E. Cognitive profiling and personalized therapy recommendation for dementia through a language aware multi-model Artificially Intelligent system. In: Proceedings of the 2022 IEEE MIT Undergraduate Research Technology Conference (URTC). Cambridge, MA, USA: IEEE; 2022. p. 1–5.",
+        "DOI": "10.1109/URTC56832.2022.10002250"
+      },
+      {
+        "key": "1187_CR11",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ma S, Lee J, Serban N, Yang S. Deep attention Q-Network for personalized treatment recommendation. In: 2023 IEEE International Conference on Data Mining Workshops (ICDMW). Shanghai, China: IEEE; 2023. p. 329–337.",
+        "DOI": "10.1109/ICDMW60847.2023.00048"
+      },
+      {
+        "key": "1187_CR12",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Vinudevi G, Vijayaragavan SP, Anand M, Subbulakshmi K. Deep Learning for personalized treatment strategies in colorectal tumor patients. In: 2024 International Conference on Advances in Data Engineering and Intelligent Computing Systems (ADICS). Chennai, India: IEEE; 2024. p. 1–7.",
+        "DOI": "10.1109/ADICS58448.2024.10533567"
+      },
+      {
+        "key": "1187_CR13",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Shi C, Guan D, Yuan W. Deep learning preserving renal dialysis treatment recommendation. In: 2020 International Conference on Information Networking (ICOIN). Barcelona, Spain: IEEE; 2020. p. 49–54.",
+        "DOI": "10.1109/ICOIN48656.2020.9016472"
+      },
+      {
+        "key": "1187_CR14",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhu D, Zhu H, Huang C, Lu R, Shen X, Feng D. Efficient server-aided personalized treatment recommendation with privacy preservation. In: GLOBECOM 2022 - 2022 IEEE Global Communications Conference. Rio de Janeiro, Brazil: IEEE; 2022. p. 3041–3046.",
+        "DOI": "10.1109/GLOBECOM48099.2022.10000647"
+      },
+      {
+        "key": "1187_CR15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00500-023-08709-5",
+        "author": "S Shivadekar",
+        "year": "2023",
+        "unstructured": "Shivadekar S, Kataria B, Limkar S, Wagh KS, Lavate S, Mulla RA. Design of an efficient multimodal engine for preemption and post-treatment recommendations for skin diseases via a deep learning-based hybrid bioinspired process. Soft Comput. 2023. https://doi.org/10.1007/s00500-023-08709-5.",
+        "journal-title": "Soft Comput"
+      },
+      {
+        "key": "1187_CR16",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Li X, Zhang Y, Hou X, Meng F, Lin H. Multi-visit interactive recalibration network for drug recommendation with a triple graph encoder. In: 2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM). Istanbul, Turkiye: IEEE; 2023. p. 2040–2043.",
+        "DOI": "10.1109/BIBM58861.2023.10385652"
+      },
+      {
+        "key": "1187_CR17",
+        "doi-asserted-by": "crossref",
+        "unstructured": "V A, J A, P N, D B, V M, P T. Optimized machine learning model for disease prediction and treatment recommendation through gait analysis. In: 2024 International Conference on Advancements in Power, Communication and Intelligent Systems (APCI). Kannur, India: IEEE; 2024. p. 1–6.",
+        "DOI": "10.1109/APCI61480.2024.10616729"
+      },
+      {
+        "issue": "11",
+        "key": "1187_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "3154",
+        "DOI": "10.1109/JBHI.2020.3004663",
+        "volume": "24",
+        "author": "S Daoud",
+        "year": "2020",
+        "unstructured": "Daoud S, Mdhaffar A, Jmaiel M, Freisleben B. Q-Rank: reinforcement learning for recommending algorithms to predict drug sensitivity to cancer therapy. IEEE J Biomed Health Inform. 2020;24(11):3154–61. https://doi.org/10.1109/JBHI.2020.3004663.",
+        "journal-title": "IEEE J Biomed Health Inform"
+      },
+      {
+        "key": "1187_CR19",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Dixit KK, Verma D, Muthuvel SK, Laxminarayanamma K, Kumar M, Srivastava A. Thompson sampling algorithm for personalized treatment recommendations in healthcare. In: 2023 International Conference on Artificial Intelligence for Innovations in Healthcare Industries (ICAIIHI). Raipur, India: IEEE; 2023. p. 1–6.",
+        "DOI": "10.1109/ICAIIHI57871.2023.10488989"
+      },
+      {
+        "key": "1187_CR20",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Schmidt F, Hammerfald K, Jahren HH, Solbakken OA, Payberah AH, Vlassov V. Using machine learning to recommend personalized modular treatments for common mental health disorders. In: 2023 IEEE International Conference on Digital Health (ICDH). Chicago, IL, USA: IEEE; 2023. p. 150–157.",
+        "DOI": "10.1109/ICDH60066.2023.00030"
+      },
+      {
+        "key": "1187_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "702",
+        "DOI": "10.1007/s10488-024-01363-5",
+        "volume": "51",
+        "author": "S Scholten",
+        "year": "2024",
+        "unstructured": "Scholten S, et al. Leveraging single-case experimental designs to promote personalized psychological treatment: step-by-step implementation protocol with stakeholder involvement of an outpatient clinic for personalized psychotherapy. Administration and Policy in Mental Health and Mental Health Services Research. 2024. 51:702 https://doi.org/10.1007/s10488-024-01363-5.",
+        "journal-title": "Administration and Policy in Mental Health and Mental Health Services Research"
+      },
+      {
+        "issue": "1",
+        "key": "1187_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1186/s13063-020-04901-2",
+        "volume": "22",
+        "author": "M Pierce",
+        "year": "2021",
+        "unstructured": "Pierce M, Emsley R. A comparison of approaches for combining predictive markers for personalised treatment recommendations. Trials. 2021;22(1):1. https://doi.org/10.1186/s13063-020-04901-2.",
+        "journal-title": "Trials"
+      },
+      {
+        "issue": "1",
+        "key": "1187_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "12544",
+        "DOI": "10.1038/s41598-024-63343-x",
+        "volume": "14",
+        "author": "G Szabo",
+        "year": "2024",
+        "unstructured": "Szabo G, Szigeti JF, Sipos M, Varbiro S, Gonda X. Adherence to dietary recommendations mediates the effect of affective temperaments on infertility treatment outcomes. Sci Rep. 2024;14(1):12544. https://doi.org/10.1038/s41598-024-63343-x.",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "issue": "1",
+        "key": "1187_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1186/s40066-024-00465-5",
+        "volume": "13",
+        "author": "L Behrendt",
+        "year": "2024",
+        "unstructured": "Behrendt L, et al. Assessing the impact of a personalised application-based nutrition intervention on carbohydrate intake in rural Benin. Agriculture & Food Security. 2024;13(1):1. https://doi.org/10.1186/s40066-024-00465-5.",
+        "journal-title": "Agriculture & Food Security"
+      },
+      {
+        "issue": "16",
+        "key": "1187_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "2681",
+        "DOI": "10.3390/diagnostics13162681",
+        "volume": "13",
+        "author": "Y Wu",
+        "year": "2023",
+        "unstructured": "Wu Y, Zhang L, Bhatti UA, Huang M. Interpretable machine learning for personalized medical recommendations: a LIME-based approach. Diagnostics. 2023;13(16):2681. https://doi.org/10.3390/diagnostics13162681.",
+        "journal-title": "Diagnostics"
+      },
+      {
+        "issue": "1",
+        "key": "1187_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1038/s41598-023-31947-4",
+        "volume": "13",
+        "author": "J Zhang",
+        "year": "2023",
+        "unstructured": "Zhang J, et al. Machine learning for post-acute pancreatitis diabetes mellitus prediction and personalized treatment recommendations. Sci Rep. 2023;13(1):1. https://doi.org/10.1038/s41598-023-31947-4.",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "issue": "1",
+        "key": "1187_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1038/s41598-023-33281-1",
+        "volume": "13",
+        "author": "K Kourou",
+        "year": "2023",
+        "unstructured": "Kourou K, et al. Personalized prediction of one-year mental health deterioration using adaptive learning algorithms: a multicenter breast cancer prospective study. Sci Rep. 2023;13(1):1. https://doi.org/10.1038/s41598-023-33281-1.",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "key": "1187_CR28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compbiomed.2024.109001",
+        "volume": "180",
+        "author": "D Spoladore",
+        "year": "2024",
+        "unstructured": "Spoladore D, Stella F, Tosi M, Lorenzini EC, Bettini C. A knowledge-based decision support system to support family doctors in personalizing type-2 diabetes mellitus medical nutrition therapy. Comput Biol Med. 2024;180:109001. https://doi.org/10.1016/j.compbiomed.2024.109001.",
+        "journal-title": "Comput Biol Med"
+      },
+      {
+        "issue": "1",
+        "key": "1187_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1038/s41598-021-03796-6",
+        "volume": "12",
+        "author": "A Sarraju",
+        "year": "2022",
+        "unstructured": "Sarraju A, et al. Personalizing cholesterol treatment recommendations for primary cardiovascular disease prevention. Sci Rep. 2022;12(1):1. https://doi.org/10.1038/s41598-021-03796-6.",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "key": "1187_CR30",
+        "unstructured": "Rahman I. AI-powered personalized treatment recommendation framework for improved healthcare outcomes. Journal of Computational Social Dynamics. 2023;8(11). Accessed: Aug. 31, 2024. [Online]. Available: https://vectoral.org/index.php/JCSD/article/view/94."
+      },
+      {
+        "issue": "7",
+        "key": "1187_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "706",
+        "DOI": "10.3390/jpm14070706",
+        "volume": "14",
+        "author": "M Duda-Sikula",
+        "year": "2024",
+        "unstructured": "Duda-Sikula M, Kurpas D. Enhancing chronic disease management: personalized medicine insights from rural and urban general practitioner practices. J Pers Med. 2024;14(7):706. https://doi.org/10.3390/jpm14070706.",
+        "journal-title": "J Pers Med"
+      },
+      {
+        "issue": "19",
+        "key": "1187_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "19987",
+        "DOI": "10.1002/cam4.6547",
+        "volume": "12",
+        "author": "S Chen",
+        "year": "2023",
+        "unstructured": "Chen S, et al. A novel prediction model of the risk of pancreatic cancer among diabetes patients using multiple clinical data and machine learning. Cancer Med. 2023;12(19):19987–99. https://doi.org/10.1002/cam4.6547.",
+        "journal-title": "Cancer Med"
+      },
+      {
+        "issue": "1",
+        "key": "1187_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "9494",
+        "DOI": "10.1038/s41598-023-36298-8",
+        "volume": "13",
+        "author": "P Rauch",
+        "year": "2023",
+        "unstructured": "Rauch P, et al. Deep learning-assisted radiomics facilitates multimodal prognostication for personalized treatment strategies in low-grade glioma. Sci Rep. 2023;13(1):9494. https://doi.org/10.1038/s41598-023-36298-8.",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "issue": "1",
+        "key": "1187_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "20159",
+        "DOI": "10.1038/s41598-023-47500-2",
+        "volume": "13",
+        "author": "D Truhn",
+        "year": "2023",
+        "unstructured": "Truhn D, et al. A pilot study on the efficacy of GPT-4 in providing orthopedic treatment recommendations from MRI reports. Sci Rep. 2023;13(1):20159. https://doi.org/10.1038/s41598-023-47500-2.",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "issue": "1",
+        "key": "1187_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "38",
+        "DOI": "10.1038/s43856-022-00094-8",
+        "volume": "2",
+        "author": "CK Corbin",
+        "year": "2022",
+        "unstructured": "Corbin CK, et al. Personalized antibiograms for machine learning driven antibiotic selection. Communications Medicine. 2022;2(1):38. https://doi.org/10.1038/s43856-022-00094-8.",
+        "journal-title": "Communications Medicine"
+      },
+      {
+        "issue": "7",
+        "key": "1187_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "3024",
+        "DOI": "10.1109/TKDE.2023.3329025",
+        "volume": "36",
+        "author": "H Zhang",
+        "year": "2024",
+        "unstructured": "Zhang H, Yang X, Bai L, Liang J. Enhancing drug recommendations via heterogeneous graph representation learning in EHR networks. IEEE Trans Knowl Data Eng. 2024;36(7):3024–35. https://doi.org/10.1109/TKDE.2023.3329025.",
+        "journal-title": "IEEE Trans Knowl Data Eng"
+      },
+      {
+        "issue": "6",
+        "key": "1187_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "618",
+        "DOI": "10.3103/S0147688223060138",
+        "volume": "50",
+        "author": "AB Petrovsky",
+        "year": "2023",
+        "unstructured": "Petrovsky AB, Pronichkin SV, Shepelev GI. Information-logical model of the scientific and technological potential of preventive and personalized medicine. Sci Tech Inf Process. 2023;50(6):618–28. https://doi.org/10.3103/S0147688223060138.",
+        "journal-title": "Sci Tech Inf Process"
+      },
+      {
+        "key": "1187_CR38",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Rai AK, Sharma M, Saravanan V, Shalini N, Kumar M, Singh P. Personalized healthcare recommendations with Q-learning reinforcement learning. In: 2023 International Conference on Artificial Intelligence for Innovations in Healthcare Industries (ICAIIHI). Raipur, India: IEEE; 2023. p. 1–6.",
+        "DOI": "10.1109/ICAIIHI57871.2023.10489223"
+      },
+      {
+        "key": "1187_CR39",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sharma MK, Nachappa MN, Kumar R. Personalized treatment recommendations for mental health disorders using ai and big healthcare data. In: 2023 IEEE International Conference on ICT in Business Industry & Government (ICTBIG). Indore, India: IEEE; 2023. p. 1–6.",
+        "DOI": "10.1109/ICTBIG59752.2023.10455991"
+      },
+      {
+        "key": "1187_CR40",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lin X, et al. Personalized clinical pathway recommendation via attention based pre-training. In: 2021 IEEE International Conference on Bioinformatics and Biomedicine (BIBM). Houston, TX, USA: IEEE; 2021. p. 980–987.",
+        "DOI": "10.1109/BIBM52615.2021.9669809"
+      },
+      {
+        "key": "1187_CR41",
+        "doi-asserted-by": "publisher",
+        "first-page": "210",
+        "DOI": "10.1016/j.patrec.2024.08.014",
+        "volume": "185",
+        "author": "X Min",
+        "year": "2024",
+        "unstructured": "Min X, Li W, Han R, Ji T, Xie W. Graph neural collaborative filtering with medical content-aware pre-training for treatment pattern recommendation. Pattern Recogn Lett. 2024;185:210–7. https://doi.org/10.1016/j.patrec.2024.08.014.",
+        "journal-title": "Pattern Recogn Lett"
+      },
+      {
+        "key": "1187_CR42",
+        "doi-asserted-by": "publisher",
+        "first-page": "205520762413093",
+        "DOI": "10.1177/20552076241309386",
+        "volume": "11",
+        "author": "A Barbaric",
+        "year": "2025",
+        "unstructured": "Barbaric A, et al. Health recommender systems to facilitate collaborative decision-making in chronic disease management: a scoping review. Digital Health. 2025;11:20552076241309384. https://doi.org/10.1177/20552076241309386.",
+        "journal-title": "Digital Health"
+      },
+      {
+        "issue": "1",
+        "key": "1187_CR43",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1186/s12911-023-02170-y",
+        "volume": "23",
+        "author": "A Mai",
+        "year": "2023",
+        "unstructured": "Mai A, Voigt K, Schübel J, Gräßer F. A drug recommender system for the treatment of hypertension. BMC Med Inform Decis Mak. 2023;23(1):1. https://doi.org/10.1186/s12911-023-02170-y.",
+        "journal-title": "BMC Med Inform Decis Mak"
+      },
+      {
+        "key": "1187_CR44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.artmed.2024.102811",
+        "volume": "150",
+        "author": "Y Wang",
+        "year": "2024",
+        "unstructured": "Wang Y, et al. Clinical knowledge-guided deep reinforcement learning for sepsis antibiotic dosing recommendations. Artif Intell Med. 2024;150:102811. https://doi.org/10.1016/j.artmed.2024.102811.",
+        "journal-title": "Artif Intell Med"
+      },
+      {
+        "key": "1187_CR45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.imu.2023.101362",
+        "volume": "42",
+        "author": "Y Liang",
+        "year": "2023",
+        "unstructured": "Liang Y, et al. Personalized statin treatment plan using counterfactual approach with multi-objective optimization over benefits and risks. Informatics in Medicine Unlocked. 2023;42:101362. https://doi.org/10.1016/j.imu.2023.101362.",
+        "journal-title": "Informatics in Medicine Unlocked"
+      },
+      {
+        "key": "1187_CR46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.invent.2022.100568",
+        "volume": "30",
+        "author": "TI Bootsma",
+        "year": "2022",
+        "unstructured": "Bootsma TI, Schellekens MPJ, Van Woezik RAM, Slatman J, Van Der Lee ML. Using smartphone-based ecological momentary assessment and personalized feedback for patients with chronic cancer-related fatigue: a proof-of-concept study. Internet Interv. 2022;30:100568. https://doi.org/10.1016/j.invent.2022.100568.",
+        "journal-title": "Internet Interv"
+      },
+      {
+        "key": "1187_CR47",
+        "unstructured": "Koya AI, Ibrahim SA. Carcinogenesis. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2025. p. N/A. Updated 2024 2. PMID: 38917272. Available from: https://www.ncbi.nlm.nih.gov/books/NBK604463/."
+      },
+      {
+        "issue": "2",
+        "key": "1187_CR48",
+        "doi-asserted-by": "publisher",
+        "first-page": "25",
+        "DOI": "10.3390/computation7020025",
+        "volume": "7",
+        "author": "AK Sahoo",
+        "year": "2019",
+        "unstructured": "Sahoo AK, Pradhan C, Barik RK, Dubey H. DeepReco: deep learning based health recommender system using collaborative filtering. Computation. 2019;7(2):25. https://doi.org/10.3390/computation7020025.",
+        "journal-title": "Computation"
+      },
+      {
+        "key": "1187_CR49",
+        "doi-asserted-by": "publisher",
+        "first-page": "116766",
+        "DOI": "10.1109/ACCESS.2022.3218776",
+        "volume": "10",
+        "author": "AM Honka",
+        "year": "2022",
+        "unstructured": "Honka AM, Nieminen H, Similä H, Kaartinen J, Van Gils M. A comprehensive user modeling framework and a recommender system for personalizing well-being related behavior change interventions: development and evaluation. IEEE Access. 2022;10:116766–83. https://doi.org/10.1109/ACCESS.2022.3218776.",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "1",
+        "key": "1187_CR50",
+        "doi-asserted-by": "publisher",
+        "first-page": "87",
+        "DOI": "10.3390/jpm12010087",
+        "volume": "12",
+        "author": "SH Oh",
+        "year": "2022",
+        "unstructured": "Oh SH, Lee SJ, Park J. Precision medicine for hypertension patients with type 2 diabetes via reinforcement learning. J Pers Med. 2022;12(1):87. https://doi.org/10.3390/jpm12010087.",
+        "journal-title": "J Pers Med"
+      },
+      {
+        "issue": "1",
+        "key": "1187_CR51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.kjs.2024.100310",
+        "volume": "52",
+        "author": "MA Almulla",
+        "year": "2025",
+        "unstructured": "Almulla MA. A novel CLIPS-based medical expert system for migraine diagnosis and treatment recommendation. Kuwait J Sci. 2025;52(1):100310. https://doi.org/10.1016/j.kjs.2024.100310.",
+        "journal-title": "Kuwait J Sci"
+      },
+      {
+        "key": "1187_CR52",
+        "doi-asserted-by": "publisher",
+        "unstructured": "K V SPR, Selvakumar M. Personalized recommendation system to handle skin cancer at early stage based on hybrid model. Network and Computer Neural Systems. 2025;p. 1–40. https://doi.org/10.1080/0954898X.2024.2449173.",
+        "DOI": "10.1080/0954898X.2024.2449173"
+      },
+      {
+        "issue": "7",
+        "key": "1187_CR53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2196/37430",
+        "volume": "24",
+        "author": "EY Lee",
+        "year": "2022",
+        "unstructured": "Lee EY, Cha SA, Yun JS, Lim SY, Lee JH, Ahn YB, et al. Efficacy of personalized diabetes self-care using an electronic medical record-integrated mobile app in patients with type 2 diabetes: 6-month randomized controlled trial. J Med Internet Res. 2022;24(7):e37430. https://doi.org/10.2196/37430.",
+        "journal-title": "J Med Internet Res"
+      },
+      {
+        "issue": "20",
+        "key": "1187_CR54",
+        "doi-asserted-by": "publisher",
+        "first-page": "4034",
+        "DOI": "10.1002/sim.9491",
+        "volume": "41",
+        "author": "M Liu",
+        "year": "2022",
+        "unstructured": "Liu M, Shen X, Pan W. Deep reinforcement learning for personalized treatment recommendation. Stat Med. 2022;41(20):4034–56. https://doi.org/10.1002/sim.9491.",
+        "journal-title": "Stat Med"
+      },
+      {
+        "issue": "1",
+        "key": "1187_CR55",
+        "doi-asserted-by": "publisher",
+        "first-page": "33",
+        "DOI": "10.1080/10503307.2020.1769219",
+        "volume": "31",
+        "author": "B Schwartz",
+        "year": "2021",
+        "unstructured": "Schwartz B, Cohen ZD, Rubel JA, Zimmermann D, Wittmann WW, Lutz W. Personalized treatment selection in routine care: integrating machine learning and statistical algorithms to recommend cognitive behavioral or psychodynamic therapy. Psychother Res. 2021;31(1):33–51. https://doi.org/10.1080/10503307.2020.1769219.",
+        "journal-title": "Psychother Res"
+      },
+      {
+        "issue": "9",
+        "key": "1187_CR56",
+        "doi-asserted-by": "publisher",
+        "first-page": "6431",
+        "DOI": "10.1007/s00521-024-10916-6",
+        "volume": "37",
+        "author": "BM Hassan",
+        "year": "2025",
+        "unstructured": "Hassan BM, Elagamy SM. Personalized medical recommendation system with machine learning. Neural Comput Appl. 2025;37(9):6431–47. https://doi.org/10.1007/s00521-024-10916-6.",
+        "journal-title": "Neural Comput Appl"
+      },
+      {
+        "key": "1187_CR57",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ins.2024.120802",
+        "volume": "677",
+        "author": "W Zhou",
+        "year": "2024",
+        "unstructured": "Zhou W, Liu X, Bai H, He L. Intelligent medical diagnosis and treatment for diabetes with deep convolutional fuzzy neural networks. Inf Sci. 2024;677:120802. https://doi.org/10.1016/j.ins.2024.120802.",
+        "journal-title": "Inf Sci"
+      },
+      {
+        "key": "1187_CR58",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compbiomed.2024.109389",
+        "volume": "184",
+        "author": "S Sweidan",
+        "year": "2025",
+        "unstructured": "Sweidan S, Askar SS, Abouhawwash M, Badr E. A hybrid healthy diet recommender system based on machine learning techniques. Comput Biol Med. 2025;184:109389. https://doi.org/10.1016/j.compbiomed.2024.109389.",
+        "journal-title": "Comput Biol Med"
+      },
+      {
+        "issue": "3",
+        "key": "1187_CR59",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jvscit.2025.101730",
+        "volume": "11",
+        "author": "PS Iyer",
+        "year": "2025",
+        "unstructured": "Iyer PS, et al. A novel hybrid approach to treatment of multiple mesenteric aneurysms in a patient with celiac artery occlusion from Suspected chronic median arcuate ligament syndrome. J Vasc Surg Cases Innov Tech. 2025;11(3):101730. https://doi.org/10.1016/j.jvscit.2025.101730.",
+        "journal-title": "J Vasc Surg Cases Innov Tech"
+      },
+      {
+        "key": "1187_CR60",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Armand TPT, Deji-Oloruntoba O, Bhattacharjee S, Nfor KA, Kim HC. Optimizing longevity: integrating smart nutrition and digital technologies for personalized anti-aging healthcare. In: 2024 International Conference on Artificial Intelligence in Information and Communication (ICAIIC). Osaka, Japan: IEEE; 2024. p. 243–248.",
+        "DOI": "10.1109/ICAIIC60209.2024.10463262"
+      },
+      {
+        "issue": "1",
+        "key": "1187_CR61",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1186/s12911-022-01790-0",
+        "volume": "22",
+        "author": "L Verboven",
+        "year": "2022",
+        "unstructured": "Verboven L, et al. A treatment recommender clinical decision support system for personalized medicine: method development and proof-of-concept for drug resistant tuberculosis. BMC Med Inform Decis Mak. 2022;22(1):1. https://doi.org/10.1186/s12911-022-01790-0.",
+        "journal-title": "BMC Med Inform Decis Mak"
+      },
+      {
+        "key": "1187_CR62",
+        "doi-asserted-by": "publisher",
+        "first-page": "454",
+        "DOI": "10.1016/j.jad.2023.07.057",
+        "volume": "339",
+        "author": "T Kyriacou",
+        "year": "2023",
+        "unstructured": "Kyriacou T, Hodges J, Gould RL. Predictors and moderators of treatment outcome in late-life anxiety: a systematic review. J Affect Disord. 2023;339:454–70. https://doi.org/10.1016/j.jad.2023.07.057.",
+        "journal-title": "J Affect Disord"
+      },
+      {
+        "issue": "1",
+        "key": "1187_CR63",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.3390/computers13010001",
+        "volume": "13",
+        "author": "K Zioutos",
+        "year": "2023",
+        "unstructured": "Zioutos K, Kondylakis H, Stefanidis K. Healthy personalized recipe recommendations for weekly meal planning. Computers. 2023;13(1):1. https://doi.org/10.3390/computers13010001.",
+        "journal-title": "Computers"
+      },
+      {
+        "issue": "8",
+        "key": "1187_CR64",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pdig.0000333",
+        "volume": "2",
+        "author": "FR Cavallo",
+        "year": "2023",
+        "unstructured": "Cavallo FR, Toumazou C. Personalised lifestyle recommendations for type 2 diabetes: design and simulation of a recommender system on UK Biobank Data. PLOS Digital Health. 2023;2(8):e0000333. https://doi.org/10.1371/journal.pdig.0000333.",
+        "journal-title": "PLOS Digital Health"
+      },
+      {
+        "issue": "3",
+        "key": "1187_CR65",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1371/journal.pone.0213292",
+        "volume": "14",
+        "author": "X Jiang",
+        "year": "2019",
+        "unstructured": "Jiang X, Wells A, Brufsky A, Neapolitan R. A clinical decision support system learned from data to personalize treatment recommendations towards preventing breast cancer metastasis. PLoS ONE. 2019;14(3):e0213292. https://doi.org/10.1371/journal.pone.0213292.",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "key": "1187_CR66",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.compbiomed.2023.107329",
+        "volume": "165",
+        "author": "S Jamrat",
+        "year": "2023",
+        "unstructured": "Jamrat S, Sukasem C, Sratthaphut L, Hongkaew Y, Samanchuen T. A precision medicine approach to personalized prescribing using genetic and nongenetic factors for clinical decision-making. Comput Biol Med. 2023;165:107329. https://doi.org/10.1016/j.compbiomed.2023.107329.",
+        "journal-title": "Comput Biol Med"
+      },
+      {
+        "key": "1187_CR67",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jbi.2023.104342",
+        "volume": "141",
+        "author": "A Dogan",
+        "year": "2023",
+        "unstructured": "Dogan A, Li Y, Odo CP, Sonawane K, Lin Y, Liu C. A utility-based machine learning-driven personalized lifestyle recommendation for cardiovascular disease prevention. J Biomed Inform. 2023;141:104342. https://doi.org/10.1016/j.jbi.2023.104342.",
+        "journal-title": "J Biomed Inform"
+      },
+      {
+        "key": "1187_CR68",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.smhl.2024.100465",
+        "volume": "32",
+        "author": "Z Yang",
+        "year": "2024",
+        "unstructured": "Yang Z, et al. ChatDiet: Empowering personalized nutrition-oriented food recommender chatbots through an LLM-augmented framework. Smart Health. 2024;32:100465. https://doi.org/10.1016/j.smhl.2024.100465.",
+        "journal-title": "Smart Health"
+      },
+      {
+        "key": "1187_CR69",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.eswa.2024.124859",
+        "volume": "256",
+        "author": "N Scarpato",
+        "year": "2024",
+        "unstructured": "Scarpato N, et al. Drug recommendation ranking for personalized medicine using outcomes of retrospective cancer patients. Expert Syst Appl. 2024;256:124859. https://doi.org/10.1016/j.eswa.2024.124859.",
+        "journal-title": "Expert Syst Appl"
+      },
+      {
+        "issue": "2",
+        "key": "1187_CR70",
+        "doi-asserted-by": "publisher",
+        "first-page": "431",
+        "DOI": "10.3390/s19020431",
+        "volume": "19",
+        "author": "RM Nouh",
+        "year": "2019",
+        "unstructured": "Nouh RM, Lee HH, Lee WJ, Lee JD. A smart recommender based on hybrid learning methods for personal well-being services. Sensors. 2019;19(2):431. https://doi.org/10.3390/s19020431.",
+        "journal-title": "Sensors"
+      },
+      {
+        "issue": "1",
+        "key": "1187_CR71",
+        "doi-asserted-by": "publisher",
+        "first-page": "44",
+        "DOI": "10.1186/s12911-023-02137-z",
+        "volume": "23",
+        "author": "Y Hu",
+        "year": "2023",
+        "unstructured": "Hu Y, Huerta J, Cordella N, Mishuris RG, Paschalidis IC. Personalized hypertension treatment recommendations by a data-driven model. BMC Med Inform Decis Mak. 2023;23(1):44. https://doi.org/10.1186/s12911-023-02137-z.",
+        "journal-title": "BMC Med Inform Decis Mak"
+      }
+    ],
+    "container-title": [
+      "Discover Artificial Intelligence"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/article/10.1007/s44163-026-01187-2",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s44163-026-01187-2.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/s44163-026-01187-2.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          13
+        ]
+      ],
+      "date-time": "2026-05-13T16:39:33Z",
+      "timestamp": 1778690373000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://link.springer.com/10.1007/s44163-026-01187-2"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          30
+        ]
+      ]
+    },
+    "references-count": 71,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "1187"
+    ],
+    "URL": "https://doi.org/10.1007/s44163-026-01187-2",
+    "relation": {},
+    "ISSN": [
+      "2731-0809"
+    ],
+    "issn-type": [
+      {
+        "value": "2731-0809",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          30
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "14 July 2025",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "18 March 2026",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "30 March 2026",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Declarations"
+        }
+      },
+      {
+        "value": "Not applicable. This manuscript is a literature survey and does not involve human participants, animals, or any new data collection by the authors.",
+        "order": 2,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Ethics approval and consent to participate"
+        }
+      },
+      {
+        "value": "Not applicable. This study does not involve any clinical trials.",
+        "order": 3,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Clinical trial number"
+        }
+      },
+      {
+        "value": "All authors have reviewed and approved the final version of this manuscript and consent to its publication. Since the study does not include any identifiable individual data or participant information, additional consent for publication was not required.",
+        "order": 4,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Consent for publication"
+        }
+      },
+      {
+        "value": "The authors declare no conflict of interest.",
+        "order": 5,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Cometing interests"
+        }
+      }
+    ],
+    "article-number": "425"
+  }
+}
