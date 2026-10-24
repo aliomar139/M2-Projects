@@ -1,13 +1,13 @@
-# Cascaded Adaptive Blended Retrieval for Efficient Retrieval-Augmented Generation
+# Evaluating BM25-First Early Exit for Hybrid Retrieval: A Held-Out SciFact Study
 
-> **Draft status:** This manuscript predates the corrected held-out evaluation. Treat its empirical results as provisional; see `results_ledger.md` and `improvement_plan.md`. It will be rewritten after the corrected GPU-backed run.
+> **Draft status:** Updated with the first corrected held-out SciFact run. The current heuristic did not satisfy its training quality constraint and produced no early exits on the test set. This paper reports that negative result and makes no claim of an efficiency gain.
 
 **A research paper draft**  
 **Authors:** [Add author names and affiliations]
 
 ## Abstract
 
-Hybrid retrieval combines lexical, dense, and learned sparse search to improve the chance that a relevant document appears near the top of a ranking. A static hybrid pipeline pays for every retrieval branch on every query, even when a cheaper lexical result may already be adequate. We study whether sequential confidence-based routing can reduce this cost in a Blended RAG-style system. Our cascade first runs BM25 and exits when its top score is high, or when a large score margin coincides with a query containing a high-IDF term; otherwise, it runs dense MiniLM and SPLADE retrieval and merges the three rankings with reciprocal rank fusion. On 500 Natural Questions queries, BM25 alone achieves 84.4% hit rate at 20, while static three-way fusion achieves 97.2%. A conservative cascade configuration exits on 73.2% of queries and reports 91.8% hit rate at 20, with mean latency of 25.3 ms compared with 67.0 ms for the reported static run. On BEIR SciFact, five-fold cross-validation selects the same threshold triplet in each fold and yields mean Recall@100 of 0.9001 and nDCG@10 of 0.6613, with 84.0% early exits and an estimated mean latency of 30.20 ms versus 90.87 ms for static fusion. The SciFact latency is reconstructed from cached component timings rather than measured in a live end-to-end cascade. These results indicate a promising quality–cost trade-off, while leaving live latency, broader generalization, and downstream answer quality for the cascade unverified.
+Hybrid retrieval combines lexical, dense, and learned sparse search, but running every branch for every query can add cost. We evaluate a BM25-first gate that exits on a high top score or on a large score margin paired with a high-IDF query term; otherwise, it invokes dense MiniLM and SPLADE and fuses their rankings with reciprocal rank fusion. On the full BEIR SciFact corpus, thresholds were selected from 809 training queries under a predeclared constraint of at least 98% of static training Recall@100, then evaluated on 300 held-out test queries. None of the 90 tested threshold combinations met the training constraint, so the system used static fallback. Static RRF achieved test Recall@100 of 0.9610 and nDCG@10 of 0.6984 at a measured mean latency of 53.63 ms on a Tesla T4. The fallback path had identical retrieval metrics, skipped no neural calls, and measured 53.69 ms mean latency. This evaluation finds no acceleration benefit from the current gate under the chosen quality constraint. Earlier Natural Questions cascade values are exploratory because the candidate pool was built using evaluation qrels and neural branches were precomputed.
 
 **Keywords:** retrieval-augmented generation, hybrid retrieval, query routing, early exit, BM25, SPLADE
 
@@ -17,13 +17,13 @@ Retrieval-augmented generation systems depend on retrieving useful evidence befo
 
 This paper studies a narrower systems question: can an initial lexical result identify a useful subset of queries for which neural retrieval can be skipped? The motivation comes from an ablation on 500 Natural Questions (NQ) queries. BM25 reaches a hit rate at 20 of 84.4%, compared with 97.2% for three-way BM25, dense, and SPLADE fusion. This gap shows both sides of the problem: lexical retrieval can cover many queries, while hybrid retrieval still recovers relevant documents that BM25 misses. The ablation motivates selective routing; it does not establish that every BM25 hit is redundant to neural retrieval or that the cascade preserves the fused system’s quality.
 
-We implement a sequential cascade that computes BM25 first and makes an early-exit decision from its leading scores and the query’s maximum inverse document frequency (MaxIDF). Queries that do not satisfy the gate escalate to dense and SPLADE retrieval, followed by three-way RRF. The approach is evaluated using cached component retrieval results on SciFact and NQ. The experiments report retrieval quality, early-exit frequency, and latency estimates derived from component timings.
+We implement a sequential cascade that computes BM25 first and makes an early-exit decision from its leading scores and the query’s maximum inverse document frequency (MaxIDF). Queries that do not satisfy the gate escalate to dense and SPLADE retrieval, followed by three-way RRF. The corrected SciFact runner executes the branches conditionally and measures end-to-end retrieval latency. Older NQ outputs use precomputed branch rankings and fixed latency assumptions; they are discussed only as exploratory evidence.
 
-This work makes three contributions:
+This study makes three contributions:
 
-1. **A sequential early-exit design for a Blended RAG-style retriever.** BM25 confidence is used to decide whether dense and learned sparse retrieval should run.
-2. **A branch ablation and routing evaluation.** The project reports single-branch and fused retrieval results on NQ, plus five-fold threshold selection on SciFact and a threshold sweep on NQ.
-3. **A measured account of the current evidence boundary.** We distinguish retrieval outcomes from answer quality and estimated latency from end-to-end cascade timing, allowing the current results to be interpreted without treating them as a deployment validation.
+1. **An implementation of BM25-first conditional retrieval.** A lexical confidence gate can return a BM25 ranking or escalate to dense and learned-sparse retrieval with RRF.
+2. **A matched held-out SciFact evaluation.** Threshold selection uses train qrels, while static and cascade paths are compared on the same untouched test queries and full corpus.
+3. **A negative result under a stated quality target.** None of the tested gates met the 98% training Recall@100 constraint, and the fallback avoided no neural calls. The result identifies a limitation of the current signal and threshold grid rather than demonstrating a speedup.
 
 ## 2. Related Work
 
@@ -91,11 +91,11 @@ with documents absent from a list contributing zero. The cascade returns the BM2
 
 ### 4.1 Datasets and implementations
 
-The project evaluates BEIR SciFact using 300 test queries and Natural Questions using 500 queries from the BEIR setup. The SciFact corpus contains title and abstract fields. The retrievers use a BM25 implementation, `sentence-transformers/all-MiniLM-L6-v2` with FAISS inner-product search for dense retrieval, and `naver/splade-cocondenser-ensembledistil` for learned sparse retrieval. The available source code records cached top-100 component results and per-query component timings. NQ runs are reported from a Kaggle environment with two NVIDIA T4 GPUs; the SciFact artifacts report local evaluation.
+The corrected evaluation uses the full 5,183-document BEIR SciFact corpus, 809 train queries, and 300 held-out test queries. It uses Best Fields BM25, `sentence-transformers/all-MiniLM-L6-v2` with FAISS inner-product search, and `naver/splade-cocondenser-ensembledistil`. The runner executes BM25 first and invokes Dense and SPLADE only after escalation. Components are warmed before timing, and CUDA is synchronized around timed calls. The measurements come from one Kaggle run on a Tesla T4. Earlier NQ runs use 500 queries but remain exploratory because their corpus pool includes judged relevant documents from those queries.
 
 ### 4.2 Metrics and protocols
 
-NQ reports hit rate at 5 and 20 and nDCG@10 for retriever ablations, plus hit rate at 20, early-exit percentage, and mean latency for a threshold sweep. SciFact reports Recall@100 and nDCG@10. Five-fold cross-validation partitions the 300 query IDs into five folds after shuffling with seed 42. For each fold, the threshold grid is searched over the other four folds, minimizing summed cached component latency subject to training Recall@100 being at least 98% of the full-fusion training recall. The chosen threshold is then evaluated on the held-out fold. The reported static latency is a sequential sum of cached BM25, dense, and SPLADE times. Cascade latency is calculated by adding BM25 time for exits and all three component times for escalations. These values estimate sequential retrieval cost; they do not include an observed live router run or necessarily represent a common hardware/runtime configuration across datasets.
+The train split is used to select among 90 threshold combinations. A candidate is eligible only if its train Recall@100 is at least 98% of static train Recall@100; among eligible candidates, the runner selects the lowest estimated mean latency. No candidate met this constraint, so the test cascade used static fallback. Test metrics are Recall@100, nDCG@10, and MAP@10. Static and cascade latency are measured on the same 300 test queries; mean, p50, p95, and p99 are reported. Each path was measured once, so the latency figures are preliminary and have no repeated-run uncertainty estimate.
 
 ### 4.3 Scope of comparison
 
@@ -118,18 +118,18 @@ Table 1 reports the available NQ ablation. SPLADE has the highest individual hit
 
 The fused system does not exceed each component on every metric: SPLADE alone has higher reported NQ hit rates and nDCG@10 than the RRF run. Accordingly, the motivation for routing here is the cost-quality behavior of this specific implementation, not a claim that fusion is uniformly the strongest NQ ranking.
 
-### 5.2 SciFact cross-validation
+### 5.2 Held-out SciFact evaluation
 
-**Table 2. SciFact five-fold results.** Cascade results are means over held-out folds; baseline values are computed over the full query set in the result script.
+**Table 2. Held-out SciFact results on the same 300 test queries. Latency was measured once on a Tesla T4.**
 
-| System | Recall@100 | nDCG@10 | Mean latency (ms) | Early exits |
-|:--|--:|--:|--:|--:|
-| Static three-way RRF | 0.9610 | 0.7032 | 90.87 | 0.0% |
-| Cascaded retrieval | 0.9001 | 0.6613 | 30.20* | 84.0% |
+| System | Recall@100 | nDCG@10 | MAP@10 | Mean latency (ms) | Early exits |
+|:--|--:|--:|--:|--:|--:|
+| Static three-way RRF | 0.9610 | 0.6984 | 0.6538 | 53.63 | 0.0% |
+| Cascade (static fallback) | 0.9610 | 0.6984 | 0.6538 | 53.69 | 0.0% |
 
-\* Estimated by summing cached component timings conditional on the routing outcome.
+The quality constraint was not met by any of the 90 training candidates. Static train Recall@100 was 0.95838, making the target approximately 0.93920. The runner selected no threshold and escalated every test query. Dense and SPLADE were each invoked 300 times; zero neural calls were skipped. The 0.06 ms difference between measured path means is not evidence of a speedup and is within the uncertainty expected from a single timing pass.
 
-The cascade reduces reported mean retrieval cost by 66.8% relative to the 90.87 ms summed baseline and avoids neural branches on 84.0% of held-out queries. Mean held-out Recall@100 is 0.9001, or 93.66% of the full-set baseline recall; nDCG@10 is 0.6613. This is a measurable trade-off, not evidence that recall is preserved within the 2% training constraint on held-out data. The five folds select the same fallback triplet, \((\tau_{high},\tau_{gap},\tau_{idf})=(26,4,3.5)\), in the saved result artifact. The fold-level variation is not reported, so uncertainty around the mean cannot be assessed from the available summary.
+The single-retriever results provide context: Best Fields BM25 reaches Recall@100 0.8706, dense MiniLM 0.9250, and SPLADE 0.9320. SPLADE alone has slightly higher nDCG@10 (0.7024) and MAP@10 (0.6590) than three-way RRF in this run. Future gate comparisons should therefore include SPLADE-only, not only static fusion and BM25.
 
 ### 5.3 NQ threshold sweep
 
@@ -147,15 +147,17 @@ The NQ sweep shows a monotonic trade-off across the listed configurations: more 
 
 ## 6. Discussion
 
-The results support the feasibility of lexical-first routing under the tested conditions. BM25 provides a low-cost first-stage ranking, while score magnitude, score separation, and query specificity offer simple signals for deciding when to escalate. The NQ sweep makes the operating trade-off explicit, and SciFact cross-validation provides an initial check that a threshold selected without the held-out fold can reduce the estimated retrieval cost.
+The corrected result does not support the current gate as a useful accelerator under the 98% training recall constraint. Although the runner implements conditional neural execution, no tested threshold qualified, so every held-out query used static fallback. The tested BM25 score, margin, and MaxIDF features, combined with the current threshold grid, were not sufficient to identify safe early exits on this collection.
 
-Several issues limit the strength of the evidence. First, the gate’s features and BM25 thresholds are collection-dependent, and the experiment does not test calibration transfer between datasets. Second, SciFact latency is reconstructed from independently cached component times, rather than measured with the cascade executing online; this omits or may misrepresent routing, scheduling, batching, and system overhead. The NQ latency setup is also not directly comparable to SciFact. Third, the evaluation does not include per-query confidence intervals, significance tests, tail latency, GPU energy, or an end-to-end answer-quality comparison for cascaded versus static retrieval. Fourth, the static baseline and cascade metrics on SciFact are not aggregated identically in the saved code: the baseline is evaluated on all queries while the cascade is averaged over held-out folds. A matched fold-level baseline would make the comparison cleaner. Finally, the NQ branch ablation shows that SPLADE alone outperforms the fused run on the listed retrieval metrics, so the choice of fallback and fusion configuration merits further study.
+Train-only frontier (`threshold_frontier_scifact.json`): all 90 candidates were evaluated on the 809 training queries. None meets the 0.93922 Recall@100 target. Training Recall@100 ranges from 0.9111 to 0.9286; exit rates range from 78.74% to 96.42%. The best-recall point is 0.9286 at 79.48% exits, still 0.0106 below target. Candidate latency is estimated on training data and is not evidence of held-out savings. The thresholds may also be poorly scaled for Best Fields BM25 on SciFact. Test latency was measured in one pass, without repeated-run confidence intervals or energy measurements. The NQ sweep is not held-out efficiency evidence because its corpus pool uses evaluation qrels and its neural branches were precomputed. No cascade-versus-static answer-quality experiment exists. SPLADE alone slightly exceeds static RRF on two SciFact ranking metrics., so we cannot assess how close the best gate came to the quality constraint or whether a weaker target would provide a useful operating point. The thresholds may also be poorly scaled for Best Fields BM25 on SciFact. Latency was measured in one pass, without repeated-run confidence intervals or energy measurements. The NQ sweep is not a held-out efficiency result because its corpus pool uses evaluation qrels and its neural branches were precomputed. No cascade-versus-static answer-quality experiment exists. Finally, SPLADE alone slightly exceeds static RRF on two SciFact ranking metrics, making the choice of fallback a live design question.
+
+The next experiment should recalibrate the gate features, compare with strong single-retriever baselines, then evaluate any selected policy on untouched queries. Measure latency over repeated runs. Any RAG-quality claim requires matched generator settings. quality?exit?latency frontier, compare calibrated gates and strong single-retriever baselines, then evaluate any selected policy on untouched queries. Latency should be measured over repeated runs. Any claim about RAG quality requires a matched generator evaluation with identical prompts and context budgets.
 
 ## 7. Conclusion
 
-We presented a BM25-first cascade for a three-branch hybrid retriever. The gate exits on a high BM25 score or on a joint margin-and-specificity condition, and otherwise escalates to dense and SPLADE retrieval with RRF. On the project’s NQ sweep, the conservative configuration reports 73.2% early exits and a 62.2% lower mean latency than static fusion, at a 5.4-point reduction in hit rate@20. On SciFact, five-fold threshold selection reports 84.0% early exits and an estimated 66.8% latency reduction, with held-out mean Recall@100 of 0.9001 versus the reported static baseline of 0.9610. These results motivate further study of adaptive hybrid retrieval but do not yet establish live latency savings or downstream QA preservation.
+We evaluated a BM25-first gate for a hybrid retriever that combines BM25, dense MiniLM, and SPLADE with RRF. On a full-corpus held-out SciFact split, none of the 90 tested thresholds met the predeclared 98% training Recall@100 constraint. Static fallback therefore ran all branches on all test queries, reaching Recall@100 of 0.9610, nDCG@10 of 0.6984, and mean latency of 53.69 ms, effectively matching the static baseline. The current evidence does not establish an efficiency benefit.
 
-The next evaluation should run the router and retrievers online under a shared hardware and serving setup, report fold-level and per-query uncertainty, compare matched fold baselines, and measure end-to-end answer quality. It should also evaluate threshold transfer across collections and compare alternative gates and fallback rankings, including SPLADE-only and learned or calibrated confidence models.
+The next study should recalibrate or redesign the confidence signal, include SPLADE-only as a strong baseline, and evaluate any revised policy on untouched queries with repeated latency measurements. quality?exit frontier, recalibrate or redesign the confidence signal, include SPLADE-only as a strong baseline, and evaluate any revised policy on untouched queries with repeated latency measurements.
 
 ## References
 
@@ -168,17 +170,16 @@ The next evaluation should run the router and retrievers online under a shared h
 
 ## Author self-review (drafting checklist)
 
-- **Contribution:** The paper presents a specific early-exit extension and an initial empirical trade-off. Its novelty is scoped to this implementation and evaluation; priority claims are avoided.
-- **Writing clarity:** Gate variables, fallback behavior, datasets, and metric definitions are specified. Threshold values are identified as collection-dependent.
-- **Experimental strength:** Results show substantial estimated cost reduction with measurable retrieval loss. The available summary does not provide confidence intervals or significance tests.
-- **Evaluation completeness:** The cascade has two dataset evaluations, but no fair online latency benchmark, adaptive baseline comparison, tail-latency analysis, or cascade QA evaluation.
-- **Method soundness:** The gate is reproducible from source, though score calibration and dataset transfer remain unvalidated. Latency evidence is explicitly labeled as an estimate where appropriate.
+- **Contribution:** The current result is a negative evaluation of one heuristic and threshold grid; a strong standalone novelty claim is not yet established.
+- **Writing clarity:** Gate variables, fallback behavior, data splits, and metrics are defined.
+- **Experimental strength:** The corrected comparison is matched and held out, but no gate met the quality constraint. Latencies have no repeated-run uncertainty estimate.
+- **Evaluation completeness:** No frontier table, transfer study, adaptive baseline, energy analysis, or cascade QA comparison is available.
+- **Method soundness:** Conditional execution is implemented, but the tested heuristic did not activate on the held-out test set. Calibration and transfer remain unresolved.
 
-## Claim–evidence map
+## Claim-evidence map
 
-- **Claim:** BM25 alone reaches 84.4% hit rate@20 on the evaluated NQ sample. **Evidence:** `kaggle_nq_and_xxl_results.json`, 500-query ablation. **Status:** Supported for this sample and setup.
-- **Claim:** The conservative NQ cascade configuration reports 73.2% early exits, 25.3 ms mean latency, and 91.8% hit rate@20. **Evidence:** Project result tables in the detailed report and repository anchor. **Status:** Supported as reported; the summary artifact does not preserve query-level cascade timing data.
-- **Claim:** SciFact cross-validation reports 84.0% early exits and mean Recall@100 of 0.9001. **Evidence:** `cv_cascaded_results.json` and `07_tune_cascade_cv.py`. **Status:** Supported by saved aggregate, with an unmatched full-set baseline comparison noted.
-- **Claim:** SciFact latency falls 66.8%. **Evidence:** Cached component-latency arithmetic in `07_tune_cascade_cv.py`; the result JSON stores the percentage. **Status:** Supported as a reconstructed estimate, not live end-to-end timing.
-- **Claim:** The cascade preserves downstream answer quality. **Evidence:** No cascade QA experiment is present. **Status:** Needs evidence; excluded as a result claim.
-
+- **Claim:** BM25 alone reaches 84.4% hit rate@20 on the evaluated NQ sample. **Evidence:** `kaggle_nq_and_xxl_results.json`, 500-query ablation. **Status:** Supported for the exploratory, qrels-filtered pool only.
+- **Claim:** The corrected SciFact gate reduced neural calls under the 98% training recall constraint. **Evidence:** `cascade_heldout_scifact.json` reports null thresholds, static fallback, 0% exits, and 0 calls skipped. **Status:** Not supported; no tested threshold met the constraint.
+- **Claim:** Static RRF on held-out SciFact reached Recall@100 0.9610 and nDCG@10 0.6984, with 53.63 ms mean latency on a Tesla T4. **Evidence:** `cascade_heldout_scifact.json`, 300 test queries. **Status:** Supported for this single measured pass and setup.
+- **Claim:** The corrected cascade is faster than static RRF. **Evidence:** Mean latencies are 53.69 ms vs. 53.63 ms, with no neural calls skipped. **Status:** Not supported.
+- **Claim:** Cascaded retrieval preserves downstream answer quality. **Evidence:** No cascade QA experiment is present. **Status:** Not evaluated.

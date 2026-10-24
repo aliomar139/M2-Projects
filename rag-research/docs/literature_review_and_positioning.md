@@ -1,3 +1,5 @@
+> **Superseded:** This earlier positioning draft contains claims that are not supported by the corrected held-out SciFact run. Use [`project_focused_literature_review.md`](project_focused_literature_review.md) for the current evidence-based review.
+
 # Literature Review & Architectural Positioning: Blended RAG vs. Contemporary Hybrid & Adaptive RAG (2024–2026)
 
 > **Document Purpose**: This document provides an empirical and theoretical synthesis of **106 full-text research papers** on Hybrid and Adaptive Retrieval-Augmented Generation (RAG). It serves as direct drafting material, related work positioning, and justification for the **Cascaded Blended RAG** research paper and thesis.

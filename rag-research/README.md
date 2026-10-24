@@ -1,98 +1,42 @@
-# Cascaded Adaptive Blended RAG: Research Repository
+# Cascaded Adaptive Blended RAG
 
-A systems-level extension of IBM's Blended RAG (*Sawarkar et al., IEEE MIPR 2024*), introducing sequential early-exit routing to eliminate redundant neural computation while preserving hybrid retrieval accuracy.
+This repository studies whether a BM25-first confidence gate can skip dense and SPLADE retrieval in a hybrid retriever. The current implementation is a research prototype; the latest held-out SciFact run did **not** find a threshold that met its training quality constraint, so it fell back to static retrieval and saved no neural calls.
 
----
+## Latest corrected result
 
-## 📁 Repository Directory Structure
+Source: [`cascade_heldout_scifact.json`](cascade_heldout_scifact.json), evaluated on a Tesla T4.
 
-```text
-rag-research/
-├── README.md                                  # Repository overview and quick start (this file)
-├── PROJECT_ANCHOR.md                          # Live research telemetry, completed milestones, and data
-│
-├── docs/                                      # Research reports, publications, and presentation guides
-│   ├── Cascaded_Blended_RAG_Research_Report.docx  # Formal academic report (Word format)
-│   ├── Cascaded_Blended_RAG_Research_Report.md    # Formal academic report (Markdown format)
-│   ├── cascaded_blended_rag_report.html       # Visual standalone HTML report
-│   ├── cascaded_blended_rag_report.pdf        # Standalone PDF research report
-│   ├── how_to_explain_the_project.md          # 30-second elevator pitch & oral defense guide
-│   ├── cascaded_blended_rag_project.md        # Architectural roadmap & prior art comparison
-│   ├── Blended-Rag.pdf                        # Base paper (Sawarkar et al., IBM Research, IEEE MIPR 2024)
-│   └── proposal_brief.pdf                     # Original M2 proposal brief
-│
-├── notebooks/                                 # GPU execution and evaluation notebooks
-│   └── reproduction.ipynb                     # Kaggle Dual T4 notebook (FLAN-T5-XXL QA & NQ Cascaded sweep)
-│
-├── cascaded-blended-rag/                      # Core implementation & experiment pipelines
-│   ├── src/                                   # Production retrieval and routing modules
-│   │   ├── bm25_retriever.py                  # Multi-field (Best Fields) BM25 indexer (CPU)
-│   │   ├── dense_retriever.py                 # MiniLM-L6-v2 + FAISS FlatIP indexer
-│   │   ├── splade_retriever.py                # SPLADE sparse neural encoder + CSR matrix cache
-│   │   └── cascaded_router.py                 # Sequential decision gate (s1, delta, MaxIDF)
-│   ├── experiments/                           # Reproducible evaluation scripts
-│   │   ├── 01_baseline_bm25.py                # BM25 Single vs. Best Fields on SciFact
-│   │   ├── 02_baseline_dense.py               # Dense vector evaluation on SciFact
-│   │   ├── 03_baseline_splade.py              # SPLADE evaluation on SciFact
-│   │   ├── 04_baseline_blended_rag.py         # 3-Way Reciprocal Rank Fusion on SciFact
-│   │   ├── 05_replicate_squad.py              # SQuAD v1.1 Top-10 retrieval evaluation
-│   │   ├── 06_replicate_trec_covid.py         # TREC-COVID NDCG@10 evaluation
-│   │   ├── 07_tune_cascade_cv.py              # Legacy cache-based exploratory analysis
-│   │   └── 08_evaluate_cascade_heldout.py     # Train/test evaluation with conditional execution
-│   ├── data_loader.py                         # BEIR SciFact data loading utility
-│   ├── squad_loader.py                        # SQuAD v1.1 data extraction utility
-│   ├── trec_covid_fast_loader.py              # Fast TREC-COVID loader with caching
-│   ├── data/                                  # Preprocessed corpora, queries, and qrels
-│   └── results/                               # Cached runs, predictions, and evaluation telemetry
-│
-├── Blended-RAG/                               # Official IBM Research repository clone
-└── Similar-Papers/                            # Comparative literature datasets (DBLP & Consensus)
-```
+| System | Recall@100 | nDCG@10 | MAP@10 | Mean latency | Neural calls skipped |
+|:--|--:|--:|--:|--:|--:|
+| Static BM25 + Dense + SPLADE RRF | 0.9610 | 0.6984 | 0.6538 | 53.63 ms | 0% |
+| Gate with static fallback | 0.9610 | 0.6984 | 0.6538 | 53.69 ms | 0% |
 
----
+Thresholds were selected using 809 SciFact train queries under a 98%-of-static-Recall@100 constraint and evaluated on 300 held-out test queries over all 5,183 corpus documents. None of the 90 tested threshold combinations met the constraint. The fallback therefore ran Dense and SPLADE for all test queries. Latencies are from a single measured pass and are hardware-specific.
 
-## 🔬 Core Empirical Results
+The result does not demonstrate an acceleration benefit. The saved training frontier (`threshold_frontier_scifact.json`) contains 90 candidates; none meets the recall target. See the results ledger for the trade-off and limits. Next, diagnose gate calibration, then evaluate any revised policy on untouched queries. See [the results ledger](docs/results_ledger.md) and [improvement plan](docs/improvement_plan.md).
 
-### 1. Base Paper Reproduction Across Benchmarks
+## Repository contents
 
-| Benchmark Dataset | Scope | Metric | Paper Baseline | Our Reproduction |
-| :--- | :--- | :--- | :--- | :--- |
-| **Natural Questions (NQ)** | 500 Queries (BEIR) | Top-20 Retrieval | 88.88% | **97.20% (Verified)** |
-| **Natural Questions (NQ)** | 500 Queries (BEIR) | NDCG@10 | 0.6700 | **0.7094 (Verified)** |
-| **SQuAD v1.1 Retrieval** | 500 Queries, 2067 Docs | Top-10 Retrieval | 94.49% | **96.40% (Verified)** |
-| **SQuAD QA Generation** | FLAN-T5-XXL (11B) | Exact Match (EM) | 57.63% | **79.00% (Verified)** |
-| **SQuAD QA Generation** | FLAN-T5-XXL (11B) | Token F1 Score | 68.40% | **81.59% (Verified)** |
-| **TREC-COVID** | 50 Queries, 2572 Docs | NDCG@10 | 0.8000 - 0.8700 | **0.6463 (Beats all singles)** |
+- `cascaded-blended-rag/src/`: BM25, Dense, SPLADE, and routing implementations.
+- `cascaded-blended-rag/experiments/`: retrieval baselines, legacy exploratory CV, and held-out evaluation.
+- `cascaded-blended-rag/results/`: saved baseline and legacy experiment outputs.
+- `notebooks/reproduction.ipynb`: original executed NQ and SQuAD run; preserve as historical evidence.
+- `notebooks/heldout_scifact_kaggle.ipynb`: Kaggle launch instructions for the corrected evaluation.
+- `notebooks/cascade_source_bundle.zip`: source bundle for Kaggle.
+- `docs/results_ledger.md`: metrics, source artifacts, and validity notes.
+- `docs/cascaded_adaptive_blended_rag_paper.md`: current manuscript draft.
+- `docs/project_focused_literature_review.md`: related-work analysis based on downloaded papers.
 
-### 2. Cascaded Adaptive Extension on Natural Questions (Dual Nvidia T4 GPUs)
+## Run the SciFact evaluation
 
-| Configuration | Thresholds ($\tau_{\text{high}}, \tau_{\text{gap}}$) | Neural Avoidance (%) | Average Latency | Top-20 Recall |
-| :--- | :--- | :--- | :--- | :--- |
-| **Static Blended RAG** | N/A (100% neural execution) | 0.0% | 67.0 ms | **97.20%** |
-| **Cascaded - Conservative** | $\tau=28.0, \Delta=6.0, \text{IDF}=3.5$ | **73.2%** | **25.3 ms (62.2% cut)** | **91.80%** |
-| **Cascaded - Balanced** | $\tau=25.0, \Delta=5.0, \text{IDF}=3.5$ | **84.2%** | **19.0 ms (71.6% cut)** | **89.40%** |
-| **Cascaded - Moderate** | $\tau=23.0, \Delta=4.0, \text{IDF}=3.0$ | **90.0%** | **15.7 ms (76.6% cut)** | **88.40%** |
-| **Pure BM25 Baseline** | Pure Lexical | 100.0% | **10.0 ms** | 84.40% |
-
----
-
-## 🚀 Quick Execution Guide
-
-Activate the environment from the repository root:
+From the repository root, activate the project environment and run:
 
 ```powershell
-# Activate Python Virtual Environment
-.\cascaded-blended-rag\venv\Scripts\Activate.ps1
-
-# Calibrate on SciFact train qrels and evaluate conditional cascade on test qrels
 python cascaded-blended-rag/experiments/08_evaluate_cascade_heldout.py
-
-# Run Multi-Field BM25 Baseline
-python cascaded-blended-rag/experiments/01_baseline_bm25.py
-
-# Run 3-Way Blended RAG Baseline
-python cascaded-blended-rag/experiments/04_baseline_blended_rag.py
 ```
 
-The executed [Kaggle notebook](notebooks/reproduction.ipynb) contains the original NQ ablation, cascade simulation, threshold sweep, and SQuAD generation run. Its cascade timings are fixed assumptions and it evaluates a qrels-filtered NQ corpus pool; treat those results as exploratory. Run the new SciFact held-out evaluation on Kaggle (GPU recommended) to collect directly measured conditional latency and test retrieval metrics. The notebook remains preserved as the original executed run.
+The script downloads SciFact if needed, builds or validates retriever caches, calibrates thresholds on train qrels, and evaluates on held-out test qrels. A GPU is recommended for the neural retrievers. The output is written to `cascaded-blended-rag/results/cascade_heldout_scifact.json`.
 
+## Historical results
+
+The original NQ notebook reports a conservative setting with 73.2% simulated exits and 25.3 ms calculated latency. It built its candidate pool using relevant documents from the evaluated queries and computed all neural rankings before routing. Those values are exploratory; they do not measure live skipped calls or full-corpus NQ performance. The older SciFact CV artifact also used a single-field cache and reconstructed latency. See the results ledger for details.

@@ -60,13 +60,15 @@ This is useful motivation for an adaptive policy, but not a direct test of the g
 
 ### 5.2 Cascade evaluations
 
-The saved SciFact result artifact reports five-fold mean cascade Recall@100 = 0.9001, nDCG@10 = 0.6613, estimated mean latency = 30.20 ms, and 84% early exits. The accompanying script searches thresholds on four folds subject to a training recall constraint of 98% of full fusion, then evaluates the selected gate on the held-out fold. It selects the same threshold triplet in all five folds. The comparison in the script is not fully matched: static metrics are evaluated on the full 300-query set, while cascade metrics are averaged over held-out folds. The 90.87 ms static latency is hard-coded as a sum of component averages, and cascade latency is reconstructed from cached component timings rather than observed by executing a live cascade. In addition, this script reads `bm25_single_cache.json`, not `bm25_best_cache.json`.
+The corrected held-out SciFact run is stored in `cascade_heldout_scifact.json`. It uses the full 5,183-document corpus, selects thresholds from 809 train queries, and evaluates 300 held-out queries. The 98%-of-static-training-Recall@100 constraint was not met by any of the 90 tested threshold combinations. The runner therefore used static fallback: Recall@100 = 0.9610, nDCG@10 = 0.6984, and mean latency = 53.69 ms, with zero early exits and zero neural calls skipped. The matched static baseline measured 53.63 ms mean latency with identical retrieval metrics. This is a negative result for the current gate under the selected quality target; it is not evidence of acceleration. The timing is one Tesla T4 pass and needs repeated measurements before performance claims. Train-only frontier (`threshold_frontier_scifact.json`): all 90 candidates were evaluated on the 809 training queries. None meets the 0.93922 Recall@100 target. Training Recall@100 ranges from 0.9111 to 0.9286; exit rates range from 78.74% to 96.42%. The best-recall point is 0.9286 at 79.48% exits, still 0.0106 below target. Candidate latency is estimated on training data and is not evidence of held-out savings. This is a negative diagnostic for the current gate/grid, not evidence that no possible routing policy can work., so the result cannot show how close the best candidate came to the constraint.
+
+The legacy SciFact CV artifact remains separate exploratory evidence. Its script uses a single-field BM25 cache and unmatched aggregate baselines, and reconstructs latency from cached component times. It should not be combined with the corrected test result.
 
 The executed Kaggle notebook contains both a default NQ cascade run and a sensitivity sweep. Its default run reports 92.4% exits, hit@20 of 88.0%, nDCG@10 of 0.5625, and 14.3 ms estimated latency; the static run reports hit@20 of 97.2% and nDCG@10 of 0.7094. The sweep reports the conservative setting (28, 6, 3.5) at 73.2% exits, hit@20 of 91.8%, nDCG@10 of 0.6115, and 25.3 ms; progressively more aggressive settings increase exits and reduce retrieval metrics. These are executed notebook outputs, not just figures in a summary. However, the latency values are constants assigned in the notebook (10 ms BM25, 12 ms dense, 45 ms SPLADE), not timings measured by the cascade.
 
 The Kaggle notebook also limits the NQ corpus to the first 15,000 documents plus every document judged relevant to the selected 500 queries. This constructs the evaluation pool using the evaluation qrels and is not a clean held-out retrieval protocol; it also differs substantially from searching the full BEIR NQ collection. In addition, the notebook computes BM25, dense, SPLADE, and static RRF rankings for all 500 queries before applying the cascade logic to those in-memory rankings. The reported exit rate therefore measures the proportion of queries the rule would route to BM25; it does not demonstrate that the notebook actually skipped neural model invocations. Finally, the notebook evaluates several threshold settings on the same 500-query set and supplies no independent NQ validation split. The sweep is useful for exploratory analysis but not an unbiased estimate of a selected threshold’s generalization.
 
-Neither cascade evaluation establishes preserved answer quality. The FLAN-T5-XXL SQuAD result in the project is a separate generator experiment and is not a comparison between cascaded and static retrieval. The current cascade evidence is therefore retrieval quality in an exploratory NQ pool and a SciFact cached-results simulation, not end-to-end QA quality or measured production savings.
+Neither the legacy nor corrected cascade evaluation establishes preserved answer quality. The FLAN-T5-XXL SQuAD result is a separate generator experiment, not a comparison between cascaded and static retrieval. The corrected SciFact result measures the current code path, but because it selected static fallback it demonstrates no production savings. NQ remains exploratory, and no downstream cascade QA experiment is available.
 
 ### 5.3 Other reproduction results are context, not cascade evidence
 
@@ -80,7 +82,7 @@ The current evidence supports these statements:
 
 - BM25 has substantial hit@20 on the evaluated NQ subset, while neural branches and fusion can add further retrieval coverage.
 - A thresholded BM25 gate can produce a range of exit rates and retrieval-quality outcomes in offline evaluation.
-- On SciFact, the saved cross-validation summary reports 84% early exits alongside lower recall and nDCG than the static run, with latency calculated from cached timings.
+- On the corrected held-out SciFact run, the tested gate did not meet its training quality constraint; static fallback skipped no neural calls. The earlier 84% exit figure comes from a legacy cache-based exploratory analysis.
 
 The current evidence does not support claims that the method is the first adaptive RAG system, that it preserves accuracy within 1.5–2%, that it has validated downstream QA quality, or that the reported latency gains are measured live end-to-end. Nor does it establish preservation of Best Fields behavior in the SciFact cascade, given the cache used by the CV script.
 
@@ -103,6 +105,7 @@ The research contribution should therefore be framed as an **initial empirical s
 ## Evidence files consulted
 
 - `cascaded-blended-rag/results/kaggle_nq_and_xxl_results.json`
+- `cascade_heldout_scifact.json`
 - `cascaded-blended-rag/results/cv_cascaded_results.json`
 - `cascaded-blended-rag/results/squad_replication_results.json`
 - `cascaded-blended-rag/results/trec_covid_replication_results.json`

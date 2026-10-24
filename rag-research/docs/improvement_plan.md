@@ -53,15 +53,37 @@ After the evaluation is stable, rewrite the project-facing material from the res
 
 **Completion condition:** All documents use the same method description, metrics, threshold provenance, and limitations.
 
-## Kaggle GPU checkpoint
+## Updated result and next work
 
-The corrected first evaluation path is now prepared for SciFact. **A Kaggle GPU run is needed now** to execute the neural retrievers and obtain the first held-out measurement. This run uses the complete SciFact corpus, selects thresholds using train qrels, and evaluates on separate test queries. It does not correct the earlier NQ corpus protocol; those notebook results remain exploratory until a full-corpus NQ rerun is designed and executed. The first SciFact latency report is a measured pass, and should be treated as an initial hardware-specific estimate; repeated timing runs and uncertainty analysis remain follow-up improvements.
+The first corrected SciFact run is complete and recorded in `cascade_heldout_scifact.json`. It uses the full 5,183-document corpus, 809 train queries for threshold selection, and 300 held-out test queries. On the Tesla T4, static RRF reaches Recall@100 0.9610, nDCG@10 0.6984, and MAP@10 0.6538 at 53.63 ms mean measured latency. The 98%-of-static-training-recall constraint was not met by any tested gate. The runner correctly used static fallback: 0% test exits, 0 neural calls skipped, and 53.69 ms mean latency. Thus, the current gate has not demonstrated useful acceleration under the declared quality target.
 
-Run `notebooks/heldout_scifact_kaggle.ipynb` with `notebooks/cascade_source_bundle.zip` attached as a Kaggle dataset input. Enable Internet and select a GPU accelerator (a single T4 is sufficient). Download the resulting `cascade_heldout_scifact.json` and return it here before we revise quantitative claims in the paper and project reports.
+### Next implementation step
+
+1. Completed: `threshold_frontier_scifact.json` records all 90 fixed-threshold candidates. None meets the 0.93922 train Recall@100 target.
+2. Completed: `router_training_scifact.jsonl` contains 809 train-only examples with BM25 features and per-query recall gain from Dense+SPLADE escalation.
+3. Completed first learned-router attempt: `results/learned_cascade_heldout_scifact.json` shows 70.67% exits but lower recall (0.9346 vs 0.9610) and slower latency (61.48 vs 56.01 ms). The Random Forest router alone averaged about 21 ms per query.
+4. Completed: `results/compact_router_cv_scifact.json` compares shallow trees, Ridge, ExtraTrees, and the 300-tree reference with nested train-only CV and a 99% recall target. Ridge predicts in 0.14 ms locally with 49.20% exits and 99.36% pooled relative recall; ExtraTrees-32 gives 55.25% exits and 99.49% relative recall at 1.19 ms. Fold results vary, and neither result is a held-out guarantee.
+5. Completed: the frozen SciFact-trained Ridge gate was evaluated on the official full NFCorpus test corpus. It exited on 68.11% of queries and cut mean latency 45.8%, but Recall@100 retained only 85.2% of static RRF (0.2681 vs. 0.3147); p95/p99 latency improved only 5.1%/1.3%. This is not a quality-preserving result. The NFCorpus test set is now inspected, so do not tune on it. Next, use a development split to diagnose or recalibrate the router, freeze the revised protocol, and evaluate on another untouched collection. Keep the current JSON as a transfer-failure case study.
 
 ## Current project position
 
-Treat the existing NQ cascade sweep as exploratory: on the notebook’s qrels-filtered pool, the conservative setting reports 73.2% early exits, hit@20 91.8%, nDCG@10 0.6115, and 25.3 ms calculated from fixed component costs; static RRF reports hit@20 97.2% and nDCG@10 0.7094. Treat SciFact CV as a cached-results simulation until the BM25 variant and matched-fold baseline are corrected. Do not claim preserved answer quality or measured live latency from these runs.
+Treat the existing NQ cascade sweep as exploratory: its pool uses qrels from the selected evaluation queries, its neural branches are precomputed before routing, and its latency is calculated from fixed component costs. Treat the SciFact cross-validation output as legacy exploratory evidence because it used a single-field BM25 cache and unmatched aggregate baselines. The new held-out SciFact run corrects those protocol issues but finds no qualifying gate in its tested threshold grid. Do not claim measured neural-call savings or answer-quality preservation for the current method.
 
-The held-out SciFact runner and Kaggle handoff are prepared, but no corrected result exists until that notebook is executed. The existing 07 experiment remains a historical artifact; 08 is the intended next evaluation entry point.
 
+## Recommended contribution to build next
+
+The current cross-dataset result exposes the central implementation gap: a threshold calibrated on SciFact does not preserve its exit rate or recall on NFCorpus. The next method should treat cross-domain transfer as an untrusted starting point and add a target-development calibration stage.
+
+### Candidate method: recall-constrained adaptive cascade
+
+1. Run BM25, Dense, SPLADE, and static RRF offline on labeled development queries. Record each query's BM25 features, whether early exit would change its Recall@100, and the latency cost of escalation.
+2. Fit a compact model to predict the *per-query recall gain from escalation*. Keep the frozen SciFact Ridge model as one baseline, alongside simple rules and a target-trained compact model.
+3. Select the exit threshold using development queries only. Maximize skipped neural calls while requiring a predeclared recall floor against static RRF. Use a query bootstrap lower confidence bound for the constraint; if no threshold qualifies, set the policy to full RRF.
+4. Freeze the model, threshold, feature code, and retrieval settings. Evaluate once on an untouched test collection and report quality, skipped calls, mean/p50/p95/p99 latency, and uncertainty on the same queries.
+5. Add a shift safeguard: if target development features or predicted gains fall outside the calibration range, disable early exit and use full RRF.
+
+This makes the research question concrete: **can target-side calibration and a conservative fallback recover useful neural-call savings under a stated recall constraint when a source-trained gate transfers poorly?** The NFCorpus test result remains a failure analysis; do not use its test labels or route outcomes to choose the revised policy. Use NFCorpus development data for calibration only, then select a different untouched collection for confirmation. Check the downloaded literature before making a novelty claim; this is a candidate contribution, not a verified novelty claim.
+
+### Immediate next step
+
+Prepare a development-calibration evaluator that saves per-query features, RRF rankings, BM25 rankings, branch timings, and decisions separately for development and test. Before another GPU run, confirm the target collection's split protocol and lock the recall floor and bootstrap procedure. The existing `11_evaluate_ridge_transfer_nfcorpus.py` is a test-only transfer script and should not be repurposed to tune on NFCorpus test.
