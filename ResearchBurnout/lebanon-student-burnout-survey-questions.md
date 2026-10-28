@@ -1,10 +1,10 @@
 # Lebanon Student Burnout Survey Questionnaire
 
-**Current instrument:** 43 questions: 20 non-BAT eligibility, context, GenAI, routine, and continuation items, plus the 23-item BAT-S core. The 10 secondary complaint items are omitted from this streamlined version.
+**Current instrument:** 43 questions: 20 non-BAT enrollment-location, context, GenAI, routine, and continuation items, plus the 23-item BAT-S core. The 10 secondary complaint items are omitted from this streamlined version.
 
 **Live Google Form:** [Open the published survey](https://docs.google.com/forms/d/e/1FAIpQLSdsdMvfQbvm2ZosBR7LbEGYFOx7o_d2kO3tYsoN6CmSoaG07A/viewform?usp=dialog). The researcher reports that the generated form works.
 
-**Target cohort:** Undergraduate and graduate students enrolled at universities in Lebanon.
+**Target cohort:** Lebanese undergraduate and graduate students studying in Lebanon or abroad, as clarified by the researcher on 2026-10-28 after data collection. Both Yes and No responses to Question 1 are retained for pooled analyses. The researcher identifies the No respondents as Lebanese students studying abroad based on recruitment information; nationality and overseas enrollment are not independently established by Question 1.
 
 **Estimated completion time:** About 5 minutes for an average respondent (one fast pilot completion took about 3 minutes).
 
@@ -17,6 +17,8 @@
 **Consent:** By choosing to continue, you confirm that you have read the information above and agree to participate. If you do not consent, do not submit the survey.
 
 ### Question 1 (ELIGIBLE_LEBANON)
+
+**Analysis note:** The original internal code is retained for traceability. This question records enrollment at a university in Lebanon and is no longer used to exclude respondents. It does not record university ownership/sector or establish that respondents abroad have the same study conditions as private-university students in Lebanon.
 
 **Are you currently a student enrolled at a university in Lebanon?**
 
@@ -300,7 +302,7 @@ The form administers all 23 BAT-S core items, but the supplied source marks a 12
 - Cognitive Impairment: Q34, Q37, Q38; mean = (Q34 + Q37 + Q38) / 3.
 - Emotional Impairment: Q39, Q40, Q43; mean = (Q39 + Q40 + Q43) / 3.
 
-**Primary index = (Exhaustion mean + Mental Distance mean + Cognitive Impairment mean + Emotional Impairment mean) / 4.** Keep the index and dimension means continuous for primary analysis. The 23-item core score may be calculated as a secondary outcome; do not conflate it with the 12-item index. The 10 secondary complaint items are omitted.
+**Primary index = (Exhaustion mean + Mental Distance mean + Cognitive Impairment mean + Emotional Impairment mean) / 4.** Keep the index and dimension means continuous for primary analysis. The 23-item core score is a separate secondary outcome. The researcher reports these full-core dimension means as completed: `exhaustion_23 = MEAN.8(BAT21 TO BAT28)` and `mental_distance_23 = MEAN.5(BAT29, BAT30, BAT31, BAT32, BAT33)`. In SPSS, `MEAN.8` and `MEAN.5` require all 8 or 5 items respectively to be valid. Calculate the corresponding full-core cognitive impairment mean from BAT34–BAT38 and emotional impairment mean from BAT39–BAT43, then average the four full-core domain means equally to form the 23-item score. Do not conflate it with the 12-item index. The 10 secondary complaint items are omitted.
 
 Requested exploratory tiers: Low <2.25; Moderate 2.25 to 3.40 inclusive; High >3.40. These fixed bands are project-defined and are not established published BAT-S non-clinical norms, empirical sample tertiles, validated Lebanese student cutoffs, or diagnostic thresholds. Report the continuous index and dimension means with tier results. Exclude all BAT items from predictor features when modeling the index or tiers.
 
@@ -310,7 +312,7 @@ The BAT may be used without author permission; preserve the supplied item wordin
 
 ## Google Forms creation script
 
-Creates the streamlined 43-question form. Eligibility responses are recorded for exclusion during data cleaning; the form does not automatically end for a No response. The live form link is listed above. Review course or institutional requirements and the actual form settings before recruitment.
+Creates the streamlined 43-question form. Question 1 records enrollment location; both Yes and No responses are retained under the cohort clarification dated 2026-10-28. The form does not automatically end for a No response. The live form link is listed above. Review course or institutional requirements and the actual form settings before recruitment.
 
 ```javascript
 function createLebanonStudentBurnoutSurvey() {

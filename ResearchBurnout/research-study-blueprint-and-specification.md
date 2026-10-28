@@ -9,11 +9,13 @@
 
 ## 1. Executive Summary & Project Context
 
-This specification document outlines the end-to-end methodology, theoretical grounding, measurement architecture, statistical protocols, and machine learning pipeline for a study on **academic burnout and Generative AI (GenAI) reliance** among university students in Lebanon.
+This specification document outlines the end-to-end methodology, theoretical grounding, measurement architecture, statistical protocols, and machine learning pipeline for a study on **academic burnout and Generative AI (GenAI) reliance** among Lebanese university students studying in Lebanon or abroad.
 
 ### Core Research Focus
 
-This cross-sectional study examines current self-reported burnout symptoms among students enrolled at universities in Lebanon. It asks whether GenAI reliance and cognitive offloading are associated with BAT dimensions and local study conditions. In particular, BAT cognitive impairment and mental distance motivate examining GenAI offloading as a potential correlate. This is a hypothesis to test; the survey cannot establish causal direction or future burnout risk.
+This cross-sectional study examines current self-reported burnout symptoms among Lebanese university students studying in Lebanon or abroad. It asks whether GenAI reliance and cognitive offloading are associated with BAT dimensions and reported study conditions. In particular, BAT cognitive impairment and mental distance motivate examining GenAI offloading as a potential correlate. This is a hypothesis to test; the survey cannot establish causal direction or future burnout risk.
+
+**Cohort clarification (2026-10-28, after data collection):** The researcher reports that the respondents who answered No to enrollment at a university in Lebanon are Lebanese students studying abroad. Retain these respondents in the same pooled primary cohort as those studying in Lebanon. The local export contains 97 submissions: 87 Yes and 10 No. This replaces the original plan to exclude No responses. Keep Question 1 as an enrollment-location descriptor. The question does not establish nationality, a specific overseas country, or university ownership/sector; the description of the No group relies on recruitment information. Pooling does not establish equivalent study conditions between students abroad and students at private universities in Lebanon. Report this change to the original inclusion rule in the methods.
 
 ---
 
@@ -48,16 +50,16 @@ The GenAI hypothesis is that cognitive offloading may covary with BAT cognitive 
 
 ### Phase 1: Instrument preparation and data collection
 
-- The active instrument has 43 questions: 20 non-BAT items (including one eligibility item and continuation intention) plus the 23 core student BAT items. The 10 secondary complaint items are omitted.
+- The active instrument has 43 questions: 20 non-BAT items (including one enrollment-location item, originally labeled eligibility, and continuation intention) plus the 23 core student BAT items. The 10 secondary complaint items are omitted.
 - Retained non-BAT domains cover academic profile, electricity/internet/financial study conditions, GenAI frequency/use/reliance/verification/anxiety, study hours/workload/sleep/stress, avoidance coping, institutional support, and continuation intention. Redundant trust, efficiency, and routine items were pruned.
 - The 12 items marked for the BAT-S short form form the primary outcome, scored as the equal-weight mean of four dimension means. The administered 23-item core score is secondary; no secondary complaint score is collected.
-- The form has been generated; the researcher reports that it works. One fast pilot completion took about 3 minutes, so the estimated average is about 5 minutes. Continue checking comprehension and eligibility during recruitment and verify the live form settings. Keep the original BAT-S item stems and response anchors; brief parenthetical glosses are appended to selected terms for comprehension and should be documented as wording clarifications.
+- The form has been generated; the researcher reports that it works. One fast pilot completion took about 3 minutes, so the estimated average is about 5 minutes. Continue checking comprehension and cohort coverage during any further recruitment and verify the live form settings. Keep the original BAT-S item stems and response anchors; brief parenthetical glosses are appended to selected terms for comprehension and should be documented as wording clarifications.
 - The earlier target of 300 to 500 respondents is provisional. Reassess sample size against the intended analysis and desired precision.
 
 ### Phase 2: Data quality and measurement review
 
 - Preserve the original export and document a data dictionary.
-- Apply pre-specified eligibility and data-quality rules.
+- Apply documented data-quality rules and the cohort clarification above. Do not exclude a response because Question 1 is No.
 - Describe response distributions, missingness, and floor or ceiling effects.
 - Estimate internal consistency for each 3-item short-form dimension and the 12-item total; report uncertainty. Reliability alone does not establish that the instrument works equivalently in Lebanon.
 
@@ -67,7 +69,7 @@ Analyze the continuous 12-item BAT-S short-form index and its four dimensions. A
 
 ### Phase 4: Exploratory regression and interpretation
 
-- Consider a pre-specified, reduced set of predictors from the non-BAT questions. Exclude eligibility, all 23 student BAT items, and continuation intention from the primary burnout predictor matrix. Keep all preprocessing and feature selection within validation folds.
+- Consider a pre-specified, reduced set of predictors from the non-BAT questions. Exclude Question 1 (enrollment location, originally labeled eligibility), all 23 student BAT items, and continuation intention from the primary burnout predictor matrix. Keep all preprocessing and feature selection within validation folds.
 - Compare a regularized linear model with at most one low-complexity alternative if the sample supports it.
 - Keep preprocessing and any feature selection inside the validation folds. Report cross-validated MAE and RMSE with fold-to-fold variation.
 - Treat model explanations as associations in this sample. Do not make causal, diagnostic, or individual intervention claims.
@@ -97,7 +99,7 @@ The survey administers all 23 core BAT-S items, but the supplied source marks a 
 
 ### Secondary 23-item core score
 
-The survey also includes the other 11 core items. As a secondary analysis, calculate the four full-core means (Exhaustion: 8 items; Mental Distance: 5; Cognitive Impairment: 5; Emotional Impairment: 5) and their equal-weight average. Do not mix this 23-item score with the primary 12-item index or apply the 12-item tier rules without a separately justified analysis. The 10 secondary psychosomatic and psychological complaint items are omitted from the survey.
+The survey also includes the other 11 core items. As a secondary analysis, calculate the four full-core means (Exhaustion: 8 items; Mental Distance: 5; Cognitive Impairment: 5; Emotional Impairment: 5) and their equal-weight average. The researcher reports completing `exhaustion_23 = MEAN.8(BAT21 TO BAT28)` and `mental_distance_23 = MEAN.5(BAT29, BAT30, BAT31, BAT32, BAT33)`; these SPSS functions require all items in the dimension to be valid. The local SAV file currently contains `exhaustion_23`, but does not yet contain `mental_distance_23`, so reconcile/save that variable in the working dataset. The full-core cognitive and emotional means and the equal-weight composite remain outstanding. Do not mix this 23-item score with the primary 12-item index or apply the 12-item tier rules without a separately justified analysis. The 10 secondary psychosomatic and psychological complaint items are omitted from the survey.
 
 ### Psychometric assessment
 
@@ -105,7 +107,7 @@ Estimate Cronbach's alpha and McDonald's omega for each 3-item short-form dimens
 
 ### Candidate engineered predictors
 
-Use only non-BAT items in X; exclude eligibility and continuation intention from the burnout predictor matrix. Keep component variables available, document coding before deriving composites, and fit all learned preprocessing inside each training fold.
+Use only non-BAT items in X; exclude Question 1 (enrollment location, originally labeled eligibility) and continuation intention from the burnout predictor matrix. Keep component variables available, document coding before deriving composites, and fit all learned preprocessing inside each training fold.
 
 - **GenAI dependence proxy (exploratory):** AI_DEL and AI_EXAM were removed from the 43-question survey, so the proposed four-item dependence formula is unavailable. An available-item proxy can be defined as `((AI_COG + AI_CRIT) / 2) * (AI_FREQ / 5)`, using the active 1-to-5 questions. Label it a study-created proxy, assess its distribution, and do not imply validation.
 - **Verification deficit:** `AI_Verif_Deficit = 6 - AI_VERIF`, where AI_VERIF is the active 1-to-5 verification item.
@@ -126,24 +128,24 @@ Do not use a Friedman/Nemenyi test on the five folds of a single cross-validatio
 
 ## 6. Active 43-Question Questionnaire
 
-The active questionnaire and its Google Forms script live in [`lebanon-student-burnout-survey-questions.md`](lebanon-student-burnout-survey-questions.md). It contains 20 non-BAT items (including eligibility and continuation intention) and 23 BAT core items. The 10 secondary complaint items are excluded. The supplied instrument source is retained in [`Burnout_Assessment_Tool_English_Questionnaire.md`](Burnout_Assessment_Tool_English_Questionnaire.md).
+The active questionnaire and its Google Forms script live in [`lebanon-student-burnout-survey-questions.md`](lebanon-student-burnout-survey-questions.md). It contains 20 non-BAT items (including enrollment location and continuation intention) and 23 BAT core items. The 10 secondary complaint items are excluded. The supplied instrument source is retained in [`Burnout_Assessment_Tool_English_Questionnaire.md`](Burnout_Assessment_Tool_English_Questionnaire.md).
 
-The active survey records whether a respondent is enrolled at a Lebanese university, but it does not automatically terminate after a No answer. Exclude ineligible responses during cleaning. The questionnaire includes participant information, states that only the researcher developing the model will access responses, and explains that submitted responses cannot be individually withdrawn because direct identifiers are not collected. It does not request direct identifiers, though Google Forms may process technical or submission metadata. The researcher and ethics committee contact fields were omitted by project preference; confirm any course or institutional review requirements before recruitment. The data-retention period has not yet been specified. The estimated completion time is about 5 minutes, based on one fast 3-minute pilot completion.
+The active survey records whether a respondent is enrolled at a university in Lebanon, but it does not automatically terminate after a No answer. Under the cohort clarification dated 2026-10-28, retain both Yes and No responses; the researcher identifies the No group as Lebanese students studying abroad. Apply any other documented data-quality exclusions separately. The questionnaire includes participant information, states that only the researcher developing the model will access responses, and explains that submitted responses cannot be individually withdrawn because direct identifiers are not collected. It does not request direct identifiers, though Google Forms may process technical or submission metadata. The researcher and ethics committee contact fields were omitted by project preference; confirm any course or institutional review requirements before recruitment. The data-retention period has not yet been specified. The estimated completion time is about 5 minutes, based on one fast 3-minute pilot completion.
 
 ## 7. Google Forms Deployment
 
-The 43-question form has been generated and the researcher reports that it works: [open the live survey](https://docs.google.com/forms/d/e/1FAIpQLSdsdMvfQbvm2ZosBR7LbEGYFOx7o_d2kO3tYsoN6CmSoaG07A/viewform?usp=dialog). The embedded Apps Script is retained as the generation source; participant-facing titles omit internal analysis codes. The script disables email collection and the one-response-per-user limit. Confirm those settings in the live form before recruitment because the live form could not be independently inspected in this workspace. Eligibility responses are recorded for exclusion during cleaning.
+The 43-question form has been generated and the researcher reports that it works: [open the live survey](https://docs.google.com/forms/d/e/1FAIpQLSdsdMvfQbvm2ZosBR7LbEGYFOx7o_d2kO3tYsoN6CmSoaG07A/viewform?usp=dialog). The embedded Apps Script is retained as the generation source; participant-facing titles omit internal analysis codes. The script disables email collection and the one-response-per-user limit. Confirm those settings in the live form before recruitment because the live form could not be independently inspected in this workspace. Question 1 records enrollment location; retain both Yes and No responses under the cohort clarification dated 2026-10-28.
 
 ## 8. Analysis Workflow
 
 1. Preserve the untouched form export and document its data dictionary.
-2. Exclude ineligible or unusable responses under pre-written rules; retain the raw export.
-3. Calculate the marked 12-item BAT-S short-form dimension means and equal-weight index as the primary target; calculate the 23-item core score as secondary. Apply the requested tiers only as an exploratory secondary target.
+2. Retain both enrollment-location groups under the cohort clarification dated 2026-10-28. Apply any other documented data-quality exclusions separately; retain the raw export.
+3. Retain the marked 12-item BAT-S short-form dimension means and equal-weight index as the primary target. Complete all four full-core dimension means and their equal-weight average for the secondary 23-item score. Apply the requested tiers only as an exploratory secondary target.
 4. Describe sample composition, item distributions, missingness, floor/ceiling effects, and internal consistency before modeling.
 5. Fit a small prespecified regression analysis for the continuous 12-item index. If sample size and per-class counts allow, evaluate tier classification as an exploratory secondary task. Keep all transformations and feature selection inside validation folds.
 6. Report MAE/RMSE for regression; macro F1, balanced accuracy, per-class results and multiclass ROC-AUC when estimable for classification, with uncertainty and limitations. Do not describe concurrent estimates as future prediction. A future-outcome prediction claim requires follow-up data.
 
-The proposed 300 to 500 respondents remains a planning target, not a guarantee of adequate power or stable model performance. Reassess it using the intended predictor count, outcome variability, recruitment plan, and desired precision; monitor response eligibility and class counts during collection.
+The proposed 300 to 500 respondents remains a planning target, not a guarantee of adequate power or stable model performance. Reassess it using the intended predictor count, outcome variability, recruitment plan, and desired precision; monitor cohort composition, response quality, and class counts during collection.
 
 ---
 

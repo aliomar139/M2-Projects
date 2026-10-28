@@ -1,0 +1,613 @@
+{
+  "study_hours_code": {
+    "decimals": 0, 
+    "value_labels": {
+      "2.0": "5 to 10 hours", 
+      "1.0": "Less than 5 hours", 
+      "4.0": "More than 20 hours", 
+      "3.0": "11 to 20 hours"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "major": {
+    "decimals": 0, 
+    "type": 61, 
+    "measure": 1
+  }, 
+  "burnout_score": {
+    "decimals": 3, 
+    "value_labels": {}, 
+    "type": 0, 
+    "measure": 3
+  }, 
+  "ai_use_cases": {
+    "decimals": 0, 
+    "type": 99, 
+    "measure": 1
+  }, 
+  "congnitive_impairement_23": {
+    "decimals": 3, 
+    "value_labels": {}, 
+    "type": 0, 
+    "measure": 3
+  }, 
+  "BAT40": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "ai_offloading": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Strongly agree", 
+      "1.0": "Strongly disagree"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT42": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT43": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "academic_stress": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Strongly agree", 
+      "1.0": "Strongly disagree"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "ai_anxiety": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Strongly agree", 
+      "1.0": "Strongly disagree"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "sleep_duration": {
+    "decimals": 0, 
+    "type": 17, 
+    "measure": 1
+  }, 
+  "ai_use_summaries": {
+    "decimals": 0, 
+    "value_labels": {
+      "0.0": "Not selected", 
+      "1.0": "Selected"
+    }, 
+    "type": 0, 
+    "measure": 1
+  }, 
+  "BAT26": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT27": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT24": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT25": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT22": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT23": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "eligible": {
+    "decimals": 0, 
+    "type": 3, 
+    "measure": 1
+  }, 
+  "electricity": {
+    "decimals": 0, 
+    "type": 43, 
+    "measure": 1
+  }, 
+  "Timestamp": {
+    "decimals": 0, 
+    "type": 27, 
+    "measure": 1
+  }, 
+  "emotional_impairment_23": {
+    "decimals": 3, 
+    "value_labels": {}, 
+    "type": 0, 
+    "measure": 3
+  }, 
+  "major_code": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Arts & Design", 
+      "2.0": "Health Sciences / Medicine / Nursing / Pharmacy", 
+      "1.0": "STEM", 
+      "4.0": "Humanities, Social Sciences, or Law", 
+      "3.0": "Business / Economics / Finance"
+    }, 
+    "type": 0, 
+    "measure": 1
+  }, 
+  "BAT28": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT29": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "mental_distance_23": {
+    "decimals": 3, 
+    "value_labels": {}, 
+    "type": 0, 
+    "measure": 3
+  }, 
+  "internet": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Excellent", 
+      "1.0": "Very poor"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "academic_level": {
+    "decimals": 0, 
+    "type": 23, 
+    "measure": 1
+  }, 
+  "burnout_score_23": {
+    "decimals": 3, 
+    "value_labels": {}, 
+    "type": 0, 
+    "measure": 3
+  }, 
+  "avoidance": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Strongly agree", 
+      "1.0": "Strongly disagree"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "exhaustion": {
+    "decimals": 3, 
+    "value_labels": {}, 
+    "type": 0, 
+    "measure": 3
+  }, 
+  "ai_dependence": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Strongly agree", 
+      "1.0": "Strongly disagree"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "academic_level_code": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Master's / Postgraduate", 
+      "2.0": "Sophomore / Second Year", 
+      "1.0": "Freshman / First Year", 
+      "4.0": "Senior / Fourth Year +", 
+      "3.0": "Junior / Third Year"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT41": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT37": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "mental_distance": {
+    "decimals": 3, 
+    "value_labels": {}, 
+    "type": 0, 
+    "measure": 3
+  }, 
+  "GPA": {
+    "decimals": 0, 
+    "type": 50, 
+    "measure": 1
+  }, 
+  "exhaustion_23": {
+    "decimals": 3, 
+    "value_labels": {}, 
+    "type": 0, 
+    "measure": 3
+  }, 
+  "gpa_code": {
+    "decimals": 0, 
+    "value_labels": {
+      "2.0": "Satisfactory", 
+      "1.0": "Academic Warning / Passing", 
+      "4.0": "Excellent", 
+      "3.0": "Good"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT36": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "ai_frequency": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Daily", 
+      "1.0": "Never"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "emotional_impairment": {
+    "decimals": 3, 
+    "value_labels": {}, 
+    "type": 0, 
+    "measure": 3
+  }, 
+  "study_hours": {
+    "decimals": 0, 
+    "type": 18, 
+    "measure": 1
+  }, 
+  "ai_use_concepts": {
+    "decimals": 0, 
+    "value_labels": {
+      "0.0": "Not selected", 
+      "1.0": "Selected"
+    }, 
+    "type": 0, 
+    "measure": 1
+  }, 
+  "financial_strain": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Severe strain", 
+      "1.0": "No strain"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT35": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT34": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "university_support": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Strongly agree", 
+      "1.0": "Strongly disagree"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "workload": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Strongly agree", 
+      "1.0": "Strongly disagree"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT31": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT30": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT33": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT32": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "enrolled_lebanon": {
+    "decimals": 0, 
+    "value_labels": {
+      "0.0": "No", 
+      "1.0": "Yes"
+    }, 
+    "type": 0, 
+    "measure": 1
+  }, 
+  "BAT21": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT39": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "BAT38": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Always", 
+      "2.0": "Rarely", 
+      "1.0": "Never", 
+      "4.0": "Often", 
+      "3.0": "Sometimes"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "ai_use_solutions": {
+    "decimals": 0, 
+    "value_labels": {
+      "0.0": "Not selected", 
+      "1.0": "Selected"
+    }, 
+    "type": 0, 
+    "measure": 1
+  }, 
+  "sleep_duration_code": {
+    "decimals": 0, 
+    "value_labels": {
+      "2.0": "5 to 6 hours", 
+      "1.0": "Less than 5 hours", 
+      "4.0": "More than 8 hours", 
+      "3.0": "7 to 8 hours"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "ai_use_coding": {
+    "decimals": 0, 
+    "value_labels": {
+      "0.0": "Not selected", 
+      "1.0": "Selected"
+    }, 
+    "type": 0, 
+    "measure": 1
+  }, 
+  "leave_intention": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Strongly agree", 
+      "1.0": "Strongly disagree"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "ai_use_writing": {
+    "decimals": 0, 
+    "value_labels": {
+      "0.0": "Not selected", 
+      "1.0": "Selected"
+    }, 
+    "type": 0, 
+    "measure": 1
+  }, 
+  "ai_verification": {
+    "decimals": 0, 
+    "value_labels": {
+      "5.0": "Strongly agree", 
+      "1.0": "Strongly disagree"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "electricity_code": {
+    "decimals": 0, 
+    "value_labels": {
+      "2.0": "2 to 5 hours daily", 
+      "1.0": "Less than 2 hours daily / Minimal impact", 
+      "4.0": "More than 8 hours daily (Severe disruption)", 
+      "3.0": "5 to 8 hours daily"
+    }, 
+    "type": 0, 
+    "measure": 2
+  }, 
+  "cognitive_impairment": {
+    "decimals": 3, 
+    "value_labels": {}, 
+    "type": 0, 
+    "measure": 3
+  }
+}
