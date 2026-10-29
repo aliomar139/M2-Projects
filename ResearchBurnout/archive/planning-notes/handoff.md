@@ -1,3 +1,5 @@
+> Historical planning note. Some progress statements are out of date. Start with [the current README](../../README.md).
+
 # Research Project Handoff
 
 ## Project status
@@ -8,11 +10,11 @@ The target cohort is Lebanese university students studying in Lebanon or abroad.
 
 The 43-question Google Form has been generated, and the researcher reports that it works. Responses have been collected; whether further recruitment is ongoing has not been confirmed. Live survey: [open the live survey](https://docs.google.com/forms/d/e/1FAIpQLSdsdMvfQbvm2ZosBR7LbEGYFOx7o_d2kO3tYsoN6CmSoaG07A/viewform?usp=dialog). The web/browser tools in the prior chat could not inspect the live Google Form, so its live settings were not independently verified.
 
-The [active questionnaire](lebanon-student-burnout-survey-questions.md) is the source of truth for the questions and Apps Script generator. The [study blueprint](research-study-blueprint-and-specification.md) records the methodology, score definitions, psychometric plan, feature constraints, and modeling metrics.
+The [active questionnaire](../../survey/questionnaire.md) is the source of truth for the questions and Apps Script generator. The [study blueprint](../../docs/study-design.md) records the methodology, score definitions, psychometric plan, feature constraints, and modeling metrics.
 
 ## Instrument and scoring
 
-The saved analyses and exact results are documented in [SPSS_Analysis_Review.md](SPSS_Analysis_Review.md). The current output uses all 97 respondents and contains five alpha analyses, score descriptives, a histogram, one Pearson correlation, seven Spearman correlation procedures covering 11 burnout associations, and frequency summaries. All five alphas, score means/standard deviations, and the 12 burnout correlation coefficients (11 Spearman plus one Pearson) were independently reproduced from the local CSV. No adjusted regression or prediction model is present in the saved output. The next substantive step is to specify a small adjusted association model after finalizing coding and covariate roles.
+The saved analyses and exact results are documented in [analysis-progress.md](../../docs/analysis-progress.md). The current output uses all 97 respondents and contains five alpha analyses, score descriptives, a histogram, one Pearson correlation, seven Spearman correlation procedures covering 11 burnout associations, and frequency summaries. All five alphas, score means/standard deviations, and the 12 burnout correlation coefficients (11 Spearman plus one Pearson) were independently reproduced from the local CSV. No adjusted regression or prediction model is present in the saved output. The next substantive step is to specify a small adjusted association model after finalizing coding and covariate roles.
 
 - 43 questions total: 20 non-BAT items plus all 23 core BAT-S items. The 10 secondary complaint items are omitted.
 - Primary outcome: marked 12-item BAT-S short form, with three items per dimension and an equal-weight mean of the four dimension means.
@@ -37,4 +39,4 @@ The saved analyses and exact results are documented in [SPSS_Analysis_Review.md]
 4. Preserve the marked 12 BAT-S short-form score as the primary continuous outcome. Finish the remaining full-core domain means (cognitive impairment: BAT34–BAT38; emotional impairment: BAT39–BAT43), then calculate the equal-weight mean of all four full-core domain means as the secondary 23-item score. Treat risk tiers as exploratory.
 5. Assess response distributions and reliability, then run leakage-safe regression. Evaluate classification only if class counts support it. These cross-sectional responses measure concurrent associations, not future burnout or dropout.
 
-Legacy files in `old framework/data/` predate this instrument and contain no responses to the active BAT-S survey. Literature files are `PaperMetadata.csv` and `PaperMetadataDblp.xlsx`.
+Legacy files in `old framework/data/` predate this instrument and contain no responses to the active BAT-S survey. Literature files are `references/papers.csv` and `references/papers-dblp.xlsx`.

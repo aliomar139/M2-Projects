@@ -1,14 +1,22 @@
-# Lebanon Student Burnout Survey Questionnaire
+# Lebanon student burnout survey
 
-**Current instrument:** 43 questions: 20 non-BAT enrollment-location, context, GenAI, routine, and continuation items, plus the 23-item BAT-S core. The 10 secondary complaint items are omitted from this streamlined version.
+Use this file to look up the collected questions or the form-generation script. For project progress, open [the README](../README.md).
 
-**Live Google Form:** [Open the published survey](https://docs.google.com/forms/d/e/1FAIpQLSdsdMvfQbvm2ZosBR7LbEGYFOx7o_d2kO3tYsoN6CmSoaG07A/viewform?usp=dialog). The researcher reports that the generated form works.
+## How to use this file
 
-**Target cohort:** Lebanese undergraduate and graduate students studying in Lebanon or abroad, as clarified by the researcher on 2026-10-28 after data collection. Both Yes and No responses to Question 1 are retained for pooled analyses. The researcher identifies the No respondents as Lebanese students studying abroad based on recruitment information; nationality and overseas enrollment are not independently established by Question 1.
+The survey has 43 questions: 20 background and study questions, followed by 23 core BAT-S items. It omits the 10 secondary complaint items.
 
-**Estimated completion time:** About 5 minutes for an average respondent (one fast pilot completion took about 3 minutes).
+The question wording, response choices, consent text, and script remain unchanged during the documentation cleanup. Internal codes help with analysis; participants do not see them in form titles.
 
-**Instrument note:** The 23 supplied BAT-S core item stems and original 1-to-5 frequency scale are retained. Brief parenthetical explanations are appended to selected terms to support respondents with less English proficiency. Internal codes are shown here for analysis and omitted from participant-facing form titles.
+- [Questions and consent](#participant-information-and-consent)
+- [Scoring notes](#scoring-and-risk-tier-rules)
+- [Google Forms script](#google-forms-creation-script)
+
+The [live Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdsdMvfQbvm2ZosBR7LbEGYFOx7o_d2kO3tYsoN6CmSoaG07A/viewform?usp=dialog) exists, and the researcher reports that it works. This cleanup did not check live settings. Editing the script below does not update the existing form.
+
+The target group is Lebanese undergraduate and graduate students studying in Lebanon or abroad. Keep both Yes and No answers to Q1, following the researcher's clarification on 28 October 2026. The researcher identified the No group as students abroad; Q1 alone does not establish nationality or overseas enrollment.
+
+Estimated completion time is about 5 minutes, based on one fast pilot completion of about 3 minutes. Short explanations of selected words were added for readers with less English proficiency; record these wording clarifications in the methods.
 
 ## Participant information and consent
 
@@ -308,7 +316,7 @@ Requested exploratory tiers: Low <2.25; Moderate 2.25 to 3.40 inclusive; High >3
 
 ## BAT source and use
 
-The BAT may be used without author permission; preserve the supplied item wording and response scale and cite Schaufeli, W. B., Desart, S., and De Witte, H. (2020), "Burnout Assessment Tool (BAT): Development, Validity, and Reliability," *International Journal of Environmental Research and Public Health*, 17(24), 9495, [doi:10.3390/ijerph17249495](https://pmc.ncbi.nlm.nih.gov/articles/PMC7766078/). Supplied source: [Burnout_Assessment_Tool_English_Questionnaire.md](Burnout_Assessment_Tool_English_Questionnaire.md).
+The BAT may be used without author permission; preserve the supplied item wording and response scale and cite Schaufeli, W. B., Desart, S., and De Witte, H. (2020), "Burnout Assessment Tool (BAT): Development, Validity, and Reliability," *International Journal of Environmental Research and Public Health*, 17(24), 9495, [doi:10.3390/ijerph17249495](https://pmc.ncbi.nlm.nih.gov/articles/PMC7766078/). Supplied source: [bat-source.md](bat-source.md).
 
 ## Google Forms creation script
 

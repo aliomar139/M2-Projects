@@ -1,5 +1,8 @@
+* Earlier preparation workflow: writes a separate rebuilt file, not the corrected working dataset.
+* Update CD for your checkout. The two documented corrections still need to be applied to a rebuild.
 * Run on the saved project dataset; save results to a separate file.
-GET FILE='C:/Users/PC/Desktop/abdallah/M2-Projects/ResearchBurnout/spss_import/data.sav'.
+CD 'C:/Users/user/Desktop/M2-Porjects/ResearchBurnout'.
+GET FILE='archive/data/burnout-before-corrections.sav'.
 
 RECODE major
  ('STEM (Engineering, Computer Science, Math, Physical Sciences)'=1)
@@ -75,7 +78,7 @@ FORMATS enrolled_lebanon academic_level_code major_code gpa_code
  ai_use_writing ai_use_coding ai_use_summaries ai_use_solutions (F1.0).
 EXECUTE.
 
-SAVE OUTFILE='C:/Users/PC/Desktop/abdallah/M2-Projects/ResearchBurnout/spss_import/data_prepared.sav'
+SAVE OUTFILE='data/prepared/burnout-data-rebuilt.sav'
  /COMPRESSED.
 
 * Review counts and original-to-new category mappings; no inferential tests.

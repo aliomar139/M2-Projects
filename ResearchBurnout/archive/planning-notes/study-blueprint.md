@@ -1,3 +1,5 @@
+> Historical planning note. Some progress statements are out of date. Start with [the current README](../../README.md).
+
 ﻿# Research Study Specification & Execution Blueprint
 
 **Project Title:** Modeling Current Academic Burnout Symptoms in Higher Education: An Explainable Framework Assessing Generative AI Reliance, Cognitive Offloading, and Socio-Economic Stressors in Lebanon  
@@ -21,7 +23,7 @@ This cross-sectional study examines current self-reported burnout symptoms among
 
 ## 2. Theoretical Grounding & Literature Baseline
 
-This study draws on relevant theories, measures, and methods in recent peer-reviewed literature (sourced from `PaperMetadata.csv` and `PaperMetadataDblp.xlsx`):
+This study draws on relevant theories, measures, and methods in recent peer-reviewed literature (sourced from `references/papers.csv` and `references/papers-dblp.xlsx`):
 
 | Literature Source & Author | Key Findings & Methodological Contribution | How Our Study Integrates & Expands Upon It |
 | :--- | :--- | :--- |
@@ -128,7 +130,7 @@ Do not use a Friedman/Nemenyi test on the five folds of a single cross-validatio
 
 ## 6. Active 43-Question Questionnaire
 
-The active questionnaire and its Google Forms script live in [`lebanon-student-burnout-survey-questions.md`](lebanon-student-burnout-survey-questions.md). It contains 20 non-BAT items (including enrollment location and continuation intention) and 23 BAT core items. The 10 secondary complaint items are excluded. The supplied instrument source is retained in [`Burnout_Assessment_Tool_English_Questionnaire.md`](Burnout_Assessment_Tool_English_Questionnaire.md).
+The active questionnaire and its Google Forms script live in [`survey/questionnaire.md`](../../survey/questionnaire.md). It contains 20 non-BAT items (including enrollment location and continuation intention) and 23 BAT core items. The 10 secondary complaint items are excluded. The supplied instrument source is retained in [`survey/bat-source.md`](../../survey/bat-source.md).
 
 The active survey records whether a respondent is enrolled at a university in Lebanon, but it does not automatically terminate after a No answer. Under the cohort clarification dated 2026-10-28, retain both Yes and No responses; the researcher identifies the No group as Lebanese students studying abroad. Apply any other documented data-quality exclusions separately. The questionnaire includes participant information, states that only the researcher developing the model will access responses, and explains that submitted responses cannot be individually withdrawn because direct identifiers are not collected. It does not request direct identifiers, though Google Forms may process technical or submission metadata. The researcher and ethics committee contact fields were omitted by project preference; confirm any course or institutional review requirements before recruitment. The data-retention period has not yet been specified. The estimated completion time is about 5 minutes, based on one fast 3-minute pilot completion.
 

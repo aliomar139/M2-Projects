@@ -1,8 +1,19 @@
-﻿# Local survey response data: keep participant-level records out of Git
+# Local editor settings and scratch files
+/.vscode/
+/tmp/
+__pycache__/
+*.pyc
+
+# Preserve the prior local-only exports after moving them.
+/data/raw/survey-responses.xlsx
+/data/prepared/burnout-data-rebuilt.sav
+/archive/previous-survey/data/responses.csv
+/archive/previous-survey/data/responses.xlsx
+/survey/bat-source.pdf
+
+# Earlier local filenames, if exports are restored
 /Responses2 - Form Responses 1.csv
 /data.csv
 /data.xlsx
-/.vscode/
 /BAT-English.pdf
-/tmp/
 /BAT-S_ENG.pdf

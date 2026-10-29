@@ -1,18 +1,20 @@
 ﻿# Burnout Assessment Tool - Student Version (BAT-S)
 
-**Instrument:** Burnout Assessment Tool (BAT), student version. The statements below are transcribed from the supplied English student questionnaire PDF.
+This is a reference copy of the English student Burnout Assessment Tool (BAT-S), transcribed from the supplied PDF. For project progress, read [the README](../README.md). For the questions we collected, use [the active survey](questionnaire.md).
+
+The item wording and student instructions below stay unchanged.
 
 **Student instructions:** The following statements are related to your studies and how you experience them. Please state how often each statement applies to you.
 
-## Response Scale
+## Response scale
 
 | Never | Rarely | Sometimes | Often | Always |
 |---|---|---|---|---|
 | 1 | 2 | 3 | 4 | 5 |
 
-An asterisk (*) marks an item included in the **short 12-item version**, as indicated in the PDF. The short version consists of the marked items among the core symptoms. The secondary complaints are listed separately and are not marked as part of the short version in the PDF.
+An asterisk (*) marks one of the 12 short-form items identified in the PDF. All marked items belong to the core symptoms. The secondary complaints are separate and are not part of that short form.
 
-## Core Symptoms
+## Core symptoms
 
 ### Exhaustion
 
@@ -57,7 +59,7 @@ An asterisk (*) marks an item included in the **short 12-item version**, as indi
 | I get upset or sad without knowing why. | ○ | ○ | ○ | ○ | ○ |
 | I may overreact unintentionally.* | ○ | ○ | ○ | ○ | ○ |
 
-## Secondary Complaints
+## Secondary complaints
 
 ### Psychological Distress
 

@@ -2,14 +2,18 @@ from __future__ import print_function
 import ctypes as c
 import os, struct, json, collections, csv
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DATA_FILES = {
+    'burnout-before-corrections.sav': os.path.join(ROOT, 'archive', 'data', 'burnout-before-corrections.sav'),
+    'burnout-data.sav': os.path.join(ROOT, 'data', 'prepared', 'burnout-data.sav'),
+}
 os.chdir(r'C:\Program Files\IBM\SPSS\Statistics\23')
 d = c.CDLL('spssio64.dll')
 d.spssSetInterfaceEncoding(1)
 
 def read(name):
     h=c.c_int()
-    rc=d.spssOpenRead(os.path.join(ROOT,'spss_import',name).encode('utf-8'),c.byref(h))
+    rc=d.spssOpenRead(DATA_FILES[name].encode('utf-8'),c.byref(h))
     if rc: raise RuntimeError(('open',rc))
     n=c.c_int(); names=c.POINTER(c.c_char_p)(); types=c.POINTER(c.c_int)()
     rc=d.spssGetVarNames(h,c.byref(n),c.byref(names),c.byref(types))
@@ -45,12 +49,12 @@ def read(name):
             item['value_labels']={str(vals[j]):labels[j].decode('utf-8') for j in range(count.value)}
         metadata[var]=item
     d.spssCloseRead(h)
-    if name=='data_prepared.sav':
-        with open(os.path.join(ROOT,'spss_import','prepared_metadata_check.json'),'wb') as f:
+    if name=='burnout-data.sav':
+        with open(os.path.join(ROOT,'analysis','checks','variable-metadata.json'),'w', encoding='utf-8') as f:
             f.write(json.dumps(metadata,indent=2,ensure_ascii=True))
     return fields,rows
 
-af,a=read('data.sav'); bf,b=read('data_prepared.sav')
+af,a=read('burnout-before-corrections.sav'); bf,b=read('burnout-data.sav')
 out={'original_rows':len(a),'prepared_rows':len(b),'original_variables':len(af),'prepared_variables':len(bf)}
 out['changed_original_cells']=[(i+1,k) for i,(x,y) in enumerate(zip(a,b)) for k in x if x[k]!=y[k]]
 out['new_variables']=[k for k,t in bf if k not in a[0]]
@@ -74,7 +78,7 @@ for i,r in enumerate(b):
     if abs(r['burnout_score']-expected12)>1e-10: out['score_errors'].append((i+1,'burnout_score_vs_items'))
 out['numeric_missing']={k:sum(r[k]<-1e300 for r in b) for k,t in bf if not t and any(r[k]<-1e300 for r in b)}
 out['affected_rows']=[{'row':i+1,'timestamp':r['Timestamp'],'internet':r['internet'],'BAT39':r['BAT39'],'BAT40':r['BAT40'],'BAT43':r['BAT43'],'emotional_impairment':r['emotional_impairment'],'burnout_score':r['burnout_score'],'expected_burnout':sum(r['BAT'+str(j)] for j in [21,23,24,29,31,33,34,37,38,39,40,43])/12.0} for i,r in enumerate(b) if r['internet'] < -1e300 or r['emotional_impairment'] < -1e300]
-with open(os.path.join(ROOT,'spss_import','Burnout_SPSS_fixed.csv'),'rb') as f:
+with open(os.path.join(ROOT,'data','raw','survey-export-spss.csv'),'r', encoding='utf-8-sig', newline='') as f:
     raw=list(csv.reader(f)); headers=raw.pop(0)
 out['raw_numeric_differences']=[]
 for i,(r,source) in enumerate(zip(b,raw)):
@@ -82,6 +86,6 @@ for i,(r,source) in enumerate(zip(b,raw)):
     for j,(k,t) in enumerate(af[:44]):
         if not t and r[k]!=float(source[j]):
             out['raw_numeric_differences'].append({'row':i+1,'variable':k,'raw_answer':source[j]})
-with open(os.path.join(ROOT,'spss_import','prepared_check_results.json'),'wb') as f:
+with open(os.path.join(ROOT,'analysis','checks','data-checks.json'),'w', encoding='utf-8') as f:
     f.write(json.dumps(out,indent=2,ensure_ascii=True))
 print(json.dumps(out,indent=2,ensure_ascii=True))

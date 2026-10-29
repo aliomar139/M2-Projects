@@ -1,3 +1,5 @@
+> Earlier survey, kept for reference. Use the [active 43-question survey](../../../survey/questionnaire.md) for the current study.
+
 ﻿# Academic Habits, Lifestyle, and Student Burnout Risk Survey
 
 **Survey description:** Anonymous 5-minute research survey investigating academic habits, lifestyle factors, and predictors of academic burnout among university students.

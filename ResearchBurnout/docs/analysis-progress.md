@@ -1,6 +1,22 @@
-﻿# SPSS analysis progress and teammate handoff
+﻿# SPSS analysis review
 
-Updated: 28 October 2026. This review explains what we completed, what the variables mean, and what comes next.
+Use this file for exact results and variable codes. For a short progress summary, open [the README](../README.md).
+
+Analysis record: 28 October 2026. Language and navigation updated: 29 October 2026. Numerical results below are unchanged.
+
+## Quick reading guide
+
+Data preparation and the first analyses are complete. Both burnout scores are ready; no prediction model has been trained or evaluated.
+
+| Need | Go to |
+|---|---|
+| Score formulas | [Section 2](#2-burnout-scores-created) |
+| Reliability, averages, and correlations | [Section 3](#3-statistical-analyses-completed) |
+| Question codes and labels | [Section 4](#4-preparing-the-non-bat-questions) |
+| Corrections and saved data checks | [Section 7](#7-corrections-and-final-verification) |
+| Proposed next experiment | [Model plan](prediction-experiment.md) |
+
+Read one section at a time. You do not need every table to understand the next task.
 
 ## 1. Current status and files
 
@@ -10,14 +26,14 @@ We collected responses from **97 Lebanese university students** about GenAI use,
 
 | File | Purpose |
 |---|---|
-| `spss_import/data_prepared.sav` | **Current working dataset:** original responses, burnout scores, and numeric recodes |
-| `Outputs/Descriptive_statistics.spv` | Shared output containing results and tables; continue saving results here |
-| `spss_import/data.sav` | Earlier dataset retained as a backup |
-| `spss_import/Untitled2.sav` | Older analysis checkpoint |
-| `spss_import/Burnout_SPSS_fixed.csv` | Original response export used to verify answers |
-| `spss_import/Prepare_remaining_predictors.sps` | Syntax that created the remaining numeric predictors and saved the prepared dataset |
+| `data/prepared/burnout-data.sav` | **Current working dataset:** original responses, burnout scores, and numeric recodes |
+| `analysis/outputs/descriptive-statistics.spv` | Shared output containing results and tables; continue saving results here |
+| `archive/data/burnout-before-corrections.sav` | Earlier dataset retained as a backup |
+| `archive/data/burnout-older-checkpoint.sav` | Older analysis checkpoint |
+| `data/raw/survey-export-spss.csv` | Original response export used to verify answers |
+| `analysis/scripts/prepare-predictors.sps` | Syntax that created the remaining numeric predictors and saved the prepared dataset |
 
-The preparation syntax opens the earlier `data.sav` and writes `data_prepared.sav`. **Do not rerun it over the corrected working file without updating it:** doing so would restore the two earlier blanks documented in Section 7.
+The preparation syntax opens `archive/data/burnout-before-corrections.sav` and writes a separate `data/prepared/burnout-data-rebuilt.sav`. That rebuild still needs the two corrections documented in Section 7. Use the corrected `data/prepared/burnout-data.sav` for analysis.
 
 All **97 respondents remain included**: 87 answered Yes to enrollment at a university in Lebanon and 10 answered No. The researcher identified the latter as Lebanese students studying abroad. Q1 records enrollment location, is not an exclusion rule, and does not identify public/private universities. Reviewed SPSS procedure notes showed no active filter, weighting, or split-file setting.
 
@@ -53,7 +69,7 @@ The saved scores were checked against these formulas. Because every dimension ha
 
 In these formulas, `MEAN.3`, `MEAN.5`, and `MEAN.8` require all listed dimension items to be valid; `MEAN.4` requires all four dimension means. All ten calculated scores remain on the **1–5 scale**.
 
-The secondary score gives each dimension equal weight. It is **not the simple mean of all 23 items**, which would give exhaustion more weight because it has eight items. The primary/secondary designation follows the current study plan; settle any change before comparing model performance. Project-defined low/moderate/high bands are exploratory, not validated diagnostic thresholds for Lebanese students.
+The secondary score gives each dimension equal weight. It is **not the simple mean of all 23 items**, which would give exhaustion more weight because it has eight items. The study plan names the 12-item score as primary and the 23-item score as secondary. Record any change before comparing models. Project-defined low/moderate/high bands are exploratory, not validated diagnostic thresholds for Lebanese students.
 
 ## 3. Statistical analyses completed
 
@@ -75,7 +91,7 @@ A corrected item–total correlation compares an item with the sum of the other 
 
 Deleting BAT38 would change full-core cognitive alpha from .919 to .923; deleting BAT43 would change total 23-item alpha from .944 to .945. Neither small increase justified deletion. In the short form, deleting BAT43 would change emotional alpha from .775 to .797 and total alpha from .900 to .904; it was retained there too.
 
-Alpha measures consistency, not predictive accuracy or proof of validity. A high total alpha does not prove that the four BAT dimensions form a single dimension. Also, the 23-item alpha describes the combined individual items; it is not an exact reliability estimate for the differently weighted four-domain composite.
+Alpha measures how consistently items vary together. It does not show prediction accuracy, prove validity, or prove that the four dimensions measure a single dimension. The 23-item alpha uses the individual items; it does not give the exact reliability of our score, which gives equal weight to each dimension.
 
 ### Descriptive statistics and Explore: how are scores distributed?
 
@@ -99,7 +115,7 @@ We produced frequencies and bar charts for BAT21–BAT43, descriptives for the s
 | Skewness | .176 | .288 |
 | Excess kurtosis | −.164 | −.026 |
 
-Both overall distributions are broadly balanced with slight positive skewness. These summaries do not suggest an obvious need to transform the outcome, but they are not formal normality or regression-residual checks. Scores of 5 are valid; an “extremes” label in a stem-and-leaf plot is not grounds for exclusion.
+Both score distributions look roughly balanced, with a slightly longer tail toward higher scores. These summaries do not show an obvious need to transform the score. They do not replace formal distribution checks or later checks of regression errors. A score of 5 is valid; an extremes label in a plot is not a reason to exclude a student.
 
 Scale Statistics in reliability output describe **item sums**, whereas our calculated score variables are **means on the 1–5 scale**. A mean near 3 is not a clinical diagnosis.
 
@@ -132,15 +148,15 @@ The three-variable matrices also included:
 | Internet quality and avoidance | .112 | .277 |
 | AI verification and AI anxiety | .416 | <.001 |
 
-All saved correlations used N = 97, two-tailed tests, and pairwise missing-value handling. No multiple-comparison adjustment or confidence intervals were reported. Avoidance had the largest absolute burnout correlation among the questions tested. Workload and stress overlap enough to warrant attention in a later model.
+All saved correlations used 97 students and two-tailed tests, which check associations in either direction. SPSS used available pairs if values were missing. The output did not adjust for testing many associations or report confidence intervals. Avoidance had the strongest burnout correlation among the tested questions. Workload and stress were also closely related; check their overlap in a later model.
 
-These results do not establish causation or prediction accuracy. Do not select model inputs solely because p < .05; a nonsignificant individual association does not rule out predictive usefulness. The GenAI questions are individual items, not a newly validated combined AI scale.
+These results do not show causes or prediction accuracy. A p-value below .05 does not guarantee a useful model input, and a larger p-value does not prove an input is useless. The GenAI questions are separate items; we have not validated a combined AI scale.
 
 ## 4. Preparing the non-BAT questions
 
 The first 20 questions describe different things, so we did not calculate one alpha across them. Their roles as model inputs or separate outcomes still need to be chosen.
 
-For answers **already stored as numbers**, we added labels and corrected measurement settings. For answers **stored as text**, we created numeric copies, then added labels. All original text columns were preserved. Labels explain existing numbers; recoding creates numerical representations. Neither action is a statistical test.
+For answers already stored as numbers, we added labels and corrected measurement settings. For text answers, we created numeric copies with labels. We kept every original text column. A label explains a number; a recode converts an answer into a number. Neither step tests a research question.
 
 ### Existing numeric questions
 
@@ -177,7 +193,7 @@ Every new variable below is **Numeric, 0 decimals**, with labels matching these 
 | `study_hours` | `study_hours_code` | 1 = Less than 5 hours; 2 = 5–10 hours; 3 = 11–20 hours; 4 = More than 20 hours per week | Ordinal |
 | `sleep_duration` | `sleep_duration_code` | 1 = Less than 5 hours; 2 = 5–6 hours; 3 = 7–8 hours; 4 = More than 8 hours per night | Ordinal |
 
-**Nominal** means categories have no numerical order: major 5 is not greater than major 1. **Ordinal** means categories have an order, but gaps are not necessarily equal. Study-hours code 3 means the 11–20-hour category, not three hours. Marking a variable Ordinal does not automatically decide how regression encodes it.
+Nominal means categories have no numerical order: major 5 is not greater than major 1. Ordinal means categories have an order, but the gaps may differ. Study-hours code 3 means the 11 to 20 hour category, not three hours. The SPSS Ordinal setting does not choose how a regression model will use that variable.
 
 ### Q9: AI use cases
 
@@ -212,15 +228,15 @@ Frequency analyses covered academic level, major, GPA, study hours, sleep, and e
 | Sleep hours/night | Less than 5: 12; 5–6: 50; 7–8: 35; More than 8: 0 |
 | Electricity disruption hours/day | Less than 2: 65; 2–5: 25; 5–8: 3; More than 8: 4 |
 
-These proportions describe this sample, not the student population generally. Rare categories need care in modeling. Any merging must make substantive sense rather than being automatic.
+These counts describe the 97 students in this sample. They do not describe all students. Some categories have very few students. If we combine categories for modeling, we need a clear reason based on their meaning.
 
 ## 6. What the checks establish
 
-Reliability, distributions, initial associations, and variable preparation have been checked. These are the foundations for modeling. No regression, residual diagnostics, VIF/tolerance assessment, factor analysis, omega estimate, or cross-validated predictive performance has been completed. Additional unrelated t-tests, ANOVA, or chi-square tests are not prerequisites for the prediction task.
+We checked reliability, score distributions, initial associations, and variable preparation. We have not completed regression, checks of regression errors, VIF/tolerance checks for input overlap, factor analysis, omega reliability estimates, or cross-validated predictions. Extra t-tests, ANOVA, or chi-square tests are not required before starting the planned prediction work.
 
 ## 7. Corrections and final verification
 
-Two blanks were found in the earlier `data.sav` and carried into the first prepared file. The corrected working file was saved and checked again:
+Two blanks were found in the earlier `burnout-before-corrections.sav` and carried into the first prepared file. The corrected working file was saved and checked again:
 
 | Record | Variable | Correction and basis |
 |---|---|---|
@@ -237,17 +253,26 @@ The final saved-file check confirmed:
 - Every AI-use indicator matches the student's selections.
 - All ten dimension and overall scores match the intended calculations.
 - Value labels, Nominal/Ordinal/Scale settings, and decimal formats match the plan above.
-- Existing values differ from the earlier `data.sav` only in the two corrected cells; new variables were added separately.
+- Existing values differ from the earlier `burnout-before-corrections.sav` only in the two corrected cells; new variables were added separately.
 
-The script `spss_import/check_prepared.py` reads the SAV files and writes verification reports. It does not modify the dataset or the SPSS output.
+The script `analysis/scripts/check-data.py` reads the SAV files and writes verification reports. It does not modify the dataset or the SPSS output.
 
-## 8. Next step: define and evaluate the predictive model
+## 8. Next step: define the first experiment
 
-1. **Confirm the outcome before model comparisons.** The current plan uses continuous `burnout_score` as primary and `burnout_score_23` as secondary. Document the choice rather than selecting whichever gives better results.
-2. **Choose a manageable set of non-BAT inputs.** Base this on the intended use and what information would be available at prediction time. Decide explicitly on enrollment location, overlapping stress/workload questions, and continuation intention. Do not select inputs solely by the earlier p-values.
-3. **Specify category encoding.** Major needs categorical encoding; ordered categories need a deliberate choice between categorical effects and an assumed trend. Do not use both an original text column and its numeric copy as separate inputs. Exclude every BAT item and BAT-derived score from the predictors because they define the outcome.
-4. **Fit an initial regression and inspect it.** Check predictor overlap using tolerance/VIF, residuals, functional form, and influential cases. With 97 students, keep the number of fitted parameters limited.
-5. **Evaluate prediction with cross-validation.** Compare a small regression and ridge regression with a baseline that predicts the training-set mean. Keep encoding, scaling, decisions learned from data, and tuning inside training folds. Report MAE, RMSE, and uncertainty; fit on the training students alone is not evidence of predictive accuracy.
-6. **Repeat the agreed workflow with the secondary score**, if appropriate, to assess whether findings change. Start with real data and continuous-score prediction; oversampling is not needed for this initial regression workflow.
+Follow [the model plan](prediction-experiment.md) for the proposed targets, inputs, encoding, and evaluation. Record its open decisions before training.
 
-SPSS can support the initial regression and diagnostics, and Python can support cross-validation. The immediate task is to agree on the prediction target, candidate inputs, and their encoding before fitting the first model.
+Keep the first model small because we have 97 students. Exclude BAT answers and BAT-derived scores from inputs. Use training data alone to fit preprocessing and choose tuning settings. Compare prediction errors with the training-mean baseline.
+
+SPSS can support regression checks, while Python can support repeated cross-validation. Fit on the training students does not establish prediction accuracy.
+
+## Terms used in this review
+
+| Term | Plain meaning |
+|---|---|
+| Mean | Average |
+| Standard deviation | How spread out scores are around the average |
+| Correlation | How two answers tend to vary together; it does not establish cause |
+| Cronbach's alpha | A measure of how consistently a group of items varies together |
+| Predictor / outcome | Information used by a model / the value the model tries to estimate |
+
+Next: open [the proposed input sets](prediction-experiment.md#2-compare-two-sets-of-inputs).
