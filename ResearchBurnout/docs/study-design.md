@@ -54,7 +54,7 @@ The earlier plan also proposed omega reliability estimates, confidence intervals
 
 Follow [prediction-experiment.md](prediction-experiment.md) for the proposed first experiment: compare study-condition inputs with the same inputs plus GenAI questions. Start with a mean-score baseline, linear regression, and ridge regression.
 
-Exclude timestamps, BAT items, and all BAT-derived scores from inputs. The proposed first experiment also leaves out enrollment location and continuation intention. Keep text answers and their numeric copies for checking, but use only one representation of each question in a model.
+Exclude timestamps, BAT items, and all BAT-derived scores from inputs. The small input sets leave out enrollment location. The broader ridge comparison includes it as a background variable. All sets leave out continuation intention, which remains a possible separate outcome. Keep text answers and their numeric copies for checking, but use only one representation of each question in a model.
 
 Keep encoding, scaling, and tuning inside the training data during evaluation. Report MAE and RMSE, with R-squared as a supporting measure. Explain uncertainty and the limits of internal validation. Do not treat repeated validation folds as independent datasets for Friedman/Nemenyi tests.
 

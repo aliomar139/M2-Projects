@@ -4,6 +4,12 @@ Use this file for exact results and variable codes. For a short progress summary
 
 Analysis record: 28 October 2026. Language and navigation updated: 29 October 2026. Numerical results below are unchanged.
 
+## Model preparation check, 29 October 2026
+
+The experiment configuration, training workflow, and run instructions are prepared. The full real-data model comparison has not been run.
+
+The new data reader found three missing `ai_use_summaries` indicators, which differs from the older saved-file check described below. The original multi-choice answers exactly match the raw CSV. The workflow reconstructs these three indicators in memory from those answers, without changing the SAV. Both burnout targets passed formula checks. Read [the analysis guide](../analysis/README.md#implementation-choices) and [readiness report](../analysis/checks/model-readiness.json) for this preparation step.
+
 ## Quick reading guide
 
 Data preparation and the first analyses are complete. Both burnout scores are ready; no prediction model has been trained or evaluated.

@@ -2,7 +2,7 @@
 
 Recommendation: keep ridge as the main candidate and add one limited Random Forest regression comparison. Keep linear regression and the constant-score baselines as reference points.
 
-Reviewed: 29 October 2026. This is a recommendation before training, not a result or an approved experiment change.
+Reviewed: 29 October 2026. This review records the reasoning before training. The user has since requested a small-versus-broad input comparison; the current [experiment document](prediction-experiment.md#2-compare-two-sets-of-inputs) defines all four sets. No prediction results are available.
 
 ## What I checked
 
@@ -55,7 +55,7 @@ I would leave XGBoost, EBM, neural networks, stacking, and a large SVM search ou
 
 Keep the continuous BAT score, both input sets, and identical outer validation splits. Exclude all BAT-derived inputs and keep preprocessing and tuning within training groups. Compare Set A with Set B within each algorithm so adding AI questions is the only input-set change.
 
-Document why Set A omits other measured context variables such as academic stress and GPA. Any added value from Set B is relative to the chosen Set A, not proof that AI habits matter beyond every possible study condition. Do not select additions from the earlier p-values or interpret predictive improvement as a causal AI effect.
+The small Set A omits measured context variables such as academic stress and GPA. Broad C now includes the remaining background and condition questions; Broad D adds all GenAI questions. Compare these broader sets using ridge only. Any added value from AI is relative to the corresponding condition set. Define inputs before training, without selecting from earlier p-values or treating predictive improvement as a causal AI effect.
 
 Use MAE as primary, RMSE and R-squared as supporting measures, and report paired error differences for the same students. Select ridge and Random Forest settings inside the inner validation step. If choosing the algorithm itself is part of the final training procedure, that choice also belongs inside the inner step when estimating the selected procedure's performance. Reporting the smallest outer error as an unbiased estimate of a selected winner would be optimistic.
 

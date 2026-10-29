@@ -22,7 +22,7 @@ The survey measures everything at one time. It cannot tell us who will develop b
 
 ## What to do next
 
-Follow [the work plan](work-plan.md). The next task is to record the first experiment settings in `analysis/experiment-config.json` before training.
+Follow [the work plan](work-plan.md). Experiment settings and training code are prepared. Use [the analysis run instructions](analysis/README.md#run-the-prediction-experiment) for validation and the first full comparison.
 
 The draft work plan includes the recommended median baseline and small Random Forest comparison. Record final settings before running models; no training has started.
 
@@ -40,7 +40,7 @@ The [BAT source questionnaire](survey/bat-source.md) preserves the instrument wo
 
 ## Which data file should I use?
 
-Use [`data/prepared/burnout-data.sav`](data/prepared/burnout-data.sav) for the next analysis. It contains 97 rows and 66 variables. The saved check report shows no missing numeric values and no errors in the score or category checks.
+Use [`data/prepared/burnout-data.sav`](data/prepared/burnout-data.sav) for the next analysis. It contains 97 rows and 66 variables. The older saved report recorded no missing numeric values. The new model-readiness check found three missing AI-summary indicators and reconstructs them from original answers verified against the CSV, without changing the SAV file. See [the analysis guide](analysis/README.md#implementation-choices).
 
 The primary target is `burnout_score`, calculated from 12 selected BAT items. The secondary target is `burnout_score_23`, which gives equal weight to the four full-core dimensions. Both scores are ready. Higher values on their 1 to 5 scale mean more frequent symptoms.
 
@@ -71,4 +71,4 @@ Names use lowercase words separated by hyphens. Current work stays outside `arch
 
 The [data guide](data/README.md) explains which dataset to use. The [analysis guide](analysis/README.md) explains scripts and outputs. Literature records in `references/` help locate papers; verify the papers before citing their findings.
 
-Next: open [Step 1 of the work plan](work-plan.md#1-record-the-experiment-settings).
+Next: open [the experiment run instructions](analysis/README.md#run-the-prediction-experiment).

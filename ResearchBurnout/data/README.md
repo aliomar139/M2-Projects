@@ -14,6 +14,12 @@ Keep raw exports unchanged. Put derived datasets in `prepared/` and give any exp
 
 Older SPSS checkpoints live in [archive/data/](../archive/data/). Responses to the previous questionnaire live in [archive/previous-survey/data/](../archive/previous-survey/data/README.md). They are not responses to the active survey.
 
+## Current model-readiness check
+
+The new training workflow found three missing `ai_use_summaries` indicators in the SAV, despite the older report below. It verifies original Q9 answers against the raw CSV and reconstructs the missing indicators in memory. Two are Selected and one is Not selected. The SAV file is unchanged.
+
+[model-readiness.json](../analysis/checks/model-readiness.json) records this check. See [the analysis guide](../analysis/README.md#implementation-choices) for the exact handling. Both burnout scores passed recalculation checks.
+
 ## Checks and corrections
 
 The saved [data-check report](../analysis/checks/data-checks.json) records no score errors, category-indicator errors, missing numeric values, or numeric differences from the CSV. The [variable metadata](../analysis/checks/variable-metadata.json) records labels, types, and display settings.

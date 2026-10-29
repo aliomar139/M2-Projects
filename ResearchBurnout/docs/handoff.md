@@ -1,16 +1,16 @@
 # Project handoff
 
-Start with [README.md](../README.md) for progress and the next task.
+Resume from [the work plan](../work-plan.md#next-agent-start-here). It records the exact continuation commands and current status.
 
 Updated: 29 October 2026. This handoff points to the current documents so progress does not need to be copied into several files.
 
 ## Resume work here
 
-Use `data/prepared/burnout-data.sav`. Both burnout scores and numeric question codes are complete. The next research task is to settle the first model experiment before training.
+Use `data/prepared/burnout-data.sav`. The experiment configuration, training script, local environment, and five software tests are ready. Real-data checks passed with the documented reconstruction of three missing AI-summary indicators in memory; the SAV remains unchanged. The next task is the full real-data comparison, which has not been run as of this handoff.
 
 | Need | Current reference |
 |---|---|
-| Completed work and next steps | [README](../README.md) |
+| Completed work, continuation commands, and Kaggle option | [Work plan](../work-plan.md) |
 | Exact statistics, scoring, corrections, and coding | [SPSS review](analysis-progress.md) |
 | Proposed inputs and evaluation | [Model plan](prediction-experiment.md) |
 | Study design and unresolved study details | [Study specification](study-design.md) |
@@ -30,4 +30,4 @@ Confirm whether recruitment continues, the live Google Form settings, any course
 
 The [earlier handoff](../archive/planning-notes/handoff.md) records previous decisions. Its unfinished-score statements are out of date.
 
-Next: review the proposed inputs in [the model plan](prediction-experiment.md#2-compare-two-sets-of-inputs).
+Next: follow [the next-agent checklist](../work-plan.md#next-agent-start-here).

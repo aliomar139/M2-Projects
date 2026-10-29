@@ -1,0 +1,9 @@
+{
+  "source_dataset_changed": false,
+  "source_sha256": "ab50404a31ecbc7115b52fe6f0be1328128d45951deca70374e79b8ed4f4ce4a",
+  "raw_csv_sha256": "d8d4323901dd5b6f4602c5a3b6850a965e86d1a58ec7f984b59aa05cf369830e",
+  "reconstructed_variable": "ai_use_summaries",
+  "reconstructed_count": 3,
+  "basis": "Original multi-choice answers exactly match the raw CSV; no statistical imputation.",
+  "remaining_missing_model_values": 0
+}

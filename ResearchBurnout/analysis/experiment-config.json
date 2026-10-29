@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "experiment_id": "real-data-v1",
+  "status": "specified-before-training",
+  "dataset": "data/prepared/burnout-data.sav",
+  "expected_rows": 97,
+  "expected_columns": 66,
+  "targets": [
+    "burnout_score",
+    "burnout_score_23"
+  ],
+  "primary_target": "burnout_score",
+  "input_sets": {
+    "small_a": [
+      "workload",
+      "sleep_duration_code",
+      "study_hours_code",
+      "financial_strain",
+      "university_support"
+    ],
+    "small_b": [
+      "workload",
+      "sleep_duration_code",
+      "study_hours_code",
+      "financial_strain",
+      "university_support",
+      "ai_frequency",
+      "ai_dependence",
+      "ai_offloading"
+    ],
+    "broad_c": [
+      "enrolled_lebanon",
+      "academic_level_code",
+      "major_code",
+      "gpa_code",
+      "electricity_code",
+      "internet",
+      "financial_strain",
+      "study_hours_code",
+      "workload",
+      "sleep_duration_code",
+      "academic_stress",
+      "avoidance",
+      "university_support"
+    ],
+    "broad_d": [
+      "enrolled_lebanon",
+      "academic_level_code",
+      "major_code",
+      "gpa_code",
+      "electricity_code",
+      "internet",
+      "financial_strain",
+      "study_hours_code",
+      "workload",
+      "sleep_duration_code",
+      "academic_stress",
+      "avoidance",
+      "university_support",
+      "ai_frequency",
+      "ai_use_concepts",
+      "ai_use_writing",
+      "ai_use_coding",
+      "ai_use_summaries",
+      "ai_use_solutions",
+      "ai_dependence",
+      "ai_offloading",
+      "ai_verification",
+      "ai_anxiety"
+    ]
+  },
+  "models_by_set": {
+    "small_a": [
+      "linear",
+      "ridge",
+      "forest"
+    ],
+    "small_b": [
+      "linear",
+      "ridge",
+      "forest"
+    ],
+    "broad_c": [
+      "ridge"
+    ],
+    "broad_d": [
+      "ridge"
+    ]
+  },
+  "baselines": [
+    "mean",
+    "median"
+  ],
+  "category_levels": {
+    "academic_level_code": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "major_code": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "gpa_code": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "electricity_code": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "study_hours_code": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "sleep_duration_code": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "encoding": {
+    "reference": "first listed category",
+    "unknown": "error on invalid survey code; valid categories absent from training have no learned effect",
+    "scale": "all encoded columns for ridge only; training statistics only"
+  },
+  "cv": {
+    "outer_folds": 5,
+    "outer_seeds": [
+      104729,
+      130363,
+      155921,
+      181081,
+      205019
+    ],
+    "inner_folds": 4,
+    "inner_seed": 271828
+  },
+  "ridge_alphas": [
+    0.01,
+    0.1,
+    1,
+    10,
+    100,
+    1000
+  ],
+  "forest": {
+    "n_estimators": 200,
+    "max_depth": [
+      2,
+      3
+    ],
+    "min_samples_leaf": [
+      5,
+      10
+    ],
+    "max_features": 1.0,
+    "random_state": 314159
+  },
+  "prediction_range": {
+    "min": 1.0,
+    "max": 5.0,
+    "policy": "clip for inner selection and outer evaluation; retain raw predictions"
+  },
+  "metrics": {
+    "primary": "mae",
+    "supporting": [
+      "rmse",
+      "r2"
+    ],
+    "aggregation": "pool held-out predictions once per student within each repetition; summarize repetition metrics"
+  },
+  "uncertainty": "report repetition range and standard deviation as descriptive stability, not confidence intervals or independent tests",
+  "selection": "report prespecified model families separately; do not claim unbiased performance of a winner selected from outer scores",
+  "improvement": {
+    "direction": "lower paired MAE",
+    "report": "signed differences and relative change for each repetition",
+    "minimum_useful_difference": null,
+    "interpretation": "no established practical or clinical threshold; numerical gains alone do not establish usefulness"
+  },
+  "augmentation": false,
+  "output_root": "analysis/outputs/model-runs",
+  "comparisons": [
+    [
+      "small_a",
+      "small_b",
+      "linear"
+    ],
+    [
+      "small_a",
+      "small_b",
+      "ridge"
+    ],
+    [
+      "small_a",
+      "small_b",
+      "forest"
+    ],
+    [
+      "broad_c",
+      "broad_d",
+      "ridge"
+    ],
+    [
+      "small_a",
+      "broad_c",
+      "ridge"
+    ],
+    [
+      "small_b",
+      "broad_d",
+      "ridge"
+    ]
+  ],
+  "dataset_sha256": "ab50404a31ecbc7115b52fe6f0be1328128d45951deca70374e79b8ed4f4ce4a",
+  "derived_indicator_reconstruction": {
+    "variable": "ai_use_summaries",
+    "source": "ai_use_cases",
+    "selected_text": "Summarizing articles / lecture slides",
+    "policy": "reconstruct missing indicators only from exact original selections after raw CSV verification; stop on nonmissing disagreement",
+    "expected_missing_count": 3,
+    "raw_csv": "data/raw/survey-export-spss.csv"
+  }
+}

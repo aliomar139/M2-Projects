@@ -17,3 +17,7 @@ __pycache__/
 /data.xlsx
 /BAT-English.pdf
 /BAT-S_ENG.pdf
+
+# Local experiment environment and participant-level model outputs
+/.venv/
+/analysis/outputs/model-runs/
