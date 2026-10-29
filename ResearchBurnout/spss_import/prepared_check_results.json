@@ -1,0 +1,195 @@
+{
+  "ai_selection_count_distribution": {
+    "1.0": 21, 
+    "2.0": 76
+  }, 
+  "numeric_missing": {}, 
+  "ai_indicator_counts": {
+    "ai_use_writing": 21.0, 
+    "ai_use_solutions": 16.0, 
+    "ai_use_concepts": 72.0, 
+    "ai_use_coding": 27.0, 
+    "ai_use_summaries": 37.0
+  }, 
+  "mappings": {
+    "study_hours_code": [
+      {
+        "answer": "11 to 20 hours", 
+        "code": 3.0, 
+        "n": 22
+      }, 
+      {
+        "answer": "5 to 10 hours", 
+        "code": 2.0, 
+        "n": 33
+      }, 
+      {
+        "answer": "Less than 5 hours", 
+        "code": 1.0, 
+        "n": 34
+      }, 
+      {
+        "answer": "More than 20 hours", 
+        "code": 4.0, 
+        "n": 8
+      }
+    ], 
+    "academic_level_code": [
+      {
+        "answer": "Freshman / First Year", 
+        "code": 1.0, 
+        "n": 8
+      }, 
+      {
+        "answer": "Junior / Third Year", 
+        "code": 3.0, 
+        "n": 12
+      }, 
+      {
+        "answer": "Master's / Postgraduate", 
+        "code": 5.0, 
+        "n": 43
+      }, 
+      {
+        "answer": "Senior / Fourth Year +", 
+        "code": 4.0, 
+        "n": 13
+      }, 
+      {
+        "answer": "Sophomore / Second Year", 
+        "code": 2.0, 
+        "n": 21
+      }
+    ], 
+    "enrolled_lebanon": [
+      {
+        "answer": "No", 
+        "code": 0.0, 
+        "n": 10
+      }, 
+      {
+        "answer": "Yes", 
+        "code": 1.0, 
+        "n": 87
+      }
+    ], 
+    "major_code": [
+      {
+        "answer": "Arts & Design", 
+        "code": 5.0, 
+        "n": 2
+      }, 
+      {
+        "answer": "Business / Economics / Finance", 
+        "code": 3.0, 
+        "n": 12
+      }, 
+      {
+        "answer": "Health Sciences / Medicine / Nursing / Pharmacy", 
+        "code": 2.0, 
+        "n": 19
+      }, 
+      {
+        "answer": "Humanities, Social Sciences, or Law", 
+        "code": 4.0, 
+        "n": 16
+      }, 
+      {
+        "answer": "STEM (Engineering, Computer Science, Math, Physical Sciences)", 
+        "code": 1.0, 
+        "n": 48
+      }
+    ], 
+    "gpa_code": [
+      {
+        "answer": "Academic Warning / Passing (Below 2.5 / Below 68%)", 
+        "code": 1.0, 
+        "n": 3
+      }, 
+      {
+        "answer": "Excellent (3.5 \u2013 4.0 / Above 85%)", 
+        "code": 4.0, 
+        "n": 31
+      }, 
+      {
+        "answer": "Good (3.0 \u2013 3.49 / 75% \u2013 84%)", 
+        "code": 3.0, 
+        "n": 38
+      }, 
+      {
+        "answer": "Satisfactory (2.5 \u2013 2.99 / 68% \u2013 74%)", 
+        "code": 2.0, 
+        "n": 25
+      }
+    ], 
+    "sleep_duration_code": [
+      {
+        "answer": "5 to 6 hours", 
+        "code": 2.0, 
+        "n": 50
+      }, 
+      {
+        "answer": "7 to 8 hours", 
+        "code": 3.0, 
+        "n": 35
+      }, 
+      {
+        "answer": "Less than 5 hours", 
+        "code": 1.0, 
+        "n": 12
+      }
+    ], 
+    "electricity_code": [
+      {
+        "answer": "2 to 5 hours daily", 
+        "code": 2.0, 
+        "n": 25
+      }, 
+      {
+        "answer": "5 to 8 hours daily", 
+        "code": 3.0, 
+        "n": 3
+      }, 
+      {
+        "answer": "Less than 2 hours daily / Minimal impact", 
+        "code": 1.0, 
+        "n": 65
+      }, 
+      {
+        "answer": "More than 8 hours daily (Severe disruption)", 
+        "code": 4.0, 
+        "n": 4
+      }
+    ]
+  }, 
+  "new_variables": [
+    "major_code", 
+    "gpa_code", 
+    "electricity_code", 
+    "study_hours_code", 
+    "sleep_duration_code", 
+    "ai_use_concepts", 
+    "ai_use_writing", 
+    "ai_use_coding", 
+    "ai_use_summaries", 
+    "ai_use_solutions"
+  ], 
+  "original_rows": 97, 
+  "ai_indicator_errors": [], 
+  "raw_numeric_differences": [], 
+  "original_variables": 56, 
+  "score_errors": [], 
+  "affected_rows": [], 
+  "changed_original_cells": [
+    [
+      18, 
+      "emotional_impairment"
+    ], 
+    [
+      65, 
+      "internet"
+    ]
+  ], 
+  "prepared_variables": 66, 
+  "prepared_rows": 97
+}
