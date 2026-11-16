@@ -20,4 +20,28 @@ __pycache__/
 
 # Local experiment environment and participant-level model outputs
 /.venv/
+/.venv-tabpfn/
+/classification/.tabpfn-cache/
+/classification/tabpfn-outputs/
+/classification/tabpfn-threshold-outputs/
+/classification/tabpfn-voting-outputs/
+/classification/svc-outputs/
+/classification/svc23-outputs/
+/classification/input-comparison-outputs/
+/classification/boruta-outputs/
 /analysis/outputs/model-runs/
+/analysis/outputs/xgboost-experiments/
+/analysis/outputs/diagnostics/
+/analysis/outputs/high-score-experiments/
+/classification/outputs/
+/classification/binary-outputs/
+/classification/augmentation-outputs/
+/classification/forest-tuning-outputs/
+/classification/voting-outputs/
+/classification/error-analysis-outputs/
+/classification/question-selection-outputs/
+/classification/backward-selection-outputs/
+/analysis/outputs/augmentation-experiments/
+/analysis/outputs/kernel-experiments/
+/analysis/outputs/ensemble-experiments/
+/analysis/outputs/feature-selection-experiments/
