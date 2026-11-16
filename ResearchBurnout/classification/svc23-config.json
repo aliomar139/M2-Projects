@@ -1,0 +1,9 @@
+{
+  "experiment_id": "rbf-svc-23-inputs-v1",
+  "comparison_run": "classification/svc-outputs/20261116T070622236133Z",
+  "input_set": "broad_d",
+  "output_root": "classification/svc23-outputs",
+  "grid_policy": "Retain exactly the eight-input SVC search space, fixed settings, High weights and selection rules. Independently tune all settings/thresholds with the original inner folds using 23 existing Broad D inputs. Copy earlier eight-input SVC and RF reference scores unchanged.",
+  "validation": "Original five repeats of five stratified outer folds and four stratified inner folds. Fit encoding/scaling on real training members only. Primary score >=4; 17 High/80 Below-high. No synthetic training rows, BAT predictors or new questionnaire features.",
+  "interpretation": "Exploratory comparison on the same 97 people. Raw decision-function margins are uncalibrated. No clinical validation, independent cohort or deployment fit."
+}

@@ -1,0 +1,16 @@
+{
+  "experiment_id": "existing-question-selection-v1",
+  "reference_run": "analysis/outputs/model-runs/20261102T083420352990Z",
+  "kernel_run": "analysis/outputs/kernel-experiments/20261102T160828159897Z",
+  "ensemble_run": "analysis/outputs/ensemble-experiments/20261102T163006135317Z",
+  "target": "burnout_score",
+  "input_sets": ["small_b", "broad_d"],
+  "relative_high_weights": [1, 2, 4],
+  "inner_overall_mae_tolerance": 0.05,
+  "elastic_net": {"alpha": [0.001, 0.01, 0.1, 1], "l1_ratio": [0.2, 0.8, 1.0]},
+  "selector": {"alpha": 0.03, "l1_ratio": 0.8, "counts": [4, 8, "all"], "ranking": "L2 norm of standardized encoded Elastic Net coefficients per original question, divided by sqrt(number of encoded columns); stable ties use original questionnaire column order. Categories stay together. Selector uses training-only labels and weights."},
+  "solver": {"max_iter": 50000, "tol": 0.00001},
+  "selection": "Ordinary minimizes mean inner-fold overall MAE with weight 1. High-priority minimizes pooled inner High MAE among candidates within .05 pooled overall MAE of ordinary; ties use overall MAE, lower weight, grid order. Without High students use ordinary. Both preprocessing and question ranking are refit inside each inner fit.",
+  "interpretation": "Existing questionnaire variables and primary continuous target only. No added questions, BAT inputs, synthetic records or manually engineered interactions. Selecting existing questions is not new survey data. Original five outer folds repeated five times with four inner folds. Diagnostic training errors are in-sample and not generalization estimates; gaps alone cannot prove the source of error. Exploratory same-sample follow-up, not independent confirmation.",
+  "output_root": "analysis/outputs/feature-selection-experiments"
+}

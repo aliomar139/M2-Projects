@@ -1,0 +1,12 @@
+{
+  "experiment_id": "rf-existing-input-comparison-v1",
+  "reference_run": "classification/augmentation-outputs/20261112T125001425382Z",
+  "output_root": "classification/input-comparison-outputs",
+  "workers": 2,
+  "selector_C": 1.0,
+  "selected_count": 8,
+  "alternative_inputs": ["workload", "sleep_duration_code", "financial_strain", "university_support", "ai_dependence", "ai_offloading", "academic_stress", "avoidance"],
+  "ratios": [0, 0.5, 1],
+  "selection": "Alternative eight fixed in advance; ranked eight use existing grouped standardized L2 logistic C=1 coefficients on real training students only, independently refitted in each inner/outer training group. Preserve questionnaire order after selection. Generate synthetic pools using only the selected eight training inputs. Jointly tune original RF grid, weights, ratio and original .05-step thresholds. F2 ties: precision, recall, higher threshold, lower ratio, stable grid order. Recall guard requires recorded current RF inner recall, minimizes FP, then recall, precision, F2, threshold, lower ratio, stable grid order. Guard is not an outer guarantee.",
+  "interpretation": "Current eight reference refitted at its frozen selected recipe as a reproduction control; two new input procedures independently retuned. Same 97 students and original 5x5 outer/4 inner stratified folds. No BAT inputs, extra questions or real students. Synthetic labels are inferred assumptions. Logistic ranking can miss nonlinear relevance. Repeated same-sample exploration and full-sample exploratory SPSS results motivating the fixed alternative limit independent claims. No deployment model."
+}

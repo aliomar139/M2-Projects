@@ -1,0 +1,20 @@
+{
+  "experiment_id": "three-class-followup-v1",
+  "reference_config": "analysis/experiment-config.json",
+  "target_score": "burnout_score",
+  "labels": {"0": "Low: 1 <= score < 2", "1": "Middle: 2 <= score < 4", "2": "High: 4 <= score <= 5"},
+  "expected_counts": [6, 74, 17],
+  "input_sets": ["small_b", "broad_d"],
+  "outer_folds": 3,
+  "outer_seeds": [104729, 130363, 155921, 181081, 205019],
+  "inner_folds": 2,
+  "inner_seed": 271828,
+  "logistic_C": [0.1, 1, 10],
+  "class_weights": [null, "balanced"],
+  "forest": {"n_estimators": 100, "max_depth": [2, 3], "min_samples_leaf": [3, 5], "random_state": 314159},
+  "selection_metric": "macro F1 across all three fixed labels; zero for undefined class metrics",
+  "decision_rule": "argmax predicted class probability; no threshold search",
+  "augmentation": false,
+  "output_root": "classification/outputs",
+  "interpretation": "Exploratory three-class symptom bands chosen after regression results, not validated clinical categories. Only six Low students. Repeated folds reuse students; not independent confirmation. Classification splits differ from regression because they are stratified and use three folds. Do not compare classification accuracy directly with regression MAE."
+}

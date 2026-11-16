@@ -1,0 +1,12 @@
+{
+  "experiment_id": "rf-boruta23-confirmed-v1",
+  "reference_run": "classification/augmentation-outputs/20261112T125001425382Z",
+  "output_root": "classification/boruta-outputs",
+  "workers": 2,
+  "selector": {"n_estimators": 100, "max_iter": 50, "perc": 100, "alpha": 0.05, "two_step": true},
+  "selector_forest": {"max_depth": 5, "min_samples_leaf": 2, "class_weight": "balanced"},
+  "ratios": [0, 0.5, 1],
+  "selection": "BorutaPy 0.4.3 runs on the 37 training-only encoded columns of all 23 eligible variables, using real training students only. Retain each whole variable if any of its encoded columns is confirmed; keep its full dummy group. Tentative columns are recorded but excluded. No fixed feature count. If none are confirmed, use weighted training-class prior with no inputs. Refit selector in each inner/outer training group. Tune original RF depth/leaf grid, High weights, augmentation ratios and .05-step thresholds using inner predictions. F2 and recall-guard choices reuse the prior input-comparison tie policies. Guard constrains current RF inner recall, not outer recall.",
+  "augmentation": "Generate the original constrained pools on all 23 training variables, then project onto selected variables. Full-profile uniqueness may be lost on projection; no independent respondents are created. No held-out profiles used. Labels are inferred. Empty selections use class-prior predictions.",
+  "interpretation": "Same 97 real students, primary score >=4, original 5x5 stratified outer/4 inner folds. Saved current RF predictions copied as reference after verifying fold identity and source hashes. This is one fixed Boruta setup, not an exhaustive selection search. Iteration cap may leave tentative variables; a zero-confirmed result does not prove all variables irrelevant. Repeated same-sample exploration is not independent validation. No deployment model."
+}

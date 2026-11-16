@@ -1,0 +1,12 @@
+{
+  "experiment_id": "current-forest-logistic-voting-v1",
+  "reference_run": "classification/augmentation-outputs/20261112T125001425382Z",
+  "input_set": "small_b",
+  "rf_shares": [1, 0.9, 0.75, 0.5],
+  "threshold_step": 0.025,
+  "workers": 2,
+  "output_root": "classification/voting-outputs",
+  "endpoints": "The user's current RF with training-selected augmentation, and real-only Small B logistic. Retain their recorded outer-training-selected parameters/High weights/augmentation and original inner/outer folds. Refit endpoints inside original inner training groups for blend selection, then on outer training data; reproduce saved outer endpoint scores. Endpoint hyperparameters and combination selection reuse the same inner folds; excluded outer students evaluate the full procedure.",
+  "selection": "ensemble_f2 maximizes inner F2 then precision/recall/threshold/RF share. ensemble_recall_guard requires inner recall >= the current RF's recorded inner recall, minimizes false positives, then maximizes recall/precision/F2/threshold/RF share. Corresponding rf_threshold_only controls restrict RF share to 1. No outer result selects weights or thresholds. The inner recall guard is not an outer-recall guarantee.",
+  "interpretation": "A weighted average of uncalibrated model scores, not a calibrated personal risk probability. Same existing inputs and measured >=4 study-defined High boundary. No new features, students, synthetic pools, independent evaluation cohort or deployment model. Exploratory comparison after inspecting errors on the same 97 students."
+}

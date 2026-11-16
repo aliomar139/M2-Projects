@@ -72,7 +72,8 @@ def validate_config(c):
         raise ValueError('This script implements real data and clipped predictions only.')
     if c['targets'] != ['burnout_score', 'burnout_score_23']:
         raise ValueError('Unexpected targets.')
-    if any(c['models_by_set'][k] != ['ridge'] for k in ['broad_c', 'broad_d']):
+    broad_models = [] if c['experiment_id'] == 'xgboost-followup-v1' else ['ridge']
+    if any(c['models_by_set'][k] != broad_models for k in ['broad_c', 'broad_d']):
         raise ValueError('Broad comparison is ridge only.')
 
 
@@ -166,6 +167,11 @@ def make_model(c, cols, family):
             max_features=f['max_features'], random_state=f['random_state'], n_jobs=1)
         grid = {'estimator__model__max_depth': f['max_depth'],
                 'estimator__model__min_samples_leaf': f['min_samples_leaf']}
+    elif family == 'xgboost':
+        from xgboost import XGBRegressor
+        model = XGBRegressor(**c['xgboost']['fixed'])
+        grid = {f'estimator__model__{key}': values
+                for key, values in c['xgboost']['grid'].items()}
     else:
         raise ValueError(f'Unknown model family: {family}')
     pipeline.append(('model', model))
@@ -235,6 +241,8 @@ def run(c, df, config_path, out):
     out.mkdir(parents=True, exist_ok=False)
     (out / 'config.json').write_text(json.dumps(c, indent=2) + '\n', encoding='utf-8')
     versions = {name: version(name) for name in ['numpy', 'pandas', 'scikit-learn', 'pyreadstat', 'matplotlib']}
+    if 'xgboost' in sum(c['models_by_set'].values(), []):
+        versions['xgboost'] = version('xgboost')
     manifest = {'status': 'running', 'started_utc': datetime.now(timezone.utc).isoformat(),
         'python': sys.version, 'packages': versions, 'dataset_sha256': sha256(ROOT / c['dataset']),
         'config_sha256': sha256(config_path), 'script_sha256': sha256(__file__),

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "current-rf-question-selection-v1",
+  "reference_run": "classification/augmentation-outputs/20261112T125001425382Z",
+  "input_set": "small_b",
+  "question_counts": [4, 6, 8],
+  "selector_C": 1.0,
+  "workers": 2,
+  "output_root": "classification/question-selection-outputs",
+  "ranking": "Fixed unweighted L2 logistic C=1 fits standardized encoded real training answers only. Rank whole questions by coefficient L2 norm divided by sqrt(encoded-column count), ties by questionnaire order. Refit within every inner training group and outer training group. Retain all dummy columns of selected categorical questions.",
+  "selection": "Keep the current RF's recorded outer-training-selected parameters, High weight and augmentation ratio. Compare 4/6/8 questions and original .05-step thresholds. subset_f2 selects by inner F2/precision/recall/threshold then fewer questions. subset_recall_guard requires inner recall >= current RF's recorded inner recall, then minimizes FP and ties by recall/precision/F2/threshold/fewer questions. full8_control must reproduce the current RF. Inner targets do not guarantee outer results.",
+  "interpretation": "Uses only existing questions, same full-eight synthetic pools and original folds; no new features or survey responses. Projecting a unique full profile onto fewer questions can produce repeated projected profiles. RF settings and subset selection reuse original inner folds; outer students are excluded throughout. Exploratory selection conditional on the current RF recipe, not an exhaustive search of all subsets or model settings."
+}

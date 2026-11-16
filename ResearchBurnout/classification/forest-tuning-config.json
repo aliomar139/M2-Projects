@@ -1,0 +1,18 @@
+{
+  "experiment_id": "small-b-forest-tuning-v1",
+  "reference_run": "classification/augmentation-outputs/20261112T125001425382Z",
+  "input_set": "small_b",
+  "ratios": [0, 0.5, 1],
+  "relative_high_weights": [1, 2, 4],
+  "grid": {
+    "max_depth": [2, 3, 5],
+    "min_samples_leaf": [5, 10],
+    "max_features": ["sqrt", 1.0]
+  },
+  "threshold_step": 0.025,
+  "minimum_inner_recall": 0.85,
+  "workers": 2,
+  "output_root": "classification/forest-tuning-outputs",
+  "selection": "expanded_f2 maximizes pooled real inner F2, precision, recall, threshold, then prefers less augmentation. recall85_min_fp requires pooled real inner recall >=.85, then minimizes false positives, with ties by higher recall, precision, F2, threshold and less augmentation. Stable candidate order breaks remaining ties. Settings, High weights, augmentation amount and thresholds are selected jointly inside each outer training group. The inner recall target does not guarantee outer recall.",
+  "interpretation": "Only the existing eight Small B inputs and primary >=4 study-defined High boundary. Same generator, seeds and real-only stratified nested folds as the retained reference. No new survey variables, balancing to 50/50, calibration, independent validation or deployment model. Repeated exploration on 97 real students."
+}
