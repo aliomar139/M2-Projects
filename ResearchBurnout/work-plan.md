@@ -1,6 +1,12 @@
 # Work plan
 
-## Latest status: 16 November 2026
+## Latest status: 18 November 2026
+
+Documentation handoff updated; no new experiment or model change. Start a new chat with [docs/handoff.md](docs/handoff.md). The [synthetic generation worked example](classification/README.md#how-one-synthetic-profile-is-created) explains the exact six-answer interpolation/two-category-copy procedure and why the 2,720 historical training instances, zero synthetic rows in the final saved fit, and 970 inference-only profiles are different. Continue only with the next authorized task; no experiment is currently running.
+
+Separate synthetic inference check completed in `classification/synthetic-check-outputs/20261117T130726203314Z/`. The frozen saved model predicted 970 novel constrained profiles (800 Below-high/170 High) labelled by same-class real parents: assumed-label recall 93.5%, precision 55.6%, F2 .822981, TP/FN 159/11, FP/TN 127/673. These are dependent synthetic neighbourhoods of parents already used in model fitting, not new measured students or improved real held-out performance. All provenance/constraints/metrics/persisted scores/hashes checked. No model retraining/replacement or threshold change; original 87.1% real CV recall remains the evaluation evidence. See [simulation details](classification/README.md#saved-model-synthetic-profile-check-17-november-2026).
+
+The selected classifier has been fitted on all 97 real students and saved to `classification/models/selected-rf.joblib`, with metadata beside it. Original training-only selection chose depth 3/min leaf 10/High weight 2/threshold .35/ratio 0, with 100 trees and seed 271828. Zero augmentation was allowed; no synthetic rows were selected for this final fit. Existing 87.1% recall/34.7% precision remain earlier CV evidence, not a new performance estimate. Model and preprocessing load together; roundtrip/fresh-process checks reproduce all 97 scores and labels. Runner `classification/save-selected-rf.py`, configuration `classification/final-fit-config.json`, audit `classification/final-fit-outputs/20261117T114817911532Z/`. These artifacts are ignored by Git; copy them separately for backup/sharing. The score-regression blend remains unexported. See [loading instructions](classification/README.md#saved-final-classifier-17-november-2026). Next: use the saved artifact for authorized inference/demo work, preserving the evaluation limitations.
 
 PCA/PLS extraction, fixed-interaction and their dependent mixed loss-tuning experiment code/configurations/outputs were removed at the user's request. Their historical methods and results remain in [analysis progress](docs/analysis-progress.md) for reporting. Older mentions below are historical records, not instructions to reopen or rerun those deleted artifacts. Current selected RF, source data, separate ridge/SVR blend and unrelated experiments are preserved.
 
@@ -63,17 +69,19 @@ The original study run and a separate exploratory XGBoost follow-up are complete
 
 Next: interpret the completed comparison and its limitations before choosing a final research model or planning another experiment.
 
-Updated: 29 October 2026. Reading time: about 5 minutes.
+## Historical checklist: 29 October 2026
 
-## Where we are
+**Archive only.** Everything below records the plan before the first training run. Its unchecked boxes and pending statuses describe that date, not outstanding tasks today. The original run and many follow-ups have since completed. Use the latest status above and [the current handoff](docs/handoff.md); do not execute the archived commands as an automatic next step.
 
-We have 97 real student responses. Data preparation, both burnout scores, and the initial SPSS analyses are complete. No prediction models have been trained or evaluated.
+## Historical position before the first run
+
+At that time, we had 97 real student responses, prepared scores and initial SPSS analyses, but had not yet trained models. This was superseded by the completed runs recorded above.
 
 The aim is to estimate current burnout symptoms and test whether GenAI habits improve predictions beyond the selected study conditions. The survey cannot establish causes or predict future burnout without later measurements.
 
-## Next agent: start here
+## Archived first-run instructions
 
-Preparation is complete. Do not rebuild the experiment or select new input sets before running the agreed comparison. No completed real-data model-run folder was present at this handoff.
+The following instructions applied to the October handoff, when preparation was complete and no real-data model run existed. They are retained for provenance, not current execution.
 
 1. Check `analysis/outputs/model-runs/` for a run added since this handoff. If a manifest says `complete`, inspect its results before starting another run. A `failed` or `running` manifest is not proof of completed results.
 2. From the repository root, run the checks below. The last check completed five tests successfully; `pip check` reported no broken requirements.
@@ -155,7 +163,7 @@ Done when: the configuration fully describes the first experiment before we exam
 
 ## 2. Build the training workflow
 
-Status: complete. Real-data validation passed after reconstructing three missing AI-summary indicators from verified original answers in memory. The source SAV is unchanged. Software checks cover the pipeline and reports; the full study run is still pending.
+Historical October status: workflow complete, full study run pending at that time. That run has since completed. Real-data validation reconstructed three missing AI-summary indicators from verified original answers in memory; the source SAV is unchanged.
 
 - [x] Set up and record the Python dependencies needed to read SAV files and train models.
 - [x] Load the working dataset, verify columns and scores, and explicitly reconstruct three derived indicators from original selections checked against the CSV.
@@ -203,6 +211,6 @@ After reviewing the real-data results, decide whether to test augmentation as a 
 
 A demo comes after evaluation. Claims about future burnout or advice that reduces burnout need additional evidence.
 
-## Do this next
+## Archived next step from October
 
-Run the `--check-only` command in ?Next agent: start here,? then proceed to the full run if no completed run already exists.
+The October next step was the readiness check followed by the first full run. Both were subsequently completed. For current work, read the latest status at the top of this file and `docs/handoff.md`; no rerun is requested by this archived checklist.

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "selected-small-b-rf-final-fit-v1",
+  "reference_run": "classification/augmentation-outputs/20261112T125001425382Z",
+  "input_set": "small_b",
+  "model_seed": 271828,
+  "validation_seed": 271828,
+  "generator_seed_offset": 900000,
+  "model_path": "classification/models/selected-rf.joblib",
+  "metadata_path": "classification/models/selected-rf-metadata.json",
+  "audit_root": "classification/final-fit-outputs",
+  "selection": "Fit the previously selected RF procedure on all 97 real students. Four stratified validation folds select original RF settings, normalized relative High weight, threshold and ratio 0/.5/1 using training-only augmentation/preprocessing. Same F2/precision/recall/higher-threshold/lower-ratio/stable-grid tie rules as the selected reference. Refit preprocessing and selected RF on all real students plus only the selected prefix of a fresh full-data training synthetic pool. Do not choose the best outer fold or tune on saved outer predictions. No new independent performance estimate."
+}

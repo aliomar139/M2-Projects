@@ -2,7 +2,100 @@
 
 ## Selected classification model
 
-The user selected Small B Random Forest with training-selected augmentation: 87.1% High recall, 34.7% precision, F2 .668 and 28.0 false warnings per 80 Below-high students, averaged over five repetitions. The existing ridge/SVR blend remains the numerical score predictor. No deployment artifact has been saved.
+The user selected Small B Random Forest with training-selected augmentation: 87.1% High recall, 34.7% precision, F2 .668 and 28.0 false warnings per 80 Below-high students, averaged over five repetitions. The existing ridge/SVR blend remains the numerical score predictor. A final classifier artifact was saved on 17 November 2026 as described below; the numerical-score blend has not been exported.
+
+## Saved final classifier (17 November 2026)
+
+**Model:** `classification/models/selected-rf.joblib`. **Metadata:** `classification/models/selected-rf-metadata.json`. Both are local, ignored files; they are not automatically included in Git pushes. Keep/transfer both files when backing up or sharing the trained artifact. The joblib bundle contains standard sklearn preprocessing and forest objects plus the eight feature names, allowed codes, warning threshold, class names and reference metrics; loading does not require custom project pickle classes.
+
+Runner [save-selected-rf.py](save-selected-rf.py), frozen [final-fit-config.json](final-fit-config.json). This applies the previously selected RF procedure to all **97 real students**: four stratified training-validation folds independently fit preprocessing/generation and choose the original RF depth/leaf grid, normalized High weight, ratio 0/.5/1 and .05-step warning threshold. It does not choose the most favourable outer fold. The final fit uses 100 trees, **max_depth 3, min_samples_leaf 10, High weight 2, warning threshold .35**, random seed 271828. Validation selected **ratio 0**, so this final artifact uses 97 real rows and no synthetic rows. Zero augmentation was an allowed choice in the selected procedure, not a new algorithm or a forced change to the old results.
+
+The earlier **87.1% recall/34.7% precision** describe repeated cross-validation of the selected procedure; they are not a new measured performance of this all-data fit. Final-fit training/validation metrics are selection diagnostics. There is no independent test set or calibrated clinical risk estimate. The true label boundary remains measured primary BAT score >=4; .35 is the classifier's warning-score threshold, not a BAT cutoff.
+
+Audit: `classification/final-fit-outputs/20261117T114817911532Z/`, including 36 candidate curves (756 threshold options), final choice, validation folds, generation records, source/package hashes and non-evaluation final-fit scores. Initial fitting: 144 validation forests plus the final forest and an independent control refit using the historical transformation helper. Save/load roundtrip reproduced all 97 scores/labels; a fresh Python process loaded the bundle and reproduced all 97 again. The additional selected-recipe verification independently refits its four validation forests and checks its 21 threshold decisions. Prior result/source hashes are preserved. The exporter refuses to overwrite an existing model/metadata pair; version deliberately before exporting again.
+
+### Load and predict from the project root
+
+Use the recorded dependency versions (especially sklearn 1.9.1, NumPy 2.5.4, pandas 3.1.0, SciPy 1.18.1 and joblib 1.6.0). Example answers below are hypothetical, not a dataset row. Sleep/study values are survey category codes, not hours.
+
+```python
+import joblib
+import pandas as pd
+
+saved = joblib.load('classification/models/selected-rf.joblib')
+answers = pd.DataFrame([{
+    'workload': 4, 'sleep_duration_code': 2, 'study_hours_code': 3,
+    'financial_strain': 3, 'university_support': 2, 'ai_frequency': 4,
+    'ai_dependence': 4, 'ai_offloading': 3,
+}])
+answers = answers.loc[:, saved['feature_names']]
+for name, allowed in saved['allowed_values'].items():
+    if not answers[name].isin(allowed).all():
+        raise ValueError(f'Invalid or missing survey code: {name}')
+scores = saved['pipeline'].predict_proba(answers)[:, 1]
+classes = (scores >= saved['warning_threshold']).astype(int)
+labels = [saved['class_names'][int(value)] for value in classes]
+print(labels, scores)
+```
+
+The saved threshold must be applied to the scores for the intended warning rule. Scores are uncalibrated model outputs; High/Below-high are study-defined groups. No synthetic generation or SPSS dataset is needed to predict from new valid eight-input answers.
+
+## How one synthetic profile is created
+
+Explanation updated **18 November 2026**. The implementation is `pool()` in [train-augmentation.py](train-augmentation.py); [check-synthetic-profiles.py](check-synthetic-profiles.py) reuses it separately for both classes in the inference-only check. This is constrained same-class interpolation with stochastic rounding, not independently sampled random answers or a fitted generative model.
+
+### 1. Choose two similar real parents
+
+Choose parent A randomly from real students with eligible neighbours, then parent B randomly from A's up to three nearest eligible same-class neighbours. The training experiment uses only real High students inside the current training split. The separate synthetic check uses each class separately. Parents are chosen repeatedly; contributions are not guaranteed to be equal.
+
+For Small B, distance is `(sum of six absolute ordinal differences /4 + number of mismatches in the two category codes) /8`. Parent distance must be <=.35, with no ordinal answer differing by more than 2. Generated distance from A must be <=.25.
+
+### 2. Mix six answers; keep two answers from A
+
+The following is an **illustrative example**, not two identified dataset rows. Suppose A and B both have measured primary burnout score >=4. Draw one mixing fraction uniformly between .2 and .8; here it is .4. For every ordinal answer, calculate `0.6*A + 0.4*B`.
+
+| Input | Parent A | Parent B | Calculation | Example new C |
+|---|---:|---:|---|---:|
+| workload | 4 | 5 | 4.4, rounded probabilistically | 4 |
+| sleep_duration_code | 2 | 3 | Keep A's category | 2 |
+| study_hours_code | 3 | 3 | Keep A's category | 3 |
+| financial_strain | 3 | 4 | 3.4, rounded probabilistically | 4 |
+| university_support | 2 | 2 | 2, unchanged | 2 |
+| ai_frequency | 4 | 5 | 4.4, rounded probabilistically | 5 |
+| ai_dependence | 4 | 5 | 4.4, rounded probabilistically | 4 |
+| ai_offloading | 4 | 4 | 4, unchanged | 4 |
+
+**"Copy A" means C receives A's exact sleep and study-hours category codes together.** Code 2 is a category identifier, not two hours. We do not average these codes into a nonexistent category such as 2.5. Other answers can change, so the complete C profile can still differ from A.
+
+For 4.4, rounding gives 5 with probability .4 and 4 with probability .6. For 3.4, it gives 4 with probability .4 and 3 with probability .6. Each ordinal input has its own random rounding draw; one shared mixing fraction is used for the profile. These draws are reproducible from the recorded seeds.
+
+In this example, parent distance is `(4/4 + 1)/8 = .25`. C differs from A by one step in financial strain and AI frequency, so its distance from A is `(2/4)/8 = .0625`. Both pass the limits. C is accepted only if its full eight-input profile is also absent from the real data and the relevant generated pool; otherwise another candidate is attempted. The separate 970-profile check additionally enforces uniqueness across all its batches and excludes exact cross-label conflicts.
+
+### 3. Assign an assumed label and use the profile
+
+C inherits an **assumed High label** because both parents are High. We do not generate BAT answers, measure a new person's burnout, or use the model's prediction to choose C's label. Valid codes and nearby parents do not prove that the new combination describes a real student or has the assumed outcome.
+
+Historical augmentation creates pools within training folds only, then selects no/half/full augmentation using inner validation; held-out real students remain untouched. Its **2,720 total instances** span many pools. The **saved final RF uses zero synthetic rows** because its final selection chose no augmentation. The later **970 profiles** were used only to check that frozen model's consistency, without retraining. These are three different sample counts, not one combined dataset.
+
+## Saved model: synthetic-profile check (17 November 2026)
+
+Completed separate [simulation results](synthetic-check-outputs/20261117T130726203314Z/results.md). **This is agreement with parent-inferred synthetic labels, not validation on new real students or an improvement over the previous 87.1% real held-out recall.** The saved model and threshold .35 were frozen. No training, settings selection or model replacement occurred.
+
+Generated **970 unique profiles: 800 Below-high /170 High**, matching the original class proportions at tenfold scale. For this inference-only simulation, the existing constrained training generator is called separately for each real parent class, remapping its positive class internally. It combines same-class nearby parents, stochastically rounds ordinal inputs and copies the categorical block. All real-profile duplicates and global synthetic duplicates are excluded. Exact cross-label conflicts would be excluded; none occurred. No constraints were relaxed and the requested counts were achieved. Profile labels come from parents' measured classes, never from model predictions; they are not new measured BAT outcomes. This is a different set from the historical 2,720 training-pool instances.
+
+| Measure against assumed synthetic labels | Result |
+|---|---:|
+| High recall | 93.5% (159/170) |
+| High precision | 55.6% (159/286 warnings) |
+| F2 | .822981 |
+| Accuracy/agreement | 85.8% |
+| TP / FN | 159 /11 |
+| FP / TN | 127 /673 |
+| Average precision /ROC AUC | .698947 /.929324 |
+
+Always predicting Below-high would achieve 82.5% accuracy but zero High recall, so accuracy alone is misleading. All 97 real parents were used to fit the saved forest: interpolation near their labelled profiles can make this simulation favourable. Novel combinations are not independent new students or proof of real generalization. This one-seed simulation cannot replace real held-out evaluation, prove clinical accuracy, or justify changing the reported CV metrics.
+
+Runner [check-synthetic-profiles.py](check-synthetic-profiles.py), [settings](synthetic-check-config.json). Run `.\.venv\Scripts\python.exe classification/check-synthetic-profiles.py`. Separate ignored output root contains profiles/predictions/parent provenance, candidate-batch logs, generator/config, metrics and hash manifest. [Verification passed](synthetic-check-outputs/20261117T130726203314Z/verification.json): all 970 profiles' parent labels, valid domains, mixed distances, interpolation/rounding, novelty and class counts checked; independent sklearn metrics match; reloaded CSV scores/labels reproduce; saved model/metadata/source hashes unchanged. There is no synthetic training or new independent test cohort in this experiment.
 
 ## Boruta selection from all 23 inputs (16 November 2026)
 

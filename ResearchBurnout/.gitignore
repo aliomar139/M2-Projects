@@ -29,6 +29,9 @@ __pycache__/
 /classification/svc23-outputs/
 /classification/input-comparison-outputs/
 /classification/boruta-outputs/
+/classification/models/
+/classification/final-fit-outputs/
+/classification/synthetic-check-outputs/
 /analysis/outputs/model-runs/
 /analysis/outputs/xgboost-experiments/
 /analysis/outputs/diagnostics/

@@ -1,12 +1,14 @@
 # Student burnout and GenAI research
 
+> **Current status (18 November 2026):** many exploratory modelling comparisons are complete and the selected classifier is the eight-input Random Forest. Read [the current project handoff](docs/handoff.md) first, then the [synthetic generation example](classification/README.md#how-one-synthetic-profile-is-created).
+
 Start here for the project overview. Use [work-plan.md](work-plan.md) for the task checklist.
 
-Updated: 29 October 2026. Reading time: about 3 minutes.
+Updated: 18 November 2026. Reading time: about 3 minutes.
 
 ## Where we are
 
-We have 97 student responses. Data preparation and the first SPSS analyses are complete. **We have not trained or tested a prediction model yet.**
+We have 97 student responses. Data preparation, SPSS analyses and many model comparisons are complete. The selected eight-input Random Forest procedure averaged **87.1% High recall and 34.7% precision** in repeated real-student cross-validation. A final classifier is saved locally; its fit used all 97 real students and no synthetic training rows. The earlier CV metrics are not an independent evaluation of this final artifact.
 
 Our question is: do students' GenAI habits help us estimate their current burnout symptoms, beyond what we can learn from their study conditions?
 
@@ -14,23 +16,22 @@ The survey measures everything at one time. It cannot tell us who will develop b
 
 | Stage | Status |
 |---|---|
-| Create the 43-question survey and collect responses | Done for the current 97-response export; further recruitment status is unknown |
+| Create the 43-question survey and collect responses | Done; this modelling phase uses the existing 97 respondents |
 | Prepare data and calculate both burnout scores | Done |
 | Check score consistency, describe responses, and examine correlations | Done; detailed results are in the SPSS review |
-| Train models and test prediction errors | Not started |
-| Write the final results and consider a demo | Later |
+| Train models and test prediction errors | Completed comparisons recorded in the handoff and progress log |
+| Save the selected classifier | Done locally; model and metadata are ignored by Git |
+| Write the final paper/presentation and consider a demo | Research results documented; final publication/demo completion is not established |
 
 ## What to do next
 
-Follow [the work plan](work-plan.md). Experiment settings and training code are prepared. Use [the analysis run instructions](analysis/README.md#run-the-prediction-experiment) for validation and the first full comparison.
-
-The draft work plan includes the recommended median baseline and small Random Forest comparison. Record final settings before running models; no training has started.
+Read [the handoff](docs/handoff.md) and [current classification documentation](classification/README.md) before proposing work. Keep the selected model and recorded results. No experiment is currently running; agree on a specific next task before retraining, deleting outputs or changing models. The older checklist in [the work plan](work-plan.md) is explicitly historical.
 
 ## Which file should I read?
 
 | If you want to... | Open this |
 |---|---|
-| Understand the next experiment | [Prediction experiment](docs/prediction-experiment.md) |
+| Understand current models and possible next work | [Project handoff](docs/handoff.md) and [classification results](classification/README.md) |
 | See completed analyses, formulas, and variable codes | [SPSS analysis review](docs/analysis-progress.md) |
 | Understand the study design and limits | [Study specification](docs/study-design.md) |
 | Find survey questions or the Google Forms script | [Active questionnaire](survey/questionnaire.md) |
