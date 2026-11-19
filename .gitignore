@@ -78,5 +78,5 @@ yarn-error.log*
 **/downloaded_papers/
 **/Similar-Papers/downloaded_papers/
 *.pkl
-
+/ResearchBurnout/KassemDanachPapers
 
