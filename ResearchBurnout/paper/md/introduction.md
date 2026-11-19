@@ -19,7 +19,7 @@ Prior studies illustrate how the choice of outcome and evaluation sample shapes 
 
 ## Study Contributions and Main Findings
 
-The matched ridge regression comparison measures what the three GenAI questions contributed as a set. On the same evaluation splits, adding the questions reduced the mean absolute error from 0.6183 to 0.5883 points on the 1-to-5 scale. With the three questions included, the mean absolute error in the High group was 0.9329 points. The model tended to underestimate scores in that group.
+Adding the three GenAI questions as a set reduced mean absolute error from 0.6183 to 0.5883 points on the 1-to-5 scale. This comparison used ridge regression and identical evaluation splits for both input sets. Even with the added questions, the model averaged 0.9329 points of error in the High group and tended to underestimate scores there.
 
 At the selected warning thresholds, workload-only logistic regression detected an average of 16.0 of the 17 High cases (94.1%). The eight-input random forest detected 14.8 cases (87.1%). Both models averaged 28 false warnings among the 80 students below the cutoff. Warning precision, the percentage of warnings that identified High cases, was 36.4% for workload-only logistic regression and 34.7% for the random forest. These figures are averages from five cross-validation repetitions on the same 97 students.
 
