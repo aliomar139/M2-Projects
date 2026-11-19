@@ -1,0 +1,10 @@
+{
+  "tabpfn_run": "results/17-tabpfn-comparison/20261114T124506935366Z",
+  "rf_run": "results/13-random-forest-logistic-voting/20261113T203744495093Z",
+  "rf_shares": [1, 0.75, 0.5, 0],
+  "threshold_output_root": "results/18-tabpfn-threshold-refinement",
+  "voting_output_root": "results/18-tabpfn-voting-refinement",
+  "threshold_candidates": "Unique inner out-of-fold scores, plus 0, 1, and nextafter(1,+inf) for the all-negative decision. Predict High when score >= threshold.",
+  "selection": "F2 rule maximizes inner F2, precision, recall, threshold, RF share. Guard requires current RF recorded inner recall, then minimizes FP and maximizes recall, precision, F2, threshold, RF share. No outer results select thresholds or shares.",
+  "interpretation": "Conditional comparison of frozen endpoint recipes using their saved inner and outer predictions. Same eight inputs and original >=4 High boundary. Original nested folds; real held-out evaluation only. RF retains its previously selected training-only augmentation. TabPFN has no augmentation. No new fits, calibration, survey rows, features or deployment model. Raw score mixtures are not calibrated probabilities. Repeated research on 97 students remains exploratory."
+}

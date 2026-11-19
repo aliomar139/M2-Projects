@@ -1,0 +1,17 @@
+{
+  "experiment_id": "high-score-ridge-followup-v1",
+  "reference_run": "results/01-score-prediction-baselines/20261102T083420352990Z",
+  "input_set": "small_b",
+  "targets": ["burnout_score", "burnout_score_23"],
+  "high_score_boundary": 4.0,
+  "relative_high_weights": [1.0, 2.0, 4.0],
+  "normalize_training_weights_to_mean_one": true,
+  "ridge_alphas": [0.01, 0.1, 1, 10, 100, 1000],
+  "inner_overall_mae_tolerance": 0.05,
+  "selection": "Find ordinary ridge by mean inner-fold overall MAE; among candidates with pooled inner overall MAE <= ordinary ridge pooled MAE + 0.05, minimize pooled inner high-score MAE. Break ties by overall MAE, lower weight, then lower alpha. If no inner high-score students, use ordinary ridge.",
+  "outer_assessment": "Report high-score MAE, mean underestimation and signed error, overall MAE change, and predicted >=4 versus measured >=4 recall/precision/false positives. Do not enforce the inner guardrail using outer scores or choose settings from outer results.",
+  "numerical_goal": "Lower paired high-score MAE without overall MAE increasing more than 0.05 points, assessed descriptively per repetition; this is an analytical criterion, not clinical validation.",
+  "interpretation": "Exploratory follow-up after viewing previous results. Boundary 4 is descriptive, not a validated clinical cutoff. Repetitions are dependent; this is not independent confirmation.",
+  "augmentation": false,
+  "output_root": "results/04-high-score-weighting"
+}

@@ -1,0 +1,15 @@
+{
+  "experiment_id": "selected-rf-validation-v1",
+  "base_config": "experiments/01-compare-score-prediction-baselines-settings.json",
+  "binary_config": "experiments/10-compare-high-burnout-classifiers-settings.json",
+  "augmentation_config": "experiments/11-augment-high-burnout-classifiers-settings.json",
+  "output_root": "results/25-random-forest-validation",
+  "workers": 4,
+  "permutations": 199,
+  "permutation_seed": 20261118,
+  "bootstrap_seed": 20261119,
+  "bootstrap_samples": 2000,
+  "primary_statistic": "mean repetition balanced accuracy",
+  "workload_baseline": {"C": 1.0, "relative_high_weights": [1, 2, 4]},
+  "policy": "Original eight inputs, measured score >=4, all five original repetitions and nested training-only tuning of RF settings/weight/ratio/threshold. Null labels shuffled once per student across all repetitions; rerun full selected procedure. Four workers with one computational thread each. No replacement final model, threshold selection on outer results or synthetic evaluation."
+}

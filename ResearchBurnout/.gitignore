@@ -1,50 +1,32 @@
-# Local editor settings and scratch files
+# Local environments, editor settings and Python caches
+/.venv/
+/.venv-tabpfn/
 /.vscode/
-/tmp/
 __pycache__/
 *.pyc
 
-# Preserve the prior local-only exports after moving them.
-/data/raw/survey-responses.xlsx
-/data/prepared/burnout-data-rebuilt.sav
-/archive/previous-survey/data/responses.csv
-/archive/previous-survey/data/responses.xlsx
-/survey/bat-source.pdf
+# Original local-only survey exports and reference PDF
+/data/02-original-student-survey-workbook.xlsx
+/data/04-experimental-predictor-rebuild.sav
+/data/92-previous-survey-responses.csv
+/data/92-previous-survey-responses.xlsx
+/research/03-original-burnout-assessment-questionnaire.pdf
 
-# Earlier local filenames, if exports are restored
-/Responses2 - Form Responses 1.csv
-/data.csv
-/data.xlsx
-/BAT-English.pdf
-/BAT-S_ENG.pdf
-
-# Local experiment environment and participant-level model outputs
-/.venv/
-/.venv-tabpfn/
-/classification/.tabpfn-cache/
-/classification/tabpfn-outputs/
-/classification/tabpfn-threshold-outputs/
-/classification/tabpfn-voting-outputs/
-/classification/svc-outputs/
-/classification/svc23-outputs/
-/classification/input-comparison-outputs/
-/classification/boruta-outputs/
-/classification/models/
-/classification/final-fit-outputs/
-/classification/synthetic-check-outputs/
-/analysis/outputs/model-runs/
-/analysis/outputs/xgboost-experiments/
-/analysis/outputs/diagnostics/
-/analysis/outputs/high-score-experiments/
-/classification/outputs/
-/classification/binary-outputs/
-/classification/augmentation-outputs/
-/classification/forest-tuning-outputs/
-/classification/voting-outputs/
-/classification/error-analysis-outputs/
-/classification/question-selection-outputs/
-/classification/backward-selection-outputs/
-/analysis/outputs/augmentation-experiments/
-/analysis/outputs/kernel-experiments/
-/analysis/outputs/ensemble-experiments/
-/analysis/outputs/feature-selection-experiments/
+# Full runs, private predictions, models, backups and check artifacts stay local.
+# Only the listed aggregate results and existing SPSS/data reports are shared.
+/results/*
+!/results/00-data-consistency-checks.json
+!/results/00-model-readiness-check.json
+!/results/00-spss-variable-dictionary.json
+!/results/00-spss-descriptive-statistics.spv
+!/results/25-random-forest-validation-report.md
+!/results/25-model-comparison-summary.csv
+!/results/25-model-results-by-validation-repeat.csv
+!/results/25-paired-model-comparisons.csv
+!/results/25-conditional-student-uncertainty-intervals.csv
+!/results/25-results-stability-across-repeats.csv
+!/results/25-shuffled-label-test-results.csv
+!/results/25-warning-threshold-tradeoff-data.csv
+!/results/25-real-model-versus-shuffled-labels.png
+!/results/25-detections-versus-false-warnings.png
+!/results/25-random-forest-confusion-matrix.png

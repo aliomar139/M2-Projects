@@ -1,0 +1,10 @@
+{
+  "experiment_id": "current-rf-backward-selection-v1",
+  "reference_run": "results/11-classifier-training-augmentation/20261112T125001425382Z",
+  "input_set": "small_b",
+  "minimum_questions": 1,
+  "workers": 2,
+  "output_root": "results/16-backward-question-selection",
+  "selection": "Start with all eight existing questions. Score every one-question removal with pooled four-fold real inner predictions and original .05-step thresholds. F2 path accepts only strict F2 improvement (>1e-12); threshold ties favor precision/recall/higher threshold. Recall-guard path requires at least the current RF inner recall, minimizes false positives with ties by recall/precision/F2/higher threshold, and accepts only a strict FP reduction. Child ties follow original question order. Stop at first lack of strict improvement or one remaining question. Cache identical subsets across both paths.",
+  "interpretation": "Freeze the current RF's original outer-training-selected parameters, High weight and augmentation ratio. Reuse original folds and full-eight synthetic generator; project encoded questions as whole groups. No global feature ranking or removal based on prior error tables. The entire greedy path and stopping rule use training data only; outer evaluation remains real-only. Inner recall is not an outer guarantee. Conditional greedy search, not exhaustive subset/model optimization; repeated exploration on 97 students."
+}

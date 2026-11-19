@@ -1,0 +1,10 @@
+{
+  "experiment_id": "saved-rf-synthetic-neighborhood-check-v1",
+  "model_path": "results/23-selected-random-forest.joblib",
+  "metadata_path": "results/23-selected-random-forest-metadata.json",
+  "output_root": "results/24-synthetic-profile-check",
+  "requested_counts": {"0": 800, "1": 170},
+  "seed": 673291,
+  "max_batches": 100,
+  "interpretation": "Generate novel constrained same-class parent interpolations from the existing real students for both Below-high and High. Target class proportions match 80/17 real counts at tenfold scale. Labels are parent-inferred assumptions, not measured outcomes. The saved forest has trained on every real parent, so this is a synthetic neighborhood/consistency check, not independent validation or a replacement for real held-out CV metrics. No retraining, parameter selection or threshold changes. Remove exact cross-label synthetic conflicts and exclude those profiles; record shortfalls without relaxing constraints."
+}

@@ -1,2 +1,0 @@
--r requirements-lock.txt
-xgboost==3.4.1

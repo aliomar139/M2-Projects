@@ -1,0 +1,2 @@
+-r dependencies-pinned.txt
+xgboost==3.4.1
