@@ -30,3 +30,9 @@ __pycache__/
 !/results/25-real-model-versus-shuffled-labels.png
 !/results/25-detections-versus-false-warnings.png
 !/results/25-random-forest-confusion-matrix.png
+
+# Research paper collections & caches
+/KassemDanachPapers/
+/ExplainableAIBurnoutPapers/
+/ExplainableAI_Student_Burnout_Papers/
+

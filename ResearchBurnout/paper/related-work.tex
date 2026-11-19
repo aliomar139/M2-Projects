@@ -1,0 +1,24 @@
+\section{Related Work}
+\label{sec:related-work}
+
+\subsection{Measuring Student Burnout}
+
+Student burnout studies differ in both measurement instruments and score cutoffs. Carmona-Halty et al. found support for four BAT-S dimensions in 461 Chilean undergraduates~\cite{carmonahalty2024bats}. Kiss and Pik\'{o} used the Maslach Burnout Inventory--Student Survey with Hungarian medical students and applied separate cutoffs for exhaustion, cynicism, and academic efficacy~\cite{kiss2025burnout}. In the present study, regression estimates the 12-item BAT-S score. The classification task uses a cutoff of 4 on the same score to define the High group.
+
+\subsection{Study Conditions and GenAI Use}
+
+C\^{a}mara and Carlotto found that taking many courses and managing exams and assignments were among the stressors associated with burnout in Brazilian university students~\cite{camara2024stressors}. The present survey measures perceived workload with one question asking how heavy and overwhelming students find their academic workload. This item is the only input to the logistic regression baseline for the warning task.
+
+Measures of GenAI use can describe frequency, purpose, or dependence. Plensamai found a positive association between AI dependence and burnout after adjusting for academic stress and AI-supported learning~\cite{plensamai2026burnout}. In a survey of Chinese university students, Wang et al. found positive correlations between academic stress, AI dependence, and burnout scores~\cite{wang2026offloading}. Both surveys measured these variables at one point in time. The present score prediction experiments compare prediction errors for held-out students with and without GenAI items, using the same model family within each comparison.
+
+\subsection{Comparing Burnout Prediction Models}
+
+Some burnout classifiers use symptom scores as predictors. Rahmadani and Sriani used burnout dimension scores as inputs to a decision tree that classified Indonesian university students into three burnout levels~\cite{rahmadani2026burnout}. In the present study, BAT-S responses define the outcomes, and the prediction models use answers from the other parts of the survey.
+
+Saklani et al. used a 23-item BAT-S mean to define three groups in an analysis of 113 Indian engineering students~\cite{saklani2026burnout}. With the full set of predictors, their logistic regression and random forest models performed better than in the corresponding runs with shuffled labels. The uncertainty intervals for the gains from adding interaction terms included zero. The present study evaluates the selected random forest against runs with shuffled labels to assess performance relative to chance. The comparison with workload-only logistic regression examines High detections and false warnings at the selected thresholds.
+
+\subsection{Interpreting Model Outputs}
+
+She et al. used Shapley additive explanations (SHAP) to estimate how individual predictors contributed to the model's predictions of foreign-language learning burnout in secondary school students~\cite{she2026languageburnout}. Model performance was also assessed on students from a separate school.
+
+In a preprint on a combined burnout and depression outcome, Dehghan and Ashrafi reported that trait anxiety ranked highly across cohorts. Its rank fell after the part of the anxiety score associated with the depression component was removed~\cite{dehghan2026overlap}. The present study reports question-selection comparisons and examines where the models made prediction errors.

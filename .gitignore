@@ -79,4 +79,6 @@ yarn-error.log*
 **/Similar-Papers/downloaded_papers/
 *.pkl
 /ResearchBurnout/KassemDanachPapers
+/ResearchBurnout/ExplainableAIBurnoutPapers
+/ResearchBurnout/ExplainableAI_Student_Burnout_Papers
 

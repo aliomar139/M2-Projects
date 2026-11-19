@@ -1,0 +1,7 @@
+# Conclusion
+
+This study examined whether survey answers about generative artificial intelligence (GenAI) use improved prediction of current burnout scores beyond study conditions alone in a sample of 97 university students. On the same evaluation splits, adding three questions on use frequency, dependence on AI to complete academic work, and reliance on AI in place of independent thinking to five study-condition questions reduced ridge regression's mean absolute error from 0.6183 to 0.5883 points on the 1-to-5 scale. The 0.0300-point reduction applies to the three questions together. The model with those inputs averaged 0.9329 points of absolute error in the High group.
+
+For the warning task, workload-only logistic regression detected 16.0 of the 17 High cases on average. The eight-input random forest detected 14.8. Both classifiers averaged 28.0 false warnings among the 80 students whose measured score was below 4. In a separate comparison against chance, the selected forest's balanced accuracy was higher than in any of the 199 evaluations with shuffled labels (permutation *p* = 0.005).
+
+The warning counts are averages from five cross-validation repetitions on a single convenience sample. An independent evaluation should fix the prediction procedures in advance and test them on a new student cohort with measured BAT-S scores.
