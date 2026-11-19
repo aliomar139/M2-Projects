@@ -32,7 +32,7 @@ __pycache__/
 !/results/25-random-forest-confusion-matrix.png
 
 # Research paper collections & caches
-/KassemDanachPapers/
-/ExplainableAIBurnoutPapers/
-/ExplainableAI_Student_Burnout_Papers/
+/KassemDanachPapers/pdfs
+/ExplainableAIBurnoutPapers/pds
+/ExplainableAI_Student_Burnout_Papers/pdfs
 

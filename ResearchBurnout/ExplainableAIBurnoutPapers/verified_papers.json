@@ -1,0 +1,301 @@
+[
+  {
+    "number": 1,
+    "title": "Auditing Construct Overlap in Explainable Machine Learning: Evidence from Burnout-Depression Prediction Across Student Cohorts",
+    "year": 2026,
+    "source": "arXiv (Cornell University)",
+    "authors": [
+      "Alireza Dehghan",
+      "Negin Ashrafi"
+    ],
+    "doi": "https://doi.org/10.48550/arxiv.2607.10633",
+    "pdf_filename": "2026 - Auditing Construct Overlap in Explainable Machine Learning Evidence from Burnout-Depression P.pdf",
+    "pdf_size_kb": 576,
+    "abstract": "Explainable machine learning (XML) pipelines applied to composite mental health outcomes can produce apparently-robust, cross-population-stable risk hierarchies that are largely artefacts of how the outcome was constructed. We demonstrate this using an ElasticNet pipeline applied to 886 medical students at the University of Lausanne (primary cohort, 2022), validated across 2,580 longitudinal observations at three time points and 701 non-medical students from eight faculties; all three datasets share identical instruments. The pipeline produces a hierarchy in which trait anxiety and health satisfaction dominate wherever the outcome is measured, with Kendall $τ= 1.0$ for the top-two positions across all five evaluation sets and consistent transfer performance ($R^2$: 0.41-0.49). Two residualization experiments, which isolate shared variance between correlated variables via regression, reveal the mechanism: when trait anxiety (STAI-T) is residualized against the co-included depression subscale (CES-D, $r = 0.72$), model $R^2$ drops from 0.41 to 0.16 and STAI-T falls from rank 1 to rank 6; when burnout subscales are residualized against CES-D, $R^2$ collapses to 0.016. Prediction intervals average 35.4 units on a 0-100 scale (2.4 outcome standard deviations), independently ruling out individual-level deployment. The residualization protocol is the paper's transferable contribution: any XAI study combining correlated predictor and outcome constructs should apply this check before interpreting apparent stability as a finding."
+  },
+  {
+    "number": 2,
+    "title": "LightGBM-Based Prediction of Academic Burnout among High School Students from Perfectionism, Test Anxiety, Academic Self-Efficacy, and School Climate Indicators",
+    "year": 2026,
+    "source": "Unknown Source",
+    "authors": [
+      "Ricardo Fúnez",
+      "Søren Mikkelsen",
+      "Jihyun Park"
+    ],
+    "doi": "https://doi.org/10.61838/kman.jayps.5458",
+    "pdf_filename": "2026 - LightGBM-Based Prediction of Academic Burnout among High School Students from Perfectionism,.pdf",
+    "pdf_size_kb": 647,
+    "abstract": "Objective: To develop and evaluate a machine learning model using LightGBM to predict academic burnout among high school students based on psychological and school environment factors. Methods and Materials: A total of 1,248 high school students from Denmark participated in this cross-sectional study. Data were collected on perfectionism, test anxiety, academic self-efficacy, and perceptions of school climate using validated self-report instruments. Academic burnout was measured with the Maslach Burnout Inventory–Student Survey. Demographic data including age, gender, grade level, and school type were also obtained. Data were cleaned, standardized, and analyzed using Python and LightGBM algorithms. The dataset was divided into training (80%) and testing (20%) sets, and five-fold cross-validation was employed for model optimization. Model performance was assessed using accuracy, precision, recall, F1-score, ROC-AUC, and feature importance via SHAP values. Findings: The LightGBM model accurately classified students into low- and high-risk burnout categories with 89.1% accuracy on the testing dataset. Test anxiety emerged as the strongest predictor, followed by academic self-efficacy, school climate, and perfectionism. Higher test anxiety and perfectionism were associated with increased burnout risk, whereas higher self-efficacy and more positive school climate perceptions were protective. The SHAP summary plot revealed the individual contributions of each predictor and indicated heterogeneity in their effects across students. Demographic variables contributed minimally to predictive performance. Conclusion: This study demonstrates the effectiveness of a LightGBM-based model for predicting academic burnout using psychological and environmental factors. Findings emphasize the importance of addressing test anxiety, promoting academic self-efficacy, and fostering supportive school climates to reduce burnout risk among adolescents. Machine learning approaches can inform targeted interventions and early identification of at-risk students."
+  },
+  {
+    "number": 3,
+    "title": "Explainable AI Modeling of Academic Burnout in High School Students Using Cognitive Flexibility, School Climate, and Online Learning Engagement",
+    "year": 2026,
+    "source": "Unknown Source",
+    "authors": [
+      "Yara Mahfouz",
+      "Zhang Minyi"
+    ],
+    "doi": "https://doi.org/10.61838/kman.jayps.4989",
+    "pdf_filename": "2026 - Explainable AI Modeling of Academic Burnout in High School Students Using Cognitive Flexibili.pdf",
+    "pdf_size_kb": 479,
+    "abstract": "Objective: The objective of this study was to develop and validate an explainable artificial intelligence model for predicting academic burnout among Chinese high school students based on cognitive flexibility, perceived school climate, and online learning engagement. Methods and Materials: This quantitative cross-sectional study was conducted with 1,042 high school students from public schools in three major urban regions of eastern China using multi-stage cluster sampling. Participants completed standardized measures of academic burnout, cognitive flexibility, school climate, and online learning engagement. Data were analyzed using an ensemble machine learning framework combining Random Forest, Gradient Boosting, and XGBoost algorithms. Model performance was evaluated via nested cross-validation. Explainable AI techniques including SHapley Additive exPlanations and Local Interpretable Model-agnostic Explanations were applied to ensure transparency and interpretability of predictions. Findings: The ensemble model demonstrated strong predictive performance (RMSE = 0.32, MAE = 0.24) and explained 81% of the variance in academic burnout. Cognitive flexibility emerged as the most influential predictor (38.7% relative importance), followed by school climate (31.2%) and online learning engagement (22.5%). The model exhibited high stability across gender and grade-level subgroups, with explained variance ranging from 78% to 83%. Conclusion: Academic burnout among Chinese high school students is best explained through a dynamic interaction of cognitive, environmental, and behavioral factors, and the proposed explainable AI framework provides a powerful and transparent tool for early identification and targeted prevention of burnout risk in educational settings."
+  },
+  {
+    "number": 4,
+    "title": "Prediction of Burnout Syndrome Risk in University Students Using the C5.0 Algorithm",
+    "year": 2026,
+    "source": "JURIKOM (Jurnal Riset Komputer)",
+    "authors": [
+      "Noni Fauzia Rahmadani",
+      "Sriani"
+    ],
+    "doi": "https://doi.org/10.30865/jurikom.v13i2.9550",
+    "pdf_filename": "2026 - Prediction of Burnout Syndrome Risk in University Students Using the C5.0 Algorithm.pdf",
+    "pdf_size_kb": 730,
+    "abstract": "Burnout among university students is a serious issue that can reduce learning motivation, academic performance, and mental health. Approximately 25–30% of students experience burnout symptoms, which negatively affect concentration and academic productivity. Early detection is still limited due to the lack of accurate data analysis. This study aims to predict the risk level of student burnout using the C5.0 algorithm as a classification method capable of handling both categorical and numerical data. The research data were obtained from 306 students at Universitas Islam Negeri Sumatera Utara through an online questionnaire based on the Maslach Burnout Inventory–Student Survey (MBI-SS). The data were processed through cleaning, encoding, and splitting into training and testing sets using Python. The results show that the model achieves excellent classification performance, with an accuracy of 99.25% on the training set (precision 99.72%, recall 99.45%) and 97% on the testing set (precision 100%, recall 96%). The model also identifies the most influential attributes contributing to burnout, such as stress level and emotional exhaustion. The main contribution of this study is the development of an accurate and interpretable machine learning-based model for predicting student burnout risk. These findings provide practical implications for educational institutions in supporting early detection and designing data-driven preventive interventions, such as counseling services and stress management programs."
+  },
+  {
+    "number": 5,
+    "title": "Machine Learning and Differential Equation-Based Epidemic Model Framework for Predicting Student Burnout and Depression Due to Academic Workload During and Post-Pandemic.",
+    "year": 2026,
+    "source": "International Journal of Computer Information Systems and Industrial Management Applications",
+    "authors": [
+      "Saswati Sahoo",
+      "N. Punitha",
+      "Devarsu Radha Pyari",
+      "J. Pandima Devi",
+      "Praveen Kumar",
+      "Mithilesh Deo Pandey",
+      "G. Jenitha",
+      "Sanjay Oli"
+    ],
+    "doi": "https://doi.org/10.70917/ijcisim-2026-4602",
+    "pdf_filename": "2026 - Machine Learning and Differential Equation-Based Epidemic Model Framework for Predicting Stud.pdf",
+    "pdf_size_kb": 464,
+    "abstract": "The rapid increase in academic workload during and after the COVID-19 pandemic has significantly affected the mental health of university students, leading to higher incidences of burnout and depression. Traditional statistical methods provide valuable insights into the relationships between academic and psychological variables but are often inadequate for capturing complex nonlinear interactions and forecasting the temporal progression of mental health conditions. This study proposes a novel Machine Learning and Differential Equation-Based Epidemic Model Framework for predicting student burnout and depression resulting from academic workload. Initially, statistical analyses, including descriptive statistics, correlation analysis, and regression techniques, are employed to identify significant academic, behavioral, and psychological factors influencing student mental health. Subsequently, an Artificial Neural Network (ANN) is developed to learn nonlinear relationships between these factors and to accurately predict individual burnout and depression levels. The ANN-predicted outcomes are then integrated into a compartmental epidemic-inspired differential equation model, where the transition parameters are dynamically estimated rather than assumed constant. The proposed mathematical model describes the temporal evolution of healthy, burnout, depressed, and recovered student populations under varying academic conditions. Numerical simulations are performed using synthetic and survey-based datasets to investigate the effects of workload intensity and intervention strategies on student mental health. The results indicate that combining ANN with differential equation modeling provides both high prediction accuracy and mathematical interpretability while enabling long-term forecasting of burnout and depression dynamics. The proposed framework offers an effective decision-support tool for educational institutions to implement early intervention strategies, optimize academic policies, and promote student psychological well-being."
+  },
+  {
+    "number": 6,
+    "title": "Identifying foreign language learning burnout: latent profiles, cutoff points, and an explainable web-based calculator",
+    "year": 2026,
+    "source": "Frontiers in Psychology",
+    "authors": [
+      "Nuoyi She",
+      "Xu Chen",
+      "Qiang Wan",
+      "Kun Zhao",
+      "Jiongming Liu",
+      "Y W Li"
+    ],
+    "doi": "https://doi.org/10.3389/fpsyg.2026.1836626",
+    "pdf_filename": "2026 - Identifying foreign language learning burnout latent profiles, cutoff points, and an explaina.pdf",
+    "pdf_size_kb": 2966,
+    "abstract": "Background: Foreign language learning burnout (FLLB) is prevalent among English as a foreign language learners, which adversely affects students' academic performance and mental health. However, the clear cutoff point and individualized risk prediction tools for FLLB remain lacking, limiting its application in practical identification and assessment. Methods: This cross-sectional study recruited 1,343 Chinese secondary school students and collected data on FLLB, academic stress, engagement, teacher affective support, foreign language enjoyment, English achievement, and demographic characteristics. Latent profile analysis (LPA) was used to identify FLLB risk profiles. The cutoff point was determined using receiver operating characteristic curve (ROC) analysis. Six machine learning models were compared, and their generalizability was evaluated in an external validation set. The best-performing model was selected, interpreted with Shapley additive explanation (SHAP) analysis, and deployed as a web-based calculator. Results: LPA indicated that 14.2% of students belonged to the FLLB high-risk group. The optimal cutoff point was determined as: Exhaustion ≥14, Cynicism ≥3, and Reduced Efficacy ≥3. Logistic regression performed best, with AUC values of 0.903 (internal test set) and 0.813 (external validation set). SHAP analysis revealed that academic stress and foreign language enjoyment were key predictors. Conclusion: This study determined an operational cutoff point for FLLB. A well-performing risk prediction model was then developed and validated, which we subsequently deployed as a web-based calculator. The tool reports FLLB risk probabilities and visualizes the direction and relative contribution of key predictors, thereby providing a reference for efficient FLLB risk screening and subsequent targeted learning support and psycho-educational services."
+  },
+  {
+    "number": 7,
+    "title": "AI-Supported Learning, AI Dependency, and Academic Stress as Predictors of Student Burnout",
+    "year": 2026,
+    "source": "Interdisciplinary Research Review",
+    "authors": [
+      "Mahatthakorn Plensamai"
+    ],
+    "doi": "https://doi.org/10.14456/irr.2026.17",
+    "pdf_filename": "2026 - AI-Supported Learning, AI Dependency, and Academic Stress as Predictors of Student Burnout.pdf",
+    "pdf_size_kb": 329,
+    "abstract": "Generative artificial intelligence (GenAI) can enhance university learning by providing immediate feedback, clarifying complex concepts, supporting problem-solving, and improving access to personalized academic assistance. However, excessive reliance on AI may weaken independent reasoning, academic self-efficacy, and students’ ability to complete tasks without technological support. Previous studies suggest that constructive AI use may function as a learning resource, whereas AI dependency and persistent academic stress may contribute to exhaustion, disengagement, and reduced academic efficacy. Nevertheless, these factors have rarely been examined simultaneously in relation to academic burnout, particularly among Thai university students. This study therefore examined AI-supported learning, AI dependency, and academic stress as predictors of academic burnout among undergraduate students at Ubon Ratchathani University. Data were collected from June 2025 to March 2026 using a quantitative cross-sectional survey. Proportionate stratified sampling across academic fields, supplemented by quota-assisted convenience sampling, yielded 372 students with experience using GenAI for academic purposes. Data were analyzed using descriptive statistics, reliability and validity assessments, Pearson’s correlation, and multiple regression analysis. The model explained 46.0% of the variance in academic burnout. Academic stress was the strongest positive predictor, followed by AI dependency, whereas AI-supported learning had a negative but nonsignificant effect. The findings highlight the importance of promoting responsible AI use while reducing academic pressure and preventing excessive AI dependency."
+  },
+  {
+    "number": 8,
+    "title": "RIACT: A Responsible AI System for Personalized Study Habit Tracking and Early Burnout Signal Detection in University Students",
+    "year": 2026,
+    "source": "arXiv (Cornell University)",
+    "authors": [
+      "Ria Sidhu"
+    ],
+    "doi": "https://doi.org/10.35542/osf.io/94hr5_v1",
+    "pdf_filename": "2026 - RIACT A Responsible AI System for Personalized Study Habit Tracking and Early Burnout Signal.pdf",
+    "pdf_size_kb": 298,
+    "abstract": "Student burnout is highly prevalent in higher education, with reported rates ranging from 12% to over 70% and consistently exceeding those of the working population - yet it is typically identified only retrospectively, after academic decline has already occurred. A contributing factor is that students have little structured visibility into their own study behaviour, and existing productivity tools record activity without interpreting it. This paper presents RIACT (Record, Insight, Analyze, Coach, Track), a web-based application that combines structured study session logging with a hybrid AI architecture to surface personalized insights and early burnout signals. Students log sessions by location and time; the system computes net focus time by accounting for breaks, detects burnout signals through transparent, deterministic rules operating on week-over-week behavioural comparisons, and uses a large language model - constrained to a fixed output schema - to contextualize patterns and generate personalized recommendations. The design embeds responsible AI principles throughout: warnings are governed by auditable rules rather than model judgement, all output is framed as an observation rather than a diagnosis and data collection is limited to self-logged behavioural fields. We describe the system's design rationale, situate it within the literature on student burnout and explainable AI in education and propose an evaluation framework for validating its behavioural signals against established burnout instruments."
+  },
+  {
+    "number": 9,
+    "title": "Exploring Machine-Learning Prediction of Self-Reported Academic Burnout",
+    "year": 2026,
+    "source": "Research Square",
+    "authors": [
+      "Most Afida Aktar"
+    ],
+    "doi": "https://doi.org/10.21203/rs.3.rs-11583812/v1",
+    "pdf_filename": "2026 - Exploring Machine-Learning Prediction of Self-Reported Academic Burnout.pdf",
+    "pdf_size_kb": 488,
+    "abstract": "Abstract Academic burnout is a concern in higher education, but predicting students’ self-reported experiences from small survey datasets presents methodological challenges. This exploratory study examined whether academic and lifestyle survey responses could distinguish three categories of students’ responses to a single item asking whether they believed they were currently experiencing academic burnout: “Yes,” “Not sure,” and “No.” The analysis used 101 survey responses and compared eight classification approaches across three feature sets. Model evaluation used repeated stratified five-fold cross-validation, with hyperparameter selection conducted within the training data. The highest mean macro-F1 score was 0.430 (SD = 0.112), achieved by the k-nearest neighbours classifier using the core feature set. Its mean accuracy was 0.485 (SD = 0.116), compared with 0.436 for the majority-class baseline. Overall performance was modest and varied across validation folds. Class-specific results showed that the model had particular difficulty identifying respondents who answered “No.” Because the outcome was a single self-reported item rather than a validated burnout measure, the results should be interpreted as exploratory evidence of classification feasibility, not as a diagnostic or screening tool. The findings highlight the importance of cautious interpretation, transparent validation, and larger, independently evaluated datasets in research on student well-being."
+  },
+  {
+    "number": 10,
+    "title": "Construction of an Early Warning Model for Academic Burnout among High School Students Based on Learning Behaviour Data",
+    "year": 2026,
+    "source": "Journal of Mental Health",
+    "authors": [
+      "Tiange Xiang"
+    ],
+    "doi": "https://doi.org/10.63808/jmh.v2i1.432",
+    "pdf_filename": "2026 - Construction of an Early Warning Model for Academic Burnout among High School Students Based.pdf",
+    "pdf_size_kb": 882,
+    "abstract": "The issue of academic burnout among adolescents has gained increased prominence in the field of educational psychology; nevertheless, current measurement instruments and predictive models remain limited due to their use of cross-sectional self-reports and black box modeling pipelines which do not allow for any actionable solutions in the school environment. This paper suggests an explainable machine-learning approach to identifying cases of academic burnout among high school students based on their observable learning behaviors. More specifically, by employing a publicly accessible dataset that includes information about 649 adolescents and contains no validated burnout measurement, and considering the multi-dimensional construct of burnout, the modeling pipeline involves a composite proxy label which implies converging data on at least two aspects of burnout, predictors which consist of observable behaviors, three supervised learning algorithms (logistic regression, random forest, and extreme gradient boosting), and the SHapley Additive exPlanations method which is implemented at both population and individual levels. Crucially, all variables used to construct the proxy label, together with any feature derived from them, were excluded from the predictor matrix to prevent target leakage. Once leakage was removed, the models performed only modestly (held-out ROC-AUC ≈ 0.74 and PR-AUC ≈ 0.52–0.56 for the tree-based models), far below the near-ceiling values obtained when label-defining variables are retained, indicating that such high performance is largely circular. The strongest leakage-free predictors were early-term grades, alcohol use, free time, and age rather than attendance and study time. Thus, observable behaviors carry only a weak-to-moderate, non-causal signal for a proxy burnout label, and a deployable screening tool would require an independent dataset containing a measured burnout instrument such as the MBI-SS."
+  },
+  {
+    "number": 11,
+    "title": "Modelo predictivo para identificar el síndrome de burnout en estudiantes de medicina Predictive Model to Identify Burnout Syndrome in Medical Students",
+    "year": 2026,
+    "source": "Informes Psicológicos",
+    "authors": [
+      "Catalina Correa",
+      "Luisa Fernanda Benitez"
+    ],
+    "doi": "https://doi.org/10.18566/infpsic.v26n1a05",
+    "pdf_filename": "2026 - Modelo predictivo para identificar el síndrome de burnout en estudiantes de medicina Predicti.pdf",
+    "pdf_size_kb": 385,
+    "abstract": "Burnout syndrome represents a significant concern among medical students due to the high academic and emotional demands of their training. The use of machine learning techniques can facilitate early identification and support intervention processes. The objective of this study was to develop a model to predict burnout syndrome in students using machine learning techniques. Data from 81 medical students in Bogotá, Colombia were included, along with 140 simulated values incorporated into the total dataset analyzed. A preselection of relevant numerical features was conducted using the SelectKBest method. An optimized Random Forest model was implemented through hyperparameter tuning. Model performance was evaluated using precision, recall, and F1-score metrics. The developed model achieved 77% accuracy in classifying burnout syndrome levels among participants. In conclusion, the model demonstrated effectiveness in predicting burnout syndrome."
+  },
+  {
+    "number": 12,
+    "title": "The buffering effect of perceived teacher support on students’ academic burnout in online learning: a mini review",
+    "year": 2026,
+    "source": "Frontiers in Psychology",
+    "authors": [
+      "Chen Li",
+      "Ze Wang",
+      "Nazgul Kozhamkulova",
+      "Na Jiang",
+      "Xiaoyu Luo"
+    ],
+    "doi": "https://doi.org/10.3389/fpsyg.2026.1919759",
+    "pdf_filename": "2026 - The buffering effect of perceived teacher support on students’ academic burnout in online lea.pdf",
+    "pdf_size_kb": 688,
+    "abstract": "The widespread adoption of online learning in higher education has brought increased attention to academic burnout among university students. Although numerous studies have explored the manifestations, influencing factors and interventions of college students' online academic burnout, few have consolidated and summarized the buffering effect of perceived teacher support. This Mini-Review, informed by the PRISMA 2020 framework, identified and analyzed 26 empirical studies retrieved from Web of Science and Scopus, extracting key data on research design, sample characteristics, and analytical approaches into a structured Excel matrix. This synthesis identifies three main findings. First, academic burnout in online settings is characterized by emotional exhaustion, heightened anxiety, loss of control, and a paradoxical imbalance between learning anxiety and enjoyment, shaped by both internal resources (psychological capital, self-efficacy, digital resilience) and external barriers (pedagogical, technological, and social constraints). Second, perceived teacher support is associated with reduced burnout through a direct protective pathway and three indirect mechanisms: enhancing academic self-efficacy, regulating emotional experiences (e.g., enjoyment, boredom, and anxiety), and facilitating acceptance of online learning (perceived usefulness and ease of use). Third, individual factors (e.g., psychological capital, digital resilience) and contextual conditions (e.g., peer support, technical environment) are tentatively proposed to moderate these associations, pending direct empirical testing. By integrating existing research and identifying gaps in the field, this review provides theoretical and practical insights for alleviating university students' online academic burnout, optimizing teacher-student interaction in online settings, and building a supportive teaching system."
+  },
+  {
+    "number": 13,
+    "title": "Does learning burnout link physical exercise and problematic short-video use? Evidence from a three-wave random-intercept cross-lagged panel model and supplementary machine-learning analysis among Chinese high school students",
+    "year": 2026,
+    "source": "Frontiers in Psychology",
+    "authors": [
+      "Tian Yin",
+      "Yanfeng Peng",
+      "Longjiang Chen",
+      "Zetian Wang",
+      "Xu Liu",
+      "Changcheng Xie",
+      "Zeng Gao"
+    ],
+    "doi": "https://doi.org/10.3389/fpsyg.2026.1929181",
+    "pdf_filename": "2026 - Does learning burnout link physical exercise and problematic short-video use Evidence from a.pdf",
+    "pdf_size_kb": 1051,
+    "abstract": "Background Problematic short-video use has become a growing behavioral health concern among adolescents, yet its longitudinal links with physical exercise and learning burnout remain insufficiently understood. This study examined the within-person bidirectional associations among physical exercise, learning burnout, and problematic short-video use, tested whether learning burnout served as a longitudinal pathway linking physical exercise to later problematic short-video use, and explored the predictive value of these variables for subsequent problematic short-video use. Methods A three-wave longitudinal survey with 6-month intervals was conducted among 1,327 students aged 16–18 years from five high schools in Yunnan Province, China. Physical exercise, learning burnout, and problematic short-video use were assessed using the Physical Activity Rating Scale-3 (PARS-3), the Adolescent Student Burnout Inventory, and the Short-Video Addiction Scale. Random-intercept cross-lagged panel modeling was used to separate stable between-person differences from within-person fluctuations while controlling for demographic and educational covariates. The longitudinal indirect association was estimated using 5,000 bias-corrected bootstrap samples. Supplementary ridge regression and extreme gradient boosting models, using nested cross-validation and a holdout test set, examined the incremental predictive value of physical exercise and learning burnout for later problematic short-video use. Results At the between-person level, higher long-term physical exercise was associated with lower learning burnout and problematic short-video use, whereas higher learning burnout was associated with higher problematic short-video use. At the within-person level, higher-than-usual physical exercise predicted lower subsequent learning burnout and problematic short-video use. Learning burnout and problematic short-video use showed positive reciprocal associations over time, and both predicted lower subsequent physical exercise. The longitudinal indirect association from physical exercise to later problematic short-video use through learning burnout was statistically significant but small. In supplementary machine-learning analyses, the best holdout R 2 was 0.311, but adding physical exercise and learning burnout did not improve prediction beyond prior problematic short-video use. SHAP results from the extended XGBoost model were therefore interpreted as exploratory feature attributions. Conclusion Physical exercise, learning burnout, and problematic short-video use showed interconnected longitudinal associations among Chinese high school students. Learning burnout may represent one small longitudinal indirect pathway linking physical exercise to later problematic short-video use, while recent problematic short-video use provides the most informative signal for future risk. These findings may inform the development and evaluation of school-based health-promotion strategies that support physical exercise, address learning burnout, and respond to recent problematic-use symptoms."
+  },
+  {
+    "number": 14,
+    "title": "Emotion Regulation and Academic Burnout Among Youth: a Quantitative Meta-analysis",
+    "year": 2024,
+    "source": "Educational Psychology Review",
+    "authors": [
+      "Ioana Alexandra Iuga",
+      "Daniel David"
+    ],
+    "doi": "https://doi.org/10.1007/s10648-024-09930-w",
+    "pdf_filename": "2024 - Emotion Regulation and Academic Burnout Among Youth a Quantitative Meta-analysis.pdf",
+    "pdf_size_kb": 941,
+    "abstract": "Abstract Emotion regulation (ER) represents an important factor in youth’s academic wellbeing even in contexts that are not characterized by outstanding levels of academic stress. Effective ER not only enhances learning and, consequentially, improves youths’ academic achievement, but can also serve as a protective factor against academic burnout. The relationship between ER and academic burnout is complex and varies across studies. This meta-analysis examines the connection between ER strategies and student burnout, considering a series of influencing factors. Data analysis involved a random effects meta-analytic approach, assessing heterogeneity and employing multiple methods to address publication bias, along with meta-regression for continuous moderating variables (quality, female percentage and mean age) and subgroup analyses for categorical moderating variables (sample grade level). According to our findings, adaptive ER strategies are negatively associated with overall burnout scores, whereas ER difficulties are positively associated with burnout and its dimensions, comprising emotional exhaustion, cynicism, and lack of efficacy. These results suggest the nuanced role of ER in psychopathology and well-being. We also identified moderating factors such as mean age, grade level and gender composition of the sample in shaping these associations. This study highlights the need for the expansion of the body of literature concerning ER and academic burnout, that would allow for particularized analyses, along with context-specific ER research and consistent measurement approaches in understanding academic burnout. Despite methodological limitations, our findings contribute to a deeper understanding of ER's intricate relationship with student burnout, guiding future research in this field."
+  },
+  {
+    "number": 15,
+    "title": "Academic stressors as predictors of burnout syndrome in university students",
+    "year": 2024,
+    "source": "Revista Brasileira de Educação",
+    "authors": [
+      "Sheila Gonçalves Câmara",
+      "Mary Sandra Carlotto"
+    ],
+    "doi": "https://doi.org/10.1590/s1413-24782024290021",
+    "pdf_filename": "2024 - Academic stressors as predictors of burnout syndrome in university students.pdf",
+    "pdf_size_kb": 444,
+    "abstract": "ABSTRACT Burnout Syndrome in students is a feeling of exhaustion due to the demands of the study proceeding in an attitude of disbelief and a sense of ineffectiveness of professional training. The objective of the study was to identify the predictive power of academic stressors on Burnout Syndrome in a sample of 1,169 university students. As instruments, the Burnout Syndrome Assessment Scale in University Students, a sociodemographic and academic questionnaire, and a questionnaire on academic stressors were used. The stressors that predicted Burnout Syndrome were relationships with teachers, reconciling study and leisure, many subjects to take, relationships with colleagues, performing extracurricular work, performing tests and class work, performing tests and class work, and reconciling studies / professional internships. The results suggest the need for intervention in academic stressors present in the university context."
+  },
+  {
+    "number": 16,
+    "title": "Explainable Dynamic Weighted Ensemble Learning for Depression Risk Stratification and Tiered Intervention in University Students",
+    "year": 2026,
+    "source": "Journal of Applied Science Engineering Technology and Education",
+    "authors": [
+      "Youhao Wang",
+      "Wirapong Chansanam",
+      "Lan Thi Nguyen"
+    ],
+    "doi": "https://doi.org/10.35877/454ri.asci4621",
+    "pdf_filename": "2026 - Explainable Dynamic Weighted Ensemble Learning for Depression Risk Stratification and Tiered.pdf",
+    "pdf_size_kb": 654,
+    "abstract": "Depression among college students is a growing public health concern, with existing screening methods often limited in sensitivity, scalability, and interpretability. This study developed and validated an explainable machine learning framework for early depression risk identification and tiered intervention planning in universities. We propose a Dynamic Weighted Ensemble Model (DWEM) that integrates five tree-based algorithms, with weights optimized via Bayesian search and cost-sensitive learning. Informed by the diathesis–stress framework, features were engineered and interpreted using SHAP to provide global and local explanations. The model was evaluated using stratified five-fold cross-validation with careful control of data leakage. The DWEM achieved an accuracy of 94.96% and an AUC of 98.95%, with balanced sensitivity and specificity, outperforming both single-model benchmarks and traditional questionnaire-based screening. SHAP analysis stably identified academic performance, stress-burnout, sleep problems, and protective factors as key risk determinants. Based on these outputs, a probability-based three-tier intervention framework was designed to translate risk stratification into actionable clinical support. This study demonstrates that an optimized ensemble approach, combined with theory-driven features and robust explainability, can provide a reliable, transparent, and practical tool for scalable mental health screening, supporting a shift toward proactive, data-driven prevention and efficient resource allocation in campus settings."
+  },
+  {
+    "number": 17,
+    "title": "Risk and protective factors of student burnout among medical students: a multivariate analysis",
+    "year": 2025,
+    "source": "BMC Medical Education",
+    "authors": [
+      "Hedvig Kiss",
+      "Bettina Franciska Piko"
+    ],
+    "doi": "https://doi.org/10.1186/s12909-025-06956-8",
+    "pdf_filename": "2025 - Risk and protective factors of student burnout among medical students a multivariate analysis.pdf",
+    "pdf_size_kb": 890,
+    "abstract": "BACKGROUND: The demanding educational environment requires sustained motivation and resilience, while the intense psychological stress among medical studies increases the risk of depression, anxiety, and burnout. Student burnout is an escalating issue among medical students worldwide, significantly affecting their career success and overall well-being. Understanding these dynamics is crucial for effective burnout prevention strategies. Therefore, this study aims to explore the role of depression, anxiety, academic motivation and resilience in student burnout in a sample of Hungarian medical students. METHODS: = 21.82 years; 73.8% female). The survey first collected demographic information, after which participants completed five scales: the Maslach Burnout Inventory Student Survey, the Beck Depression Inventory Short Form, the Spielberger State-Trait Anxiety Inventory, the Academic Motivation Scale, and the Academic Resilience Scale. RESULTS: Binary logistic regression for emotional exhaustion identified depression (OR = 0.32, p < .001), state anxiety (OR = 0.04, p < .01), and amotivation (OR = 0.19, p < .01) as significant predictors. For cynicism, the final model incorporated state anxiety (OR = 0.05, p < .001), intrinsic motivation through achievement (OR = -0.08, p < .05), external regulation (OR = 0.13 p < .01), and amotivation (OR = 0.41, p < .001). For reduced academic efficacy, depression (OR = 0.15, p < .001), alongside achievement (OR = -0.133, p < .01) and stimulation (OR = -0.10, p < .05) as intrinsic motivations were significant predictors. CONCLUSIONS: This study reveals a significant prevalence of student burnout among medical students, particularly in clinical years, with emotional exhaustion and cynicism being more prominent. Depression and low motivation were strongly associated with higher student burnout, while intrinsic motivation appeared to protect against reduced academic efficacy. These findings underscore the importance of addressing mental health and fostering resilience to mitigate student burnout during medical training."
+  },
+  {
+    "number": 18,
+    "title": "Artificial intelligence anxiety and academic burnout among Chinese postgraduate students: perceived stress and rumination as serial mediators",
+    "year": 2026,
+    "source": "Frontiers in Psychology",
+    "authors": [
+      "Maosen Long",
+      "Lina Xiong",
+      "Junhua Li"
+    ],
+    "doi": "https://doi.org/10.3389/fpsyg.2026.1943409",
+    "pdf_filename": "2026 - Artificial intelligence anxiety and academic burnout among Chinese postgraduate students perc.pdf",
+    "pdf_size_kb": 559,
+    "abstract": "Introduction: This study examined whether perceived stress and rumination help explain why postgraduate students with higher artificial intelligence (AI) anxiety also report greater academic burnout. Methods: We analysed data from a cross-sectional online questionnaire survey conducted among postgraduate students in Guangxi, China. The final sample included 1,501 postgraduate students. Participants completed measures of AI anxiety, academic burnout, perceived stress, and rumination. The four measurement models were examined in Mplus using weighted least squares mean and variance adjusted estimation, and serial indirect associations were tested with PROCESS Model 6 using 5,000 bootstrap samples. Results: Higher AI anxiety was associated with higher academic burnout, higher perceived stress, and stronger rumination. Perceived stress and rumination each showed significant indirect associations between AI anxiety and burnout, and the serial path through perceived stress and then rumination was also significant. The pattern remained after adjustment for sex, age, academic stage, discipline, prior AI-tool use, and weekly AI-tool use duration. Discussion: These findings indicate partial serial mediation and should be interpreted as cross-sectional indirect associations rather than evidence of temporal causality."
+  },
+  {
+    "number": 19,
+    "title": "The relationship between stress and academic burnout in college students: evidence from longitudinal data on indirect effects",
+    "year": 2025,
+    "source": "Frontiers in Psychology",
+    "authors": [
+      "Jun Zhang",
+      "Jiawen Meng",
+      "Xin Wen"
+    ],
+    "doi": "https://doi.org/10.3389/fpsyg.2025.1517920",
+    "pdf_filename": "2025 - The relationship between stress and academic burnout in college students evidence from longit.pdf",
+    "pdf_size_kb": 477,
+    "abstract": "Objective: This study primarily examines the mechanisms through which stress affects academic burnout. Method: A total of 428 university students from three undergraduate institutions in China-Anhui Normal University, Tourism College of Zhejiang, and Bozhou University-were surveyed using the College Students' Stress Scale, the Academic Burnout Scale, the Social Support Scale, and the Self-Esteem Scale. Results: The results showed that stress significantly positively predicted academic burnout among college students and significantly negatively predicted their perceived social support. Both social support and self-esteem independently mediated the relationship between stress and academic burnout, and also served as a sequential (chain) mediator in this relationship. Conclusion: Stress can influence academic burnout both directly and indirectly. When individuals experience stress, their response to academic burnout is not only directly affected by the stress itself, but also indirectly influenced by two types of \"psychological buffering resources\": internal resources (such as self-esteem) and external resources (such as social support). We refer to this phenomenon as the \"Dual Buffering Path Model of Academic Burnout.\" Based on these findings, it is necessary for educational authorities to take effective measures to reduce students' academic stress. In addition, friends, family, and teachers should offer emotional support, provide frequent positive feedback, and reinforce students' behaviors in order to foster their self-esteem and help them cope with academic burnout."
+  },
+  {
+    "number": 20,
+    "title": "Self-Efficacy, Mindfulness, and Burnout among Phd Students",
+    "year": 2025,
+    "source": "Research Journal of Psychology",
+    "authors": [
+      "Rimsha Urooj",
+      "Shagufta Bibi",
+      "Muhammad Luqman Khan"
+    ],
+    "doi": "https://doi.org/10.59075/rjs.v3i2.154",
+    "pdf_filename": "2025 - Self-Efficacy, Mindfulness, and Burnout among Phd Students.pdf",
+    "pdf_size_kb": 929,
+    "abstract": "The purpose of the present study was to measure the relationship between Self-efficacy, mindfulness, and burnout among PhD students. To examine the correlation between Self-efficacy, Burnout, and Mindfulness. There was a significant correlation between self-efficacy and mindfulness, self-efficacy and academic burnout, mindfulness and Academic burnout in PhD students. The study involved 250 students, (123 Male and 127 Female), from various government and private universities, in Pakistan. Using a cross-sectional correlation research design. The research utilized three key psychological measures: The General Self-Efficacy Scale (GSES), a 10-item measure, Mindfulness Attention Awareness Scale (MAAS), a 15-item measure; and Maslach Burnout Inventory-General Survey for Students (MBI-GSS), a 22-item measure. The findings revealed significant associations among all variables under investigation. Furthermore, multiple regression analysis identified self-efficacy, and mindfulness as significant predictors of Academic burnout. These results suggest that incorporating self-efficacy, and mindfulness support into educational programs may enhance students, mental health and overall well-being."
+  }
+]
