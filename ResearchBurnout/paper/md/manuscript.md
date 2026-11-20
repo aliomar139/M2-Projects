@@ -6,7 +6,7 @@ Ali Omar and Abdallah Mestrah
 
 ## Abstract
 
-Models that estimate student burnout from survey responses can draw on study conditions such as workload and sleep. This exploratory study tested whether questions about generative artificial intelligence use and dependence improved estimates of current burnout scores beyond study conditions alone. It also compared an eight-question model with a workload-only model for identifying students with high symptom levels. The analysis used 97 responses from a cross-sectional survey, including 87 students who reported enrollment at universities in Lebanon. The 12-item Burnout Assessment Tool for Students yielded scores from 1 to 5, with a score of 4 or higher defining the high-symptom group. Both tasks used repeated nested cross-validation. On identical evaluation splits, adding questions about use frequency, dependence for academic work, and reliance in place of independent thinking to five study-condition questions reduced mean absolute error from 0.6183 to 0.5883 points in ridge regression. At the selected warning thresholds, logistic regression using workload alone detected an average of 16.0 of the 17 high-symptom cases, compared with 14.8 for a random forest using all eight questions. Both models averaged 28 false warnings among the 80 students below the cutoff. The additional questions modestly improved score prediction, but the eight-question model offered no warning advantage over workload alone at the selected thresholds. Neither task was evaluated in an independent student cohort.
+We analyzed 97 responses to a cross-sectional survey, including 87 from students who reported attending universities in Lebanon, to test whether questions about generative artificial intelligence (GenAI) use and dependence improved estimates of current burnout. We also compared an eight-question model with a workload-only model for identifying students with high burnout symptoms, defined as a score of at least 4 on the 12-item Burnout Assessment Tool for Students (range 1–5). Both analyses used repeated nested cross-validation. The eight-question model achieved 76.0% balanced accuracy, exceeding all 199 shuffled-label results (permutation p = 0.005). At the selected warning thresholds, the workload-only model detected an average of 16.0 of the 17 high-symptom cases, compared with 14.8 for the eight-question model. Both averaged 28 false warnings among the 80 students below the cutoff. The conditional 95% intervals for paired differences in recall, precision, and balanced accuracy all included zero. In a matched comparison, adding three GenAI questions to five study-condition questions reduced mean absolute error for burnout scores from 0.6183 to 0.5883 points. Both tasks still need validation in an independent student cohort.
 
 ## Index Terms
 
@@ -29,53 +29,46 @@ The study had two objectives.
 1. Predict the numerical burnout score and measure the change in prediction error when three GenAI questions are added to five questions about study conditions. The added questions cover GenAI use frequency, dependence on AI to complete academic work, and reliance on AI in place of independent thinking.
 2. Identify students with a measured burnout score of at least 4, the study's High group (17 students). Compare a logistic regression model that uses workload alone with a random forest that uses the five study-condition and three GenAI questions. The comparison counts High students detected and warnings issued to students with measured scores below 4.
 
-Prior studies illustrate how the choice of outcome and evaluation sample shapes a prediction study. She et al. defined cutoffs for burnout specific to foreign-language learning and evaluated their models on students from a separate school [4]. In a preprint on a combined burnout and depression outcome, Dehghan and Ashrafi showed how overlap between a predictor and part of the outcome can dominate model explanations [5]. In the present study, the predictor sets excluded all BAT-S responses and derived scores. Performance was evaluated on students held out from model fitting within the survey sample.
+She et al. developed cutoffs for foreign-language learning burnout and used a separate school for exploratory external validation [4]. We evaluated performance by holding out students within our survey cohort.
 
-### Study Contributions and Main Findings
+### Main Findings
 
-Adding the three GenAI questions as a set reduced mean absolute error from 0.6183 to 0.5883 points on the 1-to-5 scale. This comparison used ridge regression and identical evaluation splits for both input sets. Even with the added questions, the model averaged 0.9329 points of error in the High group and tended to underestimate scores there.
-
-At the selected warning thresholds, workload-only logistic regression detected an average of 16.0 of the 17 High cases (94.1%). The eight-input random forest detected 14.8 cases (87.1%). Both models averaged 28 false warnings among the 80 students below the cutoff. Warning precision, the percentage of warnings that identified High cases, was 36.4% for workload-only logistic regression and 34.7% for the random forest. These figures are averages from five cross-validation repetitions on the same 97 students.
-
-Across warning thresholds, the random forest achieved higher average precision than workload-only logistic regression (0.527 versus 0.423). With the original labels, the random forest achieved 76.0% balanced accuracy, the mean of the correct classification rates for the two groups. This value exceeded the balanced accuracy of all 199 runs of the selected forest procedure with shuffled labels (permutation *p* = 0.005).
-
-In an earlier comparison, the 23-input support vector classifier averaged 19.4 false warnings and detected 13.0 of the 17 High cases. The classifier generated fewer false warnings than the random forest and detected fewer High cases.
-
-### Paper Structure
-
-Related Work reviews student burnout measurement, GenAI use, and model interpretation. Study Design and Evaluation describes the survey, outcomes, models, and validation procedure. Results and Discussion presents the model comparisons and their limitations. The conclusion summarizes what the survey results support.
+Adding the three GenAI questions modestly improved estimates of current burnout scores. The eight-question warning model performed above its shuffled-label reference. At the selected thresholds, workload alone detected more High cases at the same average false-warning count, and the paired performance differences remained uncertain.
 
 ## Related Work
 
 ### Measuring Student Burnout
 
-Student burnout studies differ in both measurement instruments and score cutoffs. Carmona-Halty et al. found support for four BAT-S dimensions in 461 Chilean undergraduates [1]. Kiss and Pikó used the Maslach Burnout Inventory–Student Survey with Hungarian medical students and applied separate cutoffs for exhaustion, cynicism, and academic efficacy [6]. In the present study, regression estimates the 12-item BAT-S score. The classification task uses a cutoff of 4 on the same score to define the High group.
+Student burnout studies differ in both measurement instruments and score cutoffs. Carmona-Halty et al. found support for four BAT-S dimensions in 461 Chilean undergraduates [1]. Kiss and Pikó used the Maslach Burnout Inventory–Student Survey with Hungarian medical students and applied separate cutoffs for exhaustion, cynicism, and academic efficacy [5]. In the present study, regression estimates the 12-item BAT-S score. The classification task uses a cutoff of 4 on the same score to define the High group.
 
 ### Study Conditions and GenAI Use
 
 Câmara and Carlotto found that taking many courses and managing exams and assignments were among the stressors associated with burnout in Brazilian university students [2]. The present survey measures perceived workload with one question asking how heavy and overwhelming students find their academic workload. This item is the only input to the logistic regression baseline for the warning task.
 
-Measures of GenAI use can describe frequency, purpose, or dependence. Plensamai found a positive association between AI dependence and burnout after adjusting for academic stress and AI-supported learning [3]. In a survey of Chinese university students, Wang et al. found positive correlations between academic stress, AI dependence, and burnout scores [7]. Both surveys measured these variables at one point in time. The present score prediction experiments compare prediction errors for held-out students with and without GenAI items, using the same model family within each comparison.
+Measures of GenAI use can describe frequency, purpose, or dependence. Plensamai found a positive association between AI dependence and burnout after adjusting for academic stress and AI-supported learning [3]. In a survey of Chinese university students, Wang et al. found positive correlations between academic stress, AI dependence, and burnout scores [6]. Both surveys measured these variables at one point in time. The present score prediction experiments compare prediction errors for held-out students with and without GenAI items, using the same model family within each comparison.
 
 ### Comparing Burnout Prediction Models
 
-Some burnout classifiers use symptom scores as predictors. Rahmadani and Sriani used burnout dimension scores as inputs to a decision tree that classified Indonesian university students into three burnout levels [8]. In the present study, BAT-S responses define the outcomes, and the prediction models use answers from the other parts of the survey.
+Some burnout classifiers use symptom scores as predictors. Rahmadani and Sriani used burnout dimension scores as inputs to a decision tree that classified Indonesian university students into three burnout levels [7]. In the present study, BAT-S responses define the outcomes, and the prediction models use answers from the other parts of the survey.
 
-Saklani et al. used a 23-item BAT-S mean to define three groups in an analysis of 113 Indian engineering students [9]. With the full set of predictors, their logistic regression and random forest models performed better than in the corresponding runs with shuffled labels. The uncertainty intervals for the gains from adding interaction terms included zero. The present study evaluates the selected random forest against runs with shuffled labels to assess performance relative to chance. The comparison with workload-only logistic regression examines High detections and false warnings at the selected thresholds.
+Saklani et al. used a 23-item BAT-S mean to define three groups in an analysis of 113 Indian engineering students [8]. With the full set of predictors, their logistic regression and random forest models performed better than in the corresponding runs with shuffled labels. The uncertainty intervals for the gains from adding interaction terms included zero. The present study evaluates the selected random forest against runs with shuffled labels to assess performance relative to chance. The comparison with workload-only logistic regression examines High detections and false warnings at the selected thresholds.
 
 ### Interpreting Model Outputs
 
-She et al. used Shapley additive explanations (SHAP) to estimate how individual predictors contributed to the model's predictions of foreign-language learning burnout in secondary school students [4]. Model performance was also assessed on students from a separate school.
+She et al. used Shapley additive explanations (SHAP) to interpret their model. Foreign-language enjoyment and academic stress contributed most to its predictions [4].
 
-In a preprint on a combined burnout and depression outcome, Dehghan and Ashrafi reported that trait anxiety ranked highly across cohorts. Its rank fell after the part of the anxiety score associated with the depression component was removed [5]. The present study reports question-selection comparisons and examines where the models made prediction errors.
+Predictor rankings can depend on how the outcome is defined. In a preprint, Dehghan and Ashrafi found that trait anxiety fell from first to sixth in a model with a combined burnout and depression outcome after they removed the variance it shared with the depression subscale [9]. Our study compares performance across sets of survey questions and examines prediction errors by symptom level.
 
 ## Study Design and Evaluation
 
+[Fig. 1. Main comparisons for score estimation and high-symptom warnings](../tex/figures/study-design.pdf)
+
 ### Participants and Questionnaire
 
-The study used an online cross-sectional survey with convenience sampling. Recruitment targeted Lebanese undergraduate and graduate students across multiple universities. The survey link was shared primarily through WhatsApp with students known to the researcher and their peers. Eligibility was inferred from the recruitment context and self-reported survey answers.
 
-The analysis included all 97 exported submissions, treated as distinct responses. Submission timestamps spanned 4 to 18 October 2026. The enrollment question asked whether the respondent attended a university in Lebanon, and 87 respondents answered yes. The researcher identified the remaining 10 as Lebanese students studying abroad. The original location-based exclusion rule was revised on 28 October 2026, after data collection, to retain these students.
+We used convenience sampling to recruit Lebanese undergraduate and graduate students from multiple universities for an online cross-sectional survey. The survey link circulated primarily through WhatsApp among student contacts and their peers. We assessed eligibility using recruitment information and self-reported answers.
+
+We analyzed all 97 survey submissions received from 4 to 18 October 2026. Of the respondents, 87 reported attending a university in Lebanon. Based on recruitment information, we identified the other 10 as Lebanese students studying abroad. After data collection, we revised the original location-based eligibility rule to include them.
 
 The opening pages of the Google Forms survey explained the study and stated that participation was voluntary. Respondents indicated consent by choosing to continue. The form did not ask for names, contact information, or other direct identifiers. The study was not submitted for formal ethics review.
 
@@ -104,21 +97,23 @@ IBM SPSS Statistics 23 was used to summarize responses and scores and to calcula
 
 ### Input Sets and Score Prediction
 
-To test whether GenAI questions improved score prediction, the experiments compared input sets with and without those questions. Each comparison used the same model family and evaluation splits. Small A used five study-condition variables covering perceived workload, sleep duration category, independent study-hours category, financial strain, and university support. Small B added three variables covering GenAI use frequency, self-reported dependence on AI to complete academic work, and reliance on AI in place of independent thinking.
+To test whether GenAI questions improved score prediction, we compared input sets using the same model family and evaluation splits within each comparison. The five-input set used study-condition questions on perceived workload, sleep duration category, independent study-hours category, financial strain, and university support. The eight-input set added three questions on GenAI use frequency, self-reported dependence on AI to complete academic work, and reliance on AI in place of independent thinking.
 
-Broad C used all 13 background and study-condition questions (Q1–Q7 and Q14–Q19). Broad D added the GenAI questions (Q8–Q13), giving 23 input variables before category encoding. The multiple-selection question Q9 supplied five yes-or-no indicators for concept explanations, writing, coding, summaries, and direct solutions. All input sets excluded BAT-S responses and scores, submission timestamps, and the item on intention to continue studying.
+The 13-input set covered background and study conditions (Q1–Q7 and Q14–Q19). It added eight questions to the five-input set, covering enrollment location, academic level, major, GPA range, electricity outages, internet quality, academic stress, and avoidance or procrastination.
 
-The Small A and Small B comparison used linear regression, ridge regression, and a shallow random forest. The Broad C and Broad D comparison used ridge regression. The reference predictions were the mean and median measured scores in the training data.
+The 23-input set added all six GenAI questions (Q8–Q13), covering frequency, use cases, dependence, reliance in place of independent thinking, verification of AI outputs, and concerns about being flagged for AI use. Q9 supplied separate yes-or-no inputs for concept explanations, writing, coding, summaries, and direct solutions, so 19 questions yielded 23 inputs before categorical encoding. All input sets excluded BAT-S responses and scores, submission timestamps, and the item on intention to continue studying.
+
+The five- and eight-input sets were compared using linear regression, ridge regression, and a shallow random forest. The comparison of the 13- and 23-input sets used ridge regression. The reference predictions were the mean and median measured scores in the training data.
 
 Designated categorical inputs were encoded as separate indicators, with the first response category as the reference. For ridge regression, the encoded inputs were standardized using training data. The ridge penalty ranged from 0.01 to 1000 in tenfold steps. The regression forest used 200 trees, with candidate maximum depths of 2 and 3 and minimum leaf sizes of 5 and 10.
 
 Score prediction used five repetitions of shuffled five-fold cross-validation. Each outer test fold held out one group of students for evaluation. Four inner folds within the remaining training data were used to select model settings by mean absolute error (MAE), the average absolute difference between predicted and measured scores. Predictions were clipped to the 1-to-5 scale during tuning and evaluation. MAE was calculated for the full sample and for students with measured scores of 4 or above.
 
-Follow-up experiments gave more weight to errors for high scores. One comparison used a fixed equal-weight average of predictions from weighted ridge regression on Small B and support vector regression on Broad D.
+Follow-up experiments gave more weight to errors for high scores. One comparison used a fixed equal-weight average of predictions from weighted ridge regression with eight inputs and support vector regression with 23 inputs.
 
 ### High-Symptom Warning Models
 
-The selected random forest classifier used the eight Small B inputs to predict the High label directly. The classifier used 100 trees, with candidate maximum depths of 2 and 3, minimum leaf sizes of 5 and 10, and relative training weights for the High group of 1, 2, and 4. The weights were rescaled within each fit to have a mean of 1.
+The selected random forest classifier used the eight-input set to predict the High label directly. The classifier used 100 trees, with candidate maximum depths of 2 and 3, minimum leaf sizes of 5 and 10, and relative training weights for the High group of 1, 2, and 4. The weights were rescaled within each fit to have a mean of 1.
 
 The warning threshold determined when the classifier output triggered a warning. Candidate thresholds ranged from 0 to 1 in increments of 0.05. The separate cutoff of 4 applied to the measured BAT-S score and determined the student's group.
 
@@ -132,7 +127,7 @@ The comparison on real students included an eight-input forest tuned without aug
 
 Two fixed reference rules warned everyone or nobody. For the random reference, expected detections and false warnings were calculated for random selection of the same number of students as the forest warned in each outer test fold.
 
-Earlier exploratory comparisons included support vector classifiers with a radial basis function kernel, using the eight Small B inputs or all 23 Broad D inputs. These classifiers used real training data and tuned their settings and warning thresholds in the inner folds.
+Earlier exploratory comparisons included support vector classifiers with a radial basis function kernel, using the eight- or 23-input set. These classifiers used real training data and tuned their settings and warning thresholds in the inner folds.
 
 A separate historical fit used all 97 students. Its forest settings were depth 3, a minimum leaf size of 10, a relative High weight of 2, a warning threshold of 0.35, and zero synthetic training rows. The simulation applied this fitted model to 970 interpolated profiles. The profile labels were inherited from the students in the training data. The estimates for real students were obtained from the outer test folds described below.
 
@@ -142,9 +137,9 @@ The warning evaluation used five repetitions of stratified five-fold cross-valid
 
 Selection used the pooled inner-fold F₂ score, which gives greater weight to recall than precision. Ties favored higher precision, higher recall, a higher warning threshold, and then a smaller augmentation ratio where applicable.
 
-For the forest, the sleep and study-hours categories were encoded and the resulting columns were standardized using the corresponding training data. Synthetic profiles for each fit were generated from the same training split. Only held-out real students contributed predictions to the outer evaluation. The reproduced warning evaluation used scikit-learn version 1.9.1. The earlier regression and classifier comparisons are reported from their analysis records.
+For the forest, the sleep and study-hours categories were encoded and the resulting columns were standardized using the corresponding training data. Synthetic profiles for each fit were generated from the same training split. Only held-out real students contributed predictions to the outer evaluation. The reproduced ridge and warning evaluations used scikit-learn version 1.9.1. The other model comparisons are reported from their analysis records.
 
-The held-out predictions were pooled within each repetition, so each student contributed once per repetition. The evaluation recorded High detections and false warnings, along with recall, precision, F₂, and balanced accuracy. Recall is the share of High students detected. Precision is the share of warnings issued to High students. Average precision and the area under the receiver operating characteristic curve summarized ranking across thresholds. Each measure was averaged across the five repetitions.
+The held-out predictions were pooled within each repetition, so each student contributed once per repetition. Recall is the share of High students detected, and precision is the share of warnings issued to High students. Balanced accuracy averages the correct classification rates of the two groups. Average precision and the area under the receiver operating characteristic curve summarized ranking across thresholds. Each measure was averaged across the five repetitions.
 
 The chance comparison shuffled the student labels 199 times while preserving the overall class counts. Each shuffle assigned one label per student across all repetitions. For each shuffle, the stratified splits were rebuilt and the selected forest procedure was repeated, including the inner selection and training-only generation of synthetic profiles. The comparison used mean balanced accuracy, as specified in the validation plan. The one-sided permutation *p*-value was (*b* + 1) / 200, where *b* counts shuffled runs that reached or exceeded the observed value [12].
 
@@ -156,54 +151,48 @@ Uncertainty was estimated from 2,000 bootstrap samples. Students were resampled 
 
 The mean primary BAT-S score was 3.125 (SD 0.795), and the mean secondary score was 3.150 (SD 0.765). Seventeen of the 97 students (17.5%) met the High criterion of a primary score of at least 4. Cronbach's alpha was 0.900 for the 12 items in the primary score and 0.944 for the 23 core items. Alpha measures how consistently the items in each set vary together.
 
-Among the 11 questions tested, avoidance or procrastination had the largest Spearman correlation with the primary burnout score (ρ = 0.445). Perceived workload and academic stress had correlations of 0.388 and 0.367, respectively. Of the three GenAI questions in Small B, AI dependence had the largest correlation (0.377), followed by reliance on AI in place of independent thinking (0.331) and frequency of use (0.220). These exploratory estimates describe the association between each question and the burnout score, without adjustment for other questions or for multiple testing.
+Among the 11 questions tested, avoidance or procrastination had the largest Spearman correlation with the primary burnout score (ρ = 0.445). Perceived workload and academic stress had correlations of 0.388 and 0.367, respectively. Of the three GenAI questions in the eight-input set, AI dependence had the largest correlation (0.377), followed by reliance on AI in place of independent thinking (0.331) and frequency of use (0.220). These exploratory estimates describe the association between each question and the burnout score, without adjustment for other questions or for multiple testing.
 
 ### Numerical Score Prediction
 
-The ridge regression comparison tested whether the three GenAI questions improved score prediction beyond study conditions. Both input sets were evaluated on the same held-out students. Small A contained five study-condition questions, and Small B added the three GenAI questions. Adding the three questions reduced mean absolute error (MAE) by 0.0300 points for the primary score, from 0.6183 to 0.5883. For the secondary score, MAE decreased from 0.6001 to 0.5528 points. With the same eight Small B inputs, XGBoost produced higher errors than ridge for both the primary score (0.6155 points) and the secondary score (0.5749 points).
+The ridge regression comparison evaluated the five- and eight-input sets on the same held-out students. Adding the three GenAI questions reduced mean absolute error (MAE) for the primary score by 0.0300 points, from 0.6183 to 0.5883. For the secondary score, MAE decreased from 0.6001 to 0.5528 points. With the same eight inputs, XGBoost produced higher errors than ridge for both the primary score (0.6155 points) and the secondary score (0.5749 points).
 
-Ridge regression with Broad D had a recorded primary-score MAE of 0.5933 points. The matched Broad C result and the training-mean and training-median benchmark errors are unavailable in the study records. The change in prediction error from adding GenAI questions to the broader set of inputs therefore remains undetermined.
+In the matched ridge comparison of the 13- and 23-input sets, adding the GenAI questions reduced MAE from 0.6145 to 0.5933 points for the primary score and from 0.5874 to 0.5578 points for the secondary score. MAE decreased in all five repetitions for both scores. The training-mean and training-median benchmarks had primary-score MAEs of 0.6291 and 0.6262 points, respectively.
 
-Table II compares the primary-score errors for the full sample and the High group. With Small B inputs, weighted ridge reduced High-group MAE from 0.9329 to 0.6649 points and increased overall MAE from 0.5883 to 0.6282 points relative to ordinary ridge.
+Table II compares the primary-score errors for the full sample and the High group. Ordinary ridge with eight inputs tended to underestimate scores in the High group. With the same inputs, weighted ridge reduced High-group MAE from 0.9329 to 0.6649 points and increased overall MAE from 0.5883 to 0.6282 points.
 
-The fixed blend gave equal weight to ridge and support vector regression (SVR). It achieved lower MAE than either component for the full sample and for the High group. Its overall MAE was higher than that of ordinary ridge with Small B inputs. Selecting the blend weights in the inner folds increased both errors relative to the fixed blend.
+The fixed blend gave equal weight to ridge and support vector regression (SVR). It achieved lower MAE than either component for the full sample and for the High group. Its overall MAE was higher than that of ordinary ridge with eight inputs. Selecting the blend weights in the inner folds increased both errors relative to the fixed blend.
 
 *Table II. Recorded Mean Absolute Error for the Primary Burnout Score*
 
 | Score procedure | Overall (points) | High (points) |
 | --- | ---: | ---: |
-| Ordinary ridge, Small B | 0.5883 | 0.9329 |
-| Weighted ridge, Small B | 0.6282 | 0.6649 |
-| High-priority SVR, Broad D | 0.6282 | 0.6705 |
+| Ordinary ridge, 5 inputs | 0.6183 | 1.0842 |
+| Ordinary ridge, 8 inputs | 0.5883 | 0.9329 |
+| Ordinary ridge, 13 inputs | 0.6145 | 1.0237 |
+| Ordinary ridge, 23 inputs | 0.5933 | 0.9281 |
+| Weighted ridge, 8 inputs | 0.6282 | 0.6649 |
+| High-priority SVR, 23 inputs | 0.6282 | 0.6705 |
 | Fixed ridge/SVR blend | 0.6160 | 0.6422 |
 | Inner-selected blend | 0.6343 | 0.6664 |
 
 ### High-Symptom Warning Performance
 
-At the selected warning thresholds, workload-only logistic regression detected an average of 16.0 of the 17 High students. The random forest used the five study-condition and three GenAI questions and detected 14.8 High students on average. Both models averaged 28.0 false warnings among the 80 Below-high students. Table III reports the results across five cross-validation repetitions on the same 97 students.
+Across five cross-validation repetitions, workload-only logistic regression detected an average of 16.0 of the 17 High students (94.1% recall), and the eight-question forest detected 14.8 (87.1% recall). Both averaged 28 false warnings among the 80 Below-high students (Fig. 2). Precision was 36.4% for workload alone and 34.7% for the forest.
 
-The matched random reference gives the expected performance of a rule that selects students at random and issues the same number of warnings as the forest in each test fold. Precision was recorded as zero for the rule that issued no warnings.
-
-*Table III. Warning Performance on Held-Out Real Students*
-
-| Warning rule | High detected /17 | False warnings /80 | Recall (%) | Precision (%) |
-| --- | ---: | ---: | ---: | ---: |
-| Workload only | 16.0 | 28.0 | 94.1 | 36.4 |
-| Selected forest | 14.8 | 28.0 | 87.1 | 34.7 |
-| Forest, no augmentation | 14.4 | 29.6 | 84.7 | 32.7 |
-| Random, matched count | 7.6 | 35.2 | 44.6 | 17.7 |
-| Warn everyone | 17.0 | 80.0 | 100.0 | 17.5 |
-| Warn nobody | 0.0 | 0.0 | 0.0 | 0.0 |
+[Fig. 2. Mean detections and false warnings per repetition on held-out students](../tex/figures/warning-counts.pdf)
 
 At the selected thresholds, workload-only logistic regression achieved higher balanced accuracy (79.6% versus 76.0%) and a higher F₂ score (0.714 versus 0.668) than the selected forest. Across warning thresholds, the forest achieved higher average precision (0.527 versus 0.423), and workload-only logistic regression achieved a higher area under the receiver operating characteristic (ROC) curve (0.824 versus 0.809).
 
 With training augmentation available during tuning, the forest detected an average of 0.4 more High students and issued 1.6 fewer false warnings than the forest tuned without augmentation.
 
-The permutation test evaluated the selected forest against chance within the study sample. With the original labels, the forest achieved 76.0% balanced accuracy. Across the 199 shuffled-label evaluations, mean balanced accuracy was 49.6% and the maximum was 63.6%. All shuffled-label results fell below the observed value, yielding a corrected one-sided permutation *p*-value of 0.005.
+The permutation test evaluated the selected forest against chance within the study sample (Fig. 3). With the original labels, the forest achieved 76.0% balanced accuracy. Across the 199 shuffled-label evaluations, mean balanced accuracy was 49.6% and the maximum was 63.6%. All shuffled-label results fell below the observed value, yielding a corrected one-sided permutation *p*-value of 0.005.
 
-Table IV gives conditional intervals for the forest and the paired differences between the forest and workload-only logistic regression. The interval calculation resampled students with the fitted predictions held fixed. All three paired intervals included zero. Across the five cross-validation repetitions, the forest's recall ranged from 82.4% to 94.1%, and its false-warning count ranged from 24 to 30.
+[Fig. 3. Observed balanced accuracy and the 199 shuffled-label evaluations](../tex/figures/permutation-accuracy.pdf)
 
-*Table IV. Conditional 95% Intervals for Warning Performance*
+Table III gives conditional intervals for the forest and the paired differences between the forest and workload-only logistic regression. The interval calculation resampled students with the fitted predictions held fixed. All three paired intervals included zero. Across the five cross-validation repetitions, the forest's recall ranged from 82.4% to 94.1%, and its false-warning count ranged from 24 to 30.
+
+*Table III. Conditional 95% Intervals for Warning Performance*
 
 | Metric | Forest (%) | Forest minus workload (percentage points) |
 | --- | ---: | ---: |
@@ -231,11 +220,7 @@ The survey measured GenAI habits, study conditions, and symptoms at one time. Th
 
 ## Conclusion
 
-Survey questions about generative artificial intelligence use and dependence modestly improved estimates of current burnout scores in this sample of 97 university students. Adding the three questions to the study-condition inputs reduced mean absolute error from 0.6183 to 0.5883 points on the 1-to-5 scale in the matched comparison. The reduction applies to the questions as a set. Average error remained higher in the High group at 0.9329 points.
-
-For the warning task, workload-only logistic regression detected 16.0 of the 17 High cases on average. The eight-input random forest detected 14.8. Both classifiers averaged 28.0 false warnings among the 80 students whose measured score was below 4. In a separate comparison against chance, the selected forest's balanced accuracy was higher than in any of the 199 evaluations with shuffled labels (permutation *p* = 0.005).
-
-The warning counts are averages from five cross-validation repetitions on a single convenience sample. An independent evaluation should fix the prediction procedures in advance and test them on a new student cohort with measured BAT-S scores.
+Adding three GenAI questions to five study-condition questions reduced mean absolute error for current burnout scores by 0.03 points in this sample. The eight-question warning model performed above its shuffled-label reference. At the selected thresholds, workload alone detected more high-symptom cases at the same average false-warning count, and the paired intervals for performance differences included zero. An independent evaluation should fix the prediction procedures in advance and test them on a new student cohort with measured BAT-S scores.
 
 ## References
 
@@ -243,11 +228,11 @@ The warning counts are averages from five cross-validation repetitions on a sing
 2. Câmara and Carlotto (2024). [Academic Stressors as Predictors of Burnout Syndrome in University Students](https://doi.org/10.1590/S1413-24782024290021).
 3. Plensamai (2026). [AI-Supported Learning, AI Dependency, and Academic Stress as Predictors of Student Burnout](https://ph02.tci-thaijo.org/index.php/jtir/article/view/266804).
 4. She et al. (2026). [Identifying Foreign Language Learning Burnout: Latent Profiles, Cutoff Points, and an Explainable Web-Based Calculator](https://doi.org/10.3389/fpsyg.2026.1836626).
-5. Dehghan and Ashrafi (2026). [Auditing Construct Overlap in Explainable Machine Learning: Evidence from Burnout-Depression Prediction Across Student Cohorts](https://doi.org/10.48550/arXiv.2607.10633). arXiv preprint.
-6. Kiss and Pikó (2025). [Risk and Protective Factors of Student Burnout Among Medical Students: A Multivariate Analysis](https://doi.org/10.1186/s12909-025-06956-8).
-7. Wang et al. (2026). [When Cognitive Offloading Becomes Dependence: How AI Dependence Mediates the Pathway from Academic Stress to Burnout and Anxiety](https://doi.org/10.1186/s40359-026-04911-w).
-8. Rahmadani and Sriani (2026). [Prediction of Burnout Syndrome Risk in University Students Using the C5.0 Algorithm](https://doi.org/10.30865/jurikom.v13i2.9550).
-9. Saklani et al. (2026). [Low-Dimensional Burnout Risk Classification in Engineering Students: The Role of Demand-Recovery Interaction Features](https://doi.org/10.3389/fpsyg.2026.1934021).
+5. Kiss and Pikó (2025). [Risk and Protective Factors of Student Burnout Among Medical Students: A Multivariate Analysis](https://doi.org/10.1186/s12909-025-06956-8).
+6. Wang et al. (2026). [When Cognitive Offloading Becomes Dependence: How AI Dependence Mediates the Pathway from Academic Stress to Burnout and Anxiety](https://doi.org/10.1186/s40359-026-04911-w).
+7. Rahmadani and Sriani (2026). [Prediction of Burnout Syndrome Risk in University Students Using the C5.0 Algorithm](https://doi.org/10.30865/jurikom.v13i2.9550).
+8. Saklani et al. (2026). [Low-Dimensional Burnout Risk Classification in Engineering Students: The Role of Demand-Recovery Interaction Features](https://doi.org/10.3389/fpsyg.2026.1934021).
+9. Dehghan and Ashrafi (2026). [Auditing Construct Overlap in Explainable Machine Learning: Evidence from Burnout-Depression Prediction Across Student Cohorts](https://doi.org/10.48550/arXiv.2607.10633). arXiv preprint.
 10. Schaufeli, Desart, and De Witte (2020). [Burnout Assessment Tool (BAT): Development, Validity, and Reliability](https://doi.org/10.3390/ijerph17249495).
 11. Burnout Assessment Tool. [English student questionnaire](https://burnoutassessmenttool.be/wp-content/uploads/2024/02/BAT-S_ENG.pdf).
 12. Phipson and Smyth (2010). [Permutation P-Values Should Never Be Zero: Calculating Exact P-Values When Permutations Are Randomly Drawn](https://doi.org/10.2202/1544-6115.1585).

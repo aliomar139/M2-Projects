@@ -1,7 +1,3 @@
 # Conclusion
 
-Survey questions about generative artificial intelligence use and dependence modestly improved estimates of current burnout scores in this sample of 97 university students. Adding the three questions to the study-condition inputs reduced mean absolute error from 0.6183 to 0.5883 points on the 1-to-5 scale in the matched comparison. The reduction applies to the questions as a set. Average error remained higher in the High group at 0.9329 points.
-
-For the warning task, workload-only logistic regression detected 16.0 of the 17 High cases on average. The eight-input random forest detected 14.8. Both classifiers averaged 28.0 false warnings among the 80 students whose measured score was below 4. In a separate comparison against chance, the selected forest's balanced accuracy was higher than in any of the 199 evaluations with shuffled labels (permutation *p* = 0.005).
-
-The warning counts are averages from five cross-validation repetitions on a single convenience sample. An independent evaluation should fix the prediction procedures in advance and test them on a new student cohort with measured BAT-S scores.
+Adding three GenAI questions to five study-condition questions reduced mean absolute error for current burnout scores by 0.03 points in this sample. The eight-question warning model performed above its shuffled-label reference. At the selected thresholds, workload alone detected more high-symptom cases at the same average false-warning count, and the paired intervals for performance differences included zero. An independent evaluation should fix the prediction procedures in advance and test them on a new student cohort with measured BAT-S scores.

@@ -705,6 +705,19 @@ Recommendation: preserve these evaluations, report the modest predictive gains a
 
 The original comparison completed in `results/01-score-prediction-baselines/20261102T083420352990Z/`. The exploratory XGBoost follow-up completed in **`results/02-xgboost-score-prediction/20261102T093101705609Z/`**. Both manifests report `complete`. Run folders are local and excluded from Git because they contain individual predictions. Historical pending-run statements below refer to the earlier handoff.
 
+**Ridge reproduction.** The original run directory was absent from this checkout. The ridge fits and training-only benchmarks were rerun on the same 97 students with the recorded dataset hash, folds, preprocessing, and tuning grid, using scikit-learn 1.9.1. Recalculating the errors from the held-out predictions reproduced the five previously recorded overall MAEs for the five-input and eight-input sets and the 23-input primary-score result. The table gives MAE in points, averaged over five repetitions. [Original workflow](../experiments/01-compare-score-prediction-baselines.py) · [Saved settings](../experiments/01-compare-score-prediction-baselines-settings.json)
+
+| Procedure | Primary overall | Primary High (score ≥4) | Secondary overall |
+|---|---:|---:|---:|
+| Ridge, five study-condition inputs (Small A) | 0.6183 | 1.0842 | 0.6001 |
+| Ridge, eight inputs with selected GenAI questions (Small B) | 0.5883 | 0.9329 | 0.5528 |
+| Ridge, 13 background and study-condition inputs (Broad C) | 0.6145 | 1.0237 | 0.5874 |
+| Ridge, 23 inputs with all GenAI questions (Broad D) | 0.5933 | 0.9281 | 0.5578 |
+| Training-mean prediction | 0.6291 | 1.2418 | 0.6021 |
+| Training-median prediction | 0.6262 | 1.2770 | 0.5951 |
+
+The 23-input set had lower MAE than the 13-input set in all five repetitions for both scores.
+
 The follow-up used the same 97 students, outcomes, outer groups and inner splits. It tested Small A/B with four shallow-tree XGBoost settings chosen by inner validation. No augmentation or oversampling was used. This was chosen after reviewing original results, not independent confirmation. Source datasets and original run files were unchanged.
 
 | Outcome | Inputs | Original ridge MAE | XGBoost MAE |

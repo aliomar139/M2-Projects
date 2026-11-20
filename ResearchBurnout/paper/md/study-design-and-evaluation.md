@@ -1,10 +1,13 @@
 # Study Design and Evaluation
 
+[Fig. 1. Main comparisons for score estimation and high-symptom warnings](../tex/figures/study-design.pdf)
+
 ## Participants and Questionnaire
 
-The study used an online cross-sectional survey with convenience sampling. Recruitment targeted Lebanese undergraduate and graduate students across multiple universities. The survey link was shared primarily through WhatsApp with students known to the researcher and their peers. Eligibility was inferred from the recruitment context and self-reported survey answers.
 
-The analysis included all 97 exported submissions, treated as distinct responses. Submission timestamps spanned 4 to 18 October 2026. The enrollment question asked whether the respondent attended a university in Lebanon, and 87 respondents answered yes. The researcher identified the remaining 10 as Lebanese students studying abroad. The original location-based exclusion rule was revised on 28 October 2026, after data collection, to retain these students.
+We used convenience sampling to recruit Lebanese undergraduate and graduate students from multiple universities for an online cross-sectional survey. The survey link circulated primarily through WhatsApp among student contacts and their peers. We assessed eligibility using recruitment information and self-reported answers.
+
+We analyzed all 97 survey submissions received from 4 to 18 October 2026. Of the respondents, 87 reported attending a university in Lebanon. Based on recruitment information, we identified the other 10 as Lebanese students studying abroad. After data collection, we revised the original location-based eligibility rule to include them.
 
 The opening pages of the Google Forms survey explained the study and stated that participation was voluntary. Respondents indicated consent by choosing to continue. The form did not ask for names, contact information, or other direct identifiers. The study was not submitted for formal ethics review.
 
@@ -33,21 +36,23 @@ IBM SPSS Statistics 23 was used to summarize responses and scores and to calcula
 
 ## Input Sets and Score Prediction
 
-To test whether GenAI questions improved score prediction, the experiments compared input sets with and without those questions. Each comparison used the same model family and evaluation splits. Small A used five study-condition variables covering perceived workload, sleep duration category, independent study-hours category, financial strain, and university support. Small B added three variables covering GenAI use frequency, self-reported dependence on AI to complete academic work, and reliance on AI in place of independent thinking.
+To test whether GenAI questions improved score prediction, we compared input sets using the same model family and evaluation splits within each comparison. The five-input set used study-condition questions on perceived workload, sleep duration category, independent study-hours category, financial strain, and university support. The eight-input set added three questions on GenAI use frequency, self-reported dependence on AI to complete academic work, and reliance on AI in place of independent thinking.
 
-Broad C used all 13 background and study-condition questions (Q1–Q7 and Q14–Q19). Broad D added the GenAI questions (Q8–Q13), giving 23 input variables before category encoding. The multiple-selection question Q9 supplied five yes-or-no indicators for concept explanations, writing, coding, summaries, and direct solutions. All input sets excluded BAT-S responses and scores, submission timestamps, and the item on intention to continue studying.
+The 13-input set covered background and study conditions (Q1–Q7 and Q14–Q19). It added eight questions to the five-input set, covering enrollment location, academic level, major, GPA range, electricity outages, internet quality, academic stress, and avoidance or procrastination.
 
-The Small A and Small B comparison used linear regression, ridge regression, and a shallow random forest. The Broad C and Broad D comparison used ridge regression. The reference predictions were the mean and median measured scores in the training data.
+The 23-input set added all six GenAI questions (Q8–Q13), covering frequency, use cases, dependence, reliance in place of independent thinking, verification of AI outputs, and concerns about being flagged for AI use. Q9 supplied separate yes-or-no inputs for concept explanations, writing, coding, summaries, and direct solutions, so 19 questions yielded 23 inputs before categorical encoding. All input sets excluded BAT-S responses and scores, submission timestamps, and the item on intention to continue studying.
+
+The five- and eight-input sets were compared using linear regression, ridge regression, and a shallow random forest. The comparison of the 13- and 23-input sets used ridge regression. The reference predictions were the mean and median measured scores in the training data.
 
 Designated categorical inputs were encoded as separate indicators, with the first response category as the reference. For ridge regression, the encoded inputs were standardized using training data. The ridge penalty ranged from 0.01 to 1000 in tenfold steps. The regression forest used 200 trees, with candidate maximum depths of 2 and 3 and minimum leaf sizes of 5 and 10.
 
 Score prediction used five repetitions of shuffled five-fold cross-validation. Each outer test fold held out one group of students for evaluation. Four inner folds within the remaining training data were used to select model settings by mean absolute error (MAE), the average absolute difference between predicted and measured scores. Predictions were clipped to the 1-to-5 scale during tuning and evaluation. MAE was calculated for the full sample and for students with measured scores of 4 or above.
 
-Follow-up experiments gave more weight to errors for high scores. One comparison used a fixed equal-weight average of predictions from weighted ridge regression on Small B and support vector regression on Broad D.
+Follow-up experiments gave more weight to errors for high scores. One comparison used a fixed equal-weight average of predictions from weighted ridge regression with eight inputs and support vector regression with 23 inputs.
 
 ## High-Symptom Warning Models
 
-The selected random forest classifier used the eight Small B inputs to predict the High label directly. The classifier used 100 trees, with candidate maximum depths of 2 and 3, minimum leaf sizes of 5 and 10, and relative training weights for the High group of 1, 2, and 4. The weights were rescaled within each fit to have a mean of 1.
+The selected random forest classifier used the eight-input set to predict the High label directly. The classifier used 100 trees, with candidate maximum depths of 2 and 3, minimum leaf sizes of 5 and 10, and relative training weights for the High group of 1, 2, and 4. The weights were rescaled within each fit to have a mean of 1.
 
 The warning threshold determined when the classifier output triggered a warning. Candidate thresholds ranged from 0 to 1 in increments of 0.05. The separate cutoff of 4 applied to the measured BAT-S score and determined the student's group.
 
@@ -61,7 +66,7 @@ The comparison on real students included an eight-input forest tuned without aug
 
 Two fixed reference rules warned everyone or nobody. For the random reference, expected detections and false warnings were calculated for random selection of the same number of students as the forest warned in each outer test fold.
 
-Earlier exploratory comparisons included support vector classifiers with a radial basis function kernel, using the eight Small B inputs or all 23 Broad D inputs. These classifiers used real training data and tuned their settings and warning thresholds in the inner folds.
+Earlier exploratory comparisons included support vector classifiers with a radial basis function kernel, using the eight- or 23-input set. These classifiers used real training data and tuned their settings and warning thresholds in the inner folds.
 
 A separate historical fit used all 97 students. Its forest settings were depth 3, a minimum leaf size of 10, a relative High weight of 2, a warning threshold of 0.35, and zero synthetic training rows. The simulation applied this fitted model to 970 interpolated profiles. The profile labels were inherited from the students in the training data. The estimates for real students were obtained from the outer test folds described below.
 
@@ -71,9 +76,9 @@ The warning evaluation used five repetitions of stratified five-fold cross-valid
 
 Selection used the pooled inner-fold F₂ score, which gives greater weight to recall than precision. Ties favored higher precision, higher recall, a higher warning threshold, and then a smaller augmentation ratio where applicable.
 
-For the forest, the sleep and study-hours categories were encoded and the resulting columns were standardized using the corresponding training data. Synthetic profiles for each fit were generated from the same training split. Only held-out real students contributed predictions to the outer evaluation. The reproduced warning evaluation used scikit-learn version 1.9.1. The earlier regression and classifier comparisons are reported from their analysis records.
+For the forest, the sleep and study-hours categories were encoded and the resulting columns were standardized using the corresponding training data. Synthetic profiles for each fit were generated from the same training split. Only held-out real students contributed predictions to the outer evaluation. The reproduced ridge and warning evaluations used scikit-learn version 1.9.1. The other model comparisons are reported from their analysis records.
 
-The held-out predictions were pooled within each repetition, so each student contributed once per repetition. The evaluation recorded High detections and false warnings, along with recall, precision, F₂, and balanced accuracy. Recall is the share of High students detected. Precision is the share of warnings issued to High students. Average precision and the area under the receiver operating characteristic curve summarized ranking across thresholds. Each measure was averaged across the five repetitions.
+The held-out predictions were pooled within each repetition, so each student contributed once per repetition. Recall is the share of High students detected, and precision is the share of warnings issued to High students. Balanced accuracy averages the correct classification rates of the two groups. Average precision and the area under the receiver operating characteristic curve summarized ranking across thresholds. Each measure was averaged across the five repetitions.
 
 The chance comparison shuffled the student labels 199 times while preserving the overall class counts. Each shuffle assigned one label per student across all repetitions. For each shuffle, the stratified splits were rebuilt and the selected forest procedure was repeated, including the inner selection and training-only generation of synthetic profiles. The comparison used mean balanced accuracy, as specified in the validation plan. The one-sided permutation *p*-value was (*b* + 1) / 200, where *b* counts shuffled runs that reached or exceeded the observed value [12].
 

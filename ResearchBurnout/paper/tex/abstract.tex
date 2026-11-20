@@ -1,13 +1,11 @@
 \begin{abstract}
-Models that estimate student burnout from survey responses can draw on study conditions such as workload and sleep.
-This exploratory study tested whether questions about generative artificial intelligence use and dependence improved estimates of current burnout scores beyond study conditions alone.
-It also compared an eight-question model with a workload-only model for identifying students with high symptom levels.
-The analysis used 97 responses from a cross-sectional survey, including 87 students who reported enrollment at universities in Lebanon.
-The 12-item Burnout Assessment Tool for Students yielded scores from 1 to 5, with a score of 4 or higher defining the high-symptom group.
-Both tasks used repeated nested cross-validation.
-On identical evaluation splits, adding questions about use frequency, dependence for academic work, and reliance in place of independent thinking to five study-condition questions reduced mean absolute error from 0.6183 to 0.5883 points in ridge regression.
-At the selected warning thresholds, logistic regression using workload alone detected an average of 16.0 of the 17 high-symptom cases, compared with 14.8 for a random forest using all eight questions.
-Both models averaged 28 false warnings among the 80 students below the cutoff.
-The additional questions modestly improved score prediction, but the eight-question model offered no warning advantage over workload alone at the selected thresholds.
-Neither task was evaluated in an independent student cohort.
+We analyzed 97 responses to a cross-sectional survey, including 87 from students who reported attending universities in Lebanon, to test whether questions about generative artificial intelligence (GenAI) use and dependence improved estimates of current burnout.
+We also compared an eight-question model with a workload-only model for identifying students with high burnout symptoms, defined as a score of at least 4 on the 12-item Burnout Assessment Tool for Students (range 1--5).
+Both analyses used repeated nested cross-validation.
+The eight-question model achieved 76.0\% balanced accuracy, exceeding all 199 shuffled-label results (permutation \(p=0.005\)).
+At the selected warning thresholds, the workload-only model detected an average of 16.0 of the 17 high-symptom cases, compared with 14.8 for the eight-question model.
+Both averaged 28 false warnings among the 80 students below the cutoff.
+The conditional 95\% intervals for paired differences in recall, precision, and balanced accuracy all included zero.
+In a matched comparison, adding three GenAI questions to five study-condition questions reduced mean absolute error for burnout scores from 0.6183 to 0.5883 points.
+Both tasks still need validation in an independent student cohort.
 \end{abstract}
