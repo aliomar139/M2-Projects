@@ -6,7 +6,7 @@ Ali Omar and Abdallah Mestrah
 
 ## Abstract
 
-We analyzed 97 responses to a cross-sectional survey, including 87 from students who reported attending universities in Lebanon, to test whether questions about generative artificial intelligence (GenAI) use and dependence improved estimates of current burnout. We also compared an eight-question model with a workload-only model for identifying students with high burnout symptoms, defined as a score of at least 4 on the 12-item Burnout Assessment Tool for Students (range 1–5). Both analyses used repeated nested cross-validation. The eight-question model achieved 76.0% balanced accuracy, exceeding all 199 shuffled-label results (permutation p = 0.005). At the selected warning thresholds, the workload-only model detected an average of 16.0 of the 17 high-symptom cases, compared with 14.8 for the eight-question model. Both averaged 28 false warnings among the 80 students below the cutoff. The conditional 95% intervals for paired differences in recall, precision, and balanced accuracy all included zero. In a matched comparison, adding three GenAI questions to five study-condition questions reduced mean absolute error for burnout scores from 0.6183 to 0.5883 points. Both tasks still need validation in an independent student cohort.
+This study examined whether survey questions on generative artificial intelligence (GenAI) use and dependence improved estimates of current student burnout beyond study conditions. The analysis included 97 cross-sectional survey responses, 87 from students who reported attending universities in Lebanon. Burnout was measured on a 1-to-5 scale using the 12-item Burnout Assessment Tool for Students. Both prediction tasks were evaluated using repeated nested cross-validation. In matched comparisons using the same model type and test students, adding three GenAI questions to five study-condition questions reduced mean absolute error from 0.6183 to 0.5883 points. Adding all GenAI questions to a broader set of background and study-condition questions reduced error from 0.6145 to 0.5933 points. A separate comparison evaluated two approaches to identifying students with measured burnout scores of at least 4. At the selected warning thresholds, the workload-only model detected an average of 16.0 of the 17 high-symptom cases, and the eight-question model detected 14.8. Both averaged 28 false warnings among the 80 students below the cutoff. The conditional 95% intervals for paired performance differences included zero. The eight-question model achieved 76.0% balanced accuracy, exceeding all 199 shuffled-label results (permutation p = 0.005). Independent validation is needed to assess whether the findings generalize to other student cohorts.
 
 ## Index Terms
 
@@ -26,14 +26,14 @@ The analysis used a cross-sectional survey of 97 university students, 87 of whom
 
 The study had two objectives.
 
-1. Predict the numerical burnout score and measure the change in prediction error when three GenAI questions are added to five questions about study conditions. The added questions cover GenAI use frequency, dependence on AI to complete academic work, and reliance on AI in place of independent thinking.
+1. Estimate current burnout scores and test whether adding GenAI questions lowers prediction error. We compared a set of five study-condition questions with and without three GenAI questions. We also tested the full set of GenAI questions alongside a broader set of background and study-condition questions.
 2. Identify students with a measured burnout score of at least 4, the study's High group (17 students). Compare a logistic regression model that uses workload alone with a random forest that uses the five study-condition and three GenAI questions. The comparison counts High students detected and warnings issued to students with measured scores below 4.
 
 She et al. developed cutoffs for foreign-language learning burnout and used a separate school for exploratory external validation [4]. We evaluated performance by holding out students within our survey cohort.
 
 ### Main Findings
 
-Adding the three GenAI questions modestly improved estimates of current burnout scores. The eight-question warning model performed above its shuffled-label reference. At the selected thresholds, workload alone detected more High cases at the same average false-warning count, and the paired performance differences remained uncertain.
+Adding GenAI questions modestly improved estimates of current burnout scores in both matched comparisons. The eight-question warning model performed above its shuffled-label reference. At the selected thresholds, workload alone detected more High cases at the same average false-warning count, and the paired performance differences remained uncertain.
 
 ## Related Work
 
@@ -129,7 +129,7 @@ Two fixed reference rules warned everyone or nobody. For the random reference, e
 
 Earlier exploratory comparisons included support vector classifiers with a radial basis function kernel, using Small B or Broad D. These classifiers used real training data and tuned their settings and warning thresholds in the inner folds.
 
-A separate historical fit used all 97 students. Its forest settings were depth 3, a minimum leaf size of 10, a relative High weight of 2, a warning threshold of 0.35, and zero synthetic training rows. The simulation applied this fitted model to 970 interpolated profiles. The profile labels were inherited from the students in the training data. The estimates for real students were obtained from the outer test folds described below.
+For a separate simulation, we trained a forest on all 97 real survey responses and applied it to synthetic profiles derived from those same responses. Each profile inherited its label from the source data.
 
 ### Warning Evaluation and Performance Measures
 
@@ -153,9 +153,9 @@ Among the 11 questions tested, avoidance or procrastination had the largest Spea
 
 ### Numerical Score Prediction
 
-GenAI questions modestly improved estimates of current burnout scores. With the same model type and test students, adding three GenAI questions to Small A reduced the average error for the primary score from 0.6183 to 0.5883 points on the 1-to-5 scale. Adding all the GenAI questions to Broad C reduced error from 0.6145 to 0.5933 points. Table II shows these matched ridge comparisons.
+GenAI questions modestly improved estimates of current burnout scores. With the same model type and test students, adding three GenAI questions to Small A reduced the average error for the primary score from 0.6183 to 0.5883 points on the 1-to-5 scale. Adding all the GenAI questions to Broad C reduced error from 0.6145 to 0.5933 points. Table II shows these matched ridge comparisons. Across five repetitions on the same students, the reductions ranged from 0.020 to 0.037 points for Small A/B and from 0.007 to 0.039 for Broad C/D.
 
-Errors for the secondary score also fell, from 0.6001 to 0.5528 points for Small A versus Small B and from 0.5874 to 0.5578 points for Broad C versus Broad D. Broad D had lower error than Broad C in all five repetitions for both outcomes. The training-mean and training-median benchmarks gave primary-score errors of 0.6291 and 0.6262 points. With Small B, XGBoost gave larger errors than ridge for the primary (0.6155 points) and secondary (0.5749 points) scores.
+Errors for the secondary score also fell, from 0.6001 to 0.5528 points for Small A versus Small B and from 0.5874 to 0.5578 points for Broad C versus Broad D. Broad D also had lower secondary-score error than Broad C in each repetition. The training-mean and training-median benchmarks gave primary-score errors of 0.6291 and 0.6262 points. With Small B, XGBoost gave larger errors than ridge for the primary (0.6155 points) and secondary (0.5749 points) scores.
 
 Estimating scores for the High group was harder. Ordinary ridge with Small B tended to predict scores that were too low. Giving High cases more weight reduced their error from 0.9329 to 0.6649 points, while increasing overall error from 0.5883 to 0.6282 points.
 
@@ -200,11 +200,9 @@ The intervals for differences between the forest and workload alone all included
 
 ### Earlier Warning Comparisons and Synthetic Check
 
-Some earlier warning models issued fewer false warnings and detected fewer High students than the Small B forest. The Broad D support vector classifier, tuned using F₂, averaged 13.0 detections and 19.4 false warnings. The forest using questions selected by Boruta [13] averaged 12.4 detections and 22.2 false warnings.
+The Broad D support vector classifier and the forest using Boruta-selected questions [13] issued fewer false warnings than the Small B forest and caught fewer High cases. TabPFN-2 [14] had higher average precision (0.616 versus 0.527). Its setting that favored recall caught 15.2 High cases and issued 44.0 false warnings on average.
 
-TabPFN-2 [14] used the Small B questions and had higher average precision (0.616) than the selected forest. Its F₂-tuned rule averaged 13.8 detections and 24.2 false warnings. A rule that placed more weight on recall detected 15.2 and issued 44.0 false warnings on average.
-
-In a separate simulation, we generated 970 profiles from the same 97 survey responses used to train the forest. The model flagged 159 of the 170 synthetic profiles that inherited a High label (93.5%). This measures agreement with labels inherited from the training data.
+In the separate simulation, the forest flagged 159 of 170 synthetic profiles that inherited a High label (93.5%). All 970 synthetic profiles came from survey responses already used to train the forest.
 
 ### Discussion
 
@@ -219,6 +217,10 @@ The survey measured GenAI use, study conditions, and symptoms at one time, so th
 ## Conclusion
 
 Adding GenAI questions modestly improved estimates of current burnout scores in both matched comparisons. The Small B forest performed above its shuffled-label reference. At the selected warning thresholds, workload alone detected more High cases at the same average false-warning count, and the paired intervals for the differences included zero. An independent evaluation should specify the prediction procedures in advance and test them in a new cohort with measured BAT-S scores.
+
+## Acknowledgment
+
+We used OpenAI Codex to draft and revise parts of the Abstract, Introduction, Related Work, Study Design and Evaluation, Results and Discussion, and Conclusion. We also used it to write the script that generates the figures.
 
 ## References
 

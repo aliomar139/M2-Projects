@@ -68,7 +68,7 @@ Two fixed reference rules warned everyone or nobody. For the random reference, e
 
 Earlier exploratory comparisons included support vector classifiers with a radial basis function kernel, using Small B or Broad D. These classifiers used real training data and tuned their settings and warning thresholds in the inner folds.
 
-A separate historical fit used all 97 students. Its forest settings were depth 3, a minimum leaf size of 10, a relative High weight of 2, a warning threshold of 0.35, and zero synthetic training rows. The simulation applied this fitted model to 970 interpolated profiles. The profile labels were inherited from the students in the training data. The estimates for real students were obtained from the outer test folds described below.
+For a separate simulation, we trained a forest on all 97 real survey responses and applied it to synthetic profiles derived from those same responses. Each profile inherited its label from the source data.
 
 ## Warning Evaluation and Performance Measures
 

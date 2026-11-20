@@ -8,9 +8,9 @@ Among the 11 questions tested, avoidance or procrastination had the largest Spea
 
 ## Numerical Score Prediction
 
-GenAI questions modestly improved estimates of current burnout scores. With the same model type and test students, adding three GenAI questions to Small A reduced the average error for the primary score from 0.6183 to 0.5883 points on the 1-to-5 scale. Adding all the GenAI questions to Broad C reduced error from 0.6145 to 0.5933 points. Table II shows these matched ridge comparisons.
+GenAI questions modestly improved estimates of current burnout scores. With the same model type and test students, adding three GenAI questions to Small A reduced the average error for the primary score from 0.6183 to 0.5883 points on the 1-to-5 scale. Adding all the GenAI questions to Broad C reduced error from 0.6145 to 0.5933 points. Table II shows these matched ridge comparisons. Across five repetitions on the same students, the reductions ranged from 0.020 to 0.037 points for Small A/B and from 0.007 to 0.039 for Broad C/D.
 
-Errors for the secondary score also fell, from 0.6001 to 0.5528 points for Small A versus Small B and from 0.5874 to 0.5578 points for Broad C versus Broad D. Broad D had lower error than Broad C in all five repetitions for both outcomes. The training-mean and training-median benchmarks gave primary-score errors of 0.6291 and 0.6262 points. With Small B, XGBoost gave larger errors than ridge for the primary (0.6155 points) and secondary (0.5749 points) scores.
+Errors for the secondary score also fell, from 0.6001 to 0.5528 points for Small A versus Small B and from 0.5874 to 0.5578 points for Broad C versus Broad D. Broad D also had lower secondary-score error than Broad C in each repetition. The training-mean and training-median benchmarks gave primary-score errors of 0.6291 and 0.6262 points. With Small B, XGBoost gave larger errors than ridge for the primary (0.6155 points) and secondary (0.5749 points) scores.
 
 Estimating scores for the High group was harder. Ordinary ridge with Small B tended to predict scores that were too low. Giving High cases more weight reduced their error from 0.9329 to 0.6649 points, while increasing overall error from 0.5883 to 0.6282 points.
 
@@ -55,11 +55,9 @@ The intervals for differences between the forest and workload alone all included
 
 ## Earlier Warning Comparisons and Synthetic Check
 
-Some earlier warning models issued fewer false warnings and detected fewer High students than the Small B forest. The Broad D support vector classifier, tuned using F₂, averaged 13.0 detections and 19.4 false warnings. The forest using questions selected by Boruta [13] averaged 12.4 detections and 22.2 false warnings.
+The Broad D support vector classifier and the forest using Boruta-selected questions [13] issued fewer false warnings than the Small B forest and caught fewer High cases. TabPFN-2 [14] had higher average precision (0.616 versus 0.527). Its setting that favored recall caught 15.2 High cases and issued 44.0 false warnings on average.
 
-TabPFN-2 [14] used the Small B questions and had higher average precision (0.616) than the selected forest. Its F₂-tuned rule averaged 13.8 detections and 24.2 false warnings. A rule that placed more weight on recall detected 15.2 and issued 44.0 false warnings on average.
-
-In a separate simulation, we generated 970 profiles from the same 97 survey responses used to train the forest. The model flagged 159 of the 170 synthetic profiles that inherited a High label (93.5%). This measures agreement with labels inherited from the training data.
+In the separate simulation, the forest flagged 159 of 170 synthetic profiles that inherited a High label (93.5%). All 970 synthetic profiles came from survey responses already used to train the forest.
 
 ## Discussion
 
