@@ -6,7 +6,7 @@ Fig.~\ref{fig:study-design} shows the main comparisons for the two prediction ta
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{figures/study-design.pdf}
-\caption{Main comparisons for score estimation and high-symptom warnings. Both tasks used repeated nested cross-validation.}
+\caption{Input sets for score estimation and high-symptom warnings. Numbers in parentheses give input counts.}
 \label{fig:study-design}
 \end{figure}
 
@@ -52,23 +52,23 @@ IBM SPSS Statistics 23 was used to summarize responses and scores and to calcula
 
 \subsection{Input Sets and Score Prediction}
 
-To test whether GenAI questions improved score prediction, we compared input sets using the same model family and evaluation splits within each comparison. The five-input set used study-condition questions on perceived workload, sleep duration category, independent study-hours category, financial strain, and university support. The eight-input set added three questions on GenAI use frequency, self-reported dependence on AI to complete academic work, and reliance on AI in place of independent thinking.
+To test whether GenAI questions improved score prediction, we compared input sets using the same model family and evaluation splits within each comparison. Small A used five study-condition questions on perceived workload, sleep duration category, independent study-hours category, financial strain, and university support. Small B added three questions on GenAI use frequency, self-reported dependence on AI to complete academic work, and reliance on AI in place of independent thinking, for eight inputs.
 
-The 13-input set covered background and study conditions (Q1--Q7 and Q14--Q19). It added eight questions to the five-input set, covering enrollment location, academic level, major, GPA range, electricity outages, internet quality, academic stress, and avoidance or procrastination.
+Broad C used 13 inputs on background and study conditions (Q1--Q7 and Q14--Q19). It added eight questions to Small A, covering enrollment location, academic level, major, GPA range, electricity outages, internet quality, academic stress, and avoidance or procrastination.
 
-The 23-input set added all six GenAI questions (Q8--Q13), covering frequency, use cases, dependence, reliance in place of independent thinking, verification of AI outputs, and concerns about being flagged for AI use. Q9 supplied separate yes-or-no inputs for concept explanations, writing, coding, summaries, and direct solutions, so 19 questions yielded 23 inputs before categorical encoding. All input sets excluded BAT-S responses and scores, submission timestamps, and the item on intention to continue studying.
+Broad D added all six GenAI questions (Q8--Q13) to Broad C, covering frequency, use cases, dependence, reliance in place of independent thinking, verification of AI outputs, and concerns about being flagged for AI use. Q9 supplied separate yes-or-no inputs for concept explanations, writing, coding, summaries, and direct solutions, so 19 questions yielded 23 inputs before categorical encoding. All input sets excluded BAT-S responses and scores, submission timestamps, and the item on intention to continue studying.
 
-The five- and eight-input sets were compared using linear regression, ridge regression, and a shallow random forest. The comparison of the 13- and 23-input sets used ridge regression. The reference predictions were the mean and median measured scores in the training data.
+The Small A and Small B comparison used linear regression, ridge regression, and a shallow random forest. The Broad C and Broad D comparison used ridge regression. The reference predictions were the mean and median measured scores in the training data.
 
 Designated categorical inputs were encoded as separate indicators, with the first response category as the reference. For ridge regression, the encoded inputs were standardized using training data. The ridge penalty ranged from 0.01 to 1000 in tenfold steps. The regression forest used 200 trees, with candidate maximum depths of 2 and 3 and minimum leaf sizes of 5 and 10.
 
 Score prediction used five repetitions of shuffled five-fold cross-validation. Each outer test fold held out one group of students for evaluation. Four inner folds within the remaining training data were used to select model settings by mean absolute error (MAE), the average absolute difference between predicted and measured scores. Predictions were clipped to the 1-to-5 scale during tuning and evaluation. MAE was calculated for the full sample and for students with measured scores of 4 or above.
 
-Follow-up experiments gave more weight to errors for high scores. One comparison used a fixed equal-weight average of predictions from weighted ridge regression with eight inputs and support vector regression with 23 inputs.
+Follow-up experiments gave more weight to errors for high scores. One comparison used a fixed equal-weight average of predictions from weighted ridge regression on Small B and support vector regression on Broad D.
 
 \subsection{High-Symptom Warning Models}
 
-The selected random forest classifier used the eight-input set to predict the High label directly. The classifier used 100 trees, with candidate maximum depths of 2 and 3, minimum leaf sizes of 5 and 10, and relative training weights for the High group of 1, 2, and 4. The weights were rescaled within each fit to have a mean of 1.
+The selected random forest classifier used Small B to predict the High label directly. The classifier used 100 trees, with candidate maximum depths of 2 and 3, minimum leaf sizes of 5 and 10, and relative training weights for the High group of 1, 2, and 4. The weights were rescaled within each fit to have a mean of 1.
 
 The warning threshold determined when the classifier output triggered a warning. Candidate thresholds ranged from 0 to 1 in increments of 0.05. The separate cutoff of 4 applied to the measured BAT-S score and determined the student's group.
 
@@ -82,7 +82,7 @@ The comparison on real students included an eight-input forest tuned without aug
 
 Two fixed reference rules warned everyone or nobody. For the random reference, expected detections and false warnings were calculated for random selection of the same number of students as the forest warned in each outer test fold.
 
-Earlier exploratory comparisons included support vector classifiers with a radial basis function kernel, using the eight- or 23-input set. These classifiers used real training data and tuned their settings and warning thresholds in the inner folds.
+Earlier exploratory comparisons included support vector classifiers with a radial basis function kernel, using Small B or Broad D. These classifiers used real training data and tuned their settings and warning thresholds in the inner folds.
 
 A separate historical fit used all 97 students. Its forest settings were depth 3, a minimum leaf size of 10, a relative High weight of 2, a warning threshold of 0.35, and zero synthetic training rows. The simulation applied this fitted model to 970 interpolated profiles. The profile labels were inherited from the students in the training data. The estimates for real students were obtained from the outer test folds described below.
 

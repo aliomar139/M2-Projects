@@ -49,10 +49,10 @@ def study_design():
     ax.axhspan(0.36, 0.64, xmin=0.025, xmax=0.48, color="#eaf0f4")
     ax.axhspan(0.36, 0.64, xmin=0.52, xmax=0.975, color="#eaf0f4")
     ax.text(0.252, 0.565, "Score estimation", ha="center", va="center", weight="bold")
-    ax.text(0.252, 0.45, "5 study questions\nvs. 5 study + 3 GenAI",
+    ax.text(0.252, 0.45, "Small A (5) vs. Small B (8)\nBroad C (13) vs. Broad D (23)",
             ha="center", va="center", fontsize=7.5)
     ax.text(0.748, 0.565, "High-symptom warnings", ha="center", va="center", weight="bold")
-    ax.text(0.748, 0.45, "Workload alone\nvs. 5 study + 3 GenAI",
+    ax.text(0.748, 0.45, "Workload only (1)\nvs. Small B (8)",
             ha="center", va="center", fontsize=7.5)
     ax.text(0.5, 0.13, "Repeated nested cross-validation", ha="center", va="center", weight="bold")
     ax.text(0.5, 0.045, "Inner folds tune · Outer folds test on held-out students",
@@ -65,7 +65,7 @@ def warning_counts(comparisons):
     fig, axes = plt.subplots(1, 2, figsize=(3.5, 1.43), sharey=True)
     fig.subplots_adjust(left=0.27, bottom=0.2, right=0.96, top=0.85, wspace=0.32)
     methods = ["workload_logistic", "selected_rf", "random_same_warning_count"]
-    labels = ["Workload only", "Eight-question\nforest", "Matched\nrandom"]
+    labels = ["Workload only", "Small B forest", "Matched\nrandom"]
     rows = np.arange(len(methods))
     for ax, key, title, limit, ticks in zip(
         axes,

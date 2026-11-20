@@ -5,17 +5,17 @@
 
 The mean primary BAT-S score was 3.125 (SD 0.795), and the mean secondary score was 3.150 (SD 0.765). Seventeen of the 97 students (17.5\%) met the High criterion of a primary score of at least 4. Cronbach's alpha was 0.900 for the 12 items in the primary score and 0.944 for the 23 core items. Alpha measures how consistently the items in each set vary together.
 
-Among the 11 questions tested, avoidance or procrastination had the largest Spearman correlation with the primary burnout score (\(\rho=0.445\)). Perceived workload and academic stress had correlations of 0.388 and 0.367, respectively. Of the three GenAI questions in the eight-input set, AI dependence had the largest correlation (0.377), followed by reliance on AI in place of independent thinking (0.331) and frequency of use (0.220). These exploratory estimates describe the association between each question and the burnout score, without adjustment for other questions or for multiple testing.
+Among the 11 questions tested, avoidance or procrastination had the largest Spearman correlation with the primary burnout score (\(\rho=0.445\)). Perceived workload and academic stress had correlations of 0.388 and 0.367, respectively. Of the three GenAI questions in Small B, AI dependence had the largest correlation (0.377), followed by reliance on AI in place of independent thinking (0.331) and frequency of use (0.220). These exploratory estimates describe the association between each question and the burnout score, without adjustment for other questions or for multiple testing.
 
 \subsection{Numerical Score Prediction}
 
-The ridge regression comparison evaluated the five- and eight-input sets on the same held-out students. Adding the three GenAI questions reduced mean absolute error (MAE) for the primary score by 0.0300 points, from 0.6183 to 0.5883. For the secondary score, MAE decreased from 0.6001 to 0.5528 points. With the same eight inputs, XGBoost produced higher errors than ridge for both the primary score (0.6155 points) and the secondary score (0.5749 points).
+The ridge regression comparison evaluated Small A and Small B on the same held-out students. Adding the three GenAI questions reduced mean absolute error (MAE) for the primary score by 0.0300 points, from 0.6183 to 0.5883. For the secondary score, MAE decreased from 0.6001 to 0.5528 points. With Small B, XGBoost produced higher errors than ridge for both the primary score (0.6155 points) and the secondary score (0.5749 points).
 
-In the matched ridge comparison of the 13- and 23-input sets, adding the GenAI questions reduced MAE from 0.6145 to 0.5933 points for the primary score and from 0.5874 to 0.5578 points for the secondary score. MAE decreased in all five repetitions for both scores. The training-mean and training-median benchmarks had primary-score MAEs of 0.6291 and 0.6262 points, respectively.
+In the matched ridge comparison of Broad C and Broad D, adding the GenAI questions reduced MAE from 0.6145 to 0.5933 points for the primary score and from 0.5874 to 0.5578 points for the secondary score. MAE decreased in all five repetitions for both scores. The training-mean and training-median benchmarks had primary-score MAEs of 0.6291 and 0.6262 points, respectively.
 
-Table~\ref{tab:score-prediction-results} compares the primary-score errors for the full sample and the High group. Ordinary ridge with eight inputs tended to underestimate scores in the High group. With the same inputs, weighted ridge reduced High-group MAE from 0.9329 to 0.6649 points and increased overall MAE from 0.5883 to 0.6282 points.
+Table~\ref{tab:score-prediction-results} compares the primary-score errors for the full sample and the High group. Ordinary ridge with Small B tended to underestimate scores in the High group. With the same inputs, weighted ridge reduced High-group MAE from 0.9329 to 0.6649 points and increased overall MAE from 0.5883 to 0.6282 points.
 
-The fixed blend gave equal weight to ridge and support vector regression (SVR). It achieved lower MAE than either component for the full sample and for the High group. Its overall MAE was higher than that of ordinary ridge with eight inputs. Selecting the blend weights in the inner folds increased both errors relative to the fixed blend.
+The fixed blend gave equal weight to ridge and support vector regression (SVR). It achieved lower MAE than either component for the full sample and for the High group. Its overall MAE was higher than that of ordinary ridge with Small B. Selecting the blend weights in the inner folds increased both errors relative to the fixed blend.
 
 \begin{table}[t]
 \caption{Recorded Mean Absolute Error for the Primary Burnout Score}
@@ -26,12 +26,12 @@ The fixed blend gave equal weight to ridge and support vector regression (SVR). 
 \hline
 Score procedure & Overall (points) & High (points) \\
 \hline
-Ordinary ridge, 5 inputs & 0.6183 & 1.0842 \\
-Ordinary ridge, 8 inputs & 0.5883 & 0.9329 \\
-Ordinary ridge, 13 inputs & 0.6145 & 1.0237 \\
-Ordinary ridge, 23 inputs & 0.5933 & 0.9281 \\
-Weighted ridge, 8 inputs & 0.6282 & 0.6649 \\
-High-priority SVR, 23 inputs & 0.6282 & 0.6705 \\
+Ordinary ridge, Small A & 0.6183 & 1.0842 \\
+Ordinary ridge, Small B & 0.5883 & 0.9329 \\
+Ordinary ridge, Broad C & 0.6145 & 1.0237 \\
+Ordinary ridge, Broad D & 0.5933 & 0.9281 \\
+Weighted ridge, Small B & 0.6282 & 0.6649 \\
+High-priority SVR, Broad D & 0.6282 & 0.6705 \\
 Fixed ridge/SVR blend & 0.6160 & 0.6422 \\
 Inner-selected blend & 0.6343 & 0.6664 \\
 \hline
@@ -40,7 +40,7 @@ Inner-selected blend & 0.6343 & 0.6664 \\
 
 \subsection{High-Symptom Warning Performance}
 
-Across five cross-validation repetitions, workload-only logistic regression detected an average of 16.0 of the 17 High students (94.1\% recall), and the eight-question forest detected 14.8 (87.1\% recall). Both averaged 28 false warnings among the 80 Below-high students (Fig.~\ref{fig:warning-counts}). Precision was 36.4\% for workload alone and 34.7\% for the forest.
+Across five cross-validation repetitions, workload-only logistic regression detected an average of 16.0 of the 17 High students (94.1\% recall), and the Small B forest detected 14.8 (87.1\% recall). Both averaged 28 false warnings among the 80 Below-high students (Fig.~\ref{fig:warning-counts}). Precision was 36.4\% for workload alone and 34.7\% for the forest.
 
 \begin{figure}[t]
 \centering
@@ -58,7 +58,7 @@ The permutation test evaluated the selected forest against chance within the stu
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{figures/permutation-accuracy.pdf}
-\caption{Balanced accuracy of the eight-question procedure with the observed labels (dashed line) and across 199 shuffled-label evaluations. Each value averages five cross-validation repetitions.}
+\caption{Balanced accuracy of the Small B forest with the observed labels (dashed line) and across 199 shuffled-label evaluations. Each value averages five cross-validation repetitions.}
 \label{fig:permutation-accuracy}
 \end{figure}
 
@@ -82,7 +82,7 @@ Balanced accuracy & 66.4 to 83.8 & \(-11.1\) to \(2.3\) \\
 
 \subsection{Earlier Warning Comparisons and Synthetic Check}
 
-Earlier experiment records show the trade-off between detecting High students and issuing false warnings. Under \(F_2\) tuning, the 23-input support vector classifier averaged 13.0 High detections and 19.4 false warnings. The forest fitted with inputs selected by Boruta~\cite{kursa2010boruta} averaged 12.4 High detections and 22.2 false warnings. Both procedures detected fewer High students than the selected forest.
+Earlier experiment records show the trade-off between detecting High students and issuing false warnings. Under \(F_2\) tuning, the support vector classifier using Broad D averaged 13.0 High detections and 19.4 false warnings. The forest fitted with inputs selected by Boruta~\cite{kursa2010boruta} averaged 12.4 High detections and 22.2 false warnings. Both procedures detected fewer High students than the selected forest.
 
 In an earlier comparison using the same eight inputs, TabPFN-2~\cite{hollmann2025tabpfn} had higher average precision (0.616) than the selected forest. The TabPFN-2 rule selected using \(F_2\) averaged 13.8 High detections and 24.2 false warnings. The rule tuned to favor recall averaged 15.2 High detections and 44.0 false warnings.
 

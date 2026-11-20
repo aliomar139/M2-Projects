@@ -61,7 +61,7 @@ Predictor rankings can depend on how the outcome is defined. In a preprint, Dehg
 
 ## Study Design and Evaluation
 
-[Fig. 1. Main comparisons for score estimation and high-symptom warnings](../tex/figures/study-design.pdf)
+[Fig. 1. Input sets for score estimation and high-symptom warnings](../tex/figures/study-design.pdf)
 
 ### Participants and Questionnaire
 
@@ -97,23 +97,23 @@ IBM SPSS Statistics 23 was used to summarize responses and scores and to calcula
 
 ### Input Sets and Score Prediction
 
-To test whether GenAI questions improved score prediction, we compared input sets using the same model family and evaluation splits within each comparison. The five-input set used study-condition questions on perceived workload, sleep duration category, independent study-hours category, financial strain, and university support. The eight-input set added three questions on GenAI use frequency, self-reported dependence on AI to complete academic work, and reliance on AI in place of independent thinking.
+To test whether GenAI questions improved score prediction, we compared input sets using the same model family and evaluation splits within each comparison. Small A used five study-condition questions on perceived workload, sleep duration category, independent study-hours category, financial strain, and university support. Small B added three questions on GenAI use frequency, self-reported dependence on AI to complete academic work, and reliance on AI in place of independent thinking, for eight inputs.
 
-The 13-input set covered background and study conditions (Q1–Q7 and Q14–Q19). It added eight questions to the five-input set, covering enrollment location, academic level, major, GPA range, electricity outages, internet quality, academic stress, and avoidance or procrastination.
+Broad C used 13 inputs on background and study conditions (Q1–Q7 and Q14–Q19). It added eight questions to Small A, covering enrollment location, academic level, major, GPA range, electricity outages, internet quality, academic stress, and avoidance or procrastination.
 
-The 23-input set added all six GenAI questions (Q8–Q13), covering frequency, use cases, dependence, reliance in place of independent thinking, verification of AI outputs, and concerns about being flagged for AI use. Q9 supplied separate yes-or-no inputs for concept explanations, writing, coding, summaries, and direct solutions, so 19 questions yielded 23 inputs before categorical encoding. All input sets excluded BAT-S responses and scores, submission timestamps, and the item on intention to continue studying.
+Broad D added all six GenAI questions (Q8–Q13) to Broad C, covering frequency, use cases, dependence, reliance in place of independent thinking, verification of AI outputs, and concerns about being flagged for AI use. Q9 supplied separate yes-or-no inputs for concept explanations, writing, coding, summaries, and direct solutions, so 19 questions yielded 23 inputs before categorical encoding. All input sets excluded BAT-S responses and scores, submission timestamps, and the item on intention to continue studying.
 
-The five- and eight-input sets were compared using linear regression, ridge regression, and a shallow random forest. The comparison of the 13- and 23-input sets used ridge regression. The reference predictions were the mean and median measured scores in the training data.
+The Small A and Small B comparison used linear regression, ridge regression, and a shallow random forest. The Broad C and Broad D comparison used ridge regression. The reference predictions were the mean and median measured scores in the training data.
 
 Designated categorical inputs were encoded as separate indicators, with the first response category as the reference. For ridge regression, the encoded inputs were standardized using training data. The ridge penalty ranged from 0.01 to 1000 in tenfold steps. The regression forest used 200 trees, with candidate maximum depths of 2 and 3 and minimum leaf sizes of 5 and 10.
 
 Score prediction used five repetitions of shuffled five-fold cross-validation. Each outer test fold held out one group of students for evaluation. Four inner folds within the remaining training data were used to select model settings by mean absolute error (MAE), the average absolute difference between predicted and measured scores. Predictions were clipped to the 1-to-5 scale during tuning and evaluation. MAE was calculated for the full sample and for students with measured scores of 4 or above.
 
-Follow-up experiments gave more weight to errors for high scores. One comparison used a fixed equal-weight average of predictions from weighted ridge regression with eight inputs and support vector regression with 23 inputs.
+Follow-up experiments gave more weight to errors for high scores. One comparison used a fixed equal-weight average of predictions from weighted ridge regression on Small B and support vector regression on Broad D.
 
 ### High-Symptom Warning Models
 
-The selected random forest classifier used the eight-input set to predict the High label directly. The classifier used 100 trees, with candidate maximum depths of 2 and 3, minimum leaf sizes of 5 and 10, and relative training weights for the High group of 1, 2, and 4. The weights were rescaled within each fit to have a mean of 1.
+The selected random forest classifier used Small B to predict the High label directly. The classifier used 100 trees, with candidate maximum depths of 2 and 3, minimum leaf sizes of 5 and 10, and relative training weights for the High group of 1, 2, and 4. The weights were rescaled within each fit to have a mean of 1.
 
 The warning threshold determined when the classifier output triggered a warning. Candidate thresholds ranged from 0 to 1 in increments of 0.05. The separate cutoff of 4 applied to the measured BAT-S score and determined the student's group.
 
@@ -127,7 +127,7 @@ The comparison on real students included an eight-input forest tuned without aug
 
 Two fixed reference rules warned everyone or nobody. For the random reference, expected detections and false warnings were calculated for random selection of the same number of students as the forest warned in each outer test fold.
 
-Earlier exploratory comparisons included support vector classifiers with a radial basis function kernel, using the eight- or 23-input set. These classifiers used real training data and tuned their settings and warning thresholds in the inner folds.
+Earlier exploratory comparisons included support vector classifiers with a radial basis function kernel, using Small B or Broad D. These classifiers used real training data and tuned their settings and warning thresholds in the inner folds.
 
 A separate historical fit used all 97 students. Its forest settings were depth 3, a minimum leaf size of 10, a relative High weight of 2, a warning threshold of 0.35, and zero synthetic training rows. The simulation applied this fitted model to 970 interpolated profiles. The profile labels were inherited from the students in the training data. The estimates for real students were obtained from the outer test folds described below.
 
@@ -151,34 +151,34 @@ Uncertainty was estimated from 2,000 bootstrap samples. Students were resampled 
 
 The mean primary BAT-S score was 3.125 (SD 0.795), and the mean secondary score was 3.150 (SD 0.765). Seventeen of the 97 students (17.5%) met the High criterion of a primary score of at least 4. Cronbach's alpha was 0.900 for the 12 items in the primary score and 0.944 for the 23 core items. Alpha measures how consistently the items in each set vary together.
 
-Among the 11 questions tested, avoidance or procrastination had the largest Spearman correlation with the primary burnout score (ρ = 0.445). Perceived workload and academic stress had correlations of 0.388 and 0.367, respectively. Of the three GenAI questions in the eight-input set, AI dependence had the largest correlation (0.377), followed by reliance on AI in place of independent thinking (0.331) and frequency of use (0.220). These exploratory estimates describe the association between each question and the burnout score, without adjustment for other questions or for multiple testing.
+Among the 11 questions tested, avoidance or procrastination had the largest Spearman correlation with the primary burnout score (ρ = 0.445). Perceived workload and academic stress had correlations of 0.388 and 0.367, respectively. Of the three GenAI questions in Small B, AI dependence had the largest correlation (0.377), followed by reliance on AI in place of independent thinking (0.331) and frequency of use (0.220). These exploratory estimates describe the association between each question and the burnout score, without adjustment for other questions or for multiple testing.
 
 ### Numerical Score Prediction
 
-The ridge regression comparison evaluated the five- and eight-input sets on the same held-out students. Adding the three GenAI questions reduced mean absolute error (MAE) for the primary score by 0.0300 points, from 0.6183 to 0.5883. For the secondary score, MAE decreased from 0.6001 to 0.5528 points. With the same eight inputs, XGBoost produced higher errors than ridge for both the primary score (0.6155 points) and the secondary score (0.5749 points).
+The ridge regression comparison evaluated Small A and Small B on the same held-out students. Adding the three GenAI questions reduced mean absolute error (MAE) for the primary score by 0.0300 points, from 0.6183 to 0.5883. For the secondary score, MAE decreased from 0.6001 to 0.5528 points. With Small B, XGBoost produced higher errors than ridge for both the primary score (0.6155 points) and the secondary score (0.5749 points).
 
-In the matched ridge comparison of the 13- and 23-input sets, adding the GenAI questions reduced MAE from 0.6145 to 0.5933 points for the primary score and from 0.5874 to 0.5578 points for the secondary score. MAE decreased in all five repetitions for both scores. The training-mean and training-median benchmarks had primary-score MAEs of 0.6291 and 0.6262 points, respectively.
+In the matched ridge comparison of Broad C and Broad D, adding the GenAI questions reduced MAE from 0.6145 to 0.5933 points for the primary score and from 0.5874 to 0.5578 points for the secondary score. MAE decreased in all five repetitions for both scores. The training-mean and training-median benchmarks had primary-score MAEs of 0.6291 and 0.6262 points, respectively.
 
-Table II compares the primary-score errors for the full sample and the High group. Ordinary ridge with eight inputs tended to underestimate scores in the High group. With the same inputs, weighted ridge reduced High-group MAE from 0.9329 to 0.6649 points and increased overall MAE from 0.5883 to 0.6282 points.
+Table II compares the primary-score errors for the full sample and the High group. Ordinary ridge with Small B tended to underestimate scores in the High group. With the same inputs, weighted ridge reduced High-group MAE from 0.9329 to 0.6649 points and increased overall MAE from 0.5883 to 0.6282 points.
 
-The fixed blend gave equal weight to ridge and support vector regression (SVR). It achieved lower MAE than either component for the full sample and for the High group. Its overall MAE was higher than that of ordinary ridge with eight inputs. Selecting the blend weights in the inner folds increased both errors relative to the fixed blend.
+The fixed blend gave equal weight to ridge and support vector regression (SVR). It achieved lower MAE than either component for the full sample and for the High group. Its overall MAE was higher than that of ordinary ridge with Small B. Selecting the blend weights in the inner folds increased both errors relative to the fixed blend.
 
 *Table II. Recorded Mean Absolute Error for the Primary Burnout Score*
 
 | Score procedure | Overall (points) | High (points) |
 | --- | ---: | ---: |
-| Ordinary ridge, 5 inputs | 0.6183 | 1.0842 |
-| Ordinary ridge, 8 inputs | 0.5883 | 0.9329 |
-| Ordinary ridge, 13 inputs | 0.6145 | 1.0237 |
-| Ordinary ridge, 23 inputs | 0.5933 | 0.9281 |
-| Weighted ridge, 8 inputs | 0.6282 | 0.6649 |
-| High-priority SVR, 23 inputs | 0.6282 | 0.6705 |
+| Ordinary ridge, Small A | 0.6183 | 1.0842 |
+| Ordinary ridge, Small B | 0.5883 | 0.9329 |
+| Ordinary ridge, Broad C | 0.6145 | 1.0237 |
+| Ordinary ridge, Broad D | 0.5933 | 0.9281 |
+| Weighted ridge, Small B | 0.6282 | 0.6649 |
+| High-priority SVR, Broad D | 0.6282 | 0.6705 |
 | Fixed ridge/SVR blend | 0.6160 | 0.6422 |
 | Inner-selected blend | 0.6343 | 0.6664 |
 
 ### High-Symptom Warning Performance
 
-Across five cross-validation repetitions, workload-only logistic regression detected an average of 16.0 of the 17 High students (94.1% recall), and the eight-question forest detected 14.8 (87.1% recall). Both averaged 28 false warnings among the 80 Below-high students (Fig. 2). Precision was 36.4% for workload alone and 34.7% for the forest.
+Across five cross-validation repetitions, workload-only logistic regression detected an average of 16.0 of the 17 High students (94.1% recall), and the Small B forest detected 14.8 (87.1% recall). Both averaged 28 false warnings among the 80 Below-high students (Fig. 2). Precision was 36.4% for workload alone and 34.7% for the forest.
 
 [Fig. 2. Mean detections and false warnings per repetition on held-out students](../tex/figures/warning-counts.pdf)
 
@@ -188,7 +188,7 @@ With training augmentation available during tuning, the forest detected an avera
 
 The permutation test evaluated the selected forest against chance within the study sample (Fig. 3). With the original labels, the forest achieved 76.0% balanced accuracy. Across the 199 shuffled-label evaluations, mean balanced accuracy was 49.6% and the maximum was 63.6%. All shuffled-label results fell below the observed value, yielding a corrected one-sided permutation *p*-value of 0.005.
 
-[Fig. 3. Observed balanced accuracy and the 199 shuffled-label evaluations](../tex/figures/permutation-accuracy.pdf)
+[Fig. 3. Balanced accuracy of the Small B forest with observed and shuffled labels](../tex/figures/permutation-accuracy.pdf)
 
 Table III gives conditional intervals for the forest and the paired differences between the forest and workload-only logistic regression. The interval calculation resampled students with the fitted predictions held fixed. All three paired intervals included zero. Across the five cross-validation repetitions, the forest's recall ranged from 82.4% to 94.1%, and its false-warning count ranged from 24 to 30.
 
@@ -202,7 +202,7 @@ Table III gives conditional intervals for the forest and the paired differences 
 
 ### Earlier Warning Comparisons and Synthetic Check
 
-Earlier experiment records show the trade-off between detecting High students and issuing false warnings. Under F₂ tuning, the 23-input support vector classifier averaged 13.0 High detections and 19.4 false warnings. The forest fitted with inputs selected by Boruta [13] averaged 12.4 High detections and 22.2 false warnings. Both procedures detected fewer High students than the selected forest.
+Earlier experiment records show the trade-off between detecting High students and issuing false warnings. Under F₂ tuning, the support vector classifier using Broad D averaged 13.0 High detections and 19.4 false warnings. The forest fitted with inputs selected by Boruta [13] averaged 12.4 High detections and 22.2 false warnings. Both procedures detected fewer High students than the selected forest.
 
 In an earlier comparison using the same eight inputs, TabPFN-2 [14] had higher average precision (0.616) than the selected forest. The TabPFN-2 rule selected using F₂ averaged 13.8 High detections and 24.2 false warnings. The rule tuned to favor recall averaged 15.2 High detections and 44.0 false warnings.
 
