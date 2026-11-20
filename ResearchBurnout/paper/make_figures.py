@@ -106,11 +106,74 @@ def permutation_accuracy(observed, shuffled):
     plt.close(fig)
 
 
+def score_errors():
+    # Aggregate values from the ridge reproduction in research/06-data-analysis-and-experiment-history.md.
+    labels = ["Primary · Small A/B", "Primary · Broad C/D",
+              "Secondary · Small A/B", "Secondary · Broad C/D"]
+    without = np.array([0.6183, 0.6145, 0.6001, 0.5874])
+    with_genai = np.array([0.5883, 0.5933, 0.5528, 0.5578])
+    assert np.all(with_genai < without)
+
+    fig, ax = plt.subplots(figsize=(3.5, 1.77))
+    fig.subplots_adjust(left=0.37, bottom=0.26, right=0.97, top=0.80)
+    rows = np.arange(len(labels))
+    ax.hlines(rows, with_genai, without, color=GRAY, linewidth=0.9)
+    ax.scatter(without, rows, s=21, facecolor="white", edgecolor=GRAY,
+               label="Without GenAI", zorder=3)
+    ax.scatter(with_genai, rows, s=21, color=BLUE, label="With GenAI", zorder=3)
+    for row, before, after in zip(rows, without, with_genai):
+        ax.annotate(f"{before:.4f}", (before, row), xytext=(5, 0),
+                    textcoords="offset points", va="center", fontsize=7)
+        ax.annotate(f"{after:.4f}", (after, row), xytext=(-5, 0),
+                    textcoords="offset points", ha="right", va="center", fontsize=7)
+    ax.set(xlim=(0.52, 0.654), ylim=(3.5, -0.5), xticks=[0.53, 0.56, 0.59, 0.62, 0.65],
+           xlabel="Mean absolute error (points)")
+    ax.set_yticks(rows, labels, fontsize=7)
+    ax.tick_params(axis="y", length=0, pad=4)
+    ax.tick_params(axis="x", length=2)
+    ax.grid(axis="x", color="#d9e0e3", linewidth=0.5)
+    fig.legend(loc="upper center", frameon=False, ncol=2, fontsize=7.5)
+    fig.savefig(FIGURES / "genai-score-errors.pdf")
+    plt.close(fig)
+
+
+def warning_differences(comparisons, intervals):
+    metrics = ["recall", "precision", "balanced_accuracy"]
+    names = ["Recall", "Precision", "Balanced accuracy"]
+    paired = "selected_rf minus workload_logistic"
+    bounds = 100 * np.array([intervals[paired, metric] for metric in metrics])
+    means = 100 * np.array([float(comparisons["selected_rf"][metric])
+                           - float(comparisons["workload_logistic"][metric])
+                           for metric in metrics])
+    lower, upper = bounds.T
+    assert np.all((lower <= means) & (means <= upper))
+
+    fig, ax = plt.subplots(figsize=(3.5, 1.59))
+    fig.subplots_adjust(left=0.33, bottom=0.27, right=0.97, top=0.96)
+    rows = np.arange(len(metrics))
+    ax.axvline(0, color=INK, linestyle="--", linewidth=0.8)
+    ax.errorbar(means, rows, xerr=(means - lower, upper - means),
+                fmt="o", color=BLUE, linewidth=1.1, markersize=3.8, capsize=3)
+    labels = [f"{name}\n{lo:.1f} to {hi:.1f}".replace("-", "−")
+              for name, lo, hi in zip(names, lower, upper)]
+    ax.set(xlim=(-22, 6), ylim=(2.5, -0.5), xticks=[-20, -15, -10, -5, 0, 5],
+           xlabel="Forest minus workload (percentage points)")
+    ax.set_yticks(rows, labels, fontsize=7.2)
+    ax.tick_params(axis="y", length=0, pad=4)
+    ax.tick_params(axis="x", length=2)
+    ax.grid(axis="x", color="#d9e0e3", linewidth=0.5)
+    fig.savefig(FIGURES / "paired-warning-intervals.pdf")
+    plt.close(fig)
+
+
 if __name__ == "__main__":
     with (RESULTS / "25-model-comparison-summary.csv").open(newline="") as source:
         comparisons = {row["method"]: row for row in csv.DictReader(source)}
     with (RESULTS / "25-shuffled-label-test-results.csv").open(newline="") as source:
         shuffled = np.array([float(row["balanced_accuracy"]) for row in csv.DictReader(source)])
+    with (RESULTS / "25-conditional-student-uncertainty-intervals.csv").open(newline="") as source:
+        intervals = {(row["comparison"], row["metric"]): (float(row["lower"]), float(row["upper"]))
+                     for row in csv.DictReader(source)}
     observed = float(comparisons["selected_rf"]["balanced_accuracy"])
     assert len(shuffled) == 199 and shuffled.max() < observed
     assert float(comparisons["workload_logistic"]["fp"]) == float(comparisons["selected_rf"]["fp"])
@@ -119,3 +182,5 @@ if __name__ == "__main__":
     study_design()
     warning_counts(comparisons)
     permutation_accuracy(observed, shuffled)
+    score_errors()
+    warning_differences(comparisons, intervals)

@@ -8,9 +8,11 @@ Among the 11 questions tested, avoidance or procrastination had the largest Spea
 
 ## Numerical Score Prediction
 
-GenAI questions modestly improved estimates of current burnout scores. With the same model type and test students, adding three GenAI questions to Small A reduced the average error for the primary score from 0.6183 to 0.5883 points on the 1-to-5 scale. Adding all the GenAI questions to Broad C reduced error from 0.6145 to 0.5933 points. Table II shows these matched ridge comparisons. Across five repetitions on the same students, the reductions ranged from 0.020 to 0.037 points for Small A/B and from 0.007 to 0.039 for Broad C/D.
+GenAI questions modestly improved estimates of current burnout scores. With the same model type and test students, adding three GenAI questions to Small A reduced the average error for the primary score from 0.6183 to 0.5883 points on the 1-to-5 scale. Adding all the GenAI questions to Broad C reduced error from 0.6145 to 0.5933 points. Fig. 2 shows both outcomes for these matched ridge comparisons. Across five repetitions on the same students, the reductions ranged from 0.020 to 0.037 points for Small A/B and from 0.007 to 0.039 for Broad C/D.
 
 Errors for the secondary score also fell, from 0.6001 to 0.5528 points for Small A versus Small B and from 0.5874 to 0.5578 points for Broad C versus Broad D. Broad D also had lower secondary-score error than Broad C in each repetition. The training-mean and training-median benchmarks gave primary-score errors of 0.6291 and 0.6262 points. With Small B, XGBoost gave larger errors than ridge for the primary (0.6155 points) and secondary (0.5749 points) scores.
+
+[Fig. 2. Burnout-score errors with and without GenAI questions](../tex/figures/genai-score-errors.pdf)
 
 Estimating scores for the High group was harder. Ordinary ridge with Small B tended to predict scores that were too low. Giving High cases more weight reduced their error from 0.9329 to 0.6649 points, while increasing overall error from 0.5883 to 0.6282 points.
 
@@ -31,27 +33,21 @@ The selected follow-up score predictor averaged the weighted ridge and high-prio
 
 ## High-Symptom Warning Performance
 
-At the selected warning thresholds, workload-only logistic regression detected an average of 16.0 of the 17 High students across five repetitions. The Small B forest detected 14.8 on average. Both issued an average of 28 false warnings among the 80 students below the cutoff (Fig. 2). Recall was 94.1% for workload alone and 87.1% for the forest. Precision was 36.4% and 34.7%, respectively.
+At the selected warning thresholds, workload-only logistic regression detected an average of 16.0 of the 17 High students across five repetitions. The Small B forest detected 14.8 on average. Both issued an average of 28 false warnings among the 80 students below the cutoff (Fig. 3). Recall was 94.1% for workload alone and 87.1% for the forest. Precision was 36.4% and 34.7%, respectively.
 
-[Fig. 2. Mean detections and false warnings per repetition on held-out students](../tex/figures/warning-counts.pdf)
+[Fig. 3. Mean detections and false warnings per repetition on held-out students](../tex/figures/warning-counts.pdf)
 
 At those thresholds, workload alone also had higher balanced accuracy (79.6% versus 76.0%) and a higher F₂ score (0.714 versus 0.668). When we assessed ranking across thresholds, the forest had higher average precision (0.527 versus 0.423), and workload alone had higher ROC AUC (0.824 versus 0.809).
 
 When tuning could add synthetic profiles during training, the forest averaged 0.4 more High detections and 1.6 fewer false warnings than the forest tuned without them.
 
-The forest performed better with the measured labels than with any of the 199 shuffled label assignments. Its balanced accuracy was 76.0%, compared with a mean of 49.6% and a maximum of 63.6% across the shuffled runs (Fig. 3). The one-sided permutation *p*-value was 0.005.
+The forest performed better with the measured labels than with any of the 199 shuffled label assignments. Its balanced accuracy was 76.0%, compared with a mean of 49.6% and a maximum of 63.6% across the shuffled runs (Fig. 4). The one-sided permutation *p*-value was 0.005.
 
-[Fig. 3. Balanced accuracy of the Small B forest with observed and shuffled labels](../tex/figures/permutation-accuracy.pdf)
+[Fig. 4. Balanced accuracy of the Small B forest with observed and shuffled labels](../tex/figures/permutation-accuracy.pdf)
 
-The intervals for differences between the forest and workload alone all included zero (Table III). The observed workload advantage at the selected thresholds therefore remains uncertain. Across the five repetitions, the forest's recall ranged from 82.4% to 94.1%, and its false-warning count ranged from 24 to 30.
+The intervals for differences between the forest and workload alone all included zero (Fig. 5). The observed workload advantage at the selected thresholds therefore remains uncertain. The forest's own conditional 95% intervals were 70.6–100.0% for recall, 27.9–42.7% for precision, and 66.4–83.8% for balanced accuracy. Across the five repetitions, the forest's recall ranged from 82.4% to 94.1%, and its false-warning count ranged from 24 to 30.
 
-*Table III. Conditional 95% Intervals for Warning Performance*
-
-| Metric | Forest (%) | Forest minus workload (percentage points) |
-| --- | ---: | ---: |
-| Recall | 70.6 to 100.0 | −20.0 to 2.4 |
-| Precision | 27.9 to 42.7 | −7.3 to 3.1 |
-| Balanced accuracy | 66.4 to 83.8 | −11.1 to 2.3 |
+[Fig. 5. Paired warning-performance differences and conditional 95% intervals](../tex/figures/paired-warning-intervals.pdf)
 
 ## Earlier Warning Comparisons and Synthetic Check
 

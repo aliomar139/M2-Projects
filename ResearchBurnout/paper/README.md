@@ -1,6 +1,6 @@
 # Edit the existing Overleaf project
 
-Open the existing Overleaf project and update `main.tex`, `introduction.tex`, `related-work.tex`, `study-design-and-evaluation.tex`, `results-and-discussion.tex`, and `conclusion.tex` from `tex/`. Copy the three PDFs from `tex/figures/` into a `figures/` folder in the Overleaf project, next to `main.tex`. If the project still has the earlier abstract, update `abstract.tex` too. Click **Recompile**.
+Open the existing Overleaf project and update `main.tex`, `introduction.tex`, `related-work.tex`, `study-design-and-evaluation.tex`, `results-and-discussion.tex`, and `conclusion.tex` from `tex/`. Copy the five PDFs from `tex/figures/` into a `figures/` folder in the Overleaf project, next to `main.tex`. If the project still has the earlier abstract, update `abstract.tex` too. Click **Recompile**.
 
 For future edits, `main.tex` holds the title, authors, affiliation, and keywords. The other `.tex` files hold the individual sections, and `references.bib` holds the bibliography. The complete Markdown manuscript in `md/manuscript.md` is a reading copy, not an Overleaf input. The ZIP is an older snapshot.
 

@@ -9,9 +9,16 @@ Among the 11 questions tested, avoidance or procrastination had the largest Spea
 
 \subsection{Numerical Score Prediction}
 
-GenAI questions modestly improved estimates of current burnout scores. With the same model type and test students, adding three GenAI questions to Small A reduced the average error for the primary score from 0.6183 to 0.5883 points on the 1-to-5 scale. Adding all the GenAI questions to Broad C reduced error from 0.6145 to 0.5933 points. Table~\ref{tab:score-prediction-results} shows these matched ridge comparisons. Across five repetitions on the same students, the reductions ranged from 0.020 to 0.037 points for Small A/B and from 0.007 to 0.039 for Broad C/D.
+GenAI questions modestly improved estimates of current burnout scores. With the same model type and test students, adding three GenAI questions to Small A reduced the average error for the primary score from 0.6183 to 0.5883 points on the 1-to-5 scale. Adding all the GenAI questions to Broad C reduced error from 0.6145 to 0.5933 points. Fig.~\ref{fig:genai-score-errors} shows both outcomes for these matched ridge comparisons. Across five repetitions on the same students, the reductions ranged from 0.020 to 0.037 points for Small A/B and from 0.007 to 0.039 for Broad C/D.
 
 Errors for the secondary score also fell, from 0.6001 to 0.5528 points for Small A versus Small B and from 0.5874 to 0.5578 points for Broad C versus Broad D. Broad D also had lower secondary-score error than Broad C in each repetition. The training-mean and training-median benchmarks gave primary-score errors of 0.6291 and 0.6262 points. With Small B, XGBoost gave larger errors than ridge for the primary (0.6155 points) and secondary (0.5749 points) scores.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/genai-score-errors.pdf}
+\caption{Mean absolute error with and without GenAI questions in matched ridge comparisons. Each value averages five cross-validation repetitions. Lower error is better.}
+\label{fig:genai-score-errors}
+\end{figure}
 
 Estimating scores for the High group was harder. Ordinary ridge with Small B tended to predict scores that were too low. Giving High cases more weight reduced their error from 0.9329 to 0.6649 points, while increasing overall error from 0.5883 to 0.6282 points.
 
@@ -62,23 +69,14 @@ The forest performed better with the measured labels than with any of the 199 sh
 \label{fig:permutation-accuracy}
 \end{figure}
 
-The intervals for differences between the forest and workload alone all included zero (Table~\ref{tab:warning-intervals}). The observed workload advantage at the selected thresholds therefore remains uncertain. Across the five repetitions, the forest's recall ranged from 82.4\% to 94.1\%, and its false-warning count ranged from 24 to 30.
+The intervals for differences between the forest and workload alone all included zero (Fig.~\ref{fig:paired-warning-intervals}). The observed workload advantage at the selected thresholds therefore remains uncertain. The forest's own conditional 95\% intervals were 70.6--100.0\% for recall, 27.9--42.7\% for precision, and 66.4--83.8\% for balanced accuracy. Across the five repetitions, the forest's recall ranged from 82.4\% to 94.1\%, and its false-warning count ranged from 24 to 30.
 
-\begin{table}[t]
-\caption{Conditional 95\% Intervals for Warning Performance}
-\label{tab:warning-intervals}
+\begin{figure}[t]
 \centering
-\footnotesize
-\begin{tabular}{@{}lrr@{}}
-\hline
-Metric & \shortstack[b]{Forest\\(\%)} & \shortstack[b]{Forest minus workload\\(percentage points)} \\
-\hline
-Recall & 70.6 to 100.0 & \(-20.0\) to \(2.4\) \\
-Precision & 27.9 to 42.7 & \(-7.3\) to \(3.1\) \\
-Balanced accuracy & 66.4 to 83.8 & \(-11.1\) to \(2.3\) \\
-\hline
-\end{tabular}
-\end{table}
+\includegraphics[width=\columnwidth]{figures/paired-warning-intervals.pdf}
+\caption{Differences between the Small B forest and the workload-only model. Dots show mean differences, and bars show conditional 95\% intervals. The dashed line marks equal performance.}
+\label{fig:paired-warning-intervals}
+\end{figure}
 
 \subsection{Earlier Warning Comparisons and Synthetic Check}
 
