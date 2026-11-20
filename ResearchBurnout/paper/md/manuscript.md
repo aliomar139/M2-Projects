@@ -103,13 +103,13 @@ Broad C used 13 inputs on background and study conditions (Q1–Q7 and Q14–Q19
 
 Broad D added all six GenAI questions (Q8–Q13) to Broad C, covering frequency, use cases, dependence, reliance in place of independent thinking, verification of AI outputs, and concerns about being flagged for AI use. Q9 supplied separate yes-or-no inputs for concept explanations, writing, coding, summaries, and direct solutions, so 19 questions yielded 23 inputs before categorical encoding. All input sets excluded BAT-S responses and scores, submission timestamps, and the item on intention to continue studying.
 
-The Small A and Small B comparison used linear regression, ridge regression, and a shallow random forest. The Broad C and Broad D comparison used ridge regression. The reference predictions were the mean and median measured scores in the training data.
+We compared Small A with Small B using linear regression, ridge regression, and a shallow random forest. We used ridge for Broad C and Broad D as well. Ridge is linear regression with a penalty that discourages large weights on the inputs. The two benchmarks predicted the training group's mean or median score for every test student.
 
-Designated categorical inputs were encoded as separate indicators, with the first response category as the reference. For ridge regression, the encoded inputs were standardized using training data. The ridge penalty ranged from 0.01 to 1000 in tenfold steps. The regression forest used 200 trees, with candidate maximum depths of 2 and 3 and minimum leaf sizes of 5 and 10.
+For each repetition, we split the 97 students into five groups. We trained on four groups and tested on the fifth, taking turns until every student had one test prediction. We ran this process with five different shuffles. Within each training set, we used four smaller groups to choose settings by mean absolute error (MAE), the average distance between predicted and measured scores. We kept predictions within 1 to 5 during tuning and testing and calculated MAE for all students and for those with measured scores of at least 4.
 
-Score prediction used five repetitions of shuffled five-fold cross-validation. Each outer test fold held out one group of students for evaluation. Four inner folds within the remaining training data were used to select model settings by mean absolute error (MAE), the average absolute difference between predicted and measured scores. Predictions were clipped to the 1-to-5 scale during tuning and evaluation. MAE was calculated for the full sample and for students with measured scores of 4 or above.
+We represented categorical answers such as sleep-duration bands as yes-or-no indicators, leaving the first category as the reference. We used training data to put the ridge inputs on a common scale and tested penalties from 0.01 to 1000 in tenfold steps. For the 200-tree regression forest, we tried maximum depths of 2 or 3 and minimum leaf sizes of 5 or 10.
 
-Follow-up experiments gave more weight to errors for high scores. One comparison used a fixed equal-weight average of predictions from weighted ridge regression on Small B and support vector regression on Broad D.
+Follow-up experiments gave more weight to errors on high scores. The selected follow-up predictor averaged two estimates equally, one from weighted ridge on Small B and one from high-priority support vector regression on Broad D.
 
 ### High-Symptom Warning Models
 
@@ -133,17 +133,15 @@ A separate historical fit used all 97 students. Its forest settings were depth 3
 
 ### Warning Evaluation and Performance Measures
 
-The warning evaluation used five repetitions of stratified five-fold cross-validation to keep the proportion of High students similar across outer folds. For each outer test fold, four stratified inner folds within the training data were used to select model settings, class weight, augmentation ratio, and warning threshold where applicable.
+We used the same train-and-test approach for high-symptom warnings. We split the students into five groups with similar proportions of High cases, trained on four groups, and tested on the fifth. Each student was tested once per repetition, and we averaged results across five repetitions. Only real students contributed test predictions. We used training data to encode and standardize the forest inputs and to generate any synthetic profiles.
 
-Selection used the pooled inner-fold F₂ score, which gives greater weight to recall than precision. Ties favored higher precision, higher recall, a higher warning threshold, and then a smaller augmentation ratio where applicable.
+Within each training set, we formed four smaller groups in the same way to choose model settings, how much extra weight to give High cases, how many synthetic profiles to add, and when a model score should trigger a warning. We combined the four groups' validation predictions and used F₂ to score the settings. This score gives more weight to recall, the share of High students detected, than to precision, the share of warnings that correctly flagged High students. Ties favored higher precision, higher recall, a higher warning threshold, and then fewer synthetic profiles where applicable.
 
-For the forest, the sleep and study-hours categories were encoded and the resulting columns were standardized using the corresponding training data. Synthetic profiles for each fit were generated from the same training split. Only held-out real students contributed predictions to the outer evaluation. The reproduced ridge and warning evaluations used scikit-learn version 1.9.1. The other model comparisons are reported from their analysis records.
+Balanced accuracy gives the High and Below-high groups equal weight by averaging the share correctly identified in each group. Average precision and the area under the receiver operating characteristic curve (ROC AUC) summarize how well a model ranks High students across warning thresholds. We used scikit-learn 1.9.1 to reproduce the ridge and warning evaluations and drew the other comparisons from their analysis records.
 
-The held-out predictions were pooled within each repetition, so each student contributed once per repetition. Recall is the share of High students detected, and precision is the share of warnings issued to High students. Balanced accuracy averages the correct classification rates of the two groups. Average precision and the area under the receiver operating characteristic curve summarized ranking across thresholds. Each measure was averaged across the five repetitions.
+To estimate performance by chance, we shuffled the High and Below-high labels 199 times, keeping the group sizes fixed. Each student kept the same shuffled label across the five repetitions of a run. We rebuilt the splits and repeated the full forest procedure, including setting selection and training-only augmentation. We compared mean balanced accuracy across the shuffled runs with the value from the measured labels. The one-sided permutation *p*-value was (*b* + 1) / 200, where *b* counts shuffled runs that reached or exceeded the observed value [12].
 
-The chance comparison shuffled the student labels 199 times while preserving the overall class counts. Each shuffle assigned one label per student across all repetitions. For each shuffle, the stratified splits were rebuilt and the selected forest procedure was repeated, including the inner selection and training-only generation of synthetic profiles. The comparison used mean balanced accuracy, as specified in the validation plan. The one-sided permutation *p*-value was (*b* + 1) / 200, where *b* counts shuffled runs that reached or exceeded the observed value [12].
-
-Uncertainty was estimated from 2,000 bootstrap samples. Students were resampled with replacement within each outcome group. Each sampled student carried all five held-out predictions, and the models were compared using the same resamples. The 95% percentile intervals describe variation conditional on the observed class counts and fitted predictions.
+To estimate uncertainty, we drew 2,000 bootstrap samples by resampling students with replacement within each outcome group. Each sampled student carried all five test predictions for both warning models. The resulting 95% intervals describe variation with the same group sizes and fitted predictions.
 
 ## Results and Discussion
 
@@ -155,13 +153,13 @@ Among the 11 questions tested, avoidance or procrastination had the largest Spea
 
 ### Numerical Score Prediction
 
-The ridge regression comparison evaluated Small A and Small B on the same held-out students. Adding the three GenAI questions reduced mean absolute error (MAE) for the primary score by 0.0300 points, from 0.6183 to 0.5883. For the secondary score, MAE decreased from 0.6001 to 0.5528 points. With Small B, XGBoost produced higher errors than ridge for both the primary score (0.6155 points) and the secondary score (0.5749 points).
+GenAI questions modestly improved estimates of current burnout scores. With the same model type and test students, adding three GenAI questions to Small A reduced the average error for the primary score from 0.6183 to 0.5883 points on the 1-to-5 scale. Adding all the GenAI questions to Broad C reduced error from 0.6145 to 0.5933 points. Table II shows these matched ridge comparisons.
 
-In the matched ridge comparison of Broad C and Broad D, adding the GenAI questions reduced MAE from 0.6145 to 0.5933 points for the primary score and from 0.5874 to 0.5578 points for the secondary score. MAE decreased in all five repetitions for both scores. The training-mean and training-median benchmarks had primary-score MAEs of 0.6291 and 0.6262 points, respectively.
+Errors for the secondary score also fell, from 0.6001 to 0.5528 points for Small A versus Small B and from 0.5874 to 0.5578 points for Broad C versus Broad D. Broad D had lower error than Broad C in all five repetitions for both outcomes. The training-mean and training-median benchmarks gave primary-score errors of 0.6291 and 0.6262 points. With Small B, XGBoost gave larger errors than ridge for the primary (0.6155 points) and secondary (0.5749 points) scores.
 
-Table II compares the primary-score errors for the full sample and the High group. Ordinary ridge with Small B tended to underestimate scores in the High group. With the same inputs, weighted ridge reduced High-group MAE from 0.9329 to 0.6649 points and increased overall MAE from 0.5883 to 0.6282 points.
+Estimating scores for the High group was harder. Ordinary ridge with Small B tended to predict scores that were too low. Giving High cases more weight reduced their error from 0.9329 to 0.6649 points, while increasing overall error from 0.5883 to 0.6282 points.
 
-The fixed blend gave equal weight to ridge and support vector regression (SVR). It achieved lower MAE than either component for the full sample and for the High group. Its overall MAE was higher than that of ordinary ridge with Small B. Selecting the blend weights in the inner folds increased both errors relative to the fixed blend.
+The selected follow-up score predictor averaged the weighted ridge and high-priority support vector regression (SVR) estimates. This equal-weight blend had lower error than either of its components and the blend whose weights were tuned (Table II). Its overall error was 0.6160 points, higher than ordinary ridge with Small B, while its High-group error fell to 0.6422 points. The warning task below tested whether a model could flag High students directly.
 
 *Table II. Recorded Mean Absolute Error for the Primary Burnout Score*
 
@@ -178,19 +176,19 @@ The fixed blend gave equal weight to ridge and support vector regression (SVR). 
 
 ### High-Symptom Warning Performance
 
-Across five cross-validation repetitions, workload-only logistic regression detected an average of 16.0 of the 17 High students (94.1% recall), and the Small B forest detected 14.8 (87.1% recall). Both averaged 28 false warnings among the 80 Below-high students (Fig. 2). Precision was 36.4% for workload alone and 34.7% for the forest.
+At the selected warning thresholds, workload-only logistic regression detected an average of 16.0 of the 17 High students across five repetitions. The Small B forest detected 14.8 on average. Both issued an average of 28 false warnings among the 80 students below the cutoff (Fig. 2). Recall was 94.1% for workload alone and 87.1% for the forest. Precision was 36.4% and 34.7%, respectively.
 
 [Fig. 2. Mean detections and false warnings per repetition on held-out students](../tex/figures/warning-counts.pdf)
 
-At the selected thresholds, workload-only logistic regression achieved higher balanced accuracy (79.6% versus 76.0%) and a higher F₂ score (0.714 versus 0.668) than the selected forest. Across warning thresholds, the forest achieved higher average precision (0.527 versus 0.423), and workload-only logistic regression achieved a higher area under the receiver operating characteristic (ROC) curve (0.824 versus 0.809).
+At those thresholds, workload alone also had higher balanced accuracy (79.6% versus 76.0%) and a higher F₂ score (0.714 versus 0.668). When we assessed ranking across thresholds, the forest had higher average precision (0.527 versus 0.423), and workload alone had higher ROC AUC (0.824 versus 0.809).
 
-With training augmentation available during tuning, the forest detected an average of 0.4 more High students and issued 1.6 fewer false warnings than the forest tuned without augmentation.
+When tuning could add synthetic profiles during training, the forest averaged 0.4 more High detections and 1.6 fewer false warnings than the forest tuned without them.
 
-The permutation test evaluated the selected forest against chance within the study sample (Fig. 3). With the original labels, the forest achieved 76.0% balanced accuracy. Across the 199 shuffled-label evaluations, mean balanced accuracy was 49.6% and the maximum was 63.6%. All shuffled-label results fell below the observed value, yielding a corrected one-sided permutation *p*-value of 0.005.
+The forest performed better with the measured labels than with any of the 199 shuffled label assignments. Its balanced accuracy was 76.0%, compared with a mean of 49.6% and a maximum of 63.6% across the shuffled runs (Fig. 3). The one-sided permutation *p*-value was 0.005.
 
 [Fig. 3. Balanced accuracy of the Small B forest with observed and shuffled labels](../tex/figures/permutation-accuracy.pdf)
 
-Table III gives conditional intervals for the forest and the paired differences between the forest and workload-only logistic regression. The interval calculation resampled students with the fitted predictions held fixed. All three paired intervals included zero. Across the five cross-validation repetitions, the forest's recall ranged from 82.4% to 94.1%, and its false-warning count ranged from 24 to 30.
+The intervals for differences between the forest and workload alone all included zero (Table III). The observed workload advantage at the selected thresholds therefore remains uncertain. Across the five repetitions, the forest's recall ranged from 82.4% to 94.1%, and its false-warning count ranged from 24 to 30.
 
 *Table III. Conditional 95% Intervals for Warning Performance*
 
@@ -202,25 +200,25 @@ Table III gives conditional intervals for the forest and the paired differences 
 
 ### Earlier Warning Comparisons and Synthetic Check
 
-Earlier experiment records show the trade-off between detecting High students and issuing false warnings. Under F₂ tuning, the support vector classifier using Broad D averaged 13.0 High detections and 19.4 false warnings. The forest fitted with inputs selected by Boruta [13] averaged 12.4 High detections and 22.2 false warnings. Both procedures detected fewer High students than the selected forest.
+Some earlier warning models issued fewer false warnings and detected fewer High students than the Small B forest. The Broad D support vector classifier, tuned using F₂, averaged 13.0 detections and 19.4 false warnings. The forest using questions selected by Boruta [13] averaged 12.4 detections and 22.2 false warnings.
 
-In an earlier comparison using the same eight inputs, TabPFN-2 [14] had higher average precision (0.616) than the selected forest. The TabPFN-2 rule selected using F₂ averaged 13.8 High detections and 24.2 false warnings. The rule tuned to favor recall averaged 15.2 High detections and 44.0 false warnings.
+TabPFN-2 [14] used the Small B questions and had higher average precision (0.616) than the selected forest. Its F₂-tuned rule averaged 13.8 detections and 24.2 false warnings. A rule that placed more weight on recall detected 15.2 and issued 44.0 false warnings on average.
 
-The synthetic check used 970 profiles generated from survey responses already used to fit the model. The model fitted on all 97 students flagged 159 of the 170 profiles assigned a High label (93.5%). This rate measures agreement with the High labels inherited from the source responses.
+In a separate simulation, we generated 970 profiles from the same 97 survey responses used to train the forest. The model flagged 159 of the 170 synthetic profiles that inherited a High label (93.5%). This measures agreement with labels inherited from the training data.
 
 ### Discussion
 
-The measured reduction in ridge regression error applies to the three GenAI questions together. AI dependence had the strongest individual association with the burnout score among those three questions. Plensamai reported a positive association in the same direction among Thai undergraduates using a different burnout measure [3]. An additional matched comparison that adds AI dependence alone would be needed to estimate its individual contribution to prediction.
+The score comparisons suggest that the GenAI questions added some information about current burnout severity beyond study conditions in this sample. We tested the added questions together. AI dependence had the strongest individual association with the burnout score among the three Small B questions. Plensamai reported a positive association among Thai undergraduates using a different burnout measure [3]. A matched comparison that adds AI dependence alone would estimate its individual contribution.
 
-At the chosen warning thresholds, workload-only logistic regression detected more High cases at the same average false-warning count as the random forest. The warning comparison varied both the classifier and the inputs, so these results compare the two procedures as a whole.
+The warning comparison tested two complete procedures. The workload-only model and the Small B forest differ in both the type of model and the questions they use. To estimate how much the GenAI questions contribute to warnings, a matched comparison would use the same classifier and test groups with and without those questions.
 
-About two of every three warnings from the selected forest went to students with a burnout score below the study cutoff. Of the 80 Below-high students, 39 received at least one false warning across the five repetitions, and 27 received a false warning in at least three repetitions.
+About two in three forest warnings went to students with a measured score below 4. Of the 80 students in that group, 39 received at least one false warning across the five repetitions, and 27 received a false warning in at least three repetitions.
 
-The survey measured GenAI habits, study conditions, and symptoms at one time. The order of events therefore remains unresolved. The convenience sample contained 17 High cases, and several model and input choices followed earlier analyses of the same students. The permutation test applies to the selected forest procedure, and the paired intervals apply to its comparison with workload-only logistic regression. Estimating warning performance in a new cohort requires fixing each procedure in advance and evaluating it on independently recruited students with measured BAT-S outcomes.
+The survey measured GenAI use, study conditions, and symptoms at one time, so the direction of any relationship remains unclear. The convenience sample included 17 High cases, and we made several modeling choices after earlier analyses of these same students. The permutation result describes the selected forest procedure. A new cohort with measured BAT-S scores and procedures specified in advance would provide an independent test.
 
 ## Conclusion
 
-Adding three GenAI questions to five study-condition questions reduced mean absolute error for current burnout scores by 0.03 points in this sample. The eight-question warning model performed above its shuffled-label reference. At the selected thresholds, workload alone detected more high-symptom cases at the same average false-warning count, and the paired intervals for performance differences included zero. An independent evaluation should fix the prediction procedures in advance and test them on a new student cohort with measured BAT-S scores.
+Adding GenAI questions modestly improved estimates of current burnout scores in both matched comparisons. The Small B forest performed above its shuffled-label reference. At the selected warning thresholds, workload alone detected more High cases at the same average false-warning count, and the paired intervals for the differences included zero. An independent evaluation should specify the prediction procedures in advance and test them in a new cohort with measured BAT-S scores.
 
 ## References
 
